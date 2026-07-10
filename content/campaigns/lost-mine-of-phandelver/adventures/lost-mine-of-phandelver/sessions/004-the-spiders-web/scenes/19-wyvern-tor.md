@@ -12,6 +12,7 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
   - "/compendium/monsters/orc/"
+  - "/compendium/monsters/orc/"
   - "/compendium/monsters/ogre/"
 ---
 

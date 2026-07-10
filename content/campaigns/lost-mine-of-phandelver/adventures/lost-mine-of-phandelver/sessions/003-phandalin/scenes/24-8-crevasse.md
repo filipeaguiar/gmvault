@@ -12,6 +12,7 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
   - "/compendium/monsters/nothic/"
+  - "/compendium/monsters/nothic/"
 ---
 
 ### Descrição e Elementos Importantes

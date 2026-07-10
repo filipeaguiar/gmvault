@@ -18,6 +18,9 @@ KNOWN_SOURCES = {
     "ggr", "ftd", "scc", "aag", "bam", "dltso", "pactc", "sat", "bmt", "kftgv"
 }
 
+# Cache global para bestiários de outros livros
+OTHER_BESTIARY_CACHE = {}
+
 def slugify(text):
     text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
     text = text.lower()
@@ -30,6 +33,52 @@ def format_dice_rolls(text):
         return f"[[{formula}]]"
     pattern = r'(?<!\[\[)\b(\d+d\d+(?:\s*[\+\-]\s*\d+)?)\b(?!\]\])'
     return re.sub(pattern, dice_repl, text)
+
+def get_monster_from_source(monster_name, source_book):
+    source_book = source_book.lower()
+    
+    if source_book in OTHER_BESTIARY_CACHE:
+        return OTHER_BESTIARY_CACHE[source_book].get(monster_name.lower())
+        
+    print(f"  [5e.tools] Baixando bestiário complementar: {source_book.upper()}...")
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    
+    url_bestiary = DATA_BASE_URL + f"bestiary/bestiary-{source_book}.json"
+    url_fluff = DATA_BASE_URL + f"bestiary/fluff-bestiary-{source_book}.json"
+    
+    monsters_list = []
+    fluff_list = []
+    
+    try:
+        req = urllib.request.Request(url_bestiary, headers=headers)
+        with urllib.request.urlopen(req) as r:
+            bestiary_json = json.loads(r.read().decode())
+            monsters_list = bestiary_json.get("monster", [])
+    except Exception as e:
+        OTHER_BESTIARY_CACHE[source_book] = {}
+        return None
+        
+    try:
+        req = urllib.request.Request(url_fluff, headers=headers)
+        with urllib.request.urlopen(req) as r:
+            fluff_json = json.loads(r.read().decode())
+            fluff_list = fluff_json.get("monsterFluff", [])
+    except Exception as e:
+        pass
+        
+    fluff_by_name = {f.get("name").lower(): f for f in fluff_list}
+    
+    book_data = {}
+    for m in monsters_list:
+        name = m.get("name")
+        fluff = fluff_by_name.get(name.lower())
+        book_data[name.lower()] = {
+            "stats": m,
+            "fluff": fluff
+        }
+        
+    OTHER_BESTIARY_CACHE[source_book] = book_data
+    return book_data.get(monster_name.lower())
 
 def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
     args = inner_text.split('|')
@@ -60,7 +109,7 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
             
         # Monstro geral do compêndio
         monster_slug = slugify(default_val)
-        ctx["monsters"].add(monster_slug)
+        ctx["monsters"].add((monster_slug, default_val, source))
         return display_name
         
     # 2. Tags de Itens
@@ -792,13 +841,13 @@ def fetch_bestiary_data(slug):
         
     return bestiary_data
 
-def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_set, bestiary_data, all_npcs, all_monsters):
+def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_set, monsters_set, bestiary_data, all_npcs, all_monsters):
     # Separa criaturas, monstros e itens da campanha e cria stubs corretos
     scene_npcs_refs = []
     scene_monsters_refs = []
     scene_items_refs = []
     
-    # 1. Processar criaturas (NPCs vs Monstros)
+    # 1. Processar criaturas da campanha (NPCs vs Monstros Específicos da Aventura)
     for c_slug, c_name in creatures_set:
         entry = bestiary_data.get(c_name.lower())
         
@@ -821,7 +870,18 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
             scene_monsters_refs.append(monster_ref)
             all_monsters.add(monster_ref)
             
-    # 2. Processar itens mágicos específicos da aventura
+    # 2. Processar monstros gerais da cena (ex: goblin do MM) no Compêndio Global
+    for m_slug, m_name, m_source in monsters_set:
+        monster_file = f"content/compendium/monsters/{m_slug}.md"
+        monster_ref = f"/compendium/monsters/{m_slug}/"
+        scene_monsters_refs.append(monster_ref)
+        all_monsters.add(monster_ref)
+        
+        if not os.path.exists(monster_file):
+            entry = get_monster_from_source(m_name, m_source)
+            write_monster_stub(campaign_slug, m_slug, m_name, entry, target_slug)
+            
+    # 3. Processar itens mágicos específicos da aventura
     for i_slug, i_name in items_set:
         write_magic_item_stub(campaign_slug, i_slug, i_name)
         item_ref = f"/compendium/magic-items/{i_slug}/"
@@ -915,12 +975,13 @@ def main():
                         content_markdown += res + "\n\n"
                 
                 scene_npcs, scene_spec_monsters, scene_spec_items = handle_campaign_entities(
-                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], bestiary_data, all_npcs, all_monsters
+                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, all_npcs, all_monsters
                 )
                 
-                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                scene_monsters = [f"/compendium/monsters/{m}/" for m, _, _ in ctx["monsters"]]
                 for m_ref in scene_spec_monsters:
-                    scene_monsters.append(m_ref)
+                    if m_ref not in scene_monsters:
+                        scene_monsters.append(m_ref)
                 for i_ref in scene_spec_items:
                     scene_monsters.append(i_ref)
                     
@@ -1035,12 +1096,13 @@ locations:
                         content_markdown += res + "\n\n"
                 
                 scene_npcs, scene_spec_monsters, scene_spec_items = handle_campaign_entities(
-                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], bestiary_data, adventure_npcs, adventure_monsters
+                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, adventure_npcs, adventure_monsters
                 )
                 
-                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                scene_monsters = [f"/compendium/monsters/{m}/" for m, _, _ in ctx["monsters"]]
                 for m_ref in scene_spec_monsters:
-                    scene_monsters.append(m_ref)
+                    if m_ref not in scene_monsters:
+                        scene_monsters.append(m_ref)
                 for i_ref in scene_spec_items:
                     scene_monsters.append(i_ref)
                     

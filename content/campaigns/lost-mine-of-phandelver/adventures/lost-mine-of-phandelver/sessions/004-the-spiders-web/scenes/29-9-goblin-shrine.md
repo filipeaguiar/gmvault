@@ -12,6 +12,7 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
   - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/goblin/"
 ---
 
 ### Descrição e Elementos Importantes

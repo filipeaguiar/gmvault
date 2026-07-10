@@ -13,6 +13,7 @@ locations:
 compendium_refs:
   - "/compendium/monsters/wolf/"
   - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/hobgoblin/"
 ---
 
 ### Descrição e Elementos Importantes

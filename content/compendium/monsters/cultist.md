@@ -1,5 +1,5 @@
 ---
-title: "goblin"
+title: "cultist"
 kind: "monster"
 draft: true
 titulo_pt_br: ""
@@ -10,4 +10,4 @@ tags:
   - importado
 ---
 
-Monstro **goblin** importado automaticamente da campanha.
+Monstro **cultist** importado automaticamente da campanha.

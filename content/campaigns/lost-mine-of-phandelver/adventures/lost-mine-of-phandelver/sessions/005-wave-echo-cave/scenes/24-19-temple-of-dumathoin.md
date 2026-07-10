@@ -7,14 +7,14 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
-  - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
-  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/giant-spider/"
+  - "/compendium/monsters/doppelganger/"
   - "/compendium/magic-items/spider-staff/"
 ---
 

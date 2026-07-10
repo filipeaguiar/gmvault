@@ -11,13 +11,13 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/wolf/"
-  - "/compendium/monsters/owlbear/"
   - "/compendium/monsters/goblin/"
-  - "/compendium/monsters/stirge/"
-  - "/compendium/monsters/hobgoblin/"
-  - "/compendium/monsters/ogre/"
+  - "/compendium/monsters/owlbear/"
   - "/compendium/monsters/orc/"
+  - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/ogre/"
+  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/ghoul/"
 ---
 
