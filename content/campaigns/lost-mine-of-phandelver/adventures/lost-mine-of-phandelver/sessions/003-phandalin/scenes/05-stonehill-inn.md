@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/stonehill-inn/"
 compendium_refs:
 
 handouts:

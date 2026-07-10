@@ -1,5 +1,5 @@
 ---
-title: "Appendix B: Monsters"
+title: "Goblin Ambush"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Appendix B: Monsters** importada automaticamente da campanha.
+Localidade **Goblin Ambush** importada automaticamente da campanha.

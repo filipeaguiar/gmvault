@@ -1,5 +1,5 @@
 ---
-title: "Credits"
+title: "Phandalin Miner's Exchange"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Credits** importada automaticamente da campanha.
+Localidade **Phandalin Miner's Exchange** importada automaticamente da campanha.

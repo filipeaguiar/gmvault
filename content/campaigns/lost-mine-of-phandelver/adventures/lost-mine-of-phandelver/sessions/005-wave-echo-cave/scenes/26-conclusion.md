@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
 
 handouts:
@@ -23,6 +23,6 @@ With hard work and a little luck, the adventurers have defeated the Black Spider
 
 Gundren and Nundro Rockseeker take over administration of the new mine. For the adventurers' service to their family, they gladly award the party a 10 percent share of the mine's profits. If the characters want to remain in Phandalin and perhaps restore Tresendar Manor or establish homes of their own, the people of the area are glad to have them stay. Even if they choose to move on in search of new adventures, they'll always have a warm welcome in Phandalin.
 
-By the end of the adventure, the characters should be 5th level. If your players wish to continue playing their characters, you can use the contents of this set to create your own adventures; the mysterious map found in 14 of Wave Echo Cave provides one possible adventure hook, but feel free to explore other ideas using the monsters, magic items, and locations in this adventure. If you want to create adventures for characters higher than 5th level, you'll need the basic rules online or the advanced rulebooks: the *Player's Handbook, Dungeon Master's Guide* and *Monster Manual*.
+By the end of the adventure, the characters should be 5th level. If your players wish to continue playing their characters, you can use the contents of this set to create your own adventures; the mysterious map found in **Área 14** of Wave Echo Cave provides one possible adventure hook, but feel free to explore other ideas using the monsters, magic items, and locations in this adventure. If you want to create adventures for characters higher than 5th level, you'll need the basic rules online or the advanced rulebooks: the *Player's Handbook, Dungeon Master's Guide* and *Monster Manual*.
 
 

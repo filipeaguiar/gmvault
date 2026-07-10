@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
   - "/compendium/monsters/ghoul/"
 handouts:
@@ -23,6 +23,6 @@ This was a miners' barracks, where the skilled delvers working in Wave Echo Cave
 
 > Old stone bunks in orderly rows line the walls of this chamber, and a corroded iron brazier full of old coals stands near the middle of the room. The bones of a half dozen dwarves and orcs lie strewn about, clad in scraps of armor. Three gray, hunched figures squat among the remains, pawing at the scraps and gnawing on the bones.
 
-Three ghouls from the pack in 9 are here, cracking and gnawing on the ancient bones of the fallen in the vain hope that some tasty morsel of marrow remains. The ghouls, eager for a fresh meal, attack immediately.
+Three ghouls from the pack in **Área 9** are here, cracking and gnawing on the ancient bones of the fallen in the vain hope that some tasty morsel of marrow remains. The ghouls, eager for a fresh meal, attack immediately.
 
 

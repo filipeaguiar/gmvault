@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
   - "/compendium/monsters/owlbear/"
 handouts:
@@ -32,7 +32,7 @@ This room was once a library and workshop, but nothing of its original contents 
 
 ### Developments
 
-If the characters open the door and stay out of the owlbear's way, it flees the castle (most likely through 11). The creature attacks anything that gets in its way.
+If the characters open the door and stay out of the owlbear's way, it flees the castle (most likely through **Área 11**). The creature attacks anything that gets in its way.
 
 
 ### Treasure

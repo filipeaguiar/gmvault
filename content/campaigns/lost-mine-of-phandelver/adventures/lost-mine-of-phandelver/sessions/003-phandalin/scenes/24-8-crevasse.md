@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/redbrand-hideout/"
 compendium_refs:
   - "/compendium/monsters/nothic/"
   - "/compendium/monsters/nothic/"
@@ -20,7 +20,7 @@ handouts:
 
 ### Descrição e Elementos Importantes
 
-The characters arrive here by one of three routes: the tunnel from 1, the storeroom at 7, or the roughhewn passage to the south, which continues off the map for about one hundred feet and emerges from a tunnel in the woods south of Tresendar Manor. The passage is an excellent way to smuggle people or goods in and out of Phandalin without being seen, and is thus perfect for a gang of slavers and thieves.
+The characters arrive here by one of three routes: the tunnel from **Área 1**, the storeroom at **Área 7**, or the roughhewn passage to the south, which continues off the map for about one hundred feet and emerges from a tunnel in the woods south of Tresendar Manor. The passage is an excellent way to smuggle people or goods in and out of Phandalin without being seen, and is thus perfect for a gang of slavers and thieves.
 
 > A cold breeze fills this large natural cavern, carrying with it the faint scent of decaying flesh. A crevasse divides the cavern and is flanked by two rough stone columns that support the twenty-foot-high ceiling. Two arched wooden bridges span the chasm.
 

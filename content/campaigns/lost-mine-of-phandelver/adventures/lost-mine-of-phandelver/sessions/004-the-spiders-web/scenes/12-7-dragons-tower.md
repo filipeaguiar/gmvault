@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/venomfang/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/ruins-of-thundertree/"
 compendium_refs:
   - "/compendium/monsters/young-green-dragon/"
 handouts:

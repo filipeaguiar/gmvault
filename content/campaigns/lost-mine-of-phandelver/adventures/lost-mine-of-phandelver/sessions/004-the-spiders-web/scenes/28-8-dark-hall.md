@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
   - "/compendium/monsters/grick/"
 handouts:
@@ -23,14 +23,14 @@ Even by day, this area has no exterior light. The boxed text assumes that the ch
 
 > This high, narrow hall looks as if it might have been part of a chapel or shrine at one time. Angelic figures are sculpted along the room's upper reaches, looking down on the floor below. To the north, heavy curtains block a matching pair of archways. Between the archways is a cracked but ornately carved stone brazier.
 
-This chamber contains a grick, the special pet of the goblin Lhupo (9). The grick likes to climb up to a ledge hidden in the shadows of the statuary in the higher reaches of the room. It quietly observes intruders that enter the area before dropping down to strike. Compare the grick's Dexterity (Stealth) check to the characters' Wisdom (Perception) checks (or their passive scores) to determine who among them is surprised. The grick knows that goblins are not to be eaten unless Lhupo says so. The rest of the Cragmaws are terrified of Lhupo's pet and hurry through this room, preferably in twos or threes.
+This chamber contains a grick, the special pet of the goblin Lhupo (**Área 9**). The grick likes to climb up to a ledge hidden in the shadows of the statuary in the higher reaches of the room. It quietly observes intruders that enter the area before dropping down to strike. Compare the grick's Dexterity (Stealth) check to the characters' Wisdom (Perception) checks (or their passive scores) to determine who among them is surprised. The grick knows that goblins are not to be eaten unless Lhupo says so. The rest of the Cragmaws are terrified of Lhupo's pet and hurry through this room, preferably in twos or threes.
 
 Any cleric who examines the chapel's decor can attempt a CD 10 Intelligence (Religion) check to identify the deities that were once revered here: Oghma (god of knowledge), Mystra (goddess of magic), Lathander (god of dawn), and Tymora (goddess of luck). This is an obvious sign that the builders of the castle were human.
 
 
 ### Developments
 
-If combat erupts here, the goblins in 9 cannot be surprised.
+If combat erupts here, the goblins in **Área 9** cannot be surprised.
 
 
 ### Treasure

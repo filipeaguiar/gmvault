@@ -8,20 +8,20 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
 ---
 
 ### Descrição e Elementos Importantes
 
-Vendors in the Dyn Singh Night Market know a great deal about the market's inner workings, their fellow shop owners, and daily gossip. While they're typically polite, they share little information with strangers. If characters gain renown by winning Market Games, the following vendors share the facts for the renown values equal to (and lower than) the renown of the character conversing with them. See the "Gaining Renown" section for additional details.
+Vendors in the Dyn Singh Night Market know a great deal about the market's inner workings, their fellow shop owners, and daily gossip. While they're typically polite, they share little information with strangers. If characters gain renown by winning Market Games, the following vendors share the facts for the renown values equal to (and lower than) the renown of the character conversing with them. See the "**Área Gaining Renown**" section for additional details.
 
 
 ### Vi Aroon

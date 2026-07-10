@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/ruins-of-thundertree/"
 compendium_refs:
 
 handouts:
@@ -21,7 +21,7 @@ handouts:
 
 Near the place where the Neverwinter River emerges from Neverwinter Wood stands the abandoned village of Thundertree. Once, this was a prosperous community on the outskirts of the forest, wealthy from the work of its woodcutters and trappers. Then thirty years ago, the eruption of Mount Hotenow to the north devastated Thundertree. In the wake of the natural disaster, a plague of strange zombies swept over the area, killing or driving off those who survived the eruption.
 
-Though most of the zombies have long since crumbled to dust, strange magic permeating the area has mutated the local vegetation into new and dangerous forms. Few people dare to venture into the ruined village now, and those who do so seldom stay long—with two notable exceptions. The druid Reidoth (see 4) visits Thundertree from time to time, keeping a wary eye on its dangers. Cultists have also arrived recently (see 13) to treat with a dragon that claims Thundertree as its domain (see 7).
+Though most of the zombies have long since crumbled to dust, strange magic permeating the area has mutated the local vegetation into new and dangerous forms. Few people dare to venture into the ruined village now, and those who do so seldom stay long—with two notable exceptions. The druid Reidoth (see **Área 4**) visits Thundertree from time to time, keeping a wary eye on its dangers. Cultists have also arrived recently (see **Área 13**) to treat with a dragon that claims Thundertree as its domain (see **Área 7**).
 
 As the party approaches the ruins, read the following:
 

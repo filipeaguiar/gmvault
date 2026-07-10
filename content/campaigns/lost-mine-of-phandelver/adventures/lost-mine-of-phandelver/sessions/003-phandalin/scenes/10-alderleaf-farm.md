@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/alderleaf-farm/"
 compendium_refs:
 
 handouts:
@@ -24,7 +24,7 @@ A wise female halfling of forty-five, Qelline Alderleaf is a pragmatic farmer wh
 
 ### Carp's Story
 
-Qelline's son, Carp, is a spirited and precocious halfling lad of ten years. He is enchanted by the idea of being an adventurer and says that he was playing in the woods near Tresendar Manor when he found a secret tunnel in a thicket. A couple of "big ugly bandits" came out of the tunnel when he was there, and met with a pair of Redbrands. They didn't see him, but it was close. Carp thinks that the bandits have a secret lair under the old manor house. He can take the characters to the tunnel or provide them with directions to the location. The tunnel leads to 8 in the Redbrand hideout.
+Qelline's son, Carp, is a spirited and precocious halfling lad of ten years. He is enchanted by the idea of being an adventurer and says that he was playing in the woods near Tresendar Manor when he found a secret tunnel in a thicket. A couple of "big ugly bandits" came out of the tunnel when he was there, and met with a pair of Redbrands. They didn't see him, but it was close. Carp thinks that the bandits have a secret lair under the old manor house. He can take the characters to the tunnel or provide them with directions to the location. The tunnel leads to **Área 8** in the Redbrand hideout.
 
 
 ### Quest: Reidoth the Druid

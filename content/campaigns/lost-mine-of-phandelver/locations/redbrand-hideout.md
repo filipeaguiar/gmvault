@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Redbrand Hideout"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Introduction** importada automaticamente da campanha.
+Localidade **Redbrand Hideout** importada automaticamente da campanha.

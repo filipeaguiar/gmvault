@@ -8,21 +8,21 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
   - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-hideout/"
 compendium_refs:
-  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/goblin/"
-  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/goblin/"
   - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/wolf/"
 handouts:
-  - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
-  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -86,25 +86,25 @@ The stream that flows through the complex is only 2 feet deep, cold, and slow mo
 > * About fifteen goblins currently dwell in the lair.
 > * Their leader is a bugbear named Klarg. He answers to King Grol, chief of the Cragmaw tribe, who dwells in Cragmaw Castle. (The goblins can provide basic directions to Cragmaw Castle. It's about twenty miles northeast of the Cragmaw hideout, in Neverwinter Wood.)
 > * Klarg received a messenger goblin from King Grol a few days ago. The messenger told him that someone named the Black Spider was paying the Cragmaws to watch out for the dwarf Gundren Rockseeker, capture him, and send him and anything he was carrying back to King Grol. Klarg followed his orders. Gundren was ambushed and taken along with his personal effects, including a map.
-> * The dwarf and his map were delivered to King Grol, as instructed. The dwarf's human companion is being held in the "eating cave" (6).
+> * The dwarf and his map were delivered to King Grol, as instructed. The dwarf's human companion is being held in the "eating cave" (**Área 6**).
 
 
 ### 1. Cave Mouth
 
 The trail from the goblin ambush site leads to the entrance of the Cragmaw hideout.
 > Following the goblins' trail, you come across a large cave in a hillside five miles from the scene of the ambush. A shallow stream flows out of the cave mouth, which is screened by dense briar thickets. A narrow dry path leads into the cave on the right-hand side of the stream.
-The thicket in 2 is impenetrable from the west side of the stream.
+The thicket in **Área 2** is impenetrable from the west side of the stream.
 
 ### Developments
 
-The goblins in 2 are supposed to be keeping watch on this area, but they are not paying attention. (Goblins can be lazy that way.) However, if the characters make a lot of noise here—for example, loudly arguing about what to do next, setting up a camp, cutting down brush, and so on—the goblins in 2 notice and attack them through the thicket, which provides the goblins with three-quarters cover (see the rulebook for rules on cover).
+The goblins in **Área 2** are supposed to be keeping watch on this area, but they are not paying attention. (Goblins can be lazy that way.) However, if the characters make a lot of noise here—for example, loudly arguing about what to do next, setting up a camp, cutting down brush, and so on—the goblins in **Área 2** notice and attack them through the thicket, which provides the goblins with three-quarters cover (see the rulebook for rules on cover).
 
 
 ### 2. Goblin Blind
 
-When the characters cross to the east side of the stream, they can see around the screening thickets to 2. This is a goblin guard post, though the goblins here are bored and inattentive.
+When the characters cross to the east side of the stream, they can see around the screening thickets to **Área 2**. This is a goblin guard post, though the goblins here are bored and inattentive.
 > On the east side of the stream flowing from the cave mouth, a small area in the briar thickets has been hollowed out to form a lookout post or blind. Wooden planks flatten out the briars and provide room for guards to lie hidden and watch the area—including a pair of goblins lurking there right now!
-Two goblins are stationed here. If the goblins notice intruders in 1, they open fire with their bows, shooting through the thickets and probably catching the characters by surprise. If the goblins don't notice the adventurers in 1, they spot them when they splash across the stream, and neither side is surprised.
+Two goblins are stationed here. If the goblins notice intruders in **Área 1**, they open fire with their bows, shooting through the thickets and probably catching the characters by surprise. If the goblins don't notice the adventurers in **Área 1**, they spot them when they splash across the stream, and neither side is surprised.
 Characters moving carefully or scouting ahead might be able to surprise the goblin lookouts. Have each character who moves ahead make a Dexterity (Stealth) check contested by the goblins' passive Wisdom (Perception) score to avoid being surprised. See the rulebook for more information on ability check contests.
 
 ### Thickets
@@ -121,7 +121,7 @@ A character who tries to calm the animals can attempt a CD 15 Wisdom (Animal Han
 
 ### Fissure
 
-A narrow opening in the east wall leads to a natural chimney that climbs 30 feet to 8. At the base of the fissure is rubbish that's been discarded through the opening above. A character attempting to ascend or descend the chimney shaft must make a CD 10 Strength (Athletics) check. If the check succeeds, the character moves at half speed up or down the shaft, as desired. On a check result of 6-9, the character neither gains nor loses ground; on a result of 5 or less, the character falls and takes [[1d6]] bludgeoning damage per 10 feet fallen, landing prone at the base of the shaft.
+A narrow opening in the east wall leads to a natural chimney that climbs 30 feet to **Área 8**. At the base of the fissure is rubbish that's been discarded through the opening above. A character attempting to ascend or descend the chimney shaft must make a CD 10 Strength (Athletics) check. If the check succeeds, the character moves at half speed up or down the shaft, as desired. On a check result of 6-9, the character neither gains nor loses ground; on a result of 5 or less, the character falls and takes [[1d6]] bludgeoning damage per 10 feet fallen, landing prone at the base of the shaft.
 
 ### Developments
 
@@ -133,10 +133,10 @@ A goblin or bugbear can use its action to release one wolf from its chain.
 
 From this point on, characters without darkvision will need light to see their surroundings.
 > The main passage from the cave mouth climbs steeply upward, the stream plunging and splashing down its west side. In the shadows, a side passage leads west across the other side of the stream.
-Characters using light or darkvision to look farther up the passage spot the bridge at 5. Add:
+Characters using light or darkvision to look farther up the passage spot the bridge at **Área 5**. Add:
 > In the shadows of the ceiling to the north, you can just make out the dim shape of a rickety bridge of wood and rope crossing over the passage ahead of you. Another passage intersects this one, twenty feet above the floor.
-Any character who can see the bridge in 5 might also notice the goblin guarding the bridge. Doing so requires a Wisdom (Perception) check contested by the goblin's Dexterity (Stealth) check result.
-The goblin notices the characters if they carry any light or don't use stealth as they approach the bridge. The goblin does not attack. Instead, it attempts to sneak away to the east to inform its companions in 7 to release a flood (see the "Flood!" section of 5). The goblin moves undetected if its Dexterity (Stealth) check exceeds the passive Wisdom (Perception) score of any character who might notice its movements.
+Any character who can see the bridge in **Área 5** might also notice the goblin guarding the bridge. Doing so requires a Wisdom (Perception) check contested by the goblin's Dexterity (Stealth) check result.
+The goblin notices the characters if they carry any light or don't use stealth as they approach the bridge. The goblin does not attack. Instead, it attempts to sneak away to the east to inform its companions in **Área 7** to release a flood (see the "Flood!" section of **Área 5**). The goblin moves undetected if its Dexterity (Stealth) check exceeds the passive Wisdom (Perception) score of any character who might notice its movements.
 
 ### Western Passage
 
@@ -148,10 +148,10 @@ The ledge between the two escarpments is fragile. Any weight in excess of 100 po
 
 Where a high tunnel passes through the larger tunnel cavern below, the goblins have set up a bridge guard post.
 > The stream passage continues up beyond another set of uneven steps ahead, bending eastward as it goes. A waterfall sounds out from a larger cavern somewhere ahead of you.
-If the characters didn't spot the bridge while navigating 4, they spot it now. Add:
+If the characters didn't spot the bridge while navigating **Área 4**, they spot it now. Add:
 > A rickety bridge spans the passage, connecting two tunnels that are 20 feet above the stream.
 One goblin stands watch on the bridge. It is hiding, and characters can spot it by succeeding on a Wisdom (Perception) check contested by the goblin's Dexterity (Stealth) check. This guard is lazy and inattentive. If no characters are using light sources, each character can attempt a Dexterity (Stealth) check against the goblin's passive Wisdom (Perception) score to creep by without being noticed.
-If the goblin spots the adventurers, it signals the goblins in 7 to release a flood (see the "Flood!" section), then throws javelins down at the characters.
+If the goblin spots the adventurers, it signals the goblins in **Área 7** to release a flood (see the "Flood!" section), then throws javelins down at the characters.
 
 ### Bridge
 
@@ -160,10 +160,10 @@ The bridge has an Armor Class (AC) of 5 and 10 hit points. If the bridge is redu
 
 ### Flood!
 
-The large pools in 7 have collapsible walls that can be yanked out of place to release a surge of water down the main passage of the lair. In the round after the goblins in 7 are signaled by the lookout in 5, they start knocking away the supports. In the following round on the goblins' initiative count, a water surge pours from 7 down to 1.
+The large pools in **Área 7** have collapsible walls that can be yanked out of place to release a surge of water down the main passage of the lair. In the round after the goblins in **Área 7** are signaled by the lookout in **Área 5**, they start knocking away the supports. In the following round on the goblins' initiative count, a water surge pours from **Área 7** down to **Área 1**.
 > The passage is suddenly filled with a mighty roar, as a huge surge of rushing water pours down from above!
-The flood threatens all creatures in the tunnel. (Creatures on the bridge at 5 are out of danger, as are any characters successfully climbing the cavern walls.) Any creature within 10 feet of the disused passage at 4 or the steps leading up to 3 can attempt a CD 10 Dexterity saving throw to avoid being swept away. A creature that fails to get out of the way can attempt a CD 15 Strength saving throw to hold on. On a failed save, the character is knocked prone and washed down to 1, taking [[1d6]] bludgeoning damage along the way.
-The goblins in 7 can release a second flood by opening the second pool, but they don't do this unless the goblin on the bridge tells them to. The goblin on the bridge waits to see if the first flood got rid of all the intruders before calling for the second to be released.
+The flood threatens all creatures in the tunnel. (Creatures on the bridge at **Área 5** are out of danger, as are any characters successfully climbing the cavern walls.) Any creature within 10 feet of the disused passage at **Área 4** or the steps leading up to **Área 3** can attempt a CD 10 Dexterity saving throw to avoid being swept away. A creature that fails to get out of the way can attempt a CD 15 Strength saving throw to hold on. On a failed save, the character is knocked prone and washed down to **Área 1**, taking [[1d6]] bludgeoning damage along the way.
+The goblins in **Área 7** can release a second flood by opening the second pool, but they don't do this unless the goblin on the bridge tells them to. The goblin on the bridge waits to see if the first flood got rid of all the intruders before calling for the second to be released.
 
 
 ### 6. Goblin Den
@@ -173,7 +173,7 @@ The Cragmaw raiders stationed in the hideout use this area as a common room and 
 Six goblins inhabit this den, and one of them is a leader with 12 hit points. The five ordinary goblins tend the cooking fire in the lower (northern) part of the cave near the entrance passage, while the leader rests in the upper (southern) part of the cave.
 Sildar Hallwinter, a human warrior, is held prisoner in this chamber. He is securely bound on the southern ledge of the cavern. The goblins have been beating and tormenting him, so he is weak and at 1 hit point.
 The goblin leader, Yeemik, is second-in-command of the whole hideout. If he sees that the characters are getting the upper hand, he grabs Sildar and drags him over to the edge of the upper level. "Truce, or this human dies!" he shouts.
-Yeemik wants to oust Klarg and become the new boss. If the adventurers agree to parley, Yeemik tries to convince them to kill Klarg in 8, promising to release Sildar when they bring back the bugbear's head. Sildar groggily warns the characters that they shouldn't trust the goblin, and he's right. If the characters take the deal, Yeemik tries to force them to pay a rich ransom for Sildar even after they complete their part of the bargain.
+Yeemik wants to oust Klarg and become the new boss. If the adventurers agree to parley, Yeemik tries to convince them to kill Klarg in **Área 8**, promising to release Sildar when they bring back the bugbear's head. Sildar groggily warns the characters that they shouldn't trust the goblin, and he's right. If the characters take the deal, Yeemik tries to force them to pay a rich ransom for Sildar even after they complete their part of the bargain.
 If the characters refuse to parley, Yeemik shoves Sildar over the edge and continues with the fight. Sildar takes [[1d6]] bludgeoning damage from the fall, which is enough to drop him to 0 hit points. Quick-acting characters can try to stabilize him before he dies (see "Damage, Healing, and Dying" in the rulebook).
 
 ### Roleplaying Sildar
@@ -209,11 +209,11 @@ An NPC might join the party, if only for a short time. Here are some tips to hel
 
 If the goblins have drained either pool to flood the passage, adjust the following boxed text accordingly.
 > This cavern is half filled with two large pools of water. A narrow waterfall high in the eastern wall feeds the pool, which drains out the western end of the chamber to form the stream that flows out of the cave mouth below. Low fieldstone walls serve as dams holding the water in. A wide exit stands to the south, while two smaller passages lead west. The sound of the waterfall echoes through the cavern, making it difficult to hear.
-Three goblins guard this cave. If the goblin in 5 spotted the characters and warned the goblins here, they are ready for trouble. The noise of the waterfall means that the creatures in 8 can't hear any fighting that takes place here, and vice versa. Therefore, as soon as a fight breaks out here, one goblin flees to 8 to warn Klarg.
+Three goblins guard this cave. If the goblin in **Área 5** spotted the characters and warned the goblins here, they are ready for trouble. The noise of the waterfall means that the creatures in **Área 8** can't hear any fighting that takes place here, and vice versa. Therefore, as soon as a fight breaks out here, one goblin flees to **Área 8** to warn Klarg.
 
 ### Rock Dams
 
-The goblins built simple dams to control the flow of water through the heart of the complex. If the goblin sentry in 5 has called for the goblins here to release a flood, one or both of the pools are mostly empty and the stream is flowing unimpeded.
+The goblins built simple dams to control the flow of water through the heart of the complex. If the goblin sentry in **Área 5** has called for the goblins here to release a flood, one or both of the pools are mostly empty and the stream is flowing unimpeded.
 
 
 ### 8. Klarg's Cave
@@ -228,7 +228,7 @@ The hot coals in the central fire pit deal 1 fire damage to any creature that en
 
 ### Natural Chimney
 
-A niche in the western wall forms the top of a shaft that descends 30 feet to 3. See that area for information on climbing the natural chimney.
+A niche in the western wall forms the top of a shaft that descends 30 feet to **Área 3**. See that area for information on climbing the natural chimney.
 
 ### Supplies
 
@@ -236,9 +236,9 @@ The piles of sacks and crates can provide half cover to any creature fighting or
 
 ### Developments
 
-If Klarg is warned by the goblins in 7 that the hideout is under attack, he and his wolf hide behind stalagmites while the goblins take cover behind the piles of supplies, hoping to ambush the characters when they enter the cave.
-If Klarg and company are not warned about possible attackers, the characters have a good chance to surprise them. The easiest way for the characters to achieve this is to climb the chimney from 3, since Klarg does not expect an attack from that direction.
-If the wolf is killed, the bugbear attempts to climb down the chimney to 3 and flee the cave complex.
+If Klarg is warned by the goblins in **Área 7** that the hideout is under attack, he and his wolf hide behind stalagmites while the goblins take cover behind the piles of supplies, hoping to ambush the characters when they enter the cave.
+If Klarg and company are not warned about possible attackers, the characters have a good chance to surprise them. The easiest way for the characters to achieve this is to climb the chimney from **Área 3**, since Klarg does not expect an attack from that direction.
+If the wolf is killed, the bugbear attempts to climb down the chimney to **Área 3** and flee the cave complex.
 
 ### Treasure
 

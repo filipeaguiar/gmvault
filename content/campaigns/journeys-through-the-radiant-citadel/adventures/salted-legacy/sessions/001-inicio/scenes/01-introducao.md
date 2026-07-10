@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+
 compendium_refs:
 
 handouts:

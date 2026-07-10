@@ -1,5 +1,5 @@
 ---
-title: "The Spider's Web"
+title: "Wyvern Tor"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **The Spider's Web** importada automaticamente da campanha.
+Localidade **Wyvern Tor** importada automaticamente da campanha.

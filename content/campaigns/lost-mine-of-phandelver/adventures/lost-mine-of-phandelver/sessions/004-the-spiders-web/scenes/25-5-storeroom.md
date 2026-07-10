@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
 
 handouts:

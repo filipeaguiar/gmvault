@@ -8,14 +8,14 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
-  - "/compendium/monsters/giant-spider/"
   - "/compendium/monsters/doppelganger/"
+  - "/compendium/monsters/giant-spider/"
   - "/compendium/magic-items/spider-staff/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/nezznar-the-black-spider-art/"
@@ -35,7 +35,7 @@ If the room's occupants are not aware of the characters as they enter, add the f
 
 Nezznar the Black Spider is joined by four giant spiders that defend their master to the death. If they are expecting trouble, the spiders hide behind pillars, and Nezznar casts invisibility on himself and stands near the table. Make a Dexterity (Stealth) check for the spiders. When intruders appear, the spiders try to entangle them in webs before closing to melee range. Nezznar joins the fray on the round after the spiders attack.
 
-If the doppelganger from 18 retreated to this area, it assumes the guise of Nundro Rockseeker so that Nezznar can use the "dwarf" as leverage to force the party's surrender (although the drow won't actually harm the doppelganger). See the "Roleplaying Nezznar" section for more information on the drow villain.
+If the doppelganger from **Área 18** retreated to this area, it assumes the guise of Nundro Rockseeker so that Nezznar can use the "dwarf" as leverage to force the party's surrender (although the drow won't actually harm the doppelganger). See the "Roleplaying Nezznar" section for more information on the drow villain.
 
 
 ### Statue
@@ -58,13 +58,13 @@ Nezznar admits to being the Black Spider, and to using the Cragmaw goblins and t
 
 ### Developments
 
-The creatures in 18 can hear sounds of combat in this room. If they haven't already been dealt with, they arrive after 3 rounds and act immediately after Nezznar's giant spiders in the initiative count.
+The creatures in **Área 18** can hear sounds of combat in this room. If they haven't already been dealt with, they arrive after 3 rounds and act immediately after Nezznar's giant spiders in the initiative count.
 If the characters capture Nezznar and deliver him to the townmaster's hall in Phandalin, the drow is locked up until Sildar Hallwinter or another representative of the Lords' Alliance can escort him to Neverwinter to face justice and interrogation. However, unless the characters post guards outside Nezznar's cell, Halia Thornton (see page 17) breaks him out of jail, smuggles him out of Phandalin, and delivers him into the waiting arms of the Zhentarim. The Zhents want to learn everything the Black Spider knows about Wave Echo Cave. What happens to Nezznar at that point is up to you.
 
 
 ### Treasure
 
-Nezznar carries a potion of healing and a spider staff. In addition, the drow carries an iron key with a head shaped like an anvil. This key unlocks the door to 20.
+Nezznar carries a potion of healing and a spider staff. In addition, the drow carries an iron key with a head shaped like an anvil. This key unlocks the door to **Área 20**.
 Nezznar's exploration of Wave Echo Cave has yielded some treasure, which the drow keeps in the sack on the wooden table. The sack contains 190 ep, 130 gp, 15 pp, nine small gemstones (10 gp each), and a dwarven ale mug made of hammered electrum (100 gp).
 
 

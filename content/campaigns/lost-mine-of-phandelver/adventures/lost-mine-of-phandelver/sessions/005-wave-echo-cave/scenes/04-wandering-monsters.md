@@ -10,15 +10,15 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
-  - "/compendium/monsters/stirge/"
   - "/compendium/monsters/grick/"
-  - "/compendium/monsters/zombie/"
-  - "/compendium/monsters/ghoul/"
   - "/compendium/monsters/skeleton/"
   - "/compendium/monsters/ochre-jelly/"
   - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/zombie/"
+  - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/stirge/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
 ---

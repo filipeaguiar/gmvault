@@ -8,22 +8,22 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+
 compendium_refs:
-  - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/giant-sea-horse/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
+  - "/compendium/monsters/giant-sea-horse/"
+  - "/compendium/monsters/lizard/"
   - "/compendium/monsters/koi-prawn/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 
@@ -31,11 +31,11 @@ handouts:
 
 The Market Games take place inside three golden tents located in the Event Grounds, which are situated in the center of the Dyn Singh Night Market. Vendors sponsor events to advertise their wares and attract visitors to the market. The current sponsor of each tent decides how its interior is arranged. The following three events are now being hosted:
 
-Aroon Family Pepper Challenge. A test of endurance hosted by the Spicy Brothers.
+**Área Aroon Family Pepper Challenge.** A test of endurance hosted by the Spicy Brothers.
 
-Battle Prawn Challenge. A cooking competition hosted by Sid Squid of the Trusty Leek.
+**Área Battle Prawn Challenge.** A cooking competition hosted by Sid Squid of the Trusty Leek.
 
-Hide-and-Seek Challenge. A game hosted by Madam Kulp's Silk.
+**Área Hide-and-Seek Challenge.** A game hosted by Madam Kulp's Silk.
 
 
 ![Map 2.1: Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/011-map-21-dyn-singh-night-market.webp)
@@ -48,7 +48,7 @@ Hide-and-Seek Challenge. A game hosted by Madam Kulp's Silk.
 ### Participating in the Games
 
 Characters who wish to participate in the Market Games need only show up at an event tent and ask to compete. The Market Games run several times throughout the evening. The rules for the three Market Games appear in the sections that follow.
-Characters who win a Market Game gain 1 renown with the Dyn Singh Night Market's vendors (see the "Gaining Renown" section). As characters gain renown, the market's vendors share more information with them (see the "What Vendors Know" section). If a character participates in and loses all three Market Games, they still gain 1 renown, as locals respect their tenacity. If a character wins all three challenges, vendors are impressed and call them *reah*, which means "coals of the same fire."
+Characters who win a Market Game gain 1 renown with the Dyn Singh Night Market's vendors (see the "**Área Gaining Renown**" section). As characters gain renown, the market's vendors share more information with them (see the "**Área What Vendors Know**" section). If a character participates in and loses all three Market Games, they still gain 1 renown, as locals respect their tenacity. If a character wins all three challenges, vendors are impressed and call them *reah*, which means "coals of the same fire."
 
 
 ### Aroon Family Pepper Challenge
@@ -89,7 +89,7 @@ Vi offers color commentary during the event, encouraging the crowd to cheer part
 ### Ending the Challenge
 
 The challenge ends when every participant is disqualified or has eaten three peppers. Winners and losers alike are rewarded with big bowls of creamy yogurt. Any character who wins the challenge gains 1 renown with the Dyn Singh Night Market's vendors.
-After the challenge is completed, characters can ask Vi for information about the thefts (see the "What Vendors Know" section). Soon after the characters start questioning Vi or as they leave the tent, Kasem arrives with news regarding trouble in the market. Roll on the Market Mischief in the "Wynling Mischief" section to determine what has transpired.
+After the challenge is completed, characters can ask Vi for information about the thefts (see the "**Área What Vendors Know**" section). Soon after the characters start questioning Vi or as they leave the tent, Kasem arrives with news regarding trouble in the market. Roll on the Market Mischief in the "**Área Wynling Mischief**" section to determine what has transpired.
 
 
 ### Battle Prawn Challenge

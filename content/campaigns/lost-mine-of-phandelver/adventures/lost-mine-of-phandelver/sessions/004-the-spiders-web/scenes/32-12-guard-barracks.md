@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
   - "/compendium/monsters/hobgoblin/"
 handouts:
@@ -23,7 +23,7 @@ The creatures here keep watch from the arrow slit, so any characters creeping ar
 
 > A stone brazier full of coals glows in the middle of this small barracks. Four straw pallets are lined up along the east wall. The wall to the south has collapsed, but a barred wooden door in that direction is still clear. A curtain hangs in an archway to the north.
 
-Two hobgoblins stand guard in this room. They are smart, tough, and loyal to King Grol. At the start of combat, one hobgoblin runs to warn the king in 14, then returns 2 rounds later to rejoin the fray.
+Two hobgoblins stand guard in this room. They are smart, tough, and loyal to King Grol. At the start of combat, one hobgoblin runs to warn the king in **Área 14**, then returns 2 rounds later to rejoin the fray.
 
 This area was once a parlor for the castle's human occupants, though its rotted furnishings were broken up by the Cragmaws and used for firewood.
 

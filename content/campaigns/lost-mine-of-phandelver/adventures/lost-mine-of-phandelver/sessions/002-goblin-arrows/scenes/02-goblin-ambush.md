@@ -11,7 +11,7 @@ npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
   - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
+  - "/campaigns/lost-mine-of-phandelver/locations/goblin-ambush/"
 compendium_refs:
   - "/compendium/monsters/goblin/"
 handouts:

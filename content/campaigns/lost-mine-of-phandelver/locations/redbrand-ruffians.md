@@ -1,5 +1,5 @@
 ---
-title: "Phandalin"
+title: "Redbrand Ruffians"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Phandalin** importada automaticamente da campanha.
+Localidade **Redbrand Ruffians** importada automaticamente da campanha.

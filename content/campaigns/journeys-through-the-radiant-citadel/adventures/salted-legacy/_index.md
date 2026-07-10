@@ -15,7 +15,7 @@ npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/wynling/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"

@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
   - "/compendium/monsters/spectator/"
   - "/compendium/magic-items/lightbringer/"
@@ -28,7 +28,7 @@ Here is where the wizards allied with the dwarves and gnomes of the Phandelver's
 
 The monster that guards this room is a spectator. One of the human wizards who worked in the Forge of Spells summoned the creature to guard the magic items created and stored here. When the mine was sacked, the orcs disturbed the delicate magic in the area, unhinging the spectator's grip on reality. It has become deranged and believes that the mine is still in use, ignoring all evidence to the contrary.
 
-The wraith (14) wants to drive off or kill the spectator, but so far, the creature has easily handled the assaults of Mormesk's zombies and ghouls while seeing nothing strange about undead roaming the mine. If the party attempts to remove anything from this area, the spectator attacks. If the spectator is blinded somehow, it disappears back to its home plane, convinced that it can no longer perform the task for which it was summoned.
+The wraith (**Área 14**) wants to drive off or kill the spectator, but so far, the creature has easily handled the assaults of Mormesk's zombies and ghouls while seeing nothing strange about undead roaming the mine. If the party attempts to remove anything from this area, the spectator attacks. If the spectator is blinded somehow, it disappears back to its home plane, convinced that it can no longer perform the task for which it was summoned.
 
 With a successful CD 15 Charisma (Deception) check, a character can trick the spectator into thinking one or more party members are wizards or miners who work for the owners of Wave Echo Cave, sent to terminate the spectator's employment. If the deception succeeds, the spectator believes it is released from its obligations, and it disappears and returns to its home plane.
 

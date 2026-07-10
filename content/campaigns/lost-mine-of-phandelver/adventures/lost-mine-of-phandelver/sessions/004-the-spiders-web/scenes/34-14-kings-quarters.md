@@ -10,16 +10,16 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
+  - "/compendium/monsters/doppelganger/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/wolf/"
   - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/doppelganger/"
 handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
-  - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -52,7 +52,7 @@ Near the southwest corner of the room is Gundren Rockseeker, a dwarf commoner. H
 
 ### Developments
 
-If Grol is killed, Vyerith tries to kill Gundren and flee with the map, heading toward 11 and escaping through the concealed canvas door. If cornered, the doppelganger fights to the death rather than allow itself to be captured.
+If Grol is killed, Vyerith tries to kill Gundren and flee with the map, heading toward **Área 11** and escaping through the concealed canvas door. If cornered, the doppelganger fights to the death rather than allow itself to be captured.
 If Gundren is revived, he thanks the party for coming to his rescue but won't leave Cragmaw Castle without his map. Unfortunately, he doesn't know where King Grol has hidden it (see the "Treasure" section).
 
 

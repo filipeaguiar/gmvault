@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/shrine-of-luck/"
 compendium_refs:
 
 handouts:

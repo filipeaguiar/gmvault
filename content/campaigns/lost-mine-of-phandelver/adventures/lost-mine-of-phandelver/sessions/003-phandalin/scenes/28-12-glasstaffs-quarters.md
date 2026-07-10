@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/redbrand-hideout/"
 compendium_refs:
   - "/compendium/monsters/evil-mage/"
   - "/compendium/magic-items/staff-of-defense/"
@@ -20,7 +20,7 @@ handouts:
 
 ### Descrição e Elementos Importantes
 
-If the characters approach this room through the secret passage from 7, they can surprise the leader of the Redbrands—Iarno "Glasstaff" Albrek. Otherwise, his rat familiar warns him of any who approach through 11, and he flees before the characters arrive.
+If the characters approach this room through the secret passage from **Área 7**, they can surprise the leader of the Redbrands—Iarno "Glasstaff" Albrek. Otherwise, his rat familiar warns him of any who approach through **Área 11**, and he flees before the characters arrive.
 
 > The walls of this bedchamber are covered with drapes of scarlet cloth. The furnishings include a small writing desk with matching chair, a comfortable-looking bed, and a wooden chest at the foot of the bed.
 
@@ -28,9 +28,9 @@ If Iarno is surprised, add the following paragraph:
 
 > Sitting at the desk is a short, dark-bearded human male in robes, studying a tome. He wears a princely mantle of ermine. A beautiful glass staff leans against his chair, within easy reach.
 
-If the rat in 11 warns him that trouble is approaching, Iarno the evil mage grabs his staff of defense and the scrolls in his chest (see the "Treasure" section), and flees through the secret door in the northeast corner of the room. In his haste, Iarno leaves behind a letter from the Black Spider (see the "Developments" section) and neglects to make sure the secret door is closed all the way. Characters gain advantage on ability checks made to find the slightly ajar secret door (see "Advantage and Disadvantage" in the rulebook). For more information on secret doors, see the "General Features" section (page 20).
+If the rat in **Área 11** warns him that trouble is approaching, Iarno the evil mage grabs his staff of defense and the scrolls in his chest (see the "Treasure" section), and flees through the secret door in the northeast corner of the room. In his haste, Iarno leaves behind a letter from the Black Spider (see the "Developments" section) and neglects to make sure the secret door is closed all the way. Characters gain advantage on ability checks made to find the slightly ajar secret door (see "Advantage and Disadvantage" in the rulebook). For more information on secret doors, see the "General Features" section (page 20).
 
-If he manages to escape, Iarno flees to 1 (through areas 7 and 8) and grabs the satchel hidden in the cistern there. If the nothic is still alive in 8, Iarno instructs it to waylay any pursuers. If the characters catch up to him, Iarno quaffs the potion of invisibility in the satchel and flees the hideout. At your discretion, he could reappear later in the adventure.
+If he manages to escape, Iarno flees to **Área 1** (through areas 7 and 8) and grabs the satchel hidden in the cistern there. If the nothic is still alive in **Área 8**, Iarno instructs it to waylay any pursuers. If the characters catch up to him, Iarno quaffs the potion of invisibility in the satchel and flees the hideout. At your discretion, he could reappear later in the adventure.
 
 
 ### Roleplaying Iarno

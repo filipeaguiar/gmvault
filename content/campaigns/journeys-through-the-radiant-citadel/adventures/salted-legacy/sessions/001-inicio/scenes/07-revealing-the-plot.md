@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+
 compendium_refs:
   - "/compendium/monsters/noble/"
   - "/compendium/monsters/wynling/"
@@ -50,15 +50,15 @@ The wynlings have no loyalty to Kasem, but they also don't understand why anythi
 
 ### Confronting Kasem
 
-If characters challenge Kasem with details they learned about him from local vendors, he laughs them off, explaining the market is full of gossip. A character who succeeds on a CD 10 Wisdom (Insight) check realizes Kasem is hiding something. If the characters confront Kasem with multiple accounts or pieces of evidence, they can coax a confession from him (see the following section). If characters take a more hostile approach, Kasem defends himself. Kasem has the statistics of a noble and calls out to three wynlings (presented at the end of this adventure), who appear and aid him.
+If characters challenge Kasem with details they learned about him from local vendors, he laughs them off, explaining the market is full of gossip. A character who succeeds on a CD 10 Wisdom (Insight) check realizes Kasem is hiding something. If the characters confront Kasem with multiple accounts or pieces of evidence, they can coax a confession from him (see the following section). If characters take a more hostile approach, Kasem defends himself. Kasem has the statistics of a noble and calls out to three wynlings (presented at the **Área end of this adventure**), who appear and aid him.
 
 ### Convincing Kasem to Confess
 
-The characters can convince Kasem to confess by presenting all three of the following rumors to Kasem—or presenting two and succeeding on a CD 12 Charisma (Intimidation or Persuasion) check; if the characters do so, Kasem then confesses to everything in the "Kasem's Plan" section:
+The characters can convince Kasem to confess by presenting all three of the following rumors to Kasem—or presenting two and succeeding on a CD 12 Charisma (Intimidation or Persuasion) check; if the characters do so, Kasem then confesses to everything in the "**Área Kasem's Plan**" section:
 
 
 ### Rivals Explode
 
-If the party fails at the Market Games or reaches dead ends in its investigations, the Tyenmo-Xungoon rivalry comes to a head when Lamai and Kusa get into a public scrap at one of their stands. While the shop vendors fight, any character can make a CD 12 Wisdom (Insight) check to notice Kasem watching with a smile. Not realizing he's being watched, Kasem offers a persimmon to something unseen on his shoulder and the fruit rapidly vanishes. Characters who confront Kasem with what they saw and succeed on a CD 14 Charisma (Intimidation) check convince him to confess to everything in the "Kasem's Plan" section.
+If the party fails at the Market Games or reaches dead ends in its investigations, the Tyenmo-Xungoon rivalry comes to a head when Lamai and Kusa get into a public scrap at one of their stands. While the shop vendors fight, any character can make a CD 12 Wisdom (Insight) check to notice Kasem watching with a smile. Not realizing he's being watched, Kasem offers a persimmon to something unseen on his shoulder and the fruit rapidly vanishes. Characters who confront Kasem with what they saw and succeed on a CD 14 Charisma (Intimidation) check convince him to confess to everything in the "**Área Kasem's Plan**" section.
 
 

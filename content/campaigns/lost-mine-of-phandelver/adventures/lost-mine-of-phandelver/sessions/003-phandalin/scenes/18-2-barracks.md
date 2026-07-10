@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/redbrand-hideout/"
 compendium_refs:
   - "/compendium/monsters/redbrand-ruffian/"
 handouts:
@@ -23,9 +23,9 @@ Most of the Redbrands' human members have lodgings in Phandalin. This barracks i
 
 > This appears to be a storeroom pressed into service as living quarters. Two double bunks stand against the wall near the door, while barrels and crates fill the southern half of the chamber.
 
-Three Redbrand ruffians are resting in this room. If they hear a good deal of noise in 1 (including loud voices or barrels being rolled around), they prepare themselves for a fight and try to surprise intruders.
+Three Redbrand ruffians are resting in this room. If they hear a good deal of noise in **Área 1** (including loud voices or barrels being rolled around), they prepare themselves for a fight and try to surprise intruders.
 
-The barrels here contain similar provisions to those in 1.
+The barrels here contain similar provisions to those in **Área 1**.
 
 
 ### Treasure

@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/ruins-of-thundertree/"
 compendium_refs:
   - "/compendium/monsters/cultist/"
 handouts:
@@ -19,7 +19,7 @@ handouts:
 
 ### Descrição e Elementos Importantes
 
-A group calling itself the Cult of the Dragon seeks to forge alliances with powerful dragons of the Sword Coast. Toward that end, four cultists recently tracked a green dragon to Thundertree (see 7) and are waiting for the right moment to approach the dragon and broker an alliance. They have been spying on the dragon from afar, trying to gauge its demeanor and its needs.
+A group calling itself the Cult of the Dragon seeks to forge alliances with powerful dragons of the Sword Coast. Toward that end, four cultists recently tracked a green dragon to Thundertree (see **Área 7**) and are waiting for the right moment to approach the dragon and broker an alliance. They have been spying on the dragon from afar, trying to gauge its demeanor and its needs.
 
 > This small farmhouse appears to be just another empty home at first glance. However, all the doors are shut and windows shuttered.
 
@@ -32,7 +32,7 @@ The interior of the house is dusty and strung with cobwebs. The only furnishings
 
 ### Roleplaying the Cultists
 
-The cultists are not interested in fighting anyone and prefer to be left alone. The leader of the group is an evil and ambitious young man named Favric, who hopes to rise through the ranks quickly by earning the allegiance of the green dragon in 7. His fellow cultists lack Favric's ambition and flee if he is captured or killed.
+The cultists are not interested in fighting anyone and prefer to be left alone. The leader of the group is an evil and ambitious young man named Favric, who hopes to rise through the ranks quickly by earning the allegiance of the green dragon in **Área 7**. His fellow cultists lack Favric's ambition and flee if he is captured or killed.
 If the characters talk to the cultists, Favric explains that they have come to treat with the green dragon (whose name he doesn't know). If the characters express a similar desire, Favric suggests an alliance. He really plans to offer the characters to the dragon as part of his tribute, and if a fight ensues, the cultists side with the dragon.
 
 

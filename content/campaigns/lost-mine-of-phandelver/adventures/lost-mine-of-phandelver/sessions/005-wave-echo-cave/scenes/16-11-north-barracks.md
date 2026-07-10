@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
   - "/compendium/monsters/bugbear/"
 handouts:
@@ -27,9 +27,9 @@ If the party enters from the west, add:
 
 > Across the room is another door, this one blocked by a barricade made from the remains of a wooden table.
 
-Five bugbears reside in this chamber. They are loyal minions of Nezznar. This room marks the front line in the Black Spider's assault on Wave Echo Cave, and the bugbears are here to prevent ghouls, zombies, or other undead from troubling their master in his lair (19).
+Five bugbears reside in this chamber. They are loyal minions of Nezznar. This room marks the front line in the Black Spider's assault on Wave Echo Cave, and the bugbears are here to prevent ghouls, zombies, or other undead from troubling their master in his lair (**Área 19**).
 
-Like 6, this was formerly a barracks for miners. Nezznar's bugbears removed the corpses they found here and built the barricade.
+Like **Área 6**, this was formerly a barracks for miners. Nezznar's bugbears removed the corpses they found here and built the barricade.
 
 
 ### Treasure

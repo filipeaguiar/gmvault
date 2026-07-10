@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
 
 handouts:
@@ -28,6 +28,6 @@ The iron door is locked. It can be opened with thieves' tools and a successful C
 
 ### Arrow Slits
 
-Any character who pauses and listens near the arrow slits hears, from 7, an occasional clatter of crockery and angry goblins arguing over whether the dishes need cleaning. The goblins aren't keeping watch from these arrow slits. However, if the characters make a lot of noise or commotion, such as knocking down the door, the goblins come and look. If they see intruders outside, they shout an alarm.
+Any character who pauses and listens near the arrow slits hears, from **Área 7**, an occasional clatter of crockery and angry goblins arguing over whether the dishes need cleaning. The goblins aren't keeping watch from these arrow slits. However, if the characters make a lot of noise or commotion, such as knocking down the door, the goblins come and look. If they see intruders outside, they shout an alarm.
 
 

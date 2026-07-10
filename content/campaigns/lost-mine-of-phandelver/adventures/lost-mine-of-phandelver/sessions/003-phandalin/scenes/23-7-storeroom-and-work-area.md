@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/redbrand-hideout/"
 compendium_refs:
 
 handouts:
@@ -24,7 +24,7 @@ In this chamber, the Redbrands take stock of their stolen wares, either shipping
 > This area is the north end of a large natural cavern, but it has been finished with dressed stone block walls and a flagstone floor. Several barrels are stored against the walls here, along with a number of empty crates, straw for packing, hammers, pry bars, and nails.
 > The cavern continues for some distance to the south. You can make out several passages that open up off the larger cavern, and what looks like a deep pit or crevasse in the floor.
 
-This room contains two secret doors, one leading to 6 and the other to 12. See the "General Features" section (link below) for more information on secret doors.
+This room contains two secret doors, one leading to **Área 6** and the other to **Área 12**. See the "General Features" section (link below) for more information on secret doors.
 
 
 ### Treasure

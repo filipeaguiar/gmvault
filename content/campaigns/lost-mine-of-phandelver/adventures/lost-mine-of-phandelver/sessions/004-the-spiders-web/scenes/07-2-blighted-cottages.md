@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/ruins-of-thundertree/"
 compendium_refs:
   - "/compendium/monsters/twig-blight/"
 handouts:
@@ -25,7 +25,7 @@ Wind and weather have done their work here, and little remains of these houses o
 
 The overgrowth conceals a deadly threat-six twig blights lurking among the ordinary foliage. Spotting them requires a successful Wisdom (Perception) check challenged by the blights' Dexterity (Stealth) check.
 
-These plant monsters are hungry and fight until destroyed. One round after they attack, the twig blights in 1 join the fray.
+These plant monsters are hungry and fight until destroyed. One round after they attack, the twig blights in **Área 1** join the fray.
 
 
 ### Treasure

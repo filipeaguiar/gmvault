@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/redbrand-hideout/"
 compendium_refs:
 
 handouts:
@@ -27,7 +27,7 @@ When the characters open the door, read the following:
 
 This room appears to be a large storage cellar, exactly the sort of thing one might expect to find beneath an old manor. The Redbrands want to keep their base of operations hidden, so other than the barrels filled with fresh provisions, nothing in this room gives away their presence.
 
-The barrels contain salted pork and beef, flour, sugar, apples, and ale. Moving barrels around to thoroughly search them is a noisy activity that attracts the attention of the Redbrands in 2.
+The barrels contain salted pork and beef, flour, sugar, apples, and ale. Moving barrels around to thoroughly search them is a noisy activity that attracts the attention of the Redbrands in **Área 2**.
 
 
 ### Cistern
@@ -44,7 +44,7 @@ A secret door is located in the southwest corner of the room. See the "General F
 
 ### Developments
 
-No monsters or villains are found in this area, but the ruffians in 2 take notice if the characters make a lot of noise here. They creep into the room, gaining surprise if the characters don't hear them (see "Surprise" in the rulebook). If the ruffians fight in this area and two are defeated, the last ruffian might reveal the secret door by fleeing in that direction.
+No monsters or villains are found in this area, but the ruffians in **Área 2** take notice if the characters make a lot of noise here. They creep into the room, gaining surprise if the characters don't hear them (see "Surprise" in the rulebook). If the ruffians fight in this area and two are defeated, the last ruffian might reveal the secret door by fleeing in that direction.
 
 
 ### Treasure

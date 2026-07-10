@@ -10,10 +10,10 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/appendix-a-magic-items/"
+
 compendium_refs:
-  - "/compendium/magic-items/staff-of-defense/"
   - "/compendium/magic-items/spider-staff/"
+  - "/compendium/magic-items/staff-of-defense/"
 handouts:
 
 ---

@@ -10,10 +10,10 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
-  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/doppelganger/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
 ---
@@ -34,7 +34,7 @@ The rift is 20 feet deep. Climbing up or down without using a rope requires a su
 
 ### Developments
 
-If two or more bugbears are killed, the doppelganger tries to retreat to 19 to warn Nezznar.
+If two or more bugbears are killed, the doppelganger tries to retreat to **Área 19** to warn Nezznar.
 
 
 ### Treasure

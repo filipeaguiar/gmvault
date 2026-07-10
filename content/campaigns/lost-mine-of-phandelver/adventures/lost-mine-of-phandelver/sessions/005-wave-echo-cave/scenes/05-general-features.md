@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
 
 handouts:
@@ -19,7 +19,7 @@ handouts:
 
 ### Descrição e Elementos Importantes
 
-The mine is cold, damp, and surprisingly drafty. A noticeable breeze blows through many of its passages, flowing from 1 toward 16.
+The mine is cold, damp, and surprisingly drafty. A noticeable breeze blows through many of its passages, flowing from **Área 1** toward **Área 16**.
 
 
 ### Ceilings

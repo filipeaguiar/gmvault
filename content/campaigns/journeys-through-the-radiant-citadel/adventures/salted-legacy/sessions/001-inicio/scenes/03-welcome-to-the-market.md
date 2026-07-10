@@ -8,24 +8,24 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+
 compendium_refs:
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
   - "/compendium/monsters/wynling/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 
@@ -128,7 +128,7 @@ Several weeks ago, Vi told his brother he's getting married and moving to a dist
 
 ### Kasem's Tour
 
-Upon meeting the characters, Kasem laments that the families can't get along. He encourages the characters not to ruin their night embroiled in politics and offers to show them around the market. If the characters accept, the tour lasts an hour, during which Kasem points out the stalls detailed at the start of the "Welcome to the Market" section. He tells the characters about the Market Games in the central plaza, describing them as a vapid tradition created to provide cheap thrills.
+Upon meeting the characters, Kasem laments that the families can't get along. He encourages the characters not to ruin their night embroiled in politics and offers to show them around the market. If the characters accept, the tour lasts an hour, during which Kasem points out the stalls detailed at the start of the "**Área Welcome to the Market**" section. He tells the characters about the Market Games in the central plaza, describing them as a vapid tradition created to provide cheap thrills.
 Kasem encourages the characters to enjoy their evening, avoid the Market Games, and stay away from vendors who give the market a bad name. Any character who succeeds on a CD 14 Wisdom (Insight) check realizes Kasem is trying to keep them from getting involved in market politics. If confronted about this, Kasem insists he just wants them to have a delightful time at the market and departs soon after.
 
 

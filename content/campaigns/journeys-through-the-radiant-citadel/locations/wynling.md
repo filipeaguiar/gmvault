@@ -1,5 +1,5 @@
 ---
-title: "Salted Legacy"
+title: "Wynling"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Salted Legacy** importada automaticamente da campanha.
+Localidade **Wynling** importada automaticamente da campanha.

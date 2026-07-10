@@ -92,7 +92,7 @@ def extract_fluff_images(fluff):
                     images.append(path)
     return images
 
-def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
+def parse_5etools_tag(tag_name, inner_text, campaign_slug, target_slug, ctx):
     args = inner_text.split('|')
     default_val = args[0]
     
@@ -174,7 +174,8 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
         return display_name
         
     elif tag_name == "area":
-        return default_val
+        # Formata bonito como Área X para o mestre no texto
+        return f"**Área {default_val}**"
         
     elif tag_name == "dc":
         return f"CD {default_val}"
@@ -214,7 +215,7 @@ def clean_5etools_tags(text, campaign_slug, target_slug, ctx):
     def tag_repl(match):
         tag_name = match.group(1)
         inner_text = match.group(2)
-        return parse_5etools_tag(tag_name, inner_text, target_slug, ctx)
+        return parse_5etools_tag(tag_name, inner_text, campaign_slug, target_slug, ctx)
         
     cleaned = re.sub(r'\{@(\w+) ([^\}]+)\}', tag_repl, text)
     cleaned = format_dice_rolls(cleaned)
@@ -730,6 +731,28 @@ Localidade **{loc_name}** importada automaticamente da campanha.
 """)
     print(f"    [Localidade] Criado stub de Localidade: {loc_name}")
 
+LORE_BLACKLIST = [
+    "introducao", "introduction", "whats next", "what's next?", "credits", "creditos",
+    "important npcs", "npcs importantes", "encounters", "encontros", "town description",
+    "welcome", "appendix", "apendice", "overview", "running the adventure", "playtesters",
+    "background", "character level", "conclusion", "experience point awards", "general features",
+    "item descriptions", "returning war band", "using a magic item", "wandering monsters",
+    "adventure hook", "the forgotten realms", "gazetteer", "market investigations",
+    "market games", "what vendors know", "revealing the plot", "story overview",
+    "using this book", "character creation", "pregenerated characters", "about the adventure",
+    "adventure playtesters", "rules of play", "map"
+]
+
+def is_lore_or_meta(title):
+    t_clean = slugify(title).replace("-", " ")
+    for black in LORE_BLACKLIST:
+        if black in t_clean:
+            return True
+    return False
+
+def is_numbered_room(title):
+    return bool(re.match(r'^\d+[\.\s-]', title.strip())) or title.strip().isdigit()
+
 def create_directory_structure(campaign_slug):
     paths = [
         f"content/campaigns/{campaign_slug}/adventures",
@@ -1027,14 +1050,17 @@ def main():
         all_locations = set()
         all_handouts = set()
             
+        current_loc_slug = None
+        current_loc_name = None
+
         for c_idx, chap in enumerate(chapters):
             chap_title = chap.get("name")
             session_slug = f"{c_idx+1:03d}-{slugify(chap_title)}"
             session_title = f"Sessão {c_idx+1} - {chap_title}"
             
-            loc_slug = slugify(chap_title)
-            write_location_stub(campaign_slug, loc_slug, chap_title)
-            all_locations.add(f"/campaigns/{campaign_slug}/locations/{loc_slug}/")
+            # Reset da localidade ativa para o novo capítulo
+            current_loc_slug = None
+            current_loc_name = None
             
             sess_dir, scenes_dir = create_session_structure(adv_dir, session_slug, session_title)
                 
@@ -1085,7 +1111,21 @@ def main():
                 for i_ref in scene_spec_items:
                     scene_monsters.append(i_ref)
                     
-                scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
+                scene_locations = []
+                if not is_lore_or_meta(s_title):
+                    if is_numbered_room(s_title):
+                        # Vincula à masmorra/localidade principal ativa
+                        if current_loc_slug:
+                            loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
+                            scene_locations.append(loc_ref)
+                    else:
+                        # É uma localidade principal nomeada
+                        current_loc_slug = slugify(s_title)
+                        current_loc_name = s_title
+                        write_location_stub(campaign_slug, current_loc_slug, current_loc_name)
+                        loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
+                        scene_locations.append(loc_ref)
+                        all_locations.add(loc_ref)
                 
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
@@ -1156,9 +1196,9 @@ handouts:
             
             adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, chap_title)
             
-            loc_slug = adv_slug
-            write_location_stub(campaign_slug, loc_slug, chap_title)
-            adventure_locations = {f"/campaigns/{campaign_slug}/locations/{loc_slug}/"}
+            adventure_locations = set()
+            current_loc_slug = None
+            current_loc_name = None
             adventure_npcs = set()
             adventure_monsters = set()
             adventure_handouts = set()
@@ -1215,7 +1255,21 @@ handouts:
                 for i_ref in scene_spec_items:
                     scene_monsters.append(i_ref)
                     
-                scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
+                scene_locations = []
+                if not is_lore_or_meta(s_title):
+                    if is_numbered_room(s_title):
+                        # Vincula à masmorra/localidade principal ativa
+                        if current_loc_slug:
+                            loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
+                            scene_locations.append(loc_ref)
+                    else:
+                        # É uma localidade principal nomeada
+                        current_loc_slug = slugify(s_title)
+                        current_loc_name = s_title
+                        write_location_stub(campaign_slug, current_loc_slug, current_loc_name)
+                        loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
+                        scene_locations.append(loc_ref)
+                        adventure_locations.add(loc_ref)
                 
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])

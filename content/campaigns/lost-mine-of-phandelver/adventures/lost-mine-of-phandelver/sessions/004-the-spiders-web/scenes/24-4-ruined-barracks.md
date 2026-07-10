@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
   - "/compendium/monsters/goblin/"
 handouts:
@@ -28,7 +28,7 @@ Three goblins bunk here. Though the rubble appears dangerous, the tower is stabl
 
 ### Developments
 
-Any loud noises here attract the attention of the goblins in 7. One goblin comes to investigate the disturbance. If it doesn't return, or if it spots trouble and sounds the alarm, the others investigate.
+Any loud noises here attract the attention of the goblins in **Área 7**. One goblin comes to investigate the disturbance. If it doesn't return, or if it spots trouble and sounds the alarm, the others investigate.
 
 
 ### Awarding Experience Points

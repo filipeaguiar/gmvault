@@ -1,5 +1,5 @@
 ---
-title: "Goblin Arrows"
+title: "Conyberry and Agatha's Lair"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Goblin Arrows** importada automaticamente da campanha.
+Localidade **Conyberry and Agatha's Lair** importada automaticamente da campanha.

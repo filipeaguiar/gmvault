@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+
 compendium_refs:
 
 handouts:

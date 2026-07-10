@@ -1,5 +1,5 @@
 ---
-title: "Wave Echo Cave"
+title: "Shrine of Luck"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Wave Echo Cave** importada automaticamente da campanha.
+Localidade **Shrine of Luck** importada automaticamente da campanha.

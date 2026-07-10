@@ -1,5 +1,5 @@
 ---
-title: "Appendix A: Magic Items"
+title: "Ruins of Thundertree"
 params:
   kind: "location"
 draft: true
@@ -11,4 +11,4 @@ tags:
   - importado
 ---
 
-Localidade **Appendix A: Magic Items** importada automaticamente da campanha.
+Localidade **Ruins of Thundertree** importada automaticamente da campanha.

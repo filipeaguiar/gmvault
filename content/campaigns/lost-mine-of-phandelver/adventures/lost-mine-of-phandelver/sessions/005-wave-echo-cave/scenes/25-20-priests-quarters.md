@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
   - "/compendium/monsters/commoner/"
 handouts:
@@ -19,13 +19,13 @@ handouts:
 
 ### Descrição e Elementos Importantes
 
-The door to this room is locked, requiring thieves' tools and a successful CD 15 Dexterity check to open. Nezznar (19) carries the key.
+The door to this room is locked, requiring thieves' tools and a successful CD 15 Dexterity check to open. Nezznar (**Área 19**) carries the key.
 
-Unless the characters are being stealthy, any activity at the door attracts the attention of Nezznar and his allies in 19, prompting the drow to send his giant spiders to investigate.
+Unless the characters are being stealthy, any activity at the door attracts the attention of Nezznar and his allies in **Área 19**, prompting the drow to send his giant spiders to investigate.
 
 > Dusty draperies adorn the walls of this room, which also contains a bed and brazier. A badly disheveled dwarf lies bound and unconscious on the cold stone floor.
 
-This room formerly belonged to the priest in charge of Dumathoin's temple (19), but Nezznar has appropriated it for use as a cell. The figure lying on the floor is Nundro, a dwarf commoner and the youngest of the three Rockseeker brothers. Nezznar spared him because he thought the dwarf might know more about the mine than he admitted. The drow has interrogated Nundro harshly once or twice a day ever since capturing him.
+This room formerly belonged to the priest in charge of Dumathoin's temple (**Área 19**), but Nezznar has appropriated it for use as a cell. The figure lying on the floor is Nundro, a dwarf commoner and the youngest of the three Rockseeker brothers. Nezznar spared him because he thought the dwarf might know more about the mine than he admitted. The drow has interrogated Nundro harshly once or twice a day ever since capturing him.
 
 
 ### Developments

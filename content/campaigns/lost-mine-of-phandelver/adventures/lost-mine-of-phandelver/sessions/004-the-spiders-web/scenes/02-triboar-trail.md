@@ -10,16 +10,16 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/triboar-trail/"
 compendium_refs:
-  - "/compendium/monsters/stirge/"
-  - "/compendium/monsters/owlbear/"
   - "/compendium/monsters/orc/"
-  - "/compendium/monsters/ogre/"
   - "/compendium/monsters/ghoul/"
-  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/owlbear/"
+  - "/compendium/monsters/ogre/"
   - "/compendium/monsters/goblin/"
   - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/stirge/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/owlbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"

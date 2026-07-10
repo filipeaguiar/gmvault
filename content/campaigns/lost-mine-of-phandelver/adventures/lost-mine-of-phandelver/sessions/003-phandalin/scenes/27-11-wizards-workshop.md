@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/redbrand-hideout/"
 compendium_refs:
   - "/compendium/magic-items/lightbringer/"
 handouts:
@@ -37,7 +37,7 @@ Among the books is a tome written in Dwarvish. The journal of an adventurer name
 
 ### Developments
 
-Because Iarno and his rat familiar share a telepathic bond, the mage (in 12) knows the characters are coming and has time to prepare for them.
+Because Iarno and his rat familiar share a telepathic bond, the mage (in **Área 12**) knows the characters are coming and has time to prepare for them.
 
 
 ### Treasure

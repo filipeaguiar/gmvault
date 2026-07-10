@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/mormesk-the-wraith/"
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+
 compendium_refs:
 
 handouts:
@@ -29,14 +29,14 @@ Mormesk was a powerful mage until he met his end in the spell battle at the clim
 
 Mormesk leads the undead that haunt Wave Echo Cave. The wraith spends his time here because the treasure he had amassed in life is in the scorched chest (see the "Treasure" section). No longer corporeal, he cannot touch or possess the wealth he enjoyed in life.
 
-This building served as a guesthouse for visiting wizards working in the Forge of Spells (15), most of whom were humans from nearby cities. The furnishings are all human proportioned.
+This building served as a guesthouse for visiting wizards working in the Forge of Spells (**Área 15**), most of whom were humans from nearby cities. The furnishings are all human proportioned.
 
 
 ### Roleplaying Mormesk
 
 Mormesk speaks in grave whispers. When the wraith first rises up from the floor, it says, "Your presence is offensive to me, your life forfeit. My treasures are mine alone, not yours to plunder!" If the characters make no attempt to reason with the wraith, it attacks.
 If the characters try to reason with the wraith, it listens to what they have to say, provided they have not harmed it in any way or seized any of its property. The wraith is irrevocably evil, so the only way the characters can stay its spectral hand is to offer it something a former wizard would consider valuable in exchange for their lives. Mormesk values magic items (particularly scrolls), spellbooks, and arcane knowledge. Whatever the gift, a character must succeed on a CD 10 Charisma (Persuasion) check to convince the wraith of its value.
-Regardless of what the characters offer it, the wraith won't relinquish the wooden pipe in the scorched chest. It will, however, part with the coins and gems if the characters agree to kill the spectator in the Forge of Spells. (The wraith doesn't explain what a spectator is. It merely points toward 15.) Once it receives its gift, the wraith allows characters to peruse its books and keep the secret map in one of them (see the "Treasure" section).
+Regardless of what the characters offer it, the wraith won't relinquish the wooden pipe in the scorched chest. It will, however, part with the coins and gems if the characters agree to kill the spectator in the Forge of Spells. (The wraith doesn't explain what a spectator is. It merely points toward **Área 15**.) Once it receives its gift, the wraith allows characters to peruse its books and keep the secret map in one of them (see the "Treasure" section).
 
 
 ### Treasure

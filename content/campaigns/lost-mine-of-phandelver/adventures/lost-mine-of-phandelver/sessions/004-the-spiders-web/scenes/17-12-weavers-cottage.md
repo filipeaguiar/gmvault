@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/ruins-of-thundertree/"
 compendium_refs:
   - "/compendium/monsters/twig-blight/"
 handouts:
@@ -28,7 +28,7 @@ Six twig blights lurk in the thicket south of this ruin. Allow each character to
 
 ### Developments
 
-Any loud noises here alert the cultists in 13, who quietly and cautiously investigate.
+Any loud noises here alert the cultists in **Área 13**, who quietly and cautiously investigate.
 
 
 ### Awarding Experience Points

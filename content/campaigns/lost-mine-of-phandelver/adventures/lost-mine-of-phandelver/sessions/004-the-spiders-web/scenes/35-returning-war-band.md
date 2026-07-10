@@ -10,11 +10,11 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+
 compendium_refs:
   - "/compendium/monsters/hobgoblin/"
-  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/wolf/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/hobgoblin-art/"
 ---

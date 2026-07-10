@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+  - "/campaigns/lost-mine-of-phandelver/locations/ruins-of-thundertree/"
 compendium_refs:
   - "/compendium/monsters/giant-spider/"
 handouts:
@@ -30,7 +30,7 @@ Two giant spiders hide on the inner walls in this ruined building, so they are n
 
 The webs fill two squares north of the doorway (and the square marked "6"). They are 3, and a creature trying to move through them must succeed on a CD 10 Strength (Athletics) check. On a failure, the creature is restrained in the webs (see the rulebook for the effects of being restrained). A snared creature can take an action each round to attempt to break free with a CD 12 Strength check, or it can try to cut its way free by using a light weapon that deals slashing damage. The webs have AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage (see "Damage Resistance and Vulnerability" in the rulebook for how vulnerability works).
 
-Going around the webs is difficult because of the thickets on the north side of the road. Going around the ruined building to the south leads to the twig blights in 5.
+Going around the webs is difficult because of the thickets on the north side of the road. Going around the ruined building to the south leads to the twig blights in **Área 5**.
 
 
 ### Treasure

@@ -10,7 +10,7 @@ summary: "Cena operacional para conduzir na sessão."
 npcs:
 
 locations:
-  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+  - "/campaigns/lost-mine-of-phandelver/locations/lionshield-coster/"
 compendium_refs:
 
 handouts:
@@ -30,6 +30,6 @@ In a back room, Linene keeps a supply of armor and weapons, all of which are for
 
 ### Recovered Goods
 
-If the characters return the stolen goods found in 8 of the Cragmaw hideout (or if they left the goods but reveal where they can be found), Linene gives them a reward of 50 gp and promises to help the adventurers any way she can.
+If the characters return the stolen goods found in **Área 8** of the Cragmaw hideout (or if they left the goods but reveal where they can be found), Linene gives them a reward of 50 gp and promises to help the adventurers any way she can.
 
 
