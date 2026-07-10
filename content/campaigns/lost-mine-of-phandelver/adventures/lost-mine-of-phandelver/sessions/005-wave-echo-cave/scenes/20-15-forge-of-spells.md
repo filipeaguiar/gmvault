@@ -1,5 +1,7 @@
 ---
 title: "Cena 20 - 15. Forge of Spells"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -15,8 +17,6 @@ compendium_refs:
   - "/compendium/magic-items/dragonguard/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/spectator-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

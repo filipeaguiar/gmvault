@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium humanoid, neutro e mau"
 stats:
   ac: "14"
@@ -23,8 +25,6 @@ stats:
   senses: "passive Perception 9"
   languages: "Common"
   cr: "1/2"
-params:
-  kind: "monster"
 ---
 
 Redbrand ruffians are petty thugs and ruthless enforcers skilled at intimidation and violence. They work for money and have no scruples.

@@ -1,5 +1,7 @@
 ---
 title: "Cena 7 - Revealing the Plot"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -16,8 +18,6 @@ handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

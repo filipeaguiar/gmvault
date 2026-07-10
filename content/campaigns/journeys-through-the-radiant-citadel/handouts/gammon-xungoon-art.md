@@ -1,5 +1,7 @@
 ---
 title: "Arte: Gammon Xungoon"
+params:
+  kind: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -8,8 +10,6 @@ tags:
   - handout
   - arte
   - importado
-params:
-  kind: "handout"
 ---
 
-![Arte: Gammon Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001.tyenmo-rivalry-xungoon.webp)
+![Arte: Gammon Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)

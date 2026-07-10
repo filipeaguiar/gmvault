@@ -1,5 +1,7 @@
 ---
 title: "Cena 4 - Overview"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -7,16 +9,14 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
-  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/introduction/"
 compendium_refs:
 
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/nezznar-the-black-spider-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

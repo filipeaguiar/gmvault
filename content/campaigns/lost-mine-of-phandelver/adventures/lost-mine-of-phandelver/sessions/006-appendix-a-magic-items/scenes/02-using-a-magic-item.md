@@ -1,5 +1,7 @@
 ---
 title: "Cena 2 - Using a Magic Item"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

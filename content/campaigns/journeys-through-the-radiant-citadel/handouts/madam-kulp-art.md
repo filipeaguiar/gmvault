@@ -1,5 +1,7 @@
 ---
 title: "Arte: Madam Kulp"
+params:
+  kind: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -8,8 +10,6 @@ tags:
   - handout
   - arte
   - importado
-params:
-  kind: "handout"
 ---
 
-![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005.madam-kulp.webp)
+![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)

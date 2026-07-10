@@ -1,5 +1,7 @@
 ---
 title: "Arte: Venomfang"
+params:
+  kind: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -8,8 +10,6 @@ tags:
   - handout
   - arte
   - importado
-params:
-  kind: "handout"
 ---
 
-![Arte: Venomfang](/images/campaigns/lost-mine-of-phandelver/Venomfang.webp)
+![Arte: Venomfang](/images/campaigns/lost-mine-of-phandelver/venomfang.webp)

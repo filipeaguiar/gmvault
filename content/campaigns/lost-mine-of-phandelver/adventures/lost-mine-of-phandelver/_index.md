@@ -1,5 +1,7 @@
 ---
 title: "Lost Mine of Phandelver"
+params:
+  kind: "adventure"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -45,6 +47,4 @@ handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/venomfang-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/zombie-art/"
-params:
-  kind: "adventure"
 ---

@@ -1,5 +1,7 @@
 ---
 title: "Cena 3 - Cragmaw Hideout"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -7,22 +9,20 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
-  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/wolf/"
   - "/compendium/monsters/goblin/"
   - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/goblin/"
 handouts:
-  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -32,10 +32,10 @@ The Cragmaw tribe of goblins has established a hideout from which it can easily 
 The leader of the Cragmaw bandits lairing here is a bugbear named Klarg, who has orders from the chief of the Cragmaws to plunder any poorly defended caravans or travelers that come this way. A few days ago, a messenger from Cragmaw Castle brought new instructions: Waylay the dwarf Gundren Rockseeker and anyone traveling with him.
 
 
-![Cragmaw Hideout](/images/campaigns/lost-mine-of-phandelver/Cragmaw Hideout.webp)
+![Cragmaw Hideout](/images/campaigns/lost-mine-of-phandelver/cragmaw-hideout.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/Cragmaw Hideout (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/cragmaw-hideout-player.webp)
 
 
 > ### Adventure Maps

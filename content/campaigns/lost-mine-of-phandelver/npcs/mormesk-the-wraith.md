@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium undead, neutro e mau"
 stats:
   ac: "13"
@@ -22,11 +24,9 @@ stats:
   senses: "darkvision 60 ft., passive Perception 12"
   languages: "Common, Infernal"
   cr: "3"
-params:
-  kind: "npc"
 ---
 
-![Arte: Mormesk the wraith](/images/campaigns/lost-mine-of-phandelver/Mormesk the Wraith.webp)
+![Arte: Mormesk the wraith](/images/campaigns/lost-mine-of-phandelver/mormesk-the-wraith.webp)
 
 A wraith is the incorporeal remnant of a particularly hateful being. Most wraiths can transform those they have slain into spectral undead servitors. Mormesk chooses not to, preferring to let the dead stay dead.
 

@@ -1,5 +1,7 @@
 ---
 title: "Cena 4 - Old Owl Well"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,8 +16,6 @@ compendium_refs:
   - "/compendium/monsters/evil-mage/"
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

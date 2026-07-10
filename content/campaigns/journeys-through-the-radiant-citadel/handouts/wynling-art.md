@@ -1,5 +1,7 @@
 ---
 title: "Arte: Wynling"
+params:
+  kind: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -8,8 +10,6 @@ tags:
   - handout
   - arte
   - importado
-params:
-  kind: "handout"
 ---
 
-![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/Wynling.webp)
+![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)

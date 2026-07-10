@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium aberration, leal e neutro"
 stats:
   ac: "14"
@@ -23,11 +25,9 @@ stats:
   senses: "darkvision 120 ft., passive Perception 16"
   languages: "Deep Speech, Undercommon, telepathy 120 ft."
   cr: "3"
-params:
-  kind: "monster"
 ---
 
-![Arte: spectator](/images/campaigns/lost-mine-of-phandelver/Spectator.webp)
+![Arte: spectator](/images/campaigns/lost-mine-of-phandelver/spectator.webp)
 
 A spectator is a lesser beholder that is summoned from another plane of existence by a magical ritual, the components of which include four beholder eyestalks that are consumed by the ritual's magic. Appropriately, a spectator has four eyestalks, two on each side of the wide eye at the center of its four-foot diameter body.
 

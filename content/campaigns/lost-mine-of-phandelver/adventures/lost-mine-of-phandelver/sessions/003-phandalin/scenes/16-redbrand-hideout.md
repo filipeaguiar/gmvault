@@ -1,5 +1,7 @@
 ---
 title: "Cena 16 - Redbrand Hideout"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -24,10 +24,10 @@ The Redbrands' base in Phandalin is a dungeon complex under Tresendar Manor. Bef
 If the characters begin their search at Tresendar Manor, they enter the dungeon in 1. If they instead follow Carp Alderleaf to the secret tunnel the lad found, they enter the dungeon by way of 8.
 
 
-![Redbrand Hideout](/images/campaigns/lost-mine-of-phandelver/Redbrand Hideout.webp)
+![Redbrand Hideout](/images/campaigns/lost-mine-of-phandelver/redbrand-hideout.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/Redbrand Hideout (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/redbrand-hideout-player.webp)
 
 
 

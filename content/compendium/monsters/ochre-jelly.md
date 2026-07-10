@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Large ooze, sem tendência"
 stats:
   ac: "8"
@@ -21,11 +23,9 @@ stats:
     cha: 1
   senses: "blindsight 60 ft. (blind beyond this radius), passive Perception 8"
   cr: "2"
-params:
-  kind: "monster"
 ---
 
-![Arte: Ochre Jelly](/images/campaigns/lost-mine-of-phandelver/Ochre Jelly.webp)
+![Arte: Ochre Jelly](/images/campaigns/lost-mine-of-phandelver/ochre-jelly.webp)
 
 
 

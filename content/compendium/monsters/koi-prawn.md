@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium monstrosity, sem tendência"
 stats:
   ac: "10"
@@ -19,11 +21,9 @@ stats:
     int: 10
     wis: 10
     cha: 10
-params:
-  kind: "monster"
 ---
 
-![Arte: koi prawn](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004.jagged-koi-prawns.webp)
+![Arte: koi prawn](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
 
 
 

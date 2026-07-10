@@ -222,11 +222,14 @@ def clean_5etools_tags(text, campaign_slug, target_slug, ctx):
 
 def download_image(img_path, campaign_slug):
     filename = img_path.split("/")[-1]
+    name_part, ext_part = os.path.splitext(filename)
+    slugified_filename = slugify(name_part) + ext_part
+    
     local_dir = f"static/images/campaigns/{campaign_slug}"
-    local_file = os.path.join(local_dir, filename)
+    local_file = os.path.join(local_dir, slugified_filename)
     
     if os.path.exists(local_file):
-        return
+        return slugified_filename
         
     os.makedirs(local_dir, exist_ok=True)
     encoded_path = urllib.parse.quote(img_path)
@@ -241,6 +244,8 @@ def download_image(img_path, campaign_slug):
                 f.write(response.read())
     except Exception as e:
         print(f"    [Aviso] Falha ao baixar imagem de {url}: {e}")
+        
+    return slugified_filename
 
 def parse_entry(entry, campaign_slug, target_slug, ctx):
     if isinstance(entry, str):
@@ -324,9 +329,8 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
             img_path = href.get("path")
             
             if img_path:
-                filename = img_path.split("/")[-1]
-                local_path = f"/images/campaigns/{campaign_slug}/{filename}"
-                download_image(img_path, campaign_slug)
+                slug_filename = download_image(img_path, campaign_slug)
+                local_path = f"/images/campaigns/{campaign_slug}/{slug_filename}"
                 return f"\n![{title_clean}]({local_path})\n"
                 
         elif entry_type == "gallery":
@@ -582,11 +586,10 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
             
             img_paths = extract_fluff_images(fluff)
             for path in img_paths:
-                filename = path.split("/")[-1]
-                download_image(path, campaign_slug)
-                local_path = f"/images/campaigns/{campaign_slug}/{filename}"
+                slug_filename = download_image(path, campaign_slug)
+                local_path = f"/images/campaigns/{campaign_slug}/{slug_filename}"
                 lore_markdown = f"![Arte: {npc_name}]({local_path})\n\n" + lore_markdown
-                h_ref = write_handout_art_stub(campaign_slug, npc_slug, npc_name, filename)
+                h_ref = write_handout_art_stub(campaign_slug, npc_slug, npc_name, slug_filename)
                 handout_refs.append(h_ref)
             
         body = f"""
@@ -662,11 +665,10 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
             
             img_paths = extract_fluff_images(fluff)
             for path in img_paths:
-                filename = path.split("/")[-1]
-                download_image(path, campaign_slug)
-                local_path = f"/images/campaigns/{campaign_slug}/{filename}"
+                slug_filename = download_image(path, campaign_slug)
+                local_path = f"/images/campaigns/{campaign_slug}/{slug_filename}"
                 lore_markdown = f"![Arte: {monster_name}]({local_path})\n\n" + lore_markdown
-                h_ref = write_handout_art_stub(campaign_slug, monster_slug, monster_name, filename)
+                h_ref = write_handout_art_stub(campaign_slug, monster_slug, monster_name, slug_filename)
                 handout_refs.append(h_ref)
             
         body = f"""

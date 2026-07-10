@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Tiny beast, sem tendência"
 stats:
   ac: "12"
@@ -22,8 +24,6 @@ stats:
   skills: "Perception +3, Stealth +4"
   senses: "passive Perception 13"
   cr: "0"
-params:
-  kind: "monster"
 ---
 
 

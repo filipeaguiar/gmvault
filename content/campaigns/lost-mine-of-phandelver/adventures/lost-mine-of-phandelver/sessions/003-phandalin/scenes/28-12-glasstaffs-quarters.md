@@ -1,5 +1,7 @@
 ---
 title: "Cena 28 - 12. Glasstaff's Quarters"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,8 +16,6 @@ compendium_refs:
   - "/compendium/magic-items/staff-of-defense/"
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Tiny fey, caótico e neutro"
 stats:
   ac: "15"
@@ -23,11 +25,9 @@ stats:
   senses: "darkvision 60 ft., passive Perception 12"
   languages: "Sylvan"
   cr: "1/2"
-params:
-  kind: "monster"
 ---
 
-![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/Wynling.webp)
+![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)
 
 Playful and mischievous, wynlings defend mountain heights and alpine vales against trespassers. A wynling rarely engages a threat directly, preferring to deter intruders by harassing them with thefts and pranks. Many travelers return from lands protected by wynlings with stories of vanishing equipment and curious eyes staring from the shadows.
 Wynlings typically live on the mountains they protect, but they often venture into nearby settlements, lured by high-spirited music and sweet foods. Away from their open, wild homes, wynlings cause all manner of mysterious accidents.

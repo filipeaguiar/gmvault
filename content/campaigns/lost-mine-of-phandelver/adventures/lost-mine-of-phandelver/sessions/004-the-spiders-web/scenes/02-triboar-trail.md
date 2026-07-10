@@ -1,5 +1,7 @@
 ---
 title: "Cena 2 - Triboar Trail"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,19 +12,17 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/wolf/"
-  - "/compendium/monsters/hobgoblin/"
-  - "/compendium/monsters/ogre/"
-  - "/compendium/monsters/goblin/"
   - "/compendium/monsters/stirge/"
-  - "/compendium/monsters/orc/"
-  - "/compendium/monsters/ghoul/"
   - "/compendium/monsters/owlbear/"
+  - "/compendium/monsters/orc/"
+  - "/compendium/monsters/ogre/"
+  - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/hobgoblin/"
 handouts:
-  - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/owlbear-art/"
-params:
-  kind: "scene"
+  - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -40,10 +40,10 @@ During this part of the adventure, the characters will frequently be marching ov
 
 Assume that the party travels twenty-four miles per day over a period of ten hours. The characters must rest for eight hours per day, with the remaining six hours consisting of making and breaking camp, preparing meals, and a little bit of foraging or hunting as the opportunity permits.
 
-![The Sword Coast](/images/campaigns/lost-mine-of-phandelver/The Sword Coast.webp)
+![The Sword Coast](/images/campaigns/lost-mine-of-phandelver/the-sword-coast.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/The Sword Coast (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/the-sword-coast-player.webp)
 
 
 

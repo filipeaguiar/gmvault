@@ -1,5 +1,7 @@
 ---
 title: "Cena 20 - Cragmaw Castle"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -24,10 +24,10 @@ The Cragmaw tribe consists of marauding bands and rival goblinholds scattered th
 Cragmaw Castle is not a goblin construction, nor is that the structure's original name. Raised by a talented wizard-noble of old Phalorm, an ancient realm that once controlled much of the North, the stronghold consists of seven overlapping towers; however, its upper levels have long since collapsed to heaps of crumbling masonry. Only the ground floor is still sound enough to be habitable.
 
 
-![Cragmaw Castle](/images/campaigns/lost-mine-of-phandelver/Cragmaw Castle.webp)
+![Cragmaw Castle](/images/campaigns/lost-mine-of-phandelver/cragmaw-castle.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/Cragmaw Castle (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/cragmaw-castle-player.webp)
 
 
 

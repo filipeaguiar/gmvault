@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium humanoid, sem tendência"
 stats:
   ac: "15"
@@ -23,11 +25,9 @@ stats:
   senses: "passive Perception 12"
   languages: "any two languages"
   cr: "1/8"
-params:
-  kind: "monster"
 ---
 
-![Arte: noble](/images/campaigns/journeys-through-the-radiant-citadel/Noble.webp)
+![Arte: noble](/images/campaigns/journeys-through-the-radiant-citadel/noble.webp)
 
 Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
 The noble's statistics can also be used to represent courtiers who aren't of noble birth.

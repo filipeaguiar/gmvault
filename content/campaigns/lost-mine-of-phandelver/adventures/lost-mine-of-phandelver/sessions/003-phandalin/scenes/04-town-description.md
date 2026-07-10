@@ -1,5 +1,7 @@
 ---
 title: "Cena 4 - Town Description"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -22,10 +22,10 @@ params:
 Phandalin is small, so the characters can visit multiple locations and NPCs throughout a given day. If the players choose to have their characters split up, they can cover more ground, but you'll have to take turns running each interaction for each player. Splitting the party also makes the "Redbrand Ruffians" encounter potentially more dangerous.
 
 
-![Phandalin](/images/campaigns/lost-mine-of-phandelver/Phandalin.webp)
+![Phandalin](/images/campaigns/lost-mine-of-phandelver/phandalin.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/Phandalin (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/phandalin-player.webp)
 
 
 The following sections detail specific locations in town.

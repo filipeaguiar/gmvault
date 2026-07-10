@@ -1,5 +1,7 @@
 ---
 title: "Cena 34 - 14. King's Quarters"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,16 +12,14 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/doppelganger/"
+  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/doppelganger/"
 handouts:
-  - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
-  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
-params:
-  kind: "scene"
+  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
 ---
 
 ### Descrição e Elementos Importantes

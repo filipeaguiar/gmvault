@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Large dragon, leal e mau"
 stats:
   ac: "18"
@@ -24,8 +26,6 @@ stats:
   senses: "blindsight 30 ft., darkvision 120 ft., passive Perception 17"
   languages: "Common, Draconic"
   cr: "8"
-params:
-  kind: "monster"
 ---
 
 

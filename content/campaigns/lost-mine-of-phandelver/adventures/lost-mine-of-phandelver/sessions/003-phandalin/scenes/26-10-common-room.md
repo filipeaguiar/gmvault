@@ -1,5 +1,7 @@
 ---
 title: "Cena 26 - 10. Common Room"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
   - "/compendium/monsters/redbrand-ruffian/"
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

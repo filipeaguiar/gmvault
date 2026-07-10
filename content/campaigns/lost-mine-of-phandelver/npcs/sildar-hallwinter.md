@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium humanoid, neutro e bom"
 stats:
   ac: "16"
@@ -24,8 +26,6 @@ stats:
   senses: "passive Perception 12"
   languages: "Common"
   cr: "1"
-params:
-  kind: "npc"
 ---
 
 Sildar Hallwinter is a retired soldier and sellsword who hails from the city of Neverwinter. He is a loyal member of the Lords' Alliance, a political organization that unites the various free cities and towns of the North.

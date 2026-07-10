@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium monstrosity, leal e bom"
 stats:
   ac: "10"
@@ -19,11 +21,9 @@ stats:
     int: 10
     wis: 10
     cha: 10
-params:
-  kind: "npc"
 ---
 
-![Arte: Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002.kusa-xungoon.webp)
+![Arte: Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)
 
 
 

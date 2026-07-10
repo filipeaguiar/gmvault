@@ -1,5 +1,7 @@
 ---
 title: "Cena 35 - Returning War Band"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -11,12 +13,10 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
   - "/compendium/monsters/hobgoblin/"
-  - "/compendium/monsters/hobgoblin/"
   - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/hobgoblin/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/hobgoblin-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

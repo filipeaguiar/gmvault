@@ -1,5 +1,7 @@
 ---
 title: "Cena 24 - 8. Crevasse"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,8 +16,6 @@ compendium_refs:
   - "/compendium/monsters/nothic/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/nothic-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

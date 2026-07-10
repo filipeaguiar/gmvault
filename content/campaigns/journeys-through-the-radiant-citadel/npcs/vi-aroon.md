@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium humanoid, caótico e bom"
 stats:
   ac: "10"
@@ -19,11 +21,9 @@ stats:
     int: 10
     wis: 10
     cha: 10
-params:
-  kind: "npc"
 ---
 
-![Arte: Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003.kasem-vi-aroon.webp)
+![Arte: Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)
 
 
 

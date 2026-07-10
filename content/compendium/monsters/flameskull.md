@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Tiny undead, neutro e mau"
 stats:
   ac: "13"
@@ -23,11 +25,9 @@ stats:
   senses: "darkvision 60 ft., passive Perception 12"
   languages: "Common"
   cr: "4"
-params:
-  kind: "monster"
 ---
 
-![Arte: flameskull](/images/campaigns/lost-mine-of-phandelver/Flameskull.webp)
+![Arte: flameskull](/images/campaigns/lost-mine-of-phandelver/flameskull.webp)
 
 Blazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.
 Dark spellcasters fashion flameskulls from the remains of dead wizards. When the ritual is complete, green flames erupt from the skull to complete its ghastly transformation.

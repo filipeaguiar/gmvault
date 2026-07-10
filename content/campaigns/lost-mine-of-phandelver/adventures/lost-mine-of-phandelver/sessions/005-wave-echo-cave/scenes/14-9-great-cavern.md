@@ -1,5 +1,7 @@
 ---
 title: "Cena 14 - 9. Great Cavern"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
   - "/compendium/monsters/ghoul/"
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

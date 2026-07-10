@@ -1,5 +1,7 @@
 ---
 title: "Cena 7 - 2. Mine Tunnels"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
   - "/compendium/monsters/ochre-jelly/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

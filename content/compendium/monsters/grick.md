@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium monstrosity, neutro"
 stats:
   ac: "14"
@@ -21,11 +23,9 @@ stats:
     cha: 5
   senses: "darkvision 60 ft., passive Perception 12"
   cr: "2"
-params:
-  kind: "monster"
 ---
 
-![Arte: grick](/images/campaigns/lost-mine-of-phandelver/Grick.webp)
+![Arte: grick](/images/campaigns/lost-mine-of-phandelver/grick.webp)
 
 The wormlike grick waits unseen, blending in with the rock of the caves and caverns it haunts. Only when prey comes near does it rear up, its four barbed tentacles unfurling to reveal its hungry, snapping beak.
 

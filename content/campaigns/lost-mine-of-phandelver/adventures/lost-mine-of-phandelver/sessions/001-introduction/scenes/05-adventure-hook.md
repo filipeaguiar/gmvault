@@ -1,21 +1,21 @@
 ---
 title: "Cena 5 - Adventure Hook"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/introduction/"
 compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

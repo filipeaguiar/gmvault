@@ -1,5 +1,7 @@
 ---
 title: "Cena 19 - 14. Wizards' Quarters"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/mormesk-the-wraith-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

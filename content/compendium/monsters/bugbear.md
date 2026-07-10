@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium humanoid, caótico e mau"
 stats:
   ac: "16"
@@ -23,11 +25,9 @@ stats:
   senses: "darkvision 60 ft., passive Perception 10"
   languages: "Common, Goblin"
   cr: "1"
-params:
-  kind: "monster"
 ---
 
-![Arte: bugbear](/images/campaigns/lost-mine-of-phandelver/Bugbear.webp)
+![Arte: bugbear](/images/campaigns/lost-mine-of-phandelver/bugbear.webp)
 
 Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.
 

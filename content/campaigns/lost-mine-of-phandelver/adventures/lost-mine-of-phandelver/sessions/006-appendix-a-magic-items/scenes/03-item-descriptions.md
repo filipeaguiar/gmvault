@@ -1,5 +1,7 @@
 ---
 title: "Cena 3 - Item Descriptions"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,12 +12,10 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/appendix-a-magic-items/"
 compendium_refs:
-  - "/compendium/magic-items/spider-staff/"
   - "/compendium/magic-items/staff-of-defense/"
+  - "/compendium/magic-items/spider-staff/"
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

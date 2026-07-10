@@ -1,5 +1,7 @@
 ---
 title: "Cena 6 - The Forgotten Realms"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -30,10 +30,10 @@ Known roads may be well traveled, but they aren't necessarily safe. Fell magic, 
 The regional map shows just a tiny part of this vast world, in a region called the Sword Coast. This is a region of adventure, where daring souls delve into the wreckage of ancient strongholds and explore ruins of long-lost cultures. Amid a wilderness of jagged, snow-capped peaks, alpine forests, lawlessness, and monsters, the coast holds the greatest bastions of civilization, including the coastal city of Neverwinter.
 
 
-![The Sword Coast](/images/campaigns/lost-mine-of-phandelver/The Sword Coast.webp)
+![The Sword Coast](/images/campaigns/lost-mine-of-phandelver/the-sword-coast.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/The Sword Coast (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/the-sword-coast-player.webp)
 
 
 

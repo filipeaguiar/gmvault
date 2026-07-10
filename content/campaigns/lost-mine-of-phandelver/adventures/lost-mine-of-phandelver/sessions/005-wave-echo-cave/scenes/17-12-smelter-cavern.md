@@ -1,5 +1,7 @@
 ---
 title: "Cena 17 - 12. Smelter Cavern"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,8 +16,6 @@ compendium_refs:
   - "/compendium/monsters/zombie/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/flameskull-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

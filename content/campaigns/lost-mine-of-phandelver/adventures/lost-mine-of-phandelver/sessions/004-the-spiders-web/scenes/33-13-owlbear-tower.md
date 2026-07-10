@@ -1,5 +1,7 @@
 ---
 title: "Cena 33 - 13. Owlbear Tower"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
   - "/compendium/monsters/owlbear/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/owlbear-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

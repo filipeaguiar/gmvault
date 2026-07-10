@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium undead, neutro e mau"
 stats:
   ac: "8"
@@ -23,8 +25,6 @@ stats:
   senses: "darkvision 60 ft., passive Perception 8"
   languages: "understands all languages it spoke in life but can't speak"
   cr: "1/4"
-params:
-  kind: "monster"
 ---
 
 From somewhere in the darkness, a gurgling moan is heard. A form lurches into view, dragging one foot as it raises bloated arms and broken hands. The zombie advances, driven to kill anyone too slow to escape its grasp.

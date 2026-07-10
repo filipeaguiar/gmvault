@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Tiny beast, sem tendência"
 stats:
   ac: "10"
@@ -21,8 +23,6 @@ stats:
     cha: 3
   senses: "darkvision 30 ft., passive Perception 9"
   cr: "0"
-params:
-  kind: "monster"
 ---
 
 

@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Large monstrosity, sem tendência"
 stats:
   ac: "13"
@@ -22,11 +24,9 @@ stats:
   skills: "Perception +3"
   senses: "darkvision 60 ft., passive Perception 13"
   cr: "3"
-params:
-  kind: "monster"
 ---
 
-![Arte: Owlbear](/images/campaigns/lost-mine-of-phandelver/Owlbear.webp)
+![Arte: Owlbear](/images/campaigns/lost-mine-of-phandelver/owlbear.webp)
 
 An owlbear's screech echoes through dark valleys and benighted forests, piercing the quiet night to announce the death of its prey. Feathers cover the thick, shaggy coat of its bearlike body, and the limpid pupils of its great round eyes stare furiously from its owlish head.
 

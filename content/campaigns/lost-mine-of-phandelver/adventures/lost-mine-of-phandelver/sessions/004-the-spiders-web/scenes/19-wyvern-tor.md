@@ -1,5 +1,7 @@
 ---
 title: "Cena 19 - Wyvern Tor"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,14 +12,12 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/ogre/"
   - "/compendium/monsters/orc/"
+  - "/compendium/monsters/ogre/"
   - "/compendium/monsters/orc/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/orc-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

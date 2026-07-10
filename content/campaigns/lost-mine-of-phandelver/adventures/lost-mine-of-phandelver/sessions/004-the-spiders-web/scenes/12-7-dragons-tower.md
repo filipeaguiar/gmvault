@@ -1,5 +1,7 @@
 ---
 title: "Cena 12 - 7. Dragon's Tower"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
   - "/compendium/monsters/young-green-dragon/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/venomfang-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

@@ -1,5 +1,7 @@
 ---
 title: "Cena 4 - Wandering Monsters"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,17 +12,15 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
-  - "/compendium/monsters/zombie/"
-  - "/compendium/monsters/ochre-jelly/"
-  - "/compendium/monsters/skeleton/"
-  - "/compendium/monsters/grick/"
   - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/grick/"
+  - "/compendium/monsters/zombie/"
   - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/skeleton/"
+  - "/compendium/monsters/ochre-jelly/"
   - "/compendium/monsters/bugbear/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -41,10 +41,10 @@ If the characters spend a long time in a given area, you can check for wandering
 | 11-12 | Ochre Jelly (1) |
 
 
-![Wave Echo Cave](/images/campaigns/lost-mine-of-phandelver/Wave Echo Cave.webp)
+![Wave Echo Cave](/images/campaigns/lost-mine-of-phandelver/wave-echo-cave.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/Wave Echo Cave (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/wave-echo-cave-player.webp)
 
 
 

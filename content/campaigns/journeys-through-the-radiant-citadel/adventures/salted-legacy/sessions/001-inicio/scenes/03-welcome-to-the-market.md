@@ -1,15 +1,17 @@
 ---
 title: "Cena 3 - Welcome to the Market"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
@@ -18,21 +20,19 @@ compendium_refs:
   - "/compendium/monsters/commoner/"
   - "/compendium/monsters/wynling/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
 
 
-![The rivalry between the Xungoon and Tyenmo families disrupts the peace in the Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001.tyenmo-rivalry-xungoon.webp)
+![The rivalry between the Xungoon and Tyenmo families disrupts the peace in the Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)
 
 
 Hundreds of temporary stalls, tents, and vendor carts fill the Dyn Singh Night Market with wonders to tempt even the pickiest customers. The shops surround three golden tents in a sunken plaza. Merchants set up during the afternoon, but most don't open until twilight when the evening's cool air attracts customers.
@@ -64,7 +64,7 @@ Lamai Tyenmo (lawful good, gnome commoner) has dark, wild hair and a wide smile.
 
 "I refuse to back down from a fight if the honor of my family is on the line."
 
-![Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002.kusa-xungoon.webp)
+![Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)
 
 
 ### Kusa Xungoon

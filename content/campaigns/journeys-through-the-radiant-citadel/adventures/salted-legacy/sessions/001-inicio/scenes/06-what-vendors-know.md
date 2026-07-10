@@ -1,22 +1,22 @@
 ---
 title: "Cena 6 - What Vendors Know"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
-params:
-  kind: "scene"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -47,7 +47,7 @@ Madam Kulp is a gnome seamster who works with the silk of tut-krogh caterpillars
 | 2 | Madam Kulp believes Lamai and Kusa would never intentionally harm one another, due to the damage their families' feud caused their parents. |
 | 3 | Madam Kulp thinks Kasem has some manner of strange pet. She saw him feeding oranges to a weird, monkey-like creature, but her eyes aren't so good. |
 
-![Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005.madam-kulp.webp)
+![Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)
 
 
 

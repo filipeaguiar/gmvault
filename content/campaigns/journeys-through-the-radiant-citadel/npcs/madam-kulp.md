@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium monstrosity, neutro"
 stats:
   ac: "10"
@@ -19,11 +21,9 @@ stats:
     int: 10
     wis: 10
     cha: 10
-params:
-  kind: "npc"
 ---
 
-![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005.madam-kulp.webp)
+![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)
 
 
 

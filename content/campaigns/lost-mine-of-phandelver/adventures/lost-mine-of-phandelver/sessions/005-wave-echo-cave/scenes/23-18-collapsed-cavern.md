@@ -1,5 +1,7 @@
 ---
 title: "Cena 23 - 18. Collapsed Cavern"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,12 +12,10 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/doppelganger/"
+  - "/compendium/monsters/bugbear/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

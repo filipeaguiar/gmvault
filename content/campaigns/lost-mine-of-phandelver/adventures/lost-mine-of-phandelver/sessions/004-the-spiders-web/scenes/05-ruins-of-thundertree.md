@@ -1,5 +1,7 @@
 ---
 title: "Cena 5 - Ruins of Thundertree"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,8 +15,6 @@ compendium_refs:
 
 handouts:
 
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -31,10 +31,10 @@ As the party approaches the ruins, read the following:
 Reidoth placed the sign to discourage bands of treasure seekers from stirring up the monsters in the area.
 
 
-![Ruins of Thundertree](/images/campaigns/lost-mine-of-phandelver/Ruins of Thundertree.webp)
+![Ruins of Thundertree](/images/campaigns/lost-mine-of-phandelver/ruins-of-thundertree.webp)
 
 
-![Player Version](/images/campaigns/lost-mine-of-phandelver/Ruins of Thundertree (Player).webp)
+![Player Version](/images/campaigns/lost-mine-of-phandelver/ruins-of-thundertree-player.webp)
 
 
 

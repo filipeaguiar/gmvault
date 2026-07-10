@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium humanoid, sem tendência"
 stats:
   ac: "10"
@@ -22,8 +24,6 @@ stats:
   senses: "passive Perception 10"
   languages: "any one language (usually Common)"
   cr: "0"
-params:
-  kind: "monster"
 ---
 
 Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.

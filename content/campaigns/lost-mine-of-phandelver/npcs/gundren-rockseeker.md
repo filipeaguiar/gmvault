@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium monstrosity, sem tendência"
 stats:
   ac: "10"
@@ -19,8 +21,6 @@ stats:
     int: 10
     wis: 10
     cha: 10
-params:
-  kind: "npc"
 ---
 
 

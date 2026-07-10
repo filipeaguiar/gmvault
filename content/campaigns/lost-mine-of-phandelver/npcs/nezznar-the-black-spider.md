@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - npc
   - importado
+params:
+  kind: "npc"
 stats_meta: "Medium humanoid, neutro e mau"
 stats:
   ac: "11, 14 (with {@spell mage armor})"
@@ -24,11 +26,9 @@ stats:
   senses: "darkvision 120 ft., passive Perception 14"
   languages: "Elvish, Undercommon"
   cr: "2"
-params:
-  kind: "npc"
 ---
 
-![Arte: Nezznar the Black Spider](/images/campaigns/lost-mine-of-phandelver/Nezznar the Black Spider.webp)
+![Arte: Nezznar the Black Spider](/images/campaigns/lost-mine-of-phandelver/nezznar-the-black-spider.webp)
 
 Drow (dark elves) are a devious, scheming subterranean race that worships Lolth, the Demon Queen of Spiders.
 Drow society is strictly matriarchal. Male drow are relegated to servitor roles, and while most train as warriors, a few, such as Nezznar, become skilled wizards.

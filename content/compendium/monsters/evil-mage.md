@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Medium humanoid, leal e mau"
 stats:
   ac: "12"
@@ -24,8 +26,6 @@ stats:
   senses: "passive Perception 11"
   languages: "Common, Draconic, Dwarvish, Elvish"
   cr: "1"
-params:
-  kind: "monster"
 ---
 
 Evil mages (such as Iarno Albrek and Hamun Kost) hunger for arcane power and dwell in isolated places, where they can perform terrible magical experiments without interference.

@@ -1,5 +1,7 @@
 ---
 title: "Arte: Kusa Xungoon"
+params:
+  kind: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -8,8 +10,6 @@ tags:
   - handout
   - arte
   - importado
-params:
-  kind: "handout"
 ---
 
-![Arte: Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002.kusa-xungoon.webp)
+![Arte: Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)

@@ -1,5 +1,7 @@
 ---
 title: "Cena 25 - 9. Guard Barracks"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,12 +12,10 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/bugbear/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

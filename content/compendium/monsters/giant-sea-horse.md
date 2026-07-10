@@ -7,6 +7,8 @@ status: "ready"
 tags:
   - monstro
   - importado
+params:
+  kind: "monster"
 stats_meta: "Large beast, sem tendência"
 stats:
   ac: "13"
@@ -21,8 +23,6 @@ stats:
     cha: 5
   senses: "passive Perception 11"
   cr: "1/2"
-params:
-  kind: "monster"
 ---
 
 Like their smaller kin, giant sea horses are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.

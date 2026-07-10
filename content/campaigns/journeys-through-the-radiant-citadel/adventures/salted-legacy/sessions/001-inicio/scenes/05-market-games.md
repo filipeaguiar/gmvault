@@ -1,5 +1,7 @@
 ---
 title: "Cena 5 - Market Games"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -7,24 +9,22 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
-  - "/compendium/monsters/giant-sea-horse/"
   - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/giant-sea-horse/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/koi-prawn/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -38,10 +38,10 @@ Battle Prawn Challenge. A cooking competition hosted by Sid Squid of the Trusty 
 Hide-and-Seek Challenge. A game hosted by Madam Kulp's Silk.
 
 
-![Map 2.1: Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/011-map-2.1-dyn-singh-night-market.webp)
+![Map 2.1: Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/011-map-21-dyn-singh-night-market.webp)
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/012-map-2.1-dyn-singh-night-market-player.webp)
+![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)
 
 
 
@@ -67,7 +67,7 @@ After a short wait, the characters are escorted into the main area of the tent.
 > A crowd applauds from nearby bleachers as you're led into the broad, open space of the event tent. Before you is a square table bearing a massive basket of colorful peppers and several pitchers of milk.
 > "Welcome, challengers, to the Aroon Family Pepper Challenge!" shouts a bombastic announcer standing near the table and wearing a red, pepper-themed costume. "I'm your host, Vi Aroon! Is everybody ready to Greet. The. Heat?!"
 
-![Kasem and Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003.kasem-vi-aroon.webp)
+![Kasem and Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)
 
 The characters are directed to sit at the table. As soon as they're seated, Vi (chaotic good, human noble) briefly recaps the rules and asks if there are any questions. Once any questions are addressed, the challenge begins.
 
@@ -95,7 +95,7 @@ After the challenge is completed, characters can ask Vi for information about th
 ### Battle Prawn Challenge
 
 
-![Jagged Koi Prawns are just one unexpected danger of the games at the Dyn Singh Night market](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004.jagged-koi-prawns.webp)
+![Jagged Koi Prawns are just one unexpected danger of the games at the Dyn Singh Night market](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
 
 Sid Squid's Trusty Leek sponsors Battle Prawns: The Shrimpening. Sid's shrimp cakes were voted best dish during a festival competition last year. This challenge, held in the northern event tent, tests participants' inventiveness and versatility as they prepare giant versions of his signature dish.
 The tent is decorated in a nautical theme, heavy on rope decor and brass fixtures. Sid (chaotic good, human noble) and five assistants, all wearing yellow chef's outfits, eagerly invite visitors to participate in Battle Prawns. If characters ask, Sid explains the challenge is simple: assist in making a gigantic shrimp cake in record time. Participants must rapidly prepare prawn meat and chop beans for the sous-chefs. If they perform these preparations fast enough, they might complete the recipe in record time. Unless the characters specifically ask, no one mentions the unusual prawns used in this challenge (see the "Battle Arena" section).
@@ -105,10 +105,10 @@ Characters who participate are invited to don yellow aprons that match those of 
 ### Battle Arena
 
 
-![Map 2.2: Market Challenges](/images/campaigns/journeys-through-the-radiant-citadel/015-map-2.2-market-challenges.webp)
+![Map 2.2: Market Challenges](/images/campaigns/journeys-through-the-radiant-citadel/015-map-22-market-challenges.webp)
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/016-map-2.2-market-challenges-player.webp)
+![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/016-map-22-market-challenges-player.webp)
 
 Sid's assistants lead participating characters into the main part of the tent. The arena is depicted on map 2.2. Read or paraphrase the following description as the characters enter:
 > Excited onlookers crowd the bleachers within this vast, open tent. One half of the space is crowded with cooking tools: a pair of oversized woks and two long cutting stations containing bundles of foot-long green beans. The other side holds a pool-sized glass tank filled with water. The water churns as large, shadowy shapes move within.

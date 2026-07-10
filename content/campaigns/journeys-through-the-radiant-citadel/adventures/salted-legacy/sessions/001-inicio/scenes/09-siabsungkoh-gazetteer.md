@@ -1,5 +1,7 @@
 ---
 title: "Cena 9 - Siabsungkoh Gazetteer"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -10,13 +12,11 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
-  - "/compendium/monsters/cat/"
   - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/cat/"
   - "/compendium/monsters/wynling/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-params:
-  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
@@ -32,10 +32,10 @@ Tradition, trade, and enterprise influence culture in Siabsungkoh. Families spen
 
 Those familiar with Siabsungkoh know the following details:
 
-![Map 2.3: Siabsungkoh](/images/campaigns/journeys-through-the-radiant-citadel/018-map-2.3-siabsungkoh.webp)
+![Map 2.3: Siabsungkoh](/images/campaigns/journeys-through-the-radiant-citadel/018-map-23-siabsungkoh.webp)
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/019-map-2.3-siabsungkoh-player.webp)
+![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/019-map-23-siabsungkoh-player.webp)
 
 
 
