@@ -6,6 +6,12 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/introduction/"
+compendium_refs:
+
 ---
 
 ### Descrição e Elementos Importantes

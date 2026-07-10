@@ -6,6 +6,18 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/koi-prawn/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+locations:
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+compendium_refs:
+  - "/compendium/monsters/giant-sea-horse/"
+  - "/compendium/monsters/lizard/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -98,7 +110,7 @@ Participating characters are directed to take places near the preparation tables
 
 ### Running the Challenge
 
-One of Sid's assistants explains what participants need to do in more detail than before: prepare a bundle of green tree beans and slay a jagged Koi Prawn. If the characters can perform both tasks in 6 rounds or fewer, they win the challenge. While Sid works the crowd, the assistants can answer any questions with details from this section. The assistants direct participants not to move from the preparation tables until Sid gives the signal.
+One of Sid's assistants explains what participants need to do in more detail than before: prepare a bundle of green tree beans and slay a jagged koi prawn. If the characters can perform both tasks in 6 rounds or fewer, they win the challenge. While Sid works the crowd, the assistants can answer any questions with details from this section. The assistants direct participants not to move from the preparation tables until Sid gives the signal.
 
 ### Starting the Challenge
 

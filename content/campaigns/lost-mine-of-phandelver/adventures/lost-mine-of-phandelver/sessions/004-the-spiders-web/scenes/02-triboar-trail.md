@@ -6,6 +6,19 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+compendium_refs:
+  - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/owlbear/"
+  - "/compendium/monsters/ogre/"
+  - "/compendium/monsters/orc/"
+  - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/goblin/"
 ---
 
 ### Descrição e Elementos Importantes

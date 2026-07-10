@@ -6,6 +6,12 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/lost-mine-of-phandelver/npcs/evil-mage/"
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+compendium_refs:
+  - "/compendium/monsters/zombie/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -20,7 +26,7 @@ The ruins are currently occupied by a mage who is busy exploring the site in the
 
 Twelve zombies lurk inside the crumbled shell of the old watchtower and can't be seen from outside. However, any character with a passive Wisdom (Perception) score of 10 or higher smells a deathly odor wafting from the tower's direction. When characters approach the tower or the tent, the zombies shamble out of the tower.
 
-If a battle erupts, Hamun Kost, the Evil Mage, emerges from his tent and asks,
+If a battle erupts, Hamun Kost, the evil mage, emerges from his tent and asks,
 
 > ### Red-Robed Mage
 > "What is the meaning of this?"

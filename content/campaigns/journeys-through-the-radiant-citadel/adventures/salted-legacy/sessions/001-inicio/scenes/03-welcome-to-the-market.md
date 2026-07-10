@@ -6,6 +6,18 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
+locations:
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+compendium_refs:
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -6,6 +6,14 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/lost-mine-of-phandelver/npcs/staff-of-defense/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/evil-mage/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+compendium_refs:
+
 ---
 
 ### Descrição e Elementos Importantes
@@ -18,7 +26,7 @@ If Iarno is surprised, add the following paragraph:
 
 > Sitting at the desk is a short, dark-bearded human male in robes, studying a tome. He wears a princely mantle of ermine. A beautiful glass staff leans against his chair, within easy reach.
 
-If the rat in 11 warns him that trouble is approaching, Iarno the Evil Mage grabs his Staff Of Defense and the scrolls in his chest (see the "Treasure" section), and flees through the secret door in the northeast corner of the room. In his haste, Iarno leaves behind a letter from the Black Spider (see the "Developments" section) and neglects to make sure the secret door is closed all the way. Characters gain advantage on ability checks made to find the slightly ajar secret door (see "Advantage and Disadvantage" in the rulebook). For more information on secret doors, see the "General Features" section (page 20).
+If the rat in 11 warns him that trouble is approaching, Iarno the evil mage grabs his staff of defense and the scrolls in his chest (see the "Treasure" section), and flees through the secret door in the northeast corner of the room. In his haste, Iarno leaves behind a letter from the Black Spider (see the "Developments" section) and neglects to make sure the secret door is closed all the way. Characters gain advantage on ability checks made to find the slightly ajar secret door (see "Advantage and Disadvantage" in the rulebook). For more information on secret doors, see the "General Features" section (page 20).
 
 If he manages to escape, Iarno flees to 1 (through areas 7 and 8) and grabs the satchel hidden in the cistern there. If the nothic is still alive in 8, Iarno instructs it to waylay any pursuers. If the characters catch up to him, Iarno quaffs the Potion Of Invisibility in the satchel and flees the hideout. At your discretion, he could reappear later in the adventure.
 
@@ -28,7 +36,7 @@ If he manages to escape, Iarno flees to 1 (through areas 7 and 8) and grabs the 
 A former member of the Lords' Alliance, Iarno seized an opportunity in Phandalin to line his own pockets. Originally tasked with setting up a constabulary, the mage instead assembled a group of outlaws and local ruffians to secure his own position in town.
 Iarno knew of the Black Spider through his contacts in the Lords' Alliance and brokered a meeting. The drow promised to share the secrets and wealth of the Forge of Spells with the wizard in exchange for his help and loyalty.
 Iarno puts on airs of gentility and courteous manners, addressing his ruffians as "my good gentlemen," and referring to sordid acts such as kidnapping or arson as "that unpleasant little business" or "those unfortunate events." He refers to the characters as "guests" and expresses regret that he cannot provide suitable entertainment for their visit. Beneath his genteel demeanor, however, Iarno is just as thuggish and arrogant as any Redbrand outlaws.
-If threatened, Iarno uses his Staff Of Defense to cast Mage Armor on himself. He then casts offensive spells at enemies he can see. Iarno's stat block contains a list of the spells he has prepared. For descriptions of those spells and their effects, see the rulebook. Iarno uses the shield power of his staff for added protection.
+If threatened, Iarno uses his staff of defense to cast Mage Armor on himself. He then casts offensive spells at enemies he can see. Iarno's stat block contains a list of the spells he has prepared. For descriptions of those spells and their effects, see the rulebook. Iarno uses the shield power of his staff for added protection.
 If he is reduced to 8 or fewer hit points and has no avenues of escape, Iarno surrenders. He values his life more than anything, and he remains a model prisoner in the hopes that the Black Spider will somehow learn of his predicament and "arrange for his freedom."
 If he is questioned while in captivity, Iarno relates the following information, all of which is true:
 * The Black Spider is a drow (dark elf).
@@ -51,7 +59,7 @@ If Iarno is taken into custody, Sildar Hallwinter arranges to have the wizard in
 ### Treasure
 
 At the foot of Iarno's bed is a sturdy, unlocked wooden chest holding the best pickings of the Redbrands' loot over the last two months. It contains 180 sp, 130 gp, and a silk pouch containing five carnelians (10 gp each), two peridots (15 gp each), and one pearl (100 gp). It also contains two magic items that Iarno brought with him from Neverwinter: a scroll of charm person and a scroll of fireball.
-Iarno also wields a Staff Of Defense.
+Iarno also wields a staff of defense.
 
 
 ### Awarding Experience Points

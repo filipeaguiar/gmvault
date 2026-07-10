@@ -6,6 +6,13 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
+locations:
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+compendium_refs:
+  - "/compendium/monsters/noble/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -27,7 +34,7 @@ Kasem used the cages to smuggle the wynlings into the market, and the creatures 
 
 ### Revealing the Wynlings
 
-The characters might suspect Kasem is using a creature to harass the Tyenmo and Xungoon market stands—either due to stories from vendors or from what they've witnessed themselves. If a character casts Detect Evil And Good near one of the sabotaged stalls, it reveals the presence of a Fey creature nearby, a Wynling drowsing on a nearby stall roof. If approached, the wynling turns Invisible and flees.
+The characters might suspect Kasem is using a creature to harass the Tyenmo and Xungoon market stands—either due to stories from vendors or from what they've witnessed themselves. If a character casts Detect Evil And Good near one of the sabotaged stalls, it reveals the presence of a Fey creature nearby, a wynling drowsing on a nearby stall roof. If approached, the wynling turns Invisible and flees.
 A character can convince a wynling to reveal itself by going to either Tyenmo Noodles or Xungoon Family Seafood and holding out a persimmon. Doing so causes at least one wynling to appear and try to take the fruit. A character can befriend a wynling once it reveals itself by succeeding on a CD 10 Charisma (Persuasion) check. If characters who can speak and understand Sylvan ask the wynling questions, the Fey creature squeaks the following details in reply:
 * Kasem found the wynlings in the nearby mountains and brought them to the market recently.
 * The wynlings live with their friend Kasem at the Spicy Brothers tent.

@@ -6,6 +6,13 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/lost-mine-of-phandelver/npcs/lightbringer/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/dragonguard/"
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+compendium_refs:
+  - "/compendium/monsters/spectator/"
 ---
 
 ### Descrição e Elementos Importantes

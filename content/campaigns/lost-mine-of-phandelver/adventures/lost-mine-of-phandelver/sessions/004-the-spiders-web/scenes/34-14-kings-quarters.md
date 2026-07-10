@@ -6,6 +6,15 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
+compendium_refs:
+  - "/compendium/monsters/doppelganger/"
+  - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/wolf/"
 ---
 
 ### Descrição e Elementos Importantes

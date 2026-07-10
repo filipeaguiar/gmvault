@@ -6,6 +6,13 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+locations:
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+compendium_refs:
+
 ---
 
 ### Descrição e Elementos Importantes

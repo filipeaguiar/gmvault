@@ -6,6 +6,12 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+compendium_refs:
+  - "/compendium/monsters/skeleton/"
 ---
 
 ### Descrição e Elementos Importantes

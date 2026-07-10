@@ -6,6 +6,12 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/lost-mine-of-phandelver/npcs/mormesk-the-wraith/"
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
+compendium_refs:
+
 ---
 
 ### Descrição e Elementos Importantes
@@ -14,7 +20,7 @@ The doors leading into this area are cracked, their iron hinges partially melted
 
 > Dust, ash, walls blackened by fire, and heaps of debris beneath the sagging ceiling show that this room was damaged by a destructive blast. The furnishings—tables, chairs, bookshelves, beds—are charred or splintered, but otherwise well preserved. A scorched iron chest stands near the foot of one of the beds.
 
-This room contains the restless spirit of the last wizard to die here: Mormesk The Wraith. He is not immediately visible but rises up out of the floor when a living creature enters the room.
+This room contains the restless spirit of the last wizard to die here: Mormesk the wraith. He is not immediately visible but rises up out of the floor when a living creature enters the room.
 
 Mormesk was a powerful mage until he met his end in the spell battle at the climax of the orc attack. Centuries of anger have Poisoned his soul, transforming him into a hate-filled apparition.
 

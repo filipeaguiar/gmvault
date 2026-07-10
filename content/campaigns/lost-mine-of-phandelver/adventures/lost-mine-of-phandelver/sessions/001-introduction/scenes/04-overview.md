@@ -6,6 +6,14 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/introduction/"
+compendium_refs:
+
 ---
 
 ### Descrição e Elementos Importantes
@@ -18,6 +26,6 @@ Part 3, "The Spider's Web," provides the characters with several short adventure
 
 Several of these leads point to Cragmaw Castle, which is the stronghold of King Grol, leader of the Cragmaw goblins. Here the characters discover that the Black Spider is a drow adventurer named Nezznar, and that the Cragmaw goblins work for him (drow are elves who hail from a realm deep underground). More importantly, they recover Gundren Rockseeker's map to the lost mine, or learn the mine's location from one of the other leads they unearth during part 3.
 
-Following the map or the directions to the lost mine brings the characters to part 4, "Wave Echo Cave." That lost underground complex is now overrun by undead and strange monsters. Nezznar The Black Spider is there with his loyal followers, exploring the mines and searching for the legendary Forge of Spells. The adventurers have the opportunity to avenge Gundren Rockseeker, to ensure the prosperity and security of Phandalin by clearing the rich mine of its monsters, and to put an end to the troublemaking of the Black Spider—if they can survive the dangers of the Lost Mine of Phandelver.
+Following the map or the directions to the lost mine brings the characters to part 4, "Wave Echo Cave." That lost underground complex is now overrun by undead and strange monsters. Nezznar the Black Spider is there with his loyal followers, exploring the mines and searching for the legendary Forge of Spells. The adventurers have the opportunity to avenge Gundren Rockseeker, to ensure the prosperity and security of Phandalin by clearing the rich mine of its monsters, and to put an end to the troublemaking of the Black Spider—if they can survive the dangers of the Lost Mine of Phandelver.
 
 

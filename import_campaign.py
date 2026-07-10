@@ -6,6 +6,7 @@ import sys
 import re
 import unicodedata
 import argparse
+import urllib.parse
 
 DATA_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/"
 IMG_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-img/master/"
@@ -24,44 +25,58 @@ def slugify(text):
     return text
 
 def format_dice_rolls(text):
-    # Envelopa rolagens em colchetes duplos [[formula]] de forma limpa.
-    # Captura padrões como 1d6, 3d4+3, 2d10 - 1, etc.
     def dice_repl(match):
-        formula = match.group(1).replace(" ", "") # remove espaços internos na fórmula de dados
+        formula = match.group(1).replace(" ", "")
         return f"[[{formula}]]"
-
-    # Regex para capturar XdY com opcional +Z ou -Z (permitindo espaços)
-    # Evita casamentos parciais e não captura se já precedido por [[
     pattern = r'(?<!\[\[)\b(\d+d\d+(?:\s*[\+\-]\s*\d+)?)\b(?!\]\])'
     return re.sub(pattern, dice_repl, text)
 
-def parse_5etools_tag(tag_name, inner_text):
+def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
     args = inner_text.split('|')
     default_val = args[0]
     
     if tag_name in ["spell", "monster", "item", "condition", "race", "class", "feat", "creature"]:
+        source = "mm"
+        display_name = default_val
+        
         if len(args) > 1:
-            # Se o último argumento for igual a uma fonte conhecida, usamos o primeiro argumento
+            last_arg = args[-1]
+            if last_arg.lower() in KNOWN_SOURCES:
+                source = last_arg.lower()
+                display_name = default_val
+            elif len(args) > 2 and args[1].lower() in KNOWN_SOURCES:
+                source = args[1].lower()
+                display_name = args[2]
+            else:
+                # O último argumento não é fonte conhecida, assume-se que é o display
+                display_name = last_arg
+                # O segundo argumento deve ser a fonte
+                source = args[1].lower() if len(args) > 1 else "mm"
+        
+        # Se a fonte for a nossa própria campanha, é um NPC!
+        if source.lower() == target_slug.lower():
+            npc_slug = slugify(default_val)
+            ctx["npcs"].add((npc_slug, default_val))
+            return display_name
+            
+        # Se for criatura ou monstro de outra fonte, é um monstro do compêndio!
+        if tag_name in ["monster", "creature"]:
+            monster_slug = slugify(default_val)
+            ctx["monsters"].add(monster_slug)
+            
+        if len(args) > 1:
             last_arg = args[-1]
             if last_arg.lower() in KNOWN_SOURCES:
                 return default_val.replace('-', ' ').title()
-            
-            # Se houver 3 argumentos e o segundo for a fonte, e o terceiro o display
-            if len(args) > 2 and args[1].lower() in KNOWN_SOURCES:
-                return args[2]
-                
             return last_arg
         return default_val.replace('-', ' ').title()
         
     elif tag_name == "area":
-        # {@area Aroon Family Pepper Challenge.|05c|x} -> Retorna o nome amigável da área (arg1)
         return default_val
         
     elif tag_name == "dc":
-        # {@dc 12} -> CD 12
         return f"CD {default_val}"
         
-    # Se houver mais de um argumento e não for fonte, tenta usar o último como label
     if len(args) > 1:
         last_arg = args[-1]
         if last_arg.lower() not in KNOWN_SOURCES:
@@ -69,10 +84,8 @@ def parse_5etools_tag(tag_name, inner_text):
             
     return default_val
 
-def clean_5etools_tags(text):
+def clean_5etools_tags(text, campaign_slug, target_slug, ctx):
     # Envelopa as rolagens de dados e danos explícitas antes de limpá-las
-    # {@dice 1d6+2} -> [[1d6+2]]
-    # {@damage 2d6} -> [[2d6]]
     def dice_tag_repl(match):
         formula = match.group(2).split('|')[0].replace(" ", "")
         return f"[[{formula}]]"
@@ -95,15 +108,15 @@ def clean_5etools_tags(text):
         return url
     text = re.sub(r'\{@link ([^\|\}]+)(?:\|([^\}]+))?\}', link_repl, text)
 
-    # Limpar outras tags genéricas usando o resolvedor refinado
+    # Limpar outras tags genéricas usando o resolvedor refinado com contexto
     def tag_repl(match):
         tag_name = match.group(1)
         inner_text = match.group(2)
-        return parse_5etools_tag(tag_name, inner_text)
+        return parse_5etools_tag(tag_name, inner_text, target_slug, ctx)
         
     cleaned = re.sub(r'\{@(\w+) ([^\}]+)\}', tag_repl, text)
     
-    # Aplica formatação de dados no texto que sobrou (rolagens soltas)
+    # Aplica formatação de dados no texto que sobrotou (rolagens soltas)
     cleaned = format_dice_rolls(cleaned)
     return cleaned
 
@@ -116,8 +129,6 @@ def download_image(img_path, campaign_slug):
         return
         
     os.makedirs(local_dir, exist_ok=True)
-    # Encodar espaços e caracteres especiais no path da imagem
-    import urllib.parse
     encoded_path = urllib.parse.quote(img_path)
     url = IMG_BASE_URL + encoded_path
     
@@ -131,9 +142,9 @@ def download_image(img_path, campaign_slug):
     except Exception as e:
         print(f"    [Aviso] Falha ao baixar imagem de {url}: {e}")
 
-def parse_entry(entry, campaign_slug):
+def parse_entry(entry, campaign_slug, target_slug, ctx):
     if isinstance(entry, str):
-        return clean_5etools_tags(entry)
+        return clean_5etools_tags(entry, campaign_slug, target_slug, ctx)
         
     elif isinstance(entry, dict):
         entry_type = entry.get("type")
@@ -142,10 +153,10 @@ def parse_entry(entry, campaign_slug):
             name = entry.get("name", "")
             content_lines = []
             if name:
-                name_clean = clean_5etools_tags(name)
+                name_clean = clean_5etools_tags(name, campaign_slug, target_slug, ctx)
                 content_lines.append(f"\n## {name_clean}\n")
             for sub in entry.get("entries", []):
-                res = parse_entry(sub, campaign_slug)
+                res = parse_entry(sub, campaign_slug, target_slug, ctx)
                 if res:
                     content_lines.append(res)
             return "\n".join(content_lines)
@@ -154,10 +165,10 @@ def parse_entry(entry, campaign_slug):
             name = entry.get("name", "")
             content_lines = []
             if name:
-                name_clean = clean_5etools_tags(name)
+                name_clean = clean_5etools_tags(name, campaign_slug, target_slug, ctx)
                 content_lines.append(f"\n### {name_clean}\n")
             for sub in entry.get("entries", []):
-                res = parse_entry(sub, campaign_slug)
+                res = parse_entry(sub, campaign_slug, target_slug, ctx)
                 if res:
                     content_lines.append(res)
             return "\n".join(content_lines)
@@ -166,10 +177,10 @@ def parse_entry(entry, campaign_slug):
             name = entry.get("name", "")
             content_lines = []
             if name:
-                name_clean = clean_5etools_tags(name)
+                name_clean = clean_5etools_tags(name, campaign_slug, target_slug, ctx)
                 content_lines.append(f"> ### {name_clean}")
             for sub in entry.get("entries", []):
-                res = parse_entry(sub, campaign_slug)
+                res = parse_entry(sub, campaign_slug, target_slug, ctx)
                 if res:
                     for line in res.split("\n"):
                         content_lines.append(f"> {line}")
@@ -178,7 +189,7 @@ def parse_entry(entry, campaign_slug):
         elif entry_type == "list":
             content_lines = []
             for item in entry.get("items", []):
-                res = parse_entry(item, campaign_slug)
+                res = parse_entry(item, campaign_slug, target_slug, ctx)
                 if res:
                     content_lines.append(f"* {res}")
             return "\n".join(content_lines)
@@ -190,25 +201,25 @@ def parse_entry(entry, campaign_slug):
             
             content_lines = []
             if caption:
-                caption_clean = clean_5etools_tags(caption)
+                caption_clean = clean_5etools_tags(caption, campaign_slug, target_slug, ctx)
                 content_lines.append(f"\n**Tabela: {caption_clean}**\n")
                 
             if headers:
-                clean_headers = [clean_5etools_tags(h) for h in headers]
+                clean_headers = [clean_5etools_tags(h, campaign_slug, target_slug, ctx) for h in headers]
                 content_lines.append("| " + " | ".join(clean_headers) + " |")
                 content_lines.append("| " + " | ".join(["---"] * len(clean_headers)) + " |")
                 
             for row in rows:
                 clean_row = []
                 for cell in row:
-                    clean_row.append(parse_entry(cell, campaign_slug))
+                    clean_row.append(parse_entry(cell, campaign_slug, target_slug, ctx))
                 content_lines.append("| " + " | ".join(clean_row) + " |")
                 
             return "\n".join(content_lines)
             
         elif entry_type == "image":
             title = entry.get("title") or entry.get("name") or "Imagem"
-            title_clean = clean_5etools_tags(title)
+            title_clean = clean_5etools_tags(title, campaign_slug, target_slug, ctx)
             href = entry.get("href", {})
             img_path = href.get("path")
             
@@ -221,12 +232,54 @@ def parse_entry(entry, campaign_slug):
         elif entry_type == "gallery":
             content_lines = []
             for item in entry.get("images", []):
-                res = parse_entry(item, campaign_slug)
+                res = parse_entry(item, campaign_slug, target_slug, ctx)
                 if res:
                     content_lines.append(res)
             return "\n".join(content_lines)
             
     return ""
+
+def write_npc_stub(campaign_slug, npc_slug, npc_name):
+    npc_file = f"content/campaigns/{campaign_slug}/npcs/{npc_slug}.md"
+    if os.path.exists(npc_file):
+        return
+    with open(npc_file, "w") as f:
+        f.write(f"""---
+title: "{npc_name}"
+kind: "npc"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+tags:
+  - npc
+  - importado
+---
+
+NPC **{npc_name}** importado automaticamente da campanha.
+""")
+    print(f"    [Stub NPC] Criado stub para NPC: {npc_name}")
+
+def write_location_stub(campaign_slug, loc_slug, loc_name):
+    loc_file = f"content/campaigns/{campaign_slug}/locations/{loc_slug}.md"
+    if os.path.exists(loc_file):
+        return
+    with open(loc_file, "w") as f:
+        f.write(f"""---
+title: "{loc_name}"
+kind: "location"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+tags:
+  - localidade
+  - importado
+---
+
+Localidade **{loc_name}** importada automaticamente da campanha.
+""")
+    print(f"    [Stub Localidade] Criado stub para Localidade: {loc_name}")
 
 def create_directory_structure(campaign_slug):
     paths = [
@@ -293,7 +346,6 @@ def create_adventure_structure(campaign_slug, adv_slug, adv_title):
     sessions_dir = os.path.join(adv_dir, "sessions")
     os.makedirs(sessions_dir, exist_ok=True)
     
-    # 1. _index.md da Aventura
     adv_idx = os.path.join(adv_dir, "_index.md")
     if not os.path.exists(adv_idx):
         with open(adv_idx, "w") as f:
@@ -308,7 +360,6 @@ summary: "Aventura independente importada do capítulo {adv_title}."
 ---
 """)
             
-    # 2. _index.md intermediário de Sessões (sessions/_index.md)
     sessions_idx = os.path.join(sessions_dir, "_index.md")
     if not os.path.exists(sessions_idx):
         with open(sessions_idx, "w") as f:
@@ -329,7 +380,6 @@ def create_session_structure(adv_dir, session_slug, session_title):
     scenes_dir = os.path.join(sess_dir, "scenes")
     os.makedirs(scenes_dir, exist_ok=True)
     
-    # 1. _index.md da Sessão
     sess_idx = os.path.join(sess_dir, "_index.md")
     if not os.path.exists(sess_idx):
         with open(sess_idx, "w") as f:
@@ -344,7 +394,6 @@ summary: "Planejamento para a sessão."
 ---
 """)
             
-    # 2. _index.md intermediário de Cenas (scenes/_index.md)
     scenes_idx = os.path.join(scenes_dir, "_index.md")
     if not os.path.exists(scenes_idx):
         with open(scenes_idx, "w") as f:
@@ -415,18 +464,26 @@ def main():
     chapters = adv_data.get("data", [])
     
     if choice == "1":
-        # Cria a Aventura principal e a pasta intermediária de sessões
-        adv_dir, sessions_dir = create_adventure_structure(campaign_slug, campaign_slug, campaign_title)
+        # Aventura única
+        adv_slug = campaign_slug
+        adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, campaign_title)
+        
+        # Para acumular os stubs de NPCs e Localidades encontrados na aventura inteira
+        all_npcs = set()
+        all_locations = set()
             
         for c_idx, chap in enumerate(chapters):
             chap_title = chap.get("name")
             session_slug = f"{c_idx+1:03d}-{slugify(chap_title)}"
             session_title = f"Sessão {c_idx+1} - {chap_title}"
             
-            # Cria a Sessão e a pasta intermediária de cenas
+            # Cria a localidade principal correspondente ao capítulo
+            loc_slug = slugify(chap_title)
+            write_location_stub(campaign_slug, loc_slug, chap_title)
+            all_locations.add(f"/campaigns/{campaign_slug}/locations/{loc_slug}/")
+            
             sess_dir, scenes_dir = create_session_structure(adv_dir, session_slug, session_title)
                 
-            # As subseções do capítulo viram cenas
             scenes = []
             current_scene_title = "Introdução"
             current_scene_entries = []
@@ -444,18 +501,44 @@ def main():
             if current_scene_entries:
                 scenes.append((current_scene_title, current_scene_entries))
                 
-            # Escreve as Cenas
             for s_idx, (s_title, s_entries) in enumerate(scenes):
                 scene_slug = f"{s_idx+1:02d}-{slugify(s_title)}"
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
+                # Contexto de parse para extrair stubs
+                ctx = {
+                    "npcs": set(),     # set de tuplas (slug, nome)
+                    "monsters": set(), # set de slugs
+                    "locations": set()
+                }
+                
                 content_markdown = ""
                 for entry in s_entries:
-                    res = parse_entry(entry, campaign_slug)
+                    res = parse_entry(entry, campaign_slug, slug, ctx)
                     if res:
                         content_markdown += res + "\n\n"
-                        
+                
+                # Criar stubs físicos para os NPCs encontrados nesta cena
+                scene_npcs = []
+                for npc_slug, npc_name in ctx["npcs"]:
+                    write_npc_stub(campaign_slug, npc_slug, npc_name)
+                    npc_ref = f"/campaigns/{campaign_slug}/npcs/{npc_slug}/"
+                    scene_npcs.append(npc_ref)
+                    all_npcs.add(npc_ref)
+                    
+                # Criar referências dos monstros
+                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                
+                # Associar a localidade do capítulo a esta cena
+                scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
+                
+                # Escreve a Cena com o front matter interligado
                 with open(scene_file, "w") as f:
+                    # Serialização YAML simples
+                    npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
+                    monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
+                    locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
+                    
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
 kind: "scene"
@@ -464,11 +547,38 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+{npcs_yaml}
+locations:
+{locations_yaml}
+compendium_refs:
+{monsters_yaml}
 ---
 
 ### Descrição e Elementos Importantes
 
 {content_markdown}
+""")
+                    
+        # Gravar as associações de todos os NPCs e Localidades no _index.md da Aventura
+        adv_idx = os.path.join(adv_dir, "_index.md")
+        npcs_yaml = "\n".join([f"  - \"{n}\"" for n in sorted(list(all_npcs))])
+        locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(all_locations))])
+        
+        with open(adv_idx, "w") as f:
+            f.write(f"""---
+title: "{campaign_title}"
+kind: "adventure"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+summary: "Aventura principal da campanha {campaign_title}."
+npcs:
+{npcs_yaml}
+locations:
+{locations_yaml}
+---
 """)
 
     elif choice == "2" or choice == "3":
@@ -486,7 +596,12 @@ summary: "Cena operacional para conduzir na sessão."
             # Cria a Aventura e a pasta intermediária de sessões
             adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, chap_title)
             
-            # Sob antologia, criamos uma Sessão 01 padrão contendo as cenas
+            # Cria a localidade principal correspondente à aventura
+            loc_slug = adv_slug
+            write_location_stub(campaign_slug, loc_slug, chap_title)
+            adventure_locations = {f"/campaigns/{campaign_slug}/locations/{loc_slug}/"}
+            adventure_npcs = set()
+            
             sess_slug = "001-inicio"
             session_title = "Sessão 01 - Início"
             
@@ -511,18 +626,42 @@ summary: "Cena operacional para conduzir na sessão."
             if current_scene_entries:
                 scenes.append((current_scene_title, current_scene_entries))
                 
-            # Escreve as Cenas
             for s_idx, (s_title, s_entries) in enumerate(scenes):
                 scene_slug = f"{s_idx+1:02d}-{slugify(s_title)}"
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
+                # Contexto de parse para extrair stubs
+                ctx = {
+                    "npcs": set(),
+                    "monsters": set(),
+                    "locations": set()
+                }
+                
                 content_markdown = ""
                 for entry in s_entries:
-                    res = parse_entry(entry, campaign_slug)
+                    res = parse_entry(entry, campaign_slug, slug, ctx)
                     if res:
                         content_markdown += res + "\n\n"
-                        
+                
+                # Criar stubs físicos para os NPCs encontrados nesta cena
+                scene_npcs = []
+                for npc_slug, npc_name in ctx["npcs"]:
+                    write_npc_stub(campaign_slug, npc_slug, npc_name)
+                    npc_ref = f"/campaigns/{campaign_slug}/npcs/{npc_slug}/"
+                    scene_npcs.append(npc_ref)
+                    adventure_npcs.add(npc_ref)
+                    
+                # Criar referências dos monstros
+                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                
+                # Associar a localidade a esta cena
+                scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
+                
                 with open(scene_file, "w") as f:
+                    npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
+                    monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
+                    locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
+                    
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
 kind: "scene"
@@ -531,11 +670,38 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+{npcs_yaml}
+locations:
+{locations_yaml}
+compendium_refs:
+{monsters_yaml}
 ---
 
 ### Descrição e Elementos Importantes
 
 {content_markdown}
+""")
+            
+            # Gravar as associações acumuladas no _index.md da Aventura
+            adv_idx = os.path.join(adv_dir, "_index.md")
+            npcs_yaml = "\n".join([f"  - \"{n}\"" for n in sorted(list(adventure_npcs))])
+            locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(adventure_locations))])
+            
+            with open(adv_idx, "w") as f:
+                f.write(f"""---
+title: "{chap_title}"
+kind: "adventure"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+summary: "Aventura independente importada do capítulo {chap_title}."
+npcs:
+{npcs_yaml}
+locations:
+{locations_yaml}
+---
 """)
 
     print(f"\n[Sucesso] Importação concluída! Campanha criada em content/campaigns/{campaign_slug}/")

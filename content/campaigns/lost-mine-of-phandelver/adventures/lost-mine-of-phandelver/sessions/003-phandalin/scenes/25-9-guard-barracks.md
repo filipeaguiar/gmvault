@@ -6,6 +6,13 @@ titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+  - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
+compendium_refs:
+  - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/goblin/"
 ---
 
 ### Descrição e Elementos Importantes
