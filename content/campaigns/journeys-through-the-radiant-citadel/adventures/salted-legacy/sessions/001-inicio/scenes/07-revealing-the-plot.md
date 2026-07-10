@@ -13,6 +13,10 @@ locations:
 compendium_refs:
   - "/compendium/monsters/noble/"
   - "/compendium/monsters/wynling/"
+handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 
 ### Descrição e Elementos Importantes

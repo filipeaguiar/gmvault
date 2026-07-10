@@ -12,6 +12,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
 
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

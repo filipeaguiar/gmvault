@@ -11,12 +11,12 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/orc/"
   - "/compendium/monsters/ogre/"
   - "/compendium/monsters/orc/"
+  - "/compendium/monsters/orc/"
 handouts:
-  - "/campaigns/lost-mine-of-phandelver/handouts/orc-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/orc-art/"
 ---
 
 ### Descrição e Elementos Importantes

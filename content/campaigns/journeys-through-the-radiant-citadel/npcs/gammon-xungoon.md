@@ -22,6 +22,8 @@ stats:
     cha: 10
 ---
 
+![Arte: Gammon Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001.tyenmo-rivalry-xungoon.webp)
+
 
 
 

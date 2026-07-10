@@ -13,6 +13,9 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
 
+handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
 ---
 
 ### Descrição e Elementos Importantes

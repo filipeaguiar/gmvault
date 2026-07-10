@@ -22,6 +22,8 @@ stats:
     cha: 10
 ---
 
+![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005.madam-kulp.webp)
+
 
 
 

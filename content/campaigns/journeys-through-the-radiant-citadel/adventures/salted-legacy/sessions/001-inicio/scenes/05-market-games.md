@@ -8,16 +8,22 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/lizard/"
   - "/compendium/monsters/giant-sea-horse/"
+  - "/compendium/monsters/lizard/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
   - "/compendium/monsters/koi-prawn/"
+handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 
 ### Descrição e Elementos Importantes

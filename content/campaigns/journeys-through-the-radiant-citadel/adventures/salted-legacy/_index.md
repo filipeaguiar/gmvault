@@ -15,4 +15,14 @@ npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
+handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
 ---

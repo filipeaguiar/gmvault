@@ -22,6 +22,8 @@ stats:
     cha: 10
 ---
 
+![Arte: Kasem Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003.kasem-vi-aroon.webp)
+
 
 
 

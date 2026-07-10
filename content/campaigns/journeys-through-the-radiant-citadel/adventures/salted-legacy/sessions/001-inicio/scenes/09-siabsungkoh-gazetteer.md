@@ -11,9 +11,11 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
-  - "/compendium/monsters/bandit/"
   - "/compendium/monsters/cat/"
+  - "/compendium/monsters/bandit/"
   - "/compendium/monsters/wynling/"
+handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
 ---
 
 ### Descrição e Elementos Importantes

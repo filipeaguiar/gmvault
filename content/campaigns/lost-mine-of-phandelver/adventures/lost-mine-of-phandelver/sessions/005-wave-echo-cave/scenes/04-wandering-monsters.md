@@ -11,13 +11,13 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
-  - "/compendium/monsters/ghoul/"
-  - "/compendium/monsters/skeleton/"
   - "/compendium/monsters/zombie/"
-  - "/compendium/monsters/stirge/"
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/ochre-jelly/"
+  - "/compendium/monsters/skeleton/"
   - "/compendium/monsters/grick/"
+  - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/bugbear/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
 ---

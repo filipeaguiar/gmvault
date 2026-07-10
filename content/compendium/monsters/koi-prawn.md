@@ -1,14 +1,14 @@
 ---
-title: "Vi Aroon"
-kind: "npc"
+title: "koi prawn"
+kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 tags:
-  - npc
+  - monstro
   - importado
-stats_meta: "Medium humanoid, caótico e bom"
+stats_meta: "Medium monstrosity, sem tendência"
 stats:
   ac: "10"
   hp: "10"
@@ -22,7 +22,7 @@ stats:
     cha: 10
 ---
 
-![Arte: Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003.kasem-vi-aroon.webp)
+![Arte: koi prawn](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004.jagged-koi-prawns.webp)
 
 
 

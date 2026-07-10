@@ -22,6 +22,8 @@ stats:
     cha: 10
 ---
 
+![Arte: Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002.kusa-xungoon.webp)
+
 
 
 

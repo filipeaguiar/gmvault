@@ -11,8 +11,8 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
-  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/doppelganger/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
 ---
