@@ -26,25 +26,25 @@
       {{ else }}
         <p class="empty-state">Nenhuma campanha cadastrada ainda. Crie uma em <code>content/campaigns/</code>.</p>
       {{ end }}
-      <a href="{{ "/campaigns/" | relURL }}" class="btn">Ver Todas as Campanhas</a>
+      {{ with site.GetPage "/campaigns" }}<a href="{{ .RelPermalink }}" class="btn">Ver Todas as Campanhas</a>{{ end }}
     </div>
 
     <div class="section-card compendium-hero">
       <h2><i class="ra ra-book"></i> Compêndio Global</h2>
       <p>Um repositório compartilhado de regras, monstros, magias e itens reutilizáveis entre todas as campanhas.</p>
       <div class="compendium-grid">
-        <a href="{{ "/compendium/monsters/" | relURL }}" class="comp-item"><i class="ra ra-dragon"></i> Monstros</a>
-        <a href="{{ "/compendium/items/" | relURL }}" class="comp-item"><i class="ra ra-knapsack"></i> Itens</a>
-        <a href="{{ "/compendium/magic-items/" | relURL }}" class="comp-item"><i class="ra ra-gem-pendant"></i> Itens Mágicos</a>
-        <a href="{{ "/compendium/classes/" | relURL }}" class="comp-item"><i class="ra ra-sword"></i> Classes</a>
-        <a href="{{ "/compendium/races/" | relURL }}" class="comp-item"><i class="ra ra-hood"></i> Raças</a>
-        <a href="{{ "/compendium/feats/" | relURL }}" class="comp-item"><i class="ra ra-trophy"></i> Talentos</a>
-        <a href="{{ "/compendium/spells/" | relURL }}" class="comp-item"><i class="ra ra-fire"></i> Magias</a>
-        <a href="{{ "/compendium/backgrounds/" | relURL }}" class="comp-item"><i class="ra ra-scroll-unfurled"></i> Antecedentes</a>
-        <a href="{{ "/compendium/conditions/" | relURL }}" class="comp-item"><i class="ra ra-skull"></i> Condições</a>
-        <a href="{{ "/compendium/rules/" | relURL }}" class="comp-item"><i class="ra ra-open-book"></i> Regras</a>
+        {{ with site.GetPage "/compendium/monsters" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-dragon"></i> Monstros</a>{{ end }}
+        {{ with site.GetPage "/compendium/items" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-knapsack"></i> Itens</a>{{ end }}
+        {{ with site.GetPage "/compendium/magic-items" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-gem-pendant"></i> Itens Mágicos</a>{{ end }}
+        {{ with site.GetPage "/compendium/classes" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-sword"></i> Classes</a>{{ end }}
+        {{ with site.GetPage "/compendium/races" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-hood"></i> Raças</a>{{ end }}
+        {{ with site.GetPage "/compendium/feats" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-trophy"></i> Talentos</a>{{ end }}
+        {{ with site.GetPage "/compendium/spells" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-fire"></i> Magias</a>{{ end }}
+        {{ with site.GetPage "/compendium/backgrounds" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-scroll-unfurled"></i> Antecedentes</a>{{ end }}
+        {{ with site.GetPage "/compendium/conditions" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-skull"></i> Condições</a>{{ end }}
+        {{ with site.GetPage "/compendium/rules" }}<a href="{{ .RelPermalink }}" class="comp-item"><i class="ra ra-open-book"></i> Regras</a>{{ end }}
       </div>
-      <a href="{{ "/compendium/" | relURL }}" class="btn">Ver Compêndio Completo</a>
+      {{ with site.GetPage "/compendium" }}<a href="{{ .RelPermalink }}" class="btn">Ver Compêndio Completo</a>{{ end }}
     </div>
   </section>
 </div>

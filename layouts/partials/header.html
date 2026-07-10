@@ -6,15 +6,15 @@
         <span class="logo-shield"><i class="ra ra-shield"></i></span> {{ site.Title }}
       </span>
     {{ else }}
-      <a href="{{ "/" | relURL }}" class="logo">
+      <a href="{{ site.Home.RelPermalink }}" class="logo">
         <span class="logo-shield"><i class="ra ra-shield"></i></span> {{ site.Title }}
       </a>
     {{ end }}
     <nav class="nav-links">
       {{ if not $isPlayerPage }}
-        <a href="{{ "/campaigns/" | relURL }}" class="nav-item">Campanhas</a>
+        {{ with site.GetPage "/campaigns" }}<a href="{{ .RelPermalink }}" class="nav-item">Campanhas</a>{{ end }}
       {{ end }}
-      <a href="{{ "/compendium/" | relURL }}" class="nav-item">Compêndio</a>
+      {{ with site.GetPage "/compendium" }}<a href="{{ .RelPermalink }}" class="nav-item">Compêndio</a>{{ end }}
     </nav>
   </div>
 </header>

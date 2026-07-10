@@ -2,7 +2,7 @@
 
 {{ if $showBreadcrumb }}
 <nav class="breadcrumbs">
-  <a href="{{ "/" | relURL }}">Início</a>
+  <a href="{{ site.Home.RelPermalink }}">Início</a>
   {{ range .Ancestors.Reverse }}
     {{ if and (ne .RelPermalink "/") (ne .Title "") }}
       <span class="sep">&gt;</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>
