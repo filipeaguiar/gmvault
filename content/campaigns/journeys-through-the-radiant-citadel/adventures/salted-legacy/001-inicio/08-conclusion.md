@@ -1,26 +1,25 @@
 ---
-title: "Cena 8 - Conclusion"
+title: Cena 8 - Conclusion
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+titulo_pt_br: Cena 8 - Conclusão
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
 ### Descrição e Elementos Importantes
 
-The adventure ends when Kasem's plot—and potentially the wynlings—are revealed to Lamai or Kusa. If the characters haven't already confronted Kasem, Lamai or Kusa finds him and publicly accuses him of sabotaging her stall. If the vendors are backed up by the characters, witness claims, and evidence, Kasem quickly confesses. Market guards usher Kasem from the market and forbid him from returning unless the characters intercede on his behalf. If the characters advocate for Kasem, another vendor offers to adopt him into their family if he promises no more deceit.
+A aventura termina quando o enredo de Kasem – e potencialmente os wynlings – são revelados a Lamai ou Kusa. Se os personagens ainda não confrontaram Kasem, Lamai ou Kusa encontram-no e o acusam publicamente de sabotar sua barraca. Se os vendedores são apoiados pelos personagens, alegações de testemunhas e provas, Kasem rapidamente confessa. O mercado protege Kasem do mercado e proíbe-o de voltar, a menos que os personagens intercedam em seu nome. Se os personagens defenderem Kasem, outro vendedor se oferece para adotá-lo em sua família se ele prometer que não há mais enganos.
 
-In the aftermath, Kusa and Lamai are quick to apologize to one another and reconcile their differences. They thank the party and award the characters 100 gp and a lifetime of meals from their stalls.
-
-
+No rescaldo, Kusa e Lamai são rápidos em pedir desculpas e reconciliar suas diferenças. Eles agradecem à festa e premiam os personagens 100 gp e uma vida inteira de refeições de suas barracas.

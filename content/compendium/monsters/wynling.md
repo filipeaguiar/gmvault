@@ -1,19 +1,19 @@
 ---
-title: "Wynling"
+title: Wynling
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Wynling
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Tiny fey, caótico e neutro"
+  kind: monster
+stats_meta: Tiny fey, caótico e neutro
 stats:
-  ac: "15"
-  hp: "21 (6d4 + 6)"
-  speed: "30 ft., fly 40 ft."
+  ac: '15'
+  hp: 21 (6d4 + 6)
+  speed: 30 ft., fly 40 ft.
   attributes:
     str: 3
     dex: 20
@@ -21,20 +21,24 @@ stats:
     int: 10
     wis: 14
     cha: 16
-  skills: "Sleight Of Hand +7, Stealth +7"
-  senses: "darkvision 60 ft., passive Perception 12"
-  languages: "Sylvan"
-  cr: "1/2"
+  skills: Sleight Of Hand +7, Stealth +7
+  senses: darkvision 60 ft., passive Perception 12
+  languages: Sylvan
+  cr: 1/2
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)
+[Arte: Wynling] (/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)
 
-Playful and mischievous, wynlings defend mountain heights and alpine vales against trespassers. A wynling rarely engages a threat directly, preferring to deter intruders by harassing them with thefts and pranks. Many travelers return from lands protected by wynlings with stories of vanishing equipment and curious eyes staring from the shadows.
-Wynlings typically live on the mountains they protect, but they often venture into nearby settlements, lured by high-spirited music and sweet foods. Away from their open, wild homes, wynlings cause all manner of mysterious accidents.
+Brincalhões e travessos, os wynlings defendem as alturas das montanhas e os vales alpinos contra os invasores. Um Wynling raramente enfrenta uma ameaça diretamente, preferindo dissuadir intrusos assediando-os com roubos e partidas. Muitos viajantes retornam de terras protegidas por winlings com histórias de equipamento desaparecendo e olhos curiosos olhando das sombras.
+Wynlings normalmente vivem nas montanhas que eles protegem, mas muitas vezes se aventuram em assentamentos próximos, atraídos por música de alto espírito e alimentos doces. Longe das suas casas abertas e selvagens, os Wynlings causam todos os tipos de acidentes misteriosos.
 
 ### Ações
 
-**Slam.** mw 7 to hit, reach 5 ft., one target. {@h}7 ([[1d4+5]]) bludgeoning damage.
+** Slam.** mw 7 para atingir, atingir 5 pés, um alvo. {@ h}7 ([[1d4+5]]) danos ao espancamento.
 
-**Cloak of the Mountain {@recharge 4}.** The wynling magically turns invisible, along with any equipment it is wearing or carrying, for 1 minute or until it makes an attack roll.
-
+**Cloak of the Mountain {@recarregar 4}. ** O wynling vira magicamente Invisível, juntamente com qualquer equipamento que está usando ou transportando, por 1 minuto ou até que ele faz um Jogada de Ataque.

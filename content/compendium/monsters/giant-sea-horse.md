@@ -1,19 +1,19 @@
 ---
-title: "giant sea horse"
+title: giant sea horse
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Gigante cavalo marinho
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large beast, sem tendência"
+  kind: monster
+stats_meta: Large beast, sem tendência
 stats:
-  ac: "13"
-  hp: "16 (3d10)"
-  speed: "0 ft., swim 40 ft."
+  ac: '13'
+  hp: 16 (3d10)
+  speed: 0 ft., swim 40 ft.
   attributes:
     str: 12
     dex: 15
@@ -21,19 +21,23 @@ stats:
     int: 2
     wis: 12
     cha: 5
-  senses: "passive Perception 11"
-  cr: "1/2"
+  senses: passive Perception 11
+  cr: 1/2
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-Like their smaller kin, giant sea horses are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.
+Como seus parentes menores, Gigante cavalos marinhos são tímidos, coloridos peixes com corpos alongados e caudas enroladas. Os elfos aquáticos treinam-nos como montes.
 
 ### Características
 
-**Charge.** If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ([[2d6]]) bludgeoning damage. If the target is a creature, it must succeed on a CD 11 Strength saving throw or be knocked prone.
+**Charge.** Se o cavalo-marinho se move pelo menos 20 pés em linha reta em direção a um alvo e, em seguida, atinge-o com um ataque de carneiro no mesmo turno, o alvo leva um 7 extra ([[2d6]]) golpeando danos. Se o alvo é uma criatura, ele deve ter sucesso em um CD 11 Salvaguarda de Força ou ser derrubado Caído.
 
-**Water Breathing.** The sea horse can breathe only underwater.
+** Respiração de água. O cavalo marinho só consegue respirar debaixo de água.
 
 ### Ações
 
-**Ram.** mw 3 to hit, reach 5 ft., one target. {@h}4 ([[1d6+1]]) bludgeoning damage.
-
+* MW 3 para atingir, atingir 5 pés, um alvo. {@ h}4 ([[1d6+1]]) danos ao espancamento.

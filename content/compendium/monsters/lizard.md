@@ -1,19 +1,19 @@
 ---
-title: "lizard"
+title: lizard
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: lagarto
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Tiny beast, sem tendência"
+  kind: monster
+stats_meta: Tiny beast, sem tendência
 stats:
-  ac: "10"
-  hp: "2 (1d4)"
-  speed: "20 ft., climb 20 ft."
+  ac: '10'
+  hp: 2 (1d4)
+  speed: 20 ft., climb 20 ft.
   attributes:
     str: 2
     dex: 11
@@ -21,13 +21,15 @@ stats:
     int: 1
     wis: 8
     cha: 3
-  senses: "darkvision 30 ft., passive Perception 9"
-  cr: "0"
+  senses: darkvision 30 ft., passive Perception 9
+  cr: '0'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
-
-
 
 ### Ações
 
-**Bite.** mw 0 to hit, reach 5 ft., one target. {@h}1 piercing damage.
-
+** Mordida.** MW 0 para atingir, atingir 5 pés, um alvo. Danos piercing.

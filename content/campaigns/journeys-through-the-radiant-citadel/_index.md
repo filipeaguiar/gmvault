@@ -1,20 +1,25 @@
 ---
-title: "Journeys through the Radiant Citadel"
+title: Journeys through the Radiant Citadel
 params:
-  kind: "campaign"
+  kind: campaign
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-system: "D&D 5e"
+titulo_pt_br: Viagens pela Cidadela Radiante
+visibility: gm
+status: draft
+system: D&D 5e
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
 ### Descrição Geral
-Campanha importada do 5e.tools: Journeys through the Radiant Citadel.
+Campanha importada do 5e.tools: Viagens pela Cidadela Radiante.
 
 ### Pitch
-[Insira o pitch da campanha]
+[Insira o campo da campanha]
 
 ### Links Rápidos
 * [A História Até Aqui (Diário)](/campaigns/journeys-through-the-radiant-citadel/journal/)
-* [Aventuras Ativas](/campaigns/journeys-through-the-radiant-citadel/adventures/)
+* [Aventuras Ativas] (/campaigns/journeys-through-the-radiant-citadel/adventures/)

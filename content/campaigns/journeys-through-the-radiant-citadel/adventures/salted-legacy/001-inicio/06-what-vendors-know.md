@@ -1,77 +1,78 @@
 ---
-title: "Cena 6 - What Vendors Know"
+title: Cena 6 - What Vendors Know
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: Cena 6 - O que os vendedores sabem
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
 ### Descrição e Elementos Importantes
 
-Vendors in the Dyn Singh Night Market know a great deal about the market's inner workings, their fellow shop owners, and daily gossip. While they're typically polite, they share little information with strangers. If characters gain renown by winning Market Games, the following vendors share the facts for the renown values equal to (and lower than) the renown of the character conversing with them. See the "**Área Gaining Renown**" section for additional details.
+Os fornecedores no mercado noturno de Dyn Singh sabem muito sobre o funcionamento interno do mercado, seus companheiros de loja e fofocas diárias. Embora sejam tipicamente educados, partilham pouca informação com estranhos. Se os personagens ganharem fama vencendo os Jogos de Mercado, os seguintes fornecedores compartilham os fatos para os valores de renome iguais (e inferiores) à fama do personagem conversando com eles. Veja a seção "**Área Ganning Renown**" para mais detalhes.
 
 
 ### Vi Aroon
 
-Kasem's twin and co-owner of Spicy Brothers, Vi Aroon, loves what he does. He knows nothing about Kasem's plans but can be convinced to share the gossip on the What Vi Aroon Knows table.
+O gémeo e co-proprietário da Kasem dos Spicy Brothers, Vi Aroon, adora o que faz. Ele não sabe nada sobre os planos de Kasem, mas pode ser convencido a compartilhar as fofocas sobre a mesa O que Vi Aroon sabe.
 
-**Tabela: What Vi Aroon Knows**
+**Tabela: O que Vi Aroon sabe**
 
-| 0 | Vi shares that he and Kasem had a fight earlier but doesn't reveal why. |
-| 1 | Vi explains he is getting married and moving to a distant land where his betrothed lives. |
-| 2 | Vi confides that Kasem is angry about Vi's impending marriage. Kasem told Vi he's making a mistake by leaving the family business. |
-| 3 | After Vi told Kasem he was getting married, Kasem took several days longer to perform the regular supply run. He returned with extra crates that he keeps in the Spicy Brothers' private tent. |
+| 0 | Vi compartilha que ele e Kasem tiveram uma briga mais cedo, mas não revela o porquê. |
+| 1 | Vi explica que vai se casar e se mudar para uma terra distante onde seu noivo vive. |
+| 2 | Vi confidencia que Kasem está zangado com o casamento iminente de Vi. O Kasem disse ao Vi que está a cometer um erro ao deixar o negócio da família. |
+| 3 | Depois que Vi disse a Kasem que ele ia se casar, Kasem demorou vários dias mais para realizar a corrida regular de suprimentos. Voltou com caixas extras que guarda na tenda privada dos irmãos Spicy. |
 
 
-### Madam Kulp
+### Madame Kulp
 
-Madam Kulp is a gnome seamster who works with the silk of tut-krogh caterpillars. She can share the gossip on the What Madam Kulp Knows table.
+Madame Kulp é um gnomo costurador que trabalha com a seda de lagartas tut-krogh. Ela pode partilhar os boatos sobre a mesa O que a Madame Kulp sabe.
 
-**Tabela: What Madam Kulp Knows**
+Tabela, o que a Madame Kulp sabe?
 
-| 0 | Madam Kulp makes a blunt comment about the characters' demeanor or appearance. |
-| 1 | Madam Kulp says her tut-krogh caterpillars become nervous whenever she walks them around the Tyenmo or Xungoon stalls. |
-| 2 | Madam Kulp believes Lamai and Kusa would never intentionally harm one another, due to the damage their families' feud caused their parents. |
-| 3 | Madam Kulp thinks Kasem has some manner of strange pet. She saw him feeding oranges to a weird, monkey-like creature, but her eyes aren't so good. |
+| 0 | Madame Kulp faz um comentário franco sobre o comportamento ou aparência dos personagens. |
+| 1 | Madame Kulp diz que suas lagartas tut-krogh ficam nervosas sempre que ela as anda em torno do Tyenmo ou Xungoon baias. |
+| 2 | Madame Kulp acredita que Lamai e Kusa nunca se machucariam intencionalmente, devido aos danos que a rivalidade de suas famílias causou aos pais. |
+| 3 | A Madame Kulp acha que o Kasem tem uma espécie de animal de estimação estranho. Ela viu-o a dar laranjas a uma criatura estranha, tipo macaco, mas os olhos dela não são muito bons. |
 
-![Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)
+[Madame Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)
 
 
 
 ### Sid Squid
 
-Sid Squid owns the Trusty Leek, a stall near whichever shop hired the characters. They are the head of one of the market's newest families—a band of adventurers turned business owners. Sid can share the gossip on the What Sid Squid Knows table.
+Sid Squid possui o Trusty Leek, uma barraca perto da loja que contratou os personagens. Eles são o chefe de uma das mais novas famílias do mercado – um bando de aventureiros se tornou proprietários de negócios. O Sid pode partilhar os boatos sobre a mesa O que o Sid Lula sabe.
 
-**Tabela: What Sid Squid Knows**
+*Tabela: O que Sid Squid sabe *
 
-| 0 | Sid changes the subject to relate a story from their adventuring days. |
-| 1 | Sid explains that a few vendors like to see the Xungoon and Tyenmo families fight. If the two get along, it could strain other vendors who have ongoing deals with both families. |
-| 2 | Sid overheard Kasem talking about buying a family business to run, which is against market tradition. |
-| 3 | Sid saw Kasem stash something orange under the Xungoon family's stall right before a sabotage occurred. |
-
-
-### Other Vendors
-
-Many vendors within the Dyn Singh Night Market have general knowledge about the Tyenmo and Xungoon families as well as recent thefts in the market. These vendors can share the gossip on the What Other Vendors Know table.
-
-**Tabela: What Other Vendors Know**
-
-| 0 | The vendor changes the subject, directing characters' attentions toward their goods. |
-| 1 | The vendor notes disturbances at the Tyenmo and Xungoon businesses cause quite the commotion. |
-| 2 | The vendor says some people believe the Tyenmo and Xungoon shops are haunted. Passersby claim to have tripped when there was nothing in their way. |
-| 3 | The vendor describes seeing a blue monkey near the Tyenmo or Xungoon tent. |
+| 0 | Sid muda o assunto para relatar uma história de seus dias de aventura. |
+| 1 | Sid explica que alguns vendedores gostam de ver as famílias Xungoon e Tyenmo lutar. Se os dois se derem bem, pode forçar outros fornecedores que têm negócios em andamento com ambas as famílias. |
+| 2 | O Sid ouviu o Kasem a falar em comprar um negócio familiar para gerir, o que é contra a tradição do mercado. |
+| 3 | O Sid viu o Kasem esconder algo de laranja na tenda da família Xungoon antes de uma sabotagem acontecer. |
 
 
+### Outros fornecedores
+
+Muitos fornecedores dentro do Mercado Noturno Dyn Singh têm conhecimento geral sobre as famílias Tyenmo e Xungoon, bem como roubos recentes no mercado. Esses fornecedores podem compartilhar as fofocas sobre a tabela O que outros fornecedores sabem.
+
+**Tabela: O que outros fornecedores sabem**
+
+| 0 | O vendedor muda de assunto, direcionando as atenções dos personagens para seus bens. |
+| 1 | O vendedor observa distúrbios nas empresas Tyenmo e Xungoon causar uma grande comoção. |
+| 2 | O vendedor diz que algumas pessoas acreditam que as lojas Tyenmo e Xungoon são assombradas. Os transeuntes alegam ter tropeçado quando não havia nada no caminho deles. |
+| 3 | O vendedor descreve ver um macaco azul perto da tenda Tyenmo ou Xungoon. |

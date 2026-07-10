@@ -1,19 +1,19 @@
 ---
-title: "commoner"
+title: commoner
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: plemander
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, sem tendência"
+  kind: monster
+stats_meta: Medium humanoid, sem tendência
 stats:
-  ac: "10"
-  hp: "4 (1d8)"
-  speed: "30 ft."
+  ac: '10'
+  hp: 4 (1d8)
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,14 +21,18 @@ stats:
     int: 10
     wis: 10
     cha: 10
-  senses: "passive Perception 10"
-  languages: "any one language (usually Common)"
-  cr: "0"
+  senses: passive Perception 10
+  languages: any one language (usually Common)
+  cr: '0'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.
+Os plebeus incluem camponeses, servos, escravos, servos, peregrinos, comerciantes, artesãos e eremitas.
 
 ### Ações
 
-**Club.** mw 2 to hit, reach 5 ft., one target. {@h}2 ([[1d4]]) bludgeoning damage.
-
+** Clube.** MW 2 para atingir, atingir 5 pés, um alvo. {@ h}2 ([[1d4]]) danos ao espancamento.

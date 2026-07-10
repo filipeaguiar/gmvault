@@ -1,19 +1,19 @@
 ---
-title: "koi prawn"
+title: koi prawn
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Camarão koi
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium monstrosity, sem tendência"
+  kind: monster
+stats_meta: Medium monstrosity, sem tendência
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,10 +21,11 @@ stats:
     int: 10
     wis: 10
     cha: 10
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-![Arte: koi prawn](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
-
-
-
-
+[Arte: camarão koi] (/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)

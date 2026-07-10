@@ -1,14 +1,19 @@
 ---
-title: "Bandit"
+title: Bandit
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Bandido
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-Monstro **Bandit** importado automaticamente da campanha.
+Monstro ** Bandit** importado automaticamente da campanha.

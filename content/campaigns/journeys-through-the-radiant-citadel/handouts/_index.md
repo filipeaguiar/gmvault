@@ -1,9 +1,16 @@
 ---
-title: "Handouts e Materiais"
+title: Handouts e Materiais
 params:
-  kind: "handouts_index"
+  kind: handouts_index
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Entregas e Matériais
+visibility: gm
+status: draft
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
+
+

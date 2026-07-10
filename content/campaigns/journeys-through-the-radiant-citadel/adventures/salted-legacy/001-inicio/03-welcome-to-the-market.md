@@ -1,134 +1,136 @@
 ---
-title: "Cena 3 - Welcome to the Market"
+title: Cena 3 - Welcome to the Market
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: Cena 3 - Bem-vindo ao Mercado
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/wynling/"
+- /compendium/monsters/noble/
+- /compendium/monsters/commoner/
+- /compendium/monsters/wynling/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
 ### Descrição e Elementos Importantes
 
 
-![The rivalry between the Xungoon and Tyenmo families disrupts the peace in the Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)
+![A rivalidade entre as famílias Xungoon e Tyenmo interrompe a paz no Mercado Noturno de Dyn Singh](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)
 
 
-Hundreds of temporary stalls, tents, and vendor carts fill the Dyn Singh Night Market with wonders to tempt even the pickiest customers. The shops surround three golden tents in a sunken plaza. Merchants set up during the afternoon, but most don't open until twilight when the evening's cool air attracts customers.
+Centenas de barracas temporárias, tendas e carrinhos de vendedores enchem o Mercado Noturno de Dyn Singh com maravilhas para tentar até mesmo os clientes mais exigentes. As lojas cercam três tendas douradas numa praça afundada. Comerciantes montados durante a tarde, mas a maioria não abrir até crepúsculo quando o ar fresco da noite atrai clientes.
 
-The vendors are a tight-knit community, and many have attended the market for decades. Their wares vary from common goods to rarities. Some merchants price their wares plainly; others haggle, trade, or exchange goods for favors. Notable shops in the market include the following:
+Os fornecedores são uma comunidade unida, e muitos têm assistido ao mercado por décadas. Suas mercadorias variam de mercadorias comuns a raridades. Alguns comerciantes prezam seus bens com clareza; outros regateiam, trocam bens por favores. As lojas notáveis no mercado incluem o seguinte:
 
 
-### Rival Vendors
+### Vendedores Rivais
 
-Dyn Singh Night Market vendors Lamai Tyenmo and Kusa Xungoon inherited a long-standing rivalry between their families, but they want to move past it. Circumstances and family grudges conspire to exacerbate their enmity. In the course of the adventure, the characters are drawn into their conflict.
+Os vendedores do Mercado Noturno Dyn Singh Lamai Tyenmo e Kusa Xungoon herdaram uma rivalidade de longa data entre suas famílias, mas eles querem superar isso. Circunstâncias e rancores familiares conspiram para exacerbar a sua inimizade. Durante a aventura, os personagens são atraídos para o conflito.
 
 ### Lamai Tyenmo
 
-Lamai Tyenmo (lawful good, gnome commoner) has dark, wild hair and a wide smile. She recently took over as head of the Tyenmo family business, Tyenmo Noodles. The weight of the new responsibility hangs heavy on her, but she is determined to make her family proud.
+Lamai Tyenmo (legal bom, gnomo comum) tem cabelos escuros, selvagens e um sorriso largo. Recentemente assumiu como chefe do negócio da família Tyenmo, Tyenmo Noodles. O peso da nova responsabilidade pesa sobre ela, mas ela está determinada a deixar sua família orgulhosa.
 
-### Personality Trait
+### Traço de Personalidade
 
-"The land sustains us, and we honor her by sharing what she provides."
+"A terra nos sustenta, e nós a honramos compartilhando o que ela fornece."
 
 ### Ideal
 
-"I will add to my family's legacy by becoming the most successful vendor in the market."
+"Acrescento ao legado da minha família ao tornar-me o fornecedor mais bem sucedido do mercado."
 
-### Bond
+### Ligação
 
-"My grandfather took care of all of us; now we must take care of him."
+"Meu avô cuidou de todos nós, agora temos que cuidar dele."
 
-### Flaw
+### Falha
 
-"I refuse to back down from a fight if the honor of my family is on the line."
+"Recuso-me a desistir de uma luta se a honra da minha família está em risco."
 
-![Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)
+[Kusa Xungoon] (/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)
 
 
 ### Kusa Xungoon
 
-Kusa Xungoon (lawful good, kobold noble) dresses in impeccable purple-and-gold silk gowns and has polished horns. She runs a respected market stand, Xungoon Family Seafood, and seeks to expand her family's business. She cherishes her son, Gammon, whom she's teaching to take over the business.
+Kusa Xungoon (legal bom, kobold nobre) vestidos em vestidos de seda roxo-e-ouro impecável e tem chifres polidos. Ela dirige um mercado respeitado, Xungoon Family Seafood, e procura expandir os negócios de sua família. Ela aprecia o filho, Gammon, que está a ensinar para assumir o negócio.
 
-### Personality Trait
+### Traço de Personalidade
 
-"Success for my business and success for my family are one in the same."
+"Sucesso para o meu negócio e sucesso para a minha família são um no mesmo."
 
 ### Ideal
 
-"My family's legacy will spread across the land."
+"O legado da minha família espalhar-se-á pela terra."
 
-### Bond
+### Ligação
 
-"My son is the light of my life."
+O meu filho é a luz da minha vida.
 
-### Flaw
+### Falha
 
-"It's not that I'm paranoid; it's that a lot of people want what I have."
-
-
-### Exploring the Market
-
-Read the following text once characters reach the Dyn Singh Night Market:
-> As the sun dips below the horizon, the Dyn Singh Night Market twinkles to life, gradually igniting in a dazzling display. The smells of food carts filled with pot stickers, coconut desserts, spiced meats, sticky buns, and more drift amid bright bouquets of glowing flowers and magical lights in the shapes of vendors' wares and whimsical mascots. Crowds of shoppers wander the stalls, drawn by the colors, smells, and music.
-Give the party the opportunity to wander the market and visit some of the aforementioned vendors or stalls. Indulge in descriptions of colorful magic lights and glowing vendor signs; tempting street foods; and the array of peoples who make up the crowd, from humans and gnomes to kobolds and orcs.
+"Não é que eu seja paranóico, é que muita gente queira o que eu tenho."
 
 
-### Caught in the Middle
+### Exploração do mercado
 
-As characters explore the market, read or paraphrase the following:
-> Shouting rises over the sounds of haggling shoppers and the sizzle of cooking street food. A shrill voice cries out, "Give it back, you little thief!"
-> "No, you're the thief!" replies a youngster with a panicked squeak. An instant later, a frantic kobold bursts from the crowd clutching a sizable bunch of green onions. A flustered gnome woman chases him.
-Gammon Xungoon (chaotic good, kobold commoner) stole a bunch of green onions from Lamai Tyenmo. Gammon believes Lamai first stole these onions from his mother. At the moment, neither is interested in listening to reason.
-Gammon clumsily collides with a random character, bounces off them, and falls to the ground. A moment later, Lamai catches up and attempts to yank the green onions from Gammon's hands while railing at him. A character can separate the squabblers by intervening physically and succeeding on a CD 12 Strength (Athletics) check or by engaging diplomatically and succeeding on a CD 12 Charisma (Persuasion) check.
-Less than a minute later—whether or not the characters get involved—Gammon's mother, Kusa Xungoon, appears from the surrounding crowd.
+Leia o seguinte texto quando os personagens chegarem ao Mercado Noturno de Dyn Singh:
+> À medida que o sol mergulha abaixo do horizonte, o mercado noturno de Dyn Singh brilha para a vida, gradualmente acendendo em uma exibição deslumbrante. Os cheiros de carrinhos de comida cheios de adesivos de panela, sobremesas de coco, carnes temperadas, pães pegajosos, e mais deriva em meio a buquês brilhantes de flores brilhantes e luzes mágicas nas formas de produtos de fornecedores e mascotes caprichosos. Multidões de compradores vagam pelas barracas, desenhadas pelas cores, cheiros e música.
+Dê ao partido a oportunidade de vagar pelo mercado e visitar alguns dos vendedores ou barracas acima mencionados. Delicie - se com descrições de luzes mágicas coloridas e sinais brilhantes de vendedores; comidas de rua tentadoras; e a variedade de pessoas que compõem a multidão, desde humanos e gnomos a kobolds e orcs.
 
 
-### Family Feud
+### Apanhado no meio
 
-Kusa Xungoon intercedes between Lamai and her son, sternly telling the gnome shopkeeper, "That's enough, Lamai! You're behaving no better than our parents did: stealing from me and attacking my son!"
-This kicks off a fresh bout of arguing, with Lamai claiming she saw Gammon steal the onions (which is true). Gammon accuses Lamai of first stealing the onions from their seafood cart and knocking it over (which is speculation). Rapid-fire, increasingly outlandish indictments and assumptions follow. If the characters don't interrupt the argument, Kusa notices one or more of them. Read or paraphrase the following text when she does:
-> The arguing kobold woman notices you and turns from her son and the irate gnome shopkeeper. "You! You strangers look like capable sorts. I'm Kusa Xungoon, proprietor of market-famous Xungoon Family Seafood: for a fish typhoon, you'll wish for Xungoon! Help us deal with this scoundrel and I'll make it worth your while!"
-> "Scoundrel?!" the gnome shouts, turning your way. "You don't look like you're wrapped up in market politics. I'm Lamai Tyenmo. Help me figure out what's going on here, and I'll give you a lifetime supply of delicious noodles from Tyenmo Noodles!"
-> Both women turn toward each other again, quarreling anew over what they'll offer you to help them.
-Kusa and Lamai argue in front of the characters, upping their offers to include as much as 100 gp, as well as increasingly grandiose delicacies and family cooking secrets such as a feast of thrice-fried tarrasque trout or the secret of making bewildering mobius noodles. Both vendors are eager to prove the other is to blame for the vandalism and sabotage both of their market stalls have been suffering. Neither has entertained the notion someone else might be to blame for their ill fortune or that other shops might also be affected.
-Kusa and Lamai stop bickering either when the characters interrupt them or when their argument meets an appropriately ludicrous climax. At this point, the party can choose to ally with one or the other for a 100-gp reward and a lifetime supply of free meals at their employer's cart. The request from either vendor is the same: investigate the shopkeepers' stands and the surrounding market and prove their rival is sabotaging them. The shopkeeper will take any evidence the characters find, present it to the Dyn Singh Merchant Collective that oversees the market, and have their rival banned from the market. If the characters don't want to pick sides but agree to investigate, both shopkeepers convince themselves they've successfully hired the party.
-If the characters refuse to get involved, one of the shopkeepers approaches them later under calmer circumstances, restating their concerns about their shop's safety while making their offer again.
+Como os personagens exploram o mercado, leia ou parafraseie o seguinte:
+> Gritar sobe sobre os sons de regatear compradores e o chiado de cozinhar comida de rua. Uma voz estridente grita: "Devolva, ladrãozinho!"
+> "Não, você é o ladrão!" responde um jovem com um chiado em pânico. Um instante depois, um kobold frenético explode da multidão segurando um grande grupo de cebolas verdes. Uma mulher de gnomo agitada persegue-o.
+Gammon Xungoon (caótico bom, kobold plebeu) roubou um monte de cebolas verdes de Lamai Tyenmo. Gammon acredita que Lamai roubou estas cebolas da mãe. Neste momento, nenhum dos dois está interessado em ouvir a razão.
+Gammon desajeitado colide com um personagem aleatório, salta deles, e cai no chão. Um momento mais tarde, Lamai pega e tenta arrancar as cebolas verdes das mãos de Gammon enquanto o ataca. Um personagem pode separar os questionáveis intervindo fisicamente e sucedendo em um CD 12 Força (Atletismo) verificar ou envolvendo diplomaticamente e sucedendo em um CD 12 Carisma (Persuasão) verificar.
+Menos de um minuto depois, quer os personagens se envolvam ou não, a mãe de Gammon, Kusa Xungoon, aparece da multidão ao redor.
 
 
-### Around the Market
+### Família Feud
 
-Following the heated exchange, the gawking crowds and shopkeepers disperse. The characters don't get far before another market vendor approaches them. This human man wears a flashy green shirt with a high collar and gold filigree trim designed to look like hot peppers. He smiles while shaking his head as he approaches and introduces himself as Kasem Aroon, one of the owners of the Spice Brothers stall.
-
-### Kasem's Plan
-
-Kasem Aroon (chaotic neutral, human noble) and his twin brother, Vi Aroon, own and operate the Spicy Brothers stall, which features rare peppers and spices. While Vi has a zest for life, Kasem is reserved and calculating. He's also the one behind the sabotage currently afflicting the Tyenmo and Xungoon stalls.
-Several weeks ago, Vi told his brother he's getting married and moving to a distant land. Kasem knows he can't continue Spicy Brothers without Vi's charm and concocted a plan to buy out another successful business. But most businesses in the Dyn Singh Night Market are family shops the owners would never consider selling. While on a trip to get more stock for Spicy Brothers, Kasem encountered a trio of rare Fey creatures called wynlings. Kasem befriended them with a few sweet fruits and brought them back to the night market. He now bribes his invisible friends with fruit to cause disruptions around Tyenmo Noodles and Xungoon Family Seafood. He doesn't want to hurt anyone, but he hopes to make life in the market uncomfortable enough that one of the families sells its shop to him for a low price.
-
-### Kasem's Tour
-
-Upon meeting the characters, Kasem laments that the families can't get along. He encourages the characters not to ruin their night embroiled in politics and offers to show them around the market. If the characters accept, the tour lasts an hour, during which Kasem points out the stalls detailed at the start of the "**Área Welcome to the Market**" section. He tells the characters about the Market Games in the central plaza, describing them as a vapid tradition created to provide cheap thrills.
-Kasem encourages the characters to enjoy their evening, avoid the Market Games, and stay away from vendors who give the market a bad name. Any character who succeeds on a CD 14 Wisdom (Insight) check realizes Kasem is trying to keep them from getting involved in market politics. If confronted about this, Kasem insists he just wants them to have a delightful time at the market and departs soon after.
+Kusa Xungoon intercede entre Lamai e seu filho, dizendo ao gnomo lojista: "Já chega, Lamai! Não estás a comportar-te melhor do que os nossos pais: roubar-me e atacar o meu filho!"
+Isso começa uma nova discussão, com Lamai alegando que viu Gammon roubar as cebolas (o que é verdade). Gammon acusa Lamai de primeiro roubar as cebolas de seu carrinho de frutos do mar e derrubá-lo (que é especulação). Seguem-se acusações e suposições cada vez mais estranhas. Se os personagens não interromperem o argumento, Kusa nota um ou mais deles. Leia ou parafraseie o seguinte texto quando ela faz:
+> A mulher a discutir kobold repara em ti e vira-se para o filho e para o dono de lojas de gnomo. "Tu! Vocês estranhos parecem ser capazes. Eu sou Kusa Xungoon, proprietário do famoso mercado Xungoon Family Seafood: para um tufão de peixe, você vai desejar Xungoon! Ajude-nos a lidar com este canalha e eu vou fazer valer a pena o seu tempo!"
+> "Scoundrel?!" o gnomo grita, virando seu caminho. "Não pareces envolvido em política de mercado. Sou Lamai Tyenmo. Ajude-me a descobrir o que está acontecendo aqui, e eu vou dar-lhe um fornecimento vitalício de macarrão delicioso de Tyenmo Noodles!"
+> Ambas as mulheres voltam-se umas para as outras, discutindo novamente sobre o que vão oferecer para ajudá-las.
+Kusa e Lamai argumentam diante dos personagens, aumentando suas ofertas para incluir até 100 gp, bem como iguarias cada vez mais grandiosas e segredos de cozinha familiar, como uma festa de trutas tarrascas fritas três vezes ou o segredo de fazer macarrão mabius desconcertante. Ambos os fornecedores estão ansiosos para provar que o outro é culpado pelo vandalismo e sabotagem de ambas as suas bancas de mercado têm sofrido. Nem tem entretido a noção de que alguém pode ser culpado por sua má fortuna ou que outras lojas também podem ser afetadas.
+Kusa e Lamai param de discutir quando os personagens os interrompem ou quando seu argumento encontra um clímax adequadamente ridículo. Neste ponto, o partido pode optar por se aliar com um ou com o outro para uma recompensa de 100 gp e um fornecimento vitalício de refeições gratuitas no carrinho de seu empregador. O pedido de qualquer um dos fornecedores é o mesmo: investigar os stands dos lojistas e o mercado circundante e provar que o seu rival os está a sabotar. O lojista vai levar qualquer evidência que os personagens encontrar, apresentá-lo ao Dyn Singh Merchant Coletivo que supervisiona o mercado, e ter o seu rival banido do mercado. Se os personagens não quiserem escolher lados, mas concordarem em investigar, ambos os comerciantes se convencem de que contrataram o partido com sucesso.
+Se os personagens se recusam a se envolver, um dos lojistas se aproxima deles mais tarde em circunstâncias mais calmas, reafirmando suas preocupações sobre a segurança de sua loja enquanto fazem sua oferta novamente.
 
 
+### Em torno do mercado
+
+Após a troca aquecida, as multidões e comerciantes se dispersam. Os personagens não vão longe antes de outro vendedor de mercado se aproximar deles. Este homem humano usa uma camisa verde chamativa com um colarinho alto e apara de filigrana dourada projetado para parecer pimenta. Ele sorri enquanto balança a cabeça quando se aproxima e se apresenta como Kasem Aroon, um dos donos da barraca Spice Brothers.
+
+### Plano de Kasem
+
+Kasem Aroon (caótico neutro, nobre humano) e seu irmão gêmeo, Vi Aroon, possuem e operam a barraca Spicy Brothers, que apresenta pimentas raras e especiarias. Embora Vi tenha um gosto pela vida, Kasem é reservado e calculista. Ele também está por trás da sabotagem que aflige o Tyenmo e Xungoon.
+Há várias semanas, o Vi disse ao irmão que ia casar e mudar-se para uma terra distante. Kasem sabe que não pode continuar Spicy Brothers sem o charme da Vi e criou um plano para comprar outro negócio de sucesso. Mas a maioria dos negócios no mercado noturno de Dyn Singh são lojas familiares que os proprietários nunca considerariam vender. Enquanto em uma viagem para obter mais estoque para Spicy Brothers, Kasem encontrou um trio de raras criaturas Feérico chamadas wynlings. Kasem fez amizade com eles com algumas frutas doces e os trouxe de volta ao mercado noturno. Ele agora suborna seus amigos Invisível com frutas para causar rupturas em torno Tyenmo Noodles e Xungoon Family Seafood. Ele não quer magoar ninguém, mas espera tornar a vida no mercado desconfortável o suficiente para que uma das famílias lhe venda a loja por um preço baixo.
+
+### Passeio de Kasem
+
+Ao conhecer as personagens, Kasem lamenta que as famílias não se possam dar bem. Ele encoraja os personagens a não arruinar sua noite envolvida na política e oferece-se para mostrar-lhes o mercado. Se os personagens aceitarem, o tour dura uma hora, durante o qual Kasem aponta as barracas detalhadas no início da seção "**Área Bem-vindo ao Mercado**". Ele conta aos personagens sobre os Jogos de Mercado na praça central, descrevendo-os como uma tradição vã criada para proporcionar emoções baratas.
+Kasem incentiva os personagens a desfrutar de sua noite, evitar os Jogos de Mercado, e ficar longe de vendedores que dão ao mercado um nome ruim. Qualquer personagem que tenha sucesso em um CD 14 Sabedoria (Intuição) verifica que Kasem está tentando impedi-los de se envolver na política de mercado. Se confrontado com isso, Kasem insiste que só quer que eles tenham um momento agradável no mercado e parte logo depois.

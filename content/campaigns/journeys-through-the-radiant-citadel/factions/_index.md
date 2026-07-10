@@ -1,9 +1,16 @@
 ---
-title: "Organizações e Facções"
+title: Organizações e Facções
 params:
-  kind: "factions_index"
+  kind: factions_index
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Organizações e Facções
+visibility: gm
+status: draft
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
+
+

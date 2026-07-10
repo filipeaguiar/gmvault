@@ -1,15 +1,20 @@
 ---
-title: "Arte: Madam Kulp"
+title: 'Arte: Madam Kulp'
 params:
-  kind: "handout"
+  kind: handout
 draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+titulo_pt_br: 'Arte: Madame Kulp'
+visibility: players
+status: draft
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)
+[Arte: Madame Kulp] (/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)

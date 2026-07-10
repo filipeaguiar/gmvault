@@ -1,19 +1,19 @@
 ---
-title: "noble"
+title: noble
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: nobre
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, sem tendência"
+  kind: monster
+stats_meta: Medium humanoid, sem tendência
 stats:
-  ac: "15"
-  hp: "9 (2d8)"
-  speed: "30 ft."
+  ac: '15'
+  hp: 9 (2d8)
+  speed: 30 ft.
   attributes:
     str: 11
     dex: 12
@@ -21,18 +21,22 @@ stats:
     int: 12
     wis: 14
     cha: 16
-  skills: "Deception +5, Insight +4, Persuasion +5"
-  senses: "passive Perception 12"
-  languages: "any two languages"
-  cr: "1/8"
+  skills: Deception +5, Insight +4, Persuasion +5
+  senses: passive Perception 12
+  languages: any two languages
+  cr: 1/8
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-![Arte: noble](/images/campaigns/journeys-through-the-radiant-citadel/noble.webp)
+[Arte: nobre] (/images/campaigns/journeys-through-the-radiant-citadel/noble.webp)
 
-Nobles wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.
-The noble's statistics can also be used to represent courtiers who aren't of noble birth.
+Os nobres exercem grande autoridade e influência como membros da classe alta, possuindo riqueza e conexões que podem torná-los tão poderosos como monarcas e generais. Um nobre muitas vezes viaja na companhia de guardas, bem como servos que são plebeus.
+As estatísticas do nobre também podem ser usadas para representar cortesãos que não são nobres.
 
 ### Ações
 
-**Rapier.** mw 3 to hit, reach 5 ft., one target. {@h}5 ([[1d8+1]]) piercing damage.
-
+**Rapier.** mw 3 para atingir, atingir 5 pés, um alvo. {@ h}5 ([[1d8+1]]) lesões perfurantes.

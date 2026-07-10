@@ -11,6 +11,8 @@ import argparse
 import json
 import re
 import sys
+import threading
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable
@@ -60,7 +62,7 @@ STRUCTURAL_FRONT_MATTER_KEYS = {
     "translation",
 }
 
-TEXTUAL_FRONT_MATTER_KEYS = {"title", "summary", "description", "titulo_pt_br"}
+TEXTUAL_FRONT_MATTER_KEYS = {"summary", "description"}
 
 
 @dataclass
@@ -90,7 +92,6 @@ class Protector:
         patterns = [
             r"```[\s\S]*?```",  # fenced code blocks
             r"~~~[\s\S]*?~~~",  # alternate fenced code blocks
-            r"!\[[^\]]*\]\([^\)]*\)",  # markdown images
             r"\{\{[\s\S]*?\}\}",  # Hugo shortcodes/templates
             r"\[\[[^\]]+\]\]",  # dice notation
             r"`[^`\n]+`",  # inline code
@@ -127,7 +128,21 @@ class Protector:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Traduz arquivos Markdown em draft usando Argos Translate e glossário controlado."
+        description="Traduz arquivos Markdown em draft usando Argos Translate e glossário controlado.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""Exemplos:
+  # Traduzir toda a campanha, incluindo corpo, summary/description e título em titulo_pt_br
+  source .venv/bin/activate
+  python3 translate_drafts.py --scope campaign --campaign journeys-through-the-radiant-citadel --translate-frontmatter --apply
+
+  # Traduzir campanha e compêndio em paralelo, com 4 workers
+  python3 translate_drafts.py --scope campaign --campaign journeys-through-the-radiant-citadel --translate-frontmatter --jobs 4 --apply
+  python3 translate_drafts.py --scope compendium --translate-frontmatter --jobs 4 --apply
+
+Observações:
+  - title é preservado; a tradução do título é gravada em titulo_pt_br.
+  - --jobs pode acelerar em máquinas com CPU disponível, mas use valores moderados (2-4) para evitar excesso de memória.
+""",
     )
     parser.add_argument("--scope", choices=["compendium", "campaign"], required=True, help="Escopo de tradução.")
     parser.add_argument("--campaign", help="Slug da campanha. Obrigatório com --scope campaign.")
@@ -141,7 +156,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--translate-frontmatter",
         action="store_true",
-        help="Também traduz campos textuais seguros do front matter, como title e summary.",
+        help="Também traduz campos textuais seguros do front matter. title é preservado e sua tradução vai para titulo_pt_br.",
+    )
+    parser.add_argument(
+        "--jobs",
+        type=int,
+        default=1,
+        help="Número de arquivos traduzidos em paralelo. Padrão: 1. Use 2-4 para tentar acelerar.",
     )
     parser.add_argument("--glossary", default=str(DEFAULT_GLOSSARY), help="Caminho do glossário JSON.")
     parser.add_argument("--source", default="en", help="Código do idioma de origem Argos. Padrão: en.")
@@ -248,6 +269,46 @@ def get_argos_translation(source_code: str, target_code: str) -> Callable[[str],
     return translation.translate
 
 
+def translate_markdown_line(line: str, translate: Callable[[str], str]) -> str:
+    """Translate textual content while preserving common Markdown syntax."""
+    if not line.strip():
+        return line
+
+    heading = re.match(r"^(\s{0,3}#{1,6}\s+)(.*?)(\s*#*\s*)$", line)
+    if heading and heading.group(2).strip():
+        return f"{heading.group(1)}{translate(heading.group(2))}{heading.group(3)}"
+
+    list_item = re.match(r"^(\s*(?:[-+*]|\d+[.)])\s+(?:\[[ xX]\]\s+)?)(.*)$", line)
+    if list_item and list_item.group(2).strip():
+        return f"{list_item.group(1)}{translate(list_item.group(2))}"
+
+    quote = re.match(r"^(\s*(?:>\s*)+)(.*)$", line)
+    if quote and quote.group(2).strip():
+        return f"{quote.group(1)}{translate(quote.group(2))}"
+
+    if re.match(r"^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$", line):
+        return line
+
+    if "|" in line and line.strip().startswith("|"):
+        leading = line.startswith("|")
+        trailing = line.rstrip().endswith("|")
+        cells = line.strip().strip("|").split("|")
+        translated_cells = []
+        for cell in cells:
+            prefix = re.match(r"^\s*", cell).group(0)
+            suffix = re.search(r"\s*$", cell).group(0)
+            core = cell.strip()
+            translated_cells.append(f"{prefix}{translate(core) if core else core}{suffix}")
+        rendered = "|".join(translated_cells)
+        if leading:
+            rendered = "|" + rendered
+        if trailing:
+            rendered = rendered + "|"
+        return rendered
+
+    return translate(line)
+
+
 def translate_text(text: str, translate: Callable[[str], str], glossary: dict[str, str]) -> str:
     if not text.strip():
         return text
@@ -261,8 +322,19 @@ def translate_text(text: str, translate: Callable[[str], str], glossary: dict[st
     for block in blocks:
         if not block.strip() or re.fullmatch(r"\n\s*\n", block):
             translated_blocks.append(block)
-        else:
-            translated_blocks.append(translate(block))
+            continue
+        translated_lines = []
+        for line in block.splitlines(keepends=True):
+            newline = ""
+            content = line
+            if content.endswith("\r\n"):
+                content = content[:-2]
+                newline = "\r\n"
+            elif content.endswith("\n"):
+                content = content[:-1]
+                newline = "\n"
+            translated_lines.append(translate_markdown_line(content, translate) + newline)
+        translated_blocks.append("".join(translated_lines))
 
     translated = "".join(translated_blocks)
     translated = restore_glossary(translated, token_targets)
@@ -274,6 +346,13 @@ def translate_front_matter(
     front_matter: dict[str, Any], translate: Callable[[str], str], glossary: dict[str, str]
 ) -> dict[str, Any]:
     updated = dict(front_matter)
+
+    # Preserve the original title for stable imported metadata and store the
+    # translated title in the editorial pt-BR field.
+    title = updated.get("title")
+    if isinstance(title, str) and title.strip():
+        updated["titulo_pt_br"] = translate_text(title, translate, glossary)
+
     for key in TEXTUAL_FRONT_MATTER_KEYS:
         value = updated.get(key)
         if isinstance(value, str) and value.strip():
@@ -346,26 +425,27 @@ def main() -> int:
         if args.scope == "campaign":
             print(f"Campanha: {args.campaign}")
         print(f"Raiz analisada: {root}")
+        jobs = max(1, args.jobs)
         print(f"Modo: {'apply' if args.apply else 'dry-run'}")
+        print(f"Workers: {jobs}")
         print(f"Arquivos Markdown encontrados: {len(files)}")
 
-        translate = None
-        if args.apply:
-            translate = get_argos_translation(args.source, args.target)
+        thread_local = threading.local()
 
-        processed = 0
-        changed = 0
-        skipped = 0
-        for path in files:
+        def translate_for_worker() -> Callable[[str], str] | None:
+            if not args.apply:
+                return None
+            if not hasattr(thread_local, "translate"):
+                thread_local.translate = get_argos_translation(args.source, args.target)
+            return thread_local.translate
+
+        def process_path(path: Path) -> ProcessResult:
             document = parse_markdown(path)
             if document is None:
-                skipped += 1
-                print(f"[skip] {path} — sem front matter YAML válido")
-                continue
-
-            result = process_document(
+                return ProcessResult(path, changed=False, skipped_reason="sem front matter YAML válido")
+            return process_document(
                 document,
-                translate,
+                translate_for_worker(),
                 glossary,
                 apply=args.apply,
                 include_non_draft=args.include_non_draft,
@@ -373,16 +453,27 @@ def main() -> int:
                 source=args.source,
                 target=args.target,
             )
+
+        processed = 0
+        changed = 0
+        skipped = 0
+        if jobs == 1:
+            results = [process_path(path) for path in files]
+        else:
+            with ThreadPoolExecutor(max_workers=jobs) as executor:
+                results = list(executor.map(process_path, files))
+
+        for result in results:
             if result.skipped_reason:
                 skipped += 1
-                print(f"[skip] {path} — {result.skipped_reason}")
+                print(f"[skip] {result.path} — {result.skipped_reason}")
             else:
                 processed += 1
                 if result.changed:
                     changed += 1
-                    print(f"[change] {path}")
+                    print(f"[change] {result.path}")
                 else:
-                    print(f"[ok] {path} — sem alterações")
+                    print(f"[ok] {result.path} — sem alterações")
 
         print("\nResumo:")
         print(f"  processados: {processed}")

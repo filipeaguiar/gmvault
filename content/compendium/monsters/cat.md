@@ -1,19 +1,19 @@
 ---
-title: "cat"
+title: cat
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: gato
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Tiny beast, sem tendência"
+  kind: monster
+stats_meta: Tiny beast, sem tendência
 stats:
-  ac: "12"
-  hp: "2 (1d4)"
-  speed: "40 ft., climb 30 ft."
+  ac: '12'
+  hp: 2 (1d4)
+  speed: 40 ft., climb 30 ft.
   attributes:
     str: 3
     dex: 15
@@ -21,18 +21,20 @@ stats:
     int: 3
     wis: 12
     cha: 7
-  skills: "Perception +3, Stealth +4"
-  senses: "passive Perception 13"
-  cr: "0"
+  skills: Perception +3, Stealth +4
+  senses: passive Perception 13
+  cr: '0'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
-
-
 
 ### Características
 
-**Keen Smell.** The cat has advantage on Wisdom (Perception) checks that rely on smell.
+* Keen Smell.** O gato tem vantagem em Sabedoria (Percepção) verificações que dependem do cheiro.
 
 ### Ações
 
-**Claws.** mw 0 to hit, reach 5 ft., one target. {@h}1 slashing damage.
-
+** Garras.** mw 0 para acertar, atingir 5 pés, um alvo. {@h}1 a cortar danos.

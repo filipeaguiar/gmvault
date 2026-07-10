@@ -1,15 +1,20 @@
 ---
-title: "Arte: koi prawn"
+title: 'Arte: koi prawn'
 params:
-  kind: "handout"
+  kind: handout
 draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+titulo_pt_br: 'Arte: camarão koi'
+visibility: players
+status: draft
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
 ---
 
-![Arte: koi prawn](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
+[Arte: camarão koi] (/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
