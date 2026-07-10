@@ -1,0 +1,23 @@
+{{- $sessions := slice -}}
+{{- range .Sections -}}
+  {{- if eq (partial "helpers/kind.html" .) "session" -}}
+    {{- $sessions = $sessions | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- with .GetPage "sessions" -}}
+  {{- range .Sections -}}
+    {{- if eq (partial "helpers/kind.html" .) "session" -}}
+      {{- $candidate := . -}}
+      {{- $already := false -}}
+      {{- range $sessions -}}
+        {{- if eq .RelPermalink $candidate.RelPermalink -}}
+          {{- $already = true -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if not $already -}}
+        {{- $sessions = $sessions | append $candidate -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $sessions -}}

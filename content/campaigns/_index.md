@@ -2,7 +2,7 @@
 title: "Campanhas de RPG"
 draft: false
 summary: "Lista de todas as campanhas ativas e concluídas gerenciadas nesta wiki."
-visibility: "public"
+visibility: "gm"
 status: "active"
 params:
   kind: "campaigns_index"

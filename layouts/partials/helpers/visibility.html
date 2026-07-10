@@ -1,0 +1,6 @@
+{{- $kind := partial "helpers/kind.html" . -}}
+{{- $visibility := .Params.visibility | default "gm" -}}
+{{- if eq $kind "monster" -}}
+  {{- $visibility = "gm" -}}
+{{- end -}}
+{{- return $visibility -}}

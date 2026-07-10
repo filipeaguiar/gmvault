@@ -1,15 +1,13 @@
+{{- $kind := partial "helpers/kind.html" . -}}
+{{- $visibility := partial "helpers/visibility.html" . -}}
 <div class="metadata-block">
-  {{ if .Params.kind }}
+  {{ if $kind }}
   <div class="meta-item">
     <span class="meta-label">Tipo:</span>
-    <span class="badge kind-{{ .Params.kind }}">{{ replace .Params.kind "_" " " | title }}</span>
+    <span class="badge kind-{{ $kind }}">{{ replace $kind "_" " " | title }}</span>
   </div>
   {{ end }}
   
-  {{ $visibility := .Params.visibility }}
-  {{ if eq .Params.kind "monster" }}
-    {{ $visibility = "gm" }}
-  {{ end }}
   {{ if $visibility }}
   <div class="meta-item">
     <span class="meta-label">Visibilidade:</span>

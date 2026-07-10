@@ -84,22 +84,28 @@
   {{ $rules := slice }}
   {{ $others := slice }}
 
+  {{ $pageVisibility := partial "helpers/visibility.html" . }}
+  {{ $pageIsPlayerSafe := or (eq $pageVisibility "players") (eq $pageVisibility "public") }}
   {{ range .Params.compendium_refs }}
     {{ $p := site.GetPage . }}
     {{ if $p }}
-      {{ $k := $p.Params.kind | default $p.Kind }}
-      {{ if eq $k "spell" }}
-        {{ $spells = $spells | append $p }}
-      {{ else if eq $k "feat" }}
-        {{ $feats = $feats | append $p }}
-      {{ else if or (eq $k "item") (eq $k "magic_item") }}
-        {{ $items = $items | append $p }}
-      {{ else if or (eq $k "class") (eq $k "race") }}
-        {{ $racesAndClasses = $racesAndClasses | append $p }}
-      {{ else if eq $k "rule" }}
-        {{ $rules = $rules | append $p }}
-      {{ else }}
-        {{ $others = $others | append $p }}
+      {{ $targetVisibility := partial "helpers/visibility.html" $p }}
+      {{ $targetIsPlayerSafe := or (eq $targetVisibility "players") (eq $targetVisibility "public") }}
+      {{ if or (not $pageIsPlayerSafe) $targetIsPlayerSafe }}
+        {{ $k := partial "helpers/kind.html" $p | default $p.Kind }}
+        {{ if eq $k "spell" }}
+          {{ $spells = $spells | append $p }}
+        {{ else if eq $k "feat" }}
+          {{ $feats = $feats | append $p }}
+        {{ else if or (eq $k "item") (eq $k "magic_item") }}
+          {{ $items = $items | append $p }}
+        {{ else if or (eq $k "class") (eq $k "race") }}
+          {{ $racesAndClasses = $racesAndClasses | append $p }}
+        {{ else if eq $k "rule" }}
+          {{ $rules = $rules | append $p }}
+        {{ else }}
+          {{ $others = $others | append $p }}
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -113,7 +119,8 @@
     <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
       {{ range $racesAndClasses }}
         <a href="{{ .RelPermalink }}" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 4px; padding: 0.6rem 1.2rem; text-decoration: none; color: var(--text-color); display: inline-flex; align-items: center; gap: 0.6rem; font-family: 'Cinzel', serif; font-weight: bold; font-size: 0.95rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: transform 0.2s, border-color 0.2s;">
-          <i class="ra {{ if eq .Params.kind "class" }}ra-axe{{ else }}ra-egg-pod{{ end }}" style="color: var(--primary-color);"></i> {{ .Title }}
+          {{ $refKind := partial "helpers/kind.html" . }}
+          <i class="ra {{ if eq $refKind "class" }}ra-axe{{ else }}ra-egg-pod{{ end }}" style="color: var(--primary-color);"></i> {{ .Title }}
         </a>
       {{ end }}
     </div>
@@ -305,10 +312,7 @@
 
   <!-- Outros Relacionamentos de Campanha (Localidades, Facções, NPCs etc.) -->
   {{ $hasCampaignRefs := false }}
-  {{ $visibility := .Params.visibility }}
-  {{ if eq .Params.kind "monster" }}
-    {{ $visibility = "gm" }}
-  {{ end }}
+  {{ $visibility := partial "helpers/visibility.html" . }}
   {{ $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") }}
   {{ $campaignRelations := dict }}
   {{ if not $isPlayerPage }}

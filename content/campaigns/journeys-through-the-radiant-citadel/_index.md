@@ -5,7 +5,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "active"
+status: "draft"
 system: "D&D 5e"
 ---
 

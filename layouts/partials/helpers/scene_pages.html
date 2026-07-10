@@ -1,0 +1,23 @@
+{{- $scenes := slice -}}
+{{- range .Pages -}}
+  {{- if eq (partial "helpers/kind.html" .) "scene" -}}
+    {{- $scenes = $scenes | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- with .GetPage "scenes" -}}
+  {{- range .Pages -}}
+    {{- if eq (partial "helpers/kind.html" .) "scene" -}}
+      {{- $candidate := . -}}
+      {{- $already := false -}}
+      {{- range $scenes -}}
+        {{- if eq .RelPermalink $candidate.RelPermalink -}}
+          {{- $already = true -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if not $already -}}
+        {{- $scenes = $scenes | append $candidate -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $scenes -}}

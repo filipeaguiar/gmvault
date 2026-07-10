@@ -1,9 +1,6 @@
 <header class="site-header">
   <div class="container header-content">
-    {{ $visibility := .Params.visibility }}
-    {{ if eq .Params.kind "monster" }}
-      {{ $visibility = "gm" }}
-    {{ end }}
+    {{ $visibility := partial "helpers/visibility.html" . }}
     {{ $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") }}
     {{ if $isPlayerPage }}
       <span class="logo">
@@ -14,11 +11,16 @@
         <span class="logo-shield"><i class="ra ra-shield"></i></span> {{ site.Title }}
       </a>
     {{ end }}
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Navegação principal">
       {{ if not $isPlayerPage }}
         {{ with site.GetPage "/campaigns" }}<a href="{{ .RelPermalink }}" class="nav-item">Campanhas</a>{{ end }}
       {{ end }}
-      {{ with site.GetPage "/compendium" }}<a href="{{ .RelPermalink }}" class="nav-item">Compêndio</a>{{ end }}
+      {{ with site.GetPage "/compendium" }}
+        {{ $compVisibility := partial "helpers/visibility.html" . }}
+        {{ if or (not $isPlayerPage) (eq $compVisibility "players") (eq $compVisibility "public") }}
+          <a href="{{ .RelPermalink }}" class="nav-item">Compêndio</a>
+        {{ end }}
+      {{ end }}
     </nav>
   </div>
 </header>

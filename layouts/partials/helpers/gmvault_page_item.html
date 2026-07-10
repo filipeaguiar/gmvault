@@ -1,0 +1,12 @@
+{{- $page := . -}}
+{{- $visibility := partial "helpers/visibility.html" $page -}}
+{{- $item := dict 
+  "type" "page" 
+  "name" (or $page.Params.titulo_pt_br $page.Title) 
+  "id" (printf "page_%s" (substr ($page.Permalink | md5) 0 8)) 
+  "url" $page.Permalink 
+-}}
+{{- if or (eq $visibility "players") (eq $visibility "public") -}}
+  {{- $item = merge $item (dict "visibleToPlayers" true) -}}
+{{- end -}}
+{{- return $item -}}

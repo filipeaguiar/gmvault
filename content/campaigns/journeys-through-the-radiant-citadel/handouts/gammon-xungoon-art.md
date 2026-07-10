@@ -5,7 +5,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "players"
-status: "ready"
+status: "draft"
 tags:
   - handout
   - arte

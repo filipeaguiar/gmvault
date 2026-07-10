@@ -3,7 +3,7 @@ title: "noble"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 tags:
   - monstro
   - importado

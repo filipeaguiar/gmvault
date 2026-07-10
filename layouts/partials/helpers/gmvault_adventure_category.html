@@ -1,0 +1,66 @@
+{{- $adventure := . -}}
+{{- $adventureTitle := or $adventure.Params.titulo_pt_br $adventure.Title -}}
+{{- $sessionItems := slice -}}
+{{- $sessions := partial "helpers/session_pages.html" $adventure -}}
+{{- range (sort $sessions "Weight") -}}
+  {{- $session := . -}}
+  {{- $sessionTitle := or $session.Params.titulo_pt_br $session.Title -}}
+  {{- $sceneItems := slice -}}
+  {{- $scenes := partial "helpers/scene_pages.html" $session -}}
+  {{- range (sort $scenes "Weight") -}}
+    {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+    {{- range .Pages -}}
+      {{- if eq (partial "helpers/kind.html" .) "handout" -}}
+        {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $sessionItems = $sessionItems | append (partial "helpers/gmvault_page_item.html" $session) -}}
+  {{- if $sceneItems -}}
+    {{- $scenesCategory := dict 
+      "type" "category" 
+      "name" (printf "Cenas da %s" $sessionTitle) 
+      "items" $sceneItems 
+      "id" (printf "cat_%s" (substr ( (printf "%s-scenes" $session.Permalink) | md5) 0 8)) 
+    -}}
+    {{- $sessionItems = $sessionItems | append $scenesCategory -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $adventureSubItems := slice -}}
+{{- if $sessionItems -}}
+  {{- $sessionsCategory := dict 
+    "type" "category" 
+    "name" (printf "Sessões de %s" $adventureTitle) 
+    "items" $sessionItems 
+    "id" (printf "cat_%s" (substr ( (printf "%s-sessions" $adventure.Permalink) | md5) 0 8)) 
+  -}}
+  {{- $adventureSubItems = $adventureSubItems | append $sessionsCategory -}}
+{{- end -}}
+
+{{- $adventureNpcItems := slice -}}
+{{- if $adventure.Params.npcs -}}
+  {{- range $adventure.Params.npcs -}}
+    {{- $npcPage := site.GetPage . -}}
+    {{- if $npcPage -}}
+      {{- $adventureNpcItems = $adventureNpcItems | append (partial "helpers/gmvault_page_item.html" $npcPage) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $adventureNpcItems -}}
+  {{- $npcsCategory := dict 
+    "type" "category" 
+    "name" (printf "NPCs de %s" $adventureTitle) 
+    "items" $adventureNpcItems 
+    "id" (printf "cat_%s" (substr ( (printf "%s-npcs" $adventure.Permalink) | md5) 0 8)) 
+  -}}
+  {{- $adventureSubItems = $adventureSubItems | append $npcsCategory -}}
+{{- end -}}
+
+{{- $adventureCategory := dict 
+  "type" "category" 
+  "name" $adventureTitle 
+  "items" $adventureSubItems 
+  "id" (printf "cat_%s" (substr ($adventure.Permalink | md5) 0 8)) 
+-}}
+{{- return $adventureCategory -}}

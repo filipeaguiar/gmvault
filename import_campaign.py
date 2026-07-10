@@ -332,6 +332,47 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
             if img_path:
                 slug_filename = download_image(img_path, campaign_slug)
                 local_path = f"/images/campaigns/{campaign_slug}/{slug_filename}"
+                
+                # Heurística de Mapa: título contém "map"/"mapa" ou imageType é "map"/"mapPlayer"
+                title_lower = title_clean.lower()
+                image_type = entry.get("imageType", "")
+                
+                is_map = "map" in title_lower or "mapa" in title_lower or "map" in str(image_type).lower()
+                
+                if is_map:
+                    if "player" in title_lower or "player" in str(image_type).lower():
+                        visibility = "players"
+                    else:
+                        visibility = "gm"
+                        
+                    # Obter título amigável enriquecido
+                    map_title = title_clean
+                    if map_title.lower() in ["player version", "player map", "player", "version", "imagem", "image"]:
+                        current_loc_slug = ctx.get("current_loc_slug")
+                        if current_loc_slug:
+                            locs_registry = ctx.get("locations_registry", {})
+                            loc_data = locs_registry.get(current_loc_slug, {})
+                            loc_friendly_name = loc_data.get("name", current_loc_slug.replace("-", " ").title())
+                            map_title = f"{loc_friendly_name} (Player Version)"
+                        else:
+                            name_part, _ = os.path.splitext(slug_filename)
+                            map_title = name_part.replace("-", " ").title()
+                    
+                    name_part, _ = os.path.splitext(slug_filename)
+                    map_slug = f"map-{slugify(name_part)}"
+                    write_map_handout(campaign_slug, map_slug, map_title, local_path, visibility)
+                    
+                    map_ref = f"/campaigns/{campaign_slug}/handouts/{map_slug}/"
+                    if "campaign_handouts" not in ctx:
+                        ctx["campaign_handouts"] = set()
+                    ctx["campaign_handouts"].add(map_ref)
+                    
+                    # Registrar na localidade ativa se disponível
+                    current_loc_slug = ctx.get("current_loc_slug")
+                    locs_registry = ctx.get("locations_registry")
+                    if current_loc_slug and locs_registry and current_loc_slug in locs_registry:
+                        locs_registry[current_loc_slug]["maps"].add((map_ref, local_path))
+                        
                 return f"\n![{title_clean}]({local_path})\n"
                 
         elif entry_type == "gallery":
@@ -516,7 +557,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "players"
-status: "ready"
+status: "draft"
 tags:
   - handout
   - arte
@@ -545,7 +586,7 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
         'draft: true',
         'titulo_pt_br: ""',
         'visibility: "gm"',
-        'status: "ready"',
+        'status: "draft"',
         'tags:',
         '  - npc',
         '  - importado',
@@ -624,7 +665,7 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
         'draft: true',
         'titulo_pt_br: ""',
         'visibility: "gm"',
-        'status: "ready"',
+        'status: "draft"',
         'tags:',
         '  - monstro',
         '  - importado',
@@ -699,7 +740,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 tags:
   - item_magico
   - importado
@@ -721,7 +762,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 tags:
   - localidade
   - importado
@@ -730,6 +771,91 @@ tags:
 Localidade **{loc_name}** importada automaticamente da campanha.
 """)
     print(f"    [Localidade] Criado stub de Localidade: {loc_name}")
+
+def write_map_handout(campaign_slug, map_slug, map_title, local_img_path, visibility):
+    handout_dir = f"content/campaigns/{campaign_slug}/handouts"
+    os.makedirs(handout_dir, exist_ok=True)
+    handout_file = os.path.join(handout_dir, f"{map_slug}.md")
+    if os.path.exists(handout_file):
+        return
+    with open(handout_file, "w") as f:
+        f.write(f"""---
+title: "Mapa: {map_title}"
+params:
+  kind: "handout"
+draft: true
+visibility: "{visibility}"
+status: "draft"
+tags:
+  - mapa
+  - handout
+  - importado
+---
+
+![{map_title}]({local_img_path})
+""")
+    print(f"    [Mapa] Criado handout de Mapa: {map_title} ({visibility})")
+
+def campaign_relative_body_link(campaign_slug, ref):
+    """Convert campaign-root internal URLs to links safe for Markdown bodies under locations/.
+
+    Hugo does not rewrite plain Markdown links such as /campaigns/... with baseURL.
+    Location pages render at /campaigns/<slug>/locations/<location>/, so ../../ returns
+    to the campaign root while preserving compatibility with subpath deployments.
+    """
+    prefix = f"/campaigns/{campaign_slug}/"
+    if isinstance(ref, str) and ref.startswith(prefix):
+        return "../../" + ref[len(prefix):]
+    return ref
+
+
+def write_enriched_locations(campaign_slug, locations_registry):
+    for loc_slug, data in locations_registry.items():
+        loc_file = f"content/campaigns/{campaign_slug}/locations/{loc_slug}.md"
+        
+        # Ordenar maps por ref
+        maps_sorted = sorted(list(data["maps"]), key=lambda x: x[0])
+        
+        handouts_yaml = ""
+        if maps_sorted:
+            handouts_yaml = "\n".join([f"  - \"{ref}\"" for ref, _ in maps_sorted])
+            
+        with open(loc_file, "w") as f:
+            f.write(f"""---
+title: "{data['name']}"
+params:
+  kind: "location"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+tags:
+  - localidade
+  - importado
+handouts:
+{handouts_yaml}
+---
+
+Localidade **{data['name']}** importada automaticamente.
+
+### Cenas e Sub-áreas
+""")
+            if data["scenes"]:
+                for sc in data["scenes"]:
+                    scene_link = campaign_relative_body_link(campaign_slug, sc['ref'])
+                    f.write(f"- [{sc['title']}]({scene_link})\n")
+            else:
+                f.write("*Nenhuma cena associada diretamente.*\n")
+                
+            if maps_sorted:
+                f.write("\n### Mapas\n\n")
+                for ref, img_path in maps_sorted:
+                    # Obter o título amigável do mapa a partir do ref
+                    map_name = ref.split("/")[-2].replace("map-", "").replace("-", " ").title()
+                    f.write(f"#### {map_name}\n")
+                    f.write(f"![{map_name}]({img_path})\n\n")
+                    
+        print(f"    [Localidade] Gerada localidade rica: {data['name']}")
 
 LORE_BLACKLIST = [
     "introducao", "introduction", "whats next", "what's next?", "credits", "creditos",
@@ -803,7 +929,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "active"
+status: "draft"
 system: "D&D 5e"
 ---
 
@@ -820,8 +946,7 @@ Campanha importada do 5e.tools: {campaign_title}.
 
 def create_adventure_structure(campaign_slug, adv_slug, adv_title):
     adv_dir = f"content/campaigns/{campaign_slug}/adventures/{adv_slug}"
-    sessions_dir = os.path.join(adv_dir, "sessions")
-    os.makedirs(sessions_dir, exist_ok=True)
+    os.makedirs(adv_dir, exist_ok=True)
     
     adv_idx = os.path.join(adv_dir, "_index.md")
     if not os.path.exists(adv_idx):
@@ -833,31 +958,15 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 summary: "Aventura independente importada do capítulo {adv_title}."
 ---
 """)
-            
-    sessions_idx = os.path.join(sessions_dir, "_index.md")
-    if not os.path.exists(sessions_idx):
-        with open(sessions_idx, "w") as f:
-            f.write(f"""---
-title: "Sessões de {adv_title}"
-params:
-  kind: "sessions_index"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "ready"
-summary: "Lista de sessões planejadas e jogadas para a aventura {adv_title}."
----
-""")
-    return adv_dir, sessions_dir
+    return adv_dir, adv_dir
 
 def create_session_structure(adv_dir, session_slug, session_title):
-    sess_dir = os.path.join(adv_dir, "sessions", session_slug)
-    scenes_dir = os.path.join(sess_dir, "scenes")
-    os.makedirs(scenes_dir, exist_ok=True)
+    sess_dir = os.path.join(adv_dir, session_slug)
+    os.makedirs(sess_dir, exist_ok=True)
     
     sess_idx = os.path.join(sess_dir, "_index.md")
     if not os.path.exists(sess_idx):
@@ -869,26 +978,11 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 summary: "Planejamento para a sessão."
 ---
 """)
-            
-    scenes_idx = os.path.join(scenes_dir, "_index.md")
-    if not os.path.exists(scenes_idx):
-        with open(scenes_idx, "w") as f:
-            f.write(f"""---
-title: "Cenas de {session_title}"
-params:
-  kind: "scenes_index"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "ready"
-summary: "Lista de cenas operacionais para a sessão."
----
-""")
-    return sess_dir, scenes_dir
+    return sess_dir, sess_dir
 
 def fetch_adventure_data(slug):
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -1052,6 +1146,7 @@ def main():
             
         current_loc_slug = None
         current_loc_name = None
+        locations_registry = {}
 
         for c_idx, chap in enumerate(chapters):
             chap_title = chap.get("name")
@@ -1085,13 +1180,36 @@ def main():
                 scene_slug = f"{s_idx+1:02d}-{slugify(s_title)}"
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
+                # Determina a localidade da cena ANTES do processamento
+                scene_loc_slug = None
+                scene_loc_name = None
+                if not is_lore_or_meta(s_title):
+                    if is_numbered_room(s_title):
+                        scene_loc_slug = current_loc_slug
+                        scene_loc_name = current_loc_name
+                    else:
+                        current_loc_slug = slugify(s_title)
+                        current_loc_name = s_title
+                        scene_loc_slug = current_loc_slug
+                        scene_loc_name = current_loc_name
+
+                if scene_loc_slug and scene_loc_slug not in locations_registry:
+                    locations_registry[scene_loc_slug] = {
+                        "name": scene_loc_name,
+                        "maps": set(),
+                        "scenes": []
+                    }
+                
                 ctx = {
                     "campaign_creatures": set(),
                     "campaign_items": set(),
                     "monsters": set(),
                     "spells": set(),
                     "items": set(),
-                    "locations": set()
+                    "locations": set(),
+                    "locations_registry": locations_registry,
+                    "current_loc_slug": scene_loc_slug,
+                    "campaign_handouts": set()
                 }
                 
                 content_markdown = ""
@@ -1104,6 +1222,12 @@ def main():
                     campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, all_npcs, all_monsters, all_handouts
                 )
                 
+                if "campaign_handouts" in ctx:
+                    for h_ref in ctx["campaign_handouts"]:
+                        if h_ref not in scene_handouts:
+                            scene_handouts.append(h_ref)
+                        all_handouts.add(h_ref)
+                
                 scene_monsters = [f"/compendium/monsters/{m}/" for m, _, _ in ctx["monsters"]]
                 for m_ref in scene_spec_monsters:
                     if m_ref not in scene_monsters:
@@ -1112,20 +1236,16 @@ def main():
                     scene_monsters.append(i_ref)
                     
                 scene_locations = []
-                if not is_lore_or_meta(s_title):
-                    if is_numbered_room(s_title):
-                        # Vincula à masmorra/localidade principal ativa
-                        if current_loc_slug:
-                            loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
-                            scene_locations.append(loc_ref)
-                    else:
-                        # É uma localidade principal nomeada
-                        current_loc_slug = slugify(s_title)
-                        current_loc_name = s_title
-                        write_location_stub(campaign_slug, current_loc_slug, current_loc_name)
-                        loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
-                        scene_locations.append(loc_ref)
-                        all_locations.add(loc_ref)
+                if scene_loc_slug:
+                    loc_ref = f"/campaigns/{campaign_slug}/locations/{scene_loc_slug}/"
+                    scene_locations.append(loc_ref)
+                    all_locations.add(loc_ref)
+                    
+                    scene_ref = f"/campaigns/{campaign_slug}/adventures/{adv_slug}/{session_slug}/{scene_slug}/"
+                    locations_registry[scene_loc_slug]["scenes"].append({
+                        "title": s_title,
+                        "ref": scene_ref
+                    })
                 
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
@@ -1140,7 +1260,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
 {npcs_yaml}
@@ -1171,7 +1291,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 summary: "Aventura principal da campanha {campaign_title}."
 npcs:
 {npcs_yaml}
@@ -1182,6 +1302,8 @@ handouts:
 ---
 """)
 
+        write_enriched_locations(campaign_slug, locations_registry)
+
     elif choice == "2" or choice == "3":
         target_chaps = []
         if choice == "2":
@@ -1190,6 +1312,7 @@ handouts:
             chap_choice = int(input(f"Selecione o capítulo (0-{len(chapters)-1}): ").strip())
             target_chaps = [chapters[chap_choice]]
             
+        locations_registry = {}
         for chap in target_chaps:
             chap_title = chap.get("name")
             adv_slug = slugify(chap_title)
@@ -1229,13 +1352,36 @@ handouts:
                 scene_slug = f"{s_idx+1:02d}-{slugify(s_title)}"
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
+                # Determina a localidade da cena ANTES do processamento
+                scene_loc_slug = None
+                scene_loc_name = None
+                if not is_lore_or_meta(s_title):
+                    if is_numbered_room(s_title):
+                        scene_loc_slug = current_loc_slug
+                        scene_loc_name = current_loc_name
+                    else:
+                        current_loc_slug = slugify(s_title)
+                        current_loc_name = s_title
+                        scene_loc_slug = current_loc_slug
+                        scene_loc_name = current_loc_name
+
+                if scene_loc_slug and scene_loc_slug not in locations_registry:
+                    locations_registry[scene_loc_slug] = {
+                        "name": scene_loc_name,
+                        "maps": set(),
+                        "scenes": []
+                    }
+                
                 ctx = {
                     "campaign_creatures": set(),
                     "campaign_items": set(),
                     "monsters": set(),
                     "spells": set(),
                     "items": set(),
-                    "locations": set()
+                    "locations": set(),
+                    "locations_registry": locations_registry,
+                    "current_loc_slug": scene_loc_slug,
+                    "campaign_handouts": set()
                 }
                 
                 content_markdown = ""
@@ -1248,6 +1394,12 @@ handouts:
                     campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, adventure_npcs, adventure_monsters, adventure_handouts
                 )
                 
+                if "campaign_handouts" in ctx:
+                    for h_ref in ctx["campaign_handouts"]:
+                        if h_ref not in scene_handouts:
+                            scene_handouts.append(h_ref)
+                        adventure_handouts.add(h_ref)
+                
                 scene_monsters = [f"/compendium/monsters/{m}/" for m, _, _ in ctx["monsters"]]
                 for m_ref in scene_spec_monsters:
                     if m_ref not in scene_monsters:
@@ -1256,20 +1408,16 @@ handouts:
                     scene_monsters.append(i_ref)
                     
                 scene_locations = []
-                if not is_lore_or_meta(s_title):
-                    if is_numbered_room(s_title):
-                        # Vincula à masmorra/localidade principal ativa
-                        if current_loc_slug:
-                            loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
-                            scene_locations.append(loc_ref)
-                    else:
-                        # É uma localidade principal nomeada
-                        current_loc_slug = slugify(s_title)
-                        current_loc_name = s_title
-                        write_location_stub(campaign_slug, current_loc_slug, current_loc_name)
-                        loc_ref = f"/campaigns/{campaign_slug}/locations/{current_loc_slug}/"
-                        scene_locations.append(loc_ref)
-                        adventure_locations.add(loc_ref)
+                if scene_loc_slug:
+                    loc_ref = f"/campaigns/{campaign_slug}/locations/{scene_loc_slug}/"
+                    scene_locations.append(loc_ref)
+                    adventure_locations.add(loc_ref)
+                    
+                    scene_ref = f"/campaigns/{campaign_slug}/adventures/{adv_slug}/{sess_slug}/{scene_slug}/"
+                    locations_registry[scene_loc_slug]["scenes"].append({
+                        "title": s_title,
+                        "ref": scene_ref
+                    })
                 
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
@@ -1284,7 +1432,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
 {npcs_yaml}
@@ -1314,7 +1462,7 @@ params:
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
-status: "ready"
+status: "draft"
 summary: "Aventura independente importada do capítulo {chap_title}."
 npcs:
 {npcs_yaml}
@@ -1324,6 +1472,8 @@ handouts:
 {handouts_yaml}
 ---
 """)
+
+        write_enriched_locations(campaign_slug, locations_registry)
 
     print(f"\n[Sucesso] Importação concluída! Campanha criada em content/campaigns/{campaign_slug}/")
 

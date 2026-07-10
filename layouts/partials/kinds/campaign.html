@@ -1,0 +1,89 @@
+<header class="page-header campaign-header">
+  <h1><i class="ra ra-shield"></i> {{ or .Params.titulo_pt_br .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="campaign-layout">
+  <div class="campaign-main content-body">
+    {{ .Content }}
+  </div>
+
+  {{/* Grade de Atalhos e Visão Geral (Subseções) para acesso rápido */}}
+  <div class="campaign-quick-links">
+    <h3>Painel da Campanha</h3>
+    <div class="quick-links-grid">
+      {{ with .GetPage "journal" }}
+        <a href="{{ .RelPermalink }}" class="quick-card">
+          <span class="quick-icon"><i class="ra ra-quill"></i></span>
+          <span class="quick-title">Diário de Campanha</span>
+          <span class="quick-count">{{ len .Pages }} entradas</span>
+        </a>
+      {{ end }}
+      {{ with .GetPage "characters" }}
+        <a href="{{ .RelPermalink }}" class="quick-card">
+          <span class="quick-icon"><i class="ra ra-pawn"></i></span>
+          <span class="quick-title">Personagens Jogadores</span>
+          <span class="quick-count">{{ len .Pages }} fichas</span>
+        </a>
+      {{ end }}
+      {{ with .GetPage "npcs" }}
+        <a href="{{ .RelPermalink }}" class="quick-card">
+          <span class="quick-icon"><i class="ra ra-cowl"></i></span>
+          <span class="quick-title">Personagens do Mestre (NPCs)</span>
+          <span class="quick-count">{{ len .Pages }} NPCs</span>
+        </a>
+      {{ end }}
+      {{ with .GetPage "locations" }}
+        <a href="{{ .RelPermalink }}" class="quick-card">
+          <span class="quick-icon"><i class="ra ra-castle"></i></span>
+          <span class="quick-title">Geografia e Localidades</span>
+          <span class="quick-count">{{ len .Pages }} locais</span>
+        </a>
+      {{ end }}
+      {{ with .GetPage "factions" }}
+        <a href="{{ .RelPermalink }}" class="quick-card">
+          <span class="quick-icon"><i class="ra ra-flag"></i></span>
+          <span class="quick-title">Facções e Organizações</span>
+          <span class="quick-count">{{ len .Pages }} facções</span>
+        </a>
+      {{ end }}
+      {{ with .GetPage "handouts" }}
+        <a href="{{ .RelPermalink }}" class="quick-card">
+          <span class="quick-icon"><i class="ra ra-picture"></i></span>
+          <span class="quick-title">Handouts e Documentos</span>
+          <span class="quick-count">{{ len .Pages }} arquivos</span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+  {{/* Listagem de Aventuras Ativas */}}
+  {{ with .GetPage "adventures" }}
+    {{ if .Pages }}
+      <div class="campaign-adventures-section">
+        <h3 class="section-title"><i class="ra ra-dungeon"></i> Aventuras / Arcos de Jogo</h3>
+        <div class="cards-grid">
+          {{ range .Pages.ByWeight }}
+            <div class="card adventure-card">
+              <h4>
+                <a href="{{ .RelPermalink }}">
+                  <i class="ra ra-crossed-swords"></i> {{ or .Params.titulo_pt_br .Title }}
+                </a>
+              </h4>
+              {{ if .Params.summary }}
+                <p class="summary">{{ .Params.summary }}</p>
+              {{ else if .Summary }}
+                <p class="summary">{{ .Summary | truncate 150 }}</p>
+              {{ end }}
+              <div class="card-meta">
+                {{ if .Params.status }}
+                  <span class="badge status-{{ .Params.status }}">{{ .Params.status | title }}</span>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>

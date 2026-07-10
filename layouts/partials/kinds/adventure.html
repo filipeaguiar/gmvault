@@ -1,0 +1,48 @@
+<header class="page-header adventure-header">
+  <h1><i class="ra ra-dungeon"></i> {{ or .Params.titulo_pt_br .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="adventure-layout">
+  <div class="adventure-main content-body">
+    {{ .Content }}
+  </div>
+
+  {{/* Listagem de Sessões / Preparos de Jogo; suporta estrutura simplificada e legada. */}}
+  {{ $sessions := partial "helpers/session_pages.html" . }}
+  {{ $currentVisibility := partial "helpers/visibility.html" . }}
+  {{ $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") }}
+  {{ $visibleSessions := slice }}
+  {{ range $sessions }}
+    {{ $sessionVisibility := partial "helpers/visibility.html" . }}
+    {{ $sessionIsPlayerSafe := or (eq $sessionVisibility "players") (eq $sessionVisibility "public") }}
+    {{ if or (not $isPlayerPage) $sessionIsPlayerSafe }}
+      {{ $visibleSessions = $visibleSessions | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $visibleSessions) 0 }}
+    <div class="adventure-sessions-section">
+      <h3 class="section-title"><i class="ra ra-hourglass"></i> Cronograma de Sessões / Planejamentos</h3>
+      <div class="sessions-timeline">
+        {{ range (sort $visibleSessions "Weight") }}
+          <div class="timeline-item">
+            <div class="timeline-badge"><i class="ra ra-hourglass"></i></div>
+            <div class="timeline-content">
+              <h4>
+                <a href="{{ .RelPermalink }}">{{ or .Params.titulo_pt_br .Title }}</a>
+              </h4>
+              {{ if .Params.summary }}
+                <p class="summary">{{ .Params.summary }}</p>
+              {{ else if .Summary }}
+                <p class="summary">{{ .Summary | truncate 150 }}</p>
+              {{ end }}
+              {{ if .Params.status }}
+                <span class="badge status-{{ .Params.status }}">{{ .Params.status | title }}</span>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>

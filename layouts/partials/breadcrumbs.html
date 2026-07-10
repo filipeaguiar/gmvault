@@ -1,10 +1,6 @@
-{{ $visibility := .Params.visibility }}
-{{ if eq .Params.kind "monster" }}
-  {{ $visibility = "gm" }}
-{{ end }}
-
-{{ if eq $visibility "gm" }}
-<nav class="breadcrumbs">
+{{- $visibility := partial "helpers/visibility.html" . -}}
+{{- if eq $visibility "gm" -}}
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
   <a href="{{ site.Home.RelPermalink }}">Início</a>
   {{ range .Ancestors.Reverse }}
     {{ $ancTitle := or .Params.titulo_pt_br .Title }}
@@ -14,4 +10,4 @@
   {{ end }}
   <span class="sep">&gt;</span> <span class="current">{{ or .Params.titulo_pt_br .Title }}</span>
 </nav>
-{{ end }}
+{{- end -}}

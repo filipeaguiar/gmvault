@@ -1,0 +1,35 @@
+{{- $campaignPage := . -}}
+{{- $campaignDir := $campaignPage.File.Dir -}}
+{{- $categories := slice -}}
+
+{{- $adventureItems := slice -}}
+{{- $adventuresPath := printf "/%sadventures" $campaignDir -}}
+{{- $adventuresSection := site.GetPage $adventuresPath -}}
+{{- if $adventuresSection -}}
+  {{- range (sort $adventuresSection.Sections "Weight") -}}
+    {{- if eq (partial "helpers/kind.html" .) "adventure" -}}
+      {{- $adventureItems = $adventureItems | append (partial "helpers/gmvault_adventure_category.html" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $adventuresCategory := dict 
+  "name" "Aventuras" 
+  "items" $adventureItems 
+  "id" (printf "cat_%s" (substr ( (printf "%s-adventures-root" $campaignPage.Permalink) | md5) 0 8)) 
+-}}
+{{- $categories = $categories | append $adventuresCategory -}}
+
+{{- $campaignItems := slice -}}
+{{- $campaignItems = $campaignItems | append (partial "helpers/gmvault_page_item.html" $campaignPage) -}}
+{{- $journalPath := printf "/%sjournal" $campaignDir -}}
+{{- $journalPage := site.GetPage $journalPath -}}
+{{- if $journalPage -}}
+  {{- $campaignItems = $campaignItems | append (partial "helpers/gmvault_page_item.html" $journalPage) -}}
+{{- end -}}
+{{- $campaignCategory := dict 
+  "name" "Campanha" 
+  "items" $campaignItems 
+  "id" (printf "cat_%s" (substr ( (printf "%s-campaign-root" $campaignPage.Permalink) | md5) 0 8)) 
+-}}
+{{- $categories = $categories | append $campaignCategory -}}
+{{- return $categories -}}

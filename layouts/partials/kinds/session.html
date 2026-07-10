@@ -1,0 +1,49 @@
+<header class="page-header session-header">
+  <h1><i class="ra ra-hourglass"></i> {{ or .Params.titulo_pt_br .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="session-layout">
+  <div class="session-main content-body">
+    {{ .Content }}
+  </div>
+
+  {{/* Grade de Cenas Operacionais da Sessão; suporta estrutura simplificada e legada. */}}
+  {{ $scenes := partial "helpers/scene_pages.html" . }}
+  {{ $currentVisibility := partial "helpers/visibility.html" . }}
+  {{ $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") }}
+  {{ $visibleScenes := slice }}
+  {{ range $scenes }}
+    {{ $sceneVisibility := partial "helpers/visibility.html" . }}
+    {{ $sceneIsPlayerSafe := or (eq $sceneVisibility "players") (eq $sceneVisibility "public") }}
+    {{ if or (not $isPlayerPage) $sceneIsPlayerSafe }}
+      {{ $visibleScenes = $visibleScenes | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $visibleScenes) 0 }}
+    <div class="session-scenes-section">
+      <h3 class="section-title"><i class="ra ra-compass"></i> Cenas da Sessão</h3>
+      <div class="cards-grid scenes-grid">
+        {{ range (sort $visibleScenes "Weight") }}
+          <div class="card scene-card">
+            <h4>
+              <a href="{{ .RelPermalink }}">
+                <i class="ra ra-compass"></i> {{ or .Params.titulo_pt_br .Title }}
+              </a>
+            </h4>
+            {{ if .Params.summary }}
+              <p class="summary">{{ .Params.summary }}</p>
+            {{ else if .Summary }}
+              <p class="summary">{{ .Summary | truncate 150 }}</p>
+            {{ end }}
+            <div class="card-meta">
+              {{ if .Params.status }}
+                <span class="badge status-{{ .Params.status }}">{{ .Params.status | title }}</span>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>

@@ -1,47 +1,55 @@
-{{ if and (ne .Params.kind "character") (ne .Params.kind "npc") }}
-{{ $visibility := .Params.visibility }}
-{{ if eq .Params.kind "monster" }}
-  {{ $visibility = "gm" }}
-{{ end }}
-{{ $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") }}
+{{- $kind := partial "helpers/kind.html" . -}}
+{{- if and (ne $kind "character") (ne $kind "npc") -}}
+{{- $visibility := partial "helpers/visibility.html" . -}}
+{{- $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") -}}
 
-{{ $relations := dict }}
-{{ if $isPlayerPage }}
-  {{ $relations = dict "Compêndio" .Params.compendium_refs }}
-{{ else }}
-  {{ $relations = dict "Personagens" .Params.characters "NPCs" .Params.npcs "Localidades" .Params.locations "Facções" .Params.factions "Handouts" .Params.handouts "Compêndio" .Params.compendium_refs "Relacionados" .Params.related }}
-{{ end }}
+{{- $relations := dict -}}
+{{- if $isPlayerPage -}}
+  {{- $relations = dict "Compêndio" .Params.compendium_refs -}}
+{{- else -}}
+  {{- $relations = dict "Personagens" .Params.characters "NPCs" .Params.npcs "Localidades" .Params.locations "Facções" .Params.factions "Handouts" .Params.handouts "Compêndio" .Params.compendium_refs "Relacionados" .Params.related -}}
+{{- end -}}
 
-{{ $hasRelations := false }}
+{{- $visibleRelations := dict -}}
+{{- range $title, $links := $relations -}}
+  {{- $items := slice -}}
+  {{- range $links -}}
+    {{- $url := . -}}
+    {{- $page := site.GetPage $url -}}
+    {{- if $page -}}
+      {{- $targetVisibility := partial "helpers/visibility.html" $page -}}
+      {{- $targetIsPlayerSafe := or (eq $targetVisibility "players") (eq $targetVisibility "public") -}}
+      {{- if or (not $isPlayerPage) $targetIsPlayerSafe -}}
+        {{- $items = $items | append (dict "page" $page "url" $url "missing" false) -}}
+      {{- end -}}
+    {{- else if not $isPlayerPage -}}
+      {{- $items = $items | append (dict "page" false "url" $url "missing" true) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $items) 0 -}}
+    {{- $visibleRelations = merge $visibleRelations (dict $title $items) -}}
+  {{- end -}}
+{{- end -}}
 
-{{ range $title, $links := $relations }}
-  {{ if $links }}
-    {{ $hasRelations = true }}
-  {{ end }}
-{{ end }}
-
-{{ if $hasRelations }}
+{{- if gt (len $visibleRelations) 0 -}}
 <div class="relations-block">
   <h3 class="relations-title">Links & Relacionamentos</h3>
   <div class="relations-grid">
-    {{ range $title, $links := $relations }}
-      {{ if $links }}
-        <div class="relation-group">
-          <h4>{{ $title }}</h4>
-          <ul>
-            {{ range $links }}
-              {{ $page := site.GetPage . }}
-              {{ if $page }}
-                <li><a href="{{ $page.RelPermalink }}">{{ or $page.Params.titulo_pt_br $page.Title }}</a></li>
-              {{ else }}
-                <li><span class="broken-link" title="Página não encontrada no repositório">{{ . }}</span></li>
-              {{ end }}
+    {{ range $title, $items := $visibleRelations }}
+      <div class="relation-group">
+        <h4>{{ $title }}</h4>
+        <ul>
+          {{ range $items }}
+            {{ if .page }}
+              <li><a href="{{ .page.RelPermalink }}">{{ or .page.Params.titulo_pt_br .page.Title }}</a></li>
+            {{ else if .missing }}
+              <li><span class="broken-link" title="Página não encontrada no repositório">{{ .url }}</span></li>
             {{ end }}
-          </ul>
-        </div>
-      {{ end }}
+          {{ end }}
+        </ul>
+      </div>
     {{ end }}
   </div>
 </div>
-{{ end }}
-{{ end }}
+{{- end -}}
+{{- end -}}

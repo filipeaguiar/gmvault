@@ -1,0 +1,10 @@
+<header class="page-header scene-header">
+  <h1><i class="ra ra-compass"></i> {{ or .Params.titulo_pt_br .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="scene-block">
+  <div class="scene-body content-body">
+    {{ .Content }}
+  </div>
+</div>

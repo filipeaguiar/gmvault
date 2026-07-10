@@ -2,8 +2,9 @@
 <article class="page-content">
   {{ partial "breadcrumbs.html" . }}
   
-  {{ $kindPartial := printf "kinds/%s.html" .Params.kind }}
-  {{ if templates.Exists (printf "partials/%s" $kindPartial) }}
+  {{ $kind := partial "helpers/kind.html" . }}
+  {{ $kindPartial := printf "kinds/%s.html" $kind }}
+  {{ if and $kind (templates.Exists (printf "partials/%s" $kindPartial)) }}
     {{ partial $kindPartial . }}
   {{ else }}
     {{ partial "kinds/default.html" . }}

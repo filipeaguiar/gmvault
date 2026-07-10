@@ -10,10 +10,15 @@
       <h2><i class="ra ra-castle-flag"></i> Campanhas</h2>
       <p>Gerencie sessões, diários de jogo, NPCs, locais e handouts de suas campanhas ativas.</p>
       
-      {{ $campaigns := where site.Pages "Params.kind" "campaign" }}
+      {{ $campaigns := slice }}
+      {{ range site.Pages }}
+        {{ if eq (partial "helpers/kind.html" .) "campaign" }}
+          {{ $campaigns = $campaigns | append . }}
+        {{ end }}
+      {{ end }}
       {{ if $campaigns }}
         <ul class="campaign-list">
-          {{ range $campaigns }}
+          {{ range (sort $campaigns.ByTitle "Weight") }}
             <li>
               <a href="{{ .RelPermalink }}" class="campaign-link">
                 <strong>{{ or .Params.titulo_pt_br .Title }}</strong> 

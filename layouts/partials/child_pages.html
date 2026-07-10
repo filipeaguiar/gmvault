@@ -1,4 +1,4 @@
-{{ if .Pages }}
+{{- if .Pages -}}
 {{- $icons := dict 
   "campaign" "ra-shield" 
   "adventure" "ra-dungeon" 
@@ -21,6 +21,8 @@
   "background" "ra-scroll-unfurled" 
   "condition" "ra-skull" 
   "rule" "ra-open-book" 
+  "compendium_index" "ra-book"
+  "compendium_section" "ra-open-book"
   
   "monsters_index" "ra-dragon" 
   "items_index" "ra-knapsack" 
@@ -42,60 +44,75 @@
   "characters_index" "ra-pawn" 
   "handouts_index" "ra-map" 
 -}}
-<div class="child-pages-section">
-  <h3 class="child-pages-title">Navegar nesta seção</h3>
-  <div class="cards-grid">
-    {{ range .Pages.ByWeight }}
-      {{ $isSubItem := or .Params.parent_race .Params.parent_class }}
-      {{ if not $isSubItem }}
-        {{- $kind := .Params.kind -}}
-        {{- $icon := "" -}}
-        {{- if $kind -}}
-          {{- $icon = index $icons $kind -}}
-        {{- end -}}
-        {{- if eq $kind "compendium_section" -}}
-          {{- if in .RelPermalink "/compendium/monsters" -}}
-            {{- $icon = "ra-dragon" -}}
-          {{- else if in .RelPermalink "/compendium/magic-items" -}}
-            {{- $icon = "ra-gem-pendant" -}}
-          {{- else if in .RelPermalink "/compendium/items" -}}
-            {{- $icon = "ra-knapsack" -}}
-          {{- else if in .RelPermalink "/compendium/classes" -}}
-            {{- $icon = "ra-sword" -}}
-          {{- else if in .RelPermalink "/compendium/races" -}}
-            {{- $icon = "ra-hood" -}}
-          {{- else if in .RelPermalink "/compendium/feats" -}}
-            {{- $icon = "ra-trophy" -}}
-          {{- else if in .RelPermalink "/compendium/spells" -}}
-            {{- $icon = "ra-fire" -}}
-          {{- else if in .RelPermalink "/compendium/backgrounds" -}}
-            {{- $icon = "ra-scroll-unfurled" -}}
-          {{- else if in .RelPermalink "/compendium/conditions" -}}
-            {{- $icon = "ra-skull" -}}
-          {{- else if in .RelPermalink "/compendium/rules" -}}
-            {{- $icon = "ra-open-book" -}}
-          {{- end -}}
-        {{- end -}}
-        {{- if not $icon -}}
+{{- $currentVisibility := printf "%s" (partial "helpers/visibility.html" .) -}}
+{{- $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") -}}
+{{- $visiblePages := slice -}}
+{{- range (sort .Pages.ByTitle "Weight") -}}
+  {{- $isSubItem := or .Params.parent_race .Params.parent_class -}}
+  {{- $childVisibility := printf "%s" (partial "helpers/visibility.html" .) -}}
+  {{- $childIsPlayerSafe := or (eq $childVisibility "players") (eq $childVisibility "public") -}}
+  {{- if and (not $isSubItem) (or (not $isPlayerPage) $childIsPlayerSafe) -}}
+    {{- $visiblePages = $visiblePages | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $visiblePages) 0 -}}
+<div class="child-pages-section index-navigation" aria-labelledby="child-pages-title">
+  <h3 class="child-pages-title" id="child-pages-title">Navegar nesta seção</h3>
+  <div class="cards-grid index-cards-grid">
+    {{ range $visiblePages }}
+      {{- $kind := printf "%s" (partial "helpers/kind.html" .) -}}
+      {{- $icon := "" -}}
+      {{- if $kind -}}
+        {{- $icon = index $icons $kind -}}
+      {{- end -}}
+      {{- if eq $kind "compendium_section" -}}
+        {{- if in .RelPermalink "/compendium/monsters" -}}
+          {{- $icon = "ra-dragon" -}}
+        {{- else if in .RelPermalink "/compendium/magic-items" -}}
+          {{- $icon = "ra-gem-pendant" -}}
+        {{- else if in .RelPermalink "/compendium/items" -}}
+          {{- $icon = "ra-knapsack" -}}
+        {{- else if in .RelPermalink "/compendium/classes" -}}
+          {{- $icon = "ra-sword" -}}
+        {{- else if in .RelPermalink "/compendium/races" -}}
+          {{- $icon = "ra-hood" -}}
+        {{- else if in .RelPermalink "/compendium/feats" -}}
+          {{- $icon = "ra-trophy" -}}
+        {{- else if in .RelPermalink "/compendium/spells" -}}
+          {{- $icon = "ra-fire" -}}
+        {{- else if in .RelPermalink "/compendium/backgrounds" -}}
           {{- $icon = "ra-scroll-unfurled" -}}
+        {{- else if in .RelPermalink "/compendium/conditions" -}}
+          {{- $icon = "ra-skull" -}}
+        {{- else if in .RelPermalink "/compendium/rules" -}}
+          {{- $icon = "ra-open-book" -}}
         {{- end -}}
-        <div class="card">
-          <h4>
-            <a href="{{ .RelPermalink }}">
-              <i class="ra {{ $icon }}"></i> {{ or .Params.titulo_pt_br .Title }}
-            </a>
-          </h4>
-          {{ if .Params.summary }}
-            <p class="summary">{{ .Params.summary }}</p>
-          {{ else if .Summary }}
-            <p class="summary">{{ .Summary | truncate 120 }}</p>
+      {{- end -}}
+      {{- if not $icon -}}
+        {{- $icon = "ra-scroll-unfurled" -}}
+      {{- end -}}
+      <div class="card index-card">
+        <h4>
+          <a href="{{ .RelPermalink }}">
+            <i class="ra {{ $icon }}" aria-hidden="true"></i> {{ or .Params.titulo_pt_br .Title }}
+          </a>
+        </h4>
+        {{ if .Params.summary }}
+          <p class="summary">{{ .Params.summary }}</p>
+        {{ else if .Summary }}
+          <p class="summary">{{ .Summary | plainify | truncate 120 }}</p>
+        {{ end }}
+        <div class="card-meta compact-meta">
+          {{ if $kind }}
+            <span class="badge kind-{{ $kind }}">{{ replace $kind "_" " " | title }}</span>
           {{ end }}
-          {{ if .Params.kind }}
-            <span class="badge kind-{{ .Params.kind }}">{{ replace .Params.kind "_" " " | title }}</span>
+          {{ if .Params.status }}
+            <span class="badge status-{{ .Params.status }}">{{ .Params.status | title }}</span>
           {{ end }}
         </div>
-      {{ end }}
+      </div>
     {{ end }}
   </div>
 </div>
-{{ end }}
+{{- end -}}
+{{- end -}}
