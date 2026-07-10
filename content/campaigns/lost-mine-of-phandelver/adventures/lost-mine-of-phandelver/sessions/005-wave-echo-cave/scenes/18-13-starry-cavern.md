@@ -24,6 +24,6 @@ The structural damage and the skeletal remains in this area are evidence of the 
 
 The damaged buildings are described in areas 14 and 15. Minerals in the ceiling are pretty, but they are neither magical nor valuable.
 
-Any character proficient in Arcana can sense a subtle aura of magic in this cavern. (A Detect Magic spell reveals the same.) The aura becomes stronger as one approaches the northern building (15).
+Any character proficient in Arcana can sense a subtle aura of magic in this cavern. (A detect magic spell reveals the same.) The aura becomes stronger as one approaches the northern building (15).
 
 

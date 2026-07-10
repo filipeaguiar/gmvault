@@ -17,7 +17,7 @@ compendium_refs:
 
 ### Descrição e Elementos Importantes
 
-You can add a complication in the form of a hobgoblin war band returning home, just as the characters are preparing to leave. This war band consists of three hobgoblins led by Targor Bloodsword, a Hobgoblin with 20 hit points. Targor also has two wolves as pets.
+You can add a complication in the form of a hobgoblin war band returning home, just as the characters are preparing to leave. This war band consists of three hobgoblins led by Targor Bloodsword, a hobgoblin with 20 hit points. Targor also has two wolves as pets.
 
 The hobgoblins have no treasure, but [[1d4]] of them carry bloody sacks, each containing a severed elf head. The severed heads are trophies from the hobgoblins' recent victory over an elf hunting party.
 

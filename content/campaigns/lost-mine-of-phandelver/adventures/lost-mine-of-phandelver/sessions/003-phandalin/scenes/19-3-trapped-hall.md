@@ -22,7 +22,7 @@ This area was part of Tresendar Manor's original cellars. The Redbrands dug out 
 
 The pit trap in the middle of the hallway is hidden under a false floor consisting of loose stone tiles laid atop breakaway timbers. The tiles and timbers collapse under 100 or more pounds of weight. A character searching the hall for traps can spot the covered pit with a successful CD 15 Wisdom (Perception) check. A successful check also reveals narrow ledges on the north and south sides of the pit. A creature attempting to skirt around the pit using one of these ledges must succeed on a CD 10 Dexterity (Acrobatics) check.
 
-A creature that triggers the trap or fails the Dexterity check to skirt around the edge of the pit must attempt a CD 15 Dexterity saving throw to catch the edge. On a failed save, the creature falls 20 feet to the dirt floor of the pit, taking [[2d6]] bludgeoning damage and landing Prone.
+A creature that triggers the trap or fails the Dexterity check to skirt around the edge of the pit must attempt a CD 15 Dexterity saving throw to catch the edge. On a failed save, the creature falls 20 feet to the dirt floor of the pit, taking [[2d6]] bludgeoning damage and landing prone.
 
 
 ### Awarding Experience Points

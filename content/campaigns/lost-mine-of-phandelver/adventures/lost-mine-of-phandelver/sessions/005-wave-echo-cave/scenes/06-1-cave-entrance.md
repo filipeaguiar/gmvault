@@ -28,11 +28,11 @@ The dwarves' supplies are potentially useful, but not particularly valuable.
 
 ### Open Pit
 
-Climbing up or down the wall of the pit without a rope requires a successful CD 15 Strength (Athletics) check. A character who fails the check by 5 or more falls and takes [[1d6]] bludgeoning damage per 10 feet fallen, landing Prone at the bottom. The tunnel at the bottom of the pit leads northwest toward 2 and east toward 3.
+Climbing up or down the wall of the pit without a rope requires a successful CD 15 Strength (Athletics) check. A character who fails the check by 5 or more falls and takes [[1d6]] bludgeoning damage per 10 feet fallen, landing prone at the bottom. The tunnel at the bottom of the pit leads northwest toward 2 and east toward 3.
 
 
 ### Treasure
 
-Tharden wears a pair of Boots Of Striding And Springing. In his haste to explore the rest of Wave Echo Cave, Nezznar overlooked them.
+Tharden wears a pair of boots of striding and springing. In his haste to explore the rest of Wave Echo Cave, Nezznar overlooked them.
 
 

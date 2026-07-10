@@ -24,6 +24,6 @@ Seven ghouls lurk in the shadows on the western ledge.
 
 They notice any light or noise elsewhere in the cave and quickly bound down to attack. The undead are hungry and fight until destroyed.
 
-The escarpments are 10 feet high and require a successful CD 12 Strength (Athletics) check to climb. A creature that falls or is knocked from the top of a ledge takes [[1d6]] bludgeoning damage and lands Prone.
+The escarpments are 10 feet high and require a successful CD 12 Strength (Athletics) check to climb. A creature that falls or is knocked from the top of a ledge takes [[1d6]] bludgeoning damage and lands prone.
 
 

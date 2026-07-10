@@ -34,7 +34,7 @@ Drow society is strictly matriarchal. Male drow are relegated to servitor roles,
 
 **Special Equipment.** Nezznar has a spider staff.
 
-**Fey Ancestry.** Nezznar has advantage on saving throws against being Charmed, and magic can't put him to sleep.
+**Fey Ancestry.** Nezznar has advantage on saving throws against being charmed, and magic can't put him to sleep.
 
 **Sunlight Sensitivity.** Nezznar has disadvantage on attack rolls when he or his target is in sunlight.
 

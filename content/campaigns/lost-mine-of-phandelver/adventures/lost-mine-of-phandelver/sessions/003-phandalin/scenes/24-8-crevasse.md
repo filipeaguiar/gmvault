@@ -20,7 +20,7 @@ The characters arrive here by one of three routes: the tunnel from 1, the storer
 
 > A cold breeze fills this large natural cavern, carrying with it the faint scent of decaying flesh. A crevasse divides the cavern and is flanked by two rough stone columns that support the twenty-foot-high ceiling. Two arched wooden bridges span the chasm.
 
-The guardian of this cave is a Nothic, an insane subterranean monster that hungers for flesh. The creature, lured by a faint magical effect emanating from the crevasse, was occupying the area when the Redbrands moved in. Iarno managed to strike a bargain with the monster, convincing it to help guard the stronghold in exchange for treasure and the occasional gift of fresh meat. Still, the nothic is untrustworthy.
+The guardian of this cave is a nothic, an insane subterranean monster that hungers for flesh. The creature, lured by a faint magical effect emanating from the crevasse, was occupying the area when the Redbrands moved in. Iarno managed to strike a bargain with the monster, convincing it to help guard the stronghold in exchange for treasure and the occasional gift of fresh meat. Still, the nothic is untrustworthy.
 
 The nothic lurks near the west ends of the two bridges. If it notices intruders entering the cave, it hides behind one of the large stone columns and watches them, attempting to use its Weird Insight (see the creature's stat block) to discern the characters' secrets.
 
@@ -34,9 +34,9 @@ These bridges are made of wooden planks and have no rails. The south one is rigg
 
 ### Crevasse
 
-This steep-sided fissure is 5 to 10 feet wide and 20 feet deep. Its rough walls are easily climbed without an ability check. A creature that falls into the crevasse takes [[2d6]] bludgeoning damage and lands Prone in a jumble of rubble that is 3 (see "3" in the rulebook).
+This steep-sided fissure is 5 to 10 feet wide and 20 feet deep. Its rough walls are easily climbed without an ability check. A creature that falls into the crevasse takes [[2d6]] bludgeoning damage and lands prone in a jumble of rubble that is 3 (see "3" in the rulebook).
 
-The bottom of the crevasse feels unnaturally cold. When viewed with a Detect Magic spell, the area emanates a faint necromantic aura. The magic causes all organic matter in the crevasse to age and decompose at half the normal rate.
+The bottom of the crevasse feels unnaturally cold. When viewed with a detect magic spell, the area emanates a faint necromantic aura. The magic causes all organic matter in the crevasse to age and decompose at half the normal rate.
 
 Currently heaped at the bottom among broken and well-gnawed bones is the half-eaten body of Thel Dendrar, the woodcarver of Phandalin who was murdered by the Redbrands. The outlaws left his corpse here for the nothic to feed on.
 

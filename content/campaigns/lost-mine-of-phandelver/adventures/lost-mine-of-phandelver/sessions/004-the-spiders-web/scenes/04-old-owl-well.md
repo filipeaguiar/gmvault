@@ -44,7 +44,7 @@ Kost stays tight-lipped about the reason for his presence in the region. He is, 
 
 ### Treasure
 
-Hamun Kost's tent contains a comfortable traveling suite, including a cot, a chair, a writing desk, supplies, and a chest of clothes. In the chest is a leather bag containing 35 sp, 20 ep, 20 gp, 5 pp, one pearl (100 gp), a Potion Of Healing, a scroll of Darkness in a bone tube, and a tiny jeweled box (25 gp) containing a Ring Of Protection from ancient Netheril, the Red Wizard's most interesting discovery so far.
+Hamun Kost's tent contains a comfortable traveling suite, including a cot, a chair, a writing desk, supplies, and a chest of clothes. In the chest is a leather bag containing 35 sp, 20 ep, 20 gp, 5 pp, one pearl (100 gp), a potion of healing, a scroll of darkness in a bone tube, and a tiny jeweled box (25 gp) containing a ring of protection from ancient Netheril, the Red Wizard's most interesting discovery so far.
 
 
 ### Awarding Experience Points

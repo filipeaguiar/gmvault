@@ -25,6 +25,6 @@ The centuries-old paper in the cubbyholes disintegrates if touched, but a charac
 
 ### Treasure
 
-Behind the counter sits a locked iron strongbox, requiring Thieves' Tools and a successful CD 20 Dexterity check to open. This pay chest was overlooked in the fighting and contains 600 cp, 180 sp, 90 ep, and 60 gp.
+Behind the counter sits a locked iron strongbox, requiring thieves' tools and a successful CD 20 Dexterity check to open. This pay chest was overlooked in the fighting and contains 600 cp, 180 sp, 90 ep, and 60 gp.
 
 

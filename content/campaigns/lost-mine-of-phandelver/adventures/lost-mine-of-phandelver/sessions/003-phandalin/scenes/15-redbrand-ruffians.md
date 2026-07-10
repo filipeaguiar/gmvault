@@ -39,7 +39,7 @@ The group consists of four Redbrand ruffians. If three of them are defeated, the
 
 ### Developments
 
-Redbrands who are captured or Charmed by the characters can impart useful information. (See the "What the Redbrands Know" in the link below.) Townmaster Harbin Wester won't want to keep Redbrand prisoners until he knows the whole gang has been defeated, but the characters can easily persuade or intimidate him into locking up any prisoners they capture for at least a few days.
+Redbrands who are captured or charmed by the characters can impart useful information. (See the "What the Redbrands Know" in the link below.) Townmaster Harbin Wester won't want to keep Redbrand prisoners until he knows the whole gang has been defeated, but the characters can easily persuade or intimidate him into locking up any prisoners they capture for at least a few days.
 If the characters kill the ruffians, most members of the town are grateful. One exception is the townmaster, who fears Redbrand retaliation. Harbin doesn't punish the characters but warns them not to cause trouble.
 
 

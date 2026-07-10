@@ -25,14 +25,14 @@ Two giant spiders hide on the inner walls in this ruined building, so they are n
 
 ### Webs
 
-The webs fill two squares north of the doorway (and the square marked "6"). They are 3, and a creature trying to move through them must succeed on a CD 10 Strength (Athletics) check. On a failure, the creature is Restrained in the webs (see the rulebook for the effects of being Restrained). A snared creature can take an action each round to attempt to break free with a CD 12 Strength check, or it can try to cut its way free by using a light weapon that deals slashing damage. The webs have AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage (see "Damage Resistance and Vulnerability" in the rulebook for how vulnerability works).
+The webs fill two squares north of the doorway (and the square marked "6"). They are 3, and a creature trying to move through them must succeed on a CD 10 Strength (Athletics) check. On a failure, the creature is restrained in the webs (see the rulebook for the effects of being restrained). A snared creature can take an action each round to attempt to break free with a CD 12 Strength check, or it can try to cut its way free by using a light weapon that deals slashing damage. The webs have AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage (see "Damage Resistance and Vulnerability" in the rulebook for how vulnerability works).
 
 Going around the webs is difficult because of the thickets on the north side of the road. Going around the ruined building to the south leads to the twig blights in 5.
 
 
 ### Treasure
 
-The corpse of an unfortunate adventurer is cocooned in spider silk in the western half of the building. The body is shriveled up and sucked dry, but appears to have been a male elf. The body wears Studded Leather Armor and a shortsword in the scabbard at its hip. A careful search also yields a Potion Of Healing in a belt pouch, along with 23 gp and 35 sp.
+The corpse of an unfortunate adventurer is cocooned in spider silk in the western half of the building. The body is shriveled up and sucked dry, but appears to have been a male elf. The body wears studded leather armor and a shortsword in the scabbard at its hip. A careful search also yields a potion of healing in a belt pouch, along with 23 gp and 35 sp.
 
 
 ### Awarding Experience Points

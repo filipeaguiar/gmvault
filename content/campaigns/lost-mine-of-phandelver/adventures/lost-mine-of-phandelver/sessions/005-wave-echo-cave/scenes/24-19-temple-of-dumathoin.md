@@ -7,15 +7,15 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
-  - "/campaigns/lost-mine-of-phandelver/npcs/spider-staff/"
   - "/campaigns/lost-mine-of-phandelver/npcs/nezznar-the-black-spider/"
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
   - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/giant-spider/"
+  - "/compendium/magic-items/spider-staff/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -29,16 +29,16 @@ If the room's occupants are not aware of the characters as they enter, add the f
 
 > Two bugbears stand by the table, flanking a dark elf dressed in black leather armor and robes. He clutches a black staff with a carved spider at the top and frowns as he sees you. "It seems that I must deal with you myself. A pity it must end this way."
 
-Nezznar the Black Spider is joined by four giant spiders that defend their master to the death. If they are expecting trouble, the spiders hide behind pillars, and Nezznar casts Invisibility on himself and stands near the table. Make a Dexterity (Stealth) check for the spiders. When intruders appear, the spiders try to entangle them in webs before closing to melee range. Nezznar joins the fray on the round after the spiders attack.
+Nezznar the Black Spider is joined by four giant spiders that defend their master to the death. If they are expecting trouble, the spiders hide behind pillars, and Nezznar casts invisibility on himself and stands near the table. Make a Dexterity (Stealth) check for the spiders. When intruders appear, the spiders try to entangle them in webs before closing to melee range. Nezznar joins the fray on the round after the spiders attack.
 
-If the Doppelganger from 18 retreated to this area, it assumes the guise of Nundro Rockseeker so that Nezznar can use the "dwarf" as leverage to force the party's surrender (although the drow won't actually harm the doppelganger). See the "Roleplaying Nezznar" section for more information on the drow villain.
+If the doppelganger from 18 retreated to this area, it assumes the guise of Nundro Rockseeker so that Nezznar can use the "dwarf" as leverage to force the party's surrender (although the drow won't actually harm the doppelganger). See the "Roleplaying Nezznar" section for more information on the drow villain.
 
 
 ### Statue
 
-The statue depicts Dumathoin, the dwarven god of mining. Any character who has proficiency in Religion recognizes the deity. The statue is beautifully carved, and its emerald eyes appear extremely valuable. However, the jewels are clever fakes made of worthless glass, as close inspection and a successful CD 15 Intelligence (Investigation) check reveals. Nevertheless, a powerful spell protects them, and a Detect Magic spell reveals a strong aura of abjuration magic surrounding the statue.
+The statue depicts Dumathoin, the dwarven god of mining. Any character who has proficiency in Religion recognizes the deity. The statue is beautifully carved, and its emerald eyes appear extremely valuable. However, the jewels are clever fakes made of worthless glass, as close inspection and a successful CD 15 Intelligence (Investigation) check reveals. Nevertheless, a powerful spell protects them, and a detect magic spell reveals a strong aura of abjuration magic surrounding the statue.
 
-A character can climb the statue easily and pry a jewel loose with a successful CD 10 Strength check. However, if either eye is removed, the pillars that line the walls crack, triggering a ceiling collapse. Each creature in the room must make a CD 15 Dexterity saving throw, taking [[4d10]] bludgeoning damage from falling rubble and falling Prone on a failure, or taking only half the damage on a success.
+A character can climb the statue easily and pry a jewel loose with a successful CD 10 Strength check. However, if either eye is removed, the pillars that line the walls crack, triggering a ceiling collapse. Each creature in the room must make a CD 15 Dexterity saving throw, taking [[4d10]] bludgeoning damage from falling rubble and falling prone on a failure, or taking only half the damage on a success.
 
 
 ### Table
@@ -60,7 +60,7 @@ If the characters capture Nezznar and deliver him to the townmaster's hall in Ph
 
 ### Treasure
 
-Nezznar carries a Potion Of Healing and a spider staff. In addition, the drow carries an iron key with a head shaped like an anvil. This key unlocks the door to 20.
+Nezznar carries a potion of healing and a spider staff. In addition, the drow carries an iron key with a head shaped like an anvil. This key unlocks the door to 20.
 Nezznar's exploration of Wave Echo Cave has yielded some treasure, which the drow keeps in the sack on the wooden table. The sack contains 190 ep, 130 gp, 15 pp, nine small gemstones (10 gp each), and a dwarven ale mug made of hammered electrum (100 gp).
 
 

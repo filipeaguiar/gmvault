@@ -25,6 +25,6 @@ Most of the fungi is harmless, and the green-glowing fungi allow creatures to se
 
 ### Poison Gas
 
-Whenever a creature attempts to cross the cavern, the carpets of fungi that cover most of the floor release poisonous gas into the air. Each creature in the cavern must succeed on a CD 11 Constitution saving throw or take [[3d6]] poison damage and be Poisoned for 10 minutes (see the rulebook for more information on the Poisoned condition). The gas disperses after 1 minute, but until then, any living creature that ends its turn in the cavern must repeat the saving throw.
+Whenever a creature attempts to cross the cavern, the carpets of fungi that cover most of the floor release poisonous gas into the air. Each creature in the cavern must succeed on a CD 11 Constitution saving throw or take [[3d6]] poison damage and be poisoned for 10 minutes (see the rulebook for more information on the poisoned condition). The gas disperses after 1 minute, but until then, any living creature that ends its turn in the cavern must repeat the saving throw.
 
 

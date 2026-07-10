@@ -28,6 +28,6 @@ A character who explores the pool finds an old skeleton lying on the bottom, 10 
 
 ### Treasure
 
-The skeleton wears two platinum rings (75 gp each) and clutches a Wand Of Magic Missiles in its bony fingers.
+The skeleton wears two platinum rings (75 gp each) and clutches a wand of magic missiles in its bony fingers.
 
 

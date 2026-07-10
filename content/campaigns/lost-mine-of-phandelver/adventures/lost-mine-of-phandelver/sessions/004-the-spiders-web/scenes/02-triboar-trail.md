@@ -11,14 +11,14 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/hobgoblin/"
-  - "/compendium/monsters/goblin/"
-  - "/compendium/monsters/ogre/"
-  - "/compendium/monsters/owlbear/"
-  - "/compendium/monsters/ghoul/"
-  - "/compendium/monsters/stirge/"
-  - "/compendium/monsters/orc/"
   - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/owlbear/"
+  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/ogre/"
+  - "/compendium/monsters/orc/"
+  - "/compendium/monsters/ghoul/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -87,7 +87,7 @@ The goblins know the location of Cragmaw Castle and can provide directions if th
 
 ### Hobgoblins
 
-This squad of hobgoblins is actively seeking the adventurers, hoping to collect on a bounty. They know the location of Cragmaw Castle but won't provide directions unless they are Charmed. One hobgoblin carries a crudely drawn sketch of one party member, with "25 gold pieces for this one" and a symbol of a black spider drawn beneath it.
+This squad of hobgoblins is actively seeking the adventurers, hoping to collect on a bounty. They know the location of Cragmaw Castle but won't provide directions unless they are charmed. One hobgoblin carries a crudely drawn sketch of one party member, with "25 gold pieces for this one" and a symbol of a black spider drawn beneath it.
 
 ### Orcs
 

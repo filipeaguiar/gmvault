@@ -28,7 +28,7 @@ The heap of clothing belongs to the various captives who have been housed here o
 
 ### Cell Doors
 
-The cell doors feature simple locks requiring Thieves' Tools and a successful CD 10 Dexterity check to pick. The doors can also be wrenched open by brute force with a successful CD 22 Strength check.
+The cell doors feature simple locks requiring thieves' tools and a successful CD 10 Dexterity check to pick. The doors can also be wrenched open by brute force with a successful CD 22 Strength check.
 
 
 ### Captives

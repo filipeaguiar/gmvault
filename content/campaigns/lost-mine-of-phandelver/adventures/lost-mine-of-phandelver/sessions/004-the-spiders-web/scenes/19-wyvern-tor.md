@@ -27,8 +27,8 @@ The orcs are scouts of the Many Arrows tribe. These orcs often roam into the mor
 Wyvern Tor is a sizable hill, with miles of rugged terrain on its flanks and slopes. Searching for the hidden orc camp takes time. The party can attempt one CD 15 Wisdom (Perception) check or CD 10 Wisdom (Survival) check per hour to find the camp, made by the character leading the way.
 When the characters find the camp, read the following:
 > The faint smell of smoke hangs on the air as you ascend a rugged ridge on the lower slopes of the hill. Fifty yards away, a cave mouth opens up at the bottom of a ravine. Hunkered down by a boulder twenty yards outside the cave, keeping watch, is a single orc.
-If the characters can quietly and expeditiously take out the lone Orc, they have a chance to surprise the orcs in the cave. If the sentry spots the characters sneaking up, or if it is not silenced during the surprise round, the orc retreats back to the cave to warn the others.
-The marauders in the cave include Brughor Axe-Biter (an Orc with 30 hit points), six ordinary orcs, and a filthy Ogre named Gog. Gog fights until slain, while the orcs fight until Brughor is killed, at which point any remaining orcs flee.
+If the characters can quietly and expeditiously take out the lone orc, they have a chance to surprise the orcs in the cave. If the sentry spots the characters sneaking up, or if it is not silenced during the surprise round, the orc retreats back to the cave to warn the others.
+The marauders in the cave include Brughor Axe-Biter (an orc with 30 hit points), six ordinary orcs, and a filthy ogre named Gog. Gog fights until slain, while the orcs fight until Brughor is killed, at which point any remaining orcs flee.
 
 
 ### Treasure

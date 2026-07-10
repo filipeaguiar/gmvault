@@ -20,7 +20,7 @@ The lord of the castle once entertained his guests here, throwing lavish banquet
 
 > The western portion of this large hall ends in a wall of rubble, but the remainder is still intact. This must once have been the castle's banquet hall, with a soaring ceiling twenty-five feet high. Two large wooden tables with plain benches stand in the middle of the room, and a brass brazier full of glowing coals is tucked into one corner. Dirty dishes, half-full stewpots, moldy heels of bread, and gnawed bones cover the tables.
 
-This hall holds seven miserable goblins and their leader—a fat, cantankerous Goblin with 12 hit points named Yegg. Yegg is the chief cook for the Cragmaws, and he viciously bullies his unwilling assistants as they go about the work of putting food on the tribe's table. If Yegg is killed, any goblins left alive flee to the east or west, avoiding the north door because of the trap in 2.
+This hall holds seven miserable goblins and their leader—a fat, cantankerous goblin with 12 hit points named Yegg. Yegg is the chief cook for the Cragmaws, and he viciously bullies his unwilling assistants as they go about the work of putting food on the tribe's table. If Yegg is killed, any goblins left alive flee to the east or west, avoiding the north door because of the trap in 2.
 
 
 ### Awarding Experience Points

@@ -11,8 +11,8 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/bugbear/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -21,7 +21,7 @@ A character who listens at this door with a successful CD 10 Wisdom (Perception)
 
 > This barracks contains four roughly built wooden bunks, with heaped-up blankets and dirty dishes scattered about. A strong smell of unwashed bodies and rotten meat fills the air. Three tall, furry humanoids are lounging among the mess, barking orders at a sad little goblin that demeans itself for their amusement. Your sudden appearance causes the goblin to faint.
 
-Three bugbears and one Goblin are present. The goblin, Droop, falls Unconscious at the sight of the party, but another creature can use an action to wake him. Otherwise, Droop remains Unconscious for [[1d10]] minutes.
+Three bugbears and one goblin are present. The goblin, Droop, falls unconscious at the sight of the party, but another creature can use an action to wake him. Otherwise, Droop remains unconscious for [[1d10]] minutes.
 
 The bugbears work for the Black Spider and were sent here to help Iarno keep the Redbrands and the citizens of Phandalin in line. The leader is named Mosk. He wears a jeweled eye patch even though he has both his eyes. Mosk wears the eye patch because he thinks it's fancy.
 

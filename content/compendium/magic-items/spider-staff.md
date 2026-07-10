@@ -1,13 +1,13 @@
 ---
 title: "spider staff"
-kind: "npc"
+kind: "magic_item"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "ready"
 tags:
-  - npc
+  - item_magico
   - importado
 ---
 
-NPC **spider staff** importado automaticamente da campanha.
+Item mágico **spider staff** importado automaticamente da campanha.

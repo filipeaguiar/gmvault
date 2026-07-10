@@ -46,6 +46,6 @@ No monsters or villains are found in this area, but the ruffians in 2 take notic
 
 ### Treasure
 
-The satchel hidden in the cistern is waterproof and contains a Potion Of Healing, a Potion Of Invisibility, 50 gp, and a clean set of ordinary travel clothing. This is a getaway kit that Iarno keeps here in case of an emergency.
+The satchel hidden in the cistern is waterproof and contains a potion of healing, a potion of invisibility, 50 gp, and a clean set of ordinary travel clothing. This is a getaway kit that Iarno keeps here in case of an emergency.
 
 

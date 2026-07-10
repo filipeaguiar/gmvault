@@ -35,7 +35,7 @@ If the characters talk to the cultists, Favric explains that they have come to t
 
 ### Treasure
 
-In the main room, Favric has a small coffer containing tribute for the green dragon: three diamonds (100 gp each). He also carries a Potion Of Flying in a stoppered vial around his neck.
+In the main room, Favric has a small coffer containing tribute for the green dragon: three diamonds (100 gp each). He also carries a potion of flying in a stoppered vial around his neck.
 
 
 ### Awarding Experience Points

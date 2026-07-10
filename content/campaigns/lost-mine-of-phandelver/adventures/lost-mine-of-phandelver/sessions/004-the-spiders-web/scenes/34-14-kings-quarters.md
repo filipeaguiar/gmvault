@@ -11,9 +11,9 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/doppelganger/"
+  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/commoner/"
 ---
 
@@ -21,11 +21,11 @@ compendium_refs:
 
 Any character who listens at the door hears two voices in a heated discussion—a loud, growling voice demanding payment for something, and a silky smooth reply.
 
-> This chamber has been set up as a crude living space, with thick furs thrown on the floor to serve as carpets, old trophies hanging on the walls, a large bed to the north, and a brazier of coals burning brightly. A round table with several chairs stands to the south near the door. Near the table, on the floor, is an Unconscious dwarf who looks badly beaten.
+> This chamber has been set up as a crude living space, with thick furs thrown on the floor to serve as carpets, old trophies hanging on the walls, a large bed to the north, and a brazier of coals burning brightly. A round table with several chairs stands to the south near the door. Near the table, on the floor, is an unconscious dwarf who looks badly beaten.
 
-King Grol is a fierce old Bugbear with 45 hit points. He rules the Cragmaws through pure intimidation. Age has stooped his shoulders and hunched his back, but he remains surprisingly agile and strong. He is demanding and vindictive, and no Cragmaw dares to cross him.
+King Grol is a fierce old bugbear with 45 hit points. He rules the Cragmaws through pure intimidation. Age has stooped his shoulders and hunched his back, but he remains surprisingly agile and strong. He is demanding and vindictive, and no Cragmaw dares to cross him.
 
-Grol is attended by Snarl, a Wolf with 18 hit points, and a Doppelganger disguised as a female drow. The doppelganger, Vyerith, is a messenger from the Black Spider, come to collect Gundren Rockseeker and the map of Wave Echo Cave from King Grol. Grol wants to sell the map instead of surrendering it. and he and the drow are negotiating a price. Vyerith first wants to question Gundren to find out if anyone else knows the location of the mine. Then the doppelganger intends to kill the dwarf and destroy the map.
+Grol is attended by Snarl, a wolf with 18 hit points, and a doppelganger disguised as a female drow. The doppelganger, Vyerith, is a messenger from the Black Spider, come to collect Gundren Rockseeker and the map of Wave Echo Cave from King Grol. Grol wants to sell the map instead of surrendering it. and he and the drow are negotiating a price. Vyerith first wants to question Gundren to find out if anyone else knows the location of the mine. Then the doppelganger intends to kill the dwarf and destroy the map.
 
 If the villains have been warned that an attack is imminent, Vyerith hides behind the door to the northeast, leaving it open a crack and hoping to attack an intruder from the rear. Grol holds Gundren hostage, ready to kill the dwarf if the characters don't back off.
 
@@ -42,7 +42,7 @@ This partially collapsed chamber was once a comfortable bathroom. It still conta
 
 ### Unconscious Dwarf
 
-Near the southwest corner of the room is Gundren Rockseeker, a dwarf Commoner. He is Unconscious but stable at 0 hit points.
+Near the southwest corner of the room is Gundren Rockseeker, a dwarf commoner. He is unconscious but stable at 0 hit points.
 
 
 ### Developments

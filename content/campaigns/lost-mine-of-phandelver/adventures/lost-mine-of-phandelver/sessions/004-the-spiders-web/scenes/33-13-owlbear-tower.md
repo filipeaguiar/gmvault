@@ -22,7 +22,7 @@ The arrow slits here are shuttered, leaving the room dark. The boxed text assume
 
 > The upper floors of this tower have collapsed to create a hollow silo at least thirty feet high, and the upper reaches of the room are lost in shadows. Dust, rubble, and broken glass cover the floor, and old worktables and bookshelves lie strewn to the south. In the middle of the room is a hulking beast that looks like a mangy bear with an owl's head. It rears up and roars when it sees you.
 
-The Cragmaws have captured an Owlbear and confined it to this tower. The room is kept dark to keep the beast calm, but King Grol doesn't know what to do with it yet. If a character throws it fresh meat, the owlbear devours the food. Otherwise, it attacks the first creature it sees in the doorway.
+The Cragmaws have captured an owlbear and confined it to this tower. The room is kept dark to keep the beast calm, but King Grol doesn't know what to do with it yet. If a character throws it fresh meat, the owlbear devours the food. Otherwise, it attacks the first creature it sees in the doorway.
 
 This room was once a library and workshop, but nothing of its original contents remains intact.
 
@@ -34,7 +34,7 @@ If the characters open the door and stay out of the owlbear's way, it flees the 
 
 ### Treasure
 
-All that remains of the tower's second floor is a jagged ledge, upon which sits a battered wooden chest. The chest is hard to see from the floor, requiring a successful CD 15 Wisdom (Perception) check to notice. The chest is unlocked and contains 90 ep, 120 gp, a Potion Of Healing, a scroll of Silence, and a scroll of Revivify.
+All that remains of the tower's second floor is a jagged ledge, upon which sits a battered wooden chest. The chest is hard to see from the floor, requiring a successful CD 15 Wisdom (Perception) check to notice. The chest is unlocked and contains 90 ep, 120 gp, a potion of healing, a scroll of silence, and a scroll of revivify.
 
 
 ### Awarding Experience Points

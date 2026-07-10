@@ -22,7 +22,7 @@ The doors leading into this area are cracked, their iron hinges partially melted
 
 This room contains the restless spirit of the last wizard to die here: Mormesk the wraith. He is not immediately visible but rises up out of the floor when a living creature enters the room.
 
-Mormesk was a powerful mage until he met his end in the spell battle at the climax of the orc attack. Centuries of anger have Poisoned his soul, transforming him into a hate-filled apparition.
+Mormesk was a powerful mage until he met his end in the spell battle at the climax of the orc attack. Centuries of anger have poisoned his soul, transforming him into a hate-filled apparition.
 
 Mormesk leads the undead that haunt Wave Echo Cave. The wraith spends his time here because the treasure he had amassed in life is in the scorched chest (see the "Treasure" section). No longer corporeal, he cannot touch or possess the wealth he enjoyed in life.
 

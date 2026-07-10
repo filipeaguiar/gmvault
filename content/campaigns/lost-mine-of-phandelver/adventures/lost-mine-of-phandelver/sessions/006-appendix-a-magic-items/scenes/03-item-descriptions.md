@@ -7,28 +7,28 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/staff-of-defense/"
-  - "/campaigns/lost-mine-of-phandelver/npcs/spider-staff/"
+
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/appendix-a-magic-items/"
 compendium_refs:
-
+  - "/compendium/magic-items/spider-staff/"
+  - "/compendium/magic-items/staff-of-defense/"
 ---
 
 ### Descrição e Elementos Importantes
 
 * +1 Armor
 * +1 Weapon
-* Boots Of Striding And Springing
-* Gauntlets Of Ogre Power
-* Potion Of Flying
-* Potion Of Healing
-* Potion Of Invisibility
-* Potion Of Vitality
-* Ring Of Protection
+* Boots of Striding and Springing
+* Gauntlets of Ogre Power
+* Potion of Flying
+* Potion of Healing
+* Potion of Invisibility
+* Potion of Vitality
+* Ring of Protection
 * Spell Scroll
 * Spider Staff
 * Staff of Defense
-* Wand Of Magic Missiles
+* Wand of Magic Missiles
 
 

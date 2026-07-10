@@ -31,6 +31,6 @@ Like 6, this was formerly a barracks for miners. Nezznar's bugbears removed the 
 
 ### Treasure
 
-The largest bugbear carries a pouch containing 15 cp, 13 ep, and a Potion Of Vitality.
+The largest bugbear carries a pouch containing 15 cp, 13 ep, and a potion of vitality.
 
 

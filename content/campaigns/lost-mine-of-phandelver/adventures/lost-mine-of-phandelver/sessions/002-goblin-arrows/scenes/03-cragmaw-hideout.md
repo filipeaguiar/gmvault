@@ -7,15 +7,15 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
   - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/goblin/"
   - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/bugbear/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -114,7 +114,7 @@ A character who tries to calm the animals can attempt a CD 15 Wisdom (Animal Han
 
 ### Fissure
 
-A narrow opening in the east wall leads to a natural chimney that climbs 30 feet to 8. At the base of the fissure is rubbish that's been discarded through the opening above. A character attempting to ascend or descend the chimney shaft must make a CD 10 Strength (Athletics) check. If the check succeeds, the character moves at half speed up or down the shaft, as desired. On a check result of 6-9, the character neither gains nor loses ground; on a result of 5 or less, the character falls and takes [[1d6]] bludgeoning damage per 10 feet fallen, landing Prone at the base of the shaft.
+A narrow opening in the east wall leads to a natural chimney that climbs 30 feet to 8. At the base of the fissure is rubbish that's been discarded through the opening above. A character attempting to ascend or descend the chimney shaft must make a CD 10 Strength (Athletics) check. If the check succeeds, the character moves at half speed up or down the shaft, as desired. On a check result of 6-9, the character neither gains nor loses ground; on a result of 5 or less, the character falls and takes [[1d6]] bludgeoning damage per 10 feet fallen, landing prone at the base of the shaft.
 
 ### Developments
 
@@ -134,7 +134,7 @@ The goblin notices the characters if they carry any light or don't use stealth a
 ### Western Passage
 
 This passage is choked with rubble and has steep escarpments. Treat the area as 3 (see "3" in the rulebook).
-The ledge between the two escarpments is fragile. Any weight in excess of 100 pounds loosens the whole mass and sends it tumbling down to the east. Any creature on the ledge when it falls must make a CD 10 Dexterity saving throw, taking [[2d6]] bludgeoning damage on a failure, or half as much damage on a success. The creature also falls Prone on a failed save (see "Being Prone" in the rulebook).
+The ledge between the two escarpments is fragile. Any weight in excess of 100 pounds loosens the whole mass and sends it tumbling down to the east. Any creature on the ledge when it falls must make a CD 10 Dexterity saving throw, taking [[2d6]] bludgeoning damage on a failure, or half as much damage on a success. The creature also falls prone on a failed save (see "Being Prone" in the rulebook).
 
 
 ### 5. Overpass
@@ -143,19 +143,19 @@ Where a high tunnel passes through the larger tunnel cavern below, the goblins h
 > The stream passage continues up beyond another set of uneven steps ahead, bending eastward as it goes. A waterfall sounds out from a larger cavern somewhere ahead of you.
 If the characters didn't spot the bridge while navigating 4, they spot it now. Add:
 > A rickety bridge spans the passage, connecting two tunnels that are 20 feet above the stream.
-One Goblin stands watch on the bridge. It is hiding, and characters can spot it by succeeding on a Wisdom (Perception) check contested by the goblin's Dexterity (Stealth) check. This guard is lazy and inattentive. If no characters are using light sources, each character can attempt a Dexterity (Stealth) check against the goblin's passive Wisdom (Perception) score to creep by without being noticed.
+One goblin stands watch on the bridge. It is hiding, and characters can spot it by succeeding on a Wisdom (Perception) check contested by the goblin's Dexterity (Stealth) check. This guard is lazy and inattentive. If no characters are using light sources, each character can attempt a Dexterity (Stealth) check against the goblin's passive Wisdom (Perception) score to creep by without being noticed.
 If the goblin spots the adventurers, it signals the goblins in 7 to release a flood (see the "Flood!" section), then throws javelins down at the characters.
 
 ### Bridge
 
 This bridge spans the passage 20 feet above the stream. It's possible to climb up the cavern walls from the lower passage to the bridge. The 20-foot-high walls are rough but slick with spray, requiring a successful CD 15 Strength (Athletics) check to climb.
-The bridge has an Armor Class (AC) of 5 and 10 hit points. If the bridge is reduced to 0 hit points, it collapses. Creatures on the collapsing bridge must succeed on a CD 10 Dexterity saving throw or fall, taking [[2d6]] bludgeoning damage and landing Prone (see "Being Prone" in the rulebook). Those who succeed hold onto the bridge and must climb it to safety.
+The bridge has an Armor Class (AC) of 5 and 10 hit points. If the bridge is reduced to 0 hit points, it collapses. Creatures on the collapsing bridge must succeed on a CD 10 Dexterity saving throw or fall, taking [[2d6]] bludgeoning damage and landing prone (see "Being Prone" in the rulebook). Those who succeed hold onto the bridge and must climb it to safety.
 
 ### Flood!
 
 The large pools in 7 have collapsible walls that can be yanked out of place to release a surge of water down the main passage of the lair. In the round after the goblins in 7 are signaled by the lookout in 5, they start knocking away the supports. In the following round on the goblins' initiative count, a water surge pours from 7 down to 1.
 > The passage is suddenly filled with a mighty roar, as a huge surge of rushing water pours down from above!
-The flood threatens all creatures in the tunnel. (Creatures on the bridge at 5 are out of danger, as are any characters successfully climbing the cavern walls.) Any creature within 10 feet of the disused passage at 4 or the steps leading up to 3 can attempt a CD 10 Dexterity saving throw to avoid being swept away. A creature that fails to get out of the way can attempt a CD 15 Strength saving throw to hold on. On a failed save, the character is knocked Prone and washed down to 1, taking [[1d6]] bludgeoning damage along the way.
+The flood threatens all creatures in the tunnel. (Creatures on the bridge at 5 are out of danger, as are any characters successfully climbing the cavern walls.) Any creature within 10 feet of the disused passage at 4 or the steps leading up to 3 can attempt a CD 10 Dexterity saving throw to avoid being swept away. A creature that fails to get out of the way can attempt a CD 15 Strength saving throw to hold on. On a failed save, the character is knocked prone and washed down to 1, taking [[1d6]] bludgeoning damage along the way.
 The goblins in 7 can release a second flood by opening the second pool, but they don't do this unless the goblin on the bridge tells them to. The goblin on the bridge waits to see if the first flood got rid of all the intruders before calling for the second to be released.
 
 
@@ -213,11 +213,11 @@ The goblins built simple dams to control the flow of water through the heart of 
 
 The leader of the goblinoids insists on keeping the bulk of the raiders' stolen goods in his den. The Cragmaws' plunder from the last month of raiding and ambushing caravans is here.
 > Sacks and crates of looted provisions are piled up in the south end of this large cave. To the west, the floor slopes toward a narrow opening that descends into darkness. A larger opening leads north down a set of natural stone steps, the roar of falling water echoing from beyond. In the middle of the cavern, the coals of a large fire smolder.
-Klarg the Bugbear shares this cave with his mangy pet Wolf, Ripper, and two goblins. The bugbear is filled with delusions of grandeur and views himself as a mighty warlord just beginning his career of conquest. He is not entirely sane, referring to himself in the third person ("Who dares defy Klarg?" or "Klarg will build a throne from your bones, puny ones!"). The goblins under his command resent his bullying.
+Klarg the bugbear shares this cave with his mangy pet wolf, Ripper, and two goblins. The bugbear is filled with delusions of grandeur and views himself as a mighty warlord just beginning his career of conquest. He is not entirely sane, referring to himself in the third person ("Who dares defy Klarg?" or "Klarg will build a throne from your bones, puny ones!"). The goblins under his command resent his bullying.
 
 ### Fire Pit
 
-The hot coals in the central fire pit deal 1 fire damage to any creature that enters the fire pit, or [[1d6]] fire damage to any creature that falls Prone there. A creature can take each type of damage only once per round.
+The hot coals in the central fire pit deal 1 fire damage to any creature that enters the fire pit, or [[1d6]] fire damage to any creature that falls prone there. A creature can take each type of damage only once per round.
 
 ### Natural Chimney
 

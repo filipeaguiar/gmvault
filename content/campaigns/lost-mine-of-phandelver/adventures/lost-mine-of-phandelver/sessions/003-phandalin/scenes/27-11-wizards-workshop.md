@@ -7,11 +7,11 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/lightbringer/"
+
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
-
+  - "/compendium/magic-items/lightbringer/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -39,7 +39,7 @@ Passages and chambers are 10 feet high unless otherwise indicated.
 ### Doors
 
 All doors are made of wood with iron handles, hinges, and built-in locks. They are unlocked unless the text states otherwise. Iarno Albrek (12) and a bugbear named Mosk (9) each carry an iron key that can lock or unlock every door in the complex.
-A locked door can be picked with Thieves' Tools and a successful CD 10 Dexterity check. A door can also be broken down with a successful CD 20 Strength check.
+A locked door can be picked with thieves' tools and a successful CD 10 Dexterity check. A door can also be broken down with a successful CD 20 Strength check.
 
 ### Secret Doors
 

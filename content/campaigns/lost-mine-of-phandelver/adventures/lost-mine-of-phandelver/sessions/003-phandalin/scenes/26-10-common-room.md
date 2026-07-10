@@ -23,7 +23,7 @@ A character who listens at the door with a successful CD 10 Wisdom (Perception) 
 > Several worn tables and chairs are scattered around this large room. Wooden benches are drawn up against walls decorated with draperies of brown and red, and several ale kegs are propped up and tapped.
 > Four tough-looking human warriors wearing scarlet cloaks are gathered around one of the tables. A stack of coins and trinkets is heaped upon the tabletop between them.
 
-Four Redbrand ruffians are drinking and playing knucklebones when the characters enter. The game isn't far from turning acrimonious, as most of them do. The dice are loaded, and the ruffian to which they belong is naturally winning. All four have been drinking heavily, and they are Poisoned (see the appendix in the rulebook for the effects of being Poisoned).
+Four Redbrand ruffians are drinking and playing knucklebones when the characters enter. The game isn't far from turning acrimonious, as most of them do. The dice are loaded, and the ruffian to which they belong is naturally winning. All four have been drinking heavily, and they are poisoned (see the appendix in the rulebook for the effects of being poisoned).
 
 The Redbrands immediately recognize characters wearing scarlet cloaks as impostors. However, fast-talking characters might still be able to pass themselves off as "new recruits," especially if they offer to join the game. If you don't think the players are doing a great job roleplaying the deception, you can have the character who is doing most of the talking make a CD 10 Charisma (Deception) check to fool the Redbrands.
 

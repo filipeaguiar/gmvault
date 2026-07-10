@@ -22,7 +22,7 @@ Caravans raided by the Cragmaws along the High Road and the Triboar Trail supply
 
 Though the stores here are not edible by human standards, the goblins can tolerate them when fresher food isn't available.
 
-One small cask is filled with an exceptional dwarven brandy, which the goblins overlooked because of its size. The cask contains the equivalent of twenty glasses. A character who imbibes a glass of brandy regains 1 hit point, but a character who drinks two glasses within 1 hour becomes Poisoned for 1 hour.
+One small cask is filled with an exceptional dwarven brandy, which the goblins overlooked because of its size. The cask contains the equivalent of twenty glasses. A character who imbibes a glass of brandy regains 1 hit point, but a character who drinks two glasses within 1 hour becomes poisoned for 1 hour.
 
 
 ### Sildar's Gear

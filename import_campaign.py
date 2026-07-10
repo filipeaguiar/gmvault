@@ -35,7 +35,8 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
     args = inner_text.split('|')
     default_val = args[0]
     
-    if tag_name in ["spell", "monster", "item", "condition", "race", "class", "feat", "creature"]:
+    # 1. Tags de Criaturas e Monstros
+    if tag_name in ["monster", "creature"]:
         source = "mm"
         display_name = default_val
         
@@ -51,23 +52,65 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
                 display_name = last_arg
                 source = args[1].lower() if len(args) > 1 else "mm"
         
-        # Se a fonte for a própria campanha, é uma criatura específica da campanha!
+        # Se for da própria campanha
         if source.lower() == target_slug.lower():
-            npc_slug = slugify(default_val)
-            ctx["campaign_creatures"].add((npc_slug, default_val))
+            c_slug = slugify(default_val)
+            ctx["campaign_creatures"].add((c_slug, default_val))
             return display_name
             
-        # Se for criatura ou monstro de outra fonte, é um monstro do compêndio geral!
-        if tag_name in ["monster", "creature"]:
-            monster_slug = slugify(default_val)
-            ctx["monsters"].add(monster_slug)
-            
+        # Monstro geral do compêndio
+        monster_slug = slugify(default_val)
+        ctx["monsters"].add(monster_slug)
+        return display_name
+        
+    # 2. Tags de Itens
+    elif tag_name == "item":
+        source = "phb"
+        display_name = default_val
+        
         if len(args) > 1:
             last_arg = args[-1]
             if last_arg.lower() in KNOWN_SOURCES:
-                return default_val.replace('-', ' ').title()
-            return last_arg
-        return default_val.replace('-', ' ').title()
+                source = last_arg.lower()
+                display_name = default_val
+            elif len(args) > 2 and args[1].lower() in KNOWN_SOURCES:
+                source = args[1].lower()
+                display_name = args[2]
+            else:
+                display_name = last_arg
+                source = args[1].lower() if len(args) > 1 else "phb"
+                
+        # Se for da própria campanha
+        if source.lower() == target_slug.lower():
+            i_slug = slugify(default_val)
+            ctx["campaign_items"].add((i_slug, default_val))
+            return display_name
+            
+        # Item de compêndio padrão
+        item_slug = slugify(default_val)
+        ctx["items"].add(item_slug)
+        return display_name
+        
+    # 3. Tags de Magias
+    elif tag_name == "spell":
+        source = "phb"
+        display_name = default_val
+        
+        if len(args) > 1:
+            last_arg = args[-1]
+            if last_arg.lower() in KNOWN_SOURCES:
+                source = last_arg.lower()
+                display_name = default_val
+            elif len(args) > 2 and args[1].lower() in KNOWN_SOURCES:
+                source = args[1].lower()
+                display_name = args[2]
+            else:
+                display_name = last_arg
+                source = args[1].lower() if len(args) > 1 else "phb"
+                
+        spell_slug = slugify(default_val)
+        ctx["spells"].add(spell_slug)
+        return display_name
         
     elif tag_name == "area":
         return default_val
@@ -75,6 +118,7 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
     elif tag_name == "dc":
         return f"CD {default_val}"
         
+    # Fallback genérico para as outras tags
     if len(args) > 1:
         last_arg = args[-1]
         if last_arg.lower() not in KNOWN_SOURCES:
@@ -234,7 +278,6 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
             
     return ""
 
-# Funções auxiliares para parsear o stat block das criaturas
 def parse_ac(ac_field):
     if not ac_field:
         return "10"
@@ -309,9 +352,8 @@ def parse_skills(skill_field):
     return str(skill_field)
 
 def parse_entries_list(entries, campaign_slug, target_slug):
-    # Processa entries aplicando a limpeza de tags no texto
     lines = []
-    ctx = {"campaign_creatures": set(), "monsters": set(), "locations": set()}
+    ctx = {"campaign_creatures": set(), "campaign_items": set(), "monsters": set(), "spells": set(), "items": set(), "locations": set()}
     for entry in entries:
         if isinstance(entry, str):
             lines.append(clean_5etools_tags(entry, campaign_slug, target_slug, ctx))
@@ -358,7 +400,6 @@ def format_statblock_markdown(m, campaign_slug, target_slug):
     if m.get("cr"):
         stats["cr"] = str(m.get("cr"))
         
-    # Meta
     sizes = m.get("size", ["M"])
     size_char = sizes[0] if isinstance(sizes, list) else sizes
     size_map = {"T": "Tiny", "S": "Small", "M": "Medium", "L": "Large", "H": "Huge", "G": "Gargantuan"}
@@ -514,6 +555,29 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
     with open(monster_file, "w") as f:
         f.write("\n".join(front_matter_lines) + "\n" + body)
     print(f"    [Monstro] Importado monstro detalhado para o Compêndio: {monster_name}")
+
+def write_magic_item_stub(campaign_slug, item_slug, item_name):
+    os.makedirs("content/compendium/magic-items", exist_ok=True)
+    item_file = f"content/compendium/magic-items/{item_slug}.md"
+    if os.path.exists(item_file):
+        return
+        
+    with open(item_file, "w") as f:
+        f.write(f"""---
+title: "{item_name}"
+kind: "magic_item"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+tags:
+  - item_magico
+  - importado
+---
+
+Item mágico **{item_name}** importado automaticamente da campanha.
+""")
+    print(f"    [Item Mágico] Importado item mágico detalhado para o Compêndio: {item_name}")
 
 def write_location_stub(campaign_slug, loc_slug, loc_name):
     loc_file = f"content/campaigns/{campaign_slug}/locations/{loc_slug}.md"
@@ -728,12 +792,13 @@ def fetch_bestiary_data(slug):
         
     return bestiary_data
 
-def handle_campaign_creatures(campaign_slug, target_slug, creatures_set, bestiary_data, all_npcs, all_monsters):
-    # Processa as criaturas encontradas nas cenas da aventura
-    # Distingue NPCs de Monstros específicos e cria os arquivos corretos
+def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_set, bestiary_data, all_npcs, all_monsters):
+    # Separa criaturas, monstros e itens da campanha e cria stubs corretos
     scene_npcs_refs = []
     scene_monsters_refs = []
+    scene_items_refs = []
     
+    # 1. Processar criaturas (NPCs vs Monstros)
     for c_slug, c_name in creatures_set:
         entry = bestiary_data.get(c_name.lower())
         
@@ -743,23 +808,26 @@ def handle_campaign_creatures(campaign_slug, target_slug, creatures_set, bestiar
             if stats.get("isNpc") or stats.get("isNamedCreature"):
                 is_real_npc = True
         else:
-            # Fallback se não estiver no bestiário (stubs sem bestiário assumem NPC por padrão)
             is_real_npc = True
             
         if is_real_npc:
-            # É NPC nomeado! Cria na pasta npcs da campanha
             write_npc_stub(campaign_slug, c_slug, c_name, entry, target_slug)
             npc_ref = f"/campaigns/{campaign_slug}/npcs/{c_slug}/"
             scene_npcs_refs.append(npc_ref)
             all_npcs.add(npc_ref)
         else:
-            # É monstro específico! Cria no compêndio global
             write_monster_stub(campaign_slug, c_slug, c_name, entry, target_slug)
             monster_ref = f"/compendium/monsters/{c_slug}/"
             scene_monsters_refs.append(monster_ref)
             all_monsters.add(monster_ref)
             
-    return scene_npcs_refs, scene_monsters_refs
+    # 2. Processar itens mágicos específicos da aventura
+    for i_slug, i_name in items_set:
+        write_magic_item_stub(campaign_slug, i_slug, i_name)
+        item_ref = f"/compendium/magic-items/{i_slug}/"
+        scene_items_refs.append(item_ref)
+        
+    return scene_npcs_refs, scene_monsters_refs, scene_items_refs
 
 def main():
     parser = argparse.ArgumentParser(description="Importador de Campanhas do 5e.tools")
@@ -832,8 +900,11 @@ def main():
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
                 ctx = {
-                    "campaign_creatures": set(), # set de tuplas (slug, nome)
-                    "monsters": set(),           # set de slugs gerais
+                    "campaign_creatures": set(),
+                    "campaign_items": set(),
+                    "monsters": set(),
+                    "spells": set(),
+                    "items": set(),
                     "locations": set()
                 }
                 
@@ -843,16 +914,16 @@ def main():
                     if res:
                         content_markdown += res + "\n\n"
                 
-                # Criar NPCs e monstros específicos e obter as referências
-                scene_npcs, scene_spec_monsters = handle_campaign_creatures(
-                    campaign_slug, slug, ctx["campaign_creatures"], bestiary_data, all_npcs, all_monsters
+                scene_npcs, scene_spec_monsters, scene_spec_items = handle_campaign_entities(
+                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], bestiary_data, all_npcs, all_monsters
                 )
                 
-                # Referências dos monstros gerais do compêndio
                 scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
                 for m_ref in scene_spec_monsters:
                     scene_monsters.append(m_ref)
-                
+                for i_ref in scene_spec_items:
+                    scene_monsters.append(i_ref)
+                    
                 scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
                 
                 with open(scene_file, "w") as f:
@@ -950,7 +1021,10 @@ locations:
                 
                 ctx = {
                     "campaign_creatures": set(),
+                    "campaign_items": set(),
                     "monsters": set(),
+                    "spells": set(),
+                    "items": set(),
                     "locations": set()
                 }
                 
@@ -960,19 +1034,21 @@ locations:
                     if res:
                         content_markdown += res + "\n\n"
                 
-                scene_npcs, scene_spec_monsters = handle_campaign_creatures(
-                    campaign_slug, slug, ctx["campaign_creatures"], bestiary_data, adventure_npcs, adventure_monsters
+                scene_npcs, scene_spec_monsters, scene_spec_items = handle_campaign_entities(
+                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], bestiary_data, adventure_npcs, adventure_monsters
                 )
                 
                 scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
                 for m_ref in scene_spec_monsters:
                     scene_monsters.append(m_ref)
-                
+                for i_ref in scene_spec_items:
+                    scene_monsters.append(i_ref)
+                    
                 scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
                 
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
-                    monsters_yaml = "\n".join([f"  - \"{m}\"" for n in scene_monsters])
+                    monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
                     locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
                     
                     f.write(f"""---

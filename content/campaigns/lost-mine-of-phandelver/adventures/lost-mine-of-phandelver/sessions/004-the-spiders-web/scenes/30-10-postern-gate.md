@@ -20,7 +20,7 @@ This side entrance to the castle is locked but unguarded.
 
 > On the south side of the old castle, an overgrown path leads to a passage that climbs up into the wall. A large iron door stands here, sheltered from direct outside attack. Arrow slits ten feet above the ground overlook the path.
 
-The iron door is locked. It can be opened with Thieves' Tools and a successful CD 15 Dexterity check, or knocked down with a successful CD 25 Strength check.
+The iron door is locked. It can be opened with thieves' tools and a successful CD 15 Dexterity check, or knocked down with a successful CD 25 Strength check.
 
 
 ### Arrow Slits
