@@ -17,7 +17,7 @@ npcs:
 locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
 handouts:
-  - "/campaigns/cidadela-radiante/handouts/mapa-secreto/"
+  - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
 compendium_refs:
   - "/compendium/rules/combate/"
 ---

@@ -26,7 +26,7 @@ A taverna *O Cristal Lapidado* está cheia e barulhenta. Nara está sentada em u
 
 ### Ganchos e Pistas
 * Nara menciona que o capitão da patrulha aumentou o suborno ontem.
-* Ela passa a pista: [O Mapa Secreto das Docas](/campaigns/cidadela-radiante/handouts/mapa-secreto/).
+* Nara passa a pista: [O Mapa Secreto das Docas](/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/).
 
 ### Testes e Conflitos
 * Um teste de Percepção (CD 12) nota dois vigias disfarçados dos Guardiões na entrada da taverna.

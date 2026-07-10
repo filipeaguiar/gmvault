@@ -17,7 +17,7 @@ locations:
 factions:
   - "/campaigns/cidadela-radiante/factions/guardioes/"
 handouts:
-  - "/campaigns/cidadela-radiante/handouts/mapa-secreto/"
+  - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
 compendium_refs:
   - "/compendium/monsters/goblin/"
 ---
