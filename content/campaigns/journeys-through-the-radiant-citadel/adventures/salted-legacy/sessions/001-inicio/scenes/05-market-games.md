@@ -8,14 +8,14 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
-  - "/compendium/monsters/giant-sea-horse/"
-  - "/compendium/monsters/lizard/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/lizard/"
+  - "/compendium/monsters/giant-sea-horse/"
   - "/compendium/monsters/commoner/"
   - "/compendium/monsters/koi-prawn/"
 ---
