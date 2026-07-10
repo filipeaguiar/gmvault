@@ -1,0 +1,69 @@
+{
+  "categories": [
+    {
+      "name": "Aventuras",
+      "items": [
+        {
+          "type": "category",
+          "name": "Intriga no Mercado Noturno",
+          "items": [
+            {
+              "type": "category",
+              "name": "Sessões de Intriga no Mercado",
+              "items": [
+                {
+                  "type": "page",
+                  "name": "Sessão 01 - Infiltração",
+                  "id": "page_13d27dcf",
+                  "url": "https://filipeaguiar.github.io/gmvault/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/"
+                },
+                {
+                  "type": "category",
+                  "name": "Cenas da Sessão 01",
+                  "items": [
+                    {
+                      "type": "page",
+                      "name": "Cena 1 - Encontro na Taverna do Mercado",
+                      "id": "page_ca4fef8b",
+                      "url": "https://filipeaguiar.github.io/gmvault/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/"
+                    },
+                    {
+                      "type": "page",
+                      "name": "O Mapa Secreto das Docas",
+                      "id": "page_d6b07d95",
+                      "url": "https://filipeaguiar.github.io/gmvault/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/",
+                      "visibleToPlayers": true
+                    }
+                  ],
+                  "id": "cat_50ba0a53"
+                }
+              ],
+              "id": "cat_fc9c2181"
+            }
+          ],
+          "id": "cat_3c7a0d90"
+        }
+      ],
+      "id": "cat_7835f981"
+    },
+    {
+      "name": "Campanha",
+      "items": [
+        {
+          "type": "page",
+          "name": "A Cidadela Radiante",
+          "id": "page_6ddc35cd",
+          "url": "https://filipeaguiar.github.io/gmvault/campaigns/cidadela-radiante/"
+        },
+        {
+          "type": "page",
+          "name": "A História Até Aqui",
+          "id": "page_7b1477fb",
+          "url": "https://filipeaguiar.github.io/gmvault/campaigns/cidadela-radiante/journal/",
+          "visibleToPlayers": true
+        }
+      ],
+      "id": "cat_45c9a7b3"
+    }
+  ]
+}

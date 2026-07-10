@@ -1,3 +1,20 @@
 baseURL: https://filipeaguiar.github.io/gmvault/
 languageCode: en-us
 title: Campanha
+
+mediaTypes:
+  application/json:
+    suffixes:
+      - json
+
+outputFormats:
+  GMVault:
+    mediaType: application/json
+    baseName: gm-vault
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home:
+    - HTML
+    - GMVault
