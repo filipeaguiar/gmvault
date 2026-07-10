@@ -3,8 +3,12 @@
   {{ partial "metadata.html" . }}
 </header>
 
-<div class="npc-block">
-  <div class="npc-body content-body">
-    {{ .Content }}
+{{ if .Params.stats }}
+  {{ partial "statblock.html" . }}
+{{ else }}
+  <div class="npc-block">
+    <div class="npc-body content-body">
+      {{ .Content }}
+    </div>
   </div>
-</div>
+{{ end }}
