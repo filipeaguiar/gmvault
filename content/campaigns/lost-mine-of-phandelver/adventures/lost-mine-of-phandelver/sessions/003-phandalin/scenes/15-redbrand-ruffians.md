@@ -12,6 +12,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
   - "/compendium/monsters/redbrand-ruffian/"
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

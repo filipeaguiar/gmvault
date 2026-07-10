@@ -13,11 +13,15 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
 compendium_refs:
+  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/goblin/"
-  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/wolf/"
-  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/goblin/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
 ---
 
 ### Descrição e Elementos Importantes

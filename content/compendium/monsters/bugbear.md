@@ -26,6 +26,8 @@ stats:
   cr: "1"
 ---
 
+![Arte: bugbear](/images/campaigns/lost-mine-of-phandelver/Bugbear.webp)
+
 Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.
 
 ### Goblinoids

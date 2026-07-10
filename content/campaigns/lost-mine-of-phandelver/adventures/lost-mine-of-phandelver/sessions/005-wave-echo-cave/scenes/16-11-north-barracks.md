@@ -12,6 +12,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
   - "/compendium/monsters/bugbear/"
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

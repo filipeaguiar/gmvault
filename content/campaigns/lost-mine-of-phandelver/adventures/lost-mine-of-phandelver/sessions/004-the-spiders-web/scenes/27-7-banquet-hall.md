@@ -13,6 +13,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/goblin/"
   - "/compendium/monsters/goblin/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
 ---
 
 ### Descrição e Elementos Importantes

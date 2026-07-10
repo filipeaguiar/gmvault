@@ -12,6 +12,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
   - "/compendium/monsters/giant-spider/"
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

@@ -13,6 +13,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/bugbear/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
 ---
 
 ### Descrição e Elementos Importantes

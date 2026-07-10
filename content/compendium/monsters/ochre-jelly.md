@@ -24,6 +24,8 @@ stats:
   cr: "2"
 ---
 
+![Arte: Ochre Jelly](/images/campaigns/lost-mine-of-phandelver/Ochre Jelly.webp)
+
 
 
 ### Características

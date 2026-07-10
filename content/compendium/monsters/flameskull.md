@@ -26,6 +26,8 @@ stats:
   cr: "4"
 ---
 
+![Arte: flameskull](/images/campaigns/lost-mine-of-phandelver/Flameskull.webp)
+
 Blazing green flames and mad, echoing laughter follow a disembodied skull as it patrols its demesne. When the undead flameskull discovers trespassers, it blasts the intruders with fiery rays from its eyes and dreadful spells called up from the dark recesses of its memory.
 Dark spellcasters fashion flameskulls from the remains of dead wizards. When the ritual is complete, green flames erupt from the skull to complete its ghastly transformation.
 

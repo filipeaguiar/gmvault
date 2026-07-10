@@ -12,6 +12,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
 
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/mormesk-the-wraith-art/"
 ---
 
 ### Descrição e Elementos Importantes

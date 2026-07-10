@@ -14,6 +14,8 @@ compendium_refs:
   - "/compendium/monsters/hobgoblin/"
   - "/compendium/monsters/wolf/"
   - "/compendium/monsters/hobgoblin/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/hobgoblin-art/"
 ---
 
 ### Descrição e Elementos Importantes

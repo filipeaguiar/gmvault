@@ -26,6 +26,8 @@ stats:
   cr: "3"
 ---
 
+![Arte: doppelganger](/images/campaigns/lost-mine-of-phandelver/Doppelganger.webp)
+
 Doppelgangers are devious shapeshifters that take on the appearance of other humanoids, throwing off pursuit or luring victims to their doom with misdirection and disguise. Few creatures spread fear, suspicion, and deceit better than doppelgangers. Found in every land and culture, they can take on the guise of any individual of any race.
 
 ### Stealing Secrets

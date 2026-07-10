@@ -11,8 +11,10 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/bugbear/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -22,6 +22,8 @@ stats:
     cha: 10
 ---
 
+![Arte: Venomfang](/images/campaigns/lost-mine-of-phandelver/Venomfang.webp)
+
 
 
 

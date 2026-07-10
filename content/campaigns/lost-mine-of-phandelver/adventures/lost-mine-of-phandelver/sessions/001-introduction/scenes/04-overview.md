@@ -14,6 +14,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/introduction/"
 compendium_refs:
 
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/nezznar-the-black-spider-art/"
 ---
 
 ### Descrição e Elementos Importantes

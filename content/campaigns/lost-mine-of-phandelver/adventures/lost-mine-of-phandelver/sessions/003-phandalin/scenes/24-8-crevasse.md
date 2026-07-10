@@ -13,6 +13,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/nothic/"
   - "/compendium/monsters/nothic/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/nothic-art/"
 ---
 
 ### Descrição e Elementos Importantes

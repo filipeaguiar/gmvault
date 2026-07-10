@@ -25,6 +25,8 @@ stats:
   cr: "2"
 ---
 
+![Arte: Ogre](/images/campaigns/lost-mine-of-phandelver/Ogre.webp)
+
 Ogres are as lazy of mind as they are strong of body. They live by raiding, scavenging, and killing for food and pleasure. The average adult specimen stands between 9 and 10 feet tall and weighs close to a thousand pounds.
 
 ### Furious Tempers

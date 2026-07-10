@@ -12,6 +12,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
 
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/venomfang-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -12,8 +12,10 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
   - "/compendium/monsters/spectator/"
-  - "/compendium/magic-items/dragonguard/"
   - "/compendium/magic-items/lightbringer/"
+  - "/compendium/magic-items/dragonguard/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/spectator-art/"
 ---
 
 ### Descrição e Elementos Importantes

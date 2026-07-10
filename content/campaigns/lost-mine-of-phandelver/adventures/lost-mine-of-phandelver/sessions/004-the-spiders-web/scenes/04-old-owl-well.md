@@ -13,6 +13,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/zombie/"
   - "/compendium/monsters/evil-mage/"
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

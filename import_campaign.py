@@ -80,6 +80,18 @@ def get_monster_from_source(monster_name, source_book):
     OTHER_BESTIARY_CACHE[source_book] = book_data
     return book_data.get(monster_name.lower())
 
+def extract_fluff_images(fluff):
+    if not fluff:
+        return []
+    images = []
+    if "images" in fluff:
+        for img in fluff["images"]:
+            if isinstance(img, dict) and "href" in img:
+                path = img["href"].get("path")
+                if path:
+                    images.append(path)
+    return images
+
 def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
     args = inner_text.split('|')
     default_val = args[0]
@@ -482,10 +494,44 @@ def format_statblock_markdown(m, campaign_slug, target_slug):
             
     return stats, stats_meta, "\n".join(body_parts)
 
+def write_handout_art_stub(campaign_slug, entity_slug, entity_name, img_filename):
+    os.makedirs(f"content/campaigns/{campaign_slug}/handouts", exist_ok=True)
+    handout_slug = f"{entity_slug}-art"
+    handout_file = f"content/campaigns/{campaign_slug}/handouts/{handout_slug}.md"
+    if os.path.exists(handout_file):
+        return f"/campaigns/{campaign_slug}/handouts/{handout_slug}/"
+        
+    local_path = f"/images/campaigns/{campaign_slug}/{img_filename}"
+    
+    with open(handout_file, "w") as f:
+        f.write(f"""---
+title: "Arte: {entity_name}"
+kind: "handout"
+draft: true
+titulo_pt_br: ""
+visibility: "players"
+status: "ready"
+tags:
+  - handout
+  - arte
+  - importado
+---
+
+![Arte: {entity_name}]({local_path})
+""")
+    print(f"    [Handout de Arte] Criado handout para os jogadores: Arte: {entity_name}")
+    return f"/campaigns/{campaign_slug}/handouts/{handout_slug}/"
+
 def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, target_slug=None):
     npc_file = f"content/campaigns/{campaign_slug}/npcs/{npc_slug}.md"
     if os.path.exists(npc_file):
-        return
+        handout_refs = []
+        if bestiary_entry and bestiary_entry.get("fluff"):
+            fluff = bestiary_entry["fluff"]
+            img_paths = extract_fluff_images(fluff)
+            for path in img_paths:
+                handout_refs.append(f"/campaigns/{campaign_slug}/handouts/{npc_slug}-art/")
+        return handout_refs
         
     front_matter_lines = [
         "---",
@@ -501,6 +547,7 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
     ]
     
     body = f"\nNPC **{npc_name}** importado automaticamente da campanha.\n"
+    handout_refs = []
     
     if bestiary_entry:
         m = bestiary_entry["stats"]
@@ -531,6 +578,15 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
             fluff_entries = fluff.get("entries", [])
             lore_markdown = parse_entries_list(fluff_entries, campaign_slug, target_slug)
             
+            img_paths = extract_fluff_images(fluff)
+            for path in img_paths:
+                filename = path.split("/")[-1]
+                download_image(path, campaign_slug)
+                local_path = f"/images/campaigns/{campaign_slug}/{filename}"
+                lore_markdown = f"![Arte: {npc_name}]({local_path})\n\n" + lore_markdown
+                h_ref = write_handout_art_stub(campaign_slug, npc_slug, npc_name, filename)
+                handout_refs.append(h_ref)
+            
         body = f"""
 {lore_markdown}
 
@@ -542,12 +598,19 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
     with open(npc_file, "w") as f:
         f.write("\n".join(front_matter_lines) + "\n" + body)
     print(f"    [NPC] Importado NPC detalhado: {npc_name}")
+    return handout_refs
 
 def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry=None, target_slug=None):
     os.makedirs("content/compendium/monsters", exist_ok=True)
     monster_file = f"content/compendium/monsters/{monster_slug}.md"
     if os.path.exists(monster_file):
-        return
+        handout_refs = []
+        if bestiary_entry and bestiary_entry.get("fluff"):
+            fluff = bestiary_entry["fluff"]
+            img_paths = extract_fluff_images(fluff)
+            for path in img_paths:
+                handout_refs.append(f"/campaigns/{campaign_slug}/handouts/{monster_slug}-art/")
+        return handout_refs
         
     front_matter_lines = [
         "---",
@@ -563,6 +626,7 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
     ]
     
     body = f"\nMonstro **{monster_name}** importado automaticamente da campanha.\n"
+    handout_refs = []
     
     if bestiary_entry:
         m = bestiary_entry["stats"]
@@ -593,6 +657,15 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
             fluff_entries = fluff.get("entries", [])
             lore_markdown = parse_entries_list(fluff_entries, campaign_slug, target_slug)
             
+            img_paths = extract_fluff_images(fluff)
+            for path in img_paths:
+                filename = path.split("/")[-1]
+                download_image(path, campaign_slug)
+                local_path = f"/images/campaigns/{campaign_slug}/{filename}"
+                lore_markdown = f"![Arte: {monster_name}]({local_path})\n\n" + lore_markdown
+                h_ref = write_handout_art_stub(campaign_slug, monster_slug, monster_name, filename)
+                handout_refs.append(h_ref)
+            
         body = f"""
 {lore_markdown}
 
@@ -604,6 +677,7 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
     with open(monster_file, "w") as f:
         f.write("\n".join(front_matter_lines) + "\n" + body)
     print(f"    [Monstro] Importado monstro detalhado para o Compêndio: {monster_name}")
+    return handout_refs
 
 def write_magic_item_stub(campaign_slug, item_slug, item_name):
     os.makedirs("content/compendium/magic-items", exist_ok=True)
@@ -656,7 +730,8 @@ def create_directory_structure(campaign_slug):
         f"content/campaigns/{campaign_slug}/characters",
         f"content/campaigns/{campaign_slug}/npcs",
         f"content/campaigns/{campaign_slug}/locations",
-        f"content/campaigns/{campaign_slug}/factions"
+        f"content/campaigns/{campaign_slug}/factions",
+        f"content/campaigns/{campaign_slug}/handouts"
     ]
     for p in paths:
         os.makedirs(p, exist_ok=True)
@@ -670,6 +745,8 @@ def create_directory_structure(campaign_slug):
                 title = "Organizações e Facções"
             elif dir_name == "characters":
                 title = "Personagens dos Jogadores"
+            elif dir_name == "handouts":
+                title = "Handouts e Materiais"
             
             with open(idx, "w") as f:
                 f.write(f"""---
@@ -841,13 +918,14 @@ def fetch_bestiary_data(slug):
         
     return bestiary_data
 
-def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_set, monsters_set, bestiary_data, all_npcs, all_monsters):
+def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_set, monsters_set, bestiary_data, all_npcs, all_monsters, all_handouts):
     # Separa criaturas, monstros e itens da campanha e cria stubs corretos
     scene_npcs_refs = []
     scene_monsters_refs = []
     scene_items_refs = []
+    scene_handouts_refs = []
     
-    # 1. Processar criaturas da campanha (NPCs vs Monstros Específicos da Aventura)
+    # 1. Processar criaturas da campanha (NPCs vs Monstros Específicos de Campanha)
     for c_slug, c_name in creatures_set:
         entry = bestiary_data.get(c_name.lower())
         
@@ -860,15 +938,21 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
             is_real_npc = True
             
         if is_real_npc:
-            write_npc_stub(campaign_slug, c_slug, c_name, entry, target_slug)
+            h_refs = write_npc_stub(campaign_slug, c_slug, c_name, entry, target_slug)
             npc_ref = f"/campaigns/{campaign_slug}/npcs/{c_slug}/"
             scene_npcs_refs.append(npc_ref)
             all_npcs.add(npc_ref)
+            for hr in h_refs:
+                scene_handouts_refs.append(hr)
+                all_handouts.add(hr)
         else:
-            write_monster_stub(campaign_slug, c_slug, c_name, entry, target_slug)
+            h_refs = write_monster_stub(campaign_slug, c_slug, c_name, entry, target_slug)
             monster_ref = f"/compendium/monsters/{c_slug}/"
             scene_monsters_refs.append(monster_ref)
             all_monsters.add(monster_ref)
+            for hr in h_refs:
+                scene_handouts_refs.append(hr)
+                all_handouts.add(hr)
             
     # 2. Processar monstros gerais da cena (ex: goblin do MM) no Compêndio Global
     for m_slug, m_name, m_source in monsters_set:
@@ -877,9 +961,11 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
         scene_monsters_refs.append(monster_ref)
         all_monsters.add(monster_ref)
         
-        if not os.path.exists(monster_file):
-            entry = get_monster_from_source(m_name, m_source)
-            write_monster_stub(campaign_slug, m_slug, m_name, entry, target_slug)
+        entry = get_monster_from_source(m_name, m_source)
+        h_refs = write_monster_stub(campaign_slug, m_slug, m_name, entry, target_slug)
+        for hr in h_refs:
+            scene_handouts_refs.append(hr)
+            all_handouts.add(hr)
             
     # 3. Processar itens mágicos específicos da aventura
     for i_slug, i_name in items_set:
@@ -887,7 +973,7 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
         item_ref = f"/compendium/magic-items/{i_slug}/"
         scene_items_refs.append(item_ref)
         
-    return scene_npcs_refs, scene_monsters_refs, scene_items_refs
+    return scene_npcs_refs, scene_monsters_refs, scene_items_refs, scene_handouts_refs
 
 def main():
     parser = argparse.ArgumentParser(description="Importador de Campanhas do 5e.tools")
@@ -926,6 +1012,7 @@ def main():
         all_npcs = set()
         all_monsters = set()
         all_locations = set()
+        all_handouts = set()
             
         for c_idx, chap in enumerate(chapters):
             chap_title = chap.get("name")
@@ -974,8 +1061,8 @@ def main():
                     if res:
                         content_markdown += res + "\n\n"
                 
-                scene_npcs, scene_spec_monsters, scene_spec_items = handle_campaign_entities(
-                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, all_npcs, all_monsters
+                scene_npcs, scene_spec_monsters, scene_spec_items, scene_handouts = handle_campaign_entities(
+                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, all_npcs, all_monsters, all_handouts
                 )
                 
                 scene_monsters = [f"/compendium/monsters/{m}/" for m, _, _ in ctx["monsters"]]
@@ -991,6 +1078,7 @@ def main():
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
                     locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
+                    handouts_yaml = "\n".join([f"  - \"{h}\"" for h in scene_handouts])
                     
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
@@ -1006,6 +1094,8 @@ locations:
 {locations_yaml}
 compendium_refs:
 {monsters_yaml}
+handouts:
+{handouts_yaml}
 ---
 
 ### Descrição e Elementos Importantes
@@ -1017,6 +1107,7 @@ compendium_refs:
         adv_idx = os.path.join(adv_dir, "_index.md")
         npcs_yaml = "\n".join([f"  - \"{n}\"" for n in sorted(list(all_npcs))])
         locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(all_locations))])
+        handouts_yaml = "\n".join([f"  - \"{h}\"" for h in sorted(list(all_handouts))])
         
         with open(adv_idx, "w") as f:
             f.write(f"""---
@@ -1031,6 +1122,8 @@ npcs:
 {npcs_yaml}
 locations:
 {locations_yaml}
+handouts:
+{handouts_yaml}
 ---
 """)
 
@@ -1053,6 +1146,7 @@ locations:
             adventure_locations = {f"/campaigns/{campaign_slug}/locations/{loc_slug}/"}
             adventure_npcs = set()
             adventure_monsters = set()
+            adventure_handouts = set()
             
             sess_slug = "001-inicio"
             session_title = "Sessão 01 - Início"
@@ -1095,8 +1189,8 @@ locations:
                     if res:
                         content_markdown += res + "\n\n"
                 
-                scene_npcs, scene_spec_monsters, scene_spec_items = handle_campaign_entities(
-                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, adventure_npcs, adventure_monsters
+                scene_npcs, scene_spec_monsters, scene_spec_items, scene_handouts = handle_campaign_entities(
+                    campaign_slug, slug, ctx["campaign_creatures"], ctx["campaign_items"], ctx["monsters"], bestiary_data, adventure_npcs, adventure_monsters, adventure_handouts
                 )
                 
                 scene_monsters = [f"/compendium/monsters/{m}/" for m, _, _ in ctx["monsters"]]
@@ -1112,6 +1206,7 @@ locations:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
                     locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
+                    handouts_yaml = "\n".join([f"  - \"{h}\"" for h in scene_handouts])
                     
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
@@ -1127,6 +1222,8 @@ locations:
 {locations_yaml}
 compendium_refs:
 {monsters_yaml}
+handouts:
+{handouts_yaml}
 ---
 
 ### Descrição e Elementos Importantes
@@ -1137,6 +1234,7 @@ compendium_refs:
             adv_idx = os.path.join(adv_dir, "_index.md")
             npcs_yaml = "\n".join([f"  - \"{n}\"" for n in sorted(list(adventure_npcs))])
             locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(adventure_locations))])
+            handouts_yaml = "\n".join([f"  - \"{h}\"" for h in sorted(list(adventure_handouts))])
             
             with open(adv_idx, "w") as f:
                 f.write(f"""---
@@ -1151,6 +1249,8 @@ npcs:
 {npcs_yaml}
 locations:
 {locations_yaml}
+handouts:
+{handouts_yaml}
 ---
 """)
 

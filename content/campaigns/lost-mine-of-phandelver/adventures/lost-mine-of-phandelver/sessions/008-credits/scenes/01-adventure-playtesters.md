@@ -12,6 +12,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/credits/"
 compendium_refs:
 
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

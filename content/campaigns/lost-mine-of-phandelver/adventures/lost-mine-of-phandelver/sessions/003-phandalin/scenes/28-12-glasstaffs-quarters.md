@@ -13,6 +13,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/evil-mage/"
   - "/compendium/magic-items/staff-of-defense/"
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

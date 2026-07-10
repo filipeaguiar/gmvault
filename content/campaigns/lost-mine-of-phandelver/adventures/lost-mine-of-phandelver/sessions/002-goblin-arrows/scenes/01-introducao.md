@@ -13,6 +13,8 @@ locations:
   - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
 compendium_refs:
 
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes

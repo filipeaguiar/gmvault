@@ -13,11 +13,13 @@ locations:
 compendium_refs:
   - "/compendium/monsters/ghoul/"
   - "/compendium/monsters/skeleton/"
-  - "/compendium/monsters/ochre-jelly/"
   - "/compendium/monsters/zombie/"
-  - "/compendium/monsters/grick/"
-  - "/compendium/monsters/bugbear/"
   - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/ochre-jelly/"
+  - "/compendium/monsters/grick/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
 ---
 
 ### Descrição e Elementos Importantes

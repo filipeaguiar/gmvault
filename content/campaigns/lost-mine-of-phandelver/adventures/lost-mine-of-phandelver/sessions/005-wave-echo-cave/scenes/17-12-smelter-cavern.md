@@ -11,8 +11,10 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/wave-echo-cave/"
 compendium_refs:
-  - "/compendium/monsters/zombie/"
   - "/compendium/monsters/flameskull/"
+  - "/compendium/monsters/zombie/"
+handouts:
+  - "/campaigns/lost-mine-of-phandelver/handouts/flameskull-art/"
 ---
 
 ### Descrição e Elementos Importantes
