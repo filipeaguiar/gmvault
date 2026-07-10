@@ -7,11 +7,11 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/ash-zombie/"
+
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-
+  - "/compendium/monsters/ash-zombie/"
 ---
 
 ### Descrição e Elementos Importantes

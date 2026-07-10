@@ -48,18 +48,16 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
                 source = args[1].lower()
                 display_name = args[2]
             else:
-                # O último argumento não é fonte conhecida, assume-se que é o display
                 display_name = last_arg
-                # O segundo argumento deve ser a fonte
                 source = args[1].lower() if len(args) > 1 else "mm"
         
-        # Se a fonte for a nossa própria campanha, é um NPC!
+        # Se a fonte for a própria campanha, é uma criatura específica da campanha!
         if source.lower() == target_slug.lower():
             npc_slug = slugify(default_val)
-            ctx["npcs"].add((npc_slug, default_val))
+            ctx["campaign_creatures"].add((npc_slug, default_val))
             return display_name
             
-        # Se for criatura ou monstro de outra fonte, é um monstro do compêndio!
+        # Se for criatura ou monstro de outra fonte, é um monstro do compêndio geral!
         if tag_name in ["monster", "creature"]:
             monster_slug = slugify(default_val)
             ctx["monsters"].add(monster_slug)
@@ -85,7 +83,6 @@ def parse_5etools_tag(tag_name, inner_text, target_slug, ctx):
     return default_val
 
 def clean_5etools_tags(text, campaign_slug, target_slug, ctx):
-    # Envelopa as rolagens de dados e danos explícitas antes de limpá-las
     def dice_tag_repl(match):
         formula = match.group(2).split('|')[0].replace(" ", "")
         return f"[[{formula}]]"
@@ -115,8 +112,6 @@ def clean_5etools_tags(text, campaign_slug, target_slug, ctx):
         return parse_5etools_tag(tag_name, inner_text, target_slug, ctx)
         
     cleaned = re.sub(r'\{@(\w+) ([^\}]+)\}', tag_repl, text)
-    
-    # Aplica formatação de dados no texto que sobrotou (rolagens soltas)
     cleaned = format_dice_rolls(cleaned)
     return cleaned
 
@@ -239,26 +234,286 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
             
     return ""
 
-def write_npc_stub(campaign_slug, npc_slug, npc_name):
+# Funções auxiliares para parsear o stat block das criaturas
+def parse_ac(ac_field):
+    if not ac_field:
+        return "10"
+    if isinstance(ac_field, int):
+        return str(ac_field)
+    if isinstance(ac_field, list):
+        parts = []
+        for item in ac_field:
+            if isinstance(item, int):
+                parts.append(str(item))
+            elif isinstance(item, dict):
+                ac_val = item.get("ac")
+                condition = item.get("condition")
+                braces = item.get("braces")
+                part = str(ac_val)
+                if condition:
+                    part += f" ({condition})"
+                elif braces:
+                    part += f" ({', '.join(braces)})"
+                parts.append(part)
+        return ", ".join(parts)
+    return str(ac_field)
+
+def parse_hp(hp_field):
+    if not hp_field:
+        return "10"
+    if isinstance(hp_field, int):
+        return str(hp_field)
+    if isinstance(hp_field, dict):
+        avg = hp_field.get("average")
+        formula = hp_field.get("formula")
+        if avg and formula:
+            return f"{avg} ({formula})"
+        if avg:
+            return str(avg)
+        return str(hp_field)
+    return str(hp_field)
+
+def parse_speed(speed_field):
+    if not speed_field:
+        return "30 ft."
+    if isinstance(speed_field, int):
+        return f"{speed_field} ft."
+    if isinstance(speed_field, dict):
+        parts = []
+        for mode, val in speed_field.items():
+            if mode == "walk":
+                parts.append(f"{val} ft.")
+            else:
+                parts.append(f"{mode} {val} ft.")
+        return ", ".join(parts)
+    return str(speed_field)
+
+def parse_saves(save_field):
+    if not save_field:
+        return ""
+    if isinstance(save_field, dict):
+        parts = []
+        for attr, modifier in save_field.items():
+            parts.append(f"{attr.title()} {modifier}")
+        return ", ".join(parts)
+    return str(save_field)
+
+def parse_skills(skill_field):
+    if not skill_field:
+        return ""
+    if isinstance(skill_field, dict):
+        parts = []
+        for skill, modifier in skill_field.items():
+            parts.append(f"{skill.title()} {modifier}")
+        return ", ".join(parts)
+    return str(skill_field)
+
+def parse_entries_list(entries, campaign_slug, target_slug):
+    # Processa entries aplicando a limpeza de tags no texto
+    lines = []
+    ctx = {"campaign_creatures": set(), "monsters": set(), "locations": set()}
+    for entry in entries:
+        if isinstance(entry, str):
+            lines.append(clean_5etools_tags(entry, campaign_slug, target_slug, ctx))
+        elif isinstance(entry, dict):
+            res = parse_entry(entry, campaign_slug, target_slug, ctx)
+            if res:
+                lines.append(res)
+    return "\n\n".join(lines)
+
+def format_statblock_markdown(m, campaign_slug, target_slug):
+    stats = {
+        "ac": parse_ac(m.get("ac")),
+        "hp": parse_hp(m.get("hp")),
+        "speed": parse_speed(m.get("speed")),
+        "attributes": {
+            "str": m.get("str", 10),
+            "dex": m.get("dex", 10),
+            "con": m.get("con", 10),
+            "int": m.get("int", 10),
+            "wis": m.get("wis", 10),
+            "cha": m.get("cha", 10),
+        }
+    }
+    
+    saves = parse_saves(m.get("save"))
+    if saves:
+        stats["saves"] = saves
+        
+    skills = parse_skills(m.get("skill"))
+    if skills:
+        stats["skills"] = skills
+        
+    senses = []
+    if m.get("senses"):
+        senses.extend(m.get("senses"))
+    if m.get("passive"):
+        senses.append(f"passive Perception {m.get('passive')}")
+    if senses:
+        stats["senses"] = ", ".join(senses)
+        
+    if m.get("languages"):
+        stats["languages"] = ", ".join(m.get("languages"))
+        
+    if m.get("cr"):
+        stats["cr"] = str(m.get("cr"))
+        
+    # Meta
+    sizes = m.get("size", ["M"])
+    size_char = sizes[0] if isinstance(sizes, list) else sizes
+    size_map = {"T": "Tiny", "S": "Small", "M": "Medium", "L": "Large", "H": "Huge", "G": "Gargantuan"}
+    size_str = size_map.get(size_char, "Medium")
+    
+    type_str = m.get("type", "monstrosity")
+    if isinstance(type_str, dict):
+        type_str = type_str.get("type")
+        
+    align_list = m.get("alignment", [])
+    align_map = {"L": "leal", "N": "neutro", "C": "caótico", "G": "bom", "E": "mau", "U": "sem tendência"}
+    align_parts = [align_map[c] for c in align_list if isinstance(c, str) and c in align_map]
+    align_str = " e ".join(align_parts) if align_parts else "sem tendência"
+    
+    stats_meta = f"{size_str} {type_str}, {align_str}"
+    
+    body_parts = []
+    if m.get("trait"):
+        body_parts.append("### Características\n")
+        for trait in m.get("trait"):
+            name = trait.get("name")
+            desc = parse_entries_list(trait.get("entries", []), campaign_slug, target_slug)
+            body_parts.append(f"**{name}.** {desc}\n")
+            
+    if m.get("action"):
+        body_parts.append("### Ações\n")
+        for act in m.get("action"):
+            name = act.get("name")
+            desc = parse_entries_list(act.get("entries", []), campaign_slug, target_slug)
+            body_parts.append(f"**{name}.** {desc}\n")
+            
+    return stats, stats_meta, "\n".join(body_parts)
+
+def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, target_slug=None):
     npc_file = f"content/campaigns/{campaign_slug}/npcs/{npc_slug}.md"
     if os.path.exists(npc_file):
         return
-    with open(npc_file, "w") as f:
-        f.write(f"""---
-title: "{npc_name}"
-kind: "npc"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "ready"
-tags:
-  - npc
-  - importado
----
+        
+    front_matter_lines = [
+        "---",
+        f'title: "{npc_name}"',
+        'kind: "npc"',
+        'draft: true',
+        'titulo_pt_br: ""',
+        'visibility: "gm"',
+        'status: "ready"',
+        'tags:',
+        '  - npc',
+        '  - importado'
+    ]
+    
+    body = f"\nNPC **{npc_name}** importado automaticamente da campanha.\n"
+    
+    if bestiary_entry:
+        m = bestiary_entry["stats"]
+        stats, stats_meta, stats_body = format_statblock_markdown(m, campaign_slug, target_slug)
+        fluff = bestiary_entry.get("fluff")
+        
+        front_matter_lines.append(f'stats_meta: "{stats_meta}"')
+        front_matter_lines.append("stats:")
+        front_matter_lines.append(f'  ac: "{stats["ac"]}"')
+        front_matter_lines.append(f'  hp: "{stats["hp"]}"')
+        front_matter_lines.append(f'  speed: "{stats["speed"]}"')
+        front_matter_lines.append("  attributes:")
+        for attr, val in stats["attributes"].items():
+            front_matter_lines.append(f"    {attr}: {val}")
+        if "saves" in stats:
+            front_matter_lines.append(f'  saves: "{stats["saves"]}"')
+        if "skills" in stats:
+            front_matter_lines.append(f'  skills: "{stats["skills"]}"')
+        if "senses" in stats:
+            front_matter_lines.append(f'  senses: "{stats["senses"]}"')
+        if "languages" in stats:
+            front_matter_lines.append(f'  languages: "{stats["languages"]}"')
+        if "cr" in stats:
+            front_matter_lines.append(f'  cr: "{stats["cr"]}"')
+            
+        lore_markdown = ""
+        if fluff:
+            fluff_entries = fluff.get("entries", [])
+            lore_markdown = parse_entries_list(fluff_entries, campaign_slug, target_slug)
+            
+        body = f"""
+{lore_markdown}
 
-NPC **{npc_name}** importado automaticamente da campanha.
-""")
-    print(f"    [Stub NPC] Criado stub para NPC: {npc_name}")
+{stats_body}
+"""
+        
+    front_matter_lines.append("---")
+    
+    with open(npc_file, "w") as f:
+        f.write("\n".join(front_matter_lines) + "\n" + body)
+    print(f"    [NPC] Importado NPC detalhado: {npc_name}")
+
+def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry=None, target_slug=None):
+    os.makedirs("content/compendium/monsters", exist_ok=True)
+    monster_file = f"content/compendium/monsters/{monster_slug}.md"
+    if os.path.exists(monster_file):
+        return
+        
+    front_matter_lines = [
+        "---",
+        f'title: "{monster_name}"',
+        'kind: "monster"',
+        'draft: true',
+        'titulo_pt_br: ""',
+        'visibility: "gm"',
+        'status: "ready"',
+        'tags:',
+        '  - monstro',
+        '  - importado'
+    ]
+    
+    body = f"\nMonstro **{monster_name}** importado automaticamente da campanha.\n"
+    
+    if bestiary_entry:
+        m = bestiary_entry["stats"]
+        stats, stats_meta, stats_body = format_statblock_markdown(m, campaign_slug, target_slug)
+        fluff = bestiary_entry.get("fluff")
+        
+        front_matter_lines.append(f'stats_meta: "{stats_meta}"')
+        front_matter_lines.append("stats:")
+        front_matter_lines.append(f'  ac: "{stats["ac"]}"')
+        front_matter_lines.append(f'  hp: "{stats["hp"]}"')
+        front_matter_lines.append(f'  speed: "{stats["speed"]}"')
+        front_matter_lines.append("  attributes:")
+        for attr, val in stats["attributes"].items():
+            front_matter_lines.append(f"    {attr}: {val}")
+        if "saves" in stats:
+            front_matter_lines.append(f'  saves: "{stats["saves"]}"')
+        if "skills" in stats:
+            front_matter_lines.append(f'  skills: "{stats["skills"]}"')
+        if "senses" in stats:
+            front_matter_lines.append(f'  senses: "{stats["senses"]}"')
+        if "languages" in stats:
+            front_matter_lines.append(f'  languages: "{stats["languages"]}"')
+        if "cr" in stats:
+            front_matter_lines.append(f'  cr: "{stats["cr"]}"')
+            
+        lore_markdown = ""
+        if fluff:
+            fluff_entries = fluff.get("entries", [])
+            lore_markdown = parse_entries_list(fluff_entries, campaign_slug, target_slug)
+            
+        body = f"""
+{lore_markdown}
+
+{stats_body}
+"""
+        
+    front_matter_lines.append("---")
+    
+    with open(monster_file, "w") as f:
+        f.write("\n".join(front_matter_lines) + "\n" + body)
+    print(f"    [Monstro] Importado monstro detalhado para o Compêndio: {monster_name}")
 
 def write_location_stub(campaign_slug, loc_slug, loc_name):
     loc_file = f"content/campaigns/{campaign_slug}/locations/{loc_slug}.md"
@@ -279,7 +534,7 @@ tags:
 
 Localidade **{loc_name}** importada automaticamente da campanha.
 """)
-    print(f"    [Stub Localidade] Criado stub para Localidade: {loc_name}")
+    print(f"    [Localidade] Criado stub de Localidade: {loc_name}")
 
 def create_directory_structure(campaign_slug):
     paths = [
@@ -434,6 +689,78 @@ def fetch_adventure_data(slug):
         
     return adventure_meta, adventure_data
 
+def fetch_bestiary_data(slug):
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    bestiary_data = {}
+    
+    url_bestiary = DATA_BASE_URL + f"bestiary/bestiary-{slug.lower()}.json"
+    url_fluff = DATA_BASE_URL + f"bestiary/fluff-bestiary-{slug.lower()}.json"
+    
+    monsters_list = []
+    fluff_list = []
+    
+    try:
+        req = urllib.request.Request(url_bestiary, headers=headers)
+        with urllib.request.urlopen(req) as r:
+            bestiary_json = json.loads(r.read().decode())
+            monsters_list = bestiary_json.get("monster", [])
+            print(f"  [5e.tools] Encontrado bestiário com {len(monsters_list)} criaturas específicas.")
+    except Exception as e:
+        print(f"  [5e.tools] Aventura não possui bestiário específico (ou falha: {e}).")
+        
+    try:
+        req = urllib.request.Request(url_fluff, headers=headers)
+        with urllib.request.urlopen(req) as r:
+            fluff_json = json.loads(r.read().decode())
+            fluff_list = fluff_json.get("monsterFluff", [])
+    except Exception as e:
+        pass
+        
+    fluff_by_name = {f.get("name").lower(): f for f in fluff_list}
+    
+    for m in monsters_list:
+        name = m.get("name")
+        fluff = fluff_by_name.get(name.lower())
+        bestiary_data[name.lower()] = {
+            "stats": m,
+            "fluff": fluff
+        }
+        
+    return bestiary_data
+
+def handle_campaign_creatures(campaign_slug, target_slug, creatures_set, bestiary_data, all_npcs, all_monsters):
+    # Processa as criaturas encontradas nas cenas da aventura
+    # Distingue NPCs de Monstros específicos e cria os arquivos corretos
+    scene_npcs_refs = []
+    scene_monsters_refs = []
+    
+    for c_slug, c_name in creatures_set:
+        entry = bestiary_data.get(c_name.lower())
+        
+        is_real_npc = False
+        if entry:
+            stats = entry["stats"]
+            if stats.get("isNpc") or stats.get("isNamedCreature"):
+                is_real_npc = True
+        else:
+            # Fallback se não estiver no bestiário (stubs sem bestiário assumem NPC por padrão)
+            is_real_npc = True
+            
+        if is_real_npc:
+            # É NPC nomeado! Cria na pasta npcs da campanha
+            write_npc_stub(campaign_slug, c_slug, c_name, entry, target_slug)
+            npc_ref = f"/campaigns/{campaign_slug}/npcs/{c_slug}/"
+            scene_npcs_refs.append(npc_ref)
+            all_npcs.add(npc_ref)
+        else:
+            # É monstro específico! Cria no compêndio global
+            write_monster_stub(campaign_slug, c_slug, c_name, entry, target_slug)
+            monster_ref = f"/compendium/monsters/{c_slug}/"
+            scene_monsters_refs.append(monster_ref)
+            all_monsters.add(monster_ref)
+            
+    return scene_npcs_refs, scene_monsters_refs
+
 def main():
     parser = argparse.ArgumentParser(description="Importador de Campanhas do 5e.tools")
     parser.add_argument("slug", help="Slug da aventura no 5e.tools (ex: jttrc, lmop)")
@@ -441,6 +768,7 @@ def main():
     
     slug = args.slug
     adv_meta, adv_data = fetch_adventure_data(slug)
+    bestiary_data = fetch_bestiary_data(slug)
     
     campaign_title = adv_meta["name"]
     campaign_slug = slugify(campaign_title)
@@ -464,12 +792,11 @@ def main():
     chapters = adv_data.get("data", [])
     
     if choice == "1":
-        # Aventura única
         adv_slug = campaign_slug
         adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, campaign_title)
         
-        # Para acumular os stubs de NPCs e Localidades encontrados na aventura inteira
         all_npcs = set()
+        all_monsters = set()
         all_locations = set()
             
         for c_idx, chap in enumerate(chapters):
@@ -477,7 +804,6 @@ def main():
             session_slug = f"{c_idx+1:03d}-{slugify(chap_title)}"
             session_title = f"Sessão {c_idx+1} - {chap_title}"
             
-            # Cria a localidade principal correspondente ao capítulo
             loc_slug = slugify(chap_title)
             write_location_stub(campaign_slug, loc_slug, chap_title)
             all_locations.add(f"/campaigns/{campaign_slug}/locations/{loc_slug}/")
@@ -505,10 +831,9 @@ def main():
                 scene_slug = f"{s_idx+1:02d}-{slugify(s_title)}"
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
-                # Contexto de parse para extrair stubs
                 ctx = {
-                    "npcs": set(),     # set de tuplas (slug, nome)
-                    "monsters": set(), # set de slugs
+                    "campaign_creatures": set(), # set de tuplas (slug, nome)
+                    "monsters": set(),           # set de slugs gerais
                     "locations": set()
                 }
                 
@@ -518,23 +843,19 @@ def main():
                     if res:
                         content_markdown += res + "\n\n"
                 
-                # Criar stubs físicos para os NPCs encontrados nesta cena
-                scene_npcs = []
-                for npc_slug, npc_name in ctx["npcs"]:
-                    write_npc_stub(campaign_slug, npc_slug, npc_name)
-                    npc_ref = f"/campaigns/{campaign_slug}/npcs/{npc_slug}/"
-                    scene_npcs.append(npc_ref)
-                    all_npcs.add(npc_ref)
-                    
-                # Criar referências dos monstros
-                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                # Criar NPCs e monstros específicos e obter as referências
+                scene_npcs, scene_spec_monsters = handle_campaign_creatures(
+                    campaign_slug, slug, ctx["campaign_creatures"], bestiary_data, all_npcs, all_monsters
+                )
                 
-                # Associar a localidade do capítulo a esta cena
+                # Referências dos monstros gerais do compêndio
+                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                for m_ref in scene_spec_monsters:
+                    scene_monsters.append(m_ref)
+                
                 scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
                 
-                # Escreve a Cena com o front matter interligado
                 with open(scene_file, "w") as f:
-                    # Serialização YAML simples
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
                     locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
@@ -560,7 +881,7 @@ compendium_refs:
 {content_markdown}
 """)
                     
-        # Gravar as associações de todos os NPCs e Localidades no _index.md da Aventura
+        # Gravar as associações acumuladas no _index.md da Aventura
         adv_idx = os.path.join(adv_dir, "_index.md")
         npcs_yaml = "\n".join([f"  - \"{n}\"" for n in sorted(list(all_npcs))])
         locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(all_locations))])
@@ -593,22 +914,19 @@ locations:
             chap_title = chap.get("name")
             adv_slug = slugify(chap_title)
             
-            # Cria a Aventura e a pasta intermediária de sessões
             adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, chap_title)
             
-            # Cria a localidade principal correspondente à aventura
             loc_slug = adv_slug
             write_location_stub(campaign_slug, loc_slug, chap_title)
             adventure_locations = {f"/campaigns/{campaign_slug}/locations/{loc_slug}/"}
             adventure_npcs = set()
+            adventure_monsters = set()
             
             sess_slug = "001-inicio"
             session_title = "Sessão 01 - Início"
             
-            # Cria a Sessão e a pasta intermediária de cenas
             sess_dir, scenes_dir = create_session_structure(adv_dir, sess_slug, session_title)
                 
-            # As subseções do capítulo viram cenas
             scenes = []
             current_scene_title = "Introdução"
             current_scene_entries = []
@@ -630,9 +948,8 @@ locations:
                 scene_slug = f"{s_idx+1:02d}-{slugify(s_title)}"
                 scene_file = os.path.join(scenes_dir, f"{scene_slug}.md")
                 
-                # Contexto de parse para extrair stubs
                 ctx = {
-                    "npcs": set(),
+                    "campaign_creatures": set(),
                     "monsters": set(),
                     "locations": set()
                 }
@@ -643,23 +960,19 @@ locations:
                     if res:
                         content_markdown += res + "\n\n"
                 
-                # Criar stubs físicos para os NPCs encontrados nesta cena
-                scene_npcs = []
-                for npc_slug, npc_name in ctx["npcs"]:
-                    write_npc_stub(campaign_slug, npc_slug, npc_name)
-                    npc_ref = f"/campaigns/{campaign_slug}/npcs/{npc_slug}/"
-                    scene_npcs.append(npc_ref)
-                    adventure_npcs.add(npc_ref)
-                    
-                # Criar referências dos monstros
-                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                scene_npcs, scene_spec_monsters = handle_campaign_creatures(
+                    campaign_slug, slug, ctx["campaign_creatures"], bestiary_data, adventure_npcs, adventure_monsters
+                )
                 
-                # Associar a localidade a esta cena
+                scene_monsters = [f"/compendium/monsters/{m}/" for m in ctx["monsters"]]
+                for m_ref in scene_spec_monsters:
+                    scene_monsters.append(m_ref)
+                
                 scene_locations = [f"/campaigns/{campaign_slug}/locations/{loc_slug}/"]
                 
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
-                    monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
+                    monsters_yaml = "\n".join([f"  - \"{m}\"" for n in scene_monsters])
                     locations_yaml = "\n".join([f"  - \"{l}\"" for l in scene_locations])
                     
                     f.write(f"""---
@@ -683,7 +996,6 @@ compendium_refs:
 {content_markdown}
 """)
             
-            # Gravar as associações acumuladas no _index.md da Aventura
             adv_idx = os.path.join(adv_dir, "_index.md")
             npcs_yaml = "\n".join([f"  - \"{n}\"" for n in sorted(list(adventure_npcs))])
             locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(adventure_locations))])

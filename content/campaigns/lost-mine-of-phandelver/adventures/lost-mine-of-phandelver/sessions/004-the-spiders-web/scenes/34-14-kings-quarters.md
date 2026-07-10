@@ -11,10 +11,10 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/commoner/"
 ---
 
 ### Descrição e Elementos Importantes

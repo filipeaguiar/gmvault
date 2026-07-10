@@ -8,12 +8,11 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/lost-mine-of-phandelver/npcs/staff-of-defense/"
-  - "/campaigns/lost-mine-of-phandelver/npcs/evil-mage/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/phandalin/"
 compendium_refs:
-
+  - "/compendium/monsters/evil-mage/"
 ---
 
 ### Descrição e Elementos Importantes
