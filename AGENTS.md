@@ -18,6 +18,15 @@ O projeto deve priorizar:
 
 Este projeto **não** deve depender de banco de dados, backend, painel administrativo dinâmico ou frameworks JavaScript pesados.
 
+## Diretrizes de comunicação para agentes
+
+Os agentes de IA que operam neste repositório devem seguir as seguintes regras de comunicação:
+
+*   **Linguagem direta e profissional**: Sempre utilize linguagem direta e profissional.
+*   **Explicação clara**: Explique o que precisar, explique o que foi feito.
+*   **Sem informalidades**: Sem elogios, sem tom de conversa. Só informação.
+*   **Recomendações**: Caso haja recomendação, avise.
+
 ## Estrutura conceitual
 
 O site possui duas grandes áreas:
