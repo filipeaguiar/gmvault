@@ -12,13 +12,12 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/cat/"
   - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/cat/"
   - "/compendium/monsters/wynling/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-019-map-23-siabsungkoh-player/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-018-map-23-siabsungkoh/"
 ---
 
 ### Descrição e Elementos Importantes

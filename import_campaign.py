@@ -340,38 +340,44 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
                 is_map = "map" in title_lower or "mapa" in title_lower or "map" in str(image_type).lower()
                 
                 if is_map:
-                    if "player" in title_lower or "player" in str(image_type).lower():
-                        visibility = "players"
-                    else:
-                        visibility = "gm"
+                    # Apenas mapas de jogador devem virar handouts navegáveis.
+                    # Mapas do mestre continuam embutidos no conteúdo GM da cena.
+                    player_markers = " ".join([
+                        title_lower,
+                        str(image_type).lower(),
+                        str(img_path).lower(),
+                        str(slug_filename).lower(),
+                    ])
+                    is_player_map = "player" in player_markers or "players" in player_markers
+
+                    if is_player_map:
+                        # Obter título amigável enriquecido
+                        map_title = title_clean
+                        if map_title.lower() in ["player version", "player map", "player", "players", "version", "imagem", "image"]:
+                            current_loc_slug = ctx.get("current_loc_slug")
+                            if current_loc_slug:
+                                locs_registry = ctx.get("locations_registry", {})
+                                loc_data = locs_registry.get(current_loc_slug, {})
+                                loc_friendly_name = loc_data.get("name", current_loc_slug.replace("-", " ").title())
+                                map_title = f"{loc_friendly_name} (Player Version)"
+                            else:
+                                name_part, _ = os.path.splitext(slug_filename)
+                                map_title = name_part.replace("-", " ").title()
                         
-                    # Obter título amigável enriquecido
-                    map_title = title_clean
-                    if map_title.lower() in ["player version", "player map", "player", "version", "imagem", "image"]:
+                        name_part, _ = os.path.splitext(slug_filename)
+                        map_slug = f"map-{slugify(name_part)}"
+                        write_map_handout(campaign_slug, map_slug, map_title, local_path, "players")
+                        
+                        map_ref = f"/campaigns/{campaign_slug}/handouts/{map_slug}/"
+                        if "campaign_handouts" not in ctx:
+                            ctx["campaign_handouts"] = set()
+                        ctx["campaign_handouts"].add(map_ref)
+                        
+                        # Registrar na localidade ativa se disponível
                         current_loc_slug = ctx.get("current_loc_slug")
-                        if current_loc_slug:
-                            locs_registry = ctx.get("locations_registry", {})
-                            loc_data = locs_registry.get(current_loc_slug, {})
-                            loc_friendly_name = loc_data.get("name", current_loc_slug.replace("-", " ").title())
-                            map_title = f"{loc_friendly_name} (Player Version)"
-                        else:
-                            name_part, _ = os.path.splitext(slug_filename)
-                            map_title = name_part.replace("-", " ").title()
-                    
-                    name_part, _ = os.path.splitext(slug_filename)
-                    map_slug = f"map-{slugify(name_part)}"
-                    write_map_handout(campaign_slug, map_slug, map_title, local_path, visibility)
-                    
-                    map_ref = f"/campaigns/{campaign_slug}/handouts/{map_slug}/"
-                    if "campaign_handouts" not in ctx:
-                        ctx["campaign_handouts"] = set()
-                    ctx["campaign_handouts"].add(map_ref)
-                    
-                    # Registrar na localidade ativa se disponível
-                    current_loc_slug = ctx.get("current_loc_slug")
-                    locs_registry = ctx.get("locations_registry")
-                    if current_loc_slug and locs_registry and current_loc_slug in locs_registry:
-                        locs_registry[current_loc_slug]["maps"].add((map_ref, local_path))
+                        locs_registry = ctx.get("locations_registry")
+                        if current_loc_slug and locs_registry and current_loc_slug in locs_registry:
+                            locs_registry[current_loc_slug]["maps"].add((map_ref, local_path))
                         
                 return f"\n![{title_clean}]({local_path})\n"
                 

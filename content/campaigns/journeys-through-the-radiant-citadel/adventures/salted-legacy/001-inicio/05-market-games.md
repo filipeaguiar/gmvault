@@ -8,27 +8,25 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
 locations:
 
 compendium_refs:
   - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
   - "/compendium/monsters/giant-sea-horse/"
   - "/compendium/monsters/koi-prawn/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-016-map-22-market-challenges-player/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-015-map-22-market-challenges/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-012-map-21-dyn-singh-night-market-player/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-011-map-21-dyn-singh-night-market/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-016-map-22-market-challenges-player/"
 ---
 
 ### Descrição e Elementos Importantes
