@@ -14,16 +14,16 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/giant-sea-horse/"
   - "/compendium/monsters/lizard/"
+  - "/compendium/monsters/noble/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/koi-prawn/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 

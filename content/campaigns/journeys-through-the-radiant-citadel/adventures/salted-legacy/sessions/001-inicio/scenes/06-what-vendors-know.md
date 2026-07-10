@@ -8,15 +8,15 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -12,17 +12,17 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/triboar-trail/"
 compendium_refs:
-  - "/compendium/monsters/orc/"
-  - "/compendium/monsters/ghoul/"
-  - "/compendium/monsters/owlbear/"
   - "/compendium/monsters/ogre/"
-  - "/compendium/monsters/goblin/"
-  - "/compendium/monsters/hobgoblin/"
-  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/ghoul/"
   - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/orc/"
+  - "/compendium/monsters/owlbear/"
+  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/goblin/"
 handouts:
-  - "/campaigns/lost-mine-of-phandelver/handouts/owlbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"
+  - "/campaigns/lost-mine-of-phandelver/handouts/owlbear-art/"
 ---
 
 ### Descrição e Elementos Importantes

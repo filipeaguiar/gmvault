@@ -8,24 +8,24 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/wynling/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 

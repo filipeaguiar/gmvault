@@ -12,13 +12,13 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/grick/"
   - "/compendium/monsters/skeleton/"
   - "/compendium/monsters/ochre-jelly/"
-  - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/zombie/"
   - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/zombie/"
   - "/compendium/monsters/stirge/"
+  - "/compendium/monsters/bugbear/"
+  - "/compendium/monsters/grick/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
 ---

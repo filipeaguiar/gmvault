@@ -12,8 +12,8 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/cragmaw-castle/"
 compendium_refs:
-  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/doppelganger/"
   - "/compendium/monsters/wolf/"
   - "/compendium/monsters/bugbear/"
 handouts:

@@ -13,8 +13,8 @@ locations:
 
 compendium_refs:
   - "/compendium/monsters/spectator/"
-  - "/compendium/magic-items/lightbringer/"
   - "/compendium/magic-items/dragonguard/"
+  - "/compendium/magic-items/lightbringer/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/spectator-art/"
 ---
