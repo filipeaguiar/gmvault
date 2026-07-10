@@ -1,0 +1,32 @@
+---
+title: "Cena 2 - Encounters in Phandalin"
+kind: "scene"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+summary: "Cena operacional para conduzir na sessão."
+---
+
+### Descrição e Elementos Importantes
+
+When the characters explore Phandalin, you don't need to keep track of how much time is spent at each location. Instead, imagine that you're directing an old-style western movie. Your goal is to present several scenes in which the adventurers walk into a store or saloon and meet the people there. By interacting with these NPCs, the adventurers learn what the NPCs need or what information they want to share, then can move on to the next location. These scenes are a series of roleplaying encounters that take place over the course of a couple of days of game time.
+
+To begin, ask the players where they want to go and what they want to do in town. For example, you could tell them, "There's an inn, a town hall, a shrine, general stores and trading posts, and a few other homes and businesses. Where do you want to go?" When the players pick a spot, refer to the description in the following section, introduce the NPCs there, and let the interaction begin.
+
+
+### The Stonehill Inn
+
+If the players aren't sure what their characters should do, encourage them to begin at the Stonehill Inn. The NPCs there are "pointers" who can direct the characters toward the various adventure opportunities and important rumors that can be found in other parts of the town. By visiting the inn, the characters learn what other places they should visit.
+
+
+### Redbrand Ruffians
+
+Sooner or later, the adventurers run into the thugs who run Phandalin. All you need to do is choose when the ruffians appear. After the characters have had a chance to visit several locations in town and talk to the townsfolk, they might decide to go looking for the Redbrands. When they do, run the "Redbrand Ruffians" encounter. Alternatively, if the characters are reluctant to seek out the ruffians, the Redbrands can come looking for them at a time of your choosing.
+
+
+### Finding Cragmaw Castle
+
+The characters might want to seek out Cragmaw Castle to find and rescue Gundren Rockseeker. Most of the townsfolk are preoccupied with the Redbrands, and no one in town knows the location of Cragmaw Castle. Qelline Alderleaf, Sildar Hallwinter, and Halia Thornton can offer suggestions on how the party might find someone who knows the location.
+
+

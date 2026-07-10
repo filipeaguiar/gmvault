@@ -1,0 +1,48 @@
+---
+title: "Cena 25 - 9. Guard Barracks"
+kind: "scene"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "ready"
+summary: "Cena operacional para conduzir na sessão."
+---
+
+### Descrição e Elementos Importantes
+
+A character who listens at this door with a successful CD 10 Wisdom (Perception) check hears several gruff voices issuing demeaning commands in the Goblin tongue. Examples include "Lick the floor!" and "Roll like a dog!" The bugbears here are bullying their goblin slave.
+
+> This barracks contains four roughly built wooden bunks, with heaped-up blankets and dirty dishes scattered about. A strong smell of unwashed bodies and rotten meat fills the air. Three tall, furry humanoids are lounging among the mess, barking orders at a sad little goblin that demeans itself for their amusement. Your sudden appearance causes the goblin to faint.
+
+Three bugbears and one Goblin are present. The goblin, Droop, falls Unconscious at the sight of the party, but another creature can use an action to wake him. Otherwise, Droop remains Unconscious for [[1d10]] minutes.
+
+The bugbears work for the Black Spider and were sent here to help Iarno keep the Redbrands and the citizens of Phandalin in line. The leader is named Mosk. He wears a jeweled eye patch even though he has both his eyes. Mosk wears the eye patch because he thinks it's fancy.
+
+The bugbears avoid the human members of the Redbrands. If the characters are wearing scarlet cloaks taken from elsewhere, the bugbears assume that they serve Iarno. Clever characters might even persuade the bugbears to help deal with "traitors" or "impostors" elsewhere in the dungeon. If you don't think the players are doing a great job roleplaying the deception, you can have the character who is doing most of the talking make a CD 15 Charisma (Deception) check to convince the bugbears to do what the party wants.
+
+
+### Role Playing Droop
+
+The goblin, Droop, is not a threat to the party. He has been cowed by the bugbears and follows their orders until someone stronger comes along.
+If he regains consciousness during combat, Droop hides and avoids the fight. He is such a coward that if he is ordered to fight, he does so with disadvantage (as explained in the rulebook).
+Droop knows the general layout of the Redbrand hideout, as well as the location of its secret doors and traps. He doesn't think to offer up the information, but if prompted, he reveals as much as he can remember in an attempt to be useful to the party. Some of the details might be confusing or mixed up. He is a goblin, after all.
+If the bugbears are dispatched, Droop tries to ingratiate himself with the party. He doesn't remember the route to Cragmaw Castle, but he knows it's up north, in the forest. He also knows that Cragmaw goblins patrol around Phandalin, and he suggests the characters might be able to capture a patrol to learn more about the castle.
+Characters might be inclined to keep Droop around for a while. See the "NPC Party Members" sidebar (page 11) for advice on how to run Droop as a member of the party.
+
+
+### Developments
+
+The bugbears are the only ones in the Redbrand hideout who know the location of Wave Echo Cave. They won't willingly divulge this information, since they fear the Black Spider more than they fear the characters.
+The bugbears also know the location of Cragmaw Castle. But again, they don't share this information readily. A character who interrogates a captured bugbear can pry the information loose with a successful CD 15 Charisma (Intimidation) check.
+
+
+### Treasure
+
+Mosk carries a belt pouch containing 33 sp and wears an eye patch made of black leather set with semiprecious stones (50 gp). He also has an iron key that locks and unlocks all the doors in the Redbrand hideout.
+
+
+### Awarding Experience Points
+
+Divide 600 XP equally among the characters if the party defeats the bugbears.
+
+
