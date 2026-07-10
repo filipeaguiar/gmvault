@@ -6,7 +6,7 @@ draft: false
 weight: 10
 summary: "Resumo curto da campanha."
 tags: []
-visibility: "public"
+visibility: "gm"
 status: "active"
 system: "D&D 5e"
 ---

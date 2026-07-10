@@ -8,7 +8,7 @@ summary: "Uma campanha de exploração urbana e mistérios em uma metrópole flu
 tags:
   - fantasia
   - investigacao
-visibility: "public"
+visibility: "gm"
 status: "active"
 system: "D&D 5e"
 
