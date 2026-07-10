@@ -1,12 +1,90 @@
 {{ if .Pages }}
+{{- $icons := dict 
+  "campaign" "ra-shield" 
+  "adventure" "ra-dungeon" 
+  "session" "ra-hourglass" 
+  "scene" "ra-compass" 
+  "handout" "ra-picture" 
+  "character" "ra-pawn" 
+  "npc" "ra-cowl" 
+  "location" "ra-castle" 
+  "faction" "ra-flag" 
+  "journal_entry" "ra-quill" 
+  "journal_index" "ra-open-book" 
+  "monster" "ra-dragon" 
+  "item" "ra-knapsack" 
+  "magic_item" "ra-gem-pendant" 
+  "class" "ra-sword" 
+  "race" "ra-hood" 
+  "feat" "ra-trophy" 
+  "spell" "ra-fire" 
+  "background" "ra-scroll-unfurled" 
+  "condition" "ra-skull" 
+  "rule" "ra-open-book" 
+  
+  "monsters_index" "ra-dragon" 
+  "items_index" "ra-knapsack" 
+  "magic-items_index" "ra-gem-pendant" 
+  "magic_items_index" "ra-gem-pendant" 
+  "classes_index" "ra-sword" 
+  "races_index" "ra-hood" 
+  "feats_index" "ra-trophy" 
+  "spells_index" "ra-fire" 
+  "backgrounds_index" "ra-scroll-unfurled" 
+  "conditions_index" "ra-skull" 
+  "rules_index" "ra-open-book" 
+  "adventures_index" "ra-crossed-swords" 
+  "sessions_index" "ra-hourglass" 
+  "scenes_index" "ra-compass" 
+  "npcs_index" "ra-cowl" 
+  "locations_index" "ra-castle" 
+  "factions_index" "ra-flag" 
+  "characters_index" "ra-pawn" 
+  "handouts_index" "ra-map" 
+-}}
 <div class="child-pages-section">
   <h3 class="child-pages-title">Navegar nesta seção</h3>
   <div class="cards-grid">
     {{ range .Pages.ByWeight }}
       {{ $isSubItem := or .Params.parent_race .Params.parent_class }}
       {{ if not $isSubItem }}
+        {{- $kind := .Params.kind -}}
+        {{- $icon := "" -}}
+        {{- if $kind -}}
+          {{- $icon = index $icons $kind -}}
+        {{- end -}}
+        {{- if eq $kind "compendium_section" -}}
+          {{- if in .RelPermalink "/compendium/monsters" -}}
+            {{- $icon = "ra-dragon" -}}
+          {{- else if in .RelPermalink "/compendium/magic-items" -}}
+            {{- $icon = "ra-gem-pendant" -}}
+          {{- else if in .RelPermalink "/compendium/items" -}}
+            {{- $icon = "ra-knapsack" -}}
+          {{- else if in .RelPermalink "/compendium/classes" -}}
+            {{- $icon = "ra-sword" -}}
+          {{- else if in .RelPermalink "/compendium/races" -}}
+            {{- $icon = "ra-hood" -}}
+          {{- else if in .RelPermalink "/compendium/feats" -}}
+            {{- $icon = "ra-trophy" -}}
+          {{- else if in .RelPermalink "/compendium/spells" -}}
+            {{- $icon = "ra-fire" -}}
+          {{- else if in .RelPermalink "/compendium/backgrounds" -}}
+            {{- $icon = "ra-scroll-unfurled" -}}
+          {{- else if in .RelPermalink "/compendium/conditions" -}}
+            {{- $icon = "ra-skull" -}}
+          {{- else if in .RelPermalink "/compendium/rules" -}}
+            {{- $icon = "ra-open-book" -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if not $icon -}}
+          {{- $icon = "ra-scroll-unfurled" -}}
+        {{- end -}}
         <div class="card">
-          <h4><a href="{{ .RelPermalink }}">{{ or .Params.titulo_pt_br .Title }}</a></h4>
+          <h4>
+            <a href="{{ .RelPermalink }}">
+              <i class="ra {{ $icon }}"></i> {{ or .Params.titulo_pt_br .Title }}
+            </a>
+          </h4>
           {{ if .Params.summary }}
             <p class="summary">{{ .Params.summary }}</p>
           {{ else if .Summary }}
