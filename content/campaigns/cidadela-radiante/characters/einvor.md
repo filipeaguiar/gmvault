@@ -1,7 +1,6 @@
 ---
 title: "Einvor"
 date: 2026-07-09T19:00:00Z
-kind: "character"
 draft: false
 weight: 10
 summary: "Goliath Barbarian 2 importado do D&D Beyond."
@@ -32,6 +31,8 @@ locations: []
 factions: []
 compendium_refs: ["/compendium/classes/barbarian/", "/compendium/items/greataxe/", "/compendium/races/goliath/", "/compendium/rules/danger-sense/", "/compendium/rules/rage/", "/compendium/rules/reckless-attack/", "/compendium/rules/unarmored-defense/", "/compendium/rules/weapon-mastery/"]
 spells_usage: []
+params:
+  kind: "character"
 ---
 
 ### Biografia

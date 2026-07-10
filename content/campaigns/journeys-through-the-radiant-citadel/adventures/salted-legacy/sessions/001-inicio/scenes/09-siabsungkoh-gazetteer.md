@@ -1,6 +1,5 @@
 ---
 title: "Cena 9 - Siabsungkoh Gazetteer"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -16,6 +15,8 @@ compendium_refs:
   - "/compendium/monsters/wynling/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

@@ -1,6 +1,5 @@
 ---
 title: "Cena 6 - What Vendors Know"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -16,6 +15,8 @@ compendium_refs:
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

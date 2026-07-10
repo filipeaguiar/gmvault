@@ -1,6 +1,5 @@
 ---
 title: "Dagger"
-kind: "item"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -15,6 +14,8 @@ item_info:
   cost: "2.0 gp"
   weight: "1 lb"
   properties: ""
+params:
+  kind: "item"
 ---
 
 

@@ -1,7 +1,6 @@
 ---
 title: "Golias (Goliath)"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 50
 summary: "Um povo gigantesco das montanhas frias, fortes e extremamente competitivos."
@@ -14,6 +13,8 @@ race_info:
   ability_score: "+2 Força, +1 Constituição"
   speed: "9m"
   languages: "Comum, Gigante"
+params:
+  kind: "race"
 ---
 
 ### Descrição Geral

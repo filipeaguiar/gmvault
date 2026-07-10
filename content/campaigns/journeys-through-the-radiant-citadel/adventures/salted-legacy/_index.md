@@ -1,6 +1,5 @@
 ---
 title: "Salted Legacy"
-kind: "adventure"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -25,4 +24,6 @@ handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
+params:
+  kind: "adventure"
 ---

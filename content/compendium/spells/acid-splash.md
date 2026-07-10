@@ -1,6 +1,5 @@
 ---
 title: "Acid Splash"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "60 feet"
   components: "V, S"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.

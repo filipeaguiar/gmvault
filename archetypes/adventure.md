@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "adventure"
 draft: false
 weight: 10
 summary: "Arco, missão ou módulo de aventura."
@@ -13,6 +12,8 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
+params:
+  kind: "adventure"
 ---
 
 ### Resumo

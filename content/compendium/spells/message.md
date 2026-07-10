@@ -1,6 +1,5 @@
 ---
 title: "Message"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "120 feet"
   components: "V, S, M (a short piece of copper wire)"
   duration: "1 round"
+params:
+  kind: "spell"
 ---
 
 You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.

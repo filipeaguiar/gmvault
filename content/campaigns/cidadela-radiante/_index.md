@@ -1,7 +1,6 @@
 ---
 title: "A Cidadela Radiante"
 date: 2026-07-09T19:00:00Z
-kind: "campaign"
 draft: false
 weight: 10
 summary: "Uma campanha de exploração urbana e mistérios em uma metrópole flutuante milenar."
@@ -23,6 +22,8 @@ factions:
   - "/campaigns/cidadela-radiante/factions/guardioes/"
 handouts:
   - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
+params:
+  kind: "campaign"
 ---
 
 ### Descrição Geral

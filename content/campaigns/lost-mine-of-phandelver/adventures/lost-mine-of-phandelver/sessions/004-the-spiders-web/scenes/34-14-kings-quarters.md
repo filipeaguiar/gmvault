@@ -1,6 +1,5 @@
 ---
 title: "Cena 34 - 14. King's Quarters"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -19,6 +18,8 @@ handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

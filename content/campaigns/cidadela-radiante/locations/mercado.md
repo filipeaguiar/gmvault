@@ -1,7 +1,6 @@
 ---
 title: "Mercado Noturno"
 date: 2026-07-09T19:00:00Z
-kind: "location"
 draft: false
 weight: 10
 summary: "Um mercado dinâmico e fervilhante que funciona sob o brilho de cristais etéreos."
@@ -18,6 +17,8 @@ factions:
   - "/campaigns/cidadela-radiante/factions/guardioes/"
 handouts:
   - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
+params:
+  kind: "location"
 ---
 
 ### Descrição Geográfica

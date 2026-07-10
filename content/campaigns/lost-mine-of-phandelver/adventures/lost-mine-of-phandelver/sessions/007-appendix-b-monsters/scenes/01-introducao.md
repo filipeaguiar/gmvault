@@ -1,6 +1,5 @@
 ---
 title: "Cena 1 - Introdução"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -65,6 +64,8 @@ handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/giant-spider-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/ghoul-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/nothic-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

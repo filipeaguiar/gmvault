@@ -1,6 +1,5 @@
 ---
 title: "Cena 5 - Market Games"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

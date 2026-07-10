@@ -1,7 +1,6 @@
 ---
 title: "Anão da Montanha (Mountain Dwarf)"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 22
 summary: "Anões fortes e musculosos, acostumados com a vida árdua das montanhas altas e treinados para o combate."
@@ -15,6 +14,8 @@ race_info:
   ability_score: "+2 Força"
   speed: "7.5m"
   languages: "Comum, Anão"
+params:
+  kind: "race"
 ---
 
 ### Traços Adicionais

@@ -1,6 +1,5 @@
 ---
 title: "Detect Magic"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "Self"
   components: "V, S"
   duration: "Concentration, up to 10 minute"
+params:
+  kind: "spell"
 ---
 
 For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its The Schools of Magic, if any.

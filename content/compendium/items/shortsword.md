@@ -1,6 +1,5 @@
 ---
 title: "Shortsword"
-kind: "item"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -15,6 +14,8 @@ item_info:
   cost: "10.0 gp"
   weight: "2 lb"
   properties: ""
+params:
+  kind: "item"
 ---
 
 

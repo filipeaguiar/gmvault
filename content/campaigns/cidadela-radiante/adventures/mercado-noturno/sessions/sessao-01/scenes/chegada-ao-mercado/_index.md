@@ -1,7 +1,6 @@
 ---
 title: "Cena 1 - Encontro na Taverna do Mercado"
 date: 2026-07-09T19:00:00Z
-kind: "scene"
 draft: false
 weight: 1
 summary: "O grupo se reúne com Nara na taverna para receber o mapa e os detalhes da missão."
@@ -16,6 +15,8 @@ npcs:
   - "/campaigns/cidadela-radiante/npcs/nara/"
 locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
+params:
+  kind: "scene"
 ---
 
 ### Uso na Sessão

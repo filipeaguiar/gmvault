@@ -1,6 +1,5 @@
 ---
 title: "Eldritch Blast"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "120 feet"
   components: "V, S"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.

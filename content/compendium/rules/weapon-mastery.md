@@ -1,9 +1,10 @@
 ---
 title: "Weapon Mastery"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Daggers and Shortbows.

@@ -1,6 +1,5 @@
 ---
 title: "wolf"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -23,6 +22,8 @@ stats:
   skills: "Perception +3, Stealth +4"
   senses: "passive Perception 13"
   cr: "1/4"
+params:
+  kind: "monster"
 ---
 
 ![Arte: wolf](/images/campaigns/lost-mine-of-phandelver/Wolf.webp)

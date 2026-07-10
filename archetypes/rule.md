@@ -1,13 +1,14 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "rule"
 draft: false
 weight: 10
 summary: "Regra geral ou mecânica do sistema."
 tags: []
 visibility: "public"
 status: "ready"
+params:
+  kind: "rule"
 ---
 
 ### Mecânica e Regras

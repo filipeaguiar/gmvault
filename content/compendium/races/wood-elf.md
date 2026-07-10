@@ -1,7 +1,6 @@
 ---
 title: "Elfo da Floresta (Wood Elf)"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 12
 summary: "Elfos ágeis e furtivos que vivem em florestas densas, com sentidos aguçados e pés rápidos."
@@ -15,6 +14,8 @@ race_info:
   ability_score: "+1 Sabedoria"
   speed: "10.5m"
   languages: "Comum, Élfico"
+params:
+  kind: "race"
 ---
 
 ### Traços Adicionais

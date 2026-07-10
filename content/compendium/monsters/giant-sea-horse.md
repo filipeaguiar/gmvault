@@ -1,6 +1,5 @@
 ---
 title: "giant sea horse"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -22,6 +21,8 @@ stats:
     cha: 5
   senses: "passive Perception 11"
   cr: "1/2"
+params:
+  kind: "monster"
 ---
 
 Like their smaller kin, giant sea horses are shy, colorful fish with elongated bodies and curled tails. Aquatic elves train them as mounts.

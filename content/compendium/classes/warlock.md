@@ -1,7 +1,6 @@
 ---
 title: "Bruxo"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 40
 summary: "Um conjurador que faz um pacto com uma entidade sobrenatural poderosa em troca de magia e segredos arcanos."
@@ -13,6 +12,8 @@ status: "ready"
 class_info:
   hit_dice: "d8"
   primary_ability: "Carisma"
+params:
+  kind: "class"
 ---
 
 ### Descrição Geral

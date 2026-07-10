@@ -1,6 +1,5 @@
 ---
 title: "Madam Kulp"
-kind: "npc"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -20,6 +19,8 @@ stats:
     int: 10
     wis: 10
     cha: 10
+params:
+  kind: "npc"
 ---
 
 ![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005.madam-kulp.webp)

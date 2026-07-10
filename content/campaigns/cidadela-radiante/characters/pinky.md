@@ -1,7 +1,6 @@
 ---
 title: "Pinky"
 date: 2026-07-09T19:00:00Z
-kind: "character"
 draft: false
 weight: 10
 summary: "Goblinoide Rogue 2 importado do D&D Beyond."
@@ -32,6 +31,8 @@ locations: []
 factions: []
 compendium_refs: ["/compendium/classes/rogue/", "/compendium/feats/alert/", "/compendium/items/leather-armor/", "/compendium/items/shortbow/", "/compendium/items/shortsword/", "/compendium/rules/cunning-action/", "/compendium/rules/expertise/", "/compendium/rules/sneak-attack/", "/compendium/rules/thieves-cant/", "/compendium/rules/weapon-mastery/"]
 spells_usage: []
+params:
+  kind: "character"
 ---
 
 ### Biografia

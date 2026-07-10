@@ -1,6 +1,5 @@
 ---
 title: "Cena 9 - 4. Druid's Watch"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
 
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/venomfang-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

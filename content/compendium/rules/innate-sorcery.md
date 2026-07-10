@@ -1,9 +1,10 @@
 ---
 title: "Innate Sorcery"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 An event in your past left an indelible mark on you, infusing you with simmering magic. As a Bonus Action, you can unleash that magic for 1 minute, during which you gain the following benefits:

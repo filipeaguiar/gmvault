@@ -1,6 +1,5 @@
 ---
 title: "Cena 2 - Background"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

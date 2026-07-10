@@ -1,6 +1,5 @@
 ---
 title: "Find Familiar"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "10 feet"
   components: "V, S, M (10 gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier)"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 You gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.

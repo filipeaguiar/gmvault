@@ -1,11 +1,12 @@
 ---
 title: "Lost Mine of Phandelver"
-kind: "campaign"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "active"
 system: "D&D 5e"
+params:
+  kind: "campaign"
 ---
 
 ### Descrição Geral

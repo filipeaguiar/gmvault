@@ -1,7 +1,6 @@
 ---
 title: "Colégio do Valor"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 71
 summary: "Bardos guerreiros que contam histórias de bravura nas linhas de frente de batalhas e inspiram heróis."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/bard/"
 class_info:
   hit_dice: "d8"
   primary_ability: "Carisma"
+params:
+  kind: "class"
 ---
 
 ### Características de Subclasse

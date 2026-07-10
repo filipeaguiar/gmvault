@@ -1,6 +1,5 @@
 ---
 title: "Burning Hands"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "15 feet"
   components: "V, S"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.

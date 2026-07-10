@@ -1,6 +1,5 @@
 ---
 title: "young green dragon"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -25,6 +24,8 @@ stats:
   senses: "blindsight 30 ft., darkvision 120 ft., passive Perception 17"
   languages: "Common, Draconic"
   cr: "8"
+params:
+  kind: "monster"
 ---
 
 

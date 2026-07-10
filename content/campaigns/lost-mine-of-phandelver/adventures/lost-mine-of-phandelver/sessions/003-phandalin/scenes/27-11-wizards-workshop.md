@@ -1,6 +1,5 @@
 ---
 title: "Cena 27 - 11. Wizard's Workshop"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
   - "/compendium/magic-items/lightbringer/"
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

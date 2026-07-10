@@ -1,6 +1,5 @@
 ---
 title: "nothic"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "truesight 120 ft., passive Perception 12"
   languages: "Undercommon"
   cr: "2"
+params:
+  kind: "monster"
 ---
 
 ![Arte: nothic](/images/campaigns/lost-mine-of-phandelver/Nothic.webp)

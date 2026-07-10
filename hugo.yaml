@@ -2,6 +2,10 @@ baseURL: https://filipeaguiar.github.io/gmvault/
 languageCode: en-us
 title: Campanha
 
+ignoreLogs:
+  - "warning-goldmark-raw-html"
+  - "deprecated: kind in front matter was deprecated in Hugo v0.144.0 and will be removed in a future release."
+
 mediaTypes:
   application/json:
     suffixes:

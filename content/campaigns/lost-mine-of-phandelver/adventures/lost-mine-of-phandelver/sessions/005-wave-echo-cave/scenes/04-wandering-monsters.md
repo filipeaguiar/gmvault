@@ -1,6 +1,5 @@
 ---
 title: "Cena 4 - Wandering Monsters"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -20,6 +19,8 @@ compendium_refs:
   - "/compendium/monsters/bugbear/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ochre-jelly-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

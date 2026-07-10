@@ -1,7 +1,6 @@
 ---
 title: "Trapaceiro Arcano (Arcane Trickster)"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 61
 summary: "Um ladino que combina agilidade e furtividade com truques e ilusões arcanas de Ilusionismo e Encantamento."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/rogue/"
 class_info:
   hit_dice: "d8"
   primary_ability: "Destreza e Inteligência"
+params:
+  kind: "class"
 ---
 
 ### Características de Subclasse

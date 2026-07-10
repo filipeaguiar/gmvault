@@ -1,6 +1,5 @@
 ---
 title: "Nundro Rockseeker"
-kind: "npc"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -20,6 +19,8 @@ stats:
     int: 10
     wis: 10
     cha: 10
+params:
+  kind: "npc"
 ---
 
 

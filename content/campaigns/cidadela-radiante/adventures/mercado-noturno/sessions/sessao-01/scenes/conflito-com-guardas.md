@@ -1,7 +1,6 @@
 ---
 title: "Cena 2 - Cruzando a Patrulha"
 date: 2026-07-09T19:00:00Z
-kind: "scene"
 draft: false
 weight: 2
 summary: "O grupo avança pelas pontes flutuantes e precisa contornar uma patrulha ativa."
@@ -16,6 +15,8 @@ locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
 factions:
   - "/campaigns/cidadela-radiante/factions/guardioes/"
+params:
+  kind: "scene"
 ---
 
 ### Uso na Sessão

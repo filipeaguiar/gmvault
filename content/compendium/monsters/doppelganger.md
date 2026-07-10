@@ -1,6 +1,5 @@
 ---
 title: "doppelganger"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "darkvision 60 ft., passive Perception 11"
   languages: "Common"
   cr: "3"
+params:
+  kind: "monster"
 ---
 
 ![Arte: doppelganger](/images/campaigns/lost-mine-of-phandelver/Doppelganger.webp)

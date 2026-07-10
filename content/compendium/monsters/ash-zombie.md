@@ -1,6 +1,5 @@
 ---
 title: "ash zombie"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "darkvision 60 ft., passive Perception 8"
   languages: "understands all languages it spoke in life but can't speak"
   cr: "1/4"
+params:
+  kind: "monster"
 ---
 
 From somewhere in the darkness, a gurgling moan is heard. A form lurches into view, dragging one foot as it raises bloated arms and broken hands. The zombie advances, driven to kill anyone too slow to escape its grasp.

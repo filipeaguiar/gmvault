@@ -1,7 +1,6 @@
 ---
 title: "Guardiões da Cidadela"
 date: 2026-07-09T19:00:00Z
-kind: "faction"
 draft: false
 weight: 10
 summary: "A ordem militar encarregada de manter a ordem e a segurança na Cidadela Radiante."
@@ -17,6 +16,8 @@ npcs:
   - "/campaigns/cidadela-radiante/npcs/nara/"
 locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
+params:
+  kind: "faction"
 ---
 
 ### Visão Geral e Recursos

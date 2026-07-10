@@ -1,7 +1,6 @@
 ---
 title: "Humano"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 40
 summary: "A raça mais adaptável, ambiciosa e numerosa dos mundos de fantasia."
@@ -14,6 +13,8 @@ race_info:
   ability_score: "+1 em todos os atributos (+1 FOR, +1 DES, +1 CON, +1 INT, +1 SAB, +1 CAR)"
   speed: "9m"
   languages: "Comum, +1 idioma à escolha"
+params:
+  kind: "race"
 ---
 
 ### Descrição Geral

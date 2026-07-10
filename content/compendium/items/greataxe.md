@@ -1,6 +1,5 @@
 ---
 title: "Greataxe"
-kind: "item"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -15,6 +14,8 @@ item_info:
   cost: "30.0 gp"
   weight: "7 lb"
   properties: ""
+params:
+  kind: "item"
 ---
 
 

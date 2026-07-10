@@ -1,7 +1,6 @@
 ---
 title: "Humano Variante (Variant Human)"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 41
 summary: "Humanos altamente especializados que começam sua carreira com um talento e proficiência extra."
@@ -15,6 +14,8 @@ race_info:
   ability_score: "+1 em dois atributos diferentes à escolha"
   speed: "9m"
   languages: "Comum, +1 idioma à escolha"
+params:
+  kind: "race"
 ---
 
 ### Traços Adicionais

@@ -1,6 +1,5 @@
 ---
 title: "Misty Step"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "Self"
   components: "V"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.

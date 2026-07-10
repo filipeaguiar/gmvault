@@ -1,6 +1,5 @@
 ---
 title: "Mage Hand"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "30 feet"
   components: "V, S"
   duration: "1 minute"
+params:
+  kind: "spell"
 ---
 
 A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.

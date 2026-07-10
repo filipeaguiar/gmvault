@@ -1,6 +1,5 @@
 ---
 title: "Cena 18 - 13. Dragon Cultists"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
   - "/compendium/monsters/cultist/"
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

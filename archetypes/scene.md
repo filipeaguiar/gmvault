@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "scene"
 draft: false
 weight: 10
 summary: "Cena operacional para conduzir durante a sessão."
@@ -13,6 +12,8 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
+params:
+  kind: "scene"
 ---
 
 ### Uso na Sessão

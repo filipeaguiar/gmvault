@@ -1,6 +1,5 @@
 ---
 title: "Magic Initiate"
-kind: "feat"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -12,6 +11,8 @@ status: "draft"
 
 feat_info:
   prerequisite: "None"
+params:
+  kind: "feat"
 ---
 
 Choose a class: class=bard, class=cleric, class=druid, class=sorcerer, class=warlock, or class=wizard. You learn two cantrips of your choice from that class's spell list.

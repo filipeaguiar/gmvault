@@ -1,9 +1,10 @@
 ---
 title: "Sneak Attack"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 Once per turn you can deal an extra <strong>d6</strong> damage to one creature you hit with an attack if you have Advantage on the roll and the attack uses a Finesse or Ranged weapon. The extra damage’s type is the same as the weapon’s type.

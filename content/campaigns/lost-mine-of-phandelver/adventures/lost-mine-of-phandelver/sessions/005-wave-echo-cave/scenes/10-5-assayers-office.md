@@ -1,6 +1,5 @@
 ---
 title: "Cena 10 - 5. Assayers' Office"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
 
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

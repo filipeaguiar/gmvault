@@ -1,7 +1,6 @@
 ---
 title: "Intriga no Mercado Noturno"
 date: 2026-07-09T19:00:00Z
-kind: "adventure"
 draft: false
 weight: 10
 summary: "O primeiro grande arco de aventura na Cidadela Radiante, focando no roubo do Cristal Menor."
@@ -20,6 +19,8 @@ factions:
   - "/campaigns/cidadela-radiante/factions/guardioes/"
 handouts:
   - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
+params:
+  kind: "adventure"
 ---
 
 ### Resumo

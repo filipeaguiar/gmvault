@@ -1,7 +1,6 @@
 ---
 title: "O Mapa Secreto das Docas"
 date: 2026-07-09T19:00:00Z
-kind: "handout"
 draft: false
 weight: 10
 summary: "Um pedaço rasgado de pergaminho mostrando uma entrada alternativa para as docas da Cidadela."
@@ -16,6 +15,8 @@ npcs:
   - "/campaigns/cidadela-radiante/npcs/nara/"
 locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
+params:
+  kind: "handout"
 ---
 
 ### O Conteúdo da Pista

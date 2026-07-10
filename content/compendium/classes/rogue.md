@@ -1,7 +1,6 @@
 ---
 title: "Ladino"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 60
 summary: "Um mestre da furtividade, truques e precisão, capaz de explorar as fraquezas dos inimigos em combate."
@@ -13,6 +12,8 @@ status: "ready"
 class_info:
   hit_dice: "d8"
   primary_ability: "Destreza"
+params:
+  kind: "class"
 ---
 
 ### Descrição Geral

@@ -1,7 +1,6 @@
 ---
 title: "Sessão 02 - O Roubo do Cristal"
 date: 2026-07-09T19:00:00Z
-kind: "session"
 draft: false
 weight: 2
 summary: "O confronto no cofre e a fuga com o Cristal Menor."
@@ -18,6 +17,8 @@ locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
 compendium_refs:
   - "/compendium/monsters/goblin/"
+params:
+  kind: "session"
 ---
 
 ### Objetivo da Sessão

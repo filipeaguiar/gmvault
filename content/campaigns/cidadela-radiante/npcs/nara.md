@@ -1,7 +1,6 @@
 ---
 title: "Nara, a Mercadora de Joias"
 date: 2026-07-09T19:00:00Z
-kind: "npc"
 draft: false
 weight: 10
 summary: "Uma mercadora perspicaz que conhece todos os sussurros do Mercado Noturno."
@@ -20,6 +19,8 @@ handouts:
   - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
 compendium_refs:
   - "/compendium/monsters/goblin/"
+params:
+  kind: "npc"
 ---
 
 ### Descrição e Objetivos

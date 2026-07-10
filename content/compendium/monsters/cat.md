@@ -1,6 +1,5 @@
 ---
 title: "cat"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -23,6 +22,8 @@ stats:
   skills: "Perception +3, Stealth +4"
   senses: "passive Perception 13"
   cr: "0"
+params:
+  kind: "monster"
 ---
 
 

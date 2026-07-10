@@ -1,6 +1,5 @@
 ---
 title: "Cena 10 - 5. Blighted Farmhouse"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
   - "/compendium/monsters/twig-blight/"
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

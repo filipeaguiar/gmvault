@@ -1,6 +1,5 @@
 ---
 title: "Cena 24 - 19. Temple of Dumathoin"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -19,6 +18,8 @@ compendium_refs:
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/nezznar-the-black-spider-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

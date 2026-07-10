@@ -1,7 +1,6 @@
 ---
 title: "Linhagem Dracônica"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 51
 summary: "Magia herdada de um ancestral dragão, concedendo resiliência física e afinidade com elementos destrutivos."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/sorcerer/"
 class_info:
   hit_dice: "d6"
   primary_ability: "Carisma"
+params:
+  kind: "class"
 ---
 
 ### Habilidades de Subclasse

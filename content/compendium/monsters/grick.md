@@ -1,6 +1,5 @@
 ---
 title: "grick"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -22,6 +21,8 @@ stats:
     cha: 5
   senses: "darkvision 60 ft., passive Perception 12"
   cr: "2"
+params:
+  kind: "monster"
 ---
 
 ![Arte: grick](/images/campaigns/lost-mine-of-phandelver/Grick.webp)

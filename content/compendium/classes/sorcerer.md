@@ -1,7 +1,6 @@
 ---
 title: "Feiticeiro"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 50
 summary: "Um conjurador nato, cuja magia se origina de uma linhagem exótica, influência planar ou anomalia cósmica."
@@ -13,6 +12,8 @@ status: "ready"
 class_info:
   hit_dice: "d6"
   primary_ability: "Carisma"
+params:
+  kind: "class"
 ---
 
 ### Descrição Geral

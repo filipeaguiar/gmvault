@@ -1,6 +1,5 @@
 ---
 title: "spectator"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "darkvision 120 ft., passive Perception 16"
   languages: "Deep Speech, Undercommon, telepathy 120 ft."
   cr: "3"
+params:
+  kind: "monster"
 ---
 
 ![Arte: spectator](/images/campaigns/lost-mine-of-phandelver/Spectator.webp)

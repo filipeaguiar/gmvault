@@ -1,6 +1,5 @@
 ---
 title: "Wynling"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "darkvision 60 ft., passive Perception 12"
   languages: "Sylvan"
   cr: "1/2"
+params:
+  kind: "monster"
 ---
 
 ![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/Wynling.webp)

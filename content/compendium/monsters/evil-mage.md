@@ -1,6 +1,5 @@
 ---
 title: "evil mage"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -25,6 +24,8 @@ stats:
   senses: "passive Perception 11"
   languages: "Common, Draconic, Dwarvish, Elvish"
   cr: "1"
+params:
+  kind: "monster"
 ---
 
 Evil mages (such as Iarno Albrek and Hamun Kost) hunger for arcane power and dwell in isolated places, where they can perform terrible magical experiments without interference.

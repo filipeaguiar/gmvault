@@ -1,6 +1,5 @@
 ---
 title: "Vi Aroon"
-kind: "npc"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -20,6 +19,8 @@ stats:
     int: 10
     wis: 10
     cha: 10
+params:
+  kind: "npc"
 ---
 
 ![Arte: Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003.kasem-vi-aroon.webp)

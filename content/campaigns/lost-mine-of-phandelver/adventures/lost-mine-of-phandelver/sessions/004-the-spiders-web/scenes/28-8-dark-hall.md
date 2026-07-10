@@ -1,6 +1,5 @@
 ---
 title: "Cena 28 - 8. Dark Hall"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
   - "/compendium/monsters/grick/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/grick-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

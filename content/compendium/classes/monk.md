@@ -1,7 +1,6 @@
 ---
 title: "Monge"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 30
 summary: "Um artista marcial que canaliza a energia mística do Ki para aprimorar suas capacidades físicas e espirituais."
@@ -13,6 +12,8 @@ status: "ready"
 class_info:
   hit_dice: "d8"
   primary_ability: "Destreza e Sabedoria"
+params:
+  kind: "class"
 ---
 
 ### Descrição Geral

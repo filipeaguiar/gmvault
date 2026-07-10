@@ -1,13 +1,14 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "background"
 draft: false
 weight: 10
 summary: "Antecedente (Background) de personagem do compêndio."
 tags: []
 visibility: "public"
 status: "ready"
+params:
+  kind: "background"
 ---
 
 **Proficiências em Perícias:** [Ex: Sobrevivência, Atletismo]  

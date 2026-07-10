@@ -1,7 +1,6 @@
 ---
 title: "Sessão 01 - Infiltração"
 date: 2026-07-09T19:00:00Z
-kind: "session"
 draft: false
 weight: 1
 summary: "O planejamento e a infiltração nas docas do Mercado Noturno."
@@ -20,6 +19,8 @@ handouts:
   - "/campaigns/cidadela-radiante/adventures/mercado-noturno/sessions/sessao-01/scenes/chegada-ao-mercado/mapa-secreto/"
 compendium_refs:
   - "/compendium/rules/combate/"
+params:
+  kind: "session"
 ---
 
 ### Objetivo da Sessão

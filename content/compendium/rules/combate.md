@@ -1,7 +1,6 @@
 ---
 title: "Estrutura do Combate"
 date: 2026-07-09T19:00:00Z
-kind: "rule"
 draft: false
 weight: 10
 summary: "As fases de uma rodada de combate e ações possíveis."
@@ -9,6 +8,8 @@ tags:
   - regras
 visibility: "public"
 status: "ready"
+params:
+  kind: "rule"
 ---
 
 ### Mecânica e Regras

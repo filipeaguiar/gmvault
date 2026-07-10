@@ -1,7 +1,6 @@
 ---
 title: "Herói do Povo"
 date: 2026-07-09T19:00:00Z
-kind: "background"
 draft: false
 weight: 10
 summary: "Você veio de origens humildes, mas levantou-se para defender as pessoas comuns."
@@ -9,6 +8,8 @@ tags:
   - antecedentes
 visibility: "public"
 status: "ready"
+params:
+  kind: "background"
 ---
 
 **Proficiências em Perícias:** Adestrar Animais, Sobrevivência  

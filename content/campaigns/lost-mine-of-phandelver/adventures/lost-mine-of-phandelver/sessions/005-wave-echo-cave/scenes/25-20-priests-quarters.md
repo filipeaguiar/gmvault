@@ -1,6 +1,5 @@
 ---
 title: "Cena 25 - 20. Priests' Quarters"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -14,6 +13,8 @@ compendium_refs:
   - "/compendium/monsters/commoner/"
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

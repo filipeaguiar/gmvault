@@ -1,6 +1,5 @@
 ---
 title: "flameskull"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "darkvision 60 ft., passive Perception 12"
   languages: "Common"
   cr: "4"
+params:
+  kind: "monster"
 ---
 
 ![Arte: flameskull](/images/campaigns/lost-mine-of-phandelver/Flameskull.webp)

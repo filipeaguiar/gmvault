@@ -1,6 +1,5 @@
 ---
 title: "Gust"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "30 feet"
   components: "V, S"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 You seize the air and compel it to create one of the following effects at a point you can see within range:

@@ -506,7 +506,8 @@ def write_handout_art_stub(campaign_slug, entity_slug, entity_name, img_filename
     with open(handout_file, "w") as f:
         f.write(f"""---
 title: "Arte: {entity_name}"
-kind: "handout"
+params:
+  kind: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -536,14 +537,15 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
     front_matter_lines = [
         "---",
         f'title: "{npc_name}"',
-        'kind: "npc"',
         'draft: true',
         'titulo_pt_br: ""',
         'visibility: "gm"',
         'status: "ready"',
         'tags:',
         '  - npc',
-        '  - importado'
+        '  - importado',
+        'params:',
+        '  kind: "npc"'
     ]
     
     body = f"\nNPC **{npc_name}** importado automaticamente da campanha.\n"
@@ -615,14 +617,15 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
     front_matter_lines = [
         "---",
         f'title: "{monster_name}"',
-        'kind: "monster"',
         'draft: true',
         'titulo_pt_br: ""',
         'visibility: "gm"',
         'status: "ready"',
         'tags:',
         '  - monstro',
-        '  - importado'
+        '  - importado',
+        'params:',
+        '  kind: "monster"'
     ]
     
     body = f"\nMonstro **{monster_name}** importado automaticamente da campanha.\n"
@@ -688,7 +691,8 @@ def write_magic_item_stub(campaign_slug, item_slug, item_name):
     with open(item_file, "w") as f:
         f.write(f"""---
 title: "{item_name}"
-kind: "magic_item"
+params:
+  kind: "magic_item"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -709,7 +713,8 @@ def write_location_stub(campaign_slug, loc_slug, loc_name):
     with open(loc_file, "w") as f:
         f.write(f"""---
 title: "{loc_name}"
-kind: "location"
+params:
+  kind: "location"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -751,7 +756,8 @@ def create_directory_structure(campaign_slug):
             with open(idx, "w") as f:
                 f.write(f"""---
 title: "{title}"
-kind: "{dir_name}_index"
+params:
+  kind: "{dir_name}_index"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -767,7 +773,8 @@ def write_campaign_index(campaign_slug, campaign_title):
     with open(idx, "w") as f:
         f.write(f"""---
 title: "{campaign_title}"
-kind: "campaign"
+params:
+  kind: "campaign"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -796,7 +803,8 @@ def create_adventure_structure(campaign_slug, adv_slug, adv_title):
         with open(adv_idx, "w") as f:
             f.write(f"""---
 title: "{adv_title}"
-kind: "adventure"
+params:
+  kind: "adventure"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -810,7 +818,8 @@ summary: "Aventura independente importada do capítulo {adv_title}."
         with open(sessions_idx, "w") as f:
             f.write(f"""---
 title: "Sessões de {adv_title}"
-kind: "sessions_index"
+params:
+  kind: "sessions_index"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -830,7 +839,8 @@ def create_session_structure(adv_dir, session_slug, session_title):
         with open(sess_idx, "w") as f:
             f.write(f"""---
 title: "{session_title}"
-kind: "session"
+params:
+  kind: "session"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -844,7 +854,8 @@ summary: "Planejamento para a sessão."
         with open(scenes_idx, "w") as f:
             f.write(f"""---
 title: "Cenas de {session_title}"
-kind: "scenes_index"
+params:
+  kind: "scenes_index"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1082,7 +1093,8 @@ def main():
                     
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
-kind: "scene"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1112,7 +1124,8 @@ handouts:
         with open(adv_idx, "w") as f:
             f.write(f"""---
 title: "{campaign_title}"
-kind: "adventure"
+params:
+  kind: "adventure"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1210,7 +1223,8 @@ handouts:
                     
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
-kind: "scene"
+params:
+  kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1239,7 +1253,8 @@ handouts:
             with open(adv_idx, "w") as f:
                 f.write(f"""---
 title: "{chap_title}"
-kind: "adventure"
+params:
+  kind: "adventure"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"

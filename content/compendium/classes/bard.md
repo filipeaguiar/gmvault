@@ -1,7 +1,6 @@
 ---
 title: "Bardo"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 70
 summary: "Um conjurador versátil que inspira seus aliados e manipula a mente dos inimigos através da música e da poesia."
@@ -13,6 +12,8 @@ status: "ready"
 class_info:
   hit_dice: "d8"
   primary_ability: "Carisma"
+params:
+  kind: "class"
 ---
 
 ### Descrição Geral

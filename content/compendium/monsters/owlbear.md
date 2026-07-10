@@ -1,6 +1,5 @@
 ---
 title: "Owlbear"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -23,6 +22,8 @@ stats:
   skills: "Perception +3"
   senses: "darkvision 60 ft., passive Perception 13"
   cr: "3"
+params:
+  kind: "monster"
 ---
 
 ![Arte: Owlbear](/images/campaigns/lost-mine-of-phandelver/Owlbear.webp)

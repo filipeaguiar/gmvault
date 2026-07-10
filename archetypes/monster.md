@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "monster"
 draft: false
 weight: 10
 summary: "Ficha de criatura ou monstro do compêndio."
@@ -26,6 +25,8 @@ stats:
   senses: "Percepção passiva 10"
   languages: "Comum"
   cr: "0 (10 XP)"
+params:
+  kind: "monster"
 ---
 
 ### Ações

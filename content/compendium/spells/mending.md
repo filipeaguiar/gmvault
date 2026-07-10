@@ -1,6 +1,5 @@
 ---
 title: "Mending"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "Touch"
   components: "V, S, M (two lodestones)"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 This spell repairs a single break or tear in an object you touch, such as broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.

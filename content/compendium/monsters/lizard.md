@@ -1,6 +1,5 @@
 ---
 title: "lizard"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -22,6 +21,8 @@ stats:
     cha: 3
   senses: "darkvision 30 ft., passive Perception 9"
   cr: "0"
+params:
+  kind: "monster"
 ---
 
 

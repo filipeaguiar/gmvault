@@ -1,7 +1,6 @@
 ---
 title: "Durin"
 date: 2026-07-09T19:00:00Z
-kind: "character"
 draft: false
 weight: 10
 summary: "Dwarf Monk 2 importado do D&D Beyond."
@@ -31,6 +30,8 @@ char_info:
 locations: []
 factions: []
 compendium_refs: ["/compendium/classes/monk/", "/compendium/races/dwarf/"]
+params:
+  kind: "character"
 ---
 
 ### Biografia

@@ -1,7 +1,6 @@
 ---
 title: "Alto Elfo (High Elf)"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 11
 summary: "Elfos altivos que possuem mentes afiadas e domínio de magia arcana básica."
@@ -15,6 +14,8 @@ race_info:
   ability_score: "+1 Inteligência"
   speed: "9m"
   languages: "Comum, Élfico, +1 idioma à escolha"
+params:
+  kind: "race"
 ---
 
 ### Traços Adicionais

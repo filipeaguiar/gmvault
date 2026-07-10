@@ -1,6 +1,5 @@
 ---
 title: "Cena 3 - Item Descriptions"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -15,6 +14,8 @@ compendium_refs:
   - "/compendium/magic-items/staff-of-defense/"
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

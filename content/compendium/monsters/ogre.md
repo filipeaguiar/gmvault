@@ -1,6 +1,5 @@
 ---
 title: "Ogre"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -23,6 +22,8 @@ stats:
   senses: "darkvision 60 ft., passive Perception 8"
   languages: "Common, Giant"
   cr: "2"
+params:
+  kind: "monster"
 ---
 
 ![Arte: Ogre](/images/campaigns/lost-mine-of-phandelver/Ogre.webp)

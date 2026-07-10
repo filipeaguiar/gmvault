@@ -1,7 +1,6 @@
 ---
 title: "Cena 3 - Diante do Cofre"
 date: 2026-07-09T19:00:00Z
-kind: "scene"
 draft: false
 weight: 3
 summary: "O grupo chega ao destino e estuda a fechadura mágica do cofre."
@@ -14,6 +13,8 @@ status: "draft"
 # Relacionamentos
 locations:
   - "/campaigns/cidadela-radiante/locations/mercado/"
+params:
+  kind: "scene"
 ---
 
 ### Uso na Sessão

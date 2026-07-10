@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "session"
 draft: false
 weight: 10
 summary: "Planejamento e notas de uma sessão de jogo."
@@ -13,6 +12,8 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
+params:
+  kind: "session"
 ---
 
 ### Objetivo da Sessão

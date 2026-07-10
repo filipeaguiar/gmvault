@@ -1,6 +1,5 @@
 ---
 title: "Cena 3 - Cragmaw Hideout"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -22,6 +21,8 @@ handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/bugbear-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/wolf-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

@@ -1,6 +1,5 @@
 ---
 title: "commoner"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -23,6 +22,8 @@ stats:
   senses: "passive Perception 10"
   languages: "any one language (usually Common)"
   cr: "0"
+params:
+  kind: "monster"
 ---
 
 Commoners include peasants, serfs, slaves, servants, pilgrims, merchants, artisans, and hermits.

@@ -1,7 +1,6 @@
 ---
 title: "001 - A Chegada à Cidadela"
 date: 2026-07-09T19:00:00Z
-kind: "journal_entry"
 draft: false
 weight: 1
 summary: "O grupo cruza o portal e vislumbra a Cidadela Radiante pela primeira vez."
@@ -9,6 +8,8 @@ tags:
   - capitulo-1
 visibility: "players"
 status: "ready"
+params:
+  kind: "journal_entry"
 ---
 
 Após semanas de viagem pelas estradas do Plano Etéreo, os heróis atravessaram o portal em formato de espiral e se depararam com as maravilhas da Cidadela Radiante.

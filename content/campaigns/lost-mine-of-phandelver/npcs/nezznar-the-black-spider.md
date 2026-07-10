@@ -1,6 +1,5 @@
 ---
 title: "Nezznar the Black Spider"
-kind: "npc"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -25,6 +24,8 @@ stats:
   senses: "darkvision 120 ft., passive Perception 14"
   languages: "Elvish, Undercommon"
   cr: "2"
+params:
+  kind: "npc"
 ---
 
 ![Arte: Nezznar the Black Spider](/images/campaigns/lost-mine-of-phandelver/Nezznar the Black Spider.webp)

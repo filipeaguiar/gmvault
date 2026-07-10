@@ -1,6 +1,5 @@
 ---
 title: "Alert"
-kind: "feat"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -12,6 +11,8 @@ status: "draft"
 
 feat_info:
   prerequisite: "None"
+params:
+  kind: "feat"
 ---
 
 Always on the lookout for danger, you gain the following benefits:

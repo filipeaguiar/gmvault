@@ -1,6 +1,5 @@
 ---
 title: "bugbear"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "darkvision 60 ft., passive Perception 10"
   languages: "Common, Goblin"
   cr: "1"
+params:
+  kind: "monster"
 ---
 
 ![Arte: bugbear](/images/campaigns/lost-mine-of-phandelver/Bugbear.webp)

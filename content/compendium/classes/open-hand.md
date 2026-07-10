@@ -1,7 +1,6 @@
 ---
 title: "Caminho da Mão Aberta"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 31
 summary: "O arquétipo clássico do monge focado em maestria absoluta de combate desarmado e controle físico."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/monk/"
 class_info:
   hit_dice: "d8"
   primary_ability: "Destreza e Sabedoria"
+params:
+  kind: "class"
 ---
 
 ### Características de Subclasse

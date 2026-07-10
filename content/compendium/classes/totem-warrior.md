@@ -1,7 +1,6 @@
 ---
 title: "Caminho do Guerreiro Totêmico"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 21
 summary: "Um caminho espiritual de fúria onde o bárbaro canaliza a força de espíritos animais."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/barbarian/"
 class_info:
   hit_dice: "d12"
   primary_ability: "Força"
+params:
+  kind: "class"
 ---
 
 ### Características de Subclasse

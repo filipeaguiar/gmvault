@@ -1,9 +1,10 @@
 ---
 title: "Spellcasting"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 Drawing from your innate magic, you can cast spells.

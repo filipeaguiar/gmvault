@@ -1,6 +1,5 @@
 ---
 title: "Cena 4 - Overview"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -16,6 +15,8 @@ compendium_refs:
 
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/nezznar-the-black-spider-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

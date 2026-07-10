@@ -1,6 +1,5 @@
 ---
 title: "Cena 2 - Triboar Trail"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -22,6 +21,8 @@ compendium_refs:
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/ogre-art/"
   - "/campaigns/lost-mine-of-phandelver/handouts/owlbear-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

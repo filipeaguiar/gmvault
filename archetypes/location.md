@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "location"
 draft: false
 weight: 10
 summary: "Descrição de localidade ou ponto de interesse."
@@ -13,6 +12,8 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
+params:
+  kind: "location"
 ---
 
 Insira a descrição geográfica, história e pontos de interesse desta localidade aqui.

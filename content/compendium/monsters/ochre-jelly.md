@@ -1,6 +1,5 @@
 ---
 title: "Ochre Jelly"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -22,6 +21,8 @@ stats:
     cha: 1
   senses: "blindsight 60 ft. (blind beyond this radius), passive Perception 8"
   cr: "2"
+params:
+  kind: "monster"
 ---
 
 ![Arte: Ochre Jelly](/images/campaigns/lost-mine-of-phandelver/Ochre Jelly.webp)

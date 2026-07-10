@@ -1,6 +1,5 @@
 ---
 title: "Cena 23 - 18. Collapsed Cavern"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -15,6 +14,8 @@ compendium_refs:
   - "/compendium/monsters/doppelganger/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/doppelganger-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

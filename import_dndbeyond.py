@@ -246,7 +246,8 @@ def fetch_from_5etools(kind, english_name):
                 
         markdown = f"""---
 title: "{english_name}"
-kind: "spell"
+params:
+  kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -281,7 +282,8 @@ spell_info:
         if kind == "magic_item":
             markdown = f"""---
 title: "{english_name}"
-kind: "magic_item"
+params:
+  kind: "magic_item"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -304,7 +306,8 @@ item_info:
         else:
             markdown = f"""---
 title: "{english_name}"
-kind: "item"
+params:
+  kind: "item"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -340,7 +343,8 @@ item_info:
         
         markdown = f"""---
 title: "{english_name}"
-kind: "feat"
+params:
+  kind: "feat"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -375,7 +379,8 @@ feat_info:
             
         markdown = f"""---
 title: "{english_name}"
-kind: "race"
+params:
+  kind: "race"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -400,7 +405,8 @@ race_info:
         
         markdown = f"""---
 title: "{english_name}"
-kind: "class"
+params:
+  kind: "class"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -703,7 +709,8 @@ def main():
             os.makedirs(os.path.dirname(dest_path), exist_ok=True)
             markdown = f"""---
 title: "{name}"
-kind: "rule"
+params:
+  kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
@@ -771,7 +778,8 @@ summary: "Habilidade de classe."
         markdown = f"""---
 title: "{char_name}"
 date: 2026-07-09T19:00:00Z
-kind: "character"
+params:
+  kind: "character"
 draft: false
 weight: 10
 summary: "{race_fullname} {class_str} importado do D&D Beyond."

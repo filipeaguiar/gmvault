@@ -1,7 +1,6 @@
 ---
 title: "Goblin (Raça)"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 60
 summary: "Criaturas pequenas, ágeis e astutas, que sobrevivem em um mundo hostil através de sua rapidez e malícia."
@@ -14,6 +13,8 @@ race_info:
   ability_score: "+2 Destreza, +1 Constituição"
   speed: "9m"
   languages: "Comum, Goblin"
+params:
+  kind: "race"
 ---
 
 ### Descrição Geral

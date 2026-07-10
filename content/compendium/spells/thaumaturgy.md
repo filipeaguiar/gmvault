@@ -1,6 +1,5 @@
 ---
 title: "Thaumaturgy"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "30 feet"
   components: "V"
   duration: "1 minute"
+params:
+  kind: "spell"
 ---
 
 You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:

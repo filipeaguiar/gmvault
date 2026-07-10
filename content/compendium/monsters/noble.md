@@ -1,6 +1,5 @@
 ---
 title: "noble"
-kind: "monster"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -24,6 +23,8 @@ stats:
   senses: "passive Perception 12"
   languages: "any two languages"
   cr: "1/8"
+params:
+  kind: "monster"
 ---
 
 ![Arte: noble](/images/campaigns/journeys-through-the-radiant-citadel/Noble.webp)

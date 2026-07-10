@@ -1,7 +1,6 @@
 ---
 title: "O Patrono Corruptor (The Fiend)"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 41
 summary: "Um pacto estabelecido com uma entidade dos planos inferiores (como um diabo ou demônio) focada em destruição e fogo."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/warlock/"
 class_info:
   hit_dice: "d8"
   primary_ability: "Carisma"
+params:
+  kind: "class"
 ---
 
 ### Características de Subclasse

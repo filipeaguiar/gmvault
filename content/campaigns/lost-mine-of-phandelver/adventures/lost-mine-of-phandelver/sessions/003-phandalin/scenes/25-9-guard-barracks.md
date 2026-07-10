@@ -1,6 +1,5 @@
 ---
 title: "Cena 25 - 9. Guard Barracks"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -15,6 +14,8 @@ compendium_refs:
   - "/compendium/monsters/goblin/"
 handouts:
   - "/campaigns/lost-mine-of-phandelver/handouts/goblin-art/"
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes

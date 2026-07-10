@@ -1,6 +1,5 @@
 ---
 title: "Prestidigitation"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "10 feet"
   components: "V, S"
   duration: "1 hour"
+params:
+  kind: "spell"
 ---
 
 This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:

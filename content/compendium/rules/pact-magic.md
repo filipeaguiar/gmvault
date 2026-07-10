@@ -1,9 +1,10 @@
 ---
 title: "Pact Magic"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers. The entity is a voice in the shadows&mdash;its identity unclear&mdash;but its boon to you is concrete: the ability to cast spells.

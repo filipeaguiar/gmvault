@@ -1,7 +1,6 @@
 ---
 title: "Elfo"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 10
 summary: "Um povo gracioso e mágico, conectado intimamente com a harmonia da natureza e do Plano Feérico."
@@ -14,6 +13,8 @@ race_info:
   ability_score: "+2 Destreza"
   speed: "9m"
   languages: "Comum, Élfico"
+params:
+  kind: "race"
 ---
 
 ### Descrição Geral

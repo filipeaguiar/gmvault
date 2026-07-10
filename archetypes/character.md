@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "character"
 draft: false
 weight: 10
 summary: "Ficha/Perfil de personagem do jogador."
@@ -26,6 +25,8 @@ char_info:
 factions: []
 locations: []
 compendium_refs: []
+params:
+  kind: "character"
 ---
 
 Insira a biografia e descrição narrativa do personagem do jogador aqui.

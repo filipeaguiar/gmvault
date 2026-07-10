@@ -1,6 +1,5 @@
 ---
 title: "Ray of Frost"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "60 feet"
   components: "V, S"
   duration: "Instantaneous"
+params:
+  kind: "spell"
 ---
 
 A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.

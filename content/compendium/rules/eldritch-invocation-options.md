@@ -1,9 +1,10 @@
 ---
 title: "Eldritch Invocation Options"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 Eldritch Invocation options appear in alphabetical order.

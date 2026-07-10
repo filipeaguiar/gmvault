@@ -1,9 +1,10 @@
 ---
 title: "Pact of the Tome"
-kind: "rule"
 draft: true
 status: "draft"
 summary: "Habilidade de classe."
+params:
+  kind: "rule"
 ---
 
 At the end of a Short or Long Rest you can conjure forth a book in your hand, a Book of Shadows, which contains eldritch magic that only you can access, granting the benefits below.

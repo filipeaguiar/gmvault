@@ -1,6 +1,5 @@
 ---
 title: "Unseen Servant"
-kind: "spell"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -17,6 +16,8 @@ spell_info:
   range: "60 feet"
   components: "V, S, M (a piece of string and a bit of wood)"
   duration: "1 hour"
+params:
+  kind: "spell"
 ---
 
 This spell creates an invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends.

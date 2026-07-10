@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "magic_item"
 draft: false
 weight: 10
 summary: "Item mágico do compêndio."
@@ -15,6 +14,8 @@ item_info:
   attunement: "Requer sintonização"
   weight: "0.5 kg"
   cost: "100 po"
+params:
+  kind: "magic_item"
 ---
 
 Insira a descrição e efeitos mágicos do item aqui.

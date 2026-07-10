@@ -1,7 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-kind: "item"
 draft: false
 weight: 10
 summary: "Item de equipamento mundano ou ferramenta do compêndio."
@@ -14,6 +13,8 @@ item_info:
   cost: "1 po"
   weight: "1 kg"
   properties: ""
+params:
+  kind: "item"
 ---
 
 Insira as regras especiais de uso do item aqui.

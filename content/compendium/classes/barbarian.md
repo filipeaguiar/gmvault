@@ -1,7 +1,6 @@
 ---
 title: "Bárbaro"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 20
 summary: "Um guerreiro feroz de origem selvagem que pode entrar em uma fúria de combate implacável."
@@ -13,6 +12,8 @@ status: "ready"
 class_info:
   hit_dice: "d12"
   primary_ability: "Força"
+params:
+  kind: "class"
 ---
 
 ### Descrição Geral

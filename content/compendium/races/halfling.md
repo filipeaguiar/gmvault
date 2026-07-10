@@ -1,7 +1,6 @@
 ---
 title: "Halfling"
 date: 2026-07-09T19:00:00Z
-kind: "race"
 draft: false
 weight: 30
 summary: "Um povo pequeno, pacífico e incrivelmente sortudo, conhecidos por sua alegria e furtividade."
@@ -14,6 +13,8 @@ race_info:
   ability_score: "+2 Destreza"
   speed: "7.5m"
   languages: "Comum, Halfling"
+params:
+  kind: "race"
 ---
 
 ### Descrição Geral

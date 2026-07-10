@@ -1,7 +1,6 @@
 ---
 title: "Guerreiro Campeão"
 date: 2026-07-09T19:00:00Z
-kind: "class"
 draft: false
 weight: 11
 summary: "O arquétipo clássico de guerreiro focado no aprimoramento físico e em golpes críticos devastadores."
@@ -14,6 +13,8 @@ parent_class: "/compendium/classes/fighter/"
 class_info:
   hit_dice: "d10"
   primary_ability: "Força ou Destreza"
+params:
+  kind: "class"
 ---
 
 ### Características de Subclasse

@@ -1,6 +1,5 @@
 ---
 title: "Cena 2 - Goblin Ambush"
-kind: "scene"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -15,6 +14,8 @@ compendium_refs:
   - "/compendium/monsters/goblin/"
 handouts:
 
+params:
+  kind: "scene"
 ---
 
 ### Descrição e Elementos Importantes
