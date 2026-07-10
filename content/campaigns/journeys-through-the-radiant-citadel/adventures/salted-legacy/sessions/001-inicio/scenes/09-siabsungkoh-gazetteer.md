@@ -7,12 +7,13 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
+
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
   - "/compendium/monsters/cat/"
   - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/wynling/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -98,7 +99,7 @@ Consider the plots on the Siabsungkoh Adventures table when planning adventures 
 
 | 1 | A night market vendor uses their business as a front to deal in illegal exports, like tut-krogh caterpillar eggs or wynling wings. The Dyn Singh Merchant Collective hires the characters to pose as buyers. |
 | 2 | A revenant appears at the Temple of Ember, seeking help to avenge its death at the hands of Damen Rak, head of one of the five families that oversee Siabsungkoh. |
-| 3 | A group of bandits with twenty trained pangolins (use the Cat stat block) pose as merchants, release their pets when the characters pass by, and blame the party for the escape. They demand recompense for the lost animals. |
+| 3 | A group of bandits with twenty trained pangolins (use the cat stat block) pose as merchants, release their pets when the characters pass by, and blame the party for the escape. They demand recompense for the lost animals. |
 | 4 | Wynlings (see below) harass a community's wagons every time they head to market. The locals hire the characters as guards. |
 
 

@@ -7,12 +7,12 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
+
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/wynling/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -34,7 +34,7 @@ Kasem used the cages to smuggle the wynlings into the market, and the creatures 
 
 ### Revealing the Wynlings
 
-The characters might suspect Kasem is using a creature to harass the Tyenmo and Xungoon market stands—either due to stories from vendors or from what they've witnessed themselves. If a character casts Detect Evil And Good near one of the sabotaged stalls, it reveals the presence of a Fey creature nearby, a wynling drowsing on a nearby stall roof. If approached, the wynling turns Invisible and flees.
+The characters might suspect Kasem is using a creature to harass the Tyenmo and Xungoon market stands—either due to stories from vendors or from what they've witnessed themselves. If a character casts detect evil and good near one of the sabotaged stalls, it reveals the presence of a Fey creature nearby, a wynling drowsing on a nearby stall roof. If approached, the wynling turns invisible and flees.
 A character can convince a wynling to reveal itself by going to either Tyenmo Noodles or Xungoon Family Seafood and holding out a persimmon. Doing so causes at least one wynling to appear and try to take the fruit. A character can befriend a wynling once it reveals itself by succeeding on a CD 10 Charisma (Persuasion) check. If characters who can speak and understand Sylvan ask the wynling questions, the Fey creature squeaks the following details in reply:
 * Kasem found the wynlings in the nearby mountains and brought them to the market recently.
 * The wynlings live with their friend Kasem at the Spicy Brothers tent.
@@ -45,7 +45,7 @@ The wynlings have no loyalty to Kasem, but they also don't understand why anythi
 
 ### Confronting Kasem
 
-If characters challenge Kasem with details they learned about him from local vendors, he laughs them off, explaining the market is full of gossip. A character who succeeds on a CD 10 Wisdom (Insight) check realizes Kasem is hiding something. If the characters confront Kasem with multiple accounts or pieces of evidence, they can coax a confession from him (see the following section). If characters take a more hostile approach, Kasem defends himself. Kasem has the statistics of a Noble and calls out to three wynlings (presented at the end of this adventure), who appear and aid him.
+If characters challenge Kasem with details they learned about him from local vendors, he laughs them off, explaining the market is full of gossip. A character who succeeds on a CD 10 Wisdom (Insight) check realizes Kasem is hiding something. If the characters confront Kasem with multiple accounts or pieces of evidence, they can coax a confession from him (see the following section). If characters take a more hostile approach, Kasem defends himself. Kasem has the statistics of a noble and calls out to three wynlings (presented at the end of this adventure), who appear and aid him.
 
 ### Convincing Kasem to Confess
 

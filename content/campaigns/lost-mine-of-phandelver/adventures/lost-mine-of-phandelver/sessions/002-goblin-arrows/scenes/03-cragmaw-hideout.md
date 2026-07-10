@@ -7,17 +7,17 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
   - "/campaigns/lost-mine-of-phandelver/npcs/sildar-hallwinter/"
   - "/campaigns/lost-mine-of-phandelver/npcs/nundro-rockseeker/"
+  - "/campaigns/lost-mine-of-phandelver/npcs/gundren-rockseeker/"
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/goblin-arrows/"
 compendium_refs:
-  - "/compendium/monsters/wolf/"
+  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/goblin/"
   - "/compendium/monsters/bugbear/"
-  - "/compendium/monsters/goblin/"
   - "/compendium/monsters/wolf/"
-  - "/compendium/monsters/goblin/"
+  - "/compendium/monsters/wolf/"
 ---
 
 ### Descrição e Elementos Importantes

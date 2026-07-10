@@ -8,16 +8,16 @@ status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/koi-prawn/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
   - "/compendium/monsters/giant-sea-horse/"
   - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/koi-prawn/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -62,7 +62,7 @@ After a short wait, the characters are escorted into the main area of the tent.
 
 ![Kasem and Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003.kasem-vi-aroon.webp)
 
-The characters are directed to sit at the table. As soon as they're seated, Vi (chaotic good, human Noble) briefly recaps the rules and asks if there are any questions. Once any questions are addressed, the challenge begins.
+The characters are directed to sit at the table. As soon as they're seated, Vi (chaotic good, human noble) briefly recaps the rules and asks if there are any questions. Once any questions are addressed, the challenge begins.
 
 ### Running the Challenge
 
@@ -91,7 +91,7 @@ After the challenge is completed, characters can ask Vi for information about th
 ![Jagged Koi Prawns are just one unexpected danger of the games at the Dyn Singh Night market](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004.jagged-koi-prawns.webp)
 
 Sid Squid's Trusty Leek sponsors Battle Prawns: The Shrimpening. Sid's shrimp cakes were voted best dish during a festival competition last year. This challenge, held in the northern event tent, tests participants' inventiveness and versatility as they prepare giant versions of his signature dish.
-The tent is decorated in a nautical theme, heavy on rope decor and brass fixtures. Sid (chaotic good, human Noble) and five assistants, all wearing yellow chef's outfits, eagerly invite visitors to participate in Battle Prawns. If characters ask, Sid explains the challenge is simple: assist in making a gigantic shrimp cake in record time. Participants must rapidly prepare prawn meat and chop beans for the sous-chefs. If they perform these preparations fast enough, they might complete the recipe in record time. Unless the characters specifically ask, no one mentions the unusual prawns used in this challenge (see the "Battle Arena" section).
+The tent is decorated in a nautical theme, heavy on rope decor and brass fixtures. Sid (chaotic good, human noble) and five assistants, all wearing yellow chef's outfits, eagerly invite visitors to participate in Battle Prawns. If characters ask, Sid explains the challenge is simple: assist in making a gigantic shrimp cake in record time. Participants must rapidly prepare prawn meat and chop beans for the sous-chefs. If they perform these preparations fast enough, they might complete the recipe in record time. Unless the characters specifically ask, no one mentions the unusual prawns used in this challenge (see the "Battle Arena" section).
 Up to four characters may participate in the event. If fewer characters take part, some of Sid's assistants (commoners) join them to create a team of four. No rules forbid magic during this event.
 Characters who participate are invited to don yellow aprons that match those of Sid and Sid's assistants. The next challenge begins shortly.
 
@@ -122,7 +122,7 @@ Massive bundles of green tree beans cover both preparation tables. Participants 
 
 ### Prawn Preparation
 
-The large tank contains four 8-foot-long jagged koi prawns (use the Giant Sea Horse stat block). Participants must slay one of the prawns. Waiting sous-chefs then fish the prawn out and drag it to a wok. The prawns are not initially hostile but defend themselves if they take damage. They have half cover from any creature attacking from outside the water.
+The large tank contains four 8-foot-long jagged koi prawns (use the giant sea horse stat block). Participants must slay one of the prawns. Waiting sous-chefs then fish the prawn out and drag it to a wok. The prawns are not initially hostile but defend themselves if they take damage. They have half cover from any creature attacking from outside the water.
 If the prawns reduce a character to 0 or fewer hit points, Sid ends the challenge while the sous-chefs get any wounded participants to safety.
 
 ### Ending the Challenge
@@ -137,8 +137,8 @@ As Sid thanks the characters for participating, trouble befalls the market vendo
 The Hide-and-Seek Challenge is sponsored by Madam Kulp, who creates luxurious fashions from silk spun by tut-krogh caterpillars. Her event takes place in the eastern event tent. This challenge doesn't have an audience.
 When the characters enter the tent, read or paraphrase the following text:
 > Seated at the middle of this sizable empty tent is a wizened gnome at work amid tangles of colorful yarn. Several fuzzy, kitten-sized blue caterpillars drowse on her, nestled in her clothing and hair. The gnome peers up and says, "Welcome! I am Madam Kulp. Are you here to play hide-and-seek with my gentle friends?"
-Madam Kulp is an elderly gnome woman (neutral Noble). If the characters accept her challenge, she hops up and opens a trapdoor at the center of the tent. A ladder descends into a dark, messy room full of boxes and furniture.
-Madam Kulp explains that below are a series of rooms where several tut-krogh caterpillars (use the Lizard stat block) are hiding. Her challenge is simple: descend the ladder and bring back four caterpillars within 1 minute. Any number of characters may participate, and they may use magical assistance as long as the caterpillars aren't harmed—Madam Kulp is adamant about the caterpillars' safety. If the characters agree to these rules, they may descend into the maze when they are ready.
+Madam Kulp is an elderly gnome woman (neutral noble). If the characters accept her challenge, she hops up and opens a trapdoor at the center of the tent. A ladder descends into a dark, messy room full of boxes and furniture.
+Madam Kulp explains that below are a series of rooms where several tut-krogh caterpillars (use the lizard stat block) are hiding. Her challenge is simple: descend the ladder and bring back four caterpillars within 1 minute. Any number of characters may participate, and they may use magical assistance as long as the caterpillars aren't harmed—Madam Kulp is adamant about the caterpillars' safety. If the characters agree to these rules, they may descend into the maze when they are ready.
 
 ### Running the Challenge
 

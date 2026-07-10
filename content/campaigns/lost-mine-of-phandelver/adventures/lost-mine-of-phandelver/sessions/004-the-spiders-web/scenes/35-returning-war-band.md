@@ -11,8 +11,8 @@ npcs:
 locations:
   - "/campaigns/lost-mine-of-phandelver/locations/the-spiders-web/"
 compendium_refs:
-  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/hobgoblin/"
+  - "/compendium/monsters/wolf/"
   - "/compendium/monsters/hobgoblin/"
 ---
 

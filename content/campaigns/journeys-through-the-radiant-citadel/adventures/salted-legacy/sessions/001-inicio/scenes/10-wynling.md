@@ -7,11 +7,11 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
+
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
-
+  - "/compendium/monsters/wynling/"
 ---
 
 ### Descrição e Elementos Importantes

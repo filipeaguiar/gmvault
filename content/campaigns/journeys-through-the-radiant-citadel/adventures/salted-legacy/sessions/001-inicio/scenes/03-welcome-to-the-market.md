@@ -7,17 +7,17 @@ visibility: "gm"
 status: "ready"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wynling/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/salted-legacy/"
 compendium_refs:
   - "/compendium/monsters/commoner/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/wynling/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -37,7 +37,7 @@ Dyn Singh Night Market vendors Lamai Tyenmo and Kusa Xungoon inherited a long-st
 
 ### Lamai Tyenmo
 
-Lamai Tyenmo (lawful good, gnome Commoner) has dark, wild hair and a wide smile. She recently took over as head of the Tyenmo family business, Tyenmo Noodles. The weight of the new responsibility hangs heavy on her, but she is determined to make her family proud.
+Lamai Tyenmo (lawful good, gnome commoner) has dark, wild hair and a wide smile. She recently took over as head of the Tyenmo family business, Tyenmo Noodles. The weight of the new responsibility hangs heavy on her, but she is determined to make her family proud.
 
 ### Personality Trait
 
@@ -60,7 +60,7 @@ Lamai Tyenmo (lawful good, gnome Commoner) has dark, wild hair and a wide smile.
 
 ### Kusa Xungoon
 
-Kusa Xungoon (lawful good, kobold Noble) dresses in impeccable purple-and-gold silk gowns and has polished horns. She runs a respected market stand, Xungoon Family Seafood, and seeks to expand her family's business. She cherishes her son, Gammon, whom she's teaching to take over the business.
+Kusa Xungoon (lawful good, kobold noble) dresses in impeccable purple-and-gold silk gowns and has polished horns. She runs a respected market stand, Xungoon Family Seafood, and seeks to expand her family's business. She cherishes her son, Gammon, whom she's teaching to take over the business.
 
 ### Personality Trait
 
@@ -91,7 +91,7 @@ Give the party the opportunity to wander the market and visit some of the aforem
 As characters explore the market, read or paraphrase the following:
 > Shouting rises over the sounds of haggling shoppers and the sizzle of cooking street food. A shrill voice cries out, "Give it back, you little thief!"
 > "No, you're the thief!" replies a youngster with a panicked squeak. An instant later, a frantic kobold bursts from the crowd clutching a sizable bunch of green onions. A flustered gnome woman chases him.
-Gammon Xungoon (chaotic good, kobold Commoner) stole a bunch of green onions from Lamai Tyenmo. Gammon believes Lamai first stole these onions from his mother. At the moment, neither is interested in listening to reason.
+Gammon Xungoon (chaotic good, kobold commoner) stole a bunch of green onions from Lamai Tyenmo. Gammon believes Lamai first stole these onions from his mother. At the moment, neither is interested in listening to reason.
 Gammon clumsily collides with a random character, bounces off them, and falls to the ground. A moment later, Lamai catches up and attempts to yank the green onions from Gammon's hands while railing at him. A character can separate the squabblers by intervening physically and succeeding on a CD 12 Strength (Athletics) check or by engaging diplomatically and succeeding on a CD 12 Charisma (Persuasion) check.
 Less than a minute later—whether or not the characters get involved—Gammon's mother, Kusa Xungoon, appears from the surrounding crowd.
 
@@ -114,7 +114,7 @@ Following the heated exchange, the gawking crowds and shopkeepers disperse. The 
 
 ### Kasem's Plan
 
-Kasem Aroon (chaotic neutral, human Noble) and his twin brother, Vi Aroon, own and operate the Spicy Brothers stall, which features rare peppers and spices. While Vi has a zest for life, Kasem is reserved and calculating. He's also the one behind the sabotage currently afflicting the Tyenmo and Xungoon stalls.
+Kasem Aroon (chaotic neutral, human noble) and his twin brother, Vi Aroon, own and operate the Spicy Brothers stall, which features rare peppers and spices. While Vi has a zest for life, Kasem is reserved and calculating. He's also the one behind the sabotage currently afflicting the Tyenmo and Xungoon stalls.
 Several weeks ago, Vi told his brother he's getting married and moving to a distant land. Kasem knows he can't continue Spicy Brothers without Vi's charm and concocted a plan to buy out another successful business. But most businesses in the Dyn Singh Night Market are family shops the owners would never consider selling. While on a trip to get more stock for Spicy Brothers, Kasem encountered a trio of rare Fey creatures called wynlings. Kasem befriended them with a few sweet fruits and brought them back to the night market. He now bribes his invisible friends with fruit to cause disruptions around Tyenmo Noodles and Xungoon Family Seafood. He doesn't want to hurt anyone, but he hopes to make life in the market uncomfortable enough that one of the families sells its shop to him for a low price.
 
 ### Kasem's Tour
