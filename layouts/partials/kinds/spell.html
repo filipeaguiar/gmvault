@@ -1,0 +1,42 @@
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="spell-block">
+  {{ if or .Params.spell_info.level .Params.spell_info.school }}
+    <p class="spell-meta-subtitle">
+      <em>
+        {{ if .Params.spell_info.level }}{{ .Params.spell_info.level }}{{ end }} 
+        {{ if .Params.spell_info.school }}de {{ .Params.spell_info.school | lower }}{{ end }}
+      </em>
+    </p>
+  {{ end }}
+
+  <div class="spell-info-card">
+    {{ if .Params.spell_info.cast_time }}
+      <div class="spell-info-row">
+        <strong>Tempo de Conjuração:</strong> <span>{{ .Params.spell_info.cast_time }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.spell_info.range }}
+      <div class="spell-info-row">
+        <strong>Alcance:</strong> <span>{{ .Params.spell_info.range }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.spell_info.components }}
+      <div class="spell-info-row">
+        <strong>Componentes:</strong> <span>{{ .Params.spell_info.components }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.spell_info.duration }}
+      <div class="spell-info-row">
+        <strong>Duração:</strong> <span>{{ .Params.spell_info.duration }}</span>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="spell-body content-body">
+    {{ .Content }}
+  </div>
+</div>

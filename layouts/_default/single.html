@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="page-content">
+  {{ partial "breadcrumbs.html" . }}
+  
+  {{ $kindPartial := printf "kinds/%s.html" .Params.kind }}
+  {{ if templates.Exists (printf "partials/%s" $kindPartial) }}
+    {{ partial $kindPartial . }}
+  {{ else }}
+    {{ partial "kinds/default.html" . }}
+  {{ end }}
+
+  {{ partial "relationships.html" . }}
+</article>
+{{ end }}

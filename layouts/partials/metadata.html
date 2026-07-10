@@ -1,0 +1,40 @@
+<div class="metadata-block">
+  {{ if .Params.kind }}
+  <div class="meta-item">
+    <span class="meta-label">Tipo:</span>
+    <span class="badge kind-{{ .Params.kind }}">{{ replace .Params.kind "_" " " | title }}</span>
+  </div>
+  {{ end }}
+  
+  {{ if .Params.visibility }}
+  <div class="meta-item">
+    <span class="meta-label">Visibilidade:</span>
+    <span class="badge visibility-{{ .Params.visibility }}">{{ .Params.visibility | title }}</span>
+  </div>
+  {{ end }}
+  
+  {{ if .Params.status }}
+  <div class="meta-item">
+    <span class="meta-label">Status:</span>
+    <span class="badge status-{{ .Params.status }}">{{ .Params.status | title }}</span>
+  </div>
+  {{ end }}
+  
+  {{ if .Params.system }}
+  <div class="meta-item">
+    <span class="meta-label">Sistema:</span>
+    <span class="meta-val">{{ .Params.system }}</span>
+  </div>
+  {{ end }}
+  
+  {{ if .Params.tags }}
+  <div class="meta-item">
+    <span class="meta-label">Tags:</span>
+    <div class="tags-container">
+      {{ range .Params.tags }}
+        <span class="tag">#{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>

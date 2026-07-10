@@ -1,0 +1,23 @@
+{{ if .Pages }}
+<div class="child-pages-section">
+  <h3 class="child-pages-title">Navegar nesta seção</h3>
+  <div class="cards-grid">
+    {{ range .Pages.ByWeight }}
+      {{ $isSubItem := or .Params.parent_race .Params.parent_class }}
+      {{ if not $isSubItem }}
+        <div class="card">
+          <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+          {{ if .Params.summary }}
+            <p class="summary">{{ .Params.summary }}</p>
+          {{ else if .Summary }}
+            <p class="summary">{{ .Summary | truncate 120 }}</p>
+          {{ end }}
+          {{ if .Params.kind }}
+            <span class="badge kind-{{ .Params.kind }}">{{ replace .Params.kind "_" " " | title }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

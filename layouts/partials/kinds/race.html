@@ -1,0 +1,54 @@
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="race-block">
+  {{ if .Params.parent_race }}
+    {{ $parent := site.GetPage .Params.parent_race }}
+    {{ if $parent }}
+      <p class="race-parent-link" style="margin-bottom: 1rem;">
+        <strong>Raça Base:</strong> <a href="{{ $parent.RelPermalink }}">{{ $parent.Title }}</a>
+      </p>
+    {{ end }}
+  {{ end }}
+
+  {{ if or .Params.race_info.ability_score .Params.race_info.speed .Params.race_info.languages }}
+  <div class="race-info-card">
+    {{ if .Params.race_info.ability_score }}
+      <div class="race-info-row">
+        <strong>Aumento de Atributo:</strong> <span>{{ .Params.race_info.ability_score }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.race_info.speed }}
+      <div class="race-info-row">
+        <strong>Deslocamento:</strong> <span>{{ .Params.race_info.speed }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.race_info.languages }}
+      <div class="race-info-row">
+        <strong>Idiomas:</strong> <span>{{ .Params.race_info.languages }}</span>
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="race-body content-body">
+    {{ .Content }}
+  </div>
+
+  {{ $variants := where site.RegularPages "Params.parent_race" .RelPermalink }}
+  {{ if $variants }}
+    <div class="race-variants-section" style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+      <h3 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 0.8rem;">Variantes & Sub-raças</h3>
+      <ul style="list-style-type: square; margin-left: 1.5rem;">
+        {{ range $variants }}
+          <li style="margin-bottom: 0.5rem;">
+            <a href="{{ .RelPermalink }}" style="font-weight: 600; color: var(--primary-color);">{{ .Title }}</a>
+            {{ if .Params.summary }} — <span style="font-size: 0.95rem; color: var(--text-muted);">{{ .Params.summary }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+</div>

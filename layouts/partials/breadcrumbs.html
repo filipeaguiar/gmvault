@@ -1,0 +1,13 @@
+{{ $showBreadcrumb := eq .Params.visibility "gm" }}
+
+{{ if $showBreadcrumb }}
+<nav class="breadcrumbs">
+  <a href="/">Início</a>
+  {{ range .Ancestors.Reverse }}
+    {{ if and (ne .RelPermalink "/") (ne .Title "") }}
+      <span class="sep">&gt;</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  {{ end }}
+  <span class="sep">&gt;</span> <span class="current">{{ .Title }}</span>
+</nav>
+{{ end }}

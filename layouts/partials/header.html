@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container header-content">
+    {{ $isPlayerPage := or (eq .Params.visibility "players") (eq .Params.visibility "public") }}
+    {{ if $isPlayerPage }}
+      <span class="logo">
+        <span class="logo-shield"><i class="ra ra-shield"></i></span> {{ site.Title }}
+      </span>
+    {{ else }}
+      <a href="/" class="logo">
+        <span class="logo-shield"><i class="ra ra-shield"></i></span> {{ site.Title }}
+      </a>
+    {{ end }}
+    <nav class="nav-links">
+      {{ if not $isPlayerPage }}
+        <a href="/campaigns/" class="nav-item">Campanhas</a>
+      {{ end }}
+      <a href="/compendium/" class="nav-item">Compêndio</a>
+    </nav>
+  </div>
+</header>

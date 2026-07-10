@@ -1,0 +1,43 @@
+{{ if and (ne .Params.kind "character") (ne .Params.kind "npc") }}
+{{ $isPlayerPage := or (eq .Params.visibility "players") (eq .Params.visibility "public") }}
+
+{{ $relations := dict }}
+{{ if $isPlayerPage }}
+  {{ $relations = dict "Compêndio" .Params.compendium_refs }}
+{{ else }}
+  {{ $relations = dict "Personagens" .Params.characters "NPCs" .Params.npcs "Localidades" .Params.locations "Facções" .Params.factions "Handouts" .Params.handouts "Compêndio" .Params.compendium_refs "Relacionados" .Params.related }}
+{{ end }}
+
+{{ $hasRelations := false }}
+
+{{ range $title, $links := $relations }}
+  {{ if $links }}
+    {{ $hasRelations = true }}
+  {{ end }}
+{{ end }}
+
+{{ if $hasRelations }}
+<div class="relations-block">
+  <h3 class="relations-title">Links & Relacionamentos</h3>
+  <div class="relations-grid">
+    {{ range $title, $links := $relations }}
+      {{ if $links }}
+        <div class="relation-group">
+          <h4>{{ $title }}</h4>
+          <ul>
+            {{ range $links }}
+              {{ $page := site.GetPage . }}
+              {{ if $page }}
+                <li><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></li>
+              {{ else }}
+                <li><span class="broken-link" title="Página não encontrada no repositório">{{ . }}</span></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+{{ end }}

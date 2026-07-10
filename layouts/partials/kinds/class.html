@@ -1,0 +1,49 @@
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="class-block">
+  {{ if .Params.parent_class }}
+    {{ $parent := site.GetPage .Params.parent_class }}
+    {{ if $parent }}
+      <p class="class-parent-link" style="margin-bottom: 1rem;">
+        <strong>Classe Base:</strong> <a href="{{ $parent.RelPermalink }}">{{ $parent.Title }}</a>
+      </p>
+    {{ end }}
+  {{ end }}
+
+  {{ if or .Params.class_info.hit_dice .Params.class_info.primary_ability }}
+  <div class="class-info-card">
+    {{ if .Params.class_info.hit_dice }}
+      <div class="class-info-row">
+        <strong>Dado de Vida:</strong> <span>{{ .Params.class_info.hit_dice }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.class_info.primary_ability }}
+      <div class="class-info-row">
+        <strong>Atributo Primário:</strong> <span>{{ .Params.class_info.primary_ability }}</span>
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="class-body content-body">
+    {{ .Content }}
+  </div>
+
+  {{ $subclasses := where site.RegularPages "Params.parent_class" .RelPermalink }}
+  {{ if $subclasses }}
+    <div class="subclasses-section" style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+      <h3 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 0.8rem;">Subclasses & Arquétipos</h3>
+      <ul style="list-style-type: square; margin-left: 1.5rem;">
+        {{ range $subclasses }}
+          <li style="margin-bottom: 0.5rem;">
+            <a href="{{ .RelPermalink }}" style="font-weight: 600; color: var(--primary-color);">{{ .Title }}</a>
+            {{ if .Params.summary }} — <span style="font-size: 0.95rem; color: var(--text-muted);">{{ .Params.summary }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+</div>

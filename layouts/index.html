@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="homepage">
+  <section class="hero">
+    <h1><i class="ra ra-crossed-swords"></i> RPG Campaign Vault</h1>
+    <p class="subtitle">Sua wiki estática para gerenciar e narrar campanhas de RPG de mesa de forma rápida e organizada.</p>
+  </section>
+
+  <section class="main-sections">
+    <div class="section-card campaigns-hero">
+      <h2><i class="ra ra-castle-flag"></i> Campanhas</h2>
+      <p>Gerencie sessões, diários de jogo, NPCs, locais e handouts de suas campanhas ativas.</p>
+      
+      {{ $campaigns := where site.Pages "Params.kind" "campaign" }}
+      {{ if $campaigns }}
+        <ul class="campaign-list">
+          {{ range $campaigns }}
+            <li>
+              <a href="{{ .RelPermalink }}" class="campaign-link">
+                <strong>{{ .Title }}</strong> 
+                {{ if .Params.system }}<span class="system-badge">{{ .Params.system }}</span>{{ end }}
+              </a>
+              <p class="campaign-desc">{{ .Params.summary }}</p>
+            </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        <p class="empty-state">Nenhuma campanha cadastrada ainda. Crie uma em <code>content/campaigns/</code>.</p>
+      {{ end }}
+      <a href="/campaigns/" class="btn">Ver Todas as Campanhas</a>
+    </div>
+
+    <div class="section-card compendium-hero">
+      <h2><i class="ra ra-book"></i> Compêndio Global</h2>
+      <p>Um repositório compartilhado de regras, monstros, magias e itens reutilizáveis entre todas as campanhas.</p>
+      <div class="compendium-grid">
+        <a href="/compendium/monsters/" class="comp-item"><i class="ra ra-dragon"></i> Monstros</a>
+        <a href="/compendium/items/" class="comp-item"><i class="ra ra-knapsack"></i> Itens</a>
+        <a href="/compendium/magic-items/" class="comp-item"><i class="ra ra-gem-pendant"></i> Itens Mágicos</a>
+        <a href="/compendium/classes/" class="comp-item"><i class="ra ra-sword"></i> Classes</a>
+        <a href="/compendium/races/" class="comp-item"><i class="ra ra-hood"></i> Raças</a>
+        <a href="/compendium/feats/" class="comp-item"><i class="ra ra-trophy"></i> Talentos</a>
+        <a href="/compendium/spells/" class="comp-item"><i class="ra ra-fire"></i> Magias</a>
+        <a href="/compendium/backgrounds/" class="comp-item"><i class="ra ra-scroll-unfurled"></i> Antecedentes</a>
+        <a href="/compendium/conditions/" class="comp-item"><i class="ra ra-skull"></i> Condições</a>
+        <a href="/compendium/rules/" class="comp-item"><i class="ra ra-open-book"></i> Regras</a>
+      </div>
+      <a href="/compendium/" class="btn">Ver Compêndio Completo</a>
+    </div>
+  </section>
+</div>
+{{ end }}

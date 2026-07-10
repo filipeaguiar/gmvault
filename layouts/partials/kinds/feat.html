@@ -1,0 +1,16 @@
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="feat-block">
+  {{ if .Params.feat_info.prerequisite }}
+    <p class="feat-prerequisite"><strong>Pré-requisito:</strong> <em>{{ .Params.feat_info.prerequisite }}</em></p>
+  {{ else if .Params.prerequisite }}
+    <p class="feat-prerequisite"><strong>Pré-requisito:</strong> <em>{{ .Params.prerequisite }}</em></p>
+  {{ end }}
+
+  <div class="feat-body content-body">
+    {{ .Content }}
+  </div>
+</div>

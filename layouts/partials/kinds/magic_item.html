@@ -1,0 +1,33 @@
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="item-block magic-item-block">
+  {{ if or .Params.item_info.type .Params.item_info.rarity }}
+    <p class="item-meta-subtitle">
+      <em>
+        {{ if .Params.item_info.type }}{{ .Params.item_info.type }}{{ end }} 
+        {{ if .Params.item_info.rarity }}, {{ .Params.item_info.rarity | lower }}{{ end }}
+        {{ if .Params.item_info.attunement }} ({{ .Params.item_info.attunement | lower }}){{ end }}
+      </em>
+    </p>
+  {{ end }}
+
+  <div class="item-info-card magic-item-card">
+    {{ if .Params.item_info.weight }}
+      <div class="item-info-row">
+        <strong>Peso:</strong> <span>{{ .Params.item_info.weight }}</span>
+      </div>
+    {{ end }}
+    {{ if .Params.item_info.cost }}
+      <div class="item-info-row">
+        <strong>Custo Estimado:</strong> <span>{{ .Params.item_info.cost }}</span>
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="item-body content-body">
+    {{ .Content }}
+  </div>
+</div>
