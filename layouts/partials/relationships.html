@@ -32,7 +32,7 @@
             {{ range $links }}
               {{ $page := site.GetPage . }}
               {{ if $page }}
-                <li><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></li>
+                <li><a href="{{ $page.RelPermalink }}">{{ or $page.Params.titulo_pt_br $page.Title }}</a></li>
               {{ else }}
                 <li><span class="broken-link" title="Página não encontrada no repositório">{{ . }}</span></li>
               {{ end }}

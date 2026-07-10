@@ -19,6 +19,7 @@
       {{- if eq .Params.kind "adventure" -}}
         {{- $adventurePage := . -}}
         {{- $adventureDir := .File.Dir -}}
+        {{- $adventureTitle := or .Params.titulo_pt_br .Title -}}
         
         {{/* Obter as sessões desta aventura */}}
         {{- $sessionItems := slice -}}
@@ -30,6 +31,7 @@
             {{- if eq .Params.kind "session" -}}
               {{- $sessionPage := . -}}
               {{- $sessionDir := .File.Dir -}}
+              {{- $sessionTitle := or .Params.titulo_pt_br .Title -}}
               
               {{/* Obter as cenas desta sessão */}}
               {{- $sceneItems := slice -}}
@@ -40,6 +42,7 @@
                 {{- range $scenesSection.Pages -}}
                   {{- if eq .Params.kind "scene" -}}
                     {{- $scenePage := . -}}
+                    {{- $sceneTitle := or .Params.titulo_pt_br .Title -}}
                     
                     {{/* Obter os handouts pertencentes a esta cena */}}
                     {{- $sceneHandouts := slice -}}
@@ -52,7 +55,7 @@
                         
                         {{- $handoutItem := dict 
                           "type" "page" 
-                          "name" .Title 
+                          "name" (or .Params.titulo_pt_br .Title) 
                           "id" (printf "page_%s" (substr (.Permalink | md5) 0 8)) 
                           "url" .Permalink 
                         -}}
@@ -72,7 +75,7 @@
                     
                     {{- $sceneItem := dict 
                       "type" "page" 
-                      "name" .Title 
+                      "name" $sceneTitle 
                       "id" (printf "page_%s" (substr (.Permalink | md5) 0 8)) 
                       "url" .Permalink 
                     -}}
@@ -94,7 +97,7 @@
               {{- if $sceneItems -}}
                 {{- $scenesCategory := dict 
                   "type" "category" 
-                  "name" (printf "Cenas da %s" .Title) 
+                  "name" (printf "Cenas da %s" $sessionTitle) 
                   "items" $sceneItems 
                   "id" (printf "cat_%s" (substr ( (printf "%s-scenes" .Permalink) | md5) 0 8)) 
                 -}}
@@ -107,7 +110,7 @@
                 
                 {{- $sessionItem := dict 
                   "type" "page" 
-                  "name" .Title 
+                  "name" $sessionTitle 
                   "id" (printf "page_%s" (substr (.Permalink | md5) 0 8)) 
                   "url" .Permalink 
                 -}}
@@ -135,7 +138,7 @@
               
               {{- $npcItem := dict 
                 "type" "page" 
-                "name" $npcPage.Title 
+                "name" (or $npcPage.Params.titulo_pt_br $npcPage.Title) 
                 "id" (printf "page_%s" (substr ($npcPage.Permalink | md5) 0 8)) 
                 "url" $npcPage.Permalink 
               -}}
@@ -153,7 +156,7 @@
         {{- if $sessionItems -}}
           {{- $sessionsCategory := dict 
             "type" "category" 
-            "name" (printf "Sessões de %s" .Title) 
+            "name" (printf "Sessões de %s" $adventureTitle) 
             "items" $sessionItems 
             "id" (printf "cat_%s" (substr ( (printf "%s-sessions" .Permalink) | md5) 0 8)) 
           -}}
@@ -164,7 +167,7 @@
         {{- if $adventureNpcItems -}}
           {{- $npcsCategory := dict 
             "type" "category" 
-            "name" (printf "NPCs de %s" .Title) 
+            "name" (printf "NPCs de %s" $adventureTitle) 
             "items" $adventureNpcItems 
             "id" (printf "cat_%s" (substr ( (printf "%s-npcs" .Permalink) | md5) 0 8)) 
           -}}
@@ -174,7 +177,7 @@
         {{/* Adicionar a aventura principal */}}
         {{- $adventureCategory := dict 
           "type" "category" 
-          "name" .Title 
+          "name" $adventureTitle 
           "items" $adventureSubItems 
           "id" (printf "cat_%s" (substr (.Permalink | md5) 0 8)) 
         -}}
@@ -200,7 +203,7 @@
   {{- end -}}
   {{- $campaignHomeItem := dict 
     "type" "page" 
-    "name" $campaignPage.Title 
+    "name" (or $campaignPage.Params.titulo_pt_br $campaignPage.Title) 
     "id" (printf "page_%s" (substr ($campaignPage.Permalink | md5) 0 8)) 
     "url" $campaignPage.Permalink 
   -}}
@@ -220,7 +223,7 @@
     
     {{- $journalItem := dict 
       "type" "page" 
-      "name" "A História Até Aqui" 
+      "name" (or $journalPage.Params.titulo_pt_br $journalPage.Title) 
       "id" (printf "page_%s" (substr ($journalPage.Permalink | md5) 0 8)) 
       "url" $journalPage.Permalink 
     -}}

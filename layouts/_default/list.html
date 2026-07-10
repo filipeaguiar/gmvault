@@ -3,7 +3,7 @@
   {{ partial "breadcrumbs.html" . }}
   
   <header class="page-header">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
     {{ partial "metadata.html" . }}
   </header>
   

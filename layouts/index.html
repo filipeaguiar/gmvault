@@ -16,7 +16,7 @@
           {{ range $campaigns }}
             <li>
               <a href="{{ .RelPermalink }}" class="campaign-link">
-                <strong>{{ .Title }}</strong> 
+                <strong>{{ or .Params.titulo_pt_br .Title }}</strong> 
                 {{ if .Params.system }}<span class="system-badge">{{ .Params.system }}</span>{{ end }}
               </a>
               <p class="campaign-desc">{{ .Params.summary }}</p>

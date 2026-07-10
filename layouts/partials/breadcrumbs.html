@@ -7,10 +7,11 @@
 <nav class="breadcrumbs">
   <a href="{{ site.Home.RelPermalink }}">Início</a>
   {{ range .Ancestors.Reverse }}
-    {{ if and (ne .RelPermalink "/") (ne .Title "") }}
-      <span class="sep">&gt;</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ $ancTitle := or .Params.titulo_pt_br .Title }}
+    {{ if and (ne .RelPermalink "/") (ne $ancTitle "") }}
+      <span class="sep">&gt;</span> <a href="{{ .RelPermalink }}">{{ $ancTitle }}</a>
     {{ end }}
   {{ end }}
-  <span class="sep">&gt;</span> <span class="current">{{ .Title }}</span>
+  <span class="sep">&gt;</span> <span class="current">{{ or .Params.titulo_pt_br .Title }}</span>
 </nav>
 {{ end }}

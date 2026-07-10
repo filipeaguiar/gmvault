@@ -6,7 +6,7 @@
       {{ $isSubItem := or .Params.parent_race .Params.parent_class }}
       {{ if not $isSubItem }}
         <div class="card">
-          <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+          <h4><a href="{{ .RelPermalink }}">{{ or .Params.titulo_pt_br .Title }}</a></h4>
           {{ if .Params.summary }}
             <p class="summary">{{ .Params.summary }}</p>
           {{ else if .Summary }}

@@ -1,5 +1,5 @@
 <header class="page-header">
-  <h1>{{ .Title }}</h1>
+  <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
   {{ partial "metadata.html" . }}
 </header>
 
@@ -8,7 +8,7 @@
     {{ $parent := site.GetPage .Params.parent_class }}
     {{ if $parent }}
       <p class="class-parent-link" style="margin-bottom: 1rem;">
-        <strong>Classe Base:</strong> <a href="{{ $parent.RelPermalink }}">{{ $parent.Title }}</a>
+        <strong>Classe Base:</strong> <a href="{{ $parent.RelPermalink }}">{{ or $parent.Params.titulo_pt_br $parent.Title }}</a>
       </p>
     {{ end }}
   {{ end }}
@@ -39,7 +39,7 @@
       <ul style="list-style-type: square; margin-left: 1.5rem;">
         {{ range $subclasses }}
           <li style="margin-bottom: 0.5rem;">
-            <a href="{{ .RelPermalink }}" style="font-weight: 600; color: var(--primary-color);">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" style="font-weight: 600; color: var(--primary-color);">{{ or .Params.titulo_pt_br .Title }}</a>
             {{ if .Params.summary }} — <span style="font-size: 0.95rem; color: var(--text-muted);">{{ .Params.summary }}</span>{{ end }}
           </li>
         {{ end }}

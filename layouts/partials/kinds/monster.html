@@ -1,11 +1,11 @@
 <header class="page-header">
-  <h1>{{ .Title }}</h1>
+  <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
   {{ partial "metadata.html" . }}
 </header>
 
 <div class="stat-block">
   <div class="stat-header">
-    <h2>{{ .Title }}</h2>
+    <h2>{{ or .Params.titulo_pt_br .Title }}</h2>
     {{ if .Params.stats_meta }}
       <p class="stat-meta-text"><em>{{ .Params.stats_meta }}</em></p>
     {{ end }}
