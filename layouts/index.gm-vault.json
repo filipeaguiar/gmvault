@@ -122,6 +122,32 @@
           {{- end -}}
         {{- end -}}
         
+        {{/* Obter os NPCs desta aventura */}}
+        {{- $adventureNpcItems := slice -}}
+        {{- if .Params.npcs -}}
+          {{- range .Params.npcs -}}
+            {{- $npcPage := site.GetPage . -}}
+            {{- if $npcPage -}}
+              {{- $visibleToPlayers := false -}}
+              {{- if or (eq $npcPage.Params.visibility "players") (eq $npcPage.Params.visibility "public") -}}
+                {{- $visibleToPlayers = true -}}
+              {{- end -}}
+              
+              {{- $npcItem := dict 
+                "type" "page" 
+                "name" $npcPage.Title 
+                "id" (printf "page_%s" (substr ($npcPage.Permalink | md5) 0 8)) 
+                "url" $npcPage.Permalink 
+              -}}
+              {{- if $visibleToPlayers -}}
+                {{- $npcItem = merge $npcItem (dict "visibleToPlayers" true) -}}
+              {{- end -}}
+              
+              {{- $adventureNpcItems = $adventureNpcItems | append $npcItem -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+        
         {{/* Adicionar a subcategoria "Sessões de X" se houver sessões */}}
         {{- $adventureSubItems := slice -}}
         {{- if $sessionItems -}}
@@ -132,6 +158,17 @@
             "id" (printf "cat_%s" (substr ( (printf "%s-sessions" .Permalink) | md5) 0 8)) 
           -}}
           {{- $adventureSubItems = $adventureSubItems | append $sessionsCategory -}}
+        {{- end -}}
+        
+        {{/* Adicionar a subcategoria "NPCs de X" se houver NPCs */}}
+        {{- if $adventureNpcItems -}}
+          {{- $npcsCategory := dict 
+            "type" "category" 
+            "name" (printf "NPCs de %s" .Title) 
+            "items" $adventureNpcItems 
+            "id" (printf "cat_%s" (substr ( (printf "%s-npcs" .Permalink) | md5) 0 8)) 
+          -}}
+          {{- $adventureSubItems = $adventureSubItems | append $npcsCategory -}}
         {{- end -}}
         
         {{/* Adicionar a aventura principal */}}
