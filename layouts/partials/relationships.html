@@ -1,5 +1,9 @@
 {{ if and (ne .Params.kind "character") (ne .Params.kind "npc") }}
-{{ $isPlayerPage := or (eq .Params.visibility "players") (eq .Params.visibility "public") }}
+{{ $visibility := .Params.visibility }}
+{{ if eq .Params.kind "monster" }}
+  {{ $visibility = "gm" }}
+{{ end }}
+{{ $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") }}
 
 {{ $relations := dict }}
 {{ if $isPlayerPage }}

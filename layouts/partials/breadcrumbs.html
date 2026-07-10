@@ -1,6 +1,9 @@
-{{ $showBreadcrumb := eq .Params.visibility "gm" }}
+{{ $visibility := .Params.visibility }}
+{{ if eq .Params.kind "monster" }}
+  {{ $visibility = "gm" }}
+{{ end }}
 
-{{ if $showBreadcrumb }}
+{{ if eq $visibility "gm" }}
 <nav class="breadcrumbs">
   <a href="{{ site.Home.RelPermalink }}">Início</a>
   {{ range .Ancestors.Reverse }}

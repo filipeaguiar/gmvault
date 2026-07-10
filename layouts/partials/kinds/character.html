@@ -305,7 +305,11 @@
 
   <!-- Outros Relacionamentos de Campanha (Localidades, Facções, NPCs etc.) -->
   {{ $hasCampaignRefs := false }}
-  {{ $isPlayerPage := or (eq .Params.visibility "players") (eq .Params.visibility "public") }}
+  {{ $visibility := .Params.visibility }}
+  {{ if eq .Params.kind "monster" }}
+    {{ $visibility = "gm" }}
+  {{ end }}
+  {{ $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") }}
   {{ $campaignRelations := dict }}
   {{ if not $isPlayerPage }}
     {{ $campaignRelations = dict "Localidades" .Params.locations "Facções" .Params.factions "NPCs" .Params.npcs "Handouts" .Params.handouts }}

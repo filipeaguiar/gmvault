@@ -8,7 +8,7 @@ summary: "Uma criatura pequena, verde e trapaceira que costuma atacar em bandos.
 tags:
   - goblinoides
   - monstros
-visibility: "public"
+visibility: "gm"
 status: "ready"
 
 stats_meta: "Humanoide Pequeno (goblinóide), Neutro e Mau"

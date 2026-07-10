@@ -6,7 +6,7 @@ draft: false
 weight: 10
 summary: "Ficha de criatura ou monstro do compêndio."
 tags: []
-visibility: "public"
+visibility: "gm"
 status: "ready"
 
 stats_meta: "Humanoide Médio, Neutro"

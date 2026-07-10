@@ -6,10 +6,14 @@
   </div>
   {{ end }}
   
-  {{ if .Params.visibility }}
+  {{ $visibility := .Params.visibility }}
+  {{ if eq .Params.kind "monster" }}
+    {{ $visibility = "gm" }}
+  {{ end }}
+  {{ if $visibility }}
   <div class="meta-item">
     <span class="meta-label">Visibilidade:</span>
-    <span class="badge visibility-{{ .Params.visibility }}">{{ .Params.visibility | title }}</span>
+    <span class="badge visibility-{{ $visibility }}">{{ $visibility | title }}</span>
   </div>
   {{ end }}
   

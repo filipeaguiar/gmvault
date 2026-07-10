@@ -1,6 +1,10 @@
 <header class="site-header">
   <div class="container header-content">
-    {{ $isPlayerPage := or (eq .Params.visibility "players") (eq .Params.visibility "public") }}
+    {{ $visibility := .Params.visibility }}
+    {{ if eq .Params.kind "monster" }}
+      {{ $visibility = "gm" }}
+    {{ end }}
+    {{ $isPlayerPage := or (eq $visibility "players") (eq $visibility "public") }}
     {{ if $isPlayerPage }}
       <span class="logo">
         <span class="logo-shield"><i class="ra ra-shield"></i></span> {{ site.Title }}
