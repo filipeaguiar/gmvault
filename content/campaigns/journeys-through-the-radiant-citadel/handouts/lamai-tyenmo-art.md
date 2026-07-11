@@ -3,7 +3,7 @@ title: 'Arte: Lamai Tyenmo'
 params:
   kind: handout
 draft: true
-titulo_pt_br: 'Arte: Lamai Tyenmo'
+titulo_pt_br: Lamai Tyenmo
 visibility: players
 status: draft
 tags:

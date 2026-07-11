@@ -3,7 +3,7 @@ title: Personagens dos Jogadores
 params:
   kind: characters_index
 draft: true
-titulo_pt_br: Personagens dos Jogadores
+titulo_pt_br: PERSONAGENS DOS JOGADORES
 visibility: gm
 status: draft
 translation:

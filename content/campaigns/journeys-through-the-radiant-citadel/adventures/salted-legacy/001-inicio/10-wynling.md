@@ -23,9 +23,9 @@ translation:
 
 ### Descrição e Elementos Importantes
 
-Brincalhões e travessos, os wynlings defendem as alturas das montanhas e os vales alpinos contra os invasores. Um Wynling raramente enfrenta uma ameaça diretamente, preferindo dissuadir intrusos assediando-os com roubos e partidas. Muitos viajantes retornam de terras protegidas por winlings com histórias de equipamento desaparecendo e olhos curiosos olhando das sombras.
+Brincalhões e travestis, os Wynlings defendem as altas das montanhas e os valores contra os invasores. Um Wynling raramente enfrenta uma ameaça direta, preferindo dissuadir introsos assediando-os com rubos e partidas. Muitos viajantes retornam de terras protegidas por invernos com histórias de equipamento Desaparecido e olhos curiosos olhando das sombras.
 
-Wynlings normalmente vivem nas montanhas que eles protegem, mas muitas vezes se aventuram em assentamentos próximos, atraídos por música de alto espírito e alimentos doces. Longe das suas casas abertas e selvagens, os Wynlings causam todos os tipos de acidentes misteriosos.
+Wynlings normalmente vivem nas montanhas que elees protegem, mas muitas vezes se aventuram em pareceres próximos, tratados por música de alto espírito e alimentos doces. Longe das suas casas abertas e selvagens, os Wynlings causaram todos os tipos de acidentes misteriosos.
 
 
 [Wynling] (/images/campaigns/journeys-through-the-radiant-citadel/020-637937472242420945.webp)

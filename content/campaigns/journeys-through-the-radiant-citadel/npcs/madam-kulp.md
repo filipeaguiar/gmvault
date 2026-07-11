@@ -1,7 +1,7 @@
 ---
 title: Madam Kulp
 draft: true
-titulo_pt_br: Madame Kulp
+titulo_pt_br: Madame Kulp.
 visibility: gm
 status: draft
 tags:

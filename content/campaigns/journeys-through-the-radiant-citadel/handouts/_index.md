@@ -3,7 +3,7 @@ title: Handouts e Materiais
 params:
   kind: handouts_index
 draft: true
-titulo_pt_br: Entregas e Matériais
+titulo_pt_br: Endereços e Matériais
 visibility: gm
 status: draft
 translation:

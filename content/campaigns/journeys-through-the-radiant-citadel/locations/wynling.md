@@ -17,7 +17,7 @@ translation:
   status: machine_translated
 ---
 
-Localidade ** Wynling** importada automaticamente.
+Localização Wynling importada automáticamente.
 
-### Cenas e Subáreas
-- [Wynling](../../adventures/salted-legacy/001-inicio/10-wynling/)
+### Cenas e Subaras
+- [Wynling] (../../adventures/salted-legacy/001-inicio/10-wynling/)

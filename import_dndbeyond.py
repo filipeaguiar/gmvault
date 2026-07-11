@@ -435,10 +435,23 @@ class_info:
 
 def main():
     parser = argparse.ArgumentParser(description="Importa um personagem do D&D Beyond para a wiki estática Hugo.")
-    parser.add_argument("char_id", type=str, help="O ID do personagem do D&D Beyond (ex: 168106464)")
+    parser.add_argument("char_id", type=str, nargs="?", help="O ID do personagem do D&D Beyond (ex: 168106464)")
     parser.add_argument("--campaign", type=str, default="cidadela-radiante", help="O slug da campanha de destino (padrão: cidadela-radiante)")
+    parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
     
     args = parser.parse_args()
+
+    if args.interactive:
+        from interactive_cli import dndbeyond_menu
+
+        values = dndbeyond_menu()
+        if values is None:
+            print("Operação cancelada.")
+            return
+        args.char_id = values["char_id"]
+        args.campaign = values["campaign"]
+    elif not args.char_id:
+        parser.error("o argumento char_id é obrigatório, exceto com --interactive/--menu")
     
     url = f"https://character-service.dndbeyond.com/character/v5/character/{args.char_id}"
     print(f"Buscando dados da API do D&D Beyond para o personagem ID: {args.char_id}...")

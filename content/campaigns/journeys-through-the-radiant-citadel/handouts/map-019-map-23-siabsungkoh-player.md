@@ -9,7 +9,7 @@ tags:
 - mapa
 - handout
 - importado
-titulo_pt_br: 'Mapa: 019 Mapa 23 Jogador de Siabsungkoh'
+titulo_pt_br: 'Mapa: 019 Map 23 Siabsungkoh Player'
 translation:
   source_language: en
   target_language: pt-BR

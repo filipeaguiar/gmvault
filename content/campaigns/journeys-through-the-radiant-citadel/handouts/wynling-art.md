@@ -17,4 +17,4 @@ translation:
   status: machine_translated
 ---
 
-[Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)
+[Arte: Wynling] (/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)

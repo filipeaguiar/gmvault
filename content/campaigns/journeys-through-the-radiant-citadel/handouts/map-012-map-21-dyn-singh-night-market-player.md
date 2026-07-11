@@ -17,4 +17,4 @@ translation:
   status: machine_translated
 ---
 
-[012 Map 21 Dyn Singh Night Market Player] (/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)
+[012 Map 21 Dyn Singh Jogador de Mercado Noturno] (/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)

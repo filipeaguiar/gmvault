@@ -1113,8 +1113,20 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
 
 def main():
     parser = argparse.ArgumentParser(description="Importador de Campanhas do 5e.tools")
-    parser.add_argument("slug", help="Slug da aventura no 5e.tools (ex: jttrc, lmop)")
+    parser.add_argument("slug", nargs="?", help="Slug da aventura no 5e.tools (ex: jttrc, lmop)")
+    parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
     args = parser.parse_args()
+
+    if args.interactive:
+        from interactive_cli import campaign_menu
+
+        values = campaign_menu()
+        if values is None:
+            print("Operação cancelada.")
+            return
+        args.slug = values["slug"]
+    elif not args.slug:
+        parser.error("o argumento slug é obrigatório, exceto com --interactive/--menu")
     
     slug = args.slug
     adv_meta, adv_data = fetch_adventure_data(slug)
@@ -1134,7 +1146,12 @@ def main():
     print("  (2) Antologia de Aventuras: O livro vira a campanha. Cada capítulo vira uma Aventura independente sob a pasta `adventures/`.")
     print("  (3) Apenas Um Capítulo Específico: Escolha um único capítulo para importar como Aventura isolada na campanha.")
     
-    choice = input("\nEscolha uma opção (1-3): ").strip()
+    if args.interactive:
+        from rich.prompt import Prompt
+
+        choice = Prompt.ask("Escolha o mapeamento", choices=["1", "2", "3"], default="1")
+    else:
+        choice = input("\nEscolha uma opção (1-3): ").strip()
     
     create_directory_structure(campaign_slug)
     write_campaign_index(campaign_slug, campaign_title)
@@ -1315,7 +1332,16 @@ handouts:
         if choice == "2":
             target_chaps = chapters
         else:
-            chap_choice = int(input(f"Selecione o capítulo (0-{len(chapters)-1}): ").strip())
+            if args.interactive:
+                from rich.prompt import Prompt as ChapterPrompt
+
+                chap_choice = ChapterPrompt.ask(
+                    "Selecione o capítulo",
+                    choices=[str(index) for index in range(len(chapters))],
+                )
+                chap_choice = int(chap_choice)
+            else:
+                chap_choice = int(input(f"Selecione o capítulo (0-{len(chapters)-1}): ").strip())
             target_chaps = [chapters[chap_choice]]
             
         locations_registry = {}

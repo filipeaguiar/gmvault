@@ -32,31 +32,31 @@ translation:
 
 ### Descrição e Elementos Importantes
 
-As famílias Xungoon e Tyenmo sempre tiveram uma relação complicada. Enquanto seus negócios e relacionamentos com o mercado noturno de Dyn Singh diferem, sua teimosia e intensa lealdade familiar são os mesmos. Ambos acreditam que são exemplos do que um mercador noturno deve ser, enquanto acredita que a outra família os tem sabotado há anos. Apesar disso, os atuais chefes das duas famílias, Lamai Tyenmo e Kusa Xungoon, juraram não continuar o que é agora uma rivalidade multigeracional. Estes chefes de família até começaram a procurar o conselho uns dos outros e Planta as sementes da amizade. Mas nas últimas semanas, roubos e vandalismo visando os negócios de ambas as famílias reacendeu velhas suspeitas, e a rixa ameaça reacender.
+As famílias Xungoon e Tyenmo tiveram uma relação complicada. Enquanto seus negócios e relacionamentos com o mercado noturno de Dyn Singh diferentes, sua teimosia e integridade familiar são os mesmos. Ambos acreditam que são exemplos do que um mercador noturno deve ser, tanto acredita que a outra família os tem sabotado há anos. Apesar disse, os atores chefs das duas famílias, Lamai Tyenmo e Kusa Xungoon, juraram não continuar o que é agora uma rivalidade multigeracional. Estes chefs de família ate começaram a procurar o conselho uns dos outros e Planta as sementes da amizade. Mas nas últimas semanas, roubes e vandalismo, vendo os negócios de embaixadas como famílias reacendeu velhas suspeitas, e a rixa ameaça reacender.
 
 
 ### Pronunciações
 
-A tabela de Pronunciações Siabsungkoh observa como pronunciar nomes chave nesta aventura.
+A tabela de Pronunciações Siabsungkoh observa como pronunciar nomes chama nesta aventura.
 
-**Tabela: Pronunciações de Siabsungkoh**
+Tradução:
 
 | Dyn Singh | DIN cantar |
 | Gammon Xungoon | GAH-mun zun-GOON |
-| Kasem Aroon | ka-seem ah-ROON |
-| Kusa Xungoon | kus-AH zun-GOON |
-| Lamai Tyenmo | Lam-EYE chá-EN-mo |
+| Kasem Aroon | Ka-seem ah-roon |
+| Kusa Xungoon | Kus-ah zun-goon |
+| Lamai Tyenmo | Lam-EYE cha-EN-mo |
 | Madame Kulp | MAH-dum kuhlp |
 | Siabsungkoh | SAB-sung-koh |
-| Tut-krogh | tut-KRO-gh |
-| Vi Aroon | Vee ah-ROON |
+| Tut-krogh | Tut-KRO-gh |
+| Vi Aroon | Vee ah-roon |
 
 
 ### Configurando a Aventura
 
-O Mercado Noturno Dyn Singh pode ser o movimentado distrito comercial de qualquer cidade. Use as seguintes sugestões para ajudar a contextualizar o mercado e toda a Siabsungkoh em um mundo mais amplo:
+O Mercado Noturno Dyn Singh pode ser o movimento do distrito comercial de qualquer cidade. Use como segundos sugestões para ajudar a contextualizar o mercado e toda a Siabsungkoh em um mundo mais amplo:
 
 
 ### Visitar o Mercado Noturno
 
-Antes de começar a aventura, use os seguintes ganchos ou trabalhe com os jogadores para determinar por que o grupo chegou ao mercado noturno de Dyn Singh:
+Antes de comer a aventura, use os segundos Ganchos ou trabalho com os jogadores para determinar por que o grupo chegou ao mercado noturno de Dyn Singh:

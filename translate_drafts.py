@@ -144,7 +144,7 @@ Observações:
   - --jobs pode acelerar em máquinas com CPU disponível, mas use valores moderados (2-4) para evitar excesso de memória.
 """,
     )
-    parser.add_argument("--scope", choices=["compendium", "campaign"], required=True, help="Escopo de tradução.")
+    parser.add_argument("--scope", choices=["compendium", "campaign"], help="Escopo de tradução.")
     parser.add_argument("--campaign", help="Slug da campanha. Obrigatório com --scope campaign.")
     parser.add_argument("--path", help="Subcaminho opcional dentro do escopo selecionado.")
     parser.add_argument("--apply", action="store_true", help="Grava alterações. Sem esta flag, executa dry-run.")
@@ -166,8 +166,20 @@ Observações:
     )
     parser.add_argument("--glossary", default=str(DEFAULT_GLOSSARY), help="Caminho do glossário JSON.")
     parser.add_argument("--source", default="en", help="Código do idioma de origem Argos. Padrão: en.")
-    parser.add_argument("--target", default="pt", help="Código do idioma de destino Argos. Padrão: pt.")
-    return parser.parse_args()
+    parser.add_argument("--target", default="pb", help="Código do idioma de destino Argos. Padrão: pb (português do Brasil).")
+    parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
+    args = parser.parse_args()
+    if args.interactive:
+        from interactive_cli import translation_menu
+
+        values = translation_menu()
+        if values is None:
+            raise TranslationError("Operação cancelada.")
+        for key, value in values.items():
+            setattr(args, key, value)
+    elif not args.scope:
+        parser.error("--scope é obrigatório, exceto com --interactive/--menu")
+    return args
 
 
 def resolve_scope(args: argparse.Namespace) -> Path:
@@ -367,7 +379,7 @@ def add_translation_metadata(front_matter: dict[str, Any], source: str, target: 
     translation_meta.update(
         {
             "source_language": source,
-            "target_language": "pt-BR" if target == "pt" else target,
+            "target_language": "pt-BR" if target in {"pt", "pb"} else target,
             "engine": "argos",
             "status": "machine_translated",
         }
@@ -415,8 +427,8 @@ def process_document(
 
 
 def main() -> int:
-    args = parse_args()
     try:
+        args = parse_args()
         root = resolve_scope(args)
         glossary = load_glossary(Path(args.glossary))
         files = discover_markdown_files(root)
@@ -483,6 +495,9 @@ def main() -> int:
             print("\nDry-run: nenhum arquivo foi modificado. Use --apply para gravar traduções.")
         return 0
     except TranslationError as exc:
+        if str(exc) == "Operação cancelada.":
+            print("Operação cancelada.")
+            return 0
         print(f"ERRO: {exc}", file=sys.stderr)
         return 1
 

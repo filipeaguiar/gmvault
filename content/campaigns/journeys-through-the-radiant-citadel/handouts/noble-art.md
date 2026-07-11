@@ -17,4 +17,4 @@ translation:
   status: machine_translated
 ---
 
-[Arte: nobre](/images/campaigns/journeys-through-the-radiant-citadel/noble.webp)
+[Arte: Nobre] (/images/campaigns/journeys-through-the-radiant-citadel/noble.webp)

@@ -15,11 +15,11 @@ translation:
 ---
 
 ### Descrição Geral
-Campanha importada do 5e.tools: Viagens pela Cidadela Radiante.
+-Viagens pela Cidadela Radiante.
 
 ### Pitch
 [Insira o campo da campanha]
 
 ### Links Rápidos
-* [A História Até Aqui (Diário)](/campaigns/journeys-through-the-radiant-citadel/journal/)
+* [A História Até Aqui (Diário)] (/campaigns/journeys-through-the-radiant-citadel/journal/)
 * [Aventuras Ativas] (/campaigns/journeys-through-the-radiant-citadel/adventures/)

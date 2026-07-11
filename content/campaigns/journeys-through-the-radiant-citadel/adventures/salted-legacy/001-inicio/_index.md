@@ -6,7 +6,7 @@ draft: true
 titulo_pt_br: Sessão 01 - Início
 visibility: gm
 status: draft
-summary: Planeamento para a sessão.
+summary: Planeamento para a Sessão.
 translation:
   source_language: en
   target_language: pt-BR

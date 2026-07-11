@@ -3,7 +3,7 @@ title: 'Arte: Kusa Xungoon'
 params:
   kind: handout
 draft: true
-titulo_pt_br: 'Arte: Kusa Xungoon'
+titulo_pt_br: Kusa Xungoon
 visibility: players
 status: draft
 tags:

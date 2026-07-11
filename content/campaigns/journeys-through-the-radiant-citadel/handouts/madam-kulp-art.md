@@ -3,7 +3,7 @@ title: 'Arte: Madam Kulp'
 params:
   kind: handout
 draft: true
-titulo_pt_br: 'Arte: Madame Kulp'
+titulo_pt_br: Madame Kulp
 visibility: players
 status: draft
 tags:
