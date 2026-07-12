@@ -1,15 +1,15 @@
 ---
-title: "Arte: Gammon Xungoon"
+title: 'Arte: Gammon Xungoon'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Gammon Xungoon'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Gammon Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)

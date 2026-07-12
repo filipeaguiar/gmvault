@@ -244,19 +244,25 @@ Observações:
     args.strategy = "split_blocks"
     args.api_key = None
 
-    # 4. Determina o perfil a carregar
+    # 4. Determina o perfil a carregar, respeitando overrides CLI explícitos
+    import sys
+    has_cli_engine = "--engine" in sys.argv
+    has_cli_model = "--model" in sys.argv
+    has_cli_base_url = "--base-url" in sys.argv
+    has_cli_timeout = "--timeout" in sys.argv
+
     profile_name = args.profile or config_data.get("active_profile")
     if profile_name and "profiles" in config_data:
         profiles = config_data["profiles"]
         if profile_name in profiles:
             profile = profiles[profile_name]
-            if "engine" in profile:
+            if "engine" in profile and not has_cli_engine:
                 args.engine = profile["engine"]
-            if "model" in profile:
+            if "model" in profile and not has_cli_model:
                 args.model = profile["model"]
-            if "base_url" in profile:
+            if "base_url" in profile and not has_cli_base_url:
                 args.base_url = profile["base_url"]
-            if "timeout" in profile:
+            if "timeout" in profile and not has_cli_timeout:
                 args.timeout = float(profile["timeout"])
             if "strategy" in profile:
                 args.strategy = profile["strategy"]
@@ -818,6 +824,22 @@ def process_document(
     return ProcessResult(document.path, changed=changed)
 
 
+def resolve_dependency_path(project_root: Path, url: str) -> Path | None:
+    """Resolve a relative relationship URL from front matter to a physical file Path."""
+    cleaned = url.strip("/")
+    if not cleaned:
+        return None
+    path = project_root / "content" / cleaned
+    if path.is_dir():
+        idx = path / "_index.md"
+        if idx.is_file():
+            return idx
+    md = path.with_suffix(".md")
+    if md.is_file():
+        return md
+    return None
+
+
 def publish_completed_adventures(campaign_root: Path, *, apply: bool) -> list[Path]:
     """Publish complete translated adventures and the indexes needed to navigate to them."""
     adventures_root = campaign_root / "adventures"
@@ -825,6 +847,8 @@ def publish_completed_adventures(campaign_root: Path, *, apply: bool) -> list[Pa
         return []
 
     published: list[Path] = []
+    project_root = campaign_root.parent.parent.parent
+
     for adventure_root in sorted(path for path in adventures_root.iterdir() if path.is_dir()):
         markdown_files = discover_markdown_files(adventure_root)
         content_files = [path for path in markdown_files if path.name != "_index.md"]
@@ -846,6 +870,32 @@ def publish_completed_adventures(campaign_root: Path, *, apply: bool) -> list[Pa
             if ancestor_index.is_file():
                 indexes.append(ancestor_index)
 
+        # 1. Coleta dependências de relacionamento dos arquivos da aventura
+        dependencies: set[str] = set()
+        for path in content_files + indexes:
+            document = parse_markdown(path)
+            if document is None:
+                continue
+            fm = document.front_matter
+            for key in ("npcs", "locations", "factions", "handouts", "related"):
+                val = fm.get(key)
+                if isinstance(val, list):
+                    for item in val:
+                        if isinstance(item, str) and item.startswith("/campaigns/"):
+                            dependencies.add(item)
+
+        # 2. Resolve arquivos físicos para as dependências coletadas
+        dependency_files: list[Path] = []
+        for dep_url in sorted(dependencies):
+            dep_path = resolve_dependency_path(project_root, dep_url)
+            if dep_path and dep_path not in published:
+                dependency_files.append(dep_path)
+                # Garante que o _index.md da pasta de dependências também seja publicado
+                parent_index = dep_path.parent / "_index.md"
+                if parent_index.is_file() and parent_index not in published and parent_index not in dependency_files:
+                    dependency_files.append(parent_index)
+
+        # 3. Publica a aventura e seus índices
         for path in sorted(set(content_files + indexes)):
             document = parse_markdown(path)
             if document is None:
@@ -855,6 +905,26 @@ def publish_completed_adventures(campaign_root: Path, *, apply: bool) -> list[Pa
                 continue
             front_matter["draft"] = False
             front_matter["status"] = "published"
+            published.append(path)
+            if apply:
+                path.write_text(render_markdown(front_matter, document.body), encoding="utf-8")
+
+        # 4. Publica as dependências (NPCs, localidades, facções, handouts)
+        for path in sorted(set(dependency_files)):
+            document = parse_markdown(path)
+            if document is None:
+                continue
+            front_matter = dict(document.front_matter)
+            if front_matter.get("draft") is False and front_matter.get("status") == "published":
+                continue
+            front_matter["draft"] = False
+            front_matter["status"] = "published"
+            
+            # Preenche titulo_pt_br com fallback básico para manter consistência nas lists
+            title = front_matter.get("title")
+            if title and not front_matter.get("titulo_pt_br"):
+                front_matter["titulo_pt_br"] = title
+
             published.append(path)
             if apply:
                 path.write_text(render_markdown(front_matter, document.body), encoding="utf-8")
