@@ -1,5 +1,6 @@
 ---
 title: "Cena 3 - Noteworthy Sites"
+weight: 30
 params:
   kind: "scene"
 draft: true

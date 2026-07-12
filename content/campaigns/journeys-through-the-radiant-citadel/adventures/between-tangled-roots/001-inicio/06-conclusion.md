@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - Conclusion"
+weight: 60
 params:
   kind: "scene"
 draft: true

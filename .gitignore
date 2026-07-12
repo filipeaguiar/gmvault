@@ -4,3 +4,5 @@ resources/_gen/
 __pycache__/
 *.pyc
 .venv/
+.env
+translation_config.json

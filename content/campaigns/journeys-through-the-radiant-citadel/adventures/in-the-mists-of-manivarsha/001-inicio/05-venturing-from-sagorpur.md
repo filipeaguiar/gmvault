@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Venturing from Sagorpur"
+weight: 50
 params:
   kind: "scene"
 draft: true

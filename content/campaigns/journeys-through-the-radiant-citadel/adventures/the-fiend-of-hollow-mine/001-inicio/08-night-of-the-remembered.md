@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - Night of the Remembered"
+weight: 80
 params:
   kind: "scene"
 draft: true
@@ -12,12 +13,12 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/night-of-the-remembered/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/cult-fanatic/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/tlacatecolo/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/cult-fanatic-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-037-map-42-abandoned-metalworks-player/"
 ---

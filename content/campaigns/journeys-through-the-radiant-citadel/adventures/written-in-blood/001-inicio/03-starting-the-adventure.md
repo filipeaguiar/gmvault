@@ -1,33 +1,35 @@
 ---
 title: "Cena 3 - Starting the Adventure"
+weight: 30
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tungsten-ward/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tungsten-ward/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/scout/"
   - "/compendium/monsters/cultist/"
+  - "/compendium/monsters/scout/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/acolyte/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tungsten-ward-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tungsten-ward-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
 ---
 
 ### Descrição e Elementos Importantes

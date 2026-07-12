@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Welcome to Milpazul"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -13,14 +14,14 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/assassin/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/tlacatecolo/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
 ---
 

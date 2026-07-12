@@ -1,26 +1,28 @@
 ---
 title: "Cena 3 - Starting the Adventure"
+weight: 30
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/giant-scorpion/"
   - "/compendium/monsters/guard/"
+  - "/compendium/monsters/veteran/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/"
 ---
 
 ### Descrição e Elementos Importantes

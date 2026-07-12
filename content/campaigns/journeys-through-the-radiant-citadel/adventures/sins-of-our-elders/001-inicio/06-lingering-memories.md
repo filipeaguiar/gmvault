@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - Lingering Memories"
+weight: 60
 params:
   kind: "scene"
 draft: true

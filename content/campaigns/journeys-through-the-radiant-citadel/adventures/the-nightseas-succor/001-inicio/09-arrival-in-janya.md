@@ -1,5 +1,6 @@
 ---
 title: "Cena 9 - Arrival in Janya"
+weight: 90
 params:
   kind: "scene"
 draft: true

@@ -1,5 +1,6 @@
 ---
 title: "Cena 3 - Umizu"
+weight: 30
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/umizu/"
 compendium_refs:
-  - "/compendium/monsters/bandit/"
-  - "/compendium/monsters/shadow-demon/"
   - "/compendium/monsters/oni/"
   - "/compendium/monsters/dragon-turtle/"
+  - "/compendium/monsters/shadow-demon/"
+  - "/compendium/monsters/bandit/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/oni-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-turtle-art/"

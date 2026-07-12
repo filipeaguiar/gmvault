@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - To the Nightsea"
+weight: 80
 params:
   kind: "scene"
 draft: true
@@ -12,9 +13,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/to-the-nightsea/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/wraith/"
   - "/compendium/monsters/flameskull/"
+  - "/compendium/monsters/veteran/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"

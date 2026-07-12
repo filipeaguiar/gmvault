@@ -1,24 +1,26 @@
 ---
 title: "Cena 2 - Background"
+weight: 20
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/"
 locations:
 
 compendium_refs:
 
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/"
 ---
 
 ### Descrição e Elementos Importantes

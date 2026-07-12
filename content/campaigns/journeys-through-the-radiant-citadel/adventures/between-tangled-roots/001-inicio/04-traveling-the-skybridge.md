@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Traveling the Skybridge"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/traveling-the-skybridge/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/priest/"
   - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/cloud-giant/"
+  - "/compendium/monsters/priest/"
+  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/dragon-hunter/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"

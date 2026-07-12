@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - The River of Gold"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -8,18 +9,18 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-river-of-gold/"
 compendium_refs:
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/spy/"
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
 ---
 

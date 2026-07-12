@@ -1,7 +1,9 @@
 ---
 title: "Cena 4 - Starting the Adventure"
+weight: 40
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -12,9 +14,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/guard/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/gargoyle/"
+  - "/compendium/monsters/noble/"
+  - "/compendium/monsters/guard/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kun-ahn-jun-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"

@@ -1,5 +1,6 @@
 ---
 title: "The Fiend of Hollow Mine"
+weight: 40
 params:
   kind: "adventure"
 draft: true

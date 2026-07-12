@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - The Restless Dead"
+weight: 40
 params:
   kind: "scene"
 draft: true

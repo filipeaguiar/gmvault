@@ -1,5 +1,6 @@
 ---
 title: "Cena 7 - Citadel Defenses"
+weight: 70
 params:
   kind: "scene"
 draft: true

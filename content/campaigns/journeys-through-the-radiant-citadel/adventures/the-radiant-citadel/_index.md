@@ -1,5 +1,6 @@
 ---
 title: "The Radiant Citadel"
+weight: 160
 params:
   kind: "adventure"
 draft: true

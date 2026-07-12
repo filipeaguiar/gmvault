@@ -1,5 +1,6 @@
 ---
 title: "Cena 2 - Cena"
+weight: 20
 params:
   kind: "scene"
 draft: true

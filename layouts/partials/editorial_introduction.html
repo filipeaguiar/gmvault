@@ -1,0 +1,21 @@
+{{- $pages := .pages | default slice -}}
+{{- $introPages := slice -}}
+{{- range $pages -}}
+  {{- if eq (partial "helpers/content_role.html" .) "introduction" -}}
+    {{- $introPages = $introPages | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $introPages = sort (sort $introPages "Title") "Weight" -}}
+{{- if gt (len $introPages) 0 -}}
+  <section class="editorial-introductions" aria-label="Introdução editorial">
+    {{- range $introPages -}}
+      <article class="editorial-introduction">
+        <h2>{{ or .Params.titulo_pt_br .Title }}</h2>
+        <div class="content-body">
+          {{ .Content }}
+        </div>
+        {{ partial "editorial_introduction.html" (dict "pages" .Pages) }}
+      </article>
+    {{- end -}}
+  </section>
+{{- end -}}

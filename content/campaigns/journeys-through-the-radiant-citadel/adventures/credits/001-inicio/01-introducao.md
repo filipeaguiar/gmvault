@@ -1,5 +1,6 @@
 ---
 title: "Cena 1 - Introdução"
+weight: 10
 params:
   kind: "scene"
 draft: true

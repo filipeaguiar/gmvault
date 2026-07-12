@@ -1,5 +1,6 @@
 ---
 title: "Cena 12 - Djaynai and Janya Gazetteer"
+weight: 120
 params:
   kind: "scene"
 draft: true
@@ -12,13 +13,13 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/adult-bronze-dragon/"
-  - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/sahuagin-baron/"
-  - "/compendium/monsters/lizardfolk/"
   - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/sahuagin-baron/"
   - "/compendium/monsters/lizard/"
+  - "/compendium/monsters/ghost/"
+  - "/compendium/monsters/lizardfolk/"
   - "/compendium/monsters/sea-hag/"
+  - "/compendium/monsters/adult-bronze-dragon/"
   - "/compendium/monsters/skeleton/"
   - "/compendium/monsters/nightsea-chil-liren/"
 handouts:

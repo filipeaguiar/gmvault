@@ -1,5 +1,6 @@
 ---
 title: "Wages of Vice"
+weight: 50
 params:
   kind: "adventure"
 draft: true

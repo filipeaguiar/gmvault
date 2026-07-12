@@ -1,7 +1,9 @@
 ---
 title: "Cena 3 - Starting the Adventure"
+weight: 30
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -13,19 +15,19 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/deva/"
-  - "/compendium/monsters/guard/"
-  - "/compendium/monsters/purple-worm/"
   - "/compendium/monsters/archmage/"
   - "/compendium/monsters/spy/"
+  - "/compendium/monsters/guard/"
+  - "/compendium/monsters/purple-worm/"
+  - "/compendium/monsters/deva/"
   - "/compendium/monsters/pari/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/pari-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/purple-worm-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/purple-worm-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-101-map-111-three-sun-square-player/"
 ---
 

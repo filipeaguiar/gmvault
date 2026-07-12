@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Storm of Destruction"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -14,8 +15,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/priest/"
   - "/compendium/monsters/water-weird/"
-  - "/compendium/monsters/swarm-of-poisonous-snakes/"
   - "/compendium/monsters/water-elemental/"
+  - "/compendium/monsters/swarm-of-poisonous-snakes/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - On the Hunt"
+weight: 50
 params:
   kind: "scene"
 draft: true
@@ -8,30 +9,30 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/diva-luma/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/on-the-hunt/"
 compendium_refs:
+  - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/druid/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/scout/"
-  - "/compendium/monsters/assassin/"
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/noble/"
-  - "/compendium/monsters/druid/"
   - "/compendium/monsters/guard/"
   - "/compendium/monsters/diva/"
   - "/compendium/magic-items/bizas-breath/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-luma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-luma-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/druid-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 
 ### Descrição e Elementos Importantes

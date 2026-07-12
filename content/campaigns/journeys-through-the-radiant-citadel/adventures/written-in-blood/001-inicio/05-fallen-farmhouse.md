@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Fallen Farmhouse"
+weight: 50
 params:
   kind: "scene"
 draft: true

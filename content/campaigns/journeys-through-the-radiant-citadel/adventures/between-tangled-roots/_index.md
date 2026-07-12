@@ -1,5 +1,6 @@
 ---
 title: "Between Tangled Roots"
+weight: 100
 params:
   kind: "adventure"
 draft: true

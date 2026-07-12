@@ -1,5 +1,6 @@
 ---
 title: "Credits"
+weight: 170
 params:
   kind: "adventure"
 draft: true

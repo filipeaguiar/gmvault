@@ -1,5 +1,6 @@
 ---
 title: "Cena 12 - Atagua Gazetteer"
+weight: 120
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/behir/"
   - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/bulette/"
   - "/compendium/monsters/thri-kreen/"
+  - "/compendium/monsters/behir/"
+  - "/compendium/monsters/bulette/"
   - "/compendium/monsters/whistler/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"

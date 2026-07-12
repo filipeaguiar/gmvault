@@ -1,5 +1,6 @@
 ---
 title: "Cena 7 - Hollow Mine"
+weight: 70
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/hollow-mine/"
 compendium_refs:
-  - "/compendium/monsters/cult-fanatic/"
-  - "/compendium/monsters/ghoul/"
-  - "/compendium/monsters/allosaurus/"
   - "/compendium/monsters/ochre-jelly/"
+  - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/cult-fanatic/"
+  - "/compendium/monsters/allosaurus/"
   - "/compendium/monsters/dinosaur-skeleton/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"

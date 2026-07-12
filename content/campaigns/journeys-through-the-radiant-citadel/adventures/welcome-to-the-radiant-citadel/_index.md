@@ -1,7 +1,9 @@
 ---
 title: "Welcome to the Radiant Citadel"
+weight: 10
 params:
   kind: "adventure"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"

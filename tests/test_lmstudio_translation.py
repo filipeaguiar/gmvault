@@ -13,7 +13,9 @@ from translate_drafts import (
     build_translation_prompt,
     filter_image_only_handouts,
     get_lmstudio_translation,
+    get_openai_compatible_translation,
     load_glossary_config,
+    parse_args,
     process_document,
     publish_completed_adventures,
     run_document_batch,
@@ -236,12 +238,50 @@ class LmStudioTranslationTests(unittest.TestCase):
             self.assertNotIn("PT:Second.", snapshots[0][3])
             self.assertFalse(checkpoint.exists())
 
+    def test_cli_accepts_openai_compatible_engine_and_connection_options(self):
+        with patch(
+            "sys.argv",
+            [
+                "translate_drafts.py",
+                "--scope",
+                "compendium",
+                "--engine",
+                "openai-compatible",
+                "--base-url",
+                "http://localhost:8000/v1",
+                "--model",
+                "custom-model",
+            ],
+        ):
+            args = parse_args()
+
+        self.assertEqual(args.engine, "openai-compatible")
+        self.assertEqual(args.base_url, "http://localhost:8000/v1")
+        self.assertEqual(args.model, "custom-model")
+
+    def test_cli_treats_lmstudio_as_openai_compatible_alias(self):
+        with patch("sys.argv", ["translate_drafts.py", "--scope", "compendium", "--engine", "lmstudio"]):
+            args = parse_args()
+
+        self.assertEqual(args.engine, "openai-compatible")
+
+    def test_cli_help_uses_openai_compatible_neutral_text(self):
+        stdout = io.StringIO()
+        with patch("sys.argv", ["translate_drafts.py", "--help"]), patch("sys.stdout", stdout):
+            with self.assertRaises(SystemExit) as raised:
+                parse_args()
+
+        self.assertEqual(raised.exception.code, 0)
+        help_text = stdout.getvalue()
+        self.assertIn("openai-compatible", help_text)
+        self.assertNotIn("LM Studio", help_text)
+
     @patch("translate_drafts.urlopen")
     def test_client_posts_openai_request_and_returns_content(self, urlopen):
         urlopen.return_value = _Response(
             {"choices": [{"message": {"content": "Teste de Resistência"}, "finish_reason": "stop"}]}
         )
-        translate = get_lmstudio_translation(
+        translate = get_openai_compatible_translation(
             "http://127.0.0.1:1234/v1", "google/gemma-4-e4b", "SYSTEM", timeout=12, retries=1
         )
         self.assertEqual(translate("Saving Throw"), "Teste de Resistência")
@@ -297,6 +337,123 @@ class LmStudioTranslationTests(unittest.TestCase):
             force_retranslate=False,
         )
         self.assertEqual(result.skipped_reason, "already translated to pt-BR")
+
+    def test_structural_markdown_targets_and_shortcodes_are_preserved(self):
+        source = (
+            "[Secret Door](/campaigns/demo/adventures/quest/)\n"
+            "![Map](/images/campaigns/demo/map.webp)\n"
+            "{{< relref \"adventures/quest\" >}}\n"
+            "<a href=\"adventures/quest/\">Secret HTML</a>\n"
+            "<img src=\"../maps/market.webp\" alt=\"Market Map\">\n"
+            "https://example.com/Keep/This\n"
+        )
+
+        def aggressive(text):
+            return (
+                text.replace("Secret Door", "Porta Secreta")
+                .replace("Map", "Mapa")
+                .replace("campaigns", "campanhas")
+                .replace("adventures", "aventuras")
+                .replace("images", "imagens")
+                .replace("example", "exemplo")
+                .replace("maps", "mapas")
+                .replace("market", "mercado")
+            )
+
+        result = translate_text(source, aggressive, {})
+
+        self.assertIn("[Porta Secreta](/campaigns/demo/adventures/quest/)", result)
+        self.assertIn("![Mapa](/images/campaigns/demo/map.webp)", result)
+        self.assertIn('{{< relref "adventures/quest" >}}', result)
+        self.assertIn('href="adventures/quest/"', result)
+        self.assertIn('src="../maps/market.webp"', result)
+        self.assertIn("https://example.com/Keep/This", result)
+        self.assertNotIn("/campanhas/", result)
+        self.assertNotIn("/imagens/", result)
+        self.assertNotIn("../mapas/", result)
+
+    def test_front_matter_structural_fields_are_not_translated(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "scene.md"
+            path.write_text(
+                "---\ndraft: true\ntitle: Secret Door\nsummary: Open the hidden door.\n"
+                "slug: secret-door\nurl: /campaigns/demo/secret-door/\n"
+                "aliases:\n- /campaigns/demo/old-secret-door/\n"
+                "locations:\n- /campaigns/demo/locations/market/\n"
+                "params:\n  kind: scene\n  content_role: introduction\n---\n\nBody.\n",
+                encoding="utf-8",
+            )
+            document = MarkdownDocument(
+                path=path,
+                front_matter_raw="",
+                front_matter={
+                    "draft": True,
+                    "title": "Secret Door",
+                    "summary": "Open the hidden door.",
+                    "slug": "secret-door",
+                    "url": "/campaigns/demo/secret-door/",
+                    "aliases": ["/campaigns/demo/old-secret-door/"],
+                    "locations": ["/campaigns/demo/locations/market/"],
+                    "params": {"kind": "scene", "content_role": "introduction"},
+                },
+                body="Body.",
+            )
+
+            def aggressive(text):
+                return text.replace("Secret", "Secreta").replace("Open", "Abra").replace("campaigns", "campanhas")
+
+            result = process_document(
+                document,
+                aggressive,
+                {},
+                apply=False,
+                include_non_draft=False,
+                translate_frontmatter=True,
+                source="en",
+                target="pb",
+            )
+
+            self.assertTrue(result.changed)
+            self.assertEqual(document.front_matter["slug"], "secret-door")
+            self.assertEqual(document.front_matter["url"], "/campaigns/demo/secret-door/")
+            self.assertEqual(document.front_matter["aliases"], ["/campaigns/demo/old-secret-door/"])
+            self.assertEqual(document.front_matter["locations"], ["/campaigns/demo/locations/market/"])
+            self.assertEqual(document.front_matter["params"], {"kind": "scene", "content_role": "introduction"})
+            self.assertNotIn("/campanhas/", path.read_text(encoding="utf-8"))
+
+    def test_checkpoint_snapshots_preserve_structural_destinations(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "chapter.md"
+            path.write_text(
+                "---\ndraft: true\nlocations:\n- /campaigns/demo/locations/market/\n---\n\n"
+                "[Door](/campaigns/demo/door/)\n\nSecond block.\n",
+                encoding="utf-8",
+            )
+            document = MarkdownDocument(
+                path,
+                "draft: true\nlocations:\n- /campaigns/demo/locations/market/",
+                {"draft": True, "locations": ["/campaigns/demo/locations/market/"]},
+                "[Door](/campaigns/demo/door/)\n\nSecond block.\n",
+            )
+            checkpoint = path.with_suffix(path.suffix + ".translation.partial")
+            snapshots = []
+
+            process_document(
+                document,
+                lambda text: text.replace("Door", "Porta").replace("campaigns", "campanhas"),
+                {},
+                apply=True,
+                include_non_draft=False,
+                translate_frontmatter=False,
+                source="en",
+                target="pb",
+                progress=lambda *_args: snapshots.append(checkpoint.read_text(encoding="utf-8")),
+            )
+
+            self.assertTrue(snapshots)
+            self.assertTrue(all("/campaigns/demo/door/" in snapshot for snapshot in snapshots))
+            self.assertTrue(all("/campaigns/demo/locations/market/" in snapshot for snapshot in snapshots))
+            self.assertTrue(all("/campanhas/" not in snapshot for snapshot in snapshots))
 
     def test_batch_continues_after_file_error_and_reports_path(self):
         paths = [Path("one.md"), Path("broken.md"), Path("three.md")]

@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Secret Grotto"
+weight: 50
 params:
   kind: "scene"
 draft: true
@@ -12,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/secret-grotto/"
 compendium_refs:
-  - "/compendium/monsters/adult-gold-dragon/"
   - "/compendium/monsters/mage/"
+  - "/compendium/monsters/adult-gold-dragon/"
   - "/compendium/monsters/stone-golem/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/stone-golem-art/"

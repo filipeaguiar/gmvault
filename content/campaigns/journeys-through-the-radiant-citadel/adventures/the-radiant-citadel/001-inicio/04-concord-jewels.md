@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Concord Jewels"
+weight: 40
 params:
   kind: "scene"
 draft: true

@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - The Twilight Rose"
+weight: 80
 params:
   kind: "scene"
 draft: true
@@ -8,16 +9,16 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-twilight-rose/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/commoner/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
 ---
 
 ### Descrição e Elementos Importantes

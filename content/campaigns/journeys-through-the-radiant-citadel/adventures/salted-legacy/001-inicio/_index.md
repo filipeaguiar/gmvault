@@ -1,5 +1,6 @@
 ---
 title: Sessão 01 - Início
+weight: 10
 params:
   kind: session
 draft: false
@@ -10,9 +11,9 @@ summary: Planejamento para a sessão.
 translation:
   source_language: en
   target_language: pt-BR
-  engine: lmstudio
+  engine: openai-compatible
   status: machine_translated
-  model: google/gemma-4-e4b
+  model: deepseek-chat
 ---
 
 

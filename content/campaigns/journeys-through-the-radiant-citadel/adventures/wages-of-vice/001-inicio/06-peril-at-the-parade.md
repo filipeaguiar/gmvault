@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - Peril at the Parade"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -8,19 +9,19 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/peril-at-the-parade/"
 compendium_refs:
-  - "/compendium/monsters/guard/"
   - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/guard/"
   - "/compendium/monsters/druid/"
   - "/compendium/monsters/acolyte/"
   - "/compendium/magic-items/bizas-breath/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/druid-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-047-map-51-parade-route-player/"

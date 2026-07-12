@@ -1,5 +1,6 @@
 ---
 title: "Cena 9 - Legends and Lore"
+weight: 90
 params:
   kind: "scene"
 draft: true

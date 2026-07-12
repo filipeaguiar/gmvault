@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Ghost Orchid Tepui"
+weight: 50
 params:
   kind: "scene"
 draft: true
@@ -12,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/ghost-orchid-tepui/"
 compendium_refs:
-  - "/compendium/monsters/cloaker/"
   - "/compendium/monsters/displacer-beast/"
+  - "/compendium/monsters/cloaker/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/displacer-beast-art/"

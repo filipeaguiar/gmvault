@@ -1,5 +1,6 @@
 ---
 title: "Cena 10 - The Drought Elder"
+weight: 100
 params:
   kind: "scene"
 draft: true
@@ -12,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-drought-elder/"
 compendium_refs:
-  - "/compendium/monsters/demilich/"
   - "/compendium/monsters/gibbering-mouther/"
+  - "/compendium/monsters/demilich/"
   - "/compendium/monsters/gibbering-mouther/"
   - "/compendium/monsters/whistler/"
   - "/compendium/magic-items/white-ghost-orchid-seed/"

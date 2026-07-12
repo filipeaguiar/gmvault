@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - Godsbreath Gazetteer"
+weight: 80
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/green-hag/"
   - "/compendium/monsters/ghost/"
   - "/compendium/monsters/shambling-mound/"
   - "/compendium/monsters/giant-crocodile/"
+  - "/compendium/monsters/green-hag/"
   - "/compendium/monsters/dire-wolf/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"

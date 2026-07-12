@@ -1,5 +1,6 @@
 ---
 title: "Cena 11 - Conclusion"
+weight: 110
 params:
   kind: "scene"
 draft: true
@@ -12,8 +13,8 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/magic-items/hammock-of-worlds/"
   - "/compendium/magic-items/lesser-hammock-of-worlds/"
+  - "/compendium/magic-items/hammock-of-worlds/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
 ---

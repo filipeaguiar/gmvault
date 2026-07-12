@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - The Fiend's Identity"
+weight: 50
 params:
   kind: "scene"
 draft: true
@@ -15,9 +16,9 @@ locations:
 compendium_refs:
   - "/compendium/monsters/tlacatecolo/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - Ashen Heir Hideout"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -8,23 +9,23 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/ashen-heir-hideout/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/mage/"
   - "/compendium/monsters/djinni/"
+  - "/compendium/monsters/mage/"
+  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/efreeti/"
+  - "/compendium/monsters/mage/"
   - "/compendium/monsters/ashen-heir-veteran/"
   - "/compendium/monsters/ashen-heir-assassin/"
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/efreeti-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-105-map-112-ashen-heir-hideout-player/"

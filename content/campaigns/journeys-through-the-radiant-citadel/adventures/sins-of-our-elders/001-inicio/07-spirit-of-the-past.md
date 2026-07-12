@@ -1,5 +1,6 @@
 ---
 title: "Cena 7 - Spirit of the Past"
+weight: 70
 params:
   kind: "scene"
 draft: true

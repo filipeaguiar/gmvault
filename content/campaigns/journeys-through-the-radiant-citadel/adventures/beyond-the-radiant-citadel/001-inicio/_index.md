@@ -1,5 +1,6 @@
 ---
 title: "Sessão 01 - Início"
+weight: 10
 params:
   kind: "session"
 draft: true

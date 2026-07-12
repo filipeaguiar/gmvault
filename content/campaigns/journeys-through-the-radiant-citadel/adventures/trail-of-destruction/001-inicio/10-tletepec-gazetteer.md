@@ -1,5 +1,6 @@
 ---
 title: "Cena 10 - Tletepec Gazetteer"
+weight: 100
 params:
   kind: "scene"
 draft: true
@@ -15,8 +16,8 @@ compendium_refs:
   - "/compendium/monsters/fire-giant/"
   - "/compendium/monsters/tlexolotl/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-077-map-82-tletepec-player/"
 ---
 

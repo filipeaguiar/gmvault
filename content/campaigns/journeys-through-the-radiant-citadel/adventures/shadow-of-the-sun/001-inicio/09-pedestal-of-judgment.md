@@ -1,5 +1,6 @@
 ---
 title: "Cena 9 - Pedestal of Judgment"
+weight: 90
 params:
   kind: "scene"
 draft: true
@@ -9,31 +10,31 @@ status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/pedestal-of-judgment/"
 compendium_refs:
-  - "/compendium/monsters/gynosphinx/"
-  - "/compendium/monsters/deva/"
-  - "/compendium/monsters/knight/"
-  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/manticore/"
   - "/compendium/monsters/pegasus/"
-  - "/compendium/monsters/manticore/"
-  - "/compendium/monsters/manticore/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/archmage/"
   - "/compendium/monsters/pegasus/"
+  - "/compendium/monsters/gynosphinx/"
+  - "/compendium/monsters/deva/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/manticore/"
+  - "/compendium/monsters/knight/"
   - "/compendium/monsters/pari/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/pari-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/pegasus-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/gynosphinx-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/manticore-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/pegasus-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-108-map-113-pedestal-of-judgment-player/"
 ---
 

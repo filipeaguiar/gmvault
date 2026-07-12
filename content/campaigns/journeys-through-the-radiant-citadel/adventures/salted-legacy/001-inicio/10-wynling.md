@@ -1,5 +1,6 @@
 ---
 title: Cena 10 - Wynling
+weight: 100
 params:
   kind: scene
 draft: false
@@ -17,16 +18,13 @@ handouts:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: lmstudio
+  engine: openai-compatible
   status: machine_translated
-  model: google/gemma-4-e4b
+  model: deepseek-chat
 ---
 
-### Descrição e Elementos Importantes
+Brincalhões e travessos, os wynlings defendem os picos das montanhas e vales alpinos contra intrusos. Um wynling raramente enfrenta uma ameaça diretamente, preferindo dissuadir invasores importunando-os com furtos e travessuras. Muitos viajantes retornam de terras protegidas por wynlings com histórias de equipamentos que desaparecem e olhos curiosos espreitando das sombras.
 
-Travessos e brincalhões, os Wynlings defendem alturas montanhosas e vales alpinos contra invasores. Um Wynling raramente confronta uma ameaça diretamente, preferindo dissuadir intrusos atormentando-os com furtos e pegadinhas. Muitos viajantes retornam de terras protegidas por Wynlings com histórias de equipamentos desaparecidos e olhos curiosos observando das sombras.
-
-Os Wynlings tipicamente vivem nas montanhas que protegem, mas frequentemente se aventuram em assentamentos próximos, atraídos por música animada e doces alimentos. Longe de seus lares abertos e selvagens, os Wynlings causam todos os tipos de acidentes misteriosos.
-
+Os wynlings normalmente vivem nas montanhas que protegem, mas frequentemente se aventuram em assentamentos próximos, atraídos por música animada e comidas doces. Longe de seus lares abertos e selvagens, os wynlings causam todo tipo de acidente misterioso.
 
 ![Wynling](/images/campaigns/journeys-through-the-radiant-citadel/020-637937472242420945.webp)

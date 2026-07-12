@@ -7,6 +7,9 @@ import re
 import unicodedata
 import argparse
 import urllib.parse
+from pathlib import Path
+
+from content_roles import CONTENT_ROLE_INTRODUCTION, classify_imported_content_role, content_role_from_front_matter
 
 DATA_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/"
 IMG_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-img/master/"
@@ -885,6 +888,63 @@ def is_lore_or_meta(title):
 def is_numbered_room(title):
     return bool(re.match(r'^\d+[\.\s-]', title.strip())) or title.strip().isdigit()
 
+
+def assign_import_weights(entries):
+    return [dict(entry, weight=(index + 1) * 10) for index, entry in enumerate(entries)]
+
+
+def imported_scene_content_role(title, *, level):
+    return classify_imported_content_role(title, level=level)
+
+
+def front_matter_content_role_lines(role):
+    if role == CONTENT_ROLE_INTRODUCTION:
+        return ['  content_role: "introduction"']
+    return []
+
+
+def existing_content_role(path):
+    path = Path(path)
+    if not path.exists() or not path.is_file():
+        return None
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        return None
+    try:
+        front_matter = text.split("---", 2)[1]
+    except IndexError:
+        return None
+    lines = front_matter.splitlines()
+    data = {}
+    params = {}
+    in_params = False
+    for line in lines:
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        if re.match(r"^params\s*:", stripped):
+            in_params = True
+            continue
+        if line and not line.startswith((" ", "\t")):
+            in_params = False
+        match = re.match(r"^([A-Za-z_][\w-]*)\s*:\s*(.*?)\s*$", stripped)
+        if not match:
+            continue
+        key, value = match.groups()
+        value = value.strip().strip('"\'')
+        if in_params:
+            params[key] = value
+        else:
+            data[key] = value
+    if params:
+        data["params"] = params
+    return content_role_from_front_matter(data)
+
+
+def resolved_content_role(path, proposed_role):
+    return existing_content_role(path) or proposed_role
+
+
 def create_directory_structure(campaign_slug):
     paths = [
         f"content/campaigns/{campaign_slug}/adventures",
@@ -915,7 +975,7 @@ def create_directory_structure(campaign_slug):
 title: "{title}"
 params:
   kind: "{dir_name}_index"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
@@ -932,7 +992,7 @@ def write_campaign_index(campaign_slug, campaign_title):
 title: "{campaign_title}"
 params:
   kind: "campaign"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
@@ -946,21 +1006,26 @@ Campanha importada do 5e.tools: {campaign_title}.
 [Insira o pitch da campanha]
 
 ### Links Rápidos
-* [A História Até Aqui (Diário)](/campaigns/{campaign_slug}/journal/)
-* [Aventuras Ativas](/campaigns/{campaign_slug}/adventures/)
+* [A História Até Aqui (Diário)]({{{{< relref "journal" >}}}})
+* [Aventuras Ativas]({{{{< relref "adventures" >}}}})
 """)
 
-def create_adventure_structure(campaign_slug, adv_slug, adv_title):
+def create_adventure_structure(campaign_slug, adv_slug, adv_title, *, weight=None, content_role=None):
     adv_dir = f"content/campaigns/{campaign_slug}/adventures/{adv_slug}"
     os.makedirs(adv_dir, exist_ok=True)
     
     adv_idx = os.path.join(adv_dir, "_index.md")
     if not os.path.exists(adv_idx):
+        role = resolved_content_role(adv_idx, content_role)
+        role_lines = "\n".join(front_matter_content_role_lines(role))
+        if role_lines:
+            role_lines = "\n" + role_lines
+        weight_line = f"weight: {weight}\n" if weight is not None else ""
         with open(adv_idx, "w") as f:
             f.write(f"""---
 title: "{adv_title}"
-params:
-  kind: "adventure"
+{weight_line}params:
+  kind: "adventure"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -970,17 +1035,52 @@ summary: "Aventura independente importada do capítulo {adv_title}."
 """)
     return adv_dir, adv_dir
 
-def create_session_structure(adv_dir, session_slug, session_title):
+
+def anthology_adventure_weight(source_slug, chapter_title, source_index):
+    """Return the intended navigation order for anthology chapters."""
+    if source_slug.lower() == "jttrc":
+        editorial_order = [
+            "Welcome to the Radiant Citadel",
+            "Salted Legacy",
+            "Written in Blood",
+            "The Fiend of Hollow Mine",
+            "Wages of Vice",
+            "Sins of Our Elders",
+            "Gold for Fools and Princes",
+            "Trail of Destruction",
+            "In the Mists of Manivarsha",
+            "Between Tangled Roots",
+            "Shadow of the Sun",
+            "The Nightsea's Succor",
+            "Buried Dynasty",
+            "Orchids of the Invisible Mountain",
+            "Beyond the Radiant Citadel",
+            "The Radiant Citadel",
+            "Credits",
+        ]
+        try:
+            return (editorial_order.index(chapter_title) + 1) * 10
+        except ValueError:
+            pass
+    return (source_index + 1) * 10
+
+
+def create_session_structure(adv_dir, session_slug, session_title, *, weight=None, content_role=None):
     sess_dir = os.path.join(adv_dir, session_slug)
     os.makedirs(sess_dir, exist_ok=True)
     
     sess_idx = os.path.join(sess_dir, "_index.md")
     if not os.path.exists(sess_idx):
+        role = resolved_content_role(sess_idx, content_role)
+        role_lines = "\n".join(front_matter_content_role_lines(role))
+        if role_lines:
+            role_lines = "\n" + role_lines
+        weight_line = f"weight: {weight}\n" if weight is not None else ""
         with open(sess_idx, "w") as f:
             f.write(f"""---
 title: "{session_title}"
-params:
-  kind: "session"
+{weight_line}params:
+  kind: "session"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1160,7 +1260,7 @@ def main():
     
     if choice == "1":
         adv_slug = campaign_slug
-        adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, campaign_title)
+        adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, campaign_title, weight=10)
         
         all_npcs = set()
         all_monsters = set()
@@ -1180,7 +1280,7 @@ def main():
             current_loc_slug = None
             current_loc_name = None
             
-            sess_dir, scenes_dir = create_session_structure(adv_dir, session_slug, session_title)
+            sess_dir, scenes_dir = create_session_structure(adv_dir, session_slug, session_title, weight=(c_idx + 1) * 10)
                 
             scenes = []
             current_scene_title = "Introdução"
@@ -1270,6 +1370,10 @@ def main():
                         "ref": scene_ref
                     })
                 
+                role = resolved_content_role(scene_file, imported_scene_content_role(s_title, level="adventure_section"))
+                role_lines = "\n".join(front_matter_content_role_lines(role))
+                if role_lines:
+                    role_lines = "\n" + role_lines
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
@@ -1278,8 +1382,9 @@ def main():
                     
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
+weight: {(s_idx + 1) * 10}
 params:
-  kind: "scene"
+  kind: "scene"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1309,6 +1414,7 @@ handouts:
         with open(adv_idx, "w") as f:
             f.write(f"""---
 title: "{campaign_title}"
+weight: 10
 params:
   kind: "adventure"
 draft: true
@@ -1345,11 +1451,18 @@ handouts:
             target_chaps = [chapters[chap_choice]]
             
         locations_registry = {}
-        for chap in target_chaps:
+        for chap_idx, chap in enumerate(target_chaps):
             chap_title = chap.get("name")
             adv_slug = slugify(chap_title)
+            adv_role = imported_scene_content_role(chap_title, level="campaign_chapter")
             
-            adv_dir, sessions_dir = create_adventure_structure(campaign_slug, adv_slug, chap_title)
+            adv_dir, sessions_dir = create_adventure_structure(
+                campaign_slug,
+                adv_slug,
+                chap_title,
+                weight=anthology_adventure_weight(slug, chap_title, chap_idx),
+                content_role=adv_role,
+            )
             
             adventure_locations = set()
             current_loc_slug = None
@@ -1361,7 +1474,7 @@ handouts:
             sess_slug = "001-inicio"
             session_title = "Sessão 01 - Início"
             
-            sess_dir, scenes_dir = create_session_structure(adv_dir, sess_slug, session_title)
+            sess_dir, scenes_dir = create_session_structure(adv_dir, sess_slug, session_title, weight=10, content_role=adv_role)
                 
             scenes = []
             current_scene_title = "Introdução"
@@ -1451,6 +1564,10 @@ handouts:
                         "ref": scene_ref
                     })
                 
+                role = resolved_content_role(scene_file, imported_scene_content_role(s_title, level="adventure_section"))
+                role_lines = "\n".join(front_matter_content_role_lines(role))
+                if role_lines:
+                    role_lines = "\n" + role_lines
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
@@ -1459,8 +1576,9 @@ handouts:
                     
                     f.write(f"""---
 title: "Cena {s_idx+1} - {s_title}"
+weight: {(s_idx + 1) * 10}
 params:
-  kind: "scene"
+  kind: "scene"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1486,11 +1604,16 @@ handouts:
             locations_yaml = "\n".join([f"  - \"{l}\"" for l in sorted(list(adventure_locations))])
             handouts_yaml = "\n".join([f"  - \"{h}\"" for h in sorted(list(adventure_handouts))])
             
+            role = resolved_content_role(adv_idx, adv_role)
+            role_lines = "\n".join(front_matter_content_role_lines(role))
+            if role_lines:
+                role_lines = "\n" + role_lines
             with open(adv_idx, "w") as f:
                 f.write(f"""---
 title: "{chap_title}"
+weight: {anthology_adventure_weight(slug, chap_title, chap_idx)}
 params:
-  kind: "adventure"
+  kind: "adventure"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"

@@ -3,15 +3,9 @@ title: Adventures
 params:
   kind: adventures_index
 draft: false
-titulo_pt_br: Aventuras
+titulo_pt_br: ''
 visibility: gm
 status: published
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: lmstudio
-  status: machine_translated
-  model: google/gemma-4-e4b
 ---
 
 

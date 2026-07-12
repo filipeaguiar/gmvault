@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - The Goldwarren"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -14,8 +15,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-goldwarren/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/giant-lizard/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/aurumvorax/"
   - "/compendium/monsters/aurumvorax-den-leader/"
 handouts:

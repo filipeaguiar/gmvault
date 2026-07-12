@@ -1,21 +1,14 @@
 ---
-title: 'Mapa: 016 Map 22 Market Challenges Player'
+title: "Mapa: 016 Map 22 Market Challenges Player"
 params:
-  kind: handout
+  kind: "handout"
 draft: true
-visibility: players
-status: draft
+visibility: "players"
+status: "draft"
 tags:
-- mapa
-- handout
-- importado
-titulo_pt_br: 'Mapa: 016 Mapa 22 Desafios do Mercado Player'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: lmstudio
-  status: machine_translated
-  model: google/gemma-4-e4b
+  - mapa
+  - handout
+  - importado
 ---
 
-![016 Mapa 22 Desafios do Mercado Jogador](/images/campaigns/journeys-through-the-radiant-citadel/016-map-22-market-challenges-player.webp)
+![016 Map 22 Market Challenges Player](/images/campaigns/journeys-through-the-radiant-citadel/016-map-22-market-challenges-player.webp)

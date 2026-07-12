@@ -1,7 +1,9 @@
 ---
 title: "Cena 2 - Background"
+weight: 20
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"

@@ -6,6 +6,9 @@
 <div class="campaign-layout">
   <div class="campaign-main content-body">
     {{ .Content }}
+    {{ with .GetPage "adventures" }}
+      {{ partial "editorial_introduction.html" (dict "pages" .Pages) }}
+    {{ end }}
   </div>
 
   {{/* Grade de Atalhos e Visão Geral (Subseções) para acesso rápido */}}
@@ -13,46 +16,58 @@
     <h3>Painel da Campanha</h3>
     <div class="quick-links-grid">
       {{ with .GetPage "journal" }}
-        <a href="{{ .RelPermalink }}" class="quick-card">
-          <span class="quick-icon"><i class="ra ra-quill"></i></span>
-          <span class="quick-title">Diário de Campanha</span>
-          <span class="quick-count">{{ len .Pages }} entradas</span>
-        </a>
+        {{ if .RelPermalink }}
+          <a href="{{ .RelPermalink }}" class="quick-card">
+            <span class="quick-icon"><i class="ra ra-quill"></i></span>
+            <span class="quick-title">Diário de Campanha</span>
+            <span class="quick-count">{{ len .Pages }} entradas</span>
+          </a>
+        {{ end }}
       {{ end }}
       {{ with .GetPage "characters" }}
-        <a href="{{ .RelPermalink }}" class="quick-card">
-          <span class="quick-icon"><i class="ra ra-pawn"></i></span>
-          <span class="quick-title">Personagens Jogadores</span>
-          <span class="quick-count">{{ len .Pages }} fichas</span>
-        </a>
+        {{ if .RelPermalink }}
+          <a href="{{ .RelPermalink }}" class="quick-card">
+            <span class="quick-icon"><i class="ra ra-pawn"></i></span>
+            <span class="quick-title">Personagens Jogadores</span>
+            <span class="quick-count">{{ len .Pages }} fichas</span>
+          </a>
+        {{ end }}
       {{ end }}
       {{ with .GetPage "npcs" }}
-        <a href="{{ .RelPermalink }}" class="quick-card">
-          <span class="quick-icon"><i class="ra ra-cowl"></i></span>
-          <span class="quick-title">Personagens do Mestre (NPCs)</span>
-          <span class="quick-count">{{ len .Pages }} NPCs</span>
-        </a>
+        {{ if .RelPermalink }}
+          <a href="{{ .RelPermalink }}" class="quick-card">
+            <span class="quick-icon"><i class="ra ra-cowl"></i></span>
+            <span class="quick-title">Personagens do Mestre (NPCs)</span>
+            <span class="quick-count">{{ len .Pages }} NPCs</span>
+          </a>
+        {{ end }}
       {{ end }}
       {{ with .GetPage "locations" }}
-        <a href="{{ .RelPermalink }}" class="quick-card">
-          <span class="quick-icon"><i class="ra ra-castle"></i></span>
-          <span class="quick-title">Geografia e Localidades</span>
-          <span class="quick-count">{{ len .Pages }} locais</span>
-        </a>
+        {{ if .RelPermalink }}
+          <a href="{{ .RelPermalink }}" class="quick-card">
+            <span class="quick-icon"><i class="ra ra-castle"></i></span>
+            <span class="quick-title">Geografia e Localidades</span>
+            <span class="quick-count">{{ len .Pages }} locais</span>
+          </a>
+        {{ end }}
       {{ end }}
       {{ with .GetPage "factions" }}
-        <a href="{{ .RelPermalink }}" class="quick-card">
-          <span class="quick-icon"><i class="ra ra-flag"></i></span>
-          <span class="quick-title">Facções e Organizações</span>
-          <span class="quick-count">{{ len .Pages }} facções</span>
-        </a>
+        {{ if .RelPermalink }}
+          <a href="{{ .RelPermalink }}" class="quick-card">
+            <span class="quick-icon"><i class="ra ra-flag"></i></span>
+            <span class="quick-title">Facções e Organizações</span>
+            <span class="quick-count">{{ len .Pages }} facções</span>
+          </a>
+        {{ end }}
       {{ end }}
       {{ with .GetPage "handouts" }}
-        <a href="{{ .RelPermalink }}" class="quick-card">
-          <span class="quick-icon"><i class="ra ra-picture"></i></span>
-          <span class="quick-title">Handouts e Documentos</span>
-          <span class="quick-count">{{ len .Pages }} arquivos</span>
-        </a>
+        {{ if .RelPermalink }}
+          <a href="{{ .RelPermalink }}" class="quick-card">
+            <span class="quick-icon"><i class="ra ra-picture"></i></span>
+            <span class="quick-title">Handouts e Documentos</span>
+            <span class="quick-count">{{ len .Pages }} arquivos</span>
+          </a>
+        {{ end }}
       {{ end }}
     </div>
   </div>
@@ -63,7 +78,13 @@
       <div class="campaign-adventures-section">
         <h3 class="section-title"><i class="ra ra-dungeon"></i> Aventuras / Arcos de Jogo</h3>
         <div class="cards-grid">
-          {{ range .Pages.ByWeight }}
+          {{ $adventurePages := slice }}
+          {{ range .Pages }}
+            {{ if ne (partial "helpers/content_role.html" .) "introduction" }}
+              {{ $adventurePages = $adventurePages | append . }}
+            {{ end }}
+          {{ end }}
+          {{ range (sort (sort $adventurePages "Title") "Weight") }}
             <div class="card adventure-card">
               <h4>
                 <a href="{{ .RelPermalink }}">

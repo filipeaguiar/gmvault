@@ -1,5 +1,6 @@
 ---
 title: "Cena 10 - San Citlán Gazetteer"
+weight: 100
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/thug/"
   - "/compendium/monsters/banshee/"
-  - "/compendium/monsters/ankheg/"
+  - "/compendium/monsters/thug/"
   - "/compendium/monsters/helmed-horror/"
+  - "/compendium/monsters/ankheg/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/banshee-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-039-map-43-san-citlan-and-borderlands-player/"

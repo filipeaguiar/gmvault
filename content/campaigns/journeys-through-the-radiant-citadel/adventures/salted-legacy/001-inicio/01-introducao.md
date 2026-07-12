@@ -1,5 +1,6 @@
 ---
 title: Cena 1 - Introdução
+weight: 10
 params:
   kind: scene
 draft: false
@@ -14,13 +15,13 @@ handouts: null
 translation:
   source_language: en
   target_language: pt-BR
-  engine: lmstudio
+  engine: openai-compatible
   status: machine_translated
-  model: google/gemma-4-e4b
+  model: deepseek-chat
 ---
 
 ### Descrição e Elementos Importantes
 
-*Uma Aventura para Personagens de Nível 1*
+*Uma Aventura para Personagens de 1º Nível*
 
-Uma série de distúrbios assola o Mercado Noturno Dyn Singh, um labirinto interminavelmente em mudança de barracas repletas de mercadorias incríveis, cheiros tentadores e luzes mágicas. Acusações voam enquanto os personagens se emaranham em uma rivalidade entre as respeitadas famílias de mercadores Tyenmo e Xungoon do vale de Siabsungkoh. Para evitar que o conflito das famílias escale, os personagens devem ganhar a confiança dos vendedores do mercado e obter sua ajuda para desmascarar quem está por trás de uma onda de vandalismo e roubos.
+Uma série de perturbações assola o Mercado Noturno Dyn Singh, um labirinto em constante mudança de barracas repletas de mercadorias incríveis, aromas tentadores e luzes mágicas. Acusações voam enquanto os personagens se envolvem em uma rivalidade entre as respeitadas famílias de comerciantes Tyenmo e Xungoon do vale de Siabsungkoh. Para evitar que o conflito das famílias se intensifique, os personagens devem conquistar a confiança dos vendedores do mercado e obter sua ajuda para desmascarar quem está por trás de uma onda de vandalismo e furtos.

@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - Bakunawa"
+weight: 80
 params:
   kind: "scene"
 draft: true

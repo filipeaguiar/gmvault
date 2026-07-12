@@ -1,7 +1,9 @@
 ---
 title: "Cena 3 - Starting the Adventure"
+weight: 30
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -18,8 +20,8 @@ compendium_refs:
   - "/compendium/monsters/dryad/"
   - "/compendium/monsters/bakunawa/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nimuel-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dryad-art/"
 ---

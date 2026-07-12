@@ -1,5 +1,6 @@
 ---
 title: "Cena 11 - Conclusion"
+weight: 110
 params:
   kind: "scene"
 draft: true
@@ -9,18 +10,18 @@ status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/brother-broumane/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/"
 locations:
 
 compendium_refs:
 
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/brother-broumane-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/"
 ---
 
 ### Descrição e Elementos Importantes

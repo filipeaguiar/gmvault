@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - A Town Called Hollow"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -13,9 +14,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/a-town-called-hollow/"
 compendium_refs:
-  - "/compendium/monsters/bandit/"
-  - "/compendium/monsters/cult-fanatic/"
   - "/compendium/monsters/peryton/"
+  - "/compendium/monsters/cult-fanatic/"
+  - "/compendium/monsters/bandit/"
   - "/compendium/monsters/ettin/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"

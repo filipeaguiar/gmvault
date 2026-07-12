@@ -1,5 +1,6 @@
 ---
 title: Salted Legacy
+weight: 20
 params:
   kind: adventure
 draft: false
@@ -32,9 +33,9 @@ handouts:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: lmstudio
+  engine: openai-compatible
   status: machine_translated
-  model: google/gemma-4-e4b
+  model: deepseek-chat
 ---
 
 

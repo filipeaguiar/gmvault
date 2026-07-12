@@ -1,5 +1,6 @@
 ---
 title: "Cena 3 - Cycle of Dread"
+weight: 30
 params:
   kind: "scene"
 draft: true

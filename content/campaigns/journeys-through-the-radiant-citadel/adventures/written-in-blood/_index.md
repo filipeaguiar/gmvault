@@ -1,5 +1,6 @@
 ---
 title: "Written in Blood"
+weight: 30
 params:
   kind: "adventure"
 draft: true

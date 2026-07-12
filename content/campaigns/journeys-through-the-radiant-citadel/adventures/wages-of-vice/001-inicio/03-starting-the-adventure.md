@@ -1,7 +1,9 @@
 ---
 title: "Cena 3 - Starting the Adventure"
+weight: 30
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"

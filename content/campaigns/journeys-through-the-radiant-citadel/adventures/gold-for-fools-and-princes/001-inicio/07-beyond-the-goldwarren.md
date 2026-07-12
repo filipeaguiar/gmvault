@@ -1,5 +1,6 @@
 ---
 title: "Cena 7 - Beyond the Goldwarren"
+weight: 70
 params:
   kind: "scene"
 draft: true
@@ -8,15 +9,15 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/beyond-the-goldwarren/"
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
 ---
 
 ### Descrição e Elementos Importantes

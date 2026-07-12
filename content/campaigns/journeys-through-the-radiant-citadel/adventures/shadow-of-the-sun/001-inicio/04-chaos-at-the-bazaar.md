@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Chaos at the Bazaar"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -13,16 +14,16 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/chaos-at-the-bazaar/"
 compendium_refs:
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/djinni/"
+  - "/compendium/monsters/noble/"
   - "/compendium/monsters/ashen-heir-mage/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
 ---
 
 ### Descrição e Elementos Importantes

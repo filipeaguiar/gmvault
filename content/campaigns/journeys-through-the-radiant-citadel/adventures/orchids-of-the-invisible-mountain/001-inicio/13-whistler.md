@@ -1,5 +1,6 @@
 ---
 title: "Cena 13 - Whistler"
+weight: 130
 params:
   kind: "scene"
 draft: true

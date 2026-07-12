@@ -47,11 +47,14 @@
 {{- $currentVisibility := printf "%s" (partial "helpers/visibility.html" .) -}}
 {{- $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") -}}
 {{- $visiblePages := slice -}}
-{{- range (sort .Pages.ByTitle "Weight") -}}
+{{- $orderedPages := sort .Pages.ByTitle "Weight" "asc" -}}
+{{- range $orderedPages -}}
   {{- $isSubItem := or .Params.parent_race .Params.parent_class -}}
   {{- $childVisibility := printf "%s" (partial "helpers/visibility.html" .) -}}
   {{- $childIsPlayerSafe := or (eq $childVisibility "players") (eq $childVisibility "public") -}}
-  {{- if and (not $isSubItem) (or (not $isPlayerPage) $childIsPlayerSafe) -}}
+  {{- $contentRole := or .Params.content_role .Params.params.content_role -}}
+  {{- $isIntroduction := eq $contentRole "introduction" -}}
+  {{- if and (not $isIntroduction) (not $isSubItem) (or (not $isPlayerPage) $childIsPlayerSafe) -}}
     {{- $visiblePages = $visiblePages | append . -}}
   {{- end -}}
 {{- end -}}

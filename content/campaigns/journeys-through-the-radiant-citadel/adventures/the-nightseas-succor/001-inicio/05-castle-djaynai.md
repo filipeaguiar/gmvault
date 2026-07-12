@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Castle Djaynai"
+weight: 50
 params:
   kind: "scene"
 draft: true

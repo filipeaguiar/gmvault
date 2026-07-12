@@ -1,5 +1,6 @@
 ---
 title: "Cena 11 - Akharin Sangar Gazetteer"
+weight: 110
 params:
   kind: "scene"
 draft: true
@@ -12,22 +13,22 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/adult-blue-dragon/"
   - "/compendium/monsters/marid/"
-  - "/compendium/monsters/shadow-demon/"
-  - "/compendium/monsters/adult-blue-dracolich/"
-  - "/compendium/monsters/solar/"
   - "/compendium/monsters/night-hag/"
-  - "/compendium/monsters/beholder/"
   - "/compendium/monsters/planetar/"
+  - "/compendium/monsters/shadow-demon/"
+  - "/compendium/monsters/solar/"
+  - "/compendium/monsters/adult-blue-dracolich/"
+  - "/compendium/monsters/beholder/"
+  - "/compendium/monsters/adult-blue-dragon/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dragon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dracolich-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/solar-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/beholder-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/planetar-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/solar-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dracolich-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/beholder-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dragon-art/"
 ---
 
 ### Descrição e Elementos Importantes

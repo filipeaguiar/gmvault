@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - The Night Revelers"
+weight: 60
 params:
   kind: "scene"
 draft: true

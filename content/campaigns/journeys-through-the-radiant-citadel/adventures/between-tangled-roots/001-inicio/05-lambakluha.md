@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Lambakluha"
+weight: 50
 params:
   kind: "scene"
 draft: true
@@ -13,18 +14,18 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/lambakluha/"
 compendium_refs:
+  - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/wraith/"
   - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/wraith/"
   - "/compendium/monsters/treant/"
   - "/compendium/monsters/shambling-mound/"
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/bakunawa/"
   - "/compendium/monsters/dragon-hunter/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"

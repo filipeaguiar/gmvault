@@ -1,5 +1,6 @@
 ---
 title: "Shadow of the Sun"
+weight: 110
 params:
   kind: "adventure"
 draft: true

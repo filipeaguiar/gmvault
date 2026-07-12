@@ -1,7 +1,9 @@
 ---
 title: "Cena 3 - Starting the Adventure"
+weight: 30
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -12,8 +14,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/priest/"
   - "/compendium/monsters/fire-snake/"
+  - "/compendium/monsters/priest/"
   - "/compendium/monsters/salamander/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"

@@ -1,5 +1,6 @@
 ---
 title: "Cena 5 - Life in the Citadel"
+weight: 50
 params:
   kind: "scene"
 draft: true

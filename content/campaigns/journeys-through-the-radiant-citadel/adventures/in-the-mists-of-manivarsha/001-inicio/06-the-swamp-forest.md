@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - The Swamp Forest"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -12,12 +13,12 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-swamp-forest/"
 compendium_refs:
-  - "/compendium/monsters/water-elemental/"
-  - "/compendium/monsters/swarm-of-quippers/"
   - "/compendium/monsters/mud-mephit/"
-  - "/compendium/monsters/weretiger/"
+  - "/compendium/monsters/swarm-of-quippers/"
   - "/compendium/monsters/spirit-naga/"
   - "/compendium/monsters/treant/"
+  - "/compendium/monsters/weretiger/"
+  - "/compendium/monsters/water-elemental/"
   - "/compendium/monsters/riverine/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"

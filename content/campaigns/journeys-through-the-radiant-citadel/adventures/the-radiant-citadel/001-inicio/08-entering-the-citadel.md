@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - Entering the Citadel"
+weight: 80
 params:
   kind: "scene"
 draft: true
@@ -12,9 +13,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/entering-the-citadel/"
 compendium_refs:
-  - "/compendium/monsters/guard/"
-  - "/compendium/monsters/mage/"
   - "/compendium/monsters/priest/"
+  - "/compendium/monsters/mage/"
+  - "/compendium/monsters/guard/"
 handouts:
 
 ---

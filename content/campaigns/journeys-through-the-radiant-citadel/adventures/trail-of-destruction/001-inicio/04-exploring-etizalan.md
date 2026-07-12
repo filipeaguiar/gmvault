@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Exploring Etizalan"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -14,8 +15,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/exploring-etizalan/"
 compendium_refs:
   - "/compendium/monsters/fire-snake/"
-  - "/compendium/monsters/salamander/"
   - "/compendium/monsters/fire-giant/"
+  - "/compendium/monsters/salamander/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"

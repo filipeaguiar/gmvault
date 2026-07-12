@@ -1,23 +1,25 @@
 ---
 title: "Cena 2 - Background"
+weight: 20
 params:
   kind: "scene"
+  content_role: "introduction"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
 locations:
 
 compendium_refs:
   - "/compendium/monsters/soul-shaker/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
 ---
 
 ### Descrição e Elementos Importantes

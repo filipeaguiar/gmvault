@@ -1,5 +1,6 @@
 ---
 title: "Cena 7 - The Tepui's Fate"
+weight: 70
 params:
   kind: "scene"
 draft: true

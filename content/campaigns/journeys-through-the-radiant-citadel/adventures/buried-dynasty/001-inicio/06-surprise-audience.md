@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - Surprise Audience"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -13,8 +14,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/surprise-audience/"
 compendium_refs:
   - "/compendium/monsters/mage/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/noble/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"

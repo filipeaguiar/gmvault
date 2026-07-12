@@ -1,5 +1,6 @@
 ---
 title: "Cena 9 - Yeonido Gazetteer"
+weight: 90
 params:
   kind: "scene"
 draft: true
@@ -12,11 +13,11 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/specter/"
   - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/doppelganger/"
-  - "/compendium/monsters/spy/"
+  - "/compendium/monsters/specter/"
   - "/compendium/monsters/young-red-dragon/"
+  - "/compendium/monsters/spy/"
+  - "/compendium/monsters/doppelganger/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
 ---

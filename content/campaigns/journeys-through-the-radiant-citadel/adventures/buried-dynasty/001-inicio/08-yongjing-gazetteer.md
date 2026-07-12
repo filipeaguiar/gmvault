@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - Yongjing Gazetteer"
+weight: 80
 params:
   kind: "scene"
 draft: true
@@ -12,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/ghost/"
   - "/compendium/monsters/mage/"
-  - "/compendium/monsters/kenku/"
   - "/compendium/monsters/reef-shark/"
+  - "/compendium/monsters/ghost/"
+  - "/compendium/monsters/kenku/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"

@@ -1,5 +1,6 @@
 ---
 title: "Cena 9 - Conclusion"
+weight: 90
 params:
   kind: "scene"
 draft: true
@@ -14,8 +15,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/tlexolotl/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
 ---
 
 ### Descrição e Elementos Importantes

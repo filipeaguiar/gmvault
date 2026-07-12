@@ -6,6 +6,7 @@
 <div class="session-layout">
   <div class="session-main content-body">
     {{ .Content }}
+    {{ partial "editorial_introduction.html" (dict "pages" (partial "helpers/scene_pages.html" .)) }}
   </div>
 
   {{/* Grade de Cenas Operacionais da Sessão; suporta estrutura simplificada e legada. */}}
@@ -16,7 +17,8 @@
   {{ range $scenes }}
     {{ $sceneVisibility := partial "helpers/visibility.html" . }}
     {{ $sceneIsPlayerSafe := or (eq $sceneVisibility "players") (eq $sceneVisibility "public") }}
-    {{ if or (not $isPlayerPage) $sceneIsPlayerSafe }}
+    {{ $isIntroduction := eq (partial "helpers/content_role.html" .) "introduction" }}
+    {{ if and (not $isIntroduction) (or (not $isPlayerPage) $sceneIsPlayerSafe) }}
       {{ $visibleScenes = $visibleScenes | append . }}
     {{ end }}
   {{ end }}
@@ -24,7 +26,7 @@
     <div class="session-scenes-section">
       <h3 class="section-title"><i class="ra ra-compass"></i> Cenas da Sessão</h3>
       <div class="cards-grid scenes-grid">
-        {{ range (sort $visibleScenes "Weight") }}
+        {{ range (sort (sort $visibleScenes "Title") "Weight") }}
           <div class="card scene-card">
             <h4>
               <a href="{{ .RelPermalink }}">

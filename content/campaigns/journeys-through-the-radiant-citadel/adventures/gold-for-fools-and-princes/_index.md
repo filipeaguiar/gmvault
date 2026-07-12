@@ -1,5 +1,6 @@
 ---
 title: "Gold for Fools and Princes"
+weight: 70
 params:
   kind: "adventure"
 draft: true

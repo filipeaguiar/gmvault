@@ -27,9 +27,12 @@ except ImportError:  # pragma: no cover - exercised in environments without PyYA
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_GLOSSARY = PROJECT_ROOT / "translation_glossary.json"
-DEFAULT_LMSTUDIO_URL = "http://127.0.0.1:1234/v1"
-DEFAULT_LMSTUDIO_MODEL = "google/gemma-4-e4b"
-DEFAULT_LMSTUDIO_TIMEOUT = 300.0
+DEFAULT_OPENAI_COMPATIBLE_URL = "http://127.0.0.1:1234/v1"
+DEFAULT_OPENAI_COMPATIBLE_MODEL = "google/gemma-4-e4b"
+DEFAULT_OPENAI_COMPATIBLE_TIMEOUT = 300.0
+DEFAULT_LMSTUDIO_URL = DEFAULT_OPENAI_COMPATIBLE_URL
+DEFAULT_LMSTUDIO_MODEL = DEFAULT_OPENAI_COMPATIBLE_MODEL
+DEFAULT_LMSTUDIO_TIMEOUT = DEFAULT_OPENAI_COMPATIBLE_TIMEOUT
 PROTECTED_PREFIX = "ZXQPROTECTED"
 GLOSSARY_PREFIX = "ZXQGLOSSARY"
 
@@ -115,6 +118,12 @@ class Protector:
 
         # Protect link destinations but leave labels translatable.
         text = re.sub(r"(\[[^\]]+\]\()([^\)]+)(\))", self._protect_link_destination, text)
+        text = re.sub(
+            r"((?:href|src)\s*=\s*[\"'])([^\"']+)([\"'])",
+            self._protect_html_attribute_destination,
+            text,
+            flags=re.IGNORECASE,
+        )
 
         # Protect bare URLs and internal Hugo paths.
         text = re.sub(r"https?://[^\s\)\]\}\>]+", self._store_match, text)
@@ -138,6 +147,13 @@ class Protector:
 
     def _protect_link_destination(self, match: re.Match[str]) -> str:
         return f"{match.group(1)}{self._store(match.group(2))}{match.group(3)}"
+
+    def _protect_html_attribute_destination(self, match: re.Match[str]) -> str:
+        return f"{match.group(1)}{self._store(match.group(2))}{match.group(3)}"
+
+
+def normalize_engine(engine: str) -> str:
+    return "openai-compatible" if engine == "lmstudio" else engine
 
 
 def parse_args() -> argparse.Namespace:
@@ -184,20 +200,27 @@ Observações:
         help="Número de arquivos traduzidos em paralelo. Padrão: 1. Use 2-4 para tentar acelerar.",
     )
     parser.add_argument("--glossary", default=str(DEFAULT_GLOSSARY), help="Caminho do glossário JSON.")
-    parser.add_argument("--engine", choices=["lmstudio", "argos"], default="lmstudio", help="Motor de tradução.")
-    parser.add_argument("--base-url", default=DEFAULT_LMSTUDIO_URL, help="URL base OpenAI-compatible.")
-    parser.add_argument("--model", default=DEFAULT_LMSTUDIO_MODEL, help="Modelo textual do LM Studio.")
+    parser.add_argument(
+        "--engine",
+        choices=["openai-compatible", "lmstudio", "argos"],
+        default="openai-compatible",
+        help="Motor de tradução. 'lmstudio' é alias retrocompatível de 'openai-compatible'.",
+    )
+    parser.add_argument("--base-url", default=DEFAULT_OPENAI_COMPATIBLE_URL, help="URL base do endpoint OpenAI-compatible.")
+    parser.add_argument("--model", default=DEFAULT_OPENAI_COMPATIBLE_MODEL, help="Modelo textual do endpoint OpenAI-compatible.")
     parser.add_argument(
         "--timeout",
         type=float,
-        default=DEFAULT_LMSTUDIO_TIMEOUT,
-        help=f"Timeout por requisição, em segundos. Padrão: {DEFAULT_LMSTUDIO_TIMEOUT:g}.",
+        default=DEFAULT_OPENAI_COMPATIBLE_TIMEOUT,
+        help=f"Timeout por requisição, em segundos. Padrão: {DEFAULT_OPENAI_COMPATIBLE_TIMEOUT:g}.",
     )
     parser.add_argument("--retries", type=int, default=3, help="Tentativas por bloco.")
     parser.add_argument("--force-retranslate", action="store_true", help="Permite retraduzir conteúdo já pt-BR.")
     parser.add_argument("--source", default="en", help="Código do idioma de origem Argos. Padrão: en.")
     parser.add_argument("--target", default="pb", help="Código do idioma de destino Argos. Padrão: pb (português do Brasil).")
     parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
+    parser.add_argument("--profile", help="Nome do perfil de tradução a ser carregado de translation_config.json.")
+    parser.add_argument("--config", default="translation_config.json", help="Caminho para o arquivo JSON de configuração.")
     args = parser.parse_args()
     if args.interactive:
         from interactive_cli import translation_menu
@@ -209,6 +232,45 @@ Observações:
             setattr(args, key, value)
     elif not args.scope:
         parser.error("--scope é obrigatório, exceto com --interactive/--menu")
+
+    # 1. Carrega o arquivo .env se existir na raiz do projeto
+    load_env(PROJECT_ROOT / ".env")
+
+    # 2. Carrega as configurações do JSON
+    config_path = PROJECT_ROOT / args.config
+    config_data = load_translation_config(config_path)
+
+    # 3. Inicializa atributos adicionais padrão
+    args.strategy = "split_blocks"
+    args.api_key = None
+
+    # 4. Determina o perfil a carregar
+    profile_name = args.profile or config_data.get("active_profile")
+    if profile_name and "profiles" in config_data:
+        profiles = config_data["profiles"]
+        if profile_name in profiles:
+            profile = profiles[profile_name]
+            if "engine" in profile:
+                args.engine = profile["engine"]
+            if "model" in profile:
+                args.model = profile["model"]
+            if "base_url" in profile:
+                args.base_url = profile["base_url"]
+            if "timeout" in profile:
+                args.timeout = float(profile["timeout"])
+            if "strategy" in profile:
+                args.strategy = profile["strategy"]
+            
+            env_var_name = profile.get("api_key_env_var")
+            if env_var_name:
+                import os
+                args.api_key = os.getenv(env_var_name)
+
+    if not args.api_key:
+        import os
+        args.api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
+
+    args.engine = normalize_engine(args.engine)
     return args
 
 
@@ -279,6 +341,36 @@ def parse_markdown(path: Path) -> MarkdownDocument | None:
     if not isinstance(data, dict):
         return None
     return MarkdownDocument(path=path, front_matter_raw=front_matter_raw, front_matter=data, body=body.lstrip("\n"))
+
+def load_env(path: Path) -> None:
+    """Carrega variáveis de ambiente de um arquivo .env para o os.environ."""
+    if not path.exists():
+        return
+    import os
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "=" in line:
+            key, val = line.split("=", 1)
+            key = key.strip()
+            val = val.strip()
+            if (val.startswith('"') and val.endswith('"')) or (val.startswith("'") and val.endswith("'")):
+                val = val[1:-1]
+            os.environ[key] = val
+
+
+def load_translation_config(path: Path) -> dict[str, Any]:
+    """Carrega o arquivo de configuração translation_config.json."""
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict):
+            raise TranslationError("O arquivo de configuração de tradução deve ser um objeto JSON.")
+        return data
+    except json.JSONDecodeError as exc:
+        raise TranslationError(f"Erro ao decodificar translation_config.json: {exc}") from exc
 
 
 def load_glossary(path: Path) -> dict[str, str]:
@@ -403,12 +495,13 @@ def build_translation_prompt(config: dict[str, Any]) -> str:
     ])
 
 
-def get_lmstudio_translation(
+def get_openai_compatible_translation(
     base_url: str,
     model: str,
     system_prompt: str,
     *,
-    timeout: float = DEFAULT_LMSTUDIO_TIMEOUT,
+    api_key: str | None = None,
+    timeout: float = DEFAULT_OPENAI_COMPATIBLE_TIMEOUT,
     retries: int = 3,
 ) -> Callable[[str], str]:
     """Create a translator backed by an OpenAI-compatible chat endpoint."""
@@ -425,10 +518,13 @@ def get_lmstudio_translation(
                     {"role": "user", "content": text},
                 ],
                 "temperature": 0.1,
-                "max_tokens": 4096,
+                "max_tokens": 8192,
                 "stream": False,
             }).encode("utf-8")
-            request = Request(endpoint, data=payload, headers={"Content-Type": "application/json"}, method="POST")
+            headers = {"Content-Type": "application/json"}
+            if api_key:
+                headers["Authorization"] = f"Bearer {api_key}"
+            request = Request(endpoint, data=payload, headers=headers, method="POST")
             try:
                 with urlopen(request, timeout=timeout) as response:
                     result = json.loads(response.read().decode("utf-8"))
@@ -447,9 +543,29 @@ def get_lmstudio_translation(
                 last_error = str(exc)
                 if attempt + 1 < attempts:
                     time.sleep(min(0.25 * (2**attempt), 1.0))
-        raise TranslationError(f"LM Studio falhou após {attempts} tentativa(s): {last_error}")
+        raise TranslationError(f"Endpoint OpenAI-compatible falhou após {attempts} tentativa(s): {last_error}")
 
     return translate
+
+
+def get_lmstudio_translation(
+    base_url: str,
+    model: str,
+    system_prompt: str,
+    *,
+    api_key: str | None = None,
+    timeout: float = DEFAULT_OPENAI_COMPATIBLE_TIMEOUT,
+    retries: int = 3,
+) -> Callable[[str], str]:
+    """Backward-compatible alias for the OpenAI-compatible translator."""
+    return get_openai_compatible_translation(
+        base_url,
+        model,
+        system_prompt,
+        api_key=api_key,
+        timeout=timeout,
+        retries=retries,
+    )
 
 
 def tokenize_glossary(text: str, glossary: dict[str, str]) -> tuple[str, dict[str, str]]:
@@ -534,6 +650,7 @@ def translate_text(
     translate: Callable[[str], str],
     glossary: dict[str, str],
     *,
+    strategy: str = "split_blocks",
     on_block: Callable[[int, int, str, float], None] | None = None,
 ) -> str:
     if not text.strip():
@@ -541,6 +658,14 @@ def translate_text(
 
     protector = Protector()
     protected = protector.protect(text)
+
+    if strategy == "full_document":
+        block_started = time.monotonic()
+        translated = translate(protected)
+        translated = protector.restore(translated)
+        if on_block:
+            on_block(1, 1, translated, time.monotonic() - block_started)
+        return translated
 
     translated_blocks: list[str] = []
     # Required translations are linguistic preferences carried by the model
@@ -642,6 +767,8 @@ def process_document(
     engine: str = "argos",
     model: str | None = None,
     force_retranslate: bool = False,
+    strategy: str = "split_blocks",
+    translate_fm: Callable[[str], str] | None = None,
     progress: Callable[[int, int, float], None] | None = None,
 ) -> ProcessResult:
     if document.front_matter.get("draft") is not True and not include_non_draft:
@@ -653,6 +780,16 @@ def process_document(
     if translate is None:
         return ProcessResult(document.path, changed=True)
 
+    # Limite de segurança: fallback para split_blocks se o texto for excessivamente longo
+    active_strategy = strategy
+    if active_strategy == "full_document" and len(document.body) > 15000:
+        print(
+            f"[warning] {document.path} é muito longo ({len(document.body)} caracteres). "
+            f"Fazendo fallback automático para a estratégia 'split_blocks'.",
+            flush=True,
+        )
+        active_strategy = "split_blocks"
+
     checkpoint_path = document.path.with_suffix(document.path.suffix + ".translation.partial")
 
     def checkpoint(current: int, total: int, partial_body: str, elapsed: float) -> None:
@@ -663,10 +800,12 @@ def process_document(
         if progress:
             progress(current, total, elapsed)
 
-    translated_body = translate_text(document.body, translate, glossary, on_block=checkpoint)
+    translated_body = translate_text(
+        document.body, translate, glossary, strategy=active_strategy, on_block=checkpoint
+    )
     front_matter = document.front_matter
-    if translate_frontmatter:
-        front_matter = translate_front_matter(front_matter, translate, glossary)
+    if translate_frontmatter and translate_fm is not None:
+        front_matter = translate_front_matter(front_matter, translate_fm, glossary)
     front_matter = add_translation_metadata(front_matter, source, target, engine=engine, model=model)
 
     rendered = render_markdown(front_matter, translated_body)
@@ -791,7 +930,7 @@ def main() -> int:
         print(f"Modo: {'apply' if args.apply else 'dry-run'}")
         print(f"Workers: {jobs}")
         print(f"Motor: {args.engine}")
-        if args.engine == "lmstudio":
+        if args.engine == "openai-compatible":
             print(f"Modelo: {args.model}")
         print(f"Arquivos Markdown encontrados: {len(discovered_files)}")
         if image_only_handouts:
@@ -800,7 +939,7 @@ def main() -> int:
 
         thread_local = threading.local()
 
-        def translate_for_document(document: MarkdownDocument) -> Callable[[str], str] | None:
+        def translate_for_document(document: MarkdownDocument, for_frontmatter: bool = False) -> Callable[[str], str] | None:
             if not args.apply:
                 return None
             if args.engine == "argos":
@@ -809,19 +948,24 @@ def main() -> int:
                 return thread_local.argos_translate
 
             document_text = json.dumps(document.front_matter, ensure_ascii=False) + "\n" + document.body
-            selected_config = select_glossary_config(glossary_config, document_text)
+            if args.strategy == "full_document" and not for_frontmatter:
+                # Otimização para Prompt Caching: envia o glossário estático fixo sem filtragem dinâmica
+                selected_config = glossary_config
+            else:
+                selected_config = select_glossary_config(glossary_config, document_text)
             system_prompt = build_translation_prompt(selected_config)
-            if not hasattr(thread_local, "lmstudio_translators"):
-                thread_local.lmstudio_translators = {}
-            if system_prompt not in thread_local.lmstudio_translators:
-                thread_local.lmstudio_translators[system_prompt] = get_lmstudio_translation(
+            if not hasattr(thread_local, "openai_compatible_translators"):
+                thread_local.openai_compatible_translators = {}
+            if system_prompt not in thread_local.openai_compatible_translators:
+                thread_local.openai_compatible_translators[system_prompt] = get_openai_compatible_translation(
                     args.base_url,
                     args.model,
                     system_prompt,
+                    api_key=args.api_key,
                     timeout=args.timeout,
                     retries=args.retries,
                 )
-            return thread_local.lmstudio_translators[system_prompt]
+            return thread_local.openai_compatible_translators[system_prompt]
 
         def process_path(path: Path) -> ProcessResult:
             document = parse_markdown(path)
@@ -829,7 +973,7 @@ def main() -> int:
                 return ProcessResult(path, changed=False, skipped_reason="sem front matter YAML válido")
             return process_document(
                 document,
-                translate_for_document(document),
+                translate_for_document(document, for_frontmatter=False),
                 glossary,
                 apply=args.apply,
                 include_non_draft=args.include_non_draft,
@@ -837,8 +981,10 @@ def main() -> int:
                 source=args.source,
                 target=args.target,
                 engine=args.engine,
-                model=args.model if args.engine == "lmstudio" else None,
+                model=args.model if args.engine == "openai-compatible" else None,
                 force_retranslate=args.force_retranslate,
+                strategy=args.strategy,
+                translate_fm=translate_for_document(document, for_frontmatter=True) if args.translate_frontmatter else None,
                 progress=lambda current, total, elapsed: print(
                     f"[block] {path} {current}/{total} ({elapsed:.1f}s)", flush=True
                 ),

@@ -1,5 +1,6 @@
 ---
 title: "Cena 6 - Crystal Caves"
+weight: 60
 params:
   kind: "scene"
 draft: true
@@ -13,21 +14,21 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/crystal-caves/"
 compendium_refs:
-  - "/compendium/monsters/night-hag/"
-  - "/compendium/monsters/aboleth/"
   - "/compendium/monsters/aboleth/"
   - "/compendium/monsters/scout/"
+  - "/compendium/monsters/aboleth/"
+  - "/compendium/monsters/night-hag/"
   - "/compendium/monsters/whistler/"
   - "/compendium/magic-items/white-ghost-orchid-seed/"
-  - "/compendium/magic-items/white-ghost-orchid-seed/"
   - "/compendium/magic-items/black-ghost-orchid-seed/"
+  - "/compendium/magic-items/white-ghost-orchid-seed/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-140-map-142-crystal-caves-player/"
 ---
 

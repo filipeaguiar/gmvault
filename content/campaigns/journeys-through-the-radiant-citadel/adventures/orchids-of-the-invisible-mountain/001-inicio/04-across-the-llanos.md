@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - Across the Llanos"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -13,18 +14,18 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/across-the-llanos/"
 compendium_refs:
-  - "/compendium/monsters/giant-badger/"
   - "/compendium/monsters/hawk/"
-  - "/compendium/monsters/griffon/"
   - "/compendium/monsters/thri-kreen/"
+  - "/compendium/monsters/griffon/"
+  - "/compendium/monsters/giant-badger/"
   - "/compendium/monsters/rooster/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/"
 ---
 
 ### Descrição e Elementos Importantes

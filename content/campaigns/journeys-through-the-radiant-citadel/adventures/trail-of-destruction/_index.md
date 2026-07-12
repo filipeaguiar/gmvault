@@ -1,5 +1,6 @@
 ---
 title: "Trail of Destruction"
+weight: 80
 params:
   kind: "adventure"
 draft: true

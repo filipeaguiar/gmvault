@@ -1,5 +1,6 @@
 ---
 title: "Cena 12 - Pari"
+weight: 120
 params:
   kind: "scene"
 draft: true

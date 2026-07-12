@@ -1,5 +1,6 @@
 ---
 title: "Cena 9 - Silver Tapir Monastery"
+weight: 90
 params:
   kind: "scene"
 draft: true

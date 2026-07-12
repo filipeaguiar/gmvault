@@ -1,5 +1,6 @@
 ---
 title: "Cena 4 - The Old City"
+weight: 40
 params:
   kind: "scene"
 draft: true
@@ -12,11 +13,11 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-old-city/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/revenant/"
   - "/compendium/monsters/roper/"
-  - "/compendium/monsters/otyugh/"
   - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/otyugh/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/otyugh-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-127-map-131-yun-dynasty-ruins-player/"

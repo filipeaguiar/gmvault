@@ -1,5 +1,6 @@
 ---
 title: "Cena 8 - Back across the Llanos"
+weight: 80
 params:
   kind: "scene"
 draft: true

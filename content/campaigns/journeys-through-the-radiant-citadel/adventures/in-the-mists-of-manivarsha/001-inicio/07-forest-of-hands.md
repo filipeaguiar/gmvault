@@ -1,5 +1,6 @@
 ---
 title: "Cena 7 - Forest of Hands"
+weight: 70
 params:
   kind: "scene"
 draft: true
@@ -13,21 +14,21 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/forest-of-hands/"
 compendium_refs:
-  - "/compendium/monsters/hydra/"
-  - "/compendium/monsters/ultroloth/"
+  - "/compendium/monsters/black-pudding/"
   - "/compendium/monsters/will-o-wisp/"
-  - "/compendium/monsters/fomorian/"
+  - "/compendium/monsters/ultroloth/"
   - "/compendium/monsters/spy/"
   - "/compendium/monsters/water-elemental/"
-  - "/compendium/monsters/black-pudding/"
+  - "/compendium/monsters/hydra/"
+  - "/compendium/monsters/fomorian/"
   - "/compendium/monsters/riverine/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/black-pudding-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/hydra-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/fomorian-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/black-pudding-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-085-map-91-forest-heart-player/"
 ---
 

@@ -1,63 +1,62 @@
 ---
 title: Cena 2 - Background
+weight: 20
 params:
   kind: scene
+  content_role: introduction
 draft: false
 titulo_pt_br: Cena 2 - Antecedentes
 visibility: gm
 status: published
 summary: Cena operacional para conduzir na sessão.
 npcs:
-- /campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/
-- /campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/
-- /campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/
-- /campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/
 locations: null
 compendium_refs: null
 handouts:
-- /campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/
 - /campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/
 - /campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/
 translation:
   source_language: en
   target_language: pt-BR
-  engine: lmstudio
+  engine: openai-compatible
   status: machine_translated
-  model: google/gemma-4-e4b
+  model: deepseek-chat
 ---
 
 ### Descrição e Elementos Importantes
 
-As famílias Xungoon e Tyenmo sempre tiveram um relacionamento complicado. Embora seus ofícios e relacionamentos com o Mercado Noturno Dyn Singh difiram, sua teimosia e intensa lealdade familiar são as mesmas. Ambas acreditam ser o paradigma do que um mercador de mercado noturno deve ser, ao mesmo tempo em que acreditam que a outra família as tem sabotado com ciúmes por anos. Apesar disso, os atuais chefes das duas famílias, Lamai Tyenmo e Kusa Xungoon, juraram não continuar o que agora é uma rivalidade multigeneracional. Esses chefes de família até começaram a buscar o conselho um do outro e plantar as sementes da amizade. Mas nas últimas semanas, furtos e vandalismo visando os negócios de ambas as famílias reacenderam velhas suspeitas, e a disputa ameaça reacender.
-
+As famílias Xungoon e Tyenmo sempre tiveram um relacionamento complicado. Embora seus ofícios e relações com o Mercado Noturno Dyn Singh sejam diferentes, sua teimosia e intensa lealdade familiar são as mesmas. Ambas acreditam ser o paradigma do que um mercador de mercado noturno deve ser, ao mesmo tempo que acreditam que a outra família tem as sabotado por inveja durante anos. Apesar disso, os atuais chefes das duas famílias, Lamai Tyenmo e Kusa Xungoon, juraram não dar continuidade ao que agora é uma rivalidade multigeracional. Esses chefes de família até começaram a buscar conselhos um do outro e a plantar as sementes da amizade. Mas, nas últimas semanas, furtos e vandalismo visando os negócios de ambas as famílias reacenderam velhas suspeitas, e a rivalidade ameaça reacender.
 
 ### Pronúncias
 
-A tabela de Pronúncias Siabsungkoh detalha como pronunciar nomes importantes nesta aventura.
+A tabela de Pronúncias de Siabsungkoh indica como pronunciar os nomes-chave nesta aventura.
 
 **Tabela: Pronúncias de Siabsungkoh**
 
-| Dyn Singh | Dyn Singh |
+| Dyn Singh | DIN sing |
 | Gammon Xungoon | GAH-mun zun-GOON |
-| Kasem Aroon | Kasem Aroon |
+| Kasem Aroon | ka-seem ah-ROON |
 | Kusa Xungoon | kus-AH zun-GOON |
-| Lamai Tyenmo | Lamai Tyenmo |
-| Madam Kulp | MAH-dum Madam Kulp |
-| Siabsungkoh | Siabsungkoh |
+| Lamai Tyenmo | lam-EYE tea-EN-mo |
+| Madam Kulp | MAH-dum kuhlp |
+| Siabsungkoh | SAB-sung-koh |
 | Tut-krogh | tut-KRO-gh |
-| Vi Aroon | Vi Aroon |
+| Vi Aroon | vee ah-ROON |
 
+### Contextualizando a Aventura
 
-### Configurando a Aventura
+O Mercado Noturno Dyn Singh poderia ser o movimentado distrito comercial de qualquer cidade. Use as seguintes sugestões para ajudar a contextualizar o mercado e toda Siabsungkoh em um mundo mais amplo:
 
-O Mercado Noturno Dyn Singh poderia ser o distrito comercial movimentado de qualquer Cidade. Use as seguintes sugestões para ajudar a contextualizar o mercado e todo Siabsungkoh em um mundo mais amplo:
+### Visitando o Mercado Noturno
 
-
-### Visitar o Mercado Noturno
-
-Antes de começar a aventura, use os seguintes ganchos ou trabalhe com os jogadores para determinar por que o grupo veio ao Mercado Noturno Dyn Singh:
+Antes de iniciar a aventura, use os seguintes ganchos ou trabalhe com os jogadores para determinar por que o grupo veio ao Mercado Noturno Dyn Singh:

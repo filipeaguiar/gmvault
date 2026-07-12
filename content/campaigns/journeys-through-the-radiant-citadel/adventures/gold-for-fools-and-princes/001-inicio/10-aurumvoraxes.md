@@ -1,5 +1,6 @@
 ---
 title: "Cena 10 - Aurumvoraxes"
+weight: 100
 params:
   kind: "scene"
 draft: true
