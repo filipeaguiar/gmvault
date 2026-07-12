@@ -305,7 +305,7 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
             
         elif entry_type == "table":
             caption = entry.get("caption")
-            headers = entry.get("colHeaders", [])
+            headers = entry.get("colHeaders")
             rows = entry.get("rows", [])
             
             content_lines = []
@@ -317,6 +317,12 @@ def parse_entry(entry, campaign_slug, target_slug, ctx):
                 clean_headers = [clean_5etools_tags(h, campaign_slug, target_slug, ctx) for h in headers]
                 content_lines.append("| " + " | ".join(clean_headers) + " |")
                 content_lines.append("| " + " | ".join(["---"] * len(clean_headers)) + " |")
+            elif rows and len(rows[0]) > 0:
+                # Se a tabela do JSON original do 5e.tools não possui cabeçalhos explicitados,
+                # geramos cabeçalhos vazios e separadores de hífens para que o Hugo compile como tabela HTML.
+                num_cols = len(rows[0])
+                content_lines.append("| " + " | ".join([""] * num_cols) + " |")
+                content_lines.append("| " + " | ".join(["---"] * num_cols) + " |")
                 
             for row in rows:
                 clean_row = []

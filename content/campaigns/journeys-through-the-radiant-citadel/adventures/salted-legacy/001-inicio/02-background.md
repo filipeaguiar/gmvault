@@ -43,6 +43,8 @@ A tabela de Pronúncias de Siabsungkoh indica como pronunciar os nomes-chave nes
 
 **Tabela: Pronúncias de Siabsungkoh**
 
+| Nome/Termo | Pronúncia |
+| :--- | :--- |
 | Dyn Singh | DIN sing |
 | Gammon Xungoon | GAH-mun zun-GOON |
 | Kasem Aroon | ka-seem ah-ROON |
