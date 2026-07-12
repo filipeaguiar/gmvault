@@ -13,22 +13,22 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/marid/"
-  - "/compendium/monsters/night-hag/"
-  - "/compendium/monsters/planetar/"
-  - "/compendium/monsters/shadow-demon/"
-  - "/compendium/monsters/solar/"
   - "/compendium/monsters/adult-blue-dracolich/"
-  - "/compendium/monsters/beholder/"
+  - "/compendium/monsters/solar/"
+  - "/compendium/monsters/planetar/"
+  - "/compendium/monsters/night-hag/"
   - "/compendium/monsters/adult-blue-dragon/"
+  - "/compendium/monsters/shadow-demon/"
+  - "/compendium/monsters/beholder/"
+  - "/compendium/monsters/marid/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/planetar-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/solar-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dracolich-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/beholder-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/solar-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/planetar-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dragon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/beholder-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -140,6 +140,8 @@ Consider the plots on the Akharin Sangar Adventures table when planning adventur
 
 **Tabela: Akharin Sangar Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | An adult blue dragon plagues the Burning Dunes with a magical sandstorm. Desert dwellers beseech the characters for aid. |
 | 2 | A marid named Nedootash agrees to outfit the Silent Roar with valuable supplies if the characters complete three personal favors for the genie. |
 | 3 | Before their execution, a coven of night hags prophesy that an angel-killing blade is hidden in an unholy subterranean temple. The characters are charged with finding the blade. |

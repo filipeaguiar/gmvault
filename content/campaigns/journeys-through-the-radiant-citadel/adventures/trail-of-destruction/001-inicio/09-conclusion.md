@@ -15,8 +15,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/tlexolotl/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
 ---
 
 ### Descrição e Elementos Importantes

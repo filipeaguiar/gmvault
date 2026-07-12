@@ -14,9 +14,9 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/giant-scorpion/"
   - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/air-elemental/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
@@ -103,6 +103,8 @@ Consider the plots on the Sensa Empire Adventures table when planning adventures
 
 **Tabela: Sensa Empire Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | Increasingly dissatisfied with the investigation into the death of her husband and son, Empress Inaya seeks adventurers to find new leads. |
 | 2 | A deadly illness, introduced by bandits to weaken trade, ravages camels throughout the empire. Empress Inaya hires the party to learn who paid the bandits and whether the ailment can be cured. |
 | 3 | Caravans traveling between Niba and Anisa have recently come under attack by air elementals. A consortium of merchants hires the party to escort a caravan and deal with the threat. |

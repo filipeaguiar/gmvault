@@ -23,7 +23,7 @@ translation:
   model: deepseek-chat
 ---
 
-Brincalhões e travessos, os wynlings defendem os picos das montanhas e vales alpinos contra intrusos. Um wynling raramente enfrenta uma ameaça diretamente, preferindo dissuadir invasores importunando-os com furtos e travessuras. Muitos viajantes retornam de terras protegidas por wynlings com histórias de equipamentos que desaparecem e olhos curiosos espreitando das sombras.
+Brincalhões e travessos, os wynlings defendem picos de montanhas e vales alpinos contra intrusos. Um wynling raramente enfrenta uma ameaça diretamente, preferindo dissuadir invasores importunando-os com furtos e travessuras. Muitos viajantes retornam de terras protegidas por wynlings com histórias de equipamentos que desaparecem e olhos curiosos observando das sombras.
 
 Os wynlings normalmente vivem nas montanhas que protegem, mas frequentemente se aventuram em assentamentos próximos, atraídos por música animada e comidas doces. Longe de seus lares abertos e selvagens, os wynlings causam todo tipo de acidente misterioso.
 

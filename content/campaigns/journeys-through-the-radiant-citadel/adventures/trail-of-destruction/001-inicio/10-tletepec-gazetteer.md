@@ -16,8 +16,8 @@ compendium_refs:
   - "/compendium/monsters/fire-giant/"
   - "/compendium/monsters/tlexolotl/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-077-map-82-tletepec-player/"
 ---
 
@@ -98,6 +98,8 @@ Consider the plots on the Tletepec Adventures table when planning adventures in 
 
 **Tabela: Tletepec Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | An aggravated fire giant prevents a caravan bearing offerings from leaving a village. The locals hire the characters to placate the giant. |
 | 2 | Someone from Etizalan turns to stone after making an offering to a nearby volcano. Ameyali hires the characters to find out why. |
 | 3 | A volcano freezes mid-eruption. The Watchers ask the characters to escort them to the volcano so they can interpret this unprecedented omen. |

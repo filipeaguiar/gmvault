@@ -34,6 +34,8 @@ The Shankhabhumi Pronunciations table shows how to pronounce key names in this a
 
 **Tabela: Shankhabhumi Pronunciations**
 
+|  |  |
+| --- | --- |
 | Adirohit | add-ear-OH-hit |
 | Amanisha | uh-MA-nee-SHA |
 | Ashwadhatu | ASH-woh-DHA-tu |

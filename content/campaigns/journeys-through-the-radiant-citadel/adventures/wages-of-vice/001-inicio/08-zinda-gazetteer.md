@@ -13,17 +13,17 @@ npcs:
 locations:
 
 compendium_refs:
+  - "/compendium/monsters/giant-crocodile/"
   - "/compendium/monsters/archmage/"
-  - "/compendium/monsters/assassin/"
   - "/compendium/monsters/zombie/"
+  - "/compendium/monsters/assassin/"
   - "/compendium/monsters/banshee/"
   - "/compendium/monsters/sea-hag/"
-  - "/compendium/monsters/giant-crocodile/"
   - "/compendium/monsters/diva/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-049-map-52-zinda-player/"
 ---
@@ -115,6 +115,8 @@ Consider the plots on the Zinda Adventures table when planning adventures in the
 
 **Tabela: Zinda Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | Madame Nasana Lar hosted an exquisite banquet for her rival Elucidarium divas, then the guests transformed into zombies. Diva Lar needs help clearing her home and her name—supposedly having had nothing to do with her guests' fates. |
 | 2 | Myx Janisa Davi, an archmage of a school called the Arcane Coterie, has chosen their apprentice: a youngster in the city's laborer district. The apprentice has disappeared, and Janisa seeks assistance locating them. |
 | 3 | The notorious giant caiman called Tikoloshe (giant crocodile) has wrecked many ships bound for Zinda. The Kings of Coin hire the characters to slay the deadly—and perhaps possessed—beast. |

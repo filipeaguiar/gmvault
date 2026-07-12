@@ -10,15 +10,15 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -34,6 +34,8 @@ The Atagua Pronunciations table shows how to pronounce key names in this adventu
 
 **Tabela: Atagua Pronunciations**
 
+|  |  |
+| --- | --- |
 | Alfonz Rubinaz-Zumdi | AL-fonz ru-BIN-ahz ZUM-dee |
 | Atagua | ah-TAH-gwah |
 | Camino Rojo | kah-MEE-no RO-ho |
@@ -65,6 +67,8 @@ Strange dreams are common in Atagua, the result of psychic energies from the Fey
 
 **Tabela: Dreams in Atagua**
 
+|  |  |
+| --- | --- |
 | 1–4 | No dream |
 | 5 | You are swimming up a sky-high waterfall. |
 | 6 | Orchids speak to you in the voices of fallen friends. |

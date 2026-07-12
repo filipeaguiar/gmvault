@@ -15,10 +15,10 @@ locations:
 compendium_refs:
   - "/compendium/monsters/mud-mephit/"
   - "/compendium/monsters/swarm-of-quippers/"
+  - "/compendium/monsters/water-elemental/"
   - "/compendium/monsters/spirit-naga/"
   - "/compendium/monsters/treant/"
   - "/compendium/monsters/weretiger/"
-  - "/compendium/monsters/water-elemental/"
   - "/compendium/monsters/riverine/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
@@ -34,6 +34,8 @@ Dukha pilots his skiff to the mouth of the Tinjhorna River, a journey that takes
 
 **Tabela: River Journey Encounters**
 
+|  |  |
+| --- | --- |
 | 1–2 | It rains heavily. For the next hour, the boat and its surroundings are heavily obscured. Roll again on this table, ignoring another result of 1 or 2. |
 | 3 | The current increases along a narrow stretch of the river. Dukha urgently asks the characters to help row the boat upstream. All of the characters must succeed on a CD 10 Strength (Athletics) check. The boat loses a half-hour of progress for every failed check or character who doesn't assist. |
 | 4 | A mangrove-shaped treant blocks the path forward. The treant moves only if the party listens to its hour-long ode to the swamp, or if a character succeeds on a CD 18 Charisma (Persuasion) check to convince it to let the skiff pass. |

@@ -14,10 +14,10 @@ locations:
 
 compendium_refs:
   - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/giant-crocodile/"
   - "/compendium/monsters/green-hag/"
+  - "/compendium/monsters/shambling-mound/"
   - "/compendium/monsters/dire-wolf/"
+  - "/compendium/monsters/giant-crocodile/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
 ---
@@ -94,6 +94,8 @@ Consider the plots on the Godsbreath Adventures table when planning adventures i
 
 **Tabela: Godsbreath Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | A pack of giant coyotes (dire wolves) ventures far from the Rattle, threatening harvests in the Ribbon. The pack's leader is a particularly vicious, red-furred specimen. The characters are hired to end the creatures' threat. |
 | 2 | The water subsides from Cradlelace Lake, revealing a hidden house haunted by a long-limbed phantom who keeps her family of spirits trapped. A mysterious message reaches the characters, entreating them to free the captive souls. |
 | 3 | A ghost visits the characters and claims her tragic life and death were purposefully erased from the Awakening Song by the people of Promise. She can't rest until her story is restored. |

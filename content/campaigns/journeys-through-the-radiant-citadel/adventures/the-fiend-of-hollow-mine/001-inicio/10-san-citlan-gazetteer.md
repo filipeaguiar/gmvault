@@ -14,9 +14,9 @@ locations:
 
 compendium_refs:
   - "/compendium/monsters/banshee/"
-  - "/compendium/monsters/thug/"
   - "/compendium/monsters/helmed-horror/"
   - "/compendium/monsters/ankheg/"
+  - "/compendium/monsters/thug/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/banshee-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-039-map-43-san-citlan-and-borderlands-player/"
@@ -104,6 +104,8 @@ Consider the plots on the San Citlán Adventures table when planning adventures 
 
 **Tabela: San Citlán Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | A revolutionary asks the characters to rid a mine connected to Los Gavilanes of ankhegs so it can be used to smuggle information out of the city. |
 | 2 | Intrigued by Marfil Ironworks' signature magical bodyguards (helmed horrors), a wizard named Montesco hires the characters to capture one. |
 | 3 | A spectral olvidado named Don Edelmiro hires the characters for protection after a band of criminal thugs raid his estate. He's convinced his descendants are behind the attack. |

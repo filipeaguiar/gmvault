@@ -13,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/aurumvoraxes/"
 compendium_refs:
-  - "/compendium/monsters/aurumvorax/"
   - "/compendium/monsters/aurumvorax-den-leader/"
+  - "/compendium/monsters/aurumvorax/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/aurumvorax-den-leader-art/"
 ---

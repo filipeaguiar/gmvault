@@ -14,8 +14,8 @@ locations:
 
 compendium_refs:
   - "/compendium/monsters/spirit-naga/"
-  - "/compendium/monsters/marid/"
   - "/compendium/monsters/cultist/"
+  - "/compendium/monsters/marid/"
   - "/compendium/monsters/riverine/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
@@ -104,6 +104,8 @@ Consider the plots on the Shankhabhumi Adventures table when planning adventures
 
 **Tabela: Shankhabhumi Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | A den of cultists high in the Adhameru Mountains worships a spirit naga and seeks to poison the riverine Joltara. |
 | 2 | A Sagorpuri merchant has imprisoned a marid within a shankha and intends to use its powers to help create a new city—potentially creating conflict with the riverines of the existing city-states. |
 | 3 | A hermit asks for help when a newly born riverine (detailed at the **Área end of this adventure**) appears in a stream near her home. The hermit fears the aggressive riverine of a nearby river will see the young spirit as a rival and harm it. |

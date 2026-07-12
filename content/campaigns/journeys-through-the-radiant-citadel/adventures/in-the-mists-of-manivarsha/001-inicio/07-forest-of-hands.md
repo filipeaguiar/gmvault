@@ -9,26 +9,26 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/jijibisha-manivarshi/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/forest-of-hands/"
 compendium_refs:
-  - "/compendium/monsters/black-pudding/"
-  - "/compendium/monsters/will-o-wisp/"
-  - "/compendium/monsters/ultroloth/"
-  - "/compendium/monsters/spy/"
   - "/compendium/monsters/water-elemental/"
+  - "/compendium/monsters/spy/"
   - "/compendium/monsters/hydra/"
+  - "/compendium/monsters/will-o-wisp/"
   - "/compendium/monsters/fomorian/"
+  - "/compendium/monsters/ultroloth/"
+  - "/compendium/monsters/black-pudding/"
   - "/compendium/monsters/riverine/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/black-pudding-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/hydra-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/fomorian-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/black-pudding-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-085-map-91-forest-heart-player/"
 ---
 
@@ -51,6 +51,8 @@ The journey through the Forest of Hands lasts 3 hours. Roll for or choose an enc
 
 **Tabela: Forest of Hands Encounters**
 
+|  |  |
+| --- | --- |
 | 1 | Three clots of animate angul tree sap (use the black pudding stat block) attack from underwater. |
 | 2 | Spectral boats appear through the trees. Dukha or a character who succeeds on a CD 14 Intelligence (History) check knows these phantoms are travelers who were lost when Manivarsha was ruined. The spirits are unnerving but harmless. |
 | 3 | Fog rises and lightly obscures the forest. Through it, two will-o-wisps try to lead the characters into the path of a hostile hydra. |

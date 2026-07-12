@@ -36,6 +36,8 @@ In Citlanés, the language spoken alongside Common in the region around San Citl
 
 **Tabela: San Citlán Pronunciations**
 
+|  |  |
+| --- | --- |
 | Doña Estela | doe-nya ehs-TAY-la |
 | Doña Rosa | doe-nya ROH-sa |
 | Evaristo | ay-vah-REES-toh |

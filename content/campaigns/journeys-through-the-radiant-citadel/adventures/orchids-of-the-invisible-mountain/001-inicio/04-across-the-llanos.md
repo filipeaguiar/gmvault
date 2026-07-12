@@ -9,23 +9,23 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/across-the-llanos/"
 compendium_refs:
-  - "/compendium/monsters/hawk/"
-  - "/compendium/monsters/thri-kreen/"
-  - "/compendium/monsters/griffon/"
   - "/compendium/monsters/giant-badger/"
+  - "/compendium/monsters/hawk/"
+  - "/compendium/monsters/griffon/"
+  - "/compendium/monsters/thri-kreen/"
   - "/compendium/monsters/rooster/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -48,6 +48,8 @@ The Grassroads is a network of cleverly constructed wood-and-reed bridges standi
 
 **Tabela: Lean-To Items**
 
+|  |  |
+| --- | --- |
 | 1–4 | Nothing |
 | 5 | [[1d4]] cones of panela |
 | 6 | A guitar with one broken string |

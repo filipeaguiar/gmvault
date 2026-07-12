@@ -9,18 +9,18 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/gate-of-illumination/"
 compendium_refs:
-  - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/salamander/"
   - "/compendium/monsters/scout/"
+  - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/tlexolotl/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/salamander-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-075-map-81-gate-of-illumination-player/"

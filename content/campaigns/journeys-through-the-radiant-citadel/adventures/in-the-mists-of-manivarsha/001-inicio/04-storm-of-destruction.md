@@ -13,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/storm-of-destruction/"
 compendium_refs:
-  - "/compendium/monsters/priest/"
-  - "/compendium/monsters/water-weird/"
   - "/compendium/monsters/water-elemental/"
   - "/compendium/monsters/swarm-of-poisonous-snakes/"
+  - "/compendium/monsters/water-weird/"
+  - "/compendium/monsters/priest/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
 ---
@@ -38,6 +38,8 @@ The wave has caused utter devastation across the plaza, and hundreds of people r
 
 **Tabela: Wave Chaos**
 
+|  |  |
+| --- | --- |
 | 1 | A stall selling mango drinks has collapsed. A character must succeed on a CD 14 Strength (Athletics) check to free the frantic, trapped vendors. |
 | 2 | An overly helpful local insistently tries to get the frailest-looking character to flee with them. |
 | 3 | An elder has fallen down. They're bruised and separated from their family. A character must succeed on a CD 16 Wisdom (Perception) check to find the lost family amid the chaos. |

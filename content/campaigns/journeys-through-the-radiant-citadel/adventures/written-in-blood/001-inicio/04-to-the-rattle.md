@@ -9,19 +9,19 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/to-the-rattle/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/dire-wolf/"
+  - "/compendium/monsters/commoner/"
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dire-wolf-art/"
 ---

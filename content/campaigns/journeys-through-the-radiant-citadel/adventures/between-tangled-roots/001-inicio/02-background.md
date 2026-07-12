@@ -34,6 +34,8 @@ The Dayawlongon Pronunciations table details how to pronounce key names in this 
 
 **Tabela: Dayawlongon Pronunciations**
 
+|  |  |
+| --- | --- |
 | Bakunawa | ba-coo-NA-wah |
 | Bathalang Puno | bu-THA-lung POO-no |
 | Binukot | BEE-nu-kut |

@@ -13,12 +13,12 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/night-of-the-remembered/"
 compendium_refs:
-  - "/compendium/monsters/cult-fanatic/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/cult-fanatic/"
   - "/compendium/monsters/tlacatecolo/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/cult-fanatic-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-037-map-42-abandoned-metalworks-player/"
 ---
@@ -126,6 +126,8 @@ Complications occur randomly during the chase. Each participant rolls on the Par
 
 **Tabela: Parade Chase Complications**
 
+|  |  |
+| --- | --- |
 | 1 | A 20-foot-tall, papier-mâché skeleton puppet walks across the street. Make a CD 10 Dexterity saving throw to avoid being stepped on. On a failed check, you take 5 ([[2d4]]) bludgeoning damage and fall prone. |
 | 2 | Fireworks go off nearby. Make a CD 10 Constitution saving throw. On a failed save, you are blinded by smoke until the end of your turn. While blinded, your speed is halved. |
 | 3 | Centaur acrobats are performing in your path. Make a CD 15 Dexterity (Acrobatics) check. On a success, they lift you from the waist and speed you forward 30 feet. On a failed check, you fall prone. |

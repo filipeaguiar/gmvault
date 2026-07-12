@@ -1,24 +1,18 @@
 ---
-title: Welcome to the Radiant Citadel
+title: "Welcome to the Radiant Citadel"
 weight: 10
 params:
-  kind: adventure
-  content_role: introduction
-draft: false
-titulo_pt_br: Bem-vindo à Cidadela Radiante
-visibility: gm
-status: published
-summary: Aventura independente importada do capítulo Bem-vindo à Cidadela Radiante.
-npcs: null
+  kind: "adventure"
+  content_role: "introduction"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+summary: "Aventura independente importada do capítulo Welcome to the Radiant Citadel."
+npcs:
+
 locations:
-- /campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/
-handouts: null
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/"
+handouts:
+
 ---
-
-

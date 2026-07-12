@@ -9,8 +9,8 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/back-across-the-llanos/"
 compendium_refs:
@@ -18,8 +18,8 @@ compendium_refs:
   - "/compendium/monsters/thri-kreen/"
   - "/compendium/magic-items/hammock-of-worlds/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
 ---
 

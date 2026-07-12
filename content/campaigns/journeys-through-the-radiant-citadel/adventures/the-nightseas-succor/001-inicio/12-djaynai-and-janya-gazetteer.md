@@ -13,14 +13,14 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/assassin/"
-  - "/compendium/monsters/sahuagin-baron/"
-  - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/ghost/"
   - "/compendium/monsters/lizardfolk/"
-  - "/compendium/monsters/sea-hag/"
+  - "/compendium/monsters/ghost/"
   - "/compendium/monsters/adult-bronze-dragon/"
   - "/compendium/monsters/skeleton/"
+  - "/compendium/monsters/lizard/"
+  - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/sea-hag/"
+  - "/compendium/monsters/sahuagin-baron/"
   - "/compendium/monsters/nightsea-chil-liren/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
@@ -106,6 +106,8 @@ Consider the plots on the Djaynai and Janya Adventures table when planning adven
 
 **Tabela: Djaynai and Janya Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | The People's Stewards hope to raise the regent Atiba-Pa's stormy mood by having the characters recover his famed magical cutlass, stolen by seafaring assassins. |
 | 2 | A Lightsea Lancer seeks the characters' aid in stopping twin sahuagin barons and their band from raiding kelp farms between Djaynai and Janya. |
 | 3 | Night Revelers invite the characters to join their seaside festivities, but they unknowingly disturb a coven of sea hags. |

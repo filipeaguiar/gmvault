@@ -13,14 +13,14 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/tayyib-empire/"
 compendium_refs:
-  - "/compendium/monsters/nothic/"
   - "/compendium/monsters/wyvern/"
-  - "/compendium/monsters/efreeti/"
   - "/compendium/monsters/jackalwere/"
+  - "/compendium/monsters/efreeti/"
+  - "/compendium/monsters/nothic/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nothic-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wyvern-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/efreeti-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nothic-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -76,6 +76,8 @@ Consider the plots on the Tayyib Empire Adventures table when planning forays th
 
 **Tabela: Tayyib Empire Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | An alliance of nobles and pre-empire royalty pays the adventurers to seek their families' lost treasures within Churapoor's nothic-infested ruins. |
 | 2 | Jackalweres are spotted outside a town before an Iwahhid holiday. The local emir asks the characters to drive them off, but the town priest believes the jackalweres merely want to join the celebrations. |
 | 3 | Emir Nur, Master Architect of Bijabad, accidentally unearths a trapped efreeti during a building project. Nur hires the characters to convince it to leave quietly. |

@@ -16,9 +16,9 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/exploring-yeonido/"
 compendium_refs:
   - "/compendium/monsters/saber-toothed-tiger/"
+  - "/compendium/monsters/noble/"
+  - "/compendium/monsters/noble/"
   - "/compendium/monsters/guard/"
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/guard/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"

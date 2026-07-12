@@ -26,7 +26,7 @@ translation:
 
 ### Descrição e Elementos Importantes
 
-Os vendedores do Mercado Noturno Dyn Singh sabem muito sobre o funcionamento interno do mercado, seus colegas lojistas e as fofocas diárias. Embora normalmente sejam educados, compartilham poucas informações com estranhos. Se os personagens ganharem renome vencendo os Jogos do Mercado, os seguintes vendedores compartilham os fatos para valores de renome iguais (ou menores) ao renome do personagem conversando com eles. Consulte a seção "**Área Ganhando Renome**" para detalhes adicionais.
+Os vendedores do Mercado Noturno Dyn Singh sabem muito sobre o funcionamento interno do mercado, seus colegas lojistas e as fofocas diárias. Embora sejam tipicamente educados, eles compartilham poucas informações com estranhos. Se os personagens ganharem renome vencendo os Jogos do Mercado, os seguintes vendedores compartilham os fatos para valores de renome iguais (e menores) ao renome do personagem conversando com eles. Consulte a seção "**Ganhando Renome**" para detalhes adicionais.
 
 ### Vi Aroon
 
@@ -34,17 +34,21 @@ O irmão gêmeo de Kasem e coproprietário do Irmãos Picantes, Vi Aroon, ama o 
 
 **Tabela: O Que Vi Aroon Sabe**
 
-| 0 | Vi conta que ele e Kasem brigaram mais cedo, mas não revela o motivo. |
+|  |  |
+| --- | --- |
+| 0 | Vi compartilha que ele e Kasem brigaram mais cedo, mas não revela o motivo. |
 | 1 | Vi explica que vai se casar e se mudar para uma terra distante onde sua noiva mora. |
 | 2 | Vi confidencia que Kasem está irritado com o iminente casamento de Vi. Kasem disse a Vi que ele está cometendo um erro ao deixar o negócio da família. |
-| 3 | Depois que Vi contou a Kasem que ia se casar, Kasem demorou vários dias a mais para fazer a viagem de suprimentos regular. Ele voltou com caixas extras que mantém na tenda particular dos Irmãos Picantes. |
+| 3 | Depois que Vi contou a Kasem que ia se casar, Kasem demorou vários dias a mais para fazer a corrida de suprimentos regular. Ele voltou com caixas extras que mantém na tenda particular dos Irmãos Picantes. |
 
 ### Madam Kulp
 
-Madam Kulp é uma alfaiate gnomo que trabalha com a seda das lagartas tut-krogh. Ela pode compartilhar as fofocas na tabela O Que Madam Kulp Sabe.
+Madam Kulp é uma alfaiate gnomo que trabalha com a seda de lagartas tut-krogh. Ela pode compartilhar as fofocas na tabela O Que Madam Kulp Sabe.
 
 **Tabela: O Que Madam Kulp Sabe**
 
+|  |  |
+| --- | --- |
 | 0 | Madam Kulp faz um comentário direto sobre o comportamento ou a aparência dos personagens. |
 | 1 | Madam Kulp diz que suas lagartas tut-krogh ficam nervosas sempre que ela as passeia perto das barracas Tyenmo ou Xungoon. |
 | 2 | Madam Kulp acredita que Lamai e Kusa nunca se machucariam intencionalmente, devido ao dano que a rivalidade de suas famílias causou a seus pais. |
@@ -54,13 +58,15 @@ Madam Kulp é uma alfaiate gnomo que trabalha com a seda das lagartas tut-krogh.
 
 ### Sid Squid
 
-Sid Squid é dono do Alho-poró Confiável, uma barraca perto de qualquer loja que tenha contratado os personagens. Eles são o chefe de uma das famílias mais novas do mercado — um bando de aventureiros que se tornaram empresários. Sid pode compartilhar as fofocas na tabela O Que Sid Squid Sabe.
+Sid Squid é dono do Alho-poró Confiável, uma barraca perto de qualquer loja que contratou os personagens. Eles são o chefe de uma das famílias mais novas do mercado — um bando de aventureiros que se tornaram empresários. Sid pode compartilhar as fofocas na tabela O Que Sid Squid Sabe.
 
 **Tabela: O Que Sid Squid Sabe**
 
+|  |  |
+| --- | --- |
 | 0 | Sid muda de assunto para contar uma história de seus dias de aventureiro. |
-| 1 | Sid explica que alguns vendedores gostam de ver as famílias Xungoon e Tyenmo brigarem. Se os dois se entenderem, isso pode prejudicar outros vendedores que têm acordos em andamento com ambas as famílias. |
-| 2 | Sid ouviu Kasem falando sobre comprar um negócio de família para administrar, o que é contra a tradição do mercado. |
+| 1 | Sid explica que alguns vendedores gostam de ver as famílias Xungoon e Tyenmo brigarem. Se os dois se entenderem, isso pode prejudicar outros vendedores que têm acordos contínuos com ambas as famílias. |
+| 2 | Sid ouviu Kasem falando sobre comprar um negócio familiar para administrar, o que é contra a tradição do mercado. |
 | 3 | Sid viu Kasem esconder algo laranja debaixo da barraca da família Xungoon pouco antes de uma sabotagem ocorrer. |
 
 ### Outros Vendedores
@@ -69,7 +75,9 @@ Muitos vendedores do Mercado Noturno Dyn Singh têm conhecimento geral sobre as 
 
 **Tabela: O Que Outros Vendedores Sabem**
 
-| 0 | O vendedor muda de assunto, direcionando a atenção dos personagens para seus produtos. |
-| 1 | O vendedor nota que as perturbações nos negócios Tyenmo e Xungoon causam bastante alvoroço. |
+|  |  |
+| --- | --- |
+| 0 | O vendedor muda de assunto, direcionando a atenção dos personagens para suas mercadorias. |
+| 1 | O vendedor observa que as perturbações nos negócios Tyenmo e Xungoon causam bastante alvoroço. |
 | 2 | O vendedor diz que algumas pessoas acreditam que as lojas Tyenmo e Xungoon são assombradas. Transeuntes afirmam ter tropeçado quando não havia nada em seu caminho. |
 | 3 | O vendedor descreve ter visto um macaco azul perto da tenda Tyenmo ou Xungoon. |

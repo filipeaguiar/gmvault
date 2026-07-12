@@ -13,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/trench-of-love-lost/"
 compendium_refs:
-  - "/compendium/monsters/giant-shark/"
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/aboleth/"
   - "/compendium/monsters/flameskull/"
+  - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/giant-shark/"
+  - "/compendium/monsters/aboleth/"
   - "/compendium/monsters/haint/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/"

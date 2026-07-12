@@ -9,16 +9,16 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/fallen-farmhouse/"
 compendium_refs:
   - "/compendium/monsters/crawling-claw/"
   - "/compendium/monsters/bulette/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -50,6 +50,8 @@ Nearly all the houses have been sloppily painted with a large and muddy red *X*.
 
 **Tabela: Farmhouse Conditions**
 
+|  |  |
+| --- | --- |
 | 1 | The windows are shattered, and the shards of glass are spattered with dried blood. |
 | 2 | Clothing and belongings are strewn everywhere, all covered in crimson mud. |
 | 3 | Human bones, freshly gnawed by animals, litter the floor of every room. |

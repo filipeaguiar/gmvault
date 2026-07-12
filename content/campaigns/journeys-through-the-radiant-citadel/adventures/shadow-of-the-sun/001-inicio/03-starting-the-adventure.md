@@ -15,16 +15,16 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
+  - "/compendium/monsters/deva/"
   - "/compendium/monsters/archmage/"
   - "/compendium/monsters/spy/"
   - "/compendium/monsters/guard/"
   - "/compendium/monsters/purple-worm/"
-  - "/compendium/monsters/deva/"
   - "/compendium/monsters/pari/"
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/pari-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/pari-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/purple-worm-art/"

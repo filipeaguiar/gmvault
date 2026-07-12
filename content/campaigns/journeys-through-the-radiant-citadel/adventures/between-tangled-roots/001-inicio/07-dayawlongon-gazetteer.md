@@ -13,8 +13,8 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/storm-giant/"
   - "/compendium/monsters/dryad/"
+  - "/compendium/monsters/storm-giant/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dryad-art/"
 ---
@@ -86,6 +86,8 @@ Consider the plots on the Dayawlongon Adventures table when planning adventures 
 
 **Tabela: Dayawlongon Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | A merchant the characters know is being pursued by a vengeful ninuno (dryad) for her mother's broken oath. The merchant is desperate for the characters to intervene and placate the spirit. |
 | 2 | A binukot named Panfilio offers to handsomely reward anyone who can impress them with a riveting tale of love and adventure from each of the archipelago's largest islands. |
 | 3 | A storm giant has claimed a skybridge as her domain and refuses to let anyone cross, trapping the residents of an island to which the bridge connects. |

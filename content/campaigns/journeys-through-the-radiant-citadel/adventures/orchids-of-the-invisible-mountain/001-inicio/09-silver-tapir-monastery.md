@@ -13,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/silver-tapir-monastery/"
 compendium_refs:
-  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/priest/"
+  - "/compendium/monsters/archmage/"
   - "/compendium/magic-items/white-ghost-orchid-seed/"
   - "/compendium/magic-items/hammock-of-worlds/"
 handouts:

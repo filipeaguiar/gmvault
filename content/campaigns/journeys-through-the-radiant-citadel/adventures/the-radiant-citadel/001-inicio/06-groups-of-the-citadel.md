@@ -9,16 +9,16 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/sholeh/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/sholeh/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/groups-of-the-citadel/"
 compendium_refs:
-  - "/compendium/monsters/ancient-brass-dragon/"
   - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/ancient-brass-dragon/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/sholeh-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/sholeh-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
 ---
 
@@ -56,6 +56,8 @@ Each Dawn Incarnate that inhabits the Preserve of the Ancestors is related to a 
 
 **Tabela: Dawn Incarnates**
 
+|  |  |
+| --- | --- |
 | Akharin Sangar | Turquoise Lion |
 | Atagua | Yellow Quartz Kapok Tree |
 | Dayawlongon | Serpentine Banyan Tree |

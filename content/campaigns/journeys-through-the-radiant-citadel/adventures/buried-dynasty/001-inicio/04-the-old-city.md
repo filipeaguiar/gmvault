@@ -13,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-old-city/"
 compendium_refs:
-  - "/compendium/monsters/revenant/"
   - "/compendium/monsters/roper/"
+  - "/compendium/monsters/revenant/"
   - "/compendium/monsters/wraith/"
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/otyugh/"

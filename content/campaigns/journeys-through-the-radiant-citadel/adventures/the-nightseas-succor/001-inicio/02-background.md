@@ -11,16 +11,16 @@ status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
 locations:
 
 compendium_refs:
 
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -36,6 +36,8 @@ The Djaynai and Janya Pronunciations table shows how to pronounce names that app
 
 **Tabela: Djaynai and Janya Pronunciations**
 
+|  |  |
+| --- | --- |
 | Anadoua | ahn-AH-dwuh |
 | Atiba-Pa | uh-TEE-buh-puh |
 | Broumane | broo-MAH-nay |

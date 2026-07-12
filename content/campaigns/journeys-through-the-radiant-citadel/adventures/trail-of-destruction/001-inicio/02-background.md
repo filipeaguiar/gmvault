@@ -10,19 +10,19 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -42,6 +42,8 @@ In Tletlahtolli, the language spoken alongside Common in Tletepec, when tl appea
 
 **Tabela: Tletepec Pronunciations**
 
+|  |  |
+| --- | --- |
 | Ameyali | ah-meh-YAL-ee |
 | Etizalan | ay-tee-zah-LAHN |
 | Itzimico | eet-see-MEE-kaw |

@@ -662,6 +662,11 @@ def translate_text(
     if not text.strip():
         return text
 
+    # Se o texto não contiver letras (apenas números, pontuações, símbolos),
+    # não é necessária tradução. Retorna o texto original.
+    if not re.search(r"[a-zA-Z]", text):
+        return text
+
     protector = Protector()
     protected = protector.protect(text)
 
@@ -788,7 +793,7 @@ def process_document(
 
     # Limite de segurança: fallback para split_blocks se o texto for excessivamente longo
     active_strategy = strategy
-    if active_strategy == "full_document" and len(document.body) > 15000:
+    if active_strategy == "full_document" and len(document.body) > 25000:
         print(
             f"[warning] {document.path} é muito longo ({len(document.body)} caracteres). "
             f"Fazendo fallback automático para a estratégia 'split_blocks'.",
@@ -1017,25 +1022,45 @@ def main() -> int:
                     thread_local.argos_translate = get_argos_translation(args.source, args.target)
                 return thread_local.argos_translate
 
-            document_text = json.dumps(document.front_matter, ensure_ascii=False) + "\n" + document.body
             if args.strategy == "full_document" and not for_frontmatter:
                 # Otimização para Prompt Caching: envia o glossário estático fixo sem filtragem dinâmica
                 selected_config = glossary_config
-            else:
-                selected_config = select_glossary_config(glossary_config, document_text)
-            system_prompt = build_translation_prompt(selected_config)
-            if not hasattr(thread_local, "openai_compatible_translators"):
-                thread_local.openai_compatible_translators = {}
-            if system_prompt not in thread_local.openai_compatible_translators:
-                thread_local.openai_compatible_translators[system_prompt] = get_openai_compatible_translation(
-                    args.base_url,
-                    args.model,
-                    system_prompt,
-                    api_key=args.api_key,
-                    timeout=args.timeout,
-                    retries=args.retries,
-                )
-            return thread_local.openai_compatible_translators[system_prompt]
+                system_prompt = build_translation_prompt(selected_config)
+                if not hasattr(thread_local, "openai_compatible_translators"):
+                    thread_local.openai_compatible_translators = {}
+                if system_prompt not in thread_local.openai_compatible_translators:
+                    thread_local.openai_compatible_translators[system_prompt] = get_openai_compatible_translation(
+                        args.base_url,
+                        args.model,
+                        system_prompt,
+                        api_key=args.api_key,
+                        timeout=args.timeout,
+                        retries=args.retries,
+                    )
+                return thread_local.openai_compatible_translators[system_prompt]
+
+            # Para split_blocks ou front matter, geramos um tradutor dinâmico por bloco de texto.
+            # Isso evita alucinações de LLM ao associar prompts de sistema gigantescos a inputs muito curtos.
+            def dynamic_translate(text: str) -> str:
+                if not text.strip():
+                    return text
+                selected_config = select_glossary_config(glossary_config, text)
+                system_prompt = build_translation_prompt(selected_config)
+                if not hasattr(thread_local, "openai_compatible_translators"):
+                    thread_local.openai_compatible_translators = {}
+                if system_prompt not in thread_local.openai_compatible_translators:
+                    thread_local.openai_compatible_translators[system_prompt] = get_openai_compatible_translation(
+                        args.base_url,
+                        args.model,
+                        system_prompt,
+                        api_key=args.api_key,
+                        timeout=args.timeout,
+                        retries=args.retries,
+                    )
+                translator = thread_local.openai_compatible_translators[system_prompt]
+                return translator(text)
+
+            return dynamic_translate
 
         def process_path(path: Path) -> ProcessResult:
             document = parse_markdown(path)

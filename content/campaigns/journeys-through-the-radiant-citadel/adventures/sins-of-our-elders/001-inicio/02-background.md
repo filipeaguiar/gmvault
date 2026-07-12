@@ -38,6 +38,8 @@ The Yeonido Pronunciations table shows how to pronounce names that appear in thi
 
 **Tabela: Yeonido Pronunciations**
 
+|  |  |
+| --- | --- |
 | Bi Chin-Hae | bee chin-hay |
 | Da Ju-Won | dah joo-wan |
 | Dae Won-Ha | day wan-ha |

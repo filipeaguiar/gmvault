@@ -16,8 +16,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
   - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/mage/"
   - "/compendium/monsters/dryad/"
+  - "/compendium/monsters/mage/"
   - "/compendium/monsters/bakunawa/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"

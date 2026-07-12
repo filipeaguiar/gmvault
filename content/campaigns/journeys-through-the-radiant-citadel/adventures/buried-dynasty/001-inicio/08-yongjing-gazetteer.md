@@ -13,14 +13,14 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/reef-shark/"
-  - "/compendium/monsters/ghost/"
   - "/compendium/monsters/kenku/"
+  - "/compendium/monsters/reef-shark/"
+  - "/compendium/monsters/mage/"
+  - "/compendium/monsters/ghost/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kenku-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-133-map-133-yongjing-player/"
 ---
 
@@ -111,6 +111,8 @@ Consider the plots on the Yongjing Adventures table when planning adventures in 
 
 **Tabela: Yongjing Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | The characters are hired to investigate strange behavior by a notoriously aloof minister who has shut himself in his offices and communicates only through his door. No one yet knows the minister has been replaced by an opportunistic kenku. |
 | 2 | After saving the emperor from a reef shark placed in his bath, the emperor's primary spouse, Lord Meng Shan, hires the characters to disprove accusations that he planted the creature himself. |
 | 3 | Agents in the Ministry of Arcana hire the characters to kill four treasonous mages, not realizing two of the traitors are the emperor's own children. |

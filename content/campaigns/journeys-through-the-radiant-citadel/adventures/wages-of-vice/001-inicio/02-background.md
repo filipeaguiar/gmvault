@@ -10,19 +10,19 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -40,6 +40,8 @@ The Zinda Pronunciations table shows how to pronounce names and words in this ad
 
 **Tabela: Zinda Pronunciations**
 
+|  |  |
+| --- | --- |
 | Amos Nir | AH-mohs neer |
 | Azra Nir | AH-zrah neer |
 | Jacopo Ain | yak-KOH-poh ayn |

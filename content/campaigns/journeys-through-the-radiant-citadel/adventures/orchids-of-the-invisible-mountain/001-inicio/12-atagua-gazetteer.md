@@ -13,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/thri-kreen/"
-  - "/compendium/monsters/behir/"
   - "/compendium/monsters/bulette/"
+  - "/compendium/monsters/shambling-mound/"
+  - "/compendium/monsters/behir/"
+  - "/compendium/monsters/thri-kreen/"
   - "/compendium/monsters/whistler/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
@@ -104,6 +104,8 @@ Consider the plots on the Atagua Adventures table when planning adventures there
 
 **Tabela: Atagua Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | The characters stumble across the plans of a expansionist cacao farmer, who has hired mercenaries with trained behirs to tear down a section of the Grassroads near his farm. |
 | 2 | Several Green Doctors require an escort for a mission to tame shambling mounds rampaging across the Llanos. |
 | 3 | A planar traveler is found dead in the Llanos, with a magical device that supposedly can trap a whistler. The characters must determine how the device works. |

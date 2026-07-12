@@ -14,8 +14,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-way-up/"
 compendium_refs:
   - "/compendium/monsters/fire-snake/"
-  - "/compendium/monsters/priest/"
   - "/compendium/monsters/salamander/"
+  - "/compendium/monsters/priest/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/fire-snake-art/"
@@ -32,6 +32,8 @@ Volcanic activity increases as the awakening of the tlexolotl Izel affects the r
 
 **Tabela: Volcanic Awakening**
 
+|  |  |
+| --- | --- |
 | 1 | A fumarole opens alongside the road, venting noxious gases 25 feet in all directions. Each creature in the area must succeed on a CD 14 Constitution saving throw or take 10 ([[3d6]]) poison damage. |
 | 2 | Falling ash lightly obscures the characters' surroundings for the next hour. |
 | 3 | The ground suddenly collapses, creating a 30-foot-deep fissure that's 120 feet long and 20 feet wide. The gap severs the road ahead of the characters. |

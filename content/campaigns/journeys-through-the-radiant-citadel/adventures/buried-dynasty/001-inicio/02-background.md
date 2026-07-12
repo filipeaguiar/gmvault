@@ -10,16 +10,16 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
 ---
 
@@ -36,6 +36,8 @@ The Yongjing Pronunciations table shows how to pronounce names that appear in th
 
 **Tabela: Yongjing Pronunciations**
 
+|  |  |
+| --- | --- |
 | Deng Bo Huan | dung boh hwan |
 | Lio Gong | lyo gong |
 | Lu Zhong Yin | loo jong yin |

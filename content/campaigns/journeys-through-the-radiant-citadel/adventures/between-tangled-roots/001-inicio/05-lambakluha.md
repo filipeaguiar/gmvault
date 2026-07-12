@@ -15,18 +15,18 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/lambakluha/"
 compendium_refs:
   - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/wraith/"
   - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/treant/"
+  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/bakunawa/"
+  - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/treant/"
   - "/compendium/monsters/dragon-hunter/"
+  - "/compendium/monsters/bakunawa/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-097-map-102-roots-of-bathalang-puno-player/"
@@ -78,6 +78,8 @@ Threats lurk amid the wilds. For every 3 miles the party travels, roll on the We
 
 **Tabela: Weeping Paths Encounters**
 
+|  |  |
+| --- | --- |
 | 1–3 | Miasma (see below) |
 | 4–5 | A wraith appears and attacks the party. It looks like one of the characters, albeit covered in terrible burns. |
 | 6–7 | Three shambling mounds emerge from a heap of rotting vegetation near a ruined statue and attack the party. |

@@ -9,21 +9,21 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/chaos-at-the-bazaar/"
 compendium_refs:
-  - "/compendium/monsters/djinni/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/djinni/"
   - "/compendium/monsters/ashen-heir-mage/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -90,6 +90,8 @@ Complications occur randomly during the chase for both the Ashen Heirs and the c
 
 **Tabela: Bazaar Chase Complications**
 
+|  |  |
+| --- | --- |
 | 1 | A taught line of pennants stretches across your path. You must succeed on a CD 10 Dexterity saving throw, or you fall [[2d4×5]] feet, taking [[1d6]] bludgeoning damage per 10 feet fallen and landing prone. If you are using a carpet of flying, any character on the same conveyance must also make this saving throw. |
 | 2 | Choose to fly around or through a gap between bazaar stalls. If you fly around, the area counts as 10 feet of Difficult Terrain. If you fly through the gap, you must succeed on a CD 16 Dexterity saving throw, or you break through the stall and take [[4d6]] bludgeoning damage. If you are using a carpet of flying, any other character on the same conveyance must also make this saving throw. |
 | 3 | An overturned crate releases chickens and a cloud of feathers into the air. Make a CD 16 Wisdom (Survival) check to try to stay on course through the distractions. On a failed check, the obstacle counts as 10 feet of Difficult Terrain. |

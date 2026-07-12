@@ -13,14 +13,14 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/traveling-the-skybridge/"
 compendium_refs:
-  - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/cloud-giant/"
   - "/compendium/monsters/priest/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/dragon-hunter/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -89,6 +89,8 @@ The journey across the Flames Everlasting Skybridge takes 36 hours, with the inc
 
 **Tabela: Skybridge Sights**
 
+|  |  |
+| --- | --- |
 | 1 | Bonesinger (**Área see below**) |
 | 2 | A small storm reveals itself to be a violent group of three air elementals. |
 | 3 | A dead wyvern lies on the skybridge, its body scorched by lightning. |

@@ -14,8 +14,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-twilight-rose/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/veteran/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"

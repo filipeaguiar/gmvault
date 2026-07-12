@@ -13,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/specter/"
-  - "/compendium/monsters/young-red-dragon/"
   - "/compendium/monsters/spy/"
+  - "/compendium/monsters/ghost/"
+  - "/compendium/monsters/young-red-dragon/"
+  - "/compendium/monsters/specter/"
   - "/compendium/monsters/doppelganger/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
@@ -97,6 +97,8 @@ Consider the plots on the Yeonido Adventures table when planning adventures in Y
 
 **Tabela: Yeonido Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | A magistrate in Yeonido has information the characters need, but she will share it only with characters who have passed the Test of Ascension. |
 | 2 | Mercenaries capture a group of spirit arbiters trying to deal with a murderous gwishin (ghost). These mercenaries were hired by enemies of Yeonido seeking to undo the city from within. |
 | 3 | Cunning spies are breaking into the homes of magistrates across the city, looking for proof that the Pearl of Mireu is hidden under the royal palace. |

@@ -13,13 +13,13 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/umizu/"
 compendium_refs:
-  - "/compendium/monsters/oni/"
   - "/compendium/monsters/dragon-turtle/"
-  - "/compendium/monsters/shadow-demon/"
+  - "/compendium/monsters/oni/"
   - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/shadow-demon/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/oni-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-turtle-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/oni-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -71,6 +71,8 @@ Consider the plots on the Umizu Adventures table when planning explorations in U
 
 **Tabela: Umizu Adventures**
 
+|  |  |
+| --- | --- |
 | 1 | A scholar in the Radiant Citadel believes the Shrine of Storms holds secrets to understanding the Keening Gloom, the cyclone threatening the Radiant Citadel. She sends the characters to gather information as pirates (bandits) prepare to plunder the temple. |
 | 2 | Daimyo Hogishi recruits the characters to help defend the city from theft during the Demon Festival, but this year, the priests' taunts provoke shadow demons intent on taking lives, not property. |
 | 3 | Rurapo and the fishers of Umizu blame each other for a dying reef, leaving the characters to uncover the real culprits: a trio of oni. |

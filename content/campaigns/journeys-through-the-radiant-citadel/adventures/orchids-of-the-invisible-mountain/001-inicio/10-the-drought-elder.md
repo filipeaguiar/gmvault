@@ -14,16 +14,16 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-drought-elder/"
 compendium_refs:
   - "/compendium/monsters/gibbering-mouther/"
-  - "/compendium/monsters/demilich/"
   - "/compendium/monsters/gibbering-mouther/"
+  - "/compendium/monsters/demilich/"
   - "/compendium/monsters/whistler/"
   - "/compendium/magic-items/white-ghost-orchid-seed/"
   - "/compendium/magic-items/hammock-of-worlds/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/demilich-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/gibbering-mouther-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/demilich-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-144-map-143-the-drought-elder-player/"
 ---
 

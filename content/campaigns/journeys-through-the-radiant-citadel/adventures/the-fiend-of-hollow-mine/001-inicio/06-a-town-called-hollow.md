@@ -15,9 +15,9 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/a-town-called-hollow/"
 compendium_refs:
   - "/compendium/monsters/peryton/"
-  - "/compendium/monsters/cult-fanatic/"
-  - "/compendium/monsters/bandit/"
   - "/compendium/monsters/ettin/"
+  - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/cult-fanatic/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"

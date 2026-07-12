@@ -31,6 +31,8 @@ Each Concord Jewel is linked to one of the civilizations that founded the Radian
 
 **Tabela: Concord Jewels**
 
+|  |  |
+| --- | --- |
 | Akharin Sangar | Turquoise |
 | Atagua | Yellow Quartz |
 | Dayawlongon | Serpentine |

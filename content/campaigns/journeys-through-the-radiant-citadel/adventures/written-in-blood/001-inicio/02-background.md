@@ -17,8 +17,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/soul-shaker/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
 ---
 
@@ -44,6 +44,8 @@ The Godsbreath Pronunciations table shows how to pronounce key names in this adv
 
 **Tabela: Godsbreath Pronunciations**
 
+|  |  |
+| --- | --- |
 | Culley | CUH-lee |
 | Dellie | DEH-lee |
 | Dre | DRAY |

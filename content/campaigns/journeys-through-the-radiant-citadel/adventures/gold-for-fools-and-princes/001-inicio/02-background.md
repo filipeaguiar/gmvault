@@ -10,21 +10,21 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kedjou-kamal-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
 ---
 
 ### Descrição e Elementos Importantes
@@ -42,6 +42,8 @@ The Sensa Empire Pronunciations table shows how to pronounce many of the names i
 
 **Tabela: Sensa Empire Pronunciations**
 
+|  |  |
+| --- | --- |
 | Anisa | ah-NEE-suh |
 | Aurumvorax | au-rum-VOR-ax |
 | Awa | AH-wah |

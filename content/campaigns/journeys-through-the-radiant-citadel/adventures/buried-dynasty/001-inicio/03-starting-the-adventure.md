@@ -15,13 +15,13 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/spy/"
+  - "/compendium/monsters/archmage/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
 ---
 
 ### Descrição e Elementos Importantes
