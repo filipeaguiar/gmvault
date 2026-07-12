@@ -13,8 +13,9 @@ tags:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
-[Arte: Aro Kasem] (/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)
+![Arte: Kasem Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)

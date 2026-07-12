@@ -6,12 +6,13 @@ draft: true
 titulo_pt_br: Sessão 01 - Início
 visibility: gm
 status: draft
-summary: Planeamento para a Sessão.
+summary: Planejamento para a sessão.
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
 

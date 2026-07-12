@@ -13,11 +13,12 @@ handouts: null
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
-Localização Wynling importada automáticamente.
+Local **Wynling** importado automaticamente.
 
-### Cenas e Subaras
-- [Wynling] (../../adventures/salted-legacy/001-inicio/10-wynling/)
+### Cenas e Sub-áreas
+- [Wynling](../../adventures/salted-legacy/001-inicio/10-wynling/)

@@ -1,0 +1,287 @@
+import argparse
+import io
+import json
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+from translate_drafts import (
+    MarkdownDocument,
+    TranslationError,
+    add_translation_metadata,
+    build_translation_prompt,
+    filter_image_only_handouts,
+    get_lmstudio_translation,
+    load_glossary_config,
+    process_document,
+    run_document_batch,
+    select_glossary_config,
+    translate_text,
+)
+
+
+class _Response:
+    def __init__(self, payload):
+        self.payload = json.dumps(payload).encode("utf-8")
+
+    def __enter__(self):
+        return io.BytesIO(self.payload)
+
+    def __exit__(self, *_args):
+        return False
+
+
+class LmStudioTranslationTests(unittest.TestCase):
+    def glossary_file(self):
+        handle = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8")
+        json.dump(
+            {
+                "required_translations": {"rules": {"Saving Throw": "Teste de Resistência"}},
+                "protected_terms": ["Kasem"],
+                "contextual_terms": {"save": {"note": "Termo contextual"}},
+                "forbidden_outputs": ["Salvaguarda"],
+            },
+            handle,
+        )
+        handle.close()
+        return Path(handle.name)
+
+    def test_image_only_handouts_are_excluded_by_default(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            handouts = root / "handouts"
+            adventures = root / "adventures"
+            handouts.mkdir()
+            adventures.mkdir()
+            image_only = handouts / "map.md"
+            index = handouts / "_index.md"
+            narrative = adventures / "chapter.md"
+            image_only.write_text(
+                "---\ntitle: Map\nparams:\n  kind: handout\n---\n\n![Map](/images/map.webp)\n",
+                encoding="utf-8",
+            )
+            index.write_text("---\ntitle: Handouts\n---\n", encoding="utf-8")
+            narrative.write_text("---\ntitle: Chapter\n---\n\nNarrative text.\n", encoding="utf-8")
+
+            selected, skipped = filter_image_only_handouts([image_only, index, narrative])
+
+            self.assertEqual(selected, [index, narrative])
+            self.assertEqual(skipped, [image_only])
+
+    def test_image_only_handouts_can_be_explicitly_included(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "handouts" / "art.md"
+            path.parent.mkdir()
+            path.write_text("---\ntitle: Art\n---\n\n![Art](/images/art.webp)\n", encoding="utf-8")
+
+            selected, skipped = filter_image_only_handouts([path], include=True)
+
+            self.assertEqual(selected, [path])
+            self.assertEqual(skipped, [])
+
+    def test_prompt_contains_every_glossary_section_and_ptbr_rules(self):
+        config = load_glossary_config(self.glossary_file())
+        prompt = build_translation_prompt(config)
+        self.assertIn("português do Brasil", prompt)
+        self.assertIn("Saving Throw => Teste de Resistência", prompt)
+        self.assertIn("Kasem", prompt)
+        self.assertIn("Termo contextual", prompt)
+        self.assertIn("Salvaguarda", prompt)
+        self.assertIn("Markdown", prompt)
+
+    def test_selects_only_terms_used_in_complete_document(self):
+        config = {
+            "version": 1,
+            "required_translations": {
+                "rules": {
+                    "Saving Throw": "Teste de Resistência",
+                    "Armor Class": "Classe de Armadura",
+                }
+            },
+            "protected_terms": ["Kasem", "Sholeh"],
+            "contextual_terms": {
+                "save": {"note": "Use salvar fora de regras"},
+                "check": {"note": "Use teste em regras"},
+            },
+            "forbidden_outputs": ["Salvaguarda"],
+        }
+
+        selected = select_glossary_config(
+            config,
+            "# KASEM\nMake a saving throw now. Do not check this yet.",
+        )
+
+        self.assertEqual(
+            selected["required_translations"],
+            {"rules": {"Saving Throw": "Teste de Resistência"}},
+        )
+        self.assertEqual(selected["protected_terms"], ["Kasem"])
+        self.assertEqual(selected["contextual_terms"], {"check": {"note": "Use teste em regras"}})
+        self.assertEqual(selected["forbidden_outputs"], ["Salvaguarda"])
+        prompt = build_translation_prompt(selected)
+        self.assertNotIn("Armor Class", prompt)
+        self.assertNotIn("Sholeh", prompt)
+        self.assertNotIn("Use salvar fora de regras", prompt)
+
+    def test_selection_matches_front_matter_and_body_as_one_document(self):
+        config = {
+            "required_translations": {"rules": {"Armor Class": "Classe de Armadura"}},
+            "protected_terms": ["Kasem"],
+            "contextual_terms": {},
+            "forbidden_outputs": [],
+        }
+        document_text = "title: Armor Class\n---\nKasem enters the room."
+
+        selected = select_glossary_config(config, document_text)
+
+        self.assertIn("Armor Class", selected["required_translations"]["rules"])
+        self.assertEqual(selected["protected_terms"], ["Kasem"])
+
+    def test_required_common_noun_remains_visible_for_grammatical_translation(self):
+        source = "Travelers return with stories of vanishing equipment."
+        received = []
+
+        def translate(text):
+            received.append(text)
+            return "Viajantes retornam com histórias de equipamentos desaparecidos."
+
+        result = translate_text(source, translate, {"Equipment": "Equipamento"})
+
+        self.assertEqual(received, [source])
+        self.assertEqual(result, "Viajantes retornam com histórias de equipamentos desaparecidos.")
+        self.assertNotIn("desaparecimento Equipamento", result)
+
+    def test_translate_text_reports_completed_blocks_with_partial_text(self):
+        events = []
+        result = translate_text(
+            "First paragraph.\n\nSecond paragraph.",
+            lambda text: f"PT:{text}",
+            {},
+            on_block=lambda current, total, partial, elapsed: events.append(
+                (current, total, partial, elapsed)
+            ),
+        )
+        self.assertEqual(result, "PT:First paragraph.\n\nPT:Second paragraph.")
+        self.assertEqual([(event[0], event[1]) for event in events], [(1, 2), (2, 2)])
+        self.assertEqual(events[0][2], "PT:First paragraph.\n\n")
+        self.assertEqual(events[1][2], result)
+        self.assertTrue(all(event[3] >= 0 for event in events))
+
+    def test_process_document_writes_checkpoint_per_block_and_removes_it_on_success(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "chapter.md"
+            path.write_text("---\ndraft: true\n---\n\nFirst.\n\nSecond.\n", encoding="utf-8")
+            document = MarkdownDocument(path, "draft: true", {"draft": True}, "\nFirst.\n\nSecond.\n")
+            checkpoint = path.with_suffix(path.suffix + ".translation.partial")
+            snapshots = []
+            process_document(
+                document,
+                lambda text: f"PT:{text}",
+                {},
+                apply=True,
+                include_non_draft=False,
+                translate_frontmatter=False,
+                source="en",
+                target="pb",
+                progress=lambda current, total, elapsed: snapshots.append(
+                    (current, total, elapsed, checkpoint.read_text(encoding="utf-8"))
+                ),
+            )
+            self.assertEqual([(item[0], item[1]) for item in snapshots], [(1, 2), (2, 2)])
+            self.assertIn("PT:First.", snapshots[0][3])
+            self.assertNotIn("PT:Second.", snapshots[0][3])
+            self.assertFalse(checkpoint.exists())
+
+    @patch("translate_drafts.urlopen")
+    def test_client_posts_openai_request_and_returns_content(self, urlopen):
+        urlopen.return_value = _Response(
+            {"choices": [{"message": {"content": "Teste de Resistência"}, "finish_reason": "stop"}]}
+        )
+        translate = get_lmstudio_translation(
+            "http://127.0.0.1:1234/v1", "google/gemma-4-e4b", "SYSTEM", timeout=12, retries=1
+        )
+        self.assertEqual(translate("Saving Throw"), "Teste de Resistência")
+        request = urlopen.call_args.args[0]
+        payload = json.loads(request.data)
+        self.assertEqual(request.full_url, "http://127.0.0.1:1234/v1/chat/completions")
+        self.assertEqual(payload["model"], "google/gemma-4-e4b")
+        self.assertEqual(payload["temperature"], 0.1)
+        self.assertEqual(urlopen.call_args.kwargs["timeout"], 12)
+
+    @patch("translate_drafts.urlopen")
+    def test_client_retries_empty_and_truncated_responses(self, urlopen):
+        urlopen.side_effect = [
+            _Response({"choices": [{"message": {"content": ""}, "finish_reason": "stop"}]}),
+            _Response({"choices": [{"message": {"content": "parcial"}, "finish_reason": "length"}]}),
+            _Response({"choices": [{"message": {"content": "completo"}, "finish_reason": "stop"}]}),
+        ]
+        translate = get_lmstudio_translation("http://localhost:1234/v1", "model", "SYSTEM", retries=3)
+        self.assertEqual(translate("source"), "completo")
+        self.assertEqual(urlopen.call_count, 3)
+
+    @patch("translate_drafts.urlopen")
+    def test_client_fails_after_retry_budget(self, urlopen):
+        urlopen.return_value = _Response({"choices": []})
+        translate = get_lmstudio_translation("http://localhost:1234/v1", "model", "SYSTEM", retries=2)
+        with self.assertRaises(TranslationError):
+            translate("source")
+        self.assertEqual(urlopen.call_count, 2)
+
+    def test_metadata_records_engine_and_model(self):
+        meta = add_translation_metadata({}, "en", "pb", engine="lmstudio", model="google/gemma-4-e4b")
+        self.assertEqual(meta["translation"]["engine"], "lmstudio")
+        self.assertEqual(meta["translation"]["model"], "google/gemma-4-e4b")
+
+    def test_already_translated_document_is_skipped_without_force(self):
+        document = MarkdownDocument(
+            path=Path("unused.md"),
+            front_matter_raw="",
+            front_matter={"draft": True, "translation": {"target_language": "pt-BR"}},
+            body="Already translated",
+        )
+        result = process_document(
+            document,
+            lambda text: text,
+            {},
+            apply=False,
+            include_non_draft=False,
+            translate_frontmatter=False,
+            source="en",
+            target="pb",
+            engine="lmstudio",
+            model="model",
+            force_retranslate=False,
+        )
+        self.assertEqual(result.skipped_reason, "already translated to pt-BR")
+
+    def test_batch_continues_after_file_error_and_reports_path(self):
+        paths = [Path("one.md"), Path("broken.md"), Path("three.md")]
+        completed = []
+        failures = []
+
+        def process(path):
+            if path.name == "broken.md":
+                raise TranslationError("timed out after 180s")
+            return path.name
+
+        results, errors = run_document_batch(
+            paths,
+            process,
+            jobs=2,
+            on_result=lambda path, result, elapsed: completed.append((path, result, elapsed)),
+            on_error=lambda failure: failures.append(failure),
+        )
+
+        self.assertCountEqual(results, ["one.md", "three.md"])
+        self.assertEqual(len(errors), 1)
+        self.assertEqual(errors[0].path, Path("broken.md"))
+        self.assertEqual(errors[0].error_type, "TranslationError")
+        self.assertIn("timed out after 180s", errors[0].message)
+        self.assertGreaterEqual(errors[0].elapsed_seconds, 0)
+        self.assertEqual(len(completed), 2)
+        self.assertEqual(failures, errors)
+
+
+if __name__ == "__main__":
+    unittest.main()

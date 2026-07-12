@@ -9,12 +9,13 @@ tags:
 - mapa
 - handout
 - importado
-titulo_pt_br: 'Mapa: 012 Mapa 21 Dyn Singh Jogador de Mercado Noturno'
+titulo_pt_br: 'Mapa: 012 Mapa 21 Mercado Noturno Dyn Singh Jogador'
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
-[012 Map 21 Dyn Singh Jogador de Mercado Noturno] (/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)
+![012 Mapa 21 Mercado Noturno Dyn Singh Jogador](/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)

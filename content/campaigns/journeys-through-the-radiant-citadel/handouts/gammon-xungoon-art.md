@@ -13,8 +13,9 @@ tags:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
-[Arte: Gammon Xungoon] (/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)
+![Arte: Gammon Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)

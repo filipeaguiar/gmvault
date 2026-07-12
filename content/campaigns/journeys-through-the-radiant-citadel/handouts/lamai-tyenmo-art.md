@@ -3,7 +3,7 @@ title: 'Arte: Lamai Tyenmo'
 params:
   kind: handout
 draft: true
-titulo_pt_br: Lamai Tyenmo
+titulo_pt_br: 'Arte: Lamai Tyenmo'
 visibility: players
 status: draft
 tags:
@@ -13,8 +13,9 @@ tags:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
-[Arte: Lamai Tyenmo] (/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)
+![Arte: Lamai Tyenmo](/images/campaigns/journeys-through-the-radiant-citadel/009-02-001tyenmo-rivalry-xungoon.webp)

@@ -24,8 +24,9 @@ stats:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
-[Arte: Kusa Xungoon] (/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)
+![Arte: Kusa Xungoon](/images/campaigns/journeys-through-the-radiant-citadel/010-02-002kusa-xungoon.webp)

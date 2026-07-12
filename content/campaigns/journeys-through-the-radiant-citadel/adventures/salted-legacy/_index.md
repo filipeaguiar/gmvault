@@ -6,7 +6,7 @@ draft: true
 titulo_pt_br: Legado Salgado
 visibility: gm
 status: draft
-summary: Aventura independente importada do capítulo Salgado Legado.
+summary: Aventura independente importada do capítulo Legado Salgado.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/
@@ -32,8 +32,9 @@ handouts:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
 

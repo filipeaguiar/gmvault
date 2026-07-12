@@ -12,10 +12,13 @@ import json
 import re
 import sys
 import threading
-from concurrent.futures import ThreadPoolExecutor
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 try:
     import yaml
@@ -24,6 +27,9 @@ except ImportError:  # pragma: no cover - exercised in environments without PyYA
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_GLOSSARY = PROJECT_ROOT / "translation_glossary.json"
+DEFAULT_LMSTUDIO_URL = "http://127.0.0.1:1234/v1"
+DEFAULT_LMSTUDIO_MODEL = "google/gemma-4-e4b"
+DEFAULT_LMSTUDIO_TIMEOUT = 300.0
 PROTECTED_PREFIX = "ZXQPROTECTED"
 GLOSSARY_PREFIX = "ZXQGLOSSARY"
 
@@ -78,6 +84,14 @@ class ProcessResult:
     path: Path
     changed: bool
     skipped_reason: str | None = None
+
+
+@dataclass
+class ProcessFailure:
+    path: Path
+    error_type: str
+    message: str
+    elapsed_seconds: float
 
 
 class TranslationError(RuntimeError):
@@ -154,6 +168,11 @@ Observações:
         help="Inclui arquivos sem draft: true. Use apenas para manutenção controlada.",
     )
     parser.add_argument(
+        "--include-image-only-handouts",
+        action="store_true",
+        help="Inclui handouts cujo corpo contém somente uma imagem. Por padrão, eles não usam o motor de tradução.",
+    )
+    parser.add_argument(
         "--translate-frontmatter",
         action="store_true",
         help="Também traduz campos textuais seguros do front matter. title é preservado e sua tradução vai para titulo_pt_br.",
@@ -165,6 +184,17 @@ Observações:
         help="Número de arquivos traduzidos em paralelo. Padrão: 1. Use 2-4 para tentar acelerar.",
     )
     parser.add_argument("--glossary", default=str(DEFAULT_GLOSSARY), help="Caminho do glossário JSON.")
+    parser.add_argument("--engine", choices=["lmstudio", "argos"], default="lmstudio", help="Motor de tradução.")
+    parser.add_argument("--base-url", default=DEFAULT_LMSTUDIO_URL, help="URL base OpenAI-compatible.")
+    parser.add_argument("--model", default=DEFAULT_LMSTUDIO_MODEL, help="Modelo textual do LM Studio.")
+    parser.add_argument(
+        "--timeout",
+        type=float,
+        default=DEFAULT_LMSTUDIO_TIMEOUT,
+        help=f"Timeout por requisição, em segundos. Padrão: {DEFAULT_LMSTUDIO_TIMEOUT:g}.",
+    )
+    parser.add_argument("--retries", type=int, default=3, help="Tentativas por bloco.")
+    parser.add_argument("--force-retranslate", action="store_true", help="Permite retraduzir conteúdo já pt-BR.")
     parser.add_argument("--source", default="en", help="Código do idioma de origem Argos. Padrão: en.")
     parser.add_argument("--target", default="pb", help="Código do idioma de destino Argos. Padrão: pb (português do Brasil).")
     parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
@@ -215,6 +245,26 @@ def discover_markdown_files(root: Path) -> list[Path]:
     return sorted(path for path in root.rglob("*.md") if path.is_file())
 
 
+def filter_image_only_handouts(files: list[Path], include: bool = False) -> tuple[list[Path], list[Path]]:
+    """Exclude image-only handout pages that would waste a translation request."""
+    if include:
+        return list(files), []
+
+    selected: list[Path] = []
+    skipped: list[Path] = []
+    image_only_pattern = re.compile(r"^\s*!\[[^\]]*\]\([^\)]+\)\s*$", re.DOTALL)
+    for path in files:
+        if "handouts" not in path.parts:
+            selected.append(path)
+            continue
+        document = parse_markdown(path)
+        if document is not None and image_only_pattern.fullmatch(document.body):
+            skipped.append(path)
+        else:
+            selected.append(path)
+    return selected, skipped
+
+
 def parse_markdown(path: Path) -> MarkdownDocument | None:
     text = path.read_text(encoding="utf-8")
     if not text.startswith("---\n"):
@@ -236,12 +286,170 @@ def load_glossary(path: Path) -> dict[str, str]:
         raise TranslationError(f"Glossário não encontrado: {path}")
     data = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
-        raise TranslationError("Glossário deve ser um objeto JSON de termo origem para tradução.")
+        raise TranslationError("Glossário deve ser um objeto JSON.")
+
+    # Schema v1: mapa plano, mantido para compatibilidade com glossários externos.
+    if "required_translations" not in data:
+        return {
+            source: target
+            for source, target in data.items()
+            if isinstance(source, str)
+            and isinstance(target, str)
+            and source.strip()
+            and target.strip()
+        }
+
+    categories = data["required_translations"]
+    if not isinstance(categories, dict):
+        raise TranslationError("required_translations deve ser um objeto de categorias.")
+
     glossary: dict[str, str] = {}
-    for source, target in data.items():
-        if isinstance(source, str) and isinstance(target, str) and source.strip() and target.strip():
+    for category, terms in categories.items():
+        if not isinstance(terms, dict):
+            raise TranslationError(f"Categoria de glossário inválida: {category}")
+        for source, target in terms.items():
+            if not isinstance(source, str) or not isinstance(target, str) or not source.strip() or not target.strip():
+                raise TranslationError(f"Termo inválido na categoria {category}: {source!r}")
+            if source in glossary:
+                raise TranslationError(f"Termo duplicado no glossário: {source}")
             glossary[source] = target
     return glossary
+
+
+def load_glossary_config(path: Path) -> dict[str, Any]:
+    """Load and validate the complete versioned glossary configuration."""
+    if not path.exists():
+        raise TranslationError(f"Glossário não encontrado: {path}")
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise TranslationError(f"Glossário JSON inválido: {exc}") from exc
+    if not isinstance(data, dict):
+        raise TranslationError("Glossário deve ser um objeto JSON.")
+    load_glossary(path)
+    for key, expected in (("protected_terms", list), ("contextual_terms", dict), ("forbidden_outputs", list)):
+        if not isinstance(data.get(key, expected()), expected):
+            raise TranslationError(f"{key} possui formato inválido.")
+    return data
+
+
+def _contains_glossary_term(text: str, term: str) -> bool:
+    """Match a glossary term case-insensitively without matching inside words."""
+    if not term.strip():
+        return False
+    pattern = re.compile(rf"(?<![\w]){re.escape(term)}(?![\w])", re.IGNORECASE)
+    return pattern.search(text) is not None
+
+
+def select_glossary_config(config: dict[str, Any], document_text: str) -> dict[str, Any]:
+    """Return only glossary entries referenced by one complete source document.
+
+    Forbidden outputs remain global validation rules; required translations,
+    protected names and contextual rules are selected from the front matter and
+    body before any translation request is made.
+    """
+    selected = {
+        key: value
+        for key, value in config.items()
+        if key not in {"required_translations", "protected_terms", "contextual_terms"}
+    }
+
+    required: dict[str, dict[str, str]] = {}
+    for category, terms in config.get("required_translations", {}).items():
+        if not isinstance(terms, dict):
+            continue
+        matches = {
+            source: target
+            for source, target in terms.items()
+            if _contains_glossary_term(document_text, source)
+        }
+        if matches:
+            required[category] = matches
+    selected["required_translations"] = required
+    selected["protected_terms"] = [
+        term
+        for term in config.get("protected_terms", [])
+        if isinstance(term, str) and _contains_glossary_term(document_text, term)
+    ]
+    selected["contextual_terms"] = {
+        term: rule
+        for term, rule in config.get("contextual_terms", {}).items()
+        if _contains_glossary_term(document_text, term)
+    }
+    selected.setdefault("forbidden_outputs", [])
+    return selected
+
+
+def build_translation_prompt(config: dict[str, Any]) -> str:
+    """Build the pt-BR editorial prompt from every glossary section."""
+    required: list[str] = []
+    for terms in config.get("required_translations", {}).values():
+        if isinstance(terms, dict):
+            required.extend(f"{source} => {target}" for source, target in terms.items())
+    contextual = []
+    for term, rule in config.get("contextual_terms", {}).items():
+        note = rule.get("note", "") if isinstance(rule, dict) else str(rule)
+        contextual.append(f"{term}: {note}")
+    return "\n".join([
+        "Você é um tradutor editorial de D&D 5e para português do Brasil.",
+        "Traduza somente o texto recebido. Não explique, não resuma e retorne apenas a tradução final.",
+        "Preserve rigorosamente Markdown, HTML, YAML, URLs, shortcodes, tabelas, números, dados e tokens ZXQ.",
+        "Mantenha nomes próprios protegidos e aplique a terminologia obrigatória exatamente.",
+        "Não produza nenhuma saída proibida.",
+        "\nTRADUÇÕES OBRIGATÓRIAS:\n" + "\n".join(required),
+        "\nTERMOS PROTEGIDOS:\n" + "\n".join(map(str, config.get("protected_terms", []))),
+        "\nREGRAS CONTEXTUAIS:\n" + "\n".join(contextual),
+        "\nSAÍDAS PROIBIDAS:\n" + "\n".join(map(str, config.get("forbidden_outputs", []))),
+    ])
+
+
+def get_lmstudio_translation(
+    base_url: str,
+    model: str,
+    system_prompt: str,
+    *,
+    timeout: float = DEFAULT_LMSTUDIO_TIMEOUT,
+    retries: int = 3,
+) -> Callable[[str], str]:
+    """Create a translator backed by an OpenAI-compatible chat endpoint."""
+    endpoint = base_url.rstrip("/") + "/chat/completions"
+    attempts = max(1, retries)
+
+    def translate(text: str) -> str:
+        last_error = "resposta inválida"
+        for attempt in range(attempts):
+            payload = json.dumps({
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": text},
+                ],
+                "temperature": 0.1,
+                "max_tokens": 4096,
+                "stream": False,
+            }).encode("utf-8")
+            request = Request(endpoint, data=payload, headers={"Content-Type": "application/json"}, method="POST")
+            try:
+                with urlopen(request, timeout=timeout) as response:
+                    result = json.loads(response.read().decode("utf-8"))
+                choices = result.get("choices") or []
+                if not choices:
+                    raise ValueError("resposta sem choices")
+                choice = choices[0]
+                finish_reason = choice.get("finish_reason")
+                content = (choice.get("message") or {}).get("content")
+                if finish_reason not in {None, "stop"}:
+                    raise ValueError(f"resposta truncada ({finish_reason})")
+                if not isinstance(content, str) or not content.strip():
+                    raise ValueError("resposta vazia")
+                return content.strip()
+            except (HTTPError, URLError, TimeoutError, OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
+                last_error = str(exc)
+                if attempt + 1 < attempts:
+                    time.sleep(min(0.25 * (2**attempt), 1.0))
+        raise TranslationError(f"LM Studio falhou após {attempts} tentativa(s): {last_error}")
+
+    return translate
 
 
 def tokenize_glossary(text: str, glossary: dict[str, str]) -> tuple[str, dict[str, str]]:
@@ -321,17 +529,30 @@ def translate_markdown_line(line: str, translate: Callable[[str], str]) -> str:
     return translate(line)
 
 
-def translate_text(text: str, translate: Callable[[str], str], glossary: dict[str, str]) -> str:
+def translate_text(
+    text: str,
+    translate: Callable[[str], str],
+    glossary: dict[str, str],
+    *,
+    on_block: Callable[[int, int, str, float], None] | None = None,
+) -> str:
     if not text.strip():
         return text
 
     protector = Protector()
     protected = protector.protect(text)
-    tokenized, token_targets = tokenize_glossary(protected, glossary)
 
     translated_blocks: list[str] = []
-    blocks = re.split(r"(\n\s*\n)", tokenized)
-    for block in blocks:
+    # Required translations are linguistic preferences carried by the model
+    # prompt, not opaque placeholders. Keeping them visible lets the model
+    # handle articles, prepositions, number and word order in natural pt-BR.
+    blocks = re.split(r"(\n\s*\n)", protected)
+    total_blocks = sum(
+        1 for block in blocks if block.strip() and not re.fullmatch(r"\n\s*\n", block)
+    )
+    completed_blocks = 0
+    block_started = time.monotonic()
+    for index, block in enumerate(blocks):
         if not block.strip() or re.fullmatch(r"\n\s*\n", block):
             translated_blocks.append(block)
             continue
@@ -347,9 +568,16 @@ def translate_text(text: str, translate: Callable[[str], str], glossary: dict[st
                 newline = "\n"
             translated_lines.append(translate_markdown_line(content, translate) + newline)
         translated_blocks.append("".join(translated_lines))
+        completed_blocks += 1
+        if on_block:
+            partial_blocks = list(translated_blocks)
+            if index + 1 < len(blocks) and re.fullmatch(r"\n\s*\n", blocks[index + 1]):
+                partial_blocks.append(blocks[index + 1])
+            partial = protector.restore("".join(partial_blocks))
+            on_block(completed_blocks, total_blocks, partial, time.monotonic() - block_started)
+        block_started = time.monotonic()
 
     translated = "".join(translated_blocks)
-    translated = restore_glossary(translated, token_targets)
     translated = protector.restore(translated)
     return translated
 
@@ -372,7 +600,9 @@ def translate_front_matter(
     return updated
 
 
-def add_translation_metadata(front_matter: dict[str, Any], source: str, target: str) -> dict[str, Any]:
+def add_translation_metadata(
+    front_matter: dict[str, Any], source: str, target: str, *, engine: str = "argos", model: str | None = None
+) -> dict[str, Any]:
     updated = dict(front_matter)
     updated["draft"] = True
     translation_meta = dict(updated.get("translation") or {})
@@ -380,10 +610,14 @@ def add_translation_metadata(front_matter: dict[str, Any], source: str, target: 
         {
             "source_language": source,
             "target_language": "pt-BR" if target in {"pt", "pb"} else target,
-            "engine": "argos",
+            "engine": engine,
             "status": "machine_translated",
         }
     )
+    if model:
+        translation_meta["model"] = model
+    else:
+        translation_meta.pop("model", None)
     updated["translation"] = translation_meta
     return updated
 
@@ -405,33 +639,105 @@ def process_document(
     translate_frontmatter: bool,
     source: str,
     target: str,
+    engine: str = "argos",
+    model: str | None = None,
+    force_retranslate: bool = False,
+    progress: Callable[[int, int, float], None] | None = None,
 ) -> ProcessResult:
     if document.front_matter.get("draft") is not True and not include_non_draft:
         return ProcessResult(document.path, changed=False, skipped_reason="not draft")
+    translation_meta = document.front_matter.get("translation") or {}
+    if not force_retranslate and isinstance(translation_meta, dict) and translation_meta.get("target_language") == "pt-BR":
+        return ProcessResult(document.path, changed=False, skipped_reason="already translated to pt-BR")
 
     if translate is None:
         return ProcessResult(document.path, changed=True)
 
-    translated_body = translate_text(document.body, translate, glossary)
+    checkpoint_path = document.path.with_suffix(document.path.suffix + ".translation.partial")
+
+    def checkpoint(current: int, total: int, partial_body: str, elapsed: float) -> None:
+        if apply:
+            checkpoint_path.write_text(
+                render_markdown(document.front_matter, partial_body), encoding="utf-8"
+            )
+        if progress:
+            progress(current, total, elapsed)
+
+    translated_body = translate_text(document.body, translate, glossary, on_block=checkpoint)
     front_matter = document.front_matter
     if translate_frontmatter:
         front_matter = translate_front_matter(front_matter, translate, glossary)
-    front_matter = add_translation_metadata(front_matter, source, target)
+    front_matter = add_translation_metadata(front_matter, source, target, engine=engine, model=model)
 
     rendered = render_markdown(front_matter, translated_body)
     original = document.path.read_text(encoding="utf-8")
     changed = rendered != original
     if apply and changed:
         document.path.write_text(rendered, encoding="utf-8")
+    if apply:
+        checkpoint_path.unlink(missing_ok=True)
     return ProcessResult(document.path, changed=changed)
+
+
+def run_document_batch(
+    paths: list[Path],
+    process_path: Callable[[Path], Any],
+    *,
+    jobs: int,
+    on_result: Callable[[Path, Any, float], None] | None = None,
+    on_error: Callable[[ProcessFailure], None] | None = None,
+) -> tuple[list[Any], list[ProcessFailure]]:
+    """Process every path, preserving successful work when another path fails."""
+    results: list[Any] = []
+    failures: list[ProcessFailure] = []
+
+    def timed_process(path: Path) -> tuple[Any, float]:
+        started = time.monotonic()
+        result = process_path(path)
+        return result, time.monotonic() - started
+
+    with ThreadPoolExecutor(max_workers=max(1, jobs)) as executor:
+        future_paths = {}
+        future_started = {}
+        for path in paths:
+            future = executor.submit(timed_process, path)
+            future_paths[future] = path
+            future_started[future] = time.monotonic()
+        for future in as_completed(future_paths):
+            path = future_paths[future]
+            try:
+                result, elapsed = future.result()
+            except Exception as exc:
+                elapsed = time.monotonic() - future_started[future]
+                failure = ProcessFailure(
+                    path=path,
+                    error_type=type(exc).__name__,
+                    message=str(exc) or repr(exc),
+                    elapsed_seconds=elapsed,
+                )
+                failures.append(failure)
+                if on_error:
+                    on_error(failure)
+                continue
+            results.append(result)
+            if on_result:
+                on_result(path, result, elapsed)
+
+    return results, failures
 
 
 def main() -> int:
     try:
         args = parse_args()
         root = resolve_scope(args)
-        glossary = load_glossary(Path(args.glossary))
-        files = discover_markdown_files(root)
+        glossary_path = Path(args.glossary)
+        glossary = load_glossary(glossary_path)
+        glossary_config = load_glossary_config(glossary_path)
+        discovered_files = discover_markdown_files(root)
+        files, image_only_handouts = filter_image_only_handouts(
+            discovered_files,
+            include=args.include_image_only_handouts,
+        )
 
         print(f"Escopo: {args.scope}")
         if args.scope == "campaign":
@@ -440,16 +746,38 @@ def main() -> int:
         jobs = max(1, args.jobs)
         print(f"Modo: {'apply' if args.apply else 'dry-run'}")
         print(f"Workers: {jobs}")
-        print(f"Arquivos Markdown encontrados: {len(files)}")
+        print(f"Motor: {args.engine}")
+        if args.engine == "lmstudio":
+            print(f"Modelo: {args.model}")
+        print(f"Arquivos Markdown encontrados: {len(discovered_files)}")
+        if image_only_handouts:
+            print(f"Handouts somente com imagem ignorados: {len(image_only_handouts)}")
+        print(f"Arquivos enviados ao pipeline: {len(files)}")
 
         thread_local = threading.local()
 
-        def translate_for_worker() -> Callable[[str], str] | None:
+        def translate_for_document(document: MarkdownDocument) -> Callable[[str], str] | None:
             if not args.apply:
                 return None
-            if not hasattr(thread_local, "translate"):
-                thread_local.translate = get_argos_translation(args.source, args.target)
-            return thread_local.translate
+            if args.engine == "argos":
+                if not hasattr(thread_local, "argos_translate"):
+                    thread_local.argos_translate = get_argos_translation(args.source, args.target)
+                return thread_local.argos_translate
+
+            document_text = json.dumps(document.front_matter, ensure_ascii=False) + "\n" + document.body
+            selected_config = select_glossary_config(glossary_config, document_text)
+            system_prompt = build_translation_prompt(selected_config)
+            if not hasattr(thread_local, "lmstudio_translators"):
+                thread_local.lmstudio_translators = {}
+            if system_prompt not in thread_local.lmstudio_translators:
+                thread_local.lmstudio_translators[system_prompt] = get_lmstudio_translation(
+                    args.base_url,
+                    args.model,
+                    system_prompt,
+                    timeout=args.timeout,
+                    retries=args.retries,
+                )
+            return thread_local.lmstudio_translators[system_prompt]
 
         def process_path(path: Path) -> ProcessResult:
             document = parse_markdown(path)
@@ -457,43 +785,71 @@ def main() -> int:
                 return ProcessResult(path, changed=False, skipped_reason="sem front matter YAML válido")
             return process_document(
                 document,
-                translate_for_worker(),
+                translate_for_document(document),
                 glossary,
                 apply=args.apply,
                 include_non_draft=args.include_non_draft,
                 translate_frontmatter=args.translate_frontmatter,
                 source=args.source,
                 target=args.target,
+                engine=args.engine,
+                model=args.model if args.engine == "lmstudio" else None,
+                force_retranslate=args.force_retranslate,
+                progress=lambda current, total, elapsed: print(
+                    f"[block] {path} {current}/{total} ({elapsed:.1f}s)", flush=True
+                ),
             )
 
         processed = 0
         changed = 0
-        skipped = 0
-        if jobs == 1:
-            results = [process_path(path) for path in files]
-        else:
-            with ThreadPoolExecutor(max_workers=jobs) as executor:
-                results = list(executor.map(process_path, files))
+        skipped = len(image_only_handouts)
 
-        for result in results:
+        def report_result(_path: Path, result: ProcessResult, elapsed: float) -> None:
+            nonlocal processed, changed, skipped
+            duration = f"{elapsed:.1f}s"
             if result.skipped_reason:
                 skipped += 1
-                print(f"[skip] {result.path} — {result.skipped_reason}")
+                print(f"[skip] {result.path} — {result.skipped_reason} ({duration})", flush=True)
             else:
                 processed += 1
                 if result.changed:
                     changed += 1
-                    print(f"[change] {result.path}")
+                    print(f"[change] {result.path} ({duration})", flush=True)
                 else:
-                    print(f"[ok] {result.path} — sem alterações")
+                    print(f"[ok] {result.path} — sem alterações ({duration})", flush=True)
+
+        def report_error(failure: ProcessFailure) -> None:
+            print(
+                f"[error] {failure.path} — {failure.error_type}: {failure.message} "
+                f"({failure.elapsed_seconds:.1f}s)",
+                file=sys.stderr,
+                flush=True,
+            )
+
+        results, failures = run_document_batch(
+            files,
+            process_path,
+            jobs=jobs,
+            on_result=report_result,
+            on_error=report_error,
+        )
 
         print("\nResumo:")
         print(f"  processados: {processed}")
         print(f"  alterariam/alterados: {changed}")
         print(f"  ignorados: {skipped}")
+        print(f"  erros: {len(failures)}")
+        if failures:
+            print("\nArquivos com erro:", file=sys.stderr)
+            for failure in failures:
+                print(
+                    f"  - {failure.path}: {failure.error_type}: {failure.message} "
+                    f"({failure.elapsed_seconds:.1f}s)",
+                    file=sys.stderr,
+                )
         if not args.apply:
             print("\nDry-run: nenhum arquivo foi modificado. Use --apply para gravar traduções.")
-        return 0
+        return 1 if failures else 0
     except TranslationError as exc:
         if str(exc) == "Operação cancelada.":
             print("Operação cancelada.")

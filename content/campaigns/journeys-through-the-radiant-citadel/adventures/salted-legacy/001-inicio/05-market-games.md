@@ -3,182 +3,183 @@ title: Cena 5 - Market Games
 params:
   kind: scene
 draft: true
-titulo_pt_br: Cena 5 - Jogos de Mercado
+titulo_pt_br: Cena 5 - Jogos do Mercado
 visibility: gm
 status: draft
-summary: Cena operacional para conduzir na sessão.
+summary: Cena Operacional para Conduzir na Sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/
-- /campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/
 locations: null
 compendium_refs:
-- /compendium/monsters/lizard/
-- /compendium/monsters/commoner/
 - /compendium/monsters/noble/
+- /compendium/monsters/commoner/
 - /compendium/monsters/giant-sea-horse/
+- /compendium/monsters/lizard/
 - /compendium/monsters/koi-prawn/
 handouts:
 - /campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/
 - /campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/
 - /campaigns/journeys-through-the-radiant-citadel/handouts/koi-prawn-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/
 - /campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/map-012-map-21-dyn-singh-night-market-player/
 - /campaigns/journeys-through-the-radiant-citadel/handouts/map-016-map-22-market-challenges-player/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-012-map-21-dyn-singh-night-market-player/
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
 ### Descrição e Elementos Importantes
 
-Os Jogos do Mercado ocorrem dentro de três tendas localizadas no Event Grounds, que estão localizados no centro do mercado noturno de Dyn Singh. Os herdeiros patrocinam eventos para anunciar seus produtos e atrair visitantes para o mercado. O atual patrocinador de cada tendência decide como seu interior é organizado. Os três eventos seguintes estão sendo agora hospedados:
+Os Jogos do Mercado acontecem dentro de três tendas douradas localizadas nos Campos de Eventos, que estão situados no centro do Dyn Singh Night Market. Vendedores patrocinam eventos para anunciar suas mercadorias e atrair visitantes para o mercado. O atual patrocinador de cada tenda decide como seu interior é arranjado. Os três eventos a seguir estão sendo realizados:
 
-*Área Aroon Family Pepper Challenge. * Um teste de resistência apresentado pelos Spicy Brothers.
+**Área Aroon Family Desafio de Pimenta.** Um teste de resistência hospedado pelos Irmãos Picantes.
 
-**Área Battle Prawn Challenge. Uma competição de culinária organizada por Sid Squid do Trusty Leek.
+**Área Desafio do Camarão de Batalha.** Uma competição culinária sediada por Sid Squid do Alho-Poró Confiável.
 
-?Área Hide-and-Sek Desafio. Um jogo apresentado pela Madame Kulp's Silk.
-
-
-[Mapa 2.1: Mercado Noturno de Dyn Singh] (/images/campaigns/journeys-through-the-radiant-citadel/011-map-21-dyn-singh-night-market.webp)
+**Área Desafio Esconde-e-Esconde.** Um jogo sediado pela Seda de Madam Kulp.
 
 
-[Versão do corredor] (/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)
+![Mapa 2.1: Dyn Singh Night Market](/images/campaigns/journeys-through-the-radiant-citadel/011-map-21-dyn-singh-night-market.webp)
+
+
+![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/012-map-21-dyn-singh-night-market-player.webp)
 
 
 
-### Participante dos Jogos
+### Participando nos Jogos
 
-Os personagens que desejam participar dos Jogos de Mercado só precisam apareceu em uma tendência de eventos e peder para competir. Os Jogos do Mercado Rodam muitas vezes ao longo da noite. As receitas para os três Jogos de Mercado apareceu nas próximas.
-Personagens que ganham um jogo de mercado ganham 1 renome com os vendedores do mercado noturno de Dyn Singh (veja a seção "**Área Gaining Renown**"). À medida que os personagens ganham fama, os precursores do mercado compartilham mais informações com eles (veja a seção "**Área What Vendors Know**"). Se um personagem participar e conseguir todos os três jogos de mercado, eleesunaganhamumafama,comoosmoradoresrespeitamsua tenacidade. Se um personagem ganhar todos os três desafios, os vinganças Fico impressionados e os Chamam de *reah*, o que significa "carvão do mesmo nevoeiro".
-
-
-### Desafio de Pimenta Família Aroon
-
-Os Spicy Brothers, Kasem e Vi Aroon, são amantes energéticos e excêntricos de todas as coisas como picantes. Elees patrocinam o Aroon Family Pepper Challenge na tendência do evento sudoeste. Este teste de fortaleza e força de vontade foi criado pelo pai deles há anos, e é uma tradução que elees mantiveram agora que elees possuem o negócio da família.
-Um dos assistentes do Spicy Brother, um humano vestido de uniforme vermelho e verde, recebe personagens que participam do Aroon Family Pepper Challenge. O assistente descreva como regras:
-* Os participantes enviaram-se em uma mesa com uma cesta de pimentas misturadas e vários jarros de leite.
-* Durante cada uma das três andadas do evento, os participantes devem selecionar uma peça da cesta e comê-la.
-* Qualquer participante que vem uma pimenta cada rodada sem parar ao ler ou sair da mesa até que as três rodas estejam terminadas é declarado um Vencedor.
-Violência e magia não são permitidas durante o evento, mas ninguém verificou os efeitos físicos antes da competição.
-Se os personagens concordarem com as receitas, o assistente pede que esperem alguns momentos para o próximo evento comer. Se quatro ou mais personagens optarem por participar, eles são os únicos concorrentes no evento. Se menos personagens participam, outros moradores (comuns) participam do evento do público, garantindo que haja pelo menos quatro participantes.
-
-### Saudação ao calor
-
-Após uma pequena espera, os personagens são escolhidos para a área principal da tendência.
-> Uma multidão aplaude as arquibancadas nas proximidades, à medida que você é levado para o alargamento aberto da tendência de eventos. Antes de você é uma minha quadrada levando uma cena de pimentões coloridos e vários jarros de leite.
-> "Bem-vindo, Desafiantes, ao Desafio Aroon Família Pimenta!" grita um lobo bombástico em pé perto da mesa e vestindo um tratado vermelho, com tema de pimenta. "Sou o teu amigo, Vi Aroon! Está todos prontos para saudar. O calor?"
-
-[Kasem e Vi Aroon] (/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)
-
-Os personagens são orientados a sentir-se à mesa. Assim que está sentenciados, Vi (bem caótico, nobre humano) recapitula breve as regras e pergunta se há algo pergunta. Uma vez que todas as pernas são abortadas, o desafio começa.
-
-### Executando o Desafio
-
-O desafio se desdobra ao longo de três rodas, com desafiantes comendo suas pimentas uma de cada vez, começando com o participante mais próximo de Vi e indo no sentido horário em rasgado da mesa.
-Por sua vez, durante cada rodada, cada personagem participante deve estudar uma peça da cesta e comê-la. As pimentas são do estado único dos Spicy Brothers, e nada revela seu gosto ou intensidade. O personagem deve rolar sobre a mesa de pimenta picante literatura para determinar que tipo de pimenta elees puxam, juntamente com quaisquer efeitos específicos que a pimenta tem. O personagem deve entrar fazendo um Salvaguarda de Constituição. A DC depende da pimenta que escolheram. Em um Salvaguarda bem sucedido, ele consegue comê-lo. Em uma falha Salvaguarda, eles comem a pimenta, mas tem desvantagem no próximo Salvaguarda que eles fazem durante o desafio. Se um caracterere falhar um Salvaguarda por 10 ou mais, elees alcançam reflexivamente o leite ou saem da mesa. De qualquer forma, eles perdem.
-Vi oferece comentários colorados durante o evento, incentivando a multidão a animar participantes e concorrentes expostos para dar mortes dramáticas.
-
-Tradução:
-
-| 1 | Dud! A pimenta não é uma pimenta, mas um tomate cereja. Você não precisa fazer um Salvaguarda. |
-| 2-5 | Pimenta comum (CD 10). Esta pimenta não tem efeitos especiais. |
-| 6-7 | Pimenta de calor doce (CD 12). A pimenta está lá quente mas deliciosa. Você não tem questivar neste Salvaguarda se você normalmente tem como resultado de comer outra pimenta. |
-| 8 | Pimenta das Ondas Queimadas (CD 16). O calor desta pimenta vem em ondas. Você deve fazer dois consecutivos Constituição Salvaguardas esta rodada contra esta pimenta. |
-| 9 | Lance-chamas (CD 18). Se falar o seu Salvaguarda contra esta pimenta, arrote ou gaspa especiarias no ar. O próximo participante é Desafio para comer uma pimenta tem desvantagem em sua Salvaguarda. |
-| 10 | Pimenta de cara de crânio (CD 20). O temperamento é intenso. Por um instante, a cara de cada participante parece-te um crânio. Isto é inquietante, mas não tem outro efeito. |
-
-### Acabar com o Desafio
-
-O desafio termina quando cada participante é desqualificado ou com certeza. Vencedores e Perdidores são recompensados com grandes tigelas de iogurte cremaso. Qualquer personagem que gera o desafio uma reputação com os vinganças do mercado noturno de Dyn Singh.
-Após o desafio está concluído, os personagens podem pedir informações a Vi sobre os rubos (veja a seção "**Área What Vendors Know**"). Logo após os personagens começarem a questionar Vi ou quando verão da tendência, Kasem chega com notícias sobre problemas no mercado. Role no Mercado Mischief na seção "**Área Wynling Mischief**" para determinar o que aconteceu.
+Personagens que desejam participar dos Jogos do Mercado precisam apenas aparecer em uma tenda de evento e pedir para competir. Os Jogos do Mercado ocorrem várias vezes durante a noite. As regras dos três Jogos do Mercado aparecem nas seções seguintes.
+Personagens que vencem um Jogo do Mercado ganham 1 renome com os vendedores do Mercado Noturno Dyn Singh (veja a seção "**Área Ganhando Renome**"). À medida que os personagens ganham renome, os vendedores do mercado compartilham mais informações com eles (veja a seção "**Área O Que os Vendedores Sabem**"). Se um personagem participar e perder todos os três Jogos do Mercado, ele ainda ganha 1 renome, pois os moradores locais respeitam sua tenacidade. Se um personagem vencer todos os três desafios, os vendedores ficam impressionados e os chamam de *reah*, o que significa "carvões do mesmo fogo".
 
 
-### Desafio da Camarão de Batalha
+### Desafio do Pimentão da Família Aroon
+
+Os Irmãos Picantes, Kasem e Vi Aroon, são amantes enérgicos e excêntricos de tudo que é apimentado. Eles patrocinam o Desafio do Pimentão da Família Aroon na tenda de eventos sudoeste. Este teste de fortaleza e força de vontade foi criado por seu pai anos atrás, e é uma tradição que eles mantêm agora que possuem o negócio da família.
+Um dos assistentes do Irmão Picante, um humano vestido com um uniforme vermelho e verde berrantes, recebe personagens que procuram participar do Desafio de Pimenta da Família Aroon. O assistente descreve as regras:
+* Os participantes sentam-se em uma mesa com uma cesta de pimentas mistas e vários jarros de leite.
+* Durante cada uma das três rodadas do evento, os participantes devem selecionar uma pimenta da cesta e comê-la.
+* Qualquer participante que coma uma pimenta em cada rodada sem pegar leite ou deixar a mesa até que as três rodadas acabem é declarado um vencedor.
+Violência e magia não são permitidos durante o evento, mas ninguém verifica por efeitos mágicos lançados antes da competição.
+Se os personagens concordarem com as regras, o assistente pede que esperem alguns momentos para o próximo evento começar. Se quatro ou mais personagens optarem por participar, eles são os únicos concorrentes no evento. Se menos personagens participarem, outros moradores locais (pessoas comuns) se juntam ao evento do público, garantindo que haja pelo menos quatro participantes.
+
+### Saúda o Calor
+
+Após uma breve espera, os personagens são escoltados para a área principal da tenda.
+> Uma multidão aplaude das arquibancadas próximas enquanto você é conduzido para o espaço amplo e aberto da tenda do evento. À sua frente há uma mesa quadrada exibindo uma cesta enorme de pimentas coloridas e várias jarras de leite.
+> "Bem-vindos, desafiantes, ao Desafio de Pimenta da Família Aroon!" grita um anunciador bombástico que está perto da mesa e vestindo uma fantasia vermelha com tema de pimenta. "Eu sou o seu anfitrião, Vi Aroon! Todos estão prontos para cumprimentar o calor?!"
+
+![Kasem e Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)
+
+Os personagens são direcionados a sentar-se à mesa. Assim que se sentam, Vi (caótico e bom, nobre humana) recapitula brevemente as regras e pergunta se há alguma dúvida. Uma vez que quaisquer perguntas sejam abordadas, o desafio começa.
+
+### Realizando o Desafio
+
+O desafio se desenrola por três rodadas, com os desafiantes comendo seus pimentões um de cada vez, começando pelo participante mais próximo de Vi e seguindo no sentido horário ao redor da mesa.
+Em seu turno durante cada rodada, cada personagem participante deve escolher uma pimenta da cesta e comê-la. As pimentas vêm do estoque exclusivo dos Irmãos Picantes, e nada sobre elas revela seu sabor ou intensidade. O personagem deve rolar na tabela de Pimenta Picante Aleatória para determinar que tipo de pimenta ele puxa, juntamente com quaisquer efeitos especiais que a pimenta tenha. O personagem deve então fazer um Teste de Resistência de Constituição. A CD depende da pimenta que ele escolheu. Em caso de sucesso no teste de resistência, eles conseguem comê-la. Em caso de falha no teste de resistência, eles comem a pimenta, mas têm desvantagem no próximo teste de resistência que fizer durante o desafio. Se um personagem falhar um teste de resistência em 10 ou mais, ele ou alcança leite reflexivamente ou sai da mesa. De qualquer maneira, ele perde.
+Vi oferece comentários coloridos durante o evento, encorajando a multidão a torcer pelos participantes e desafiando os competidores a darem mordidas dramáticas.
+
+**Tabela: Pimenta Picante Aleatória**
+
+| 1 | Amigo! O pimentão não é um pimentão, mas um tomate cereja. Você não precisa fazer um Teste de Resistência. |
+| 2–5 | Pimenta Comum (CD 10). Esta pimenta não tem efeitos especiais. |
+| 6–7 | Pimenta Picante Doce (CD 12). A pimenta é quente, mas deliciosa. Você não tem desvantagem neste teste de resistência se normalmente teria como resultado de comer outra pimenta. |
+| 8 | Pimenta Ondas Queimantes (CD 16). O calor desta pimenta vem em ondas. Você deve fazer dois Testes de Resistência de Constituição consecutivos nesta rodada contra esta pimenta. |
+| 9 | Lançador de Chamas (CD 18). Se você falhar seu Teste de Resistência contra esta pimenta, você arrota ou engasga especiarias no ar. O próximo participante do desafio que comer uma pimenta tem desvantagem em seu Teste de Resistência. |
+| 10 | Skull-Face Pepper (CD 20). A especiaria é intensa. Por um instante, o rosto de cada participante parece um crânio para você. Isso é perturbador, mas não tem outro efeito. |
+
+### Encerramento do Desafio
+
+O desafio termina quando todos os participantes forem desqualificados ou tiverem comido três pimentas. Vencedores e perdedores igualmente são recompensados com grandes tigelas de iogurte cremoso. Qualquer personagem que vencer o desafio ganha 1 renome junto aos vendedores do Mercado Noturno Dyn Singh.
+Após o desafio ser concluído, os personagens podem perguntar a Vi sobre os furtos (veja a seção "**Área O que os Vendedores Sabem**"). Pouco tempo depois de os personagens começarem a questionar Vi ou ao saírem da tenda, Kasem chega com notícias sobre problemas no mercado. Faça uma rolagem em Travessuras do Mercado na seção "**Área Travessuras de Wynling**" para determinar o que aconteceu.
 
 
-[Jagged Koi Prawns são apenas um perigo inesperado dos jogos no mercado noite de Dyn Singh] (/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
-
-Sid Squid's Trusty Leek patrocina Camarões de Batalha: O Camarão. Os bolos de camarão do Sid foram votados como o melhor prato durante uma competição de festival no ano passado. Este desafio, realizado na tendência mesmo norte, testa inventividade dos participantes e versatilidade como eles pré-param Gigante versões de seu prato assinatura.
-A tendência é decorada em um tema náutico, pesado em decoração de corda e acessórios de bronze. Sid (bem caótico, nobre humano) e cinco assistentes, todos vestindo roupas de chef amarelo, convocam ansiosos os visitantes para participar da Batalha dos Camarões. Se os personagens perguntarem, Sid explica que o desafio é simples: ajudar a fazer um gigantesco bolo de camarão em tempo recorde. Os participantes devem preparar rápido Carne de Camarão e Costas para os sous-chefs. Se executarem estas preparações com rapidez suficiente, podem completar a receita em tempo recorde. A menos que os personagens perguntem especificamente, ninguém mente os camarões incomuns usados neste desafio (veja a seção "Battle Arena").
-Até quatro personagens podem participar no evento. Se menos personagens participam, alguns assistentes de Sid (comunistas) se juntam a eles para criar uma equipe de quatro. Nenhuma regra proíbe magia durante este evento.
-Personagens que participam são convocados a vestir aventais amarelos que combinam com os dos assistentes de Sid e Sid. O próximo desafio em breve.
-
-### Arena da Batalha
+### Desafio do Camarão de Batalha
 
 
-[Mapa 2.2: Desafios de mercado] (/images/campaigns/journeys-through-the-radiant-citadel/015-map-22-market-challenges.webp)
+![Os Camarões Koi Irregulares são apenas um perigo inesperado dos jogos no Mercado Noturno Dyn Singh](/images/campaigns/journeys-through-the-radiant-citadel/014-02-004jagged-koi-prawns.webp)
+
+Sid Squid's Trusty Leek patrocina Battle Prawns: The Shrimpening. Os bolinhos de camarão de Sid foram votados como o melhor prato durante uma competição de festival no ano passado. Este desafio, realizado na tenda de evento do norte, testa a inventividade e versatilidade dos participantes enquanto eles preparam versões gigantescas de seu prato característico.
+A tenda está decorada com um tema náutico, repleta de decorações de corda e ferragens de latão. Sid (Caótico e Bom, nobre humano) e cinco assistentes, todos vestindo uniformes amarelos de chef, convidam ansiosamente os visitantes para participar dos "Battle Prawns". Se os personagens perguntarem, Sid explica que o desafio é simples: ajudar a fazer um bolo de camarão gigantesco em tempo recorde. Os participantes devem preparar rapidamente carne de camarão e picar feijões para os subchefes. Se eles realizarem esses preparativos rápido o suficiente, poderão completar a receita em tempo recorde. A menos que os personagens perguntem especificamente, ninguém menciona os camarões incomuns usados neste desafio (veja a seção "Arena de Batalha").
+Até quatro personagens podem participar do evento. Se menos personagens participarem, alguns assistentes de Sid (civis comuns) se juntarão a eles para formar uma equipe de quatro. Nenhuma regra proíbe magia durante este evento.
+Os personagens que participam são convidados a vestir aventais amarelos que combinam com os de Sid e dos assistentes de Sid. O próximo desafio começa em breve.
+
+### Arena de Batalha
 
 
-[Versão do corredor] (/images/campaigns/journeys-through-the-radiant-citadel/016-map-22-market-challenges-player.webp)
-
-Os assistentes de Sid levam personagens participantes para a parte principal da tendência. A arena é representada no mapa 2.2. Leia ou parafraseie a segunda descrição à meditação que os personagens entram:
-> Os espectadores animados aglomeram-se como arquibancadas dentro desta vasta tenda aberta. Uma mesa do espaço está aqui, de ferramentas de cozinha: um par de woks grandes e duas estações de corte longas contendo feitos de grãos verdes de pé-long. O outro lado segura um pouco de vidro do tamanho da piscina cheio de água. A água gira como Grande, formas sombreadas se mover dentro.
-A meta ocidental da arena diz respeito aos utensílios de cozinha e ingredientes necessários para preparar os bolos de camarão. A metade oriental contém um tanque de 3 metros de alta de água e vários gigantecos camarões koi. Os passos em cada extensão levam ao topo do tanque.
-Os personagens participantes são orientados a tomar lugares perto das mesas de preparação no centro da tendência. Sid recebe a multidão e anuncia entusticamente que vai preparar bolos de camarão Gigante – com esperança, em tempo recorde. Sid direção a atenção do público para dois ingredientes específicos: deliciosos grãos de árvores verdes e Gigante, camarões koi empalhados.
-
-### Executando o Desafio
-
-Um dos assistentes de Sid explica o que os participantes precisam fazer em mais detalhes do que antes: preparar um pacote de feijão verde e matar um camarão koi irregular. Se os personagens podem executar ambas como tarefas em 6 rodas ou menos, elees ganham o desafio. Enquanto Sid trabalha na multidão, os assistentes podem responder a um qualquer pergunta com detalhes desta ação. Os assistentes dirigem os participantes a não se afastam das tabelas de preparação até Sid dar o sinal.
-
-### Iniciando o Desafio
-
-Uma vez que todas as pernas são respondidas, os sous-chefs de Sid posicionam-se em rasgado do Grande woks, prontos para transformar os ingredientes no prato final. A menos que menos de quatro personagens participam do evento, esses assistentes não ajudam a preparar os feijões ou os camarões. Sid Lidera o Público em Contagem Regressiva: Neste ponto, os personagens e Camarão Devem Rolar Iniciativa.
-
-### Preparação do feijão
-
-Pacotes machados de feijão verde cobrem ambas as tabelas de preparação. Os participantes devem cortar ou destruir os Feijões com as variações feitas de cozinha na mesa (tratá-los como punhals), suas próprias ferramentas, ou outros métodos. Cada pilha é um único objetivo Pequeno com AC 10; hp 15; e imunidade a frio, veneno e danos psicológicos. Uma pilha é rasgada inutilizável se ela exige qualquer quantidade de ácido, nevoeiro, relampago, necrótico, ou dano radiante. Uma vez que uma pilha de feijão é reduzida para 0 Pontos de Vida, os sous-chefs adiciononam os grãos preparados aos woks.
-
-### Preparação do Camarão
-
-O tanque Grande contem quarto camarões koi de 8 pés de consumo (use o bloco de estatísticas ZXQGLOSSARY00111ZQ de cavalo marinho). Os participantes devem matar um dos camarões. Esperando sous-chefs em seguida, pescar o camarão para fora e abrirtá-lo para um wok. Os camarões não são iniciais hostis, mas se defendam se sofrem danos. Tem metado da cobertura de qualquer criatura que ataque fora da água.
-Se os camarões reduzem um personagem para 0 ou menos Pontos de Vida, Sid termina o desafio enquanto os sous-chefs levam qualquer participante ferido para segurança.
-
-### Acabar com o Desafio
-
-O desafio termina quando os participantes completam embaixadores como tarefas, desistir ou são derrotados pelos camarões. Se os personagens falam em qualquer preparação, os assistentes de Sid completam as preparações e depois cozinham e servem os bolos de camarão Gigante.
-Se os participantes completaram as tarefas em 6 rodas ou menos, os bolos de camarão são feitos em tempo recorde. Personagens que participam do desafio geral 1 renome com os vinganças do mercado noturno de Dyn Singh. Se o desafio levou mais de 6 rodadas, a equipe de Sid e o público permanecem em alto humor próximo comem os deliciosos bolos de camarão, mas os personagens não são fantasmas.
-Como Sid agradece aos personagens por participar, problemas acontecem aos vencedores de mercado. Roll on the Market Mischief mais cedo na aventura para determinar o que acontece.
+![Mapa 2.2: Desafios do Mercado](/images/campaigns/journeys-through-the-radiant-citadel/015-map-22-market-challenges.webp)
 
 
-### Desafio de Esconder e Procurar
+![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/016-map-22-market-challenges-player.webp)
 
-O Hide-and-Sek Challenge é patrocinado pela Madame Kulp, que criou formas luxuosas de seda fiada por lagartas tut-krogh. Seu mesmo ao mesmo tempo na tendência de evento oriental. Este desafio não tem público.
-Quando os personagens entram na tendência, leia ou parafraseie o segundo texto:
-> Sentado no meio desta tenda vazia consideravel é um gnomo wizened no trabalho em meio a emaranhados de fio colorados. Várias lagartas azulis, de tamanho gatinho, aninhadas em sua roupa e cabelo. "Bem-vindo! Sou uma Madame Kulp. Está aqui para brincar de enconde-esconde com os meus amigos?"
-Madame Kulp é uma idosa gnomo (nobre neutro). Se os personagens acetarem seu desafio, ela salta e abre um tanque no centro da tendência. Uma escada destino para uma sala escura e confiusa cheia de caixas e móveis.
-Madame Kulp explica que abaixo está uma série de quartos onde várias lagartas tut-krogh (use o bloco de status lagarto) estão se escondendo. Seu desafio é simples: descer a escada e atravessar de volta quatro lagartas dentro de 1 minuto. Qualquer número de personagens pode participar, e eles podem usar a ajuda física, desde que as lagartas não sejam prejudicadas – Madame Kulp é inflexível sobre a segurança das lagartas. Se os personagens concordarem com essas regras, eles podem decidir para o laboratório quando estão prontos.
+Os assistentes de Sid guiam os personagens participantes para a parte principal da tenda. A arena é mostrada no mapa 2.2. Leia ou parafraseie a seguinte descrição enquanto os personagens entram:
+> Espectadores animados lotam as arquibancadas dentro desta vasta tenda aberta. Metade do espaço está repleta de utensílios de cozinha: um par de woks superdimensionados e duas longas estações de corte contendo maços de vagem de pé inteiro. O outro lado abriga um tanque de vidro do tamanho de uma piscina, cheio de água. A água borbulha enquanto formas grandes e sombrias se movem dentro.
+A metade oeste da arena contém os utensílios de cozinha e ingredientes necessários para preparar os bolinhos de camarão. A metade leste contém um tanque de água de 10 pés de altura e vários Camarões Koi gigantes e irregulares. Escadas em ambas as extremidades levam ao topo do tanque.
+Os personagens participantes são direcionados a ficarem perto das mesas de preparo no centro da tenda. Sid cumprimenta a multidão e anuncia entusiasticamente que eles prepararão bolinhos gigantes de camarão—esperançosamente, em tempo recorde. Sid direciona a atenção do público para dois ingredientes especiais: deliciosos feijões verdes e camarões Koi gigantes e serrilhados.
 
-### Executando o Desafio
+### Conduzindo o Desafio
 
-Uma vez que os personagens desceram a escada, leia ou parafraseie o segundo texto:
-> A escada destino em um quarto mal iluminado queira a poeira e especiarias doces. Móveis mofados e caixas são espalhados sobre o espaço. Uma porta leva para norte.
-A área de desafio está representada no mapa 2.2: desafios do mercado e incluir sete salas. Portas destrancadas conectam os espaços, todos os quais são pré-enchidos com coloridas, mas sem valor. As portas são frágeis e cabem divertidas em seus quadrados, permitindo que as lagartas se movam entre os quartos sem obstáculos. A área H1 é iluminada por uma lanterna que derrama luz fraca; as outras áreas são escuras.
+Um dos assistentes de Sid explica o que os participantes precisam fazer com mais detalhes do que antes: preparar um feixe de vagem verde e matar um camarão koi serrilhado. Se os personagens puderem realizar ambas as tarefas em 6 Rodadas ou menos, eles vencem o Desafio. Enquanto Sid interage com a multidão, os assistentes podem responder a quaisquer perguntas com detalhes desta seção. Os assistentes instruem os participantes a não se moverem das mesas de preparação até que Sid dê o sinal.
 
 ### Iniciando o Desafio
 
-Quando o último personagem chega ao fundo da escada, Madame Kulp Grita: Vai!" Neste ponto, os personagens devem ser iniciados.
+Assim que quaisquer perguntas forem respondidas, os sub-chefs de Sid se posicionam ao redor dos grandes woks, prontos para transformar os ingredientes no prato final. A menos que menos de quatro personagens estejam participando do evento, esses assistentes não ajudarão a preparar os feijões ou os camarões. Sid guia o público na contagem regressiva; "Três... dois... um... começa!" Neste ponto, os personagens e os camarões devem rolar a Iniciativa.
 
-### Encontrando Caterpilares
+### Preparação de Feijão
 
-Quatro lagartas tut-krogh escondem-se entre as salas desordenadas, uma em cada área H3, H4, H5 e H7. Um personagem pode determinar se há uma lagarta em uma sala gastando um Ação e sucesso em um CD 13 Inteligência (Investigação) ou Sabedoria (Percepção) verificar.
+Maços massivos de feijão verde cobrem ambas as mesas de preparo. Os participantes devem picar ou amassar os feijões com os vários facas de cozinha na mesa (trate-os como adagas), suas próprias ferramentas ou outros métodos. Cada monte é um único objeto Pequeno com CA 10; Pontos de Vida 15; e imunidade a dano de frio, veneno e Dano Psíquico. Um monte fica inutilizável se sofrer qualquer quantidade de dano ácido, fogo, relâmpago, necrótico ou Dano Radiante. Assim que um monte de feijões for reduzido a 0 Pontos de Vida, os subchefs adicionam os feijões preparados aos woks.
 
-### Colecionando Caterpilares
+### Preparação de Camarão
 
-Uma vez que um personagem encontra um tut-krogh, eles podem convencer a lagarta para vir com ele, sucesso em um CD 10 Sabedoria (Adestrar Animais) check. Alternativamente, um personagem pode agarrar uma lagarta sucedendo em um CD 12 Descrição (ZXQGLOSSARY00019ZQ) verificação. Uma lagarta névoa para uma sala adjacente se ataca ou se um personagem tentar pega-la e falhar.
+O tanque grande contém quatro camarões Koi irregulares de 2,4 metros de comprimento (use o bloco de estatísticas do cavalo marinho gigante). Os participantes devem matar um dos camarões. Sous-chefs esperando então pescam o camarão e o arrastam para um wok. Os camarões não são inicialmente hostis, mas se defendem se sofrerem dano. Eles têm Meia Cobertura de qualquer criatura atacando de fora da água.
+Se os camarões reduzirem um personagem a 0 ou menos Pontos de Vida, Sid encerra o Desafio enquanto os sub-chefs levam quaisquer participantes feridos para segurança.
 
-### Acabar com o Desafio
+### Fim do Desafio
 
-O desafio termina quando os personagens trazem as quatro lagartas para a área H1 ou após 10 rodas passar, o que ocorreu primeiro.
-Se os personagens completam com sucesso o desafio, o dono da loja fica encantado e os declaradores. Qualquer personalidade que participa do desafio uma reputação com os vendedores do mercado noturno de Dyn Singh.
-Se os personagens falam, Madame Kulp convida-os para a tendência e lamenta que as lagartas tut-krogh são criaturas traiçoeiras. Ela convida os personagens para tentar seu desafio mais tarde.
-Logotipodepoisdedeixaratenda,ospersonagensdescobrem que uminfortúnioaconteceucomumvendedor de mercado. Papel no Mercado Malfeitor para determinar o que aconteceu.
+O desafio termina quando os participantes completam ambas as tarefas, desistem ou são derrotados pelos camarões. Se os personagens falharem em qualquer um dos preparativos, os assistentes de Sid completam os preparativos e então cozinham e servem os bolinhos gigantes de camarão.
+Se os participantes completarem ambas as tarefas em 6 Rodadas ou menos, os bolinhos de camarão são feitos em tempo recorde. Os personagens que participaram do desafio ganham 1 renome com os Vendedores do Mercado Noturno Dyn Singh. Se o desafio demorou mais de 6 Rodadas, a tripulação de Sid e o público permanecem animados enquanto comem os deliciosos bolinhos de camarão, mas os personagens não ganham renome.
+Sid agradece aos personagens por participarem; problemas atingem os vendedores do mercado. Faça uma jogada na [Market Mischief] mais cedo na aventura para determinar o que acontece.
 
 
-### Avanço de Caracteres
+### Desafio do Esconde-e-Esconde
 
-Todos os personagens ganham um nível após os membros do grupo participam dos três Jogos de Mercado. Se ele não completarem três Jogos de Mercado, os personagens vão um dia revelar que Kasem é a fonte das interrupções em Tyenmo Noodles e Xungoon Family Seafood.
+O Desafio de Esconde-Esconde é patrocinado por Madam Kulp, que cria roupas luxuosas feitas de seda fiada por lagartas tut-krogh. Seu evento acontece na tenda do evento leste. Este desafio não tem público.
+Quando os personagens entrarem na tenda, leiam ou parafraseiem o seguinte texto:
+> Sentada no meio desta tenda vazia e vasta está uma gnomo sábia, trabalhando emaranhada em novelos de lã colorida. Várias lagartas azuis fofas, do tamanho de gatinhos, dormem nela, aninhadas em suas roupas e cabelos. A gnomo levanta o olhar e diz: "Bem-vindo(a)! Eu sou Madam Kulp. Você veio aqui para brincar de esconde-esconde com meus amigos gentis?"
+Madam Kulp é uma gnomo mulher idosa (nobre neutra). Se os personagens aceitarem o desafio dela, ela pula e abre uma porta de armadilha no centro da tenda. Uma escada desce para uma sala escura e bagunçada cheia de caixas e móveis.
+Madam Kulp explica que abaixo há uma série de salas onde vários lagartas tut-krogh (usar o bloco de estatísticas do lagarto) estão escondidos. Seu desafio é simples: descer a escada e trazer quatro lagartas em um minuto. Qualquer número de personagens pode participar, e eles podem usar assistência mágica desde que as lagartas não sejam feridas — Madam Kulp é inflexível quanto à segurança das lagartas. Se os personagens concordarem com estas regras, eles podem descer para o labirinto quando estiverem prontos.
+
+### Realizando o Desafio
+
+Assim que os personagens descerem a escada, leiam ou parafraseiem o seguinte texto:
+> A escada desce para uma sala mal iluminada, cheirando a poeira e especiarias doces. Móveis empoeirados e caixotes estão espalhados pelo espaço. Uma porta leva para o norte.
+A área de desafio é retratada no Mapa 2.2: Desafios do Mercado e inclui sete salas. Portas destrancadas conectam os espaços, todos cheios de bagunça colorida, mas sem valor. As portas são bambas e encaixam folgadamente em suas molduras, permitindo que lagartas tut-krogh se movam entre as salas sem impedimentos. A Área H1 é iluminada por um lampião que projeta luz fraca; as outras áreas estão escuras.
+
+### Começando o Desafio
+
+Quando o último personagem chega ao pé da escada, Madam Kulp grita: "Prontos? Vão!" Neste ponto, os personagens devem rolar a Iniciativa.
+
+### Encontrando Lagartas
+
+Quatro lagartas tut-krogh se escondem entre os cômodos desordenados, uma em cada área H3, H4, H5 e H7. Um personagem pode determinar se há uma lagarta em um cômodo gastando uma Ação e tendo sucesso em um teste de CD 13 de Inteligência (Investigação) ou Sabedoria (Percepção).
+
+### Coletando Lagartas
+
+Assim que um personagem encontra um tut-krogh, ele pode convencer a lagarta a ir com ele passando em um teste de Sabedoria (Adestrar Animais) CD 10. Alternativamente, um personagem pode pegar uma lagarta passando em um teste de Destreza (Prestidigitação) CD 12. Uma lagarta foge para uma sala adjacente se for atacada ou se um personagem tentar pegá-la e falhar.
+
+### Fim do Desafio
+
+O desafio termina ou quando os personagens levarem as quatro lagartas para a área H1, ou depois que 10 rodadas passarem, o que ocorrer primeiro.
+Se os personagens completarem o desafio com sucesso, o dono da loja fica encantado e os declara vencedores. Qualquer personagem que tenha participado do desafio ganha 1 renome com os vendedores do Mercado Noturno Dyn Singh.
+Se os personagens falharem, Madam Kulp os convida para dentro da tenda e lamenta que as lagartas tut-krogh são criaturas traiçoeiras. Ela convida os personagens para tentar seu desafio novamente mais tarde.
+Logo após deixarem a tenda, os personagens descobrem que uma desgraça atingiu um vendedor de mercado. Façam uma rolagem em Caos do Mercado para determinar o que aconteceu.
+
+
+### Progressão de Personagem
+
+Todos os personagens ganham um nível após os membros do grupo participarem dos três Jogos do Mercado. Se eles não completarem três Jogos do Mercado, os personagens ganham um nível ao revelarem que Kasem é a fonte das perturbações no Tyenmo Noodles e na Família Xungoon de Frutos do Mar.

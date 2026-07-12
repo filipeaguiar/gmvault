@@ -3,7 +3,7 @@ title: Cena 9 - Siabsungkoh Gazetteer
 params:
   kind: scene
 draft: true
-titulo_pt_br: Cena 9 - Siabsungkoh Gazetteer
+titulo_pt_br: Cena 9 - Guia Geográfico de Siabsungkoh
 visibility: gm
 status: draft
 summary: Cena operacional para conduzir na sessão.
@@ -19,100 +19,101 @@ handouts:
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: lmstudio
   status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
 ### Descrição e Elementos Importantes
 
-Em meio a uma vívida patchwork de fazendas rurais e densas selvas de montanha está o movimento e inesquecível Mercado Noturno Dyn Singh. O coração do vale de Siabsungkoh, este mercado regional atrai visitantes de terras distantes com deliciosas comidas, tesouros raros, e toda sorte de fortalezas imprevisíveis. Os turistas apelidaram este bebê em constante mudança o "Dancing Night Market" devido à sua atmosfera festiva e às coloridas exposições de luz másgicas que iluminam os produtos dos fornecedores.
+Em meio a um mosaico vívido de fazendas rurais e selvas montanhosas densas está o movimentado e inesquecível Mercado Noturno Dyn Singh. No coração do vale de Siabsungkoh, este mercado regional atrai visitantes de terras distantes com comidas deliciosas, tesouros raros e todo tipo de fortunas imprevisíveis. Turistas apelidaram este distrito em constante mudança de "Mercado Noturno Dançante" devido à sua atmosfera festiva e às coloridas exposições de luzes mágicas que iluminam os produtos dos vendedores.
 
-Além do distrito de mercado regional de Siabsungkoh, selvas exuberantes largam plantas e animais raros, incluindo a família flor de lau-pop bioluminescente. Esta flores banham as montanhas todas as noites em suave luz azul-púrpura. Estradas bem conservadas cruzam a região, conectando o populoso Mercado Noturno Dyn Singh com as comunidades dispersas das Bordas Exteriores, que fazem frente com as montanhas.
+Além do distrito de mercado regional de Siabsungkoh, as selvas exuberantes são lar de plantas e animais raros, incluindo a famosa flor bioluminescente lau-pop. Estas flores banham as montanhas à noite em uma luz azul-púrpura suave. Estradas bem cuidadas cruzam a região, conectando o populoso Mercado Noturno Dyn Singh com as comunidades dispersas das Outer Edges, que fazem fronteira com as montanhas.
 
-Tradição, comércio e cultura de influência empresarial em Siabsungkoh. As famílias passam as gerações cultivando reputação como especialistas em diversos ofícios ou campos. O funcionamento interno dos mercados onde as famílias se encontram e comercializam é complicado, repleto de coerência e alianças. As famílias rivais ocasionalmente entram em conflito uns com os outros; seus confilitos geralmente assumem a forma de insultos e boatos, mas às vezes aumentam para brigas violentas. Alguns tradicionais temem perder sua identidade cultural e conexão com o mundo natural, e assim perturbam o crescente impacto do mercado na vida local.
+A Tradição, o comércio e o empreendimento influenciam a cultura em Siabsungkoh. Famílias passam gerações cultivando reputações como especialistas em variados ofícios ou campos. O funcionamento interno dos mercados onde famílias se encontram e negociam é complicado, repleto de competição e alianças. Famílias rivais ocasionalmente colidem umas com as outras; seus conflitos geralmente assumem a forma de insultos e fofoca, mas às vezes escalam para confusões violentas. Alguns tradicionalistas temem perder sua identidade cultural e conexão com o mundo natural, e desejam interromper o crescente impacto do mercantilismo na vida local.
 
 
 ### Características de Siabsungkoh
 
-Os familiares de Siabsungkoh sabem os outros detalhes:
+Aqueles familiarizados com Siabsungkoh sabem os seguintes detalhes:
 
-[Mapa 2.3: Siabsungkoh] (/images/campaigns/journeys-through-the-radiant-citadel/018-map-23-siabsungkoh.webp)
-
-
-[Versão do corredor] (/images/campaigns/journeys-through-the-radiant-citadel/019-map-23-siabsungkoh-player.webp)
+![Mapa 2.3: Siabsungkoh](/images/campaigns/journeys-through-the-radiant-citadel/018-map-23-siabsungkoh.webp)
 
 
+![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/019-map-23-siabsungkoh-player.webp)
 
-### Sites Notas
 
-Siabsungkoh apresenta exuberantes selvas tropicais cavalgadas por montanhas. O vale é Pequeno mas zumbi com energia, como os moradores e turistas frequentam os mercados que servem como um centro de vida comunitária.
 
-### Mercado noturno de Dyn Singh
+### Locais Notáveis
 
-Comerciantes das comunidades dispersas de Siabsungkoh afluem todas as noites ao Mercado Noturno de Dyn Singh, um mercado de tamanho cada vez maior. Os precursores de alimentos tomam o palco central, vingança macarrão, frutas do mar, adesivos de painel, e outras iguarias de barras coloridas e carrinhos. Os visitantes podem trabalhar sobremesas finas, procurar as obras especializadas de famílias artesanais, ou entretidos por grupos como os folclore-partilhadores de Smoke.
-Tornar-se um vendor no Mercado Noturno Dyn Singh envolve ganhar o favor das cinco famílias mais antigas de Siabsungkoh, em seguida, pagar uma taxa Grande para "provar o sucesso". Enquanto este processo de aprovação foi inicialmente criado para evitar a corrupção, muitos aspirantes a fornecedores passam anos economizando para a taxa mesmo depois de ganhar o favor das famílias. Muitas famílias mais velhas tornaram - se gulosas e tentam sufocar a coerência de novos precursores.
+Siabsungkoh apresenta selvas tropicais exuberantes cercadas por montanhas. O vale é pequeno, mas pulsa com energia, pois tanto os moradores quanto os turistas frequentam os mercados que servem como um centro de vida comunitária.
 
-### Contornos Exteriores
+### Dyn Singh Night Market
 
-A região de Siabsungkoh que faz frente com o deserto, as Bordas Exteriores são overgrown com vegetação exuberante e flores lau-pop. Muitas das comunidades dispersas aqui e através do vale rejeitam a burocracia e multidões do distrito de mercado, abordando os períodos do deserto próximo para permanência auto-suficiente. Os comentários não são aceites no Mercado Noturno de Dyn Singh fazem negócios aqui, algumas trocas de bens duvidosos e magia sinistra. Por exemplo, o Nyvrn Candy Cart vende uma variadade de doces mecânicos e amalhados, conhecendo os barteres Geralmente Nice Goods do Solcup "descontaram" tapetes sangarianos e "semi-genuíno" pintoram porcelana do Yongjing.
-Alguns moradores de Outer Edges entendem o conhecimento do mundo natural, como a família acadêmica Preed, cujos membros acreditam que a terra ficou furiosa e em breve engolirá Siabsungkoh inteiro.
+Comerciantes das comunidades dispersas de Siabsungkoh se reúnem todas as noites no Mercado Noturno Dyn Singh, um mercado em constante mudança e do tamanho de uma cidade pequena. Vendedores de comida assumem o centro das atenções, vendendo macarrão, frutos do mar, pasteis de carne e outras iguarias em barracas e carrinhos coloridos. Os visitantes podem provar doces finos, procurar as obras especializadas de famílias artesãs ou se divertir com grupos como os Dançarinos da Fumaça, que contam folclore.
+Tornar-se um vendedor no Mercado Noturno Dyn Singh envolve ganhar o favor das cinco famílias mais antigas de Siabsungkoh, e então pagar uma taxa grande para "provar sucesso". Embora este processo de aprovação tenha sido criado inicialmente para prevenir a corrupção, muitos aspirantes a vendedores passam anos economizando para pagar a taxa mesmo depois de conquistarem o favor das famílias. Muitas famílias mais velhas ficaram gananciosas e tentam sufocar a competição de novos vendedores.
+
+### Bordas Externas
+
+A região de Siabsungkoh que faz fronteira com a Região Selvagem, as Bordas Exteriores estão cobertas por vegetação exuberante e flores lau-pop. Muitas das comunidades dispersas aqui e ao longo do vale rejeitam a burocracia e as multidões do Distrito do Mercado, enfrentando os perigos da Região Selvagem próxima para permanecerem autossuficientes. Mercadores não aceitos no Mercado Noturno Dyn Singh fazem negócios aqui, alguns negociando mercadorias duvidosas e magia sinistra. Por exemplo, o Carrinho de Doces Nyvrn vende uma variedade de doces mágicos e amaldiçoados, enquanto os Bens Geralmente Bons de Hiccup trocam tapetes sangarian "com desconto" e porcelana pintada "semi-genuína" do Yongjing.
+Alguns residentes de Outer Edges buscam conhecimento da Natureza, como a erudita família Preed, cujos membros acreditam que a terra ficou zangada e logo engolirá Siabsungkoh por completo.
 
 ### Montanha Avyrn
 
-Séculos atrás, um jovem feiticeiro chamado Phi Maymoon escalou a Montanha Avyrn e implorou aos espíritos Natureza lá lá para proteger Siabsungkoh de invasores. Os moradores que acreditam nesta concessão escalam a montanha e deixam ofertas de comida e bebida na encasta para mostrar recurso e fornecer nutrição ao feto. Acreditar que o pacto da Phi com os espíritos ainda não foi protegido.
-Além deste memorial está o domingo dos espíritos da montanha. O guarda da montanha, Saan, reside dentro de uma caverna no topo da montanha. Dizem que os laços de amizade são testados dentro da caverna de Saan. Os exploradores que se mostram são os seus amigos e familiares são beneficiados; aqueles que não encontram suas relações encontradas.
+Há séculos, um jovem feiticeiro chamado Phi Maymoon escalou a Montanha Avyrn e implorou aos espíritos da natureza lá para proteger Siabsungkoh de invasores. Os moradores que acreditam nesta lenda sobem a montanha e deixam oferendas de comida e bebida no penhasco para mostrar respeito e fornecer nutrição ao feiticeiro. Eles acreditam que o pacto de Phi com os espíritos ainda os protege.
+Além deste memorial está o domínio dos espíritos da montanha. O guardião da montanha, Saan, reside em uma caverna no topo da montanha. Dizem que os laços de amizade são testados na caverna de Saan. Exploradores que provam lealdade aos seus amigos e família são abençoados; aqueles cujos relacionamentos não se desfazem.
 
 
 ### Vida em Siabsungkoh
 
-As seguintes verdades são conhecidas para aqueles que vivem em Siabsungkoh ou viajam através destas terras.
+As seguintes verdades são conhecidas por aqueles que vivem em Siabsungkoh ou viajam por estas terras.
 
-### Coletivo Merchant Dyn Singh
+### Coletivo de Mercadores Dyn Singh
 
-As melhores famílias comerciantes de Siabsungkoh compõem a Coletividade Merchant Dyn Singh. Essa família trabalha por gerações para crescer a reputação de seus negócios e a qualidade de seus produtos. O coletivo está estabelecido leis para o comércio em toda a terra, emite licenças para a captura de recursos naturais e estabelece as receitas de negócios no mercado noturno. No entanto, seu sucesso força alguns membros gananciosos do coletivo a manter o grupo exclusivo para que possam manter seu próprio poder.
+As melhores famílias mercadoras em Siabsungkoh formam o Coletivo Mercador Dyn Singh. Essas famílias trabalharam por gerações para aumentar a reputação de seus negócios e a qualidade de suas mercadorias. O coletivo estabelece leis para o comércio por toda a terra, emite licenças para colheita de recursos naturais e estabelece as regras de negócios no mercado noturno. No entanto, o sucesso deles empurra alguns membros gananciosos do coletivo a manterem o grupo exclusivo para que possam manter seu próprio poder.
 
-### Como Cinco Famílias
+### As Cinco Famílias
 
-Siabsungkoh é governado pelos chefs das cinco famílias mais antigas da terra, três das quais são membros do coletivo Dyn Singh Merchant. Nos últimos anos, o governo expande o mercado para incentivar mais oportunidades comerciais. Isto empurrou o mercado para o centro da vida local, rankling tradicionalistas e fazenda muitos acreditando que a nação está sacrificando seus laços com o mundo natural.
+Siabsungkoh é governado pelos chefes das cinco famílias mais antigas da terra, três das quais são membros do Coletivo de Mercadores Dyn Singh. Nos anos recentes, o governo expandiu ainda mais o mercado para incentivar maiores oportunidades de comércio. Isso levou o mercado ao centro da vida local, irritando os tradicionalistas e fazendo muitos acreditarem que a nação está sacrificando seus laços com o mundo natural.
 
-### Primeiro a Família
+### Família em Primeiro Lugar
 
-Siabsungkoh é uma sociedade coletiva centralizada na família e profunda lealdade do grupo. As famílias muitas vezes se misturam e podem crescer através do casamento, através da adoração ou simples estudar aceitar algo como membro da família. As famílias encontram são iguais às famílias tradicionais e muitas vezes aotam um nome ou símbolo de família. As primeiras famílias que se encontram Siabsungkoh dizem ter sido de sangue diferente, mas o mesmo espírito. Aqueles que operam sozinhos através da escola ou agir de forma auto-servidora são muitas vezes chamados de *tuah*, o que significa "de coroação solitário".
+Siabsungkoh é uma sociedade coletivista centrada na família e em profundas lealdades de grupo. As famílias são frequentemente misturadas e podem crescer através do casamento, da adoção ou simplesmente escolhendo aceitar alguém como membro da família. Famílias formadas são equivalentes às famílias tradicionais e frequentemente adotam um nome ou símbolo familiar. Diz-se que as primeiras famílias que se estabeleceram em Siabsungkoh eram de sangue diferente, mas do mesmo espírito. Aqueles que operam sozinhos por escolha ou agem de maneira egoísta são frequentemente chamados de *tuah*, o que significa "de coração solitário".
 
-### Visitantes Boas-vinda
+### Bem-vindos Visitantes
 
-O povo de Siabsungkoh tem a reputação de ser amigável e acolhedor; no ento, a confiança é reservada para aqueles que a ganham. Os locais são excessivos educados e usam a fala dupla quando se dirigem a estranhos. Os recém-chegados que prendem os figurinos e trabalham dentro do quadrado cultural, no entanto, podem ganhar lugares e renome dentro das comunidades.
+O povo de Siabsungkoh tem uma reputação de ser amigável e acolhedor; no entanto, a confiança é reservada para aqueles que a conquistam. Os locais são excessivamente educados e usam rodeios ao falar com estranhos. No entanto, os recém-chegados que aprendem os costumes e trabalham dentro da estrutura cultural podem ganhar lugares e renome nas comunidades.
 
 ### Espíritos da Terra
 
-A maioria dos moradores de Siabsungkoh apreciam profundidade Natureza e os espíritos que o habitam. Os indivíduosmuitasvezesdeixammangascortadas em cores como ofertas para os espíritos Natureza, ou passem tempo no Rio Lynx ou Lagoa de Slumber para meditar em reflexos na água. Alguns abandonam os devores da família, buscando definir com Natureza e trabalhando a vontade dos espíritos no Templo de Ember.
-Acredita-se que muitos animais sejam Mensageiros dos espíritos. De particular proeminência mística são lagartas tut-krogh – que criam seda iridescente deslumbrante antes de se transformam em motos de chá – e pangolins, que se diz confrontar almas em tempos de dificuldade.
+A maioria dos residentes de Siabsungkoh aprecia profundamente a natureza e os espíritos que a habitam. Indivíduos frequentemente deixam mangas cortadas em riachos como oferendas aos espíritos da natureza, ou passam tempo no Rio Lynx ou Lago do Sono para meditar sobre os reflexos na água. Alguns renunciam aos deveres de família, buscando sintonizar-se com a natureza e trabalhar a vontade dos espíritos no Templo da Brasa.
+Muitos animais são considerados mensageiros dos espíritos. De proeminência mística particular são as lagartas tut-krogh — que criam seda iridescente deslumbrante antes de se transformarem em mariposas chá — e os pangolins, que dizem confortar almas em tempos de dificuldade.
 
 ### Nomes
 
-Nomes em Siabsungkoh são moldados pela identidade familiar, classe e comércio. Os próximos nomes estão entre os mais comunicados em Siabsungkoh:
+Nomes em Siabsungkoh são moldados por identidade familiar, classe e comércio. Os seguintes nomes são alguns dos mais comuns em Siabsungkoh:
 
 
 ### Lendas de Siabsungkoh
 
-A concessão mais antiga de Siabsungkoh fala de um jovem feiticeiro, Phi Maymoon, que fez um pacto com espíritos Natureza para proteger Siabsungkoh de invasores que estão se aproximando do oeste e sul. Em um ato de desespero, Phi escalou Avyrn Mountain e implorou aos espíritos para proteger o povo da terra. Os espíritos respondem ao chamado da Phi. Com o seu poder combinado, deslocaram a terra em rasgado de Siabsungkoh para formar montanhas irregulares quebloquearam a invasão. Está troca de poder não foi sem um custo – Phi trocou sua vida para formar a barreira que protege Siabsungkoh. O poder mágico de Phi vive nas montanhas e é suspenso a força que dá flores lau-pop seu brilho notável. Atê hoje, muito honaram os espíritos de Siabsungkoh, cuidando de jardins de flores lau-pop ou escalando Avyrn Mountain para deixar ofertas para Phi.
+A lenda mais antiga de Siabsungkoh conta sobre um jovem feiticeiro, Phi Maymoon, que fez um pacto com espíritos da Natureza para proteger Siabsungkoh de invasores que se aproximavam do oeste e do sul. Em um ato de desespero, Phi escalou a Montanha Avyrn e implorou aos espíritos para protegerem o povo da terra. Os espíritos responderam ao chamado de Phi. Com seu poder combinado, eles deslocaram a terra ao redor de Siabsungkoh para formar montanhas irregulares que bloquearam a invasão. Essa troca de poder não veio sem um custo — Phi trocou sua vida para formar a barreira que protege Siabsungkoh. O poder mágico de Phi vive nas montanhas e é supostamente a força que dá às flores lau-pop seu brilho notável. Até hoje, muitos homenageiam os espíritos de Siabsungkoh cuidando de jardins de flores lau-pop ou escalando a Montanha Avyrn para deixar oferendas a Phi.
 
 
-### Aventuras em Baoding
+### Aventuras em Siabsungkoh
 
-Considerados os enredos na mesa de aventuras de Siabsungkoh ao planar aventuras em Siabsungkoh.
+Considere os enredos na tabela de Aventuras de Siabsungkoh ao planejar aventuras em Siabsungkoh.
 
-Siabsungkoh Adventures
+**Tabela: Aventuras de Siabsungkoh**
 
-| 1 | Um vendedor de mercado notourno usa o seu negócio como fachada para lidar com exportações ilegais, como ovos de lagarta tut-krogh ou asas dewynling. O Dyn Singh Merchant Collective contrata os personagens para se passarem por compradores. |
-| 2 | Um retornado aparece no Templo de Ember, buscando ajudar para ver sua morte nas mãos de Damen Rak, chefe de uma das cinco famílias que supervisionam Siabsungkoh. |
-| 3 | Um grupo de bandidos com vida pangolins treinados (use o bloco de estatísticas do gato) podem como clientes, liberar seus animais de estimativa quanto aos personagens passados, e culpar o partido para a fuga. Exigem recompensa pelos animais perdidos. |
-| 4 | Wynlings (veja abaixo) atendem os vagas de uma comunidade toda vez que vão ao mercado. Os locais contratam os personagens como guardas. |
+| 1 | Um vendedor do Mercado Noturno usa seu negócio como fachada para negociar exportações ilegais, como ovos de lagarta tut-krogh ou asas Wynling. O Coletivo de Mercadores Dyn Singh contrata o grupo para se passar por compradores. |
+| 2 | Um revenante aparece no Templo de Ember, buscando ajuda para vingar sua morte às mãos de Damen Rak, chefe de uma das cinco famílias que supervisionam Siabsungkoh. |
+| 3 | Um grupo de bandidos com vinte pangolins treinados (usar o bloco de estatísticas do gato) fingem ser mercadores, soltam seus animais de estimação quando os personagens passam e culpam o grupo pelo escape. Eles exigem compensação pelos animais perdidos. |
+| 4 | Wynlings (ver abaixo) assediam os vagões de uma comunidade sempre que vão para o mercado. Os moradores contratam o grupo como guardas. |
 
 
-### Caracteres de Siabsungkoh
+### Personagens de Siabsungkoh
 
-Se os jogadores querem criar personagens de Siabsungkoh, considerem fazer as seguintes perguntas durante a criação de personagens:
-Por que sua família é consciente? São Artesãos, chefs, párias ou algo assim? Que tipo de reputação tem a sua família?
-** O que fez você se desculpar a fazer em nome da sua família? Isto é proteger a tua família ou a ti mesmo? Isto mudou a sua relação com a sua família?
-Qual é a sua ligação com o Mercado Noturno de Dyn Singh? A sua família tem o favor das famílias que gerem o mercado? O que você espera comprar sempre que você visita? Opõe-se à expansão do mercado ou dá-lhe boas-vinda?
+Se os jogadores quiserem criar personagens de Siabsungkoh, considere fazer-lhes as seguintes perguntas durante a criação de personagem:
+Pelo que sua Família é conhecida? Vocês são artesãos, chefs, marginalizados, ou outra coisa? Que tipo de Reputação sua Família tem?
+**O que você fez ou se recusou a fazer em nome da sua família?** Isso protegeu sua família ou você mesmo? Isso mudou seu relacionamento com sua família?
+Qual é sua conexão com o Mercado Noturno Dyn Singh? Sua família tem o favor das famílias que administram o mercado? O que você mais espera comprar sempre que visita? Você se opõe à expansão do mercado ou a acolhe?
