@@ -2,10 +2,10 @@
 title: Cena 7 - Revealing the Plot
 params:
   kind: scene
-draft: true
+draft: false
 titulo_pt_br: Cena 7 - Revelando a Trama
 visibility: gm
-status: draft
+status: published
 summary: Cena Operacional para Condução na Sessão
 npcs: null
 locations: null

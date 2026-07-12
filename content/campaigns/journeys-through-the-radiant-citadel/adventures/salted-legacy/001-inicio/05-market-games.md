@@ -2,10 +2,10 @@
 title: Cena 5 - Market Games
 params:
   kind: scene
-draft: true
+draft: false
 titulo_pt_br: Cena 5 - Jogos do Mercado
 visibility: gm
-status: draft
+status: published
 summary: Cena Operacional para Conduzir na Sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/

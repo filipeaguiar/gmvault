@@ -2,10 +2,10 @@
 title: Cena 6 - What Vendors Know
 params:
   kind: scene
-draft: true
+draft: false
 titulo_pt_br: Cena 6 - O que os Vendedores Sabem
 visibility: gm
-status: draft
+status: published
 summary: Cena Operacional para Conduzir na Sessão
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/

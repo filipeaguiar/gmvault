@@ -2,10 +2,10 @@
 title: Journeys through the Radiant Citadel
 params:
   kind: campaign
-draft: true
+draft: false
 titulo_pt_br: Jornadas pela Cidadela Radiante
 visibility: gm
-status: draft
+status: published
 system: D&D 5e
 translation:
   source_language: en

@@ -679,6 +679,50 @@ def process_document(
     return ProcessResult(document.path, changed=changed)
 
 
+def publish_completed_adventures(campaign_root: Path, *, apply: bool) -> list[Path]:
+    """Publish complete translated adventures and the indexes needed to navigate to them."""
+    adventures_root = campaign_root / "adventures"
+    if not adventures_root.is_dir():
+        return []
+
+    published: list[Path] = []
+    for adventure_root in sorted(path for path in adventures_root.iterdir() if path.is_dir()):
+        markdown_files = discover_markdown_files(adventure_root)
+        content_files = [path for path in markdown_files if path.name != "_index.md"]
+        content_files, _ = filter_image_only_handouts(content_files)
+        documents = [(path, parse_markdown(path)) for path in content_files]
+        if not documents or any(
+            document is None
+            or not isinstance(document.front_matter.get("translation"), dict)
+            or document.front_matter["translation"].get("target_language") != "pt-BR"
+            for _, document in documents
+        ):
+            continue
+
+        indexes = [path for path in markdown_files if path.name == "_index.md"]
+        for ancestor_index in (
+            adventures_root / "_index.md",
+            campaign_root / "_index.md",
+        ):
+            if ancestor_index.is_file():
+                indexes.append(ancestor_index)
+
+        for path in sorted(set(content_files + indexes)):
+            document = parse_markdown(path)
+            if document is None:
+                continue
+            front_matter = dict(document.front_matter)
+            if front_matter.get("draft") is False and front_matter.get("status") == "published":
+                continue
+            front_matter["draft"] = False
+            front_matter["status"] = "published"
+            published.append(path)
+            if apply:
+                path.write_text(render_markdown(front_matter, document.body), encoding="utf-8")
+
+    return published
+
+
 def run_document_batch(
     paths: list[Path],
     process_path: Callable[[Path], Any],
@@ -833,6 +877,14 @@ def main() -> int:
             on_result=report_result,
             on_error=report_error,
         )
+
+        published: list[Path] = []
+        if args.scope == "campaign":
+            campaign_root = PROJECT_ROOT / "content" / "campaigns" / args.campaign
+            published = publish_completed_adventures(campaign_root, apply=args.apply)
+            for path in published:
+                action = "published" if args.apply else "would publish"
+                print(f"[{action}] {path}", flush=True)
 
         print("\nResumo:")
         print(f"  processados: {processed}")

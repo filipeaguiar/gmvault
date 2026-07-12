@@ -2,10 +2,10 @@
 title: Salted Legacy
 params:
   kind: adventure
-draft: true
+draft: false
 titulo_pt_br: Legado Salgado
 visibility: gm
-status: draft
+status: published
 summary: Aventura independente importada do capítulo Legado Salgado.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/

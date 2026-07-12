@@ -15,6 +15,7 @@ from translate_drafts import (
     get_lmstudio_translation,
     load_glossary_config,
     process_document,
+    publish_completed_adventures,
     run_document_batch,
     select_glossary_config,
     translate_text,
@@ -79,6 +80,48 @@ class LmStudioTranslationTests(unittest.TestCase):
 
             self.assertEqual(selected, [path])
             self.assertEqual(skipped, [])
+
+    def test_completed_adventure_and_ancestor_indexes_are_published(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            campaign = Path(temp_dir) / "campaign"
+            adventure = campaign / "adventures" / "salted-legacy" / "session-01"
+            other = campaign / "adventures" / "written-in-blood"
+            adventure.mkdir(parents=True)
+            other.mkdir(parents=True)
+
+            translated = "translation:\n  target_language: pt-BR\n  status: machine_translated"
+            for path in (
+                campaign / "_index.md",
+                campaign / "adventures" / "_index.md",
+                campaign / "adventures" / "salted-legacy" / "_index.md",
+                adventure / "_index.md",
+            ):
+                path.write_text("---\ndraft: true\nstatus: draft\n---\n", encoding="utf-8")
+            chapter = adventure / "chapter.md"
+            chapter.write_text(
+                f"---\ndraft: true\nstatus: draft\n{translated}\n---\n\nTexto traduzido.\n",
+                encoding="utf-8",
+            )
+            unfinished = other / "chapter.md"
+            unfinished.write_text(
+                "---\ndraft: true\nstatus: draft\n---\n\nEnglish text.\n",
+                encoding="utf-8",
+            )
+
+            published = publish_completed_adventures(campaign, apply=True)
+
+            self.assertIn(chapter, published)
+            for path in (
+                campaign / "_index.md",
+                campaign / "adventures" / "_index.md",
+                campaign / "adventures" / "salted-legacy" / "_index.md",
+                adventure / "_index.md",
+                chapter,
+            ):
+                document = path.read_text(encoding="utf-8")
+                self.assertIn("draft: false", document)
+                self.assertIn("status: published", document)
+            self.assertIn("draft: true", unfinished.read_text(encoding="utf-8"))
 
     def test_prompt_contains_every_glossary_section_and_ptbr_rules(self):
         config = load_glossary_config(self.glossary_file())

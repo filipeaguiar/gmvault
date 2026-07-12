@@ -2,10 +2,10 @@
 title: Adventures
 params:
   kind: adventures_index
-draft: true
+draft: false
 titulo_pt_br: Aventuras
 visibility: gm
-status: draft
+status: published
 translation:
   source_language: en
   target_language: pt-BR

@@ -2,10 +2,10 @@
 title: Cena 8 - Conclusion
 params:
   kind: scene
-draft: true
+draft: false
 titulo_pt_br: Cena 8 - Conclusão
 visibility: gm
-status: draft
+status: published
 summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations: null

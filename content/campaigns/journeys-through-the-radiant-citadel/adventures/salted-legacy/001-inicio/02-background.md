@@ -1,61 +1,63 @@
 ---
-title: "Cena 2 - Background"
+title: Cena 2 - Background
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 2 - Antecedentes
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lamai-tyenmo/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/madam-kulp/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/gammon-xungoon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kusa-xungoon/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lamai-tyenmo-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/madam-kulp-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/gammon-xungoon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/vi-aroon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kusa-xungoon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kasem-aroon-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: lmstudio
+  status: machine_translated
+  model: google/gemma-4-e4b
 ---
 
 ### Descrição e Elementos Importantes
 
-The Xungoon and Tyenmo families have always had a complicated relationship. While their trades and relationships to the Dyn Singh Night Market differ, their stubbornness and intense family loyalty are the same. Both believe they're paragons of what a night market merchant should be while also believing the other family has been jealously sabotaging them for years. Despite this, the current heads of the two families, Lamai Tyenmo and Kusa Xungoon, have vowed not to continue what is now a multigenerational rivalry. These family heads have even begun to seek each other's counsel and plant the seeds of friendship. But in recent weeks, thefts and vandalism targeting both families' businesses have rekindled old suspicions, and the feud threatens to reignite.
+As famílias Xungoon e Tyenmo sempre tiveram um relacionamento complicado. Embora seus ofícios e relacionamentos com o Mercado Noturno Dyn Singh difiram, sua teimosia e intensa lealdade familiar são as mesmas. Ambas acreditam ser o paradigma do que um mercador de mercado noturno deve ser, ao mesmo tempo em que acreditam que a outra família as tem sabotado com ciúmes por anos. Apesar disso, os atuais chefes das duas famílias, Lamai Tyenmo e Kusa Xungoon, juraram não continuar o que agora é uma rivalidade multigeneracional. Esses chefes de família até começaram a buscar o conselho um do outro e plantar as sementes da amizade. Mas nas últimas semanas, furtos e vandalismo visando os negócios de ambas as famílias reacenderam velhas suspeitas, e a disputa ameaça reacender.
 
 
-### Pronunciations
+### Pronúncias
 
-The Siabsungkoh Pronunciations table notes how to pronounce key names in this adventure.
+A tabela de Pronúncias Siabsungkoh detalha como pronunciar nomes importantes nesta aventura.
 
-**Tabela: Siabsungkoh Pronunciations**
+**Tabela: Pronúncias de Siabsungkoh**
 
-| Dyn Singh | DIN sing |
+| Dyn Singh | Dyn Singh |
 | Gammon Xungoon | GAH-mun zun-GOON |
-| Kasem Aroon | ka-seem ah-ROON |
+| Kasem Aroon | Kasem Aroon |
 | Kusa Xungoon | kus-AH zun-GOON |
-| Lamai Tyenmo | lam-EYE tea-EN-mo |
-| Madam Kulp | MAH-dum kuhlp |
-| Siabsungkoh | SAB-sung-koh |
+| Lamai Tyenmo | Lamai Tyenmo |
+| Madam Kulp | MAH-dum Madam Kulp |
+| Siabsungkoh | Siabsungkoh |
 | Tut-krogh | tut-KRO-gh |
-| Vi Aroon | vee ah-ROON |
+| Vi Aroon | Vi Aroon |
 
 
-### Setting the Adventure
+### Configurando a Aventura
 
-The Dyn Singh Night Market could be any city's bustling trade district. Use the following suggestions to help contextualize the market and all of Siabsungkoh in a wider world:
-
-
-### Visiting the Night Market
-
-Before starting the adventure, use the following hooks or work with players to determine why the group has come to the Dyn Singh Night Market:
+O Mercado Noturno Dyn Singh poderia ser o distrito comercial movimentado de qualquer Cidade. Use as seguintes sugestões para ajudar a contextualizar o mercado e todo Siabsungkoh em um mundo mais amplo:
 
 
+### Visitar o Mercado Noturno
+
+Antes de começar a aventura, use os seguintes ganchos ou trabalhe com os jogadores para determinar por que o grupo veio ao Mercado Noturno Dyn Singh:

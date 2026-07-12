@@ -2,10 +2,10 @@
 title: Cena 10 - Wynling
 params:
   kind: scene
-draft: true
+draft: false
 titulo_pt_br: Cena 10 - Wynling
 visibility: gm
-status: draft
+status: published
 summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations:
