@@ -63,10 +63,15 @@ def classify_imported_content_role(title: str | None, *, level: str) -> str | No
     This is intentionally conservative. Titles are used only at import time;
     Hugo templates consume the persisted front matter and never reclassify by title.
     """
-    key = normalize_title_key(title)
+    if not title:
+        return None
+
+    # Remove prefixo numérico inicial de ordenação (ex: "01. ", "1: ", "1 - ") para fins de classificação
+    clean_title = re.sub(r"^\s*\d+[\.:\s-]+\s*", "", title)
+    key = normalize_title_key(clean_title)
     if not key:
         return None
-    if any(pattern.search(title or "") for pattern in _PLAYABLE_TITLE_PATTERNS):
+    if any(pattern.search(clean_title) for pattern in _PLAYABLE_TITLE_PATTERNS):
         return None
 
     if level == "campaign_chapter":

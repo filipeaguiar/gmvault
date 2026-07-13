@@ -3,6 +3,7 @@ title: Cena 1 - Introdução
 weight: 10
 params:
   kind: scene
+content_role: "introduction"
 draft: false
 titulo_pt_br: Cena 1 - Introdução
 visibility: gm
