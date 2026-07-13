@@ -10,12 +10,12 @@
       "temperature": 0.1,
       "timeout": 120.0
     },
-    "gemma-local": {
+    "qwen-ebserh": {
       "engine": "openai-compatible",
-      "model": "google/gemma-4-e4b",
-      "base_url": "http://127.0.0.1:1234/v1",
-      "api_key_env_var": "",
-      "strategy": "split_blocks",
+      "model": "qwen-27b",
+      "base_url": "https://litellm.ia.hc-ufpe.ebserh/v1",
+      "api_key_env_var": "EBSERH_API_KEY",
+      "strategy": "full_document",
       "temperature": 0.1,
       "timeout": 300.0
     }
