@@ -16,4 +16,4 @@ handouts:
 Localidade **After the Ashes** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [After the Ashes](../../adventures/shadow-of-the-sun/001-inicio/07-after-the-ashes/)
+- [After the Ashes](../../adventures/shadow-of-the-sun/07-after-the-ashes/)

@@ -16,7 +16,7 @@ handouts:
 Localidade **Ghost Orchid Tepui** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Ghost Orchid Tepui](../../adventures/orchids-of-the-invisible-mountain/001-inicio/05-ghost-orchid-tepui/)
+- [Ghost Orchid Tepui](../../adventures/orchids-of-the-invisible-mountain/05-ghost-orchid-tepui/)
 
 ### Mapas
 

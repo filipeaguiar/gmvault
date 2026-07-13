@@ -16,4 +16,4 @@ handouts:
 Localidade **Citadel Adventures** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Citadel Adventures](../../adventures/the-radiant-citadel/001-inicio/10-citadel-adventures/)
+- [Citadel Adventures](../../adventures/the-radiant-citadel/10-citadel-adventures/)

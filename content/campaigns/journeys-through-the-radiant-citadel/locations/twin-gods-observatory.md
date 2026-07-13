@@ -16,4 +16,4 @@ handouts:
 Localidade **Twin Gods Observatory** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Twin Gods Observatory](../../adventures/trail-of-destruction/001-inicio/06-twin-gods-observatory/)
+- [Twin Gods Observatory](../../adventures/trail-of-destruction/06-twin-gods-observatory/)

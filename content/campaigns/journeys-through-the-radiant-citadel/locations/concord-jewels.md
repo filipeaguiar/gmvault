@@ -16,4 +16,4 @@ handouts:
 Localidade **Concord Jewels** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Concord Jewels](../../adventures/the-radiant-citadel/001-inicio/04-concord-jewels/)
+- [Concord Jewels](../../adventures/the-radiant-citadel/04-concord-jewels/)

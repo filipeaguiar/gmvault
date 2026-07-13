@@ -16,4 +16,4 @@ handouts:
 Localidade **Riverine** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Riverine](../../adventures/in-the-mists-of-manivarsha/001-inicio/10-riverine/)
+- [Riverine](../../adventures/in-the-mists-of-manivarsha/10-riverine/)

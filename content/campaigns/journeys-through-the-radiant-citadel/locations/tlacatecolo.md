@@ -16,4 +16,4 @@ handouts:
 Localidade **Tlacatecolo** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Tlacatecolo](../../adventures/the-fiend-of-hollow-mine/001-inicio/11-tlacatecolo/)
+- [Tlacatecolo](../../adventures/the-fiend-of-hollow-mine/11-tlacatecolo/)

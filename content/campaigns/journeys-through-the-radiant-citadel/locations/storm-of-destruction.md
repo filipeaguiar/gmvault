@@ -16,4 +16,4 @@ handouts:
 Localidade **Storm of Destruction** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Storm of Destruction](../../adventures/in-the-mists-of-manivarsha/001-inicio/04-storm-of-destruction/)
+- [Storm of Destruction](../../adventures/in-the-mists-of-manivarsha/04-storm-of-destruction/)

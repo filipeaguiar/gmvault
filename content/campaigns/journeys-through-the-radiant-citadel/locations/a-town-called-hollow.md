@@ -16,4 +16,4 @@ handouts:
 Localidade **A Town Called Hollow** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [A Town Called Hollow](../../adventures/the-fiend-of-hollow-mine/001-inicio/06-a-town-called-hollow/)
+- [A Town Called Hollow](../../adventures/the-fiend-of-hollow-mine/06-a-town-called-hollow/)

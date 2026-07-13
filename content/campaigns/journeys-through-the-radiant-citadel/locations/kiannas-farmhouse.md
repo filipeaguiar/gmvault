@@ -16,7 +16,7 @@ handouts:
 Localidade **Kianna's Farmhouse** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Kianna's Farmhouse](../../adventures/written-in-blood/001-inicio/06-kiannas-farmhouse/)
+- [Kianna's Farmhouse](../../adventures/written-in-blood/06-kiannas-farmhouse/)
 
 ### Mapas
 

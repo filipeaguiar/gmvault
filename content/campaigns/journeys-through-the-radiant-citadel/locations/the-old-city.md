@@ -16,7 +16,7 @@ handouts:
 Localidade **The Old City** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Old City](../../adventures/buried-dynasty/001-inicio/04-the-old-city/)
+- [The Old City](../../adventures/buried-dynasty/04-the-old-city/)
 
 ### Mapas
 

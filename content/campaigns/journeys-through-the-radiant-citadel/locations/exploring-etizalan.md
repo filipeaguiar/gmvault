@@ -16,4 +16,4 @@ handouts:
 Localidade **Exploring Etizalan** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Exploring Etizalan](../../adventures/trail-of-destruction/001-inicio/04-exploring-etizalan/)
+- [Exploring Etizalan](../../adventures/trail-of-destruction/04-exploring-etizalan/)

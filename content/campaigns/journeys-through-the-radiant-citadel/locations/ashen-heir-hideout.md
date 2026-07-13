@@ -16,7 +16,7 @@ handouts:
 Localidade **Ashen Heir Hideout** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Ashen Heir Hideout](../../adventures/shadow-of-the-sun/001-inicio/06-ashen-heir-hideout/)
+- [Ashen Heir Hideout](../../adventures/shadow-of-the-sun/06-ashen-heir-hideout/)
 
 ### Mapas
 

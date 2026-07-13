@@ -16,4 +16,4 @@ handouts:
 Localidade **Legends and Lore** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Legends and Lore](../../adventures/the-radiant-citadel/001-inicio/09-legends-and-lore/)
+- [Legends and Lore](../../adventures/the-radiant-citadel/09-legends-and-lore/)

@@ -16,7 +16,7 @@ handouts:
 Localidade **Pedestal of Judgment** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Pedestal of Judgment](../../adventures/shadow-of-the-sun/001-inicio/09-pedestal-of-judgment/)
+- [Pedestal of Judgment](../../adventures/shadow-of-the-sun/09-pedestal-of-judgment/)
 
 ### Mapas
 

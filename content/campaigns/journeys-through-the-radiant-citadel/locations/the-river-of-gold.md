@@ -16,4 +16,4 @@ handouts:
 Localidade **The River of Gold** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The River of Gold](../../adventures/wages-of-vice/001-inicio/04-the-river-of-gold/)
+- [The River of Gold](../../adventures/wages-of-vice/04-the-river-of-gold/)

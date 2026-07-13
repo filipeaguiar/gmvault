@@ -16,4 +16,4 @@ handouts:
 Localidade **The Swamp Forest** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Swamp Forest](../../adventures/in-the-mists-of-manivarsha/001-inicio/06-the-swamp-forest/)
+- [The Swamp Forest](../../adventures/in-the-mists-of-manivarsha/06-the-swamp-forest/)

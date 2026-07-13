@@ -16,4 +16,4 @@ handouts:
 Localidade **Across the Llanos** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Across the Llanos](../../adventures/orchids-of-the-invisible-mountain/001-inicio/04-across-the-llanos/)
+- [Across the Llanos](../../adventures/orchids-of-the-invisible-mountain/04-across-the-llanos/)

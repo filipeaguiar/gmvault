@@ -16,7 +16,7 @@ handouts:
 Localidade **Castle Djaynai** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Castle Djaynai](../../adventures/the-nightseas-succor/001-inicio/05-castle-djaynai/)
+- [Castle Djaynai](../../adventures/the-nightseas-succor/05-castle-djaynai/)
 
 ### Mapas
 

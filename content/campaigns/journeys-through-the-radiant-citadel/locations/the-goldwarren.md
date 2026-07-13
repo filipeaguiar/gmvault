@@ -16,7 +16,7 @@ handouts:
 Localidade **The Goldwarren** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Goldwarren](../../adventures/gold-for-fools-and-princes/001-inicio/06-the-goldwarren/)
+- [The Goldwarren](../../adventures/gold-for-fools-and-princes/06-the-goldwarren/)
 
 ### Mapas
 

@@ -16,4 +16,4 @@ handouts:
 Localidade **Traveling the Skybridge** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Traveling the Skybridge](../../adventures/between-tangled-roots/001-inicio/04-traveling-the-skybridge/)
+- [Traveling the Skybridge](../../adventures/between-tangled-roots/04-traveling-the-skybridge/)

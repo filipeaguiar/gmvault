@@ -16,7 +16,7 @@ handouts:
 Localidade **Exploring Yeonido** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Exploring Yeonido](../../adventures/sins-of-our-elders/001-inicio/05-exploring-yeonido/)
+- [Exploring Yeonido](../../adventures/sins-of-our-elders/05-exploring-yeonido/)
 
 ### Mapas
 

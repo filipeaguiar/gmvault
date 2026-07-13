@@ -16,4 +16,4 @@ handouts:
 Localidade **The Way Up** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Way Up](../../adventures/trail-of-destruction/001-inicio/05-the-way-up/)
+- [The Way Up](../../adventures/trail-of-destruction/05-the-way-up/)

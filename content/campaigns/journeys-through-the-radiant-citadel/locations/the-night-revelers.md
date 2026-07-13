@@ -16,4 +16,4 @@ handouts:
 Localidade **The Night Revelers** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Night Revelers](../../adventures/the-nightseas-succor/001-inicio/06-the-night-revelers/)
+- [The Night Revelers](../../adventures/the-nightseas-succor/06-the-night-revelers/)

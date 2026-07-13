@@ -16,4 +16,4 @@ handouts:
 Localidade **Soul Shaker** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Soul Shaker](../../adventures/written-in-blood/001-inicio/09-soul-shaker/)
+- [Soul Shaker](../../adventures/written-in-blood/09-soul-shaker/)

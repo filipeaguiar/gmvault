@@ -16,7 +16,7 @@ handouts:
 Localidade **Forest of Hands** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Forest of Hands](../../adventures/in-the-mists-of-manivarsha/001-inicio/07-forest-of-hands/)
+- [Forest of Hands](../../adventures/in-the-mists-of-manivarsha/07-forest-of-hands/)
 
 ### Mapas
 

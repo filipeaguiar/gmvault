@@ -16,7 +16,7 @@ handouts:
 Localidade **Trench of Love Lost** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Trench of Love Lost](../../adventures/the-nightseas-succor/001-inicio/10-trench-of-love-lost/)
+- [Trench of Love Lost](../../adventures/the-nightseas-succor/10-trench-of-love-lost/)
 
 ### Mapas
 

@@ -16,4 +16,4 @@ handouts:
 Localidade **Bakunawa** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Bakunawa](../../adventures/between-tangled-roots/001-inicio/08-bakunawa/)
+- [Bakunawa](../../adventures/between-tangled-roots/08-bakunawa/)

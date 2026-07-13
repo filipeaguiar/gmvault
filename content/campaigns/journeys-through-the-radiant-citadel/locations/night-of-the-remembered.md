@@ -16,7 +16,7 @@ handouts:
 Localidade **Night of the Remembered** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Night of the Remembered](../../adventures/the-fiend-of-hollow-mine/001-inicio/08-night-of-the-remembered/)
+- [Night of the Remembered](../../adventures/the-fiend-of-hollow-mine/08-night-of-the-remembered/)
 
 ### Mapas
 

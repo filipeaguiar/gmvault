@@ -16,4 +16,4 @@ handouts:
 Localidade **Silver Tapir Monastery** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Silver Tapir Monastery](../../adventures/orchids-of-the-invisible-mountain/001-inicio/09-silver-tapir-monastery/)
+- [Silver Tapir Monastery](../../adventures/orchids-of-the-invisible-mountain/09-silver-tapir-monastery/)

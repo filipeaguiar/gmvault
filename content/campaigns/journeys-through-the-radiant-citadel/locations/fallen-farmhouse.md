@@ -16,4 +16,4 @@ handouts:
 Localidade **Fallen Farmhouse** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Fallen Farmhouse](../../adventures/written-in-blood/001-inicio/05-fallen-farmhouse/)
+- [Fallen Farmhouse](../../adventures/written-in-blood/05-fallen-farmhouse/)

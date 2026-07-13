@@ -16,4 +16,4 @@ handouts:
 Localidade **Groups of the Citadel** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Groups of the Citadel](../../adventures/the-radiant-citadel/001-inicio/06-groups-of-the-citadel/)
+- [Groups of the Citadel](../../adventures/the-radiant-citadel/06-groups-of-the-citadel/)

@@ -16,4 +16,4 @@ handouts:
 Localidade **Chaos at the Bazaar** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Chaos at the Bazaar](../../adventures/shadow-of-the-sun/001-inicio/04-chaos-at-the-bazaar/)
+- [Chaos at the Bazaar](../../adventures/shadow-of-the-sun/04-chaos-at-the-bazaar/)

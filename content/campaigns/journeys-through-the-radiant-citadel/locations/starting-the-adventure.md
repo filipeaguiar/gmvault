@@ -16,18 +16,18 @@ handouts:
 Localidade **Starting the Adventure** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Starting the Adventure](../../adventures/written-in-blood/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/the-fiend-of-hollow-mine/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/wages-of-vice/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/sins-of-our-elders/001-inicio/04-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/gold-for-fools-and-princes/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/trail-of-destruction/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/in-the-mists-of-manivarsha/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/between-tangled-roots/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/shadow-of-the-sun/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/the-nightseas-succor/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/buried-dynasty/001-inicio/03-starting-the-adventure/)
-- [Starting the Adventure](../../adventures/orchids-of-the-invisible-mountain/001-inicio/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/written-in-blood/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/the-fiend-of-hollow-mine/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/wages-of-vice/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/sins-of-our-elders/04-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/gold-for-fools-and-princes/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/trail-of-destruction/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/in-the-mists-of-manivarsha/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/between-tangled-roots/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/shadow-of-the-sun/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/the-nightseas-succor/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/buried-dynasty/03-starting-the-adventure/)
+- [Starting the Adventure](../../adventures/orchids-of-the-invisible-mountain/03-starting-the-adventure/)
 
 ### Mapas
 

@@ -16,4 +16,4 @@ handouts:
 Localidade **Citadel Defenses** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Citadel Defenses](../../adventures/the-radiant-citadel/001-inicio/07-citadel-defenses/)
+- [Citadel Defenses](../../adventures/the-radiant-citadel/07-citadel-defenses/)

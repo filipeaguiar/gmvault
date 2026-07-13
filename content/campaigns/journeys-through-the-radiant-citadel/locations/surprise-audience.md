@@ -16,4 +16,4 @@ handouts:
 Localidade **Surprise Audience** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Surprise Audience](../../adventures/buried-dynasty/001-inicio/06-surprise-audience/)
+- [Surprise Audience](../../adventures/buried-dynasty/06-surprise-audience/)

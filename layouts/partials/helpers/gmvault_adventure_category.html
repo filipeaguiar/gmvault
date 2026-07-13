@@ -1,41 +1,35 @@
 {{- $adventure := . -}}
 {{- $adventureTitle := or $adventure.Params.titulo_pt_br $adventure.Title -}}
-{{- $sessionItems := slice -}}
-{{- $sessions := partial "helpers/session_pages.html" $adventure -}}
-{{- range (sort $sessions "Weight") -}}
-  {{- $session := . -}}
-  {{- $sessionTitle := or $session.Params.titulo_pt_br $session.Title -}}
-  {{- $sceneItems := slice -}}
-  {{- $scenes := partial "helpers/scene_pages.html" $session -}}
-  {{- range (sort $scenes "Weight") -}}
-    {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
-    {{- range .Pages -}}
-      {{- if eq (partial "helpers/kind.html" .) "handout" -}}
-        {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-  {{- $sessionItems = $sessionItems | append (partial "helpers/gmvault_page_item.html" $session) -}}
-  {{- if $sceneItems -}}
-    {{- $scenesCategory := dict 
-      "type" "category" 
-      "name" (printf "Cenas da %s" $sessionTitle) 
-      "items" $sceneItems 
-      "id" (printf "cat_%s" (substr ( (printf "%s-scenes" $session.Permalink) | md5) 0 8)) 
-    -}}
-    {{- $sessionItems = $sessionItems | append $scenesCategory -}}
+{{- $adventureSubItems := slice -}}
+
+{{- /* Coleta recursiva/direta de todas as cenas da aventura */ -}}
+{{- $scenePages := slice -}}
+{{- range site.Pages -}}
+  {{- if and (eq (partial "helpers/kind.html" .) "scene") (hasPrefix .RelPermalink $adventure.RelPermalink) -}}
+    {{- $scenePages = $scenePages | append . -}}
   {{- end -}}
 {{- end -}}
 
-{{- $adventureSubItems := slice -}}
-{{- if $sessionItems -}}
-  {{- $sessionsCategory := dict 
+{{- $scenePages = sort (sort $scenePages "Title") "Weight" -}}
+
+{{- $sceneItems := slice -}}
+{{- range $scenePages -}}
+  {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+  {{- range .Pages -}}
+    {{- if eq (partial "helpers/kind.html" .) "handout" -}}
+      {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $sceneItems -}}
+  {{- $scenesCategory := dict 
     "type" "category" 
-    "name" (printf "Sessões de %s" $adventureTitle) 
-    "items" $sessionItems 
-    "id" (printf "cat_%s" (substr ( (printf "%s-sessions" $adventure.Permalink) | md5) 0 8)) 
+    "name" (printf "Cenas de %s" $adventureTitle) 
+    "items" $sceneItems 
+    "id" (printf "cat_%s" (substr ( (printf "%s-scenes" $adventure.Permalink) | md5) 0 8)) 
   -}}
-  {{- $adventureSubItems = $adventureSubItems | append $sessionsCategory -}}
+  {{- $adventureSubItems = $adventureSubItems | append $scenesCategory -}}
 {{- end -}}
 
 {{- $adventureNpcItems := slice -}}

@@ -16,4 +16,4 @@ handouts:
 Localidade **On the Hunt** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [On the Hunt](../../adventures/wages-of-vice/001-inicio/05-on-the-hunt/)
+- [On the Hunt](../../adventures/wages-of-vice/05-on-the-hunt/)

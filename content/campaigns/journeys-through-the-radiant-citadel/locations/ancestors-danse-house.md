@@ -16,4 +16,4 @@ handouts:
 Localidade **Ancestors' Danse House** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Ancestors' Danse House](../../adventures/the-nightseas-succor/001-inicio/07-ancestors-danse-house/)
+- [Ancestors' Danse House](../../adventures/the-nightseas-succor/07-ancestors-danse-house/)

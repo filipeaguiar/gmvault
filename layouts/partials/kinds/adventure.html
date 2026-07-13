@@ -20,26 +20,38 @@
     {{ partial "editorial_introduction.html" (dict "pages" $introPages) }}
   </div>
 
-  {{/* Listagem de Sessões / Preparos de Jogo; suporta estrutura simplificada e legada. */}}
-  {{ $sessions := partial "helpers/session_pages.html" . }}
-  {{ $currentVisibility := partial "helpers/visibility.html" . }}
-  {{ $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") }}
-  {{ $visibleSessions := slice }}
-  {{ range $sessions }}
-    {{ $sessionVisibility := partial "helpers/visibility.html" . }}
-    {{ $sessionIsPlayerSafe := or (eq $sessionVisibility "players") (eq $sessionVisibility "public") }}
-    {{ $isIntroduction := eq (partial "helpers/content_role.html" .) "introduction" }}
-    {{ if and (not $isIntroduction) (or (not $isPlayerPage) $sessionIsPlayerSafe) }}
-      {{ $visibleSessions = $visibleSessions | append . }}
+  {{/* Listagem de Cenas da Aventura; suporta estrutura simplificada e legada. */}}
+  {{ $scenes := slice }}
+  {{ range .Pages }}
+    {{ if eq (partial "helpers/kind.html" .) "scene" }}
+      {{ $scenes = $scenes | append . }}
+    {{ else if eq (partial "helpers/kind.html" .) "session" }}
+      {{ range .Pages }}
+        {{ if eq (partial "helpers/kind.html" .) "scene" }}
+          {{ $scenes = $scenes | append . }}
+        {{ end }}
+      {{ end }}
     {{ end }}
   {{ end }}
-  {{ if gt (len $visibleSessions) 0 }}
+
+  {{ $currentVisibility := partial "helpers/visibility.html" . }}
+  {{ $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") }}
+  {{ $visibleScenes := slice }}
+  {{ range $scenes }}
+    {{ $sceneVisibility := partial "helpers/visibility.html" . }}
+    {{ $sceneIsPlayerSafe := or (eq $sceneVisibility "players") (eq $sceneVisibility "public") }}
+    {{ $isIntroduction := eq (partial "helpers/content_role.html" .) "introduction" }}
+    {{ if and (not $isIntroduction) (or (not $isPlayerPage) $sceneIsPlayerSafe) }}
+      {{ $visibleScenes = $visibleScenes | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $visibleScenes) 0 }}
     <div class="adventure-sessions-section">
-      <h3 class="section-title"><i class="ra ra-hourglass"></i> Cronograma de Sessões / Planejamentos</h3>
+      <h3 class="section-title"><i class="ra ra-crossed-swords"></i> Cenas e Preparativos de Jogo</h3>
       <div class="sessions-timeline">
-        {{ range (sort (sort $visibleSessions "Title") "Weight") }}
+        {{ range (sort (sort $visibleScenes "Title") "Weight") }}
           <div class="timeline-item">
-            <div class="timeline-badge"><i class="ra ra-hourglass"></i></div>
+            <div class="timeline-badge"><i class="ra ra-scroll"></i></div>
             <div class="timeline-content">
               <h4>
                 <a href="{{ .RelPermalink }}">{{ or .Params.titulo_pt_br .Title }}</a>

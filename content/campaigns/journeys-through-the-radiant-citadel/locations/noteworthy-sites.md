@@ -16,7 +16,7 @@ handouts:
 Localidade **Noteworthy Sites** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Noteworthy Sites](../../adventures/the-radiant-citadel/001-inicio/03-noteworthy-sites/)
+- [Noteworthy Sites](../../adventures/the-radiant-citadel/03-noteworthy-sites/)
 
 ### Mapas
 

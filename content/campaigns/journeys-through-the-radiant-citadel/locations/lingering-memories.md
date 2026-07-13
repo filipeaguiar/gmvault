@@ -16,4 +16,4 @@ handouts:
 Localidade **Lingering Memories** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Lingering Memories](../../adventures/sins-of-our-elders/001-inicio/06-lingering-memories/)
+- [Lingering Memories](../../adventures/sins-of-our-elders/06-lingering-memories/)

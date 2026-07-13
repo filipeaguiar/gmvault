@@ -16,4 +16,4 @@ handouts:
 Localidade **Venturing from Sagorpur** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Venturing from Sagorpur](../../adventures/in-the-mists-of-manivarsha/001-inicio/05-venturing-from-sagorpur/)
+- [Venturing from Sagorpur](../../adventures/in-the-mists-of-manivarsha/05-venturing-from-sagorpur/)

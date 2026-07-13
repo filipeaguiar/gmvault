@@ -16,7 +16,7 @@ handouts:
 Localidade **Spirit of the Past** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Spirit of the Past](../../adventures/sins-of-our-elders/001-inicio/07-spirit-of-the-past/)
+- [Spirit of the Past](../../adventures/sins-of-our-elders/07-spirit-of-the-past/)
 
 ### Mapas
 

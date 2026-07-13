@@ -16,4 +16,4 @@ handouts:
 Localidade **Arrival in Janya** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Arrival in Janya](../../adventures/the-nightseas-succor/001-inicio/09-arrival-in-janya/)
+- [Arrival in Janya](../../adventures/the-nightseas-succor/09-arrival-in-janya/)

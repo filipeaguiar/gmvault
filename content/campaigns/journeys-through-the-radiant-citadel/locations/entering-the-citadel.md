@@ -16,4 +16,4 @@ handouts:
 Localidade **Entering the Citadel** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Entering the Citadel](../../adventures/the-radiant-citadel/001-inicio/08-entering-the-citadel/)
+- [Entering the Citadel](../../adventures/the-radiant-citadel/08-entering-the-citadel/)

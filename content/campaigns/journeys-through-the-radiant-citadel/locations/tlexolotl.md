@@ -16,4 +16,4 @@ handouts:
 Localidade **Tlexolotl** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Tlexolotl](../../adventures/trail-of-destruction/001-inicio/11-tlexolotl/)
+- [Tlexolotl](../../adventures/trail-of-destruction/11-tlexolotl/)

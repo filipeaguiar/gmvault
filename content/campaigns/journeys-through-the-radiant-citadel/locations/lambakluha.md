@@ -17,7 +17,7 @@ handouts:
 Localidade **Lambakluha** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Lambakluha](../../adventures/between-tangled-roots/001-inicio/05-lambakluha/)
+- [Lambakluha](../../adventures/between-tangled-roots/05-lambakluha/)
 
 ### Mapas
 

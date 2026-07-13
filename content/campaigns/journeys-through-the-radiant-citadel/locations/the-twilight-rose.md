@@ -16,4 +16,4 @@ handouts:
 Localidade **The Twilight Rose** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Twilight Rose](../../adventures/shadow-of-the-sun/001-inicio/08-the-twilight-rose/)
+- [The Twilight Rose](../../adventures/shadow-of-the-sun/08-the-twilight-rose/)

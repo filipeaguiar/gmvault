@@ -16,7 +16,7 @@ handouts:
 Localidade **Crystal Caves** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Crystal Caves](../../adventures/orchids-of-the-invisible-mountain/001-inicio/06-crystal-caves/)
+- [Crystal Caves](../../adventures/orchids-of-the-invisible-mountain/06-crystal-caves/)
 
 ### Mapas
 

@@ -16,4 +16,4 @@ handouts:
 Localidade **Features** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Features](../../adventures/the-radiant-citadel/001-inicio/02-features/)
+- [Features](../../adventures/the-radiant-citadel/02-features/)

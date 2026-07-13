@@ -16,4 +16,4 @@ handouts:
 Localidade **Cena** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Cena](../../adventures/credits/001-inicio/02-cena/)
+- [Cena](../../adventures/credits/02-cena/)

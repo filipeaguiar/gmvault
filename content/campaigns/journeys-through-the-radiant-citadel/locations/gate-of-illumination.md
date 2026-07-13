@@ -16,7 +16,7 @@ handouts:
 Localidade **Gate of Illumination** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Gate of Illumination](../../adventures/trail-of-destruction/001-inicio/08-gate-of-illumination/)
+- [Gate of Illumination](../../adventures/trail-of-destruction/08-gate-of-illumination/)
 
 ### Mapas
 

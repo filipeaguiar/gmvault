@@ -16,4 +16,4 @@ handouts:
 Localidade **Cycle of Dread** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Cycle of Dread](../../adventures/sins-of-our-elders/001-inicio/03-cycle-of-dread/)
+- [Cycle of Dread](../../adventures/sins-of-our-elders/03-cycle-of-dread/)

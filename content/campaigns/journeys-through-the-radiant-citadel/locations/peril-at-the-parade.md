@@ -16,7 +16,7 @@ handouts:
 Localidade **Peril at the Parade** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Peril at the Parade](../../adventures/wages-of-vice/001-inicio/06-peril-at-the-parade/)
+- [Peril at the Parade](../../adventures/wages-of-vice/06-peril-at-the-parade/)
 
 ### Mapas
 

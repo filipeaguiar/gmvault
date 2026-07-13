@@ -16,4 +16,4 @@ handouts:
 Localidade **Tayyib Empire** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Tayyib Empire](../../adventures/beyond-the-radiant-citadel/001-inicio/02-tayyib-empire/)
+- [Tayyib Empire](../../adventures/beyond-the-radiant-citadel/02-tayyib-empire/)

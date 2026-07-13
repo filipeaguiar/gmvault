@@ -16,4 +16,4 @@ handouts:
 Localidade **Death in the Mines** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Death in the Mines](../../adventures/gold-for-fools-and-princes/001-inicio/04-death-in-the-mines/)
+- [Death in the Mines](../../adventures/gold-for-fools-and-princes/04-death-in-the-mines/)

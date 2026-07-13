@@ -16,4 +16,4 @@ handouts:
 Localidade **The Restless Dead** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Restless Dead](../../adventures/the-nightseas-succor/001-inicio/04-the-restless-dead/)
+- [The Restless Dead](../../adventures/the-nightseas-succor/04-the-restless-dead/)

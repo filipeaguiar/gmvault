@@ -16,4 +16,4 @@ handouts:
 Localidade **The Tepui's Fate** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Tepui's Fate](../../adventures/orchids-of-the-invisible-mountain/001-inicio/07-the-tepuis-fate/)
+- [The Tepui's Fate](../../adventures/orchids-of-the-invisible-mountain/07-the-tepuis-fate/)

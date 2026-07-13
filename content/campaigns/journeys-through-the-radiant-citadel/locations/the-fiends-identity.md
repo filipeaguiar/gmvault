@@ -16,4 +16,4 @@ handouts:
 Localidade **The Fiend's Identity** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Fiend's Identity](../../adventures/the-fiend-of-hollow-mine/001-inicio/05-the-fiends-identity/)
+- [The Fiend's Identity](../../adventures/the-fiend-of-hollow-mine/05-the-fiends-identity/)

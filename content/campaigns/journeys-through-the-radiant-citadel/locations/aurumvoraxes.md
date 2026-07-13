@@ -16,4 +16,4 @@ handouts:
 Localidade **Aurumvoraxes** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Aurumvoraxes](../../adventures/gold-for-fools-and-princes/001-inicio/10-aurumvoraxes/)
+- [Aurumvoraxes](../../adventures/gold-for-fools-and-princes/10-aurumvoraxes/)

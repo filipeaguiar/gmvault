@@ -16,4 +16,4 @@ handouts:
 Localidade **Traveling to the Gate** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Traveling to the Gate](../../adventures/trail-of-destruction/001-inicio/07-traveling-to-the-gate/)
+- [Traveling to the Gate](../../adventures/trail-of-destruction/07-traveling-to-the-gate/)

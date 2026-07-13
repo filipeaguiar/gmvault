@@ -16,4 +16,4 @@ handouts:
 Localidade **Whistler** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Whistler](../../adventures/orchids-of-the-invisible-mountain/001-inicio/13-whistler/)
+- [Whistler](../../adventures/orchids-of-the-invisible-mountain/13-whistler/)

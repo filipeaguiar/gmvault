@@ -16,7 +16,7 @@ handouts:
 Localidade **Hollow Mine** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Hollow Mine](../../adventures/the-fiend-of-hollow-mine/001-inicio/07-hollow-mine/)
+- [Hollow Mine](../../adventures/the-fiend-of-hollow-mine/07-hollow-mine/)
 
 ### Mapas
 

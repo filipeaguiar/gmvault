@@ -16,7 +16,7 @@ handouts:
 Localidade **Secret Grotto** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Secret Grotto](../../adventures/buried-dynasty/001-inicio/05-secret-grotto/)
+- [Secret Grotto](../../adventures/buried-dynasty/05-secret-grotto/)
 
 ### Mapas
 

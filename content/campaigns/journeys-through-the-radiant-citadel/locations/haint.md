@@ -16,4 +16,4 @@ handouts:
 Localidade **Haint** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Haint](../../adventures/the-nightseas-succor/001-inicio/13-haint/)
+- [Haint](../../adventures/the-nightseas-succor/13-haint/)

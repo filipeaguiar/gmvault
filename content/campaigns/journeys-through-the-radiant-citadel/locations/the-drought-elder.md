@@ -16,7 +16,7 @@ handouts:
 Localidade **The Drought Elder** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Drought Elder](../../adventures/orchids-of-the-invisible-mountain/001-inicio/10-the-drought-elder/)
+- [The Drought Elder](../../adventures/orchids-of-the-invisible-mountain/10-the-drought-elder/)
 
 ### Mapas
 

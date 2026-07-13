@@ -16,4 +16,4 @@ handouts:
 Localidade **Umizu** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Umizu](../../adventures/beyond-the-radiant-citadel/001-inicio/03-umizu/)
+- [Umizu](../../adventures/beyond-the-radiant-citadel/03-umizu/)

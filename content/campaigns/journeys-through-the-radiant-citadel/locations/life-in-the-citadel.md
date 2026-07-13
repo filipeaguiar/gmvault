@@ -16,4 +16,4 @@ handouts:
 Localidade **Life in the Citadel** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Life in the Citadel](../../adventures/the-radiant-citadel/001-inicio/05-life-in-the-citadel/)
+- [Life in the Citadel](../../adventures/the-radiant-citadel/05-life-in-the-citadel/)

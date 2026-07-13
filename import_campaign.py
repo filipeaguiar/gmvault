@@ -1463,10 +1463,7 @@ handouts:
             adventure_monsters = set()
             adventure_handouts = set()
             
-            sess_slug = "001-inicio"
-            session_title = "Sessão 01 - Início"
-            
-            sess_dir, scenes_dir = create_session_structure(adv_dir, sess_slug, session_title, weight=10, content_role=adv_role)
+            scenes_dir = adv_dir
                 
             scenes = []
             current_scene_title = "Introdução"
@@ -1550,7 +1547,7 @@ handouts:
                     scene_locations.append(loc_ref)
                     adventure_locations.add(loc_ref)
                     
-                    scene_ref = f"/campaigns/{campaign_slug}/adventures/{adv_slug}/{sess_slug}/{scene_slug}/"
+                    scene_ref = f"/campaigns/{campaign_slug}/adventures/{adv_slug}/{scene_slug}/"
                     locations_registry[scene_loc_slug]["scenes"].append({
                         "title": s_title,
                         "ref": scene_ref

@@ -16,4 +16,4 @@ handouts:
 Localidade **Pari** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Pari](../../adventures/shadow-of-the-sun/001-inicio/12-pari/)
+- [Pari](../../adventures/shadow-of-the-sun/12-pari/)

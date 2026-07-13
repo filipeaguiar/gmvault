@@ -90,8 +90,8 @@ class AdventureIntroductionRenderingTests(unittest.TestCase):
         )
 
         self.assertIn("Background intro text.", html)
-        self.assertLess(html.index("Background intro text."), html.index("Cronograma de Sessões"))
-        self.assertIn("Session 01", html)
+        self.assertLess(html.index("Background intro text."), html.index("Cenas e Preparativos"))
+        self.assertIn("Play Scene", html)
         self.assertNotIn("Background</a>", html)
 
     def test_adventure_intro_fragments_are_sorted_by_weight_then_title(self):

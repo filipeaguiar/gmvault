@@ -16,4 +16,4 @@ handouts:
 Localidade **Anisa Academy** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Anisa Academy](../../adventures/gold-for-fools-and-princes/001-inicio/05-anisa-academy/)
+- [Anisa Academy](../../adventures/gold-for-fools-and-princes/05-anisa-academy/)

@@ -16,4 +16,4 @@ handouts:
 Localidade **To the Nightsea** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [To the Nightsea](../../adventures/the-nightseas-succor/001-inicio/08-to-the-nightsea/)
+- [To the Nightsea](../../adventures/the-nightseas-succor/08-to-the-nightsea/)

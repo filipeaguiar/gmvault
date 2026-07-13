@@ -16,4 +16,4 @@ handouts:
 Localidade **To the Rattle** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [To the Rattle](../../adventures/written-in-blood/001-inicio/04-to-the-rattle/)
+- [To the Rattle](../../adventures/written-in-blood/04-to-the-rattle/)

@@ -16,4 +16,4 @@ handouts:
 Localidade **Beyond the Goldwarren** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Beyond the Goldwarren](../../adventures/gold-for-fools-and-princes/001-inicio/07-beyond-the-goldwarren/)
+- [Beyond the Goldwarren](../../adventures/gold-for-fools-and-princes/07-beyond-the-goldwarren/)
