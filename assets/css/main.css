@@ -1078,3 +1078,63 @@ main.container {
   color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
+
+/* Campaign Two-Column Responsive Layout */
+@media (min-width: 992px) {
+  .campaign-layout {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+
+  .campaign-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .campaign-sidebar {
+    width: 320px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 2rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--border-color);
+  }
+
+  /* Dashboard lateral em duas colunas compactas */
+  .campaign-sidebar .quick-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .campaign-sidebar .quick-card {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .campaign-sidebar .quick-icon {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .campaign-sidebar .quick-title {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  .campaign-sidebar .quick-count {
+    font-size: 0.75rem;
+  }
+
+  /* Ajustar cards de aventuras na barra lateral */
+  .campaign-sidebar .sidebar-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .campaign-sidebar .adventure-card {
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+}
