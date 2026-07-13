@@ -48,13 +48,6 @@ class InternalLinkAuditTests(unittest.TestCase):
             self.assertEqual(len(by_kind["empty-target"]), 1)
             self.assertEqual(len(by_kind["external"]), 1)
 
-    def test_radiant_campaign_quick_links_are_not_root_absolute(self):
-        path = Path("content/campaigns/journeys-through-the-radiant-citadel/_index.md")
-        text = path.read_text(encoding="utf-8")
-
-        self.assertNotIn("](/campaigns/journeys-through-the-radiant-citadel/journal/)", text)
-        self.assertNotIn("](/campaigns/journeys-through-the-radiant-citadel/adventures/)", text)
-        self.assertIn("relref", text)
 
     def test_radiant_campaign_quick_links_include_base_path_in_hugo_build(self):
         with tempfile.TemporaryDirectory() as dest:

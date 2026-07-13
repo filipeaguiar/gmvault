@@ -1358,6 +1358,14 @@ def main():
                 role_lines = "\n".join(front_matter_content_role_lines(role))
                 if role_lines:
                     role_lines = "\n" + role_lines
+                
+                if role == "introduction":
+                    display_title = s_title
+                    display_summary = "Introdução e contextualização da aventura."
+                else:
+                    display_title = f"Cena {s_idx+1} - {s_title}"
+                    display_summary = "Cena operacional para conduzir na sessão."
+
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
@@ -1365,7 +1373,7 @@ def main():
                     handouts_yaml = "\n".join([f"  - \"{h}\"" for h in scene_handouts])
                     
                     f.write(f"""---
-title: "Cena {s_idx+1} - {s_title}"
+title: "{display_title}"
 weight: {(s_idx + 1) * 10}
 params:
   kind: "scene"{role_lines}
@@ -1373,7 +1381,7 @@ draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+summary: "{display_summary}"
 npcs:
 {npcs_yaml}
 locations:
@@ -1552,6 +1560,14 @@ handouts:
                 role_lines = "\n".join(front_matter_content_role_lines(role))
                 if role_lines:
                     role_lines = "\n" + role_lines
+                
+                if role == "introduction":
+                    display_title = s_title
+                    display_summary = "Introdução e contextualização da aventura."
+                else:
+                    display_title = f"Cena {s_idx+1} - {s_title}"
+                    display_summary = "Cena operacional para conduzir na sessão."
+
                 with open(scene_file, "w") as f:
                     npcs_yaml = "\n".join([f"  - \"{n}\"" for n in scene_npcs])
                     monsters_yaml = "\n".join([f"  - \"{m}\"" for m in scene_monsters])
@@ -1559,7 +1575,7 @@ handouts:
                     handouts_yaml = "\n".join([f"  - \"{h}\"" for h in scene_handouts])
                     
                     f.write(f"""---
-title: "Cena {s_idx+1} - {s_title}"
+title: "{display_title}"
 weight: {(s_idx + 1) * 10}
 params:
   kind: "scene"{role_lines}
@@ -1567,7 +1583,7 @@ draft: true
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+summary: "{display_summary}"
 npcs:
 {npcs_yaml}
 locations:
