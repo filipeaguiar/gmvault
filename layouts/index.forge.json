@@ -1,0 +1,21 @@
+{{- $characters := slice -}}
+{{- $monsters := slice -}}
+{{- range site.Pages -}}
+  {{- $kind := partial "helpers/kind.html" . -}}
+  {{- if eq $kind "character" -}}
+    {{- $characters = $characters | append . -}}
+  {{- else if eq $kind "monster" -}}
+    {{- $monsters = $monsters | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $characters = sort (sort (sort $characters "Permalink") "Title") "Weight" -}}
+{{- $monsters = sort (sort (sort $monsters "Permalink") "Title") "Weight" -}}
+{{- $records := slice -}}
+{{- range $characters -}}
+  {{- $records = $records | append (partial "helpers/forge_statblock.html" .) -}}
+{{- end -}}
+{{- range $monsters -}}
+  {{- $records = $records | append (partial "helpers/forge_statblock.html" .) -}}
+{{- end -}}
+{{- $records | jsonify (dict "indent" "  ") -}}

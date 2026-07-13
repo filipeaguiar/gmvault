@@ -52,15 +52,15 @@ Index pages rendered from player/public contexts SHALL omit generated links to p
 - **THEN** generated index navigation MAY include GM child pages
 
 ### Requirement: Adventure indexes list simplified sessions
-Adventure pages SHALL list direct child session pages when using the simplified hierarchy.
+Adventure pages SHALL list direct child and nested session child scene pages.
 
 #### Scenario: Adventure has direct session children
 - **WHEN** an adventure page has direct child branch bundles with `kind: session`
-- **THEN** the adventure index navigation SHALL display those sessions as navigable children
+- **THEN** the adventure index navigation SHALL collect scenes and display them directly in the scene timeline
 
 #### Scenario: Adventure has legacy sessions section
 - **WHEN** an adventure page has legacy sessions under `sessions/<session-slug>/`
-- **THEN** the adventure index navigation SHALL continue to display those sessions
+- **THEN** the adventure index navigation SHALL collect and display all their scenes directly in the scene timeline
 
 ### Requirement: Session indexes list simplified scenes
 Session pages SHALL list direct child scene pages when using the simplified hierarchy.

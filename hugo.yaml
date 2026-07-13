@@ -2,6 +2,10 @@ baseURL: https://filipeaguiar.github.io/gmvault/
 languageCode: en-us
 title: Campanha
 
+params:
+  forge:
+    author: "GM - Filipe"
+
 ignoreLogs:
   - "warning-goldmark-raw-html"
   - "deprecated: kind in front matter was deprecated in Hugo v0.144.0 and will be removed in a future release."
@@ -17,11 +21,18 @@ outputFormats:
     baseName: gm-vault
     isPlainText: true
     notAlternative: true
+  Forge:
+    mediaType: application/json
+    baseName: statblocks
+    path: exports/forge
+    isPlainText: true
+    notAlternative: true
 
 outputs:
   home:
     - HTML
     - GMVault
+    - Forge
   section:
     - HTML
     - GMVault

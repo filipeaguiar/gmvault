@@ -6,6 +6,17 @@
 <div class="campaign-layout">
   <div class="campaign-main content-body">
     {{ .Content }}
+
+    {{ with .OutputFormats.Get "GMVault" }}
+      <section class="export-links" aria-labelledby="campaign-export-title">
+        <h2 id="campaign-export-title">Exportação para o GM Vault</h2>
+        <p>URL JSON desta campanha:</p>
+        <p>
+          <a href="{{ .RelPermalink }}"><code>{{ .Permalink }}</code></a>
+        </p>
+      </section>
+    {{ end }}
+
     {{ with .GetPage "adventures" }}
       {{ partial "editorial_introduction.html" (dict "pages" .Pages) }}
     {{ end }}

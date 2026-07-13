@@ -1,0 +1,20 @@
+<header class="page-header">
+  <h1><i class="ra ra-book"></i> {{ or .Params.titulo_pt_br .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="content-body">
+  {{ .Content }}
+
+  <section class="export-links" aria-labelledby="compendium-export-title">
+    <h2 id="compendium-export-title">Exportação para o Forge!</h2>
+    <p>Use este endereço para importar personagens e monstros na extensão Forge! do Owlbear Rodeo:</p>
+    <p>
+      <a href="{{ absURL "exports/forge/statblocks.json" }}">
+        {{ absURL "exports/forge/statblocks.json" }}
+      </a>
+    </p>
+  </section>
+</div>
+
+{{ partial "child_pages.html" . }}

@@ -55,8 +55,8 @@ The repository import workflow SHALL support an optional post-processing step th
 - **THEN** it SHALL write the session as `content/campaigns/<campaign-slug>/adventures/<adventure-slug>/<session-slug>/_index.md`
 
 #### Scenario: Import creates session scene
-- **WHEN** `import_campaign.py` creates a scene for an imported session
-- **THEN** it SHALL write the scene directly under the session directory as `<scene-slug>.md`
+- **WHEN** `import_campaign.py` creates a scene for an imported session in Modo 2
+- **THEN** it SHALL write the scene directly under the adventure directory as `<scene-slug>.md`
 
 #### Scenario: Import creates adventure support indexes
 - **WHEN** `import_campaign.py` imports a new adventure

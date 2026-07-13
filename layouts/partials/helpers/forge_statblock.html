@@ -1,0 +1,96 @@
+{{- $page := . -}}
+{{- $kind := partial "helpers/kind.html" $page -}}
+{{- $isCharacter := eq $kind "character" -}}
+{{- $name := or $page.Params.titulo_pt_br $page.Title -}}
+{{- $source := dict -}}
+{{- if $isCharacter -}}
+  {{- $source = default (dict) (index $page.Params "char_info") -}}
+{{- else -}}
+  {{- $source = default (dict) (index $page.Params "stats") -}}
+{{- end -}}
+{{- $stats := default (dict) (index $source "attributes") -}}
+{{- if $isCharacter -}}
+  {{- $stats = default (dict) (index $source "stats") -}}
+{{- end -}}
+
+{{- $levelOrCR := "" -}}
+{{- if $isCharacter -}}
+  {{- $classText := printf "%v" (default "" (index $source "class")) -}}
+  {{- $levelMatches := findRE "[0-9]+$" $classText -}}
+  {{- if gt (len $levelMatches) 0 -}}
+    {{- $levelOrCR = int (index $levelMatches 0) -}}
+  {{- end -}}
+{{- else -}}
+  {{- $crText := printf "%v" (default "" (index $source "cr")) -}}
+  {{- if and (ne $crText "") (findRE "^[0-9]+$" $crText) -}}
+    {{- $levelOrCR = int $crText -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $hp := "" -}}
+{{- $hpMatches := findRE "^[0-9]+" (printf "%v" (default "" (index $source "hp"))) -}}
+{{- if gt (len $hpMatches) 0 -}}
+  {{- $hp = int (index $hpMatches 0) -}}
+{{- end -}}
+{{- $ac := "" -}}
+{{- $acMatches := findRE "^[0-9]+" (printf "%v" (default "" (index $source "ac"))) -}}
+{{- if gt (len $acMatches) 0 -}}
+  {{- $ac = int (index $acMatches 0) -}}
+{{- end -}}
+{{- $speed := "" -}}
+{{- $speedMatches := findRE "^[0-9]+" (printf "%v" (default "" (index $source "speed"))) -}}
+{{- if gt (len $speedMatches) 0 -}}
+  {{- $speed = int (index $speedMatches 0) -}}
+{{- end -}}
+
+{{- $skills := slice -}}
+{{- $skillsText := printf "%v" (default "" (index $source "skills")) -}}
+{{- if and (ne $skillsText "") (ne $skillsText "<nil>") -}}
+  {{- range (split $skillsText ",") -}}
+    {{- $skillName := trim . " \t" -}}
+    {{- if ne $skillName "" -}}
+      {{- $skillHash := md5 (printf "%s:%s" $page.Permalink $skillName) -}}
+      {{- $skillID := printf "%s-%s-%s-%s-%s" (substr $skillHash 0 8) (substr $skillHash 8 4) (substr $skillHash 12 4) (substr $skillHash 16 4) (substr $skillHash 20 12) -}}
+      {{- $skills = $skills | append (dict "id" $skillID "name" $skillName "description" (printf "Perícia importada: %s" $skillName)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $idHash := md5 $page.Permalink -}}
+{{- $id := printf "%s-%s-%s-%s-%s" (substr $idHash 0 8) (substr $idHash 8 4) (substr $idHash 12 4) (substr $idHash 16 4) (substr $idHash 20 12) -}}
+{{- $inParty := $isCharacter -}}
+{{- $timestamp := 0 -}}
+{{- if gt $page.Date.Unix 0 -}}
+  {{- $timestamp = int (mul $page.Date.Unix 1000) -}}
+{{- end -}}
+
+{{- $metadata := dict
+  "com.battle-system.forge/in-party" $inParty
+  "com.battle-system.forge/name" $name
+  "com.battle-system.forge/fabd" true
+  "com.battle-system.forge/Z002" $name
+  "com.battle-system.forge/Z004" $levelOrCR
+  "com.battle-system.forge/Z005" $hp
+  "com.battle-system.forge/Z006" $hp
+  "com.battle-system.forge/Z007" $ac
+  "com.battle-system.forge/Z008" $speed
+  "com.battle-system.forge/Z009" $speed
+  "com.battle-system.forge/Z013" ""
+  "com.battle-system.forge/Z014" ""
+  "com.battle-system.forge/Z017" (default "" (index $stats "str"))
+  "com.battle-system.forge/Z018" (default "" (index $stats "dex"))
+  "com.battle-system.forge/Z019" (default "" (index $stats "con"))
+  "com.battle-system.forge/Z020" (default "" (index $stats "int"))
+  "com.battle-system.forge/Z021" (default "" (index $stats "wis"))
+  "com.battle-system.forge/Z022" (default "" (index $stats "cha"))
+  "com.battle-system.forge/Z035" $skills
+-}}
+{{- $record := dict
+  "id" $id
+  "name" $name
+  "author" (or site.Params.forge.author "GM - Filipe")
+  "metadata" $metadata
+  "favorite" $inParty
+  "updatedAt" $timestamp
+-}}
+{{- return $record -}}
