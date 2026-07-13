@@ -1,11 +1,11 @@
 ---
-title: Cena 2 - Background
+title: Background
 weight: 20
 params:
   kind: scene
   content_role: introduction
 draft: false
-titulo_pt_br: Cena 2 - Antecedentes
+titulo_pt_br: Antecedentes
 visibility: gm
 status: published
 summary: Cena operacional para conduzir na sessão.

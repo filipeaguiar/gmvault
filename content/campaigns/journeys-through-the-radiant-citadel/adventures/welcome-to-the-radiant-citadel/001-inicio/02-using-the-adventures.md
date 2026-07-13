@@ -1,11 +1,11 @@
 ---
-title: Cena 2 - Using the Adventures
+title: Using the Adventures
 weight: 20
 params:
   kind: scene
   content_role: introduction
 draft: false
-titulo_pt_br: Cena 2 - Usando as Aventuras
+titulo_pt_br: Usando as Aventuras
 visibility: gm
 status: published
 summary: Cena operacional para conduzir na sessão.

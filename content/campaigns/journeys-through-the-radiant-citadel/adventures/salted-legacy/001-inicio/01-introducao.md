@@ -1,11 +1,11 @@
 ---
-title: Cena 1 - Introdução
+title: Introdução
 weight: 10
 params:
   kind: scene
 content_role: "introduction"
 draft: false
-titulo_pt_br: Cena 1 - Introdução
+titulo_pt_br: Introdução
 visibility: gm
 status: published
 summary: Cena operacional para conduzir na sessão.
