@@ -13,17 +13,32 @@
   {{- $stats = default (dict) (index $source "stats") -}}
 {{- end -}}
 
-{{- $levelOrCR := "" -}}
+{{- $level := "" -}}
 {{- if $isCharacter -}}
   {{- $classText := printf "%v" (default "" (index $source "class")) -}}
   {{- $levelMatches := findRE "[0-9]+$" $classText -}}
   {{- if gt (len $levelMatches) 0 -}}
-    {{- $levelOrCR = int (index $levelMatches 0) -}}
+    {{- $level = int (index $levelMatches 0) -}}
   {{- end -}}
+{{- end -}}
+{{- $challenge := default "" (index $source "cr") -}}
+
+{{- $size := "" -}}
+{{- $species := "" -}}
+{{- $alignment := "" -}}
+{{- if $isCharacter -}}
+  {{- $species = default "" (index $source "race") -}}
 {{- else -}}
-  {{- $crText := printf "%v" (default "" (index $source "cr")) -}}
-  {{- if and (ne $crText "") (findRE "^[0-9]+$" $crText) -}}
-    {{- $levelOrCR = int $crText -}}
+  {{- $statsMeta := printf "%v" (default "" (index $page.Params "stats_meta")) -}}
+  {{- $metaParts := split $statsMeta "," -}}
+  {{- $metaFirst := trim (index $metaParts 0) " \t" -}}
+  {{- $sizeMatches := findRE "^[^ ]+" $metaFirst -}}
+  {{- if gt (len $sizeMatches) 0 -}}
+    {{- $size = index $sizeMatches 0 -}}
+    {{- $species = trim (replaceRE "^[^ ]+[ \t]+" "" $metaFirst) " \t" -}}
+  {{- end -}}
+  {{- if gt (len $metaParts) 1 -}}
+    {{- $alignment = trim (index $metaParts 1) " \t" -}}
   {{- end -}}
 {{- end -}}
 
@@ -37,10 +52,48 @@
 {{- if gt (len $acMatches) 0 -}}
   {{- $ac = int (index $acMatches 0) -}}
 {{- end -}}
-{{- $speed := "" -}}
-{{- $speedMatches := findRE "^[0-9]+" (printf "%v" (default "" (index $source "speed"))) -}}
-{{- if gt (len $speedMatches) 0 -}}
-  {{- $speed = int (index $speedMatches 0) -}}
+
+{{- $speedText := printf "%v" (default "" (index $source "speed")) -}}
+{{- $walkSpeed := "" -}}
+{{- $walkMatches := findRE "^[0-9]+" $speedText -}}
+{{- if gt (len $walkMatches) 0 -}}
+  {{- $walkSpeed = int (index $walkMatches 0) -}}
+{{- end -}}
+{{- $swimSpeed := "" -}}
+{{- $burrowSpeed := "" -}}
+{{- $climbSpeed := "" -}}
+{{- $flySpeed := "" -}}
+{{- range $speed := (slice "swim" "burrow" "climb" "fly") -}}
+  {{- $speedMatches := findRE (printf "(?i)%s[ \\t]+[0-9]+" $speed) $speedText -}}
+  {{- if gt (len $speedMatches) 0 -}}
+    {{- $numberMatches := findRE "[0-9]+" (index $speedMatches 0) -}}
+    {{- if gt (len $numberMatches) 0 -}}
+      {{- if eq $speed "swim" -}}{{- $swimSpeed = int (index $numberMatches 0) -}}{{- end -}}
+      {{- if eq $speed "burrow" -}}{{- $burrowSpeed = int (index $numberMatches 0) -}}{{- end -}}
+      {{- if eq $speed "climb" -}}{{- $climbSpeed = int (index $numberMatches 0) -}}{{- end -}}
+      {{- if eq $speed "fly" -}}{{- $flySpeed = int (index $numberMatches 0) -}}{{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $savesText := printf "%v" (default "" (index $source "saves")) -}}
+{{- $strSave := "" -}}
+{{- $dexSave := "" -}}
+{{- $conSave := "" -}}
+{{- $intSave := "" -}}
+{{- $wisSave := "" -}}
+{{- $chaSave := "" -}}
+{{- range $save := (findRE "(?i)(Str|Dex|Con|Int|Wis|Cha)[ \\t]+[+-]?[0-9]+" $savesText) -}}
+  {{- $valueMatches := findRE "[+-]?[0-9]+$" $save -}}
+  {{- if gt (len $valueMatches) 0 -}}
+    {{- $value := int (index $valueMatches 0) -}}
+    {{- if hasPrefix $save "Str" -}}{{- $strSave = $value -}}{{- end -}}
+    {{- if hasPrefix $save "Dex" -}}{{- $dexSave = $value -}}{{- end -}}
+    {{- if hasPrefix $save "Con" -}}{{- $conSave = $value -}}{{- end -}}
+    {{- if hasPrefix $save "Int" -}}{{- $intSave = $value -}}{{- end -}}
+    {{- if hasPrefix $save "Wis" -}}{{- $wisSave = $value -}}{{- end -}}
+    {{- if hasPrefix $save "Cha" -}}{{- $chaSave = $value -}}{{- end -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $skills := slice -}}
@@ -52,6 +105,63 @@
       {{- $skillHash := md5 (printf "%s:%s" $page.Permalink $skillName) -}}
       {{- $skillID := printf "%s-%s-%s-%s-%s" (substr $skillHash 0 8) (substr $skillHash 8 4) (substr $skillHash 12 4) (substr $skillHash 16 4) (substr $skillHash 20 12) -}}
       {{- $skills = $skills | append (dict "id" $skillID "name" $skillName "description" (printf "Perícia importada: %s" $skillName)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $emptyList := slice -}}
+{{- $senses := default "" (index $source "senses") -}}
+{{- $languages := default "" (index $source "languages") -}}
+{{- $resistance := default "" (or (index $source "resistance") (index $source "resistances")) -}}
+{{- $immunity := default "" (or (index $source "immunity") (index $source "immunities")) -}}
+{{- $vulnerable := default "" (or (index $source "vulnerable") (index $source "vulnerabilities")) -}}
+{{- $statusImmunity := default "" (or (index $source "status_immunity") (index $source "condition_immunities")) -}}
+{{- $proficiency := default "" (index $source "proficiency") -}}
+{{- $abilities := default $emptyList (index $source "abilities") -}}
+{{- $actions := default $emptyList (index $source "actions") -}}
+{{- $bonusActions := default $emptyList (index $source "bonus_actions") -}}
+{{- $reactions := default $emptyList (index $source "reactions") -}}
+{{- $legendaryActions := default $emptyList (index $source "legendary_actions") -}}
+{{- $spellList := default $emptyList (or (index $source "spell_list") (index $page.Params "spells_usage")) -}}
+{{- $inventory := default $emptyList (or (index $source "inventory") (index $page.Params "inventory")) -}}
+{{- $temporaryHP := default "" (index $source "temporary_hp") -}}
+
+{{- /* Personagens importados podem ter apenas referências de inventário. */ -}}
+{{- if and $isCharacter (eq (len $inventory) 0) -}}
+  {{- $seenItems := slice -}}
+  {{- range $ref := $page.Params.compendium_refs -}}
+    {{- $itemPage := site.GetPage $ref -}}
+    {{- if $itemPage -}}
+      {{- $itemKind := partial "helpers/kind.html" $itemPage -}}
+      {{- if or (eq $itemKind "item") (eq $itemKind "magic_item") -}}
+        {{- if not (in $seenItems $itemPage.Permalink) -}}
+          {{- $seenItems = $seenItems | append $itemPage.Permalink -}}
+          {{- $itemName := or $itemPage.Params.titulo_pt_br $itemPage.Title -}}
+          {{- $itemInfo := default (dict) (index $itemPage.Params "item_info") -}}
+          {{- $itemDescription := printf "%v" (default "" (index $itemInfo "type")) -}}
+          {{- $properties := printf "%v" (default "" (index $itemInfo "properties")) -}}
+          {{- if ne $properties "" -}}
+            {{- $itemDescription = printf "%s; Propriedades: %s" $itemDescription $properties -}}
+          {{- end -}}
+          {{- $itemHash := md5 $itemPage.Permalink -}}
+          {{- $itemID := printf "%s-%s-%s-%s-%s" (substr $itemHash 0 8) (substr $itemHash 8 4) (substr $itemHash 12 4) (substr $itemHash 16 4) (substr $itemHash 20 12) -}}
+          {{- $inventory = $inventory | append (dict "id" $itemID "name" $itemName "description" $itemDescription "quantity" 1) -}}
+          {{- $damage := default "" (index $itemInfo "damage") -}}
+          {{- if ne (printf "%v" $damage) "" -}}
+            {{- $attackBonus := printf "%v" (default "" (index $itemInfo "attack_bonus")) -}}
+            {{- $attackRange := printf "%v" (default "" (index $itemInfo "range")) -}}
+            {{- $actionDescription := printf "Ataque: %v" $damage -}}
+            {{- if ne $attackBonus "" -}}
+              {{- $actionDescription = printf "%s; Bônus: %s" $actionDescription $attackBonus -}}
+            {{- end -}}
+            {{- if ne $attackRange "" -}}
+              {{- $actionDescription = printf "%s; Alcance: %s" $actionDescription $attackRange -}}
+            {{- end -}}
+            {{- $actionID := printf "%s-attack" $itemID -}}
+            {{- $actions = $actions | append (dict "id" $actionID "name" $itemName "description" $actionDescription) -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -68,22 +178,48 @@
   "com.battle-system.forge/in-party" $inParty
   "com.battle-system.forge/name" $name
   "com.battle-system.forge/fabd" true
-  "com.battle-system.forge/Z002" $name
-  "com.battle-system.forge/Z004" $levelOrCR
+  "com.battle-system.forge/Z001" $level
+  "com.battle-system.forge/Z002" $size
+  "com.battle-system.forge/Z003" $alignment
+  "com.battle-system.forge/Z004" $species
   "com.battle-system.forge/Z005" $hp
   "com.battle-system.forge/Z006" $hp
   "com.battle-system.forge/Z007" $ac
-  "com.battle-system.forge/Z008" $speed
-  "com.battle-system.forge/Z009" $speed
-  "com.battle-system.forge/Z013" ""
-  "com.battle-system.forge/Z014" ""
+  "com.battle-system.forge/Z008" $walkSpeed
+  "com.battle-system.forge/Z009" $swimSpeed
+  "com.battle-system.forge/Z010" $burrowSpeed
+  "com.battle-system.forge/Z011" $climbSpeed
+  "com.battle-system.forge/Z012" $flySpeed
+  "com.battle-system.forge/Z013" $senses
+  "com.battle-system.forge/Z014" $skills
+  "com.battle-system.forge/Z015" $languages
+  "com.battle-system.forge/Z016" $challenge
   "com.battle-system.forge/Z017" (default "" (index $stats "str"))
   "com.battle-system.forge/Z018" (default "" (index $stats "dex"))
   "com.battle-system.forge/Z019" (default "" (index $stats "con"))
   "com.battle-system.forge/Z020" (default "" (index $stats "int"))
   "com.battle-system.forge/Z021" (default "" (index $stats "wis"))
   "com.battle-system.forge/Z022" (default "" (index $stats "cha"))
-  "com.battle-system.forge/Z035" $skills
+  "com.battle-system.forge/Z023" $strSave
+  "com.battle-system.forge/Z024" $dexSave
+  "com.battle-system.forge/Z025" $conSave
+  "com.battle-system.forge/Z026" $intSave
+  "com.battle-system.forge/Z027" $wisSave
+  "com.battle-system.forge/Z028" $chaSave
+  "com.battle-system.forge/Z029" $proficiency
+  "com.battle-system.forge/Z030" $vulnerable
+  "com.battle-system.forge/Z031" $resistance
+  "com.battle-system.forge/Z032" $immunity
+  "com.battle-system.forge/Z033" $statusImmunity
+  "com.battle-system.forge/Z034" $abilities
+  "com.battle-system.forge/Z035" $actions
+  "com.battle-system.forge/Z036" $bonusActions
+  "com.battle-system.forge/Z037" $reactions
+  "com.battle-system.forge/Z038" $legendaryActions
+  "com.battle-system.forge/Z039" $spellList
+  "com.battle-system.forge/Z040" $inventory
+  "com.battle-system.forge/Z041" $savesText
+  "com.battle-system.forge/Z042" $temporaryHP
 -}}
 {{- $record := dict
   "id" $id

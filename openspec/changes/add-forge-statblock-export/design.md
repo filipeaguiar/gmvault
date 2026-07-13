@@ -48,6 +48,8 @@ A extensão Forge! importa uma lista JSON de registros com `id`, `name`, `author
    - `Z035` receberá perícias estruturadas como uma lista de objetos Forge com `id`, `name` e `description`.
    - O nome, `in-party`, `fabd` e demais chaves de envelope serão incluídos conforme o exemplo fornecido. Campos que não puderem ser derivados com segurança permanecerão vazios ou usarão zero somente quando o Forge exigir um valor numérico.
    - O conteúdo textual original continuará na página Markdown; a primeira versão não tentará converter automaticamente todas as ações e regras em campos compactos desconhecidos do Forge.
+   - Quando um personagem não possuir `inventory` explícito, referências `compendium_refs` para `item` e `magic_item` serão convertidas em entradas de `Z040`, com nome, quantidade e descrição básica.
+   - Quando um item possuir `item_info.damage`, será criada também uma ação em `Z035`; sem dano/ataque estruturado, o item permanecerá no inventário sem uma rolagem inventada.
 
 4. **Links de exportação**
    - A página raiz do Compêndio terá um índice Markdown estável e exibirá um link absoluto/copíavel para `/exports/forge/statblocks.json`.

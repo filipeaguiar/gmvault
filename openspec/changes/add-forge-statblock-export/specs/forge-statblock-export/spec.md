@@ -45,6 +45,14 @@ Each Forge record SHALL contain `id`, `name`, `author`, `metadata`, `favorite`, 
 - **WHEN** a source page lacks a value required by an optional Forge field
 - **THEN** the exporter SHALL use the documented empty/default representation and SHALL continue generating the record
 
+#### Scenario: Character references inventory items
+- **WHEN** a character has `compendium_refs` pointing to item or magic item pages and no explicit inventory
+- **THEN** the exporter SHALL create inventory entries in `Z040` with stable IDs, names, quantity, and available item description
+
+#### Scenario: Inventory item has attack data
+- **WHEN** an inventory item has structured damage data
+- **THEN** the exporter SHALL expose a corresponding action in `Z035`; when attack data is absent, it SHALL not fabricate a roll
+
 ### Requirement: Forge records have stable ordering and identifiers
 The Forge exporter SHALL emit characters before monsters, order each group deterministically by weight, localized name, and permalink, and derive a UUID-shaped stable identifier from the page permalink.
 

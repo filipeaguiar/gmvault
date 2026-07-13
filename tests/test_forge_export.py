@@ -45,11 +45,18 @@ class ForgeExportTests(unittest.TestCase):
         self.assertEqual(len(monster_records), 131)
         self.assertEqual(records[:6], party_records)
         self.assertTrue(any(record["name"] in {"gato", "cat"} for record in monster_records))
-        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z004"], 2)
+        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z001"], 2)
+        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z004"], "Goblinoide")
         self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z005"], 14)
         self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z007"], 16)
         self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z017"], 10)
         self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z018"], 20)
+        inventory_names = {
+            item["name"]
+            for item in pinky["metadata"]["com.battle-system.forge/Z040"]
+        }
+        self.assertIn("Arco Curto", inventory_names)
+        self.assertIn("Espada Curta", inventory_names)
 
     def test_export_has_valid_unique_ids_and_stable_order(self):
         _, first = self._build()

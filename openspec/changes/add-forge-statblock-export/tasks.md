@@ -10,6 +10,7 @@
 - [x] 2.2 Mapear `char_info` para os campos Forge de nível, HP, CA, movimento, atributos e perícias.
 - [x] 2.3 Mapear `stats`/`stats_meta` de monstros, incluindo ND, HP, CA, velocidade, atributos e perícias, com defaults para dados ausentes.
 - [x] 2.4 Implementar ordenação determinística (personagens antes de monstros, depois peso/nome/permalink) e validar unicidade dos IDs.
+- [x] 2.5 Mapear `compendium_refs` de itens e itens mágicos para `Z040` e gerar ações em `Z035` somente quando houver dano estruturado.
 
 ## 3. Expor links no site
 
