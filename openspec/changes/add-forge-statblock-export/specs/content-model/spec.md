@@ -5,7 +5,7 @@ Campaign landing pages SHALL display a clickable and copyable URL for the campai
 
 #### Scenario: Campaign GM Vault link is rendered
 - **WHEN** a campaign page has a `GMVault` output format
-- **THEN** the page SHALL display a link to that campaign's generated `gm-vault.json` URL
+- **THEN** the page SHALL display a button configured to copy that campaign's generated `gm-vault.json` URL
 
 #### Scenario: Campaign uses a base path
 - **WHEN** the site `baseURL` contains a subpath such as `/gmvault/`
@@ -20,7 +20,7 @@ The Compendium landing page SHALL display a clickable and copyable URL for the g
 
 #### Scenario: Compendium Forge link is rendered
 - **WHEN** the Compendium landing page is rendered
-- **THEN** it SHALL display a link to `/exports/forge/statblocks.json`
+- **THEN** it SHALL display a button configured to copy `/exports/forge/statblocks.json`
 
 #### Scenario: Compendium Forge link is usable for import
 - **WHEN** a user copies the displayed Forge URL
@@ -32,4 +32,4 @@ The Compendium landing page SHALL display a clickable and copyable URL for the g
 
 #### Scenario: Clipboard API is unavailable
 - **WHEN** the browser does not provide Clipboard API support
-- **THEN** the page SHALL continue displaying the complete URL as a selectable link or code fallback
+- **THEN** the button SHALL display a copy failure status without exposing the URL as visible page text

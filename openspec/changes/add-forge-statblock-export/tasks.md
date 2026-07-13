@@ -15,7 +15,7 @@
 
 - [x] 3.1 Criar um índice estável para `content/compendium/` e exibir nele o link copiável para `/exports/forge/statblocks.json`.
 - [x] 3.2 Adicionar à página de campanha o link copiável para o output `GMVault` específico da própria campanha, respeitando `baseURL`.
-- [x] 3.3 Manter os links leves, com botão de cópia via Clipboard API e URL visível como fallback, sem alterar a estrutura do export GM Vault.
+- [x] 3.3 Manter os links leves, exibindo somente botões de cópia via Clipboard API e mensagens de status, sem alterar a estrutura do export GM Vault.
 
 ## 4. Testes e validação
 

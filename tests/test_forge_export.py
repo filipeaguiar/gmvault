@@ -89,9 +89,13 @@ class ForgeExportTests(unittest.TestCase):
             "campaigns/journeys-through-the-radiant-citadel/gm-vault.json"
         )
         self.assertIn(f'data-copy-url="{forge_url}"', compendium_html)
+        self.assertIn("Copiar URL do Forge!", compendium_html)
         self.assertIn("navigator.clipboard.writeText", compendium_html)
+        self.assertNotIn(">" + forge_url + "</code>", compendium_html)
         self.assertIn(f'data-copy-url="{campaign_url}"', campaign_html)
+        self.assertIn("Copiar URL do GM Vault", campaign_html)
         self.assertIn("navigator.clipboard.writeText", campaign_html)
+        self.assertNotIn(">" + campaign_url + "</code>", campaign_html)
 
 
 if __name__ == "__main__":

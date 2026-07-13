@@ -52,7 +52,7 @@ A extensão Forge! importa uma lista JSON de registros com `id`, `name`, `author
 4. **Links de exportação**
    - A página raiz do Compêndio terá um índice Markdown estável e exibirá um link absoluto/copíavel para `/exports/forge/statblocks.json`.
    - A página de campanha usará o output format `GMVault` da própria página para obter o permalink correto de `gm-vault.json`, respeitando `baseURL` e o slug da campanha.
-   - Cada URL será exibida em um botão `Copiar URL` com `navigator.clipboard.writeText`, além de permanecer visível como link/código de fallback quando a API de clipboard não estiver disponível.
+   - Cada URL será armazenada no atributo de dados do botão e exibida somente por um botão `Copiar URL` com `navigator.clipboard.writeText`; o endereço não será mostrado visualmente. Em caso de falha, o botão exibirá apenas uma mensagem de status.
 
 5. **Compatibilidade de conteúdo**
    - A descoberta de tipos usará o helper `kind.html`, mantendo fallback para `params.kind` legado.
