@@ -9,21 +9,21 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/kiannas-farmhouse/"
 compendium_refs:
   - "/compendium/monsters/crawling-claw/"
-  - "/compendium/monsters/cultist/"
   - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/cultist/"
   - "/compendium/monsters/soul-shaker/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-026-map-31-kianas-farmhouse-player/"
 ---

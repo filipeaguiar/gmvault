@@ -1,6 +1,6 @@
 ---
 title: Salted Legacy
-weight: 20
+weight: 30
 params:
   kind: adventure
 draft: false

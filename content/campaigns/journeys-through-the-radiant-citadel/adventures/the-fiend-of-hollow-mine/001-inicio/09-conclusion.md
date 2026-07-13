@@ -9,15 +9,15 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paloma/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/serapio/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paloma/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
 ---
 
 ### Descrição e Elementos Importantes

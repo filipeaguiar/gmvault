@@ -10,20 +10,20 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
   - "/compendium/monsters/noble/"
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/hawk/"
+  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/whistler/"
   - "/compendium/magic-items/white-ghost-orchid-seed/"
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
 ---

@@ -14,14 +14,14 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/trench-of-love-lost/"
 compendium_refs:
   - "/compendium/monsters/flameskull/"
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/giant-shark/"
   - "/compendium/monsters/aboleth/"
+  - "/compendium/monsters/giant-shark/"
+  - "/compendium/monsters/wraith/"
   - "/compendium/monsters/haint/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-121-map-122-trench-of-love-lost-player/"
 ---
 

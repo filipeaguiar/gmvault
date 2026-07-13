@@ -10,15 +10,15 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -14,10 +14,10 @@ locations:
 
 compendium_refs:
   - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/green-hag/"
   - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/dire-wolf/"
   - "/compendium/monsters/giant-crocodile/"
+  - "/compendium/monsters/green-hag/"
+  - "/compendium/monsters/dire-wolf/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
 ---

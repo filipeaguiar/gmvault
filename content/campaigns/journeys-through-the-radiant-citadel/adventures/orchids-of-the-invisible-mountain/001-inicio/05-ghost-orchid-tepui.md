@@ -13,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/ghost-orchid-tepui/"
 compendium_refs:
-  - "/compendium/monsters/displacer-beast/"
   - "/compendium/monsters/cloaker/"
+  - "/compendium/monsters/displacer-beast/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/displacer-beast-art/"

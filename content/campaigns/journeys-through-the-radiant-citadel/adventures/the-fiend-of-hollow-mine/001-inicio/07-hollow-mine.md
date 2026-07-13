@@ -13,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/hollow-mine/"
 compendium_refs:
-  - "/compendium/monsters/ochre-jelly/"
-  - "/compendium/monsters/cult-fanatic/"
-  - "/compendium/monsters/allosaurus/"
   - "/compendium/monsters/ghoul/"
+  - "/compendium/monsters/cult-fanatic/"
+  - "/compendium/monsters/ochre-jelly/"
+  - "/compendium/monsters/allosaurus/"
   - "/compendium/monsters/dinosaur-skeleton/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"

@@ -1,6 +1,6 @@
 ---
 title: "The Nightsea's Succor"
-weight: 120
+weight: 130
 params:
   kind: "adventure"
 draft: true

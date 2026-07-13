@@ -15,11 +15,11 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/ashen-heir-hideout/"
 compendium_refs:
-  - "/compendium/monsters/efreeti/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/efreeti/"
+  - "/compendium/monsters/mage/"
+  - "/compendium/monsters/mage/"
   - "/compendium/monsters/djinni/"
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/mage/"
   - "/compendium/monsters/ashen-heir-veteran/"
   - "/compendium/monsters/ashen-heir-assassin/"
 handouts:

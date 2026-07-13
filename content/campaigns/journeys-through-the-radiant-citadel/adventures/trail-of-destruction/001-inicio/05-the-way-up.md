@@ -13,9 +13,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-way-up/"
 compendium_refs:
-  - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/salamander/"
   - "/compendium/monsters/priest/"
+  - "/compendium/monsters/fire-snake/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/fire-snake-art/"

@@ -9,30 +9,30 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/diva-luma/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/on-the-hunt/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/scout/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/assassin/"
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/druid/"
   - "/compendium/monsters/guard/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/noble/"
+  - "/compendium/monsters/scout/"
   - "/compendium/monsters/diva/"
   - "/compendium/magic-items/bizas-breath/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-luma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/druid-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
 ---
 
 ### Descrição e Elementos Importantes

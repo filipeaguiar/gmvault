@@ -9,15 +9,15 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/ancestors-danse-house/"
 compendium_refs:
   - "/compendium/monsters/mage/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/"
 ---
 
 ### Descrição e Elementos Importantes

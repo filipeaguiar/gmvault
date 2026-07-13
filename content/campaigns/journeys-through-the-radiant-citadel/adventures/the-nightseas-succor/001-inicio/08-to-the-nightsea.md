@@ -13,13 +13,13 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/to-the-nightsea/"
 compendium_refs:
-  - "/compendium/monsters/wraith/"
   - "/compendium/monsters/flameskull/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/wraith/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/flameskull-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
 ---
 
 ### Descrição e Elementos Importantes

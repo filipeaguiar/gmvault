@@ -10,18 +10,18 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/spy/"
   - "/compendium/monsters/archmage/"
+  - "/compendium/monsters/spy/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
 ---
 
 ### Descrição e Elementos Importantes

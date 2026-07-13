@@ -1,6 +1,6 @@
 ---
 title: "Sins of Our Elders"
-weight: 60
+weight: 70
 params:
   kind: "adventure"
 draft: true

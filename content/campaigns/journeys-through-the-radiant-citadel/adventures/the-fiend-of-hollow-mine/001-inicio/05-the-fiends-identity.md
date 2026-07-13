@@ -16,9 +16,9 @@ locations:
 compendium_refs:
   - "/compendium/monsters/tlacatecolo/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -13,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/banshee/"
+  - "/compendium/monsters/thug/"
   - "/compendium/monsters/helmed-horror/"
   - "/compendium/monsters/ankheg/"
-  - "/compendium/monsters/thug/"
+  - "/compendium/monsters/banshee/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/banshee-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-039-map-43-san-citlan-and-borderlands-player/"

@@ -9,17 +9,17 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/death-in-the-mines/"
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
 ---
 
 ### Descrição e Elementos Importantes

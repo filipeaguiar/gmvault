@@ -13,14 +13,14 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/spirit-naga/"
-  - "/compendium/monsters/cultist/"
   - "/compendium/monsters/marid/"
+  - "/compendium/monsters/cultist/"
+  - "/compendium/monsters/spirit-naga/"
   - "/compendium/monsters/riverine/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-087-map-92-shankhabhumi-player/"
 ---
 

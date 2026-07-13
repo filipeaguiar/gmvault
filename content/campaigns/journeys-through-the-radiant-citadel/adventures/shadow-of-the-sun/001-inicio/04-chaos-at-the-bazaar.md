@@ -9,8 +9,8 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/chaos-at-the-bazaar/"
 compendium_refs:
@@ -19,9 +19,9 @@ compendium_refs:
   - "/compendium/monsters/ashen-heir-mage/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
 ---

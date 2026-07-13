@@ -1,6 +1,6 @@
 ---
 title: "Buried Dynasty"
-weight: 130
+weight: 140
 params:
   kind: "adventure"
 draft: true

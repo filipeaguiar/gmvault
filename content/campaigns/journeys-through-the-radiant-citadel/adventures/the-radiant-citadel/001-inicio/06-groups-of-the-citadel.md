@@ -14,8 +14,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/groups-of-the-citadel/"
 compendium_refs:
-  - "/compendium/monsters/assassin/"
   - "/compendium/monsters/ancient-brass-dragon/"
+  - "/compendium/monsters/assassin/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/sholeh-art/"

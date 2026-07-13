@@ -1044,30 +1044,8 @@ summary: "Aventura independente importada do capítulo {adv_title}."
 
 def anthology_adventure_weight(source_slug, chapter_title, source_index):
     """Return the intended navigation order for anthology chapters."""
-    if source_slug.lower() == "jttrc":
-        editorial_order = [
-            "Welcome to the Radiant Citadel",
-            "Salted Legacy",
-            "Written in Blood",
-            "The Fiend of Hollow Mine",
-            "Wages of Vice",
-            "Sins of Our Elders",
-            "Gold for Fools and Princes",
-            "Trail of Destruction",
-            "In the Mists of Manivarsha",
-            "Between Tangled Roots",
-            "Shadow of the Sun",
-            "The Nightsea's Succor",
-            "Buried Dynasty",
-            "Orchids of the Invisible Mountain",
-            "Beyond the Radiant Citadel",
-            "The Radiant Citadel",
-            "Credits",
-        ]
-        try:
-            return (editorial_order.index(chapter_title) + 1) * 10
-        except ValueError:
-            pass
+    # O JSON original do 5e.tools já fornece os capítulos ordenados cronologicamente.
+    # Usamos o índice natural de origem para computar os pesos de forma genérica.
     return (source_index + 1) * 10
 
 

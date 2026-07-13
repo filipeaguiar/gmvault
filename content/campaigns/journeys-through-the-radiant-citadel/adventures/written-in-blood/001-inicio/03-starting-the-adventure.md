@@ -11,25 +11,25 @@ status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tungsten-ward/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tungsten-ward/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/acolyte/"
-  - "/compendium/monsters/cultist/"
   - "/compendium/monsters/scout/"
+  - "/compendium/monsters/acolyte/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/cultist/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tungsten-ward-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tungsten-ward-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/"
 ---
 
 ### Descrição e Elementos Importantes

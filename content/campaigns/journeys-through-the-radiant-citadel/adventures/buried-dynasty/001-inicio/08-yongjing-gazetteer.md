@@ -13,9 +13,9 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/kenku/"
   - "/compendium/monsters/reef-shark/"
   - "/compendium/monsters/mage/"
+  - "/compendium/monsters/kenku/"
   - "/compendium/monsters/ghost/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"

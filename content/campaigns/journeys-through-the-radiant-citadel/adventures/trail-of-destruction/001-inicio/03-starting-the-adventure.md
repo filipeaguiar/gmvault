@@ -14,8 +14,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/priest/"
   - "/compendium/monsters/salamander/"
+  - "/compendium/monsters/priest/"
   - "/compendium/monsters/fire-snake/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"

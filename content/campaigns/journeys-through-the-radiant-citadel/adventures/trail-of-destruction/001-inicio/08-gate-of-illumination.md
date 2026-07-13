@@ -14,14 +14,14 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/gate-of-illumination/"
 compendium_refs:
-  - "/compendium/monsters/salamander/"
   - "/compendium/monsters/scout/"
+  - "/compendium/monsters/salamander/"
   - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/tlexolotl/"
 handouts:
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/salamander-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-075-map-81-gate-of-illumination-player/"
 ---

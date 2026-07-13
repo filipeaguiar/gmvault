@@ -13,11 +13,11 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-old-city/"
 compendium_refs:
-  - "/compendium/monsters/roper/"
-  - "/compendium/monsters/revenant/"
+  - "/compendium/monsters/otyugh/"
   - "/compendium/monsters/wraith/"
   - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/otyugh/"
+  - "/compendium/monsters/revenant/"
+  - "/compendium/monsters/roper/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/otyugh-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-127-map-131-yun-dynasty-ruins-player/"

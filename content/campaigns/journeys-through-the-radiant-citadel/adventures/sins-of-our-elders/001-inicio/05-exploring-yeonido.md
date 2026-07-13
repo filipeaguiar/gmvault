@@ -9,21 +9,21 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kun-ahn-jun/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/exploring-yeonido/"
 compendium_refs:
   - "/compendium/monsters/saber-toothed-tiger/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/guard/"
+  - "/compendium/monsters/guard/"
   - "/compendium/monsters/noble/"
-  - "/compendium/monsters/guard/"
-  - "/compendium/monsters/guard/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kun-ahn-jun-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-053-map-61-yeonido-player/"
 ---

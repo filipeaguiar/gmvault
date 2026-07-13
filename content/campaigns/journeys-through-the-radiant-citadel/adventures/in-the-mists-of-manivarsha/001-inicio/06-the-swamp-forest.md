@@ -13,18 +13,18 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-swamp-forest/"
 compendium_refs:
-  - "/compendium/monsters/mud-mephit/"
   - "/compendium/monsters/swarm-of-quippers/"
-  - "/compendium/monsters/water-elemental/"
-  - "/compendium/monsters/spirit-naga/"
   - "/compendium/monsters/treant/"
   - "/compendium/monsters/weretiger/"
+  - "/compendium/monsters/mud-mephit/"
+  - "/compendium/monsters/spirit-naga/"
+  - "/compendium/monsters/water-elemental/"
   - "/compendium/monsters/riverine/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/swarm-of-quippers-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/"
 ---
 
 ### Descrição e Elementos Importantes

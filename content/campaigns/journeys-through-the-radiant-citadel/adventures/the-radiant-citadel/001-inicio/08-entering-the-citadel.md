@@ -14,8 +14,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/entering-the-citadel/"
 compendium_refs:
   - "/compendium/monsters/priest/"
-  - "/compendium/monsters/mage/"
   - "/compendium/monsters/guard/"
+  - "/compendium/monsters/mage/"
 handouts:
 
 ---

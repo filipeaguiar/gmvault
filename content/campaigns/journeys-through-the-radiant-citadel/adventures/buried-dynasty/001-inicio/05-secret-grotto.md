@@ -13,9 +13,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/secret-grotto/"
 compendium_refs:
-  - "/compendium/monsters/stone-golem/"
   - "/compendium/monsters/mage/"
   - "/compendium/monsters/adult-gold-dragon/"
+  - "/compendium/monsters/stone-golem/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/stone-golem-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-129-map-132-secret-grotto-player/"

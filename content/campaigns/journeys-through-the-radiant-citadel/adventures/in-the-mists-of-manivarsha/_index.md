@@ -1,6 +1,6 @@
 ---
 title: "In the Mists of Manivarsha"
-weight: 90
+weight: 100
 params:
   kind: "adventure"
 draft: true

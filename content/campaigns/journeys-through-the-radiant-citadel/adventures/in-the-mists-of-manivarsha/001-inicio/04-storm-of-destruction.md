@@ -13,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/storm-of-destruction/"
 compendium_refs:
+  - "/compendium/monsters/priest/"
   - "/compendium/monsters/water-elemental/"
   - "/compendium/monsters/swarm-of-poisonous-snakes/"
   - "/compendium/monsters/water-weird/"
-  - "/compendium/monsters/priest/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
 ---

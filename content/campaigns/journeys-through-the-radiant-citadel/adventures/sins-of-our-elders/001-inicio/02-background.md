@@ -10,15 +10,15 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kun-ahn-jun/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kun-ahn-jun-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
 ---
 
 ### Descrição e Elementos Importantes

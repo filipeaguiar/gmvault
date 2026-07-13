@@ -13,14 +13,14 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/traveling-the-skybridge/"
 compendium_refs:
-  - "/compendium/monsters/cloud-giant/"
   - "/compendium/monsters/priest/"
+  - "/compendium/monsters/cloud-giant/"
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/dragon-hunter/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
 ---
 
 ### Descrição e Elementos Importantes

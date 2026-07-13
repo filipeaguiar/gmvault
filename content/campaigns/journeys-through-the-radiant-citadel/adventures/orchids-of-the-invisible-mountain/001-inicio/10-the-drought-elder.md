@@ -17,8 +17,8 @@ compendium_refs:
   - "/compendium/monsters/gibbering-mouther/"
   - "/compendium/monsters/demilich/"
   - "/compendium/monsters/whistler/"
-  - "/compendium/magic-items/white-ghost-orchid-seed/"
   - "/compendium/magic-items/hammock-of-worlds/"
+  - "/compendium/magic-items/white-ghost-orchid-seed/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"

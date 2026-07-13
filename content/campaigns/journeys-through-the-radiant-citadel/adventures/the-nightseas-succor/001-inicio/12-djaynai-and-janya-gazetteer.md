@@ -13,14 +13,14 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/lizardfolk/"
-  - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/adult-bronze-dragon/"
+  - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/sahuagin-baron/"
   - "/compendium/monsters/skeleton/"
   - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/adult-bronze-dragon/"
+  - "/compendium/monsters/lizardfolk/"
+  - "/compendium/monsters/ghost/"
   - "/compendium/monsters/sea-hag/"
-  - "/compendium/monsters/sahuagin-baron/"
   - "/compendium/monsters/nightsea-chil-liren/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"

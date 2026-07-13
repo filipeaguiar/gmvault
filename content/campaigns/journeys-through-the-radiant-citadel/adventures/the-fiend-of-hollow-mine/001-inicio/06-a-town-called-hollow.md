@@ -14,8 +14,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/a-town-called-hollow/"
 compendium_refs:
-  - "/compendium/monsters/peryton/"
   - "/compendium/monsters/ettin/"
+  - "/compendium/monsters/peryton/"
   - "/compendium/monsters/bandit/"
   - "/compendium/monsters/cult-fanatic/"
 handouts:

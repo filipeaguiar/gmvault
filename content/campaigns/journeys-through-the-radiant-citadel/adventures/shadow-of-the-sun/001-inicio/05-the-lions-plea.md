@@ -15,14 +15,14 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-lions-plea/"
 compendium_refs:
-  - "/compendium/monsters/spy/"
   - "/compendium/monsters/scout/"
+  - "/compendium/monsters/spy/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
 ---
 
 ### Descrição e Elementos Importantes

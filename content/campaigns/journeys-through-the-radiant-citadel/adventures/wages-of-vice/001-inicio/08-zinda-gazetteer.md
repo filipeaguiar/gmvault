@@ -13,17 +13,17 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/giant-crocodile/"
-  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/zombie/"
   - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/giant-crocodile/"
+  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/banshee/"
   - "/compendium/monsters/sea-hag/"
   - "/compendium/monsters/diva/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-049-map-52-zinda-player/"
 ---

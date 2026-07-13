@@ -10,17 +10,17 @@ status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-river-of-gold/"
 compendium_refs:
-  - "/compendium/monsters/spy/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/spy/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
 ---
 

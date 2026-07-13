@@ -15,8 +15,8 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
   - "/compendium/monsters/gargoyle/"
-  - "/compendium/monsters/noble/"
   - "/compendium/monsters/guard/"
+  - "/compendium/monsters/noble/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/kun-ahn-jun-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"

@@ -13,9 +13,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/citadel-defenses/"
 compendium_refs:
-  - "/compendium/monsters/archmage/"
-  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/mage/"
+  - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/archmage/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/sholeh-art/"
 ---

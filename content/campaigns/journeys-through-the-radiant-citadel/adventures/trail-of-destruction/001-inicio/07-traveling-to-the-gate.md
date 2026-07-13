@@ -9,21 +9,21 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/traveling-to-the-gate/"
 compendium_refs:
-  - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/salamander/"
   - "/compendium/monsters/fire-giant/"
+  - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/tlexolotl/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
 ---
 
 ### Descrição e Elementos Importantes
