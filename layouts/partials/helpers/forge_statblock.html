@@ -126,7 +126,100 @@
 {{- $inventory := default $emptyList (or (index $source "inventory") (index $page.Params "inventory")) -}}
 {{- $temporaryHP := default "" (index $source "temporary_hp") -}}
 
-{{- /* Personagens importados podem ter apenas referências de inventário. */ -}}
+{{- if not $isCharacter -}}
+  {{- /* Parse monster abilities/actions from body sections if they are empty */ -}}
+  {{- if and (eq (len $abilities) 0) (eq (len $actions) 0) (eq (len $bonusActions) 0) (eq (len $reactions) 0) (eq (len $legendaryActions) 0) -}}
+    {{- $raw := $page.RawContent -}}
+    {{- $sections := split $raw "\n### " -}}
+    {{- range $sections -}}
+      {{- $section := . -}}
+      {{- $lines := split $section "\n" -}}
+      {{- $heading := trim (index $lines 0) " \t\r" -}}
+      {{- $targetList := "" -}}
+      {{- if or (eq $heading "Características") (eq $heading "Traits") (eq $heading "Characteristics") -}}
+        {{- $targetList = "abilities" -}}
+      {{- else if or (eq $heading "Ações") (eq $heading "Actions") -}}
+        {{- $targetList = "actions" -}}
+      {{- else if or (eq $heading "Ações Lendárias") (eq $heading "Legendary Actions") -}}
+        {{- $targetList = "legendaryActions" -}}
+      {{- else if or (eq $heading "Reações") (eq $heading "Reactions") -}}
+        {{- $targetList = "reactions" -}}
+      {{- else if or (eq $heading "Ações Bônus") (eq $heading "Bonus Actions") -}}
+        {{- $targetList = "bonusActions" -}}
+      {{- end -}}
+
+      {{- if ne $targetList "" -}}
+        {{- range $line := (after 1 $lines) -}}
+          {{- $line = trim $line " \t\r" -}}
+          {{- if and (hasPrefix $line "**") (findRE `\*\*.*?\.\*\*` $line) -}}
+            {{- $parts := split $line ".**" -}}
+            {{- if gt (len $parts) 1 -}}
+              {{- $name := trim (replaceRE `^\*\*` "" (index $parts 0)) " \t\r" -}}
+              {{- $descRaw := trim (index $parts 1) " \t\r" -}}
+              {{- $desc := partial "helpers/forge_roll_parser.html" $descRaw -}}
+              
+              {{- $hash := md5 (printf "%s:%s" $page.Permalink $name) -}}
+              {{- $id := printf "%s-%s-%s-%s-%s" (substr $hash 0 8) (substr $hash 8 4) (substr $hash 12 4) (substr $hash 16 4) (substr $hash 20 12) -}}
+              
+              {{- $item := dict "id" $id "name" $name "description" $desc -}}
+              {{- if eq $targetList "abilities" -}}{{- $abilities = $abilities | append $item -}}{{- end -}}
+              {{- if eq $targetList "actions" -}}{{- $actions = $actions | append $item -}}{{- end -}}
+              {{- if eq $targetList "legendaryActions" -}}{{- $legendaryActions = $legendaryActions | append $item -}}{{- end -}}
+              {{- if eq $targetList "reactions" -}}{{- $reactions = $reactions | append $item -}}{{- end -}}
+              {{- if eq $targetList "bonusActions" -}}{{- $bonusActions = $bonusActions | append $item -}}{{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $strMod := 0 -}}
+{{- $dexMod := 0 -}}
+{{- $conMod := 0 -}}
+{{- $intMod := 0 -}}
+{{- $wisMod := 0 -}}
+{{- $chaMod := 0 -}}
+
+{{- if $isCharacter -}}
+  {{- $strVal := int (default 10 (index $stats "str")) -}}
+  {{- $strMod = div (sub $strVal 10) 2 -}}
+  {{- if lt $strVal 10 -}}{{- $strMod = div (sub $strVal 11) 2 -}}{{- end -}}
+
+  {{- $dexVal := int (default 10 (index $stats "dex")) -}}
+  {{- $dexMod = div (sub $dexVal 10) 2 -}}
+  {{- if lt $dexVal 10 -}}{{- $dexMod = div (sub $dexVal 11) 2 -}}{{- end -}}
+
+  {{- $conVal := int (default 10 (index $stats "con")) -}}
+  {{- $conMod = div (sub $conVal 10) 2 -}}
+  {{- if lt $conVal 10 -}}{{- $conMod = div (sub $conVal 11) 2 -}}{{- end -}}
+
+  {{- $intVal := int (default 10 (index $stats "int")) -}}
+  {{- $intMod = div (sub $intVal 10) 2 -}}
+  {{- if lt $intVal 10 -}}{{- $intMod = div (sub $intVal 11) 2 -}}{{- end -}}
+
+  {{- $wisVal := int (default 10 (index $stats "wis")) -}}
+  {{- $wisMod = div (sub $wisVal 10) 2 -}}
+  {{- if lt $wisVal 10 -}}{{- $wisMod = div (sub $wisVal 11) 2 -}}{{- end -}}
+
+  {{- $chaVal := int (default 10 (index $stats "cha")) -}}
+  {{- $chaMod = div (sub $chaVal 10) 2 -}}
+  {{- if lt $chaVal 10 -}}{{- $chaMod = div (sub $chaVal 11) 2 -}}{{- end -}}
+{{- end -}}
+
+{{- $levelInt := 1 -}}
+{{- if and (ne $level "") (ne $level nil) -}}
+  {{- $levelInt = int $level -}}
+{{- end -}}
+
+{{- $prof := 2 -}}
+{{- if ge $levelInt 17 -}}{{- $prof = 6 -}}
+{{- else if ge $levelInt 13 -}}{{- $prof = 5 -}}
+{{- else if ge $levelInt 9 -}}{{- $prof = 4 -}}
+{{- else if ge $levelInt 5 -}}{{- $prof = 3 -}}
+{{- end -}}
+
 {{- if and $isCharacter (eq (len $inventory) 0) -}}
   {{- $seenItems := slice -}}
   {{- range $ref := $page.Params.compendium_refs -}}
@@ -146,17 +239,82 @@
           {{- $itemHash := md5 $itemPage.Permalink -}}
           {{- $itemID := printf "%s-%s-%s-%s-%s" (substr $itemHash 0 8) (substr $itemHash 8 4) (substr $itemHash 12 4) (substr $itemHash 16 4) (substr $itemHash 20 12) -}}
           {{- $inventory = $inventory | append (dict "id" $itemID "name" $itemName "description" $itemDescription "quantity" 1) -}}
-          {{- $damage := default "" (index $itemInfo "damage") -}}
-          {{- if ne (printf "%v" $damage) "" -}}
-            {{- $attackBonus := printf "%v" (default "" (index $itemInfo "attack_bonus")) -}}
-            {{- $attackRange := printf "%v" (default "" (index $itemInfo "range")) -}}
-            {{- $actionDescription := printf "Ataque: %v" $damage -}}
-            {{- if ne $attackBonus "" -}}
-              {{- $actionDescription = printf "%s; Bônus: %s" $actionDescription $attackBonus -}}
+
+          {{- /* Weapon calculations */ -}}
+          {{- $isWeapon := false -}}
+          {{- $typeLower := lower $itemDescription -}}
+          {{- $nameLower := lower $itemName -}}
+          {{- if or (in $typeLower "weapon") (in $typeLower "arma")
+                    (in $nameLower "adaga") (in $nameLower "dagger")
+                    (in $nameLower "espada") (in $nameLower "sword")
+                    (in $nameLower "arco") (in $nameLower "bow")
+                    (in $nameLower "lança") (in $nameLower "spear")
+                    (in $nameLower "machado") (in $nameLower "axe")
+                    (in $nameLower "bordão") (in $nameLower "staff")
+                    (in $nameLower "quarterstaff")
+          -}}
+            {{- $isWeapon = true -}}
+          {{- end -}}
+
+          {{- $damageBase := default "" (index $itemInfo "damage") -}}
+          {{- if and $isWeapon (eq $damageBase "") -}}
+            {{- if or (in $nameLower "adaga") (in $nameLower "dagger") -}}
+              {{- $damageBase = "1d4" -}}
+            {{- else if or (in $nameLower "espada curta") (in $nameLower "shortsword") -}}
+              {{- $damageBase = "1d6" -}}
+            {{- else if or (in $nameLower "arco curto") (in $nameLower "shortbow") -}}
+              {{- $damageBase = "1d6" -}}
+            {{- else if or (in $nameLower "lança") (in $nameLower "spear") -}}
+              {{- $damageBase = "1d6" -}}
+            {{- else if or (in $nameLower "machado grande") (in $nameLower "greataxe") -}}
+              {{- $damageBase = "1d12" -}}
+            {{- else if or (in $nameLower "bordão") (in $nameLower "quarterstaff") -}}
+              {{- $damageBase = "1d6" -}}
+            {{- else -}}
+              {{- $damageBase = "1d4" -}}
             {{- end -}}
-            {{- if ne $attackRange "" -}}
-              {{- $actionDescription = printf "%s; Alcance: %s" $actionDescription $attackRange -}}
+          {{- end -}}
+
+          {{- if and $isWeapon (ne $damageBase "") -}}
+            {{- $useDex := false -}}
+            {{- if or (in $nameLower "arco") (in $nameLower "bow")
+                      (in $nameLower "adaga") (in $nameLower "dagger")
+                      (in $nameLower "espada curta") (in $nameLower "shortsword")
+                      (in (lower $properties) "finesse") (in (lower $properties) "range")
+            -}}
+              {{- if gt $dexMod $strMod -}}
+                {{- $useDex = true -}}
+              {{- end -}}
             {{- end -}}
+
+            {{- $modifier := $strMod -}}
+            {{- if $useDex -}}
+              {{- $modifier = $dexMod -}}
+            {{- end -}}
+
+            {{- $magicBonus := 0 -}}
+            {{- if in $itemName "+1" -}}{{- $magicBonus = 1 -}}
+            {{- else if in $itemName "+2" -}}{{- $magicBonus = 2 -}}
+            {{- else if in $itemName "+3" -}}{{- $magicBonus = 3 -}}
+            {{- end -}}
+
+            {{- $totalAttack := add (add $modifier $prof) $magicBonus -}}
+            {{- $totalDamage := add $modifier $magicBonus -}}
+
+            {{- $attackSign := "+" -}}
+            {{- if lt $totalAttack 0 -}}{{- $attackSign = "" -}}{{- end -}}
+            
+            {{- $damageSign := "+" -}}
+            {{- if lt $totalDamage 0 -}}
+              {{- $damageSign = "" -}}
+            {{- end -}}
+            
+            {{- $damageRoll := printf "%s%s%d" $damageBase $damageSign $totalDamage -}}
+            {{- if eq $totalDamage 0 -}}
+              {{- $damageRoll = $damageBase -}}
+            {{- end -}}
+
+            {{- $actionDescription := printf "Ataque com Arma: [1d20%s%d] para acertar. Dano: [%s] de dano." $attackSign $totalAttack $damageRoll -}}
             {{- $actionID := printf "%s-attack" $itemID -}}
             {{- $actions = $actions | append (dict "id" $actionID "name" $itemName "description" $actionDescription) -}}
           {{- end -}}
@@ -165,6 +323,81 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+
+{{- if $isCharacter -}}
+  {{- $enrichedSpells := slice -}}
+  {{- range $spell := $spellList -}}
+    {{- $spellName := $spell.name -}}
+    {{- $spellUsage := $spell.usage -}}
+    {{- $spellSlug := urlize $spellName -}}
+    {{- $spellPage := site.GetPage (printf "/compendium/spells/%s/" $spellSlug) -}}
+    {{- $desc := printf "Uso: %s" $spellUsage -}}
+    {{- if $spellPage -}}
+      {{- $info := default (dict) (index $spellPage.Params "spell_info") -}}
+      {{- $details := slice -}}
+      {{- if $info.cast_time -}}{{- $details = $details | append (printf "Convocação: %v" $info.cast_time) -}}{{- end -}}
+      {{- if $info.range -}}{{- $details = $details | append (printf "Alcance: %v" $info.range) -}}{{- end -}}
+      {{- if $info.components -}}{{- $details = $details | append (printf "Componentes: %v" $info.components) -}}{{- end -}}
+      {{- if $info.duration -}}{{- $details = $details | append (printf "Duração: %v" $info.duration) -}}{{- end -}}
+      
+      {{- $header := "" -}}
+      {{- if gt (len $details) 0 -}}
+        {{- $header = printf "%s\n\n" (delimit $details " | ") -}}
+      {{- end -}}
+      
+      {{- $bodyParsed := partial "helpers/forge_roll_parser.html" $spellPage.RawContent -}}
+      {{- $desc = printf "%sUso: %s\n\n%s" $header $spellUsage $bodyParsed -}}
+    {{- end -}}
+    
+    {{- $hash := md5 (printf "%s:%s" $page.Permalink $spellName) -}}
+    {{- $id := printf "%s-%s-%s-%s-%s" (substr $hash 0 8) (substr $hash 8 4) (substr $hash 12 4) (substr $hash 16 4) (substr $hash 20 12) -}}
+    
+    {{- $enrichedSpells = $enrichedSpells | append (dict "id" $id "name" $spellName "description" $desc) -}}
+  {{- end -}}
+  {{- $spellList = $enrichedSpells -}}
+{{- end -}}
+
+{{- $parsedAbilities := slice -}}
+{{- range $item := $abilities -}}
+  {{- $desc := partial "helpers/forge_roll_parser.html" $item.description -}}
+  {{- $parsedAbilities = $parsedAbilities | append (dict "id" $item.id "name" $item.name "description" $desc) -}}
+{{- end -}}
+{{- $abilities = $parsedAbilities -}}
+
+{{- $parsedActions := slice -}}
+{{- range $item := $actions -}}
+  {{- $desc := partial "helpers/forge_roll_parser.html" $item.description -}}
+  {{- $parsedActions = $parsedActions | append (dict "id" $item.id "name" $item.name "description" $desc) -}}
+{{- end -}}
+{{- $actions = $parsedActions -}}
+
+{{- $parsedBonusActions := slice -}}
+{{- range $item := $bonusActions -}}
+  {{- $desc := partial "helpers/forge_roll_parser.html" $item.description -}}
+  {{- $parsedBonusActions = $parsedBonusActions | append (dict "id" $item.id "name" $item.name "description" $desc) -}}
+{{- end -}}
+{{- $bonusActions = $parsedBonusActions -}}
+
+{{- $parsedReactions := slice -}}
+{{- range $item := $reactions -}}
+  {{- $desc := partial "helpers/forge_roll_parser.html" $item.description -}}
+  {{- $parsedReactions = $parsedReactions | append (dict "id" $item.id "name" $item.name "description" $desc) -}}
+{{- end -}}
+{{- $reactions = $parsedReactions -}}
+
+{{- $parsedLegendaryActions := slice -}}
+{{- range $item := $legendaryActions -}}
+  {{- $desc := partial "helpers/forge_roll_parser.html" $item.description -}}
+  {{- $parsedLegendaryActions = $parsedLegendaryActions | append (dict "id" $item.id "name" $item.name "description" $desc) -}}
+{{- end -}}
+{{- $legendaryActions = $parsedLegendaryActions -}}
+
+{{- $parsedInventory := slice -}}
+{{- range $item := $inventory -}}
+  {{- $desc := partial "helpers/forge_roll_parser.html" $item.description -}}
+  {{- $parsedInventory = $parsedInventory | append (dict "id" $item.id "name" $item.name "description" $desc "quantity" (default 1 $item.quantity)) -}}
+{{- end -}}
+{{- $inventory = $parsedInventory -}}
 
 {{- $idHash := md5 $page.Permalink -}}
 {{- $id := printf "%s-%s-%s-%s-%s" (substr $idHash 0 8) (substr $idHash 8 4) (substr $idHash 12 4) (substr $idHash 16 4) (substr $idHash 20 12) -}}

@@ -1,0 +1,15 @@
+{{- $desc := . -}}
+{{- if and (ne $desc "") (ne $desc "<nil>") -}}
+  {{- /* 1. Clean up double brackets [[2d6+3]] -> [2d6+3] */ -}}
+  {{- $desc = replaceRE `\[\[([^\]]+)\]\]` `[$1]` $desc -}}
+
+  {{- /* 2. Convert attack modifiers, e.g., +5 to hit -> [1d20+5] to hit */ -}}
+  {{- $desc = replaceRE `([+-]\d+)\s*(to\s+hit|para\s+acertar)` `[1d20$1] $2` $desc -}}
+
+  {{- /* 3. Convert unbracketed dice equations, e.g., 2d6 + 3 -> [2d6 + 3] */ -}}
+  {{- $desc = replaceRE `([^\[\w\d]|^)(\d+d\d+(?:\s*[+-]\s*\d+)?)` `$1[$2]` $desc -}}
+
+  {{- /* 4. Clean up spacing inside brackets, e.g., [2d6 + 3] -> [2d6+3] */ -}}
+  {{- $desc = replaceRE `\[\s*(\d+d\d+)\s*([+-])\s*(\d+)\s*\]` `[$1$2$3]` $desc -}}
+{{- end -}}
+{{- return $desc -}}
