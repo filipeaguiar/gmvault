@@ -1,19 +1,19 @@
 ---
-title: "hydra"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: hydra
+draft: false
+titulo_pt_br: hidra
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Huge monstrosity, sem tendência"
+  kind: monster
+stats_meta: Huge monstrosity, sem tendência
 stats:
-  ac: "15"
-  hp: "172 (15d12 + 75)"
-  speed: "30 ft., swim 30 ft."
+  ac: '15'
+  hp: 172 (15d12 + 75)
+  speed: 30 ft., swim 30 ft.
   attributes:
     str: 20
     dex: 12
@@ -21,40 +21,45 @@ stats:
     int: 2
     wis: 10
     cha: 7
-  skills: "Perception +6"
-  senses: "darkvision 60 ft., passive Perception 16"
-  cr: "8"
+  skills: Perception +6
+  senses: darkvision 60 ft., passive Perception 16
+  cr: '8'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: hydra](/images/campaigns/journeys-through-the-radiant-citadel/hydra.webp)
+![Arte: hidra](/images/campaigns/journeys-through-the-radiant-citadel/hydra.webp)
 
-The hydra is a reptilian horror with a crocodilian body and multiple heads on long, serpentine necks. Although its heads can be severed, the hydra magically regrows them in short order. A typical specimen has five heads. At the dawn of time, Tiamat, the Queen of Evil Dragons, slew a rival dragon god named Lernaea and cast her blood across the multiverse. Each drop that fell upon a world spawned a multi-headed hydra consumed by a hunger as great as the fallen god's hatred. Great champions are known to test their mettle against these fearsome creatures.
+A hidra é um horror reptiliano com corpo crocodiliano e múltiplas cabeças em longos pescoços serpentinos. Embora suas cabeças possam ser decepadas, a hidra as regenera magicamente em pouco tempo. Um espécime típico tem cinco cabeças. No alvorecer dos tempos, Tiamat, a Rainha dos Dragões Maus, matou um deus dragão rival chamado Lernaea e lançou seu sangue pelo multiverso. Cada gota que caiu em um mundo gerou uma hidra de múltiplas cabeças consumida por uma fome tão grande quanto o ódio do deus caído. Grandes campeões são conhecidos por testar seu valor contra essas criaturas temíveis.
 
-### Everlasting Hunger
+### Fome Eterna
 
-A rapacious and gluttonous monster, a hydra snatches and tears apart its prey in a frenzy of feeding. When a hydra has cleared a territory of food and driven off any creatures smart enough to avoid it, it moves on to seek its meals elsewhere. A hydra's hunger is so great that if it can't feed, it might turn against itself, its heads attacking each other as the creature eats itself alive.
+Um monstro voraz e glutão, uma hidra agarra e despedaça suas presas em um frenesi de alimentação. Quando uma hidra limpa um território de comida e afugenta quaisquer criaturas inteligentes o suficiente para evitá-la, ela se move para buscar suas refeições em outro lugar. A fome de uma hidra é tão grande que, se não puder se alimentar, ela pode se voltar contra si mesma, suas cabeças atacando umas às outras enquanto a criatura se devora viva.
 
-### Hardy Water Dwellers
+### Habitantes Aquáticos Resistentes
 
-Hydras are natural swimmers, dwelling in rivers, along lakeshores, in ocean shallows, and in wetland bogs. A hydra rarely requires shelter from the elements, so it doesn't normally have a lair. Only in colder climes are hydras drawn to the protection of sheltered caverns and ruins. When a hydra sleeps, at least one of its heads remains awake and alert, making the creature difficult to catch by surprise.
+Hidras são nadadoras naturais, habitando rios, margens de lagos, baías oceânicas e pântanos. Uma hidra raramente precisa de abrigo contra os elementos, então normalmente não tem um covil. Apenas em climas mais frios as hidras são atraídas para a proteção de cavernas e ruínas abrigadas. Quando uma hidra dorme, pelo menos uma de suas cabeças permanece acordada e alerta, tornando a criatura difícil de ser pega de surpresa.
 
 ### Características
 
-**Hold Breath.** The hydra can hold its breath for 1 hour.
+**Prender a Respiração.** A hidra pode prender a respiração por 1 hora.
 
-**Multiple Heads.** The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
+**Múltiplas Cabeças.** A hidra tem cinco cabeças. Enquanto tiver mais de uma cabeça, a hidra tem vantagem em testes de resistência contra ser cegada, enfeitiçada, surda, amedrontada, atordoada e ficar inconsciente.
 
-Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.
+Sempre que a hidra sofre 25 ou mais de dano em um único turno, uma de suas cabeças morre. Se todas as suas cabeças morrerem, a hidra morre.
 
-At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.
+Ao final de seu turno, ela cria duas cabeças para cada uma de suas cabeças que morreu desde seu último turno, a menos que tenha sofrido dano de fogo desde seu último turno. A hidra recupera 10 pontos de vida para cada cabeça regenerada desta forma.
 
-**Reactive Heads.** For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.
+**Cabeças Reativas.** Para cada cabeça que a hidra tiver além de uma, ela ganha uma reação extra que pode ser usada apenas para ataques de oportunidade.
 
-**Wakeful.** While the hydra sleeps, at least one of its heads is awake.
+**Vigilante.** Enquanto a hidra dorme, pelo menos uma de suas cabeças está acordada.
 
 ### Ações
 
-**Multiattack.** The hydra makes as many bite attacks as it has heads.
+**Ataques Múltiplos.** A hidra realiza tantos ataques de mordida quantas forem suas cabeças.
 
-**Bite.** mw 8 to hit, reach 10 ft., one target. {@h}10 ([[1d10+5]]) piercing damage.
-
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +8 para acertar, alcance 3 m, um alvo. *Dano:* 10 ([[1d10+5]]) dano perfurante.

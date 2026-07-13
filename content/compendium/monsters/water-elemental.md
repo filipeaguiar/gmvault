@@ -1,19 +1,19 @@
 ---
-title: "water elemental"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: water elemental
+draft: false
+titulo_pt_br: elemental d'água
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large elemental, neutro"
+  kind: monster
+stats_meta: Large elemental, neutro
 stats:
-  ac: "14"
-  hp: "114 (12d10 + 48)"
-  speed: "30 ft., swim 90 ft."
+  ac: '14'
+  hp: 114 (12d10 + 48)
+  speed: 30 ft., swim 90 ft.
   attributes:
     str: 18
     dex: 14
@@ -21,26 +21,29 @@ stats:
     int: 5
     wis: 10
     cha: 8
-  senses: "darkvision 60 ft., passive Perception 10"
-  languages: "Aquan"
-  cr: "5"
+  senses: darkvision 60 ft., passive Perception 10
+  languages: Aquan
+  cr: '5'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
-
-
 
 ### Características
 
-**Water Form.** The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
+**Forma Aquática.** O elemental pode entrar no espaço de uma criatura hostil e parar ali. Ele pode se mover por um espaço tão estreito quanto 2,5 centímetros de largura sem se espremer.
 
-**Freeze.** If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn.
+**Congelamento.** Se o elemental sofre dano de frio, ele congela parcialmente; seu deslocamento é reduzido em 6 metros até o final do próximo turno dele.
 
 ### Ações
 
-**Multiattack.** The elemental makes two slam attacks.
+**Ataques Múltiplos.** O elemental realiza dois ataques de pancada.
 
-**Slam.** mw 7 to hit, reach 5 ft., one target. {@h}13 ([[2d8+4]]) bludgeoning damage.
+**Pancada.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 1,5 m, um alvo. *Dano:* 13 ([[2d8+4]]) de dano de concussão.
 
-**Whelm {@recharge 4}.** Each creature in the elemental's space must make a CD 15 Strength saving throw. On a failure, a target takes 13 ([[2d8+4]]) bludgeoning damage. If it is Large or smaller, it is also grappled (escape CD 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.
+**Submergir {@recarga 4}.** Cada criatura no espaço do elemental deve realizar um teste de resistência de Força CD 15. Em caso de falha, o alvo sofre 13 ([[2d8+4]]) de dano de concussão. Se for Grande ou menor, também fica agarrado (CD 14 para escapar). Até que esta imobilização termine, o alvo está contido e incapaz de respirar, a menos que consiga respirar água. Se o teste de resistência for bem-sucedido, o alvo é empurrado para fora do espaço do elemental.
 
-The elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 ([[2d8+4]]) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a CD 14 Strength check and succeeding.
-
+O elemental pode agarrar uma criatura Grande ou até duas criaturas Médias ou menores ao mesmo tempo. No início de cada turno do elemental, cada alvo agarrado por ele sofre 13 ([[2d8+4]]) de dano de concussão. Uma criatura a até 1,5 metro do elemental pode puxar uma criatura ou objeto para fora dele realizando uma ação para fazer um teste de Força CD 14 e sendo bem-sucedida.

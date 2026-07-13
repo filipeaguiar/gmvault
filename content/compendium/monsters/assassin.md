@@ -1,19 +1,19 @@
 ---
-title: "assassin"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: assassin
+draft: false
+titulo_pt_br: Assassino
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, leal e caótico e mau"
+  kind: monster
+stats_meta: Medium humanoid, leal e caótico e mau
 stats:
-  ac: "15"
-  hp: "78 (12d8 + 24)"
-  speed: "30 ft."
+  ac: '15'
+  hp: 78 (12d8 + 24)
+  speed: 30 ft.
   attributes:
     str: 11
     dex: 16
@@ -21,30 +21,35 @@ stats:
     int: 13
     wis: 11
     cha: 10
-  saves: "Dex +6, Int +4"
-  skills: "Acrobatics +6, Deception +3, Perception +3, Stealth +9"
-  senses: "passive Perception 13"
-  languages: "Thieves' cant plus any two languages"
-  cr: "8"
+  saves: Dex +6, Int +4
+  skills: Acrobatics +6, Deception +3, Perception +3, Stealth +9
+  senses: passive Perception 13
+  languages: Thieves' cant plus any two languages
+  cr: '8'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: assassin](/images/campaigns/journeys-through-the-radiant-citadel/assassin.webp)
+![Arte: assassino](/images/campaigns/journeys-through-the-radiant-citadel/assassin.webp)
 
-Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them.
+Treinados no uso de veneno, assassinos são matadores impiedosos que trabalham para nobres, mestres de guildas, soberanos e qualquer um que possa pagar por seus serviços.
 
 ### Características
 
-**Assassinate.** During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.
+**Assassinar.** Durante seu primeiro turno, o assassino tem vantagem nas jogadas de ataque contra qualquer criatura que ainda não tenha agido em um turno. Qualquer acerto que o assassino conseguir contra uma criatura surpresa é um acerto crítico.
 
-**Evasion.** If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+**Evasão.** Se o assassino for submetido a um efeito que permita que ele faça um teste de resistência de Destreza para sofrer apenas metade do dano, ele não sofre dano algum se for bem-sucedido no teste de resistência e sofre apenas metade do dano se falhar.
 
-**Sneak Attack (1/Turn).** The assassin deals an extra 14 ([[4d6]]) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.
+**Ataque Furtivo (1/Turno).** O assassino causa 14 ([[4d6]]) de dano adicional quando atinge um alvo com um ataque com arma e tem vantagem na jogada de ataque, ou quando o alvo está a 1,5 metro de um aliado do assassino que não esteja incapacitado e o assassino não tem desvantagem na jogada de ataque.
 
 ### Ações
 
-**Multiattack.** The assassin makes two shortsword attacks.
+**Ataques Múltiplos.** O assassino realiza dois ataques com espada curta.
 
-**Shortsword.** mw 6 to hit, reach 5 ft., one target. {@h}6 ([[1d6+3]]) piercing damage, and the target must make a CD 15 Constitution saving throw, taking 24 ([[7d6]]) poison damage on a failed save, or half as much damage on a successful one.
+**Espada Curta.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 1,5 m, um alvo. *Dano:* 6 ([[1d6+3]]) de dano perfurante, e o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 15, sofrendo 24 ([[7d6]]) de dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.
 
-**Light Crossbow.** rw 6 to hit, range 80/320 ft., one target. {@h}7 ([[1d8+3]]) piercing damage, and the target must make a CD 15 Constitution saving throw, taking 24 ([[7d6]]) poison damage on a failed save, or half as much damage on a successful one.
-
+**Besta Leve.** *Ataque à Distância com Arma:* +6 para acertar, alcance 24 m/96 m, um alvo. *Dano:* 7 ([[1d8+3]]) de dano perfurante, e o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 15, sofrendo 24 ([[7d6]]) de dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.

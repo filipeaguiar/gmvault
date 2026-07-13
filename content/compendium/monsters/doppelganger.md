@@ -1,14 +1,20 @@
 ---
-title: "Doppelganger"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Doppelganger
+draft: false
+titulo_pt_br: Doppelganger
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 Monstro **Doppelganger** importado automaticamente da campanha.

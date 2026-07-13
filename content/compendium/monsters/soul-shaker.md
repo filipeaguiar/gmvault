@@ -1,19 +1,19 @@
 ---
-title: "soul shaker"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: soul shaker
+draft: false
+titulo_pt_br: agitador de almas
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large undead, caótico e mau"
+  kind: monster
+stats_meta: Large undead, caótico e mau
 stats:
-  ac: "13"
-  hp: "76 (8d10 + 32)"
-  speed: "20 ft."
+  ac: '13'
+  hp: 76 (8d10 + 32)
+  speed: 20 ft.
   attributes:
     str: 20
     dex: 8
@@ -21,26 +21,31 @@ stats:
     int: 8
     wis: 11
     cha: 14
-  senses: "blindsight 60 ft. (blind beyond this radius), passive Perception 10"
-  languages: "telepathy 60 ft."
-  cr: "4"
+  senses: blindsight 60 ft. (blind beyond this radius), passive Perception 10
+  languages: telepathy 60 ft.
+  cr: '4'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: soul shaker](/images/campaigns/journeys-through-the-radiant-citadel/soul-shaker.webp)
+![Arte: agitador de almas](/images/campaigns/journeys-through-the-radiant-citadel/soul-shaker.webp)
 
-A grasping mass of Humanoid limbs, a soul shaker is an obsessive claimer of corpses and collector of body parts. These nightmarish creatures arise from ghoulish collections of severed limbs exposed to necromantic energies or when numerous crawling claws form a cooperative relationship.
-Most of a soul shaker's victims have their vitality drained and their flesh pulverized by its many arms. However, should a soul shaker encounter someone with an impressionable mind, the creature attempts to charm the individual, using them as a lure to tempt others into its hunting grounds.
-If defeated, a soul shaker disperses into several skittering, animate limbs. The terror can only truly be vanquished by destroying these disembodied appendages. If more than one of these pieces escape, the soul shaker reforms over the course of days and begins hunting once more.
+Uma massa agarradora de membros humanoides, um agitador de almas é um reivindicador obsessivo de cadáveres e colecionador de partes do corpo. Essas criaturas pesadelares surgem de coleções macabras de membros decepados expostas a energias necromânticas ou quando várias garras rastejantes formam uma relação cooperativa.
+A maioria das vítimas de um agitador de almas tem sua vitalidade drenada e sua carne pulverizada por seus muitos braços. No entanto, se um agitador de almas encontrar alguém com uma mente impressionável, a criatura tenta enfeitiçar o indivíduo, usando-o como isca para atrair outros para seus terrenos de caça.
+Se derrotado, um agitador de almas se dispersa em vários membros animados que se espalham. O terror só pode ser verdadeiramente aniquilado destruindo esses apêndices desmembrados. Se mais de um desses pedaços escapar, o agitador de almas se reforma ao longo de dias e começa a caçar novamente.
 
 ### Características
 
-**Enthralled Lure (1/Day).** The soul shaker can cast the geas spell, requiring no spell components and using Charisma as the spellcasting ability (spell save CD 12).
+**Isca Enfeitiçada (1/Dia).** O agitador de almas pode conjurar a magia *geas*, sem necessidade de componentes de magia e usando Carisma como atributo de conjuração (CD para evitar magia 12).
 
-**Reconstruction.** When the soul shaker is reduced to 0 hit points, it explodes into 7 ([[1d4+5]]) crawling claws. After 6 ([[1d12]]) days, if at least two of those crawling claws are alive, they teleport to the location of the soul shaker's death and merge together, whereupon the soul shaker reforms and regains all its hit points.
+**Reconstrução.** Quando o agitador de almas é reduzido a 0 pontos de vida, ele explode em 7 ([[1d4+5]]) garras rastejantes. Após 6 ([[1d12]]) dias, se pelo menos duas dessas garras rastejantes estiverem vivas, elas se teletransportam para o local da morte do agitador de almas e se fundem, momento em que o agitador de almas se reforma e recupera todos os seus pontos de vida.
 
-**Unusual Nature.** The soul shaker doesn't require air, food, drink, or sleep.
+**Natureza Incomum.** O agitador de almas não precisa de ar, comida, bebida ou sono.
 
 ### Ações
 
-**Crushing Grasp.** mw 7 to hit, reach 5 ft., one target. {@h}14 ([[2d8+5]]) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape CD 15). The soul shaker can have only one creature grappled in this way at a time.
-
+**Agarramento Esmagador.** Ataque Corpo a Corpo com Arma: +7 para acertar, alcance 1,5 m., um alvo. {@h}14 ([[2d8+5]]) de dano de concussão. Se o alvo for uma criatura Média ou menor, ele é agarrado (CD de escape 15). O agitador de almas pode ter apenas uma criatura agarrada desta forma por vez.

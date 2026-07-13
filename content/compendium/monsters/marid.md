@@ -1,19 +1,19 @@
 ---
-title: "marid"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: marid
+draft: false
+titulo_pt_br: '**marid**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large elemental, caótico e neutro"
+  kind: monster
+stats_meta: Large elemental, caótico e neutro
 stats:
-  ac: "17"
-  hp: "229 (17d10 + 136)"
-  speed: "30 ft., fly 60 ft., swim 90 ft."
+  ac: '17'
+  hp: 229 (17d10 + 136)
+  speed: 30 ft., fly 60 ft., swim 90 ft.
   attributes:
     str: 22
     dex: 12
@@ -21,46 +21,51 @@ stats:
     int: 18
     wis: 17
     cha: 18
-  saves: "Dex +5, Wis +7, Cha +8"
-  senses: "blindsight 30 ft., darkvision 120 ft., passive Perception 13"
-  languages: "Aquan"
-  cr: "11"
+  saves: Dex +5, Wis +7, Cha +8
+  senses: blindsight 30 ft., darkvision 120 ft., passive Perception 13
+  languages: Aquan
+  cr: '11'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: marid](/images/campaigns/journeys-through-the-radiant-citadel/marid.webp)
 
-Hailing from the Elemental Plane of Water, the marids are the most wondrous of genie-kind. Although all genies wield great power, even the lowliest marid sees itself as clearly superior to the flighty djinn, the ground-hugging dao, and the fuming efreet. Large and piscine, marids are a strange sight to behold, particularly when clad in the finely stitched vests and colorful pantaloons they favor. They speak in voices as soft as the sea breeze or as sonorous as storm waves breaking against a rocky cliff. In flight, their lower bodies transform into columns of foamy water.
+Originários do Plano Elemental da Água, os marids são a mais maravilhosa das linhagens de gênios. Embora todos os gênios empunhem grande poder, até o mais humilde marid se vê como claramente superior aos volúveis djinns, aos daos apegados à terra e aos irados efreets. Grandes e pisciformes, os marids são uma visão estranha de se contemplar, particularmente quando vestidos com os coletes finamente costurados e as calças coloridas que preferem. Eles falam com vozes tão suaves quanto a brisa do mar ou tão sonoras quanto ondas de tempestade quebrando contra um penhasco rochoso. Em voo, suas partes inferiores se transformam em colunas de água espumosa.
 
-### Water Lords
+### Senhores da Água
 
-Water is a marid's native element, and the genie can manipulate water in virtually any way it desires. A marid can walk on water and breathe naturally beneath its surface. It can create water or shape clouds of fog and mist from the vapor in the air. It can even transform itself into mist, or use water as a weapon to bludgeon its foes.
+A água é o elemento nativo de um marid, e o gênio pode manipular a água praticamente de qualquer forma que desejar. Um marid pode andar sobre a água e respirar naturalmente sob sua superfície. Ele pode criar água ou moldar nuvens de névoa e neblina a partir do vapor no ar. Ele pode até mesmo se transformar em névoa, ou usar a água como uma arma para golpear seus inimigos.
 
-### Marid Homes
+### Lares Marid
 
-Marids are rare on the Material Plane. They inhabit mighty and majestic coral fortresses located in the Elemental Plane of Water. These citadels float in the depths of the plane and contain opulent, air-filled chambers where slaves and guests reside.
-A marid doesn't expect much from its slaves, simply wanting to have them for the status of ownership. Marids go out of their way to obtain skilled slaves, and aren't above kidnapping mortal artists, entertainers, or storytellers for use in their courts.
+Marids são raros no Plano Material. Eles habitam imponentes e majestosas fortalezas de coral localizadas no Plano Elemental da Água. Estas cidadelas flutuam nas profundezas do plano e contêm câmaras opulentas cheias de ar onde escravos e convidados residem.
+Um marid não espera muito de seus escravos, simplesmente querendo tê-los pelo status de posse. Marids se esforçam para obter escravos habilidosos, e não se importam em sequestrar artistas, animadores ou contadores de histórias mortais para usar em suas cortes.
 
-### Egotistical Hierarchs
+### Hierarcas Egoístas
 
-All marids claim a title of nobility, and the race is awash in shahs, sultans, muftis, and khedives. Most of these titles are mere pretense on the part of the self-important marids.
-Marids treat all others-including other genies-as inferiors of various grades, ranging from poor cousins to petty annoyances. They tolerate djinn, dislike dao, and despise efreet.
-Humanoids are among the lowest of the creatures that marids must tolerate, although they sometimes deal with powerful wizards and exceptional leaders on an almost-equal footing. Doing so has sometimes proven to be a mistake, since wizards have managed to imprison marids in conch shells, flasks, and decanters over the ages. Bribery and flattery are the best means of dealing with marids, to which an obsequious mortal is a creature that knows its place.
+Todos os marids reivindicam um título de nobreza, e a raça está repleta de xás, sultões, muftis e quedivas. A maioria desses títulos é mera pretensão da parte dos marids presunçosos.
+Marids tratam todos os outros — incluindo outros gênios — como inferiores de vários graus, variando de primos pobres a incômodos insignificantes. Eles toleram djinns, desgostam de daos e desprezam efreets.
+Humanoides estão entre as criaturas mais baixas que os marids devem tolerar, embora às vezes lidem com magos poderosos e líderes excepcionais em uma base quase igual. Fazer isso às vezes se provou um erro, já que magos conseguiram aprisionar marids em conchas, frascos e decantadores ao longo dos tempos. Suborno e bajulação são os melhores meios de lidar com marids, para os quais um mortal obsequioso é uma criatura que conhece seu lugar.
 
-### Whimsical Storytellers
+### Contadores de Histórias Caprichosos
 
-Marids are champion tale-tellers, whose favorite legends emphasize the prowess of marids in general and of the speaker in particular. Fanciful genies, they lie often and creatively. They aren't always malicious in their deception, but embellishments suit their fancy. Marids consider it a crime for a lesser being to interrupt one of their tales, and offending a marid is a sure way to invoke its wrath.
+Marids são contadores de histórias campeões, cujas lendas favoritas enfatizam a proeza dos marids em geral e do orador em particular. Gênios fantasiosos, eles mentem com frequência e criatividade. Nem sempre são maliciosos em seu engano, mas os floreios agradam seu capricho. Marids consideram um crime uma criatura inferior interromper um de seus contos, e ofender um marid é uma maneira certa de invocar sua ira.
 
 ### Características
 
-**Amphibious.** The marid can breathe air and water.
+**Anfíbio.** O marid pode respirar ar e água.
 
-**Elemental Demise.** If the marid dies, its body disintegrates into a burst of water and foam, leaving behind only equipment the marid was wearing or carrying.
+**Morte Elemental.** Se o marid morrer, seu corpo se desintegra em uma explosão de água e espuma, deixando para trás apenas o equipamento que o marid estava vestindo ou carregando.
 
 ### Ações
 
-**Multiattack.** The marid makes two trident attacks.
+**Ataques Múltiplos.** O marid realiza dois ataques de tridente.
 
-**Trident.** mw,rw 10 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}13 ([[2d6+6]]) piercing damage, or 15 ([[2d8+6]]) piercing damage if used with two hands to make a melee attack.
+**Tridente.** *Ataque Corpo a Corpo ou à Distância com Arma:* +10 para acertar, alcance 1,5 m ou alcance 6/18 m, um alvo. *Dano:* 13 ([[2d6+6]]) dano perfurante, ou 15 ([[2d8+6]]) dano perfurante se usado com duas mãos para realizar um ataque corpo a corpo.
 
-**Water Jet.** The marid magically shoots water in a 60-foot line that is 5 feet wide. Each creature in that line must make a CD 16 Dexterity saving throw. On a failure, a target takes 21 ([[6d6]]) bludgeoning damage and, if it is Huge or smaller, is pushed up to 20 feet away from the marid and knocked prone. On a success, a target takes half the bludgeoning damage, but is neither pushed nor knocked prone.
-
+**Jato d'Água.** O marid dispara magicamente água em uma linha de 18 metros de comprimento por 1,5 metro de largura. Cada criatura nessa linha deve realizar um teste de resistência de Destreza CD 16. Em uma falha, o alvo sofre 21 ([[6d6]]) dano de concussão e, se for Enorme ou menor, é empurrado até 6 metros para longe do marid e fica caído. Em um sucesso, o alvo sofre metade do dano de concussão, mas não é empurrado nem fica caído.

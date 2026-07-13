@@ -1,19 +1,19 @@
 ---
-title: "dryad"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: dryad
+draft: false
+titulo_pt_br: dríade
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium fey, neutro"
+  kind: monster
+stats_meta: Medium fey, neutro
 stats:
-  ac: "11, 16 (with {@spell barkskin})"
-  hp: "22 (5d8)"
-  speed: "30 ft."
+  ac: 11, 16 (with {@spell barkskin})
+  hp: 22 (5d8)
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 12
@@ -21,45 +21,50 @@ stats:
     int: 14
     wis: 15
     cha: 18
-  skills: "Perception +4, Stealth +5"
-  senses: "darkvision 60 ft., passive Perception 14"
-  languages: "Elvish, Sylvan"
-  cr: "1"
+  skills: Perception +4, Stealth +5
+  senses: darkvision 60 ft., passive Perception 14
+  languages: Elvish, Sylvan
+  cr: '1'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: dryad](/images/campaigns/journeys-through-the-radiant-citadel/dryad.webp)
+![Arte: dríade](/images/campaigns/journeys-through-the-radiant-citadel/dryad.webp)
 
-Travelers entering a forest might catch a glimpse of a feminine form flitting through the trees. Warm laughter hangs on the air, drawing those who hear it deeper into the emerald shadows.
+Viajantes que entram em uma floresta podem vislumbrar uma forma feminina esvoaçando entre as árvores. Risadas calorosas pairam no ar, atraindo quem as ouve para mais fundo nas sombras esmeraldas.
 
-### Treebound
+### Ligada à Árvore
 
-Powerful fey will sometimes bind lesser fey spirits to trees, transforming them into dryads. This is sometimes done as a punishment when the fey spirit falls in love with a mortal and that love is forbidden.
-A dryad can emerge from the tree and travel the lands around it, but the tree remains her home and roots her to the world. As long as the tree remains healthy and unharmed, the dryad stays forever youthful and alluring. If the tree is harmed, she suffers. If the tree is ever destroyed, the dryad descends into madness.
+Fadas poderosas às vezes vinculam espíritos fadados menores a árvores, transformando-os em dríades. Isso é feito às vezes como punição quando o espírito fadado se apaixona por um mortal e esse amor é proibido.
+Uma dríade pode emergir da árvore e viajar pelas terras ao redor, mas a árvore continua sendo seu lar e a enraíza ao mundo. Enquanto a árvore permanecer saudável e ilesa, a dríade se mantém eternamente jovem e atraente. Se a árvore for ferida, ela sofre. Se a árvore for destruída, a dríade sucumbe à loucura.
 
-### Reclusive Fey
+### Fada Reclusa
 
-Dryads act as guardians of their woodland demesnes. Shy and reclusive, they watch interlopers from the trees. A dryad struck by the beauty of a stranger might investigate more closely, perhaps even try to lure the individual away to be charmed.
-Dryads work with other sylvan creatures to defend their forests. Unicorns, treants, and satyrs live alongside them, in addition to druids that share the dryads' devotion to the woods they call home.
+Dríades atuam como guardiãs de seus domínios silvestres. Tímidas e reclusas, elas observam intrusos das árvores. Uma dríade impressionada pela beleza de um estranho pode investigar mais de perto, talvez até tentar atrair o indivíduo para enfeitiçá-lo.
+Dríades trabalham com outras criaturas silvestres para defender suas florestas. Unicórnios, treants e sátiros vivem ao lado delas, além de druidas que compartilham a devoção das dríades pelas florestas que chamam de lar.
 
-### Woodland Magic
+### Magia Silvestre
 
-Dryads can speak with plants and animals. They can teleport from one tree to another, luring interlopers away from their groves. If pressed, a dryad can beguile humanoids with her enchantments, turning enemies into friends. They also know a handful of useful spells.
+Dríades podem falar com plantas e animais. Elas podem se teletransportar de uma árvore para outra, atraindo intrusos para longe de seus bosques. Se pressionada, uma dríade pode encantar humanoides com seus encantamentos, transformando inimigos em amigos. Elas também conhecem algumas magias úteis.
 
 ### Características
 
-**Magic Resistance.** The dryad has advantage on saving throws against spells and other magical effects.
+**Resistência à Magia.** A dríade tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-**Speak with Beasts and Plants.** The dryad can communicate with beasts and plants as if they shared a language.
+**Falar com Bestas e Plantas.** A dríade pode se comunicar com bestas e plantas como se compartilhassem um idioma.
 
-**Tree Stride.** Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger.
+**Passo das Árvores.** Uma vez em seu turno, a dríade pode usar 1,5 metro de seu deslocamento para pisar magicamente em uma árvore viva dentro de seu alcance e emergir de uma segunda árvore viva a até 18 metros da primeira, aparecendo em um espaço desocupado a até 1,5 metro da segunda árvore. Ambas as árvores devem ser Grandes ou maiores.
 
 ### Ações
 
-**Club.** mw 2 to hit (6 to hit with shillelagh), reach 5 ft., one target. {@h}2 ([[1d4]]) bludgeoning damage, or 8 ([[1d8+4]]) bludgeoning damage with shillelagh.
+**Clava.** Ataque Corpo a Corpo com Arma: +2 para acertar (+6 para acertar com *shillelagh*), alcance 1,5 m., um alvo. *Dano:* 2 ([[1d4]]) dano de concussão, ou 8 ([[1d8+4]]) dano de concussão com *shillelagh*.
 
-**Fey Charm.** The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a CD 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.
+**Encanto Fadado.** A dríade escolhe um humanoide ou besta que possa ver a até 9 metros dela. Se o alvo puder ver a dríade, ele deve ser bem-sucedido em um teste de resistência de Sabedoria CD 14 ou ficará magicamente enfeitiçado. A criatura enfeitiçada considera a dríade uma amiga de confiança que deve ser ouvida e protegida. Embora o alvo não esteja sob o controle da dríade, ele atende aos pedidos ou ações da dríade da maneira mais favorável que puder.
 
-Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.
+Toda vez que a dríade ou seus aliados fizerem algo prejudicial ao alvo, ele pode repetir o teste de resistência, encerrando o efeito sobre si mesmo em caso de sucesso. Caso contrário, o efeito dura 24 horas ou até a dríade morrer, estar em um plano de existência diferente do alvo, ou encerrar o efeito como uma ação bônus. Se o teste de resistência de um alvo for bem-sucedido, o alvo fica imune ao Encanto Fadado da dríade pelas próximas 24 horas.
 
-The dryad can have no more than one humanoid and up to three beasts charmed at a time.
-
+A dríade não pode ter mais de um humanoide e até três bestas enfeitiçados ao mesmo tempo.

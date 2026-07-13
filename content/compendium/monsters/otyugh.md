@@ -1,19 +1,19 @@
 ---
-title: "otyugh"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: otyugh
+draft: false
+titulo_pt_br: '**Otyugh**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large aberration, neutro"
+  kind: monster
+stats_meta: Large aberration, neutro
 stats:
-  ac: "14"
-  hp: "114 (12d10 + 48)"
-  speed: "30 ft."
+  ac: '14'
+  hp: 114 (12d10 + 48)
+  speed: 30 ft.
   attributes:
     str: 16
     dex: 11
@@ -21,38 +21,43 @@ stats:
     int: 6
     wis: 13
     cha: 6
-  saves: "Con +7"
-  senses: "darkvision 120 ft., passive Perception 11"
-  languages: "Otyugh"
-  cr: "5"
+  saves: Con +7
+  senses: darkvision 120 ft., passive Perception 11
+  languages: Otyugh
+  cr: '5'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: otyugh](/images/campaigns/journeys-through-the-radiant-citadel/otyugh.webp)
 
-An otyugh is a grotesque, bulbous creature borne along on three sturdy legs, its eyes and nose set along a vine-like stalk that snakes from the top of its bloated body. Two rubbery tentacles end in spiky, leaf-like appendages that the otyugh uses to shovel food into its gaping maw.
-An otyugh buries itself under mounds of offal and carrion, leaving only its sensory stalk exposed. When an edible creature happens by, the otyugh's tentacles erupt from the filth and grab hold of it.
-Otyughs make the most of any opportunity to ambush and devour prey. They use a limited form of telepathy to urge sentient creatures toward their lairs, sometimes by pretending to be something else.
+Um otyugh é uma criatura grotesca e bulbosa que se desloca sobre três pernas robustas, com olhos e nariz situados ao longo de um talo semelhante a uma videira que serpenteia do topo de seu corpo inchado. Dois tentáculos emborrachados terminam em apêndices espinhosos e foliáceos que o otyugh usa para empurrar comida para dentro de sua bocarra escancarada.
+Um otyugh se enterra sob montes de restos e carniça, deixando apenas seu talo sensorial exposto. Quando uma criatura comestível passa por perto, os tentáculos do otyugh irrompem da imundície e a agarram.
+Otyughs aproveitam qualquer oportunidade para emboscar e devorar presas. Eles usam uma forma limitada de telepatia para instigar criaturas sencientes a se dirigirem a seus covis, às vezes fingindo ser outra coisa.
 
-### Dwellers in Darkness
+### Habitantes da Escuridão
 
-Otyughs tolerate bright light only when considerable stores of carrion or garbage lie within reach. In the wilderness, they dwell in stagnant swamps, scum-filled ponds, and damp forest dells. The scent of graveyards, city sewers, village middens, and manure-filled animal pens attracts them to civilized areas.
-Since otyughs lack concern for anything but food, their nests sometimes accumulate a variety of treasures shed from their victims and mixed among the junk.
+Otyughs toleram luz brilhante apenas quando há consideráveis estoques de carniça ou lixo ao alcance. Na natureza, eles habitam pântanos estagnados, lagos cobertos de limo e vales úmidos de florestas. O cheiro de cemitérios, esgotos de cidades, monturos de vilas e currais cheios de estrume os atrai para áreas civilizadas.
+Como os otyughs não se importam com nada além de comida, seus ninhos às vezes acumulam uma variedade de tesouros perdidos de suas vítimas e misturados ao entulho.
 
-### Symbiotic Guardians
+### Guardiões Simbióticos
 
-Sentient subterranean beings can coexist with otyughs, employing them as garbage disposals. With such plentiful sustenance, otyughs grow fat in their wallows, unmoved by any other drive or desire. This sedentary gluttony makes them reliable guardians. As long as it is fed, an otyugh refrains from attacking other creatures. However, would-be otyugh masters can easily underestimate the quantity of waste, carrion, and meat necessary to keep an otyugh from wandering off in search of food. More than one "trained" otyugh has eaten its keeper after devouring all the waste in its wallow.
+Seres subterrâneos sencientes podem coexistir com otyughs, empregando-os como eliminadores de lixo. Com sustento tão abundante, os otyughs engordam em suas pocilgas, imunes a qualquer outro impulso ou desejo. Essa glutonaria sedentária os torna guardiões confiáveis. Enquanto for alimentado, um otyugh se abstém de atacar outras criaturas. No entanto, aspirantes a mestres de otyughs podem facilmente subestimar a quantidade de detritos, carniça e carne necessária para impedir que um otyugh vagueie em busca de comida. Mais de um otyugh "treinado" já devorou seu tratador após consumir todo o lixo em sua pocilga.
 
 ### Características
 
-**Limited Telepathy.** The otyugh can magically transmit simple messages and images to any creature within 120 feet of it that can understand a language. This form of telepathy doesn't allow the receiving creature to telepathically respond.
+**Telepatia Limitada.** O otyugh pode transmitir magicamente mensagens e imagens simples para qualquer criatura a até 36 metros dele que entenda um idioma. Esta forma de telepatia não permite que a criatura receptora responda telepaticamente.
 
 ### Ações
 
-**Multiattack.** The otyugh makes three attacks: one with its bite and two with its tentacles.
+**Ataques Múltiplos.** O otyugh faz três ataques: um com sua mordida e dois com seus tentáculos.
 
-**Bite.** mw 6 to hit, reach 5 ft., one target. {@h}12 ([[2d8+3]]) piercing damage. If the target is a creature, it must succeed on a CD 15 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 ([[1d10]]) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured.
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 1,5 m, um alvo. *Dano:* 12 ([[2d8+3]]) dano perfurante. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Constituição CD 15 contra doença ou ficará envenenada até que a doença seja curada. A cada 24 horas que se passam, o alvo deve repetir o teste de resistência, reduzindo seu máximo de pontos de vida em 5 ([[1d10]]) em caso de falha. A doença é curada em caso de sucesso. O alvo morre se a doença reduzir seu máximo de pontos de vida a 0. Esta redução no máximo de pontos de vida do alvo dura até que a doença seja curada.
 
-**Tentacle.** mw 6 to hit, reach 10 ft., one target. {@h}7 ([[1d8+3]]) bludgeoning damage plus 4 ([[1d8]]) piercing damage. If the target is Medium or smaller, it is grappled (escape CD 13) and restrained until the grapple ends. The otyugh has two tentacles, each of which can grapple one target.
+**Tentáculo.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 3 m, um alvo. *Dano:* 7 ([[1d8+3]]) dano de concussão mais 4 ([[1d8]]) dano perfurante. Se o alvo for Médio ou menor, ele é agarrado (CD 13 para escapar) e contido até que a manobra de agarrar termine. O otyugh tem dois tentáculos, cada um dos quais pode agarrar um alvo.
 
-**Tentacle Slam.** The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a CD 14 Constitution saving throw or take 10 ([[2d6+3]]) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.
-
+**Golpe com Tentáculo.** O otyugh golpeia as criaturas agarradas por ele umas contra as outras ou contra uma superfície sólida. Cada criatura deve ser bem-sucedida em um teste de resistência de Constituição CD 14 ou sofrerá 10 ([[2d6+3]]) dano de concussão e ficará atordoada até o final do próximo turno do otyugh. Em caso de sucesso no teste de resistência, o alvo sofre metade do dano de concussão e não fica atordoado.

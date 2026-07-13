@@ -1,19 +1,19 @@
 ---
-title: "wraith"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: wraith
+draft: false
+titulo_pt_br: Espectro
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium undead, neutro e mau"
+  kind: monster
+stats_meta: Medium undead, neutro e mau
 stats:
-  ac: "13"
-  hp: "67 (9d8 + 27)"
-  speed: "0 ft., fly {'number': 60, 'condition': '(hover)'} ft., canHover True ft."
+  ac: '13'
+  hp: 67 (9d8 + 27)
+  speed: '0 ft., fly {''number'': 60, ''condition'': ''(hover)''} ft., canHover True ft.'
   attributes:
     str: 6
     dex: 16
@@ -21,42 +21,47 @@ stats:
     int: 12
     wis: 14
     cha: 15
-  senses: "darkvision 60 ft., passive Perception 12"
-  languages: "the languages it knew in life"
-  cr: "5"
+  senses: darkvision 60 ft., passive Perception 12
+  languages: the languages it knew in life
+  cr: '5'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: wraith](/images/campaigns/journeys-through-the-radiant-citadel/wraith.webp)
 
-A wraith is malice incarnate, concentrated into an incorporeal form that seeks to quench all life. The creature is suffused with negative energy, and its mere passage through the world leaves nearby plants blackened and withered. Animals flee from its presence. Even small fires can be extinguished by the sucking oblivion of the wraith's horrifying existence.
+Um wraith é a maldade encarnada, concentrada em uma forma incorpórea que busca extinguir toda a vida. A criatura está imbuída de energia negativa, e sua mera passagem pelo mundo deixa as plantas próximas enegrecidas e murchas. Animais fogem de sua presença. Até pequenas fogueiras podem ser extintas pelo vácuo devorador da existência horripilante do wraith.
 
-### Vile Oblivion
+### Oblívio Vil
 
-When a mortal humanoid lives a debased life or enters into a fiendish pact, it consigns its soul to eternal damnation in the Lower Planes. However, sometimes the soul becomes so suffused with negative energy that it collapses in on itself and ceases to exist the instant before it can shuffle off to some horrible afterlife. When this occurs, the spirit becomes a soulless wraith-a malevolent void trapped on the plane where it died. Almost nothing of the wraith's former existence is preserved; in this new form, it exists only to annihilate other life.
+Quando um humanoide mortal vive uma vida depravada ou faz um pacto infernal, ele condena sua alma à danação eterna nos Planos Inferiores. No entanto, às vezes a alma se torna tão imbuída de energia negativa que colapsa sobre si mesma e deixa de existir no instante antes de poder seguir para alguma terrível vida após a morte. Quando isso ocorre, o espírito se torna um wraith sem alma — um vácuo malévolo preso no plano onde morreu. Quase nada da existência anterior do wraith é preservado; nesta nova forma, ele existe apenas para aniquilar outras vidas.
 
-### Bereft of Body
+### Desprovido de Corpo
 
-A wraith can move through solid creatures and objects as easily as a mortal creature moves through fog.
-A wraith might retain a few memories of its mortal life as shadowy echoes. However, even the strongest events and emotions become little more than faint impressions, fleeting as half-remembered dreams. A wraith might pause to stare at something that fascinated it in life, or it might curb its wrath in acknowledgment of a past friendship. Such moments come rarely, however, because most wraiths despise what they were as a reminder of what they have become.
+Um wraith pode se mover através de criaturas e objetos sólidos com a mesma facilidade com que uma criatura mortal se move através da névoa.
+Um wraith pode reter algumas memórias de sua vida mortal como ecos sombrios. No entanto, mesmo os eventos e emoções mais fortes se tornam pouco mais que impressões fracas, fugazes como sonhos mal lembrados. Um wraith pode parar para olhar algo que o fascinava em vida, ou pode conter sua ira em reconhecimento a uma amizade passada. Tais momentos são raros, porém, pois a maioria dos wraiths despreza o que foram como um lembrete do que se tornaram.
 
-### Undead Commanders
+### Comandantes Mortos-Vivos
 
-A wraith can make an undead servant from the spirit of a humanoid creature that has recently suffered a violent death. Such a fragment of woe becomes a specter, spiteful of all that lives.
-Wraiths sometimes rule the legions of the dead, plotting the doom of living creatures. When they emerge from their tombs to do battle, life and hope shrivel before them. Even if a wraith's armies are forced to retreat, the lands its forces occupied are so blasted and withered that those who live there often starve and die.
+Um wraith pode criar um servo morto-vivo a partir do espírito de uma criatura humanoide que sofreu recentemente uma morte violenta. Tal fragmento de desgraça se torna um espectro, rancoroso de tudo que vive.
+Wraiths às vezes governam legiões de mortos, tramando a ruína de criaturas vivas. Quando emergem de seus túmulos para lutar, a vida e a esperança murcham diante deles. Mesmo que os exércitos de um wraith sejam forçados a recuar, as terras que suas forças ocuparam são tão arrasadas e murchas que aqueles que vivem lá muitas vezes passam fome e morrem.
 
-### Undead Nature
+### Natureza Morta-Viva
 
-A wraith doesn't require air, food, drink, or sleep.
+Um wraith não precisa de ar, comida, bebida ou sono.
 
 ### Características
 
-**Incorporeal Movement.** The wraith can move through other creatures and objects as if they were 3. It takes 5 ([[1d10]]) force damage if it ends its turn inside an object.
+**Movimento Incorpóreo.** O wraith pode se mover através de outras criaturas e objetos como se fossem terreno difícil. Ele sofre 5 ([[1d10]]) de dano de energia se terminar seu turno dentro de um objeto.
 
-**Sunlight Sensitivity.** While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+**Sensibilidade à Luz Solar.** Enquanto estiver sob luz solar, o wraith tem desvantagem em jogadas de ataque, bem como em testes de Sabedoria (Percepção) que dependam da visão.
 
 ### Ações
 
-**Life Drain.** mw 6 to hit, reach 5 ft., one creature. {@h}21 ([[4d8+3]]) necrotic damage. The target must succeed on a CD 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+**Dreno de Vida.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 1,5 m, uma criatura. *Dano:* 21 ([[4d8+3]]) de dano necrótico. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou seu máximo de pontos de vida é reduzido em um valor igual ao dano sofrido. Esta redução dura até o alvo terminar um descanso longo. O alvo morre se este efeito reduzir seu máximo de pontos de vida a 0.
 
-**Create Specter.** The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
-
+**Criar Espectro.** O wraith escolhe um humanoide a até 3 metros dele que esteja morto há não mais de 1 minuto e que tenha morrido violentamente. O espírito do alvo surge como um espectro no espaço de seu cadáver ou no espaço desocupado mais próximo. O espectro está sob o controle do wraith. O wraith não pode ter mais de sete espectros sob seu controle ao mesmo tempo.

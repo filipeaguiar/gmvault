@@ -1,19 +1,19 @@
 ---
-title: "reef shark"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: reef shark
+draft: false
+titulo_pt_br: tubarão dos recifes
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium beast, sem tendência"
+  kind: monster
+stats_meta: Medium beast, sem tendência
 stats:
-  ac: "12"
-  hp: "22 (4d8 + 4)"
-  speed: "swim 40 ft."
+  ac: '12'
+  hp: 22 (4d8 + 4)
+  speed: swim 40 ft.
   attributes:
     str: 14
     dex: 13
@@ -21,20 +21,25 @@ stats:
     int: 1
     wis: 10
     cha: 4
-  skills: "Perception +2"
-  senses: "blindsight 30 ft., passive Perception 12"
-  cr: "1/2"
+  skills: Perception +2
+  senses: blindsight 30 ft., passive Perception 12
+  cr: 1/2
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Smaller than giant sharks and hunter sharks, reef sharks inhabit shallow waters and coral reefs, gathering in small packs to hunt. A full-grown specimen measures 6 to 10 feet long.
+Menores que tubarões gigantes e tubarões caçadores, os tubarões de recife habitam águas rasas e recifes de coral, reunindo-se em pequenos grupos para caçar. Um espécime adulto mede de 1,8 a 3 metros de comprimento.
 
 ### Características
 
-**Pack Tactics.** The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.
+**Táticas de Matilha.** O tubarão tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um dos aliados do tubarão estiver a 1,5 metro da criatura e o aliado não estiver incapacitado.
 
-**Water Breathing.** The shark can breathe only underwater.
+**Respiração Aquática.** O tubarão só pode respirar debaixo d'água.
 
 ### Ações
 
-**Bite.** mw 4 to hit, reach 5 ft., one target. {@h}6 ([[1d8+2]]) piercing damage.
-
+**Mordida.** Ataque Corpo a Corpo com Arma: +4 para acertar, alcance 1,5 m, um alvo. {@h}6 ([[1d8+2]]) de dano perfurante.

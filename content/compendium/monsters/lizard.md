@@ -1,6 +1,6 @@
 ---
 title: lizard
-draft: true
+draft: false
 titulo_pt_br: lagarto
 visibility: gm
 status: draft

@@ -1,19 +1,19 @@
 ---
-title: "stone golem"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: stone golem
+draft: false
+titulo_pt_br: golem de pedra
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large construct, sem tendência"
+  kind: monster
+stats_meta: Large construct, sem tendência
 stats:
-  ac: "17"
-  hp: "178 (17d10 + 85)"
-  speed: "30 ft."
+  ac: '17'
+  hp: 178 (17d10 + 85)
+  speed: 30 ft.
   attributes:
     str: 22
     dex: 9
@@ -21,28 +21,33 @@ stats:
     int: 3
     wis: 11
     cha: 1
-  senses: "darkvision 120 ft., passive Perception 10"
-  languages: "understands the languages of its creator but can't speak"
-  cr: "10"
+  senses: darkvision 120 ft., passive Perception 10
+  languages: understands the languages of its creator but can't speak
+  cr: '10'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: stone golem](/images/campaigns/journeys-through-the-radiant-citadel/stone-golem.webp)
+![Arte: gólem de pedra](/images/campaigns/journeys-through-the-radiant-citadel/stone-golem.webp)
 
 
 
 ### Características
 
-**Immutable Form.** The golem is immune to any spell or effect that would alter its form.
+**Forma Imutável.** O gólem é imune a qualquer magia ou efeito que alteraria sua forma.
 
-**Magic Resistance.** The golem has advantage on saving throws against spells and other magical effects.
+**Resistência à Magia.** O gólem tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-**Magic Weapons.** The golem's weapon attacks are magical.
+**Armas Mágicas.** Os ataques com arma do gólem são mágicos.
 
 ### Ações
 
-**Multiattack.** The golem makes two slam attacks.
+**Ataques Múltiplos.** O gólem realiza dois ataques com pancada.
 
-**Slam.** mw 10 to hit, reach 5 ft., one target. {@h}19 ([[3d8+6]]) bludgeoning damage.
+**Pancada.** *Ataque Corpo a Corpo com Arma:* +10 para acertar, alcance 1,5 m, um alvo. *Dano:* 19 ([[3d8+6]]) dano de concussão.
 
-**Slow {@recharge 5}.** The golem targets one or more creatures it can see within 10 feet of it. Each target must make a CD 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-
+**Lentidão {@recharge 5}.** O gólem escolhe uma ou mais criaturas que possa ver a até 3 metros dele. Cada alvo deve realizar um teste de resistência de Sabedoria CD 17 contra esta magia. Em caso de falha, um alvo não pode usar reações, seu deslocamento é reduzido à metade e não pode realizar mais de um ataque em seu turno. Além disso, o alvo pode realizar uma ação ou uma ação bônus em seu turno, não ambas. Esses efeitos duram 1 minuto. Um alvo pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si em caso de sucesso.

@@ -29,8 +29,9 @@ class InteractiveMenuTests(unittest.TestCase):
         self.assertEqual(campaign_menu(), {"slug": "jttrc"})
 
     @patch("interactive_cli._summary", return_value=True)
-    @patch("interactive_cli.Prompt.ask", side_effect=["168106464", "cidadela-radiante"])
-    def test_dndbeyond_menu_maps_character_and_campaign(self, _prompt, _summary):
+    @patch("interactive_cli._numbered_choice", return_value="cidadela-radiante")
+    @patch("interactive_cli.Prompt.ask", return_value="168106464")
+    def test_dndbeyond_menu_maps_character_and_campaign(self, _prompt, _choice, _summary):
         self.assertEqual(
             dndbeyond_menu(),
             {"char_id": "168106464", "campaign": "cidadela-radiante"},

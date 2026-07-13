@@ -1,19 +1,19 @@
 ---
-title: "adult blue dracolich"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: adult blue dracolich
+draft: false
+titulo_pt_br: dracolich azul adulto
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Huge undead, leal e mau"
+  kind: monster
+stats_meta: Huge undead, leal e mau
 stats:
-  ac: "19"
-  hp: "225 (18d12 + 108)"
-  speed: "40 ft., burrow 30 ft., fly 80 ft."
+  ac: '19'
+  hp: 225 (18d12 + 108)
+  speed: 40 ft., burrow 30 ft., fly 80 ft.
   attributes:
     str: 25
     dex: 10
@@ -21,69 +21,74 @@ stats:
     int: 16
     wis: 15
     cha: 19
-  saves: "Dex +6, Con +12, Wis +8, Cha +10"
-  skills: "Perception +14, Stealth +6"
-  senses: "blindsight 60 ft., darkvision 120 ft., passive Perception 24"
-  languages: "Common, Draconic"
-  cr: "17"
+  saves: Dex +6, Con +12, Wis +8, Cha +10
+  skills: Perception +14, Stealth +6
+  senses: blindsight 60 ft., darkvision 120 ft., passive Perception 24
+  languages: Common, Draconic
+  cr: '17'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: adult blue dracolich](/images/campaigns/journeys-through-the-radiant-citadel/blue-dracolich.webp)
+![Arte: dracolich azul adulto](/images/campaigns/journeys-through-the-radiant-citadel/blue-dracolich.webp)
 
-Even as long-lived as they are, all dragons must eventually die. This thought doesn't sit well with many dragons, some of which allow themselves to be transformed by necromantic energy and ancient rituals into powerful undead dracoliches. Only the most narcissistic dragons choose this path, knowing that by doing so, they sever all ties to their kin and the dragon gods.
+Mesmo sendo tão longevos, todos os dragões devem eventualmente morrer. Esse pensamento não agrada muitos dragões, alguns dos quais se permitem ser transformados por energia necromântica e rituais antigos em poderosos dracoliches mortos-vivos. Apenas os dragões mais narcisistas escolhem esse caminho, sabendo que, ao fazê-lo, rompem todos os laços com seus parentes e com os deuses dragões.
 
-### Beyond Death
+### Além da Morte
 
-A dracolich retains its shape and size upon transforming, its skin and scales drawing tight to its bones or sloughing away to leave a skeletal form behind. Its eyes appear as glowing points of light floating in shadowy sockets, hinting at the malevolence of its undead mind.
-Though many dragons pursue vain goals of destruction and dominance, dracoliches are more nefarious than the most evil dragons, driven to rule over all. A dracolich is a fiendishly intelligent tyrant that crafts complex webs of foul schemes, attracting servants motivated by greed and a lust for power. Acting from the shadows and actively plotting to keep its existence a secret, a dracolich is a cunning and challenging foe.
+Um dracolich mantém sua forma e tamanho ao se transformar, sua pele e escamas se apertando contra seus ossos ou se desprendendo para deixar uma forma esquelética para trás. Seus olhos aparecem como pontos de luz brilhante flutuando em órbitas sombrias, insinuando a malevolência de sua mente morta-viva.
+Embora muitos dragões persigam objetivos vãos de destruição e dominação, os dracoliches são mais nefastos que os dragões mais malignos, movidos a dominar tudo. Um dracolich é um tirano fiendisamente inteligente que tece complexas teias de planos sórdidos, atraindo servos motivados pela ganância e pelo desejo de poder. Agindo das sombras e tramando ativamente para manter sua existência em segredo, um dracolich é um inimigo astuto e desafiador.
 
-### Dracolich Phylacteries
+### Filactérios de Dracolich
 
-Creating a dracolich requires the cooperation of the dragon and a group of mages or cultists that can perform the proper ritual. During the ritual, the dragon consumes a toxic brew that slays it instantly. The attendant spellcasters then ensnare its spirit and transfer it to a special gemstone that functions like a lich's phylactery. As the dragon's flesh rots away, the spirit inside the gem returns to animate the dragon's bones.
-If a dracolich's physical form is ever destroyed, its spirit returns to the gem as long as the two are on the same plane. If the gem comes into contact with another dragon's corpse, the dracolich's spirit can take possession of that corpse to become a new dracolich. If the dracolich's spirit gem is taken to another plane, the dracolich's spirit has nowhere to go when its undead body is destroyed and simply passes into the afterlife.
+Criar um dracolich requer a cooperação do dragão e de um grupo de magos ou cultistas que possam realizar o ritual adequado. Durante o ritual, o dragão consome uma poção tóxica que o mata instantaneamente. Os conjuradores assistentes então prendem seu espírito e o transferem para uma gema especial que funciona como o filactério de um lich. Conforme a carne do dragão apodrece, o espírito dentro da gema retorna para animar os ossos do dragão.
+Se a forma física de um dracolich for destruída, seu espírito retorna para a gema, desde que ambos estejam no mesmo plano. Se a gema entrar em contato com o cadáver de outro dragão, o espírito do dracolich pode tomar posse desse cadáver para se tornar um novo dracolich. Se a gema do espírito do dracolich for levada para outro plano, o espírito do dracolich não tem para onde ir quando seu corpo morto-vivo é destruído e simplesmente passa para a vida após a morte.
 
-### Dracolich Template
+### Modelo de Dracolich
 
-Only an ancient or adult true dragon can be transformed into a dracolich. Younger dragons that attempt to undergo the transformation die, as do other creatures that aren't true dragons but possess the dragon type, such as pseudodragons and wyverns. A shadow dragon can't be transformed into a dracolich, for it has already lost too much of its physical form.
-When a dragon becomes a dracolich, it retains its statistics except as described below. The dragon loses any trait, such as Amphibious, that assumes a living physiology. The dracolich might retain or lose any or all of its lair actions or inherit new ones, as the DM sees fit.
+Apenas um dragão verdadeiro ancião ou adulto pode ser transformado em um dracolich. Dragões mais jovens que tentam passar pela transformação morrem, assim como outras criaturas que não são dragões verdadeiros, mas possuem o tipo dragão, como pseudodragões e wyverns. Um dragão das sombras não pode ser transformado em um dracolich, pois já perdeu muita de sua forma física.
+Quando um dragão se torna um dracolich, ele mantém suas estatísticas, exceto conforme descrito abaixo. O dracolich perde qualquer característica, como Anfíbio, que pressuponha uma fisiologia viva. O dracolich pode reter ou perder algumas ou todas as suas ações de covil, ou herdar novas, conforme o Mestre julgar adequado.
 
-### Type
+### Tipo
 
-The dracolich's type changes from dragon to undead, and it no longer requires air, food, drink, or sleep.
+O tipo do dracolich muda de dragão para morto-vivo, e ele não precisa mais de ar, comida, bebida ou sono.
 
-### Damage Resistance
+### Resistência a Dano
 
-The dracolich has resistance to necrotic damage.
+O dracolich tem resistência a dano necrótico.
 
-### Damage Immunities
+### Imunidades a Dano
 
-The dracolich has immunity to poison. It also retains any immunities it had prior to becoming a dracolich.
+O dracolich tem imunidade a veneno. Ele também mantém quaisquer imunidades que tinha antes de se tornar um dracolich.
 
-### Condition Immunities
+### Imunidades a Condições
 
-The dracolich can't be charmed, frightened, paralyzed, or poisoned. It also doesn't suffer from exhaustion.
+O dracolich não pode ser enfeitiçado, amedrontado, paralisado ou envenenado. Ele também não sofre de exaustão.
 
-### Magic Resistance
+### Resistência à Magia
 
-The dracolich has advantage on saving throws against spells and other magical effects.
+O dracolich tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
 ### Características
 
-**Legendary Resistance (3/Day).** If the dracolich fails a saving throw, it can choose to succeed instead.
+**Resistência Lendária (3/Dia).** Se o dracolich falhar em um teste de resistência, ele pode escolher ser bem-sucedido.
 
-**Magic Resistance.** The dracolich has advantage on saving throws against spells and other magical effects.
+**Resistência à Magia.** O dracolich tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
 ### Ações
 
-**Multiattack.** The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
+**Ataques Múltiplos.** O dracolich pode usar sua Presença Amedrontadora. Ele então realiza três ataques: um com sua mordida e dois com suas garras.
 
-**Bite.** mw 13 to hit, reach 10 ft., one target. {@h}18 ([[2d10+7]]) piercing damage plus 5 ([[1d10]]) lightning damage.
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +13 para acertar, alcance 3 m, um alvo. *Dano:* 18 ([[2d10+7]]) dano perfurante mais 5 ([[1d10]]) dano elétrico.
 
-**Claw.** mw 13 to hit, reach 5 ft., one target. {@h}14 ([[2d6+7]]) slashing damage.
+**Garra.** *Ataque Corpo a Corpo com Arma:* +13 para acertar, alcance 1,5 m, um alvo. *Dano:* 14 ([[2d6+7]]) dano cortante.
 
-**Tail.** mw 13 to hit, reach 15 ft., one target. {@h}16 ([[2d8+7]]) bludgeoning damage.
+**Cauda.** *Ataque Corpo a Corpo com Arma:* +13 para acertar, alcance 4,5 m, um alvo. *Dano:* 16 ([[2d8+7]]) dano de concussão.
 
-**Frightful Presence.** Each creature of the dracolich's choice that is within 120 feet of the dracolich and aware of it must succeed on a CD 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours.
+**Presença Amedrontadora.** Cada criatura à escolha do dracolich que esteja a até 36 metros do dracolich e ciente dele deve ser bem-sucedida em um teste de resistência de Sabedoria CD 18 ou ficará amedrontada por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesma em caso de sucesso. Se o teste de resistência de uma criatura for bem-sucedido ou o efeito terminar para ela, a criatura fica imune à Presença Amedrontadora do dracolich pelas próximas 24 horas.
 
-**Lightning Breath {@recharge 5}.** The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a CD 20 Dexterity saving throw, taking 66 ([[12d10]]) lightning damage on a failed save, or half as much damage on a successful one.
-
+**Sopro Elétrico (Recarga 5-6).** O dracolich exala eletricidade em uma linha de 27 metros de comprimento por 1,5 metro de largura. Cada criatura nessa linha deve realizar um teste de resistência de Destreza CD 20, sofrendo 66 ([[12d10]]) dano elétrico em caso de falha, ou metade desse dano em caso de sucesso.

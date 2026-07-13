@@ -1,19 +1,19 @@
 ---
-title: "bakunawa"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: bakunawa
+draft: false
+titulo_pt_br: Desculpe, não encontrei o texto a ser traduzido na sua mensagem. Você poderia enviá-lo novamente?
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Gargantuan dragon, neutro"
+  kind: monster
+stats_meta: Gargantuan dragon, neutro
 stats:
-  ac: "15"
-  hp: "150 (12d20 + 24)"
-  speed: "20 ft., fly 60 ft., swim 60 ft."
+  ac: '15'
+  hp: 150 (12d20 + 24)
+  speed: 20 ft., fly 60 ft., swim 60 ft.
   attributes:
     str: 21
     dex: 12
@@ -21,29 +21,34 @@ stats:
     int: 14
     wis: 17
     cha: 16
-  saves: "Dex +5, Con +6, Wis +7"
-  senses: "blindsight 60 ft., darkvision 120 ft., passive Perception 21"
-  languages: "Celestial, Common, Draconic"
-  cr: "12"
+  saves: Dex +5, Con +6, Wis +7
+  senses: blindsight 60 ft., darkvision 120 ft., passive Perception 21
+  languages: Celestial, Common, Draconic
+  cr: '12'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: bakunawa](/images/campaigns/journeys-through-the-radiant-citadel/bakunawa.webp)
 
-Worshiped as draconic avatars of storm and tide, bakunawa soar over the archipelagos they call home. Iridescent scales crackling with lightning cover a bakunawa's fearsome serpentine body, and the sharp movements of its mighty wings echo with thunderous winds. Known for their mercilessness in battle, bakunawa swallow whole any who challenge them.
+Adoradas como avatares dracônicos da tempestade e da maré, as bakunawa planam sobre os arquipélagos que chamam de lar. Escamas iridescentes crepitando com relâmpagos cobrem o temível corpo serpentino de uma bakunawa, e os movimentos bruscos de suas asas poderosas ecoam com ventos trovejantes. Conhecidas por sua impiedade em batalha, as bakunawa engolem inteiros qualquer um que as desafie.
 
 ### Características
 
-**Amphibious.** The bakunawa can breathe air and water.
+**Anfíbia.** A bakunawa pode respirar ar e água.
 
-**Legendary Resistance (3/Day).** If the bakunawa fails a saving throw, it can choose to succeed instead.
+**Resistência Lendária (3/Dia).** Se a bakunawa falhar em um teste de resistência, ela pode escolher ser bem-sucedida.
 
 ### Ações
 
-**Multiattack.** The bakunawa makes one Bite attack and one Storm Slam attack.
+**Ataques Múltiplos.** A bakunawa realiza um ataque de Mordida e um ataque de Pancada Tempestuosa.
 
-**Bite.** mw 9 to hit, reach 10 ft., one target. {@h}12 ([[2d6+5]]) piercing damage plus 7 ([[2d6]]) lightning damage. If the target is a Large or smaller creature, it must succeed on a CD 17 Strength saving throw or be swallowed by the bakunawa. A swallowed creature is blinded and restrained, and it has total cover against attacks and other effects outside the bakunawa. At the start of each of the bakunawa's turns, each swallowed creature takes 10 ([[3d6]]) lightning damage.
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 3 m, um alvo. *Dano:* 12 ([[2d6+5]]) dano perfurante mais 7 ([[2d6]]) dano elétrico. Se o alvo for uma criatura Grande ou menor, ela deve ser bem-sucedida em um teste de resistência de Força CD 17 ou ser engolida pela bakunawa. Uma criatura engolida está cega e contida, e tem cobertura total contra ataques e outros efeitos vindos de fora da bakunawa. No início de cada turno da bakunawa, cada criatura engolida sofre 10 ([[3d6]]) dano elétrico.
 
-The bakunawa's gullet can hold up to two creatures at a time. If the bakunawa takes 30 damage or more on a single turn from a swallowed creature, the bakunawa must succeed on a CD 16 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 15 feet of the bakunawa. If the bakunawa dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.
+O papo da bakunawa pode conter até duas criaturas por vez. Se a bakunawa sofrer 30 de dano ou mais em um único turno de uma criatura engolida, a bakunawa deve ser bem-sucedida em um teste de resistência de Constituição CD 16 no final daquele turno ou regurgitar todas as criaturas engolidas, que caem caídas em um espaço a até 4,5 m da bakunawa. Se a bakunawa morrer, uma criatura engolida não está mais contida por ela e pode escapar do cadáver usando 4,5 m de deslocamento, saindo caída.
 
-**Storm Slam.** mw 9 to hit, reach 10 ft., one target. {@h}9 ([[1d8+5]]) bludgeoning damage plus 5 ([[1d10]]) thunder damage, and the target is pushed up to 10 feet in a horizontal direction away from the bakunawa.
-
+**Pancada Tempestuosa.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 3 m, um alvo. *Dano:* 9 ([[1d8+5]]) dano de concussão mais 5 ([[1d10]]) dano trovejante, e o alvo é empurrado até 3 m em uma direção horizontal para longe da bakunawa.

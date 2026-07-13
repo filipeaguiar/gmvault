@@ -1,14 +1,20 @@
 ---
-title: "Pegasus"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Pegasus
+draft: false
+titulo_pt_br: Pégaso
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Pegasus** importado automaticamente da campanha.
+**Pégaso**

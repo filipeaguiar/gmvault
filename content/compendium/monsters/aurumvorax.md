@@ -1,19 +1,19 @@
 ---
-title: "aurumvorax"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: aurumvorax
+draft: false
+titulo_pt_br: aurumvorax
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Small monstrosity, sem tendência"
+  kind: monster
+stats_meta: Small monstrosity, sem tendência
 stats:
-  ac: "15"
-  hp: "36 (8d6 + 8)"
-  speed: "30 ft., burrow 20 ft."
+  ac: '15'
+  hp: 36 (8d6 + 8)
+  speed: 30 ft., burrow 20 ft.
   attributes:
     str: 14
     dex: 13
@@ -21,23 +21,26 @@ stats:
     int: 3
     wis: 12
     cha: 6
-  saves: "Str +4, Con +3"
-  skills: "Perception +3, Stealth +3"
-  senses: "darkvision 60 ft., passive Perception 13"
-  cr: "2"
+  saves: Str +4, Con +3
+  skills: Perception +3, Stealth +3
+  senses: darkvision 60 ft., passive Perception 13
+  cr: '2'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
-
-
 
 ### Características
 
-**Tunneler.** The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake.
+**Escavador.** O aurumvorax pode escavar através de rocha sólida e metal na metade de seu deslocamento de escavação e deixa um túnel de 1,5 metro de diâmetro em seu rastro.
 
 ### Ações
 
-**Multiattack.** The aurumvorax makes one Bite attack and two Claw attacks.
+**Ataques Múltiplos.** O aurumvorax realiza um ataque de Mordida e dois ataques de Garra.
 
-**Bite.** mw 4 to hit, reach 5 ft., one target. {@h}6 ([[1d8+2]]) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 ([[1d6+1]]) hit points.
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +4 para acertar, alcance 1,5 m, um alvo. *Dano:* 6 ([[1d8+2]]) de dano perfurante. Se o alvo for uma criatura vestindo armadura de qualquer tipo, o aurumvorax recupera 4 ([[1d6+1]]) pontos de vida.
 
-**Claw.** mw 5 to hit, reach 5 ft., one target. {@h}5 ([[1d6+2]]) slashing damage. If the target is a Medium or smaller creature, it is grappled (escape CD 12). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the grappled creature with it, without the aurumvorax's speed being halved.
-
+**Garra.** *Ataque Corpo a Corpo com Arma:* +5 para acertar, alcance 1,5 m, um alvo. *Dano:* 5 ([[1d6+2]]) de dano cortante. Se o alvo for uma criatura de tamanho Médio ou menor, ele é agarrado (CD 12 para escapar). Até que esta imobilização termine, o aurumvorax não pode usar seu ataque de Garra em outro alvo e, quando se move, pode arrastar a criatura agarrada consigo, sem que seu deslocamento seja reduzido à metade.

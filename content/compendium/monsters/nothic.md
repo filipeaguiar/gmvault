@@ -1,19 +1,19 @@
 ---
-title: "nothic"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: nothic
+draft: false
+titulo_pt_br: nothic
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium aberration, neutro e mau"
+  kind: monster
+stats_meta: Medium aberration, neutro e mau
 stats:
-  ac: "15"
-  hp: "45 (6d8 + 18)"
-  speed: "30 ft."
+  ac: '15'
+  hp: 45 (6d8 + 18)
+  speed: 30 ft.
   attributes:
     str: 14
     dex: 16
@@ -21,39 +21,44 @@ stats:
     int: 13
     wis: 10
     cha: 8
-  skills: "Arcana +3, Insight +4, Perception +2, Stealth +5"
-  senses: "truesight 120 ft., passive Perception 12"
-  languages: "Undercommon"
-  cr: "2"
+  skills: Arcana +3, Insight +4, Perception +2, Stealth +5
+  senses: truesight 120 ft., passive Perception 12
+  languages: Undercommon
+  cr: '2'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: nothic](/images/campaigns/journeys-through-the-radiant-citadel/nothic.webp)
 
-A baleful eye peers out from the darkness, its gleam hinting at a weird intelligence and unnerving malevolence. Most times, a nothic is content to watch, weighing and assessing the creatures it encounters. When driven to violence, it uses its horrific gaze to rot the flesh from its enemies' bones.
+Um olho sinistro perscruta a escuridão, seu brilho insinuando uma inteligência estranha e uma malevolência perturbadora. Na maioria das vezes, um nothic se contenta em observar, pesando e avaliando as criaturas que encontra. Quando levado à violência, usa seu olhar horrível para apodrecer a carne dos ossos de seus inimigos.
 
-### Cursed Arcanists
+### Arcanistas Amaldiçoados
 
-Rather than gaining the godlike supremacy they crave, some wizards who devote their lives to unearthing arcane secrets are reduced to creeping, tormented monsters by a dark curse left behind by Vecna, a powerful lich who, in some worlds, has transcended his undead existence to become a god of secrets. Nothics retain no awareness of their former selves, skulking amid the shadows and haunting places rich in magical knowledge, drawn by memories and impulses they can't quite understand.
+Em vez de alcançar a supremacia divina que almejam, alguns magos que dedicam suas vidas a desvendar segredos arcanos são reduzidos a monstros rastejantes e atormentados por uma maldição sombria deixada por Vecna, um poderoso lich que, em alguns mundos, transcendeu sua existência de morto-vivo para se tornar um deus dos segredos. Nothics não retêm nenhuma consciência de seus eus anteriores, esgueirando-se pelas sombras e assombrando lugares ricos em conhecimento mágico, atraídos por memórias e impulsos que não conseguem compreender.
 
-### Dark Oracles
+### Oráculos Sombrios
 
-Nothics possess a strange magical insight that allows them to extract knowledge from other creatures. This grants them unique understanding of secret and forbidden lore, which they share for a price. A nothic covets magic items, greedily accepting such gifts from creatures that seek out its knowledge.
+Nothics possuem uma estranha percepção mágica que lhes permite extrair conhecimento de outras criaturas. Isso lhes concede uma compreensão única de conhecimento secreto e proibido, que eles compartilham por um preço. Um nothic cobiça itens mágicos, aceitando tais presentes avidamente de criaturas que buscam seu conhecimento.
 
-### Lurkers in Magical Places
+### Espreitadores em Lugares Mágicos
 
-Nothics are notorious for infiltrating arcane academies and other places rich in magical learning. They are driven by the vague knowledge that there exists a method to reverse their condition. This isn't a clear sense of purpose, but rather an obsessive tug at the end of the mind. Some nothics are clever enough to realize that this is merely part of the strange lesson for their folly, a false hope to drive them to seek out more arcane secrets.
+Nothics são notórios por se infiltrarem em academias arcanas e outros lugares ricos em aprendizado mágico. Eles são movidos pelo vago conhecimento de que existe um método para reverter sua condição. Isso não é um senso claro de propósito, mas sim um puxão obsessivo no fundo da mente. Alguns nothics são espertos o suficiente para perceber que isso é apenas parte da estranha lição por sua insensatez, uma falsa esperança para levá-los a buscar mais segredos arcanos.
 
 ### Características
 
-**Keen Sight.** The nothic has advantage on Wisdom (Perception) checks that rely on sight.
+**Visão Aguçada.** O nothic tem vantagem em testes de Sabedoria (Percepção) que dependem da visão.
 
 ### Ações
 
-**Multiattack.** The nothic makes two claw attacks.
+**Ataques Múltiplos.** O nothic realiza dois ataques de garra.
 
-**Claw.** mw 4 to hit, reach 5 ft., one target. {@h}6 ([[1d6+3]]) slashing damage.
+**Garra.** *Ataque Corpo a Corpo com Arma:* +4 para acertar, alcance 1,5 m, um alvo. *Dano:* 6 ([[1d6+3]]) dano cortante.
 
-**Rotting Gaze.** The nothic targets one creature it can see within 30 feet of it. The target must succeed on a CD 12 Constitution saving throw against this magic or take 10 ([[3d6]]) necrotic damage.
+**Olhar Apodrecedor.** O nothic escolhe como alvo uma criatura que possa ver a até 9 metros dele. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 12 contra esta magia ou sofrerá 10 ([[3d6]]) dano necrótico.
 
-**Weird Insight.** The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic's Wisdom (Insight) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.
-
+**Percepção Estranha.** O nothic escolhe como alvo uma criatura que possa ver a até 9 metros dele. O alvo deve competir com seu teste de Carisma (Enganação) contra o teste de Sabedoria (Intuição) do nothic. Se o nothic vencer, ele aprende magicamente um fato ou segredo sobre o alvo. O alvo vence automaticamente se for imune a ser enfeitiçado.

@@ -1,19 +1,19 @@
 ---
-title: "druid"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: druid
+draft: false
+titulo_pt_br: druida
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, sem tendência"
+  kind: monster
+stats_meta: Medium humanoid, sem tendência
 stats:
-  ac: "11, 16 (with {@spell barkskin})"
-  hp: "27 (5d8 + 5)"
-  speed: "30 ft."
+  ac: 11, 16 (with {@spell barkskin})
+  hp: 27 (5d8 + 5)
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 12
@@ -21,17 +21,22 @@ stats:
     int: 12
     wis: 15
     cha: 11
-  skills: "Medicine +4, Nature +3, Perception +4"
-  senses: "passive Perception 14"
-  languages: "Druidic plus any two languages"
-  cr: "2"
+  skills: Medicine +4, Nature +3, Perception +4
+  senses: passive Perception 14
+  languages: Druidic plus any two languages
+  cr: '2'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: druid](/images/campaigns/journeys-through-the-radiant-citadel/druid.webp)
+![Arte: druida](/images/campaigns/journeys-through-the-radiant-citadel/druid.webp)
 
-Druids dwell in forests and other secluded wilderness locations, where they protect the natural world from monsters and the encroachment of civilization. Some are tribal shamans who heal the sick, pray to animal spirits, and provide spiritual guidance.
+Druidas habitam florestas e outras regiões selvagens isoladas, onde protegem o mundo natural de monstros e da invasão da civilização. Alguns são xamãs tribais que curam os doentes, rezam para espíritos animais e fornecem orientação espiritual.
 
 ### Ações
 
-**Quarterstaff.** mw 2 to hit (4 to hit with shillelagh), reach 5 ft., one target. {@h}3 ([[1d6]]) bludgeoning damage, 4 ([[1d8]]) bludgeoning damage if wielded with two hands, or 6 ([[1d8+2]]) bludgeoning damage with shillelagh.
-
+**Bordão.** +2 para acertar (+4 para acertar com *shillelagh*), alcance 1,5 m, um alvo. {@h}3 ([[1d6]]) de dano de concussão, 4 ([[1d8]]) de dano de concussão se empunhado com duas mãos, ou 6 ([[1d8+2]]) de dano de concussão com *shillelagh*.

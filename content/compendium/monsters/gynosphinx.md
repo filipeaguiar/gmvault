@@ -1,19 +1,19 @@
 ---
-title: "gynosphinx"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: gynosphinx
+draft: false
+titulo_pt_br: gynosphinx
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large monstrosity, leal e neutro"
+  kind: monster
+stats_meta: Large monstrosity, leal e neutro
 stats:
-  ac: "17"
-  hp: "136 (16d10 + 48)"
-  speed: "40 ft., fly 60 ft."
+  ac: '17'
+  hp: 136 (16d10 + 48)
+  speed: 40 ft., fly 60 ft.
   attributes:
     str: 18
     dex: 15
@@ -21,25 +21,30 @@ stats:
     int: 18
     wis: 18
     cha: 18
-  skills: "Arcana +12, History +12, Perception +8, Religion +8"
-  senses: "truesight 120 ft., passive Perception 18"
-  languages: "Common, Sphinx"
-  cr: "11"
+  skills: Arcana +12, History +12, Perception +8, Religion +8
+  senses: truesight 120 ft., passive Perception 18
+  languages: Common, Sphinx
+  cr: '11'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: gynosphinx](/images/campaigns/journeys-through-the-radiant-citadel/gynosphinx.webp)
+![Arte: ginosfinge](/images/campaigns/journeys-through-the-radiant-citadel/gynosphinx.webp)
 
 
 
 ### Características
 
-**Inscrutable.** The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.
+**Inescrutável.** A esfinge é imune a qualquer efeito que perceba suas emoções ou leia seus pensamentos, bem como a qualquer magia de adivinhação que ela recuse. Testes de Sabedoria (Intuição) feitos para determinar as intenções ou a sinceridade da esfinge têm desvantagem.
 
-**Magic Weapons.** The sphinx's weapon attacks are magical.
+**Armas Mágicas.** Os ataques com arma da esfinge são mágicos.
 
 ### Ações
 
-**Multiattack.** The sphinx makes two claw attacks.
+**Ataques Múltiplos.** A esfinge realiza dois ataques de garra.
 
-**Claw.** mw 8 to hit, reach 5 ft., one target. {@h}13 ([[2d8+4]]) slashing damage.
-
+**Garra.** *Ataque Corpo a Corpo com Arma:* +8 para acertar, alcance 1,5 m, um alvo. *Dano:* 13 ([[2d8+4]]) dano cortante.

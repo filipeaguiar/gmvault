@@ -1,14 +1,20 @@
 ---
-title: "White Ghost Orchid Seed"
+title: White Ghost Orchid Seed
 params:
-  kind: "magic_item"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: magic_item
+draft: false
+titulo_pt_br: Semente de Orquídea Fantasma Branca
+visibility: gm
+status: draft
 tags:
-  - item_magico
-  - importado
+- item_magico
+- importado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Item mágico **White Ghost Orchid Seed** importado automaticamente da campanha.
+Item mágico **Semente de Orquídea Fantasma Branca** importado automaticamente da campanha.

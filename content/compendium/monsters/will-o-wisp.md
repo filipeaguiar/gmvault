@@ -1,14 +1,20 @@
 ---
-title: "Will-o'-Wisp"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Will-o'-Wisp
+draft: false
+titulo_pt_br: '**Will-o''-Wisp**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 Monstro **Will-o'-Wisp** importado automaticamente da campanha.

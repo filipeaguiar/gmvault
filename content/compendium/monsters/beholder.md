@@ -1,19 +1,19 @@
 ---
-title: "beholder"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: beholder
+draft: false
+titulo_pt_br: beholder
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large aberration, leal e mau"
+  kind: monster
+stats_meta: Large aberration, leal e mau
 stats:
-  ac: "18"
-  hp: "180 (19d10 + 76)"
-  speed: "0 ft., fly {'number': 20, 'condition': '(hover)'} ft., canHover True ft."
+  ac: '18'
+  hp: 180 (19d10 + 76)
+  speed: '0 ft., fly {''number'': 20, ''condition'': ''(hover)''} ft., canHover True ft.'
   attributes:
     str: 10
     dex: 14
@@ -21,44 +21,48 @@ stats:
     int: 17
     wis: 15
     cha: 17
-  saves: "Int +8, Wis +7, Cha +8"
-  skills: "Perception +12"
-  senses: "darkvision 120 ft., passive Perception 22"
-  languages: "Deep Speech, Undercommon"
-  cr: "{'cr': '13', 'lair': '14'}"
+  saves: Int +8, Wis +7, Cha +8
+  skills: Perception +12
+  senses: darkvision 120 ft., passive Perception 22
+  languages: Deep Speech, Undercommon
+  cr: '{''cr'': ''13'', ''lair'': ''14''}'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: beholder](/images/campaigns/journeys-through-the-radiant-citadel/beholder.webp)
 
-One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.
-A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.
+Um olhar para um beholder é suficiente para perceber sua natureza repugnante e sobrenatural. Agressivos, odientos e gananciosos, essas aberrações consideram todas as outras criaturas como seres inferiores, com as quais brincam ou que destroem conforme sua vontade.
+O corpo esferoide de um beholder levita o tempo todo, e seu grande olho protuberante fica acima de uma boca larga e cheia de dentes, enquanto os caules oculares menores que coroam seu corpo se viram e torcem para manter seus inimigos à vista. Quando um beholder dorme, ele fecha seu olho central, mas mantém seus olhos menores abertos e alertas.
 
-### Xenophobic Isolationists
+### Isolacionistas Xenófobos
 
-Enemies abound, or so every beholder believes. Beholders are convinced that other creatures resent them for their brilliance and magical power, even as they dismiss those lesser creatures as crude and disgusting. Beholders always suspect others of plotting against them, even when no other creatures are around.
-The disdain a beholder has for other creatures extends to other beholders. Each beholder believes its form to be an ideal, and that any deviation from that form is a flaw in the racial purity of its kind. Beholders vary greatly in their physical forms, making conflict between them inevitable. Some beholders are protected by overlapping chitinous plates. Some have smooth hides. Some have eyestalks that writhe like tentacles, while others' stalks bear crustacean-like joints. Even slight differences of coloration in hide can turn two beholders into lifelong enemies.
+Inimigos existem em abundância, ou assim acredita todo beholder. Beholders estão convencidos de que outras criaturas os ressentem por sua inteligência e poder mágico, mesmo enquanto descartam essas criaturas inferiores como grosseiras e nojentas. Beholders sempre suspeitam que outros estão conspirando contra eles, mesmo quando não há outras criaturas por perto.
+O desdém que um beholder tem por outras criaturas se estende a outros beholders. Cada beholder acredita que sua forma é um ideal, e que qualquer desvio dessa forma é uma falha na pureza racial de sua espécie. Beholders variam muito em suas formas físicas, tornando o conflito entre eles inevitável. Alguns beholders são protegidos por placas quitinosas sobrepostas. Alguns têm peles lisas. Alguns têm caules oculares que se contorcem como tentáculos, enquanto os caules de outros possuem juntas semelhantes a crustáceos. Mesmo pequenas diferenças na coloração da pele podem transformar dois beholders em inimigos vitalícios.
 
-### Eye Tyrant
+### Tirano Ocular
 
-Some beholders manage to channel their xenophobic tendencies into a terrible despotism. Rather than live in isolation, the aptly named eye tyrants enslave those other creatures, founding and controlling vast empires. An eye tyrant sometimes carves out a domain within or under a major city, commanding networks of agents that operate on their master's behalf.
+Alguns beholders conseguem canalizar suas tendências xenófobas em um terrível despotismo. Em vez de viverem isolados, os tiranos oculares, como são apropriadamente chamados, escravizam essas outras criaturas, fundando e controlando vastos impérios. Um tirano ocular às vezes esculpe um domínio dentro ou sob uma grande cidade, comandando redes de agentes que operam em nome de seu mestre.
 
-### Alien Lairs
+### Covis Alienígenas
 
-Because they refuse to share territory with others, most beholders withdraw to frigid hills, abandoned ruins, and deep caverns to scheme. A beholder's lair is carved out by its disintegration eye ray, emphasizing vertical passages connecting chambers stacked on top of each other. Such an environment allows a beholder to move freely, even as it prevents intruders from easily creeping about. When intruders do break in, the height of its open ceilings allows a beholder to float up and harry foes on the floor.
-As alien as their creator, the rooms in a beholder's lair reflect the creature's arrogance. It festoons its chambers with trophies from the battles it has won, including petrified adventurers standing frozen in their horrified final moments, pieces of other beholders, and magic items wrested from powerful foes. A beholder judges its own worth by its acquisitions, and it never willingly parts with its treasures.
+Por se recusarem a dividir território com outros, a maioria dos beholders se retira para colinas frias, ruínas abandonadas e cavernas profundas para conspirar. O covil de um beholder é escavado por seu raio ocular de desintegração, enfatizando passagens verticais conectando câmaras empilhadas umas sobre as outras. Tal ambiente permite que um beholder se mova livremente, mesmo enquanto impede que intrusos se esgueirem facilmente. Quando intrusos conseguem invadir, a altura de seus tetos abertos permite que um beholder flutue para cima e atormente os inimigos no chão.
+Tão alienígenas quanto seu criador, os cômodos no covil de um beholder refletem a arrogância da criatura. Ele enfeita suas câmaras com troféus das batalhas que venceu, incluindo aventureiros petrificados congelados em seus momentos finais de horror, pedaços de outros beholders e itens mágicos arrancados de inimigos poderosos. Um beholder julga seu próprio valor por suas aquisições e nunca se separa voluntariamente de seus tesouros.
 
+### O Covil de um Beholder
 
-### A Beholder's Lair
-
-A beholder's central lair is typically a large, spacious cavern with high ceilings, where it can attack without fear of closing to melee range. A beholder encountered in its lair has a challenge rating of 14 (11,500 XP).
+O covil central de um beholder é tipicamente uma caverna grande e espaçosa com tetos altos, onde ele pode atacar sem medo de se aproximar para o combate corpo a corpo. Um beholder encontrado em seu covil tem um nível de desafio de 14 (11.500 XP).
 
 ### Características
 
-**Antimagic Cone.** The beholder's central eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays.
+**Cone Antimagia.** O olho central do beholder cria uma área de antimagia, como na magia *campo antimagia*, em um cone de 45 metros. No início de cada um de seus turnos, o beholder decide para qual lado o cone está voltado e se o cone está ativo. A área funciona contra os próprios raios oculares do beholder.
 
 ### Ações
 
-**Bite.** mw 5 to hit, reach 5 ft., one target. {@h}14 ([[4d6]]) piercing damage.
+**Mordida.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 1,5 m, um alvo. *Dano:* 14 ([[4d6]]) dano perfurante.
 
-**Eye Rays.** The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:
-
+**Raios Oculares.** O beholder dispara três dos seguintes raios oculares mágicos aleatoriamente (role novamente resultados duplicados), escolhendo de um a três alvos que possa ver a até 36 metros dele:

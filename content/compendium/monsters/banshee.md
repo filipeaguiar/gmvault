@@ -1,19 +1,19 @@
 ---
-title: "banshee"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: banshee
+draft: false
+titulo_pt_br: Banshee
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium undead, caótico e mau"
+  kind: monster
+stats_meta: Medium undead, caótico e mau
 stats:
-  ac: "12"
-  hp: "58 (13d8)"
-  speed: "0 ft., fly {'number': 40, 'condition': '(hover)'} ft., canHover True ft."
+  ac: '12'
+  hp: 58 (13d8)
+  speed: '0 ft., fly {''number'': 40, ''condition'': ''(hover)''} ft., canHover True ft.'
   attributes:
     str: 1
     dex: 14
@@ -21,43 +21,48 @@ stats:
     int: 12
     wis: 11
     cha: 17
-  saves: "Wis +2, Cha +5"
-  senses: "darkvision 60 ft., passive Perception 10"
-  languages: "Common, Elvish"
-  cr: "4"
+  saves: Wis +2, Cha +5
+  senses: darkvision 60 ft., passive Perception 10
+  languages: Common, Elvish
+  cr: '4'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: banshee](/images/campaigns/journeys-through-the-radiant-citadel/banshee.webp)
 
-When night falls, unlucky travelers hear the faint cries of the forlorn dead. This woeful spirit is a banshee, a spiteful creature formed from the spirit of a female elf. Banshees appear as luminous, wispy forms that vaguely recall their mortal features. A banshee's face is wreathed in a wild tangle of hair, its body clad in wispy rags that flutter and stream around it.
+Quando a noite cai, aventureiros azarados ouvem os fracos lamentos dos mortos desamparados. Este espírito lastimoso é uma banshee, uma criatura rancorosa formada a partir do espírito de uma elfa. Banshees aparecem como formas luminosas e etéreas que lembram vagamente suas feições mortais. O rosto de uma banshee é envolto por uma mata selvagem de cabelos, seu corpo vestido em trapos diáfanos que esvoaçam e fluem ao seu redor.
 
-### Divine Wrath
+### Ira Divina
 
-Banshees are the undead remnants of elves who, blessed with great beauty, failed to use their gift to bring joy to the world. Instead, they used their beauty to corrupt and control others. Elves afflicted by the banshee's curse experience no gladness, feeling only distress in the presence of the living. As the curse takes its toll, their minds and bodies decay, until death completes their transformation into undead monsters.
+Banshees são os remanescentes mortos-vivos de elfos que, abençoados com grande beleza, falharam em usar seu dom para trazer alegria ao mundo. Em vez disso, usaram sua beleza para corromper e controlar outros. Elfos afligidos pela maldição da banshee não sentem alegria alguma, sentindo apenas angústia na presença dos vivos. Conforme a maldição faz seu efeito, suas mentes e corpos decaem, até que a morte completa sua transformação em monstros mortos-vivos.
 
-### Sorrow Bound
+### Aflição Vinculada
 
-A banshee becomes forever bound to the place of its demise, unable to venture more than five miles from there. It is forced to relive every moment of its life with perfect recall, yet always refuses to accept responsibility for its doom.
+Uma banshee torna-se para sempre vinculada ao local de sua morte, incapaz de se aventurar a mais de oito quilômetros dali. Ela é forçada a reviver cada momento de sua vida com recordação perfeita, mas sempre se recusa a aceitar responsabilidade por sua ruína.
 
-### Beauty Hoarders
+### Acumuladoras de Beleza
 
-The vanity that inspired the banshee's cursed creation persists in undeath. These creatures covet beautiful objects: fine jewelry, paintings, statues, and other objects of art. At the same time, a banshee abhors any mirrored surface, for it can't bear to see the horror of its own existence. A single glimpse of itself is enough to send a banshee into a rage.
+A vaidade que inspirou a criação amaldiçoada da banshee persiste na não-morte. Essas criaturas cobiçam objetos belos: joias finas, pinturas, estátuas e outros objetos de arte. Ao mesmo tempo, uma banshee abomina qualquer superfície espelhada, pois não suporta ver o horror de sua própria existência. Um único vislumbre de si mesma é suficiente para enfurecer uma banshee.
 
-### Undead Nature
+### Natureza Morta-Viva
 
-A banshee doesn't require air, food, drink, or sleep.
+Uma banshee não precisa de ar, comida, bebida ou sono.
 
 ### Características
 
-**Detect Life.** The banshee can magically sense the presence of living creatures up to 5 miles away that aren't undead or constructs. She knows the general direction they're in but not their exact locations.
+**Detectar Vida.** A banshee pode sentir magicamente a presença de criaturas vivas a até 8 quilômetros de distância que não sejam mortos-vivos ou constructos. Ela sabe a direção geral em que estão, mas não suas localizações exatas.
 
-**Incorporeal Movement.** The banshee can move through other creatures and objects as if they were 3. She takes 5 ([[1d10]]) force damage if she ends her turn inside an object.
+**Movimento Incorpóreo.** A banshee pode se mover através de outras criaturas e objetos como se fossem terreno difícil. Ela sofre 5 ([[1d10]]) de dano de energia se terminar seu turno dentro de um objeto.
 
 ### Ações
 
-**Corrupting Touch.** ms 4 to hit, reach 5 ft., one target. {@h}12 ([[3d6+2]]) necrotic damage.
+**Toque Corruptor.** +4 para acertar, alcance 1,5 m, um alvo. {@h}12 ([[3d6+2]]) de dano necrótico.
 
-**Horrifying Visage.** Each non-undead creature within 60 feet of the banshee that can see her must succeed on a CD 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the banshee's Horrifying Visage for the next 24 hours.
+**Visagem Horripilante.** Cada criatura não morta-viva a até 18 metros da banshee que possa vê-la deve ser bem-sucedida em um teste de resistência de Sabedoria CD 13 ou ficará amedrontada por 1 minuto. Um alvo amedrontado pode repetir o teste de resistência no final de cada um de seus turnos, com desvantagem se a banshee estiver na linha de visão, encerrando o efeito sobre si em caso de sucesso. Se o teste de resistência de um alvo for bem-sucedido ou o efeito terminar para ele, o alvo fica imune à Visagem Horripilante da banshee pelas próximas 24 horas.
 
-**Wail (1/Day).** The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a CD 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 ([[3d6]]) psychic damage.
-
+**Lamento (1/Dia).** A banshee solta um lamento fúnebre, desde que não esteja sob luz solar. Este lamento não tem efeito sobre constructos e mortos-vivos. Todas as outras criaturas a até 9 metros dela que possam ouvi-la devem realizar um teste de resistência de Constituição CD 13. Em caso de falha, uma criatura cai para 0 pontos de vida. Em caso de sucesso, uma criatura sofre 10 ([[3d6]]) de dano psíquico.

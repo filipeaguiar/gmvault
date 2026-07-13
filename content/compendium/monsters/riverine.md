@@ -1,19 +1,19 @@
 ---
-title: "riverine"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: riverine
+draft: false
+titulo_pt_br: '**Fluvial**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large fey, sem tendência"
+  kind: monster
+stats_meta: Large fey, sem tendência
 stats:
-  ac: "14"
-  hp: "204 (24d10 + 72)"
-  speed: "30 ft., swim 60 ft."
+  ac: '14'
+  hp: 204 (24d10 + 72)
+  speed: 30 ft., swim 60 ft.
   attributes:
     str: 20
     dex: 19
@@ -21,32 +21,36 @@ stats:
     int: 12
     wis: 16
     cha: 21
-  saves: "Int +5, Wis +7, Cha +9"
-  skills: "Insight +7, Nature +5, Perception +7"
-  senses: "blindsight 60 ft., passive Perception 17"
-  languages: "Aquan, Common, Sylvan"
-  cr: "12"
+  saves: Int +5, Wis +7, Cha +9
+  skills: Insight +7, Nature +5, Perception +7
+  senses: blindsight 60 ft., passive Perception 17
+  languages: Aquan, Common, Sylvan
+  cr: '12'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: riverine](/images/campaigns/journeys-through-the-radiant-citadel/riverine.webp)
+![Arte: riverina](/images/campaigns/journeys-through-the-radiant-citadel/riverine.webp)
 
-More than mere waterway guardians, riverines are embodiments of particular rivers. These spirits of nature take shape to defend their waters and interact with those who travel along their currents. From the waist up, riverines have skin the color of the waters they protect but are otherwise humanlike in appearance. From the waist down, they can manifest either humanlike legs or churning gouts of water. A riverine's personality reflects the nature of the river it arises from—some are lethargic while others are wild and reckless.
+Mais do que meros guardiões de cursos d'água, as riverinas são a personificação de rios específicos. Esses espíritos da natureza tomam forma para defender suas águas e interagir com aqueles que viajam por suas correntezas. Da cintura para cima, as riverinas têm a pele da cor das águas que protegem, mas são humanoides em aparência. Da cintura para baixo, podem manifestar pernas humanoides ou jatos de água agitados. A personalidade de uma riverina reflete a natureza do rio do qual ela surge — algumas são letárgicas, enquanto outras são selvagens e imprudentes.
 
+### O Covil de uma Riverina
 
-### A Riverine's Lair
-
-Some riverines enjoy reverence akin to worship. Their likenesses are cast as statues and housed in temples, and worshipers act as agents between the river spirits and the people who revere them. These temples often become the home of the riverine itself, serving as its lair, though other nexuses of power along the river's path—such as its source or a significant waterfall—can also be used as lairs by a riverine.
-A riverine encountered in its lair has a challenge rating of 13 (10,000 XP).
+Algumas riverinas desfrutam de uma reverência que beira a adoração. Suas efígies são esculpidas em estátuas e abrigadas em templos, e os adoradores agem como intermediários entre os espíritos do rio e as pessoas que os veneram. Esses templos frequentemente se tornam o lar da própria riverina, servindo como seu covil, embora outros nexos de poder ao longo do caminho do rio — como sua nascente ou uma cachoeira significativa — também possam ser usados como covis por uma riverina.
+Uma riverina encontrada em seu covil tem um nível de desafio 13 (10.000 XP).
 
 ### Características
 
-**Amphibious.** The riverine can breathe air and water.
+**Anfíbia.** A riverina pode respirar ar e água.
 
-**Legendary Resistance (3/Day).** If the riverine fails a saving throw, it can choose to succeed instead.
+**Resistência Lendária (3/Dia).** Se a riverina falhar em um teste de resistência, ela pode escolher ser bem-sucedida.
 
 ### Ações
 
-**Multiattack.** The riverine makes two Flood Strike attacks.
+**Ataques Múltiplos.** A riverina realiza dois ataques de Golpe de Inundação.
 
-**Flood Strike.** mw 9 to hit, reach 10 ft., one target. {@h}14 ([[2d8+5]]) bludgeoning damage plus 10 ([[3d6]]) cold damage.
-
+**Golpe de Inundação.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 3 m, um alvo. *Dano:* 14 ([[2d8+5]]) de dano de concussão mais 10 ([[3d6]]) de dano de frio.

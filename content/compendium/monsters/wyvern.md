@@ -1,19 +1,19 @@
 ---
-title: "wyvern"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: wyvern
+draft: false
+titulo_pt_br: Wyvern
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large dragon, sem tendência"
+  kind: monster
+stats_meta: Large dragon, sem tendência
 stats:
-  ac: "13"
-  hp: "110 (13d10 + 39)"
-  speed: "20 ft., fly 80 ft."
+  ac: '13'
+  hp: 110 (13d10 + 39)
+  speed: 20 ft., fly 80 ft.
   attributes:
     str: 19
     dex: 10
@@ -21,36 +21,41 @@ stats:
     int: 5
     wis: 12
     cha: 6
-  skills: "Perception +4"
-  senses: "darkvision 60 ft., passive Perception 14"
-  cr: "6"
+  skills: Perception +4
+  senses: darkvision 60 ft., passive Perception 14
+  cr: '6'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: wyvern](/images/campaigns/journeys-through-the-radiant-citadel/wyvern.webp)
 
-Travelers in the wild sometimes look to the skies to see the dark-winged shape of a wyvern carrying its prey. These cousins to the great dragons hunt the same tangled forests and caverns as their kin. Their appearance sends ripples of alarm through the borderlands of civilization.
-A wyvern has two scaly legs, leathery wings, and a sinewy tail topped with its most potent weapon: a poison stinger. The poison in a wyvern's stinger can kill a creature in seconds. Extremely potent, wyvern poison burns through its victim's bloodstream, disintegrating veins and arteries on its way to the heart. As deadly as wyverns can be, however, hunters and adventurers often track them to claim the venom, which is used in alchemical compounds and to coat weapons.
+Viajantes em regiões selvagens às vezes olham para os céus para ver a forma de asas escuras de um wyvern carregando sua presa. Esses primos dos grandes dragões caçam as mesmas florestas emaranhadas e cavernas que seus parentes. Sua aparição envia ondas de alarme através das fronteiras da civilização.
+Um wyvern tem duas pernas escamosas, asas coriáceas e uma cauda musculosa encimada por sua arma mais potente: um ferrão venenoso. O veneno no ferrão de um wyvern pode matar uma criatura em segundos. Extremamente potente, o veneno do wyvern queima através da corrente sanguínea da vítima, desintegrando veias e artérias em seu caminho até o coração. Por mais mortais que os wyverns possam ser, no entanto, caçadores e aventureiros frequentemente os rastreiam para reivindicar o veneno, que é usado em compostos alquímicos e para revestir armas.
 
-### Aerial Hunters
+### Caçadores Aéreos
 
-A wyvern doesn't fight on the ground unless it can't reach its prey by any other means, or if it has been fooled into a position from which aerial combat isn't an option. If forced into a confrontation on the ground, a wyvern crouches low, keeping its stinger poised above its head as it hisses and growls.
+Um wyvern não luta no chão a menos que não possa alcançar sua presa por nenhum outro meio, ou se tiver sido enganado para uma posição onde o combate aéreo não seja uma opção. Se forçado a um confronto no chão, um wyvern se agacha, mantendo seu ferrão erguido acima da cabeça enquanto sibila e rosna.
 
-### Aggressive and Reckless
+### Agressivo e Imprudente
 
-A wyvern intent on its prey backs down only if it sustains serious injury, or if its prey eludes it long enough for another easier potential meal to wander along. If it corners a fleeing creature in an enclosure too small to enter, a wyvern guards where the quarry hides, lashing with its stinger whenever opportunity allows.
-Although they possess more cunning than ordinary beasts, wyverns lack the intelligence of their draconic cousins. As such, creatures that maintain their composure as a wyvern hunts them from the air can often elude or trick it. Wyverns follow a direct path to their prey, with no thought given to possible ambushes.
+Um wyvern focado em sua presa só recua se sofrer ferimentos graves, ou se sua presa escapar por tempo suficiente para que outra refeição potencial mais fácil apareça. Se encurralar uma criatura em fuga em um recinto pequeno demais para entrar, um wyvern guarda o local onde a presa se esconde, golpeando com seu ferrão sempre que surge uma oportunidade.
+Embora possuam mais astúcia que bestas comuns, os wyverns carecem da inteligência de seus primos draconicos. Assim, criaturas que mantêm a compostura enquanto um wyvern as caça do alto podem frequentemente iludi-lo ou enganá-lo. Wyverns seguem um caminho direto até sua presa, sem pensar em possíveis emboscadas.
 
-### Tamed Wyverns
+### Wyverns Domados
 
-A wyvern can be tamed for use as a mount, but doing so presents a difficult and deadly challenge. Raising one as a hatchling offers the best results. However, a wyvern's violent temperament has cost the life of many a would-be master.
+Um wyvern pode ser domado para uso como montaria, mas fazer isso apresenta um desafio difícil e mortal. Criar um desde filhote oferece os melhores resultados. No entanto, o temperamento violento de um wyvern já custou a vida de muitos aspirantes a mestres.
 
 ### Ações
 
-**Multiattack.** The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.
+**Ataques Múltiplos.** O wyvern realiza dois ataques: um com sua mordida e um com seu ferrão. Enquanto voa, pode usar suas garras no lugar de um dos outros ataques.
 
-**Bite.** mw 7 to hit, reach 10 ft., one creature. {@h}11 ([[2d6+4]]) piercing damage.
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 3 m, uma criatura. *Dano:* 11 ([[2d6+4]]) dano perfurante.
 
-**Claws.** mw 7 to hit, reach 5 ft., one target. {@h}13 ([[2d8+4]]) slashing damage.
+**Garras.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 1,5 m, um alvo. *Dano:* 13 ([[2d8+4]]) dano cortante.
 
-**Stinger.** mw 7 to hit, reach 10 ft., one creature. {@h}11 ([[2d6+4]]) piercing damage. The target must make a CD 15 Constitution saving throw, taking 24 ([[7d6]]) poison damage on a failed save, or half as much damage on a successful one.
-
+**Ferrão.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 3 m, uma criatura. *Dano:* 11 ([[2d6+4]]) dano perfurante. O alvo deve realizar um teste de resistência de Constituição CD 15, sofrendo 24 ([[7d6]]) dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.

@@ -1,6 +1,6 @@
 ---
 title: noble
-draft: true
+draft: false
 titulo_pt_br: nobre
 visibility: gm
 status: draft

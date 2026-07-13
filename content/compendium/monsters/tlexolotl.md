@@ -1,19 +1,19 @@
 ---
-title: "tlexolotl"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: tlexolotl
+draft: false
+titulo_pt_br: '**tlexolotl**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Huge elemental, neutro"
+  kind: monster
+stats_meta: Huge elemental, neutro
 stats:
-  ac: "15"
-  hp: "104 (11d12 + 33)"
-  speed: "40 ft."
+  ac: '15'
+  hp: 104 (11d12 + 33)
+  speed: 40 ft.
   attributes:
     str: 25
     dex: 10
@@ -21,31 +21,36 @@ stats:
     int: 7
     wis: 13
     cha: 9
-  senses: "darkvision 120 ft., tremorsense 120 ft., passive Perception 11"
-  languages: "Ignan"
-  cr: "10"
+  senses: darkvision 120 ft., tremorsense 120 ft., passive Perception 11
+  languages: Ignan
+  cr: '10'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: tlexolotl](/images/campaigns/journeys-through-the-radiant-citadel/tlexolotl.webp)
 
-Tlexolotls are gigantic, salamander-like creatures that slumber deep in the magma of dormant volcanoes. A tlexolotl drowses amid the molten depths for centuries, rising only rarely to gorge itself on massive amounts of animal and plant life before returning to its slumber. Should a tlexolotl's sleep be disturbed—whether by intruders in its volcanic lair or the eruption of its molten home—the lava-drenched brute emerges in a rage, rampaging forth until its belly is full and its volcano is quiet once more.
-Despite a tlexolotl's destructive prowess, the land around its volcano is often naturally abundant. It's common for those who live nearby to honor the tlexolotl as a protector of the land, as the ash it creates rejuvenates the soil and encourages life to flourish.
+Tlexolotls são criaturas gigantescas, semelhantes a salamandras, que dormem nas profundezas do magma de vulcões adormecidos. Um tlexolotl cochila nas profundezas derretidas por séculos, emergindo apenas raramente para se empanturrar de enormes quantidades de vida animal e vegetal antes de retornar ao seu sono. Caso o sono de um tlexolotl seja perturbado — seja por intrusos em seu covil vulcânico ou pela erupção de seu lar derretido — o bruto banhado em lava emerge em fúria, avançando destruidoramente até que sua barriga esteja cheia e seu vulcão esteja silencioso novamente.
+Apesar do poder destrutivo de um tlexolotl, a terra ao redor de seu vulcão é frequentemente naturalmente abundante. É comum que aqueles que vivem nas proximidades honrem o tlexolotl como um protetor da terra, pois as cinzas que ele cria rejuvenescem o solo e incentivam a vida a florescer.
 
 ### Características
 
-**Fire Aura.** At the start of each of the tlexolotl's turns, each creature within 10 feet of it takes 7 ([[2d6]]) fire damage, and flammable objects in that aura that aren't being worn or carried ignite. A creature that touches the tlexolotl or hits it with a melee attack while within 5 feet of it takes 7 ([[2d6]]) fire damage.
+**Aura de Fogo.** No início de cada turno do tlexolotl, cada criatura a até 3 metros dele sofre 7 ([[2d6]]) de dano de fogo, e objetos inflamáveis nessa aura que não estejam sendo vestidos ou carregados são incendiados. Uma criatura que toque o tlexolotl ou o acerte com um ataque corpo a corpo enquanto estiver a até 1,5 metro dele sofre 7 ([[2d6]]) de dano de fogo.
 
-**Illumination.** The tlexolotl sheds bright light in a 30-foot radius and dim light for an additional 30 feet.
+**Iluminação.** O tlexolotl emite luz intensa em um raio de 9 metros e luz fraca por mais 9 metros adicionais.
 
-**Regeneration.** The tlexolotl regains 10 hit points at the start of its turn. If the tlexolotl takes cold damage or is immersed in water, this trait doesn't function at the start of the tlexolotl's next turn. The tlexolotl dies only if it starts its turn with 0 hit points and doesn't regenerate.
+**Regeneração.** O tlexolotl recupera 10 pontos de vida no início de seu turno. Se o tlexolotl sofrer dano de frio ou estiver imerso em água, esta característica não funciona no início do próximo turno do tlexolotl. O tlexolotl morre apenas se iniciar seu turno com 0 pontos de vida e não regenerar.
 
 ### Ações
 
-**Multiattack.** The tlexolotl makes one Bite attack and one Tail attack.
+**Ataques Múltiplos.** O tlexolotl realiza um ataque de Mordida e um ataque de Cauda.
 
-**Bite.** mw 11 to hit, reach 10 ft., one target. {@h}12 ([[1d10+7]]) piercing damage plus 18 ([[4d8]]) fire damage.
+**Mordida.** Ataque Corpo a Corpo com Arma: +11 para acertar, alcance 3 m, um alvo. {@h}12 ([[1d10+7]]) de dano perfurante mais 18 ([[4d8]]) de dano de fogo.
 
-**Tail.** mw 11 to hit, reach 10 ft., one target. {@h}11 ([[1d8+7]]) bludgeoning damage plus 14 ([[4d6]]) fire damage. If the target is a Large or smaller creature, it must succeed on a CD 19 Strength saving throw or be pushed up to 10 feet away from the tlexolotl and knocked prone.
+**Cauda.** Ataque Corpo a Corpo com Arma: +11 para acertar, alcance 3 m, um alvo. {@h}11 ([[1d8+7]]) de dano de concussão mais 14 ([[4d6]]) de dano de fogo. Se o alvo for uma criatura Grande ou menor, ele deve ser bem-sucedido em um teste de resistência de Força CD 19 ou ser empurrado até 3 metros para longe do tlexolotl e cair no chão.
 
-**Pyroclasm {@recharge 5}.** Gouts of molten lava erupt from the tlexolotl's body. Each creature in a 30-foot-radius sphere centered on the tlexolotl must make a CD 15 Dexterity saving throw. On a failed saving throw, a creature takes 21 ([[6d6]]) fire damage and 21 ([[6d6]]) bludgeoning damage. On a successful saving throw, a creature takes half as much damage.
-
+**Piroclasma {@recharge 5}.** Jatos de lava derretida irrompem do corpo do tlexolotl. Cada criatura em uma esfera de 9 metros de raio centrada no tlexolotl deve realizar um teste de resistência de Destreza CD 15. Em caso de falha no teste de resistência, a criatura sofre 21 ([[6d6]]) de dano de fogo e 21 ([[6d6]]) de dano de concussão. Em caso de sucesso no teste de resistência, a criatura sofre metade desse dano.

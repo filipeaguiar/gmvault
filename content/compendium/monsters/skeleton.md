@@ -1,14 +1,20 @@
 ---
-title: "Skeleton"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Skeleton
+draft: false
+titulo_pt_br: Esqueleto
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Skeleton** importado automaticamente da campanha.
+Monstro **Esqueleto** importado automaticamente da campanha.

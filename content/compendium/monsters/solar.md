@@ -1,19 +1,19 @@
 ---
-title: "solar"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: solar
+draft: false
+titulo_pt_br: '**solar**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large celestial, leal e bom"
+  kind: monster
+stats_meta: Large celestial, leal e bom
 stats:
-  ac: "21"
-  hp: "243 (18d10 + 144)"
-  speed: "50 ft., fly 150 ft."
+  ac: '21'
+  hp: 243 (18d10 + 144)
+  speed: 50 ft., fly 150 ft.
   attributes:
     str: 26
     dex: 22
@@ -21,54 +21,59 @@ stats:
     int: 25
     wis: 25
     cha: 30
-  saves: "Int +14, Wis +14, Cha +17"
-  skills: "Perception +14"
-  senses: "truesight 120 ft., passive Perception 24"
-  languages: "all, telepathy 120 ft."
-  cr: "21"
+  saves: Int +14, Wis +14, Cha +17
+  skills: Perception +14
+  senses: truesight 120 ft., passive Perception 24
+  languages: all, telepathy 120 ft.
+  cr: '21'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: solar](/images/campaigns/journeys-through-the-radiant-citadel/solar.webp)
 
-An angel is a celestial agent sent forth into the planes to further its god's agenda for weal or woe. Its sublime beauty and presence can drive awestruck onlookers to their knees. Yet angels are destroyers too, and their appearance portends doom as often as it signals hope.
+Um anjo é um agente celestial enviado aos planos para promover a agenda de seu deus, seja para o bem ou para o mal. Sua beleza e presença sublimes podem levar observadores maravilhados a se ajoelharem. No entanto, anjos também são destruidores, e sua aparição pressagia desgraça com tanta frequência quanto anuncia esperança.
 
-### Shards of the Divine
+### Fragmentos do Divino
 
-Angels are formed from the astral essence of benevolent gods and are thus divine beings of great power and foresight.
-Angels act out the will of their gods with tireless devotion. Even chaotic good deities command lawful good angels, knowing that the angels' dedication to order best allows them to fulfill divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good.
-An angel slays evil creatures without remorse. As the embodiment of law and good, an angel is almost never mistaken in its judgments. This quality can create a sense of superiority in an angel, a sense that comes to the fore when an angel's task conflicts with the goals of another creature. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send their angels among mortals only in response to the most dire circumstances.
+Anjos são formados da essência astral de deuses benevolentes e, portanto, são seres divinos de grande poder e presciência.
+Anjos executam a vontade de seus deuses com devoção incansável. Até mesmo deuses do bem caótico comandam anjos leais e bons, sabendo que a dedicação dos anjos à ordem permite que eles cumpram melhor os comandos divinos. Um anjo segue um único propósito motivador, conforme determinado por sua divindade. No entanto, um anjo é incapaz de seguir comandos que se desviem do caminho da lei e do bem.
+Um anjo mata criaturas malignas sem remorso. Como a personificação da lei e do bem, um anjo quase nunca erra em seus julgamentos. Essa qualidade pode criar um senso de superioridade em um anjo, um senso que vem à tona quando a tarefa de um anjo entra em conflito com os objetivos de outra criatura. O anjo nunca aquiesce ou cede. Quando um anjo é enviado para ajudar mortais, é enviado não para servir, mas para comandar. Os deuses do bem, portanto, enviam seus anjos entre os mortais apenas em resposta às circunstâncias mais terríveis.
 
-### Fallen Angels
+### Anjos Caídos
 
-An angel's moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen in the hierarchy of the Nine Hells. Zariel, the ruler of the first layer of the Nine Hells, is such a creature. Rather than rebel, some fallen angels resign themselves to an isolated existence on the Material Plane, living in disguise as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service.
+A bússola moral de um anjo lhe concede um senso de infalibilidade que às vezes pode significar sua ruína. Anjos geralmente são sábios demais para cair em um simples engano, mas às vezes o orgulho pode levar um a cometer um ato maligno. Seja intencional ou acidental, tal ato é uma mancha permanente que marca o anjo como um pária. Anjos caídos retêm seu poder, mas perdem sua conexão com as divindades das quais foram feitos. A maioria dos anjos caídos leva seu banimento para o lado pessoal, rebelando-se contra os poderes que serviam ao buscar o domínio sobre uma seção do Abismo ou um lugar entre outros caídos na hierarquia dos Nove Infernos. Zariel, a governante do primeiro nível dos Nove Infernos, é uma dessas criaturas. Em vez de se rebelar, alguns anjos caídos se resignam a uma existência isolada no Plano Material, vivendo disfarçados como eremitas simples. Se forem redimidos, podem se tornar aliados poderosos dedicados à justiça e ao serviço compassivo.
 
-### Immortal Nature
+### Natureza Imortal
 
-An angel doesn't require food, drink, or sleep.
+Um anjo não precisa de comida, bebida ou sono.
 
 ### Solar
 
-A solar is godlike in its glory and power.
-On the battlefield, the solar's sword flies into the fray on its own, and a single arrow from a solar's bow can strike a target dead on contact. So great is a solar's celestial might that even demon princes shrink at its resonant commands.
-It is said that only twenty-four solars exist. The few solars that are known are stewards of specific deities. The others rest in a state of contemplation, waiting for the time when their services are needed to stave off some cosmic threat to the cause of good.
+Um solar é divino em sua glória e poder.
+No campo de batalha, a espada do solar voa para a refrega por conta própria, e uma única flecha do arco de um solar pode atingir um alvo morto no contato. Tão grande é o poder celestial de um solar que até mesmo príncipes demônios se encolhem diante de seus comandos ressonantes.
+Diz-se que existem apenas vinte e quatro solares. Os poucos solares que são conhecidos são mordomos de divindades específicas. Os outros descansam em um estado de contemplação, esperando o momento em que seus serviços sejam necessários para evitar alguma ameaça cósmica à causa do bem.
 
 ### Características
 
-**Angelic Weapons.** The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra [[6d8]] radiant damage (included in the attack).
+**Armas Angélicas.** Os ataques com arma do solar são mágicos. Quando o solar acerta com qualquer arma, a arma causa um adicional de [[6d8]] de dano radiante (incluído no ataque).
 
-**Divine Awareness.** The solar knows if it hears a lie.
+**Consciência Divina.** O solar sabe se ouve uma mentira.
 
-**Magic Resistance.** The solar has advantage on saving throws against spells and other magical effects.
+**Resistência à Magia.** O solar tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
 ### Ações
 
-**Multiattack.** The solar makes two greatsword attacks.
+**Ataques Múltiplos.** O solar realiza dois ataques com espada grande.
 
-**Greatsword.** mw 15 to hit, reach 5 ft., one target. {@h}22 ([[4d6+8]]) slashing damage plus 27 ([[6d8]]) radiant damage.
+**Espada Grande.** Ataque Corpo a Corpo com Arma: +15 para acertar, alcance 1,5 m, um alvo. {@h}22 ([[4d6+8]]) de dano cortante mais 27 ([[6d8]]) de dano radiante.
 
-**Slaying Longbow.** rw 13 to hit, range 150/600 ft., one target. {@h}15 ([[2d8+6]]) piercing damage plus 27 ([[6d8]]) radiant damage. If the target is a creature that has 100 hit points or fewer, it must succeed on a CD 15 Constitution saving throw or die.
+**Arco Longo Abatedor.** Ataque à Distância com Arma: +13 para acertar, alcance 45/180 m, um alvo. {@h}15 ([[2d8+6]]) de dano perfurante mais 27 ([[6d8]]) de dano radiante. Se o alvo for uma criatura que tenha 100 pontos de vida ou menos, ela deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou morrer.
 
-**Flying Sword.** The solar releases its greatsword to hover magically in an unoccupied space within 5 feet of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies.
+**Espada Voadora.** O solar solta sua espada grande para pairar magicamente em um espaço desocupado a até 1,5 metro dela. Se o solar puder ver a espada, ele pode comandá-la mentalmente como uma ação bônus para voar até 15 metros e realizar um ataque contra um alvo ou retornar às mãos do solar. Se a espada pairando for alvo de qualquer efeito, considera-se que o solar a está segurando. A espada pairando cai se o solar morrer.
 
-**Healing Touch (4/Day).** The solar touches another creature. The target magically regains 40 ([[8d8+4]]) hit points and is freed from any curse, disease, poison, blindness, or deafness.
-
+**Toque Curativo (4/Dia).** O solar toca outra criatura. O alvo recupera magicamente 40 ([[8d8+4]]) pontos de vida e é libertado de qualquer maldição, doença, veneno, cegueira ou surdez.

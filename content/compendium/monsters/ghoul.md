@@ -1,14 +1,20 @@
 ---
-title: "Ghoul"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Ghoul
+draft: false
+titulo_pt_br: Ghoul
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 Monstro **Ghoul** importado automaticamente da campanha.

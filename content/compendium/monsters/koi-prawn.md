@@ -1,6 +1,6 @@
 ---
 title: koi prawn
-draft: true
+draft: false
 titulo_pt_br: Camarão koi
 visibility: gm
 status: draft

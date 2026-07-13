@@ -1,19 +1,19 @@
 ---
-title: "dire wolf"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: dire wolf
+draft: false
+titulo_pt_br: lobo-d'osso
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large beast, sem tendência"
+  kind: monster
+stats_meta: Large beast, sem tendência
 stats:
-  ac: "14"
-  hp: "37 (5d10 + 10)"
-  speed: "50 ft."
+  ac: '14'
+  hp: 37 (5d10 + 10)
+  speed: 50 ft.
   attributes:
     str: 17
     dex: 15
@@ -21,22 +21,27 @@ stats:
     int: 3
     wis: 12
     cha: 7
-  skills: "Perception +3, Stealth +4"
-  senses: "passive Perception 13"
-  cr: "1"
+  skills: Perception +3, Stealth +4
+  senses: passive Perception 13
+  cr: '1'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: dire wolf](/images/campaigns/journeys-through-the-radiant-citadel/dire-wolf.webp)
+![Arte: lobo terrível](/images/campaigns/journeys-through-the-radiant-citadel/dire-wolf.webp)
 
 
 
 ### Características
 
-**Keen Hearing and Smell.** The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
+**Audição e Olfato Aguçados.** O lobo tem vantagem em testes de Sabedoria (Percepção) que dependam de audição ou olfato.
 
-**Pack Tactics.** The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
+**Táticas de Matilha.** O lobo tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um dos aliados do lobo estiver a 1,5 metro da criatura e o aliado não estiver incapacitado.
 
 ### Ações
 
-**Bite.** mw 5 to hit, reach 5 ft., one target. {@h}10 ([[2d6+3]]) piercing damage. If the target is a creature, it must succeed on a CD 13 Strength saving throw or be knocked prone.
-
+**Mordida.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 1,5 m, um alvo. {@h}10 ([[2d6+3]]) de dano perfurante. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 13 ou ser derrubada.

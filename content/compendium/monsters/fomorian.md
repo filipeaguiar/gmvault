@@ -1,19 +1,19 @@
 ---
-title: "fomorian"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: fomorian
+draft: false
+titulo_pt_br: '**Fomorian**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Huge giant, caótico e mau"
+  kind: monster
+stats_meta: Huge giant, caótico e mau
 stats:
-  ac: "14"
-  hp: "149 (13d12 + 65)"
-  speed: "30 ft."
+  ac: '14'
+  hp: 149 (13d12 + 65)
+  speed: 30 ft.
   attributes:
     str: 23
     dex: 10
@@ -21,42 +21,47 @@ stats:
     int: 9
     wis: 14
     cha: 6
-  skills: "Perception +8, Stealth +3"
-  senses: "darkvision 120 ft., passive Perception 18"
-  languages: "Giant, Undercommon"
-  cr: "8"
+  skills: Perception +8, Stealth +3
+  senses: darkvision 120 ft., passive Perception 18
+  languages: Giant, Undercommon
+  cr: '8'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: fomorian](/images/campaigns/journeys-through-the-radiant-citadel/fomorian.webp)
 
-The most hideous and wicked of all giantkind are the godless fomorians, whose deformed bodies reflect their vile demeanors. Some have facial features randomly distributed around their misshapen, warty heads. Others have limbs of grossly different sizes and shapes, or emit terrible howls each time they draw breath through misshapen mouths. Their wretched appearance rarely evokes sympathy, however, for the fomorians brought their doom upon themselves with the evil that rules their hearts and minds.
+Os mais hediondos e perversos de todos os gigantes são os fomorians sem deuses, cujos corpos deformados refletem seus vis comportamentos. Alguns têm características faciais distribuídas aleatoriamente por suas cabeças verrucosas e disformes. Outros têm membros de tamanhos e formas grosseiramente diferentes, ou emitem uivos terríveis cada vez que respiram por bocas disformes. Sua aparência miserável raramente evoca simpatia, no entanto, pois os fomorians trouxeram sua própria ruína com o mal que governa seus corações e mentes.
 
-### Fey Curse
+### Maldição das Fadas
 
-The elves remember when the fomorians were among the most handsome of races, possessed of brilliant minds and unrivaled magical ability. That physical perfection did not extend to their hearts, however, as a lust for magic and power consumed them. The fomorians sought to conquer the Feywild and enslave its inhabitants, claiming those creatures' magic for themselves. When the fey united to defend their realm, the fomorians fought them and were subjected to a terrible curse.
-One by one, the giants fell as their bodies were warped to reflect the evil in their hearts. Stripped of their grace and magical power, the wretched horrors fled from the light, delving deep beneath the world to nurse their hatred. Cursing their fate, they have ever after plotted vengeance against the fey that wronged them.
+Os elfos lembram quando os fomorians estavam entre as raças mais belas, possuídos de mentes brilhantes e habilidade mágica incomparável. Aquela perfeição física não se estendia aos seus corações, no entanto, pois uma luxúria por magia e poder os consumia. Os fomorians procuraram conquistar o Feywild e escravizar seus habitantes, reivindicando a magia daquelas criaturas para si. Quando as fadas se uniram para defender seu reino, os fomorians lutaram contra elas e foram submetidos a uma terrível maldição.
+Um a um, os gigantes caíram enquanto seus corpos eram distorcidos para refletir o mal em seus corações. Despojados de sua graça e poder mágico, os horrores miseráveis fugiram da luz, mergulhando nas profundezas do mundo para alimentar seu ódio. Amaldiçoando seu destino, desde então tramaram vingança contra as fadas que os prejudicaram.
 
-### Giants of the Underdark
+### Gigantes do Subterrâneo Profundo
 
-The fomorians dwell in eerily beautiful caverns in the Underdark, rarely venturing to the surface. Their lairs feature abundant access to water, fish, and mushroom forests, as well as to the creatures whose slave labor keeps the fomorians fed. When those slaves can no longer toil, they are slain and devoured. Wickedness and depravity are the cornerstones of fomorian society, in which the strongest and cruelest giants rule. Fomorians mark their territories with the corpses of their enemies, painting their cavern walls with blood or stitching together limbs and body parts to make mockeries of the creatures they have killed.
+Os fomorians habitam cavernas estranhamente belas no Subterrâneo Profundo, raramente se aventurando na superfície. Seus covis apresentam amplo acesso a água, peixes e florestas de cogumelos, bem como às criaturas cujo trabalho escravo mantém os fomorians alimentados. Quando esses escravos não podem mais trabalhar, são mortos e devorados. A maldade e a depravação são os alicerces da sociedade fomorian, na qual os gigantes mais fortes e cruéis governam. Os fomorians marcam seus territórios com os cadáveres de seus inimigos, pintando as paredes de suas cavernas com sangue ou costurando membros e partes do corpo para criar zombarias das criaturas que mataram.
 
-### Ruined Flesh, Evil Minds
+### Carne Arruinada, Mentes Más
 
-The deformities visited on the fomorians prevent them from hurling rocks like their giant kin, or wearing anything more than scraps of cloth. However, the grotesque positioning of their eyes, noses, and ears gives fomorians keen perceptive abilities, making it hard to surprise or ambush them. The greed and evil of the fomorians lies at the heart of their degeneration and fall, and continues to plague them. Fomorians make alliances with other creatures when it suits them, but they are disloyal by nature and betray their allies on a whim.
+As deformidades impostas aos fomorians os impedem de arremessar pedras como seus parentes gigantes, ou de usar mais do que retalhos de pano. No entanto, o posicionamento grotesco de seus olhos, narizes e orelhas concede aos fomorians habilidades perceptivas aguçadas, tornando difícil surpreendê-los ou emboscá-los. A ganância e o mal dos fomorians estão no cerne de sua degeneração e queda, e continuam a atormentá-los. Os fomorians fazem alianças com outras criaturas quando lhes convém, mas são desleais por natureza e traem seus aliados por capricho.
 
-### Curse of the Evil Eye
+### Maldição do Olho Maligno
 
-Fomorians can pass their curse onto others using a power called the evil eye-a last vestige of the giants' once-remarkable spellcasting ability. A creature cursed by a fomorian's evil eye is magically twisted and deformed, gaining a glimpse into the pain and malice that has consumed this evil race.
+Os fomorians podem transmitir sua maldição a outros usando um poder chamado olho maligno — um último vestígio da habilidade de conjuração outrora notável dos gigantes. Uma criatura amaldiçoada pelo olho maligno de um fomorian é magicamente torcida e deformada, obtendo um vislumbre da dor e malícia que consumiu esta raça maligna.
 
 ### Ações
 
-**Multiattack.** The fomorian attacks twice with its greatclub or makes one greatclub attack and uses Evil Eye once.
+**Ataques Múltiplos.** O fomorian ataca duas vezes com sua clava grande ou faz um ataque com sua clava grande e usa Olho Maligno uma vez.
 
-**Greatclub.** mw 9 to hit, reach 15 ft., one target. {@h}19 ([[3d8+6]]) bludgeoning damage.
+**Clava Grande.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 4,5 m, um alvo. *Dano:* 19 ([[3d8+6]]) dano de concussão.
 
-**Evil Eye.** The fomorian magically forces a creature it can see within 60 feet of it to make a CD 14 Charisma saving throw. The creature takes 27 ([[6d8]]) psychic damage on a failed save, or half as much damage on a successful one.
+**Olho Maligno.** O fomorian força magicamente uma criatura que possa ver a até 18 metros dele a fazer um teste de resistência de Carisma CD 14. A criatura sofre 27 ([[6d8]]) dano psíquico em caso de falha no teste, ou metade desse dano em caso de sucesso.
 
-**Curse of the Evil Eye (Recharges after a Short or Long Rest).** With a stare, the fomorian uses Evil Eye, but on a failed save, the creature is also cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity.
+**Maldição do Olho Maligno (Recarrega após um Descanso Curto ou Longo).** Com um olhar, o fomorian usa Olho Maligno, mas, em caso de falha no teste, a criatura também é amaldiçoada com deformidades mágicas. Enquanto deformada, a criatura tem seu deslocamento reduzido à metade e tem desvantagem em testes de atributo, testes de resistência e ataques baseados em Força ou Destreza.
 
-The transformed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.
-
+A criatura transformada pode repetir o teste de resistência sempre que terminar um descanso longo, encerrando o efeito em caso de sucesso.

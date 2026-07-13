@@ -1,6 +1,6 @@
 ---
 title: cat
-draft: true
+draft: false
 titulo_pt_br: gato
 visibility: gm
 status: draft

@@ -1,19 +1,19 @@
 ---
-title: "cult fanatic"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: cult fanatic
+draft: false
+titulo_pt_br: fanático de culto
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, leal e caótico e mau"
+  kind: monster
+stats_meta: Medium humanoid, leal e caótico e mau
 stats:
-  ac: "13"
-  hp: "33 (6d8 + 6)"
-  speed: "30 ft."
+  ac: '13'
+  hp: 33 (6d8 + 6)
+  speed: 30 ft.
   attributes:
     str: 11
     dex: 14
@@ -21,23 +21,28 @@ stats:
     int: 10
     wis: 13
     cha: 14
-  skills: "Deception +4, Persuasion +4, Religion +2"
-  senses: "passive Perception 11"
-  languages: "any one language (usually Common)"
-  cr: "2"
+  skills: Deception +4, Persuasion +4, Religion +2
+  senses: passive Perception 11
+  languages: any one language (usually Common)
+  cr: '2'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: cult fanatic](/images/campaigns/journeys-through-the-radiant-citadel/cult-fanatic.webp)
+![Arte: fanático cultista](/images/campaigns/journeys-through-the-radiant-citadel/cult-fanatic.webp)
 
-Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else
+Fanáticos geralmente fazem parte da liderança de um culto, usando seu carisma e dogma para influenciar e explorar os de vontade fraca. A maioria está interessada acima de tudo no poder pessoal.
 
 ### Características
 
-**Dark Devotion.** The fanatic has advantage on saving throws against being charmed or frightened.
+**Devoção Sombria.** O fanático tem vantagem em testes de resistência para não ser enfeitiçado ou amedrontado.
 
 ### Ações
 
-**Multiattack.** The fanatic makes two melee attacks.
+**Ataques Múltiplos.** O fanático realiza dois ataques corpo a corpo.
 
-**Dagger.** mw,rw 4 to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}4 ([[1d4+2]]) piercing damage.
-
+**Adaga.** Acm, Ad +4 para acertar, alcance 1,5 m ou alcance 6/18 m, uma criatura. {@h}4 ([[1d4+2]]) de dano perfurante.

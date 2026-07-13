@@ -1,19 +1,19 @@
 ---
-title: "purple worm"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: purple worm
+draft: false
+titulo_pt_br: verme púrpura
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Gargantuan monstrosity, sem tendência"
+  kind: monster
+stats_meta: Gargantuan monstrosity, sem tendência
 stats:
-  ac: "18"
-  hp: "247 (15d20 + 90)"
-  speed: "50 ft., burrow 30 ft."
+  ac: '18'
+  hp: 247 (15d20 + 90)
+  speed: 50 ft., burrow 30 ft.
   attributes:
     str: 28
     dex: 7
@@ -21,36 +21,41 @@ stats:
     int: 1
     wis: 8
     cha: 4
-  saves: "Con +11, Wis +4"
-  senses: "blindsight 30 ft., tremorsense 60 ft., passive Perception 9"
-  cr: "15"
+  saves: Con +11, Wis +4
+  senses: blindsight 30 ft., tremorsense 60 ft., passive Perception 9
+  cr: '15'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: purple worm](/images/campaigns/journeys-through-the-radiant-citadel/purple-worm.webp)
+![Arte: verme púrpura](/images/campaigns/journeys-through-the-radiant-citadel/purple-worm.webp)
 
-The massive burrowing monster known as the purple worm terrorizes the creatures of the Underdark as it chews through solid rock in pursuit of prey. A dimwitted, ravenous force of nature, this creature regards anything it encounters as food.
+O monstro escavador massivo conhecido como verme púrpura aterroriza as criaturas do Subterrâneo enquanto rói rocha sólida em busca de presas. Uma força da natureza obtusa e faminta, esta criatura considera tudo que encontra como alimento.
 
-### Ravenous Hunters
+### Caçadores Vorazes
 
-Loud noise attracts purple worms, which have been known to interrupt underground battles and tear through subterranean cities seeking prey. The underground civilizations of the drow, the duergar, and the mind flayers maintain special wards around their settlements to deter these monsters.
-Though most common in the Underdark, purple worms are frequently seen on the surface world in rocky and mountainous lands. The maw of a purple worm is large enough to swallow a horse whole, and no creature is safe from its hunger. It lunges forward by rhythmically compressing and expanding its body, catching other Underdark dwellers by surprise with the speed of its advance.
+Ruídos altos atraem vermes púrpuras, que são conhecidos por interromper batalhas subterrâneas e rasgar cidades subterrâneas em busca de presas. As civilizações subterrâneas dos drows, dos duergars e dos devoradores de mentes mantêm proteções especiais ao redor de seus assentamentos para deter esses monstros.
+Embora mais comuns no Subterrâneo, vermes púrpuras são frequentemente vistos no mundo da superfície em terras rochosas e montanhosas. A goela de um verme púrpura é grande o suficiente para engolir um cavalo inteiro, e nenhuma criatura está a salvo de sua fome. Ele se lança para frente comprimindo e expandindo seu corpo ritmicamente, pegando outros habitantes do Subterrâneo de surpresa com a velocidade de seu avanço.
 
-### Boons of the Worm
+### Bênçãos do Verme
 
-When a purple worm burrows through the ground, it consumes earth and rock, which it breaks down and constantly excretes. Precious metals and gems can thus be found within the bodies of purple worms, which are targeted by particularly brave and foolhardy treasure hunters.
-A burrowing purple worm constantly creates new tunnels throughout the Underdark, which are quickly made use of by other creatures as corridors and highways. Because a purple worm rarely returns to its own tunnels, such passageways are a good place to avoid these monsters. Areas rich in prey quickly become interlaced with complex tunnel systems resulting from several worms hunting together.
+Quando um verme púrpura escava pelo solo, ele consome terra e rocha, que decompõe e excreta constantemente. Metais preciosos e gemas podem, portanto, ser encontrados dentro dos corpos de vermes púrpuras, que são alvos de caçadores de tesouros particularmente corajosos e imprudentes.
+Um verme púrpura escavador cria constantemente novos túneis pelo Subterrâneo, que são rapidamente utilizados por outras criaturas como corredores e estradas. Como um verme púrpura raramente retorna aos seus próprios túneis, tais passagens são um bom lugar para evitar esses monstros. Áreas ricas em presas rapidamente se tornam entrelaçadas com sistemas de túneis complexos resultantes de vários vermes caçando juntos.
 
 ### Características
 
-**Tunneler.** The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.
+**Escavador.** O verme pode escavar através de rocha sólida na metade de seu deslocamento de escavação e deixa um túnel de 3 metros de diâmetro em seu rastro.
 
 ### Ações
 
-**Multiattack.** The worm makes two attacks: one with its bite and one with its stinger.
+**Ataques Múltiplos.** O verme realiza dois ataques: um com sua mordida e um com seu ferrão.
 
-**Bite.** mw 14 to hit, reach 10 ft., one target. {@h}22 ([[3d8+9]]) piercing damage. If the target is a Large or smaller creature, it must succeed on a CD 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 ([[6d6]]) acid damage at the start of each of the worm's turns.
+**Mordida.** *Ataque Corpo a Corpo com Arma:* +14 para acertar, alcance 3 m, um alvo. *Dano:* 22 ([[3d8+9]]) dano perfurante. Se o alvo for uma criatura Grande ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza CD 19 ou ser engolido pelo verme. Uma criatura engolida está cega e contida, tem cobertura total contra ataques e outros efeitos vindos de fora do verme e sofre 21 ([[6d6]]) dano de ácido no início de cada turno do verme.
 
-If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a CD 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
+Se o verme sofrer 30 de dano ou mais em um único turno de uma criatura dentro dele, o verme deve ser bem-sucedido em um teste de resistência de Constituição CD 21 no final daquele turno ou regurgitar todas as criaturas engolidas, que caem caídas em um espaço a até 3 metros do verme. Se o verme morrer, uma criatura engolida não está mais contida por ele e pode escapar do cadáver usando 6 metros de deslocamento, saindo caída.
 
-**Tail Stinger.** mw 14 to hit, reach 10 ft., one creature. {@h}19 ([[3d6+9]]) piercing damage, and the target must make a CD 19 Constitution saving throw, taking 42 ([[12d6]]) poison damage on a failed save, or half as much damage on a successful one.
-
+**Ferrão da Cauda.** *Ataque Corpo a Corpo com Arma:* +14 para acertar, alcance 3 m, uma criatura. *Dano:* 19 ([[3d6+9]]) dano perfurante, e o alvo deve realizar um teste de resistência de Constituição CD 19, sofrendo 42 ([[12d6]]) dano de veneno em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso.

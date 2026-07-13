@@ -1,19 +1,19 @@
 ---
-title: "Lizardfolk"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Lizardfolk
+draft: false
+titulo_pt_br: Lagarto
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, neutro"
+  kind: monster
+stats_meta: Medium humanoid, neutro
 stats:
-  ac: "15"
-  hp: "22 (4d8 + 4)"
-  speed: "30 ft., swim 30 ft."
+  ac: '15'
+  hp: 22 (4d8 + 4)
+  speed: 30 ft., swim 30 ft.
   attributes:
     str: 15
     dex: 10
@@ -21,54 +21,59 @@ stats:
     int: 7
     wis: 12
     cha: 7
-  skills: "Perception +3, Stealth +4, Survival +5"
-  senses: "passive Perception 13"
-  languages: "Draconic"
-  cr: "1/2"
+  skills: Perception +3, Stealth +4, Survival +5
+  senses: passive Perception 13
+  languages: Draconic
+  cr: 1/2
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: Lizardfolk](/images/campaigns/journeys-through-the-radiant-citadel/lizardfolk.webp)
 
-Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world. Their hut villages thrive in forbidding grottos, half-sunken ruins, and watery caverns.
+Lizardfolk são humanoides reptilianos primitivos que espreitam nos pântanos e selvas do mundo. Suas aldeias de cabanas prosperam em grutas inóspitas, ruínas semissubmersas e cavernas aquáticas.
 
-### Territorial Xenophobes
+### Xenófobos Territoriais
 
-Lizardfolk deal and trade with other races only rarely. Fiercely territorial, they use camouflaged scouts to guard the perimeter of their domain. When unwelcome visitors are detected, a tribe sends a hunting band to harass or drive the trespassers off, or tricks them into blundering into the lairs of crocodiles and other dangerous creatures.
-Lizardfolk have no notion of traditional morality, and they find the concepts of good and evil utterly alien. Truly neutral creatures, they kill when it is expedient and do whatever it takes to survive.
-Lizardfolk rarely stray beyond their claimed hunting grounds. Any creature that enters their territory is fair game to be stalked, killed, and devoured. They make no distinction between humanoids, beasts, and monsters. Similarly, lizardfolk don't like reaching too far beyond their borders, where they could easily become the hunted instead of the hunters.
-Occasions might arise when lizardfolk will form alliances with their neighbors. These lizardfolk usually learn firsthand that humans, dwarves, halflings, and elves can sometimes prove helpful or trustworthy. Once lizardfolk forge ties with outsiders, they are steadfast and fierce allies.
+Lizardfolk raramente negociam ou comerciam com outras raças. Ferozmente territoriais, usam batedores camuflados para vigiar o perímetro de seu domínio. Quando visitantes indesejados são detectados, uma tribo envia um bando de caça para importunar ou expulsar os invasores, ou os engana para que caiam em tocas de crocodilos e outras criaturas perigosas.
+Lizardfolk não têm noção de moralidade tradicional e consideram os conceitos de bem e mal totalmente estranhos. Criaturas verdadeiramente neutras, matam quando é conveniente e fazem o que for preciso para sobreviver.
+Lizardfolk raramente se afastam de seus territórios de caça reivindicados. Qualquer criatura que entre em seu território é presa legítima para ser perseguida, morta e devorada. Eles não fazem distinção entre humanoides, bestas e monstros. Da mesma forma, lizardfolk não gostam de se aventurar muito além de suas fronteiras, onde poderiam facilmente se tornar os caçados em vez dos caçadores.
+Podem surgir ocasiões em que lizardfolk formam alianças com seus vizinhos. Esses lizardfolk geralmente aprendem em primeira mão que humanos, anões, halflings e elfos podem, às vezes, ser úteis ou dignos de confiança. Uma vez que os lizardfolk forjam laços com forasteiros, eles são aliados firmes e ferozes.
 
-### Great Feasts and Sacrifices
+### Grandes Festins e Sacrifícios
 
-Lizardfolk are omnivorous, but they have a taste for humanoid flesh. Prisoners are often taken back to their camps to become the centerpieces of great feasts and rites involving dancing, storytelling, and ritual combat.
-Victims are either cooked and eaten by the tribe, or are sacrificed to Semuanya, the lizardfolk god.
+Lizardfolk são onívoros, mas têm predileção por carne humanoide. Prisioneiros são frequentemente levados para seus acampamentos para se tornarem as peças centrais de grandes festins e rituais envolvendo danças, contação de histórias e combate ritual.
+As vítimas são cozidas e devoradas pela tribo, ou sacrificadas a Semuanya, o deus dos lizardfolk.
 
-### Canny Crafters
+### Artesãos Astutos
 
-Though they aren't skilled artisans, lizardfolk craft tools and ornamental jewelry out of the bones of their kills, and they use the hides and shells of dead monsters to create shields.
+Embora não sejam artesãos habilidosos, os lizardfolk criam ferramentas e joias ornamentais com os ossos de suas presas, e usam as peles e carapaças de monstros mortos para fabricar escudos.
 
-### Lizardfolk Leaders
+### Líderes Lizardfolk
 
-Lizardfolk respect and fear magic with a religious awe. Lizardfolk shamans lead their tribes, overseeing rites and ceremonies performed to honor Semuanya. From time to time, however, a lizardfolk tribe produces a powerful figure touched not by Semuanya but by Sess'inek-a reptilian demon lord who seeks to corrupt and control the lizardfolk.
-Lizardfolk born in Sess'inek's image are larger and more cunning than other lizardfolk, and are thoroughly evil. These lizard kings and queens dominate lizardfolk tribes, usurping a shaman's authority and inspiring uncharacteristic aggression among their subjects.
+Lizardfolk respeitam e temem a magia com um temor religioso. Xamãs lizardfolk lideram suas tribos, supervisionando ritos e cerimônias realizados em homenagem a Semuanya. De tempos em tempos, no entanto, uma tribo lizardfolk produz uma figura poderosa tocada não por Semuanya, mas por Sess'inek — um senhor demônio reptiliano que busca corromper e controlar os lizardfolk.
+Lizardfolk nascidos à imagem de Sess'inek são maiores e mais astutos que outros lizardfolk, e são totalmente maus. Esses reis e rainhas lagartos dominam tribos lizardfolk, usurpando a autoridade de um xamã e inspirando agressividade incomum entre seus súditos.
 
-### Dragon Worshipers
+### Adoradores de Dragões
 
-Lizardfolk speak Draconic, which they are thought to have learned from dragons in ancient times. A tribe that wanders into the territory of a dragon will offer it tribute to win its favor. An evil dragon might exploit lizardfolk for its own vile ends, turning them into raiders and plunderers.
+Lizardfolk falam Dracônico, que se acredita terem aprendido com dragões nos tempos antigos. Uma tribo que vagueia pelo território de um dragão lhe oferecerá tributo para ganhar seu favor. Um dragão maligno pode explorar lizardfolk para seus próprios fins vis, transformando-os em saqueadores e pilhadores.
 
 ### Características
 
-**Hold Breath.** The lizardfolk can hold its breath for 15 minutes.
+**Prender a Respiração.** O lizardfolk pode prender a respiração por 15 minutos.
 
 ### Ações
 
-**Multiattack.** The lizardfolk makes two melee attacks, each one with a different weapon.
+**Ataques Múltiplos.** O lizardfolk realiza dois ataques corpo a corpo, cada um com uma arma diferente.
 
-**Bite.** mw 4 to hit, reach 5 ft., one target. {@h}5 ([[1d6+2]]) piercing damage.
+**Mordida.** cca +4 para acertar, alcance 1,5 m, um alvo. {@h}5 ([[1d6+2]]) dano perfurante.
 
-**Heavy Club.** mw 4 to hit, reach 5 ft., one target. {@h}5 ([[1d6+2]]) bludgeoning damage.
+**Clava Pesada.** cca +4 para acertar, alcance 1,5 m, um alvo. {@h}5 ([[1d6+2]]) dano de concussão.
 
-**Javelin.** mw,rw 4 to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 ([[1d6+2]]) piercing damage.
+**Dardo.** cca, cad +4 para acertar, alcance 1,5 m ou alcance 9/36 m, um alvo. {@h}5 ([[1d6+2]]) dano perfurante.
 
-**Spiked Shield.** mw 4 to hit, reach 5 ft., one target. {@h}5 ([[1d6+2]]) piercing damage.
-
+**Escudo com Espinhos.** cca +4 para acertar, alcance 1,5 m, um alvo. {@h}5 ([[1d6+2]]) dano perfurante.

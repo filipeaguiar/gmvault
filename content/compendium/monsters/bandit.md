@@ -1,6 +1,6 @@
 ---
 title: Bandit
-draft: true
+draft: false
 titulo_pt_br: Bandido
 visibility: gm
 status: draft

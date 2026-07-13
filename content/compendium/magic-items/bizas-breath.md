@@ -1,14 +1,20 @@
 ---
-title: "biza's breath"
+title: biza's breath
 params:
-  kind: "magic_item"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: magic_item
+draft: false
+titulo_pt_br: O Sopro de Biza
+visibility: gm
+status: draft
 tags:
-  - item_magico
-  - importado
+- item_magico
+- importado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Item mágico **biza's breath** importado automaticamente da campanha.
+Item mágico **bafo de biza** importado automaticamente da campanha.

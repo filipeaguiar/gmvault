@@ -1,19 +1,19 @@
 ---
-title: "giant badger"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: giant badger
+draft: false
+titulo_pt_br: texugo gigante
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium beast, sem tendência"
+  kind: monster
+stats_meta: Medium beast, sem tendência
 stats:
-  ac: "10"
-  hp: "13 (2d8 + 4)"
-  speed: "30 ft., burrow 10 ft."
+  ac: '10'
+  hp: 13 (2d8 + 4)
+  speed: 30 ft., burrow 10 ft.
   attributes:
     str: 13
     dex: 10
@@ -21,23 +21,28 @@ stats:
     int: 2
     wis: 12
     cha: 5
-  senses: "darkvision 30 ft., passive Perception 11"
-  cr: "1/4"
+  senses: darkvision 30 ft., passive Perception 11
+  cr: 1/4
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: giant badger](/images/campaigns/journeys-through-the-radiant-citadel/giant-badger.webp)
+![Arte: texugo gigante](/images/campaigns/journeys-through-the-radiant-citadel/giant-badger.webp)
 
 
 
 ### Características
 
-**Keen Smell.** The badger has advantage on Wisdom (Perception) checks that rely on smell.
+**Olfato Aguçado.** O texugo tem vantagem em testes de Sabedoria (Percepção) que dependam do olfato.
 
 ### Ações
 
-**Multiattack.** The badger makes two attacks: one with its bite and one with its claws.
+**Ataques Múltiplos.** O texugo realiza dois ataques: um com a mordida e um com as garras.
 
-**Bite.** mw 3 to hit, reach 5 ft., one target. {@h}4 ([[1d6+1]]) piercing damage.
+**Mordida.** Ataque Corpo a Corpo com Arma: +3 para acertar, alcance 1,5 m, um alvo. {@h}4 ([[1d6+1]]) de dano perfurante.
 
-**Claws.** mw 3 to hit, reach 5 ft., one target. {@h}6 ([[2d4+1]]) slashing damage.
-
+**Garras.** Ataque Corpo a Corpo com Arma: +3 para acertar, alcance 1,5 m, um alvo. {@h}6 ([[2d4+1]]) de dano cortante.

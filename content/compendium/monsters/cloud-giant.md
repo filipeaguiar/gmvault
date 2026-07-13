@@ -1,19 +1,19 @@
 ---
-title: "cloud giant"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: cloud giant
+draft: false
+titulo_pt_br: Gigante das nuvens
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Huge giant, sem tendência"
+  kind: monster
+stats_meta: Huge giant, sem tendência
 stats:
-  ac: "14"
-  hp: "200 (16d12 + 96)"
-  speed: "40 ft."
+  ac: '14'
+  hp: 200 (16d12 + 96)
+  speed: 40 ft.
   attributes:
     str: 27
     dex: 10
@@ -21,24 +21,27 @@ stats:
     int: 12
     wis: 16
     cha: 16
-  saves: "Con +10, Wis +7, Cha +7"
-  skills: "Insight +7, Perception +7"
-  senses: "passive Perception 17"
-  languages: "Common, Giant"
-  cr: "9"
+  saves: Con +10, Wis +7, Cha +7
+  skills: Insight +7, Perception +7
+  senses: passive Perception 17
+  languages: Common, Giant
+  cr: '9'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
-
-
 
 ### Características
 
-**Keen Smell.** The giant has advantage on Wisdom (Perception) checks that rely on smell.
+**Olfato Aguçado.** O gigante tem vantagem em testes de Sabedoria (Percepção) que dependem do olfato.
 
 ### Ações
 
-**Multiattack.** The giant makes two morningstar attacks.
+**Ataques Múltiplos.** O gigante realiza dois ataques com maçadeira.
 
-**Morningstar.** mw 12 to hit, reach 10 ft., one target. {@h}21 ([[3d8+8]]) piercing damage.
+**Maçadeira.** Ataque Corpo a Corpo com Arma: +12 para acertar, alcance 3 m, um alvo. {@h}21 ([[3d8+8]]) de dano perfurante.
 
-**Rock.** rw 12 to hit, range 60/240 ft., one target. {@h}30 ([[4d10+8]]) bludgeoning damage.
-
+**Pedra.** Ataque à Distância com Arma: +12 para acertar, alcance 18/72 m, um alvo. {@h}30 ([[4d10+8]]) de dano de concussão.

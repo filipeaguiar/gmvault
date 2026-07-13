@@ -1,14 +1,20 @@
 ---
-title: "Giant Shark"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Giant Shark
+draft: false
+titulo_pt_br: Tubarão Gigante
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Giant Shark** importado automaticamente da campanha.
+**Tubarão Gigante**

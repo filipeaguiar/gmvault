@@ -1,19 +1,19 @@
 ---
-title: "scout"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: scout
+draft: false
+titulo_pt_br: batedor
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, sem tendência"
+  kind: monster
+stats_meta: Medium humanoid, sem tendência
 stats:
-  ac: "13"
-  hp: "16 (3d8 + 3)"
-  speed: "30 ft."
+  ac: '13'
+  hp: 16 (3d8 + 3)
+  speed: 30 ft.
   attributes:
     str: 11
     dex: 14
@@ -21,25 +21,30 @@ stats:
     int: 11
     wis: 13
     cha: 11
-  skills: "Nature +4, Perception +5, Stealth +6, Survival +5"
-  senses: "passive Perception 15"
-  languages: "any one language (usually Common)"
-  cr: "1/2"
+  skills: Nature +4, Perception +5, Stealth +6, Survival +5
+  senses: passive Perception 15
+  languages: any one language (usually Common)
+  cr: 1/2
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: scout](/images/campaigns/journeys-through-the-radiant-citadel/scout.webp)
+![Arte: escoteiro](/images/campaigns/journeys-through-the-radiant-citadel/scout.webp)
 
-Scouts are skilled hunters and trackers who offer their services for a fee. Most hunt wild game, but a few work as bounty hunters, serve as guides, or provide military reconnaissance.
+Escoteiros são caçadores e rastreadores habilidosos que oferecem seus serviços por um pagamento. A maioria caça animais selvagens, mas alguns trabalham como caçadores de recompensa, servem como guias ou fornecem reconhecimento militar.
 
 ### Características
 
-**Keen Hearing and Sight.** The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.
+**Audição e Visão Aguçadas.** O escoteiro tem vantagem em testes de Sabedoria (Percepção) que dependem de audição ou visão.
 
 ### Ações
 
-**Multiattack.** The scout makes two melee attacks or two ranged attacks.
+**Ataques Múltiplos.** O escoteiro realiza dois ataques corpo a corpo ou dois ataques à distância.
 
-**Shortsword.** mw 4 to hit, reach 5 ft., one target. {@h}5 ([[1d6+2]]) piercing damage.
+**Espada Curta.** *Ataque Corpo a Corpo com Arma:* +4 para acertar, alcance 1,5 m., um alvo. *Dano:* 5 ([[1d6+2]]) dano perfurante.
 
-**Longbow.** rw 4 to hit, ranged 150/600 ft., one target. {@h}6 ([[1d8+2]]) piercing damage.
-
+**Arco Longo.** *Ataque à Distância com Arma:* +4 para acertar, alcance 45 m/180 m., um alvo. *Dano:* 6 ([[1d8+2]]) dano perfurante.

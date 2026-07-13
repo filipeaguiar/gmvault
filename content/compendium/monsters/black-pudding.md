@@ -1,19 +1,19 @@
 ---
-title: "black pudding"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: black pudding
+draft: false
+titulo_pt_br: '**pudim negro**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Large ooze, sem tendência"
+  kind: monster
+stats_meta: Large ooze, sem tendência
 stats:
-  ac: "7"
-  hp: "85 (10d10 + 30)"
-  speed: "20 ft., climb 20 ft."
+  ac: '7'
+  hp: 85 (10d10 + 30)
+  speed: 20 ft., climb 20 ft.
   attributes:
     str: 16
     dex: 5
@@ -21,23 +21,28 @@ stats:
     int: 1
     wis: 6
     cha: 1
-  senses: "blindsight 60 ft. (blind beyond this radius), passive Perception 8"
-  cr: "4"
+  senses: blindsight 60 ft. (blind beyond this radius), passive Perception 8
+  cr: '4'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: black pudding](/images/campaigns/journeys-through-the-radiant-citadel/black-pudding.webp)
+![Arte: pudim negro](/images/campaigns/journeys-through-the-radiant-citadel/black-pudding.webp)
 
 
 
 ### Características
 
-**Amorphous.** The pudding can move through a space as narrow as 1 inch wide without squeezing.
+**Amorfo.** O pudim pode se mover por um espaço tão estreito quanto 2,5 centímetros de largura sem se espremer.
 
-**Corrosive Form.** A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 ([[1d8]]) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
+**Forma Corrosiva.** Uma criatura que toca o pudim ou o acerta com um ataque corpo a corpo enquanto estiver a 1,5 metro dele sofre 4 ([[1d8]]) de dano de ácido. Qualquer arma não mágica feita de metal ou madeira que acertar o pudim é corroída. Após causar dano, a arma sofre uma penalidade permanente e cumulativa de −1 nas jogadas de dano. Se a penalidade chegar a −5, a arma é destruída. Munição não mágica feita de metal ou madeira que acertar o pudim é destruída após causar dano. O pudim pode corroer madeira ou metal não mágico de 5 centímetros de espessura em 1 rodada.
 
-**Spider Climb.** The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+**Escalar como Aranha.** O pudim pode escalar superfícies difíceis, incluindo tetos de cabeça para baixo, sem precisar fazer um teste de atributo.
 
 ### Ações
 
-**Pseudopod.** mw 5 to hit, reach 5 ft., one target. {@h}6 ([[1d6+3]]) bludgeoning damage plus 18 ([[4d8]]) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
-
+**Pseudópode.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 1,5 m, um alvo. {@h}6 ([[1d6+3]]) de dano de concussão mais 18 ([[4d8]]) de dano de ácido. Além disso, a armadura não mágica vestida pelo alvo é parcialmente dissolvida e sofre uma penalidade permanente e cumulativa de −1 na Classe de Armadura que oferece. A armadura é destruída se a penalidade reduzir sua CA para 10.

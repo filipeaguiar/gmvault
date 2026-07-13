@@ -1,19 +1,19 @@
 ---
-title: "Ashen Heir Veteran"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Ashen Heir Veteran
+draft: false
+titulo_pt_br: Veterano do Herdeiro Cinzento
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium monstrosity, sem tendência"
+  kind: monster
+stats_meta: Medium monstrosity, sem tendência
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,8 +21,12 @@ stats:
     int: 10
     wis: 10
     cha: 10
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
-
-
 
 

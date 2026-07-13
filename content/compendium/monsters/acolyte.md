@@ -1,19 +1,19 @@
 ---
-title: "acolyte"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: acolyte
+draft: false
+titulo_pt_br: acólito
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, sem tendência"
+  kind: monster
+stats_meta: Medium humanoid, sem tendência
 stats:
-  ac: "10"
-  hp: "9 (2d8)"
-  speed: "30 ft."
+  ac: '10'
+  hp: 9 (2d8)
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,15 +21,20 @@ stats:
     int: 10
     wis: 14
     cha: 11
-  skills: "Medicine +4, Religion +2"
-  senses: "passive Perception 12"
-  languages: "any one language (usually Common)"
-  cr: "1/4"
+  skills: Medicine +4, Religion +2
+  senses: passive Perception 12
+  languages: any one language (usually Common)
+  cr: 1/4
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.
+Acólitos são membros juniores de um clero, geralmente subordinados a um sacerdote. Eles desempenham várias funções em um templo e recebem poder menor de conjuração de suas divindades.
 
 ### Ações
 
-**Club.** mw 2 to hit, reach 5 ft., one target. {@h}2 ([[1d4]]) bludgeoning damage.
-
+**Clava.** Ataque Corpo a Corpo com Arma: +2 para acertar, alcance 1,5 m, um alvo. *Dano:* 2 ([[1d4]]) dano de concussão.

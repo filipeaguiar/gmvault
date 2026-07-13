@@ -1,14 +1,18 @@
 ---
-title: Sessão 01 - Início
+title: Welcome to the Radiant Citadel
 weight: 10
 params:
-  kind: session
+  kind: adventure
   content_role: introduction
 draft: false
-titulo_pt_br: Sessão 01 - Início
+titulo_pt_br: Bem-vindo à Cidadela Radiante
 visibility: gm
 status: published
-summary: Planejamento para a sessão.
+summary: Aventura independente importada do capítulo Bem-vindo à Cidadela Radiante.
+npcs: null
+locations:
+- /campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/
+handouts: null
 translation:
   source_language: en
   target_language: pt-BR

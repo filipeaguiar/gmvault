@@ -1,19 +1,19 @@
 ---
-title: "Dinosaur Skeleton"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Dinosaur Skeleton
+draft: false
+titulo_pt_br: Esqueleto de Dinossauro
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium undead, sem tendência"
+  kind: monster
+stats_meta: Medium undead, sem tendência
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,9 +21,13 @@ stats:
     int: 10
     wis: 10
     cha: 10
-  senses: "darkvision 60 ft."
+  senses: darkvision 60 ft.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-These giant skeletons were unearthed shortly before the silver in the mine ran out, inspiring talk that the mine was cursed. When Teocín first joined Itzmin here, she drew on the power of Pazuzu to turn these skeletons into guardians.
-
-
+Esses esqueletos gigantes foram desenterrados pouco antes de a prata na mina acabar, inspirando conversas de que a mina era amaldiçoada. Quando Teocín se juntou a Itzmin aqui pela primeira vez, ela recorreu ao poder de Pazuzu para transformar esses esqueletos em guardiões.

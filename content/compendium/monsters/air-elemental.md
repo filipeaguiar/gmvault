@@ -1,14 +1,20 @@
 ---
-title: "Air Elemental"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Air Elemental
+draft: false
+titulo_pt_br: Elemental do Ar
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Air Elemental** importado automaticamente da campanha.
+**Elemental do Ar**

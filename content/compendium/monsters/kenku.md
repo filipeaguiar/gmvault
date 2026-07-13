@@ -1,19 +1,19 @@
 ---
-title: "kenku"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: kenku
+draft: false
+titulo_pt_br: kenku
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, caótico e neutro"
+  kind: monster
+stats_meta: Medium humanoid, caótico e neutro
 stats:
-  ac: "13"
-  hp: "13 (3d8)"
-  speed: "30 ft."
+  ac: '13'
+  hp: 13 (3d8)
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 16
@@ -21,39 +21,44 @@ stats:
     int: 11
     wis: 10
     cha: 10
-  skills: "Deception +4, Perception +2, Stealth +5"
-  senses: "passive Perception 12"
-  languages: "understands Auran and Common but speaks only through the use of its Mimicry trait"
-  cr: "1/4"
+  skills: Deception +4, Perception +2, Stealth +5
+  senses: passive Perception 12
+  languages: understands Auran and Common but speaks only through the use of its Mimicry trait
+  cr: 1/4
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: kenku](/images/campaigns/journeys-through-the-radiant-citadel/kenku.webp)
 
-Kenku are feathered humanoids that wander the world as vagabonds, driven by greed. They can perfectly imitate any sound they hear.
+Kenkus são humanoides emplumados que vagam pelo mundo como mendigos, movidos pela ganância. Eles podem imitar perfeitamente qualquer som que ouvem.
 
-### Fallen Flocks
+### Bandos Decaídos
 
-Kenku wear ill-fitting cloaks, robes, and rags. These garments cover the soft, sleek feathers of their bodies, shrouding their bare arms and legs. They tread lightly when they walk, on talons made for grasping the branches of trees and seizing prey from the lofty skies. Soft as the wind they move, so as not to draw attention to their shameful forms.
-Once, the kenku held the wind in their wings, embracing the gusty sky and singing the sweet language of birdsong. Serving a master whose identity is now lost to their memory, the kenku coveted the glittering baubles of his household, and longed to speak so that they could cajole and swindle others out of such treasures. Stealing the secret of speech from a volume in their master's library, they disguised themselves in rags to beg for pretty things. When their master learned of their greed, he stripped away their wings as punishment, forcing them to beg forever.
+Kenkus usam capas, mantos e trapos mal-ajustados. Essas vestes cobrem as penas macias e lisas de seus corpos, ocultando seus braços e pernas nus. Eles pisam levemente ao andar, com garras feitas para agarrar galhos de árvores e capturar presas dos céus elevados. Movem-se suaves como o vento para não chamar a atenção para suas formas vergonhosas.
+Outrora, os kenkus tinham o vento em suas asas, abraçando o céu ventoso e cantando a doce linguagem do canto dos pássaros. Servindo a um mestre cuja identidade agora se perdeu em sua memória, os kenkus cobiçavam os brilhosos enfeites de sua casa e ansiavam por falar para poder persuadir e enganar outros a fim de obter tais tesouros. Roubando o segredo da fala de um volume na biblioteca de seu mestre, eles se disfarçaram em trapos para mendigar por coisas bonitas. Quando seu mestre descobriu sua ganância, ele arrancou suas asas como punição, forçando-os a mendigar para sempre.
 
-### Speech in Pantomime
+### Fala em Pantomima
 
-Kenku can mimic the sound of anything they hear. A kenku asking for money might make the sound of coins clinking together, and a kenku referring to a busy marketplace can reproduce the cacophony of hawking vendors, barking dogs, bleating sheep, and the cries of street urchins. When mimicking voices, they can only repeat words and phrases they have heard, not create new sentences. To converse with a kenku is to witness a performance of imitated sounds and almost nonsensical verse.
-Kenku speak to one another in much the same way. Because they are adept at interpreting one another's glances and gestures, the sounds they make to communicate complex ideas or emotions can be succinct. Groups of kenku also develop secret codes. For example, a cat's meow might be the secret code for "Prepare to attack!" or "Flee for your lives!" Their talent for mimicry extends to handwriting, and criminal organizations often employ kenku to forge documents. When a kenku commits a crime, it might forge evidence to implicate another creature.
+Kenkus podem imitar o som de qualquer coisa que ouvem. Um kenku pedindo dinheiro pode fazer o som de moedas tilintando, e um kenku se referindo a um mercado movimentado pode reproduzir a cacofonia de vendedores gritando, cães latindo, ovelhas balindo e os gritos de crianças de rua. Ao imitar vozes, eles só podem repetir palavras e frases que ouviram, não criar novas frases. Conversar com um kenku é testemunhar uma performance de sons imitados e versos quase sem sentido.
+Kenkus falam uns com os outros da mesma maneira. Como são adeptos a interpretar os olhares e gestos uns dos outros, os sons que fazem para comunicar ideias ou emoções complexas podem ser sucintos. Grupos de kenkus também desenvolvem códigos secretos. Por exemplo, o miado de um gato pode ser o código secreto para "Preparem-se para atacar!" ou "Fujam para salvar suas vidas!" Seu talento para imitação se estende à caligrafia, e organizações criminosas frequentemente empregam kenkus para forjar documentos. Quando um kenku comete um crime, ele pode forjar evidências para incriminar outra criatura.
 
-### The Wistful Wingless
+### Os Anelantes Sem Asas
 
-All kenku pine for the ability to fly, and thus the punishments they mete out to one another often involve false wings, such as heavy wings of wood borne as a mark of shame. As a final, tragic reminder of the wings they once had, kenku carry out executions by hurling their condemned from tall buildings or cliffs.
+Todos os kenkus anseiam pela habilidade de voar, e assim as punições que aplicam uns aos outros frequentemente envolvem asas falsas, como pesadas asas de madeira carregadas como uma marca de vergonha. Como uma lembrança trágica final das asas que outrora tiveram, kenkus realizam execuções atirando seus condenados de edifícios altos ou penhascos.
 
 ### Características
 
-**Ambusher.** In the first round of a combat, the kenku has advantage on attack rolls against any creature it surprised.
+**Emboscador.** Na primeira rodada de um combate, o kenku tem Vantagem nas jogadas de ataque contra qualquer criatura que tenha surpreendido.
 
-**Mimicry.** The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful CD 14 Wisdom (Insight) check.
+**Imitação.** O kenku pode imitar qualquer som que tenha ouvido, incluindo vozes. Uma criatura que ouve os sons pode perceber que são imitações com um teste de Sabedoria (Intuição) CD 14 bem-sucedido.
 
 ### Ações
 
-**Shortsword.** mw 5 to hit, reach 5 ft., one target. {@h}6 ([[1d6+3]]) piercing damage.
+**Espada Curta.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 1,5 m., um alvo. {@h}6 ([[1d6+3]]) dano perfurante.
 
-**Shortbow.** rw 5 to hit, range 80/320 ft., one target. {@h}6 ([[1d6+3]]) piercing damage.
-
+**Arco Curto.** Ataque à Distância com Arma: +5 para acertar, alcance 24/96 m., um alvo. {@h}6 ([[1d6+3]]) dano perfurante.

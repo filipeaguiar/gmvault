@@ -1,14 +1,20 @@
 ---
-title: "Water Weird"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Water Weird
+draft: false
+titulo_pt_br: '**Weird Aquático**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Water Weird** importado automaticamente da campanha.
+**Water Weird**

@@ -1,19 +1,19 @@
 ---
-title: "swarm of quippers"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: swarm of quippers
+draft: false
+titulo_pt_br: enxame de quipers
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium beast, sem tendência"
+  kind: monster
+stats_meta: Medium beast, sem tendência
 stats:
-  ac: "13"
-  hp: "28 (8d8 - 8)"
-  speed: "0 ft., swim 40 ft."
+  ac: '13'
+  hp: 28 (8d8 - 8)
+  speed: 0 ft., swim 40 ft.
   attributes:
     str: 13
     dex: 16
@@ -21,23 +21,28 @@ stats:
     int: 1
     wis: 7
     cha: 2
-  senses: "darkvision 60 ft., passive Perception 8"
-  cr: "1"
+  senses: darkvision 60 ft., passive Perception 8
+  cr: '1'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: swarm of quippers](/images/campaigns/journeys-through-the-radiant-citadel/quipper.webp)
+![Arte: enxame de quipers](/images/campaigns/journeys-through-the-radiant-citadel/quipper.webp)
 
 
 
 ### Características
 
-**Blood Frenzy.** The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.
+**Frenesi de Sangue.** O enxame tem vantagem nas jogadas de ataque corpo a corpo contra qualquer criatura que não esteja com todos os seus pontos de vida.
 
-**Swarm.** The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.
+**Enxame.** O enxame pode ocupar o espaço de outra criatura e vice-versa, e pode se mover por qualquer abertura grande o suficiente para um quiper Miúdo. O enxame não pode recuperar pontos de vida nem ganhar pontos de vida temporários.
 
-**Water Breathing.** The swarm can breathe only underwater.
+**Respiração Aquática.** O enxame só pode respirar debaixo d'água.
 
 ### Ações
 
-**Bites.** mw 5 to hit, reach 0 ft., one creature in the swarm's space. {@h}14 ([[4d6]]) piercing damage, or 7 ([[2d6]]) piercing damage if the swarm has half of its hit points or fewer.
-
+**Mordidas.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 0 m, uma criatura no espaço do enxame. {@h}14 ([[4d6]]) de dano perfurante, ou 7 ([[2d6]]) de dano perfurante se o enxame estiver com metade ou menos dos seus pontos de vida.

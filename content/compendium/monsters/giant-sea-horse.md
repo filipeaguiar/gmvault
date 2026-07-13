@@ -1,6 +1,6 @@
 ---
 title: giant sea horse
-draft: true
+draft: false
 titulo_pt_br: Gigante cavalo marinho
 visibility: gm
 status: draft

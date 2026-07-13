@@ -1,14 +1,20 @@
 ---
-title: "Green Hag"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Green Hag
+draft: false
+titulo_pt_br: '**Bruxa Verde**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Green Hag** importado automaticamente da campanha.
+Monstro **Bruxa Verde** importado automaticamente da campanha.

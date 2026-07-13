@@ -1,19 +1,19 @@
 ---
-title: "demilich"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: demilich
+draft: false
+titulo_pt_br: '**demilich**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Tiny undead, neutro e mau"
+  kind: monster
+stats_meta: Tiny undead, neutro e mau
 stats:
-  ac: "20"
-  hp: "80 (32d4)"
-  speed: "0 ft., fly {'number': 30, 'condition': '(hover)'} ft., canHover True ft."
+  ac: '20'
+  hp: 80 (32d4)
+  speed: '0 ft., fly {''number'': 30, ''condition'': ''(hover)''} ft., canHover True ft.'
   attributes:
     str: 1
     dex: 20
@@ -21,51 +21,56 @@ stats:
     int: 20
     wis: 17
     cha: 20
-  saves: "Con +6, Int +11, Wis +9, Cha +11"
-  senses: "truesight 120 ft., passive Perception 13"
-  cr: "{'cr': '18', 'lair': '20'}"
+  saves: Con +6, Int +11, Wis +9, Cha +11
+  senses: truesight 120 ft., passive Perception 13
+  cr: '{''cr'': ''18'', ''lair'': ''20''}'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
 ![Arte: demilich](/images/campaigns/journeys-through-the-radiant-citadel/demilich.webp)
 
-The immortality granted to a lich lasts only as long as it feeds mortal souls to its phylactery. If it falters or fails in that task, its bones turn to dust until only its skull remains. This "demilich" contains only a fragment of the lich's malevolent life force-just enough so that if it is disturbed, these remains rise into the air and assume a wraith-like form. The skull then emits a terrifying howl that can slay the weak-hearted and leave others trembling with fear. Left alone, it sinks back down and returns to the empty peace of its existence.
-Few liches seek to become demiliches, for it means an end to the existence they hoped to preserve by becoming undead. However, time can erode the lich's reason and memory, causing it to retreat into its ancient tomb and forget to feed on souls. The spells it once knew fade from its mind, and it no longer channels the arcane energy it wielded as a lich. However, even as a mere skull it remains a deadly and vexing enemy.
+A imortalidade concedida a um lich dura apenas enquanto ele alimenta sua filactéria com almas mortais. Se ele vacilar ou falhar nessa tarefa, seus ossos se desfazem em pó até restar apenas seu crânio. Este "demilich" contém apenas um fragmento da força vital maligna do lich — o suficiente para que, se for perturbado, esses restos mortais se ergam no ar e assumam uma forma espectroide. O crânio então emite um uivo aterrorizante que pode matar os fracos de coração e deixar outros tremendo de medo. Se deixado em paz, ele afunda de volta e retorna à paz vazia de sua existência.
+Poucos liches buscam se tornar demiliches, pois isso significa o fim da existência que esperavam preservar ao se tornarem mortos-vivos. No entanto, o tempo pode corroer a razão e a memória do lich, fazendo-o se retirar para sua tumba ancestral e esquecer de se alimentar de almas. As magias que ele outrora conhecia se desvanecem de sua mente, e ele não canaliza mais a energia arcana que empunhava como lich. No entanto, mesmo como um mero crânio, ele continua sendo um inimigo mortal e irritante.
 
-### Enduring Existence
+### Existência Duradoura
 
-Even after a lich is reduced to a demilich state, its phylactery survives. As long as its phylactery is intact, the demilich can't be permanently destroyed. Its skull reforms after [[1d10]] days, restoring the creature to its wretched state. If it has the presence of mind to do so, a demilich can reclaim its former power by feeding just one soul to its phylactery. Doing so restores the demilich to lich form, reconstituting its undead body.
+Mesmo depois que um lich é reduzido ao estado de demilich, sua filactéria sobrevive. Enquanto sua filactéria estiver intacta, o demilich não pode ser destruído permanentemente. Seu crânio se reforma após [[1d10]] dias, restaurando a criatura ao seu estado miserável. Se tiver presença de espírito para isso, um demilich pode recuperar seu poder anterior alimentando sua filactéria com apenas uma alma. Fazer isso restaura o demilich à forma de lich, reconstituindo seu corpo morto-vivo.
 
-### Undead Nature
+### Natureza Morta-Viva
 
-A demilich doesn't require air, food, drink, or sleep. So great is a demilich's will to survive that it always has the maximum number of hit points for its Hit Dice, instead of average hit points.
+Um demilich não precisa de ar, comida, bebida ou sono. Tão grande é a vontade de sobreviver de um demilich que ele sempre tem o número máximo de pontos de vida para seus Dados de Vida, em vez da média.
 
-### A Demilich's Lair
+### O Covil de um Demilich
 
-A demilich hides its earthly remains and treasures in a labyrinthine tomb guarded by monsters and traps. At the heart of this labyrinth rests the demilich's skull and the dust from its other bones. In its crypt, a demilich has access to lair actions and additional uses for its legendary actions. Its whole lair also has unique traits. A demilich in its lair has a challenge rating of 20 (24,500 XP).
+Um demilich esconde seus restos mortais e tesouros em uma tumba labiríntica guardada por monstros e armadilhas. No coração deste labirinto repousam o crânio do demilich e o pó de seus outros ossos. Em sua cripta, um demilich tem acesso a ações de covil e usos adicionais para suas ações lendárias. Todo o seu covil também possui características únicas. Um demilich em seu covil tem um nível de desafio 20 (24.500 XP).
 
-### Acererak and His Disciples
+### Acererak e Seus Discípulos
 
-The transformation into a demilich isn't a bitter end for all liches that experience it. Made as a conscious choice, the path of the demilich becomes the next step in a dark evolution. The lich Acererak-a powerful wizard and demonologist and the infamous master of the Tomb of Horrors-anticipated his own transformation, preparing for it by setting enchanted gemstones into his skull's eye sockets and teeth. Each of these soul gems possessed the power to capture the souls on which his phylactery would feed.
-Acererak abandoned his physical body, accepting that it would molder and dissolve to dust while he traveled the planes as a disembodied consciousness. If the skull that was his last physical remains was ever disturbed, its gems would claim the souls of the insolent intruders to his tomb, magically transferring them to his phylactery.
-Liches who follow Acererak's path believe that by becoming free of their bodies, they can continue their quest for power beyond the mortal world. As their patron did, they secure their remains within well-guarded vaults, using soul gems to maintain their phylacteries and destroy the adventurers who disturb their lairs.
-Acererak or another demilich like him has a challenge rating of 21 (33,000 XP), or 23 (50,000 XP) in its lair, and gains the following additional action option.
+A transformação em um demilich não é um fim amargo para todos os liches que a experimentam. Feita como uma escolha consciente, o caminho do demilich se torna o próximo passo em uma evolução sombria. O lich Acererak — um poderoso mago e demonologista e o infame mestre da Tumba dos Horrores — antecipou sua própria transformação, preparando-se para ela colocando gemas encantadas nas órbitas oculares e dentes de seu crânio. Cada uma dessas gemas da alma possuía o poder de capturar as almas das quais sua filactéria se alimentaria.
+Acererak abandonou seu corpo físico, aceitando que ele mofaria e se dissolveria em pó enquanto ele viajava pelos planos como uma consciência descarnada. Se o crânio que era seu último resto físico fosse algum dia perturbado, suas gemas reivindicariam as almas dos insolentes intrusos em sua tumba, transferindo-as magicamente para sua filactéria.
+Liches que seguem o caminho de Acererak acreditam que, ao se libertarem de seus corpos, podem continuar sua busca por poder além do mundo mortal. Como seu patrono fez, eles protegem seus restos mortais dentro de cofres bem guardados, usando gemas da alma para manter suas filactérias e destruir os aventureiros que perturbam seus covis.
+Acererak ou outro demilich como ele tem um nível de desafio 21 (33.000 XP), ou 23 (50.000 XP) em seu covil, e ganha a seguinte opção de ação adicional.
 
-### Trap Soul
+### Aprisionar Alma
 
-The demilich targets one creature that it can see within 30 feet of it. The target must make a CD 19 Charisma saving throw. On a failed save, the target's soul is magically trapped inside one of the demilich's gems. While the soul is trapped, the target's body and all the equipment it is carrying cease to exist. On a successful save, the target takes 24 ([[7d6]]) necrotic damage, and if this damage reduces the target to 0 hit points, its soul is trapped as if it failed the saving throw. A soul trapped in a gem for 24 hours is devoured and ceases to exist.
-If the demilich drops to 0 hit points, it is destroyed and turns to powder, leaving behind its gems. Crushing a gem releases any soul trapped within, at which point the target's body re-forms in an unoccupied space nearest to the gem and in the same state as when it was trapped.
+O demilich escolhe uma criatura que possa ver a até 30 pés dele. O alvo deve realizar um teste de resistência de Carisma CD 19. Em caso de falha, a alma do alvo é magicamente aprisionada dentro de uma das gemas do demilich. Enquanto a alma está aprisionada, o corpo do alvo e todo o equipamento que ele está carregando deixam de existir. Em caso de sucesso, o alvo sofre 24 ([[7d6]]) de dano necrótico e, se esse dano reduzir o alvo a 0 pontos de vida, sua alma é aprisionada como se ele tivesse falhado no teste de resistência. Uma alma aprisionada em uma gema por 24 horas é devorada e deixa de existir.
+Se o demilich for reduzido a 0 pontos de vida, ele é destruído e se transforma em pó, deixando suas gemas para trás. Esmagar uma gema liberta qualquer alma aprisionada dentro dela; nesse momento, o corpo do alvo se re-forma no espaço desocupado mais próximo da gema e no mesmo estado em que estava quando foi aprisionado.
 
 ### Características
 
-**Avoidance.** If the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+**Esquiva.** Se o demilich for submetido a um efeito que permita que ele faça um teste de resistência para sofrer apenas metade do dano, ele não sofre dano algum se for bem-sucedido no teste de resistência e sofre apenas metade do dano se falhar.
 
-**Legendary Resistance (3/Day).** If the demilich fails a saving throw, it can choose to succeed instead.
+**Resistência Lendária (3/Dia).** Se o demilich falhar em um teste de resistência, ele pode escolher ser bem-sucedido.
 
-**Turn Immunity.** The demilich is immune to effects that turn undead.
+**Imunidade a Virar.** O demilich é imune a efeitos que viram mortos-vivos.
 
 ### Ações
 
-**Howl {@recharge 5}.** The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a CD 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its next turn.
+**Uivo {@recharge 5}.** O demilich emite um uivo horripilante. Cada criatura a até 30 pés do demilich que possa ouvir o uivo deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou ser reduzida a 0 pontos de vida. Em caso de sucesso, a criatura fica amedrontada até o final do próximo turno dela.
 
-**Life Drain.** The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a CD 19 Constitution saving throw or take 21 ([[6d6]]) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets.
-
+**Drenar Vida.** O demilich escolhe até três criaturas que possa ver a até 10 pés dele. Cada alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 19 ou sofrer 21 ([[6d6]]) de dano necrótico, e o demilich recupera pontos de vida iguais ao dano total causado a todos os alvos.

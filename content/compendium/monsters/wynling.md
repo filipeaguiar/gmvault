@@ -1,6 +1,6 @@
 ---
 title: Wynling
-draft: true
+draft: false
 titulo_pt_br: Wynling
 visibility: gm
 status: draft

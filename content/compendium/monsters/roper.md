@@ -1,14 +1,20 @@
 ---
-title: "Roper"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Roper
+draft: false
+titulo_pt_br: '**Roper**'
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
+  kind: monster
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Monstro **Roper** importado automaticamente da campanha.
+**Roper**

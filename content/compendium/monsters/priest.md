@@ -1,19 +1,19 @@
 ---
-title: "priest"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: priest
+draft: false
+titulo_pt_br: padre
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, sem tendência"
+  kind: monster
+stats_meta: Medium humanoid, sem tendência
 stats:
-  ac: "13"
-  hp: "27 (5d8 + 5)"
-  speed: "30 ft."
+  ac: '13'
+  hp: 27 (5d8 + 5)
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,19 +21,24 @@ stats:
     int: 13
     wis: 16
     cha: 13
-  skills: "Medicine +7, Persuasion +3, Religion +5"
-  senses: "passive Perception 13"
-  languages: "any two languages"
-  cr: "2"
+  skills: Medicine +7, Persuasion +3, Religion +5
+  senses: passive Perception 13
+  languages: any two languages
+  cr: '2'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites. A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties.
+Sacerdotes levam os ensinamentos de seus deuses ao povo comum. Eles são os líderes espirituais de templos e santuários e frequentemente ocupam posições de influência em suas comunidades. Sacerdotes malignos podem trabalhar abertamente sob um tirano, ou podem ser os líderes de seitas religiosas escondidas nas sombras da sociedade boa, supervisionando rituais depravados. Um sacerdote normalmente tem um ou mais acólitos para ajudar nas cerimônias religiosas e outros deveres sagrados.
 
 ### Características
 
-**Divine Eminence.** As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 ([[3d6]]) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by [[1d6]] for each level above 1st.
+**Eminência Divina.** Como uma ação bônus, o sacerdote pode gastar um espaço de magia para fazer com que seus ataques corpo a corpo com arma causem magicamente um dano radiante adicional de 10 ([[3d6]]) a um alvo em um acerto. Este benefício dura até o final do turno. Se o sacerdote gastar um espaço de magia de 2º círculo ou superior, o dano adicional aumenta em [[1d6]] para cada círculo acima do 1º.
 
 ### Ações
 
-**Mace.** mw 2 to hit, reach 5 ft., one target. {@h}3 ([[1d6]]) bludgeoning damage.
-
+**Maça.** *Ataque Corpo a Corpo com Arma:* +2 para acertar, alcance 1,5 m, um alvo. *Dano:* 3 ([[1d6]]) dano de concussão.

@@ -1,19 +1,19 @@
 ---
-title: "cultist"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: cultist
+draft: false
+titulo_pt_br: cultista
+visibility: gm
+status: draft
 tags:
-  - monstro
-  - importado
+- monstro
+- importado
 params:
-  kind: "monster"
-stats_meta: "Medium humanoid, leal e caótico e mau"
+  kind: monster
+stats_meta: Medium humanoid, leal e caótico e mau
 stats:
-  ac: "12"
-  hp: "9 (2d8)"
-  speed: "30 ft."
+  ac: '12'
+  hp: 9 (2d8)
+  speed: 30 ft.
   attributes:
     str: 11
     dex: 12
@@ -21,21 +21,26 @@ stats:
     int: 10
     wis: 11
     cha: 10
-  skills: "Deception +2, Religion +2"
-  senses: "passive Perception 10"
-  languages: "any one language (usually Common)"
-  cr: "1/8"
+  skills: Deception +2, Religion +2
+  senses: passive Perception 10
+  languages: any one language (usually Common)
+  cr: 1/8
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-![Arte: cultist](/images/campaigns/journeys-through-the-radiant-citadel/cultist.webp)
+![Arte: cultista](/images/campaigns/journeys-through-the-radiant-citadel/cultist.webp)
 
-Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices.
+Cultistas juram lealdade a poderes sombrios como príncipes elementais, senhores demônios ou arquidiabos. A maioria oculta suas lealdades para evitar ser ostracizada, aprisionada ou executada por suas crenças. Diferente de acólitos malignos, cultistas frequentemente mostram sinais de insanidade em suas crenças e práticas.
 
 ### Características
 
-**Dark Devotion.** The cultist has advantage on saving throws against being charmed or frightened.
+**Devoção Sombria.** O cultista tem vantagem em testes de resistência contra ser enfeitiçado ou amedrontado.
 
 ### Ações
 
-**Scimitar.** mw 3 to hit, reach 5 ft., one creature. {@h}4 ([[1d6+1]]) slashing damage.
-
+**Cimitarra.** Ataque Corpo a Corpo com Arma +3 para acertar, alcance 1,5 m, uma criatura. {@h}4 ([[1d6+1]]) dano cortante.

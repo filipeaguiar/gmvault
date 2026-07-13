@@ -1,6 +1,6 @@
 ---
 title: commoner
-draft: true
+draft: false
 titulo_pt_br: plemander
 visibility: gm
 status: draft
