@@ -1,0 +1,11 @@
+{{- $url := .url -}}
+<div class="copy-url-control">
+  <button
+    type="button"
+    class="copy-url-button"
+    data-copy-url="{{ $url }}"
+    onclick="var b=this,s=b.nextElementSibling;if(navigator.clipboard){navigator.clipboard.writeText(b.dataset.copyUrl).then(function(){s.textContent='URL copiada';setTimeout(function(){s.textContent=''},2000)}).catch(function(){s.textContent='Copie o URL abaixo'});}else{s.textContent='Copie o URL abaixo'};"
+  >Copiar URL</button>
+  <a href="{{ $url }}"><code>{{ $url }}</code></a>
+  <span class="copy-url-status" aria-live="polite"></span>
+</div>

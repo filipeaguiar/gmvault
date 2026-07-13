@@ -81,15 +81,17 @@ class ForgeExportTests(unittest.TestCase):
             destination / f"{CAMPAIGN}/index.html"
         ).read_text(encoding="utf-8")
 
-        self.assertIn(
-            "https://filipeaguiar.github.io/gmvault/exports/forge/statblocks.json",
-            compendium_html,
+        forge_url = (
+            "https://filipeaguiar.github.io/gmvault/exports/forge/statblocks.json"
         )
-        self.assertIn(
+        campaign_url = (
             "https://filipeaguiar.github.io/gmvault/"
-            "campaigns/journeys-through-the-radiant-citadel/gm-vault.json",
-            campaign_html,
+            "campaigns/journeys-through-the-radiant-citadel/gm-vault.json"
         )
+        self.assertIn(f'data-copy-url="{forge_url}"', compendium_html)
+        self.assertIn("navigator.clipboard.writeText", compendium_html)
+        self.assertIn(f'data-copy-url="{campaign_url}"', campaign_html)
+        self.assertIn("navigator.clipboard.writeText", campaign_html)
 
 
 if __name__ == "__main__":

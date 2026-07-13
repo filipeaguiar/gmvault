@@ -18,7 +18,7 @@ A extensão Forge! importa uma lista JSON de registros com `id`, `name`, `author
 **Non-Goals:**
 
 - Não alterar o conteúdo Markdown nem completar automaticamente statblocks que não possuem dados de origem.
-- Não depender de JavaScript, backend, banco de dados ou biblioteca Python no build do Hugo.
+- Não depender de framework JavaScript, backend, banco de dados ou biblioteca Python no build do Hugo; uma pequena ação inline de clipboard é permitida na interface.
 - Não substituir ou modificar o formato existente de `gm-vault.json`.
 - Não prometer sincronização bidirecional com o Owlbear Rodeo.
 - Não inferir campos Forge cujo significado não está demonstrado; campos sem origem confiável usarão valores vazios ou defaults documentados.
@@ -52,7 +52,7 @@ A extensão Forge! importa uma lista JSON de registros com `id`, `name`, `author
 4. **Links de exportação**
    - A página raiz do Compêndio terá um índice Markdown estável e exibirá um link absoluto/copíavel para `/exports/forge/statblocks.json`.
    - A página de campanha usará o output format `GMVault` da própria página para obter o permalink correto de `gm-vault.json`, respeitando `baseURL` e o slug da campanha.
-   - Os links serão texto e `code`/link clicável, sem JavaScript obrigatório; a cópia poderá ser feita pelo navegador.
+   - Cada URL será exibida em um botão `Copiar URL` com `navigator.clipboard.writeText`, além de permanecer visível como link/código de fallback quando a API de clipboard não estiver disponível.
 
 5. **Compatibilidade de conteúdo**
    - A descoberta de tipos usará o helper `kind.html`, mantendo fallback para `params.kind` legado.

@@ -11,9 +11,7 @@
       <section class="export-links" aria-labelledby="campaign-export-title">
         <h2 id="campaign-export-title">Exportação para o GM Vault</h2>
         <p>URL JSON desta campanha:</p>
-        <p>
-          <a href="{{ .RelPermalink }}"><code>{{ .Permalink }}</code></a>
-        </p>
+        {{ partial "copy_url_button.html" (dict "url" .Permalink) }}
       </section>
     {{ end }}
 

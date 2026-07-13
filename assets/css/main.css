@@ -239,6 +239,34 @@ main.container {
   font-size: 0.9em;
 }
 
+.copy-url-control {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.copy-url-button {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  padding: 0.45rem 0.75rem;
+  font: inherit;
+}
+
+.copy-url-button:hover,
+.copy-url-button:focus-visible {
+  filter: brightness(1.1);
+}
+
+.copy-url-status {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 .content-body pre {
   background-color: var(--footer-bg);
   padding: 1rem;
