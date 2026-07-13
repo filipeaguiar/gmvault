@@ -1,35 +1,59 @@
 {{- $adventure := . -}}
 {{- $adventureTitle := or $adventure.Params.titulo_pt_br $adventure.Title -}}
-{{- $adventureSubItems := slice -}}
+{{- $adventureItems := slice -}}
+{{- $handoutRefs := slice -}}
 
-{{- /* Coleta recursiva/direta de todas as cenas da aventura */ -}}
+{{- /* Coleta handouts declarados diretamente na aventura. */ -}}
+{{- range $adventure.Params.handouts -}}
+  {{- if not (in $handoutRefs .) -}}
+    {{- $handoutRefs = $handoutRefs | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Coleta recursiva/direta de todas as cenas da aventura. */ -}}
 {{- $scenePages := slice -}}
 {{- range site.Pages -}}
   {{- if and (eq (partial "helpers/kind.html" .) "scene") (hasPrefix .RelPermalink $adventure.RelPermalink) -}}
     {{- $scenePages = $scenePages | append . -}}
   {{- end -}}
 {{- end -}}
-
 {{- $scenePages = sort (sort $scenePages "Title") "Weight" -}}
 
-{{- $sceneItems := slice -}}
+{{- $seenSceneURLs := slice -}}
 {{- range $scenePages -}}
-  {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
-  {{- range .Pages -}}
-    {{- if eq (partial "helpers/kind.html" .) "handout" -}}
-      {{- $sceneItems = $sceneItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+  {{- $sceneURL := .RelPermalink -}}
+  {{- if not (in $seenSceneURLs $sceneURL) -}}
+    {{- $adventureItems = $adventureItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+    {{- $seenSceneURLs = $seenSceneURLs | append $sceneURL -}}
+  {{- end -}}
+  {{- range .Params.handouts -}}
+    {{- if not (in $handoutRefs .) -}}
+      {{- $handoutRefs = $handoutRefs | append . -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- if $sceneItems -}}
-  {{- $scenesCategory := dict 
-    "type" "category" 
-    "name" (printf "Cenas de %s" $adventureTitle) 
-    "items" $sceneItems 
-    "id" (printf "cat_%s" (substr ( (printf "%s-scenes" $adventure.Permalink) | md5) 0 8)) 
+{{- $handoutItems := slice -}}
+{{- $seenHandoutURLs := slice -}}
+{{- range $handoutRefs -}}
+  {{- $handoutPage := site.GetPage . -}}
+  {{- if and $handoutPage (eq (partial "helpers/kind.html" $handoutPage) "handout") -}}
+    {{- $handoutURL := $handoutPage.RelPermalink -}}
+    {{- if not (in $seenHandoutURLs $handoutURL) -}}
+      {{- $handoutItems = $handoutItems | append (partial "helpers/gmvault_page_item.html" $handoutPage) -}}
+      {{- $seenHandoutURLs = $seenHandoutURLs | append $handoutURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if gt (len $handoutItems) 0 -}}
+  {{- $handoutsCategory := dict
+    "type" "category"
+    "name" "Handouts"
+    "items" $handoutItems
+    "id" (printf "cat_%s" (substr ( (printf "%s-handouts" $adventure.Permalink) | md5) 0 8))
   -}}
-  {{- $adventureSubItems = $adventureSubItems | append $scenesCategory -}}
+  {{- $adventureItems = $adventureItems | append $handoutsCategory -}}
 {{- end -}}
 
 {{- $adventureNpcItems := slice -}}
@@ -41,20 +65,20 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- if $adventureNpcItems -}}
-  {{- $npcsCategory := dict 
-    "type" "category" 
-    "name" (printf "NPCs de %s" $adventureTitle) 
-    "items" $adventureNpcItems 
-    "id" (printf "cat_%s" (substr ( (printf "%s-npcs" $adventure.Permalink) | md5) 0 8)) 
+{{- if gt (len $adventureNpcItems) 0 -}}
+  {{- $npcsCategory := dict
+    "type" "category"
+    "name" (printf "NPCs de %s" $adventureTitle)
+    "items" $adventureNpcItems
+    "id" (printf "cat_%s" (substr ( (printf "%s-npcs" $adventure.Permalink) | md5) 0 8))
   -}}
-  {{- $adventureSubItems = $adventureSubItems | append $npcsCategory -}}
+  {{- $adventureItems = $adventureItems | append $npcsCategory -}}
 {{- end -}}
 
-{{- $adventureCategory := dict 
-  "type" "category" 
-  "name" $adventureTitle 
-  "items" $adventureSubItems 
-  "id" (printf "cat_%s" (substr ($adventure.Permalink | md5) 0 8)) 
+{{- $adventureCategory := dict
+  "type" "category"
+  "name" $adventureTitle
+  "items" $adventureItems
+  "id" (printf "cat_%s" (substr ($adventure.Permalink | md5) 0 8))
 -}}
 {{- return $adventureCategory -}}
