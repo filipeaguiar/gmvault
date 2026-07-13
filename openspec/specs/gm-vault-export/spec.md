@@ -17,6 +17,13 @@ Campaign GMVault JSON SHALL serialize campaign material into categories suitable
 - **WHEN** a campaign page is rendered as GMVault JSON
 - **THEN** the export SHALL include an `Aventuras` category containing adventure categories
 
+### Requirement: Campaign handouts are exported
+Campaign GMVault JSON SHALL include campaign-scoped handouts as a dedicated category when a campaign has a `handouts/` section.
+
+#### Scenario: Campaign has handouts
+- **WHEN** a campaign page has a `handouts/` section
+- **THEN** the export SHALL include a `Handouts` category containing the handout pages
+
 #### Scenario: Adventure has simplified sessions and scenes
 - **WHEN** an adventure contains direct child session pages and those sessions contain direct child scene pages
 - **THEN** the export SHALL nest sessions and scenes under the relevant adventure category

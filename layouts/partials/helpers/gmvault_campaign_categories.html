@@ -32,4 +32,24 @@
   "id" (printf "cat_%s" (substr ( (printf "%s-campaign-root" $campaignPage.Permalink) | md5) 0 8)) 
 -}}
 {{- $categories = $categories | append $campaignCategory -}}
+
+{{- $handoutItems := slice -}}
+{{- $handoutsPath := printf "/%shandouts" $campaignDir -}}
+{{- $handoutsSection := site.GetPage $handoutsPath -}}
+{{- if $handoutsSection -}}
+  {{- range (sort $handoutsSection.Pages "Weight") -}}
+    {{- if eq (partial "helpers/kind.html" .) "handout" -}}
+      {{- $handoutItems = $handoutItems | append (partial "helpers/gmvault_page_item.html" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $handoutItems) 0 -}}
+  {{- $handoutsCategory := dict 
+    "name" "Handouts" 
+    "items" $handoutItems 
+    "id" (printf "cat_%s" (substr ( (printf "%s-handouts-root" $campaignPage.Permalink) | md5) 0 8)) 
+  -}}
+  {{- $categories = $categories | append $handoutsCategory -}}
+{{- end -}}
+
 {{- return $categories -}}
