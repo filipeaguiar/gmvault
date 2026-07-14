@@ -13,9 +13,10 @@
   {{- $stats = default (dict) (index $source "stats") -}}
 {{- end -}}
 
+{{- $classText := "" -}}
 {{- $level := "" -}}
 {{- if $isCharacter -}}
-  {{- $classText := printf "%v" (default "" (index $source "class")) -}}
+  {{- $classText = printf "%v" (default "" (index $source "class")) -}}
   {{- $levelMatches := findRE "[0-9]+$" $classText -}}
   {{- if gt (len $levelMatches) 0 -}}
     {{- $level = int (index $levelMatches 0) -}}
@@ -218,6 +219,74 @@
 {{- else if ge $levelInt 13 -}}{{- $prof = 5 -}}
 {{- else if ge $levelInt 9 -}}{{- $prof = 4 -}}
 {{- else if ge $levelInt 5 -}}{{- $prof = 3 -}}
+{{- end -}}
+
+{{- if $isCharacter -}}
+  {{- /* Determine saving throw proficiencies based on class */ -}}
+  {{- $classTextLower := lower $classText -}}
+  
+  {{- $strProf := false -}}
+  {{- $dexProf := false -}}
+  {{- $conProf := false -}}
+  {{- $intProf := false -}}
+  {{- $wisProf := false -}}
+  {{- $chaProf := false -}}
+  
+  {{- if in $classTextLower "barbarian" -}}{{- $strProf = true -}}{{- $conProf = true -}}
+  {{- else if in $classTextLower "bard" -}}{{- $dexProf = true -}}{{- $chaProf = true -}}
+  {{- else if in $classTextLower "cleric" -}}{{- $wisProf = true -}}{{- $chaProf = true -}}
+  {{- else if in $classTextLower "druid" -}}{{- $intProf = true -}}{{- $wisProf = true -}}
+  {{- else if in $classTextLower "fighter" -}}{{- $strProf = true -}}{{- $conProf = true -}}
+  {{- else if in $classTextLower "monk" -}}{{- $strProf = true -}}{{- $dexProf = true -}}
+  {{- else if in $classTextLower "paladin" -}}{{- $wisProf = true -}}{{- $chaProf = true -}}
+  {{- else if in $classTextLower "ranger" -}}{{- $strProf = true -}}{{- $dexProf = true -}}
+  {{- else if in $classTextLower "rogue" -}}{{- $dexProf = true -}}{{- $intProf = true -}}
+  {{- else if in $classTextLower "sorcerer" -}}{{- $conProf = true -}}{{- $chaProf = true -}}
+  {{- else if in $classTextLower "warlock" -}}{{- $wisProf = true -}}{{- $chaProf = true -}}
+  {{- else if in $classTextLower "wizard" -}}{{- $intProf = true -}}{{- $wisProf = true -}}
+  {{- end -}}
+
+  {{- /* Calculate saves */ -}}
+  {{- $strSave = $strMod -}}{{- if $strProf -}}{{- $strSave = add $strMod $prof -}}{{- end -}}
+  {{- $dexSave = $dexMod -}}{{- if $dexProf -}}{{- $dexSave = add $dexMod $prof -}}{{- end -}}
+  {{- $conSave = $conMod -}}{{- if $conProf -}}{{- $conSave = add $conMod $prof -}}{{- end -}}
+  {{- $intSave = $intMod -}}{{- if $intProf -}}{{- $intSave = add $intMod $prof -}}{{- end -}}
+  {{- $wisSave = $wisMod -}}{{- if $wisProf -}}{{- $wisSave = add $wisMod $prof -}}{{- end -}}
+  {{- $chaSave = $chaMod -}}{{- if $chaProf -}}{{- $chaSave = add $chaMod $prof -}}{{- end -}}
+  
+  {{- /* Build Saves Text, e.g. "Dex +7, Int +2" */ -}}
+  {{- $savesList := slice -}}
+  {{- if $strProf -}}{{- $savesList = $savesList | append (printf "Str %+d" $strSave) -}}{{- end -}}
+  {{- if $dexProf -}}{{- $savesList = $savesList | append (printf "Dex %+d" $dexSave) -}}{{- end -}}
+  {{- if $conProf -}}{{- $savesList = $savesList | append (printf "Con %+d" $conSave) -}}{{- end -}}
+  {{- if $intProf -}}{{- $savesList = $savesList | append (printf "Int %+d" $intSave) -}}{{- end -}}
+  {{- if $wisProf -}}{{- $savesList = $savesList | append (printf "Wis %+d" $wisSave) -}}{{- end -}}
+  {{- if $chaProf -}}{{- $savesList = $savesList | append (printf "Cha %+d" $chaSave) -}}{{- end -}}
+  {{- $savesText = delimit $savesList ", " -}}
+
+  {{- /* Determine walk speed from race page */ -}}
+  {{- range $ref := $page.Params.compendium_refs -}}
+    {{- $racePage := site.GetPage $ref -}}
+    {{- if $racePage -}}
+      {{- $raceKind := partial "helpers/kind.html" $racePage -}}
+      {{- if eq $raceKind "race" -}}
+        {{- $raceNameLower := lower $racePage.Title -}}
+        {{- $raceInfo := default (dict) (index $racePage.Params "race_info") -}}
+        {{- $raceSpeedText := lower (printf "%v" (default "" (index $raceInfo "speed"))) -}}
+        {{- if or (in $raceNameLower "dwarf") (in $raceNameLower "anão")
+                  (in $raceNameLower "halfling") (in $raceNameLower "pequenino")
+                  (in $raceSpeedText "7.5m") (in $raceSpeedText "25")
+        -}}
+          {{- $walkSpeed = 25 -}}
+        {{- else -}}
+          {{- $walkSpeed = 30 -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if eq $walkSpeed "" -}}
+    {{- $walkSpeed = 30 -}}
+  {{- end -}}
 {{- end -}}
 
 {{- if and $isCharacter (eq (len $inventory) 0) -}}
