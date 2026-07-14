@@ -102,6 +102,17 @@ def fetch_from_5etools(kind, english_name):
                         files.append("class/" + filename)
         except Exception as e:
             print(f"  [5e.tools] Erro ao carregar index de classes: {e}")
+
+    if kind == "subclass":
+        url_index = DATA_BASE_URL + "class/index.json"
+        try:
+            req = urllib.request.Request(url_index, headers=headers)
+            with urllib.request.urlopen(req) as response:
+                class_index = json.loads(response.read().decode())
+            files = ["class/" + f for f in class_index.values()]
+        except Exception as e:
+            print(f"  [5e.tools] Erro ao carregar index de classes: {e}")
+            files = []
     
     for file_path in files:
         url = DATA_BASE_URL + file_path
@@ -136,6 +147,11 @@ def fetch_from_5etools(kind, english_name):
                         break
             elif kind == "class" and "class" in data:
                 for item in data["class"]:
+                    if item.get("name", "").lower() == english_name.lower():
+                        found_data = item
+                        break
+            elif kind == "subclass" and "subclass" in data:
+                for item in data["subclass"]:
                     if item.get("name", "").lower() == english_name.lower():
                         found_data = item
                         break
@@ -191,7 +207,7 @@ def fetch_from_5etools(kind, english_name):
     content_dir = f"content/compendium/{kind}s"
     if kind == "magic_item":
         content_dir = "content/compendium/magic-items"
-    elif kind == "class":
+    elif kind in ["class", "subclass"]:
         content_dir = "content/compendium/classes"
         
     os.makedirs(content_dir, exist_ok=True)
@@ -443,13 +459,34 @@ class_info:
 {description}
 """
 
+    elif kind == "subclass":
+        markdown = f"""---
+title: "{english_name}"
+params:
+  kind: "class"
+draft: true
+weight: 10
+summary: "Draft imported from 5e.tools. Requires translation."
+tags:
+  - draft
+  - importado
+visibility: "public"
+status: "draft"
+
+class_info:
+  primary_ability: "Constitution/Dexterity"
+---
+
+{description}
+"""
+
     if markdown:
         with open(dest_path, "w", encoding="utf-8") as f:
             f.write(markdown)
         print(f"  [5e.tools] SUCESSO: Arquivo de compêndio criado em: {dest_path}")
         if kind == "magic_item":
             return f"/compendium/magic-items/{slug}/"
-        elif kind == "class":
+        elif kind in ["class", "subclass"]:
             return f"/compendium/classes/{slug}/"
         else:
             return f"/compendium/{kind}s/{slug}/"
@@ -533,7 +570,12 @@ def main():
             cls_name = cls_def.get('name')
             cls_level = cls.get('level', 1)
             total_level += cls_level
-            classes_list.append(f"{cls_name} {cls_level}")
+            subcls_def = cls.get('subclassDefinition')
+            if subcls_def:
+                subcls_name = subcls_def.get('name')
+                classes_list.append(f"{cls_name} {cls_level} ({subcls_name})")
+            else:
+                classes_list.append(f"{cls_name} {cls_level}")
             
             if cls_name == "Monk":
                 is_monk = True
@@ -868,6 +910,12 @@ def main():
         entities_to_check.append(("class", primary_class_name, f"/compendium/classes/{primary_class_slug}/"))
         # Raça
         entities_to_check.append(("race", race_basename, f"/compendium/races/{race_slug}/"))
+        # Subclasses
+        for cls in char.get('classes', []):
+            subcls_def = cls.get('subclassDefinition')
+            if subcls_def:
+                subcls_name = subcls_def.get('name')
+                entities_to_check.append(("subclass", subcls_name, f"/compendium/classes/{slugify(subcls_name)}/"))
         # Talentos
         for feat in feats_list:
             entities_to_check.append(("feat", feat, f"/compendium/feats/{slugify(feat)}/"))
