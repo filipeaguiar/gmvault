@@ -1,17 +1,10 @@
 ---
-title: Magical Cunning
+title: "Magical Cunning"
 params:
-  kind: rule
+  kind: "rule"
 draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Astúcia Mágica
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+status: "ready"
+summary: "Habilidade de classe."
 ---
 
-Uma vez por Descanso Longo, você pode realizar um ritual esotérico por 1 minuto, recuperando espaços de magia de Magia de Pacto gastos.
+You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a XPHB.

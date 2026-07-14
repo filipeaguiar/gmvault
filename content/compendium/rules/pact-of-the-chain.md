@@ -1,19 +1,12 @@
 ---
-title: Pact of the Chain
+title: "Pact of the Chain"
 params:
-  kind: rule
+  kind: "rule"
 draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Pacto da Corrente
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+status: "ready"
+summary: "Habilidade de classe."
 ---
 
-Você aprende *Encontrar Familiar* e pode conjurá-la como uma ação Mágica sem gastar um espaço de magia.
+You learn Find Familiar and can cast it as a Magic action without expending a spell slot.
 
-Quando você realiza a ação de Ataque, pode abrir mão de um de seus próprios ataques para permitir que seu familiar realize um ataque com sua Reação.
+When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack with its Reaction.

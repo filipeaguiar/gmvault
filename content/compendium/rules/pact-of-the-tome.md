@@ -1,22 +1,15 @@
 ---
-title: Pact of the Tome
+title: "Pact of the Tome"
 params:
-  kind: rule
+  kind: "rule"
 draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Pacto do Tomo
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+status: "ready"
+summary: "Habilidade de classe."
 ---
 
-Ao final de um Descanso Curto ou Descanso Longo, você pode conjurar um livro em sua mão, um Livro das Sombras, que contém magia arcana que apenas você pode acessar, concedendo os benefícios abaixo.
+At the end of a Short or Long Rest you can conjure forth a book in your hand, a Book of Shadows, which contains eldritch magic that only you can access, granting the benefits below.
 
-• Quando o livro aparece, escolha 3 truques e escolha duas magias de 1º círculo que tenham a marca Ritual, que podem ser da lista de magias de qualquer classe.
-• Você pode usar o livro como um Foco de Conjuração.
+• When the book appears, choose 3 cantrips and choose two level 1 spells that have the Ritual tag, which can be from any class’s spell list.
+• You can use the book as a Spellcasting Focus.
 
-O livro desaparece se você conjurar outro ou se morrer.
+The book disappears if you conjure another one or if you die.

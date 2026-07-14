@@ -1,37 +1,14 @@
 ---
-title: Pact Magic
+title: "Pact Magic"
 params:
-  kind: rule
+  kind: "rule"
 draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Magia de Pacto
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+status: "ready"
+summary: "Habilidade de classe."
 ---
 
-Por meio de uma cerimônia oculta, você formou um pacto com uma entidade misteriosa para obter poderes mágicos. A entidade é uma voz nas sombras — sua identidade é incerta — mas sua dádiva a você é concreta: a capacidade de conjurar magias.
+Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers. The entity is a voice in the shadows—its identity unclear—but its boon to you is concrete: the ability to cast spells. See 7 for the rules on spellcasting. The information below details how you use those rules with Warlock spells, which appear in the class=Warlock later in the class's description.
 
-**Truques.** Você conhece dois truques de Bruxo de sua escolha. Sempre que você ganha um nível de Bruxo, pode substituir um de seus truques desta característica por outro truque de Bruxo de sua escolha.
+The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock Features table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1–3.
 
-Quando você atinge os níveis 4 e 10 de Bruxo, aprende outro truque de Bruxo de sua escolha, conforme mostrado na coluna Truques da tabela Características de Bruxo.
-
-**Espaços de Magia.** A tabela Características de Bruxo mostra quantos espaços de magia você tem para conjurar suas magias de Bruxo de níveis 1–5. A tabela também mostra o nível desses espaços, todos do mesmo nível. Você recupera todos os espaços de magia de Magia de Pacto gastos quando termina um Descanso Curto ou Longo.
-
-Por exemplo, quando você é um Bruxo de nível 5, tem dois espaços de magia de nível 3. Para conjurar a magia de nível 1 Raio da Bruxa, você deve gastar um desses espaços e a conjura como uma magia de nível 3.
-
-**Magias Preparadas de Nível 1+.** Você prepara a lista de magias de nível 1+ que estão disponíveis para você conjurar com esta característica. Para começar, escolha duas magias de Bruxo de nível 1.
-
-O número de magias em sua lista aumenta conforme você ganha níveis de Bruxo, conforme mostrado na coluna Magias Preparadas da tabela Características de Bruxo. Sempre que esse número aumentar, escolha magias de Bruxo adicionais até que o número de magias em sua lista corresponda ao número na tabela. As magias escolhidas devem ser de um nível não superior ao mostrado na coluna Nível do Espaço da tabela para seu nível. Quando você atinge o nível 6, por exemplo, aprende uma nova magia de Bruxo, que pode ser de níveis 1–3.
-
-Se outra característica de Bruxo lhe conceder magias que você sempre tem preparadas, essas magias não contam para o número de magias que você pode preparar com esta característica, mas essas magias contam como magias de Bruxo para você.
-
-**Alterando Suas Magias Preparadas.** Sempre que você ganha um nível de Bruxo, pode substituir uma magia em sua lista por outra magia de Bruxo de um nível elegível.
-
-**Atributo de Conjuração.** Carisma é o atributo de conjuração para suas magias de Bruxo.
-
-**Foco de Conjuração.** Você pode usar um Foco Arcano como Foco de Conjuração para suas magias de Bruxo.
+If another Warlock feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Warlock spells for you.

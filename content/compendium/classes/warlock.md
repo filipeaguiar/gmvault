@@ -1,0 +1,19 @@
+---
+title: "Warlock"
+params:
+  kind: "class"
+draft: true
+weight: 10
+summary: "Draft imported from 5e.tools. Requires translation."
+tags:
+  - draft
+  - importado
+visibility: "public"
+status: "draft"
+
+class_info:
+  hit_dice: "d8"
+  primary_ability: "Constitution/Dexterity"
+---
+
+
