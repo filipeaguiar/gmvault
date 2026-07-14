@@ -22,7 +22,7 @@ char_info:
   feat: "Magic Initiate (Cleric), Magic Initiate (Wizard), Sage Ability Score Improvements"
   size: "Medium"
   alignment: "Neutral"
-  dndbeyond_id: ""
+  dndbeyond_id: "168153030"
   speed:
     walk: 30
     fly: 0
@@ -30,7 +30,7 @@ char_info:
     climb: 0
     burrow: 0
   senses: "Passive Perception 11"
-  languages: "Common, Elvish"
+  languages: "Common, Netherese, Turmic"
   saves:
     str: 0
     dex: 1
@@ -51,7 +51,7 @@ char_info:
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/violeta-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/feats/magic-initiate/", "/compendium/items/dagger/", "/compendium/items/quarterstaff/", "/compendium/items/spear/", "/compendium/races/human/", "/compendium/rules/innate-sorcery/", "/compendium/rules/spellcasting/", "/compendium/spells/acid-splash/", "/compendium/spells/bane/", "/compendium/spells/burning-hands/", "/compendium/spells/detect-magic/", "/compendium/spells/light/", "/compendium/spells/mage-armor/", "/compendium/spells/mending/", "/compendium/spells/prestidigitation/", "/compendium/spells/shocking-grasp/", "/compendium/spells/spare-the-dying/", "/compendium/spells/thaumaturgy/"]
+compendium_refs: ["/compendium/classes/sorcerer/", "/compendium/feats/magic-initiate/", "/compendium/items/dagger/", "/compendium/items/quarterstaff/", "/compendium/items/spear/", "/compendium/races/human/", "/compendium/rules/innate-sorcery/", "/compendium/rules/spellcasting/", "/compendium/spells/acid-splash/", "/compendium/spells/bane/", "/compendium/spells/burning-hands/", "/compendium/spells/detect-magic/", "/compendium/spells/light/", "/compendium/spells/mage-armor/", "/compendium/spells/mending/", "/compendium/spells/prestidigitation/", "/compendium/spells/shocking-grasp/", "/compendium/spells/spare-the-dying/", "/compendium/spells/thaumaturgy/"]
 spells_usage: [{"name": "Acid Splash", "usage": "Truque"}, {"name": "Bane", "usage": "1x/Descanso Longo"}, {"name": "Burning Hands", "usage": "Slot de Magia"}, {"name": "Detect Magic", "usage": "Slot / Ritual"}, {"name": "Light", "usage": "Truque"}, {"name": "Mage Armor", "usage": "1x/Descanso Longo"}, {"name": "Mending", "usage": "Truque"}, {"name": "Prestidigitation", "usage": "Truque"}, {"name": "Shocking Grasp", "usage": "Truque"}, {"name": "Sorcerous Burst", "usage": "Truque"}, {"name": "Spare the Dying", "usage": "Truque"}, {"name": "Thaumaturgy", "usage": "Truque"}]
 ---
 

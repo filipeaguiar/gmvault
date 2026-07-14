@@ -7,4 +7,4 @@ status: "draft"
 summary: "Habilidade de classe."
 ---
 
-While not wearing armor, your AC equals  + any shield bonus.
+While not wearing armor, your base AC equals  + any Shield bonus.

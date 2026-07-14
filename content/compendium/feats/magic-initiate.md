@@ -1,28 +1,22 @@
 ---
-title: Magic Initiate
+title: "Magic Initiate"
 params:
-  kind: feat
+  kind: "feat"
 draft: false
 weight: 10
-summary: Rascunho importado de 5e.tools. Requer tradução.
+summary: "Draft imported from 5e.tools. Requires translation."
 tags:
-- draft
-- importado
-visibility: public
-status: draft
+  - draft
+  - importado
+visibility: "public"
+status: "ready"
+
 feat_info:
-  prerequisite: None
-titulo_pt_br: Iniciado em Magia
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  prerequisite: "None"
 ---
 
-Escolha uma classe: classe=bardo, classe=clérigo, classe=druida, classe=feiticeiro, classe=bruxo ou classe=mago. Você aprende dois truques de sua escolha da lista de magias dessa classe.
+Choose a class: class=bard, class=cleric, class=druid, class=sorcerer, class=warlock, or class=wizard. You learn two cantrips of your choice from that class's spell list.
 
-Além disso, escolha uma magia de 1º círculo para aprender da mesma lista. Usando este talento, você pode conjurar a magia uma vez em seu círculo mais baixo, e precisa terminar um descanso longo antes de poder conjurá-la novamente desta forma.
+In addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.
 
-Seu atributo de conjuração para essas magias depende da classe que você escolheu: Carisma para classe=bardo, classe=feiticeiro ou classe=bruxo; Sabedoria para classe=clérigo ou classe=druida; ou Inteligência para classe=mago.
+Your spellcasting ability for these spells depends on the class you chose: Charisma for class=bard, class=sorcerer, or class=warlock; Wisdom for class=cleric or class=druid; or Intelligence for class=wizard.

@@ -48,9 +48,10 @@ char_info:
     cha: 10
 
 # Relacionamentos
+handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/einvor-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/items/greataxe/", "/compendium/races/goliath/", "/compendium/rules/danger-sense/", "/compendium/rules/rage/", "/compendium/rules/reckless-attack/", "/compendium/rules/unarmored-defense/", "/compendium/rules/weapon-mastery/"]
+compendium_refs: ["/compendium/classes/barbarian/", "/compendium/items/greataxe/", "/compendium/races/goliath/", "/compendium/rules/danger-sense/", "/compendium/rules/rage/", "/compendium/rules/reckless-attack/", "/compendium/rules/unarmored-defense/", "/compendium/rules/weapon-mastery/"]
 spells_usage: []
 ---
 
