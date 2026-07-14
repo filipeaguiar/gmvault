@@ -19,7 +19,7 @@ char_info:
   race: "Dwarf"
   ac: "15"
   hp: "17"
-  feat: "Dark Bargain, Character Threads, Runestones"
+  feat: "Nenhum"
   stats:
     str: 8
     dex: 16

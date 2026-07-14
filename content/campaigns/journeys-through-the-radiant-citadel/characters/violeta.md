@@ -19,7 +19,7 @@ char_info:
   race: "Human"
   ac: "11"
   hp: "9"
-  feat: "Magic Initiate (Cleric), Magic Initiate (Wizard), Sage Ability Score Improvements, Dark Bargain, Character Threads, Runestones"
+  feat: "Magic Initiate (Cleric), Magic Initiate (Wizard), Sage Ability Score Improvements"
   stats:
     str: 10
     dex: 13

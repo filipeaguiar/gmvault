@@ -19,7 +19,7 @@ char_info:
   race: "Elf"
   ac: "12"
   hp: "16"
-  feat: "Magic Initiate (Wizard), Sage Ability Score Improvements, Dark Bargain, Character Threads, Runestones"
+  feat: "Magic Initiate (Wizard), Sage Ability Score Improvements"
   stats:
     str: 8
     dex: 12

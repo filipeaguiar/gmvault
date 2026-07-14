@@ -19,7 +19,7 @@ char_info:
   race: "Goblinoide"
   ac: "16"
   hp: "14"
-  feat: "Alert, Criminal Ability Score Improvements, Weapon Mastery, Dark Bargain, Character Threads, Runestones"
+  feat: "Alert, Criminal Ability Score Improvements, Weapon Mastery"
   stats:
     str: 10
     dex: 20

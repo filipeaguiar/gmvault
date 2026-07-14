@@ -19,7 +19,7 @@ char_info:
   race: "Halfling"
   ac: "14"
   hp: "14"
-  feat: "Dark Bargain, Character Threads, Runestones"
+  feat: "Nenhum"
   stats:
     str: 8
     dex: 16
@@ -32,8 +32,8 @@ char_info:
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/detios-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/items/dagger/", "/compendium/items/leather-armor/", "/compendium/races/halfling/", "/compendium/rules/bardic-inspiration/", "/compendium/rules/expertise/", "/compendium/rules/jack-of-all-trades/", "/compendium/rules/spellcasting/"]
-spells_usage: []
+compendium_refs: ["/compendium/items/dagger/", "/compendium/items/leather-armor/", "/compendium/races/halfling/", "/compendium/rules/bardic-inspiration/", "/compendium/rules/expertise/", "/compendium/rules/jack-of-all-trades/", "/compendium/rules/spellcasting/", "/compendium/spells/minor-illusion/", "/compendium/spells/vicious-mockery/"]
+spells_usage: [{"name": "Minor Illusion", "usage": "Truque"}, {"name": "Vicious Mockery", "usage": "Truque"}]
 ---
 
 ### Biografia

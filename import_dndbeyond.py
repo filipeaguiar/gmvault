@@ -595,7 +595,9 @@ def main():
         # 6. Talentos
         feats_list = []
         for feat_item in char.get('feats', []):
-            feats_list.append(feat_item.get('definition', {}).get('name'))
+            f_name = feat_item.get('definition', {}).get('name', '')
+            if f_name not in ["Dark Bargain", "Character Threads", "Runestones"]:
+                feats_list.append(f_name)
         feat_str = ", ".join(feats_list) if feats_list else "Nenhum"
         
         # 7. Magias Conhecidas e seus detalhes de uso

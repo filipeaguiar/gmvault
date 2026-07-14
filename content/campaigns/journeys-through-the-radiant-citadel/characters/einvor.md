@@ -19,7 +19,7 @@ char_info:
   race: "Goliath"
   ac: "13"
   hp: "23"
-  feat: "Weapon Mastery, Dark Bargain, Character Threads, Runestones"
+  feat: "Weapon Mastery"
   stats:
     str: 14
     dex: 12
