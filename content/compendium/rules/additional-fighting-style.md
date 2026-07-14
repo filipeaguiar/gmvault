@@ -7,4 +7,4 @@ status: "draft"
 summary: "Habilidade de classe."
 ---
 
-You can choose a second option from the Fighting Style class feature.
+You gain another category=FS of your choice.

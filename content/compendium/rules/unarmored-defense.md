@@ -7,4 +7,4 @@ status: "draft"
 summary: "Habilidade de classe."
 ---
 
-While not wearing armor, your base AC equals  + any Shield bonus.
+While you aren't wearing any armor, your base XPHB equals 10 plus your Dexterity and Constitution modifiers. You can use a XPHB and still gain this benefit.

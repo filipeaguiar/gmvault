@@ -2,8 +2,8 @@
 title: "Martial Archetype"
 params:
   kind: "rule"
-draft: true
-status: "draft"
+draft: false
+status: "ready"
 summary: "Habilidade de classe."
 ---
 

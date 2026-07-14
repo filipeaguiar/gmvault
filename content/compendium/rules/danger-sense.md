@@ -2,9 +2,9 @@
 title: "Danger Sense"
 params:
   kind: "rule"
-draft: true
-status: "draft"
+draft: false
+status: "ready"
 summary: "Habilidade de classe."
 ---
 
-You have Advantage on Dex. saving throws unless you have the Incapacitated condition.
+You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have XPHB on Dexterity saving throws unless you have the XPHB condition.

@@ -2,8 +2,8 @@
 title: "8: Ability Score Improvement"
 params:
   kind: "rule"
-draft: true
-status: "draft"
+draft: false
+status: "ready"
 summary: "Habilidade de classe."
 ---
 

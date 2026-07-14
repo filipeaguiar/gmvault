@@ -7,4 +7,6 @@ status: "draft"
 summary: "Habilidade de classe."
 ---
 
-You can add  to any STR, DEX, or CON check you make that doesn’t already use your proficiency bonus and when you make a running long jump, you add  ft. to the distance.
+Thanks to your athleticism, you have XPHB on XPHB rolls and Strength (XPHB) checks.
+
+In addition, immediately after you score a XPHB, you can move up to half your XPHB without provoking Opportunity Attacks.

@@ -51,7 +51,7 @@ char_info:
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/detios-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/classes/bard/", "/compendium/items/dagger/", "/compendium/items/leather-armor/", "/compendium/races/halfling/", "/compendium/rules/bardic-inspiration/", "/compendium/rules/expertise/", "/compendium/rules/jack-of-all-trades/", "/compendium/rules/spellcasting/", "/compendium/spells/minor-illusion/", "/compendium/spells/vicious-mockery/"]
+compendium_refs: ["/compendium/classes/bard/", "/compendium/items/dagger/", "/compendium/items/leather-armor/", "/compendium/races/halfling/", "/compendium/rules/bardic-inspiration/", "/compendium/rules/expertise/", "/compendium/rules/jack-of-all-trades/", "/compendium/rules/magical-inspiration/", "/compendium/rules/song-of-rest-d6/", "/compendium/rules/spellcasting/", "/compendium/spells/minor-illusion/", "/compendium/spells/vicious-mockery/"]
 spells_usage: [{"name": "Minor Illusion", "usage": "Truque"}, {"name": "Vicious Mockery", "usage": "Truque"}]
 ---
 

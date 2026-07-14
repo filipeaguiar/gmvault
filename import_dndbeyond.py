@@ -53,6 +53,29 @@ def parse_entries(entries):
                     lines.append(f"* {item}")
     return clean_5etools_tags("\n\n".join(lines))
 
+def fetch_class_json(class_name):
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    url_index = DATA_BASE_URL + "class/index.json"
+    try:
+        req = urllib.request.Request(url_index, headers=headers)
+        with urllib.request.urlopen(req) as response:
+            class_index = json.loads(response.read().decode())
+        class_key = class_name.lower()
+        filename = class_index.get(class_key)
+        if not filename:
+            for k, f in class_index.items():
+                if k in class_key or class_key in k:
+                    filename = f
+                    break
+        if filename:
+            url_class = DATA_BASE_URL + "class/" + filename
+            req = urllib.request.Request(url_class, headers=headers)
+            with urllib.request.urlopen(req) as response:
+                return json.loads(response.read().decode())
+    except Exception as e:
+        print(f"  [5e.tools] Erro ao carregar dados de classe para {class_name}: {e}")
+    return None
+
 def fetch_from_5etools(kind, english_name):
     slug = slugify(english_name)
     print(f"  [5e.tools] Tentando baixar '{english_name}' ({kind})...")
@@ -1014,46 +1037,107 @@ summary: "Habilidade de classe."
                             ref = ensure_compendium_rule(opt_name, clean_snippet.strip())
                             compendium_refs.append(ref)
             
-        # 11. Coletar e criar habilidades de classe ativas no Compêndio
-        import re
-        feature_blacklist = ["core bard traits", "core warlock traits", "core fighter traits", 
-                             "core rogue traits", "core barbarian traits", "core monk traits",
-                             "core sorcerer traits", "core wizard traits", "core cleric traits",
-                             "core druid traits", "core paladin traits", "core ranger traits",
-                             "ability score improvement", "ability score increase", "bard subclass",
-                             "warlock subclass", "subclass options", "bonus proficiency"]
-                             
+        # 11. Coletar e criar habilidades de classe e subclasse a partir do 5e.tools no Compêndio
+        feature_blacklist = [
+            "core bard traits", "core warlock traits", "core fighter traits", 
+            "core rogue traits", "core barbarian traits", "core monk traits",
+            "core sorcerer traits", "core wizard traits", "core cleric traits",
+            "core druid traits", "core paladin traits", "core ranger traits",
+            "ability score improvement", "ability score increase", "bard subclass",
+            "warlock subclass", "subclass options", "bonus proficiency",
+            "roguish archetype", "subclass feature", "roguish archetype feature",
+            "sorcerous origin", "monastic tradition", "primal path", "bard college",
+            "cleric domain", "druid circle", "martial archetype", "sacred oath",
+            "ranger archetype", "arcane tradition", "subclass", "rogue subclass",
+            "sorcerer subclass", "barbarian subclass", "fighter subclass",
+            "monk subclass", "warlock subclass", "wizard subclass", "cleric subclass",
+            "druid subclass", "paladin subclass", "ranger subclass"
+        ]
+
         for cl in char.get('classes', []):
+            cls_def = cl.get('definition', {})
+            class_name = cls_def.get('name')
             class_level = cl.get('level', 1)
-            for cf in cl.get('classFeatures', []):
-                def_cf = cf.get('definition', {})
-                if not def_cf:
-                    continue
-                cf_name = def_cf.get('name')
-                cf_level = def_cf.get('requiredLevel', 1)
+            subcls_def = cl.get('subclassDefinition')
+            subclass_name = subcls_def.get('name') if subcls_def else None
+            
+            class_data = fetch_class_json(class_name)
+            if not class_data:
+                continue
                 
-                if cf_level <= class_level:
-                    if cf_name.lower() in feature_blacklist or any(b in cf_name.lower() for b in ["core class traits"]):
-                        continue
-                        
-                    cf_snippet = def_cf.get('snippet', '') or def_cf.get('description', '') or ''
-                    if cf_name and cf_snippet:
-                        clean_snippet = re.sub(r'\{\{[^}]+\}\}', '', cf_snippet)
-                        clean_snippet = clean_snippet.replace('()', '').replace('( )', '').strip()
-                        clean_snippet = clean_5etools_tags(clean_snippet.replace('<em>', '').replace('</em>', '').replace('<p>', '').replace('</p>', '\n').replace('<br>', '\n'))
-                        
-                        ref = ensure_compendium_rule(cf_name, clean_snippet.strip())
-                        compendium_refs.append(ref)
+            raw_features = []
+            # Coletar classFeature
+            for f in class_data.get('classFeature', []):
+                if f.get('className', '').lower() == class_name.lower() and f.get('level', 1) <= class_level:
+                    raw_features.append(f)
+                    
+            # Coletar subclassFeature se houver subclasse
+            if subclass_name:
+                for sf in class_data.get('subclassFeature', []):
+                    if sf.get('className', '').lower() == class_name.lower() and sf.get('level', 1) <= class_level:
+                        sf_sc_name = sf.get('subclassShortName', '')
+                        if sf_sc_name.lower() == subclass_name.lower() or subclass_name.lower() in sf.get('subclassShortName', '').lower() or sf_sc_name.lower() in subclass_name.lower():
+                            raw_features.append(sf)
+            
+            # Ordenar por prioridade de fonte (XPHB > PHB > outras) para sobrescrever com versões mais novas
+            def get_source_priority(item):
+                source = item.get("source", "")
+                if source == "XPHB":
+                    return 2
+                if source == "PHB":
+                    return 1
+                return 0
+                
+            raw_features.sort(key=get_source_priority)
+            
+            # Filtrar duplicados pelo nome (mantendo o de maior prioridade de fonte)
+            features_dict = {}
+            for f in raw_features:
+                name = f.get('name')
+                if name:
+                    features_dict[name.lower()] = f
+                    
+            # Criar as regras
+            for name_lower, f in features_dict.items():
+                name = f.get('name')
+                if name.lower() in feature_blacklist:
+                    continue
+                    
+                entries = f.get('entries', [])
+                if not entries:
+                    continue
+                    
+                description = parse_entries(entries)
+                if not description or not description.strip():
+                    continue
+                    
+                ref = ensure_compendium_rule(name, description.strip())
+                compendium_refs.append(ref)
 
         # Remove duplicatas nas referências
         compendium_refs = sorted(list(set(compendium_refs)))
             
         # 9. Montar conteúdo Markdown
         slug = slugify(char_name)
+        slug_map = {
+            "perwinkle-pinky-pirata": "pinky",
+            "nyx-": "nyxclair"
+        }
+        title_map = {
+            "pinky": "Pinky",
+            "nyxclair": "Nyx'Clair"
+        }
+        if slug in slug_map:
+            slug = slug_map[slug]
+        
+        display_title = char_name
+        if slug in title_map:
+            display_title = title_map[slug]
+            
         file_path = f"content/campaigns/{args.campaign}/characters/{slug}.md"
         
         markdown = f"""---
-title: "{char_name}"
+title: {json.dumps(display_title)}
 date: 2026-07-09T19:00:00Z
 params:
   kind: "character"

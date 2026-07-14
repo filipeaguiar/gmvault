@@ -5,7 +5,7 @@ params:
   kind: "character"
 draft: false
 weight: 10
-summary: "Variant Aasimar Rogue 10 importado do D&D Beyond."
+summary: "Variant Aasimar Rogue 10 (Thief) importado do D&D Beyond."
 tags:
   - jogador
   - aasimar
@@ -15,7 +15,7 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
-  class: "Rogue 10"
+  class: "Rogue 10 (Thief)"
   race: "Variant Aasimar"
   ac: "15"
   hp: "68"
@@ -51,7 +51,7 @@ char_info:
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/pinky-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/classes/rogue/", "/compendium/feats/alert/", "/compendium/feats/skill-expert/", "/compendium/feats/skilled/", "/compendium/items/padded-armor/", "/compendium/races/aasimar/", "/compendium/rules/10-ability-score-improvement/", "/compendium/rules/6-expertise/", "/compendium/rules/8-ability-score-improvement/", "/compendium/rules/cunning-action/", "/compendium/rules/cunning-strike/", "/compendium/rules/evasion/", "/compendium/rules/expertise/", "/compendium/rules/fast-hands/", "/compendium/rules/reliable-talent/", "/compendium/rules/rogue-subclass/", "/compendium/rules/second-story-work/", "/compendium/rules/sneak-attack/", "/compendium/rules/steady-aim/", "/compendium/rules/supreme-sneak/", "/compendium/rules/thieves-cant/", "/compendium/rules/uncanny-dodge/", "/compendium/rules/weapon-mastery/", "/compendium/spells/daylight/", "/compendium/spells/lesser-restoration/", "/compendium/spells/light/"]
+compendium_refs: ["/compendium/classes/rogue/", "/compendium/classes/thief/", "/compendium/feats/alert/", "/compendium/feats/skill-expert/", "/compendium/feats/skilled/", "/compendium/items/padded-armor/", "/compendium/races/aasimar/", "/compendium/rules/cunning-action/", "/compendium/rules/cunning-strike/", "/compendium/rules/evasion/", "/compendium/rules/expertise/", "/compendium/rules/fast-hands/", "/compendium/rules/poison-cost-1d6/", "/compendium/rules/reliable-talent/", "/compendium/rules/second-story-work/", "/compendium/rules/sneak-attack/", "/compendium/rules/steady-aim/", "/compendium/rules/supreme-sneak/", "/compendium/rules/thief/", "/compendium/rules/thieves-cant/", "/compendium/rules/trip-cost-1d6/", "/compendium/rules/uncanny-dodge/", "/compendium/rules/weapon-mastery/", "/compendium/rules/withdraw-cost-1d6/", "/compendium/spells/daylight/", "/compendium/spells/lesser-restoration/", "/compendium/spells/light/"]
 spells_usage: [{"name": "Daylight", "usage": "1x/Descanso Longo"}, {"name": "Lesser Restoration", "usage": "1x/Descanso Longo"}, {"name": "Light", "usage": "Truque"}]
 ---
 

@@ -17,9 +17,13 @@
 {{- $level := "" -}}
 {{- if $isCharacter -}}
   {{- $classText = printf "%v" (default "" (index $source "class")) -}}
-  {{- $levelMatches := findRE "[0-9]+$" $classText -}}
-  {{- if gt (len $levelMatches) 0 -}}
-    {{- $level = int (index $levelMatches 0) -}}
+  {{- $levelMatches := findRE "[0-9]+" $classText -}}
+  {{- $totalLvl := 0 -}}
+  {{- range $levelMatches -}}
+    {{- $totalLvl = add $totalLvl (int .) -}}
+  {{- end -}}
+  {{- if gt $totalLvl 0 -}}
+    {{- $level = $totalLvl -}}
   {{- end -}}
 {{- end -}}
 {{- $challenge := default "" (index $source "cr") -}}
@@ -309,6 +313,26 @@
   {{- end -}}
   {{- if eq $walkSpeed "" -}}
     {{- $walkSpeed = 30 -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and $isCharacter (eq (len $abilities) 0) -}}
+  {{- $seenAbilities := slice -}}
+  {{- range $ref := $page.Params.compendium_refs -}}
+    {{- $refPage := site.GetPage $ref -}}
+    {{- if $refPage -}}
+      {{- $refKind := partial "helpers/kind.html" $refPage -}}
+      {{- if or (eq $refKind "rule") (eq $refKind "feat") -}}
+        {{- if not (in $seenAbilities $refPage.Permalink) -}}
+          {{- $seenAbilities = $seenAbilities | append $refPage.Permalink -}}
+          {{- $refName := or $refPage.Params.titulo_pt_br $refPage.Title -}}
+          {{- $refHash := md5 $refPage.Permalink -}}
+          {{- $refID := printf "%s-%s-%s-%s-%s" (substr $refHash 0 8) (substr $refHash 8 4) (substr $refHash 12 4) (substr $refHash 16 4) (substr $refHash 20 12) -}}
+          {{- $refDescription := $refPage.RawContent -}}
+          {{- $abilities = $abilities | append (dict "id" $refID "name" $refName "description" $refDescription) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 

@@ -2,14 +2,14 @@
 title: "Magic Initiate"
 params:
   kind: "feat"
-draft: false
+draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
 visibility: "public"
-status: "ready"
+status: "draft"
 
 feat_info:
   prerequisite: "None"

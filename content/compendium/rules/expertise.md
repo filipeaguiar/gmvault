@@ -7,4 +7,4 @@ status: "draft"
 summary: "Habilidade de classe."
 ---
 
-You gain Expertise in two of your skill proficiencies of your choice.
+You gain XPHB in two of your Skill Proficiencies of your choice.

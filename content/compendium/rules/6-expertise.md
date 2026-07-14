@@ -2,8 +2,8 @@
 title: "6: Expertise"
 params:
   kind: "rule"
-draft: true
-status: "draft"
+draft: false
+status: "ready"
 summary: "Habilidade de classe."
 ---
 

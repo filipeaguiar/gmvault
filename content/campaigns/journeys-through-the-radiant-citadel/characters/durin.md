@@ -51,7 +51,7 @@ char_info:
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/durin-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/classes/monk/", "/compendium/items/spear/", "/compendium/races/dwarf/", "/compendium/rules/martial-arts/", "/compendium/rules/monks-focus/", "/compendium/rules/unarmored-defense/", "/compendium/rules/unarmored-movement/", "/compendium/rules/uncanny-metabolism/"]
+compendium_refs: ["/compendium/classes/monk/", "/compendium/items/spear/", "/compendium/races/dwarf/", "/compendium/rules/bonus-unarmed-strike/", "/compendium/rules/dedicated-weapon/", "/compendium/rules/dexterous-attacks/", "/compendium/rules/flurry-of-blows/", "/compendium/rules/ki/", "/compendium/rules/martial-arts-die/", "/compendium/rules/martial-arts/", "/compendium/rules/monks-focus/", "/compendium/rules/patient-defense/", "/compendium/rules/step-of-the-wind/", "/compendium/rules/unarmored-defense/", "/compendium/rules/unarmored-movement/", "/compendium/rules/uncanny-metabolism/"]
 spells_usage: []
 ---
 

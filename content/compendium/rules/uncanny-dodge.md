@@ -7,4 +7,4 @@ status: "draft"
 summary: "Habilidade de classe."
 ---
 
-When an attacker you can see hits you with an attack, you can take a Reaction to halve the attack’s damage against you (round down).
+When an attacker that you can see hits you with an attack roll, you can take a XPHB to halve the attack's damage against you (round down).
