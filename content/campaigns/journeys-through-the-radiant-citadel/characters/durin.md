@@ -20,6 +20,25 @@ char_info:
   ac: "15"
   hp: "17"
   feat: "Nenhum"
+  size: "Medium"
+  alignment: "Neutral"
+  dndbeyond_id: "168106464"
+  speed:
+    walk: 40
+    fly: 0
+    swim: 0
+    climb: 0
+    burrow: 0
+  senses: "Passive Perception 12, Darkvision 120 ft."
+  languages: "Common, Common Sign Language, Dwarvish"
+  saves:
+    str: 1
+    dex: 5
+    con: 2
+    int: 2
+    wis: 2
+    cha: 0
+  saves_summary: "Str +1, Dex +5"
   stats:
     str: 8
     dex: 16

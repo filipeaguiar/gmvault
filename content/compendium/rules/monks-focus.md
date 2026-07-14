@@ -1,25 +1,18 @@
 ---
-title: Monk’s Focus
+title: "Monk’s Focus"
 params:
-  kind: rule
-draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Foco do Monge
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "rule"
+draft: true
+status: "draft"
+summary: "Habilidade de classe."
 ---
 
-Seu foco e treinamento marcial permitem que você aproveite um poço de energia dentro de si mesmo chamado Pontos de Foco. Você tem Pontos de Foco e recupera todos os pontos gastos após terminar um Descanso Curto ou Longo.
+Your focus and martial training allows you to harness a well of energy within yourself called Focus Points. You have  Focus Points and regain all expended points after you finish a Short or Long Rest.
 
-Você pode gastar esses pontos para aprimorar ou alimentar certas características de Monge. Você começa conhecendo três dessas características:
+You can expend these points to enhance or fuel certain Monk features. You start knowing three such features:
 
-<strong>Rajada de Golpes.</strong> Você pode gastar 1 Ponto de Foco para realizar dois Ataques Desarmados como uma Ação Bônus.
-<strong>Defesa Paciente.</strong> Você pode realizar a ação Desengajar como uma Ação Bônus ou gastar 1 Ponto de Foco para realizar ambas as ações Desengajar e Esquivar como uma Ação Bônus.
-<strong>Passo do Vento.</strong> Você pode realizar a ação Disparada como uma Ação Bônus ou gastar 1 Ponto de Foco para realizar ambas as ações Desengajar e Disparada como uma Ação Bônus, e sua distância de salto é dobrada durante o turno.
+<strong>Flurry of Blows.</strong> You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.
+<strong>Patient Defense.</strong> You can take the Disengage action as a Bonus Action or expend 1 Focus Point to take both the Disengage and Dodge actions as a Bonus Action.
+<strong>Step of the Wind.</strong> You can take the Dash action as a Bonus Action or expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
 
-Características que usam Pontos de Foco podem exigir que seu alvo faça um teste de resistência. A CD do teste de resistência é igual a 8 + mod. de Sab. + Bônus de Prof.
+Features that use Focus Points may require your target to make a saving throw. The save DC equals 8 + Wis. modifier + Prof. Bonus.

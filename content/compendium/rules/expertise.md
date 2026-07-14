@@ -1,17 +1,10 @@
 ---
-title: Expertise
+title: "Expertise"
 params:
-  kind: rule
-draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Especialização
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "rule"
+draft: true
+status: "draft"
+summary: "Habilidade de classe."
 ---
 
-Você ganha Especialização em duas de suas proficiências em perícias de sua escolha.
+You gain Expertise in two of your skill proficiencies of your choice.

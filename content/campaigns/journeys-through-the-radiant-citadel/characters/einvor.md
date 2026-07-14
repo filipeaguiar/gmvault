@@ -20,6 +20,25 @@ char_info:
   ac: "13"
   hp: "23"
   feat: "Weapon Mastery"
+  size: "Medium"
+  alignment: "Neutral"
+  dndbeyond_id: ""
+  speed:
+    walk: 30
+    fly: 0
+    swim: 0
+    climb: 0
+    burrow: 0
+  senses: "Passive Perception 10"
+  languages: "Common, Giant"
+  saves:
+    str: 4
+    dex: 1
+    con: 4
+    int: -1
+    wis: 0
+    cha: 0
+  saves_summary: "Str +4, Con +4"
   stats:
     str: 14
     dex: 12

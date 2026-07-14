@@ -20,6 +20,25 @@ char_info:
   ac: "11"
   hp: "9"
   feat: "Magic Initiate (Cleric), Magic Initiate (Wizard), Sage Ability Score Improvements"
+  size: "Medium"
+  alignment: "Neutral"
+  dndbeyond_id: ""
+  speed:
+    walk: 30
+    fly: 0
+    swim: 0
+    climb: 0
+    burrow: 0
+  senses: "Passive Perception 11"
+  languages: "Common, Elvish"
+  saves:
+    str: 0
+    dex: 1
+    con: 5
+    int: -1
+    wis: 1
+    cha: 4
+  saves_summary: "Con +5, Cha +4"
   stats:
     str: 10
     dex: 13

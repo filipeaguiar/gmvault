@@ -54,46 +54,67 @@
   {{- $ac = int (index $acMatches 0) -}}
 {{- end -}}
 
-{{- $speedText := printf "%v" (default "" (index $source "speed")) -}}
 {{- $walkSpeed := "" -}}
-{{- $walkMatches := findRE "^[0-9]+" $speedText -}}
-{{- if gt (len $walkMatches) 0 -}}
-  {{- $walkSpeed = int (index $walkMatches 0) -}}
-{{- end -}}
 {{- $swimSpeed := "" -}}
 {{- $burrowSpeed := "" -}}
 {{- $climbSpeed := "" -}}
 {{- $flySpeed := "" -}}
-{{- range $speed := (slice "swim" "burrow" "climb" "fly") -}}
-  {{- $speedMatches := findRE (printf "(?i)%s[ \\t]+[0-9]+" $speed) $speedText -}}
-  {{- if gt (len $speedMatches) 0 -}}
-    {{- $numberMatches := findRE "[0-9]+" (index $speedMatches 0) -}}
-    {{- if gt (len $numberMatches) 0 -}}
-      {{- if eq $speed "swim" -}}{{- $swimSpeed = int (index $numberMatches 0) -}}{{- end -}}
-      {{- if eq $speed "burrow" -}}{{- $burrowSpeed = int (index $numberMatches 0) -}}{{- end -}}
-      {{- if eq $speed "climb" -}}{{- $climbSpeed = int (index $numberMatches 0) -}}{{- end -}}
-      {{- if eq $speed "fly" -}}{{- $flySpeed = int (index $numberMatches 0) -}}{{- end -}}
-    {{- end -}}
-  {{- end -}}
-{{- end -}}
 
-{{- $savesText := printf "%v" (default "" (index $source "saves")) -}}
+{{- $savesText := "" -}}
 {{- $strSave := "" -}}
 {{- $dexSave := "" -}}
 {{- $conSave := "" -}}
 {{- $intSave := "" -}}
 {{- $wisSave := "" -}}
 {{- $chaSave := "" -}}
-{{- range $save := (findRE "(?i)(Str|Dex|Con|Int|Wis|Cha)[ \\t]+[+-]?[0-9]+" $savesText) -}}
-  {{- $valueMatches := findRE "[+-]?[0-9]+$" $save -}}
-  {{- if gt (len $valueMatches) 0 -}}
-    {{- $value := int (index $valueMatches 0) -}}
-    {{- if hasPrefix $save "Str" -}}{{- $strSave = $value -}}{{- end -}}
-    {{- if hasPrefix $save "Dex" -}}{{- $dexSave = $value -}}{{- end -}}
-    {{- if hasPrefix $save "Con" -}}{{- $conSave = $value -}}{{- end -}}
-    {{- if hasPrefix $save "Int" -}}{{- $intSave = $value -}}{{- end -}}
-    {{- if hasPrefix $save "Wis" -}}{{- $wisSave = $value -}}{{- end -}}
-    {{- if hasPrefix $save "Cha" -}}{{- $chaSave = $value -}}{{- end -}}
+
+{{- if and $isCharacter (isset $source "speed") (isset $source "saves") -}}
+  {{- $speedDict := default (dict) (index $source "speed") -}}
+  {{- $walkSpeed = index $speedDict "walk" -}}
+  {{- $swimSpeed = index $speedDict "swim" -}}
+  {{- $burrowSpeed = index $speedDict "burrow" -}}
+  {{- $climbSpeed = index $speedDict "climb" -}}
+  {{- $flySpeed = index $speedDict "fly" -}}
+
+  {{- $savesDict := default (dict) (index $source "saves") -}}
+  {{- $strSave = index $savesDict "str" -}}
+  {{- $dexSave = index $savesDict "dex" -}}
+  {{- $conSave = index $savesDict "con" -}}
+  {{- $intSave = index $savesDict "int" -}}
+  {{- $wisSave = index $savesDict "wis" -}}
+  {{- $chaSave = index $savesDict "cha" -}}
+  {{- $savesText = printf "%v" (default "" (index $source "saves_summary")) -}}
+{{- else -}}
+  {{- $speedText := printf "%v" (default "" (index $source "speed")) -}}
+  {{- $walkMatches := findRE "^[0-9]+" $speedText -}}
+  {{- if gt (len $walkMatches) 0 -}}
+    {{- $walkSpeed = int (index $walkMatches 0) -}}
+  {{- end -}}
+  {{- range $speed := (slice "swim" "burrow" "climb" "fly") -}}
+    {{- $speedMatches := findRE (printf "(?i)%s[ \\t]+[0-9]+" $speed) $speedText -}}
+    {{- if gt (len $speedMatches) 0 -}}
+      {{- $numberMatches := findRE "[0-9]+" (index $speedMatches 0) -}}
+      {{- if gt (len $numberMatches) 0 -}}
+        {{- if eq $speed "swim" -}}{{- $swimSpeed = int (index $numberMatches 0) -}}{{- end -}}
+        {{- if eq $speed "burrow" -}}{{- $burrowSpeed = int (index $numberMatches 0) -}}{{- end -}}
+        {{- if eq $speed "climb" -}}{{- $climbSpeed = int (index $numberMatches 0) -}}{{- end -}}
+        {{- if eq $speed "fly" -}}{{- $flySpeed = int (index $numberMatches 0) -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $savesText = printf "%v" (default "" (index $source "saves")) -}}
+  {{- range $save := (findRE "(?i)(Str|Dex|Con|Int|Wis|Cha)[ \\t]+[+-]?[0-9]+" $savesText) -}}
+    {{- $valueMatches := findRE "[+-]?[0-9]+$" $save -}}
+    {{- if gt (len $valueMatches) 0 -}}
+      {{- $value := int (index $valueMatches 0) -}}
+      {{- if hasPrefix $save "Str" -}}{{- $strSave = $value -}}{{- end -}}
+      {{- if hasPrefix $save "Dex" -}}{{- $dexSave = $value -}}{{- end -}}
+      {{- if hasPrefix $save "Con" -}}{{- $conSave = $value -}}{{- end -}}
+      {{- if hasPrefix $save "Int" -}}{{- $intSave = $value -}}{{- end -}}
+      {{- if hasPrefix $save "Wis" -}}{{- $wisSave = $value -}}{{- end -}}
+      {{- if hasPrefix $save "Cha" -}}{{- $chaSave = $value -}}{{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
@@ -221,7 +242,7 @@
 {{- else if ge $levelInt 5 -}}{{- $prof = 3 -}}
 {{- end -}}
 
-{{- if $isCharacter -}}
+{{- if and $isCharacter (not (and (isset $source "speed") (isset $source "saves"))) -}}
   {{- /* Determine saving throw proficiencies based on class */ -}}
   {{- $classTextLower := lower $classText -}}
   

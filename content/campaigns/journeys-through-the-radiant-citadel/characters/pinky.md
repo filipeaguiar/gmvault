@@ -5,35 +5,54 @@ params:
   kind: "character"
 draft: false
 weight: 10
-summary: "Goblinoide Rogue 2 importado do D&D Beyond."
+summary: "Variant Aasimar Rogue 10 importado do D&D Beyond."
 tags:
   - jogador
-  - goblinoide
+  - aasimar
   - rogue
 visibility: "players"
 status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
-  class: "Rogue 2"
-  race: "Goblinoide"
-  ac: "16"
-  hp: "14"
-  feat: "Alert, Criminal Ability Score Improvements, Weapon Mastery"
+  class: "Rogue 10"
+  race: "Variant Aasimar"
+  ac: "15"
+  hp: "68"
+  feat: "Firearm Specialist, Skill Expert, Alert, Criminal Ability Score Improvements, Skilled, Weapon Mastery"
+  size: "Medium"
+  alignment: "Lawful Evil"
+  dndbeyond_id: "168108495"
+  speed:
+    walk: 30
+    fly: 0
+    swim: 0
+    climb: 0
+    burrow: 0
+  senses: "Passive Perception 15, Darkvision 60 ft."
+  languages: "Celestial, Common, Common Sign Language, Thieves’ Cant"
+  saves:
+    str: 1
+    dex: 8
+    con: 4
+    int: 7
+    wis: 1
+    cha: 4
+  saves_summary: "Dex +8, Int +7"
   stats:
-    str: 10
-    dex: 20
-    con: 12
-    int: 11
+    str: 12
+    dex: 18
+    con: 19
+    int: 16
     wis: 13
-    cha: 9
+    cha: 19
 
 # Relacionamentos
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/pinky-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/feats/alert/", "/compendium/items/leather-armor/", "/compendium/items/shortbow/", "/compendium/items/shortsword/", "/compendium/rules/cunning-action/", "/compendium/rules/expertise/", "/compendium/rules/sneak-attack/", "/compendium/rules/thieves-cant/", "/compendium/rules/weapon-mastery/"]
-spells_usage: []
+compendium_refs: ["/compendium/feats/alert/", "/compendium/feats/skill-expert/", "/compendium/feats/skilled/", "/compendium/items/padded-armor/", "/compendium/races/aasimar/", "/compendium/rules/10-ability-score-improvement/", "/compendium/rules/6-expertise/", "/compendium/rules/8-ability-score-improvement/", "/compendium/rules/cunning-action/", "/compendium/rules/cunning-strike/", "/compendium/rules/evasion/", "/compendium/rules/expertise/", "/compendium/rules/fast-hands/", "/compendium/rules/reliable-talent/", "/compendium/rules/rogue-subclass/", "/compendium/rules/second-story-work/", "/compendium/rules/sneak-attack/", "/compendium/rules/steady-aim/", "/compendium/rules/supreme-sneak/", "/compendium/rules/thieves-cant/", "/compendium/rules/uncanny-dodge/", "/compendium/rules/weapon-mastery/", "/compendium/spells/daylight/", "/compendium/spells/lesser-restoration/", "/compendium/spells/light/"]
+spells_usage: [{"name": "Daylight", "usage": "1x/Descanso Longo"}, {"name": "Lesser Restoration", "usage": "1x/Descanso Longo"}, {"name": "Light", "usage": "Truque"}]
 ---
 
 ### Biografia

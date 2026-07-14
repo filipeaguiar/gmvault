@@ -1,19 +1,14 @@
 ---
-title: Rage
+title: "Rage"
 params:
-  kind: rule
-draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Fúria
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "rule"
+draft: true
+status: "draft"
+summary: "Habilidade de classe."
 ---
 
-Você pode usar uma Ação Bônus para entrar em Fúria se não estiver usando Armadura Pesada. Você pode usar Fúria  vezes por Descanso Longo e recupera um uso gasto ao terminar um Descanso Curto.
+As a bonus action enter a rage for up to 1 minute (10 rounds). 
 
-Ative a Fúria clicando nesta característica e selecionando o menu suspenso chamado Ativar Fúria. Desmarque para parar de Fúria.
+You gain advantage on STR checks and saving throws (not attacks),  melee damage with STR weapons, resistance to bludgeoning, piercing, slashing damage. You can't cast or concentrate on spells while raging.
+
+Your rage ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage as a bonus action.

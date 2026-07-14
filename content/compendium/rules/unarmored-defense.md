@@ -1,17 +1,10 @@
 ---
-title: Unarmored Defense
+title: "Unarmored Defense"
 params:
-  kind: rule
-draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Defesa sem Armadura
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "rule"
+draft: true
+status: "draft"
+summary: "Habilidade de classe."
 ---
 
-Enquanto não estiver usando armadura, sua CA base é igual a  + qualquer bônus de Escudo.
+While not wearing armor, your AC equals  + any shield bonus.

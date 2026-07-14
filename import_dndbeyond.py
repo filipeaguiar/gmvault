@@ -531,6 +531,182 @@ def main():
         race_basename = race_data.get('baseName', race_fullname)
         race_slug = slugify(race_basename)
         
+        # Tamanho e Alinhamento
+        SIZE_MAP = {
+            1: "Tiny",
+            2: "Tiny",
+            3: "Small",
+            4: "Medium",
+            5: "Large",
+            6: "Huge",
+            7: "Gargantuan"
+        }
+        ALIGNMENT_MAP = {
+            1: "Lawful Good",
+            2: "Neutral Good",
+            3: "Chaotic Good",
+            4: "Lawful Neutral",
+            5: "True Neutral",
+            6: "Chaotic Neutral",
+            7: "Lawful Evil",
+            8: "Neutral Evil",
+            9: "Chaotic Evil"
+        }
+
+        alignment_val = char.get('alignmentId')
+        char_alignment = ALIGNMENT_MAP.get(alignment_val, "Neutral")
+
+        size_val = race_data.get('sizeId') or char.get('sizeId')
+        char_size = SIZE_MAP.get(size_val, "Medium")
+
+        # Velocidades de movimento
+        race_speeds = race_data.get('weightSpeeds', {}).get('normal', {})
+        char_speeds = {
+            "walk": race_speeds.get('walk', 30),
+            "fly": race_speeds.get('fly', 0),
+            "swim": race_speeds.get('swim', 0),
+            "climb": race_speeds.get('climb', 0),
+            "burrow": race_speeds.get('burrow', 0)
+        }
+
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('type') == 'bonus':
+                    subtype = item.get('subType', '')
+                    val = item.get('value') or item.get('fixedValue')
+                    if val is not None:
+                        val = int(val)
+                        if subtype == 'unarmored-movement' or subtype == 'speed' or subtype == 'speed-walk' or 'walk-speed' in subtype:
+                            char_speeds['walk'] += val
+                        elif 'fly-speed' in subtype or subtype == 'speed-fly':
+                            char_speeds['fly'] += val
+                        elif 'swim-speed' in subtype or subtype == 'speed-swim':
+                            char_speeds['swim'] += val
+                        elif 'climb-speed' in subtype or subtype == 'speed-climb':
+                            char_speeds['climb'] += val
+                        elif 'burrow-speed' in subtype or subtype == 'speed-burrow':
+                            char_speeds['burrow'] += val
+
+        custom_speeds = char.get('customSpeeds', [])
+        if custom_speeds:
+            speed_map = {1: "walk", 2: "fly", 3: "swim", 4: "climb", 5: "burrow"}
+            for cs in custom_speeds:
+                sid = cs.get('speedId')
+                dist = cs.get('distance')
+                if sid in speed_map and dist is not None:
+                    char_speeds[speed_map[sid]] = int(dist)
+
+        # Salvamentos (Saving Throws)
+        prof_bonus = (total_level - 1) // 4 + 2
+        stat_names_save = {
+            'str': 'strength',
+            'dex': 'dexterity',
+            'con': 'constitution',
+            'int': 'intelligence',
+            'wis': 'wisdom',
+            'cha': 'charisma'
+        }
+
+        char_saves = {s: get_modifier(stats_final[s]) for s in stat_names_save}
+        proficient_saves = {s: False for s in stat_names_save}
+
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('type') == 'proficiency':
+                    subtype = item.get('subType', '')
+                    for s, full_name in stat_names_save.items():
+                        if subtype == f"{full_name}-saving-throws":
+                            proficient_saves[s] = True
+
+        for s in char_saves:
+            if proficient_saves[s]:
+                char_saves[s] += prof_bonus
+
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('type') == 'bonus':
+                    subtype = item.get('subType', '')
+                    val = item.get('value') or item.get('fixedValue')
+                    if val is not None:
+                        val = int(val)
+                        if subtype == 'saving-throws':
+                            for s in char_saves:
+                                char_saves[s] += val
+                        else:
+                            for s, full_name in stat_names_save.items():
+                                if subtype == f"{full_name}-saving-throws":
+                                    char_saves[s] += val
+
+        saves_summary_list = []
+        for s in ['str', 'dex', 'con', 'int', 'wis', 'cha']:
+            if proficient_saves[s]:
+                val = char_saves[s]
+                sign = "+" if val >= 0 else ""
+                saves_summary_list.append(f"{s.capitalize()} {sign}{val}")
+        char_saves_summary = ", ".join(saves_summary_list)
+
+        # Sentidos (Senses)
+        darkvision = 0
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('type') == 'set-base' and item.get('subType') == 'darkvision':
+                    val = item.get('value') or item.get('fixedValue')
+                    if val is not None:
+                        darkvision = max(darkvision, int(val))
+
+        is_proficient_perception = False
+        has_expertise_perception = False
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('subType') == 'perception':
+                    if item.get('type') == 'proficiency':
+                        is_proficient_perception = True
+                    elif item.get('type') == 'expertise':
+                        has_expertise_perception = True
+
+        passive_perception_bonus = 0
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('type') == 'bonus' and item.get('subType') == 'passive-perception':
+                    val = item.get('value') or item.get('fixedValue')
+                    if val is not None:
+                        passive_perception_bonus += int(val)
+
+        passive_perception = 10 + wis_mod + passive_perception_bonus
+        if has_expertise_perception:
+            passive_perception += 2 * prof_bonus
+        elif is_proficient_perception:
+            passive_perception += prof_bonus
+
+        senses_list = [f"Passive Perception {passive_perception}"]
+        if darkvision > 0:
+            senses_list.append(f"Darkvision {darkvision} ft.")
+        char_senses = ", ".join(senses_list)
+
+        # Idiomas (Languages)
+        languages_list = []
+        for source, items in modifiers.items():
+            if not items:
+                continue
+            for item in items:
+                if item.get('type') == 'language':
+                    lang_name = item.get('friendlySubtypeName')
+                    if lang_name and lang_name not in languages_list:
+                        languages_list.append(lang_name)
+        char_languages = ", ".join(sorted(languages_list))
+        
         # 4. Cálculo do HP Máximo
         base_hp = char.get('baseHitPoints', 10)
         bonus_hp = char.get('bonusHitPoints') or 0
@@ -812,6 +988,25 @@ char_info:
   ac: "{final_ac}"
   hp: "{final_hp}"
   feat: "{feat_str}"
+  size: "{char_size}"
+  alignment: "{char_alignment}"
+  dndbeyond_id: "{args.char_id}"
+  speed:
+    walk: {char_speeds['walk']}
+    fly: {char_speeds['fly']}
+    swim: {char_speeds['swim']}
+    climb: {char_speeds['climb']}
+    burrow: {char_speeds['burrow']}
+  senses: "{char_senses}"
+  languages: "{char_languages}"
+  saves:
+    str: {char_saves['str']}
+    dex: {char_saves['dex']}
+    con: {char_saves['con']}
+    int: {char_saves['int']}
+    wis: {char_saves['wis']}
+    cha: {char_saves['cha']}
+  saves_summary: "{char_saves_summary}"
   stats:
     str: {stats_final['str']}
     dex: {stats_final['dex']}

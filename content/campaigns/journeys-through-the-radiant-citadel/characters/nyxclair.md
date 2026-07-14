@@ -5,35 +5,54 @@ params:
   kind: "character"
 draft: false
 weight: 10
-summary: "Elf Warlock 2 importado do D&D Beyond."
+summary: "Aereni Elf Barbarian 1 / Fighter 19 importado do D&D Beyond."
 tags:
   - jogador
   - elf
-  - warlock
+  - barbarian
 visibility: "players"
 status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
-  class: "Warlock 2"
-  race: "Elf"
-  ac: "12"
-  hp: "16"
-  feat: "Magic Initiate (Wizard), Sage Ability Score Improvements"
+  class: "Barbarian 1 / Fighter 19"
+  race: "Aereni Elf"
+  ac: "21"
+  hp: "226"
+  feat: "Defensive Duelist, Dual Wielder, Sentinel, Elven Accuracy, Hero's Journey Boon"
+  size: "Medium"
+  alignment: "Neutral"
+  dndbeyond_id: "168112000"
+  speed:
+    walk: 30
+    fly: 0
+    swim: 0
+    climb: 0
+    burrow: 0
+  senses: "Passive Perception 17, Darkvision 60 ft."
+  languages: "Common, Elvish"
+  saves:
+    str: 9
+    dex: 7
+    con: 13
+    int: 1
+    wis: 3
+    cha: 3
+  saves_summary: "Str +9, Con +13"
   stats:
-    str: 8
-    dex: 12
-    con: 14
-    int: 14
-    wis: 12
-    cha: 14
+    str: 12
+    dex: 20
+    con: 20
+    int: 8
+    wis: 13
+    cha: 13
 
 # Relacionamentos
 handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/nyxclair-art/"]
 locations: []
 factions: []
-compendium_refs: ["/compendium/feats/magic-initiate/", "/compendium/items/leather-armor/", "/compendium/items/quarterstaff/", "/compendium/races/elf/", "/compendium/rules/agonizing-blast-eldritch-blast/", "/compendium/rules/eldritch-invocation-options/", "/compendium/rules/eldritch-invocations/", "/compendium/rules/magical-cunning/", "/compendium/rules/pact-magic/", "/compendium/rules/pact-of-the-chain/", "/compendium/rules/pact-of-the-tome/", "/compendium/spells/charm-person/", "/compendium/spells/eldritch-blast/", "/compendium/spells/find-familiar/", "/compendium/spells/guidance/", "/compendium/spells/gust/", "/compendium/spells/mage-hand/", "/compendium/spells/message/", "/compendium/spells/ray-of-frost/", "/compendium/spells/speak-with-animals/", "/compendium/spells/unseen-servant/"]
-spells_usage: [{"name": "Charm Person", "usage": "1x/Descanso Longo"}, {"name": "Eldritch Blast", "usage": "Truque"}, {"name": "Find Familiar", "usage": "Ritual"}, {"name": "Guidance", "usage": "Truque"}, {"name": "Gust", "usage": "Truque"}, {"name": "Mage Hand", "usage": "Truque"}, {"name": "Message", "usage": "Truque"}, {"name": "Ray of Frost", "usage": "Truque"}, {"name": "Speak with Animals", "usage": "Slot / Ritual"}, {"name": "Unseen Servant", "usage": "Slot / Ritual"}]
+compendium_refs: ["/compendium/feats/defensive-duelist/", "/compendium/feats/dual-wielder/", "/compendium/feats/elven-accuracy/", "/compendium/feats/sentinel/", "/compendium/magic-items/boots-of-elvenkind/", "/compendium/magic-items/bracers-of-defense/", "/compendium/magic-items/ring-of-protection/", "/compendium/magic-items/stone-of-good-luck/", "/compendium/races/elf/", "/compendium/rules/action-surge/", "/compendium/rules/additional-fighting-style/", "/compendium/rules/blind-fighting/", "/compendium/rules/equipment/", "/compendium/rules/extra-attack/", "/compendium/rules/fighting-style/", "/compendium/rules/hit-points/", "/compendium/rules/improved-critical/", "/compendium/rules/indomitable/", "/compendium/rules/martial-archetype/", "/compendium/rules/proficiencies/", "/compendium/rules/rage/", "/compendium/rules/remarkable-athlete/", "/compendium/rules/second-wind/", "/compendium/rules/superior-critical/", "/compendium/rules/survivor/", "/compendium/rules/two-weapon-fighting/", "/compendium/rules/unarmored-defense/"]
+spells_usage: []
 ---
 
 ### Biografia

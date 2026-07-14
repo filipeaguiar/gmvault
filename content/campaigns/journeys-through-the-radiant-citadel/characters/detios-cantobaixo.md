@@ -20,6 +20,25 @@ char_info:
   ac: "14"
   hp: "14"
   feat: "Nenhum"
+  size: "Small"
+  alignment: "Neutral"
+  dndbeyond_id: "168107257"
+  speed:
+    walk: 30
+    fly: 0
+    swim: 0
+    climb: 0
+    burrow: 0
+  senses: "Passive Perception 9"
+  languages: "Common, Elvish, Halfling"
+  saves:
+    str: -1
+    dex: 5
+    con: 1
+    int: 0
+    wis: -1
+    cha: 6
+  saves_summary: "Dex +5, Cha +6"
   stats:
     str: 8
     dex: 16

@@ -1,17 +1,10 @@
 ---
-title: Uncanny Metabolism
+title: "Uncanny Metabolism"
 params:
-  kind: rule
-draft: false
-status: draft
-summary: Habilidade de classe.
-titulo_pt_br: Metabolismo Sobrenatural
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "rule"
+draft: true
+status: "draft"
+summary: "Habilidade de classe."
 ---
 
-Uma vez por Descanso Longo, quando você rolar Iniciativa, pode recuperar todos os Pontos de Foco gastos e recuperar PV.
+Once per Long Rest, when you roll Initiative you can regain all expended Focus Points, and regain  HP.
