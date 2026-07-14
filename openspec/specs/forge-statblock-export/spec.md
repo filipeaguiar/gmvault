@@ -2,9 +2,7 @@
 
 ## Purpose
 Define the Hugo-generated Forge JSON export format and the requirements for mapping and ordering character and monster pages into the Forge statblock structure.
-
 ## Requirements
-
 ### Requirement: Site generates a Forge statblock export
 The Hugo build SHALL generate a JSON file at `/exports/forge/statblocks.json` using a dedicated output format, without requiring a post-build script.
 
@@ -68,3 +66,11 @@ The Forge exporter SHALL emit characters before monsters, order each group deter
 #### Scenario: Record identifier is stable
 - **WHEN** a page permalink does not change between builds
 - **THEN** its Forge `id` SHALL remain unchanged and SHALL be unique within the export
+
+### Requirement: Characters include level features in Forge metadata
+The Forge exporter SHALL extract class and subclass level-specific features from the character's `compendium_refs` and include them in the traits/features section Z034.
+
+#### Scenario: Character has class or subclass features
+- **WHEN** a character page contains `compendium_refs` pointing to kind `rule` or `feat`
+- **THEN** the exporter SHALL append these features to the Forge `abilities` array `Z034` with stable IDs, names, and descriptions
+
