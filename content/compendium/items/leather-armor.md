@@ -2,14 +2,14 @@
 title: "Leather Armor"
 params:
   kind: "item"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
 visibility: "public"
-status: "draft"
+status: "ready"
 
 item_info:
   type: "Light Armor"

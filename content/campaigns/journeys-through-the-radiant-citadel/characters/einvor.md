@@ -22,15 +22,15 @@ char_info:
   feat: "Weapon Mastery"
   size: "Medium"
   alignment: "Neutral"
-  dndbeyond_id: ""
+  dndbeyond_id: "168143718"
   speed:
-    walk: 30
+    walk: 35
     fly: 0
     swim: 0
     climb: 0
     burrow: 0
   senses: "Passive Perception 10"
-  languages: "Common, Giant"
+  languages: "Common, Giant, Orc, Sylvan"
   saves:
     str: 4
     dex: 1
@@ -48,7 +48,6 @@ char_info:
     cha: 10
 
 # Relacionamentos
-handouts: ["/campaigns/journeys-through-the-radiant-citadel/handouts/einvor-art/"]
 locations: []
 factions: []
 compendium_refs: ["/compendium/items/greataxe/", "/compendium/races/goliath/", "/compendium/rules/danger-sense/", "/compendium/rules/rage/", "/compendium/rules/reckless-attack/", "/compendium/rules/unarmored-defense/", "/compendium/rules/weapon-mastery/"]

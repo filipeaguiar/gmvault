@@ -28,6 +28,8 @@
 {{- $species := "" -}}
 {{- $alignment := "" -}}
 {{- if $isCharacter -}}
+  {{- $size = default "Medium" (index $source "size") -}}
+  {{- $alignment = default "Neutral" (index $source "alignment") -}}
   {{- $species = default "" (index $source "race") -}}
 {{- else -}}
   {{- $statsMeta := printf "%v" (default "" (index $page.Params "stats_meta")) -}}

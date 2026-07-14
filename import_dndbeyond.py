@@ -85,6 +85,23 @@ def fetch_from_5etools(kind, english_name):
         
     found_data = None
     headers = {'User-Agent': 'Mozilla/5.0'}
+
+    if kind == "class":
+        url_index = DATA_BASE_URL + "class/index.json"
+        try:
+            req = urllib.request.Request(url_index, headers=headers)
+            with urllib.request.urlopen(req) as response:
+                class_index = json.loads(response.read().decode())
+            class_key = english_name.lower()
+            if class_key in class_index:
+                files = ["class/" + class_index[class_key]]
+            else:
+                files = []
+                for k, filename in class_index.items():
+                    if k in class_key or class_key in k:
+                        files.append("class/" + filename)
+        except Exception as e:
+            print(f"  [5e.tools] Erro ao carregar index de classes: {e}")
     
     for file_path in files:
         url = DATA_BASE_URL + file_path
@@ -174,6 +191,8 @@ def fetch_from_5etools(kind, english_name):
     content_dir = f"content/compendium/{kind}s"
     if kind == "magic_item":
         content_dir = "content/compendium/magic-items"
+    elif kind == "class":
+        content_dir = "content/compendium/classes"
         
     os.makedirs(content_dir, exist_ok=True)
     dest_path = f"{content_dir}/{slug}.md"
@@ -428,7 +447,12 @@ class_info:
         with open(dest_path, "w", encoding="utf-8") as f:
             f.write(markdown)
         print(f"  [5e.tools] SUCESSO: Arquivo de compêndio criado em: {dest_path}")
-        return f"/compendium/{kind}s/{slug}/" if kind != "magic_item" else f"/compendium/magic-items/{slug}/"
+        if kind == "magic_item":
+            return f"/compendium/magic-items/{slug}/"
+        elif kind == "class":
+            return f"/compendium/classes/{slug}/"
+        else:
+            return f"/compendium/{kind}s/{slug}/"
         
     return None
 
@@ -848,11 +872,25 @@ def main():
         for feat in feats_list:
             entities_to_check.append(("feat", feat, f"/compendium/feats/{slugify(feat)}/"))
         # Itens Equipados
+        item_aliases = {
+            "leather": "leather armor",
+            "studded leather": "studded leather armor",
+            "scale mail": "scale mail armor",
+            "ring mail": "ring mail armor",
+            "plate": "plate armor",
+            "hide": "hide armor",
+            "padded": "padded armor",
+            "chain mail": "chain mail armor",
+            "splint": "splint armor"
+        }
         for item_name, is_magic, filter_type in equipped_items_names:
             if filter_type in ['Weapon', 'Armor', 'Wondrous item', 'Ring', 'Potion', 'Scroll']:
                 kind = "magic_item" if is_magic else "item"
                 slug_prefix = "magic-items" if is_magic else "items"
-                entities_to_check.append((kind, item_name, f"/compendium/{slug_prefix}/{slugify(item_name)}/"))
+                check_name = item_name
+                if item_name.lower() in item_aliases:
+                    check_name = item_aliases[item_name.lower()]
+                entities_to_check.append((kind, item_name, f"/compendium/{slug_prefix}/{slugify(check_name)}/"))
         # Magias
         for spell_name in spells_list:
             entities_to_check.append(("spell", spell_name, f"/compendium/spells/{slugify(spell_name)}/"))
