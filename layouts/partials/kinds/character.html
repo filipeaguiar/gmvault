@@ -15,7 +15,7 @@
       <h1 style="margin:0;">{{ .Title }}</h1>
       <div class="char-meta">
         {{ with .Params.char_info }}
-          {{ or .species .race }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
+          {{ or .species .race }}{{ with .species_variant }} ({{ . }}){{ end }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
           {{ with .alignment }} | {{ . }}{{ end }}
           {{ with .size }} | {{ . }}{{ end }}
         {{ end }}

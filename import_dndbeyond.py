@@ -124,6 +124,17 @@ def main():
         race_basename = race_data.get('baseName', race_fullname)
         race_slug = slugify(race_basename)
         
+        species_variant = ""
+        if race_fullname != race_basename:
+            if "(" in race_fullname and ")" in race_fullname:
+                species_variant = race_fullname.split("(")[1].split(")")[0].strip()
+            else:
+                cleaned_variant = race_fullname.replace(race_basename, "").strip()
+                if cleaned_variant:
+                    species_variant = cleaned_variant
+                else:
+                    species_variant = race_fullname.strip()
+        
         # Tamanho e Alinhamento
         SIZE_MAP = {
             1: "Tiny",
@@ -922,7 +933,8 @@ char_info:
   class_level: {primary_class_level}
   subclass: "{primary_subclass_name}"
   level: {total_level}
-  species: "{race_fullname}"
+  species: "{race_basename}"
+  species_variant: "{species_variant}"
   ac: "{final_ac}"
   hp: "{final_hp}"
   hp_max: "{final_hp}"

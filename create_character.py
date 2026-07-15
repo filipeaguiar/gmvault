@@ -250,9 +250,10 @@ def main():
     )
 
     is_variant = selected_subspecies_label != "Espécie Base"
+    species_variant = selected_sub_entry.get('name', '') if is_variant else ""
     full_species_name = selected_species_name
     if is_variant:
-        full_species_name = f"{selected_species_name} ({selected_sub_entry.get('name')})"
+        full_species_name = f"{selected_species_name} ({species_variant})"
 
     # Resolver bônus de atributos da espécie
     ability_bonuses = {"str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0}
@@ -474,7 +475,8 @@ char_info:
   class_level: {level}
   subclass: "{subclass}"
   level: {level}
-  species: "{full_species_name}"
+  species: "{selected_species_name}"
+  species_variant: "{species_variant}"
   ac: "{10 + mods['dex']}"
   hp: "{max_hp}"
   hp_max: "{max_hp}"
