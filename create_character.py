@@ -120,9 +120,49 @@ def ask_int(prompt, default=0):
             print("  ⚠ Digite um número inteiro válido.")
 
 def ask_choice(prompt, options):
-    print(f"\n{prompt}")
-    for i, opt in enumerate(options, 1):
-        print(f"  {i}. {opt}")
+    try:
+        from rich.console import Console
+        from rich.table import Table
+        import math
+
+        console = Console()
+        console.print(f"\n[bold]{prompt}[/]")
+
+        # Se houver muitas opções, organiza em até 4 colunas
+        num_cols = 4 if len(options) >= 8 else 1
+
+        if num_cols > 1:
+            table = Table(show_header=False, box=None, padding=(0, 2))
+            for _ in range(num_cols):
+                table.add_column()
+
+            num_rows = math.ceil(len(options) / num_cols)
+            for r in range(num_rows):
+                row_cells = []
+                for c in range(num_cols):
+                    idx = r + c * num_rows
+                    if idx < len(options):
+                        # Formata o item: converte tuplas em string caso ocorra na lista de subespécies
+                        opt_val = options[idx]
+                        if isinstance(opt_val, tuple):
+                            opt_label = str(opt_val[0])
+                        else:
+                            opt_label = str(opt_val)
+                        row_cells.append(f"[bold cyan]{idx+1:2d}.[/] {opt_label}")
+                    else:
+                        row_cells.append("")
+                table.add_row(*row_cells)
+            console.print(table)
+        else:
+            for i, opt in enumerate(options, 1):
+                opt_label = opt[0] if isinstance(opt, tuple) else opt
+                console.print(f"  [bold cyan]{i}[/]  {opt_label}")
+    except ImportError:
+        print(f"\n{prompt}")
+        for i, opt in enumerate(options, 1):
+            opt_label = opt[0] if isinstance(opt, tuple) else opt
+            print(f"  {i}. {opt_label}")
+
     while True:
         raw = ask("Escolha", "1")
         try:
