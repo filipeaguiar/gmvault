@@ -28,7 +28,7 @@
         {{ with .GetPage "journal" }}
           {{ if .RelPermalink }}
             <a href="{{ .RelPermalink }}" class="quick-card">
-              <span class="quick-icon"><i class="ra ra-quill"></i></span>
+              <span class="quick-icon"><i class="ra ra-quill-ink"></i></span>
               <span class="quick-title">Diário de Campanha</span>
               <span class="quick-count">{{ len .Pages }} entradas</span>
             </a>
@@ -37,7 +37,7 @@
         {{ with .GetPage "characters" }}
           {{ if .RelPermalink }}
             <a href="{{ .RelPermalink }}" class="quick-card">
-              <span class="quick-icon"><i class="ra ra-pawn"></i></span>
+              <span class="quick-icon"><i class="ra ra-player"></i></span>
               <span class="quick-title">Personagens Jogadores</span>
               <span class="quick-count">{{ len .Pages }} fichas</span>
             </a>
@@ -46,7 +46,7 @@
         {{ with .GetPage "npcs" }}
           {{ if .RelPermalink }}
             <a href="{{ .RelPermalink }}" class="quick-card">
-              <span class="quick-icon"><i class="ra ra-cowl"></i></span>
+              <span class="quick-icon"><i class="ra ra-double-team"></i></span>
               <span class="quick-title">Personagens do Mestre (NPCs)</span>
               <span class="quick-count">{{ len .Pages }} NPCs</span>
             </a>
@@ -55,7 +55,7 @@
         {{ with .GetPage "locations" }}
           {{ if .RelPermalink }}
             <a href="{{ .RelPermalink }}" class="quick-card">
-              <span class="quick-icon"><i class="ra ra-castle"></i></span>
+              <span class="quick-icon"><i class="ra ra-castle-flag"></i></span>
               <span class="quick-title">Geografia e Localidades</span>
               <span class="quick-count">{{ len .Pages }} locais</span>
             </a>
@@ -64,7 +64,7 @@
         {{ with .GetPage "factions" }}
           {{ if .RelPermalink }}
             <a href="{{ .RelPermalink }}" class="quick-card">
-              <span class="quick-icon"><i class="ra ra-flag"></i></span>
+              <span class="quick-icon"><i class="ra ra-batwings"></i></span>
               <span class="quick-title">Facções e Organizações</span>
               <span class="quick-count">{{ len .Pages }} facções</span>
             </a>
@@ -73,7 +73,7 @@
         {{ with .GetPage "handouts" }}
           {{ if .RelPermalink }}
             <a href="{{ .RelPermalink }}" class="quick-card">
-              <span class="quick-icon"><i class="ra ra-picture"></i></span>
+              <span class="quick-icon"><i class="ra ra-scroll-unfurled"></i></span>
               <span class="quick-title">Handouts e Documentos</span>
               <span class="quick-count">{{ len .Pages }} arquivos</span>
             </a>
