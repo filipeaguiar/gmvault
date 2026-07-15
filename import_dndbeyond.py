@@ -872,6 +872,16 @@ summary: "Habilidade de classe."
                 "subclass": subcls_def.get('name', "")
             })
             
+        is_multiclass = len(classes_data) > 1
+        if is_multiclass:
+            primary_class_name = class_str
+            primary_class_level = "null"
+            primary_subclass_name = ""
+        else:
+            primary_class_name = classes_data[0]["name"] if classes_data else ""
+            primary_class_level = classes_data[0]["level"] if classes_data else 0
+            primary_subclass_name = classes_data[0]["subclass"] if classes_data else ""
+
         # 10. Montar conteúdo Markdown
         slug = slugify(char_name)
         slug_map = {
@@ -908,7 +918,9 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
-  class: "{class_str}"
+  class: "{primary_class_name}"
+  class_level: {primary_class_level}
+  subclass: "{primary_subclass_name}"
   level: {total_level}
   species: "{race_fullname}"
   ac: "{final_ac}"

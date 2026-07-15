@@ -284,6 +284,7 @@ def main():
     level = ask_int("Nível do personagem", 1)
     if level < 1:
         level = 1
+    subclass = ask("Subclasse (deixe vazio se não houver)", "")
 
     # Obter dados de vida (Hit Dice)
     class_entry = class_data.get("class", [{}])[0]
@@ -444,8 +445,13 @@ def main():
     classes_data = [{
         "name": selected_class_name,
         "level": level,
-        "subclass": ""
+        "subclass": subclass
     }]
+
+    summary_str = f"{full_species_name} {selected_class_name} {level}"
+    if subclass:
+        summary_str += f" ({subclass})"
+    summary_str += " criado manualmente guiado por dados."
 
     markdown = f"""---
 title: {json.dumps(char_name)}
@@ -454,7 +460,7 @@ params:
   kind: "character"
 draft: false
 weight: 10
-summary: "{full_species_name} {selected_class_name} {level} criado manualmente guiado por dados."
+summary: "{summary_str}"
 tags:
   - jogador
   - {slugify(selected_species_name)}
@@ -464,7 +470,9 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
-  class: "{selected_class_name} {level}"
+  class: "{selected_class_name}"
+  class_level: {level}
+  subclass: "{subclass}"
   level: {level}
   species: "{full_species_name}"
   ac: "{10 + mods['dex']}"
