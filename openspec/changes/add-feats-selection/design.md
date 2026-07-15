@@ -9,7 +9,7 @@ Para completar a criação de personagem de forma aderente às regras modernas (
 **Goals:**
 - Baixar e fazer cache local do arquivo `feats.json` do espelho do 5e.tools em `content/compendium/feats/.feats_cache.json`.
 - Filtrar talentos por fonte `XPHB` (D&D 2024) para priorizar a nova edição das regras.
-- Implementar prompt de seleção para exatamente 1 Talento de Origem (*Origin Feat*, categoria `O`) no nível 1.
+- Implementar prompt de seleção para Talentos de Origem (*Origin Feats*, categoria `O`) no nível 1, permitindo ao usuário escolher a quantidade desejada (padrão `1`, flexibilizando para espécies/linhagens que dão talentos extras).
 - Implementar prompt de seleção opcional para múltiplos Talentos Gerais ou de Estilo de Combate (*General Feats* / *Fighting Style*, categorias `G` e `FS`) para personagens de nível superior.
 - Fazer download automático das descrições dos talentos selecionados para `content/compendium/feats/` e vinculá-las no compêndio da ficha.
 

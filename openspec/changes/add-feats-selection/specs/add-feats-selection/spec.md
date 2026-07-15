@@ -8,11 +8,11 @@ O sistema SHALL baixar sob demanda o arquivo `feats.json` do repositório remoto
 - **THEN** o sistema SHALL efetuar o download via HTTP e criar o arquivo local contendo a lista completa de talentos.
 
 ### Requirement: Select Origin Feat at Level 1
-O sistema SHALL permitir a seleção de exatamente 1 Talento de Origem (*Origin Feat*) se o nível do personagem sendo criado for 1.
+O sistema SHALL permitir a seleção de Talentos de Origem (*Origin Feats*) se o nível do personagem sendo criado for 1, permitindo especificar a quantidade a ser escolhida.
 
-#### Scenario: Interactive selection of Origin feat
+#### Scenario: Interactive selection of Origin feats
 - **WHEN** o personagem é de nível 1
-- **THEN** o sistema SHALL obter os talentos de categoria "O" e fonte "XPHB" do cache, exibi-los organizados em colunas no terminal e solicitar que o usuário digite o número correspondente ao talento escolhido.
+- **THEN** o sistema SHALL perguntar a quantidade de talentos de Origem desejada (padrão `1`), obter os talentos de categoria \"O\" e fonte \"XPHB\" do cache, exibi-los organizados em colunas no terminal e solicitar que o usuário selecione a quantidade informada.
 
 ### Requirement: Select General Feats at Higher Levels
 O sistema SHALL permitir a seleção de múltiplos Talentos Gerais ou de Estilo de Combate (*General/Fighting Style Feats*) para personagens de nível superior a 1.
