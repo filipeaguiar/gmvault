@@ -909,6 +909,7 @@ status: "ready"
 # Estatísticas Estruturadas
 char_info:
   class: "{class_str}"
+  level: {total_level}
   species: "{race_fullname}"
   ac: "{final_ac}"
   hp: "{final_hp}"

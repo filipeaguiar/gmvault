@@ -465,6 +465,7 @@ status: "ready"
 # Estatísticas Estruturadas
 char_info:
   class: "{selected_class_name} {level}"
+  level: {level}
   species: "{full_species_name}"
   ac: "{10 + mods['dex']}"
   hp: "{max_hp}"
