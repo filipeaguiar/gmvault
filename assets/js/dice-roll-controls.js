@@ -67,6 +67,59 @@ function showResult(button, payload) {
   output.textContent = `${total}${summary}`;
 }
 
+function collectDiagnostics(root = document) {
+  const bridge = globalThis.GMVaultDice || null;
+  const status = getStatusContainer(root)?.textContent || null;
+  const buttons = [...root.querySelectorAll(CONTROL_SELECTOR)].map((button, index) => ({
+    index,
+    text: button.textContent.trim(),
+    notation: button.dataset.diceNotation || null,
+    label: button.dataset.diceLabel || null,
+    target: button.dataset.diceTarget || null,
+    state: button.dataset.diceState || null,
+    disabled: Boolean(button.disabled),
+  }));
+
+  return {
+    href: root.location?.href || location.href,
+    origin: root.location?.origin || location.origin,
+    referrer: root.referrer || document.referrer || null,
+    isIframe: window.self !== window.top,
+    hasParent: window.parent && window.parent !== window,
+    readyState: document.readyState,
+    targetOrigin: getTargetOrigin(root),
+    bridgeReady: Boolean(bridge && typeof bridge.createDicePlusClient === "function"),
+    resolvedTargetOrigin: bridge?.resolvedTargetOrigin || null,
+    scripts: [...document.scripts].map((script) => script.src).filter(Boolean).filter((src) => src.includes("dice")),
+    globals: {
+      GMVaultDice: Boolean(window.GMVaultDice),
+      GMVaultDiceControls: Boolean(window.GMVaultDiceControls),
+      GMVaultDiceHost: Boolean(window.GMVaultDiceHost),
+    },
+    buttons,
+    status,
+  };
+}
+
+async function runDiagnostics(root = document) {
+  const diagnostics = collectDiagnostics(root);
+  console.group(LOG_PREFIX, "Diagnóstico");
+  console.log(diagnostics);
+  console.groupEnd();
+
+  if (globalThis.GMVaultDice?.checkAvailabilityDetailed) {
+    try {
+      diagnostics.availability = await globalThis.GMVaultDice.checkAvailabilityDetailed();
+      console.info(LOG_PREFIX, "Disponibilidade detalhada", diagnostics.availability);
+    } catch (error) {
+      diagnostics.availabilityError = error instanceof Error ? error.message : String(error);
+      console.error(LOG_PREFIX, "Erro no diagnóstico de disponibilidade", error);
+    }
+  }
+
+  return diagnostics;
+}
+
 async function initializeDiceRollControls(root = document) {
   const buttons = [...root.querySelectorAll(CONTROL_SELECTOR)];
   if (buttons.length === 0) return null;
@@ -134,7 +187,7 @@ async function initializeDiceRollControls(root = document) {
 }
 
 if (typeof window !== "undefined") {
-  window.GMVaultDiceControls = { initializeDiceRollControls };
+  window.GMVaultDiceControls = { initializeDiceRollControls, runDiagnostics };
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => initializeDiceRollControls());
   } else {
