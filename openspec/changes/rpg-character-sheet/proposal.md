@@ -15,11 +15,13 @@ As fichas de personagem atuais no site estático do gmvault são renderizadas de
   6. **Classe & Subclasse**: Detalhes e descrição da classe e subclasse do personagem, exibindo o que ele recebe em cada nível de sua progressão.
   7. **Características & Traços (Talentos/Traços)**: Lista completa de características de classe, raça e talentos (Features & Traits) do personagem, traduzidos para pt_br.
   8. **Imagem (Retrato)**: A última aba será dedicada à exibição da ilustração oficial ou retrato do personagem em tamanho destacado para imersão visual.
+- **Sincronização de Ficha Local com 5e.tools**: Desenvolvimento de uma ferramenta que permite aos usuários evoluírem e atualizarem suas fichas editando diretamente o arquivo Markdown do personagem. Ao adicionar novas magias, itens, classes ou talentos no YAML frontmatter do Markdown, um script varre essas chaves, busca quaisquer novos stubs inexistentes no compêndio a partir do 5e.tools e atualiza a lista de referências do compêndio (`compendium_refs`) no próprio Markdown, sem sobrescrever edições manuais de atributos, vida ou nome.
 
 ## Capabilities
 
 ### New Capabilities
 - `rpg-character-sheet`: Sistema visual de renderização de ficha de personagem de RPG no gmvault com suporte a abas, estilização de atributos e integração com dados do compêndio.
+- `character-sync-tools`: Script utilitário para sincronização e enriquecimento de fichas Markdown editadas manualmente por meio do download automático de dados de apoio a partir do 5e.tools para o compêndio local.
 
 ### Modified Capabilities
 Nenhuma.
