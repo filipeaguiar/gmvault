@@ -1,0 +1,88 @@
+{{- $page := .page -}}
+{{- $groupMode := .group_mode | default "directory" -}}
+{{- $currentVisibility := printf "%s" (partial "helpers/visibility.html" $page) -}}
+{{- $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") -}}
+{{- $groups := dict -}}
+{{- $orderedPages := sort $page.Pages.ByTitle "Weight" "asc" -}}
+
+{{- $groupDefs := dict
+  "monsters" (dict "label" "Monstros" "icon" "ra-dragon")
+  "items" (dict "label" "Itens" "icon" "ra-knapsack")
+  "magic-items" (dict "label" "Itens Mágicos" "icon" "ra-gem-pendant")
+  "classes" (dict "label" "Classes" "icon" "ra-sword")
+  "species" (dict "label" "Espécies" "icon" "ra-hood")
+  "races" (dict "label" "Raças" "icon" "ra-hood")
+  "feats" (dict "label" "Talentos" "icon" "ra-trophy")
+  "spells" (dict "label" "Magias" "icon" "ra-fire")
+  "backgrounds" (dict "label" "Antecedentes" "icon" "ra-scroll-unfurled")
+  "conditions" (dict "label" "Condições" "icon" "ra-skull")
+  "rules" (dict "label" "Regras" "icon" "ra-open-book")
+  "other" (dict "label" "Outros" "icon" "ra-book")
+-}}
+{{- $groupOrder := slice "monsters" "items" "magic-items" "classes" "species" "races" "feats" "spells" "backgrounds" "conditions" "rules" "other" -}}
+
+{{- range $orderedPages -}}
+  {{- $childVisibility := printf "%s" (partial "helpers/visibility.html" .) -}}
+  {{- $childIsPlayerSafe := or (eq $childVisibility "players") (eq $childVisibility "public") -}}
+  {{- if or (not $isPlayerPage) $childIsPlayerSafe -}}
+    {{- $groupKey := "other" -}}
+    {{- if eq $groupMode "directory" -}}
+      {{- $directory := strings.TrimSuffix "/" .File.Dir -}}
+      {{- if $directory -}}
+        {{- $groupKey = path.Base $directory -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $resolvedKind := partial "helpers/kind.html" . -}}
+      {{- if $resolvedKind -}}
+        {{- $groupKey = $resolvedKind -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not (in $groupOrder $groupKey) -}}
+      {{- $groupKey = "other" -}}
+    {{- end -}}
+    {{- $groupPages := default (slice) (index $groups $groupKey) -}}
+    {{- $groupPages = $groupPages | append . -}}
+    {{- $groups = merge $groups (dict $groupKey $groupPages) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $groupOrder -}}
+  {{- $groupPages := index $groups . -}}
+  {{- if $groupPages -}}
+    {{- $definition := index $groupDefs . -}}
+    <section class="compendium-group" id="compendium-group-{{ . }}" aria-labelledby="compendium-group-title-{{ . }}">
+      <header class="compendium-group-header">
+        <div>
+          <h2 class="compendium-group-title" id="compendium-group-title-{{ . }}">
+            <i class="ra {{ $definition.icon }}" aria-hidden="true"></i> {{ $definition.label }}
+          </h2>
+          <p class="compendium-group-count">{{ len $groupPages }} {{ if eq (len $groupPages) 1 }}página{{ else }}páginas{{ end }}</p>
+        </div>
+        <a class="compendium-group-anchor" href="#compendium-group-{{ . }}" aria-label="Link para {{ $definition.label }}">#</a>
+      </header>
+
+      <div class="cards-grid index-cards-grid compendium-group-grid">
+        {{- range $groupPages -}}
+          {{- $kind := printf "%s" (partial "helpers/kind.html" .) -}}
+          <div class="card index-card">
+            <h3>
+              <a href="{{ .RelPermalink }}">
+                {{- with $kind -}}<span class="compendium-card-kind-icon"><i class="ra {{ if eq . "monster" }}ra-dragon{{ else if eq . "feat" }}ra-trophy{{ else if eq . "spell" }}ra-fire{{ else }}ra-book{{ end }}" aria-hidden="true"></i></span>{{- end -}}
+                {{ or .Params.titulo_pt_br .Title }}
+              </a>
+            </h3>
+            {{- if .Params.summary -}}
+              <p class="summary">{{ .Params.summary }}</p>
+            {{- else if .Summary -}}
+              <p class="summary">{{ .Summary | plainify | truncate 120 }}</p>
+            {{- end -}}
+            <div class="card-meta compact-meta">
+              {{- if $kind -}}<span class="badge kind-{{ $kind }}">{{ replace $kind "_" " " | title }}</span>{{- end -}}
+              {{- if .Params.status -}}<span class="badge status-{{ .Params.status }}">{{ .Params.status | title }}</span>{{- end -}}
+            </div>
+          </div>
+        {{- end -}}
+      </div>
+    </section>
+  {{- end -}}
+{{- end -}}

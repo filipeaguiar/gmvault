@@ -2,9 +2,10 @@
 title: "Monk's Focus"
 params:
   kind: "rule"
-draft: true
+draft: false
 status: "draft"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.

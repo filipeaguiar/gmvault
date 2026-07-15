@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 When you attack with a weapon whose mastery property you can use, you can replace that property with the XPHB, XPHB, or XPHB property for that attack.

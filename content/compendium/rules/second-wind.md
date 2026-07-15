@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 You have a limited well of physical and mental stamina that you can draw on. As a XPHB, you can use it to regain XPHB equal to 1d10 plus your Fighter level.

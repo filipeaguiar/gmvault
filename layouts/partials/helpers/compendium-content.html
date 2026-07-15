@@ -2,7 +2,13 @@
 {{- $name := .name | default "Conteúdo relacionado" -}}
 {{- $legacy := .legacy | default "" -}}
 {{- if $ref -}}
-  {{- $page := site.GetPage $ref -}}
+  {{- $lookupRef := $ref -}}
+  {{- $parsedBase := urls.Parse site.BaseURL -}}
+  {{- $basePath := strings.TrimSuffix "/" $parsedBase.Path -}}
+  {{- if and $basePath (hasPrefix $lookupRef (printf "%s/" $basePath)) -}}
+    {{- $lookupRef = strings.TrimPrefix $basePath $lookupRef -}}
+  {{- end -}}
+  {{- $page := site.GetPage $lookupRef -}}
   {{- if and $page $page.Content -}}
     <div class="compendium-content" data-compendium-ref="{{ $ref }}">{{ $page.Content }}</div>
   {{- else -}}

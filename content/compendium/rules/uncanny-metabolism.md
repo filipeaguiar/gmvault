@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 When you roll XPHB, you can regain all expended Focus Points. When you do so, roll your Martial Arts die, and regain a number of XPHB equal to your Monk level plus the number rolled.

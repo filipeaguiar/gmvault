@@ -1,0 +1,96 @@
+.char-roll-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.char-roll-label {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.char-roll-bonus {
+  flex: 0 0 auto;
+  min-width: 2.25em;
+  text-align: right;
+  font-weight: 700;
+}
+
+.char-roll-muted {
+  color: var(--text-muted, #777);
+  font-size: 0.8em;
+}
+
+.dice-roll-button {
+  flex: 0 0 auto;
+  min-width: 2.7rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--primary-color, #2980b9);
+  border-radius: 999px;
+  color: var(--primary-color, #2980b9);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.dice-roll-button:hover:not(:disabled) {
+  color: var(--card-bg, #fff);
+  background: var(--primary-color, #2980b9);
+}
+
+.dice-roll-button:focus-visible {
+  outline: 3px solid var(--accent-color, #d9534f);
+  outline-offset: 2px;
+}
+
+.dice-roll-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.dice-roll-button[data-dice-state="unavailable"] {
+  cursor: not-allowed;
+}
+
+.dice-roll-result {
+  flex: 1 1 100%;
+  min-width: 0;
+  color: var(--text-muted, #777);
+  font-size: 0.82em;
+  overflow-wrap: anywhere;
+}
+
+.equipment-roll-label {
+  margin-left: 10px;
+  color: var(--text-muted, #555);
+  font-size: 0.85em;
+}
+
+@media (max-width: 560px) {
+  .char-roll-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .char-roll-label {
+    flex-basis: calc(100% - 32px);
+  }
+
+  .dice-roll-result {
+    flex-basis: 100%;
+    margin-left: 23px;
+  }
+
+  .equipment-roll-label {
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    width: 100%;
+  }
+}

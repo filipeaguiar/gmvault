@@ -13,12 +13,20 @@
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   
-  {{ if eq .Params.kind "character" }}
+  {{ if eq (partial "helpers/kind.html" .) "character" }}
   {{ $charCss := resources.Get "css/character-sheet.css" | minify | fingerprint }}
+  {{ $diceCss := resources.Get "css/dice-roll.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $charCss.RelPermalink }}" integrity="{{ $charCss.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $diceCss.RelPermalink }}" integrity="{{ $diceCss.Data.Integrity }}">
   {{ end }}
   {{ if .Params.summary }}
   <meta name="description" content="{{ .Params.summary }}">
+  {{ end }}
+  {{ if eq (partial "helpers/kind.html" .) "character" }}
+  {{ $diceBridge := resources.Get "js/dice-plus-bridge.js" | minify | fingerprint }}
+  {{ $diceControls := resources.Get "js/dice-roll-controls.js" | minify | fingerprint }}
+  <script type="module" src="{{ $diceBridge.RelPermalink }}" integrity="{{ $diceBridge.Data.Integrity }}"></script>
+  <script type="module" src="{{ $diceControls.RelPermalink }}" integrity="{{ $diceControls.Data.Integrity }}"></script>
   {{ end }}
 </head>
 <body>

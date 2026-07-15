@@ -67,15 +67,15 @@ def ensure_compendium_class_overview(class_name, class_data, subclass_name=None)
     dest_path = f"content/compendium/classes/{slug}.md"
     ref_path = f"/compendium/classes/{slug}/"
 
+    existing_has_body = False
     if os.path.exists(dest_path):
         try:
             with open(dest_path, "r", encoding="utf-8") as handle:
                 existing = handle.read()
             body = existing.split("---", 2)[-1].strip() if existing.startswith("---") else existing.strip()
-            if body:
-                return ref_path
+            existing_has_body = bool(body)
         except OSError:
-            return ref_path
+            existing_has_body = True
 
     if is_subclass:
         features = [
@@ -94,21 +94,79 @@ def ensure_compendium_class_overview(class_name, class_data, subclass_name=None)
         summary = f"Progressão da classe {class_name}."
 
     if not features:
-        return None
+        return ref_path if existing_has_body else None
 
-    lines = [f"## Progressão de {title}", ""]
+    def ensure_feature_page(feature):
+        """Garante que uma característica da classe tenha conteúdo público no compêndio."""
+        name = feature.get("name")
+        if not name:
+            return None
+        feature_ref = f"/compendium/rules/{slugify(name)}/"
+        feature_path = f"content{feature_ref.rstrip('/')}.md"
+        description = parse_entries(feature.get("entries", []))
+
+        if os.path.exists(feature_path):
+            with open(feature_path, "r", encoding="utf-8") as handle:
+                existing = handle.read()
+            updated = existing
+            if "draft: true" in updated:
+                updated = updated.replace("draft: true", "draft: false", 1)
+            if re.search(r"^visibility:", updated, re.MULTILINE):
+                updated = re.sub(r"^visibility:.*$", 'visibility: "public"', updated, count=1, flags=re.MULTILINE)
+            elif "---" in updated:
+                updated = updated.replace("\n---", '\nvisibility: "public"\n---', 1)
+            if description and updated.rstrip().endswith("---"):
+                updated = updated.rstrip() + f"\n\n{description}\n"
+            if updated != existing:
+                with open(feature_path, "w", encoding="utf-8") as handle:
+                    handle.write(updated)
+            return feature_ref if description or existing != updated else None
+
+        if not description:
+            return None
+        os.makedirs(os.path.dirname(feature_path), exist_ok=True)
+        markdown = f'''---
+title: "{name}"
+params:
+  kind: "rule"
+draft: false
+weight: 10
+summary: "Característica de classe: {name}."
+tags:
+  - compendio
+  - classe
+visibility: "public"
+status: "draft"
+---
+
+{description}
+'''
+        with open(feature_path, "w", encoding="utf-8") as handle:
+            handle.write(markdown)
+        return feature_ref
+
+    lines = []
     seen = set()
+    current_level = None
     for feature in sorted(features, key=lambda item: (item.get("level", 0), item.get("name", ""))):
         name = feature.get("name")
         if not name or name.lower() in seen:
             continue
         seen.add(name.lower())
-        feature_ref = f"/compendium/rules/{slugify(name)}/"
-        feature_path = f"content{feature_ref.rstrip('/')}.md"
-        if os.path.exists(feature_path):
-            lines.append(f"- Nível {feature.get('level', 1)}: [{name}]({feature_ref})")
+        level = feature.get("level", 1)
+        if level != current_level:
+            if current_level is not None:
+                lines.append("")
+            lines.extend([f"### Nível {level}", ""])
+            current_level = level
+        feature_ref = ensure_feature_page(feature)
+        if feature_ref:
+            lines.append(f"- [{name}]({feature_ref})")
         else:
-            lines.append(f"- Nível {feature.get('level', 1)}: {name}")
+            lines.append(f"- {name}")
+
+    if existing_has_body:
+        return ref_path
 
     markdown = f"""---
 title: "{title}"
@@ -470,7 +528,7 @@ def fetch_from_5etools(kind, english_name):
 title: "{english_name}"
 params:
   kind: "spell"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -506,7 +564,7 @@ spell_info:
 title: "{english_name}"
 params:
   kind: "magic_item"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -530,7 +588,7 @@ item_info:
 title: "{english_name}"
 params:
   kind: "item"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -567,7 +625,7 @@ item_info:
 title: "{english_name}"
 params:
   kind: "feat"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -603,7 +661,7 @@ feat_info:
 title: "{english_name}"
 params:
   kind: "species"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -629,7 +687,7 @@ species_info:
 title: "{english_name}"
 params:
   kind: "class"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -651,7 +709,7 @@ class_info:
 title: "{english_name}"
 params:
   kind: "class"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:
@@ -672,7 +730,7 @@ class_info:
 title: "Maestria de Arma: {english_name}"
 params:
   kind: "rule"
-draft: true
+draft: false
 weight: 10
 summary: "Propriedade de Maestria de Arma do D&D 2024 (XPHB). Requires translation."
 tags:

@@ -2,9 +2,10 @@
 title: "Weapon Mastery"
 params:
   kind: "rule"
-draft: true
+draft: false
 status: "draft"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 Your training with weapons allows you to use the mastery properties of two kinds of type=simple weapon;martial weapon of your choice with which you have proficiency, such as Daggers and Shortbows.

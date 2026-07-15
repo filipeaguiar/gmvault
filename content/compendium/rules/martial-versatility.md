@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 optional feature}

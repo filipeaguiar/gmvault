@@ -2,9 +2,10 @@
 title: "Martial Arts"
 params:
   kind: "rule"
-draft: true
+draft: false
 status: "draft"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 Your practice of martial arts gives you mastery of combat styles that use your XPHB and Monk weapons, which are the following:

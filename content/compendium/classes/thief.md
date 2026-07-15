@@ -12,11 +12,20 @@ visibility: "public"
 status: "ready"
 ---
 
-## Progressão de Thief
+### Nível 3
 
-- Nível 3: [Fast Hands](/compendium/rules/fast-hands/)
-- Nível 3: [Second-Story Work](/compendium/rules/second-story-work/)
-- Nível 3: [Thief](/compendium/rules/thief/)
-- Nível 9: [Supreme Sneak](/compendium/rules/supreme-sneak/)
-- Nível 13: Use Magic Device
-- Nível 17: Thief's Reflexes
+- [Fast Hands](/compendium/rules/fast-hands/)
+- [Second-Story Work](/compendium/rules/second-story-work/)
+- [Thief](/compendium/rules/thief/)
+
+### Nível 9
+
+- [Supreme Sneak](/compendium/rules/supreme-sneak/)
+
+### Nível 13
+
+- Use Magic Device
+
+### Nível 17
+
+- Thief's Reflexes

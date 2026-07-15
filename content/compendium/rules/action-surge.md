@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the XPHB action.

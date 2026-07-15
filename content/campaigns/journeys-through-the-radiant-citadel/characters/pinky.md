@@ -25,7 +25,9 @@ char_info:
   hp: "9"
   hp_max: "9"
   hp_current: "9"
-  feat: "Nenhum"
+  feat: ""
+  feats:
+    - Alert
   size: "Small"
   alignment: "True Neutral"
   dndbeyond_id: ""
@@ -212,6 +214,7 @@ locations: []
 factions: []
 compendium_refs:
 - /compendium/classes/rogue/
+- /compendium/feats/alert/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

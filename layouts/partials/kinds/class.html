@@ -1,49 +1,82 @@
-<header class="page-header">
-  <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
-  {{ partial "metadata.html" . }}
+<header class="page-header class-page-header">
+  <div class="class-title-mark" aria-hidden="true"><i class="ra ra-sword"></i></div>
+  <div>
+    <p class="class-section-kicker">Compêndio de Classes</p>
+    <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
+    {{ partial "metadata.html" . }}
+  </div>
 </header>
 
 <div class="class-block">
   {{ if .Params.parent_class }}
     {{ $parent := site.GetPage .Params.parent_class }}
     {{ if $parent }}
-      <p class="class-parent-link" style="margin-bottom: 1rem;">
-        <strong>Classe Base:</strong> <a href="{{ $parent.RelPermalink }}">{{ or $parent.Params.titulo_pt_br $parent.Title }}</a>
+      <p class="class-parent-link">
+        <i class="ra ra-scroll-unfurled" aria-hidden="true"></i>
+        <strong>Classe Base:</strong>
+        <a href="{{ $parent.RelPermalink }}">{{ or $parent.Params.titulo_pt_br $parent.Title }}</a>
       </p>
     {{ end }}
   {{ end }}
 
   {{ if or .Params.class_info.hit_dice .Params.class_info.primary_ability }}
-  <div class="class-info-card">
+  <div class="class-info-card class-overview-card">
     {{ if .Params.class_info.hit_dice }}
       <div class="class-info-row">
-        <strong>Dado de Vida:</strong> <span>{{ .Params.class_info.hit_dice }}</span>
+        <span class="class-info-label"><i class="ra ra-dice-five" aria-hidden="true"></i> Dado de Vida</span>
+        <strong>{{ .Params.class_info.hit_dice }}</strong>
       </div>
     {{ end }}
     {{ if .Params.class_info.primary_ability }}
       <div class="class-info-row">
-        <strong>Atributo Primário:</strong> <span>{{ .Params.class_info.primary_ability }}</span>
+        <span class="class-info-label"><i class="ra ra-player" aria-hidden="true"></i> Atributo Primário</span>
+        <strong>{{ .Params.class_info.primary_ability }}</strong>
       </div>
     {{ end }}
   </div>
   {{ end }}
 
-  <div class="class-body content-body">
-    {{ .Content }}
-  </div>
-
-  {{ $subclasses := where site.RegularPages "Params.parent_class" .RelPermalink }}
-  {{ if $subclasses }}
-    <div class="subclasses-section" style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
-      <h3 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 0.8rem;">Subclasses & Arquétipos</h3>
-      <ul style="list-style-type: square; margin-left: 1.5rem;">
-        {{ range $subclasses }}
-          <li style="margin-bottom: 0.5rem;">
-            <a href="{{ .RelPermalink }}" style="font-weight: 600; color: var(--primary-color);">{{ or .Params.titulo_pt_br .Title }}</a>
-            {{ if .Params.summary }} — <span style="font-size: 0.95rem; color: var(--text-muted);">{{ .Params.summary }}</span>{{ end }}
-          </li>
-        {{ end }}
-      </ul>
+  <section class="class-progression-section" aria-labelledby="class-progression-title">
+    <header class="class-progression-heading">
+      <i class="ra ra-scroll-unfurled" aria-hidden="true"></i>
+      <h2 id="class-progression-title">{{ or .Params.titulo_pt_br .Title }}</h2>
+    </header>
+    <div class="class-body content-body class-progression-content">
+      {{ .Content }}
     </div>
+  </section>
+
+  {{ $parentClassRef := .RelPermalink }}
+  {{ $basePath := strings.TrimSuffix "/" (urls.Parse site.BaseURL).Path }}
+  {{ $canonicalParentRef := strings.TrimPrefix $basePath $parentClassRef }}
+  {{ $subclasses := slice }}
+  {{ range site.RegularPages }}
+    {{ if or (eq .Params.parent_class $parentClassRef) (eq .Params.parent_class $canonicalParentRef) }}
+      {{ $subclasses = $subclasses | append . }}
+    {{ end }}
+  {{ end }}
+  {{ if $subclasses }}
+    <section class="subclasses-section" aria-labelledby="subclasses-title">
+      <header class="subclasses-heading">
+        <i class="ra ra-crossed-swords" aria-hidden="true"></i>
+        <div>
+          <p class="class-section-kicker">Especializações</p>
+          <h2 id="subclasses-title">Subclasses e Arquétipos</h2>
+        </div>
+      </header>
+      <div class="subclasses-grid">
+        {{ range $subclasses }}
+          <article class="subclass-card">
+            <h3>
+              <a href="{{ .RelPermalink }}">
+                <i class="ra ra-castle" aria-hidden="true"></i>
+                <span>{{ or .Params.titulo_pt_br .Title }}</span>
+              </a>
+            </h3>
+            {{ if .Params.summary }}<p>{{ .Params.summary }}</p>{{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
   {{ end }}
 </div>

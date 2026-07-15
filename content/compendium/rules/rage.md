@@ -2,9 +2,10 @@
 title: "Rage"
 params:
   kind: "rule"
-draft: true
+draft: false
 status: "draft"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter it as a XPHB if you aren't wearing Heavy armor.

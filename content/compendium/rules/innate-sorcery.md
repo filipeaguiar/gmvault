@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 An event in your past left an indelible mark on you, infusing you with simmering magic. As a XPHB, you can unleash that magic for 1 minute, during which you gain the following benefits:

@@ -1,0 +1,20 @@
+## 1. Setup e Processamento de Dados
+
+- [x] 1.1 Implementar no script `create_character.py` o download sob demanda do arquivo `feats.json` salvando-o localmente em `content/compendium/feats/.feats_cache.json`.
+- [x] 1.2 Adicionar lógica para carregar, decodificar e filtrar os talentos a partir do cache, separando-os por Talentos de Origem (fonte `XPHB` e categoria `O`) e Talentos Gerais/Estilos de Combate (fonte `XPHB` e categorias `G` ou `FS`).
+
+## 2. Prompts Interativos de Seleção
+
+- [x] 2.1 Adicionar etapa de seleção no fluxo de criação para nível 1 exibindo os talentos de Origem com suas fontes (ex: Alert (XPHB)) e permitindo digitar múltiplas escolhas separadas por vírgula em um único prompt.
+- [x] 2.2 Adicionar etapa de seleção para nível >= 4 exibindo os talentos Gerais/Combate com suas fontes e permitindo digitar múltiplas escolhas separadas por vírgula em um único prompt.
+- [x] 2.3 Implementar comportamento de fallback com entrada textual manual caso ocorra erro ao carregar ou processar o JSON de talentos.
+
+## 3. Integração e Geração do Compêndio
+
+- [x] 3.1 Integrar a função de download `fetch_from_5etools` no fluxo de finalização do script para gerar stubs de talentos em `content/compendium/feats/<slug>.md`.
+- [x] 3.2 Atualizar a gravação da ficha do personagem (bloco YAML de frontmatter) salvando a lista de talentos escolhidos em `char_info.feats` e registrando os caminhos correspondentes em `compendium_refs`.
+
+## 4. Validação
+
+- [x] 4.1 Criar um personagem de teste interativamente escolhendo talentos para validar o terminal e a ficha YAML gerada.
+- [x] 4.2 Executar o build do Hugo (`hugo --gc --minify`) para garantir que os layouts da ficha renderizam e linkam os novos talentos corretamente.

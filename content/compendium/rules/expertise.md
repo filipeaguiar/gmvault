@@ -2,9 +2,10 @@
 title: "Expertise"
 params:
   kind: "rule"
-draft: true
+draft: false
 status: "draft"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 You gain XPHB in two of your skill proficiencies of your choice. XPHB and XPHB are recommended if you have proficiency in them.

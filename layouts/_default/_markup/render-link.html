@@ -1,0 +1,12 @@
+{{- $url := .Destination -}}
+{{- if hasPrefix $url "/" -}}
+  {{- $parsedBase := urls.Parse site.BaseURL -}}
+  {{- $basePath := "" -}}
+  {{- if $parsedBase.Path -}}
+    {{- $basePath = strings.TrimSuffix "/" $parsedBase.Path -}}
+  {{- end -}}
+  {{- if and $basePath (not (hasPrefix $url (printf "%s/" $basePath))) -}}
+    {{- $url = printf "%s%s" $basePath $url -}}
+  {{- end -}}
+{{- end -}}
+<a href="{{ $url }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ with .Attributes }}{{ range $k, $v := . }} {{ $k }}="{{ $v }}"{{ end }}{{ end }}>{{ .Text }}</a>

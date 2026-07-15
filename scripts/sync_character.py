@@ -152,7 +152,7 @@ def fetch_and_collect(entity_type: str, name: str, existing_refs: set, new_refs:
         "spell":      ("/compendium/spells/", "content/compendium/spells/"),
         "item":       ("/compendium/items/", "content/compendium/items/"),
         "magic_item": ("/compendium/magic-items/", "content/compendium/magic-items/"),
-        "race":       ("/compendium/races/", "content/compendium/races/"),
+        "race":       ("/compendium/species/", "content/compendium/species/"),
         "class":      ("/compendium/classes/", "content/compendium/classes/"),
         "subclass":   ("/compendium/classes/", "content/compendium/classes/"),
         "feat":       ("/compendium/feats/", "content/compendium/feats/"),
@@ -235,12 +235,12 @@ def main():
     race_name = char_info.get("race", "")
     if race_name:
         slug = slugify(race_name)
-        expected_ref = f"/compendium/races/{slug}/"
-        expected_file = f"content/compendium/races/{slug}.md"
+        expected_ref = f"/compendium/species/{slug}/"
+        expected_file = f"content/compendium/species/{slug}.md"
 
-        # Detectar refs stale de raça (qualquer /compendium/races/ que não seja a atual)
+        # Detectar refs stale de raça, incluindo o caminho legado /races/
         for ref in list(existing_refs):
-            if ref.startswith("/compendium/races/") and ref != expected_ref:
+            if any(ref.startswith(prefix) for prefix in ("/compendium/species/", "/compendium/races/")) and ref != expected_ref:
                 refs_to_remove.add(ref)
                 print(f"  Removendo ref de raça desatualizada: {ref}")
 

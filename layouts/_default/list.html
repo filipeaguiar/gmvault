@@ -8,7 +8,11 @@
     {{ partial $kindPartial . }}
   {{ else }}
     {{ partial "kinds/default.html" . }}
-    {{ partial "child_pages.html" . }}
+    {{ if and (in .RelPermalink "/compendium/") (ne $kind "compendium_index") }}
+      {{ partial "compendium-groups.html" (dict "page" . "group_mode" "kind") }}
+    {{ else }}
+      {{ partial "child_pages.html" . }}
+    {{ end }}
   {{ end }}
 
   {{ partial "relationships.html" . }}

@@ -19,6 +19,7 @@ char_info:
   hp_max: "10"
   hp_current: "10"
   feat: ""
+  feats: []
   size: ""
   alignment: ""
   proficiency_bonus: 2

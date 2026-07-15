@@ -14,7 +14,7 @@ species_info:
   ability_score: +1 to all attributes
   speed: 9.0m
   languages: Common, +1 extra
-titulo_pt_br: Claro! Por favor, forneça o texto que você gostaria que eu traduzisse.
+titulo_pt_br: "Humano"
 translation:
   source_language: en
   target_language: pt-BR

@@ -27,6 +27,7 @@ from dnd_utils import (
 # Configuração de URLs e Cache
 # ──────────────────────────────────────────────
 FEV_RACES_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/races.json"
+FEV_FEATS_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/feats.json"
 FEV_CLASS_INDEX_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/class/index.json"
 FEV_CLASS_DATA_URL_BASE = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/class/"
 
@@ -93,6 +94,11 @@ def fetch_json_with_cache(url, cache_path):
 def load_species_data():
     cache = "content/compendium/species/.races_cache.json"
     return fetch_json_with_cache(FEV_RACES_URL, cache)
+
+def load_feats_data():
+    """Carrega e armazena em cache o índice de talentos do 5e.tools."""
+    cache = "content/compendium/feats/.feats_cache.json"
+    return fetch_json_with_cache(FEV_FEATS_URL, cache)
 
 def load_class_index():
     cache = "content/compendium/classes/.classes_index_cache.json"
@@ -172,6 +178,155 @@ def ask_choice(prompt, options):
         except ValueError:
             pass
         print(f"  ⚠ Escolha inválida. Escolha entre 1 e {len(options)}.")
+
+def filter_feats(feats_data, categories, source="XPHB"):
+    """Retorna talentos das categorias indicadas, filtrando opcionalmente pela fonte."""
+    if not isinstance(feats_data, dict):
+        return []
+
+    categories = set(categories)
+    feats = feats_data.get("feat", [])
+    if not isinstance(feats, list):
+        return []
+
+    return sorted(
+        [
+            feat for feat in feats
+            if isinstance(feat, dict)
+            and (source is None or feat.get("source") == source)
+            and feat.get("category") in categories
+            and feat.get("name")
+        ],
+        key=lambda feat: feat["name"].lower(),
+    )
+
+
+def get_origin_feats(feats_data, source="XPHB"):
+    return filter_feats(feats_data, {"O"}, source)
+
+
+def get_general_feats(feats_data, source="XPHB"):
+    return filter_feats(feats_data, {"G", "FS", "FS:P", "FS:R"}, source)
+
+
+def ask_multiple_feat_choices(prompt, options):
+    """Exibe talentos numerados e aceita índices separados por vírgula."""
+    try:
+        from rich.console import Console
+        from rich.table import Table
+        import math
+
+        console = Console()
+        console.print(f"\n[bold]{prompt}[/]")
+        num_cols = 4 if len(options) >= 8 else 1
+        if num_cols > 1:
+            table = Table(show_header=False, box=None, padding=(0, 2))
+            for _ in range(num_cols):
+                table.add_column()
+            num_rows = math.ceil(len(options) / num_cols)
+            for row in range(num_rows):
+                cells = []
+                for col in range(num_cols):
+                    index = row + col * num_rows
+                    if index < len(options):
+                        feat = options[index]
+                        cells.append(
+                            f"[bold cyan]{index + 1:2d}.[/] "
+                            f"{feat['name']} ({feat.get('source', 'sem fonte')})"
+                        )
+                    else:
+                        cells.append("")
+                table.add_row(*cells)
+            console.print(table)
+        else:
+            for index, feat in enumerate(options, 1):
+                print(f"  {index}. {feat['name']} ({feat.get('source', 'sem fonte')})")
+    except ImportError:
+        print(f"\n{prompt}")
+        for index, feat in enumerate(options, 1):
+            print(f"  {index}. {feat['name']} ({feat.get('source', 'sem fonte')})")
+
+    while True:
+        raw = ask("Escolhas (separe números por vírgula)")
+        if not raw:
+            return []
+        try:
+            indices = [int(value.strip()) for value in raw.split(",") if value.strip()]
+        except ValueError:
+            print("  ⚠ Entrada inválida. Digite números separados por vírgula ou deixe vazio.")
+            continue
+
+        if any(index < 1 or index > len(options) for index in indices):
+            print(f"  ⚠ Escolha inválida. Use números entre 1 e {len(options)}.")
+            continue
+
+        selected = []
+        for index in indices:
+            feat_name = options[index - 1]["name"]
+            if feat_name not in selected:
+                selected.append(feat_name)
+        return selected
+
+
+def ask_manual_feats(prompt):
+    """Fallback quando o índice remoto não pôde ser carregado/processado."""
+    print("  ⚠ O índice de talentos não está disponível; a referência será criada pelo nome informado.")
+    raw = ask(prompt)
+    return [name.strip() for name in raw.split(",") if name.strip()]
+
+
+def select_feats_for_level(level):
+    if level == 1:
+        title = "TALENTOS DE ORIGEM (XPHB)"
+        categories = get_origin_feats
+        manual_prompt = "Digite os nomes dos talentos de Origem (separados por vírgula)"
+    elif level >= 4:
+        title = "TALENTOS GERAIS/ESTILOS DE COMBATE (XPHB)"
+        categories = get_general_feats
+        manual_prompt = "Digite os nomes dos talentos Gerais (separados por vírgula)"
+    else:
+        return []
+
+    print_header(title)
+    try:
+        feats_data = load_feats_data()
+    except Exception as error:
+        print(f"  ⚠ Erro ao carregar talentos: {error}")
+        return ask_manual_feats(manual_prompt)
+
+    if feats_data is None:
+        return ask_manual_feats(manual_prompt)
+
+    try:
+        xphb_options = categories(feats_data, "XPHB")
+        other_options = [
+            feat for feat in categories(feats_data, None)
+            if feat.get("source") != "XPHB"
+        ]
+    except (AttributeError, KeyError, TypeError, ValueError) as error:
+        print(f"  ⚠ Erro ao processar talentos: {error}")
+        return ask_manual_feats(manual_prompt)
+
+    catalogs = []
+    if xphb_options:
+        catalogs.append(("XPHB (D&D 2024) — recomendado", xphb_options))
+    if other_options:
+        catalogs.append(("Outros — fontes anteriores ou alternativas", other_options))
+
+    if not catalogs:
+        print("  ⚠ Nenhum talento compatível foi encontrado no índice.")
+        return ask_manual_feats(manual_prompt)
+
+    if len(catalogs) == 1:
+        options = catalogs[0][1]
+    else:
+        catalog_labels = [f"{label} ({len(options)} talentos)" for label, options in catalogs]
+        selected_label = ask_choice("Selecione a fonte dos talentos:", catalog_labels)
+        selected_index = catalog_labels.index(selected_label)
+        options = catalogs[selected_index][1]
+
+    return ask_multiple_feat_choices("Selecione um ou mais talentos:", options)
+
 
 def print_header(title):
     print(f"\n{'═' * 50}\n  {title}\n{'═' * 50}")
@@ -294,6 +449,12 @@ def main():
     if level < 1:
         level = 1
     subclass = ask("Subclasse (deixe vazio se não houver)", "")
+
+    # 4.1 Selecionar talentos conforme o nível
+    selected_feats = select_feats_for_level(level)
+    if selected_feats:
+        print(f"  Talentos escolhidos: {', '.join(selected_feats)}")
+        print("  ⚠ Verifique no passo de atributos os possíveis aumentos concedidos pelos talentos escolhidos.")
 
     # Obter dados de vida (Hit Dice)
     class_entry = class_data.get("class", [{}])[0]
@@ -550,6 +711,13 @@ def main():
     ref_class = fetch_from_5etools("class", selected_class_name)
     if ref_class:
         compendium_refs.append(ref_class)
+        ensure_compendium_class_overview(selected_class_name, class_data)
+
+    # Sincroniza talentos escolhidos
+    for feat_name in selected_feats:
+        ref_feat = fetch_from_5etools("feat", feat_name)
+        if ref_feat:
+            compendium_refs.append(ref_feat)
 
     # Adicionar ações básicas
     for action_name, action_ref in STANDARD_ACTION_REFS.items():
@@ -629,6 +797,8 @@ def main():
         summary_str += f" ({subclass})"
     summary_str += " criado manualmente guiado por dados."
 
+    feats_field = f"feats:{dump_yaml_indented(selected_feats, 2)}" if selected_feats else "feats: []"
+
     markdown = f"""---
 title: {json.dumps(char_name)}
 date: 2026-07-09T19:00:00Z
@@ -656,7 +826,8 @@ char_info:
   hp: "{max_hp}"
   hp_max: "{max_hp}"
   hp_current: "{max_hp}"
-  feat: "Nenhum"
+  feat: ""
+  {feats_field}
   size: "{size_val}"
   alignment: "{alignment}"
   dndbeyond_id: ""

@@ -2,7 +2,7 @@
 title: "Calligrapher's Supplies"
 params:
   kind: "item"
-draft: true
+draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
 tags:

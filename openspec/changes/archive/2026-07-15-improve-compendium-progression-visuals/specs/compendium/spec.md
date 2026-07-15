@@ -1,0 +1,44 @@
+## ADDED Requirements
+
+### Requirement: Class progression pages have structured visual presentation
+Class pages in the compendium SHALL render their title, metadata, progression content grouped by level, level entries, and subclass links with a coherent visual hierarchy. Internal compendium links SHALL use project styling instead of relying on default browser link presentation. The grouped progression HTML SHALL remain reusable when the class page is embedded in a character sheet.
+
+#### Scenario: Class page displays progression hierarchy
+- **WHEN** a class page contains Markdown headings and level-based progression entries
+- **THEN** the page SHALL present the resolved class name, metadata, level headings, and entries with distinguishable spacing, colors, borders, and typography suitable for quick consultation, without repeating generic progression titles.
+
+#### Scenario: Localized class title is available
+- **WHEN** a class page has `titulo_pt_br` in its front matter
+- **THEN** the page SHALL use `titulo_pt_br` as the visible class name and SHALL use `title` only as fallback.
+
+#### Scenario: Progression entries are grouped by level
+- **WHEN** consecutive progression entries belong to the same character level
+- **THEN** the page SHALL place them under one visible level heading, and SHALL start a new group when the level changes.
+
+#### Scenario: Grouped progression is reused in a character sheet
+- **WHEN** a character sheet renders the referenced class progression page
+- **THEN** the same level headings and grouped entries SHALL remain visible without requiring duplicated class-rule content in the character front matter.
+
+#### Scenario: Progression entry links to compendium content
+- **WHEN** a progression entry contains an internal link to a rule or feature page
+- **THEN** the link SHALL retain its destination, SHALL respect the configured site base path, and SHALL use the compendium link style with visible hover and keyboard focus states.
+
+#### Scenario: Missing feature page is generated
+- **WHEN** a class progression references a feature whose compendium page does not exist
+- **THEN** the import/generation flow SHALL create a rule page with the available feature text and SHALL link the progression entry to that page instead of rendering an unresolved URL.
+
+#### Scenario: Feature content is available in character context
+- **WHEN** a character sheet renders a referenced class progression
+- **THEN** each linked feature SHALL expose its corresponding compendium text through the existing character-content resolution without duplicating the rule text in the character front matter.
+
+#### Scenario: Class page displays subclasses
+- **WHEN** a class has child pages with `parent_class`
+- **THEN** the subclass section SHALL render each child with a styled title, project icon, summary when available, and accessible internal link.
+
+#### Scenario: Class page is rendered in a narrow viewport
+- **WHEN** the class page is displayed in a notebook, mobile viewport, or narrow iframe
+- **THEN** progression entries and links SHALL wrap or collapse to a single-column layout without horizontal overflow.
+
+#### Scenario: Visual decoration is rendered
+- **WHEN** icons and decorative elements are added to the class progression
+- **THEN** the implementation SHALL use existing CSS icon classes and SHALL NOT add Unicode symbols or emoji characters as decoration.

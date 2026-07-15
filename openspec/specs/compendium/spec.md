@@ -2,15 +2,21 @@
 
 ## Purpose
 Define the global reusable compendium and how campaign and character pages reference compendium entities.
-
 ## Requirements
-
 ### Requirement: Global compendium is separate from campaigns
-Reusable rules content SHALL live under `content/compendium/` and SHALL not belong to any single campaign.
+Reusable rules content SHALL live under `content/compendium/` and SHALL not belong to any single campaign. The global compendium index SHALL show canonical child sections as organized navigation groups with counts and safe fallback behavior.
 
 #### Scenario: Compendium index is opened
 - **WHEN** the compendium section page is rendered
-- **THEN** it SHALL show child sections or pages for reusable global content
+- **THEN** it SHALL show the canonical child sections as organized navigation groups, with a title, icon, summary when available, and count of visible pages for each section; it SHALL not require users to scan one undifferentiated list of all content pages.
+
+#### Scenario: Compendium index displays canonical sections
+- **WHEN** the compendium root contains sections for monsters, items, magic items, classes, races/species, feats, spells, backgrounds, conditions, or rules
+- **THEN** the index SHALL render each available section as a separate navigable group or card with its resolved title, icon, summary, and visible-page count.
+
+#### Scenario: Empty or unknown compendium section
+- **WHEN** a compendium section has no visible child pages or has an unrecognized directory/category
+- **THEN** the index SHALL omit empty groups and SHALL render an unknown non-empty section through a generic fallback without failing the build.
 
 ### Requirement: Compendium supports core RPG entity kinds
 The compendium SHALL support monsters, items, magic items, classes, races, feats, spells, backgrounds, conditions, and rules.
@@ -44,3 +50,46 @@ Character pages SHALL group referenced compendium pages into useful player-facin
 #### Scenario: Character references items or magic items
 - **WHEN** a character page references item or magic item pages
 - **THEN** the character renderer SHALL show those references in an equipment-oriented section
+
+### Requirement: Class progression pages have structured visual presentation
+Class pages in the compendium SHALL render their title, metadata, progression content grouped by level, level entries, and subclass links with a coherent visual hierarchy. Internal compendium links SHALL use project styling instead of relying on default browser link presentation. The grouped progression HTML SHALL remain reusable when the class page is embedded in a character sheet.
+
+#### Scenario: Class page displays progression hierarchy
+- **WHEN** a class page contains Markdown headings and level-based progression entries
+- **THEN** the page SHALL present the resolved class name, metadata, level headings, and entries with distinguishable spacing, colors, borders, and typography suitable for quick consultation, without repeating generic progression titles.
+
+#### Scenario: Localized class title is available
+- **WHEN** a class page has `titulo_pt_br` in its front matter
+- **THEN** the page SHALL use `titulo_pt_br` as the visible class name and SHALL use `title` only as fallback.
+
+#### Scenario: Progression entries are grouped by level
+- **WHEN** consecutive progression entries belong to the same character level
+- **THEN** the page SHALL place them under one visible level heading, and SHALL start a new group when the level changes.
+
+#### Scenario: Grouped progression is reused in a character sheet
+- **WHEN** a character sheet renders the referenced class progression page
+- **THEN** the same level headings and grouped entries SHALL remain visible without requiring duplicated class-rule content in the character front matter.
+
+#### Scenario: Progression entry links to compendium content
+- **WHEN** a progression entry contains an internal link to a rule or feature page
+- **THEN** the link SHALL retain its destination, SHALL respect the configured site base path, and SHALL use the compendium link style with visible hover and keyboard focus states.
+
+#### Scenario: Missing feature page is generated
+- **WHEN** a class progression references a feature whose compendium page does not exist
+- **THEN** the import/generation flow SHALL create a rule page with the available feature text and SHALL link the progression entry to that page instead of rendering an unresolved URL.
+
+#### Scenario: Feature content is available in character context
+- **WHEN** a character sheet renders a referenced class progression
+- **THEN** each linked feature SHALL expose its corresponding compendium text through the existing character-content resolution without duplicating the rule text in the character front matter.
+
+#### Scenario: Class page displays subclasses
+- **WHEN** a class has child pages with `parent_class`
+- **THEN** the subclass section SHALL render each child with a styled title, project icon, summary when available, and accessible internal link.
+
+#### Scenario: Class page is rendered in a narrow viewport
+- **WHEN** the class page is displayed in a notebook, mobile viewport, or narrow iframe
+- **THEN** progression entries and links SHALL wrap or collapse to a single-column layout without horizontal overflow.
+
+#### Scenario: Visual decoration is rendered
+- **WHEN** icons and decorative elements are added to the class progression
+- **THEN** the implementation SHALL use existing CSS icon classes and SHALL NOT add Unicode symbols or emoji characters as decoration.

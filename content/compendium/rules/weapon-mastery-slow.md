@@ -2,7 +2,7 @@
 title: 'Maestria de Arma: Slow'
 params:
   kind: rule
-draft: true
+draft: false
 weight: 10
 summary: Propriedade de Maestria de Arma do D&D 2024 (XPHB). Requires translation.
 tags:

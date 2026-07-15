@@ -2,7 +2,7 @@
 title: Tough
 params:
   kind: feat
-draft: true
+draft: false
 weight: 10
 summary: Draft imported from 5e.tools. Requires translation.
 tags:

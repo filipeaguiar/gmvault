@@ -348,6 +348,30 @@ class LmStudioTranslationTests(unittest.TestCase):
             self.assertEqual(document.front_matter["compendium_refs"], ["/compendium/rules/sneak-attack/"])
             self.assertIn("ref: /compendium/rules/sneak-attack/", path.read_text(encoding="utf-8"))
 
+    def test_status_draft_is_translation_pending_without_changing_hugo_draft(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "public-compendium.md"
+            path.write_text("---\ndraft: false\nstatus: draft\n---\n\nEnglish text\n", encoding="utf-8")
+            document = MarkdownDocument(
+                path=path,
+                front_matter_raw="draft: false\nstatus: draft",
+                front_matter={"draft": False, "status": "draft"},
+                body="\nEnglish text\n",
+            )
+            result = process_document(
+            document,
+            lambda text: f"PT:{text}",
+            {},
+            apply=False,
+            include_non_draft=False,
+            translate_frontmatter=False,
+            source="en",
+            target="pb",
+        )
+            self.assertTrue(result.changed)
+            self.assertFalse(document.front_matter["draft"])
+            self.assertEqual(document.front_matter["status"], "draft")
+
     def test_already_translated_document_is_skipped_without_force(self):
         document = MarkdownDocument(
             path=Path("unused.md"),

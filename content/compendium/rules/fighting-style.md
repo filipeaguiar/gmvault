@@ -5,6 +5,7 @@ params:
 draft: false
 status: "ready"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 You have honed your martial prowess and gain a category=FS of your choice. XPHB is recommended.

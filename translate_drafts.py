@@ -182,7 +182,7 @@ Observações:
     parser.add_argument(
         "--include-non-draft",
         action="store_true",
-        help="Inclui arquivos sem draft: true. Use apenas para manutenção controlada.",
+        help="Inclui arquivos que não estão marcados como draft: true ou status: draft. Use apenas para manutenção controlada.",
     )
     parser.add_argument(
         "--include-image-only-handouts",
@@ -741,7 +741,6 @@ def add_translation_metadata(
     front_matter: dict[str, Any], source: str, target: str, *, engine: str = "argos", model: str | None = None
 ) -> dict[str, Any]:
     updated = dict(front_matter)
-    updated["draft"] = True
     translation_meta = dict(updated.get("translation") or {})
     translation_meta.update(
         {
@@ -783,8 +782,12 @@ def process_document(
     translate_fm: Callable[[str], str] | None = None,
     progress: Callable[[int, int, float], None] | None = None,
 ) -> ProcessResult:
-    if document.front_matter.get("draft") is not True and not include_non_draft:
-        return ProcessResult(document.path, changed=False, skipped_reason="not draft")
+    translation_pending = (
+        document.front_matter.get("draft") is True
+        or document.front_matter.get("status") == "draft"
+    )
+    if not translation_pending and not include_non_draft:
+        return ProcessResult(document.path, changed=False, skipped_reason="not translation pending")
     translation_meta = document.front_matter.get("translation") or {}
     if not force_retranslate and isinstance(translation_meta, dict) and translation_meta.get("target_language") == "pt-BR":
         return ProcessResult(document.path, changed=False, skipped_reason="already translated to pt-BR")

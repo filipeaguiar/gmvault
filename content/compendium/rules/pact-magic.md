@@ -2,9 +2,10 @@
 title: "Pact Magic"
 params:
   kind: "rule"
-draft: true
+draft: false
 status: "draft"
 summary: "Habilidade de classe."
+visibility: "public"
 ---
 
 Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers. The entity is a voice in the shadows—its identity unclear—but its boon to you is concrete: the ability to cast spells. See 7 for the rules on spellcasting. The information below details how you use those rules with Warlock spells, which appear in the class=Warlock later in the class's description.

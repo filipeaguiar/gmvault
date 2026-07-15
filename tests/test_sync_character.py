@@ -14,6 +14,7 @@ from sync_character import (
     ref_has_content,
     resolve_action_ref,
     save_markdown_file,
+    fetch_and_collect,
 )
 
 class TestSyncCharacter(unittest.TestCase):
@@ -82,6 +83,14 @@ Biografia que não pode ser alterada.
         self.assertEqual(frontmatter["char_info"]["custom_note"], "manter")
         self.assertEqual(body, "Biografia que não pode ser alterada.\n")
         self.assertIn("/compendium/rules/action-attack/", frontmatter["compendium_refs"])
+
+    @patch("sync_character.fetch_from_5etools")
+    def test_race_references_use_species_directory(self, fetch):
+        fetch.return_value = "/compendium/species/goblin/"
+        new_refs = []
+        result = fetch_and_collect("race", "Goblin", set(), new_refs)
+        self.assertEqual(result, "/compendium/species/goblin/")
+        self.assertEqual(new_refs, ["/compendium/species/goblin/"])
 
     def test_sync_keeps_unresolved_description(self):
         content = """---
