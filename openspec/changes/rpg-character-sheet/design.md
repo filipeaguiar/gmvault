@@ -6,14 +6,17 @@ Atualmente, as fichas de personagens de RPG (ex: `pinky.md`, `durin.md`) são ex
 
 **Goals:**
 - Criar um layout dedicado em `layouts/characters/single.html` específico para os arquivos de tipo `character`.
-- Implementar uma interface de 4 abas interativas no topo da página ("Estatísticas", "Perícias", "Equipamentos" e "Grimório") utilizando HTML/CSS e JavaScript mínimo nativo.
-- Renderizar os 6 atributos principais em caixas quadradas (grid responsivo), destacando o modificador no centro e o valor base no canto.
-- Exibir a lista de perícias em duas colunas com indicadores visuais para Proficiente e Especialista (Expertise).
-- Organizar o inventário por categorias (Armas/Armaduras, Consumíveis e Geral), exibindo ícones discretos e atalhos para rolagens de dados simuladas.
-- Agrupar magias por nível em um grimório estilizado composto por cards que consultam informações suplementares do compêndio global.
+- Implementar uma interface de 8 abas interativas no topo da página ("Atributos", "Perícias", "Ações", "Equipamentos", "Grimório" [se conjurador], "Classe", "Características" e "Imagem") utilizando HTML/CSS e JavaScript mínimo nativo.
+- Renderizar os 6 atributos principais em caixas quadradas (grid responsivo), destacando o modificador no centro e o valor base no canto, acompanhados de HP Máximo, Deslocamento (Speed), Classe de Armadura, bônus de proficiência, salvaguardas (saving throws) e sentidos passivos totalmente traduzidos para pt_br.
+- Exibir a lista de perícias em duas colunas com indicadores visuais para Proficiente e Especialista (Expertise) traduzidas em português.
+- Apresentar na aba de Ações todas as ações básicas de combate e ações especiais de classe/subclasse, implementando checkboxes dinâmicos para controle visual interativo de usos máximos de recursos de uso limitado.
+- Organizar o inventário por categorias (Armas/Armaduras, Consumíveis e Geral), exibindo ícones discretos e fórmulas de ataque/dano.
+- Agrupar magias por nível em cards que consultam informações suplementares do compêndio global.
+- Apresentar a descrição da progressão de classe/subclasse por nível e as características/talentos traduzidos.
+- Suportar renderização ultra-compacta e fluida quando carregada dentro de um `iframe` em painéis de VTT.
 
 **Non-Goals:**
-- Não implementar edição dinâmica ou alteração de dados no navegador (as fichas continuam sendo geradas estaticamente via Markdown no Hugo).
+- Não implementar edição dinâmica ou persistência de dados no navegador (as fichas continuam sendo geradas estaticamente via Markdown no Hugo).
 - Não utilizar bibliotecas robustas de JS (como jQuery, React, Vue) nem frameworks de CSS pesados.
 - Não implementar banco de dados dinâmico ou sistema de autenticação para gerenciamento de fichas.
 
@@ -32,6 +35,10 @@ Atualmente, as fichas de personagens de RPG (ex: `pinky.md`, `durin.md`) são ex
   - Se a página do compêndio existir, o card é renderizado com dados ricos (ex: escola da magia, tempo de conjuração, alcance, descrição curta).
   - Se a página do compêndio não existir, o layout faz um fallback seguro exibindo apenas o nome do item/magia como texto simples (evitando quebras de compilação do Hugo).
 
+### 4. Detecção e Estilização para Iframe VTT
+- **Opção Escolhida**: Inserção de uma verificação em JavaScript na inicialização da página (`if (window.self !== window.top) document.documentElement.classList.add('vtt-iframe');`). O CSS correspondente ocultará o cabeçalho global do site, rodapés e navegação externa do gmvault, eliminando margens e maximizando a área de exibição da ficha de RPG dentro do iframe.
+- **Alternativa Considerada**: Criar um layout alternativo por query parameter no Hugo (ex: `?layout=vtt`). Isso complicaria a compilação estática do Hugo que gera apenas arquivos HTML estáticos físicos por URL, exigindo lógica adicional de servidor, o que viola a premissa de wiki estática sem backend.
+
 ## Risks / Trade-offs
 
 - **[Risco] Quebra de Layout em Telas de Smartphones**: Exibir 6 atributos horizontais e 2 colunas de perícias em telas pequenas causará cortes ou sobreposição de texto.
@@ -40,3 +47,5 @@ Atualmente, as fichas de personagens de RPG (ex: `pinky.md`, `durin.md`) são ex
   - *Mitigação*: O Hugo SHALL verificar condicionalmente se o array de magias (`spells` ou referências do compêndio de magias) está povoado na ficha do personagem. Se estiver vazio, a aba "Grimório" será completamente ocultada da interface de navegação.
 - **[Risco] Ausência de Imagem/Retrato de Personagem**: Alguns personagens podem não possuir uma imagem correspondente definida em seu frontmatter.
   - *Mitigação*: O layout do Hugo SHALL verificar a presença do campo `image` ou `avatar` no frontmatter. Caso ausente, a aba "Imagem" renderizará uma ilustração heráldica genérica de fallback ou brasão discreto medieval com a mensagem 'Ilustração indisponível'.
+- **[Risco] Dupla Barra de Rolagem no Navegador em Visualizações de Iframe**: Se o iframe do VTT for pequeno e a altura do conteúdo da aba selecionada for longa, barras de rolagem duplas (uma para o iframe e outra para a página geral) prejudicarão o uso.
+  - *Mitigação*: Aplicar `overflow: hidden` na raiz da página sob a classe `.vtt-iframe` e definir altura do container da ficha como `100vh`, delegando a rolagem exclusivamente para o container interno de conteúdo da aba ativa (`overflow-y: auto`), garantindo uma rolagem única e fluida dentro do frame.
