@@ -233,8 +233,16 @@ def main():
     )))
     selected_species_name = ask_choice("Selecione a Espécie Base:", base_species)
 
-    # Procurar todas as variações/subespécies
-    base_race_entry = next((r for r in sp_data.get("race", []) if r.get("name") == selected_species_name), None)
+    # Procurar a melhor entrada de espécie base considerando prioridade de fontes (evita DMG/NPC templates)
+    SOURCE_PRIORITY = ["PHB", "XPHB", "MPMM", "VGM", "ERLW", "GGR", "DMG"]
+    matching_races = [r for r in sp_data.get("race", []) if r.get("name") == selected_species_name]
+    def get_source_priority(entry):
+        src = entry.get("source", "")
+        if src in SOURCE_PRIORITY:
+            return SOURCE_PRIORITY.index(src)
+        return 999
+    matching_races.sort(key=get_source_priority)
+    base_race_entry = matching_races[0] if matching_races else None
     
     subspecies_options = []
     # Inclui a opção "Sem variante / Base"
