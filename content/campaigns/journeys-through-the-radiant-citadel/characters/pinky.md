@@ -232,10 +232,4 @@ Este personagem foi criado manualmente via script interativo guiado por dados do
 ### Equipamentos e Recursos
 Ficha básica de V1. Use os comandos estendidos nas próximas fases para adicionar recursos adicionais.
 
-### Diagnóstico Dice+
-
-<div style="margin-top:16px;padding:12px;border:1px solid var(--border-color,#ccc);border-radius:8px;background:var(--card-bg,#fff);">
-  <p style="margin:0 0 8px;"><strong>Diagnóstico da ponte Dice+</strong></p>
-  <button type="button" style="padding:6px 10px;border:1px solid var(--primary-color,#2980b9);border-radius:6px;background:transparent;color:var(--primary-color,#2980b9);cursor:pointer;font:inherit;font-weight:700;" onclick="(async()=>{const out=document.getElementById('gmvault-dice-diagnostic-output'); if(out) out.textContent='Executando diagnóstico...'; if(!window.GMVaultDiceControls?.runDiagnostics){ if(out) out.textContent='Diagnóstico indisponível.'; return; } const info=await window.GMVaultDiceControls.runDiagnostics(document); if(out) out.textContent=JSON.stringify(info,null,2);})()">Executar diagnóstico</button>
-  <pre id="gmvault-dice-diagnostic-output" style="white-space:pre-wrap;word-break:break-word;margin:10px 0 0;padding:10px;border:1px solid var(--border-color,#ccc);border-radius:6px;max-height:260px;overflow:auto;">Clique no botão para executar.</pre>
-</div>
+<pre id="gmvault-dice-diagnostic-output" style="white-space:pre-wrap;word-break:break-word;margin:10px 0 0;padding:10px;border:1px solid var(--border-color,#ccc);border-radius:6px;max-height:260px;overflow:auto;">Clique no botão de diagnóstico ao lado do nome para executar.</pre>
