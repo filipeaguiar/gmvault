@@ -2,8 +2,8 @@
 title: "Step of the Wind"
 params:
   kind: "rule"
-draft: false
-status: "ready"
+draft: true
+status: "draft"
 summary: "Habilidade de classe."
 ---
 

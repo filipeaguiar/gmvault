@@ -1,24 +1,29 @@
 ---
-title: "Sentinel"
+title: Sentinel
 params:
-  kind: "feat"
+  kind: feat
 draft: true
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Draft imported from 5e.tools. Requires translation.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
+- draft
+- importado
+visibility: public
+status: draft
 feat_info:
-  prerequisite: "None"
+  prerequisite: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits:
+Você dominou técnicas para aproveitar cada descuido na guarda de qualquer inimigo, obtendo os seguintes benefícios:
 
-* When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of the turn.
+* Quando você atinge uma criatura com um ataque de oportunidade, o deslocamento da criatura se torna 0 pelo resto do turno.
 
-* Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.
+* Criaturas provocam ataques de oportunidade de você mesmo se usarem a ação Desengajar antes de sair do seu alcance.
 
-* When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature.
+* Quando uma criatura a até 1,5 metro de você fizer um ataque contra um alvo que não seja você (e esse alvo não possuir este talento), você pode usar sua reação para fazer um ataque corpo a corpo com arma contra a criatura atacante.

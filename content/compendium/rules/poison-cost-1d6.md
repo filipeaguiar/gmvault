@@ -1,12 +1,18 @@
 ---
-title: "Poison (Cost: 1d6)"
+title: 'Poison (Cost: 1d6)'
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the XPHB condition for 1 minute. At the end of each of its turns, the XPHB target repeats the save, ending the effect on itself on a success.
+Você adiciona uma toxina ao seu golpe, forçando o alvo a realizar um teste de resistência de Constituição. Em caso de falha, o alvo sofre a condição XPHB por 1 minuto. Ao final de cada um de seus turnos, o alvo XPHB repete o teste de resistência, encerrando o efeito sobre si em caso de sucesso.
 
-To use this effect, you must have a XPHB on your person.
+Para usar este efeito, você deve ter um XPHB em sua pessoa.

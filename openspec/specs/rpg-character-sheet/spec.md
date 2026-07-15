@@ -1,0 +1,83 @@
+# rpg-character-sheet Specification
+
+## Purpose
+TBD - created by archiving change rpg-character-sheet. Update Purpose after archive.
+## Requirements
+### Requirement: Tab Navigation Interface
+O sistema SHALL disponibilizar uma barra de abas interativas no topo da visualização da ficha do personagem ("Atributos", "Perícias", "Ações", "Equipamentos", "Grimório" [se conjurador], "Classe", "Características" e "Imagem") para comutação de conteúdo.
+
+#### Scenario: Tab switching activation
+- **WHEN** o usuário clica em uma aba na barra de navegação da ficha
+- **THEN** o sistema SHALL alternar a visualização ocultando as demais áreas e exibindo apenas a correspondente à aba selecionada, sem realizar recarga de página (através de CSS puro ou Vanilla JS leve).
+
+### Requirement: Square Attribute and Highlight Modifiers
+O sistema SHALL exibir cada um dos 6 atributos principais do personagem em um elemento visual quadrado, com destaque visual maior para o modificador calculado e menor para o valor base associado, e também exibir as estatísticas traduzidas em português.
+
+#### Scenario: Render attributes visual boxes
+- **WHEN** a ficha do personagem é renderizada no Hugo
+- **THEN** o sistema SHALL desenhar Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma em caixas quadradas destacando o modificador (ex: +3) de forma proeminente, exibindo o valor base (ex: 16), e SHALL exibir na mesma aba, de forma destacada e traduzida para o português brasileiro oficial de D&D 5e:
+  - Classe de Armadura (AC)
+  - Pontos de Vida Atuais e Máximos (HP Máximo)
+  - Deslocamento (Speed)
+  - Bônus de Proficiência (Proficiency Bonus)
+  - Salvaguardas (Saving Throws) de todos os atributos
+  - Sentidos Passivos (Passive Senses), incluindo Percepção Passiva (Passive Perception) e outros sentidos cadastrados
+  - Ouro acumulado
+  - Classe de Dificuldade (DC) de Magia (se aplicável)
+
+### Requirement: Column Skills and Expertise Highlights
+O sistema SHALL exibir a lista de perícias do personagem dividida em duas colunas ordenadas alfabeticamente na aba de Perícias, com marcadores visuais diferenciados para indicar proficiência simples ou especialização (expertise).
+
+#### Scenario: Render skills list
+- **WHEN** a aba de Perícias é exibida
+- **THEN** o sistema SHALL renderizar a lista de todas as perícias (Skills) em 2 colunas, exibindo o bônus total de cada perícia, um indicador visual preenchido se o personagem for proficiente, e um indicador com símbolo alternativo (como uma estrela ou marcação em dobro) caso ele possua especialização (expertise).
+
+### Requirement: Categorized Equipment List
+O sistema SHALL exibir o inventário do personagem sob a aba de Equipamentos, dividido de forma estruturada em Armas e Armaduras, Itens Consumíveis e Outros Itens, com ícones dedicados e metadados operacionais.
+
+#### Scenario: Render categorized inventory
+- **WHEN** a aba de Equipamentos é exibida
+- **THEN** o sistema SHALL listar os itens do personagem em três seções separadas: Armas e Armaduras (com ícones dedicados e fórmulas de rolagem de ataque/dano baseadas nos metadados), Itens Consumíveis (como poções e pergaminhos cujas informações podem ser puxadas e completadas a partir do compêndio correspondente) e Outros Itens (itens gerais de aventura).
+
+### Requirement: Caster Grimoire by Level
+O sistema SHALL renderizar a aba de Grimório exclusivamente para personagens capazes de conjurar magias, agrupando suas magias conhecidas por nível.
+
+#### Scenario: Render grimoire cards
+- **WHEN** o personagem possuir magias cadastradas em sua ficha e a aba de Grimório for acessada
+- **THEN** o sistema SHALL listar todas as magias divididas por nível de círculo (truques, 1º nível, 2º nível, etc.), exibindo cada magia em um card individual com metadados cruciais (tempo de conjuração, alcance, duração, escola e link direto para os detalhes da magia no compêndio).
+
+### Requirement: Character Portrait Tab
+O sistema SHALL renderizar na última aba da ficha ("Imagem") a ilustração oficial do personagem em tamanho de destaque.
+
+#### Scenario: Render character avatar image
+- **WHEN** a última aba ("Imagem") for ativada pelo usuário
+- **THEN** o sistema SHALL ler a URL ou caminho do arquivo da imagem especificada no frontmatter do personagem (ex: `image` ou `avatar`) e exibi-la de forma centralizada e redimensionada na aba, com um fallback amigável caso a imagem esteja ausente.
+
+### Requirement: Character Actions Tracker
+O sistema SHALL renderizar a aba de Ações exibindo as ações padrão de combate e exploração do personagem combinadas com ações especiais de sua classe/subclasse, incluindo o controle visual de recursos de uso limitado.
+
+#### Scenario: Render actions with limited use checkboxes
+- **WHEN** a aba de Ações for ativada
+- **THEN** o sistema SHALL listar todas as ações padrão (Ataque, Conconjurar Magia, Desengajar, Disparar, Esconder, Ajudar, Usar Objeto, Esquivar) e as ações especiais de classe/subclasse do personagem, e desenhar caixas de marcação (checkboxes) clicáveis correspondentes à quantidade total máxima de usos permitidos dos recursos limitados (ex: Fúria, Inspiração Bárdica, Canalizar Divindade) para fins de acompanhamento interativo.
+
+### Requirement: Class and Subclass Progression
+O sistema SHALL exibir a aba de Classe contendo detalhes sobre a descrição da classe e subclasse do personagem e o que se obtém em cada nível de progressão.
+
+#### Scenario: Render subclass and level benefits
+- **WHEN** a aba de Classe for ativada
+- **THEN** o sistema SHALL exibir de forma hierárquica e estruturada os nomes e as descrições da classe e subclasse, acompanhados de uma tabela ou lista cronológica descrevendo os recursos, talentos e atributos obtidos em cada nível alcançado.
+
+### Requirement: Features and Traits Translation
+O sistema SHALL exibir na aba de Características todos os traços raciais, características de classe e talentos do personagem traduzidos para o português brasileiro oficial de D&D 5e.
+
+#### Scenario: Render translated traits list
+- **WHEN** a aba de Características for ativada
+- **THEN** o sistema SHALL exibir a lista completa de características de raça, classe e talentos do personagem (Features & Traits), traduzindo termos técnicos de jogo para o português brasileiro de forma consistente.
+
+### Requirement: VTT Iframe Compatibility
+O sistema SHALL suportar a renderização da ficha de personagem em elementos iframe compactos de mesas virtuais de RPG (VTT), ajustando dinamicamente dimensões, margens e barras de rolagem.
+
+#### Scenario: Adapt rendering in constrained iframe
+- **WHEN** a página da ficha de personagem for carregada dentro de um iframe em uma tela de VTT
+- **THEN** o sistema SHALL remover margens externas amplas do layout, compactar o espaçamento do menu de abas e aplicar comportamento de rolagem interna suave nas abas (`overflow-y: auto`) para evitar o surgimento de barras de rolagem dupla na interface do usuário.
+

@@ -1,18 +1,23 @@
 ---
-title: "Tough"
+title: Tough
 params:
-  kind: "feat"
+  kind: feat
 draft: true
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Draft imported from 5e.tools. Requires translation.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
+- draft
+- importado
+visibility: public
+status: draft
 feat_info:
-  prerequisite: "None"
+  prerequisite: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.
+Seu máximo de pontos de vida aumenta em um valor igual ao dobro do seu nível quando você adquire este talento. Sempre que você ganha um nível depois disso, seu máximo de pontos de vida aumenta em mais 2 pontos de vida.

@@ -53,6 +53,7 @@ STRUCTURAL_FRONT_MATTER_KEYS = {
     "factions",
     "handouts",
     "compendium_refs",
+    "ref",
     "stats",
     "stats_meta",
     "char_info",

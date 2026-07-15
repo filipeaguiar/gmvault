@@ -1,12 +1,18 @@
 ---
-title: "Cunning Strike"
+title: Cunning Strike
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.
+Você desenvolveu maneiras astutas de usar seu Ataque Furtivo. Quando você causa dano de Ataque Furtivo, pode adicionar um dos seguintes efeitos de Golpe Astuto. Cada efeito tem um custo em dados, que é o número de dados de dano do Ataque Furtivo que você deve abrir mão para adicionar o efeito. Você remove o dado antes de rolar, e o efeito ocorre imediatamente após o dano do ataque ser causado. Por exemplo, se você adicionar o efeito Veneno, remova 1d6 do dano do Ataque Furtivo antes de rolar.
 
-If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.
+Se um efeito de Golpe Astuto exigir um teste de resistência, a CD é igual a 8 mais seu modificador de Destreza e Bônus de Proficiência.

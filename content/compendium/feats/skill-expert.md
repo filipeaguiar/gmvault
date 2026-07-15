@@ -1,22 +1,27 @@
 ---
-title: "Skill Expert"
+title: Skill Expert
 params:
-  kind: "feat"
+  kind: feat
 draft: true
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Draft imported from 5e.tools. Requires translation.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
+- draft
+- importado
+visibility: public
+status: draft
 feat_info:
-  prerequisite: "None"
+  prerequisite: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-You have honed your proficiency with particular skills, granting you the following benefits:
+Você aprimorou sua proficiência em perícias específicas, concedendo os seguintes benefícios:
 
-* You gain proficiency in one skill of your choice.
+* Você ganha proficiência em uma perícia de sua escolha.
 
-* Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.
+* Escolha uma perícia na qual você tenha proficiência. Você ganha especialização nessa perícia, o que significa que seu bônus de proficiência é dobrado para qualquer teste de atributo que você fizer com ela. A perícia escolhida não pode ser uma que já esteja se beneficiando de uma característica, como Especialização, que dobre seu bônus de proficiência.

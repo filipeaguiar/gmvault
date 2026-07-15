@@ -1,18 +1,23 @@
 ---
-title: "Defensive Duelist"
+title: Defensive Duelist
 params:
-  kind: "feat"
+  kind: feat
 draft: true
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Draft imported from 5e.tools. Requires translation.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
+- draft
+- importado
+visibility: public
+status: draft
 feat_info:
-  prerequisite: "DEX 13"
+  prerequisite: DEX 13
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.
+Quando você está empunhando uma arma de acuidade com a qual possui proficiência e outra criatura acerta você com um ataque corpo a corpo, você pode usar sua reação para adicionar seu bônus de proficiência à sua CA para aquele ataque, potencialmente fazendo com que o ataque erre você.

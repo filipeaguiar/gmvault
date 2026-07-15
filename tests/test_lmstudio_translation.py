@@ -316,6 +316,38 @@ class LmStudioTranslationTests(unittest.TestCase):
         self.assertEqual(meta["translation"]["engine"], "lmstudio")
         self.assertEqual(meta["translation"]["model"], "google/gemma-4-e4b")
 
+    def test_character_reference_is_structural_and_not_translated(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "character.md"
+            path.write_text(
+                "---\nref: /compendium/rules/sneak-attack/\ncompendium_refs:\n  - /compendium/rules/sneak-attack/\n---\n\nDescrição da ficha.\n",
+                encoding="utf-8",
+            )
+            document = MarkdownDocument(
+                path,
+                "ref: /compendium/rules/sneak-attack/\ncompendium_refs:\n  - /compendium/rules/sneak-attack/",
+                {
+                    "ref": "/compendium/rules/sneak-attack/",
+                    "compendium_refs": ["/compendium/rules/sneak-attack/"],
+                    "char_info": {"actions": [{"name": "Sneak Attack", "ref": "/compendium/rules/sneak-attack/"}]},
+                },
+                "\nDescrição da ficha.\n",
+            )
+            translated = process_document(
+                document,
+                lambda text: f"PT:{text}",
+                {},
+                apply=False,
+                include_non_draft=True,
+                translate_frontmatter=True,
+                source="en",
+                target="pb",
+            )
+            self.assertTrue(translated.changed)
+            self.assertEqual(document.front_matter["ref"], "/compendium/rules/sneak-attack/")
+            self.assertEqual(document.front_matter["compendium_refs"], ["/compendium/rules/sneak-attack/"])
+            self.assertIn("ref: /compendium/rules/sneak-attack/", path.read_text(encoding="utf-8"))
+
     def test_already_translated_document_is_skipped_without_force(self):
         document = MarkdownDocument(
             path=Path("unused.md"),

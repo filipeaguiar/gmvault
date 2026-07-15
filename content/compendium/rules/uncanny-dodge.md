@@ -1,10 +1,16 @@
 ---
-title: "Uncanny Dodge"
+title: Uncanny Dodge
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-When an attacker that you can see hits you with an attack roll, you can take a XPHB to halve the attack's damage against you (round down).
+Quando um atacante que você possa ver acertar você com uma jogada de ataque, você pode usar uma XPHB para reduzir o dano do ataque contra você pela metade (arredondado para baixo).

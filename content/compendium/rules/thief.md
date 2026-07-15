@@ -1,12 +1,18 @@
 ---
-title: "Thief"
+title: Thief
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-Hunt for Treasure as a Classic Adventurer
+Caça ao Tesouro como Aventureiro Clássico
 
-A mix of burglar, treasure hunter, and explorer, you are the epitome of an adventurer. In addition to improving your agility and stealth, you gain abilities useful for delving into ruins and getting maximum benefit from the magic items you find there.
+Uma mistura de ladrão, caçador de tesouros e explorador, você é o epítome de um aventureiro. Além de melhorar sua agilidade e furtividade, você ganha habilidades úteis para explorar ruínas e obter o máximo benefício dos itens mágicos que encontrar lá.

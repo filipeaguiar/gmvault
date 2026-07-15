@@ -1,10 +1,16 @@
 ---
-title: "Fast Hands"
+title: Fast Hands
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-As a XPHB, you can do one of the following.
+Como XPHB, você pode fazer uma das seguintes ações.

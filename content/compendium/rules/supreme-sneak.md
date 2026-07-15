@@ -1,10 +1,16 @@
 ---
-title: "Supreme Sneak"
+title: Supreme Sneak
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-You gain the following Cunning Strike option.
+Você ganha a seguinte opção de Golpe Astuto.

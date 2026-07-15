@@ -1,10 +1,16 @@
 ---
-title: "Steady Aim"
+title: Steady Aim
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-As a XPHB, you give yourself XPHB on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your XPHB is 0 until the end of the current turn.
+Como uma Ação de Bônus, você concede Vantagem na sua próxima jogada de ataque no turno atual. Você pode usar esta característica apenas se não tiver se movido durante este turno e, após usá-la, seu Deslocamento é 0 até o final do turno atual.

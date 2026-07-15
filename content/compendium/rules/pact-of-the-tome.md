@@ -2,8 +2,8 @@
 title: "Pact of the Tome"
 params:
   kind: "rule"
-draft: false
-status: "ready"
+draft: true
+status: "draft"
 summary: "Habilidade de classe."
 ---
 

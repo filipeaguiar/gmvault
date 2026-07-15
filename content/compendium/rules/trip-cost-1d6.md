@@ -1,10 +1,16 @@
 ---
-title: "Trip (Cost: 1d6)"
+title: 'Trip (Cost: 1d6)'
 params:
-  kind: "rule"
+  kind: rule
 draft: true
-status: "draft"
-summary: "Habilidade de classe."
+status: draft
+summary: Habilidade de classe.
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
-If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the XPHB condition.
+Se o alvo for Grande ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza ou sofrer a condição XPHB.

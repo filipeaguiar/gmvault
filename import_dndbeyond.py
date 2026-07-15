@@ -19,6 +19,18 @@ def slugify(text):
     text = re.sub(r'[^a-z0-9\-]', '', text.replace(' ', '-'))
     return text
 
+
+STANDARD_ACTION_REFS = {
+    "Ataque": "/compendium/rules/action-attack/",
+    "Esconder": "/compendium/rules/action-hide/",
+    "Desengajar": "/compendium/rules/action-disengage/",
+    "Disparar": "/compendium/rules/action-dash/",
+    "Ajudar": "/compendium/rules/action-help/",
+    "Esquivar": "/compendium/rules/action-dodge/",
+    "Usar Objeto": "/compendium/rules/action-use-object/",
+}
+
+
 def clean_5etools_tags(text):
     import re
     # Clean tags like {@status surprised} -> surprised, or {@spell fireball|Bola de Fogo} -> Bola de Fogo
@@ -86,7 +98,8 @@ def fetch_from_5etools(kind, english_name):
         "magic_item": ["items.json", "items-base.json"],
         "feat": ["feats.json"],
         "race": ["races.json"],
-        "class": ["classes.json"]
+        "class": ["classes.json"],
+        "item_mastery": ["items-base.json"],
     }
     
     files = file_map.get(kind, [])
@@ -103,8 +116,16 @@ def fetch_from_5etools(kind, english_name):
         "chain mail": "chain mail armor",
         "splint": "splint armor"
     }
+    # Aliases para feats com nomes diferentes no D&D Beyond vs 5e.tools
+    feat_aliases = {
+        "weapon mastery": "Weapon Master",
+    }
     if kind in ["item", "magic_item"] and english_name.lower() in item_aliases:
         search_names.append(item_aliases[english_name.lower()])
+    if kind == "feat" and english_name.lower() in feat_aliases:
+        alt_name = feat_aliases[english_name.lower()]
+        print(f"  [5e.tools] Alias detectado: '{english_name}' → '{alt_name}'")
+        search_names.append(alt_name.lower())
         
     found_data = None
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -160,6 +181,13 @@ def fetch_from_5etools(kind, english_name):
                         break
             elif kind == "feat" and "feat" in data:
                 for item in data["feat"]:
+                    if item.get("name", "").lower() in search_names:
+                        found_data = item
+                        english_name = item.get("name")
+                        slug = slugify(english_name)
+                        break
+            elif kind == "item_mastery" and "itemMastery" in data:
+                for item in data["itemMastery"]:
                     if item.get("name", "").lower() == english_name.lower():
                         found_data = item
                         break
@@ -232,6 +260,9 @@ def fetch_from_5etools(kind, english_name):
         content_dir = "content/compendium/magic-items"
     elif kind in ["class", "subclass"]:
         content_dir = "content/compendium/classes"
+    elif kind == "item_mastery":
+        content_dir = "content/compendium/rules"
+        slug = f"weapon-mastery-{slug}"  # e.g. weapon-mastery-cleave
         
     os.makedirs(content_dir, exist_ok=True)
     dest_path = f"{content_dir}/{slug}.md"
@@ -503,6 +534,25 @@ class_info:
 {description}
 """
 
+    elif kind == "item_mastery":
+        markdown = f"""---
+title: "Maestria de Arma: {english_name}"
+params:
+  kind: "rule"
+draft: true
+weight: 10
+summary: "Propriedade de Maestria de Arma do D&D 2024 (XPHB). Requires translation."
+tags:
+  - draft
+  - importado
+  - weapon-mastery
+visibility: "public"
+status: "draft"
+---
+
+{description}
+"""
+
     if markdown:
         with open(dest_path, "w", encoding="utf-8") as f:
             f.write(markdown)
@@ -511,6 +561,8 @@ class_info:
             return f"/compendium/magic-items/{slug}/"
         elif kind in ["class", "subclass"]:
             return f"/compendium/classes/{slug}/"
+        elif kind == "item_mastery":
+            return f"/compendium/rules/{slug}/"
         else:
             return f"/compendium/{kind}s/{slug}/"
         
@@ -954,14 +1006,19 @@ def main():
             "chain mail": "chain mail armor",
             "splint": "splint armor"
         }
-        for item_name, is_magic, filter_type in equipped_items_names:
-            if filter_type in ['Weapon', 'Armor', 'Wondrous item', 'Ring', 'Potion', 'Scroll']:
-                kind = "magic_item" if is_magic else "item"
-                slug_prefix = "magic-items" if is_magic else "items"
-                check_name = item_name
-                if item_name.lower() in item_aliases:
-                    check_name = item_aliases[item_name.lower()]
-                entities_to_check.append((kind, item_name, f"/compendium/{slug_prefix}/{slugify(check_name)}/"))
+        inventory_entities = []
+        for inventory_item in char.get('inventory', []):
+            definition = inventory_item.get('definition', {}) or {}
+            inventory_name = definition.get('name')
+            inventory_filter = definition.get('filterType')
+            if inventory_name and inventory_filter in ['Weapon', 'Armor', 'Wondrous item', 'Ring', 'Potion', 'Scroll', 'Other Gear']:
+                inventory_entities.append((inventory_name, bool(definition.get('magic')), inventory_filter))
+
+        for item_name, is_magic, filter_type in inventory_entities:
+            kind = "magic_item" if is_magic else "item"
+            slug_prefix = "magic-items" if is_magic else "items"
+            check_name = item_aliases.get(item_name.lower(), item_name)
+            entities_to_check.append((kind, item_name, f"/compendium/{slug_prefix}/{slugify(check_name)}/"))
         # Magias
         for spell_name in spells_list:
             entities_to_check.append(("spell", spell_name, f"/compendium/spells/{slugify(spell_name)}/"))
@@ -1007,6 +1064,17 @@ def main():
             dest_path = f"content/compendium/rules/{slug}.md"
             
             os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+            if os.path.exists(dest_path):
+                try:
+                    with open(dest_path, "r", encoding="utf-8") as f:
+                        existing = f.read()
+                    existing_body = existing.split("---", 2)[-1].strip() if existing.startswith("---") else existing.strip()
+                    if existing_body:
+                        print(f"  [Compêndio] Preservando nota existente: {dest_path}")
+                        return ref_path
+                except OSError:
+                    pass
+
             markdown = f"""---
 title: "{name}"
 params:
@@ -1020,7 +1088,7 @@ summary: "Habilidade de classe."
 """
             with open(dest_path, "w", encoding="utf-8") as f:
                 f.write(markdown)
-            print(f"  [Compêndio] Habilidade de classe atualizada/criada: {dest_path}")
+            print(f"  [Compêndio] Habilidade de classe criada: {dest_path}")
             return ref_path
 
         # 10. Coletar e criar opções customizadas de classe (Pactos e Invocações) no Compêndio
@@ -1205,15 +1273,11 @@ summary: "Habilidade de classe."
         # 6. Ações (Ações padrão + Ações de classe/raça/talento)
         actions_data = []
         standard_actions = [
-            {"name": "Ataque", "description": "Realiza um ataque corpo a corpo ou à distância com uma arma equipada.", "max_uses": 0, "reset": ""},
-            {"name": "Esconder", "description": "Tenta se esconder realizando um teste de Destreza (Furtividade).", "max_uses": 0, "reset": ""},
-            {"name": "Desengajar", "description": "Seu movimento não provoca ataques de oportunidade até o fim do turno.", "max_uses": 0, "reset": ""},
-            {"name": "Disparar", "description": "Ganha deslocamento adicional igual à sua velocidade para o turno atual.", "max_uses": 0, "reset": ""},
-            {"name": "Ajudar", "description": "Dá vantagem no próximo teste de atributo ou ataque de um aliado.", "max_uses": 0, "reset": ""},
-            {"name": "Esquivar", "description": "Até o início do seu próximo turno, qualquer ataque contra você tem desvantagem.", "max_uses": 0, "reset": ""},
-            {"name": "Usar Objeto", "description": "Interage com um segundo objeto ou usa um item especial que requer ação.", "max_uses": 0, "reset": ""}
+            {"name": name, "ref": ref, "max_uses": 0, "reset": ""}
+            for name, ref in STANDARD_ACTION_REFS.items()
         ]
         actions_data.extend(standard_actions)
+        compendium_refs.extend(action["ref"] for action in standard_actions)
 
         # Adicionar ações específicas
         for source_key in ['class', 'race', 'feat']:
@@ -1228,13 +1292,24 @@ summary: "Habilidade de classe."
                 reset = lim.get('resetType')
                 reset_str = "Descanso Longo" if reset == 2 else "Descanso Curto" if reset == 1 else "Dia" if reset else ""
                 
-                actions_data.append({
+                clean_desc = clean_5etools_tags(act_desc.replace('<p>', '').replace('</p>', '\n').replace('<br>', '\n')).strip()
+                action_ref = f"/compendium/rules/{slugify(act_name)}/"
+                action_path = f"content{action_ref.rstrip('/')}.md"
+                if not os.path.exists(action_path) and clean_desc:
+                    action_ref = ensure_compendium_rule(act_name, clean_desc)
+
+                action_entry = {
                     "name": act_name,
-                    "description": clean_5etools_tags(act_desc.replace('<p>', '').replace('</p>', '\n').replace('<br>', '\n')).strip(),
                     "max_uses": max_uses,
                     "reset": reset_str,
                     "source": source_key
-                })
+                }
+                if action_ref:
+                    action_entry["ref"] = action_ref
+                    compendium_refs.append(action_ref)
+                actions_data.append(action_entry)
+
+        compendium_refs = sorted(list(set(compendium_refs)))
 
         # 7. Equipamentos detalhados (Armas, Armaduras, Consumíveis e Outros)
         equipment_list = []
@@ -1259,15 +1334,21 @@ summary: "Habilidade de classe."
                 dmg_bonus = stat_mod
                 dmg_formula = f"{dice} + {dmg_bonus}"
                 
-            equipment_list.append({
+            item_ref = f"/compendium/{'magic-items' if d.get('magic') else 'items'}/{slugify(item_aliases.get((item_name or '').lower(), item_name or ''))}/"
+            equipment_entry = {
                 "name": item_name,
                 "quantity": qty,
                 "equipped": is_equipped,
                 "filter_type": filter_type,
                 "attack_formula": atk_formula,
                 "damage_formula": dmg_formula,
-                "ref": f"/compendium/{'magic-items' if d.get('magic') else 'items'}/{slugify(item_name)}/"
-            })
+            }
+            item_path = f"content{item_ref.rstrip('/')}.md"
+            if os.path.exists(item_path):
+                equipment_entry["ref"] = item_ref
+            else:
+                print(f"  [Compêndio] Item sem nota local, mantendo sem ref: {item_name}")
+            equipment_list.append(equipment_entry)
 
         # 8. Grimório Estruturado
         structured_spells = []
@@ -1279,13 +1360,16 @@ summary: "Habilidade de classe."
                         s_def = s.get('definition', {})
                         if s_def and s_def.get('name'):
                             name = s_def.get('name')
-                            structured_spells.append({
+                            spell_ref = f"/compendium/spells/{slugify(name)}/"
+                            spell_entry = {
                                 "name": name,
                                 "level": s_def.get('level', 0),
                                 "prepared": s.get('prepared', False),
-                                "ref": f"/compendium/spells/{slugify(name)}/",
                                 "usage": get_spell_usage_str(s)
-                            })
+                            }
+                            if os.path.exists(f"content{spell_ref.rstrip('/')}.md"):
+                                spell_entry["ref"] = spell_ref
+                            structured_spells.append(spell_entry)
         other_spells = char.get('spells', {})
         if isinstance(other_spells, dict):
             for source, slist in other_spells.items():
@@ -1294,13 +1378,16 @@ summary: "Habilidade de classe."
                         s_def = s.get('definition', {})
                         if s_def and s_def.get('name'):
                             name = s_def.get('name')
-                            structured_spells.append({
+                            spell_ref = f"/compendium/spells/{slugify(name)}/"
+                            spell_entry = {
                                 "name": name,
                                 "level": s_def.get('level', 0),
                                 "prepared": s.get('prepared', False) or (source in ['race', 'background', 'feat']),
-                                "ref": f"/compendium/spells/{slugify(name)}/",
                                 "usage": get_spell_usage_str(s)
-                            })
+                            }
+                            if os.path.exists(f"content{spell_ref.rstrip('/')}.md"):
+                                spell_entry["ref"] = spell_ref
+                            structured_spells.append(spell_entry)
         structured_spells = sorted(structured_spells, key=lambda k: (k['level'], k['name']))
 
         # 9. Classes e Progressão por Nível
@@ -1383,7 +1470,21 @@ char_info:
     int: {char_saves['int']}
     wis: {char_saves['wis']}
     cha: {char_saves['cha']}
+  saves_proficient:
+    str: {str(proficient_saves['str']).lower()}
+    dex: {str(proficient_saves['dex']).lower()}
+    con: {str(proficient_saves['con']).lower()}
+    int: {str(proficient_saves['int']).lower()}
+    wis: {str(proficient_saves['wis']).lower()}
+    cha: {str(proficient_saves['cha']).lower()}
   saves_summary: "{char_saves_summary}"
+  mods:
+    str: {get_modifier(stats_final['str'])}
+    dex: {get_modifier(stats_final['dex'])}
+    con: {get_modifier(stats_final['con'])}
+    int: {get_modifier(stats_final['int'])}
+    wis: {get_modifier(stats_final['wis'])}
+    cha: {get_modifier(stats_final['cha'])}
   stats:
     str: {stats_final['str']}
     dex: {stats_final['dex']}

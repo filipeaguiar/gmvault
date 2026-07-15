@@ -13,6 +13,10 @@
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   
+  {{ if eq .Params.kind "character" }}
+  {{ $charCss := resources.Get "css/character-sheet.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $charCss.RelPermalink }}" integrity="{{ $charCss.Data.Integrity }}">
+  {{ end }}
   {{ if .Params.summary }}
   <meta name="description" content="{{ .Params.summary }}">
   {{ end }}

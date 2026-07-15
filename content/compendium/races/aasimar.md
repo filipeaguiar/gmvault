@@ -1,48 +1,47 @@
 ---
-title: "Aasimar"
+title: Aasimar
 params:
-  kind: "race"
+  kind: race
 draft: true
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Draft imported from 5e.tools. Requires translation.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
+- draft
+- importado
+visibility: public
+status: draft
 race_info:
-  ability_score: "+1 to all attributes"
-  speed: "9.0m"
-  languages: "Common, +1 extra"
+  ability_score: +1 to all attributes
+  speed: 9.0m
+  languages: Common, +1 extra
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-chat
 ---
 
+### Idade
 
-### Age
+Os aasimar amadurecem na mesma proporção que os humanos, mas vivem alguns anos a mais.
 
-Aasimar mature at the same rate as humans but live a few years longer.
+### Tamanho
 
+Os aasimar têm a constituição de humanos bem proporcionados. Seu tamanho é Médio.
 
-### Size
+### Visão no Escuro
 
-Aasimar are built like well-proportioned humans. Your size is Medium.
+Graças à sua herança celestial, você possui visão superior em condições de escuridão e pouca luz. Você enxerga em luz fraca num raio de 18 metros como se fosse luz clara e na escuridão como se fosse luz fraca. Você não distingue cores na escuridão, apenas tons de cinza.
 
+### Resistência Celestial
 
-### Darkvision
+Você tem resistência a dano necrótico e radiante.
 
-Thanks to your celestial heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.
+### Legado Celestial
 
+Você conhece o truque *luz*. Ao atingir o 3º nível, você pode conjurar a magia *restauração menor* uma vez com esta característica e recupera a capacidade de fazê-lo quando termina um descanso longo. Ao atingir o 5º nível, você pode conjurar a magia *luz do dia* uma vez com esta característica e recupera a capacidade de fazê-lo quando termina um descanso longo. Carisma é seu atributo de conjuração para estas magias.
 
-### Celestial Resistance
+### Idioma
 
-You have resistance to necrotic and radiant damage.
-
-
-### Celestial Legacy
-
-You know the light cantrip. Once you reach 3rd level, you can cast the lesser restoration spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the daylight spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.
-
-
-### Language
-
-You can speak, read, and write Common and Celestial.
+Você pode falar, ler e escrever Comum e Celestial.

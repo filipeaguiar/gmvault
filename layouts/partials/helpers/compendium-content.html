@@ -1,0 +1,18 @@
+{{- $ref := .ref | default "" -}}
+{{- $name := .name | default "Conteúdo relacionado" -}}
+{{- $legacy := .legacy | default "" -}}
+{{- if $ref -}}
+  {{- $page := site.GetPage $ref -}}
+  {{- if and $page $page.Content -}}
+    <div class="compendium-content" data-compendium-ref="{{ $ref }}">{{ $page.Content }}</div>
+  {{- else -}}
+    <div class="compendium-fallback" data-compendium-ref="{{ $ref }}">
+      <span>{{ $name }}</span>
+      <small>Conteúdo do compêndio indisponível: {{ $ref }}</small>
+    </div>
+  {{- end -}}
+{{- else if $legacy -}}
+  <div class="compendium-legacy-content">{{ $legacy | safeHTML }}</div>
+{{- else -}}
+  <div class="compendium-fallback"><span>{{ $name }}</span><small>Referência do compêndio pendente.</small></div>
+{{- end -}}
