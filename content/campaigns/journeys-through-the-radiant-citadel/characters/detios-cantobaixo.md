@@ -16,6 +16,7 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
+  gender: "masculino"
   class: "Bard 2"
   race: "Halfling"
   ac: "14"

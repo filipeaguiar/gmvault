@@ -16,6 +16,7 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
+  gender: "feminino"
   class: "Warlock 2"
   race: "Elf"
   ac: "12"

@@ -16,6 +16,7 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
+  gender: "masculino"
   class: "Rogue 10 (Thief)"
   race: "Variant Aasimar"
   ac: "15"

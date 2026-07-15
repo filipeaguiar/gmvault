@@ -16,6 +16,7 @@ status: "ready"
 
 # Estatísticas Estruturadas
 char_info:
+  gender: "feminino"
   class: "Sorcerer 1"
   race: "Human"
   ac: "11"
