@@ -139,3 +139,4 @@ O agente SHALL seguir estritamente as seguintes regras na redação:
 3. **Não alterar a agência dos jogadores:** A autoria das ações de personagens pertence unicamente às declarações dos respectivos jogadores.
 4. **Sem meta-conhecimento:** Não revele segredos que o mestre sabia nos bastidores, mas que não foram expostos verbalmente em jogo.
 5. **Sem adivinhações de sentimentos/pensamentos:** Não atribua pensamentos íntimos ou sentimentos aos personagens sem base nas declarações verbais do jogador.
+6. **Vínculo Rígido de Autoria:** É expressamente proibido trocar os atores das ações. Cada rolagem de dado, declaração de intenção ou fala em jogo deve ser atribuída exclusivamente ao personagem cujo jogador realizou a ação na transcrição bruta. O agente deve consultar obrigatoriamente a tabela de correspondência em `players` no `memory.yaml` para validar a correspondência entre a pessoa real que fala e o personagem fictício.

@@ -68,12 +68,18 @@ Einvor, cuja boca ainda parecia pedir por algo forte após a caminhada, aproximo
 O lojista da barraca abriu os braços com um sorriso desafiador, apontando para as opções.
 — Para escolher, você rola o dado e come o que o destino mandar. Se aguentar a queimação, passamos para a próxima. Se não, o iogurte está bem ali para aliviar. E então?
 
-Einvor escolheu uma pimenta grande e vermelha, engolindo-a de uma vez. Na primeira mordida, a sensação foi devastadora. O bárbaro sentiu como se estivesse diante da própria morte; seus olhos lacrimejaram imediatamente e um calor insuportável tomou conta de seu peito, deixando sua boca tão inchada que ele mal conseguia falar claramente.
-— Não gosto de pimenta — balbuciou Einvor com extrema dificuldade, enquanto tentava abanar a boca.
+Einvor deu um passo à frente e enfiou a mão calejada no cesto, escolhendo uma pimenta robusta e de cor carmesim intensa. Levando-a à boca, o golias mastigou com determinação. No início, o gosto até pareceu agradável, mas em poucos segundos a queimação irrompeu com a força de uma erupção vulcânica. O calor foi tão absurdo e violento que a visão do bárbaro começou a distorcer; ele olhava em volta e parecia que todos os passantes haviam se transformado em esqueletos, como se estivesse encarando a própria morte.
+— Nossa, eu falhei nesse teste... — resmungou Einvor, com a voz embargada e lágrimas escorrendo pelos olhos vermelhos.
+O imponente guerreiro cambaleou e caiu pesadamente no chão, arfando de boca aberta e com o rosto completamente vermelho, parecendo prestes a desmaiar de tanta ardência. Preocupado, o lojista da banca apressou-se a estender um copo de iogurte para tentar conter o estrago.
+— Vamos, levantem ele! — pediu Detios, tentando segurar um dos braços maciços do companheiro. — Precisamos de pelo menos uns três de nós para conseguir erguer esse grandão. Ele é pesado demais!
+— Mas os três é todo mundo! — exclamou o bardo, olhando para os lados.
+— É isso mesmo, é todo mundo! — concordou Einvor, balbuciando com extrema dificuldade enquanto tentava se apoiar para levantar. — Nossa Senhora... não gosto de pimenta!
 
 Pinky também encarou o desafio, comendo as pimentas de número seis e três. Sentindo como se o próprio mundo estivesse derretendo a cada mordida, o ladino manteve a postura firme e venceu o desafio sob aplausos, garantindo broches de desconto para o grupo. Enquanto isso, Violeta afastava-se para procurar uma barraca com apresentações de dança.
 
-O clima festivo, porém, durou pouco. Um grito de desespero ecoou e as chamas começaram a subir pela lona da barraca de Kusa Xungoon. Ainda com a boca inchada e as palavras enroladas, Einvor correu em direção ao fogo, abafando as labaredas com um tecido grosso antes que o incêndio ganhasse proporções desastrosas. Kusa xingou e apontou imediatamente para a rival, alegando que fora outra sabotagem planejada.
+O clima festivo, porém, durou pouco. Um grito de desespero ecoou e as chamas começaram a subir pela lona da barraca de Kusa Xungoon. Einvor, que ainda tentava se recuperar da queimação, virou-se para os companheiros com a boca visivelmente inchada e as palavras totalmente enroladas:
+— Ah, uma coisa: quando comi a pimenta, minha boca inchou, então não estou falando direito. Estou falando assim, ó! Vamos!
+Mesmo balbuciando de forma cômica, o gigante correu em direção ao fogo e, com movimentos rápidos, abafou as chamas usando um tecido grosso antes que o incêndio ganhasse proporções desastrosas. Kusa xingou e apontou imediatamente para a rival, alegando que fora outra sabotagem planejada.
 
 Com o fogo apagado, a investigação começou. Nyx'Clair examinou a base da estrutura carbonizada, notando que o incêndio surgira espontaneamente nos suportes de madeira inferiores, sem vestígios de óleo ou lamparinas caídas. 
 
