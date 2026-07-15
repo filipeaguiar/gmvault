@@ -93,15 +93,23 @@ O agente deve ler esse JSON e apresentar as ambiguidades ao usuário em uma tabe
 O usuário poderá responder de forma compacta (ex: `1: João, 2: Siabsungkoh`).
 Após o feedback do usuário, o agente atualiza as atribuições correspondentes nas falas das cenas do JSON intermediário. Se novas grafias incorretas foram confirmadas pelo usuário, registre-as como aliases no `memory.yaml`.
 
-### Fase 6: Redação da Prosa Literária por Cena
-Para cada cena no JSON intermediário, o agente lê a lista de falas/turnos e eventos normalizados e redige a prosa correspondente, observando as seguintes regras:
+### Fase 6: Mapeamento Consolidado de Eventos (Primeira Etapa)
+Antes de iniciar a redação do texto literário, o agente SHALL fazer uma leitura completa de todas as cenas e dados do JSON intermediário para mapear a linha do tempo (timeline) completa da sessão:
+1. Identifique e organize cronologicamente o máximo de eventos, interações e acontecimentos possíveis de toda a sessão de jogo.
+2. Mapeie exatamente quais personagens e NPCs estavam envolvidos ativamente ou presentes em cada um desses eventos.
+3. Rastreie a continuidade espacial (locais visitados) e o estado físico ou mecânico dos personagens (sucessos/falhas em testes, ferimentos, itens obtidos).
+4. Mantenha essa estrutura de eventos consolidada em sua memória de contexto para guiar a escrita unificada.
+
+### Fase 7: Redação Sincronizada em Prosa Literária (Segunda Etapa)
+Apenas após concluir o mapeamento consolidado de todos os eventos da sessão, o agente deve proceder para a escrita do capítulo em prosa literária contínua, observando as seguintes regras:
+- **Continuidade Unificada:** Escreva o texto de forma a fluir organicamente de um evento para o próximo, garantindo que o encadeamento espacial e temporal dos fatos faça sentido literário completo (estilo romance).
 - **Estilo Narrativo:** Use o tom configurado (ex: terceira pessoa, tempo passado, prosa de fantasia envolvente formatada como capítulo de livro contínuo).
 - **Sem Mecânicas ou Seções:** Remova termos como "rolou dado", "teste de Percepção", etc., traduzindo-os em ações. O texto deve fluir de forma inteiramente contínua, sem subtítulos ou seções para resumos, listas de personagens/NPCs ou observações.
 - **Preservação de Fatos:** Não altere decisões tomadas, não transforme falhas de dados em acertos, não invente ações que não constam no arquivo.
 - **Diálogos:** Preserve os diálogos originais ditos pelos jogadores como personagens em discurso direto (usando travessões ou aspas) sempre que possível. Unifique falas fracionadas ou limpe pequenas gagueiras para fluidez, mas mantenha a interpretação original e falas dos personagens.
 
-### Fase 7: Gravação do Markdown Consolidado (Capítulo do Journal)
-Una a prosa de todas as cenas e gere o arquivo Markdown usando o template de saída configurado em `.agent/skills/rpg-session-narrator/templates/output_template.md`.
+### Fase 8: Gravação do Markdown Consolidado (Capítulo do Journal)
+O arquivo Markdown final deve ser gerado usando o template de saída configurado em `.agent/skills/rpg-session-narrator/templates/output_template.md`.
 O arquivo final deve ser salvo no diretório `journal/` da campanha (`content/campaigns/<campaign-slug>/journal/`).
 O nome do arquivo deve seguir o padrão de numeração sequencial de capítulos. Para definir o nome:
 1. Examine a pasta `journal/` para ver quais arquivos numerados já existem (ex: `001-chegada.md`, `002-primeira-missao.md`).
@@ -110,7 +118,7 @@ O nome do arquivo deve seguir o padrão de numeração sequencial de capítulos.
 4. Defina no frontmatter o campo `params.kind: "journal_entry"` (não utilize a chave `kind` no nível superior, pois ela foi removida nas versões modernas do Hugo), com `draft: false`, `visibility: "players"` e `status: "ready"`.
 **IMPORTANTE:** Nunca sobrescreva silenciosamente um arquivo existente. Se ele existir, pergunte se deve substituir ou criar uma nova versão (ex: `*-v2.md`).
 
-### Fase 8: Relatório de Processamento
+### Fase 9: Relatório de Processamento
 Apresente um relatório final da execução contendo:
 - Nome do arquivo gerado e tamanho da prosa.
 - Quantidade de cenas estruturadas.
