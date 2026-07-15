@@ -35,16 +35,9 @@
 - [ ] 5.2 Implementar a Aba 7 (Características) exibindo todas as habilidades de classe, traços raciais e talentos (Features & Traits) do personagem, traduzidos para o português brasileiro.
 - [ ] 5.3 Implementar a Aba 8 (Imagem) como a aba final fixa da ficha de RPG, renderizando a ilustração a partir do frontmatter (campo `image` ou `avatar`) com uma imagem de silhueta/heráldica medieval como fallback de segurança caso o campo esteja ausente.
 
-## 6. Local Character Sync Tool Development
+## 6. Responsiveness, VTT & Validation
 
-- [ ] 6.1 Criar o script utilitário em `scripts/sync_character.py` para processar fichas Markdown editadas manualmente.
-- [ ] 6.2 Implementar no script a leitura do YAML frontmatter e a extração estruturada de magias (`spells`), equipamentos (`equipment`), classes (`classes_progression`) e talentos (`feats`).
-- [ ] 6.3 Integrar o script com a lógica do 5e.tools para buscar e baixar no compêndio local quaisquer itens de apoio cujos caminhos de referência não constem no campo `compendium_refs` do personagem.
-- [ ] 6.4 Implementar a escrita cirúrgica de volta no arquivo Markdown do personagem, atualizando o campo `compendium_refs` com os novos stubs e preservando a integridade da biografia e prosa do arquivo.
-
-## 7. Responsiveness, VTT & Validation
-
-- [ ] 7.1 Adicionar Media Queries no CSS para colapsar o grid de atributos e as colunas de perícias e magias em telas pequenas (mobile abaixo de 768px).
-- [ ] 7.2 Validar a compatibilidade com iframe de VTT, garantindo que paddings externos sejam anulados, o cabeçalho global seja ocultado e a rolagem interna do contêiner da aba seja fluida e sem dupla barra de rolagem.
-- [ ] 7.3 Executar o build estático local (`hugo --gc --minify`) para validar a compilação sem erros.
-- [ ] 7.4 Validar visualmente a ficha interativa e a comutação de abas em múltiplos navegadores e em tamanho de iframe.
+- [ ] 6.1 Adicionar Media Queries no CSS para colapsar o grid de atributos e as colunas de perícias e magias em telas pequenas (mobile abaixo de 768px).
+- [ ] 6.2 Validar a compatibilidade com iframe de VTT, garantindo que paddings externos sejam anulados, o cabeçalho global seja ocultado e a rolagem interna do contêiner da aba seja fluida e sem dupla barra de rolagem.
+- [ ] 6.3 Executar o build estático local (`hugo --gc --minify`) para validar a compilação sem erros.
+- [ ] 6.4 Validar visualmente a ficha interativa e a comutação de abas em múltiplos navegadores e em tamanho de iframe.
