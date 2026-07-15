@@ -8,9 +8,9 @@ Para completar a criação de personagem de forma aderente às regras modernas (
 
 **Goals:**
 - Baixar e fazer cache local do arquivo `feats.json` do espelho do 5e.tools em `content/compendium/feats/.feats_cache.json`.
-- Filtrar talentos por fonte `XPHB` (D&D 2024) para priorizar a nova edição das regras.
-- Implementar prompt de seleção para Talentos de Origem (*Origin Feats*, categoria `O`) no nível 1, permitindo ao usuário escolher a quantidade desejada (padrão `1`, flexibilizando para espécies/linhagens que dão talentos extras).
-- Implementar prompt de seleção opcional para múltiplos Talentos Gerais ou de Estilo de Combate (*General Feats* / *Fighting Style*, categorias `G` e `FS`) para personagens de nível superior.
+- Filtrar talentos por fonte `XPHB` (D&D 2024) para priorizar a nova edição das regras, mas permitindo exibir talentos de outras fontes (ex: `TCE`, `XGE`, `PHB`) caso o jogador prefira.
+- Implementar prompt de seleção para Talentos de Origem (*Origin Feats*, categoria `O`) no nível 1, exibindo suas fontes de origem e permitindo ao usuário digitar múltiplos números separados por vírgula em um único prompt.
+- Implementar prompt de seleção para múltiplos Talentos Gerais ou de Estilo de Combate (*General Feats* / *Fighting Style*, categorias `G` e `FS`), exibindo suas fontes e permitindo a seleção múltipla por vírgula.
 - Fazer download automático das descrições dos talentos selecionados para `content/compendium/feats/` e vinculá-las no compêndio da ficha.
 
 **Non-Goals:**
@@ -22,15 +22,15 @@ Para completar a criação de personagem de forma aderente às regras modernas (
 ### Decisão 1: Cache Local de Talentos
 Usar o mesmo padrão das espécies para armazenar o arquivo bruto `feats.json` localmente em `content/compendium/feats/.feats_cache.json`. Isso evita lentidão no terminal CLI ao abrir o menu de escolhas.
 
-### Decisão 2: Filtragem por Categoria
+### Decisão 2: Filtragem por Categoria e Exibição de Fonte
 Utilizar a taxonomia nativa do 5e.tools:
-- **Origem (Origin Feats)**: Filtrar por `source: "XPHB"` e `category: "O"`.
-- **Gerais/Combate (General Feats)**: Filtrar por `source: "XPHB"` e `category` igual a `"G"`, `"FS"`, `"FS:P"` ou `"FS:R"`.
+- **Origem (Origin Feats)**: Filtrar por categoria `O`.
+- **Gerais/Combate (General Feats)**: Filtrar por categoria igual a `"G"`, `"FS"`, `"FS:P"` ou `"FS:R"`.
 
-Se o download ou parsing falhar, o script deve permitir que o usuário digite o nome do talento manualmente como fallback.
+Os talentos exibidos serão etiquetados com sua fonte oficial (ex: `Alert (XPHB)`, `Elven Accuracy (XGE)`) para que o usuário identifique facilmente as regras modernas de 2024 vs legadas de 2014.
 
-### Decisão 3: Exibição no Terminal
-Usar a biblioteca `Rich` para exibir a lista de talentos organizada em 4 colunas horizontais sem borda, garantindo legibilidade e rapidez de seleção.
+### Decisão 3: Digitação Múltipla Separada por Vírgula
+Substituir a escolha de "um por um" pela digitação de múltiplos números separados por vírgula (idêntico ao fluxo de Perícias). O usuário poderá digitar `1, 4` para selecionar os talentos desejados de uma única vez. Se não quiser nenhum talento, basta apertar Enter (vazio).
 
 ## Risks / Trade-offs
 

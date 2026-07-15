@@ -7,19 +7,19 @@ O sistema SHALL baixar sob demanda o arquivo `feats.json` do repositório remoto
 - **WHEN** o criador interativo é executado e o arquivo `.feats_cache.json` não existe localmente
 - **THEN** o sistema SHALL efetuar o download via HTTP e criar o arquivo local contendo a lista completa de talentos.
 
-### Requirement: Select Origin Feat at Level 1
-O sistema SHALL permitir a seleção de Talentos de Origem (*Origin Feats*) se o nível do personagem sendo criado for 1, permitindo especificar a quantidade a ser escolhida.
+### Requirement: Select Origin Feats at Level 1
+O sistema SHALL permitir a seleção de múltiplos Talentos de Origem (*Origin Feats*) se o nível do personagem sendo criado for 1, exibindo o rótulo de suas fontes originais e aceitando múltiplas entradas separadas por vírgula em um único prompt.
 
-#### Scenario: Interactive selection of Origin feats
+#### Scenario: Interactive selection of multiple Origin feats
 - **WHEN** o personagem é de nível 1
-- **THEN** o sistema SHALL perguntar a quantidade de talentos de Origem desejada (padrão `1`), obter os talentos de categoria \"O\" e fonte \"XPHB\" do cache, exibi-los organizados em colunas no terminal e solicitar que o usuário selecione a quantidade informada.
+- **THEN** o sistema SHALL carregar os talentos de categoria \"O\" do cache, exibi-los organizados em colunas exibindo suas fontes (ex: \"Alert (XPHB)\"), e solicitar que o usuário selecione os talentos desejados digitando seus números separados por vírgula.
 
 ### Requirement: Select General Feats at Higher Levels
-O sistema SHALL permitir a seleção de múltiplos Talentos Gerais ou de Estilo de Combate (*General/Fighting Style Feats*) para personagens de nível superior a 1.
+O sistema SHALL permitir a seleção de múltiplos Talentos Gerais ou de Estilo de Combate (*General/Fighting Style Feats*) para personagens de nível superior a 1, exibindo o rótulo de suas fontes originais e aceitando múltiplas entradas separadas por vírgula em um único prompt.
 
 #### Scenario: Choice of General feats at level 4 or higher
 - **WHEN** o personagem é de nível maior ou igual a 4
-- **THEN** o sistema SHALL perguntar quantos talentos adicionais o usuário deseja selecionar, listar os talentos qualificados de categoria "G", "FS", "FS:P" e "FS:R" (fonte "XPHB") e solicitar as escolhas por numeração separada por vírgula.
+- **THEN** o sistema SHALL listar os talentos qualificados de categoria \"G\", \"FS\", \"FS:P\" e \"FS:R\" contendo suas fontes e permitir a escolha de múltiplos talentos digitando seus números separados por vírgula.
 
 ### Requirement: Sync and Download Selected Feat
 O sistema SHALL obter a descrição textual detalhada dos talentos escolhidos, gerar os stubs no compêndio local em `content/compendium/feats/<slug>.md` e associar os caminhos correspondentes à lista de `compendium_refs` do personagem.

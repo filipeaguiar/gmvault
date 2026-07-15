@@ -5,8 +5,8 @@
 
 ## 2. Prompts Interativos de Seleção
 
-- [ ] 2.1 Adicionar etapa de seleção no fluxo de criação para nível 1 perguntando a quantidade e permitindo a seleção de múltiplos Talentos de Origem, exibindo a lista em 4 colunas usando Rich.
-- [ ] 2.2 Adicionar etapa opcional de seleção para nível >= 4 perguntando a quantidade de talentos adicionais e permitindo a seleção a partir dos Talentos Gerais/Combate.
+- [ ] 2.1 Adicionar etapa de seleção no fluxo de criação para nível 1 exibindo os talentos de Origem com suas fontes (ex: Alert (XPHB)) e permitindo digitar múltiplas escolhas separadas por vírgula em um único prompt.
+- [ ] 2.2 Adicionar etapa de seleção para nível >= 4 exibindo os talentos Gerais/Combate com suas fontes e permitindo digitar múltiplas escolhas separadas por vírgula em um único prompt.
 - [ ] 2.3 Implementar comportamento de fallback com entrada textual manual caso ocorra erro ao carregar ou processar o JSON de talentos.
 
 ## 3. Integração e Geração do Compêndio
