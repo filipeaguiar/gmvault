@@ -48,3 +48,13 @@
 - [x] 7.2 Preencher páginas vazias de classes e subclasses a partir das features baixadas do 5e.tools, preservando páginas já revisadas.
 - [x] 7.3 Usar automaticamente a imagem do handout local como avatar quando a API não fornecer uma imagem e validar o caso de Pinky.
 - [x] 7.4 Validar as melhorias com testes e builds Hugo de desenvolvimento e produção.
+
+## 8. Refinamento visual da progressão
+
+- [x] 8.1 Reestruturar a aba de Classe com cabeçalho de classe, nível, subclasse, visão geral, progressão recolhível e cards de características, validando o build Hugo.
+
+## 9. Atualização das fichas existentes
+
+- [x] 9.1 Reimportar as fichas existentes usando o formato referencial atual, preservando correções editoriais posteriores de Pinky.
+- [x] 9.2 Validar que todas as fichas existentes possuem ações sem descrições duplicadas, refs válidas, estado operacional e avatares locais quando disponíveis.
+- [x] 9.3 Executar testes e builds após a atualização das fichas existentes.
