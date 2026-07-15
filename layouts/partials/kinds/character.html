@@ -12,7 +12,12 @@
       <img src="{{ $avatarURL }}" alt="{{ .Title }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
     {{ end }}
     <div>
-      <h1 style="margin:0;">{{ .Title }}</h1>
+      <div class="char-title-row">
+        <h1 style="margin:0;">{{ .Title }}</h1>
+        {{ if eq .File.BaseFileName "pinky" }}
+        <button type="button" class="dice-roll-button char-diagnostic-button" onclick="window.GMVaultDiceControls?.runDiagnostics?.(document).then?.(info => { const out = document.getElementById('gmvault-dice-diagnostic-output'); if (out) out.textContent = JSON.stringify(info, null, 2); })" aria-label="Executar diagnóstico da ponte Dice+">Diagnóstico</button>
+        {{ end }}
+      </div>
       <div class="char-meta">
         {{ with .Params.char_info }}
           {{ or .species .race }}{{ with .species_variant }} ({{ . }}){{ end }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
