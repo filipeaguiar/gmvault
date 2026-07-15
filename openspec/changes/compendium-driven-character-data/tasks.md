@@ -41,3 +41,10 @@
 - [x] 6.3 Executar `pytest` com a suíte relevante e corrigir regressões de importação, sincronização, tradução e renderização.
 - [x] 6.4 Executar `hugo -D --gc --minify` e `hugo --gc --minify`, verificando Pinky, referências ausentes e conteúdo player-facing.
 - [x] 6.5 Revisar o diff final para confirmar que o corpo Markdown das fichas e os dados operacionais não foram alterados indevidamente.
+
+## 7. Melhorias finais
+
+- [x] 7.1 Adicionar ícones visíveis aos itens individuais da aba de Equipamentos, diferenciando armas, armaduras e outros itens.
+- [x] 7.2 Preencher páginas vazias de classes e subclasses a partir das features baixadas do 5e.tools, preservando páginas já revisadas.
+- [x] 7.3 Usar automaticamente a imagem do handout local como avatar quando a API não fornecer uma imagem e validar o caso de Pinky.
+- [x] 7.4 Validar as melhorias com testes e builds Hugo de desenvolvimento e produção.

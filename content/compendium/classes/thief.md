@@ -1,23 +1,22 @@
 ---
-title: Thief
+title: "Thief"
 params:
-  kind: class
-draft: true
+  kind: "class"
+draft: false
 weight: 10
-summary: Draft imported from 5e.tools. Requires translation.
+summary: "Progressão da subclasse Thief."
 tags:
-- draft
-- importado
-visibility: public
-status: draft
-class_info:
-  primary_ability: Constitution/Dexterity
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  - compendio
+  - classe
+visibility: "public"
+status: "ready"
 ---
 
+## Progressão de Thief
 
+- Nível 3: [Fast Hands](/compendium/rules/fast-hands/)
+- Nível 3: [Second-Story Work](/compendium/rules/second-story-work/)
+- Nível 3: [Thief](/compendium/rules/thief/)
+- Nível 9: [Supreme Sneak](/compendium/rules/supreme-sneak/)
+- Nível 13: Use Magic Device
+- Nível 17: Thief's Reflexes

@@ -31,6 +31,83 @@ STANDARD_ACTION_REFS = {
 }
 
 
+def ensure_compendium_class_overview(class_name, class_data, subclass_name=None):
+    """Preenche páginas de classe/subclasse vazias com a progressão local."""
+    if not class_data:
+        return None
+
+    is_subclass = bool(subclass_name)
+    page_name = subclass_name or class_name
+    slug = slugify(page_name)
+    dest_path = f"content/compendium/classes/{slug}.md"
+    ref_path = f"/compendium/classes/{slug}/"
+
+    if os.path.exists(dest_path):
+        try:
+            with open(dest_path, "r", encoding="utf-8") as handle:
+                existing = handle.read()
+            body = existing.split("---", 2)[-1].strip() if existing.startswith("---") else existing.strip()
+            if body:
+                return ref_path
+        except OSError:
+            return ref_path
+
+    if is_subclass:
+        features = [
+            feature for feature in class_data.get("subclassFeature", [])
+            if feature.get("subclassShortName", "").lower() == subclass_name.lower()
+        ]
+        title = page_name
+        summary = f"Progressão da subclasse {page_name}."
+    else:
+        features = [
+            feature for feature in class_data.get("classFeature", [])
+            if feature.get("className", "").lower() == class_name.lower()
+        ]
+        class_def = next((item for item in class_data.get("class", []) if item.get("name", "").lower() == class_name.lower()), {})
+        title = class_name
+        summary = f"Progressão da classe {class_name}."
+
+    if not features:
+        return None
+
+    lines = [f"## Progressão de {title}", ""]
+    seen = set()
+    for feature in sorted(features, key=lambda item: (item.get("level", 0), item.get("name", ""))):
+        name = feature.get("name")
+        if not name or name.lower() in seen:
+            continue
+        seen.add(name.lower())
+        feature_ref = f"/compendium/rules/{slugify(name)}/"
+        feature_path = f"content{feature_ref.rstrip('/')}.md"
+        if os.path.exists(feature_path):
+            lines.append(f"- Nível {feature.get('level', 1)}: [{name}]({feature_ref})")
+        else:
+            lines.append(f"- Nível {feature.get('level', 1)}: {name}")
+
+    markdown = f"""---
+title: "{title}"
+params:
+  kind: "class"
+draft: false
+weight: 10
+summary: "{summary}"
+tags:
+  - compendio
+  - classe
+visibility: "public"
+status: "ready"
+---
+
+{chr(10).join(lines)}
+"""
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    with open(dest_path, "w", encoding="utf-8") as handle:
+        handle.write(markdown)
+    print(f"  [Compêndio] Página de classe preenchida: {dest_path}")
+    return ref_path
+
+
 def clean_5etools_tags(text):
     import re
     # Clean tags like {@status surprised} -> surprised, or {@spell fireball|Bola de Fogo} -> Bola de Fogo
@@ -1182,12 +1259,21 @@ summary: "Habilidade de classe."
                 ref = ensure_compendium_rule(name, description.strip())
                 compendium_refs.append(ref)
 
+            ensure_compendium_class_overview(class_name, class_data)
+            if subclass_name:
+                ensure_compendium_class_overview(class_name, class_data, subclass_name)
+
         # Remove duplicatas nas referências
         compendium_refs = sorted(list(set(compendium_refs)))
 
         # === NOVOS METADADOS DA FICHA DE RPG ===
-        # 1. Avatar
+        # 1. Avatar: usar a imagem do handout local quando a API não fornecer avatar.
         avatar_url = char.get('avatarUrl') or ""
+        avatar_slug = slugify(char_name)
+        avatar_slug = {"perwinkle-pinky-pirata": "pinky", "nyx-": "nyxclair"}.get(avatar_slug, avatar_slug)
+        fallback_avatar = f"/images/campaigns/{args.campaign}/handouts/{avatar_slug}.png"
+        if not avatar_url and os.path.exists(f"static{fallback_avatar}"):
+            avatar_url = fallback_avatar
 
         # 2. Moedas
         currencies = char.get('currencies', {}) or {}

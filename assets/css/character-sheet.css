@@ -211,6 +211,14 @@ html.vtt-iframe .char-sheet-container {
   border-radius: 4px;
   box-shadow: var(--shadow-sm);
 }
+.equipment-icon {
+  display: inline-block;
+  width: 1.5em;
+  margin-right: 0.35em;
+  color: var(--primary-color, #7b2cbf);
+  text-align: center;
+}
+
 .char-list-item.weapon { border-left-color: #c0392b; }
 .char-list-item.armor { border-left-color: #2980b9; }
 .char-list-item.gear { border-left-color: #f39c12; }

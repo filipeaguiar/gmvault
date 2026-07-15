@@ -28,7 +28,7 @@ char_info:
   proficiency_bonus: 2
   spell_dc: 0
   spell_attack_bonus: 0
-  avatar: ""
+  avatar: "/images/campaigns/journeys-through-the-radiant-citadel/handouts/einvor.png"
   speed:
     walk: 35
     fly: 0

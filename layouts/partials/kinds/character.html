@@ -220,6 +220,7 @@
       <ul style="list-style:none; padding:0;">
         {{ range $weapons }}
         <li class="char-list-item weapon">
+          <i class="ra ra-crossed-swords equipment-icon" aria-hidden="true"></i>
           <strong>{{ .name }}</strong>
           {{ if .attack_formula }}<span style="margin-left:10px; font-size:0.85em; color:#555;">Ataque: {{ .attack_formula }}</span>{{ end }}
           {{ if .damage_formula }}<span style="margin-left:6px; font-size:0.85em; color:#555;">Dano: {{ .damage_formula }}</span>{{ end }}
@@ -234,6 +235,7 @@
       <ul style="list-style:none; padding:0;">
         {{ range $armors }}
         <li class="char-list-item armor">
+          <i class="ra ra-shield equipment-icon" aria-hidden="true"></i>
           <strong>{{ .name }}</strong>
           {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
           {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
@@ -247,6 +249,7 @@
       <ul style="list-style:disc; margin-left:20px;">
         {{ range $other }}
         <li>
+          <i class="ra ra-knapsack equipment-icon" aria-hidden="true"></i>
           <strong>{{ .name }}</strong>{{ if gt (.quantity | int) 1 }} (x{{ .quantity }}){{ end }}
           {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
         </li>

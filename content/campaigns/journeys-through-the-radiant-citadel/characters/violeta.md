@@ -28,7 +28,7 @@ char_info:
   proficiency_bonus: 2
   spell_dc: 12
   spell_attack_bonus: 4
-  avatar: ""
+  avatar: "/images/campaigns/journeys-through-the-radiant-citadel/handouts/violeta.png"
   speed:
     walk: 30
     fly: 0
