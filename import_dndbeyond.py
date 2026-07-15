@@ -435,8 +435,8 @@ def main():
         
         # Classe principal
         entities_to_check.append(("class", primary_class_name, f"/compendium/classes/{primary_class_slug}/"))
-        # Raça
-        entities_to_check.append(("race", race_basename, f"/compendium/races/{race_slug}/"))
+        # Espécie
+        entities_to_check.append(("species", race_basename, f"/compendium/species/{race_slug}/"))
         # Subclasses
         for cls in char.get('classes', []):
             subcls_def = cls.get('subclassDefinition')
@@ -909,7 +909,7 @@ status: "ready"
 # Estatísticas Estruturadas
 char_info:
   class: "{class_str}"
-  race: "{race_fullname}"
+  species: "{race_fullname}"
   ac: "{final_ac}"
   hp: "{final_hp}"
   hp_max: "{final_hp}"

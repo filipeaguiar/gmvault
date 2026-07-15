@@ -14,7 +14,7 @@ visibility: players
 status: ready
 char_info:
   class: Warlock 2
-  race: Elf
+  species: Elf
   ac: '12'
   hp: '16'
   hp_max: '16'
@@ -448,7 +448,7 @@ compendium_refs:
 - /compendium/items/robe/
 - /compendium/items/sickle/
 - /compendium/items/tinderbox/
-- /compendium/races/elf/
+- /compendium/species/elf/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

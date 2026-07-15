@@ -16,7 +16,7 @@ status: "ready"
 # Estatísticas Estruturadas
 char_info:
   class: "Rogue 10 (Thief)"
-  race: "Variant Aasimar"
+  species: "Variant Aasimar"
   ac: "15"
   hp: "68"
   hp_max: "68"
@@ -335,7 +335,7 @@ compendium_refs:
 - /compendium/items/padded-armor/
 - /compendium/magic-items/musket-3/
 - /compendium/magic-items/pistol-2/
-- /compendium/races/aasimar/
+- /compendium/species/aasimar/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

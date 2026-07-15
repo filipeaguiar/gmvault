@@ -14,7 +14,7 @@ visibility: players
 status: ready
 char_info:
   class: Monk 2
-  race: Dwarf
+  species: Dwarf
   ac: '15'
   hp: '17'
   hp_max: '17'
@@ -377,7 +377,7 @@ compendium_refs:
 - /compendium/items/tinderbox/
 - /compendium/items/torch/
 - /compendium/items/waterskin/
-- /compendium/races/dwarf/
+- /compendium/species/dwarf/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

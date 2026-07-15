@@ -1,0 +1,56 @@
+<header class="page-header">
+  <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
+  {{ partial "metadata.html" . }}
+</header>
+
+<div class="species-block">
+  {{ $parent_ref := or .Params.parent_species .Params.parent_race }}
+  {{ if $parent_ref }}
+    {{ $parent := site.GetPage $parent_ref }}
+    {{ if $parent }}
+      <p class="species-parent-link" style="margin-bottom: 1rem;">
+        <strong>Espécie Base:</strong> <a href="{{ $parent.RelPermalink }}">{{ or $parent.Params.titulo_pt_br $parent.Title }}</a>
+      </p>
+    {{ end }}
+  {{ end }}
+
+  {{ $info := or .Params.species_info .Params.race_info }}
+  {{ if or $info.ability_score $info.speed $info.languages }}
+  <div class="species-info-card">
+    {{ if $info.ability_score }}
+      <div class="species-info-row">
+        <strong>Aumento de Atributo:</strong> <span>{{ $info.ability_score }}</span>
+      </div>
+    {{ end }}
+    {{ if $info.speed }}
+      <div class="species-info-row">
+        <strong>Deslocamento:</strong> <span>{{ $info.speed }}</span>
+      </div>
+    {{ end }}
+    {{ if $info.languages }}
+      <div class="species-info-row">
+        <strong>Idiomas:</strong> <span>{{ $info.languages }}</span>
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="species-body content-body">
+    {{ .Content }}
+  </div>
+
+  {{ $variants := or (where site.RegularPages "Params.parent_species" .RelPermalink) (where site.RegularPages "Params.parent_race" .RelPermalink) }}
+  {{ if $variants }}
+    <div class="species-variants-section" style="margin-top: 2rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem;">
+      <h3 style="font-family: var(--font-heading); color: var(--primary-color); margin-bottom: 0.8rem;">Variantes & Sub-espécies</h3>
+      <ul style="list-style-type: square; margin-left: 1.5rem;">
+        {{ range $variants }}
+          <li style="margin-bottom: 0.5rem;">
+            <a href="{{ .RelPermalink }}" style="font-weight: 600; color: var(--primary-color);">{{ or .Params.titulo_pt_br .Title }}</a>
+            {{ if .Params.summary }} — <span style="font-size: 0.95rem; color: var(--text-muted);">{{ .Params.summary }}</span>{{ end }}
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+</div>

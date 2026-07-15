@@ -6,3 +6,6 @@ __pycache__/
 .venv/
 .env
 translation_config.json
+*_cache.json
+.*_cache.json
+.races_cache.json

@@ -603,6 +603,7 @@ main.container {
   .spell-info-row,
   .item-info-row,
   .race-info-row,
+  .species-info-row,
   .class-info-row,
   .character-info-row {
     align-items: flex-start;
@@ -616,6 +617,7 @@ main.container {
   .spell-info-row,
   .item-info-row,
   .race-info-row,
+  .species-info-row,
   .class-info-row,
   .character-info-row {
     flex-wrap: wrap;
@@ -639,6 +641,7 @@ main.container {
   .spell-info-card,
   .item-info-card,
   .race-info-card,
+  .species-info-card,
   .class-info-card,
   .character-info-card {
     padding: 0.9rem;
@@ -927,7 +930,7 @@ main.container {
 }
 
 /* Spell, Item and Character Blocks */
-.spell-block, .item-block, .feat-block, .race-block, .class-block, .character-block {
+.spell-block, .item-block, .feat-block, .race-block, .species-block, .class-block, .character-block {
   margin-top: 1rem;
 }
 
@@ -937,7 +940,7 @@ main.container {
   margin-bottom: 1.2rem;
 }
 
-.spell-info-card, .item-info-card, .race-info-card, .class-info-card, .character-info-card {
+.spell-info-card, .item-info-card, .race-info-card, .species-info-card, .class-info-card, .character-info-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-left: 4px solid var(--primary-color);
@@ -950,19 +953,19 @@ main.container {
   font-size: 0.95rem;
 }
 
-.spell-info-row, .item-info-row, .race-info-row, .class-info-row, .character-info-row {
+.spell-info-row, .item-info-row, .race-info-row, .species-info-row, .class-info-row, .character-info-row {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px dashed var(--border-color);
   padding-bottom: 0.3rem;
 }
 
-.spell-info-row:last-child, .item-info-row:last-child, .race-info-row:last-child, .class-info-row:last-child, .character-info-row:last-child {
+.spell-info-row:last-child, .item-info-row:last-child, .race-info-row:last-child, .species-info-row:last-child, .class-info-row:last-child, .character-info-row:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.spell-info-row strong, .item-info-row strong, .race-info-row strong, .class-info-row strong, .character-info-row strong {
+.spell-info-row strong, .item-info-row strong, .race-info-row strong, .species-info-row strong, .class-info-row strong, .character-info-row strong {
   color: var(--primary-color);
 }
 

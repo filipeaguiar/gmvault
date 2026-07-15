@@ -199,9 +199,39 @@ def fetch_from_5etools(kind, english_name):
         "magic_item": ["items.json", "items-base.json"],
         "feat": ["feats.json"],
         "race": ["races.json"],
+        "species": ["races.json"],
         "class": ["classes.json"],
         "item_mastery": ["items-base.json"],
     }
+
+    # Caching check (Task 2.2)
+    content_dir_check = f"content/compendium/{kind}s"
+    if kind == "magic_item":
+        content_dir_check = "content/compendium/magic-items"
+    elif kind == "species" or kind == "race":
+        content_dir_check = "content/compendium/species"
+    elif kind in ["class", "subclass"]:
+        content_dir_check = "content/compendium/classes"
+    elif kind == "item_mastery":
+        content_dir_check = "content/compendium/rules"
+
+    slug_check = slug
+    if kind == "item_mastery":
+        slug_check = f"weapon-mastery-{slug}"
+
+    dest_path_check = f"{content_dir_check}/{slug_check}.md"
+    if os.path.exists(dest_path_check):
+        print(f"  [5e.tools] Encontrado localmente: {dest_path_check}")
+        if kind == "magic_item":
+            return f"/compendium/magic-items/{slug_check}/"
+        elif kind in ["class", "subclass"]:
+            return f"/compendium/classes/{slug_check}/"
+        elif kind == "item_mastery":
+            return f"/compendium/rules/{slug_check}/"
+        elif kind == "race" or kind == "species":
+            return f"/compendium/species/{slug_check}/"
+        else:
+            return f"/compendium/{kind}s/{slug_check}/"
     
     files = file_map.get(kind, [])
     # Lista de nomes de busca (suporta aliases para itens básicos)
@@ -292,7 +322,7 @@ def fetch_from_5etools(kind, english_name):
                     if item.get("name", "").lower() == english_name.lower():
                         found_data = item
                         break
-            elif kind == "race" and "race" in data:
+            elif (kind == "race" or kind == "species") and "race" in data:
                 for item in data["race"]:
                     if item.get("name", "").lower() == english_name.lower():
                         found_data = item
@@ -359,6 +389,8 @@ def fetch_from_5etools(kind, english_name):
     content_dir = f"content/compendium/{kind}s"
     if kind == "magic_item":
         content_dir = "content/compendium/magic-items"
+    elif kind == "race" or kind == "species":
+        content_dir = "content/compendium/species"
     elif kind in ["class", "subclass"]:
         content_dir = "content/compendium/classes"
     elif kind == "item_mastery":
@@ -551,7 +583,7 @@ feat_info:
 {description}
 """
 
-    elif kind == "race":
+    elif kind == "race" or kind == "species":
         scores = []
         abilities = found_data.get("ability", {})
         if isinstance(abilities, dict):
@@ -570,7 +602,7 @@ feat_info:
         markdown = f"""---
 title: "{english_name}"
 params:
-  kind: "race"
+  kind: "species"
 draft: true
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -580,7 +612,7 @@ tags:
 visibility: "public"
 status: "draft"
 
-race_info:
+species_info:
   ability_score: "{ability_str}"
   speed: "{speed_str}"
   languages: "Common, +1 extra"
@@ -664,6 +696,8 @@ status: "draft"
             return f"/compendium/classes/{slug}/"
         elif kind == "item_mastery":
             return f"/compendium/rules/{slug}/"
+        elif kind == "race" or kind == "species":
+            return f"/compendium/species/{slug}/"
         else:
             return f"/compendium/{kind}s/{slug}/"
         

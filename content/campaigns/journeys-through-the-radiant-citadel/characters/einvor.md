@@ -14,7 +14,7 @@ visibility: players
 status: ready
 char_info:
   class: Barbarian 2
-  race: Goliath
+  species: Goliath
   ac: '13'
   hp: '23'
   hp_max: '23'
@@ -356,7 +356,7 @@ compendium_refs:
 - /compendium/items/tinderbox/
 - /compendium/items/torch/
 - /compendium/items/waterskin/
-- /compendium/races/goliath/
+- /compendium/species/goliath/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

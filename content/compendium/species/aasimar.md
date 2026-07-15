@@ -10,7 +10,7 @@ tags:
 - importado
 visibility: public
 status: draft
-race_info:
+species_info:
   ability_score: +1 to all attributes
   speed: 9.0m
   languages: Common, +1 extra

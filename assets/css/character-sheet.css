@@ -193,6 +193,16 @@ html.vtt-iframe .char-sheet-container {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+  .class-progression-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .class-feature-grid,
+  .class-progression-content ul {
+    grid-template-columns: 1fr;
+  }
+
   .attr-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -223,9 +233,181 @@ html.vtt-iframe .char-sheet-container {
 .char-list-item.armor { border-left-color: #2980b9; }
 .char-list-item.gear { border-left-color: #f39c12; }
 .char-list-item.action { border-left-color: #16a085; }
-.char-list-item.race { border-left-color: #27ae60; background: rgba(39,174,96,0.05); }
+.char-list-item.race, .char-list-item.species { border-left-color: #27ae60; background: rgba(39,174,96,0.05); }
 .char-list-item.class { border-left-color: #2980b9; background: rgba(41,128,185,0.05); }
 .char-list-item.feat { border-left-color: #8e44ad; background: rgba(142,68,173,0.05); }
+
+.class-tab-intro {
+  margin-bottom: 18px;
+}
+
+.class-tab-intro h3,
+.class-features-heading h4 {
+  margin: 3px 0 0;
+}
+
+.class-tab-intro p {
+  margin: 6px 0 0;
+  color: var(--text-muted, #777);
+}
+
+.section-kicker {
+  display: block;
+  color: var(--primary-color, #7b2cbf);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.class-progression-card {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-color, #ccc);
+  border-left: 4px solid #2980b9;
+  border-radius: 8px;
+  background: var(--card-bg, #fff);
+  box-shadow: var(--shadow-sm);
+}
+
+.class-progression-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(41,128,185,0.12), transparent);
+}
+
+.class-progression-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.class-progression-title h4 {
+  margin: 2px 0;
+  font-size: 1.25em;
+}
+
+.class-progression-title p {
+  margin: 3px 0 0;
+  color: var(--text-muted, #777);
+}
+
+.class-progression-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--primary-color, #2980b9);
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.class-level-badge {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border: 1px solid rgba(41,128,185,0.35);
+  border-radius: 999px;
+  background: var(--bg-color, #f4f4f4);
+  color: var(--primary-color, #2980b9);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.class-progression-body {
+  padding: 0 16px 16px;
+}
+
+.class-summary {
+  margin: 14px 0 8px;
+  color: var(--text-muted, #777);
+  font-style: italic;
+}
+
+.class-progression-details {
+  margin-top: 10px;
+  border-top: 1px solid var(--border-color, #ddd);
+}
+
+.class-progression-details summary {
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--primary-color, #2980b9);
+  font-weight: 700;
+  list-style-position: inside;
+}
+
+.class-progression-content {
+  padding: 0 4px 8px;
+}
+
+.class-progression-content h2,
+.class-progression-content h3 {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.class-progression-content ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 20px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.subclass-details {
+  border-top-color: rgba(142,68,173,0.35);
+}
+
+.subclass-details summary {
+  color: #8e44ad;
+}
+
+.class-features-section {
+  margin-top: 28px;
+}
+
+.class-features-heading {
+  margin-bottom: 12px;
+}
+
+.class-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.class-feature-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--border-color, #ccc);
+  border-left: 3px solid #2980b9;
+  border-radius: 6px;
+  background: var(--card-bg, #fff);
+}
+
+.class-feature-card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color, #2980b9);
+}
+
+.class-feature-card-title i {
+  flex: 0 0 auto;
+}
+
+.class-feature-missing {
+  color: var(--text-muted, #777);
+}
+
+.class-feature-missing small {
+  display: block;
+  margin-top: 6px;
+}
 
 .compendium-content,
 .compendium-legacy-content {

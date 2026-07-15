@@ -14,7 +14,7 @@ visibility: players
 status: ready
 char_info:
   class: Sorcerer 1
-  race: Human
+  species: Human
   ac: '11'
   hp: '9'
   hp_max: '9'
@@ -447,7 +447,7 @@ compendium_refs:
 - /compendium/items/tinderbox/
 - /compendium/items/torch/
 - /compendium/items/waterskin/
-- /compendium/races/human/
+- /compendium/species/human/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

@@ -14,7 +14,7 @@ visibility: players
 status: ready
 char_info:
   class: Bard 2
-  race: Halfling
+  species: Halfling
   ac: '14'
   hp: '14'
   hp_max: '14'
@@ -393,7 +393,7 @@ compendium_refs:
 - /compendium/items/tinderbox/
 - /compendium/items/waterskin/
 - /compendium/items/weavers-tools/
-- /compendium/races/halfling/
+- /compendium/species/halfling/
 - /compendium/rules/action-attack/
 - /compendium/rules/action-dash/
 - /compendium/rules/action-disengage/

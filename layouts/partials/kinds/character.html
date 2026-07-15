@@ -15,7 +15,7 @@
       <h1 style="margin:0;">{{ .Title }}</h1>
       <div class="char-meta">
         {{ with .Params.char_info }}
-          {{ .race }} | {{ .class }}
+          {{ or .species .race }} | {{ .class }}
           {{ with .alignment }} | {{ . }}{{ end }}
           {{ with .size }} | {{ . }}{{ end }}
         {{ end }}
@@ -26,15 +26,15 @@
   <!-- Tabs Navigation -->
   {{ $hasSpells := and .Params.char_info.spells (gt (len .Params.char_info.spells) 0) }}
   <div class="char-tabs-nav">
-    <button class="char-tab-btn active" onclick="openCharTab(event, 'tab-stats')" title="Atributos"><i class="ra ra-muscle-up" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-jigsaw-piece" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-actions')" title="Ações"><i class="ra ra-crossed-swords" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-ammo-bag" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn active" onclick="openCharTab(event, 'tab-stats')" title="Atributos"><i class="ra ra-player" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-aware" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-actions')" title="Ações"><i class="ra ra-axe-swing" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-vest" style="font-size: 1.3em;"></i></button>
     {{ if $hasSpells }}
     <button class="char-tab-btn" onclick="openCharTab(event, 'tab-grimoire')" title="Grimório"><i class="ra ra-book" style="font-size: 1.3em;"></i></button>
     {{ end }}
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-class')" title="Classe"><i class="ra ra-scroll-unfurled" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-features')" title="Características"><i class="ra ra-aura" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-class')" title="Classe"><i class="ra ra-player-lift" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-features')" title="Características"><i class="ra ra-crossed-pistols" style="font-size: 1.3em;"></i></button>
     <button class="char-tab-btn" onclick="openCharTab(event, 'tab-image')" title="Imagem"><i class="ra ra-eyeball" style="font-size: 1.3em;"></i></button>
   </div>
 
@@ -184,7 +184,7 @@
         <ul style="list-style:none; padding:0; margin-top:10px;">
           {{ range $list }}
           {{ $cssClass := "action" }}
-          {{ if eq (lower $src) "race" }}{{ $cssClass = "race" }}{{ else if eq (lower $src) "class" }}{{ $cssClass = "class" }}{{ else if eq (lower $src) "feat" }}{{ $cssClass = "feat" }}{{ end }}
+           {{ if or (eq (lower $src) "race") (eq (lower $src) "species") }}{{ $cssClass = "species" }}{{ else if eq (lower $src) "class" }}{{ $cssClass = "class" }}{{ else if eq (lower $src) "feat" }}{{ $cssClass = "feat" }}{{ end }}
           <li class="char-list-item {{ $cssClass }}">
             <strong style="display: block; font-size: 1.1em; margin-bottom: 6px; color:var(--text-color);">
               {{ .name }}
@@ -299,35 +299,53 @@
 
   <!-- TAB 6: Classe -->
   <div id="tab-class" class="char-tab-content">
-    <h3>Progressão de Classe</h3>
+    <div class="class-tab-intro">
+      <span class="section-kicker">Desenvolvimento do personagem</span>
+      <h3>Progressão de Classe</h3>
+      <p>Consulte a visão geral da classe e as características disponíveis para este personagem.</p>
+    </div>
     {{ with .Params.char_info.classes_progression }}
       {{ range . }}
-      <div class="char-feature-card" style="margin-bottom:20px; border-left-color: #2980b9;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
-          <div>
-            <strong style="font-size:1.3em;"><i class="ra ra-scroll-unfurled"></i> {{ .name }}</strong>
-            {{ if .subclass }} — <em style="color:var(--text-muted);">{{ .subclass }}</em>{{ end }}
-          </div>
-          <span style="font-weight:bold; color:var(--primary-color); font-size:1.2em; background:var(--bg-color); padding:4px 10px; border-radius:4px; border:1px solid var(--border-color);">Nível {{ .level }}</span>
-        </div>
-        {{/* Buscar descrição da classe no compêndio */}}
-        {{ $classSlug := .name | urlize }}
-        {{ $classPage := site.GetPage (printf "/compendium/classes/%s" $classSlug) }}
-        {{ if $classPage }}
-          <div style="font-size:0.95em; color:var(--text-color); margin-bottom:15px;">{{ $classPage.Content }}</div>
-        {{ end }}
-        {{/* Buscar descrição da subclasse no compêndio */}}
-        {{ if .subclass }}
-          {{ $subSlug := .subclass | urlize }}
-          {{ $subPage := site.GetPage (printf "/compendium/classes/%s" $subSlug) }}
-          {{ if $subPage }}
-            <div style="font-size:0.95em; color:var(--text-color); margin-top:10px; padding-top:10px; border-top:1px dashed var(--border-color);">
-              <strong style="color:var(--primary-color); font-size:1.1em; display:block; margin-bottom:8px;">{{ .subclass }}</strong>
-              {{ $subPage.Content }}
+      {{ $classSlug := .name | urlize }}
+      {{ $classPage := site.GetPage (printf "/compendium/classes/%s/" $classSlug) }}
+      <section class="class-progression-card">
+        <header class="class-progression-header">
+          <div class="class-progression-title">
+            <span class="class-progression-icon"><i class="ra ra-scroll-unfurled" aria-hidden="true"></i></span>
+            <div>
+              <span class="section-kicker">Classe</span>
+              <h4>{{ .name }}</h4>
+              {{ if .subclass }}<p><i class="ra ra-scroll-unfurled" aria-hidden="true"></i> {{ .subclass }}</p>{{ end }}
             </div>
+          </div>
+          <span class="class-level-badge">Nível {{ .level }}</span>
+        </header>
+
+        <div class="class-progression-body">
+          {{ if $classPage }}
+            {{ if $classPage.Summary }}<p class="class-summary">{{ $classPage.Summary }}</p>{{ end }}
+            <details class="class-progression-details" open>
+              <summary><i class="ra ra-book" aria-hidden="true"></i> Progressão da classe</summary>
+              <div class="class-progression-content">{{ $classPage.Content }}</div>
+            </details>
+          {{ else }}
+            {{ partial "helpers/compendium-content.html" (dict "ref" (printf "/compendium/classes/%s/" $classSlug) "name" .name) }}
           {{ end }}
-        {{ end }}
-      </div>
+
+          {{ if .subclass }}
+            {{ $subSlug := .subclass | urlize }}
+            {{ $subPage := site.GetPage (printf "/compendium/classes/%s/" $subSlug) }}
+            <details class="class-progression-details subclass-details" open>
+              <summary><i class="ra ra-scroll-unfurled" aria-hidden="true"></i> Progressão de {{ .subclass }}</summary>
+              {{ if $subPage }}
+                <div class="class-progression-content">{{ $subPage.Content }}</div>
+              {{ else }}
+                {{ partial "helpers/compendium-content.html" (dict "ref" (printf "/compendium/classes/%s/" $subSlug) "name" .subclass) }}
+              {{ end }}
+            </details>
+          {{ end }}
+        </div>
+      </section>
       {{ end }}
     {{ else }}
       <p>Nenhuma progressão de classe listada.</p>
@@ -342,20 +360,25 @@
     {{ end }}
     {{ $classRuleRefs = $classRuleRefs | uniq }}
     {{ if $classRuleRefs }}
-    <h4>Habilidades de Classe</h4>
-    <ul style="list-style:none; padding:0;">
-      {{ range $classRuleRefs }}
-        {{ $rulePage := site.GetPage . }}
-        {{ if $rulePage }}
-        <li class="char-list-item class">
-          <strong>{{ $rulePage.Title }}</strong>
-          {{ partial "helpers/compendium-content.html" (dict "ref" . "name" $rulePage.Title) }}
-        </li>
-        {{ else }}
-        <li class="char-list-item class"><strong>{{ . }}</strong><small>Conteúdo do compêndio indisponível.</small></li>
+    <div class="class-features-section">
+      <div class="class-features-heading">
+        <span class="section-kicker">Recursos ativos</span>
+        <h4>Habilidades de Classe</h4>
+      </div>
+      <div class="class-feature-grid">
+        {{ range $classRuleRefs }}
+          {{ $rulePage := site.GetPage . }}
+          {{ if $rulePage }}
+          <article class="class-feature-card">
+            <div class="class-feature-card-title"><i class="ra ra-lightning-bolt" aria-hidden="true"></i><strong>{{ $rulePage.Title }}</strong></div>
+            {{ partial "helpers/compendium-content.html" (dict "ref" . "name" $rulePage.Title) }}
+          </article>
+          {{ else }}
+          <article class="class-feature-card class-feature-missing"><strong>{{ . }}</strong><small>Conteúdo do compêndio indisponível.</small></article>
+          {{ end }}
         {{ end }}
-      {{ end }}
-    </ul>
+      </div>
+    </div>
     {{ end }}
   </div>
 
@@ -406,18 +429,18 @@
     </ul>
     {{ end }}
 
-    {{/* 2. Traços raciais — ações com source "race" */}}
+    {{/* 2. Traços de Espécie — ações com source "race" ou "species" */}}
     {{ $raceActions := slice }}
     {{ range .Params.char_info.actions }}
-      {{ if eq .source "race" }}
+      {{ if or (eq .source "race") (eq .source "species") }}
         {{ $raceActions = $raceActions | append . }}
       {{ end }}
     {{ end }}
     {{ if gt (len $raceActions) 0 }}
-    <h3 style="margin-top:25px;">Traços Raciais</h3>
+    <h3 style="margin-top:25px;">Traços de Espécie</h3>
     <ul style="list-style:none; padding:0;">
       {{ range $raceActions }}
-      <li class="char-list-item race">
+      <li class="char-list-item species">
         <strong>{{ .name }}</strong>
         {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
       </li>
