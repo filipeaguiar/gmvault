@@ -2,11 +2,11 @@
 title: "Weapon Mastery"
 params:
   kind: "rule"
-draft: false
-status: "ready"
+draft: true
+status: "draft"
 summary: "Habilidade de classe."
 ---
 
-Your training with weapons allows you to use the mastery properties of three kinds of type=simple weapon or type=martial weapon weapons of your choice. Whenever you finish a XPHB, you can practice weapon drills and change one of those weapon choices.
+Your training with weapons allows you to use the mastery properties of two kinds of type=simple weapon;martial weapon of your choice with which you have proficiency, such as Daggers and Shortbows.
 
-When you reach certain Fighter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table.
+Whenever you finish a XPHB, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.

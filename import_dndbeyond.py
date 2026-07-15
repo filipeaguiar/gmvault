@@ -1116,8 +1116,205 @@ summary: "Habilidade de classe."
 
         # Remove duplicatas nas referências
         compendium_refs = sorted(list(set(compendium_refs)))
+
+        # === NOVOS METADADOS DA FICHA DE RPG ===
+        # 1. Avatar
+        avatar_url = char.get('avatarUrl') or ""
+
+        # 2. Moedas
+        currencies = char.get('currencies', {}) or {}
+        
+        # 3. Habilidade de conjuração, DC de magia e Bônus de ataque
+        casting_stat_id = None
+        for cl in char.get('classes', []):
+            cls_def = cl.get('definition', {})
+            ability_id = cls_def.get('spellCastingAbilityId')
+            if ability_id:
+                casting_stat_id = ability_id
+                break
+                
+        spell_dc = 0
+        spell_attack_bonus = 0
+        if casting_stat_id in stat_names:
+            casting_stat_name = stat_names[casting_stat_id]
+            stat_mod = get_modifier(stats_final[casting_stat_name])
+            spell_dc = 8 + prof_bonus + stat_mod
+            spell_attack_bonus = prof_bonus + stat_mod
+
+        # 4. Cálculo e mapeamento das 18 Perícias (Skills)
+        SKILL_MAP = {
+            "acrobatics": "dex",
+            "animal-handling": "wis",
+            "arcana": "int",
+            "athletics": "str",
+            "deception": "cha",
+            "history": "int",
+            "insight": "wis",
+            "intimidation": "cha",
+            "investigation": "int",
+            "medicine": "wis",
+            "nature": "int",
+            "perception": "wis",
+            "performance": "cha",
+            "persuasion": "cha",
+            "religion": "int",
+            "sleight-of-hand": "dex",
+            "stealth": "dex",
+            "survival": "wis"
+        }
+        
+        skills_data = {}
+        for skill_name, stat_key in SKILL_MAP.items():
+            is_prof = False
+            is_exp = False
+            bonus = 0
+            for source, items in modifiers.items():
+                if not items:
+                    continue
+                for item in items:
+                    if item.get('subType') == skill_name:
+                        if item.get('type') == 'proficiency':
+                            is_prof = True
+                        elif item.get('type') == 'expertise':
+                            is_exp = True
+                        elif item.get('type') == 'bonus':
+                            val = item.get('value') or item.get('fixedValue')
+                            if val is not None:
+                                bonus += int(val)
+            stat_mod = get_modifier(stats_final[stat_key])
+            total_bonus = stat_mod + bonus
+            if is_exp:
+                total_bonus += 2 * prof_bonus
+            elif is_prof:
+                total_bonus += prof_bonus
+                
+            skills_data[skill_name] = {
+                "bonus": total_bonus,
+                "proficient": is_prof or is_exp,
+                "expertise": is_exp,
+                "stat": stat_key
+            }
+
+        # 5. Sentidos Passivos calculados
+        passive_senses = {
+            "perception": 10 + skills_data["perception"]["bonus"],
+            "investigation": 10 + skills_data["investigation"]["bonus"],
+            "insight": 10 + skills_data["insight"]["bonus"]
+        }
+
+        # 6. Ações (Ações padrão + Ações de classe/raça/talento)
+        actions_data = []
+        standard_actions = [
+            {"name": "Ataque", "description": "Realiza um ataque corpo a corpo ou à distância com uma arma equipada.", "max_uses": 0, "reset": ""},
+            {"name": "Esconder", "description": "Tenta se esconder realizando um teste de Destreza (Furtividade).", "max_uses": 0, "reset": ""},
+            {"name": "Desengajar", "description": "Seu movimento não provoca ataques de oportunidade até o fim do turno.", "max_uses": 0, "reset": ""},
+            {"name": "Disparar", "description": "Ganha deslocamento adicional igual à sua velocidade para o turno atual.", "max_uses": 0, "reset": ""},
+            {"name": "Ajudar", "description": "Dá vantagem no próximo teste de atributo ou ataque de um aliado.", "max_uses": 0, "reset": ""},
+            {"name": "Esquivar", "description": "Até o início do seu próximo turno, qualquer ataque contra você tem desvantagem.", "max_uses": 0, "reset": ""},
+            {"name": "Usar Objeto", "description": "Interage com um segundo objeto ou usa um item especial que requer ação.", "max_uses": 0, "reset": ""}
+        ]
+        actions_data.extend(standard_actions)
+
+        # Adicionar ações específicas
+        for source_key in ['class', 'race', 'feat']:
+            actions_list = char.get('actions', {}).get(source_key, []) or []
+            for act in actions_list:
+                act_name = act.get('name')
+                act_desc = act.get('snippet') or act.get('description', '')
+                if not act_name:
+                    continue
+                lim = act.get('limitedUse') or {}
+                max_uses = lim.get('maxUses', 0)
+                reset = lim.get('resetType')
+                reset_str = "Descanso Longo" if reset == 2 else "Descanso Curto" if reset == 1 else "Dia" if reset else ""
+                
+                actions_data.append({
+                    "name": act_name,
+                    "description": clean_5etools_tags(act_desc.replace('<p>', '').replace('</p>', '\n').replace('<br>', '\n')).strip(),
+                    "max_uses": max_uses,
+                    "reset": reset_str,
+                    "source": source_key
+                })
+
+        # 7. Equipamentos detalhados (Armas, Armaduras, Consumíveis e Outros)
+        equipment_list = []
+        for item in char.get('inventory', []):
+            d = item.get('definition', {})
+            item_name = d.get('name')
+            filter_type = d.get('filterType')
+            is_equipped = item.get('equipped', False)
+            qty = item.get('quantity', 1)
             
-        # 9. Montar conteúdo Markdown
+            atk_formula = ""
+            dmg_formula = ""
+            if filter_type == 'Weapon':
+                is_finesse = any(p.get('name') == 'Finesse' for p in d.get('properties', []))
+                stat_key = 'dex' if is_finesse and stats_final['dex'] > stats_final['str'] else 'str'
+                stat_mod = get_modifier(stats_final[stat_key])
+                prof = prof_bonus if is_equipped else 0
+                atk_bonus = stat_mod + prof
+                atk_formula = f"1d20 + {atk_bonus}"
+                
+                dice = d.get('damage', {}).get('diceString', '1d4')
+                dmg_bonus = stat_mod
+                dmg_formula = f"{dice} + {dmg_bonus}"
+                
+            equipment_list.append({
+                "name": item_name,
+                "quantity": qty,
+                "equipped": is_equipped,
+                "filter_type": filter_type,
+                "attack_formula": atk_formula,
+                "damage_formula": dmg_formula,
+                "ref": f"/compendium/{'magic-items' if d.get('magic') else 'items'}/{slugify(item_name)}/"
+            })
+
+        # 8. Grimório Estruturado
+        structured_spells = []
+        for class_spell_obj in char.get('classSpells', []):
+            if isinstance(class_spell_obj, dict):
+                slist = class_spell_obj.get('spells', [])
+                if slist:
+                    for s in slist:
+                        s_def = s.get('definition', {})
+                        if s_def and s_def.get('name'):
+                            name = s_def.get('name')
+                            structured_spells.append({
+                                "name": name,
+                                "level": s_def.get('level', 0),
+                                "prepared": s.get('prepared', False),
+                                "ref": f"/compendium/spells/{slugify(name)}/",
+                                "usage": get_spell_usage_str(s)
+                            })
+        other_spells = char.get('spells', {})
+        if isinstance(other_spells, dict):
+            for source, slist in other_spells.items():
+                if slist:
+                    for s in slist:
+                        s_def = s.get('definition', {})
+                        if s_def and s_def.get('name'):
+                            name = s_def.get('name')
+                            structured_spells.append({
+                                "name": name,
+                                "level": s_def.get('level', 0),
+                                "prepared": s.get('prepared', False) or (source in ['race', 'background', 'feat']),
+                                "ref": f"/compendium/spells/{slugify(name)}/",
+                                "usage": get_spell_usage_str(s)
+                            })
+        structured_spells = sorted(structured_spells, key=lambda k: (k['level'], k['name']))
+
+        # 9. Classes e Progressão por Nível
+        classes_data = []
+        for cl in char.get('classes', []):
+            cls_def = cl.get('definition', {})
+            subcls_def = cl.get('subclassDefinition') or {}
+            classes_data.append({
+                "name": cls_def.get('name'),
+                "level": cl.get('level'),
+                "subclass": subcls_def.get('name', "")
+            })
+            
+        # 10. Montar conteúdo Markdown
         slug = slugify(char_name)
         slug_map = {
             "perwinkle-pinky-pirata": "pinky",
@@ -1157,10 +1354,16 @@ char_info:
   race: "{race_fullname}"
   ac: "{final_ac}"
   hp: "{final_hp}"
+  hp_max: "{final_hp}"
+  hp_current: "{final_hp}"
   feat: "{feat_str}"
   size: "{char_size}"
   alignment: "{char_alignment}"
   dndbeyond_id: "{args.char_id}"
+  proficiency_bonus: {prof_bonus}
+  spell_dc: {spell_dc}
+  spell_attack_bonus: {spell_attack_bonus}
+  avatar: "{avatar_url}"
   speed:
     walk: {char_speeds['walk']}
     fly: {char_speeds['fly']}
@@ -1168,6 +1371,10 @@ char_info:
     climb: {char_speeds['climb']}
     burrow: {char_speeds['burrow']}
   senses: "{char_senses}"
+  passive_senses:
+    perception: {passive_senses['perception']}
+    investigation: {passive_senses['investigation']}
+    insight: {passive_senses['insight']}
   languages: "{char_languages}"
   saves:
     str: {char_saves['str']}
@@ -1184,6 +1391,17 @@ char_info:
     int: {stats_final['int']}
     wis: {stats_final['wis']}
     cha: {stats_final['cha']}
+  currencies:
+    cp: {currencies.get('cp', 0) or 0}
+    sp: {currencies.get('sp', 0) or 0}
+    gp: {currencies.get('gp', 0) or 0}
+    ep: {currencies.get('ep', 0) or 0}
+    pp: {currencies.get('pp', 0) or 0}
+  skills: {json.dumps(skills_data)}
+  actions: {json.dumps(actions_data)}
+  equipment: {json.dumps(equipment_list)}
+  spells: {json.dumps(structured_spells)}
+  classes_progression: {json.dumps(classes_data)}
 
 # Relacionamentos
 locations: []
