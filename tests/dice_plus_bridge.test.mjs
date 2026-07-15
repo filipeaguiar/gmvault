@@ -94,6 +94,34 @@ test("iframe client rejects invalid notation and degrades without a parent", asy
   client.destroy();
 });
 
+test("iframe client can fall back to wildcard targetOrigin", async () => {
+  const { createDicePlusClient } = await importSource(bridgePath);
+  const iframe = eventTarget();
+  iframe.location = { origin: "https://filipeaguiar.github.io" };
+  iframe.document = { referrer: "" };
+  const parent = { posted: [], postMessage(message, targetOrigin) { this.posted.push({ message, targetOrigin }); } };
+  const client = createDicePlusClient({ windowRef: iframe, parentWindow: parent, targetOrigin: "*" });
+  assert.equal(client.available, true);
+  const rollPromise = client.requestRoll({ diceNotation: "1d20" });
+  const sent = parent.posted[0];
+  assert.equal(sent.targetOrigin, "*");
+  iframe.dispatch("message", {
+    source: parent,
+    origin: "https://owlbear-gm-vault.netlify.app",
+    data: {
+      channel: "gm-vault/dice",
+      version: 1,
+      type: "roll-result",
+      requestId: sent.message.requestId,
+      rollId: sent.message.rollId,
+      result: { totalValue: 12 },
+    },
+  });
+  const result = await rollPromise;
+  assert.equal(result.result.totalValue, 12);
+  client.destroy();
+});
+
 test("multiple iframe rolls remain correlated", async () => {
   const { createDicePlusClient } = await importSource(bridgePath);
   const iframe = eventTarget();

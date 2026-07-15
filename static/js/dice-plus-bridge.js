@@ -24,6 +24,7 @@ function getDefaultTargetOrigin(windowRef) {
   if (windowRef && windowRef.location && windowRef.location.origin !== "null") {
     const configured = windowRef.GMVaultDiceConfig?.targetOrigin;
     if (configured) return configured;
+
     try {
       if (windowRef.document?.referrer) {
         return new URL(windowRef.document.referrer).origin;
@@ -37,7 +38,8 @@ function getDefaultTargetOrigin(windowRef) {
 }
 
 function isValidTargetOrigin(targetOrigin) {
-  if (!targetOrigin || targetOrigin === "*") return false;
+  if (targetOrigin === "*") return true;
+  if (!targetOrigin) return false;
   try {
     return new URL(targetOrigin).origin === targetOrigin;
   } catch {
@@ -68,7 +70,7 @@ function isValidEnvelope(data, type) {
 function createDicePlusClient(options = {}) {
   const windowRef = options.windowRef || (typeof window !== "undefined" ? window : null);
   const parentWindow = options.parentWindow || windowRef?.parent;
-  const targetOrigin = options.targetOrigin || getDefaultTargetOrigin(windowRef);
+  const targetOrigin = options.targetOrigin || getDefaultTargetOrigin(windowRef) || "*";
   const timeoutMs = options.timeoutMs || DEFAULT_TIMEOUT_MS;
   const readyTimeoutMs = options.readyTimeoutMs || DEFAULT_READY_TIMEOUT_MS;
   const pending = new Map();
@@ -92,7 +94,8 @@ function createDicePlusClient(options = {}) {
 
   function handleMessage(event) {
     if (destroyed || !canCommunicate) return;
-    if (event.source !== parentWindow || event.origin !== targetOrigin) return;
+    if (event.source !== parentWindow) return;
+    if (targetOrigin !== "*" && event.origin !== targetOrigin) return;
 
     const data = event.data;
     if (!data || data.channel !== CHANNEL || data.version !== PROTOCOL_VERSION) return;
@@ -100,10 +103,17 @@ function createDicePlusClient(options = {}) {
     if (data.type === MESSAGE_TYPES.AVAILABILITY_RESPONSE) {
       if (!isValidEnvelope(data, MESSAGE_TYPES.AVAILABILITY_RESPONSE)) return;
       const entry = pending.get(data.requestId);
-      if (!entry || entry.kind !== "availability") return;
+      if (!entry || (entry.kind !== "availability" && entry.kind !== "availability-detailed")) return;
       pending.delete(data.requestId);
       clearTimeout(entry.timer);
-      entry.resolve(data.ready === true);
+      if (entry.kind === "availability-detailed") {
+        entry.resolve({
+          ready: data.ready === true,
+          reason: data.ready === true ? "ready" : "dice-plus-unavailable",
+        });
+      } else {
+        entry.resolve(data.ready === true);
+      }
       return;
     }
 
@@ -119,7 +129,10 @@ function createDicePlusClient(options = {}) {
     clearTimeout(entry.timer);
 
     if (data.type === MESSAGE_TYPES.ROLL_RESULT) {
-      entry.resolve({ rollId: data.rollId, result: data.result });
+      entry.resolve({
+        rollId: data.rollId,
+        result: data.result,
+      });
     } else {
       const error = new Error(typeof data.error === "string" ? data.error : "Dice+ retornou um erro.");
       error.code = "DICE_PLUS_ERROR";
@@ -135,15 +148,27 @@ function createDicePlusClient(options = {}) {
     if (!canCommunicate) return Promise.reject(new Error("A ponte gm-vault não está disponível."));
 
     const requestId = createId("request");
-    const envelope = { channel: CHANNEL, version: PROTOCOL_VERSION, type, requestId, ...payload };
+    const envelope = {
+      channel: CHANNEL,
+      version: PROTOCOL_VERSION,
+      type,
+      requestId,
+      ...payload,
+    };
 
     return new Promise((resolve, reject) => {
       const timer = setTimeout(() => {
         pending.delete(requestId);
         reject(new Error("A ponte gm-vault não respondeu dentro do prazo."));
       }, timeoutMsForRequest);
-      pending.set(requestId, { kind, rollId: payload.rollId, resolve, reject, timer });
-      parentWindow.postMessage(envelope, targetOrigin);
+      pending.set(requestId, {
+        kind,
+        rollId: payload.rollId,
+        resolve,
+        reject,
+        timer,
+      });
+      parentWindow.postMessage(envelope, targetOrigin === "*" ? "*" : targetOrigin);
     });
   }
 
@@ -154,6 +179,52 @@ function createDicePlusClient(options = {}) {
       "availability",
       readyTimeoutMs,
     ).catch(() => false);
+  }
+
+  function checkAvailabilityDetailed() {
+    if (!canCommunicate) {
+      return Promise.resolve({
+        ready: false,
+        reason: !windowRef
+          ? "window-unavailable"
+          : parentWindow === windowRef
+            ? "no-parent"
+            : !isValidTargetOrigin(targetOrigin)
+              ? "invalid-target-origin"
+              : "bridge-unavailable",
+      });
+    }
+
+    const requestId = createId("ready");
+    const envelope = {
+      channel: CHANNEL,
+      version: PROTOCOL_VERSION,
+      type: MESSAGE_TYPES.AVAILABILITY_REQUEST,
+      requestId,
+      timestamp: Date.now(),
+    };
+
+    return new Promise((resolve) => {
+      const timer = setTimeout(() => {
+        pending.delete(requestId);
+        resolve({ ready: false, reason: "timeout" });
+      }, readyTimeoutMs);
+
+      pending.set(requestId, {
+        kind: "availability-detailed",
+        resolve,
+        reject: () => {},
+        timer,
+      });
+
+      try {
+        parentWindow.postMessage(envelope, targetOrigin);
+      } catch {
+        clearTimeout(timer);
+        pending.delete(requestId);
+        resolve({ ready: false, reason: "postmessage-failed" });
+      }
+    });
   }
 
   function requestRoll(requestData) {
@@ -201,9 +272,11 @@ function createDicePlusClient(options = {}) {
   return Object.freeze({
     available: canCommunicate,
     checkAvailability,
+    checkAvailabilityDetailed,
     requestRoll,
     subscribe,
     destroy,
+    resolvedTargetOrigin: targetOrigin,
   });
 }
 

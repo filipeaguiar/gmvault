@@ -86,6 +86,7 @@ async function initializeDiceRollControls(root = document) {
 
   const status = getStatusContainer(root);
   const client = bridge.createDicePlusClient({ targetOrigin });
+  logInfo("Ponte resolvida", { targetOrigin: client.resolvedTargetOrigin });
   for (const button of buttons) setState(button, "preparing", "Verificando Dice+...");
   if (status) status.textContent = "Verificando Dice+...";
 

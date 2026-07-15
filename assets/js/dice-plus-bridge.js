@@ -38,7 +38,8 @@ function getDefaultTargetOrigin(windowRef) {
 }
 
 function isValidTargetOrigin(targetOrigin) {
-  if (!targetOrigin || targetOrigin === "*") return false;
+  if (targetOrigin === "*") return true;
+  if (!targetOrigin) return false;
   try {
     return new URL(targetOrigin).origin === targetOrigin;
   } catch {
@@ -69,7 +70,7 @@ function isValidEnvelope(data, type) {
 function createDicePlusClient(options = {}) {
   const windowRef = options.windowRef || (typeof window !== "undefined" ? window : null);
   const parentWindow = options.parentWindow || windowRef?.parent;
-  const targetOrigin = options.targetOrigin || getDefaultTargetOrigin(windowRef);
+  const targetOrigin = options.targetOrigin || getDefaultTargetOrigin(windowRef) || "*";
   const timeoutMs = options.timeoutMs || DEFAULT_TIMEOUT_MS;
   const readyTimeoutMs = options.readyTimeoutMs || DEFAULT_READY_TIMEOUT_MS;
   const pending = new Map();
@@ -93,7 +94,8 @@ function createDicePlusClient(options = {}) {
 
   function handleMessage(event) {
     if (destroyed || !canCommunicate) return;
-    if (event.source !== parentWindow || event.origin !== targetOrigin) return;
+    if (event.source !== parentWindow) return;
+    if (targetOrigin !== "*" && event.origin !== targetOrigin) return;
 
     const data = event.data;
     if (!data || data.channel !== CHANNEL || data.version !== PROTOCOL_VERSION) return;
@@ -166,7 +168,7 @@ function createDicePlusClient(options = {}) {
         reject,
         timer,
       });
-      parentWindow.postMessage(envelope, targetOrigin);
+      parentWindow.postMessage(envelope, targetOrigin === "*" ? "*" : targetOrigin);
     });
   }
 
