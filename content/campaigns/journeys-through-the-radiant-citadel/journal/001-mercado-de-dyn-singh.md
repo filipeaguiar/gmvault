@@ -1,217 +1,215 @@
 ---
-title: "O Mercado de Dyn Singh"
-date: "2026-07-14"
+title: "Capítulo I: O Mercado de Dyn Singh"
+summary: "Os aventureiros desvendam uma misteriosa sabotagem no Mercado de Dyn Singh, ajudando as famílias rivais Lamai e Shung, antes de partirem para a Cidadela Radiante."
+draft: false
+status: "ready"
+visibility: "players"
 params:
   kind: "journal_entry"
-draft: false
-visibility: "players"
-status: "ready"
-campaign: "Journeys through the Radiant Citadel"
-session: 1
-players:
-  - "Davi de Aguiar"
-  - "Gabriel Mota"
-  - "Lucas Aguiar"
-  - "Laura Doya"
-  - "Francisco Albuquerque"
-  - "Maria Albuquerque"
-characters:
-  - "Detios CantoBaixo"
-  - "Durin"
-  - "Einvor"
-  - "Nyx'Clair"
-  - "Pinky"
-  - "Violeta"
-source_transcript: "transcriptions/Sessão 01.txt"
-generated_with: "rpg-session-narrator"
 ---
 
-# Capítulo I — O Mercado de Dyn Singh
+### A Chegada ao Mercado de Dyn Singh
 
-A longa estrada de terra batida estendia-se diante do grupo, cansado, mas satisfeito, após a conclusão de mais um pequeno trabalho em troca de algumas moedas de ouro. A carroça de madeira sacolejava no compasso lento dos cavalos, servindo de moradia provisória para os menores do grupo. Detios CantoBaixo, Pinky, a pequena Violeta e o parrudo anão Durin espremiam-se confortavelmente no interior do veículo, cercados por provisões e equipamentos de acampamento. Nyx'Clair, a bruxa elfa, acomodava-se ao lado deles, enquanto o gigantesco Einvor caminhava a passos largos ao lado da carroça, com seu enorme machado descansando nos ombros largos.
+O crepúsculo caía sobre o plano de Siabsungkoh, tingindo o céu de tons violeta e dourado. À medida que o sol se despedia, o Mercado de Dyn Singh começava a ganhar vida. Centenas de tendas temporárias, com suas lonas coloridas, e pequenos carrinhos de madeira eram montados nas ruelas e praças, espalhando aromas exóticos de temperos, caldos ferventes e fumaça perfumada. Era um lugar onde as tradições passavam de geração em geração, de pais para filhos, com negócios centenários enraizados no coração do vale.
 
-O crepúsculo começava a tingir o céu com tons de violeta e ouro quando o grupo se aproximou do destino escolhido para o merecido descanso: o vibrante Mercado Noturno de Dyn Singh, situado no plano de Siabsungkoh. O calor da tarde dissipava-se lentamente, dando lugar à brisa fresca da noite que atraía moradores e visitantes para a praça central rebaixada, onde três grandes tendas douradas eram cercadas por centenas de barracas temporárias, carrinhos de comida e mercadores barulhentos.
+Após acumularem algumas moedas de ouro em seus últimos trabalhos, os aventureiros decidiram que era o momento perfeito para desfrutar de um descanso merecido. Durin, o anão monge de postura serena; Einvor, o imponente golias bárbaro; Detios CantoBaixo, o carismático bardo halfling; Pinky, o ladino goblin de olhos astutos; Nyx'Clair, a misteriosa bruxa fada; e Violeta, a jovem druida humana, caminhavam juntos pela feira. A intenção do grupo era simples: relaxar, experimentar as delícias locais e, quem sabe, testar a sorte em alguma das famosas gincanas noturnas do mercado.
 
-Enquanto caminhavam pela multidão que se avolumava, Detios CantoBaixo deu um salto ágil e subiu no ombro de Einvor, na tentativa de enxergar melhor os caminhos por entre as tendas.
+Contudo, o burburinho da feira escondia tensões profundas. No coração da praça rebaixada, cercada por três grandes tendas douradas, duas comerciantes tradicionais mantinham uma rivalidade histórica. Lamai Tiemo, uma gnomo obstinada e dona da prestigiada barraca de macarrão *Tiemo Noodles*, e Kusa Shung, uma orgulhosa kobold que comandava a *Shung Seafood* com seus pratos de lagostas e sopas de polvo, tentavam manter as aparências. No entanto, uma série de pequenas e misteriosas sabotagens recentes acirrou a velha picuinha familiar, ameaçando arruinar os negócios que sustentavam suas famílias por décadas.
 
-— Pequenino, para de subir no meu ombro — reclamou Einvor, com sua voz grossa e impaciente.
+---
 
-Detios, ajeitando seu alaúde, rebateu com uma risada leve:
+### A Colisão e a Disputa da Cebolinha
 
-— Cara, mas assim, dois passos meus é um passo seu, cara. Me dá uma ajuda aí.
+Enquanto o grupo se misturava à multidão vibrante, um vulto vermelho cruzou o caminho em alta velocidade. Era Gum, um garotinho kobold que corria desesperado, segurando firmemente um maço de cebolinhas verdes. Em sua fuga cega, o menino colidiu de frente com as pernas de Detios CantoBaixo. Logo atrás dele, uma gnomo vinha bufando, brandindo uma concha de metal como se fosse uma clava de guerra.
 
-Antes que o gigante pudesse retrucar, um movimento brusco interrompeu a conversa. Um garotinho kobold vermelho, de feições dracônicas e chifres pequenos, veio correndo de forma desesperada por entre as pernas dos transeuntes e esbarrou com força contra Detios. O menino, que segurava firmemente um maço de cebolinhas frescas contra o peito, cambaleou e olhou para trás assustado.
+— Pare, ladrãozinho! Pare, ladrãozinho! — gritava ela, com o rosto vermelho de indignação.
 
-— Desculpa, moço. Desculpa, moço! — exclamou a pequena criatura, tentando recuperar o equilíbrio.
+Detios, agindo por puro instinto brincalhão e simpatia pelos pequenos, deu um salto à frente. Ele sacou seu alaúde e começou a dedilhar uma melodia saltitante, pulando diante da mulher para bloquear sua visão e impedir que ela alcançasse o garoto.
 
-Logo atrás dele, uma gnoma de meia-idade corria ofegante, brandindo uma concha de metal no ar como se fosse uma arma de guerra.
+— Ô, moça, deixa o menino comer, rapaz. É só uma cebolinha. Calma, deixa eu cantar uma musiquinha aqui para você, para você ficar mais tranquila — cantarolou o halfling, com um sorriso largo.
 
-— Pare, ladrãozinho! Pare, ladrãozinho! — gritava ela, com o rosto vermelho pelo esforço físico.
+A gnomo parou, recuperando o fôlego com dificuldade, e bateu o pé no chão, encarando o bardo de baixo para cima.
 
-Vendo a cena, Detios rapidamente pulou dos ombros de Einvor e se posicionou na frente da gnoma. Empunhando seu alaúde, o halfling começou a dedilhar notas alegres e a saltar de um lado para o outro para bloquear a visão da mulher.
+— Vocês não estão entendendo, vocês não são daqui, não é? Me permitam me apresentar. Meu nome é Lamai Tiemo, eu sou a dona do Tiemo Macarrão. Esse moleque ele não tá roubando porque tá com fome. Ele tá roubando porque a mãe dele mandou ele roubar da minha banca porque ela tá querendo me sabotar!
 
-— Ô, moça, deixa o menino, deixa o menino comer, rapaz. É só uma cebolinha. Calma, deixa eu cantar uma musiquinha aqui para você, para você ficar mais tranquila — improvisou Detios, ostentando seu carisma costumeiro.
+Gum, encolhido atrás do halfling, apontou o maço de vegetais e protestou com sua voz fina:
 
-A gnoma parou, apoiando-se nos joelhos para recuperar o fôlego, e olhou para o bardo com desdém.
+— Não é verdade! Essa cebolinha era da minha mãe. Eu só tô pegando de volta!
 
-— Vocês não estão entendendo, vocês não são daqui, não é? Permitam-me apresentar. Meu nome é Lamai, Lamai Tyenmo. Eu sou a dona do Tyenmo Macarrão. Esse moleque ele não está roubando porque está com fome. Ele está roubando porque a mãe dele mandou ele roubar da minha banca porque ela está querendo me sabotar!
+— Pegando de volta o quê, moleque? — rebateu Lamai, os olhos faiscando. — Eu sei muito bem. Isso é a mesma coisa que o seu tio avô fez com a minha tia avó. Você pensa que eu não sei o que a sua família fez? Esse seu comportamento vem da sua família! Esse é o cara das coisas que o seu pai fazia quando era da sua idade!
 
-O garotinho kobold, cujo nome era Gamon, cruzou os braços e rebateu com indignação:
+— Não é verdade, você roubou as coisas da barraca da minha mãe! — insistiu o pequeno kobold.
 
-— Não é verdade! Essa cebolinha era da minha mãe. Eu só estou pegando de volta!
+Antes que Lamai pudesse avançar, uma kobold adulta aproximou-se com passos firmes. Kusa Shung vestia roupas de trabalho impecáveis e exibia chifres enfeitados com ornamentos dourados. Ela encarou o garoto com severidade:
 
-— Pegando de volta o quê, moleque? — exclamou Lamai, batendo com a concha na palma da mão. — Eu sei muito bem. Isso é a mesma coisa que o seu tio-avô fez com a minha tia-avó. Você pensa que eu não sei o que a sua família fez? Esse seu comportamento vem da sua família. Esse é o tipo de coisa que o seu pai fazia quando era da sua idade!
+— O que é que está acontecendo aqui, Gum? O que é que você fez?
 
-Nesse momento, a mãe do garoto, Kusa Xungoon, aproximou-se. Ela era uma kobold de postura impecável, vestindo roupas de trabalho limpas e elegantes, com adornos dourados enfeitando seus chifres dracônicos. Ao ver a confusão, Kusa encarou o filho severamente.
+— Você sabe muito bem o que ele fez! — disparou Lamai. — Você mandou ele roubar minha cebolinha para atrapalhar meu negócio.
 
-— O que é que está acontecendo aqui, Gamon? O que é que você fez?
+— Sua cebolinha? Essa cebolinha é minha! Venha para cá, Gum — disse Kusa, puxando o garoto com firmeza para perto de si. Ela então se virou para Lamai com desdém: — Você está incomodando os visitantes da feira com esse tipo de coisa? Ora, faça-me o favor. Você é igualzinho à sua mãe. A mesma coisa, a mesma picuinha.
 
-— Você sabe muito bem o que ele fez! — acusou Lamai, apontando para a rival. — Você mandou ele roubar minha cebolinha para atrapalhar meu negócio!
+Tentando apaziguar os ânimos, Detios deu um passo à frente com uma sugestão pragmática:
 
-— Sua cebolinha? Essa cebolinha é minha! Venha para cá, Gamon — ordenou Kusa, puxando o garoto pela mão e encarando a gnoma com superioridade. — Você está incomodando os visitantes da feira com esse tipo de picuinha? Ora, faça-me o favor. Você é igualzinha à sua mãe. A mesma coisa, a mesma picuinha!
+— E se nós cortarmos a cebolinha ao meio? Assim cada uma fica com uma parte e a disputa acaba.
 
-As duas mulheres começaram a discutir acaloradamente, gesticulando e trocando ofensas antigas herdadas de gerações passadas. Detios tentou acalmar os ânimos sugerindo cortar a cebolinha ao meio, mas a ideia foi prontamente rejeitada. Percebendo a presença do grupo de aventureiros como observadores neutros, Kusa virou-se para eles.
+Lamai cruzou os braços, recusando prontamente:
 
-— Vocês são de fora, são isentos nessa questão. Eu quero que vocês investiguem e provem que o meu filho não fez nada demais e que essa mulher está sabotando a minha loja. Ela está tirando coisas da minha loja e o meu filho só fez pegar de volta.
+— Eu já falei que não adianta dividir. Eu quero que esse moleque pare de bagunçar minhas coisas, porque ele está roubando o que é meu! A cebolinha é barata, eu posso ir ali e comprar mais. Mas isso não se faz!
 
-— Eu quero que vocês investiguem e provem que ela é quem está me roubando! — desafiou Lamai. — Eu ofereço vinte e cinco moedas de ouro para quem desmascarar a farsa!
+Kusa, apontando para os aventureiros, tomou uma decisão:
 
-— Não, eu ofereço trinta! — rebateu Kusa de imediato.
+— Ele não está roubando nada! Pare de acusar meu filho. — Ela olhou fixamente para o grupo. — Vocês são de fora, são isentos nessa questão. Eu quero que vocês investiguem e provem que o meu filho não fez nada de errado e que essa mulher está sabotando a minha loja. Ela está tirando coisas da minha tenda e meu filho só foi recuperar.
 
-— Eu ofereço quarenta! — continuou Lamai, elevando o tom.
+Sentindo que a situação poderia render bons frutos, as duas comerciantes começaram a competir pelo preço dos serviços do grupo, oferecendo cada vez mais até que estabeleceram um acordo formal: a que estivesse certa pagaria cem moedas de ouro aos aventureiros, além de lhes garantir refeições gratuitas e vitalícias em sua respectiva barraca.
 
-O leilão de ofertas escalou rapidamente entre as duas matriarcas, até que Lamai deu um ultimato:
+Einvor, observando a discussão com testa franzida, inclinou-se na direção do monge anão e perguntou com sua voz profunda:
 
-— O negócio é o seguinte! Se vocês provarem que eu estou sendo sabotada, eu pago cem moedas de ouro e vocês têm acesso vitalício ao meu macarrão. Toda vez que vocês chegarem, podem comer de graça!
+— Amiguinho, o que deu? O que faremos?
 
-— Se vocês conseguirem provar que ela é quem está me sabotando, eu também ofereço cem moedas e comida na minha barraca de graça para sempre. Tem ensopado, sopa de polvo, lagosta, um monte de coisa! — cobriu Kusa.
+---
 
-Antes que o grupo pudesse decidir qual pista seguir, um homem trajando uma vistosa túnica vermelha ornamentada com pequenas pimentas douradas bordadas nas mangas se aproximou com passos teatrais.
+### O Desafio da Pimenta
 
-— Venham cá, por favor, minha gente, por favor. Não vamos incomodar nossos visitantes com essas picuinhas do mercado. Isso aqui é política interna — disse o homem, batendo de leve nos ombros dos aventureiros com um sorriso largo. — Vamos deixar isso para lá, vamos provar as comidas. Vocês conhecem o meu estabelecimento? Meu nome é Kasem, sou um dos sócios dos Irmãos Apimentados.
+Antes que o grupo pudesse esboçar uma resposta, um homem de vestes vermelhas vibrantes e enfeitadas com pequenas pimentas douradas aproximou-se sorrindo. Seu perfume era uma mistura de especiarias e fumaça doce.
 
-Kasem olhou para o grupo e, avaliando a compleição física robusta de Einvor e Durin, lançou-lhes um desafio com um brilho desafiador no olhar.
+— Venham cá, venham cá, por favor, minha gente — interrompeu ele, gesticulando para dispersar o tumulto das comerciantes. — Por favor, não vamos incomodar nossos visitantes com essas picuinhas do mercado. Isso aqui é política interna. Vamos deixar isso para lá e provar as comidas! Eu sou Casem, um dos donos e sócios dos Irmãos Apimentados. A gente tem uma gincana que oferece lá na praça central, mas não é para todo mundo. Vamos sair daqui, vamos deixar essas duas velhas brigando aí.
 
-— Um monge tão forte assim como você... — provocou ele, olhando para Durin. — Será que você não aguenta uma pimentinha? Vamos lá. Você tem cara de quem aguenta, ou vai deixar o grandão aqui vencer por você?
+Casem conduziu o grupo até a animada barraca dos Irmãos Apimentados, onde seu irmão gêmeo, Vi Aroon, atendia os clientes com entusiasmo contagiante. Casem explicou as regras da gincana: o desafiante deveria escolher pimentas de um cesto e comê-las. Aquele que suportasse a queimação de três pimentas consecutivas seria coroado campeão e receberia um cobiçado broche de pimenta, que garantia descontos e a simpatia de todos no mercado. Ao lado de cada competidor, um copo de iogurte gelado era colocado; se a dor fosse insuportável e o desafiante bebesse o iogurte, estaria desclassificado.
 
-O mercador os guiou até a praça central, onde ficava a barraca dos Irmãos Apimentados. O local era famoso pelo "Desafio da Pimenta", uma competição culinária lendária. Kasem subiu em uma tarima improvisada e gesticulou para a multidão que começava a se aglomerar para assistir.
+Einvor foi o primeiro a se aproximar. Embora desconfiado, o robusto golias escolheu uma pimenta vermelha e volumosa. Na primeira mordida, o sabor parecia tolerável, mas logo a substância começou a queimar com uma fúria infernal. O mundo ao redor do bárbaro pareceu derreter; ele começou a ver caveiras e a própria morte diante de si. Desesperado, Einvor agarrou o copo de iogurte, entornou-o garganta adentro de uma só vez e começou a lacrimejar intensamente. Seus olhos ficaram vermelhos e ele desabou no chão, arfando.
 
-— A regra é simples. Consiga comer três pimentas e você é o vencedor — explicou Kasem, apontando para um grande cesto de vime repleto de vagens avermelhadas e rugosas de formatos exóticos. — Você escolhe uma pimenta e come. Se você aguentar a pimenta, a gente passa para a próxima. Se você não aguentar, colocamos um copo de iogurte do seu lado. Se você tomar o iogurte para aliviar, você perde. Entendido? Senhores, temos um corajoso! Ele vai testar o poder das nossas pimentas!
+Para ajudá-lo a se levantar, os outros três membros do grupo precisaram unir forças, devido ao tamanho colossal do bárbaro.
 
-O gigante Einvor, movido pelo orgulho de guerreiro, deu um passo à frente e resmungou baixinho para os companheiros:
+— Os três é todo mundo! — exclamaram os companheiros enquanto puxavam o gigante.
 
-— Eu não ia aguentar três pimentas... e eu também não gosto.
+Einvor, com a boca visivelmente inchada e lágrimas escorrendo pelo rosto, resmungou:
 
-Ainda assim, o gigante estendeu a mão enorme e retirou do cesto uma pimenta vermelha grande e de aparência ameaçadora. Com uma careta resoluta, enfiou a especiaria na boca de uma só vez e começou a mastigar. O gosto inicial era agradável, mas em poucos segundos o calor explodiu em sua garganta. A queimação foi tão violenta que a visão de Einvor vacilou; o mercado ao redor pareceu derreter e as pessoas pareceram esqueletos diante de seus olhos lacrimejantes. Em completo desespero, o gigante esticou a mão trêmula, agarrou o copo de iogurte e o espremeu inteiro na boca, arfando pesadamente enquanto caía de joelhos no chão batido, com o rosto completamente vermelho e lágrimas escorrendo pelas bochechas.
+— Eu gosto de iogurte... mas não gosto de pimenta. Nem sei o que é pimenta!
 
-— Foi uma excelente tentativa, grandão! — exclamou Vi Aroon, o irmão gêmeo de Kasem, que usava uma túnica idêntica, mas na cor verde, surgindo para saudar os presentes com um carisma avassalador que contrastava com a postura burocrática de seu irmão. Vi olhou para Detios com um sorriso provocador. — Mas vamos lá. Quem mais? Alguém mais quer tentar? Ah, pequenino, você quer tentar onde o seu amigão falhou? Sente aqui, pequenino.
+Em seguida, o goblin Pinky decidiu testar sua sorte. Ele comeu as duas primeiras pimentas com facilidade, sob o olhar atento do público. Contudo, ao mastigar a terceira — a temida pimenta vermelha —, sentiu como se sua língua estivesse prestes a virar cinzas. O goblin falhou na tolerância, correndo desesperado na direção de Violeta com a boca escancarada. A jovem druida rapidamente conjurou um sopro de vento congelante, aliviando o fogo que consumia a boca de Pinky.
 
-Durin, Nyx'Clair e Detios se aproximaram para ajudar a levantar o enorme Einvor do chão. 
+— Você chegou mais longe do que muita gente pequenina. Deveria se sentir orgulhoso! — consolou Vi Aroon, dando tapinhas nas costas do goblin.
 
-— Os três é todo mundo! — brincou Detios, referindo-se ao esforço conjunto para erguer a montanha de músculos do companheiro.
+Detios CantoBaixo, confiante em seu carisma, sentou-se na cadeira de testes e mastigou a pimenta vermelha. Quase instantaneamente, ele espremeu o copo de iogurte na boca, soltando um grito esganiçado:
 
-Pinky, o goblin, decidiu que era sua vez. Ele sentou-se à mesa, pegou uma pimenta de tamanho médio e a comeu com relativa facilidade. Em seguida, escolheu uma segunda vagem menor e a engoliu sem pestanejar, embora sua boca estivesse começando a arder intensamente. Encorajado, Pinky pegou uma terceira pimenta, idêntica à que havia derrubado Einvor. Na primeira mordida, o goblin sentiu como se sua cabeça estivesse prestes a explodir.
+— Meu Deus, meu Deus, meu Deus, como pode queimar tanto?!
 
-— Minha boca está pegando! Minha boca está pegando! — gritou Pinky, pulando da cadeira em desespero. Ele correu em direção à Violeta, que rapidamente gesticulou e soprou uma lufada de vento congelante sobre o amigo para resfriar a queimação, enquanto Pinky tomava o iogurte para se salvar.
+Em seu desespero, o halfling olhou em volta e quase mergulhou a cabeça dentro de um aquário decorativo próximo, apenas para tentar apagar o incêndio em sua boca.
 
-— Você chegou mais longe do que muita gente pequenina. Você deveria se sentir orgulhoso, é isso aí! — elogiou Vi Aroon, batendo palmas.
+Violeta e Nyx'Clair também tentaram o desafio, mas ambas falharam logo na primeira mordida, correndo para os copos de iogurte para salvar suas línguas da queimação devastadora.
 
-Detios, querendo provar seu valor, sentou-se à mesa e pegou uma pimenta. Mal a especiaria tocou sua língua, o halfling sentiu uma dor excruciante e correu para o copo de iogurte, espremendo-o de uma vez.
+Por fim, restou apenas Durin. Embora relutante e sob a desconfiança dos gêmeos donos da barraca, o anão monge sentou-se de forma disciplinada. Detios proferiu palavras de incentivo bárdico, e Nyx'Clair sussurrou uma prece de orientação mágica sobre seus ombros. Durin pegou as pimentas e as mastigou uma a uma, com uma expressão impassível. Para o espanto da multidão e dos próprios donos da banca, o anão comeu as três pimentas com absoluta tranquilidade, sem que sua boca esboçasse a menor ardência.
 
-— Meu Deus, meu Deus, como pode queimar tanto?! — berrou Detios, lacrimejando e olhando desesperadamente ao redor, ameaçando enfiar a cabeça em um aquário ornamental próximo para apagar o incêndio em sua boca.
+— Acho que temos um campeão! — exclamou Vi Aroon, batendo palmas entusiasmadas. — Comeu as três pimentas de boaça!
 
-A pequena Violeta também tentou a sorte, mas a primeira mordida a fez chorar e jogar gelo na boca enquanto tomava o iogurte a contragosto.
+O monge recebeu a medalha de pimenta sob os aplausos do público. Com um gesto generoso, Durin estendeu a mão e deu o broche de presente para o goblin Pinky.
 
-Por fim, restou Durin. Nyx'Clair aproximou-se do anão monge e tocou sutilmente em seu ombro, sussurando palavras de encorajamento através de uma prece silenciosa de orientação, enquanto Detios dedilhava acordes inspiradores em seu alaúde para motivar o companheiro. Durin sentou-se calmamente diante do cesto. Ele escolheu a primeira pimenta e a mastigou com firmeza; a ardência subiu forte, mas ele a conteve com pura disciplina física. Em seguida, pegou a segunda pimenta e a comeu com surpreendente facilidade, mastigando calmamente como se fosse um legume comum. Por fim, engoliu a terceira e última pimenta sem demonstrar qualquer sinal de fraqueza, mantendo a postura ereta sob os olhares atônitos da multidão.
+— Além de resistente, ele é um excelente companheiro. Parabéns! — elogiou Vi Aroon, impressionado com a atitude do anão.
 
-— Acho que temos um campeão! — anunciou Vi Aroon, aplaudindo entusiasticamente.
+---
 
-Vi entregou a Durin um belo broche ornamental do festival, que concederia descontos e o respeito de todos os mercadores dali em diante. Durin aceitou o prêmio com um aceno respeitoso e, demonstrando grande companheirismo, caminhou até Pinky e fixou o broche nas roupas do goblin.
+### O Começo da Investigação e Madame Kulp
 
-— Além de resistente, ele é um excelente companheiro. Parabéns! — elogiou Vi Aroon, impressionado com o gesto.
+Quando a comemoração arrefeceu, Lamai Tiemo abordou os aventureiros mais uma vez, seu semblante marcado pela preocupação.
 
-Enquanto o grupo celebrava a vitória de Durin, um grito de pânico ecoou pelo mercado. Uma espessa coluna de fumaça escura começou a subir de uma das barracas próximas. Era a banca de Kusa Xungoon. Kusa tentava desesperadamente abafar as chamas com um pedaço de tecido grosso, praguejando sem parar.
+— Eu entendo que vocês queiram se divertir e tal — disse a gnomo, com a voz embargada. — Mas vejam o macarrão... o macarrão Tiemo e todo mundo que tem tenda aqui no mercado sabe o quanto isso faz parte da nossa cultura. Eu não estou brincando quando digo que estou sendo sabotada. Eu realmente gostaria que vocês investigassem.
 
-— Aquela maldita! Aquela maldita da Lamai vai me pagar por isso! Ela me paga!
+Durante o apelo de Lamai, a atenção de Pinky e Durin foi atraída para a barraca vizinha. Casem Aroon estava de pé a alguma distância, observando o grupo conversar com a gnomo. O mercador mantinha os braços cruzados, uma expressão séria e vigilante gravada em seu rosto avermelhado, o que levantou suspeitas imediatas nos dois aventureiros.
 
-Einvor, que ainda tentava se recuperar da pimenta com a boca muito inchada e falando de forma abafada e engraçada aos companheiros, correu até a banca e, com golpes certeiros de seu manto molhado e força bruta, abafou e extinguiu as chamas antes que o pior acontecesse.
+De repente, gritos de alerta ecoaram pelas ruelas. Uma fumaça escura começou a subir de uma das tendas próximas. A base da barraca de frutos do mar de Kusa Shung estava em chamas. As pessoas corriam para apagar o fogo com baldes de água, enquanto a confusão se instalava.
 
-— Ah, uma coisa... — tentou explicar Einvor, com a fala completamente enrolada pela língua e lábios inchados. — Quando comi a pimenta, minha boca inchou.
+Nyx'Clair aproximou-se de Madame Kulp, uma simpática gnoma idosa que confeccionava roupas de seda fina e trazia uma lagarta verde e brilhante, do tamanho de um pequeno felino, repousando pacificamente em seu ombro.
 
-Kusa agradeceu rudemente, ainda trêmula de raiva, acusando Lamai de ter ateado fogo à sua estrutura. Nyx'Clair aproximou-se para inspecionar os destroços carbonizados. Com olhos atentos, a elfa notou que o fogo havia começado rente ao chão, nas vigas de sustentação de madeira. Não havia sinais de óleo inflamável, nem tochas caídas ou lamparinas por perto. No entanto, algo incomum chamou sua atenção: diversas cascas de caqui espalhadas pelas cinzas e pelo chão ao redor.
+— Minha filha, tem acontecido muita coisa estranha aqui — revelou Madame Kulp, acariciando sua lagarta. — Essas duas meninas vivem brigando uma com a outra, não param. Elas estavam até se entendendo, estavam tentando fazer as pazes, mas assim... está acontecendo muita coisa esquisita. Ninguém viu nada, ninguém viu como esse fogo começou. Mas toda vez que as minhas meninas passam perto da barraca de uma das duas, eu não sei por que elas ficam muito nervosas. Algo estranho está acontecendo nessas barracas, mas eu não acho que nenhuma das duas seja culpada.
 
-Enquanto isso, Einvor, investigando a parte de trás da tenda, pisou em uma meleca azulada e cintilante que parecia brilhar sob a luz das lanternas. Intrigado, o gigante pegou um pouco da substância viscosa com o dedo e a levou ao nariz.
+Nyx'Clair agachou-se para inspecionar os destroços enegrecidos na base da tenda de Kusa. Ela vasculhou a terra com os dedos, mas não encontrou vestígios de óleo combustível, fiapos de tocha ou restos de lamparinas. A única pista incomum eram várias cascas de caqui espalhadas pelo chão, parcialmente chamuscadas. O caqui era uma fruta tropical importada de outras regiões, totalmente ausente das mercadorias da feira.
 
-— Isso é cocô — observou Nyx'Clair, aproximando-se. — Amigão, eu acho melhor você parar de encostar nisso e não botar na boca. Importante você também não fazer isso.
+Enquanto isso, Detios foi vistoriar a barraca de Lamai. Não encontrou nada de suspeito. A gnomo, agradecida pela atenção, serviu-lhe uma generosa tigela de macarrão fumegante e lamentou:
 
-— Não, eu não coloco isso na boca. Mas agora meu dedo está sujo — queixou-se Einvor, limpando o dedo com nojo em um pedaço de madeira. — Isso é cocô, não é? Por que o cocô está brilhando azul? Não podia ser marrom?
+— Eu não saí daqui em momento nenhum. Agora aquela maluca está dizendo que eu botei fogo na barraca dela!
 
-— Porque pelo visto ele é feérico, velho — explicou Laura, analisando o brilho furta-cor da substância. As lembranças das histórias de sua terra natal vieram à mente: tratava-se de excremento de uma criatura nativa do mundo das fadas.
+---
 
-O grupo decidiu investigar melhor o mercado para coletar informações. Detios e Nyx'Clair dirigiram-se à barraca vizinha da renomada tecelã de seda, a gnoma Madame Kulp. A senhora trabalhava calmamente em seu tear, tendo no ombro uma lagarta enorme, do tamanho de um pequeno felino, de coloração verde cintilante e olhar amigável.
+### A Performance de Alaúde, a Meleca Azul e a Espionagem
 
-— Pois não, meus jovens. O que desejam saber? Vieram admirar minhas obras de tecido? — perguntou Madame Kulp, acariciando a lagarta.
+Decidido a encontrar pistas na multidão, Detios CantoBaixo subiu em um caixote de madeira no centro da praça rebaixada. Ele começou a dedilhar seu alaúde com maestria de trovador, sua voz melodiosa ecoando pelo mercado. A performance excepcional atraiu rapidamente a atenção dos transeuntes: goblins, kobolds, draconatos e turistas estrangeiros aglomeraram-se para ouvir o espetáculo. O plano era simples: enquanto a multidão se concentrava na música, os outros aventureiros monitoravam as reações das pessoas ao redor.
 
-— Madame Kulp, a senhora viu alguma movimentação estranha antes de o incêndio começar? — perguntou Nyx'Clair.
+Durante o tumulto, Einvor caminhou até os fundos da tenda queimada de Kusa. Enquanto farejava a área, o golias sentiu seu pé pisar em algo pegajoso. Ele se agachou e recolheu com os dedos uma meleca azulada e cintilante, que mudava de cor conforme a luz da feira a atingia. Ao cheirar, percebeu que se tratava de fezes de algum animal exótico.
 
-— Minha filha, tem acontecido muita coisa estranha por aqui — respondeu a tecelã, pensativa. — Essas duas meninas vivem brigando uma com a outra, não param. Elas estavam até tentando fazer as pazes recentemente, mas o clima voltou a azedar. Ninguém viu como esse fogo começou, e agora Kusa acha que foi Lamai. Mas há algo peculiar... Toda vez que minhas meninas — disse ela, apontando para as lagartas de seda — passam perto das barracas delas duas, elas ficam extremamente nervosas. Algo estranho está acontecendo ali, e eu garanto que nenhuma das duas é culpada.
+— Encontrei esse cocô brilhando azul! — anunciou Einvor, exibindo a descoberta cintilante nos dedos.
 
-Detios, utilizando toda a sua lábia e simpatia irresistível, aproximou-se da barraca de Lamai Tyenmo, aceitando um prato de macarrão enquanto puxava assunto de forma descontraída. Em pouco tempo, a gnoma estava completamente encantada pelo halfling e começou a compartilhar as fofocas locais.
+Nyx'Clair fez uma careta de nojo, assim como os outros.
 
-— O mercado está uma loucura, meu jovem bardo. Mas sabe... tem algo que notei. Da última vez que o Casem viajou para comprar mantimentos, ele demorou muito mais do que o habitual. Eu acho que ele está muito chateado porque o seu irmão, o Vi, vai se casar em breve e planeja se mudar para outro plano. Ele vai deixar a loja dos Irmãos Apimentados inteiramente nas mãos do Casem. Talvez eu esteja fazendo fofoca onde não devia, mas eles são bons garotos... Ah, e você vai achar que eu estou maluca, mas eu juro que vi um macaco azul correndo por aqui outro dia.
+— Isso é cocô! Que m****... Nojento, por que está brilhando azul? — queixou-se a bruxa fada.
 
-Detios agradeceu as informações e, subindo em um caixote de madeira no centro do mercado, começou a fazer uma performance espetacular com seu alaúde para entreter a multidão e observar se alguém agia de modo suspeito nas sombras.
+O grupo reuniu-se para debater as evidências. Nyx'Clair sugeriu que o culpado não era nenhuma das comerciantes, mas sim algum animal travesso solto no mercado — talvez um macaco silvestre de pelagem azulada que estivesse comendo caquis, roendo as cordas das tendas e provocando pequenos incêndios acidentais. Durin, por outro lado, suspeitava de uma interferência externa: ele imaginou que a noiva de Vi Aroon, ou algum concorrente secreto, poderia ter contratado alguém para arruinar os negócios locais.
 
-Com todas as pistas em mãos — as cascas de caqui encontradas tanto na barraca de Kusa quanto na de Lamai, os rastros de fezes feéricas azuladas e as suspeitas sobre Casem —, o grupo traçou um plano. Detios aproximou-se de Vi Aroon e do irmão Kasem, oferecendo-lhes cálices de bebida e puxando papo sobre o casamento iminente e a futura partida de Vi, mantendo-os distraídos.
+Einvor ergueu a mão gigante e manifestou sua hipótese com toda a inocência:
 
-— É, meu amigo. Mas quem não ficaria triste perdendo um negócio grande desse, hein? Não culpa o teu irmão, macho — cutucou Detios, dando uma cotovelada amistosa no ombro de Vi enquanto servia mais bebida.
+— E se o macaco azul for a esposa do Pimenta? Porque eu vi de uma floresta que existia muitos seres que trocavam de forma. Vai que seja uma macaca azul.
 
-Enquanto a distração ocorria, Pinky esgueirou-se silenciosamente pelos fundos da tenda dos Irmãos Apimentados, aproveitando uma pequena abertura no tecido da lona para entrar sem ser visto. No interior escuro da tenda privada, o goblin sentiu um cheiro característico de serragem e gaiolas de passarinho. Tateando o local, ele localizou três gaiolas de ferro que pareciam recentemente esvaziadas, cercadas por cascas de caqui jogadas no chão e um barril cheio da mesma fruta tropical.
+— Muito criativo, amigo — respondeu Nyx'Clair, com um sorriso irônico.
 
-Pinky esgueirou-se de volta para fora e correu ao encontro dos companheiros, sussurrando de forma que todos ouvissem:
+Enquanto o debate continuava, Durin manteve os olhos fixos na barraca dos Irmãos Apimentados. Ele percebeu que, enquanto Vi Aroon gesticulava alegremente para os clientes, seu irmão Casem observava com extrema apreensão a movimentação dos aventureiros perto das áreas vandalizadas. O comportamento tenso de Casem confirmava que ele escondia algo grave.
 
-— Eu vi três gaiolas vazias e cascas de caqui lá dentro da barraca deles!
+---
 
-Com a confirmação da autoria, o grupo cercou os irmãos gêmeos. Einvor, com a cara ainda inchada e a voz extremamente anasalada devido à queimação das pimentas, colocou a mão pesada sobre o cabo de seu machado de batalha e encarou Casem de forma ameaçadora.
+### A Tenda dos Fundos e o Wingling Invisível
 
-— Eu encostei em cocô e não foi nada legal! Você vai dizer se tem algum animalzinho estranho, senão eu vou fazer você engolir esse cocô com as minhas próprias mãos e não vai ser legal!
+Aproveitando que a atenção de todos estava voltada para a performance de Detios, Pinky moveu-se pelas sombras com agilidade felina. O goblin escorregou para dentro da tenda dos fundos da barraca dos Irmãos Apimentados. No interior escuro, ele tateou o ambiente e encontrou três gaiolas de ferro vazias, cujas portas estavam abertas. Perto das gaiolas, havia restos roídos de cascas de caqui. Pinky recuou em silêncio e reportou suas descobertas ao grupo.
 
-Assustado com o tamanho do gigante e o tom enfurecido de sua fala deformada, Casem empalideceu. Detios deu um passo à frente, segurando firmemente as orelhas de Casem e de Vi Aroon de uma só vez, obrigando-os a olhar para ele.
+Nyx'Clair, munida da nova informação, caminhou decidida até a frente da barraca dos gêmeos e confrontou-se com eles:
 
-— Escuta, escuta aqui vocês — disse Detios, cerrando os dentes. — Eu quero saber por que vocês têm barraca com gaiola de animal justamente quando as duas estavam brigando, sendo que nenhuma das duas tem culpa. E por que você está chateado, Casem? Se o seu irmão vai se casar, você deveria estar feliz!
+— Vim perguntar para o seu irmão se vocês tinham algum animal de estimação. Algumas pessoas aqui estão dizendo que estão vendo animais pelo mercado... Engraçado, porque um dos nossos amigos acabou de avisar que viu três gaiolas vazias dentro da barraca de vocês.
 
-Abalado pela dor física e pela culpa, Casem desabou em prantos diante de seu irmão e dos aventureiros.
+Vi Aroon olhou para ela com sincera confusão:
 
-— Irmão, me desculpe, me desculpe você! — chorou Casem, cobrindo o rosto com as mãos. — Eu não sei o que eu vou fazer sem você. Você é a alma do nosso negócio. Eu não tenho competência para tocar isso sozinho! Eu fiquei desesperado... Da última vez que eu saí para comprar mantimentos, eu encontrei um mercador interplanar que tinha essas criaturas.
+— Até onde eu saiba, meu irmão não tem nenhum animal de estimação.
 
-Casem enfiou a mão no bolso e puxou um caqui maduro. No mesmo instante, uma pequena criatura de asas membranosas, semelhante a um morceguinho de pele azulada e olhos curiosos, materializou-se em seu ombro, guinchando de leve ao morder a fruta. Era um Wingling, uma criatura feérica extremamente inteligente e travessa, capaz de ficar invisível.
+Sentindo a mentira no ar, Detios deu um passo à frente. O halfling encurtou a distância, encarou Casem nos olhos e, com a voz baixa e dentes cerrados em um tom ameaçador, declarou:
 
-— Eu fiz amizade com três deles usando os caquis. Eu pensei que se uma das duas barracas rivais fechasse por causa das travessuras deles, o mercado ficaria desestabilizado e eu teria mais chances de comprar a outra loja. Se eu tivesse duas lojas em vez de uma, eu conseguiria tocar o negócio mesmo sem você, irmão... Eu não queria fazer mal a ninguém, eu só estava com medo!
+— Escutem aqui vocês. Eu quero saber por que vocês têm gaiolas de animais justamente quando as duas vizinhas estavam brigando, se nenhuma das duas tem culpa de nada. E por que você está tão chateado, Casem? Se o teu irmão vai se casar, você deveria estar feliz!
 
-Vi Aroon olhou para o irmão com uma expressão de profunda decepção e tristeza. Ele o segurou pelos ombros e disse, com firmeza:
+A menção ao casamento abalou profundamente Casem Aroon. O mercador vacilou, seus olhos se encheram de lágrimas e ele desabou em prantos, escondendo o rosto nos ombros do irmão gêmeo Vi.
 
-— Conte para elas, você precisa contar.
+— Me desculpe, irmão! Me desculpe! — soluçou Casem, desesperado. — Eu não sei o que eu vou fazer sem você. Você é a alma do nosso negócio, eu não tenho competência para tocar isso sozinho! Eu... na última vez que saí para comprar mantimentos, eu encontrei três criaturas...
 
-Vi conduziu o irmão até Lamai e Kusa, que haviam se aproximado acompanhadas por Nyx'Clair. Diante de todos, Casem confessou seus atos de sabotagem, incluindo a libertação das criaturas feéricas que causaram o incêndio acidental na banca de frutos do mar. As duas matriarcas se entreolharam em silêncio por um longo momento, percebendo que haviam sido tolas em permitir que uma richa antiga obscurecesse a razão e as fizesse acusar uma à outra injustamente.
+Casem estendeu a mão trêmula e puxou um caqui maduro do bolso de sua túnica vermelha. Ao aproximar a fruta de seu ombro, uma pequena forma começou a se materializar a partir do ar. Era uma criaturinha férica alada, semelhante a um pequeno morcego com asas de inseto brilhantes, que até então estava completamente invisível.
 
-— Infelizmente, esse caso tem que ser levado para o Conselho do Mercado — declarou Vi Aroon, suspirando enquanto olhava para os aventureiros. — Muito obrigado a todos vocês. Eu não esperava isso do meu irmão, não acredito que ele seja uma pessoa má, mas infelizmente ele precisa ser punido por isso.
+Nyx'Clair, reconhecendo a criatura, explicou ao grupo:
 
-Agradecidas pela revelação da verdade e aliviadas pelo fim da discórdia, Lamai e Kusa sorriram para o grupo e cumprimentaram-se com um aperto de mãos tímido.
+— É um Wingling. São seres inteligentes e extremamente travessos. Eles se apegam facilmente às pessoas que lhes dão comida, mas adoram causar confusão.
 
-— Vocês vão ser sempre bem-vindos aqui. Vocês vão poder comer na minha barraca de graça sempre que quiserem — garantiu Lamai.
+Chorando, Casem confessou que havia trazido os três seres invisíveis do outro plano. Ele os alimentava com caquis e os instruía a sabotar as barracas de Lamai e Kusa. O plano egoísta de Casem era simples: ele acreditava que, se gerasse caos suficiente no mercado e fizesse as barracas vizinhas falirem, os Irmãos Apimentados poderiam expandir seus negócios. Mais do que isso, ele esperava que o tumulto fizesse seu irmão Vi Aroon adiar o casamento com Lila e desistir de se mudar para outro plano, mantendo a sociedade e a parceria deles intacta.
 
-— Tudo bem, a gente também vai oferecer sempre comida para vocês. A gente pode até pensar num prato juntas para celebrar: um belo macarrão com frutos do mar! — sugeriu Kusa, rindo.
+Detios, curioso, tentou esticar a mão para colher um pelo da criatura para estudos mágicos, mas o Wingling deu uma cambalhota no ar, pousou no braço do halfling, correu até seu ombro e sussurrou algo zombeteiro em uma língua férica desconhecida antes de retornar a Casem.
 
-Com o casamento de Vi Aroon e a iminente dissolução ou reestruturação dos Irmãos Apimentados, Vi ofereceu ao grupo a antiga residência da família próxima ao mercado para que pudessem se estabelecer. Detios, contudo, olhou para os companheiros e recusou a oferta de moradia estável de maneira bem-humorada.
+---
 
-— Eu topo a Cidadela Radiante. Eu acho que aqui é movimentado demais e eu acho que aqui é tranquilo demais. Eu acho que um lugar que tem um periguinho a mais é que é da hora e é bom que a gente fica por dentro de várias aventuras aí.
+### A Resolução e o Acordo
 
-— Eu concordo com Davi. Eu também quero conhecer a cidade — apoiou Nyx'Clair.
+Com a verdade revelada, Madame Kulp e as duas comerciantes rivais, Lamai Tiemo e Kusa Shung, foram chamadas à barraca dos Irmãos Apimentados. Diante das evidências e da confissão chorosa de Casem, o mistério das sabotagens foi finalmente desfeito perante a feira. A notícia de que o pequeno Gum era inocente espalhou-se rapidamente pelas ruelas, limpando o nome da família Shung dos boatos de roubo.
 
-— Aonde tiver cama, ele vai dormir — resmungou Einvor, cujo inchaço nos lábios finalmente começava a ceder.
+Vi Aroon, profundamente envergonhado pela atitude do irmão, pediu desculpas formais em nome da família. Casem, ainda soluçando, implorou pelo perdão das comerciantes, jurando que nunca mais usaria os Winglings para causar discórdia.
 
-O grupo recolheu-se para passar a noite em uma estalagem local. Na manhã seguinte, atrelaram os cavalos à carruagem e partiram. Pinky assumiu orgulhosamente o assento de cocheiro com seu novo broche brilhando no peito, enquanto Einvor caminhava a passos largos ao lado do veículo pelas estradas planas de Siabsungkoh.
+Para a surpresa de todos, Lamai e Kusa trocaram olhares e suspiraram. Ambas sabiam o quanto os gêmeos eram queridos e trabalhadores na comunidade do mercado.
 
-Eles se aproximaram de uma clareira circular pavimentada com pedras antigas, onde uma pequena multidão aguardava silenciosamente. No alto, flutuando majestosamente no céu límpido, estava uma pedra preciosa colossal de formato irregular e do tamanho de uma grande mansão. Era a Concord Jewel, a Gema da Concórdia.
+— Os rapazes são uns queridos, sabe? — comentou Lamai, com um sorriso brando. — Não podemos destruir a vida deles por causa de um erro desses.
 
-Lenta e graciosamente, a gema gigante começou a descer do céu, flutuando milímetro a milímetro até tocar suavemente o solo de pedra. Uma abertura circular revelou-se em sua lateral, revelando um interior acolhedor operado por um condutor silencioso que acenou para que entrassem. O grupo acomodou-se em assentos confortáveis no interior da gema. Assim que a porta se fechou, a Concord Jewel começou a pulsar com uma intensa luz brilhante, elevando-se suavemente antes de disparar em uma viagem interplanar em direção à grandiosa Cidadela Radiante.
+Kusa concordou, e as duas decidiram perdoar Casem, impondo apenas que ele trabalhasse na reconstrução e reparo das tendas danificadas e compensasse as perdas financeiras. Diante daquela provação, a rivalidade de gerações entre a família Tiemo e a família Shung foi dissolvida de vez, abrindo espaço para um acordo de paz e cooperação mútua.
+
+Mantendo a promessa, Lamai e Kusa dividiram a recompensa e entregaram aos aventureiros o saco contendo cem moedas de ouro brilhantes. Além disso, reafirmaram o banquete de gratidão vitalício: toda vez que retornassem ao plano de Siabsungkoh, poderiam comer macarrão e ensopado de lagosta de graça em suas barracas. O grupo celebrou a vitória saboreando uma farta refeição sob a luz das lanternas coloridas da feira noturna.
+
+---
+
+### A Concord Jewel e a Partida Interplanar
+
+Após descansarem durante a noite em hospedarias confortáveis do mercado, os aventureiros prepararam-se para partir na manhã seguinte. Uma carruagem simples de madeira os aguardava. Como Einvor era um golias maciço e pesado demais para o veículo, ele decidiu seguir a pé, caminhando com passos firmes ao lado do cavalo. O goblin Pinky, orgulhoso, sentou-se na tábua do cocheiro e assumiu as rédeas, guiando o cavalo pelas estradas de terra do vale. No interior da carruagem, Detios, Durin, Nyx'Clair e Violeta conversavam de forma descontraída, rindo das lembranças do desafio da pimenta e do plano mirabolante do macaco azul.
+
+O caminho os levou até uma grande clareira no topo de uma colina, onde ficava o ponto de embarque interplanar. No céu límpido do amanhecer, flutuava a Concord Jewel: uma colossal pedra preciosa de formato irregular e lapidação brilhante, do tamanho de uma mansão. A gema pulsava com uma energia mágica suave.
+
+Os aventureiros posicionaram-se no círculo de embarque desenhado no chão, rodeado por cadeiras de pedra. Lentamente, a gema gigante começou a descer dos céus, flutuando de forma majestosa até tocar o solo sem produzir ruído. Uma porta de energia abriu-se em sua lateral geométrica.
+
+Um recepcionista uniformizado surgiu no portal e gesticulou com cortesia, convidando o grupo a entrar. Os aventureiros recolheram seus pertences, subiram a rampa e acomodaram-se nos assentos confortáveis no interior da gema.
+
+Em poucos instantes, a porta de energia fechou-se e a Concord Jewel voltou a acender, vibrando intensamente. Com um impulso silencioso, a pedra preciosa decolou em direção ao firmamento, rompendo as barreiras do plano de Siabsungkoh em uma veloz viagem interplanar que os levaria diretamente à fabulosa Cidadela Radiante.
