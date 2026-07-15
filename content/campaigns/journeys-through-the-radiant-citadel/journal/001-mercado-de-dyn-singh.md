@@ -34,7 +34,7 @@ O aroma de especiarias exóticas, o falatório incessante de mercadores e o bril
 Detios CantoBaixo abriu um sorriso largo, segurando firme seu alaúde.
 — Ora, meu amigo, dois passos meus equivalem a apenas um seu. Dê uma ajuda a este pobre bardo de pernas curtas!
 
-Antes que Einvor pudesse retrucar, o fluxo da feira foi interrompido por um alvoroço repentino. Uma pequena criatura dracônica, um garotinho kobold de escamas vermelhas chamado Gum, surgiu correndo desesperadamente entre as pernas dos passantes. Segurando firme um maço de cebolinhas frescas, o menino chocou-se diretamente contra os joelhos de Detios.
+Antes que Einvor pudesse retrucar, o fluxo da feira foi interrompido por um alvoroço repentino. Uma pequena criatura dracônica, um garotinho kobold de escamas vermelhas chamado Gamon, surgiu correndo desesperadamente entre as pernas dos passantes. Segurando firme um maço de cebolinhas frescas, o menino chocou-se diretamente contra os joelhos de Detios.
 — Desculpa, moço! Desculpa! — exclamou o pequeno kobold, recuperando o equilíbrio e disparando novamente em fuga.
 
 Logo atrás dele, uma gnomo idosa avançava ofegante pela multidão, erguendo uma concha de metal como se fosse uma arma de guerra.
@@ -46,13 +46,13 @@ Sensibilizado pela cena e decidido a intervir, Detios saltou à frente da senhor
 A gnomo parou bruscamente, apoiando as mãos nos joelhos para recuperar o fôlego. Seus olhos faiscavam de indignação.
 — Vocês não estão entendendo nada. Claramente não são destas terras — disse ela, ajeitando suas vestes de cozinheira. — Permitam-me apresentar: meu nome é Lamai Tyenmo, sou a dona da banca de macarrão Tyenmo. Aquele moleque não está roubando porque tem fome. Ele está roubando a mando da mãe dele, tudo para sabotar a minha banca de comida!
 
-Gum, que havia parado a uma distância segura, virou-se indignado com as cebolinhas nas mãos.
+Gamon, que havia parado a uma distância segura, virou-se indignado com as cebolinhas nas mãos.
 — Não é verdade! Essa cebolinha era da minha mãe, eu só estava pegando de volta o que é nosso!
 
 — Pegando de volta o quê, seu pirralho? — retrucou Lamai, agitando a concha no ar. — Eu sei muito bem de onde vem essa audácia. É a mesma coisa que o seu tio-avô fez com a minha tia-avó há décadas! Esse comportamento desonesto está no sangue da sua família!
 
 Nesse momento, a multidão abriu espaço para a chegada de Kusa Xungoon. A kobold adulta exibia uma postura imponente; suas roupas de trabalho estavam impecáveis, seus chifres eram adornados com anéis dourados e uma touca cobria sua cabeça. Ela encarou o garoto com seriedade.
-— O que está acontecendo aqui, Gum? O que você fez?
+— O que está acontecendo aqui, Gamon? O que você fez?
 
 Lamai deu um passo à frente, apontando a concha na direção de Kusa.
 — Você sabe muito bem o que ele fez! Você mandou esse menino roubar minhas cebolinhas para atrapalhar os meus negócios!
