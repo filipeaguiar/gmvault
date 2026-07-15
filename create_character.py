@@ -142,7 +142,19 @@ def print_header(title):
 def main():
     parser = argparse.ArgumentParser(description="Criação de personagem guiada por dados para o GM Vault.")
     parser.add_argument("--campaign", type=str, default=None, help="Slug da campanha de destino.")
+    parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
     args = parser.parse_args()
+
+    if args.interactive:
+        try:
+            from interactive_cli import create_character_menu
+            values = create_character_menu()
+            if values is None:
+                print("Operação cancelada.")
+                return
+            args.campaign = values.get("campaign", args.campaign)
+        except ImportError:
+            print("  [AVISO] interactive_cli não disponível, usando modo texto.")
 
     # 1. Selecionar campanha
     if not args.campaign:
