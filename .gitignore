@@ -9,3 +9,9 @@ translation_config.json
 *_cache.json
 .*_cache.json
 .races_cache.json
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
