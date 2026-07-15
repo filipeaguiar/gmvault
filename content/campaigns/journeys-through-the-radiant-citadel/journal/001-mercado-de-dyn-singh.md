@@ -72,9 +72,9 @@ Einvor, observando a discussão com testa franzida, inclinou-se na direção do 
 
 Antes que o grupo pudesse esboçar uma resposta, um homem de vestes vermelhas vibrantes e enfeitadas com pequenas pimentas douradas aproximou-se sorrindo. Seu perfume era uma mistura de especiarias e fumaça doce.
 
-— Venham cá, venham cá, por favor, minha gente — interrompeu ele, gesticulando para dispersar o tumulto das comerciantes. — Por favor, não vamos incomodar nossos visitantes com essas picuinhas do mercado. Isso aqui é política interna. Vamos deixar isso para lá e provar as comidas! Eu sou Casem, um dos donos e sócios dos Irmãos Apimentados. A gente tem uma gincana que oferece lá na praça central, mas não é para todo mundo. Vamos sair daqui, vamos deixar essas duas velhas brigando aí.
+— Venham cá, venham cá, por favor, minha gente — interrompeu ele, gesticulando para dispersar o tumulto das comerciantes. — Por favor, não vamos incomodar nossos visitantes com essas picuinhas do mercado. Isso aqui é política interna. Vamos deixar isso para lá e provar as comidas! Eu sou Kasem, um dos donos e sócios dos Irmãos Apimentados. A gente tem uma gincana que oferece lá na praça central, mas não é para todo mundo. Vamos sair daqui, vamos deixar essas duas velhas brigando aí.
 
-Casem conduziu o grupo até a animada barraca dos Irmãos Apimentados, onde seu irmão gêmeo, Vi Aroon, atendia os clientes com entusiasmo contagiante. Casem explicou as regras da gincana: o desafiante deveria escolher pimentas de um cesto e comê-las. Aquele que suportasse a queimação de três pimentas consecutivas seria coroado campeão e receberia um cobiçado broche de pimenta, que garantia descontos e a simpatia de todos no mercado. Ao lado de cada competidor, um copo de iogurte gelado era colocado; se a dor fosse insuportável e o desafiante bebesse o iogurte, estaria desclassificado.
+Kasem conduziu o grupo até a animada barraca dos Irmãos Apimentados, onde seu irmão gêmeo, Vi Aroon, atendia os clientes com entusiasmo contagiante. Kasem explicou as regras da gincana: o desafiante deveria escolher pimentas de um cesto e comê-las. Aquele que suportasse a queimação de três pimentas consecutivas seria coroado campeão e receberia um cobiçado broche de pimenta, que garantia descontos e a simpatia de todos no mercado. Ao lado de cada competidor, um copo de iogurte gelado era colocado; se a dor fosse insuportável e o desafiante bebesse o iogurte, estaria desclassificado.
 
 Einvor foi o primeiro a se aproximar. Embora desconfiado, o robusto golias escolheu uma pimenta vermelha e volumosa. Na primeira mordida, o sabor parecia tolerável, mas logo a substância começou a queimar com uma fúria infernal. O mundo ao redor do bárbaro pareceu derreter; ele começou a ver caveiras e a própria morte diante de si. Desesperado, Einvor agarrou o copo de iogurte, entornou-o garganta adentro de uma só vez e começou a lacrimejar intensamente. Seus olhos ficaram vermelhos e ele desabou no chão, arfando.
 
@@ -114,7 +114,7 @@ Quando a comemoração arrefeceu, Lamai Tiemo abordou os aventureiros mais uma v
 
 — Eu entendo que vocês queiram se divertir e tal — disse a gnomo, com a voz embargada. — Mas vejam o macarrão... o macarrão Tiemo e todo mundo que tem tenda aqui no mercado sabe o quanto isso faz parte da nossa cultura. Eu não estou brincando quando digo que estou sendo sabotada. Eu realmente gostaria que vocês investigassem.
 
-Durante o apelo de Lamai, a atenção de Pinky e Durin foi atraída para a barraca vizinha. Casem Aroon estava de pé a alguma distância, observando o grupo conversar com a gnomo. O mercador mantinha os braços cruzados, uma expressão séria e vigilante gravada em seu rosto avermelhado, o que levantou suspeitas imediatas nos dois aventureiros.
+Durante o apelo de Lamai, a atenção de Pinky e Durin foi atraída para a barraca vizinha. Kasem Aroon estava de pé a alguma distância, observando o grupo conversar com a gnomo. O mercador mantinha os braços cruzados, uma expressão séria e vigilante gravada em seu rosto avermelhado, o que levantou suspeitas imediatas nos dois aventureiros.
 
 De repente, gritos de alerta ecoaram pelas ruelas. Uma fumaça escura começou a subir de uma das tendas próximas. A base da barraca de frutos do mar de Kusa Shung estava em chamas. As pessoas corriam para apagar o fogo com baldes de água, enquanto a confusão se instalava.
 
@@ -150,7 +150,7 @@ Einvor ergueu a mão gigante e manifestou sua hipótese com toda a inocência:
 
 — Muito criativo, amigo — respondeu Nyx'Clair, com um sorriso irônico.
 
-Enquanto o debate continuava, Durin manteve os olhos fixos na barraca dos Irmãos Apimentados. Ele percebeu que, enquanto Vi Aroon gesticulava alegremente para os clientes, seu irmão Casem observava com extrema apreensão a movimentação dos aventureiros perto das áreas vandalizadas. O comportamento tenso de Casem confirmava que ele escondia algo grave.
+Enquanto o debate continuava, Durin manteve os olhos fixos na barraca dos Irmãos Apimentados. Ele percebeu que, enquanto Vi Aroon gesticulava alegremente para os clientes, seu irmão Kasem observava com extrema apreensão a movimentação dos aventureiros perto das áreas vandalizadas. O comportamento tenso de Kasem confirmava que ele escondia algo grave.
 
 ---
 
@@ -166,37 +166,37 @@ Vi Aroon olhou para ela com sincera confusão:
 
 — Até onde eu saiba, meu irmão não tem nenhum animal de estimação.
 
-Sentindo a mentira no ar, Detios deu um passo à frente. O halfling encurtou a distância, encarou Casem nos olhos e, com a voz baixa e dentes cerrados em um tom ameaçador, declarou:
+Sentindo a mentira no ar, Detios deu um passo à frente. O halfling encurtou a distância, encarou Kasem nos olhos e, com a voz baixa e dentes cerrados em um tom ameaçador, declarou:
 
-— Escutem aqui vocês. Eu quero saber por que vocês têm gaiolas de animais justamente quando as duas vizinhas estavam brigando, se nenhuma das duas tem culpa de nada. E por que você está tão chateado, Casem? Se o teu irmão vai se casar, você deveria estar feliz!
+— Escutem aqui vocês. Eu quero saber por que vocês têm gaiolas de animais justamente quando as duas vizinhas estavam brigando, se nenhuma das duas tem culpa de nada. E por que você está tão chateado, Kasem? Se o teu irmão vai se casar, você deveria estar feliz!
 
-A menção ao casamento abalou profundamente Casem Aroon. O mercador vacilou, seus olhos se encheram de lágrimas e ele desabou em prantos, escondendo o rosto nos ombros do irmão gêmeo Vi.
+A menção ao casamento abalou profundamente Kasem Aroon. O mercador vacilou, seus olhos se encheram de lágrimas e ele desabou em prantos, escondendo o rosto nos ombros do irmão gêmeo Vi.
 
-— Me desculpe, irmão! Me desculpe! — soluçou Casem, desesperado. — Eu não sei o que eu vou fazer sem você. Você é a alma do nosso negócio, eu não tenho competência para tocar isso sozinho! Eu... na última vez que saí para comprar mantimentos, eu encontrei três criaturas...
+— Me desculpe, irmão! Me desculpe! — soluçou Kasem, desesperado. — Eu não sei o que eu vou fazer sem você. Você é a alma do nosso negócio, eu não tenho competência para tocar isso sozinho! Eu... na última vez que saí para comprar mantimentos, eu encontrei três criaturas...
 
-Casem estendeu a mão trêmula e puxou um caqui maduro do bolso de sua túnica vermelha. Ao aproximar a fruta de seu ombro, uma pequena forma começou a se materializar a partir do ar. Era uma criaturinha férica alada, semelhante a um pequeno morcego com asas de inseto brilhantes, que até então estava completamente invisível.
+Kasem estendeu a mão trêmula e puxou um caqui maduro do bolso de sua túnica vermelha. Ao aproximar a fruta de seu ombro, uma pequena forma começou a se materializar a partir do ar. Era uma criaturinha férica alada, semelhante a um pequeno morcego com asas de inseto brilhantes, que até então estava completamente invisível.
 
 Nyx'Clair, reconhecendo a criatura, explicou ao grupo:
 
 — É um Wingling. São seres inteligentes e extremamente travessos. Eles se apegam facilmente às pessoas que lhes dão comida, mas adoram causar confusão.
 
-Chorando, Casem confessou que havia trazido os três seres invisíveis do outro plano. Ele os alimentava com caquis e os instruía a sabotar as barracas de Lamai e Kusa. O plano egoísta de Casem era simples: ele acreditava que, se gerasse caos suficiente no mercado e fizesse as barracas vizinhas falirem, os Irmãos Apimentados poderiam expandir seus negócios. Mais do que isso, ele esperava que o tumulto fizesse seu irmão Vi Aroon adiar o casamento com Lila e desistir de se mudar para outro plano, mantendo a sociedade e a parceria deles intacta.
+Chorando, Kasem confessou que havia trazido os três seres invisíveis do outro plano. Ele os alimentava com caquis e os instruía a sabotar as barracas de Lamai e Kusa. O plano egoísta de Kasem era simples: ele acreditava que, se gerasse caos suficiente no mercado e fizesse as barracas vizinhas falirem, os Irmãos Apimentados poderiam expandir seus negócios. Mais do que isso, ele esperava que o tumulto fizesse seu irmão Vi Aroon adiar o casamento com Lila e desistir de se mudar para outro plano, mantendo a sociedade e a parceria deles intacta.
 
-Detios, curioso, tentou esticar a mão para colher um pelo da criatura para estudos mágicos, mas o Wingling deu uma cambalhota no ar, pousou no braço do halfling, correu até seu ombro e sussurrou algo zombeteiro em uma língua férica desconhecida antes de retornar a Casem.
+Detios, curioso, tentou esticar a mão para colher um pelo da criatura para estudos mágicos, mas o Wingling deu uma cambalhota no ar, pousou no braço do halfling, correu até seu ombro e sussurrou algo zombeteiro em uma língua férica desconhecida antes de retornar a Kasem.
 
 ---
 
 ### A Resolução e o Acordo
 
-Com a verdade revelada, Madame Kulp e as duas comerciantes rivais, Lamai Tiemo e Kusa Shung, foram chamadas à barraca dos Irmãos Apimentados. Diante das evidências e da confissão chorosa de Casem, o mistério das sabotagens foi finalmente desfeito perante a feira. A notícia de que o pequeno Gum era inocente espalhou-se rapidamente pelas ruelas, limpando o nome da família Shung dos boatos de roubo.
+Com a verdade revelada, Madame Kulp e as duas comerciantes rivais, Lamai Tiemo e Kusa Shung, foram chamadas à barraca dos Irmãos Apimentados. Diante das evidências e da confissão chorosa de Kasem, o mistério das sabotagens foi finalmente desfeito perante a feira. A notícia de que o pequeno Gum era inocente espalhou-se rapidamente pelas ruelas, limpando o nome da família Shung dos boatos de roubo.
 
-Vi Aroon, profundamente envergonhado pela atitude do irmão, pediu desculpas formais em nome da família. Casem, ainda soluçando, implorou pelo perdão das comerciantes, jurando que nunca mais usaria os Winglings para causar discórdia.
+Vi Aroon, profundamente envergonhado pela atitude do irmão, pediu desculpas formais em nome da família. Kasem, ainda soluçando, implorou pelo perdão das comerciantes, jurando que nunca mais usaria os Winglings para causar discórdia.
 
 Para a surpresa de todos, Lamai e Kusa trocaram olhares e suspiraram. Ambas sabiam o quanto os gêmeos eram queridos e trabalhadores na comunidade do mercado.
 
 — Os rapazes são uns queridos, sabe? — comentou Lamai, com um sorriso brando. — Não podemos destruir a vida deles por causa de um erro desses.
 
-Kusa concordou, e as duas decidiram perdoar Casem, impondo apenas que ele trabalhasse na reconstrução e reparo das tendas danificadas e compensasse as perdas financeiras. Diante daquela provação, a rivalidade de gerações entre a família Tiemo e a família Shung foi dissolvida de vez, abrindo espaço para um acordo de paz e cooperação mútua.
+Kusa concordou, e as duas decidiram perdoar Kasem, impondo apenas que ele trabalhasse na reconstrução e reparo das tendas danificadas e compensasse as perdas financeiras. Diante daquela provação, a rivalidade de gerações entre a família Tiemo e a família Shung foi dissolvida de vez, abrindo espaço para um acordo de paz e cooperação mútua.
 
 Mantendo a promessa, Lamai e Kusa dividiram a recompensa e entregaram aos aventureiros o saco contendo cem moedas de ouro brilhantes. Além disso, reafirmaram o banquete de gratidão vitalício: toda vez que retornassem ao plano de Siabsungkoh, poderiam comer macarrão e ensopado de lagosta de graça em suas barracas. O grupo celebrou a vitória saboreando uma farta refeição sob a luz das lanternas coloridas da feira noturna.
 

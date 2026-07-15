@@ -88,8 +88,8 @@ npcs:
   role: npc
   notes: Importado automaticamente do arquivo kusa-xungoon.md
 - canonical_name: Kasem Aroon
-  aliases: []
-  common_transcription_errors: []
+  aliases: ["Kasem"]
+  common_transcription_errors: ["Casem", "Casinho"]
   pronouns: ''
   description: Medium humanoid, caótico e neutro
   role: npc
