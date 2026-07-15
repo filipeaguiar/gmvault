@@ -1,5 +1,6 @@
 ---
 title: "Detios CantoBaixo"
+player: "Davi de Aguiar"
 date: 2026-07-09T19:00:00Z
 params:
   kind: "character"

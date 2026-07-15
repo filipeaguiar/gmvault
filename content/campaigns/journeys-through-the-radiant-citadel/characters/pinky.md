@@ -1,5 +1,6 @@
 ---
 title: "Pinky"
+player: "Francisco Albuquerque"
 date: 2026-07-09T19:00:00Z
 params:
   kind: "character"

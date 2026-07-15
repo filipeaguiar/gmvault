@@ -1,0 +1,402 @@
+version: 1
+user:
+  name: Filipe Antonio Aguiar Cavalcanti de Carvalho
+  role: game_master
+  transcript_names:
+  - Filipe
+  - Filipe Antonio Aguiar Cavalcanti de Carvalho
+  notes: Sempre será o mestre da sessão.
+campaign:
+  name: ''
+  system: ''
+  root_directory: ''
+  sessions_directory: 'journal'
+  narrative_style: ''
+  default_tense: past
+  default_point_of_view: third_person
+players:
+  - player_name: "Davi de Aguiar"
+    transcript_names: ["Davi"]
+    character_name: "Detios CantoBaixo"
+    character_aliases: ["Detios", "CantoBaixo"]
+    pronouns: "ele"
+    usually_remote: false
+  - player_name: "Gabriel Mota"
+    transcript_names: ["Gabriel"]
+    character_name: "Durin"
+    character_aliases: ["Durin"]
+    pronouns: "ele"
+    usually_remote: false
+  - player_name: "Lucas Aguiar"
+    transcript_names: ["Lucas"]
+    character_name: "Einvor"
+    character_aliases: ["Einvor"]
+    pronouns: "ele"
+    usually_remote: false
+  - player_name: "Laura Doya"
+    transcript_names: ["Laura"]
+    character_name: "Nyx'Clair"
+    character_aliases: ["Nyx'Clair", "Nyx", "Clair"]
+    pronouns: "ela"
+    usually_remote: false
+  - player_name: "Francisco Albuquerque"
+    transcript_names: ["Francisco", "Chico"]
+    character_name: "Pinky"
+    character_aliases: ["Pinky"]
+    pronouns: "ele"
+    usually_remote: false
+  - player_name: "Maria Albuquerque"
+    transcript_names: ["Maria"]
+    character_name: "Violeta"
+    character_aliases: ["Violeta"]
+    pronouns: "ela"
+    usually_remote: false
+npcs:
+- canonical_name: Atash
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo atash.md
+- canonical_name: Sholeh
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo sholeh.md
+- canonical_name: Vi Aroon
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo vi-aroon.md
+- canonical_name: Madam Kulp
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro
+  role: npc
+  notes: Importado automaticamente do arquivo madam-kulp.md
+- canonical_name: Kusa Xungoon
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e bom
+  role: npc
+  notes: Importado automaticamente do arquivo kusa-xungoon.md
+- canonical_name: Kasem Aroon
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, caótico e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo kasem-aroon.md
+- canonical_name: Gammon Xungoon
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo gammon-xungoon.md
+- canonical_name: Lamai Tyenmo
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e bom
+  role: npc
+  notes: Importado automaticamente do arquivo lamai-tyenmo.md
+- canonical_name: Kianna
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, caótico e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo kianna.md
+- canonical_name: Aunt Dellie
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo aunt-dellie.md
+- canonical_name: Lady Dre
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo lady-dre.md
+- canonical_name: farmer
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo farmer.md
+- canonical_name: Tungsten Ward
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, leal e bom
+  role: npc
+  notes: Importado automaticamente do arquivo tungsten-ward.md
+- canonical_name: Serapio
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo serapio.md
+- canonical_name: Paloma
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo paloma.md
+- canonical_name: Kala Mabarin
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e mau
+  role: npc
+  notes: Importado automaticamente do arquivo kala-mabarin.md
+- canonical_name: Azra Nir
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo azra-nir.md
+- canonical_name: Myx Nargis Ruba
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro e mau
+  role: npc
+  notes: Importado automaticamente do arquivo myx-nargis-ruba.md
+- canonical_name: Samira Arah
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro
+  role: npc
+  notes: Importado automaticamente do arquivo samira-arah.md
+- canonical_name: Diva Luma
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo diva-luma.md
+- canonical_name: Young-Gi
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro
+  role: npc
+  notes: Importado automaticamente do arquivo young-gi.md
+- canonical_name: Kun Ahn-Jun
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo kun-ahn-jun.md
+- canonical_name: Prince Kirina
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo prince-kirina.md
+- canonical_name: Prince Simbon
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo prince-simbon.md
+- canonical_name: Uzoma Baten
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e bom
+  role: npc
+  notes: Importado automaticamente do arquivo uzoma-baten.md
+- canonical_name: Awa
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo awa.md
+- canonical_name: Kedjou Kamal
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e mau
+  role: npc
+  notes: Importado automaticamente do arquivo kedjou-kamal.md
+- canonical_name: Ameyali
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo ameyali.md
+- canonical_name: Ollin
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo ollin.md
+- canonical_name: Tonalli
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo tonalli.md
+- canonical_name: Xocopol
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro
+  role: npc
+  notes: Importado automaticamente do arquivo xocopol.md
+- canonical_name: Jijibisha Manivarshi
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo jijibisha-manivarshi.md
+- canonical_name: Amanisha Manivarshi
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo amanisha-manivarshi.md
+- canonical_name: Dukha Bhatiyali
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro
+  role: npc
+  notes: Importado automaticamente do arquivo dukha-bhatiyali.md
+- canonical_name: Nimuel
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo nimuel.md
+- canonical_name: Lungtian
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo lungtian.md
+- canonical_name: Paolo Maykapal
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo paolo-maykapal.md
+- canonical_name: Navid
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo navid.md
+- canonical_name: Laleh Ghorbani
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo laleh-ghorbani.md
+- canonical_name: Afsoun Ghorbani
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, caótico e bom
+  role: npc
+  notes: Importado automaticamente do arquivo afsoun-ghorbani.md
+- canonical_name: Atiba-Pa
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, leal e bom
+  role: npc
+  notes: Importado automaticamente do arquivo atiba-pa.md
+- canonical_name: Djeneba
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, caótico e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo djeneba.md
+- canonical_name: Zisatta
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo zisatta.md
+- canonical_name: Brother Broumane
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, caótico e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo brother-broumane.md
+- canonical_name: White Jade Emperor
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium monstrosity, leal e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo white-jade-emperor.md
+- canonical_name: Lu Zhong Yin
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, leal e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo lu-zhong-yin.md
+- canonical_name: Wei Feng Ying
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, leal e neutro
+  role: npc
+  notes: Importado automaticamente do arquivo wei-feng-ying.md
+- canonical_name: Nene
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium fey, sem tendência
+  role: npc
+  notes: Importado automaticamente do arquivo nene.md
+- canonical_name: Yarana
+  aliases: []
+  common_transcription_errors: []
+  pronouns: ''
+  description: Medium humanoid, neutro e bom
+  role: npc
+  notes: Importado automaticamente do arquivo yarana.md
+locations: []
+terms: []
+output:
+  filename_pattern: '{index:03d}-{slug}.md'
+  overwrite_existing: false
