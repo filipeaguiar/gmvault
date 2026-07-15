@@ -339,7 +339,7 @@ def main():
         for p in entry.get("skillProficiencies", []):
             for k, v in p.items():
                 if isinstance(v, bool) and v:
-                    auto_skills.add(k.lower())
+                    auto_skills.add(k.lower().replace(" ", "-"))
                 elif k.lower() == "choose":
                     pass
     extract_skills(base_race_entry)
@@ -360,7 +360,7 @@ def main():
         choose_count = choose_info.get("count", 2)
         class_skills_raw = choose_info.get("from", [])
         for s_raw in class_skills_raw:
-            clean_s = s_raw.split("|")[0].strip().lower()
+            clean_s = s_raw.split("|")[0].strip().lower().replace(" ", "-")
             if clean_s in SKILL_MAP:
                 class_skills_list.append(clean_s)
                 
