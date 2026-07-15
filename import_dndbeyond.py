@@ -4,6 +4,14 @@ import json
 import os
 import sys
 import argparse
+import yaml
+
+def dump_yaml_indented(data, indent=2):
+    if not data:
+        return "[]" if isinstance(data, list) else "{}"
+    yaml_str = yaml.dump(data, default_flow_style=False, sort_keys=False, allow_unicode=True)
+    prefix = " " * indent
+    return "\n" + "\n".join(prefix + line for line in yaml_str.splitlines())
 
 # Active community 5etools mirror URL for raw data
 DATA_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/"
@@ -1290,9 +1298,16 @@ summary: "Habilidade de classe."
         avatar_url = char.get('avatarUrl') or ""
         avatar_slug = slugify(char_name)
         avatar_slug = {"perwinkle-pinky-pirata": "pinky", "nyx-": "nyxclair"}.get(avatar_slug, avatar_slug)
-        fallback_avatar = f"/images/campaigns/{args.campaign}/handouts/{avatar_slug}.png"
-        if not avatar_url and os.path.exists(f"static{fallback_avatar}"):
-            avatar_url = fallback_avatar
+        avatar_aliases = {"detios-cantobaixo": "detios", "nyxclair": "nyx"}
+        avatar_candidates = [avatar_slug, avatar_aliases.get(avatar_slug, "")]
+        if not avatar_url:
+            for candidate in avatar_candidates:
+                if not candidate:
+                    continue
+                fallback_avatar = f"/images/campaigns/{args.campaign}/handouts/{candidate}.png"
+                if os.path.exists(f"static{fallback_avatar}"):
+                    avatar_url = fallback_avatar
+                    break
 
         # 2. Moedas
         currencies = char.get('currencies', {}) or {}
@@ -1606,17 +1621,17 @@ char_info:
     gp: {currencies.get('gp', 0) or 0}
     ep: {currencies.get('ep', 0) or 0}
     pp: {currencies.get('pp', 0) or 0}
-  skills: {json.dumps(skills_data)}
-  actions: {json.dumps(actions_data)}
-  equipment: {json.dumps(equipment_list)}
-  spells: {json.dumps(structured_spells)}
-  classes_progression: {json.dumps(classes_data)}
+  skills:{dump_yaml_indented(skills_data, 4)}
+  actions:{dump_yaml_indented(actions_data, 4)}
+  equipment:{dump_yaml_indented(equipment_list, 4)}
+  spells:{dump_yaml_indented(structured_spells, 4)}
+  classes_progression:{dump_yaml_indented(classes_data, 4)}
 
 # Relacionamentos
 locations: []
 factions: []
-compendium_refs: {json.dumps(compendium_refs)}
-spells_usage: {json.dumps(yaml_spells_usage)}
+compendium_refs:{dump_yaml_indented(compendium_refs, 0)}
+spells_usage:{dump_yaml_indented(yaml_spells_usage, 0)}
 ---
 
 ### Biografia
