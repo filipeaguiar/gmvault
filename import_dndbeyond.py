@@ -31,6 +31,25 @@ STANDARD_ACTION_REFS = {
 }
 
 
+def publish_compendium_page(ref):
+    """Publica uma nota de regra referenciada por uma ficha de jogador."""
+    if not isinstance(ref, str) or not ref.startswith("/compendium/"):
+        return
+    path = f"content{ref.rstrip('/')}.md"
+    if not os.path.exists(path):
+        return
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            content = handle.read()
+        updated = content.replace("draft: true", "draft: false", 1).replace("status: \"draft\"", "status: \"ready\"", 1)
+        if updated != content:
+            with open(path, "w", encoding="utf-8") as handle:
+                handle.write(updated)
+            print(f"  [Compêndio] Nota publicada para ficha de jogador: {path}")
+    except OSError:
+        return
+
+
 def ensure_compendium_class_overview(class_name, class_data, subclass_name=None):
     """Preenche páginas de classe/subclasse vazias com a progressão local."""
     if not class_data:
@@ -1364,6 +1383,8 @@ summary: "Habilidade de classe."
         ]
         actions_data.extend(standard_actions)
         compendium_refs.extend(action["ref"] for action in standard_actions)
+        for action in standard_actions:
+            publish_compendium_page(action["ref"])
 
         # Adicionar ações específicas
         for source_key in ['class', 'race', 'feat']:
@@ -1391,6 +1412,7 @@ summary: "Habilidade de classe."
                     "source": source_key
                 }
                 if action_ref:
+                    publish_compendium_page(action_ref)
                     action_entry["ref"] = action_ref
                     compendium_refs.append(action_ref)
                 actions_data.append(action_entry)

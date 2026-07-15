@@ -2,7 +2,7 @@
 title: Uncanny Dodge
 params:
   kind: rule
-draft: true
+draft: false
 status: draft
 summary: Habilidade de classe.
 translation:

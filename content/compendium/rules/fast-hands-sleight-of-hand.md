@@ -2,8 +2,8 @@
 title: "Fast Hands: Sleight of Hand"
 params:
   kind: "rule"
-draft: true
-status: "draft"
+draft: false
+status: "ready"
 summary: "Habilidade de classe."
 ---
 

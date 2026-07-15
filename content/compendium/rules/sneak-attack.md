@@ -2,13 +2,11 @@
 title: "Sneak Attack"
 params:
   kind: "rule"
-draft: true
-status: "draft"
-summary: "Habilidade de classe."
+draft: false
+status: "ready"
+summary: "Ataque furtivo do Ladino."
+visibility: "public"
+tags: [classe, ladino]
 ---
 
-You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have XPHB on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.
-
-You don't need XPHB on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the XPHB condition, and you don't have XPHB on the attack roll.
-
-The extra damage increases as you gain Rogue levels, as shown in the Sneak Attack column of the Rogue Features table.
+Uma vez por turno, quando você acerta uma criatura com um ataque usando uma arma de Acuidade ou à Distância, pode causar dano extra se tiver vantagem no ataque ou se um aliado estiver próximo do alvo. O dano extra aumenta conforme você avança nos níveis de Ladino.

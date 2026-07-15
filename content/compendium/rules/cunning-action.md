@@ -2,9 +2,11 @@
 title: "Cunning Action"
 params:
   kind: "rule"
-draft: true
-status: "draft"
-summary: "Habilidade de classe."
+draft: false
+status: "ready"
+summary: "Ação astuta do Ladino."
+visibility: "public"
+tags: [classe, ladino]
 ---
 
-Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a XPHB: XPHB, XPHB, or XPHB.
+No seu turno, você pode usar uma ação bônus para realizar Disparada, Desengajar ou Esconder-se.

@@ -7,7 +7,9 @@
   <div class="char-header">
     {{ $avatar := or .Params.char_info.avatar .Params.image .Params.avatar }}
     {{ if $avatar }}
-      <img src="{{ $avatar | relURL }}" alt="{{ .Title }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
+      {{ $avatarURL := $avatar }}
+      {{ if hasPrefix $avatar "/" }}{{ $avatarURL = relURL (replaceRE "^/" "" $avatar) }}{{ end }}
+      <img src="{{ $avatarURL }}" alt="{{ .Title }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
     {{ end }}
     <div>
       <h1 style="margin:0;">{{ .Title }}</h1>
@@ -27,7 +29,7 @@
     <button class="char-tab-btn active" onclick="openCharTab(event, 'tab-stats')" title="Atributos"><i class="ra ra-muscle-up" style="font-size: 1.3em;"></i></button>
     <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-jigsaw-piece" style="font-size: 1.3em;"></i></button>
     <button class="char-tab-btn" onclick="openCharTab(event, 'tab-actions')" title="Ações"><i class="ra ra-crossed-swords" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-knapsack" style="font-size: 1.3em;"></i></button>
+    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-ammo-bag" style="font-size: 1.3em;"></i></button>
     {{ if $hasSpells }}
     <button class="char-tab-btn" onclick="openCharTab(event, 'tab-grimoire')" title="Grimório"><i class="ra ra-book" style="font-size: 1.3em;"></i></button>
     {{ end }}
@@ -249,7 +251,7 @@
       <ul style="list-style:disc; margin-left:20px;">
         {{ range $other }}
         <li>
-          <i class="ra ra-knapsack equipment-icon" aria-hidden="true"></i>
+          <i class="ra ra-ammo-bag equipment-icon" aria-hidden="true"></i>
           <strong>{{ .name }}</strong>{{ if gt (.quantity | int) 1 }} (x{{ .quantity }}){{ end }}
           {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
         </li>
@@ -474,7 +476,9 @@
     <h3>Retrato</h3>
     {{ $avatar := or .Params.char_info.avatar .Params.image .Params.avatar }}
     {{ if $avatar }}
-      <img src="{{ $avatar | relURL }}" alt="{{ .Title }}" style="max-width:100%; height:auto; max-height:70vh; border-radius:10px; box-shadow:0 4px 16px rgba(0,0,0,0.25);">
+      {{ $avatarURL := $avatar }}
+      {{ if hasPrefix $avatar "/" }}{{ $avatarURL = relURL (replaceRE "^/" "" $avatar) }}{{ end }}
+      <img src="{{ $avatarURL }}" alt="{{ .Title }}" style="max-width:100%; height:auto; max-height:70vh; border-radius:10px; box-shadow:0 4px 16px rgba(0,0,0,0.25);">
     {{ else }}
       <div style="width:100%; max-width:380px; height:480px; margin:0 auto; background:var(--bg-color-muted,#f4f4f4); border:2px dashed var(--border-color,#ccc); display:flex; align-items:center; justify-content:center; flex-direction:column; border-radius:10px;">
         <i class="ra ra-shield" style="font-size:5em; color:#ccc; margin-bottom:16px;"></i>

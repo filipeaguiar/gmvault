@@ -1,16 +1,12 @@
 ---
-title: Steady Aim
+title: "Steady Aim"
 params:
-  kind: rule
-draft: true
-status: draft
-summary: Habilidade de classe.
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "rule"
+draft: false
+status: "ready"
+summary: "Mira firme do Ladino."
+visibility: "public"
+tags: [classe, ladino]
 ---
 
-Como uma Ação de Bônus, você concede Vantagem na sua próxima jogada de ataque no turno atual. Você pode usar esta característica apenas se não tiver se movido durante este turno e, após usá-la, seu Deslocamento é 0 até o final do turno atual.
+Se você não se moveu no turno, pode obter vantagem na próxima jogada de ataque realizada nesse turno. Depois disso, seu deslocamento fica 0 até o fim do turno.
