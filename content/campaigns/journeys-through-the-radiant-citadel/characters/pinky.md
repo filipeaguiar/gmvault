@@ -5,7 +5,7 @@ params:
   kind: "character"
 draft: false
 weight: 10
-summary: "Goblin Rogue 2 criado manualmente guiado por dados."
+summary: "Goblin Rogue 2 (Assassino) criado manualmente guiado por dados."
 tags:
   - jogador
   - goblin
@@ -17,11 +17,11 @@ status: "ready"
 char_info:
   class: "Rogue"
   class_level: 2
-  subclass: ""
+  subclass: "Assassino"
   level: 2
   species: "Goblin"
   species_variant: ""
-  ac: "15"
+  ac: "16"
   hp: "15"
   hp_max: "15"
   hp_current: "15"
@@ -43,11 +43,11 @@ char_info:
   passive_senses:
     perception: 11
     investigation: 10
-    insight: 11
+    insight: 13
   languages: "Common"
   saves:
-    str: -1
-    dex: 7
+    str: -2
+    dex: 8
     con: 1
     int: 2
     wis: 1
@@ -59,17 +59,17 @@ char_info:
     int: true
     wis: false
     cha: false
-  saves_summary: "Dex +7, Int +2"
+  saves_summary: "Dex +8, Int +2"
   mods:
-    str: -1
-    dex: 5
+    str: -2
+    dex: 6
     con: 1
     int: 0
     wis: 1
     cha: -1
   stats:
-    str: 8
-    dex: 20
+    str: 6
+    dex: 22
     con: 12
     int: 11
     wis: 13
@@ -82,9 +82,9 @@ char_info:
     pp: 0
   skills:
     acrobatics:
-      bonus: 5
-      proficient: false
-      expertise: false
+      bonus: 10
+      proficient: true
+      expertise: true
       stat: dex
     animal-handling:
       bonus: 1
@@ -97,13 +97,13 @@ char_info:
       expertise: false
       stat: int
     athletics:
-      bonus: -1
-      proficient: false
-      expertise: false
+      bonus: 2
+      proficient: true
+      expertise: true
       stat: str
     deception:
-      bonus: -1
-      proficient: false
+      bonus: 1
+      proficient: true
       expertise: false
       stat: cha
     history:
@@ -112,8 +112,8 @@ char_info:
       expertise: false
       stat: int
     insight:
-      bonus: 1
-      proficient: false
+      bonus: 3
+      proficient: true
       expertise: false
       stat: wis
     intimidation:
@@ -157,12 +157,12 @@ char_info:
       expertise: false
       stat: int
     sleight-of-hand:
-      bonus: 5
+      bonus: 6
       proficient: false
       expertise: false
       stat: dex
     stealth:
-      bonus: 5
+      bonus: 6
       proficient: false
       expertise: false
       stat: dex
@@ -205,7 +205,7 @@ char_info:
   classes_progression:
     - name: Rogue
       level: 2
-      subclass: ''
+      subclass: Assassino
 
 # Relacionamentos
 locations: []

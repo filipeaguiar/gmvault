@@ -328,6 +328,110 @@ def main():
     # Calcular modificadores finais
     mods = {s: get_modifier(final_stats[s]) for s in STAT_NAMES}
 
+    # 6. Coletar Perícias (Skills) e Especializações (Expertise)
+    print_header("PROFICIÊNCIAS EM PERÍCIAS (SKILLS)")
+    
+    # 6.1 Identificar perícias automáticas da espécie
+    auto_skills = set()
+    def extract_skills(entry):
+        if not entry:
+            return
+        for p in entry.get("skillProficiencies", []):
+            for k, v in p.items():
+                if isinstance(v, bool) and v:
+                    auto_skills.add(k.lower())
+                elif k.lower() == "choose":
+                    pass
+    extract_skills(base_race_entry)
+    if is_variant:
+        extract_skills(selected_sub_entry)
+
+    if auto_skills:
+        print(f"  Perícias automáticas da espécie: {', '.join(s.title() for s in auto_skills)}")
+
+    # 6.2 Perícias de Classe
+    class_skills_list = []
+    choose_count = 2
+    
+    starting_prof = class_entry.get("startingProficiencies", {})
+    skills_prof = starting_prof.get("skills", [])
+    if skills_prof:
+        choose_info = skills_prof[0].get("choose", {})
+        choose_count = choose_info.get("count", 2)
+        class_skills_raw = choose_info.get("from", [])
+        for s_raw in class_skills_raw:
+            clean_s = s_raw.split("|")[0].strip().lower()
+            if clean_s in SKILL_MAP:
+                class_skills_list.append(clean_s)
+                
+    if not class_skills_list:
+        class_skills_list = sorted(list(SKILL_MAP.keys()))
+
+    class_skills_filtered = [s for s in class_skills_list if s not in auto_skills]
+    if not class_skills_filtered:
+        class_skills_filtered = sorted([s for s in SKILL_MAP.keys() if s not in auto_skills])
+
+    print(f"  Sua classe {selected_class_name} permite escolher {choose_count} perícias:")
+    selected_skills = set()
+    
+    actual_choose_count = min(choose_count, len(class_skills_filtered))
+    
+    if actual_choose_count > 0:
+        for i, sk in enumerate(class_skills_filtered, 1):
+            print(f"    {i}. {sk.replace('-', ' ').title()}")
+            
+        while len(selected_skills) < actual_choose_count:
+            prompt_msg = f"Escolha até {actual_choose_count} perícias (ex: 1,3)"
+            raw_sel = ask(prompt_msg, "1")
+            try:
+                indices = [int(x.strip()) for x in raw_sel.split(",") if x.strip()]
+                valid_indices = [idx for idx in indices if 1 <= idx <= len(class_skills_filtered)]
+                for idx in valid_indices:
+                    selected_skills.add(class_skills_filtered[idx - 1])
+                    if len(selected_skills) >= actual_choose_count:
+                        break
+            except ValueError:
+                print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
+    
+    if selected_skills:
+        print(f"  Perícias escolhidas: {', '.join(s.title() for s in selected_skills)}")
+
+    # 6.3 Especialização (Expertise)
+    expertise_count = 0
+    if selected_class_name.lower() == "rogue":
+        expertise_count = 2 if level < 6 else 4
+    elif selected_class_name.lower() == "bard":
+        if level >= 10:
+            expertise_count = 4
+        elif level >= 3:
+            expertise_count = 2
+
+    expertises_selected = set()
+    all_proficient = auto_skills.union(selected_skills)
+    
+    actual_exp_count = min(expertise_count, len(all_proficient))
+    
+    if actual_exp_count > 0 and all_proficient:
+        print_header("ESPECIALIZAÇÃO (EXPERTISE)")
+        proficient_list = sorted(list(all_proficient))
+        print(f"  Escolha até {actual_exp_count} perícias para especialização (bônus duplicado):")
+        for i, sk in enumerate(proficient_list, 1):
+            print(f"    {i}. {sk.replace('-', ' ').title()}")
+            
+        while len(expertises_selected) < actual_exp_count:
+            raw_exp = ask(f"Escolha até {actual_exp_count} perícias (ex: 1,2)", "1")
+            try:
+                indices = [int(x.strip()) for x in raw_exp.split(",") if x.strip()]
+                valid_indices = [idx for idx in indices if 1 <= idx <= len(proficient_list)]
+                for idx in valid_indices:
+                    expertises_selected.add(proficient_list[idx - 1])
+                    if len(expertises_selected) >= actual_exp_count:
+                        break
+            except ValueError:
+                print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
+                
+        print(f"  Especializações escolhidas: {', '.join(s.title() for s in expertises_selected)}")
+
     # 6. Calcular HP e Valores Derivados
     # HP Máximo: Dado máximo no nível 1 + Mod de CON, e a média nos níveis subsequentes
     con_mod = mods["con"]
@@ -414,20 +518,29 @@ def main():
             saves_summary_parts.append(f"{s.capitalize()} {sign}{saves[s]}")
     saves_summary = ", ".join(saves_summary_parts)
 
-    # Monta as skills zeradas (ou calcula bônus base de atributo)
+    # Calcula bônus das skills com base em proficiências e expertise
     skills_data = {}
     for sk, stat_key in SKILL_MAP.items():
+        is_prof = sk in all_proficient
+        is_exp = sk in expertises_selected
+        
+        bonus = mods[stat_key]
+        if is_exp:
+            bonus += 2 * prof_bonus
+        elif is_prof:
+            bonus += prof_bonus
+            
         skills_data[sk] = {
-            "bonus": mods[stat_key],
-            "proficient": False,
-            "expertise": False,
+            "bonus": bonus,
+            "proficient": is_prof,
+            "expertise": is_exp,
             "stat": stat_key
         }
 
     passive_senses = {
-        "perception": 10 + mods["wis"],
-        "investigation": 10 + mods["int"],
-        "insight": 10 + mods["wis"]
+        "perception": 10 + skills_data["perception"]["bonus"],
+        "investigation": 10 + skills_data["investigation"]["bonus"],
+        "insight": 10 + skills_data["insight"]["bonus"]
     }
     senses_str = f"Passive Perception {passive_senses['perception']}"
     if darkvision_dist > 0:
