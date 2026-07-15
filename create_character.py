@@ -303,35 +303,62 @@ def main():
 
     # 5. Coletar Atributos
     print_header("ATRIBUTOS BASE (Standard Array / Point Buy / Rolado)")
-    print("Digite seus atributos base (antes dos aumentos de espécie).")
+    print("Digite seus atributos base (antes dos aumentos).")
     
     base_stats = {}
-    final_stats = {}
     for s in STAT_NAMES:
         base_stats[s] = ask_int(f"  {STAT_LABELS[s]}", 10)
-        final_stats[s] = base_stats[s] + ability_bonuses[s]
 
-    # Permitir customização manual de aumentos (ex: D&D 2024 / Tasha)
-    print(f"\nAumentos calculados da espécie {full_species_name}:")
+    # Inicializa final_stats com base_stats
+    final_stats = {s: base_stats[s] for s in STAT_NAMES}
+
+    # Mostrar aumentos padrão calculados da espécie
+    print(f"\nAumentos padrão calculados da espécie {full_species_name}:")
+    has_defaults = False
     for s in STAT_NAMES:
         if ability_bonuses[s] > 0:
             print(f"  {STAT_LABELS[s]}: +{ability_bonuses[s]}")
+            has_defaults = True
+        elif ability_bonuses[s] < 0:
+            print(f"  {STAT_LABELS[s]}: {ability_bonuses[s]}")
+            has_defaults = True
             
-    if any(ability_bonuses.values()):
-        use_default = ask_choice("Deseja usar estes bônus de espécie padrão ou definir bônus customizados (+2/+1)?", ["Usar padrão", "Definir customizados (+2/+1)"])
-        if use_default == "Definir customizados (+2/+1)":
-            # Resetar bônus
-            for s in STAT_NAMES:
-                final_stats[s] = base_stats[s]
-            custom_stat_plus2 = ask_choice("Selecione o atributo para receber +2:", [STAT_LABELS[s] for s in STAT_NAMES])
-            custom_stat_plus1 = ask_choice("Selecione o atributo para receber +1 (deve ser diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_plus2])
+    if not has_defaults:
+        print("  Nenhum (aumentos customizáveis ou de background)")
+
+    # Sempre oferecer as opções de aplicação de bônus
+    bonus_rule = ask_choice(
+        "Como deseja aplicar os aumentos de atributos?",
+        [
+            "Usar padrão da espécie (se houver)",
+            "Definir aumentos customizados de Background (+2 / +1)",
+            "Definir aumentos customizados de Background (+1 / +1 / +1)",
+            "Não aplicar aumentos (manter atributos base secos)"
+        ]
+    )
+
+    if bonus_rule == "Usar padrão da espécie (se houver)":
+        for s in STAT_NAMES:
+            final_stats[s] += ability_bonuses[s]
             
-            # Achar chaves correspondentes
-            for k, label in STAT_LABELS.items():
-                if label == custom_stat_plus2:
-                    final_stats[k] += 2
-                elif label == custom_stat_plus1:
-                    final_stats[k] += 1
+    elif bonus_rule == "Definir aumentos customizados de Background (+2 / +1)":
+        custom_stat_plus2 = ask_choice("Selecione o atributo para receber +2:", [STAT_LABELS[s] for s in STAT_NAMES])
+        custom_stat_plus1 = ask_choice("Selecione o atributo para receber +1 (deve ser diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_plus2])
+        
+        for k, label in STAT_LABELS.items():
+            if label == custom_stat_plus2:
+                final_stats[k] += 2
+            elif label == custom_stat_plus1:
+                final_stats[k] += 1
+                
+    elif bonus_rule == "Definir aumentos customizados de Background (+1 / +1 / +1)":
+        custom_stat_1 = ask_choice("Selecione o 1º atributo para receber +1:", [STAT_LABELS[s] for s in STAT_NAMES])
+        custom_stat_2 = ask_choice("Selecione o 2º atributo para receber +1 (diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_1])
+        custom_stat_3 = ask_choice("Selecione o 3º atributo para receber +1 (diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] not in (custom_stat_1, custom_stat_2)])
+        
+        for k, label in STAT_LABELS.items():
+            if label in (custom_stat_1, custom_stat_2, custom_stat_3):
+                final_stats[k] += 1
 
     # Calcular modificadores finais
     mods = {s: get_modifier(final_stats[s]) for s in STAT_NAMES}
