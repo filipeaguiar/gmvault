@@ -1,5 +1,3 @@
-import { createDicePlusClient } from "./dice-plus-bridge.js";
-
 const CONTROL_SELECTOR = "[data-dice-roll]";
 const DEFAULT_ROLL_TARGET = "everyone";
 const STATUS_ID = "gmvault-dice-status";
@@ -46,8 +44,16 @@ async function initializeDiceRollControls(root = document) {
   const buttons = [...root.querySelectorAll(CONTROL_SELECTOR)];
   if (buttons.length === 0) return null;
 
+  const bridge = globalThis.GMVaultDice;
+  if (!bridge || typeof bridge.createDicePlusClient !== "function") {
+    const status = getStatusContainer(root);
+    if (status) status.textContent = "Ponte Dice+ indisponível.";
+    for (const button of buttons) setState(button, "unavailable", "Ponte Dice+ indisponível.");
+    return null;
+  }
+
   const status = getStatusContainer(root);
-  const client = createDicePlusClient({ targetOrigin: getTargetOrigin(root) });
+  const client = bridge.createDicePlusClient({ targetOrigin: getTargetOrigin(root) });
   for (const button of buttons) setState(button, "preparing", "Verificando Dice+...");
   if (status) status.textContent = "Verificando Dice+...";
 
