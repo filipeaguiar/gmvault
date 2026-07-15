@@ -90,9 +90,11 @@ Madame Kulp, a tecelã de seda vizinha, observava tudo com preocupação.
 
 Enquanto buscava pistas no solo, Einvor pisou em uma gosma estranha. Ao puxar o pé, revelou uma substância viscosa, cintilante e iridescente que mudava de cor conforme a luz, brilhando como asas de borboleta. A gosma parecia ser a chave para desvendar o que estava incomodando e deixando as lagartas gigantes de Madame Kulp — criaturas do tamanho de pequenos gatos que ela chamava carinhosamente de filhas — tão ariscas e inquietas.
 
-Decididos a desvendar o mistério, o grupo dividiu-se: Nyx'Clair usou seu carisma para extrair boatos dos frequentadores do mercado; Durin manteve vigília sobre a banca dos Irmãos Apimentados, vigiando os movimentos de Kasem e Vi Aroon; e Detios CantoBaixo esgueirou-se silenciosamente pelas sombras, buscando invadir os fundos da loja dos irmãos para descobrir a verdade.
-
-A investigação nos bastidores do mercado avançou rapidamente quando os heróis uniram as pistas. A gosma iridescente e as atitudes suspeitas dos lojistas da banca vizinha indicavam que o perigo vinha de perto. Decididas a confrontar o verdadeiro responsável pelas sabotagens, Kusa e Lamai uniram-se temporariamente aos aventureiros e foram até a barraca dos Irmãos Apimentados tirar satisfação.
+Decididos a obter provas concretas das sabotagens, os aventureiros traçaram uma ação rápida. Detios CantoBaixo aproximou-se de Kasem Aroon para distraí-lo. O bardo halfling deu uma cutucada com o ombro no comerciante e comentou com tom de cumplicidade:
+— É, meu amigo. Mas quem não ficaria triste perdendo um negócio grande desse, hein? Não culpe o teu irmão, macho.
+Para prender a atenção do lojista, Detios ofereceu-lhe um cálice de bebida. Enquanto Kasem era entretido pela lábia do bardo, Pinky aproveitou a abertura perfeita. Movendo-se de fininho e com extrema furtividade pelas laterais, o ladino conseguiu esgueirar-se por uma fresta e invadiu a tenda dos fundos dos Irmãos Apimentados.
+Ao adentrar o local silenciosamente, Pinky farejou o ar e sentiu um odor forte e característico de gaiola de animais. Vasculhando a penumbra, ele deparou-se com três gaiolas vazias penduradas. Pelo chão ao redor delas, cascas de caqui estavam espalhadas, e um barril cheio da mesma fruta descansava em um canto da tenda.
+Com a pista crucial em mãos, Pinky saiu de fininho e relatou a descoberta das gaiolas e das frutas de caqui para os companheiros. Munidos de provas e decididos a confrontar os responsáveis pelas sabotagens, as duas comerciantes Kusa e Lamai uniram-se aos aventureiros e marcharam juntas até a barraca dos Irmãos Apimentados para tirar satisfação.
 
 Ao entrarem nos fundos da barraca, encontraram os gêmeos com expressões sérias. O jovem Vi Aroon olhou firmemente para seu irmão e disparou:
 — Conte para elas, Casinho. Você precisa contar a verdade sobre o que fez.
