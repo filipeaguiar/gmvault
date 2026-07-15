@@ -34,3 +34,10 @@ O sistema SHALL renderizar a aba de Grimório exclusivamente para personagens ca
 #### Scenario: Render grimoire cards
 - **WHEN** o personagem possuir magias cadastradas em sua ficha e a aba de Grimório for acessada
 - **THEN** o sistema SHALL listar todas as magias divididas por nível de círculo (truques, 1º nível, 2º nível, etc.), exibindo cada magia em um card individual com metadados cruciais (tempo de conjuração, alcance, duração, escola e link direto para os detalhes da magia no compêndio).
+
+### Requirement: Character Portrait Tab
+O sistema SHALL renderizar na última aba da ficha ("Imagem") a ilustração oficial do personagem em tamanho de destaque.
+
+#### Scenario: Render character avatar image
+- **WHEN** a última aba ("Imagem") for ativada pelo usuário
+- **THEN** o sistema SHALL ler a URL ou caminho do arquivo da imagem especificada no frontmatter do personagem (ex: `image` ou `avatar`) e exibi-la de forma centralizada e redimensionada na aba, com um fallback amigável caso a imagem esteja ausente.

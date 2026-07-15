@@ -6,11 +6,12 @@ As fichas de personagem atuais no site estático do gmvault são renderizadas de
 
 - **Layout de Ficha de RPG**: Substituição da renderização linear textual por um layout estilizado semelhante a uma ficha de personagem clássica de papel.
 - **Atributos em Quadrados**: Cada atributo (Força, Destreza, Constituição, Inteligência, Sabedoria, Carisma) será exibido em um quadrado dedicado, com destaque visual maior para o modificador e o valor base associado.
-- **Navegação por Abas (Tabs)**: Introdução de uma navegação por 4 abas interativas no topo da ficha usando CSS/JS leve:
+- **Navegação por Abas (Tabs)**: Introdução de uma navegação por abas interativas no topo da ficha usando CSS/JS leve:
   1. **Atributos e Estatísticas**: Atributos/modificadores, pontos de vida (HP), classe de armadura (AC), bônus de proficiência, classe de dificuldade (DC) de magias e ouro acumulado.
   2. **Perícias (Skills)**: Exibição em duas colunas ordenadas com marcadores visuais discretos para indicar proficiência e um marcador diferenciado para especialização (expertise).
   3. **Equipamentos e Itens**: Seções dedicadas para Armas, Armaduras (com ícones dedicados e rolagens correspondentes), Itens Consumíveis (dados dinâmicos do compêndio) e Outros Itens.
-  4. **Grimório (Grimoire)**: Exibição de magias conhecidas agrupadas por nível com cards interativos detalhados (puxando informações adicionais do compêndio).
+  4. **Grimório (Grimoire)**: Exibição de magias conhecidas agrupadas por nível com cards interativos detalhados (puxando informações adicionais do compêndio, ativo apenas para conjuradores).
+  5. **Imagem (Portrait)**: A última aba será dedicada à exibição da ilustração oficial ou retrato do personagem em tamanho destacado para imersão visual.
 
 ## Capabilities
 

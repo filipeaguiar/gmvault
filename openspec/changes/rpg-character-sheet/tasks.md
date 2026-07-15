@@ -25,6 +25,7 @@
 - [ ] 4.2 Estilizar cada arma e armadura com ícones de categorias, exibindo os metadados de rolagens de ataque/dano se estiverem presentes no Markdown.
 - [ ] 4.3 Implementar a Aba 4 (Grimório), agrupando as magias por nível em cards individuais estruturados.
 - [ ] 4.4 Integrar o layout com o compêndio global via `site.GetPage` para puxar e preencher dados dos cards de itens consumíveis e magias se a página correspondente existir no diretório `compendium/`.
+- [ ] 4.5 Implementar a Aba 5 (Imagem) como a última aba fixa da ficha de RPG, renderizando a ilustração a partir do frontmatter do personagem (campo `image` ou `avatar`) com uma imagem de silhueta/heráldica medieval como fallback de segurança caso o campo esteja ausente.
 
 ## 5. Responsiveness & Validation
 

@@ -38,3 +38,5 @@ Atualmente, as fichas de personagens de RPG (ex: `pinky.md`, `durin.md`) são ex
   - *Mitigação*: Implementar Media Queries estritas no CSS. Em telas menores que 768px, os atributos mudarão para um grid de 3 colunas por 2 linhas (ou 2 colunas por 3 linhas) e a lista de perícias cairá para uma única coluna vertical.
 - **[Risco] Ausência de Página de Grimório para Classes Não Conjuradoras**: Personagens marciais (como bárbaros ou ladinos) ficariam com uma aba de Grimório vazia ou desnecessária.
   - *Mitigação*: O Hugo SHALL verificar condicionalmente se o array de magias (`spells` ou referências do compêndio de magias) está povoado na ficha do personagem. Se estiver vazio, a aba "Grimório" será completamente ocultada da interface de navegação.
+- **[Risco] Ausência de Imagem/Retrato de Personagem**: Alguns personagens podem não possuir uma imagem correspondente definida em seu frontmatter.
+  - *Mitigação*: O layout do Hugo SHALL verificar a presença do campo `image` ou `avatar` no frontmatter. Caso ausente, a aba "Imagem" renderizará uma ilustração heráldica genérica de fallback ou brasão discreto medieval com a mensagem 'Ilustração indisponível'.
