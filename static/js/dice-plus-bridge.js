@@ -24,15 +24,6 @@ function getDefaultTargetOrigin(windowRef) {
   if (windowRef && windowRef.location && windowRef.location.origin !== "null") {
     const configured = windowRef.GMVaultDiceConfig?.targetOrigin;
     if (configured) return configured;
-
-    try {
-      if (windowRef.document?.referrer) {
-        return new URL(windowRef.document.referrer).origin;
-      }
-      return null;
-    } catch {
-      return null;
-    }
   }
   return null;
 }
