@@ -113,12 +113,16 @@ O agente realiza a terceira passagem focada no enriquecimento dramático e humor
 - **Diálogos Notáveis e Banter:** Vasculhe a transcrição em busca de diálogos marcantes em discurso direto, piadas internas dos jogadores, hesitações importantes, reações cômicas aos testes de dados, provocações mútuas ou discussões de roleplay. **Isso inclui identificar e separar toda vez que o Mestre fala em primeira pessoa interpretando um NPC (como Kusa, Lamai, Madame Kulp, Vi Aroon ou Kasem).**
 - **Registro Literal:** Anote e transcreva essas falas mantendo a essência e o tom original (como deboches de bárbaro, reclamações de tamanho de halfling, reações à queimação de pimenta, e discursos dramáticos dos NPCs). Registre-as como marcadores obrigatórios nas fichas das cenas, impedindo que qualquer "pérola" dita pelos jogadores ou interpretação de NPC pelo Mestre seja esquecida na hora de redigir.
 
-### Fase 9: Camada de Redação Incremental por Cena (Camada 4)
-Com os metadados factuais validados (Fase 7) e os diálogos e interações extraídos de forma abrangente (Fase 8), o agente inicia a escrita do capítulo. A redação é executada **de forma isolada, cena por cena**:
-1. Escreva o rascunho de prosa literária de cada cena individualmente, garantindo alta densidade e detalhamento factual, sem tentar resumir ou acelerar o texto.
-2. Integre de forma orgânica e literal os diálogos notáveis e as interações de roleplay em discurso direto (travessões ou aspas), dando o mesmo peso narrativo aos diálogos quanto às ações práticas do jogo.
-3. Salve a prosa de cada cena temporariamente no contexto ou em arquivos de rascunho (ex: `/tmp/cena_NN.md`).
-4. Repita até que todas as cenas listadas tenham sua prosa rústica redigida por completo.
+### Fase 9: Camada de Redação Incremental por Cena por Subagentes (Camada 4)
+Para garantir que a escrita não sofra a inércia ("context bias") de rascunhos ou tentativas anteriores e que cada cena seja uma tentativa limpa e isolada de se adequar estritamente aos prompts e regras, a redação deve ser delegada a subagentes:
+1. Para cada cena (ou pequeno bloco de cenas correlacionadas) identificada e validada, o agente principal SHALL invocar um subagente independente usando `invoke_subagent` com `TypeName: "self"`.
+2. O prompt de invocação do subagente deve conter unicamente:
+   - As regras gerais de estilo e fidelidade da skill.
+   - Os metadados validados da cena (participantes, locais).
+   - Os diálogos e momentos notáveis extraídos literalmente (Fase 8).
+   - O extrato correspondente da transcrição bruta `.txt`.
+3. O subagente processará e redigirá a prosa literária daquela cena de forma isolada, em seu contexto de chat limpo e sem influência de tentativas antigas, e retornará o texto rústico denso.
+4. O agente principal salva as prosas individuais temporariamente no contexto ou em arquivos de rascunho (ex: `/tmp/cena_NN.md`) à medida que os subagentes retornam, repetindo o processo até que todas as cenas da lista tenham sido geradas de forma independente.
 
 ### Fase 10: Camada de Polimento, Continuidade e Ritmo Estilístico (Camada 5)
 O agente unifica a prosa de todas as cenas e executa a camada final de polimento literário:
