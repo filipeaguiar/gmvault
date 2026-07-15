@@ -101,10 +101,17 @@ function createDicePlusClient(options = {}) {
     if (data.type === MESSAGE_TYPES.AVAILABILITY_RESPONSE) {
       if (!isValidEnvelope(data, MESSAGE_TYPES.AVAILABILITY_RESPONSE)) return;
       const entry = pending.get(data.requestId);
-      if (!entry || entry.kind !== "availability") return;
+      if (!entry || (entry.kind !== "availability" && entry.kind !== "availability-detailed")) return;
       pending.delete(data.requestId);
       clearTimeout(entry.timer);
-      entry.resolve(data.ready === true);
+      if (entry.kind === "availability-detailed") {
+        entry.resolve({
+          ready: data.ready === true,
+          reason: data.ready === true ? "ready" : "dice-plus-unavailable",
+        });
+      } else {
+        entry.resolve(data.ready === true);
+      }
       return;
     }
 
@@ -172,6 +179,52 @@ function createDicePlusClient(options = {}) {
     ).catch(() => false);
   }
 
+  function checkAvailabilityDetailed() {
+    if (!canCommunicate) {
+      return Promise.resolve({
+        ready: false,
+        reason: !windowRef
+          ? "window-unavailable"
+          : parentWindow === windowRef
+            ? "no-parent"
+            : !isValidTargetOrigin(targetOrigin)
+              ? "invalid-target-origin"
+              : "bridge-unavailable",
+      });
+    }
+
+    const requestId = createId("ready");
+    const envelope = {
+      channel: CHANNEL,
+      version: PROTOCOL_VERSION,
+      type: MESSAGE_TYPES.AVAILABILITY_REQUEST,
+      requestId,
+      timestamp: Date.now(),
+    };
+
+    return new Promise((resolve) => {
+      const timer = setTimeout(() => {
+        pending.delete(requestId);
+        resolve({ ready: false, reason: "timeout" });
+      }, readyTimeoutMs);
+
+      pending.set(requestId, {
+        kind: "availability-detailed",
+        resolve,
+        reject: () => {},
+        timer,
+      });
+
+      try {
+        parentWindow.postMessage(envelope, targetOrigin);
+      } catch {
+        clearTimeout(timer);
+        pending.delete(requestId);
+        resolve({ ready: false, reason: "postmessage-failed" });
+      }
+    });
+  }
+
   function requestRoll(requestData) {
     if (!requestData || !isValidDiceNotation(requestData.diceNotation)) {
       return Promise.reject(new Error("A notação de dados não é válida."));
@@ -217,9 +270,11 @@ function createDicePlusClient(options = {}) {
   return Object.freeze({
     available: canCommunicate,
     checkAvailability,
+    checkAvailabilityDetailed,
     requestRoll,
     subscribe,
     destroy,
+    resolvedTargetOrigin: targetOrigin,
   });
 }
 
