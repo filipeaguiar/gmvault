@@ -95,27 +95,28 @@ Após o feedback do usuário, o agente atualiza as atribuições correspondentes
 
 ### Fase 6: Camada de Estruturação e Mapeamento de Cenas (Camada 1)
 O agente deve realizar a primeira passagem sobre a transcrição bruta `.txt` para delimitar e mapear as cenas cronologicamente:
-1. Identifique os pontos de transição (mudanças de localidade, início de combates, desafios ou avanços narrativos).
-2. Para cada cena, crie uma ficha de metadados crua contendo:
+1. Identifique os pontos de transição de forma granular (não apenas por mudanças físicas de localidade, mas por **tópicos de conversação, discussões de planos ou momentos de pura interpretação/roleplay** entre os personagens).
+2. Para cada cena, crie uma ficha de metadados detalhada contendo:
    - **ID da Cena** (numeração sequencial).
    - **Localidade** no mundo de jogo.
-   - **Participantes prováveis** (nomes reais dos jogadores e NPCs envolvidos).
-   - **Resumo curto de eventos**.
+   - **Participantes** (jogadores reais e seus respectivos personagens, além de NPCs presentes).
+   - **Lista detalhada de acontecimentos**, incluindo momentos de decisão e testes.
+   - **Blocos de Conversa de Roleplay**: Mapeie os trechos onde os jogadores interpretaram seus personagens brincando, sugerindo planos ou discutindo entre si.
 
 ### Fase 7: Camada de Verificação Factual e Validação de Autoria (Camada 2)
 O agente realiza a segunda passagem, executando uma revisão estrita e de cobertura factológica:
-- **Verificação de Cobertura:** Releia a transcrição bruta e compare-a com a lista de cenas para garantir que nenhum evento secundário, teste de dado importante ou ação relevante tenha sido esquecido. A cobertura da transcrição deve ser de 100%.
+- **Verificação de Cobertura de Interações:** Releia a transcrição bruta `.txt` e assegure-se de que as discussões de planos, reações dos personagens e piadas internas de roleplay não foram resumidas a frases genéricas (ex: reduzir uma discussão cômica ou estratégica a um genérico "o grupo discutiu e decidiu" é considerado **falha de cobertura**). Cada diálogo e interação deve ser preservado.
 - **Validação de Autoria:** Mapeie de forma rígida cada ação e rolagem de dados à pessoa real que a realizou, garantindo a correspondência estrita com seu respectivo personagem fictício (conforme o mapeamento do `memory.yaml`). É expressamente proibido transferir ações ou falas entre personagens de jogadores.
 
 ### Fase 8: Camada de Extração de Diálogos e Voz dos Personagens (Camada 3)
 O agente realiza a terceira passagem focada no enriquecimento dramático e humorístico:
-- **Diálogos Notáveis:** Vasculhe a transcrição em busca de diálogos marcantes em discurso direto, interações engraçadas, piadas internas, falas icônicas dos personagens ou reações hilárias aos testes de dados (como hesitações e gagueiras causadas pelas mecânicas).
-- **Registro de Voz:** Anote e transcreva essas falas literalmente, associando-as como marcadores obrigatórios nas fichas de cenas criadas na Fase 6 para que sejam obrigatoriamente integradas na redação final.
+- **Diálogos Notáveis e Banter:** Vasculhe a transcrição em busca de diálogos marcantes em discurso direto, piadas internas dos jogadores, hesitações importantes, reações cômicas aos testes de dados, provocações mútuas ou discussões de roleplay.
+- **Registro Literal:** Anote e transcreva essas falas mantendo a essência e o tom hilário original (como deboches de bárbaro, reclamações de tamanho de halfling, reações à queimação de pimenta). Registre-as como marcadores obrigatórios nas fichas das cenas, impedindo que qualquer "pérola" dita pelos jogadores seja esquecida na hora de redigir.
 
 ### Fase 9: Camada de Redação Incremental por Cena (Camada 4)
-Com os metadados factuais validados (Fase 7) e os diálogos notáveis extraídos (Fase 8), o agente inicia a escrita do capítulo. A redação é executada **de forma isolada, cena por cena**:
+Com os metadados factuais validados (Fase 7) e os diálogos e interações extraídos de forma abrangente (Fase 8), o agente inicia a escrita do capítulo. A redação é executada **de forma isolada, cena por cena**:
 1. Escreva o rascunho de prosa literária de cada cena individualmente, garantindo alta densidade e detalhamento factual, sem tentar resumir ou acelerar o texto.
-2. Integre de forma orgânica e literal os diálogos notáveis em discurso direto (travessões ou aspas).
+2. Integre de forma orgânica e literal os diálogos notáveis e as interações de roleplay em discurso direto (travessões ou aspas), dando o mesmo peso narrativo aos diálogos quanto às ações práticas do jogo.
 3. Salve a prosa de cada cena temporariamente no contexto ou em arquivos de rascunho (ex: `/tmp/cena_NN.md`).
 4. Repita até que todas as cenas listadas tenham sua prosa rústica redigida por completo.
 
