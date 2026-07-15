@@ -28,6 +28,83 @@ def save_memory(memory, memory_path):
         print(f"Erro ao salvar a memória: {e}", file=sys.stderr)
         return False
 
+import tempfile
+
+def pre_normalize_players_in_transcript(transcript_path, memory, temp_output_path):
+    # Carrega as substituições de jogador -> personagem
+    replacements = []
+    for player in memory.get("players", []):
+        p_name = player.get("player_name", "")
+        char_name = player.get("character_name", "")
+        p_aliases = player.get("transcript_names", []) or []
+        
+        # Mapeia nomes completos e aliases do jogador para o nome de seu personagem fictício
+        terms_to_replace = [p_name] + list(p_aliases)
+        for term in terms_to_replace:
+            if term and term.strip():
+                replacements.append((term.strip(), char_name.strip()))
+                
+    # Ordena substituições pelo tamanho do termo de forma decrescente para evitar colisões parciais
+    replacements.sort(key=lambda x: len(x[0]), reverse=True)
+    
+    # Lê a transcrição linha por linha e faz as substituições no conteúdo falado
+    with open(transcript_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        
+    pattern1 = re.compile(r"^\[?(\d{1,2}:\d{2}(?::\d{2})?)\]?\s+([^:]+):\s*(.*)$")
+    pattern2 = re.compile(r"^([^:]+?)\s+\[?(\d{1,2}:\d{2}(?::\d{2})?)\]?:\s*(.*)$")
+    pattern3 = re.compile(r"^([^:]+):\s*(.*)$")
+    
+    processed_lines = []
+    
+    def replace_player_names(content):
+        res = content
+        for orig, dest in replacements:
+            escaped_orig = re.escape(orig)
+            if re.match(r'^[\w\sáéíóúâêôãõçÀÉÍÓÚÂÊÔÃÕÇ]+$', orig):
+                # Aceita bordas em português
+                pattern = re.compile(r'(?<!\w)' + escaped_orig + r'(?!\w)', re.IGNORECASE)
+            else:
+                pattern = re.compile(escaped_orig, re.IGNORECASE)
+            res = pattern.sub(dest, res)
+        return res
+
+    for line in lines:
+        line_str = line.rstrip('\r\n')
+        # Verifica se casa com cabeçalhos de turno (não substituir o nome do speaker no cabeçalho)
+        m1 = pattern1.match(line_str)
+        m2 = pattern2.match(line_str)
+        m3 = pattern3.match(line_str)
+        
+        if m1:
+            timestamp = m1.group(1)
+            speaker = m1.group(2)
+            content = m1.group(3)
+            new_content = replace_player_names(content)
+            processed_lines.append(f"[{timestamp}] {speaker}: {new_content}\n")
+        elif m2:
+            speaker = m2.group(1)
+            timestamp = m2.group(2)
+            content = m2.group(3)
+            new_content = replace_player_names(content)
+            processed_lines.append(f"{speaker} [{timestamp}]: {new_content}\n")
+        elif m3 and not m3.group(1).startswith("http") and len(m3.group(1)) < 50:
+            speaker = m3.group(1)
+            content = m3.group(2)
+            new_content = replace_player_names(content)
+            processed_lines.append(f"{speaker}: {new_content}\n")
+        else:
+            # Substitui na linha inteira se for continuação de fala sem cabeçalho
+            new_line = replace_player_names(line_str)
+            processed_lines.append(new_line + "\n")
+            
+    # Grava no arquivo temporário
+    os.makedirs(os.path.dirname(temp_output_path), exist_ok=True)
+    with open(temp_output_path, 'w', encoding='utf-8') as f:
+        f.writelines(processed_lines)
+        
+    return temp_output_path
+
 def clean_transcript(text):
     # Remove avisos comuns do Google Meet e ruídos de conexão
     lines = text.split('\n')
@@ -637,6 +714,18 @@ def main():
         with open(args.session_config, 'r', encoding='utf-8') as f:
             session_config = json.load(f)
             
+        # 0. Pré-normalização: Substitui nomes de jogadores por nomes de personagens no conteúdo falado da transcrição
+        # salvando em um arquivo temporário exclusivo para mitigar riscos de concorrência e preservar cabeçalhos
+        temp_transcript_path = os.path.join(
+            tempfile.gettempdir(),
+            f"normalized_{os.path.basename(args.transcript)}"
+        )
+        try:
+            args.transcript = pre_normalize_players_in_transcript(args.transcript, memory, temp_transcript_path)
+            print(f"Sucesso: Transcrição pré-normalizada (substituindo nomes de jogadores por personagens) gerada em: {args.transcript}")
+        except Exception as e:
+            print(f"Aviso de Pré-normalização: Falha ao pré-normalizar nomes de jogadores. Usando a transcrição original: {e}", file=sys.stderr)
+
         # 1. Carrega e limpa a transcrição
         with open(args.transcript, 'r', encoding='utf-8') as f:
             raw_text = f.read()

@@ -76,8 +76,9 @@ python3 .agent/skills/rpg-session-narrator/scripts/process_transcript.py process
   --output-json "/tmp/intermediate_session.json"
 ```
 Este comando realizará:
+- **Pré-normalização de Nomes de Jogadores:** Antes de qualquer análise, o script gera uma transcrição temporária em `/tmp/normalized_*.txt` na qual todas as ocorrências de nomes reais de jogadores (e seus aliases) dentro do conteúdo falado são automaticamente substituídas pelos nomes de seus respectivos personagens fictícios. Os cabeçalhos de metadados dos turnos (os falantes) são mantidos intactos para preservar o parse de autoria. Essa etapa mitiga o risco de a IA misturar nomes reais com fictícios na redação final.
 - Limpeza de avisos de sistema e ruídos de conexão.
-- Normalização léxica-fonética baseada na memória.
+- Normalização léxica-fonética de termos e NPCs baseada na memória.
 - Resolução heurística preliminar de autoria no microfone compartilhado.
 - Divisão da transcrição em cenas cronológicas com representação intermediária JSON.
 
