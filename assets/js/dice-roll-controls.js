@@ -2,6 +2,19 @@ import { createDicePlusClient } from "./dice-plus-bridge.js";
 
 const CONTROL_SELECTOR = "[data-dice-roll]";
 const DEFAULT_ROLL_TARGET = "everyone";
+const STATUS_ID = "gmvault-dice-status";
+
+function getStatusContainer(root) {
+  const container = root.querySelector?.(".char-sheet-container") || root.body || root.documentElement || root;
+  let status = container.querySelector?.(`#${STATUS_ID}`);
+  if (!status && container.appendChild) {
+    status = document.createElement("div");
+    status.id = STATUS_ID;
+    status.className = "dice-roll-status";
+    container.prepend(status);
+  }
+  return status;
+}
 
 function setState(button, state, message) {
   button.dataset.diceState = state;
@@ -14,7 +27,8 @@ function setState(button, state, message) {
 }
 
 function getTargetOrigin(root) {
-  return root.dataset.gmvaultTargetOrigin || undefined;
+  const html = root.documentElement || root;
+  return html?.dataset?.gmvaultTargetOrigin || undefined;
 }
 
 function showResult(button, payload) {
@@ -32,14 +46,19 @@ async function initializeDiceRollControls(root = document) {
   const buttons = [...root.querySelectorAll(CONTROL_SELECTOR)];
   if (buttons.length === 0) return null;
 
-  const client = createDicePlusClient({ targetOrigin: getTargetOrigin(root.documentElement || root) });
+  const status = getStatusContainer(root);
+  const client = createDicePlusClient({ targetOrigin: getTargetOrigin(root) });
   for (const button of buttons) setState(button, "preparing", "Verificando Dice+...");
+  if (status) status.textContent = "Verificando Dice+...";
 
   if (!client.available || !(await client.checkAvailability())) {
     for (const button of buttons) setState(button, "unavailable", "Dice+ indisponível nesta sala.");
+    if (status) status.textContent = "Dice+ indisponível nesta sala.";
     client.destroy();
     return null;
   }
+
+  if (status) status.textContent = "Dice+ disponível.";
 
   for (const button of buttons) {
     setState(button, "ready", "Pronto para rolar.");

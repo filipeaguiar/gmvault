@@ -1,3 +1,13 @@
+.dice-roll-status {
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: 6px;
+  background: var(--card-bg, #fff);
+  color: var(--text-muted, #777);
+  font-size: 0.88em;
+}
+
 .char-roll-row {
   display: flex;
   align-items: center;
@@ -12,18 +22,6 @@
 
 .char-roll-bonus {
   flex: 0 0 auto;
-  min-width: 2.25em;
-  text-align: right;
-  font-weight: 700;
-}
-
-.char-roll-muted {
-  color: var(--text-muted, #777);
-  font-size: 0.8em;
-}
-
-.dice-roll-button {
-  flex: 0 0 auto;
   min-width: 2.7rem;
   padding: 0.2rem 0.55rem;
   border: 1px solid var(--primary-color, #2980b9);
@@ -37,6 +35,15 @@
   line-height: 1.1;
   text-align: center;
   font-variant-numeric: tabular-nums;
+}
+
+.char-roll-muted {
+  color: var(--text-muted, #777);
+  font-size: 0.8em;
+}
+
+.dice-roll-button {
+  flex: 0 0 auto;
 }
 
 .dice-roll-button:hover:not(:disabled) {

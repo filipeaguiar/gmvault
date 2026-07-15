@@ -29,7 +29,7 @@ function getDefaultTargetOrigin(windowRef) {
       if (windowRef.document?.referrer) {
         return new URL(windowRef.document.referrer).origin;
       }
-      return windowRef.location.origin;
+      return null;
     } catch {
       return null;
     }
