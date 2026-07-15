@@ -93,32 +93,35 @@ O agente deve ler esse JSON e apresentar as ambiguidades ao usuário em uma tabe
 O usuário poderá responder de forma compacta (ex: `1: João, 2: Siabsungkoh`).
 Após o feedback do usuário, o agente atualiza as atribuições correspondentes nas falas das cenas do JSON intermediário. Se novas grafias incorretas foram confirmadas pelo usuário, registre-as como aliases no `memory.yaml`.
 
-### Fase 6: Mapeamento Consolidado de Eventos (Primeira Etapa)
-Antes de iniciar a redação do texto literário, o agente SHALL fazer uma leitura completa de todas as cenas e dados do JSON intermediário para mapear a linha do tempo (timeline) completa da sessão:
-1. Identifique e organize cronologicamente o máximo de eventos, interações e acontecimentos possíveis de toda a sessão de jogo.
-2. Mapeie exatamente quais personagens e NPCs estavam envolvidos ativamente ou presentes em cada um desses eventos.
-3. Rastreie a continuidade espacial (locais visitados) e o estado físico ou mecânico dos personagens (sucessos/falhas em testes, ferimentos, itens obtidos).
-4. Mantenha essa estrutura de eventos consolidada em sua memória de contexto para guiar a escrita unificada.
+### Fase 6: Identificação e Lista Consolidada de Cenas (Primeira Etapa)
+O agente deve ler o arquivo de transcrição bruta `.txt` na íntegra e estruturar a lista cronológica completa de cenas da sessão:
+1. Mapeie cada cena identificando os pontos de transição (mudanças de localidade, início de um combate, novos desafios ou transições narrativas).
+2. Para cada cena identificada, monte uma lista detalhada contendo:
+   - **ID da Cena**: Numeração sequencial.
+   - **Localidade**: Onde a cena ocorre no mundo do RPG.
+   - **Participantes**: Quais personagens de jogadores e NPCs estão presentes e ativos na cena.
+   - **Acontecimentos**: Os principais eventos, falas importantes e testes de dados ocorridos.
 
-### Fase 7: Redação Sincronizada em Prosa Literária (Segunda Etapa)
-Apenas após concluir o mapeamento consolidado de todos os eventos da sessão, o agente deve proceder para a escrita do capítulo em prosa literária contínua, observando as seguintes regras:
-- **Continuidade Unificada:** Escreva o texto de forma a fluir organicamente de um evento para o próximo, garantindo que o encadeamento espacial e temporal dos fatos faça sentido literário completo (estilo romance).
-- **Estilo Narrativo:** Use o tom configurado (ex: terceira pessoa, tempo passado, prosa de fantasia envolvente formatada como capítulo de livro contínuo).
-- **Sem Mecânicas ou Seções:** Remova termos como "rolou dado", "teste de Percepção", etc., traduzindo-os em ações. O texto deve fluir de forma inteiramente contínua, sem subtítulos ou seções para resumos, listas de personagens/NPCs ou observações.
-- **Preservação de Fatos:** Não altere decisões tomadas, não transforme falhas de dados em acertos, não invente ações que não constam no arquivo.
-- **Diálogos:** Preserve os diálogos originais ditos pelos jogadores como personagens em discurso direto (usando travessões ou aspas) sempre que possível. Unifique falas fracionadas ou limpe pequenas gagueiras para fluidez, mas mantenha a interpretação original e falas dos personagens.
+### Fase 7: Revisão Cruzada e Cobertura Completa (Segunda Etapa)
+Antes de iniciar qualquer redação literária, o agente deve reler a transcrição bruta `.txt` original e compará-la detalhadamente com a lista de cenas gerada na Fase 6:
+- Verifique se alguma cena intermediária, evento, conversa ou rolagem de dados relevante foi ignorada ou resumida em excesso na primeira passagem.
+- Caso identifique lacunas, atualize a lista de cenas inserindo novos trechos de eventos.
+- A fase de redação só deve começar quando o agente confirmar 100% de cobertura factual de toda a extensão da transcrição.
 
-### Fase 8: Gravação do Markdown Consolidado (Capítulo do Journal)
-O arquivo Markdown final deve ser gerado usando o template de saída configurado em `.agent/skills/rpg-session-narrator/templates/output_template.md`.
-O arquivo final deve ser salvo no diretório `journal/` da campanha (`content/campaigns/<campaign-slug>/journal/`).
-O nome do arquivo deve seguir o padrão de numeração sequencial de capítulos. Para definir o nome:
-1. Examine a pasta `journal/` para ver quais arquivos numerados já existem (ex: `001-chegada.md`, `002-primeira-missao.md`).
-2. Identifique o maior índice de capítulo existente (ex: se o maior é 002, o próximo será 003).
-3. Salve o novo capítulo com o nome formatado como `NNN-slug-da-sessao.md` (ex: `003-o-mercado-noturno.md`).
-4. Defina no frontmatter o campo `params.kind: "journal_entry"` (não utilize a chave `kind` no nível superior, pois ela foi removida nas versões modernas do Hugo), com `draft: false`, `visibility: "players"` e `status: "ready"`.
-**IMPORTANTE:** Nunca sobrescreva silenciosamente um arquivo existente. Se ele existir, pergunte se deve substituir ou criar uma nova versão (ex: `*-v2.md`).
+### Fase 8: Processamento Incremental e Redação de Prosa por Cena (Terceira Etapa)
+Apenas após validar a cobertura da lista de cenas, o agente inicia a redação do capítulo. A escrita deve ser realizada **cena por cena, separadamente e em ordem sequencial**:
+1. Processe cada cena de forma isolada, redigindo sua prosa com alta densidade literária, sem pressa e sem sintetizar excessivamente as informações.
+2. Mantenha os diálogos significativos em discurso direto (travessões ou aspas), eliminando apenas gagueiras ou ruídos fora de personagem.
+3. Rastreie a continuidade espacial e o estado dos personagens entre a cena anterior e a atual.
+4. Repita esse processo de redação dedicada para cada cena individualmente, acumulando a prosa até que todas as cenas da lista tenham sido completamente processadas.
 
-### Fase 9: Relatório de Processamento
+### Fase 9: Gravação e Polimento do Markdown Consolidado (Quarta Etapa)
+Una a prosa de todas as cenas processadas em um único texto contínuo e aplique o template em `.agent/skills/rpg-session-narrator/templates/output_template.md`.
+1. Faça uma revisão final na prosa consolidada para suavizar as quebras de parágrafos entre cenas, assegurando que o texto flua como um capítulo de livro contínuo e unificado (sem divisões de títulos ou listas).
+2. Salve o arquivo na pasta `journal/` da campanha (`content/campaigns/<campaign-slug>/journal/`), respeitando o maior número de capítulo sequencial existente (`NNN-slug-da-sessao.md`).
+3. Configure no frontmatter apenas a chave `params.kind: "journal_entry"` (não insira a chave `kind` de nível superior), com `draft: false`, `visibility: "players"` e `status: "ready"`.
+
+### Fase 10: Relatório de Processamento
 Apresente um relatório final da execução contendo:
 - Nome do arquivo gerado e tamanho da prosa.
 - Quantidade de cenas estruturadas.

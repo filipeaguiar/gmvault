@@ -68,18 +68,37 @@ Einvor, cuja boca ainda parecia pedir por algo forte após a caminhada, aproximo
 O lojista da barraca abriu os braços com um sorriso desafiador, apontando para as opções.
 — Para escolher, você rola o dado e come o que o destino mandar. Se aguentar a queimação, passamos para a próxima. Se não, o iogurte está bem ali para aliviar. E então?
 
-Einvor escolheu uma pimenta grande e vermelha, engolindo-a de uma vez. Na primeira mordida, a sensação foi devastadora. O bárbaro sentiu como se estivesse diante da própria morte; seus olhos lacrimejaram imediatamente e um calor insuportável tomou conta de seu peito, deixando sua boca tão inchada que ele mal conseguia falar claramente. 
-— Não gosto de pimenta — balbuciou Einvor com dificuldade, enquanto tentava recuperar o fôlego.
+Einvor escolheu uma pimenta grande e vermelha, engolindo-a de uma vez. Na primeira mordida, a sensação foi devastadora. O bárbaro sentiu como se estivesse diante da própria morte; seus olhos lacrimejaram imediatamente e um calor insuportável tomou conta de seu peito, deixando sua boca tão inchada que ele mal conseguia falar claramente.
+— Não gosto de pimenta — balbuciou Einvor com extrema dificuldade, enquanto tentava abanar a boca.
 
-Pinky também encarou o desafio, rolando o dado para comer as pimentas de número seis e três. Sentindo como se o próprio mundo estivesse derretendo a cada mordida, o ladino manteve a postura firme e venceu o desafio, garantindo broches de desconto para o grupo. Enquanto isso, Violeta afastava-se para procurar uma barraca com apresentações de dança.
+Pinky também encarou o desafio, comendo as pimentas de número seis e três. Sentindo como se o próprio mundo estivesse derretendo a cada mordida, o ladino manteve a postura firme e venceu o desafio sob aplausos, garantindo broches de desconto para o grupo. Enquanto isso, Violeta afastava-se para procurar uma barraca com apresentações de dança.
 
-O clima festivo, porém, durou pouco. Um grito de desespero ecoou e as chamas começaram a subir pela lona da barraca de Kusa Xungoon. Ainda com a boca inchada e as palavras enroladas, Einvor correu em direção ao fogo, abafando as labaredas com um tecido grosso antes que o incêndio ganhasse proporções desastrosas.
+O clima festivo, porém, durou pouco. Um grito de desespero ecoou e as chamas começaram a subir pela lona da barraca de Kusa Xungoon. Ainda com a boca inchada e as palavras enroladas, Einvor correu em direção ao fogo, abafando as labaredas com um tecido grosso antes que o incêndio ganhasse proporções desastrosas. Kusa xingou e apontou imediatamente para a rival, alegando que fora outra sabotagem planejada.
 
-Com o fogo apagado, a investigação começou. Nyx'Clair examinanou a base da estrutura carbonizada, notando que o incêndio surgira espontaneamente nos suportes de madeira inferiores, sem vestígios de óleo ou lamparinas caídas. 
+Com o fogo apagado, a investigação começou. Nyx'Clair examinou a base da estrutura carbonizada, notando que o incêndio surgira espontaneamente nos suportes de madeira inferiores, sem vestígios de óleo ou lamparinas caídas. 
 
 Madame Kulp, a tecelã de seda vizinha, observava tudo com preocupação.
 — Há algo muito estranho acontecendo por aqui — murmurou a anciã. — Toda vez que minhas meninas passam perto das barracas delas, ficam extremamente nervosas.
 
 Enquanto buscava pistas no solo, Einvor pisou em uma gosma estranha. Ao puxar o pé, revelou uma substância viscosa, cintilante e iridescente que mudava de cor conforme a luz, brilhando como asas de borboleta. A gosma parecia ser a chave para desvendar o que estava incomodando e deixando as lagartas gigantes de Madame Kulp — criaturas do tamanho de pequenos gatos que ela chamava carinhosamente de filhas — tão ariscas e inquietas.
 
-Decididos a desvendar o mistério, o grupo dividiu-se: Nyx'Clair usou seu carisma para extrair boatos dos frequentadores do mercado; Durin manteve vigília sobre a banca dos Irmãos Apimentados, vigiando os movimentos de Kasem e Vi Aroon; e Detios CantoBaixo esgueirou-se silenciosamente pelas sombras, buscando invadir os fundos da loja dos irmãos para descobrir a verdade por trás das sabotagens.
+Decididos a desvendar o mistério, o grupo dividiu-se: Nyx'Clair usou seu carisma para extrair boatos dos frequentadores do mercado; Durin manteve vigília sobre a banca dos Irmãos Apimentados, vigiando os movimentos de Kasem e Vi Aroon; e Detios CantoBaixo esgueirou-se silenciosamente pelas sombras, buscando invadir os fundos da loja dos irmãos para descobrir a verdade.
+
+A investigação nos bastidores do mercado avançou rapidamente quando os heróis uniram as pistas. A gosma iridescente e as atitudes suspeitas dos lojistas da banca vizinha indicavam que o perigo vinha de perto. Decididas a confrontar o verdadeiro responsável pelas sabotagens, Kusa e Lamai uniram-se temporariamente aos aventureiros e foram até a barraca dos Irmãos Apimentados tirar satisfação.
+
+Ao entrarem nos fundos da barraca, encontraram os gêmeos com expressões sérias. O jovem Vi Aroon olhou firmemente para seu irmão e disparou:
+— Conte para elas, Casinho. Você precisa contar a verdade sobre o que fez.
+
+Encurralado pelas evidências e pelas acusações, Kasem Aroon desabou e confessou tudo. Ele revelou que, em sua última viagem para comprar suprimentos e pimentas, encontrou uma caravana que vendia pequenas criaturas iridescentes e mágicas, capazes de ficar invisíveis. Kasem comprou os pequenos bichos de seda invisíveis e passou a usá-los à noite para assustar as lagartas de Madame Kulp, roubar ingredientes e sabotar as barracas vizinhas. Seu único objetivo era desmoralizar Lamai e Kusa perante a comunidade para fazer a loja dos Irmãos Apimentados se destacar no mercado.
+
+Ao ouvirem a confissão, Lamai e Kusa entreolharam-se em silêncio, percebendo que a rivalidade histórica que as afastava era alimentada por mal-entendidos e mentiras. 
+— Infelizmente, esse caso terá que ser levado para o Conselho do Mercado — determinou Vi Aroon, envergonhado pelas ações do irmão.
+
+O Conselho do Mercado reuniria os líderes locais e a política das barracas para ditar a punição de Kasem, o que provavelmente resultaria no banimento de suas atividades na feira. Em gratidão pela resolução do mistério, Kusa e Lamai ofereceram banquetes e refeições gratuitas vitalícias aos heróis nas suas barracas de macarrão e frutos do mar, e até comentaram sobre criar juntas um novo prato em comemoração às pazes de suas famílias.
+
+Com o caso encerrado, as duas comerciantes ofereceram uma residência próxima à feira para o grupo morar, uma vez que a banca dos Irmãos Apimentados desocuparia um dos espaços comerciais da área. Detios CantoBaixo, porém, balançou a cabeça de forma negativa.
+— O mercado é movimentado, mas sinto que é tranquilo demais para nós. Prefiro a Cidadela Radiante, onde há um pouco mais de mistério e perigo.
+
+O grupo concordou em partir. No dia seguinte, eles arrumaram a carruagem de viagem. Pinky assumiu o posto de cocheiro guiando o cavalo, enquanto Einvor, gigantesco, caminhava com passos firmes ao lado da carruagem. Conversando e rindo pela estrada, eles viram surgir no horizonte uma visão espetacular: uma gema preciosa gigantesca, do tamanho de uma mansão, flutuando majestosamente contra o céu azul.
+
+Aproximando-se do círculo de embarque sob a esfera reluzente, uma porta na gema abriu-se, revelando uma abertura acolhedora. Os aventureiros entraram e acomodaram-se em seu interior luxuoso. Segundos depois, as portas fecharam-se e a grande gema começou a pulsar em cores vibrantes, elevando-se suavemente rumo aos céus enquanto iniciava uma transição interplanar mágica em direção à lendária Cidadela Radiante, encerrando a primeira de suas grandes aventuras.
