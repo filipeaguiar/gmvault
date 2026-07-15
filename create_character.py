@@ -396,6 +396,33 @@ def main():
     if selected_skills:
         print(f"  Perícias escolhidas: {', '.join(s.title() for s in selected_skills)}")
 
+    # 6.2.5 Perícias extras (Background, etc.)
+    extra_skills = set()
+    extra_count = ask_int("Quantas perícias adicionais você ganha por outras fontes (Background, Talentos, etc.)?", 2)
+    if extra_count > 0:
+        current_proficient = auto_skills.union(selected_skills)
+        remaining_skills = sorted([s for s in SKILL_MAP.keys() if s not in current_proficient])
+        actual_extra_count = min(extra_count, len(remaining_skills))
+        
+        if actual_extra_count > 0:
+            print(f"\n  Escolha mais {actual_extra_count} perícias adicionais da lista geral:")
+            for i, sk in enumerate(remaining_skills, 1):
+                print(f"    {i}. {sk.replace('-', ' ').title()}")
+                
+            while len(extra_skills) < actual_extra_count:
+                prompt_msg = f"Escolha até {actual_extra_count} perícias (ex: 1,2)"
+                raw_sel = ask(prompt_msg, "1")
+                try:
+                    indices = [int(x.strip()) for x in raw_sel.split(",") if x.strip()]
+                    valid_indices = [idx for idx in indices if 1 <= idx <= len(remaining_skills)]
+                    for idx in valid_indices:
+                        extra_skills.add(remaining_skills[idx - 1])
+                        if len(extra_skills) >= actual_extra_count:
+                            break
+                except ValueError:
+                    print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
+            print(f"  Perícias extras escolhidas: {', '.join(s.title() for s in extra_skills)}")
+
     # 6.3 Especialização (Expertise)
     expertise_count = 0
     if selected_class_name.lower() == "rogue":
@@ -407,7 +434,7 @@ def main():
             expertise_count = 2
 
     expertises_selected = set()
-    all_proficient = auto_skills.union(selected_skills)
+    all_proficient = auto_skills.union(selected_skills).union(extra_skills)
     
     actual_exp_count = min(expertise_count, len(all_proficient))
     
