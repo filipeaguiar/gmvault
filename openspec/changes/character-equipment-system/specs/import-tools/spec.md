@@ -1,12 +1,19 @@
 ## ADDED Requirements
 
-### Requirement: Character importer structures advanced equipment metadata
-O script de importação de personagem `import_dndbeyond.py` SHALL extrair e mapear propriedades avançadas de equipamentos (como alcance, tipo de dano, propriedades de armas/armaduras, e modificadores mágicos de atributos/CA) do inventário obtido da API do D&D Beyond e gravá-los de forma estruturada sob `char_info.equipment` no frontmatter do personagem.
+### Requirement: Character importer structures advanced metadata in compendium item pages
+O script de importação de personagem `import_dndbeyond.py` SHALL gravar propriedades detalhadas de itens (como alcance, tipo de dano, propriedades de armas/armaduras, e modificadores mágicos de atributos/CA) sob `item_info` no frontmatter das respectivas páginas de compêndio criadas ou sincronizadas.
 
-#### Scenario: Weapons are imported with advanced metadata
-- **WHEN** `import_dndbeyond.py` processa armas do inventário de um personagem
-- **THEN** ele SHALL extrair e preencher propriedades como `range` (ex: 20/60 para arremesso), `damage_type` (ex: perfurante), `properties` (ex: finesse, arremesso) e `category` (ex: simples, marcial).
+#### Scenario: Weapons are created in compendium with details
+- **WHEN** o importador cria ou atualiza um item de arma no compêndio
+- **THEN** ele SHALL incluir sob `item_info` campos para `type: "Weapon"`, `damage` (ex: 1d6), `damage_type` (ex: piercing), `properties` (ex: finesse, light), e `range` (ex: 20/60).
 
-#### Scenario: Equipped items with magic modifiers are imported
-- **WHEN** `import_dndbeyond.py` processa itens de inventário equipados que possuem modificadores mágicos ativos de atributos ou CA
-- **THEN** ele SHALL extrair esses modificadores da definição do item (ex: definir força para 21, adicionar +1 em destreza, ou adicionar +1 na CA) e mapeá-los em um objeto estruturado `modifiers` na entrada do equipamento.
+#### Scenario: Magic items are created in compendium with modifiers
+- **WHEN** o importador cria ou atualiza um item mágico no compêndio que concede atributos fixos, bônus ou CA
+- **THEN** ele SHALL incluir sob `item_info.modifiers` as estruturas `stat_override`, `stat_bonus`, `ac_bonus` ou `save_bonus`.
+
+### Requirement: Character importer references compendium items in character frontmatter
+O importador SHALL salvar a lista de equipamentos sob `char_info.equipment` no frontmatter do personagem contendo apenas referências para o compêndio e dados operacionais básicos.
+
+#### Scenario: Inventory items are mapped to character equipment list
+- **WHEN** um personagem é importado com itens no inventário
+- **THEN** a lista de equipamentos gerada no frontmatter do personagem SHALL listar cada item contendo apenas `name`, `ref` (apontando para a página do compêndio correspondente), `quantity` e `equipped` (indicando se está ativo/vestido).

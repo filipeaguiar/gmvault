@@ -1,23 +1,27 @@
 ## ADDED Requirements
 
-### Requirement: Character sheet dynamically calculates attributes and AC from equipped items
-The character sheet template SHALL calculate attributes (Strength, Dexterity, etc.) and Armor Class (AC) by dynamically applying modifiers and stat overrides from all currently equipped items in `char_info.equipment`.
+### Requirement: Character sheet dynamically calculates attributes and AC from resolved compendium items
+The character sheet template SHALL calculate attributes (Strength, Dexterity, etc.) and Armor Class (AC) by dynamically resolving each equipment item in `char_info.equipment` to its compendium page via `ref`, and applying its modifiers and properties.
 
-#### Scenario: Equipped item overrides an attribute score
-- **WHEN** the character has an equipped item with `modifiers.stat_override` (e.g. strength: 21)
-- **THEN** the character's calculated Strength score SHALL be set to the overridden value (e.g. 21) if it is higher than their base score, and all derived bonuses, saving throws, and skill checks SHALL update dynamically.
+#### Scenario: Equipped magic item in compendium overrides an attribute score
+- **WHEN** the character has an equipped item in `char_info.equipment` referencing a compendium page with `item_info.modifiers.stat_override` (e.g. strength: 21)
+- **THEN** the character's calculated Strength score SHALL be set to the overridden value (e.g. 21) if it is higher than their base score, and all derived modifiers, saving throws, and skill checks SHALL update dynamically.
 
-#### Scenario: Equipped item modifies Armor Class
-- **WHEN** o personagem possui itens equipados contendo `modifiers.ac_bonus` (como um escudo com +2 ou anel de proteção com +1)
-- **THEN** a Classe de Armadura (CA) calculada da personagem SHALL somar esses bônus ativos à base da armadura e modificador de Destreza.
+#### Scenario: Equipped shield/armor in compendium modifies Armor Class
+- **WHEN** the character has an equipped item referencing a compendium page with armor properties (e.g. `item_info.type: "Shield"` and `item_info.armor_class: 2`, or `item_info.type: "Light Armor"` and `item_info.armor_class: 11`)
+- **THEN** the calculated Armor Class (AC) SHALL dynamically sum these values, applying Dexterity limits correctly (medium armor capped at +2, heavy armor ignoring Dex mod, shield added as bonus).
 
-### Requirement: Equipment tab renders advanced item properties and active status
-A aba de Equipamentos da ficha de personagem SHALL exibir propriedades detalhadas para armas (alcance, tipo de dano, propriedades como finesse/versátil) e armaduras (categoria de armadura) e diferenciar visualmente itens equipados (ativos) dos não equipados (inativos).
+#### Scenario: Equipped magic item in compendium adds save/AC bonuses
+- **WHEN** the character has an equipped item referencing a compendium page with `item_info.modifiers.ac_bonus` or `item_info.modifiers.save_bonus`
+- **THEN** these active bonuses SHALL be dynamically added to the calculated AC and saving throws.
 
-#### Scenario: Weapon properties and range are displayed in UI
-- **WHEN** uma arma é exibida na aba de Equipamentos
-- **THEN** o layout SHALL renderizar seu alcance, tipo de dano e propriedades textuais de forma organizada sob ou ao lado do nome do item.
+### Requirement: Equipment tab resolves detailed properties and active status from compendium
+The Equipment tab UI SHALL resolve the detailed properties of each item (weapon properties, range, damage type, armor category) from its compendium page via `ref` and render them, showing active visual cues for equipped items.
 
-#### Scenario: Visual cues distinguish equipped items
-- **WHEN** a lista de equipamentos é desenhada
-- **THEN** itens equipados SHALL possuir indicador visual ativo de equipagem (como um ícone de checkbox marcado ou opacidade cheia), enquanto itens não equipados devem ser exibidos com opacidade reduzida ou indicação textual explícita de inatividade.
+#### Scenario: Weapon details are resolved from the compendium
+- **WHEN** a weapon with a valid `ref` is displayed in the Equipment tab
+- **THEN** the template SHALL fetch and render its properties (e.g. finesse, light), range, and damage type from the compendium page.
+
+#### Scenario: Item has no compendium ref
+- **WHEN** an item in `char_info.equipment` lacks a `ref` or is unresolved
+- **THEN** the layout SHALL render its inline name and base fields as fallback without causing build-time errors.
