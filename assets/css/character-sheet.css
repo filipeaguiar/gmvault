@@ -226,6 +226,18 @@ html.vtt-iframe .char-tab-content {
   font-size: 2em;
   font-weight: bold;
   margin: 10px 0;
+  transition: all 0.25s ease;
+}
+
+.attr-mod.roll-ready {
+  color: var(--primary-color, #7b2cbf);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+
+.attr-mod.roll-ready:hover {
+  background-color: rgba(123, 44, 191, 0.08);
 }
 
 .attr-compact-label {
@@ -734,12 +746,14 @@ html.vtt-iframe .char-tab-content {
 
   .attr-mod {
     position: absolute !important;
-    bottom: -10px !important;
+    bottom: -12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    font-size: 0.82em !important;
+    font-size: 0.9em !important;
     font-weight: bold !important;
-    padding: 1px 6px !important;
+    padding: 2px 8px !important;
+    min-width: 32px !important;
+    text-align: center !important;
     background: var(--bg-color, #ffffff) !important;
     border: 1px solid var(--border-color, #ccc) !important;
     border-radius: 4px !important;
@@ -747,7 +761,16 @@ html.vtt-iframe .char-tab-content {
     margin: 0 !important;
     line-height: normal !important;
     z-index: 2 !important;
+    transition: all 0.2s ease !important;
   }
+
+  .attr-mod.roll-ready:hover {
+    background-color: var(--primary-color, #7b2cbf) !important;
+    color: #ffffff !important;
+    border-color: var(--primary-color, #7b2cbf) !important;
+    box-shadow: 0 2px 5px rgba(123, 44, 191, 0.3) !important;
+  }
+
 
   /* Compendium fallbacks and cards spacing */
   .compendium-fallback {

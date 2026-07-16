@@ -73,7 +73,7 @@
         {{ $short := index $shortNames $key }}
         <div class="attr-box">
           <div class="attr-name">{{ $name }}</div>
-          <div class="attr-mod">{{ if gt ($mod | int) 0 }}+{{ end }}{{ $mod }}</div>
+          <div class="attr-mod" data-roll-notation="1d20{{ if ge ($mod | int) 0 }}+{{ end }}{{ $mod }}" data-roll-label="Teste de {{ $name }}">{{ if gt ($mod | int) 0 }}+{{ end }}{{ $mod }}</div>
           <div class="attr-compact-label">
             <span class="attr-name-short">{{ $short }}</span>
             <span class="attr-score">{{ $score }}</span>
