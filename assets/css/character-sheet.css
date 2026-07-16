@@ -296,6 +296,14 @@ html.vtt-iframe .char-tab-content {
   border-bottom: 1px dashed var(--border-color);
 }
 
+.skill-roll-value {
+  display: inline-block;
+  width: 32px;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
 .skill-prof-icon {
   width: 15px;
   height: 15px;
@@ -761,32 +769,60 @@ html.vtt-iframe .char-tab-content {
     color: var(--text-color) !important;
   }
 
+  /* All rollable elements become orange rectangle pills on compact view */
+  [data-roll-notation] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #e67e22 !important;
+    color: #ffffff !important;
+    border: 1px solid #d35400 !important;
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-weight: bold !important;
+    font-size: 0.9em !important;
+    line-height: normal !important;
+    white-space: nowrap !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    width: auto !important;
+    height: auto !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  [data-roll-notation].roll-ready:hover {
+    background-color: #d35400 !important;
+    color: #ffffff !important;
+    border-color: #a04000 !important;
+    box-shadow: 0 2px 6px rgba(211, 84, 0, 0.4) !important;
+  }
+
+  /* Specific overrides for compact modifier rectangle */
   .attr-mod {
     position: absolute !important;
     bottom: -12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     font-size: 1.0em !important;
-    font-weight: bold !important;
-    padding: 2px 8px !important;
     min-width: 36px !important;
-    text-align: center !important;
-    background: #e67e22 !important;
-    color: #ffffff !important;
-    border: 1px solid #d35400 !important;
-    border-radius: 4px !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
     margin: 0 !important;
-    line-height: normal !important;
     z-index: 2 !important;
-    transition: all 0.2s ease !important;
   }
 
-  .attr-mod.roll-ready:hover {
-    background-color: #d35400 !important;
-    color: #ffffff !important;
-    border-color: #a04000 !important;
-    box-shadow: 0 2px 6px rgba(211, 84, 0, 0.4) !important;
+  /* Specific overrides for compact skill roll pill */
+  .skill-roll-value {
+    min-width: 32px !important;
+    margin-right: 8px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Specific overrides for compact saving throw roll pill */
+  .save-roll-value {
+    font-size: 0.95em !important;
+    min-width: 32px !important;
+    margin: 0 !important;
   }
 
 
