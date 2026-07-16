@@ -107,13 +107,20 @@ async function runDiagnostics(root = document) {
   console.log(diagnostics);
   console.groupEnd();
 
-  if (globalThis.GMVaultDice?.checkAvailabilityDetailed) {
+  const bridge = globalThis.GMVaultDice;
+  if (bridge?.createDicePlusClient) {
+    const client = bridge.createDicePlusClient({ targetOrigin: getTargetOrigin(root) || "*" });
+    diagnostics.bridgeResolvedTargetOrigin = client.resolvedTargetOrigin;
     try {
-      diagnostics.availability = await globalThis.GMVaultDice.checkAvailabilityDetailed();
+      diagnostics.availability = typeof client.checkAvailabilityDetailed === "function"
+        ? await client.checkAvailabilityDetailed()
+        : { ready: await client.checkAvailability(), reason: "legacy-check" };
       console.info(LOG_PREFIX, "Disponibilidade detalhada", diagnostics.availability);
     } catch (error) {
       diagnostics.availabilityError = error instanceof Error ? error.message : String(error);
       console.error(LOG_PREFIX, "Erro no diagnóstico de disponibilidade", error);
+    } finally {
+      client.destroy();
     }
   }
 
