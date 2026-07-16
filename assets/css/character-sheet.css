@@ -228,7 +228,7 @@ html.vtt-iframe .char-tab-content {
   margin: 10px 0;
 }
 
-.attr-score-wrapper {
+.attr-compact-label {
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -686,25 +686,21 @@ html.vtt-iframe .char-tab-content {
   /* Attributes in 3 Columns (3x2 Grid) */
   .attr-grid {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px !important;
+    gap: 15px 8px !important;
   }
   
   .attr-box {
-    padding: 8px 4px !important;
+    padding: 10px 4px 18px 4px !important;
     border-radius: 6px !important;
-    margin-bottom: 8px !important;
+    position: relative !important;
+    margin-bottom: 5px !important;
   }
 
   .attr-name {
     display: none !important;
   }
 
-  .attr-mod {
-    font-size: 1.4em !important;
-    margin: 2px 0 !important;
-  }
-
-  .attr-score-wrapper {
+  .attr-compact-label {
     position: static !important;
     transform: none !important;
     display: flex !important;
@@ -712,17 +708,19 @@ html.vtt-iframe .char-tab-content {
     justify-content: center !important;
     gap: 4px !important;
     margin-top: 4px !important;
+    margin-bottom: 4px !important;
   }
 
   .attr-name-short {
     display: inline !important;
-    font-size: 0.8em !important;
+    font-size: 0.9em !important;
     font-weight: bold !important;
-    color: var(--text-muted, #777) !important;
+    color: var(--text-color-muted, #888) !important;
+    opacity: 0.8;
   }
 
   .attr-score {
-    font-size: 1.15em !important;
+    font-size: 1.35em !important;
     font-weight: bold !important;
     border: none !important;
     border-radius: 0 !important;
@@ -731,6 +729,24 @@ html.vtt-iframe .char-tab-content {
     line-height: normal !important;
     background: transparent !important;
     position: static !important;
+    color: var(--text-color) !important;
+  }
+
+  .attr-mod {
+    position: absolute !important;
+    bottom: -10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 0.82em !important;
+    font-weight: bold !important;
+    padding: 1px 6px !important;
+    background: var(--bg-color, #ffffff) !important;
+    border: 1px solid var(--border-color, #ccc) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    margin: 0 !important;
+    line-height: normal !important;
+    z-index: 2 !important;
   }
 
   /* Compendium fallbacks and cards spacing */
