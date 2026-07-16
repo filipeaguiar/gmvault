@@ -21,6 +21,7 @@ from dnd_utils import (
     publish_compendium_page,
     ensure_compendium_class_overview,
     STANDARD_ACTION_REFS,
+    parse_entries,
 )
 
 # ──────────────────────────────────────────────
@@ -328,6 +329,138 @@ def select_feats_for_level(level):
     return ask_multiple_feat_choices("Selecione um ou mais talentos:", options)
 
 
+def deduplicate_features(features_list, get_source_priority_fn):
+    grouped = {}
+    for f in features_list:
+        name = f.get("name")
+        if not name:
+            continue
+        key = name.lower()
+        if key not in grouped:
+            grouped[key] = []
+        grouped[key].append(f)
+    
+    deduped = []
+    for key, group in grouped.items():
+        group.sort(key=get_source_priority_fn)
+        deduped.append(group[0])
+    return deduped
+
+
+def extract_roll_formula(feature_name, description, level, mods):
+    name_lower = feature_name.lower()
+    
+    # Special overrides for well-known features
+    if name_lower == "sneak attack" or name_lower == "ataque furtivo":
+        sneak_dice = (level + 1) // 2
+        return f"{sneak_dice}d6"
+    
+    if name_lower == "second wind" or name_lower == "retomar o fôlego":
+        return f"1d10+{level}"
+        
+    if name_lower == "bardic inspiration" or name_lower == "inspiração bárdica":
+        if level >= 15:
+            return "1d12"
+        elif level >= 10:
+            return "1d10"
+        elif level >= 5:
+            return "1d8"
+        else:
+            return "1d6"
+
+    # Regex search for standard dice notation (e.g. 1d6, 1d10+3, 1d8 + STR)
+    matches = re.findall(r'\b(\d+d\d+(?:\s*[+-]\s*(?:\d+|str|dex|con|int|wis|cha))?)\b', description, re.IGNORECASE)
+    if matches:
+        formula = matches[0].lower().replace(" ", "")
+        # Resolve attributes to values
+        for stat, val in mods.items():
+            if stat in formula:
+                sign = "+" if val >= 0 else ""
+                formula = formula.replace(stat, f"{sign}{val}")
+                formula = formula.replace("++", "+").replace("+-", "-").replace("-+", "-").replace("--", "+")
+        return formula
+        
+    return None
+
+
+def prompt_choices_for_feature(feature_name, level):
+    name_lower = feature_name.lower()
+    choices = []
+    
+    if "fighting style" in name_lower or "estilo de luta" in name_lower:
+        options = ["Defense", "Archery", "Dueling", "Great Weapon Fighting", "Two-Weapon Fighting", "Protection", "Interception", "Thrown Weapon Fighting", "Blind Fighting"]
+        choice = ask_choice("Escolha seu Estilo de Luta (Fighting Style):", options)
+        choices.append({
+            "name": f"Fighting Style: {choice}",
+            "description": f"Estilo de Luta escolhido: {choice}."
+        })
+        
+    elif "eldritch invocations" in name_lower or "invocações de bruxo" in name_lower or "invocações místicas" in name_lower:
+        options = ["Agonizing Blast", "Armor of Shadows", "Beast Speech", "Book of Ancient Secrets", "Devil's Sight", "Eldritch Mind", "Eldritch Spear", "Eyes of the Rune Keeper", "Fiendish Vigor", "Gaze of Two Minds", "Mask of Many Faces", "Misty Visions", "Repelling Blast", "Thief of Five Fates"]
+        count = 2 if level < 5 else 3 if level < 7 else 4 if level < 9 else 5
+        print(f"\nSua classe permite escolher {count} Invocações Místicas:")
+        selected = set()
+        while len(selected) < count:
+            c = ask_choice(f"Escolha a {len(selected)+1}ª Invocação:", [opt for opt in options if opt not in selected])
+            selected.add(c)
+        for sel in selected:
+            choices.append({
+                "name": f"Eldritch Invocation: {sel}",
+                "description": f"Invocação mística escolhida: {sel}."
+            })
+            
+    elif "metamagic" in name_lower or "metamagia" in name_lower:
+        options = ["Careful Spell", "Distant Spell", "Empowered Spell", "Extended Spell", "Heightened Spell", "Quickened Spell", "Subtle Spell", "Twinned Spell"]
+        count = 2 if level < 10 else 3 if level < 17 else 4
+        print(f"\nSua classe permite escolher {count} opções de Metamagia:")
+        selected = set()
+        while len(selected) < count:
+            c = ask_choice(f"Escolha a {len(selected)+1}ª Metamagia:", [opt for opt in options if opt not in selected])
+            selected.add(c)
+        for sel in selected:
+            choices.append({
+                "name": f"Metamagic: {sel}",
+                "description": f"Opção de Metamagia escolhida: {sel}."
+            })
+            
+    return choices
+
+
+def create_rule_stub(name, entries):
+    slug = slugify(name)
+    ref = f"/compendium/rules/{slug}/"
+    path = f"content/compendium/rules/{slug}.md"
+    if os.path.exists(path):
+        return ref
+        
+    description = parse_entries(entries)
+    if not description:
+        description = f"Descrição da característica {name}."
+        
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    markdown = f"""---
+title: "{name}"
+params:
+  kind: "rule"
+draft: false
+weight: 10
+summary: "Característica de classe: {name}."
+tags:
+  - compendio
+  - regra
+  - classe
+visibility: "public"
+status: "ready"
+---
+
+{description}
+"""
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(markdown)
+    print(f"  [Compêndio] Criado stub de característica: {path}")
+    return ref
+
+
 def print_header(title):
     print(f"\n{'═' * 50}\n  {title}\n{'═' * 50}")
 
@@ -448,7 +581,16 @@ def main():
     level = ask_int("Nível do personagem", 1)
     if level < 1:
         level = 1
-    subclass = ask("Subclasse (deixe vazio se não houver)", "")
+    subclass = ""
+    subclass_short = ""
+    if "subclass" in class_data:
+        subclass_options = ["Nenhuma"] + sorted(list(set(sc.get("name") for sc in class_data["subclass"] if sc.get("name"))))
+        selected_subclass = ask_choice("Selecione a Subclasse (se houver):", subclass_options)
+        if selected_subclass != "Nenhuma":
+            subclass = selected_subclass
+            matching_scs = [sc for sc in class_data["subclass"] if sc.get("name") == selected_subclass]
+            matching_scs.sort(key=get_source_priority)
+            subclass_short = matching_scs[0].get("shortName", selected_subclass)
 
     # 4.1 Selecionar talentos conforme o nível
     selected_feats = select_feats_for_level(level)
@@ -457,7 +599,9 @@ def main():
         print("  ⚠ Verifique no passo de atributos os possíveis aumentos concedidos pelos talentos escolhidos.")
 
     # Obter dados de vida (Hit Dice)
-    class_entry = class_data.get("class", [{}])[0]
+    classes_list = class_data.get("class", [])
+    classes_list.sort(key=get_source_priority)
+    class_entry = classes_list[0] if classes_list else {}
     hd_info = class_entry.get("hd", {"number": 1, "faces": 8})
     hd_faces = hd_info.get("faces", 8)
     hd_str = f"d{hd_faces}"
@@ -664,6 +808,70 @@ def main():
     if max_hp < level:
         max_hp = level
 
+    # 6.5. Mapear e Extrair Características de Classe e Subclasse
+    feature_actions = []
+    class_features = []
+    if "classFeature" in class_data:
+        for f in class_data["classFeature"]:
+            if f.get("className", "").lower() == selected_class_name.lower():
+                if f.get("level", 1) <= level:
+                    class_features.append(f)
+                    
+    subclass_features = []
+    if subclass_short and "subclassFeature" in class_data:
+        for f in class_data["subclassFeature"]:
+            if f.get("subclassShortName", "").lower() == subclass_short.lower():
+                if f.get("level", 1) <= level:
+                    subclass_features.append(f)
+                    
+    all_features = deduplicate_features(class_features + subclass_features, get_source_priority)
+    
+    for f in all_features:
+        name = f.get("name")
+        if not name:
+            continue
+            
+        entries = f.get("entries", [])
+        desc = parse_entries(entries)
+        
+        choices = prompt_choices_for_feature(name, level)
+        if choices:
+            for choice in choices:
+                ref = create_rule_stub(choice["name"], [choice["description"]])
+                feature_actions.append({
+                    "name": choice["name"],
+                    "ref": ref,
+                    "max_uses": 0,
+                    "reset": "",
+                    "source": "class"
+                })
+        else:
+            try:
+                ref = create_rule_stub(name, entries)
+                roll_formula = extract_roll_formula(name, desc, level, mods)
+                
+                action_item = {
+                    "name": name,
+                    "ref": ref,
+                    "max_uses": 0,
+                    "reset": "",
+                    "source": "class"
+                }
+                if roll_formula:
+                    action_item["roll_formula"] = roll_formula
+                    
+                feature_actions.append(action_item)
+            except Exception as e:
+                print(f"  [AVISO] Erro ao processar '{name}': {e}. Usando fallback simples.")
+                ref = create_rule_stub(name, [f"Característica {name}."])
+                feature_actions.append({
+                    "name": name,
+                    "ref": ref,
+                    "max_uses": 0,
+                    "reset": "",
+                    "source": "class"
+                })
+
     # Velocidade e Sentidos derivados da espécie
     walk_speed = 30
     darkvision_dist = 0
@@ -723,6 +931,11 @@ def main():
     for action_name, action_ref in STANDARD_ACTION_REFS.items():
         compendium_refs.append(action_ref)
         publish_compendium_page(action_ref)
+
+    # Adicionar referências das características de classe/subclasse
+    for act in feature_actions:
+        if act.get("ref"):
+            compendium_refs.append(act["ref"])
 
     # 8. Gerar Arquivo Final
     print_header("GRAVANDO FICHA")
@@ -785,6 +998,7 @@ def main():
             "max_uses": 0,
             "reset": ""
         })
+    actions_data.extend(feature_actions)
 
     classes_data = [{
         "name": selected_class_name,

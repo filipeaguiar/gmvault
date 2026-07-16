@@ -1,16 +1,15 @@
 ---
-title: "Fallen Farmhouse"
+title: Fallen Farmhouse
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Fallen Farmhouse
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
 ---
 
 Localidade **Fallen Farmhouse** importada automaticamente.

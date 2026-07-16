@@ -199,6 +199,11 @@
                 <span style="font-size:0.85em; color:var(--text-muted); margin-left:8px; border-left:1px solid var(--border-color); padding-left:8px;">Recarrega: {{ .reset }}</span>
               </div>
             {{ end }}
+            {{ if .roll_formula }}
+              <div style="margin-bottom: 8px; font-size: 0.9em; color: var(--text-muted);">
+                <strong>Rolagem:</strong> <span data-roll-notation="{{ .roll_formula }}" data-roll-label="{{ .name }}">{{ .roll_formula }}</span>
+              </div>
+            {{ end }}
             {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
           </li>
           {{ end }}

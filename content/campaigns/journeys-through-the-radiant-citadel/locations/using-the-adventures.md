@@ -1,16 +1,15 @@
 ---
-title: "Using the Adventures"
+title: Using the Adventures
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Using the Adventures
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
 ---
 
 Localidade **Using the Adventures** importada automaticamente.
