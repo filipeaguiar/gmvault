@@ -14,7 +14,7 @@
       {{ else }}
         <div class="char-portrait-placeholder" style="width: 80px; height: 80px; border-radius: 50%; border: 2px dashed var(--border-color, #ccc); background: var(--card-bg, #f4f4f4); margin-right: 20px; display: flex; align-items: center; justify-content: center; color: var(--text-color-muted, #888); flex-shrink: 0;"><i class="ra ra-player" style="font-size: 2em;"></i></div>
       {{ end }}
-      <div>
+      <div style="flex: 1; display: flex; flex-direction: column;">
         <h1 style="margin:0;">{{ .Title }}</h1>
         <div class="char-meta">
           {{ with .Params.char_info }}
@@ -23,6 +23,17 @@
             {{ with .size }} | {{ . }}{{ end }}
           {{ end }}
         </div>
+        {{ with .Params.char_info }}
+        <div class="char-header-stats">
+          <span class="header-stat-badge" title="Armadura (AC)"><i class="ra ra-shield"></i> {{ .ac }}</span>
+          <span class="header-stat-badge" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i> {{ .hp_max }}</span>
+          <span class="header-stat-badge" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i> {{ .speed.walk }}m</span>
+          <span class="header-stat-badge" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i> +{{ .proficiency_bonus }}</span>
+          {{ if gt .spell_dc 0.0 }}
+          <span class="header-stat-badge" title="CD Magia"><i class="ra ra-crystal-wand"></i> {{ .spell_dc }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
     </div>
 
@@ -45,27 +56,6 @@
   <!-- TAB 1: Atributos -->
   <div id="tab-stats" class="char-tab-content active">
     {{ with .Params.char_info }}
-
-    <!-- Meta stats row -->
-    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; justify-content: space-between;">
-      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Armadura (AC)">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-shield"></i> {{ .ac }}</div>
-      </div>
-      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Vida Máxima (HP Max)">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-health"></i> {{ .hp_max }}</div>
-      </div>
-      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Deslocamento (Speed)">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-boot-stomp"></i> {{ .speed.walk }}m</div>
-      </div>
-      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Bônus de Proficiência">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-lightning-bolt"></i> +{{ .proficiency_bonus }}</div>
-      </div>
-      {{ if gt .spell_dc 0.0 }}
-      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="CD de Salvamento de Magia">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-crystal-wand"></i> {{ .spell_dc }}</div>
-      </div>
-      {{ end }}
-    </div>
 
     <!-- Attributes Grid (6 boxes) -->
     {{ $attrKeys := slice "str" "dex" "con" "int" "wis" "cha" }}
