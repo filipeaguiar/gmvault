@@ -96,7 +96,7 @@
             <li style="display:flex; align-items:center; padding: 5px; border-bottom: 1px solid rgba(0,0,0,0.05);">
               <span class="skill-prof-icon {{ if $prof }}proficient{{ end }}" style="margin-right:8px;"></span>
               <span style="flex: 1;">{{ $name }}</span>
-              <strong style="font-size: 1.1em;" data-roll-notation="1d20{{ if ge ($val | int) 0 }}+{{ end }}{{ $val }}" data-roll-label="Resistência de {{ $name }}">{{ if gt ($val | int) 0 }}+{{ end }}{{ $val }}</strong>
+              <strong class="save-roll-value" style="font-size: 1.1em;" data-roll-notation="1d20{{ if ge ($val | int) 0 }}+{{ end }}{{ $val }}" data-roll-label="Resistência de {{ $name }}">{{ if gt ($val | int) 0 }}+{{ end }}{{ $val }}</strong>
             </li>
           {{ end }}
         </ul>
