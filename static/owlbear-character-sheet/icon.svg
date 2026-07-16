@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Scroll/character sheet icon -->
+  <rect x="14" y="8" width="36" height="48" rx="3" ry="3" fill="#2b2b3d" stroke="#c9a96e" stroke-width="2.5"/>
+  <!-- Top scroll curl -->
+  <path d="M14 14 Q10 14 10 10 Q10 6 14 6 L50 6 Q54 6 54 10 Q54 14 50 14" fill="#3a3a50" stroke="#c9a96e" stroke-width="2"/>
+  <!-- Bottom scroll curl -->
+  <path d="M14 50 Q10 50 10 54 Q10 58 14 58 L50 58 Q54 58 54 54 Q54 50 50 50" fill="#3a3a50" stroke="#c9a96e" stroke-width="2"/>
+  <!-- Text lines on the sheet -->
+  <line x1="22" y1="22" x2="42" y2="22" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/>
+  <line x1="22" y1="28" x2="38" y2="28" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/>
+  <line x1="22" y1="34" x2="40" y2="34" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/>
+  <line x1="22" y1="40" x2="34" y2="40" stroke="#c9a96e" stroke-width="1.5" opacity="0.7"/>
+  <!-- Small d20 silhouette -->
+  <polygon points="44,36 48,42 40,42" fill="#c9a96e" opacity="0.5"/>
+</svg>

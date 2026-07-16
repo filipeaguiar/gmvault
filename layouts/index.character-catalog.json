@@ -1,0 +1,43 @@
+{{- $characters := slice -}}
+{{- range site.Pages -}}
+  {{- $kind := partial "helpers/kind.html" . -}}
+  {{- if eq $kind "character" -}}
+    {{- $vis := .Params.visibility -}}
+    {{- if or (eq $vis "players") (eq $vis "public") -}}
+      {{- /* Resolve campaign title from the campaign section ancestor */ -}}
+      {{- $campaign := "" -}}
+      {{- $sections := .Ancestors -}}
+      {{- range $sections -}}
+        {{- $sKind := partial "helpers/kind.html" . -}}
+        {{- if eq $sKind "campaign" -}}
+          {{- $campaign = .Title -}}
+        {{- end -}}
+      {{- end -}}
+      {{- /* Resolve optional image: prefer char_info.avatar, fall back to .Params.image */ -}}
+      {{- $image := "" -}}
+      {{- with .Params.char_info -}}
+        {{- with .avatar -}}
+          {{- $image = . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if eq $image "" -}}
+        {{- with .Params.image -}}
+          {{- $image = . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- /* Make relative image paths absolute using baseURL */ -}}
+      {{- if and (ne $image "") (not (strings.HasPrefix $image "http")) -}}
+        {{- $image = printf "%s%s" site.BaseURL $image | strings.TrimLeft "/" -}}
+      {{- end -}}
+      {{- $entry := dict
+        "title" .Title
+        "url" .Permalink
+        "summary" (or .Params.summary "")
+        "campaign" $campaign
+        "image" $image
+      -}}
+      {{- $characters = $characters | append $entry -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- dict "characters" $characters | jsonify (dict "indent" "  ") -}}

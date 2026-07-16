@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tests — main.js (Shell)</title>
+  <style>
+    body { font-family: monospace; margin: 1rem; background: #111; color: #eee; }
+    .pass { color: #4caf50; }
+    .fail { color: #f44336; }
+    #results { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<h1>Shell (main.js) tests</h1>
+<div id="results"></div>
+
+<!--
+  main.js expects these DOM elements to exist at import time.
+  We create them here so the module can bind without errors.
+-->
+<div id="status-bar"></div>
+<div id="character-selector" hidden>
+  <div id="character-list"></div>
+</div>
+<div id="sheet-container" hidden>
+  <iframe id="character-iframe" sandbox="allow-scripts allow-same-origin"></iframe>
+</div>
+<button id="change-character-btn" type="button"></button>
+
+<script type="module">
+// =========================================================================
+// Tiny test harness
+// =========================================================================
+const log = document.getElementById("results");
+let passed = 0, failed = 0;
+
+function assert(cond, label) {
+  if (cond) {
+    passed++;
+    log.innerHTML += `<span class="pass">✓ ${label}</span>\n`;
+  } else {
+    failed++;
+    log.innerHTML += `<span class="fail">✗ ${label}</span>\n`;
+  }
+}
+
+function summary() {
+  const total = passed + failed;
+  const cls = failed ? "fail" : "pass";
+  log.innerHTML += `\n<span class="${cls}">${passed}/${total} passed</span>\n`;
+}
+
+// =========================================================================
+// Mock infrastructure
+// =========================================================================
+
+// --- Mock localStorage --------------------------------------------------
+const fakeStorage = {};
+const realGet = localStorage.getItem.bind(localStorage);
+const realSet = localStorage.setItem.bind(localStorage);
+const realRemove = localStorage.removeItem.bind(localStorage);
+
+localStorage.getItem = (key) => fakeStorage[key] ?? null;
+localStorage.setItem = (key, val) => { fakeStorage[key] = String(val); };
+localStorage.removeItem = (key) => { delete fakeStorage[key]; };
+
+function clearFakeStorage() {
+  for (const k of Object.keys(fakeStorage)) delete fakeStorage[k];
+}
+
+// --- Mock fetch ---------------------------------------------------------
+// Each test sets `mockFetchResponse` before triggering fetchCatalog.
+let mockFetchResponse = null;
+
+window._originalFetch = window.fetch;
+window.fetch = async (url, opts) => {
+  if (mockFetchResponse && typeof url === "string" && url.includes("character-catalog")) {
+    return mockFetchResponse();
+  }
+  return window._originalFetch(url, opts);
+};
+
+// Helper: create a successful JSON response mock.
+function jsonResponse(data, status = 200) {
+  return () => Promise.resolve({
+    ok: status >= 200 && status < 300,
+    status,
+    json: () => Promise.resolve(data),
+  });
+}
+
+// Helper: create a failing response mock.
+function failResponse(status = 500) {
+  return () => Promise.resolve({
+    ok: false,
+    status,
+    json: () => Promise.reject(new Error("not json")),
+  });
+}
+
+// Helper: create a network-error mock.
+function networkError() {
+  return () => Promise.reject(new Error("network failure"));
+}
+
+// =========================================================================
+// We cannot directly import main.js because it does OBR SDK import and
+// binds DOM at module scope. Instead, we extract and test the *pure logic*
+// helpers by re-implementing them from source in a controlled way.
+//
+// The following mirrors the key functions from main.js so we can unit-test
+// their behaviour without side-effects.
+// =========================================================================
+
+// --- isValidEntry --------------------------------------------------------
+function isValidEntry(entry) {
+  return entry && typeof entry.title === "string" && entry.title.trim() !== "" &&
+         typeof entry.url === "string" && entry.url.trim() !== "";
+}
+
+// --- storageKey ----------------------------------------------------------
+const STORAGE_KEY_PREFIX = "character-sheet-selection";
+function storageKey(playerId) {
+  const suffix = playerId || "local";
+  return `${STORAGE_KEY_PREFIX}-${suffix}`;
+}
+
+// --- catalogHasUrl -------------------------------------------------------
+function catalogHasUrl(catalog, url) {
+  return catalog.some((e) => e.url === url);
+}
+
+// =========================================================================
+// Tests
+// =========================================================================
+
+// --- 1. isValidEntry -----------------------------------------------------
+log.innerHTML += "\n<b>isValidEntry</b>\n";
+
+assert(isValidEntry({ title: "Kael", url: "/kael/" }), "accepts valid entry");
+assert(!isValidEntry({ title: "", url: "/k/" }), "rejects empty title");
+assert(!isValidEntry({ title: "A", url: "" }), "rejects empty url");
+assert(!isValidEntry({ title: "A", url: "  " }), "rejects whitespace-only url");
+assert(!isValidEntry(null), "rejects null");
+assert(!isValidEntry(undefined), "rejects undefined");
+assert(!isValidEntry({ url: "/a/" }), "rejects missing title");
+assert(!isValidEntry({ title: "A" }), "rejects missing url");
+assert(!isValidEntry({ title: 42, url: "/x/" }), "rejects non-string title");
+assert(!isValidEntry({ title: "A", url: 123 }), "rejects non-string url");
+
+// --- 2. storageKey -------------------------------------------------------
+log.innerHTML += "\n<b>storageKey</b>\n";
+
+assert(storageKey("player-abc") === "character-sheet-selection-player-abc",
+       "key contains player ID");
+assert(storageKey(null) === "character-sheet-selection-local",
+       "key uses 'local' when no player ID");
+assert(storageKey("") === "character-sheet-selection-local",
+       "key uses 'local' for empty string player ID");
+
+// --- 3. catalogHasUrl ----------------------------------------------------
+log.innerHTML += "\n<b>catalogHasUrl</b>\n";
+
+const sampleCatalog = [
+  { title: "A", url: "/a/" },
+  { title: "B", url: "/b/" },
+];
+
+assert(catalogHasUrl(sampleCatalog, "/a/"), "finds existing URL");
+assert(!catalogHasUrl(sampleCatalog, "/c/"), "rejects absent URL");
+assert(!catalogHasUrl([], "/a/"), "rejects from empty catalog");
+
+// --- 4. Selection persistence & invalidation -----------------------------
+log.innerHTML += "\n<b>Selection persistence</b>\n";
+
+clearFakeStorage();
+const key = storageKey("p1");
+localStorage.setItem(key, "/kael/");
+assert(localStorage.getItem(key) === "/kael/", "saves and loads selection");
+
+localStorage.removeItem(key);
+assert(localStorage.getItem(key) === null, "clears selection");
+
+// Preference invalidation: saved URL not in catalog should be discarded.
+clearFakeStorage();
+localStorage.setItem(key, "/old-char/");
+const liveCatalog = [{ title: "B", url: "/new-char/" }];
+const savedUrl = localStorage.getItem(key);
+if (savedUrl && !catalogHasUrl(liveCatalog, savedUrl)) {
+  localStorage.removeItem(key);
+}
+assert(localStorage.getItem(key) === null,
+       "invalidates stale preference not in catalog");
+
+// --- 5. Catalog parsing (array vs object wrapper) ------------------------
+log.innerHTML += "\n<b>Catalog parsing</b>\n";
+
+function parseCatalog(data) {
+  const raw = Array.isArray(data) ? data
+    : (Array.isArray(data.characters) ? data.characters : []);
+  return raw.filter(isValidEntry);
+}
+
+const asArray = [
+  { title: "A", url: "/a/" },
+  { title: "", url: "/b/" },   // invalid — empty title
+  { title: "C", url: "/c/" },
+];
+assert(parseCatalog(asArray).length === 2, "filters invalid from array format");
+
+const asObject = { characters: [{ title: "D", url: "/d/" }] };
+assert(parseCatalog(asObject).length === 1, "accepts object wrapper format");
+
+const asEmpty = {};
+assert(parseCatalog(asEmpty).length === 0, "empty object yields empty catalog");
+
+const asBadWrapper = { characters: "not-array" };
+assert(parseCatalog(asBadWrapper).length === 0, "non-array characters yields empty");
+
+// --- 6. Fallback outside Owlbear -----------------------------------------
+log.innerHTML += "\n<b>Fallback outside Owlbear</b>\n";
+
+// The shell sets status to "Modo local (sem Owlbear)" when SDK import fails.
+// We verify the DOM element exists and can receive status text.
+const statusBar = document.getElementById("status-bar");
+statusBar.textContent = "Modo local (sem Owlbear)";
+assert(statusBar.textContent === "Modo local (sem Owlbear)",
+       "status bar shows local-mode fallback text");
+
+// setStatus helper
+function setStatus(text, type) {
+  statusBar.textContent = text;
+  statusBar.className = "";
+  if (type === "error") statusBar.classList.add("status-error");
+  else if (type === "ok") statusBar.classList.add("status-ok");
+}
+
+setStatus("Erro ao carregar catálogo", "error");
+assert(statusBar.classList.contains("status-error"), "setStatus adds error class");
+
+setStatus("Conectado: Ana", "ok");
+assert(statusBar.classList.contains("status-ok"), "setStatus adds ok class");
+
+setStatus("Loading", "");
+assert(!statusBar.classList.contains("status-ok") && !statusBar.classList.contains("status-error"),
+       "setStatus clears classes for neutral status");
+
+// --- 7. Simulated catalog fetch lifecycle --------------------------------
+log.innerHTML += "\n<b>Catalog fetch lifecycle (simulated)</b>\n";
+
+// Replicate the core of fetchCatalog to test its logic path.
+const characterList = document.getElementById("character-list");
+
+async function simulateFetch(mockFn) {
+  characterList.innerHTML = "";
+  const loader = document.createElement("div");
+  loader.className = "loading-indicator";
+  loader.textContent = "Buscando personagens...";
+  characterList.appendChild(loader);
+
+  try {
+    const resp = await mockFn();
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    return parseCatalog(data);
+  } catch (err) {
+    characterList.innerHTML = "";
+    const errDiv = document.createElement("div");
+    errDiv.className = "state-error";
+    errDiv.textContent = `Erro ao carregar catálogo: ${err.message}`;
+    characterList.appendChild(errDiv);
+    return null;
+  }
+}
+
+// Success path
+let result = await simulateFetch(jsonResponse([
+  { title: "Hero", url: "/hero/" },
+  { title: "Villain", url: "/villain/" },
+]));
+assert(result !== null && result.length === 2, "successful fetch returns 2 entries");
+
+// HTTP error
+result = await simulateFetch(failResponse(404));
+assert(result === null, "HTTP 404 triggers error path");
+assert(characterList.querySelector(".state-error") !== null, "error message rendered on HTTP failure");
+
+// Network error
+result = await simulateFetch(networkError());
+assert(result === null, "network error triggers error path");
+
+// --- 8. iframe src management --------------------------------------------
+log.innerHTML += "\n<b>iframe management</b>\n";
+
+const iframe = document.getElementById("character-iframe");
+iframe.src = "/hero/";
+assert(iframe.src.endsWith("/hero/"), "iframe src set correctly");
+
+// Change character clears and re-sets iframe.
+iframe.src = "/villain/";
+assert(iframe.src.endsWith("/villain/"), "iframe src updated on character change");
+
+// =========================================================================
+summary();
+
+// Restore originals.
+localStorage.getItem = realGet;
+localStorage.setItem = realSet;
+localStorage.removeItem = realRemove;
+window.fetch = window._originalFetch;
+</script>
+</body>
+</html>

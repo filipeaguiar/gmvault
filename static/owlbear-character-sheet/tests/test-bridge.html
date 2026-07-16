@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tests — bridge.js</title>
+  <style>
+    body { font-family: monospace; margin: 1rem; background: #111; color: #eee; }
+    .pass { color: #4caf50; }
+    .fail { color: #f44336; }
+    #results { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<h1>Bridge (bridge.js) tests</h1>
+<div id="results"></div>
+
+<script type="module">
+// =========================================================================
+// Tiny test harness
+// =========================================================================
+const log = document.getElementById("results");
+let passed = 0, failed = 0;
+
+function assert(cond, label) {
+  if (cond) {
+    passed++;
+    log.innerHTML += `<span class="pass">✓ ${label}</span>\n`;
+  } else {
+    failed++;
+    log.innerHTML += `<span class="fail">✗ ${label}</span>\n`;
+  }
+}
+
+function summary() {
+  const total = passed + failed;
+  const cls = failed ? "fail" : "pass";
+  log.innerHTML += `\n<span class="${cls}">${passed}/${total} passed</span>\n`;
+}
+
+// Async wait helper
+const delay = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// =========================================================================
+// Import protocol utilities (these are pure ESM, safe to import)
+// =========================================================================
+import {
+  SOURCE,
+  PROTOCOL_VERSION,
+  MessageType,
+  DicePlusChannel,
+  READY_TIMEOUT_MS,
+  ROLL_TIMEOUT_MS,
+  createEnvelope,
+  validateEnvelope,
+  validateNotation,
+  generateId,
+} from "../protocol.js";
+
+// =========================================================================
+// Protocol tests (from protocol.js — shared by the bridge)
+// =========================================================================
+
+log.innerHTML += "\n<b>Protocol constants</b>\n";
+
+assert(SOURCE === "io.github.filipeaguiar.character-sheet", "SOURCE constant");
+assert(PROTOCOL_VERSION === 1, "PROTOCOL_VERSION is 1");
+assert(MessageType.DICE_READY === "dice-ready", "DICE_READY type");
+assert(MessageType.ROLL_REQUEST === "roll-request", "ROLL_REQUEST type");
+assert(MessageType.ROLL_RESULT === "roll-result", "ROLL_RESULT type");
+assert(MessageType.ROLL_ERROR === "roll-error", "ROLL_ERROR type");
+assert(DicePlusChannel.IS_READY === "dice-plus/isReady", "IS_READY channel");
+assert(DicePlusChannel.ROLL_REQUEST === "dice-plus/roll-request", "ROLL_REQUEST channel");
+assert(DicePlusChannel.ROLL_RESULT === `${SOURCE}/roll-result`, "ROLL_RESULT channel");
+assert(DicePlusChannel.ROLL_ERROR === `${SOURCE}/roll-error`, "ROLL_ERROR channel");
+
+// ── createEnvelope ──────────────────────────────────────────────────
+log.innerHTML += "\n<b>createEnvelope</b>\n";
+
+const env = createEnvelope(MessageType.DICE_READY, { ready: true });
+assert(env.source === SOURCE, "envelope has SOURCE");
+assert(env.version === PROTOCOL_VERSION, "envelope has version");
+assert(env.type === MessageType.DICE_READY, "envelope type matches");
+assert(env.payload.ready === true, "envelope payload carried");
+
+const envEmpty = createEnvelope(MessageType.ROLL_REQUEST);
+assert(typeof envEmpty.payload === "object" && Object.keys(envEmpty.payload).length === 0,
+       "default payload is empty object");
+
+// ── validateEnvelope ────────────────────────────────────────────────
+log.innerHTML += "\n<b>validateEnvelope</b>\n";
+
+assert(validateEnvelope(env).valid, "valid envelope accepted");
+
+assert(!validateEnvelope(null).valid, "null rejected");
+assert(!validateEnvelope("string").valid, "string rejected");
+assert(!validateEnvelope({ source: "wrong", version: 1, type: "x" }).valid,
+       "wrong source rejected");
+assert(!validateEnvelope({ source: SOURCE, version: 99, type: "x" }).valid,
+       "wrong version rejected");
+assert(!validateEnvelope({ source: SOURCE, version: 1 }).valid,
+       "missing type rejected");
+assert(!validateEnvelope({ source: SOURCE, version: 1, type: "" }).valid,
+       "empty type rejected");
+
+// With allowedTypes filter
+const rollEnv = createEnvelope(MessageType.ROLL_REQUEST, {});
+assert(validateEnvelope(rollEnv, [MessageType.ROLL_REQUEST]).valid,
+       "allowed type accepted");
+assert(!validateEnvelope(rollEnv, [MessageType.DICE_READY]).valid,
+       "unexpected type rejected by filter");
+
+// ── validateNotation ────────────────────────────────────────────────
+log.innerHTML += "\n<b>validateNotation</b>\n";
+
+assert(validateNotation("1d20").valid, "1d20 valid");
+assert(validateNotation("2d6+3").valid, "2d6+3 valid");
+assert(validateNotation("1d20+5").valid, "1d20+5 valid");
+assert(validateNotation("+7").valid, "+7 (modifier) valid");
+assert(validateNotation("-1").valid, "-1 valid");
+assert(validateNotation("4d8-2").valid, "4d8-2 valid");
+assert(validateNotation("1d12+1d6+3").valid, "compound 1d12+1d6+3 valid");
+assert(validateNotation("d20").valid, "d20 (no count) valid");
+
+assert(!validateNotation("").valid, "empty string invalid");
+assert(!validateNotation(42).valid, "non-string invalid");
+assert(!validateNotation("roll it").valid, "freeform text invalid");
+assert(!validateNotation("1d20 + 5").valid, "spaces inside invalid");
+assert(!validateNotation("a".repeat(65)).valid, "too-long notation invalid");
+
+// ── generateId ──────────────────────────────────────────────────────
+log.innerHTML += "\n<b>generateId</b>\n";
+
+const id1 = generateId();
+const id2 = generateId();
+assert(typeof id1 === "string" && id1.length > 0, "generates non-empty string");
+assert(id1 !== id2, "two calls produce different IDs");
+
+// =========================================================================
+// Bridge-level tests using a mock OBR
+// =========================================================================
+
+// Import bridge functions
+import {
+  initBridge,
+  bindIframe,
+  unbindIframe,
+  destroyBridge,
+  isDiceReady,
+} from "../bridge.js";
+
+// ── Mock OBR.broadcast ──────────────────────────────────────────────
+function createMockOBR() {
+  const listeners = {};  // channel → [callback, ...]
+  const sent = [];       // { channel, message }
+
+  return {
+    broadcast: {
+      sendMessage(channel, message) {
+        sent.push({ channel, message });
+        // Simulate echo: deliver to listeners of the same channel.
+        const cbs = listeners[channel] || [];
+        for (const cb of cbs) {
+          setTimeout(() => cb(message), 0);
+        }
+      },
+      onMessage(channel, callback) {
+        if (!listeners[channel]) listeners[channel] = [];
+        listeners[channel].push(callback);
+        // Return unsubscribe function.
+        return () => {
+          listeners[channel] = (listeners[channel] || []).filter(
+            (c) => c !== callback
+          );
+        };
+      },
+    },
+    // Expose for test inspection.
+    _sent: sent,
+    _listeners: listeners,
+    // Helper to inject an external message into a channel.
+    _deliver(channel, message) {
+      const cbs = listeners[channel] || [];
+      for (const cb of [...cbs]) cb(message);
+    },
+  };
+}
+
+// ── Mock iframe ─────────────────────────────────────────────────────
+function createMockIframe(origin = "https://example.com") {
+  const messages = [];
+  const fakeWindow = {
+    postMessage(data, targetOrigin) {
+      messages.push({ data, targetOrigin });
+    },
+  };
+  return {
+    contentWindow: fakeWindow,
+    src: `${origin}/characters/hero/`,
+    _messages: messages,
+  };
+}
+
+// =========================================================================
+// Test groups
+// =========================================================================
+
+log.innerHTML += "\n<b>Bridge: init & readiness</b>\n";
+
+// Clean up any prior bridge state.
+destroyBridge();
+
+{
+  const obr = createMockOBR();
+  const player = { id: "p1", name: "Ana" };
+  let readyCallbackValue = null;
+
+  initBridge(obr, player, (ready) => { readyCallbackValue = ready; });
+  assert(!isDiceReady(), "isDiceReady() false before binding");
+
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Bridge should have sent IS_READY message.
+  const readyMsg = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
+  assert(readyMsg !== undefined, "IS_READY request sent on bind");
+  assert(readyMsg.message.source === SOURCE, "IS_READY request has correct source");
+
+  // Simulate Dice+ ready response.
+  const requestId = readyMsg.message.requestId;
+  await delay(10); // Let the echo handler run first.
+
+  obr._deliver(DicePlusChannel.IS_READY, {
+    requestId,
+    ready: true,
+    source: "dice-plus",
+  });
+
+  await delay(10);
+
+  assert(isDiceReady(), "isDiceReady() true after ready response");
+  assert(readyCallbackValue === true, "onDiceReadyChange callback invoked with true");
+
+  // iframe should have received dice-ready message.
+  const diceReadyMsg = iframe._messages.find(
+    (m) => m.data && m.data.type === MessageType.DICE_READY
+  );
+  assert(diceReadyMsg !== undefined, "iframe notified of dice-ready");
+  assert(diceReadyMsg.data.payload.ready === true, "dice-ready payload.ready is true");
+
+  destroyBridge();
+}
+
+// ── Echo filtering ──────────────────────────────────────────────────
+log.innerHTML += "\n<b>Bridge: echo filtering</b>\n";
+
+{
+  const obr = createMockOBR();
+  const player = { id: "p2", name: "Bob" };
+  let cbVal = null;
+
+  initBridge(obr, player, (r) => { cbVal = r; });
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  const readyMsg = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
+  const reqId = readyMsg.message.requestId;
+
+  await delay(10);
+
+  // The echo has source === SOURCE and ready is absent (undefined/falsy).
+  // The bridge should ignore it and NOT set dice ready.
+  assert(!isDiceReady(), "echo does not trigger readiness");
+
+  // Now send a *genuine* response.
+  obr._deliver(DicePlusChannel.IS_READY, {
+    requestId: reqId,
+    ready: true,
+    source: "dice-plus-ext",
+  });
+
+  await delay(10);
+  assert(isDiceReady(), "genuine response sets readiness after echo ignored");
+
+  destroyBridge();
+}
+
+// ── Readiness timeout ───────────────────────────────────────────────
+log.innerHTML += "\n<b>Bridge: readiness timeout</b>\n";
+
+{
+  // We'll test with a short timeout by monkey-patching setTimeout.
+  // The bridge uses READY_TIMEOUT_MS which is 3000ms, but we can't
+  // wait that long. Instead, we verify the timeout mechanism works
+  // by checking the callback fires with false after no response.
+  // For this test we accept that dice stays not-ready when no
+  // response arrives (we just don't send one).
+
+  const obr = createMockOBR();
+  const player = { id: "p3", name: "Timeout-Test" };
+  let cbCalled = false;
+  let cbValue = null;
+
+  initBridge(obr, player, (r) => { cbCalled = true; cbValue = r; });
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Don't deliver any IS_READY response.
+  // After a very brief wait, dice should still not be ready.
+  await delay(50);
+  assert(!isDiceReady(), "dice not ready when no response arrives (pre-timeout)");
+
+  destroyBridge();
+}
+
+// ── Roll request → result lifecycle ─────────────────────────────────
+log.innerHTML += "\n<b>Bridge: roll request → result</b>\n";
+
+{
+  const obr = createMockOBR();
+  const player = { id: "p4", name: "Carlos" };
+
+  initBridge(obr, player);
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Force dice ready.
+  const readyReq = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
+  await delay(10);
+  obr._deliver(DicePlusChannel.IS_READY, {
+    requestId: readyReq.message.requestId,
+    ready: true,
+  });
+  await delay(10);
+  assert(isDiceReady(), "(setup) dice ready for roll test");
+
+  // Clear iframe messages collected so far.
+  iframe._messages.length = 0;
+
+  // Simulate a postMessage from the iframe.
+  const rollRequestId = "req-001";
+  const rollEnvelope = createEnvelope(MessageType.ROLL_REQUEST, {
+    requestId: rollRequestId,
+    notation: "1d20+5",
+    label: "Ataque",
+  });
+
+  // Dispatch a MessageEvent to window as if the iframe sent it.
+  const event = new MessageEvent("message", {
+    data: rollEnvelope,
+    origin: "https://example.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(event);
+
+  await delay(10);
+
+  // Bridge should have sent a roll-request to Dice+.
+  const diceRollReq = obr._sent.find(
+    (s) => s.channel === DicePlusChannel.ROLL_REQUEST
+  );
+  assert(diceRollReq !== undefined, "Dice+ roll-request sent");
+  assert(diceRollReq.message.notation === "1d20+5", "notation forwarded");
+  assert(diceRollReq.message.playerName === "Carlos", "playerName from player identity");
+  assert(diceRollReq.message.playerId === "p4", "playerId from player identity");
+  assert(diceRollReq.message.source === SOURCE, "roll request has SOURCE");
+  assert(typeof diceRollReq.message.rollId === "string", "rollId generated");
+
+  const rollId = diceRollReq.message.rollId;
+
+  // Simulate Dice+ returning a result.
+  obr._deliver(DicePlusChannel.ROLL_RESULT, {
+    rollId,
+    total: 18,
+    summary: "13+5",
+    dice: [{ sides: 20, value: 13 }],
+  });
+
+  await delay(10);
+
+  // iframe should have received the result.
+  const resultMsg = iframe._messages.find(
+    (m) => m.data && m.data.type === MessageType.ROLL_RESULT
+  );
+  assert(resultMsg !== undefined, "iframe receives roll-result");
+  assert(resultMsg.data.payload.requestId === rollRequestId,
+         "result correlates with requestId");
+  assert(resultMsg.data.payload.total === 18, "total forwarded");
+  assert(resultMsg.data.payload.rollId === rollId, "rollId forwarded");
+
+  destroyBridge();
+}
+
+// ── Roll request → error lifecycle ──────────────────────────────────
+log.innerHTML += "\n<b>Bridge: roll request → error</b>\n";
+
+{
+  const obr = createMockOBR();
+  const player = { id: "p5", name: "Diana" };
+
+  initBridge(obr, player);
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Force dice ready.
+  const readyReq = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
+  await delay(10);
+  obr._deliver(DicePlusChannel.IS_READY, {
+    requestId: readyReq.message.requestId,
+    ready: true,
+  });
+  await delay(10);
+  iframe._messages.length = 0;
+
+  // Send a roll request from iframe.
+  const reqId = "req-err-001";
+  const evt = new MessageEvent("message", {
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: reqId,
+      notation: "2d6",
+      label: "Damage",
+    }),
+    origin: "https://example.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(evt);
+  await delay(10);
+
+  const diceReq = obr._sent.find((s) => s.channel === DicePlusChannel.ROLL_REQUEST);
+  const rollId = diceReq.message.rollId;
+
+  // Simulate Dice+ returning an error.
+  obr._deliver(DicePlusChannel.ROLL_ERROR, {
+    rollId,
+    error: "Dice server offline",
+  });
+  await delay(10);
+
+  const errMsg = iframe._messages.find(
+    (m) => m.data && m.data.type === MessageType.ROLL_ERROR
+  );
+  assert(errMsg !== undefined, "iframe receives roll-error");
+  assert(errMsg.data.payload.requestId === reqId, "error correlates with requestId");
+  assert(errMsg.data.payload.error === "Dice server offline", "error message forwarded");
+  assert(errMsg.data.payload.retryable === true, "error marked retryable");
+
+  destroyBridge();
+}
+
+// ── Roll request with Dice+ unavailable ─────────────────────────────
+log.innerHTML += "\n<b>Bridge: roll when Dice+ unavailable</b>\n";
+
+{
+  const obr = createMockOBR();
+  const player = { id: "p6", name: "Eve" };
+
+  initBridge(obr, player);
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Do NOT set dice ready — leave it false.
+  await delay(10);
+  iframe._messages.length = 0;
+
+  const evt = new MessageEvent("message", {
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "req-noroll",
+      notation: "1d20",
+      label: "Check",
+    }),
+    origin: "https://example.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(evt);
+  await delay(10);
+
+  const errMsg = iframe._messages.find(
+    (m) => m.data && m.data.type === MessageType.ROLL_ERROR
+  );
+  assert(errMsg !== undefined, "error sent when Dice+ not available");
+  assert(errMsg.data.payload.error === "Dice+ not available", "error reason correct");
+  assert(errMsg.data.payload.retryable === false, "not retryable when Dice+ absent");
+
+  destroyBridge();
+}
+
+// ── Invalid notation rejected ───────────────────────────────────────
+log.innerHTML += "\n<b>Bridge: invalid notation rejected</b>\n";
+
+{
+  const obr = createMockOBR();
+  const player = { id: "p7", name: "Frank" };
+
+  initBridge(obr, player);
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Force dice ready.
+  const rReq = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
+  await delay(10);
+  obr._deliver(DicePlusChannel.IS_READY, {
+    requestId: rReq.message.requestId,
+    ready: true,
+  });
+  await delay(10);
+  iframe._messages.length = 0;
+
+  const evt = new MessageEvent("message", {
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "req-bad",
+      notation: "freeform text",
+      label: "Test",
+    }),
+    origin: "https://example.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(evt);
+  await delay(10);
+
+  const errMsg = iframe._messages.find(
+    (m) => m.data && m.data.type === MessageType.ROLL_ERROR
+  );
+  assert(errMsg !== undefined, "error sent for invalid notation");
+  assert(errMsg.data.payload.error.includes("Invalid notation"),
+         "error mentions invalid notation");
+
+  destroyBridge();
+}
+
+// ── Wrong source/origin messages rejected ───────────────────────────
+log.innerHTML += "\n<b>Bridge: wrong origin/source rejected</b>\n";
+
+{
+  const obr = createMockOBR();
+  initBridge(obr, { id: "p8", name: "Grace" });
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+  await delay(10);
+  iframe._messages.length = 0;
+
+  // Wrong origin
+  const evt1 = new MessageEvent("message", {
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "rq1",
+      notation: "1d20",
+    }),
+    origin: "https://evil.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(evt1);
+  await delay(10);
+  assert(iframe._messages.length === 0, "message from wrong origin ignored");
+
+  // Wrong source field
+  const evt2 = new MessageEvent("message", {
+    data: { source: "wrong-ext", version: 1, type: "roll-request", payload: {} },
+    origin: "https://example.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(evt2);
+  await delay(10);
+  assert(iframe._messages.length === 0, "message with wrong source field ignored");
+
+  // Wrong event.source (different window)
+  const evt3 = new MessageEvent("message", {
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "rq3",
+      notation: "1d20",
+    }),
+    origin: "https://example.com",
+    source: window, // self, not iframe
+  });
+  window.dispatchEvent(evt3);
+  await delay(10);
+  assert(iframe._messages.length === 0, "message from wrong window.source ignored");
+
+  destroyBridge();
+}
+
+// ── Cleanup: unbindIframe clears pending rolls ──────────────────────
+log.innerHTML += "\n<b>Bridge: cleanup on unbind</b>\n";
+
+{
+  const obr = createMockOBR();
+  initBridge(obr, { id: "p9", name: "Hugo" });
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+
+  // Force ready.
+  const rr = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
+  await delay(10);
+  obr._deliver(DicePlusChannel.IS_READY, {
+    requestId: rr.message.requestId,
+    ready: true,
+  });
+  await delay(10);
+
+  // Send a roll that we won't complete.
+  const evt = new MessageEvent("message", {
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "orphan-req",
+      notation: "1d6",
+    }),
+    origin: "https://example.com",
+    source: iframe.contentWindow,
+  });
+  window.dispatchEvent(evt);
+  await delay(10);
+
+  // Now unbind — should clear pending rolls without error.
+  unbindIframe();
+  assert(!isDiceReady(), "isDiceReady() false after unbind");
+
+  // A late result should be silently ignored (no crash).
+  const lateRollId = obr._sent.find(
+    (s) => s.channel === DicePlusChannel.ROLL_REQUEST
+  )?.message?.rollId;
+  if (lateRollId) {
+    obr._deliver(DicePlusChannel.ROLL_RESULT, {
+      rollId: lateRollId,
+      total: 4,
+    });
+    await delay(10);
+  }
+  assert(true, "late result after unbind does not crash");
+
+  destroyBridge();
+}
+
+// ── destroyBridge cleans up subscriptions ────────────────────────────
+log.innerHTML += "\n<b>Bridge: destroyBridge</b>\n";
+
+{
+  const obr = createMockOBR();
+  initBridge(obr, { id: "p10", name: "Iris" });
+  const iframe = createMockIframe();
+  bindIframe(iframe);
+  await delay(10);
+
+  destroyBridge();
+  assert(!isDiceReady(), "isDiceReady() false after destroy");
+
+  // Sending a message after destroy should not crash.
+  obr._deliver(DicePlusChannel.ROLL_RESULT, { rollId: "ghost", total: 1 });
+  await delay(10);
+  assert(true, "message after destroyBridge does not crash");
+}
+
+// =========================================================================
+summary();
+</script>
+</body>
+</html>

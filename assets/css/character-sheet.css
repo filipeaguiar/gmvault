@@ -494,3 +494,80 @@ html.vtt-iframe .char-sheet-container {
   color: var(--text-muted, #999);
   overflow-wrap: anywhere;
 }
+
+/* ── Dice+ Progressive Enhancement (roll states) ─────────────── */
+
+/* Enhanced rollable values: subtle underline to indicate interactivity. */
+[data-roll-notation].roll-enhanced {
+  position: relative;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+/* Ready state: clickable appearance. */
+[data-roll-notation].roll-ready {
+  color: var(--primary-color, #7b2cbf);
+  cursor: pointer;
+}
+
+[data-roll-notation].roll-ready:hover {
+  background-color: rgba(123, 44, 191, 0.1);
+  border-radius: 3px;
+}
+
+/* Visible focus for keyboard navigation. */
+[data-roll-notation].roll-enhanced:focus-visible {
+  outline: 2px solid var(--primary-color, #7b2cbf);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Pending state: subtle animation, not just color. */
+[data-roll-notation].roll-pending {
+  color: var(--text-muted, #888);
+  cursor: wait;
+  text-decoration-style: wavy;
+  animation: roll-pulse 1s ease-in-out infinite;
+}
+
+@keyframes roll-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Success state: brief highlight, then return to ready. */
+[data-roll-notation].roll-success {
+  color: #27ae60;
+}
+
+/* Error state: distinguished by both color and symbol. */
+[data-roll-notation].roll-error {
+  color: #c0392b;
+}
+
+/* Result display inline with the value. */
+.roll-result-display {
+  font-size: 0.85em;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-left: 4px;
+}
+
+[data-roll-notation].roll-success .roll-result-display {
+  color: #27ae60;
+}
+
+[data-roll-notation].roll-error .roll-result-display {
+  color: #c0392b;
+}
+
+/* Responsive: ensure roll controls don't cause overflow in narrow views. */
+@media (max-width: 500px) {
+  .roll-result-display {
+    display: block;
+    margin-left: 0;
+    margin-top: 2px;
+    font-size: 0.8em;
+  }
+}

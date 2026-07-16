@@ -1,0 +1,340 @@
+/**
+ * Dice+ bridge for the Owlbear character sheet extension.
+ *
+ * Manages the postMessage bridge between the shell and the character
+ * iframe, and integrates with the Owlbear Dice+ channels.
+ *
+ * Lifecycle:
+ *   1. Call initBridge(OBR) once after OBR.onReady.
+ *   2. Call bindIframe(iframe) after a character iframe loads.
+ *   3. Call unbindIframe() before changing character or unloading.
+ *   4. Call destroyBridge() on extension close.
+ */
+
+import {
+  SOURCE,
+  PROTOCOL_VERSION,
+  MessageType,
+  DicePlusChannel,
+  READY_TIMEOUT_MS,
+  ROLL_TIMEOUT_MS,
+  createEnvelope,
+  validateEnvelope,
+  validateNotation,
+  generateId,
+} from "./protocol.js";
+
+// ── Internal state ──────────────────────────────────────────────────
+
+let _obr = null;
+let _player = null;
+let _iframeWindow = null;
+let _expectedOrigin = null;
+let _diceReady = false;
+let _readyCheckTimer = null;
+let _pendingReadyId = null;
+let _pendingRolls = new Map(); // rollId → { timerId, iframeWindow }
+let _messageHandler = null;
+let _diceResultUnsub = null;
+let _diceErrorUnsub = null;
+let _onDiceReadyChange = null; // external callback
+
+// ── Public API ──────────────────────────────────────────────────────
+
+/**
+ * Initialize the bridge with the Owlbear SDK instance.
+ *
+ * @param {object} obr - The OBR SDK instance.
+ * @param {object} player - { id, name } from OBR.player.
+ * @param {function} [onDiceReadyChange] - Called with (boolean) when
+ *   Dice+ readiness changes.
+ */
+export function initBridge(obr, player, onDiceReadyChange) {
+  _obr = obr;
+  _player = player;
+  _onDiceReadyChange = onDiceReadyChange || null;
+
+  // Subscribe to Dice+ result and error channels (once, for all rolls).
+  _diceResultUnsub = _obr.broadcast.onMessage(
+    DicePlusChannel.ROLL_RESULT,
+    _handleDiceResult
+  );
+  _diceErrorUnsub = _obr.broadcast.onMessage(
+    DicePlusChannel.ROLL_ERROR,
+    _handleDiceError
+  );
+}
+
+/**
+ * Bind the bridge to a specific character iframe.
+ * Unbinds any previous iframe first.
+ *
+ * @param {HTMLIFrameElement} iframe - The character iframe element.
+ */
+export function bindIframe(iframe) {
+  unbindIframe();
+
+  _iframeWindow = iframe.contentWindow;
+  _expectedOrigin = new URL(iframe.src).origin;
+
+  // Listen for messages from the iframe.
+  _messageHandler = (event) => _handleIframeMessage(event);
+  window.addEventListener("message", _messageHandler);
+
+  // Check Dice+ readiness for this binding.
+  _checkDiceReady();
+}
+
+/**
+ * Unbind from the current iframe. Clears listeners, pending rolls,
+ * and timers associated with the iframe.
+ */
+export function unbindIframe() {
+  if (_messageHandler) {
+    window.removeEventListener("message", _messageHandler);
+    _messageHandler = null;
+  }
+
+  // Clear readiness check.
+  if (_readyCheckTimer) {
+    clearTimeout(_readyCheckTimer);
+    _readyCheckTimer = null;
+  }
+  _pendingReadyId = null;
+
+  // Clear all pending rolls.
+  for (const [rollId, entry] of _pendingRolls) {
+    clearTimeout(entry.timerId);
+  }
+  _pendingRolls.clear();
+
+  _iframeWindow = null;
+  _expectedOrigin = null;
+  _diceReady = false;
+}
+
+/**
+ * Destroy the bridge entirely. Call on extension unload.
+ */
+export function destroyBridge() {
+  unbindIframe();
+
+  if (_diceResultUnsub) {
+    _diceResultUnsub();
+    _diceResultUnsub = null;
+  }
+  if (_diceErrorUnsub) {
+    _diceErrorUnsub();
+    _diceErrorUnsub = null;
+  }
+
+  _obr = null;
+  _player = null;
+  _onDiceReadyChange = null;
+}
+
+/**
+ * Whether Dice+ is currently available.
+ * @returns {boolean}
+ */
+export function isDiceReady() {
+  return _diceReady;
+}
+
+// ── Dice+ readiness ─────────────────────────────────────────────────
+
+function _checkDiceReady() {
+  if (!_obr) return;
+
+  _pendingReadyId = generateId();
+  const requestPayload = {
+    requestId: _pendingReadyId,
+    timestamp: Date.now(),
+    source: SOURCE,
+  };
+
+  _obr.broadcast.sendMessage(DicePlusChannel.IS_READY, requestPayload);
+
+  // Listen for readiness response.
+  const readyUnsub = _obr.broadcast.onMessage(
+    DicePlusChannel.IS_READY,
+    (message) => {
+      // Filter our own echo.
+      if (message.requestId === _pendingReadyId && message.source === SOURCE && !message.ready) {
+        return; // This is our own request echoed back.
+      }
+
+      // Accept only matching response with ready: true.
+      if (message.requestId === _pendingReadyId && message.ready === true) {
+        _setDiceReady(true);
+        readyUnsub();
+        if (_readyCheckTimer) {
+          clearTimeout(_readyCheckTimer);
+          _readyCheckTimer = null;
+        }
+      }
+    }
+  );
+
+  // Timeout: Dice+ not available.
+  _readyCheckTimer = setTimeout(() => {
+    _readyCheckTimer = null;
+    _pendingReadyId = null;
+    readyUnsub();
+    _setDiceReady(false);
+  }, READY_TIMEOUT_MS);
+}
+
+function _setDiceReady(ready) {
+  _diceReady = ready;
+
+  // Notify the iframe.
+  if (_iframeWindow && _expectedOrigin) {
+    _iframeWindow.postMessage(
+      createEnvelope(MessageType.DICE_READY, { ready }),
+      _expectedOrigin
+    );
+  }
+
+  // Notify external callback.
+  if (_onDiceReadyChange) {
+    _onDiceReadyChange(ready);
+  }
+}
+
+// ── Iframe message handling ─────────────────────────────────────────
+
+function _handleIframeMessage(event) {
+  // 3.3: Validate event.source matches the active iframe window.
+  if (event.source !== _iframeWindow) return;
+
+  // 3.3: Validate origin matches the expected character page origin.
+  if (event.origin !== _expectedOrigin) return;
+
+  const data = event.data;
+
+  // 3.3: Validate envelope structure, version, and source.
+  const validation = validateEnvelope(data, [MessageType.ROLL_REQUEST]);
+  if (!validation.valid) return;
+
+  // Handle roll request from the iframe.
+  if (data.type === MessageType.ROLL_REQUEST) {
+    _handleRollRequest(data.payload);
+  }
+}
+
+// ── Roll request handling ───────────────────────────────────────────
+
+function _handleRollRequest(payload) {
+  if (!_diceReady || !_obr || !_player) {
+    _sendToIframe(MessageType.ROLL_ERROR, {
+      requestId: payload.requestId,
+      rollId: null,
+      error: "Dice+ not available",
+      retryable: false,
+    });
+    return;
+  }
+
+  // 3.3: Validate notation.
+  const notationCheck = validateNotation(payload.notation);
+  if (!notationCheck.valid) {
+    _sendToIframe(MessageType.ROLL_ERROR, {
+      requestId: payload.requestId,
+      rollId: null,
+      error: `Invalid notation: ${notationCheck.reason}`,
+      retryable: false,
+    });
+    return;
+  }
+
+  // 3.5: Build the Dice+ roll request.
+  const rollId = generateId();
+  const rollRequest = {
+    rollId,
+    source: SOURCE,
+    playerName: _player.name,
+    playerId: _player.id,
+    rollTarget: "ALL",
+    notation: payload.notation.trim(),
+    showResults: true,
+    timestamp: Date.now(),
+    label: payload.label || "",
+  };
+
+  // Set up timeout for this roll.
+  const timerId = setTimeout(() => {
+    _pendingRolls.delete(rollId);
+    _sendToIframe(MessageType.ROLL_ERROR, {
+      requestId: payload.requestId,
+      rollId,
+      error: "Roll timed out",
+      retryable: true,
+    });
+  }, ROLL_TIMEOUT_MS);
+
+  // Track the pending roll.
+  _pendingRolls.set(rollId, {
+    timerId,
+    requestId: payload.requestId,
+    iframeWindow: _iframeWindow,
+  });
+
+  // 3.5: Send to Dice+.
+  _obr.broadcast.sendMessage(DicePlusChannel.ROLL_REQUEST, rollRequest);
+}
+
+// ── Dice+ result/error handlers ─────────────────────────────────────
+
+function _handleDiceResult(message) {
+  const rollId = message.rollId;
+  if (!rollId) return;
+
+  const pending = _pendingRolls.get(rollId);
+  if (!pending) return; // Unknown or already completed rollId.
+
+  clearTimeout(pending.timerId);
+  _pendingRolls.delete(rollId);
+
+  // 3.6: Send result only to the iframe that made the request.
+  if (pending.iframeWindow && _expectedOrigin) {
+    const resultEnvelope = createEnvelope(MessageType.ROLL_RESULT, {
+      requestId: pending.requestId,
+      rollId,
+      total: message.total,
+      summary: message.summary,
+      dice: message.dice || [],
+    });
+    pending.iframeWindow.postMessage(resultEnvelope, _expectedOrigin);
+  }
+}
+
+function _handleDiceError(message) {
+  const rollId = message.rollId;
+  if (!rollId) return;
+
+  const pending = _pendingRolls.get(rollId);
+  if (!pending) return; // Unknown or already completed rollId.
+
+  clearTimeout(pending.timerId);
+  _pendingRolls.delete(rollId);
+
+  // 3.6: Send error to the originating iframe.
+  if (pending.iframeWindow && _expectedOrigin) {
+    const errorEnvelope = createEnvelope(MessageType.ROLL_ERROR, {
+      requestId: pending.requestId,
+      rollId,
+      error: message.error || "Unknown Dice+ error",
+      retryable: true,
+    });
+    pending.iframeWindow.postMessage(errorEnvelope, _expectedOrigin);
+  }
+}
+
+// ── Helpers ─────────────────────────────────────────────────────────
+
+function _sendToIframe(type, payload) {
+  if (_iframeWindow && _expectedOrigin) {
+    _iframeWindow.postMessage(createEnvelope(type, payload), _expectedOrigin);
+  }
+}

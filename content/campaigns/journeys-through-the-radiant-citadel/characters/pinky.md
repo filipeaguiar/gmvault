@@ -231,5 +231,3 @@ Este personagem foi criado manualmente via script interativo guiado por dados do
 
 ### Equipamentos e Recursos
 Ficha básica de V1. Use os comandos estendidos nas próximas fases para adicionar recursos adicionais.
-
-<pre id="gmvault-dice-diagnostic-output" style="white-space:pre-wrap;word-break:break-word;margin:10px 0 0;padding:10px;border:1px solid var(--border-color,#ccc);border-radius:6px;max-height:260px;overflow:auto;">Clique no botão de diagnóstico ao lado do nome para executar.</pre>

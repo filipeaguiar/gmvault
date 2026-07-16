@@ -12,12 +12,7 @@
       <img src="{{ $avatarURL }}" alt="{{ .Title }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
     {{ end }}
     <div>
-      <div class="char-title-row">
-        <h1 style="margin:0;">{{ .Title }}</h1>
-        {{ if eq .File.BaseFileName "pinky" }}
-        <button type="button" class="dice-roll-button char-diagnostic-button" onclick="window.GMVaultDiceControls?.runDiagnostics?.(document).then?.(info => { const out = document.getElementById('gmvault-dice-diagnostic-output'); if (out) out.textContent = JSON.stringify(info, null, 2); })" aria-label="Executar diagnóstico da ponte Dice+">Diagnóstico</button>
-        {{ end }}
-      </div>
+      <h1 style="margin:0;">{{ .Title }}</h1>
       <div class="char-meta">
         {{ with .Params.char_info }}
           {{ or .species .race }}{{ with .species_variant }} ({{ . }}){{ end }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
@@ -102,11 +97,10 @@
             {{ $val := index $saves $key }}
             {{ $prof := index $saveProf $key }}
             {{ $name := index $attrNames $key }}
-            <li class="char-roll-row" data-dice-action>
-              <span class="skill-prof-icon {{ if $prof }}proficient{{ end }}" aria-hidden="true"></span>
-              <span class="char-roll-label">{{ $name }}</span>
-              <button type="button" class="dice-roll-button char-roll-bonus" data-dice-roll data-dice-notation="{{ printf "1d20%+d" ($val | int) }}" data-dice-label="Teste de Resistência: {{ $name }}" aria-label="Rolar teste de resistência: {{ $name }}">{{ if gt ($val | int) 0 }}+{{ end }}{{ $val }}</button>
-              <span class="dice-roll-result" data-dice-result aria-live="polite"></span>
+            <li style="display:flex; align-items:center; padding: 5px; border-bottom: 1px solid rgba(0,0,0,0.05);">
+              <span class="skill-prof-icon {{ if $prof }}proficient{{ end }}" style="margin-right:8px;"></span>
+              <span style="flex: 1;">{{ $name }}</span>
+              <strong style="font-size: 1.1em;" data-roll-notation="1d20{{ if ge ($val | int) 0 }}+{{ end }}{{ $val }}" data-roll-label="Resistência de {{ $name }}">{{ if gt ($val | int) 0 }}+{{ end }}{{ $val }}</strong>
             </li>
           {{ end }}
         </ul>
@@ -160,11 +154,12 @@
         {{ range $orderedSkills }}
           {{ $skill := index $skillsData .key }}
           {{ if $skill }}
-          <div class="skill-item char-roll-row" data-dice-action>
+          <div class="skill-item">
             <span class="skill-prof-icon {{ if $skill.expertise }}expertise{{ else if $skill.proficient }}proficient{{ end }}">{{ if $skill.expertise }}<i class="ra ra-diamond"></i>{{ end }}</span>
-            <button type="button" class="dice-roll-button char-roll-bonus" data-dice-roll data-dice-notation="{{ printf "1d20%+d" ($skill.bonus | int) }}" data-dice-label="Teste de {{ .pt }}" aria-label="Rolar teste de {{ .pt }}">{{ if gt ($skill.bonus | int) 0 }}+{{ end }}{{ $skill.bonus }}</button>
-            <span class="char-roll-label">{{ .pt }} <span class="char-roll-muted">({{ $skill.stat | upper }})</span></span>
-            <span class="dice-roll-result" data-dice-result aria-live="polite"></span>
+            <span style="display:inline-block; width: 32px; text-align: right; margin-right: 10px; font-weight: bold;" data-roll-notation="1d20{{ if ge ($skill.bonus | int) 0 }}+{{ end }}{{ $skill.bonus }}" data-roll-label="{{ .pt }}">
+              {{ if gt ($skill.bonus | int) 0 }}+{{ end }}{{ $skill.bonus }}
+            </span>
+            <span>{{ .pt }} <span style="color:#999; font-size:0.8em;">({{ $skill.stat | upper }})</span></span>
           </div>
           {{ end }}
         {{ end }}
@@ -190,15 +185,10 @@
           {{ range $list }}
           {{ $cssClass := "action" }}
            {{ if or (eq (lower $src) "race") (eq (lower $src) "species") }}{{ $cssClass = "species" }}{{ else if eq (lower $src) "class" }}{{ $cssClass = "class" }}{{ else if eq (lower $src) "feat" }}{{ $cssClass = "feat" }}{{ end }}
-          {{ $diceNotation := or .dice_notation .roll_formula .formula }}
-          <li class="char-list-item {{ $cssClass }}" data-dice-action>
+          <li class="char-list-item {{ $cssClass }}">
             <strong style="display: block; font-size: 1.1em; margin-bottom: 6px; color:var(--text-color);">
               {{ .name }}
             </strong>
-            {{ if $diceNotation }}
-            <button type="button" class="dice-roll-button char-roll-bonus" data-dice-roll data-dice-notation="{{ $diceNotation }}" data-dice-label="{{ .name }}" aria-label="Rolar {{ .name }}">{{ $diceNotation }}</button>
-            <span class="dice-roll-result" data-dice-result aria-live="polite"></span>
-            {{ end }}
             {{ if .max_uses }}
               <div style="margin-bottom: 8px; background:var(--bg-color); display:inline-block; padding:4px 8px; border-radius:4px; border:1px solid var(--border-color);">
                 {{ $uses := .max_uses }}
@@ -231,18 +221,11 @@
       <h4><i class="ra ra-sword"></i> Armas</h4>
       <ul style="list-style:none; padding:0;">
         {{ range $weapons }}
-        <li class="char-list-item weapon" data-dice-action>
+        <li class="char-list-item weapon">
           <i class="ra ra-crossed-swords equipment-icon" aria-hidden="true"></i>
           <strong>{{ .name }}</strong>
-          {{ if .attack_formula }}
-          <span class="equipment-roll-label">Ataque:</span>
-          <button type="button" class="dice-roll-button char-roll-bonus" data-dice-roll data-dice-notation="{{ .attack_formula }}" data-dice-label="Ataque: {{ .name }}" aria-label="Rolar ataque de {{ .name }}">{{ .attack_formula }}</button>
-          {{ end }}
-          {{ if .damage_formula }}
-          <span class="equipment-roll-label">Dano:</span>
-          <button type="button" class="dice-roll-button char-roll-bonus" data-dice-roll data-dice-notation="{{ .damage_formula }}" data-dice-label="Dano: {{ .name }}" aria-label="Rolar dano de {{ .name }}">{{ .damage_formula }}</button>
-          {{ end }}
-          <span class="dice-roll-result" data-dice-result aria-live="polite"></span>
+          {{ if .attack_formula }}<span style="margin-left:10px; font-size:0.85em; color:#555;">Ataque: <span data-roll-notation="{{ .attack_formula }}" data-roll-label="Ataque: {{ .name }}">{{ .attack_formula }}</span></span>{{ end }}
+          {{ if .damage_formula }}<span style="margin-left:6px; font-size:0.85em; color:#555;">Dano: <span data-roll-notation="{{ .damage_formula }}" data-roll-label="Dano: {{ .name }}">{{ .damage_formula }}</span></span>{{ end }}
           {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
         </li>
         {{ end }}
@@ -539,3 +522,4 @@ function openCharTab(evt, tabName) {
   evt.currentTarget.classList.add("active");
 }
 </script>
+<script src="{{ "owlbear-character-sheet/sheet-client.js" | relURL }}" defer></script>

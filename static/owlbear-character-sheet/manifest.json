@@ -1,0 +1,12 @@
+{
+  "name": "Fichas de Personagem",
+  "version": "1.0.0",
+  "icon": "/gmvault/owlbear-character-sheet/icon.svg",
+  "action": {
+    "title": "Fichas de Personagem",
+    "icon": "/gmvault/owlbear-character-sheet/icon.svg",
+    "popover": "/gmvault/owlbear-character-sheet/index.html",
+    "height": 600,
+    "width": 500
+  }
+}

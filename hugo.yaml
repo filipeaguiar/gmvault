@@ -27,12 +27,18 @@ outputFormats:
     path: exports/forge
     isPlainText: true
     notAlternative: true
+  CharacterCatalog:
+    mediaType: application/json
+    baseName: character-catalog
+    isPlainText: true
+    notAlternative: true
 
 outputs:
   home:
     - HTML
     - GMVault
     - Forge
+    - CharacterCatalog
   section:
     - HTML
     - GMVault
