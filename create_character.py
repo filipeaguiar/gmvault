@@ -11,7 +11,8 @@ import json
 import argparse
 import urllib.request
 import yaml
-
+import dnd_utils
+from datetime import datetime, timezone
 from dnd_utils import (
     slugify,
     get_modifier,
@@ -606,7 +607,42 @@ def main():
     hd_faces = hd_info.get("faces", 8)
     hd_str = f"d{hd_faces}"
 
-    # 5. Coletar Atributos
+    # 5. Coletar Background e Pacote Inicial
+    print_header("BACKGROUND E EQUIPAMENTO INICIAL")
+    bg_data = dnd_utils.load_background_data()
+    item_data = dnd_utils.load_item_data()
+    
+    backgrounds = []
+    if bg_data:
+        backgrounds = sorted([b.get("name") for b in bg_data.get("background", []) if b.get("source") == "XPHB"])
+    
+    selected_bg = ""
+    bg_items = []
+    bg_gold = 0
+    if backgrounds:
+        selected_bg = ask_choice("Selecione o seu Antecedente (Background):", backgrounds)
+        bg_items, bg_gold = dnd_utils.extract_background_equipment(selected_bg, bg_data)
+        print(f"  [Equipamento] Itens recebidos do background: {', '.join([i['name'] for i in bg_items])} (+{bg_gold} GP)")
+    else:
+        print("  [Aviso] Dados de backgrounds não encontrados.")
+
+    pack_options = [
+        "Nenhum",
+        "Burglar's Pack",
+        "Diplomat's Pack",
+        "Dungeoneer's Pack",
+        "Entertainer's Pack",
+        "Explorer's Pack",
+        "Priest's Pack",
+        "Scholar's Pack"
+    ]
+    selected_pack = ask_choice("Selecione o seu Pacote Inicial (geralmente concedido pela sua Classe):", pack_options)
+    pack_items = []
+    if selected_pack != "Nenhum" and item_data:
+        pack_items = dnd_utils.extract_pack_items(selected_pack, item_data)
+        print(f"  [Equipamento] Itens do {selected_pack} descompactados e adicionados ao inventário.")
+
+    # 6. Coletar Atributos
     print_header("ATRIBUTOS BASE (Standard Array / Point Buy / Rolado)")
     print("Digite seus atributos base (antes dos aumentos).")
     
@@ -979,6 +1015,34 @@ def main():
             "expertise": is_exp,
             "stat": stat_key
         }
+            
+    # 8.2 Consolidação de Equipamentos (Background e Packs)
+    equipment_data = []
+    combined_items = bg_items + pack_items
+    
+    for item in combined_items:
+        # Tenta resolver o compêndio.
+        # Itens podem não existir ou precisarem de fallback. O fetch_from_5etools baixa.
+        item_ref = dnd_utils.fetch_from_5etools("item", item["name"])
+        if item_ref:
+            compendium_refs.append(item_ref)
+        else:
+            # Fallback seguro caso falhe
+            item_ref = f"/compendium/items/{slugify(item['name'])}/"
+            
+        equipment_data.append({
+            "name": item["name"],
+            "ref": item_ref,
+            "quantity": item["quantity"],
+            "equipped": False
+        })
+
+    def dump_yaml_indented(data, indent):
+        if not data:
+            return " []"
+        lines = yaml.dump(data, allow_unicode=True, default_flow_style=False, sort_keys=False).strip().split('\n')
+        # fix the indentation
+        return "\n" + "\n".join(" " * indent + line for line in lines)
 
     passive_senses = {
         "perception": 10 + skills_data["perception"]["bonus"],
@@ -1006,16 +1070,13 @@ def main():
         "subclass": subclass
     }]
 
-    summary_str = f"{full_species_name} {selected_class_name} {level}"
-    if subclass:
-        summary_str += f" ({subclass})"
-    summary_str += " criado manualmente guiado por dados."
+    summary_str = f"{full_species_name} {selected_class_name} {level} criado manualmente guiado por dados."
 
     feats_field = f"feats:{dump_yaml_indented(selected_feats, 2)}" if selected_feats else "feats: []"
 
     markdown = f"""---
-title: {json.dumps(char_name)}
-date: 2026-07-09T19:00:00Z
+title: "{char_name}"
+date: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}
 params:
   kind: "character"
 draft: false
@@ -1093,12 +1154,12 @@ char_info:
   currencies:
     cp: 0
     sp: 0
-    gp: 0
+    gp: {int(bg_gold)}
     ep: 0
     pp: 0
   skills:{dump_yaml_indented(skills_data, 4)}
   actions:{dump_yaml_indented(actions_data, 4)}
-  equipment: []
+  equipment:{dump_yaml_indented(equipment_data, 4)}
   spells: []
   classes_progression:{dump_yaml_indented(classes_data, 4)}
 

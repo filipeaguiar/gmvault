@@ -3,6 +3,140 @@
     if (window.self !== window.top) document.documentElement.classList.add('vtt-iframe');
   </script>
 
+  {{/* Cálculo dinâmico de atributos e CA orientados ao compêndio */}}
+  {{ $attrKeys := slice "str" "dex" "con" "int" "wis" "cha" }}
+  {{ $info := .Params.char_info }}
+  {{ $scratch := newScratch }}
+  
+  {{/* Inicializa atributos base */}}
+  {{ if $info }}
+    {{ $scratch.Set "str" (or $info.stats.str 10) }}
+    {{ $scratch.Set "dex" (or $info.stats.dex 10) }}
+    {{ $scratch.Set "con" (or $info.stats.con 10) }}
+    {{ $scratch.Set "int" (or $info.stats.int 10) }}
+    {{ $scratch.Set "wis" (or $info.stats.wis 10) }}
+    {{ $scratch.Set "cha" (or $info.stats.cha 10) }}
+    
+    {{/* Inicializa bônus de CA e saves de itens mágicos */}}
+    {{ $scratch.Set "ac_bonus" 0 }}
+    {{ $scratch.Set "save_bonus" 0 }}
+    
+    {{/* Inicializa armaduras e escudos equipados */}}
+    {{ $scratch.Set "has_armor" false }}
+    {{ $scratch.Set "armor_ac" 10 }}
+    {{ $scratch.Set "armor_type" 0 }}
+    {{ $scratch.Set "has_shield" false }}
+    {{ $scratch.Set "shield_ac" 0 }}
+    
+    {{/* Processa os equipamentos da ficha */}}
+    {{ range $info.equipment }}
+      {{ if .equipped }}
+        {{ if .ref }}
+          {{ $itemPage := site.GetPage .ref }}
+          {{ if $itemPage }}
+            {{ $itemInfo := $itemPage.Params.item_info }}
+            {{ if $itemInfo }}
+              {{/* Modificadores mágicos */}}
+              {{ with $itemInfo.modifiers }}
+                {{ with .stat_override }}
+                  {{ range $attr, $val := . }}
+                    {{ $current := $scratch.Get $attr }}
+                    {{ if gt ($val | int) ($current | int) }}
+                      {{ $scratch.Set $attr ($val | int) }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+                {{ with .stat_bonus }}
+                  {{ range $attr, $val := . }}
+                    {{ $current := $scratch.Get $attr }}
+                    {{ $scratch.Set $attr (add ($current | int) ($val | int)) }}
+                  {{ end }}
+                {{ end }}
+                {{ with .ac_bonus }}
+                  {{ $scratch.Set "ac_bonus" (add ($scratch.Get "ac_bonus" | int) (. | int)) }}
+                {{ end }}
+                {{ with .save_bonus }}
+                  {{ $scratch.Set "save_bonus" (add ($scratch.Get "save_bonus" | int) (. | int)) }}
+                {{ end }}
+              {{ end }}
+              
+              {{/* Armadura e Escudo */}}
+              {{ if eq $itemInfo.type "Shield" }}
+                {{ $scratch.Set "has_shield" true }}
+                {{ $scratch.Set "shield_ac" (or $itemInfo.armor_class 2) }}
+              {{ else if and $itemInfo.armor_type (in (slice 1 2 3) ($itemInfo.armor_type | int)) }}
+                {{ $scratch.Set "has_armor" true }}
+                {{ $scratch.Set "armor_ac" ($itemInfo.armor_class | int) }}
+                {{ $scratch.Set "armor_type" ($itemInfo.armor_type | int) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Atributos finais calculados */}}
+  {{ $calculatedStats := dict }}
+  {{ $calculatedMods := dict }}
+  {{ $deltas := dict }}
+  {{ $saveBonus := 0 }}
+  
+  {{ if $info }}
+    {{ $saveBonus = $scratch.Get "save_bonus" | int }}
+    {{ range $key := $attrKeys }}
+      {{ $score := $scratch.Get $key }}
+      {{ $modVal := math.Floor (div (sub ($score | float) 10.0) 2.0) }}
+      {{ $calculatedStats = merge $calculatedStats (dict $key $score) }}
+      {{ $calculatedMods = merge $calculatedMods (dict $key ($modVal | int)) }}
+      
+      {{ $baseMod := index $info.mods $key }}
+      {{ $deltaVal := sub ($modVal | int) ($baseMod | int) }}
+      {{ $deltas = merge $deltas (dict $key ($deltaVal | int)) }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Cálculo da CA final */}}
+  {{ $calculatedAc := 10 }}
+  {{ if $info }}
+    {{ $dexMod := index $calculatedMods "dex" }}
+    {{ $wisMod := index $calculatedMods "wis" }}
+    {{ $conMod := index $calculatedMods "con" }}
+    
+    {{ $hasArmor := $scratch.Get "has_armor" }}
+    {{ $armorAc := $scratch.Get "armor_ac" }}
+    {{ $armorType := $scratch.Get "armor_type" }}
+    {{ $hasShield := $scratch.Get "has_shield" }}
+    {{ $shieldAc := $scratch.Get "shield_ac" }}
+    {{ $acBonus := $scratch.Get "ac_bonus" }}
+    
+    {{ $classLower := lower (or $info.class "") }}
+    {{ $isMonk := in $classLower "monk" }}
+    {{ $isBarbarian := in $classLower "barbarian" }}
+    
+    {{ $baseAcVal := 10 }}
+    {{ if $hasArmor }}
+      {{ if eq $armorType 1 }}
+        {{ $baseAcVal = add $armorAc $dexMod }}
+      {{ else if eq $armorType 2 }}
+        {{ $dexCap := $dexMod }}
+        {{ if gt $dexMod 2 }}{{ $dexCap = 2 }}{{ end }}
+        {{ $baseAcVal = add $armorAc $dexCap }}
+      {{ else if eq $armorType 3 }}
+        {{ $baseAcVal = $armorAc }}
+      {{ end }}
+    {{ else }}
+      {{ if and $isMonk (not $hasShield) }}
+        {{ $baseAcVal = add (add 10 $dexMod) $wisMod }}
+      {{ else if $isBarbarian }}
+        {{ $baseAcVal = add (add 10 $dexMod) $conMod }}
+      {{ else }}
+        {{ $baseAcVal = add 10 $dexMod }}
+      {{ end }}
+    {{ end }}
+    {{ $calculatedAc = add (add $baseAcVal $shieldAc) $acBonus }}
+  {{ end }}
+
   <div class="char-sticky-wrapper">
     <!-- Header -->
     <div class="char-header">
@@ -19,7 +153,7 @@
           <h1 style="margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0;">{{ .Title }}</h1>
           {{ with .Params.char_info }}
           <div class="char-header-stats">
-            <span class="header-stat-badge" title="Armadura (AC)"><i class="ra ra-shield"></i> {{ .ac }}</span>
+            <span class="header-stat-badge" title="Armadura (AC)"><i class="ra ra-shield"></i> {{ $calculatedAc }}</span>
             <span class="header-stat-badge" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i> {{ .hp_max }}</span>
             <span class="header-stat-badge" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i> {{ .speed.walk }}m</span>
             <span class="header-stat-badge" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i> +{{ .proficiency_bonus }}</span>
@@ -60,11 +194,10 @@
     {{ with .Params.char_info }}
 
     <!-- Attributes Grid (6 boxes) -->
-    {{ $attrKeys := slice "str" "dex" "con" "int" "wis" "cha" }}
     {{ $attrNames := dict "str" "Força" "dex" "Destreza" "con" "Constituição" "int" "Inteligência" "wis" "Sabedoria" "cha" "Carisma" }}
     {{ $shortNames := dict "str" "FOR" "dex" "DES" "con" "CON" "int" "INT" "wis" "SAB" "cha" "CAR" }}
-    {{ $stats := .stats }}
-    {{ $mods := .mods }}
+    {{ $stats := $calculatedStats }}
+    {{ $mods := $calculatedMods }}
     <div class="attr-grid">
       {{ range $key := $attrKeys }}
         {{ $score := index $stats $key }}
@@ -93,10 +226,12 @@
             {{ $val := index $saves $key }}
             {{ $prof := index $saveProf $key }}
             {{ $name := index $attrNames $key }}
+            {{ $delta := index $deltas $key }}
+            {{ $finalVal := add (add ($val | int) ($delta | int)) ($saveBonus | int) }}
             <li style="display:flex; align-items:center; padding: 5px; border-bottom: 1px solid rgba(0,0,0,0.05);">
               <span class="skill-prof-icon {{ if $prof }}proficient{{ end }}" style="margin-right:8px;"></span>
               <span style="flex: 1;">{{ $name }}</span>
-              <strong class="save-roll-value" style="font-size: 1.1em;" data-roll-notation="1d20{{ if ge ($val | int) 0 }}+{{ end }}{{ $val }}" data-roll-label="Resistência de {{ $name }}">{{ if gt ($val | int) 0 }}+{{ end }}{{ $val }}</strong>
+              <strong class="save-roll-value" style="font-size: 1.1em;" data-roll-notation="1d20{{ if ge ($finalVal | int) 0 }}+{{ end }}{{ $finalVal }}" data-roll-label="Resistência de {{ $name }}">{{ if gt ($finalVal | int) 0 }}+{{ end }}{{ $finalVal }}</strong>
             </li>
           {{ end }}
         </ul>
@@ -105,10 +240,13 @@
       <div class="char-feature-card" style="border-left-color: #5bc0de; text-align: center;">
         <h3 style="margin-top:0; border-bottom: 1px solid var(--border-color, #ccc); padding-bottom: 10px; margin-bottom: 20px;"><i class="ra ra-eye-shield"></i> Sentidos Passivos</h3>
         {{ with .passive_senses }}
+        {{ $perceptionVal := add (.perception | int) (index $deltas "wis" | int) }}
+        {{ $investigationVal := add (.investigation | int) (index $deltas "int" | int) }}
+        {{ $insightVal := add (.insight | int) (index $deltas "wis" | int) }}
         <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
-          {{ if .perception }}<li style="font-size: 1.2em;"><div style="font-size:0.8em; color:var(--text-muted); text-transform:uppercase;">Percepção</div><strong>{{ .perception }}</strong></li>{{ end }}
-          {{ if .investigation }}<li style="font-size: 1.2em;"><div style="font-size:0.8em; color:var(--text-muted); text-transform:uppercase;">Investigação</div><strong>{{ .investigation }}</strong></li>{{ end }}
-          {{ if .insight }}<li style="font-size: 1.2em;"><div style="font-size:0.8em; color:var(--text-muted); text-transform:uppercase;">Intuição</div><strong>{{ .insight }}</strong></li>{{ end }}
+          {{ if .perception }}<li style="font-size: 1.2em;"><div style="font-size:0.8em; color:var(--text-muted); text-transform:uppercase;">Percepção</div><strong>{{ $perceptionVal }}</strong></li>{{ end }}
+          {{ if .investigation }}<li style="font-size: 1.2em;"><div style="font-size:0.8em; color:var(--text-muted); text-transform:uppercase;">Investigação</div><strong>{{ $investigationVal }}</strong></li>{{ end }}
+          {{ if .insight }}<li style="font-size: 1.2em;"><div style="font-size:0.8em; color:var(--text-muted); text-transform:uppercase;">Intuição</div><strong>{{ $insightVal }}</strong></li>{{ end }}
         </ul>
         {{ end }}
         {{ with .senses }}
@@ -150,13 +288,15 @@
         {{ range $orderedSkills }}
           {{ $skill := index $skillsData .key }}
           {{ if $skill }}
-          <div class="skill-item">
-            <span class="skill-prof-icon {{ if $skill.expertise }}expertise{{ else if $skill.proficient }}proficient{{ end }}">{{ if $skill.expertise }}<i class="ra ra-diamond"></i>{{ end }}</span>
-            <span class="skill-roll-value" data-roll-notation="1d20{{ if ge ($skill.bonus | int) 0 }}+{{ end }}{{ $skill.bonus }}" data-roll-label="{{ .pt }}">
-              {{ if gt ($skill.bonus | int) 0 }}+{{ end }}{{ $skill.bonus }}
-            </span>
-            <span>{{ .pt }} <span style="color:#999; font-size:0.8em;">({{ $skill.stat | upper }})</span></span>
-          </div>
+            {{ $delta := index $deltas (lower $skill.stat) }}
+            {{ $finalBonus := add ($skill.bonus | int) ($delta | int) }}
+            <div class="skill-item">
+              <span class="skill-prof-icon {{ if $skill.expertise }}expertise{{ else if $skill.proficient }}proficient{{ end }}">{{ if $skill.expertise }}<i class="ra ra-diamond"></i>{{ end }}</span>
+              <span class="skill-roll-value" data-roll-notation="1d20{{ if ge ($finalBonus | int) 0 }}+{{ end }}{{ $finalBonus }}" data-roll-label="{{ .pt }}">
+                {{ if gt ($finalBonus | int) 0 }}+{{ end }}{{ $finalBonus }}
+              </span>
+              <span>{{ .pt }} <span style="color:#999; font-size:0.8em;">({{ $skill.stat | upper }})</span></span>
+            </div>
           {{ end }}
         {{ end }}
       {{ end }}
@@ -214,21 +354,122 @@
   <div id="tab-equip" class="char-tab-content">
     <h3>Equipamentos</h3>
     {{ with .Params.char_info.equipment }}
-      {{ $weapons := where . "filter_type" "Weapon" }}
-      {{ $armors := where . "filter_type" "Armor" }}
-      {{ $other := where . "filter_type" "Other Gear" }}
+      {{ $scratch := newScratch }}
+      {{ $scratch.Set "weapons" slice }}
+      {{ $scratch.Set "armors" slice }}
+      {{ $scratch.Set "other" slice }}
+
+      {{ range . }}
+        {{ $resolvedType := "Other" }}
+        {{ $itemInfo := dict }}
+        {{ if .ref }}
+          {{ $itemPage := site.GetPage .ref }}
+          {{ if $itemPage }}
+            {{ $itemInfo = $itemPage.Params.item_info }}
+            {{ if $itemInfo }}
+              {{ if eq $itemInfo.type "Weapon" }}
+                {{ $resolvedType = "Weapon" }}
+              {{ else if or (in (slice "Light Armor" "Medium Armor" "Heavy Armor" "Shield") $itemInfo.type) (and $itemInfo.armor_type (in (slice 1 2 3 4) ($itemInfo.armor_type | int))) }}
+                {{ $resolvedType = "Armor" }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        
+        {{ $itemData := dict "name" .name "quantity" .quantity "equipped" .equipped "ref" .ref "info" $itemInfo }}
+        
+        {{ if eq $resolvedType "Weapon" }}
+          {{ $scratch.Add "weapons" $itemData }}
+        {{ else if eq $resolvedType "Armor" }}
+          {{ $scratch.Add "armors" $itemData }}
+        {{ else }}
+          {{ $scratch.Add "other" $itemData }}
+        {{ end }}
+      {{ end }}
+      
+      {{ $weapons := $scratch.Get "weapons" }}
+      {{ $armors := $scratch.Get "armors" }}
+      {{ $other := $scratch.Get "other" }}
 
       {{ if $weapons }}
       <h4><i class="ra ra-sword"></i> Armas</h4>
       <ul style="list-style:none; padding:0;">
         {{ range $weapons }}
-        <li class="char-list-item weapon">
-          <i class="ra ra-crossed-swords equipment-icon" aria-hidden="true"></i>
-          <strong>{{ .name }}</strong>
-          {{ if .attack_formula }}<span style="margin-left:10px; font-size:0.85em; color:#555;">Ataque: <span data-roll-notation="{{ .attack_formula }}" data-roll-label="Ataque: {{ .name }}">{{ .attack_formula }}</span></span>{{ end }}
-          {{ if .damage_formula }}<span style="margin-left:6px; font-size:0.85em; color:#555;">Dano: <span data-roll-notation="{{ .damage_formula }}" data-roll-label="Dano: {{ .name }}">{{ .damage_formula }}</span></span>{{ end }}
-          {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
-        </li>
+          {{ $itemInfo := .info }}
+          {{ $atk_formula := "" }}
+          {{ $dmg_formula := "" }}
+          {{ $atk_bonus := 0 }}
+          
+          {{ if $itemInfo }}
+            {{ $isFinesse := false }}
+            {{ $isRanged := false }}
+            {{ if $itemInfo.properties }}
+              {{ if in $itemInfo.properties "finesse" }}
+                {{ $isFinesse = true }}
+              {{ end }}
+              {{ if or (in $itemInfo.properties "ammunition") (in $itemInfo.properties "thrown") }}
+                {{ $isRanged = true }}
+              {{ end }}
+            {{ end }}
+            
+            {{ $statKey := "str" }}
+            {{ if $isFinesse }}
+              {{ $strMod := index $calculatedMods "str" }}
+              {{ $dexMod := index $calculatedMods "dex" }}
+              {{ if gt $dexMod $strMod }}
+                {{ $statKey = "dex" }}
+              {{ end }}
+            {{ else if $isRanged }}
+              {{ $statKey = "dex" }}
+            {{ end }}
+            
+            {{ $stat_mod := index $calculatedMods $statKey }}
+            {{ $prof := 0 }}
+            {{ if .equipped }}
+              {{ $prof = $.Params.char_info.proficiency_bonus }}
+            {{ end }}
+            {{ $atk_bonus = add $stat_mod $prof }}
+            
+            {{ if ge $atk_bonus 0 }}
+              {{ $atk_formula = printf "1d20+%d" $atk_bonus }}
+            {{ else }}
+              {{ $atk_formula = printf "1d20%d" $atk_bonus }}
+            {{ end }}
+            
+            {{ if $itemInfo.damage }}
+              {{ if ne $stat_mod 0 }}
+                {{ if ge $stat_mod 0 }}
+                  {{ $dmg_formula = printf "%s+%d" $itemInfo.damage $stat_mod }}
+                {{ else }}
+                  {{ $dmg_formula = printf "%s%d" $itemInfo.damage $stat_mod }}
+                {{ end }}
+              {{ else }}
+                {{ $dmg_formula = $itemInfo.damage }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          <li class="char-list-item weapon" style="margin-bottom: 12px; {{ if not .equipped }}opacity: 0.5;{{ end }}">
+            <i class="ra ra-crossed-swords equipment-icon" aria-hidden="true"></i>
+            <strong>{{ .name }}</strong>
+            {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
+            
+            {{ if $itemInfo }}
+              <div style="font-size: 0.85em; color: var(--text-color-muted, #666); margin: 4px 0 0 28px;">
+                {{ if $itemInfo.damage }}
+                  <span style="margin-right: 15px;">Ataque: <strong class="roll-ready" data-roll-notation="{{ $atk_formula }}" data-roll-label="Ataque: {{ .name }}">{{ if ge $atk_bonus 0 }}+{{ end }}{{ $atk_bonus }}</strong></span>
+                  <span style="margin-right: 15px;">Dano: <strong class="roll-ready" data-roll-notation="{{ $dmg_formula }}" data-roll-label="Dano: {{ .name }}">{{ $dmg_formula }}</strong> ({{ or $itemInfo.damage_type "slashing" }})</span>
+                {{ end }}
+                {{ if $itemInfo.range }}
+                  <span style="margin-right: 15px;"><i class="ra ra-target"></i> Alcance: {{ $itemInfo.range }}</span>
+                {{ end }}
+                {{ if $itemInfo.properties }}
+                  <span>Propriedades: <em>{{ delimit $itemInfo.properties ", " }}</em></span>
+                {{ end }}
+              </div>
+            {{ end }}
+            {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
+          </li>
         {{ end }}
       </ul>
       {{ end }}
@@ -237,25 +478,36 @@
       <h4><i class="ra ra-shield"></i> Armaduras</h4>
       <ul style="list-style:none; padding:0;">
         {{ range $armors }}
-        <li class="char-list-item armor">
-          <i class="ra ra-shield equipment-icon" aria-hidden="true"></i>
-          <strong>{{ .name }}</strong>
-          {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
-          {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
-        </li>
+          {{ $itemInfo := .info }}
+          <li class="char-list-item armor" style="margin-bottom: 12px; {{ if not .equipped }}opacity: 0.5;{{ end }}">
+            <i class="ra ra-shield equipment-icon" aria-hidden="true"></i>
+            <strong>{{ .name }}</strong>
+            {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
+            {{ if $itemInfo }}
+              <div style="font-size: 0.85em; color: var(--text-color-muted, #666); margin: 4px 0 0 28px;">
+                {{ if eq $itemInfo.type "Shield" }}
+                  <span>Escudo (CA +{{ or $itemInfo.armor_class 2 }})</span>
+                {{ else if $itemInfo.armor_class }}
+                  <span>Armadura (CA Base: {{ $itemInfo.armor_class }})</span>
+                {{ end }}
+              </div>
+            {{ end }}
+            {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
+          </li>
         {{ end }}
       </ul>
       {{ end }}
 
       {{ if $other }}
       <h4><i class="ra ra-knapsack"></i> Outros Itens</h4>
-      <ul style="list-style:disc; margin-left:20px;">
+      <ul style="list-style:none; padding:0;">
         {{ range $other }}
-        <li>
-          <i class="ra ra-ammo-bag equipment-icon" aria-hidden="true"></i>
-          <strong>{{ .name }}</strong>{{ if gt (.quantity | int) 1 }} (x{{ .quantity }}){{ end }}
-          {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
-        </li>
+          <li style="margin-bottom: 8px; {{ if not .equipped }}opacity: 0.5;{{ end }}">
+            <i class="ra ra-ammo-bag equipment-icon" aria-hidden="true" style="margin-right: 5px;"></i>
+            <strong>{{ .name }}</strong>{{ if gt (.quantity | int) 1 }} (x{{ .quantity }}){{ end }}
+            {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
+            {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
+          </li>
         {{ end }}
       </ul>
       {{ end }}

@@ -19,7 +19,11 @@ class TestCreateCharacterFeatures(unittest.TestCase):
     @patch("create_character.ask")
     @patch("create_character.ask_int")
     @patch("create_character.ask_choice")
-    def test_create_rogue_thief_level_3(self, mock_ask_choice, mock_ask_int, mock_ask):
+    @patch("create_character.ask_multiple_feat_choices")
+    @patch("create_character.ask_manual_feats")
+    def test_create_rogue_thief_level_3(self, mock_ask_manual_feats, mock_ask_multiple, mock_ask_choice, mock_ask_int, mock_ask):
+        mock_ask_manual_feats.return_value = []
+        mock_ask_multiple.return_value = []
         # Setup mocked inputs
         # 1. Campanha
         # 2. Nome do personagem
@@ -81,9 +85,9 @@ class TestCreateCharacterFeatures(unittest.TestCase):
             elif "alinhamento" in prompt_lower:
                 return "True Neutral"
             elif "perícias" in prompt_lower:
-                return "1,2" # select first two rogue skills
+                return "1,2,3,4" # Rogue level 1 requires 4 skills
             elif "especialização" in prompt_lower:
-                return "1,2" # select first two proficient skills
+                return "1,2" # Rogue level 1 requires 2 expertises
             elif "save" in prompt_lower:
                 # rogue is dex and int
                 if "dex" in prompt_lower or "int" in prompt_lower:
@@ -94,7 +98,8 @@ class TestCreateCharacterFeatures(unittest.TestCase):
         mock_ask.side_effect = mock_ask_side_effect
 
         # Run creation main
-        create_character.main()
+        with patch("sys.argv", ["create_character.py"]):
+            create_character.main()
 
         # Assertions
         self.assertTrue(os.path.exists(self.output_path), "Ficha do personagem deveria ter sido gerada.")

@@ -68,7 +68,7 @@ def main():
         
         modifiers = char.get('modifiers', {})
         for source, items in modifiers.items():
-            if not items:
+            if not items or source == 'item':
                 continue
             for item in items:
                 if item.get('type') == 'bonus':
@@ -362,9 +362,9 @@ def main():
                 
         final_ac = base_ac + shield_ac
         
-        # Bônus mágicos de CA do inventário
+        # Bônus mágicos de CA do inventário (exclui itens para evitar contagem dupla)
         for source, items in modifiers.items():
-            if not items:
+            if not items or source == 'item':
                 continue
             for item in items:
                 if item.get('type') == 'bonus' and item.get('subType') == 'armor-class':
@@ -798,32 +798,14 @@ summary: "Habilidade de classe."
         for item in char.get('inventory', []):
             d = item.get('definition', {})
             item_name = d.get('name')
-            filter_type = d.get('filterType')
             is_equipped = item.get('equipped', False)
             qty = item.get('quantity', 1)
             
-            atk_formula = ""
-            dmg_formula = ""
-            if filter_type == 'Weapon':
-                is_finesse = any(p.get('name') == 'Finesse' for p in d.get('properties', []))
-                stat_key = 'dex' if is_finesse and stats_final['dex'] > stats_final['str'] else 'str'
-                stat_mod = get_modifier(stats_final[stat_key])
-                prof = prof_bonus if is_equipped else 0
-                atk_bonus = stat_mod + prof
-                atk_formula = f"1d20 + {atk_bonus}"
-                
-                dice = d.get('damage', {}).get('diceString', '1d4')
-                dmg_bonus = stat_mod
-                dmg_formula = f"{dice} + {dmg_bonus}"
-                
             item_ref = f"/compendium/{'magic-items' if d.get('magic') else 'items'}/{slugify(item_aliases.get((item_name or '').lower(), item_name or ''))}/"
             equipment_entry = {
                 "name": item_name,
                 "quantity": qty,
                 "equipped": is_equipped,
-                "filter_type": filter_type,
-                "attack_formula": atk_formula,
-                "damage_formula": dmg_formula,
             }
             item_path = f"content{item_ref.rstrip('/')}.md"
             if os.path.exists(item_path):

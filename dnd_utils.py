@@ -247,6 +247,66 @@ def fetch_class_json(class_name):
         print(f"  [5e.tools] Erro ao carregar dados de classe para {class_name}: {e}")
     return None
 
+def load_background_data():
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    url = DATA_BASE_URL + "backgrounds.json"
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as response:
+            return json.loads(response.read().decode())
+    except Exception as e:
+        print(f"  [5e.tools] Erro ao carregar backgrounds.json: {e}")
+        return None
+
+def load_item_data():
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    url = DATA_BASE_URL + "items.json"
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as response:
+            return json.loads(response.read().decode())
+    except Exception as e:
+        print(f"  [5e.tools] Erro ao carregar items.json: {e}")
+        return None
+
+def extract_background_equipment(bg_name, bg_data):
+    """Retorna uma lista de itens concedidos pelo background no formato [{name, quantity}] e o valor em ouro."""
+    items = []
+    gold = 0
+    for bg in bg_data.get("background", []):
+        if bg.get("name") == bg_name: # Pegamos a primeira ocorrência ou pode filtrar por source
+            equip = bg.get("startingEquipment", [])
+            if equip and "A" in equip[0]:
+                for entry in equip[0]["A"]:
+                    if "item" in entry:
+                        raw_item = entry["item"].split("|")[0]
+                        items.append({"name": raw_item.title(), "quantity": entry.get("quantity", 1)})
+                    elif "equipmentType" in entry:
+                        items.append({"name": entry["equipmentType"], "quantity": 1})
+                    elif "value" in entry:
+                        gold += entry["value"] / 100 # value is in CP usually, so / 100 to get GP. Wait, 1600 = 16 GP?
+            break
+    return items, gold
+
+def extract_pack_items(pack_name, item_data):
+    """Busca um pacote e extrai seus itens componentes."""
+    import re
+    items = []
+    for item in item_data.get("item", []):
+        if item.get("name") == pack_name:
+            # We must parse entries to find {@item name|source}
+            entries = json.dumps(item.get("entries", []))
+            # Match {@item name} or {@item name|source} etc.
+            matches = re.findall(r'\{@item ([^\|\}]+)', entries)
+            # Find quantities (heurística simples: procurar "10 {@item Torch" ou similar)
+            # Por simplicidade, assumiremos quantidade 1 se não conseguirmos parear facilmente, 
+            # ou podemos melhorar. Para o pack, vamos retornar os nomes únicos.
+            for m in matches:
+                # Basic quantity check by looking right before the match
+                items.append({"name": m.title(), "quantity": 1}) # Simplificado
+            break
+    return items
+
 def fetch_from_5etools(kind, english_name):
     slug = slugify(english_name)
     print(f"  [5e.tools] Tentando baixar '{english_name}' ({kind})...")
@@ -559,11 +619,100 @@ spell_info:
         rarity = found_data.get("rarity", "common").title()
         attunement = "Requires attunement" if found_data.get("reqAttune") else ""
         
+        # Mapeamentos para armas
+        prop_mapping = {
+            "F": "finesse", "L": "light", "T": "thrown", "V": "versatile",
+            "H": "heavy", "2H": "two-handed", "R": "reach", "A": "ammunition",
+            "LD": "loading", "RL": "reload", "S": "special", "BF": "burst fire"
+        }
+        damage_type_mapping = {
+            "P": "piercing", "S": "slashing", "B": "bludgeoning",
+            "F": "fire", "C": "cold", "L": "lightning", "A": "acid",
+            "O": "force", "R": "radiant", "N": "necrotic", "T": "thunder",
+            "I": "poison", "Y": "psychic"
+        }
+        
+        # Extrair propriedades de arma se houver
+        item_props = []
+        raw_props = found_data.get("property", [])
+        if isinstance(raw_props, list):
+            for p in raw_props:
+                mapped = prop_mapping.get(p)
+                if mapped:
+                    item_props.append(mapped)
+                else:
+                    item_props.append(p.lower())
+                    
+        dmg_str = found_data.get("dmg1")
+        raw_dmg_type = found_data.get("dmgType")
+        dmg_type_str = damage_type_mapping.get(raw_dmg_type) if raw_dmg_type else None
+        
+        range_val = found_data.get("range")
+        ac_val = found_data.get("ac")
+        
+        # Extrair modificadores mágicos
+        item_modifiers = {}
+        ab_data = found_data.get("ability")
+        if isinstance(ab_data, dict):
+            if "static" in ab_data:
+                item_modifiers["stat_override"] = {k: v for k, v in ab_data["static"].items() if k in ["str", "dex", "con", "int", "wis", "cha"]}
+            else:
+                bonuses = {k: v for k, v in ab_data.items() if k in ["str", "dex", "con", "int", "wis", "cha"] and isinstance(v, int)}
+                if bonuses:
+                    item_modifiers["stat_bonus"] = bonuses
+                    
+        bonus_ac = found_data.get("bonusAc") or found_data.get("bonusArmorClass")
+        if bonus_ac:
+            try:
+                if isinstance(bonus_ac, str):
+                    bonus_ac = int(bonus_ac.replace("+", "").strip())
+                item_modifiers["ac_bonus"] = int(bonus_ac)
+            except ValueError:
+                pass
+                
+        bonus_save = found_data.get("bonusSavingThrow")
+        if bonus_save:
+            try:
+                if isinstance(bonus_save, str):
+                    bonus_save = int(bonus_save.replace("+", "").strip())
+                item_modifiers["save_bonus"] = int(bonus_save)
+            except ValueError:
+                pass
+                
+        # Construir dicionário item_info para YAML limpo
+        item_info_data = {
+            "type": item_type_str,
+            "cost": cost_gp,
+            "weight": weight_str
+        }
         if kind == "magic_item":
-            markdown = f"""---
+            item_info_data["rarity"] = rarity
+            if attunement:
+                item_info_data["attunement"] = attunement
+                
+        if item_props:
+            item_info_data["properties"] = item_props
+        if range_val:
+            item_info_data["range"] = str(range_val)
+        if dmg_str:
+            item_info_data["damage"] = dmg_str
+        if dmg_type_str:
+            item_info_data["damage_type"] = dmg_type_str
+        if ac_val:
+            item_info_data["armor_class"] = int(ac_val)
+            armor_type_map = {"LA": 1, "MA": 2, "HA": 3, "S": 4}
+            if item_type in armor_type_map:
+                item_info_data["armor_type"] = armor_type_map[item_type]
+                
+        if item_modifiers:
+            item_info_data["modifiers"] = item_modifiers
+            
+        item_info_yaml = dump_yaml_indented(item_info_data, indent=2)
+        
+        markdown = f"""---
 title: "{english_name}"
 params:
-  kind: "magic_item"
+  kind: "{kind}"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -573,35 +722,7 @@ tags:
 visibility: "public"
 status: "draft"
 
-item_info:
-  type: "{item_type_str}"
-  rarity: "{rarity}"
-  attunement: "{attunement}"
-  weight: "{weight_str}"
-  cost: "{cost_gp}"
----
-
-{description}
-"""
-        else:
-            markdown = f"""---
-title: "{english_name}"
-params:
-  kind: "item"
-draft: false
-weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
-tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
-item_info:
-  type: "{item_type_str}"
-  cost: "{cost_gp}"
-  weight: "{weight_str}"
-  properties: ""
+item_info:{item_info_yaml}
 ---
 
 {description}

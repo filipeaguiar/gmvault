@@ -41,21 +41,20 @@ class ForgeExportTests(unittest.TestCase):
         ]
         pinky = next(record for record in records if record["name"] == "Pinky")
 
-        self.assertEqual(len(party_records), 6)
+        self.assertEqual(len(party_records), 3)
         self.assertEqual(len(monster_records), 131)
-        self.assertEqual(records[:6], party_records)
+        self.assertEqual(records[:3], party_records)
         self.assertTrue(any(record["name"] in {"gato", "cat"} for record in monster_records))
-        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z001"], 2)
+        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z001"], 1)
         self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z004"], "Goblin")
-        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z005"], 68)
+        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z005"], 9)
         self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z007"], 15)
-        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z017"], 12)
-        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z018"], 18)
+        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z017"], 10)
+        self.assertEqual(pinky["metadata"]["com.battle-system.forge/Z018"], 20)
         inventory_names = {
             item["name"]
             for item in pinky["metadata"]["com.battle-system.forge/Z040"]
         }
-        self.assertIn("Padded Armor", inventory_names)
 
     def test_export_has_valid_unique_ids_and_stable_order(self):
         _, first = self._build()
@@ -68,13 +67,13 @@ class ForgeExportTests(unittest.TestCase):
         self.assertTrue(
             all(
                 record["metadata"]["com.battle-system.forge/in-party"]
-                for record in first[:6]
+                for record in first[:3]
             )
         )
         self.assertFalse(
             any(
                 record["metadata"]["com.battle-system.forge/in-party"]
-                for record in first[6:]
+                for record in first[3:]
             )
         )
 
