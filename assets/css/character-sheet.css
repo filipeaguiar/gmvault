@@ -749,13 +749,14 @@ html.vtt-iframe .char-tab-content {
     bottom: -12px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    font-size: 0.9em !important;
+    font-size: 1.2em !important;
     font-weight: bold !important;
     padding: 2px 8px !important;
-    min-width: 32px !important;
+    min-width: 36px !important;
     text-align: center !important;
-    background: var(--bg-color, #ffffff) !important;
-    border: 1px solid var(--border-color, #ccc) !important;
+    background: #e67e22 !important;
+    color: #ffffff !important;
+    border: 1px solid #d35400 !important;
     border-radius: 4px !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
     margin: 0 !important;
@@ -765,10 +766,10 @@ html.vtt-iframe .char-tab-content {
   }
 
   .attr-mod.roll-ready:hover {
-    background-color: var(--primary-color, #7b2cbf) !important;
+    background-color: #d35400 !important;
     color: #ffffff !important;
-    border-color: var(--primary-color, #7b2cbf) !important;
-    box-shadow: 0 2px 5px rgba(123, 44, 191, 0.3) !important;
+    border-color: #a04000 !important;
+    box-shadow: 0 2px 6px rgba(211, 84, 0, 0.4) !important;
   }
 
 
