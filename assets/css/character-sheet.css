@@ -101,9 +101,11 @@ html.vtt-iframe .char-sheet-container {
 }
 
 .char-header-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 4px;
+  align-items: center;
   margin-top: 0;
   transition: all 0.25s ease;
 }
@@ -121,10 +123,14 @@ html.vtt-iframe .char-sheet-container {
   font-weight: bold;
   color: var(--text-color);
   transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
-.char-sheet-container.scrolled .char-header-stats {
-  display: none !important;
+/* Shrink badges slightly when scrolled, keeping them visible */
+.char-sheet-container.scrolled .header-stat-badge {
+  padding: 2px 5px !important;
+  font-size: 0.72em !important;
+  border-radius: 3px !important;
 }
 
 /* Tab Navigation */
@@ -648,14 +654,6 @@ html.vtt-iframe .char-tab-content {
     display: none !important;
   }
 
-  .char-header-stats {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    gap: 4px !important;
-    width: 100% !important;
-    justify-content: flex-start !important;
-    margin-top: 6px !important;
-  }
 
   /* Compact Tabs Navigation */
   .char-tabs-nav {
