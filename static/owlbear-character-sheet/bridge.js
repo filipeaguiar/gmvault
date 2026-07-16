@@ -32,6 +32,7 @@ let _iframeWindow = null;
 let _expectedOrigin = null;
 let _diceReady = false;
 let _readyCheckTimer = null;
+let _diceReadyUnsub = null;
 let _pendingReadyId = null;
 let _pendingRolls = new Map(); // rollId → { timerId, iframeWindow }
 let _messageHandler = null;
@@ -100,6 +101,10 @@ export function unbindIframe() {
     clearTimeout(_readyCheckTimer);
     _readyCheckTimer = null;
   }
+  if (_diceReadyUnsub) {
+    _diceReadyUnsub();
+    _diceReadyUnsub = null;
+  }
   _pendingReadyId = null;
 
   // Clear all pending rolls.
@@ -150,37 +155,58 @@ function _checkDiceReady() {
   const requestPayload = {
     requestId: _pendingReadyId,
     timestamp: Date.now(),
-    source: SOURCE,
   };
 
-  _obr.broadcast.sendMessage(DicePlusChannel.IS_READY, requestPayload);
-
-  // Listen for readiness response.
-  const readyUnsub = _obr.broadcast.onMessage(
+  // Subscribe before sending so a fast Dice+ response cannot win the race.
+  if (_diceReadyUnsub) _diceReadyUnsub();
+  _diceReadyUnsub = _obr.broadcast.onMessage(
     DicePlusChannel.IS_READY,
-    (message) => {
-      // Filter our own echo.
-      if (message.requestId === _pendingReadyId && message.source === SOURCE && !message.ready) {
-        return; // This is our own request echoed back.
-      }
+    (event) => {
+      const message = event?.data;
+      if (!message || message.requestId !== _pendingReadyId) return;
 
-      // Accept only matching response with ready: true.
-      if (message.requestId === _pendingReadyId && message.ready === true) {
-        _setDiceReady(true);
-        readyUnsub();
-        if (_readyCheckTimer) {
-          clearTimeout(_readyCheckTimer);
-          _readyCheckTimer = null;
-        }
+      // Owlbear broadcasts the request back to subscribers. It has no
+      // ready:true field and must not be interpreted as a Dice+ response.
+      if (message.ready !== true) return;
+
+      _pendingReadyId = null;
+      _setDiceReady(true);
+      if (_diceReadyUnsub) {
+        _diceReadyUnsub();
+        _diceReadyUnsub = null;
+      }
+      if (_readyCheckTimer) {
+        clearTimeout(_readyCheckTimer);
+        _readyCheckTimer = null;
       }
     }
   );
+
+  _obr.broadcast.sendMessage(
+    DicePlusChannel.IS_READY,
+    requestPayload,
+    { destination: "ALL" }
+  ).catch(() => {
+    if (_diceReadyUnsub) {
+      _diceReadyUnsub();
+      _diceReadyUnsub = null;
+    }
+    if (_readyCheckTimer) {
+      clearTimeout(_readyCheckTimer);
+      _readyCheckTimer = null;
+    }
+    _pendingReadyId = null;
+    _setDiceReady(false);
+  });
 
   // Timeout: Dice+ not available.
   _readyCheckTimer = setTimeout(() => {
     _readyCheckTimer = null;
     _pendingReadyId = null;
-    readyUnsub();
+    if (_diceReadyUnsub) {
+      _diceReadyUnsub();
+      _diceReadyUnsub = null;
+    }
     _setDiceReady(false);
   }, READY_TIMEOUT_MS);
 }
@@ -255,11 +281,10 @@ function _handleRollRequest(payload) {
     source: SOURCE,
     playerName: _player.name,
     playerId: _player.id,
-    rollTarget: "ALL",
-    notation: payload.notation.trim(),
+    rollTarget: "everyone",
+    diceNotation: payload.notation.trim(),
     showResults: true,
     timestamp: Date.now(),
-    label: payload.label || "",
   };
 
   // Set up timeout for this roll.
@@ -281,14 +306,31 @@ function _handleRollRequest(payload) {
   });
 
   // 3.5: Send to Dice+.
-  _obr.broadcast.sendMessage(DicePlusChannel.ROLL_REQUEST, rollRequest);
+  _obr.broadcast.sendMessage(
+    DicePlusChannel.ROLL_REQUEST,
+    rollRequest,
+    { destination: "ALL" }
+  ).catch((error) => {
+    const pending = _pendingRolls.get(rollId);
+    if (!pending) return;
+    clearTimeout(pending.timerId);
+    _pendingRolls.delete(rollId);
+    _sendToIframe(MessageType.ROLL_ERROR, {
+      requestId: pending.requestId,
+      rollId,
+      error: error instanceof Error ? error.message : "Unable to send roll",
+      retryable: true,
+    });
+  });
 }
 
 // ── Dice+ result/error handlers ─────────────────────────────────────
 
-function _handleDiceResult(message) {
-  const rollId = message.rollId;
-  if (!rollId) return;
+function _handleDiceResult(event) {
+  const message = event?.data;
+  const rollId = message?.rollId;
+  const result = message?.result;
+  if (!rollId || !result) return;
 
   const pending = _pendingRolls.get(rollId);
   if (!pending) return; // Unknown or already completed rollId.
@@ -301,16 +343,17 @@ function _handleDiceResult(message) {
     const resultEnvelope = createEnvelope(MessageType.ROLL_RESULT, {
       requestId: pending.requestId,
       rollId,
-      total: message.total,
-      summary: message.summary,
-      dice: message.dice || [],
+      total: result.totalValue,
+      summary: result.rollSummary,
+      groups: Array.isArray(result.groups) ? result.groups : [],
     });
     pending.iframeWindow.postMessage(resultEnvelope, _expectedOrigin);
   }
 }
 
-function _handleDiceError(message) {
-  const rollId = message.rollId;
+function _handleDiceError(event) {
+  const message = event?.data;
+  const rollId = message?.rollId;
   if (!rollId) return;
 
   const pending = _pendingRolls.get(rollId);

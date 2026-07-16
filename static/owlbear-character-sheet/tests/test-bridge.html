@@ -151,16 +151,16 @@ import {
 // ── Mock OBR.broadcast ──────────────────────────────────────────────
 function createMockOBR() {
   const listeners = {};  // channel → [callback, ...]
-  const sent = [];       // { channel, message }
+  const sent = [];       // { channel, message, options }
 
   return {
     broadcast: {
-      sendMessage(channel, message) {
-        sent.push({ channel, message });
-        // Simulate echo: deliver to listeners of the same channel.
+      async sendMessage(channel, message, options) {
+        sent.push({ channel, message, options });
+        // Simulate Owlbear echo using the real onMessage event shape.
         const cbs = listeners[channel] || [];
         for (const cb of cbs) {
-          setTimeout(() => cb(message), 0);
+          setTimeout(() => cb({ data: message, connectionId: "mock" }), 0);
         }
       },
       onMessage(channel, callback) {
@@ -180,24 +180,27 @@ function createMockOBR() {
     // Helper to inject an external message into a channel.
     _deliver(channel, message) {
       const cbs = listeners[channel] || [];
-      for (const cb of [...cbs]) cb(message);
+      for (const cb of [...cbs]) {
+        cb({ data: message, connectionId: "dice-plus" });
+      }
     },
   };
 }
 
 // ── Mock iframe ─────────────────────────────────────────────────────
-function createMockIframe(origin = "https://example.com") {
+async function createMockIframe() {
+  const iframe = document.createElement("iframe");
+  iframe.hidden = true;
+  iframe.src = "./blank.html";
+  document.body.appendChild(iframe);
+  await new Promise((resolve) => iframe.addEventListener("load", resolve, { once: true }));
+
   const messages = [];
-  const fakeWindow = {
-    postMessage(data, targetOrigin) {
-      messages.push({ data, targetOrigin });
-    },
-  };
-  return {
-    contentWindow: fakeWindow,
-    src: `${origin}/characters/hero/`,
-    _messages: messages,
-  };
+  iframe.contentWindow.addEventListener("message", (event) => {
+    messages.push({ data: event.data, targetOrigin: event.origin });
+  });
+  iframe._messages = messages;
+  return iframe;
 }
 
 // =========================================================================
@@ -217,13 +220,13 @@ destroyBridge();
   initBridge(obr, player, (ready) => { readyCallbackValue = ready; });
   assert(!isDiceReady(), "isDiceReady() false before binding");
 
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Bridge should have sent IS_READY message.
   const readyMsg = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
   assert(readyMsg !== undefined, "IS_READY request sent on bind");
-  assert(readyMsg.message.source === SOURCE, "IS_READY request has correct source");
+  assert(readyMsg.options.destination === "ALL", "IS_READY request uses ALL destination");
 
   // Simulate Dice+ ready response.
   const requestId = readyMsg.message.requestId;
@@ -259,7 +262,7 @@ log.innerHTML += "\n<b>Bridge: echo filtering</b>\n";
   let cbVal = null;
 
   initBridge(obr, player, (r) => { cbVal = r; });
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   const readyMsg = obr._sent.find((s) => s.channel === DicePlusChannel.IS_READY);
@@ -301,7 +304,7 @@ log.innerHTML += "\n<b>Bridge: readiness timeout</b>\n";
   let cbValue = null;
 
   initBridge(obr, player, (r) => { cbCalled = true; cbValue = r; });
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Don't deliver any IS_READY response.
@@ -320,7 +323,7 @@ log.innerHTML += "\n<b>Bridge: roll request → result</b>\n";
   const player = { id: "p4", name: "Carlos" };
 
   initBridge(obr, player);
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Force dice ready.
@@ -347,7 +350,7 @@ log.innerHTML += "\n<b>Bridge: roll request → result</b>\n";
   // Dispatch a MessageEvent to window as if the iframe sent it.
   const event = new MessageEvent("message", {
     data: rollEnvelope,
-    origin: "https://example.com",
+    origin: location.origin,
     source: iframe.contentWindow,
   });
   window.dispatchEvent(event);
@@ -359,10 +362,12 @@ log.innerHTML += "\n<b>Bridge: roll request → result</b>\n";
     (s) => s.channel === DicePlusChannel.ROLL_REQUEST
   );
   assert(diceRollReq !== undefined, "Dice+ roll-request sent");
-  assert(diceRollReq.message.notation === "1d20+5", "notation forwarded");
+  assert(diceRollReq.message.diceNotation === "1d20+5", "diceNotation forwarded");
+  assert(diceRollReq.message.rollTarget === "everyone", "Dice+ rollTarget is everyone");
   assert(diceRollReq.message.playerName === "Carlos", "playerName from player identity");
   assert(diceRollReq.message.playerId === "p4", "playerId from player identity");
   assert(diceRollReq.message.source === SOURCE, "roll request has SOURCE");
+  assert(diceRollReq.options.destination === "ALL", "roll broadcast uses ALL destination");
   assert(typeof diceRollReq.message.rollId === "string", "rollId generated");
 
   const rollId = diceRollReq.message.rollId;
@@ -370,9 +375,11 @@ log.innerHTML += "\n<b>Bridge: roll request → result</b>\n";
   // Simulate Dice+ returning a result.
   obr._deliver(DicePlusChannel.ROLL_RESULT, {
     rollId,
-    total: 18,
-    summary: "13+5",
-    dice: [{ sides: 20, value: 13 }],
+    result: {
+      totalValue: 18,
+      rollSummary: "13+5 = 18",
+      groups: [{ diceType: "d20", total: 13 }],
+    },
   });
 
   await delay(10);
@@ -398,7 +405,7 @@ log.innerHTML += "\n<b>Bridge: roll request → error</b>\n";
   const player = { id: "p5", name: "Diana" };
 
   initBridge(obr, player);
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Force dice ready.
@@ -419,7 +426,7 @@ log.innerHTML += "\n<b>Bridge: roll request → error</b>\n";
       notation: "2d6",
       label: "Damage",
     }),
-    origin: "https://example.com",
+    origin: location.origin,
     source: iframe.contentWindow,
   });
   window.dispatchEvent(evt);
@@ -454,7 +461,7 @@ log.innerHTML += "\n<b>Bridge: roll when Dice+ unavailable</b>\n";
   const player = { id: "p6", name: "Eve" };
 
   initBridge(obr, player);
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Do NOT set dice ready — leave it false.
@@ -467,7 +474,7 @@ log.innerHTML += "\n<b>Bridge: roll when Dice+ unavailable</b>\n";
       notation: "1d20",
       label: "Check",
     }),
-    origin: "https://example.com",
+    origin: location.origin,
     source: iframe.contentWindow,
   });
   window.dispatchEvent(evt);
@@ -491,7 +498,7 @@ log.innerHTML += "\n<b>Bridge: invalid notation rejected</b>\n";
   const player = { id: "p7", name: "Frank" };
 
   initBridge(obr, player);
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Force dice ready.
@@ -510,7 +517,7 @@ log.innerHTML += "\n<b>Bridge: invalid notation rejected</b>\n";
       notation: "freeform text",
       label: "Test",
     }),
-    origin: "https://example.com",
+    origin: location.origin,
     source: iframe.contentWindow,
   });
   window.dispatchEvent(evt);
@@ -532,7 +539,7 @@ log.innerHTML += "\n<b>Bridge: wrong origin/source rejected</b>\n";
 {
   const obr = createMockOBR();
   initBridge(obr, { id: "p8", name: "Grace" });
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
   await delay(10);
   iframe._messages.length = 0;
@@ -553,7 +560,7 @@ log.innerHTML += "\n<b>Bridge: wrong origin/source rejected</b>\n";
   // Wrong source field
   const evt2 = new MessageEvent("message", {
     data: { source: "wrong-ext", version: 1, type: "roll-request", payload: {} },
-    origin: "https://example.com",
+    origin: location.origin,
     source: iframe.contentWindow,
   });
   window.dispatchEvent(evt2);
@@ -566,7 +573,7 @@ log.innerHTML += "\n<b>Bridge: wrong origin/source rejected</b>\n";
       requestId: "rq3",
       notation: "1d20",
     }),
-    origin: "https://example.com",
+    origin: location.origin,
     source: window, // self, not iframe
   });
   window.dispatchEvent(evt3);
@@ -582,7 +589,7 @@ log.innerHTML += "\n<b>Bridge: cleanup on unbind</b>\n";
 {
   const obr = createMockOBR();
   initBridge(obr, { id: "p9", name: "Hugo" });
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
 
   // Force ready.
@@ -600,7 +607,7 @@ log.innerHTML += "\n<b>Bridge: cleanup on unbind</b>\n";
       requestId: "orphan-req",
       notation: "1d6",
     }),
-    origin: "https://example.com",
+    origin: location.origin,
     source: iframe.contentWindow,
   });
   window.dispatchEvent(evt);
@@ -617,7 +624,7 @@ log.innerHTML += "\n<b>Bridge: cleanup on unbind</b>\n";
   if (lateRollId) {
     obr._deliver(DicePlusChannel.ROLL_RESULT, {
       rollId: lateRollId,
-      total: 4,
+      result: { totalValue: 4, rollSummary: "1d6 = 4", groups: [] },
     });
     await delay(10);
   }
@@ -632,7 +639,7 @@ log.innerHTML += "\n<b>Bridge: destroyBridge</b>\n";
 {
   const obr = createMockOBR();
   initBridge(obr, { id: "p10", name: "Iris" });
-  const iframe = createMockIframe();
+  const iframe = await createMockIframe();
   bindIframe(iframe);
   await delay(10);
 
@@ -640,7 +647,10 @@ log.innerHTML += "\n<b>Bridge: destroyBridge</b>\n";
   assert(!isDiceReady(), "isDiceReady() false after destroy");
 
   // Sending a message after destroy should not crash.
-  obr._deliver(DicePlusChannel.ROLL_RESULT, { rollId: "ghost", total: 1 });
+  obr._deliver(DicePlusChannel.ROLL_RESULT, {
+    rollId: "ghost",
+    result: { totalValue: 1, rollSummary: "1d1 = 1", groups: [] },
+  });
   await delay(10);
   assert(true, "message after destroyBridge does not crash");
 }

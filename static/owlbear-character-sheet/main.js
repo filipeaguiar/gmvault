@@ -6,7 +6,7 @@
  * Vanilla JavaScript, no frameworks, no bundler.
  */
 
-import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady } from "./bridge.js";
+import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady } from "./bridge.js?v=1.0.1";
 
 // ---------------------------------------------------------------------------
 // SDK Import
@@ -141,14 +141,15 @@ function showSheet(url) {
   // Unbind previous bridge binding before changing src.
   unbindIframe();
 
-  characterIframe.src = url;
-
-  // Bind bridge after iframe loads (task 3.2).
+  // Bind bridge after iframe loads (task 3.2). Register before changing
+  // src so a cached character page cannot win the load-event race.
   characterIframe.onload = () => {
     if (obrReady) {
       bindIframe(characterIframe);
     }
   };
+
+  characterIframe.src = url;
 }
 
 // ---------------------------------------------------------------------------
@@ -224,9 +225,15 @@ async function fetchCatalog() {
 async function initOBR() {
   try {
     const module = await import(
-      "https://cdn.jsdelivr.net/npm/@owlbear-rodeo/sdk@2.5.0/dist/index.mjs"
+      "https://esm.sh/@owlbear-rodeo/sdk@3.1.0"
     );
     OBR = module.default || module;
+
+    if (!OBR.isAvailable) {
+      setStatus("Modo local (sem Owlbear)", "");
+      await fetchCatalog();
+      return;
+    }
 
     OBR.onReady(async () => {
       obrReady = true;
@@ -249,8 +256,9 @@ async function initOBR() {
       // Re-fetch catalog now that we have a player ID for localStorage key.
       await fetchCatalog();
     });
-  } catch {
-    // Running outside Owlbear — degrade gracefully.
+  } catch (error) {
+    // Running outside Owlbear or SDK unavailable — degrade gracefully.
+    console.error("[Character Sheet] Falha ao inicializar SDK Owlbear", error);
     setStatus("Modo local (sem Owlbear)", "");
     await fetchCatalog();
   }

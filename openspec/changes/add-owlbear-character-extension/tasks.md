@@ -36,9 +36,9 @@
 
 ## 5. Testes, documentação e publicação
 
-- [ ] 5.1 Criar testes do shell para catálogo, seleção persistida, preferência inválida e fallback fora do Owlbear.
-- [ ] 5.2 Criar testes da ponte com `OBR.broadcast` falso cobrindo readiness, eco, request, identidade, resultado, erro, timeout e limpeza.
-- [ ] 5.3 Criar testes do cliente da ficha cobrindo aprimoramento progressivo, payload, múltiplas rolagens, correlação e mensagens rejeitadas.
+- [x] 5.1 Criar testes do shell para catálogo, seleção persistida, preferência inválida e fallback fora do Owlbear.
+- [x] 5.2 Criar testes da ponte com `OBR.broadcast` falso cobrindo readiness, eco, request, identidade, resultado, erro, timeout e limpeza.
+- [x] 5.3 Criar testes do cliente da ficha cobrindo aprimoramento progressivo, payload, múltiplas rolagens, correlação e mensagens rejeitadas.
 - [x] 5.4 Validar teclado, foco, live regions, largura do popover e ausência de overflow em iframe estreito.
 - [x] 5.5 Documentar instalação pela URL do manifest, seleção de personagem, dependência opcional do Dice+ e diagnóstico básico.
 - [x] 5.6 Executar testes relacionados, `hugo --gc --minify` e verificar manifest, catálogo, assets e ausência de dependência SDK nas páginas comuns.
