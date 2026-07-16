@@ -529,6 +529,11 @@ html.vtt-iframe .char-sheet-container {
 }
 
 @media (max-width: 500px) {
+  /* Hide site header containing campaigns/compendium */
+  .site-header {
+    display: none !important;
+  }
+
   /* Compact Header */
   .char-header {
     padding: 10px !important;
