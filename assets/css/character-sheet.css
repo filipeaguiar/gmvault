@@ -119,7 +119,7 @@ html.vtt-iframe .char-sheet-container {
   background: var(--card-bg, #f4f4f4);
   border: 1px solid var(--border-color, #ccc);
   border-radius: 4px;
-  font-size: 0.85em;
+  font-size: 0.95em;
   font-weight: bold;
   color: var(--text-color);
   transition: all 0.25s ease;
@@ -129,7 +129,7 @@ html.vtt-iframe .char-sheet-container {
 /* Shrink badges slightly when scrolled, keeping them visible */
 .char-sheet-container.scrolled .header-stat-badge {
   padding: 2px 5px !important;
-  font-size: 0.72em !important;
+  font-size: 0.82em !important;
   border-radius: 3px !important;
 }
 
