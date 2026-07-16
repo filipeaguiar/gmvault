@@ -538,7 +538,8 @@ html.vtt-iframe .char-sheet-container {
   .char-header {
     padding: 10px !important;
   }
-  .char-header img {
+  .char-header img,
+  .char-header .char-portrait-placeholder {
     width: 50px !important;
     height: 50px !important;
     margin-right: 12px !important;
@@ -547,9 +548,7 @@ html.vtt-iframe .char-sheet-container {
     font-size: 1.4em !important;
   }
   .char-meta {
-    margin-left: 0 !important;
-    margin-top: 4px;
-    font-size: 0.85em !important;
+    display: none !important;
   }
 
   /* Compact Tabs Navigation */
