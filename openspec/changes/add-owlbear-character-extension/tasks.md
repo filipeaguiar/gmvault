@@ -42,4 +42,4 @@
 - [x] 5.4 Validar teclado, foco, live regions, largura do popover e ausência de overflow em iframe estreito.
 - [x] 5.5 Documentar instalação pela URL do manifest, seleção de personagem, dependência opcional do Dice+ e diagnóstico básico.
 - [x] 5.6 Executar testes relacionados, `hugo --gc --minify` e verificar manifest, catálogo, assets e ausência de dependência SDK nas páginas comuns.
-- [ ] 5.7 Testar manualmente no Owlbear sem Dice+, com Dice+ e com dois jogadores usando seleções locais diferentes.
+- [x] 5.7 Testar manualmente no Owlbear sem Dice+, com Dice+ e com dois jogadores usando seleções locais diferentes.

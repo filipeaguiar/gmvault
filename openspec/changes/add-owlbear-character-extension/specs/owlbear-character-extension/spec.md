@@ -1,11 +1,11 @@
 ## ADDED Requirements
 
 ### Requirement: The project SHALL publish an installable Owlbear extension
-The Hugo deployment SHALL expose a valid Owlbear Rodeo manifest and static extension shell under the configured `/gmvault/` base path. The manifest SHALL declare `manifest_version: 1`, SHALL start with extension `version: "1.0.0"`, and SHALL reference the shell, icon, title, width, and height using URLs that resolve correctly on GitHub Pages.
+The Hugo deployment SHALL expose a valid Owlbear Rodeo manifest and static extension shell under the configured `/gmvault/` base path. The manifest SHALL declare `manifest_version: 1`, SHALL declare a valid semantic extension version, and SHALL reference the shell, icon, title, width, and height using URLs that resolve correctly on GitHub Pages.
 
 #### Scenario: Extension manifest is requested
 - **WHEN** Owlbear Rodeo loads `/gmvault/owlbear-character-sheet/manifest.json`
-- **THEN** it SHALL receive a valid manifest with `manifest_version: 1`, semantic extension version `1.0.0`, and an action popover that resolves to the published character extension shell.
+- **THEN** it SHALL receive a valid manifest with `manifest_version: 1`, a semantic extension version matching the published release, and an action popover that resolves to the published character extension shell.
 
 #### Scenario: Site is built for production
 - **WHEN** `hugo --gc --minify` runs

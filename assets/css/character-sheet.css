@@ -527,3 +527,50 @@ html.vtt-iframe .char-sheet-container {
   border-style: dashed;
   opacity: 0.55;
 }
+
+@media (max-width: 500px) {
+  /* Compact Header */
+  .char-header {
+    padding: 10px !important;
+  }
+  .char-header img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 12px !important;
+  }
+  .char-header h1 {
+    font-size: 1.4em !important;
+  }
+  .char-meta {
+    margin-left: 0 !important;
+    margin-top: 4px;
+    font-size: 0.85em !important;
+  }
+
+  /* Compact Tabs Navigation */
+  .char-tabs-nav {
+    padding: 6px 8px !important;
+    gap: 4px !important;
+  }
+  .char-tab-btn {
+    padding: 6px 10px !important;
+    font-size: 0.85em !important;
+  }
+
+  /* Compact Content Areas */
+  .char-tab-content {
+    padding: 12px !important;
+  }
+
+  /* Attributes in 2 Columns */
+  .attr-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  /* Compendium fallbacks and cards spacing */
+  .compendium-fallback {
+    padding: 6px !important;
+    font-size: 0.85em !important;
+  }
+}
