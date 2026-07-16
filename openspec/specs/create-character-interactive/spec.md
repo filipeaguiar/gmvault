@@ -4,11 +4,11 @@
 TBD - created by archiving change create-character-interactive-script. Update Purpose after archive.
 ## Requirements
 ### Requirement: Interactive Character Creation
-The script SHALL prompt the user to input character details such as name, race, class, level, stats, spells, and equipment via terminal interface.
+The script SHALL prompt the user to input character details such as name, race, class, level, stats, spells, background, starting packs, and equipment via terminal interface.
 
 #### Scenario: User provides character details
 - **WHEN** the script is executed
-- **THEN** it asks for basic information (name, campaign) and step-by-step asks for race, class, level, ability scores, proficiencies, etc.
+- **THEN** it asks for basic information (name, campaign) and step-by-step asks for race, class, level, background, starting packs, ability scores, proficiencies, etc.
 
 ### Requirement: Compendium Population
 The script SHALL query the `5etools` mirrors for any classes, subclasses, races, feats, spells, and items that the character has and download them into the compendium if they don't exist.

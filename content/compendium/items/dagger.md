@@ -11,10 +11,17 @@ tags:
 visibility: public
 status: draft
 item_info:
-  type: Adventuring Gear
+  type: Weapon
   cost: 2.0 gp
   weight: 1 lb
-  properties: ''
+  weapon_type: melee
+  properties:
+  - finesse
+  - light
+  - thrown
+  range: 20/60
+  damage: 1d4
+  damage_type: piercing
 titulo_pt_br: Adaga
 translation:
   source_language: en

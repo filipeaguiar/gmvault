@@ -19,5 +19,5 @@
 
 ## 4. Validação e Compilação
 
-- [ ] 4.1 Testar importação de personagem com itens mágicos (como luvas de força ou anel de proteção) e verificar se o frontmatter gerado está limpo e os compêndios estão ricos.
-- [ ] 4.2 Executar build local `hugo --gc --minify` e verificar se a ficha renderiza os atributos calculados e a CA corretos.
+- [x] 4.1 Testar importação de personagem com itens mágicos (como luvas de força ou anel de proteção) e verificar se o frontmatter gerado está limpo e os compêndios estão ricos.
+- [x] 4.2 Executar build local `hugo --gc --minify` e verificar se a ficha renderiza os atributos calculados e a CA corretos.

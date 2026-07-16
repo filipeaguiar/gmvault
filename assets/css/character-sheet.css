@@ -380,6 +380,195 @@ html.vtt-iframe .char-tab-content {
   text-align: center;
 }
 
+.equipment-section {
+  margin: 0 0 24px;
+}
+
+.equipment-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 12px;
+}
+
+.equipment-card {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #7b2cbf;
+  border-radius: 8px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.equipment-card.is-inactive {
+  opacity: 0.58;
+}
+
+.equipment-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.equipment-card-icon {
+  display: inline-grid;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 9px;
+  background: rgba(123, 44, 191, 0.12);
+  color: #7b2cbf;
+  font-size: 1.35rem;
+}
+
+.weapon-card { border-left-color: #b23a48; }
+.weapon-card .equipment-card-icon { background: rgba(178, 58, 72, 0.12); color: #b23a48; }
+.weapon-card.weapon-ranged { border-left-color: #2d7d65; }
+.weapon-card.weapon-ranged .equipment-card-icon { background: rgba(45, 125, 101, 0.13); color: #2d7d65; }
+.armor-card { border-left-color: #3273a8; }
+.armor-card .equipment-card-icon { background: rgba(50, 115, 168, 0.13); color: #3273a8; }
+.consumable-card { border-left-color: #a33d88; }
+.consumable-card .equipment-card-icon { background: rgba(163, 61, 136, 0.13); color: #a33d88; }
+.gear-card { border-left-color: #b7791f; }
+.gear-card .equipment-card-icon { background: rgba(183, 121, 31, 0.13); color: #b7791f; }
+
+.equipment-card-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.equipment-card-name {
+  display: block;
+  overflow-wrap: anywhere;
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.equipment-badges,
+.equipment-properties,
+.equipment-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.equipment-badges { margin-top: 6px; }
+
+.equipment-badge,
+.equipment-property,
+.equipment-meta-line span {
+  padding: 3px 7px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-muted, #666);
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.equipment-badge.is-equipped {
+  border-color: rgba(39, 174, 96, 0.35);
+  background: rgba(39, 174, 96, 0.1);
+  color: #237a43;
+}
+
+.equipment-badge.is-unequipped {
+  color: var(--text-muted, #777);
+}
+
+.equipment-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 13px;
+}
+
+.equipment-stat {
+  display: flex;
+  min-width: 0;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 6px;
+  background: rgba(127, 127, 127, 0.07);
+}
+
+.equipment-stat small {
+  color: var(--text-muted, #777);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.equipment-stat strong {
+  margin-top: 2px;
+  font-size: 1rem;
+}
+
+.equipment-stat span {
+  overflow-wrap: anywhere;
+  color: var(--text-muted, #777);
+  font-size: 0.72rem;
+}
+
+.equipment-properties,
+.equipment-meta-line {
+  margin-top: 11px;
+}
+
+.equipment-property {
+  background: rgba(123, 44, 191, 0.06);
+}
+
+.equipment-card .compendium-content,
+.equipment-card .compendium-legacy-content {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.equipment-card .compendium-content p:last-child,
+.equipment-card .compendium-legacy-content p:last-child {
+  margin-bottom: 0;
+}
+
+.equipment-card .compendium-content ul,
+.equipment-card .compendium-content ol,
+.equipment-card .compendium-legacy-content ul,
+.equipment-card .compendium-legacy-content ol {
+  margin: 0.65rem 0 0.25rem;
+  padding-left: 1.25rem;
+}
+
+.equipment-card .compendium-content li,
+.equipment-card .compendium-legacy-content li {
+  margin: 0 0 0.32rem;
+  padding-left: 0.1rem;
+}
+
+.equipment-card .compendium-content li:last-child,
+.equipment-card .compendium-legacy-content li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 520px) {
+  .equipment-grid { grid-template-columns: 1fr; }
+  .equipment-stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 .char-list-item.weapon { border-left-color: #c0392b; }
 .char-list-item.armor { border-left-color: #2980b9; }
 .char-list-item.gear { border-left-color: #f39c12; }

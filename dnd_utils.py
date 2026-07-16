@@ -8,7 +8,7 @@ import yaml
 
 def dump_yaml_indented(data, indent=2):
     if not data:
-        return "[]" if isinstance(data, list) else "{}"
+        return " []" if isinstance(data, list) else " {}"
     yaml_str = yaml.dump(data, default_flow_style=False, sort_keys=False, allow_unicode=True)
     prefix = " " * indent
     return "\n" + "\n".join(prefix + line for line in yaml_str.splitlines())
@@ -307,6 +307,65 @@ def extract_pack_items(pack_name, item_data):
             break
     return items
 
+def search_item_by_name(query, item_data=None):
+    """Retorna uma lista de nomes distintos de itens que correspondam à query (case-insensitive)."""
+    if not item_data:
+        item_data = load_item_data()
+
+    # We also need to search items-base.json for basic weapons and armor
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    url = DATA_BASE_URL + "items-base.json"
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as response:
+            base_data = json.loads(response.read().decode())
+    except Exception:
+        base_data = {"item": []}
+
+    all_items = (
+        item_data.get("item", [])
+        + item_data.get("baseitem", [])
+        + base_data.get("item", [])
+        + base_data.get("baseitem", [])
+    )
+
+    query_lower = query.lower()
+    matches = set()
+
+    for item in all_items:
+        name = item.get("name", "")
+        if query_lower in name.lower():
+            # Exclude magic variants if too noisy, but for now just add all matches
+            matches.add(name)
+
+    # Sort matches by length so exact/shorter matches appear first
+    return sorted(list(matches), key=lambda x: (len(x), x))
+
+
+def update_frontmatter_field(path, field_name, field_value):
+    """Atualiza um campo YAML preservando integralmente o corpo Markdown."""
+    with open(path, "r", encoding="utf-8") as source:
+        original = source.read()
+    if not original.startswith("---"):
+        return False
+    parts = original.split("---", 2)
+    if len(parts) != 3:
+        return False
+    metadata = yaml.safe_load(parts[1]) or {}
+    if not isinstance(metadata, dict):
+        return False
+    metadata[field_name] = field_value
+    rendered = yaml.safe_dump(
+        metadata,
+        allow_unicode=True,
+        default_flow_style=False,
+        sort_keys=False,
+    )
+    with open(path, "w", encoding="utf-8") as destination:
+        destination.write(f"---\n{rendered}---{parts[2]}")
+    return True
+
+
 def fetch_from_5etools(kind, english_name):
     slug = slugify(english_name)
     print(f"  [5e.tools] Tentando baixar '{english_name}' ({kind})...")
@@ -338,11 +397,9 @@ def fetch_from_5etools(kind, english_name):
         slug_check = f"weapon-mastery-{slug}"
 
     dest_path_check = f"{content_dir_check}/{slug_check}.md"
-    if os.path.exists(dest_path_check):
+    if os.path.exists(dest_path_check) and kind not in {"item", "magic_item"}:
         print(f"  [5e.tools] Encontrado localmente: {dest_path_check}")
-        if kind == "magic_item":
-            return f"/compendium/magic-items/{slug_check}/"
-        elif kind in ["class", "subclass"]:
+        if kind in ["class", "subclass"]:
             return f"/compendium/classes/{slug_check}/"
         elif kind == "item_mastery":
             return f"/compendium/rules/{slug_check}/"
@@ -350,6 +407,8 @@ def fetch_from_5etools(kind, english_name):
             return f"/compendium/species/{slug_check}/"
         else:
             return f"/compendium/{kind}s/{slug_check}/"
+    elif os.path.exists(dest_path_check):
+        print(f"  [5e.tools] Sincronizando metadados locais: {dest_path_check}")
     
     files = file_map.get(kind, [])
     # Lista de nomes de busca (suporta aliases para itens básicos)
@@ -610,9 +669,25 @@ spell_info:
 """
 
     elif kind == "item" or kind == "magic_item":
-        item_type = found_data.get("type", "G")
-        type_map = {"G": "Adventuring Gear", "LA": "Light Armor", "MA": "Medium Armor", "HA": "Heavy Armor", "S": "Shield", "R": "Ring", "W": "Weapon", "P": "Potion", "SC": "Scroll"}
-        item_type_str = type_map.get(item_type, "Adventuring Gear")
+        raw_item_type = found_data.get("type", "G")
+        item_type = raw_item_type.split("|", 1)[0]
+        type_map = {
+            "G": "Adventuring Gear",
+            "LA": "Light Armor",
+            "MA": "Medium Armor",
+            "HA": "Heavy Armor",
+            "S": "Shield",
+            "RG": "Ring",
+            "M": "Weapon",
+            "R": "Weapon",
+            "AF": "Weapon",
+            "P": "Potion",
+            "SC": "Scroll",
+            "WD": "Wand",
+            "RD": "Rod",
+            "ST": "Staff",
+        }
+        item_type_str = "Wondrous item" if found_data.get("wondrous") else type_map.get(item_type, "Adventuring Gear")
         
         cost_gp = f"{found_data.get('value', 0) / 100} gp" if found_data.get('value') else "—"
         weight_str = f"{found_data.get('weight', 0)} lb" if found_data.get('weight') else "—"
@@ -637,11 +712,12 @@ spell_info:
         raw_props = found_data.get("property", [])
         if isinstance(raw_props, list):
             for p in raw_props:
-                mapped = prop_mapping.get(p)
+                property_code = p.split("|", 1)[0]
+                mapped = prop_mapping.get(property_code)
                 if mapped:
                     item_props.append(mapped)
                 else:
-                    item_props.append(p.lower())
+                    item_props.append(property_code.lower())
                     
         dmg_str = found_data.get("dmg1")
         raw_dmg_type = found_data.get("dmgType")
@@ -690,6 +766,14 @@ spell_info:
             if attunement:
                 item_info_data["attunement"] = attunement
                 
+        if item_type_str == "Weapon":
+            if item_type == "R":
+                item_info_data["weapon_type"] = "ranged"
+            else:
+                item_info_data["weapon_type"] = "melee"
+        if item_type in {"P", "SC"} or found_data.get("consumable"):
+            item_info_data["consumable"] = True
+
         if item_props:
             item_info_data["properties"] = item_props
         if range_val:
@@ -866,9 +950,14 @@ status: "draft"
 """
 
     if markdown:
-        with open(dest_path, "w", encoding="utf-8") as f:
-            f.write(markdown)
-        print(f"  [5e.tools] SUCESSO: Arquivo de compêndio criado em: {dest_path}")
+        if kind in {"item", "magic_item"} and os.path.exists(dest_path):
+            if not update_frontmatter_field(dest_path, "item_info", item_info_data):
+                return None
+            print(f"  [5e.tools] SUCESSO: Metadados estruturados atualizados em: {dest_path}")
+        else:
+            with open(dest_path, "w", encoding="utf-8") as f:
+                f.write(markdown)
+            print(f"  [5e.tools] SUCESSO: Arquivo de compêndio criado em: {dest_path}")
         if kind == "magic_item":
             return f"/compendium/magic-items/{slug}/"
         elif kind in ["class", "subclass"]:

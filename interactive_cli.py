@@ -20,7 +20,8 @@ OPERATIONS = {
     "1": ("Importar campanha do 5e.tools", "import_campaign.py"),
     "2": ("Importar personagem do D&D Beyond", "import_dndbeyond.py"),
     "3": ("Criar personagem manualmente", "create_character.py"),
-    "4": ("Traduzir drafts", "translate_drafts.py"),
+    "4": ("Editar personagem", "edit_character.py"),
+    "5": ("Traduzir drafts", "translate_drafts.py"),
 }
 
 
@@ -154,21 +155,30 @@ def translation_menu() -> dict[str, Any] | None:
 
 
 def main() -> int:
-    """Escolhe uma operação e delega ao script original em modo de menu."""
-    console.print(Panel("GM Vault — ferramentas interativas", style="bold magenta"))
-    for key, (label, _) in OPERATIONS.items():
-        console.print(f"  [bold cyan]{key}[/]  {label}")
-    console.print("  [bold cyan]0[/]  Sair")
+    """Delega operações e retorna ao menu até o usuário escolher sair."""
+    while True:
+        console.print(Panel("GM Vault — ferramentas interativas", style="bold magenta"))
+        for key, (label, _) in OPERATIONS.items():
+            console.print(f"  [bold cyan]{key}[/]  {label}")
+        console.print("  [bold cyan]0[/]  Sair")
 
-    choice = Prompt.ask("Escolha uma operação", choices=["0", *OPERATIONS], default="0")
-    if choice == "0":
-        console.print("Operação cancelada.")
-        return 0
+        choice = Prompt.ask(
+            "Escolha uma operação", choices=["0", *OPERATIONS], default="0"
+        )
+        if choice == "0":
+            console.print("Sessão encerrada.")
+            return 0
 
-    _, script_name = OPERATIONS[choice]
-    script = Path(__file__).resolve().with_name(script_name)
-    completed = subprocess.run([sys.executable, str(script), "--menu"], check=False)
-    return completed.returncode
+        _, script_name = OPERATIONS[choice]
+        script = Path(__file__).resolve().with_name(script_name)
+        completed = subprocess.run(
+            [sys.executable, str(script), "--menu"], check=False
+        )
+        if completed.returncode:
+            console.print(
+                f"[yellow]A operação terminou com código {completed.returncode}.[/]"
+            )
+        console.print("\n[cyan]Retornando ao menu inicial…[/]\n")
 
 
 if __name__ == "__main__":

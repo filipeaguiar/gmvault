@@ -9,8 +9,10 @@
     {{- $lookupRef = strings.TrimPrefix $basePath $lookupRef -}}
   {{- end -}}
   {{- $page := site.GetPage $lookupRef -}}
-  {{- if and $page $page.Content -}}
-    <div class="compendium-content" data-compendium-ref="{{ $ref }}">{{ $page.Content }}</div>
+  {{- if $page -}}
+    {{- with $page.Content -}}
+      <div class="compendium-content" data-compendium-ref="{{ $ref }}">{{ . }}</div>
+    {{- end -}}
   {{- else -}}
     <div class="compendium-fallback" data-compendium-ref="{{ $ref }}">
       <span>{{ $name }}</span>

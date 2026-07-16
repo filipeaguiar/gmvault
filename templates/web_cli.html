@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GM Vault — Terminal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/css/xterm.min.css">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      background: #101318;
+      color: #e5e7eb;
+      font-family: system-ui, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      padding: 0 14px;
+      border-bottom: 1px solid #303640;
+      background: #171b22;
+    }
+    h1 { margin: 0; font-size: 0.95rem; font-weight: 600; }
+    #status { color: #fbbf24; font-size: 0.8rem; }
+    #status.connected { color: #86efac; }
+    #terminal { flex: 1; min-height: 0; padding: 10px; }
+    .xterm { height: 100%; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GM Vault — Terminal</h1>
+    <span id="status">Conectando…</span>
+  </header>
+  <main id="terminal" aria-label="Terminal interativo do GM Vault"></main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/lib/xterm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@xterm/addon-fit@0.10.0/lib/addon-fit.js"></script>
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+  <script>
+    const terminal = new Terminal({
+      cursorBlink: true,
+      convertEol: true,
+      fontFamily: "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      fontSize: 15,
+      theme: { background: "#101318", foreground: "#e5e7eb" },
+    });
+    const fitAddon = new FitAddon.FitAddon();
+    terminal.loadAddon(fitAddon);
+    terminal.open(document.getElementById("terminal"));
+    fitAddon.fit();
+    terminal.focus();
+
+    const status = document.getElementById("status");
+    const socket = io();
+
+    function sendSize() {
+      socket.emit("pty_resize", { cols: terminal.cols, rows: terminal.rows });
+    }
+
+    socket.on("connect", () => {
+      status.textContent = "Conectado";
+      status.classList.add("connected");
+      sendSize();
+      terminal.focus();
+    });
+
+    socket.on("disconnect", () => {
+      status.textContent = "Desconectado";
+      status.classList.remove("connected");
+    });
+
+    socket.on("pty_output", (data) => {
+      terminal.write(typeof data === "string" ? data : data.output || "");
+    });
+
+    socket.on("pty_exit", () => {
+      terminal.write("\r\n\x1b[33mSessão encerrada. Recarregue a página para iniciar outra.\x1b[0m\r\n");
+    });
+
+    terminal.onData((data) => socket.emit("pty_input", { input: data }));
+
+    let resizeTimer;
+    new ResizeObserver(() => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        fitAddon.fit();
+        if (socket.connected) sendSize();
+      }, 50);
+    }).observe(document.getElementById("terminal"));
+  </script>
+</body>
+</html>

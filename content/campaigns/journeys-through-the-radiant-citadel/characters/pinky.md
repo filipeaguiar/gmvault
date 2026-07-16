@@ -1,217 +1,218 @@
 ---
-title: "Pinky"
-date: 2026-07-09T19:00:00Z
-params:
-  kind: "character"
-draft: false
-weight: 10
-summary: "Goblin Rogue 1 criado manualmente guiado por dados."
-tags:
-  - jogador
-  - goblin
-  - rogue
-visibility: "players"
-status: "ready"
-
-# Estatísticas Estruturadas
 char_info:
-  class: "Rogue"
+  ac: '15'
+  actions:
+  - max_uses: 0
+    name: Ataque
+    ref: /compendium/rules/action-attack/
+    reset: ''
+  - max_uses: 0
+    name: Esconder
+    ref: /compendium/rules/action-hide/
+    reset: ''
+  - max_uses: 0
+    name: Desengajar
+    ref: /compendium/rules/action-disengage/
+    reset: ''
+  - max_uses: 0
+    name: Disparar
+    ref: /compendium/rules/action-dash/
+    reset: ''
+  - max_uses: 0
+    name: Ajudar
+    ref: /compendium/rules/action-help/
+    reset: ''
+  - max_uses: 0
+    name: Esquivar
+    ref: /compendium/rules/action-dodge/
+    reset: ''
+  - max_uses: 0
+    name: Usar Objeto
+    ref: /compendium/rules/action-use-object/
+    reset: ''
+  alignment: True Neutral
+  avatar: ''
+  class: Rogue
   class_level: 1
-  subclass: ""
-  level: 1
-  species: "Goblin"
-  species_variant: ""
-  ac: "15"
-  hp: "9"
-  hp_max: "9"
-  hp_current: "9"
-  feat: ""
-  feats:
-    - Alert
-  size: "Small"
-  alignment: "True Neutral"
-  dndbeyond_id: ""
-  proficiency_bonus: 2
-  spell_dc: 0
-  spell_attack_bonus: 0
-  avatar: ""
-  speed:
-    walk: 30
-    fly: 0
-    swim: 0
-    climb: 0
-    burrow: 0
-  senses: "Passive Perception 13, Darkvision 60 ft."
-  passive_senses:
-    perception: 13
-    investigation: 12
-    insight: 11
-  languages: "Common"
-  saves:
-    str: 0
-    dex: 7
-    con: 1
-    int: 2
-    wis: 1
-    cha: -1
-  saves_proficient:
-    str: false
-    dex: true
-    con: false
-    int: true
-    wis: false
-    cha: false
-  saves_summary: "Dex +7, Int +2"
-  mods:
-    str: 0
-    dex: 5
-    con: 1
-    int: 0
-    wis: 1
-    cha: -1
-  stats:
-    str: 10
-    dex: 20
-    con: 12
-    int: 11
-    wis: 13
-    cha: 9
+  classes_progression:
+  - level: 1
+    name: Rogue
+    subclass: ''
   currencies:
     cp: 0
-    sp: 0
-    gp: 0
     ep: 0
+    gp: 0
     pp: 0
+    sp: 0
+  dndbeyond_id: ''
+  equipment:
+  - equipped: false
+    name: Burglar's Pack
+    quantity: 1
+    ref: /compendium/items/burglars-pack/
+  - equipped: true
+    name: Shortbow
+    quantity: 1
+    ref: /compendium/items/shortbow/
+  - equipped: true
+    name: Shortsword
+    quantity: 1
+    ref: /compendium/items/shortsword/
+  - equipped: true
+    name: Dagger
+    quantity: 1
+    ref: /compendium/items/dagger/
+  - equipped: true
+    name: Leather Armor
+    quantity: 1
+    ref: /compendium/items/leather-armor/
+  feat: ''
+  feats:
+  - Alert
+  hp: '9'
+  hp_current: '9'
+  hp_max: '9'
+  languages: Common
+  level: 1
+  mods:
+    cha: -1
+    con: 1
+    dex: 5
+    int: 0
+    str: 0
+    wis: 1
+  passive_senses:
+    insight: 11
+    investigation: 12
+    perception: 13
+  proficiency_bonus: 2
+  saves:
+    cha: -1
+    con: 1
+    dex: 7
+    int: 2
+    str: 0
+    wis: 1
+  saves_proficient:
+    cha: false
+    con: false
+    dex: true
+    int: true
+    str: false
+    wis: false
+  saves_summary: Dex +7, Int +2
+  senses: Passive Perception 13, Darkvision 60 ft.
+  size: Small
   skills:
     acrobatics:
       bonus: 7
-      proficient: true
       expertise: false
+      proficient: true
       stat: dex
     animal-handling:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     arcana:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     athletics:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: str
     deception:
       bonus: 1
-      proficient: true
       expertise: false
+      proficient: true
       stat: cha
     history:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     insight:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     intimidation:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     investigation:
       bonus: 2
-      proficient: true
       expertise: false
+      proficient: true
       stat: int
     medicine:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     nature:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     perception:
       bonus: 3
-      proficient: true
       expertise: false
+      proficient: true
       stat: wis
     performance:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     persuasion:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     religion:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     sleight-of-hand:
       bonus: 9
-      proficient: true
       expertise: true
+      proficient: true
       stat: dex
     stealth:
       bonus: 9
-      proficient: true
       expertise: true
+      proficient: true
       stat: dex
     survival:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
-  actions:
-    - name: Ataque
-      ref: /compendium/rules/action-attack/
-      max_uses: 0
-      reset: ''
-    - name: Esconder
-      ref: /compendium/rules/action-hide/
-      max_uses: 0
-      reset: ''
-    - name: Desengajar
-      ref: /compendium/rules/action-disengage/
-      max_uses: 0
-      reset: ''
-    - name: Disparar
-      ref: /compendium/rules/action-dash/
-      max_uses: 0
-      reset: ''
-    - name: Ajudar
-      ref: /compendium/rules/action-help/
-      max_uses: 0
-      reset: ''
-    - name: Esquivar
-      ref: /compendium/rules/action-dodge/
-      max_uses: 0
-      reset: ''
-    - name: Usar Objeto
-      ref: /compendium/rules/action-use-object/
-      max_uses: 0
-      reset: ''
-  equipment: []
+  species: Goblin
+  species_variant: ''
+  speed:
+    burrow: 0
+    climb: 0
+    fly: 0
+    swim: 0
+    walk: 30
+  spell_attack_bonus: 0
+  spell_dc: 0
   spells: []
-  classes_progression:
-    - name: Rogue
-      level: 1
-      subclass: ''
-
-# Relacionamentos
-locations: []
-factions: []
+  stats:
+    cha: 9
+    con: 12
+    dex: 20
+    int: 11
+    str: 10
+    wis: 13
+  subclass: ''
 compendium_refs:
 - /compendium/classes/rogue/
 - /compendium/feats/alert/
@@ -223,7 +224,27 @@ compendium_refs:
 - /compendium/rules/action-hide/
 - /compendium/rules/action-use-object/
 - /compendium/species/goblin/
+- /compendium/items/burglars-pack/
+- /compendium/items/shortbow/
+- /compendium/items/shortsword/
+- /compendium/items/dagger/
+- /compendium/items/leather-armor/
+date: 2026-07-09 19:00:00+00:00
+draft: false
+factions: []
+locations: []
+params:
+  kind: character
 spells_usage: []
+status: ready
+summary: Goblin Rogue 1 criado manualmente guiado por dados.
+tags:
+- jogador
+- goblin
+- rogue
+title: Pinky
+visibility: players
+weight: 10
 ---
 
 ### Biografia

@@ -11,10 +11,16 @@ tags:
 visibility: public
 status: draft
 item_info:
-  type: Ring
+  type: Weapon
   cost: 25.0 gp
   weight: 2 lb
-  properties: ''
+  weapon_type: ranged
+  properties:
+  - ammunition
+  - two-handed
+  range: 80/320
+  damage: 1d6
+  damage_type: piercing
 titulo_pt_br: Arco Curto
 translation:
   source_language: en

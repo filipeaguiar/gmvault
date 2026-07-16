@@ -11,10 +11,15 @@ tags:
 visibility: public
 status: draft
 item_info:
-  type: Adventuring Gear
+  type: Weapon
   cost: 10.0 gp
   weight: 2 lb
-  properties: ''
+  weapon_type: melee
+  properties:
+  - finesse
+  - light
+  damage: 1d6
+  damage_type: piercing
 titulo_pt_br: Espada Curta
 translation:
   source_language: en

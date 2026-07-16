@@ -1016,9 +1016,32 @@ def main():
             "stat": stat_key
         }
             
-    # 8.2 Consolidação de Equipamentos (Background e Packs)
+    # 8.2 Equipamentos Extras (Busca)
+    print_header("EQUIPAMENTOS EXTRAS")
+    extra_items = []
+    while True:
+        query = ask("Deseja adicionar um item extra? (Deixe em branco para pular/finalizar)")
+        if not query.strip():
+            break
+        
+        matches = dnd_utils.search_item_by_name(query.strip(), item_data)
+        if not matches:
+            print("  [Aviso] Nenhum item encontrado com esse nome.")
+            continue
+            
+        if len(matches) == 1:
+            selected_item = matches[0]
+            print(f"  Item encontrado: {selected_item}")
+        else:
+            selected_item = ask_choice("Múltiplos itens encontrados. Qual deseja?", matches)
+            
+        qty = ask_int(f"Quantidade de {selected_item}", 1)
+        extra_items.append({"name": selected_item, "quantity": qty})
+        print(f"  {qty}x {selected_item} adicionado(s) à lista.")
+
+    # 8.3 Consolidação de Equipamentos (Background e Packs)
     equipment_data = []
-    combined_items = bg_items + pack_items
+    combined_items = bg_items + pack_items + extra_items
     
     for item in combined_items:
         # Tenta resolver o compêndio.

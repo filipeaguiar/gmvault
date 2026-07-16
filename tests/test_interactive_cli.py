@@ -11,12 +11,21 @@ from interactive_cli import (
 
 class InteractiveMenuTests(unittest.TestCase):
     @patch("interactive_cli.subprocess.run")
-    @patch("interactive_cli.Prompt.ask", return_value="2")
+    @patch("interactive_cli.Prompt.ask", side_effect=["2", "0"])
     def test_launcher_delegates_to_selected_script(self, _prompt, run):
         run.return_value.returncode = 0
         self.assertEqual(main(), 0)
         command = run.call_args.args[0]
         self.assertTrue(command[1].endswith("import_dndbeyond.py"))
+        self.assertEqual(command[2], "--menu")
+
+    @patch("interactive_cli.subprocess.run")
+    @patch("interactive_cli.Prompt.ask", side_effect=["4", "0"])
+    def test_launcher_delegates_to_character_editor(self, _prompt, run):
+        run.return_value.returncode = 0
+        self.assertEqual(main(), 0)
+        command = run.call_args.args[0]
+        self.assertTrue(command[1].endswith("edit_character.py"))
         self.assertEqual(command[2], "--menu")
 
     @patch("interactive_cli.Prompt.ask", return_value="0")

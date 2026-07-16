@@ -1,21 +1,21 @@
 ---
-title: "Leather Armor"
+title: Leather Armor
 params:
-  kind: "item"
+  kind: item
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Draft imported from 5e.tools. Requires translation.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "ready"
-
+- draft
+- importado
+visibility: public
+status: ready
 item_info:
-  type: "Light Armor"
-  cost: "10.0 gp"
-  weight: "10 lb"
-  properties: ""
+  type: Light Armor
+  cost: 10.0 gp
+  weight: 10 lb
+  armor_class: 11
+  armor_type: 1
 ---
 
 The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.

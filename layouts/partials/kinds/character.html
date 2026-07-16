@@ -357,6 +357,7 @@
       {{ $scratch := newScratch }}
       {{ $scratch.Set "weapons" slice }}
       {{ $scratch.Set "armors" slice }}
+      {{ $scratch.Set "consumables" slice }}
       {{ $scratch.Set "other" slice }}
 
       {{ range . }}
@@ -371,6 +372,8 @@
                 {{ $resolvedType = "Weapon" }}
               {{ else if or (in (slice "Light Armor" "Medium Armor" "Heavy Armor" "Shield") $itemInfo.type) (and $itemInfo.armor_type (in (slice 1 2 3 4) ($itemInfo.armor_type | int))) }}
                 {{ $resolvedType = "Armor" }}
+              {{ else if or $itemInfo.consumable (in (slice "Potion" "Scroll") $itemInfo.type) }}
+                {{ $resolvedType = "Consumable" }}
               {{ end }}
             {{ end }}
           {{ end }}
@@ -382,6 +385,8 @@
           {{ $scratch.Add "weapons" $itemData }}
         {{ else if eq $resolvedType "Armor" }}
           {{ $scratch.Add "armors" $itemData }}
+        {{ else if eq $resolvedType "Consumable" }}
+          {{ $scratch.Add "consumables" $itemData }}
         {{ else }}
           {{ $scratch.Add "other" $itemData }}
         {{ end }}
@@ -389,127 +394,182 @@
       
       {{ $weapons := $scratch.Get "weapons" }}
       {{ $armors := $scratch.Get "armors" }}
+      {{ $consumables := $scratch.Get "consumables" }}
       {{ $other := $scratch.Get "other" }}
 
+      {{ $propertyLabels := dict "finesse" "Acuidade" "light" "Leve" "thrown" "Arremesso" "versatile" "Versátil" "heavy" "Pesada" "two-handed" "Duas mãos" "reach" "Alcance" "ammunition" "Munição" "loading" "Recarga" "special" "Especial" }}
+      {{ $damageLabels := dict "piercing" "perfurante" "slashing" "cortante" "bludgeoning" "concussão" "fire" "fogo" "cold" "frio" "lightning" "elétrico" "acid" "ácido" "force" "energia" "radiant" "radiante" "necrotic" "necrótico" "poison" "veneno" "psychic" "psíquico" "thunder" "trovejante" }}
+
       {{ if $weapons }}
-      <h4><i class="ra ra-sword"></i> Armas</h4>
-      <ul style="list-style:none; padding:0;">
+      <section class="equipment-section">
+        <h4 class="equipment-section-title"><i class="ra ra-crossed-swords"></i> Armas</h4>
+        <div class="equipment-grid weapon-grid">
         {{ range $weapons }}
           {{ $itemInfo := .info }}
           {{ $atk_formula := "" }}
           {{ $dmg_formula := "" }}
           {{ $atk_bonus := 0 }}
-          
+          {{ $weaponType := or $itemInfo.weapon_type "melee" }}
+          {{ $weaponIcon := "ra-broadsword" }}
+          {{ $weaponLabel := "Corpo a corpo" }}
+          {{ if eq $weaponType "ranged" }}
+            {{ $weaponIcon = "ra-crossbow" }}
+            {{ $weaponLabel = "À distância" }}
+          {{ end }}
+
           {{ if $itemInfo }}
-            {{ $isFinesse := false }}
-            {{ $isRanged := false }}
-            {{ if $itemInfo.properties }}
-              {{ if in $itemInfo.properties "finesse" }}
-                {{ $isFinesse = true }}
-              {{ end }}
-              {{ if or (in $itemInfo.properties "ammunition") (in $itemInfo.properties "thrown") }}
-                {{ $isRanged = true }}
-              {{ end }}
-            {{ end }}
-            
+            {{ $isFinesse := and $itemInfo.properties (in $itemInfo.properties "finesse") }}
             {{ $statKey := "str" }}
             {{ if $isFinesse }}
               {{ $strMod := index $calculatedMods "str" }}
               {{ $dexMod := index $calculatedMods "dex" }}
-              {{ if gt $dexMod $strMod }}
-                {{ $statKey = "dex" }}
-              {{ end }}
-            {{ else if $isRanged }}
+              {{ if gt $dexMod $strMod }}{{ $statKey = "dex" }}{{ end }}
+            {{ else if eq $weaponType "ranged" }}
               {{ $statKey = "dex" }}
             {{ end }}
-            
+
             {{ $stat_mod := index $calculatedMods $statKey }}
             {{ $prof := 0 }}
-            {{ if .equipped }}
-              {{ $prof = $.Params.char_info.proficiency_bonus }}
-            {{ end }}
+            {{ if .equipped }}{{ $prof = $.Params.char_info.proficiency_bonus }}{{ end }}
             {{ $atk_bonus = add $stat_mod $prof }}
-            
             {{ if ge $atk_bonus 0 }}
               {{ $atk_formula = printf "1d20+%d" $atk_bonus }}
             {{ else }}
               {{ $atk_formula = printf "1d20%d" $atk_bonus }}
             {{ end }}
-            
             {{ if $itemInfo.damage }}
-              {{ if ne $stat_mod 0 }}
-                {{ if ge $stat_mod 0 }}
-                  {{ $dmg_formula = printf "%s+%d" $itemInfo.damage $stat_mod }}
-                {{ else }}
-                  {{ $dmg_formula = printf "%s%d" $itemInfo.damage $stat_mod }}
-                {{ end }}
+              {{ if gt $stat_mod 0 }}
+                {{ $dmg_formula = printf "%s+%d" $itemInfo.damage $stat_mod }}
+              {{ else if lt $stat_mod 0 }}
+                {{ $dmg_formula = printf "%s%d" $itemInfo.damage $stat_mod }}
               {{ else }}
                 {{ $dmg_formula = $itemInfo.damage }}
               {{ end }}
             {{ end }}
           {{ end }}
 
-          <li class="char-list-item weapon" style="margin-bottom: 12px; {{ if not .equipped }}opacity: 0.5;{{ end }}">
-            <i class="ra ra-crossed-swords equipment-icon" aria-hidden="true"></i>
-            <strong>{{ .name }}</strong>
-            {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
-            
-            {{ if $itemInfo }}
-              <div style="font-size: 0.85em; color: var(--text-color-muted, #666); margin: 4px 0 0 28px;">
-                {{ if $itemInfo.damage }}
-                  <span style="margin-right: 15px;">Ataque: <strong class="roll-ready" data-roll-notation="{{ $atk_formula }}" data-roll-label="Ataque: {{ .name }}">{{ if ge $atk_bonus 0 }}+{{ end }}{{ $atk_bonus }}</strong></span>
-                  <span style="margin-right: 15px;">Dano: <strong class="roll-ready" data-roll-notation="{{ $dmg_formula }}" data-roll-label="Dano: {{ .name }}">{{ $dmg_formula }}</strong> ({{ or $itemInfo.damage_type "slashing" }})</span>
-                {{ end }}
-                {{ if $itemInfo.range }}
-                  <span style="margin-right: 15px;"><i class="ra ra-target"></i> Alcance: {{ $itemInfo.range }}</span>
-                {{ end }}
-                {{ if $itemInfo.properties }}
-                  <span>Propriedades: <em>{{ delimit $itemInfo.properties ", " }}</em></span>
-                {{ end }}
+          <article class="equipment-card weapon-card weapon-{{ $weaponType }}{{ if not .equipped }} is-inactive{{ end }}">
+            <header class="equipment-card-header">
+              <span class="equipment-card-icon weapon-icon-{{ $weaponType }}"><i class="ra {{ $weaponIcon }}" aria-hidden="true"></i></span>
+              <div class="equipment-card-heading">
+                <strong class="equipment-card-name">{{ .name }}</strong>
+                <div class="equipment-badges">
+                  <span class="equipment-badge weapon-kind">{{ $weaponLabel }}</span>
+                  {{ if gt (.quantity | int) 1 }}<span class="equipment-badge">x{{ .quantity }}</span>{{ end }}
+                  <span class="equipment-badge {{ if .equipped }}is-equipped{{ else }}is-unequipped{{ end }}">{{ if .equipped }}Equipada{{ else }}Não equipada{{ end }}</span>
+                </div>
               </div>
+            </header>
+
+            {{ if $itemInfo.damage }}
+            <div class="equipment-stat-grid">
+              <div class="equipment-stat"><small>Ataque</small><strong class="roll-ready" data-roll-notation="{{ $atk_formula }}" data-roll-label="Ataque: {{ .name }}">{{ if ge $atk_bonus 0 }}+{{ end }}{{ $atk_bonus }}</strong></div>
+              <div class="equipment-stat"><small>Dano</small><strong class="roll-ready" data-roll-notation="{{ $dmg_formula }}" data-roll-label="Dano: {{ .name }}">{{ $dmg_formula }}</strong><span>{{ or (index $damageLabels $itemInfo.damage_type) $itemInfo.damage_type }}</span></div>
+              {{ with $itemInfo.range }}<div class="equipment-stat"><small>Alcance</small><strong>{{ . }}</strong></div>{{ end }}
+            </div>
+            {{ end }}
+
+            {{ with $itemInfo.properties }}
+            <div class="equipment-properties">
+              {{ range . }}<span class="equipment-property">{{ or (index $propertyLabels .) . }}</span>{{ end }}
+            </div>
             {{ end }}
             {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
-          </li>
+          </article>
         {{ end }}
-      </ul>
+        </div>
+      </section>
       {{ end }}
 
       {{ if $armors }}
-      <h4><i class="ra ra-shield"></i> Armaduras</h4>
-      <ul style="list-style:none; padding:0;">
+      <section class="equipment-section">
+        <h4 class="equipment-section-title"><i class="ra ra-shield"></i> Armaduras e escudos</h4>
+        <div class="equipment-grid">
         {{ range $armors }}
           {{ $itemInfo := .info }}
-          <li class="char-list-item armor" style="margin-bottom: 12px; {{ if not .equipped }}opacity: 0.5;{{ end }}">
-            <i class="ra ra-shield equipment-icon" aria-hidden="true"></i>
-            <strong>{{ .name }}</strong>
-            {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
-            {{ if $itemInfo }}
-              <div style="font-size: 0.85em; color: var(--text-color-muted, #666); margin: 4px 0 0 28px;">
-                {{ if eq $itemInfo.type "Shield" }}
-                  <span>Escudo (CA +{{ or $itemInfo.armor_class 2 }})</span>
-                {{ else if $itemInfo.armor_class }}
-                  <span>Armadura (CA Base: {{ $itemInfo.armor_class }})</span>
-                {{ end }}
+          <article class="equipment-card armor-card{{ if not .equipped }} is-inactive{{ end }}">
+            <header class="equipment-card-header">
+              <span class="equipment-card-icon armor-icon"><i class="ra ra-shield" aria-hidden="true"></i></span>
+              <div class="equipment-card-heading">
+                <strong class="equipment-card-name">{{ .name }}</strong>
+                <div class="equipment-badges">
+                  {{ if gt (.quantity | int) 1 }}<span class="equipment-badge">x{{ .quantity }}</span>{{ end }}
+                  <span class="equipment-badge {{ if .equipped }}is-equipped{{ else }}is-unequipped{{ end }}">{{ if .equipped }}Equipada{{ else }}Não equipada{{ end }}</span>
+                </div>
               </div>
-            {{ end }}
+            </header>
+            <div class="equipment-stat-grid">
+              {{ if eq $itemInfo.type "Shield" }}
+                <div class="equipment-stat"><small>Bônus de CA</small><strong>+{{ or $itemInfo.armor_class 2 }}</strong></div>
+              {{ else if $itemInfo.armor_class }}
+                <div class="equipment-stat"><small>CA base</small><strong>{{ $itemInfo.armor_class }}</strong></div>
+              {{ end }}
+              {{ with $itemInfo.weight }}<div class="equipment-stat"><small>Peso</small><strong>{{ . }}</strong></div>{{ end }}
+            </div>
             {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
-          </li>
+          </article>
         {{ end }}
-      </ul>
+        </div>
+      </section>
+      {{ end }}
+
+      {{ if $consumables }}
+      <section class="equipment-section consumables-section">
+        <h4 class="equipment-section-title"><i class="ra ra-potion"></i> Consumíveis</h4>
+        <div class="equipment-grid">
+        {{ range $consumables }}
+          {{ $itemInfo := .info }}
+          {{ $consumableIcon := "ra-potion" }}
+          {{ if eq $itemInfo.type "Scroll" }}{{ $consumableIcon = "ra-scroll-unfurled" }}{{ end }}
+          <article class="equipment-card consumable-card">
+            <header class="equipment-card-header">
+              <span class="equipment-card-icon consumable-icon"><i class="ra {{ $consumableIcon }}" aria-hidden="true"></i></span>
+              <div class="equipment-card-heading">
+                <strong class="equipment-card-name">{{ .name }}</strong>
+                <div class="equipment-badges"><span class="equipment-badge quantity-badge">Quantidade: {{ .quantity }}</span></div>
+              </div>
+            </header>
+            <div class="equipment-meta-line">
+              {{ with $itemInfo.type }}<span>{{ . }}</span>{{ end }}
+              {{ with $itemInfo.weight }}<span>{{ . }}</span>{{ end }}
+              {{ with $itemInfo.cost }}<span>{{ . }}</span>{{ end }}
+            </div>
+            {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
+          </article>
+        {{ end }}
+        </div>
+      </section>
       {{ end }}
 
       {{ if $other }}
-      <h4><i class="ra ra-knapsack"></i> Outros Itens</h4>
-      <ul style="list-style:none; padding:0;">
+      <section class="equipment-section">
+        <h4 class="equipment-section-title"><i class="ra ra-round-bottom-flask"></i> Outros itens</h4>
+        <div class="equipment-grid">
         {{ range $other }}
-          <li style="margin-bottom: 8px; {{ if not .equipped }}opacity: 0.5;{{ end }}">
-            <i class="ra ra-ammo-bag equipment-icon" aria-hidden="true" style="margin-right: 5px;"></i>
-            <strong>{{ .name }}</strong>{{ if gt (.quantity | int) 1 }} (x{{ .quantity }}){{ end }}
-            {{ if not .equipped }}<span style="font-size:0.8em; color:#aaa;"> (não equipado)</span>{{ end }}
+          {{ $itemInfo := .info }}
+          <article class="equipment-card gear-card">
+            <header class="equipment-card-header">
+              <span class="equipment-card-icon gear-icon"><i class="ra ra-knapsack" aria-hidden="true"></i></span>
+              <div class="equipment-card-heading">
+                <strong class="equipment-card-name">{{ .name }}</strong>
+                <div class="equipment-badges">
+                  <span class="equipment-badge quantity-badge">Quantidade: {{ .quantity }}</span>
+                  {{ if .equipped }}<span class="equipment-badge is-equipped">Equipado</span>{{ end }}
+                </div>
+              </div>
+            </header>
+            {{ if $itemInfo }}
+            <div class="equipment-meta-line">
+              {{ with $itemInfo.type }}<span>{{ . }}</span>{{ end }}
+              {{ with $itemInfo.weight }}<span>{{ . }}</span>{{ end }}
+              {{ with $itemInfo.cost }}<span>{{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
             {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name "legacy" .description) }}
-          </li>
+          </article>
         {{ end }}
-      </ul>
+        </div>
+      </section>
       {{ end }}
 
     {{ else }}
