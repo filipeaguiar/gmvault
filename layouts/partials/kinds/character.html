@@ -123,25 +123,25 @@
   <!-- TAB 2: Perícias (ordem alfabética pelo nome pt_br) -->
   <div id="tab-skills" class="char-tab-content">
     <h3>Perícias</h3>
-    {{/* Slice ordenada alfabeticamente pelo nome em português */}}
+    {{/* Slice ordenada alfabeticamente pela ordem oficial (Inglês) */}}
     {{ $orderedSkills := slice
       (dict "key" "acrobatics"      "pt" "Acrobacia")
+      (dict "key" "animal-handling" "pt" "Lidar com Animais")
       (dict "key" "arcana"          "pt" "Arcanismo")
       (dict "key" "athletics"       "pt" "Atletismo")
-      (dict "key" "performance"     "pt" "Atuação")
       (dict "key" "deception"       "pt" "Enganação")
-      (dict "key" "stealth"         "pt" "Furtividade")
       (dict "key" "history"         "pt" "História")
-      (dict "key" "intimidation"    "pt" "Intimidação")
       (dict "key" "insight"         "pt" "Intuição")
+      (dict "key" "intimidation"    "pt" "Intimidação")
       (dict "key" "investigation"   "pt" "Investigação")
-      (dict "key" "animal-handling" "pt" "Lidar com Animais")
       (dict "key" "medicine"        "pt" "Medicina")
       (dict "key" "nature"          "pt" "Natureza")
       (dict "key" "perception"      "pt" "Percepção")
+      (dict "key" "performance"     "pt" "Atuação")
       (dict "key" "persuasion"      "pt" "Persuasão")
-      (dict "key" "sleight-of-hand" "pt" "Prestidigitação")
       (dict "key" "religion"        "pt" "Religião")
+      (dict "key" "sleight-of-hand" "pt" "Prestidigitação")
+      (dict "key" "stealth"         "pt" "Furtividade")
       (dict "key" "survival"        "pt" "Sobrevivência")
     }}
     <div class="skills-list">

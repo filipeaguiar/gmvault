@@ -360,9 +360,7 @@ html.vtt-iframe .char-tab-content {
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .skills-list {
-    grid-template-columns: 1fr;
-  }
+
 }
 
 /* Feature Items */
@@ -825,6 +823,16 @@ html.vtt-iframe .char-tab-content {
     margin: 0 !important;
   }
 
+  /* Compact 2-column layout for skills */
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px 12px !important;
+  }
+
+  .skill-item {
+    font-size: 0.85em !important;
+    padding: 4px 2px !important;
+  }
 
   /* Compendium fallbacks and cards spacing */
   .compendium-fallback {
