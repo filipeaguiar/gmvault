@@ -228,6 +228,20 @@ html.vtt-iframe .char-tab-content {
   margin: 10px 0;
 }
 
+.attr-score-wrapper {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attr-name-short {
+  display: none;
+}
+
 .attr-score {
   font-size: 1em;
   border: 1px solid var(--border-color);
@@ -236,8 +250,7 @@ html.vtt-iframe .char-tab-content {
   height: 30px;
   line-height: 30px;
   background: var(--bg-color);
-  position: absolute;
-  bottom: -15px;
+  text-align: center;
 }
 
 /* Skills 2-Column List */
@@ -670,10 +683,54 @@ html.vtt-iframe .char-tab-content {
     padding: 12px !important;
   }
 
-  /* Attributes in 2 Columns */
+  /* Attributes in 3 Columns (3x2 Grid) */
   .attr-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+  
+  .attr-box {
+    padding: 8px 4px !important;
+    border-radius: 6px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .attr-name {
+    display: none !important;
+  }
+
+  .attr-mod {
+    font-size: 1.4em !important;
+    margin: 2px 0 !important;
+  }
+
+  .attr-score-wrapper {
+    position: static !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    margin-top: 4px !important;
+  }
+
+  .attr-name-short {
+    display: inline !important;
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+    color: var(--text-muted, #777) !important;
+  }
+
+  .attr-score {
+    font-size: 1.15em !important;
+    font-weight: bold !important;
+    border: none !important;
+    border-radius: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: normal !important;
+    background: transparent !important;
+    position: static !important;
   }
 
   /* Compendium fallbacks and cards spacing */

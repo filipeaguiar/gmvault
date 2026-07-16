@@ -62,6 +62,7 @@
     <!-- Attributes Grid (6 boxes) -->
     {{ $attrKeys := slice "str" "dex" "con" "int" "wis" "cha" }}
     {{ $attrNames := dict "str" "Força" "dex" "Destreza" "con" "Constituição" "int" "Inteligência" "wis" "Sabedoria" "cha" "Carisma" }}
+    {{ $shortNames := dict "str" "FOR" "dex" "DES" "con" "CON" "int" "INT" "wis" "SAB" "cha" "CAR" }}
     {{ $stats := .stats }}
     {{ $mods := .mods }}
     <div class="attr-grid">
@@ -69,10 +70,14 @@
         {{ $score := index $stats $key }}
         {{ $mod := index $mods $key }}
         {{ $name := index $attrNames $key }}
+        {{ $short := index $shortNames $key }}
         <div class="attr-box">
           <div class="attr-name">{{ $name }}</div>
           <div class="attr-mod">{{ if gt ($mod | int) 0 }}+{{ end }}{{ $mod }}</div>
-          <div class="attr-score">{{ $score }}</div>
+          <div class="attr-score-wrapper">
+            <span class="attr-name-short">{{ $short }}</span>
+            <span class="attr-score">{{ $score }}</span>
+          </div>
         </div>
       {{ end }}
     </div>
