@@ -63,6 +63,7 @@ html.vtt-iframe .char-sheet-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
   padding: 8px 14px;
   background: transparent;
   border: none;
