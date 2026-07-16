@@ -123,11 +123,7 @@ html.vtt-iframe .char-sheet-container {
 }
 
 .char-sheet-container.scrolled .char-header-stats {
-  opacity: 0;
-  max-height: 0;
-  margin-top: 0;
-  overflow: hidden;
-  pointer-events: none;
+  display: none !important;
 }
 
 /* Tab Navigation */

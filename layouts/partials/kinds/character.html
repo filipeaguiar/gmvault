@@ -15,7 +15,20 @@
         <div class="char-portrait-placeholder" style="width: 80px; height: 80px; border-radius: 50%; border: 2px dashed var(--border-color, #ccc); background: var(--card-bg, #f4f4f4); margin-right: 20px; display: flex; align-items: center; justify-content: center; color: var(--text-color-muted, #888); flex-shrink: 0;"><i class="ra ra-player" style="font-size: 2em;"></i></div>
       {{ end }}
       <div style="flex: 1; display: flex; flex-direction: column;">
-        <h1 style="margin:0;">{{ .Title }}</h1>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <h1 style="margin:0;">{{ .Title }}</h1>
+          {{ with .Params.char_info }}
+          <div class="char-header-stats">
+            <span class="header-stat-badge" title="Armadura (AC)"><i class="ra ra-shield"></i> {{ .ac }}</span>
+            <span class="header-stat-badge" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i> {{ .hp_max }}</span>
+            <span class="header-stat-badge" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i> {{ .speed.walk }}m</span>
+            <span class="header-stat-badge" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i> +{{ .proficiency_bonus }}</span>
+            {{ if gt .spell_dc 0.0 }}
+            <span class="header-stat-badge" title="CD Magia"><i class="ra ra-crystal-wand"></i> {{ .spell_dc }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
         <div class="char-meta">
           {{ with .Params.char_info }}
             {{ or .species .race }}{{ with .species_variant }} ({{ . }}){{ end }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
@@ -23,17 +36,6 @@
             {{ with .size }} | {{ . }}{{ end }}
           {{ end }}
         </div>
-        {{ with .Params.char_info }}
-        <div class="char-header-stats">
-          <span class="header-stat-badge" title="Armadura (AC)"><i class="ra ra-shield"></i> {{ .ac }}</span>
-          <span class="header-stat-badge" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i> {{ .hp_max }}</span>
-          <span class="header-stat-badge" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i> {{ .speed.walk }}m</span>
-          <span class="header-stat-badge" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i> +{{ .proficiency_bonus }}</span>
-          {{ if gt .spell_dc 0.0 }}
-          <span class="header-stat-badge" title="CD Magia"><i class="ra ra-crystal-wand"></i> {{ .spell_dc }}</span>
-          {{ end }}
-        </div>
-        {{ end }}
       </div>
     </div>
 
