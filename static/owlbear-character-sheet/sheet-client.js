@@ -10,7 +10,8 @@
  *   2. On DICE_READY(true), find all [data-roll-notation] elements and
  *      transform them into clickable/keyboard-accessible roll controls.
  *   3. On roll activation, send ROLL_REQUEST to parent and show pending state.
- *   4. On ROLL_RESULT or ROLL_ERROR, update the originating element.
+ *   4. On ROLL_RESULT or ROLL_ERROR, return the originating value to ready state.
+ *      Dice+ remains responsible for displaying roll results and errors.
  *   5. On unload, clean up listeners and reject pending requests.
  */
 
@@ -162,9 +163,7 @@
       element.classList.remove(
         "roll-enhanced",
         "roll-ready",
-        "roll-pending",
-        "roll-success",
-        "roll-error"
+        "roll-pending"
       );
       element.removeAttribute("role");
       element.removeAttribute("tabindex");
@@ -173,9 +172,6 @@
       element.removeEventListener("click", clickHandler);
       element.removeEventListener("keydown", keyHandler);
 
-      // Remove any result display.
-      const resultEl = element.querySelector(".roll-result-display");
-      if (resultEl) resultEl.remove();
     });
     _enhancedElements = [];
   }
@@ -189,18 +185,15 @@
     const requestId = _generateId();
 
     // Set pending state (task 4.4).
-    element.classList.remove("roll-ready", "roll-success", "roll-error");
+    element.classList.remove("roll-ready");
     element.classList.add("roll-pending");
     element.setAttribute("aria-busy", "true");
-
-    // Remove previous result display if any.
-    const oldResult = element.querySelector(".roll-result-display");
-    if (oldResult) oldResult.remove();
 
     // Client-side timeout.
     const timerId = setTimeout(() => {
       _pendingRequests.delete(requestId);
-      _showRollState(element, "error", "Tempo esgotado");
+      _finishRoll(element);
+      console.warn("[Character Sheet] Dice+ roll timed out", { requestId, notation });
     }, REQUEST_TIMEOUT_MS);
 
     _pendingRequests.set(requestId, { element, timerId });
@@ -213,7 +206,7 @@
     });
   }
 
-  // ── Roll result/error handlers (task 4.4) ─────────────────────────────
+  // ── Roll completion handlers (task 4.4) ──────────────────────────────
 
   function _handleRollResult(payload) {
     const requestId = payload.requestId;
@@ -225,11 +218,7 @@
     clearTimeout(pending.timerId);
     _pendingRequests.delete(requestId);
 
-    const total = payload.total;
-    const summary = payload.summary || "";
-    const displayText = summary ? `${total} (${summary})` : `${total}`;
-
-    _showRollState(pending.element, "success", displayText);
+    _finishRoll(pending.element);
   }
 
   function _handleRollError(payload) {
@@ -242,36 +231,19 @@
     clearTimeout(pending.timerId);
     _pendingRequests.delete(requestId);
 
-    const retryable = payload.retryable !== false;
-    const message = payload.error || "Erro na rolagem";
-    const displayText = retryable ? `${message} — tente novamente` : message;
-
-    _showRollState(pending.element, "error", displayText);
+    _finishRoll(pending.element);
+    console.warn("[Character Sheet] Dice+ roll failed", {
+      requestId,
+      error: payload.error || "Unknown error",
+    });
   }
 
-  // ── UI state management (task 4.4) ────────────────────────────────────
+  // ── UI pending-state management (task 4.4) ───────────────────────────
 
-  function _showRollState(element, state, text) {
-    element.classList.remove("roll-pending", "roll-success", "roll-error");
+  function _finishRoll(element) {
+    element.classList.remove("roll-pending");
+    element.classList.add("roll-ready");
     element.removeAttribute("aria-busy");
-
-    if (state === "success") {
-      element.classList.add("roll-ready", "roll-success");
-    } else if (state === "error") {
-      element.classList.add("roll-ready", "roll-error");
-    } else {
-      element.classList.add("roll-ready");
-    }
-
-    // Insert or update result display near the element.
-    let resultEl = element.querySelector(".roll-result-display");
-    if (!resultEl) {
-      resultEl = document.createElement("span");
-      resultEl.className = "roll-result-display";
-      resultEl.setAttribute("aria-live", "polite");
-      element.appendChild(resultEl);
-    }
-    resultEl.textContent = text ? ` → ${text}` : "";
   }
 
   // ── Communication helpers ─────────────────────────────────────────────

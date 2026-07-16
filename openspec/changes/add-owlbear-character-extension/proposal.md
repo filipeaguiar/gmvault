@@ -14,7 +14,7 @@ Uma extensão própria, estática e hospedada junto ao site Hugo permite control
 - Integrar a extensão diretamente ao SDK do Owlbear Rodeo e aos canais documentados do Dice+.
 - Reintroduzir rolagens na ficha por aprimoramento progressivo: bônus e fórmulas permanecem texto de referência fora da extensão e se tornam controles clicáveis somente após uma ponte Dice+ válida.
 - Usar o próprio valor numérico ou fórmula como controle, sem botão textual separado de “Rolar”.
-- Exibir estados acessíveis de disponibilidade, rolagem, resultado, erro e timeout sem bloquear a consulta da ficha.
+- Indicar valores roláveis com uma pequena borda quadrada e estado temporário de rolagem, deixando resultados e erros visuais sob responsabilidade do Dice+.
 - Continuar funcionando como site Hugo normal quando aberto fora do Owlbear ou sem Dice+.
 
 ## Capabilities

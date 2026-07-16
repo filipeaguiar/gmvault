@@ -139,5 +139,9 @@ The shell SHALL use semantic HTML, keyboard-accessible controls, visible focus, 
 - **THEN** the selector, status, and character iframe SHALL remain usable without horizontal overflow.
 
 #### Scenario: Integration state changes
-- **WHEN** the shell enters loading, ready, unavailable, rolling, result, or error state
+- **WHEN** the shell enters loading, ready, or unavailable state
 - **THEN** the state SHALL be conveyed through readable text or an appropriate live region and SHALL NOT depend only on color.
+
+#### Scenario: Dice+ completes or rejects a roll
+- **WHEN** a pending roll receives a result or error
+- **THEN** the shell SHALL clear the correlated pending state while Dice+ remains responsible for displaying the outcome.

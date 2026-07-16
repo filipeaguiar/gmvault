@@ -90,10 +90,13 @@ assert(requests.length === 2, "two independent roll requests are emitted");
 assert(requests[0].notation === "1d20+7", "skill notation is preserved");
 assert(requests[1].notation === "2d6+1", "damage notation is preserved");
 assert(requests[0].requestId !== requests[1].requestId, "requests use distinct identifiers");
-assert(skill.classList.contains("roll-success"), "first result updates the originating value");
-assert(damage.classList.contains("roll-success"), "second result updates the originating value");
-assert(skill.textContent.includes("19"), "skill result total is displayed");
-assert(damage.textContent.includes("8"), "damage result total is displayed");
+assert(skill.classList.contains("roll-ready"), "first value returns to ready after result");
+assert(damage.classList.contains("roll-ready"), "second value returns to ready after result");
+assert(!skill.classList.contains("roll-pending"), "first pending state is cleared");
+assert(!damage.classList.contains("roll-pending"), "second pending state is cleared");
+assert(skill.textContent.trim() === "+7", "sheet does not append the Dice+ result");
+assert(damage.textContent.trim() === "2d6+1", "formula remains unchanged after result");
+assert(!sheetDocument.querySelector(".roll-result-display"), "no result display is inserted in the sheet");
 
 iframe.contentWindow.postMessage(envelope("dice-ready", { ready: false }), location.origin);
 await wait();

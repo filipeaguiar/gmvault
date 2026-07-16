@@ -30,7 +30,7 @@
 - [x] 4.1 Expor metadados estruturados de notação em salvaguardas, perícias, ataques, danos e ações explicitamente configuradas, mantendo os valores como texto padrão.
 - [x] 4.2 Criar cliente versionado `postMessage` para handshake, solicitação, resultado, erro e timeout, sem importar o SDK Owlbear na ficha.
 - [x] 4.3 Transformar somente valores elegíveis em controles após readiness confirmado, usando o próprio número ou fórmula e sem botão textual “Rolar”.
-- [x] 4.4 Implementar estados acessíveis de pronto, rolando, concluído, erro e timeout com resultado associado à ação correta.
+- [x] 4.4 Implementar pequena borda quadrada nos valores roláveis e estado pendente acessível, retornando o valor ao estado pronto sem inserir resultados ou erros na ficha.
 - [x] 4.5 Garantir que fichas abertas fora da extensão ou sem Dice+ permaneçam integralmente legíveis e sem controles indisponíveis.
 - [x] 4.6 Adicionar estilos responsivos, foco visível e estados que não dependam apenas de cor.
 

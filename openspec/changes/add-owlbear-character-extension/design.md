@@ -81,9 +81,9 @@ Cada pedido terá `rollId`, identidade obtida por `OBR.player`, `rollTarget`, no
 
 ### 7. Aplicar aprimoramento progressivo aos números
 
-O HTML Hugo exibirá bônus e fórmulas como texto normal com metadados `data-*`. O cliente da ficha só os transformará em controles de teclado/clique depois que o shell confirmar que Dice+ está disponível.
+O HTML Hugo exibirá bônus e fórmulas como texto normal com metadados `data-*`. O cliente da ficha só os transformará em controles de teclado/clique depois que o shell confirmar que Dice+ está disponível. O aprimoramento visual será apenas uma pequena borda quadrada ao redor do próprio número ou fórmula, além de um estado pendente discreto.
 
-Fora da extensão, ou sem Dice+, os valores permanecerão texto de referência e não haverá botão textual separado. Essa abordagem evita controles quebrados e atende ao uso da ficha apenas para consulta.
+Fora da extensão, ou sem Dice+, os valores permanecerão texto de referência e não haverá botão textual separado. Resultados e erros não serão inseridos na ficha; o popup do Dice+ continuará responsável por apresentá-los. Essa abordagem evita controles quebrados e mantém a ficha limpa para consulta.
 
 ### 8. Manter o SDK fora do build principal do Hugo
 
@@ -97,7 +97,7 @@ Somente o shell da extensão importará `@owlbear-rodeo/sdk`, por URL ESM com ve
 - **[Risco]** O catálogo pode expor uma ficha marcada incorretamente como player-facing. **Mitigação:** filtrar estritamente `players/public` e documentar que visibilidade não é segurança.
 - **[Risco]** Um iframe pode enviar notação arbitrária. **Mitigação:** validar origem, source window, tamanho, caracteres permitidos e destinos de rolagem no shell.
 - **[Trade-off]** A seleção não acompanha o jogador em outro dispositivo. **Mitigação:** aceitar no MVP; sincronização por metadata pode ser proposta separadamente.
-- **[Trade-off]** O popup nativo do Dice+ e o resultado resumido da ficha podem duplicar informação. **Mitigação:** manter `showResults` configurável e priorizar o popup no MVP.
+- **[Trade-off]** A ficha não mantém um histórico visual das rolagens. **Mitigação:** usar o popup e o histórico nativos do Dice+, mantendo a ficha dedicada à referência.
 
 ## Migration Plan
 

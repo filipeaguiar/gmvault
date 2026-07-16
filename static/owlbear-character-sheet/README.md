@@ -39,18 +39,18 @@ A extensão funciona sem o Dice+ instalado. Nesse caso:
 - Valores numéricos (bônus, fórmulas) permanecem como texto estático.
 
 Com o Dice+ instalado e ativo:
-- Os valores de salvaguardas, perícias e fórmulas de ataque/dano se tornam clicáveis.
+- Os valores de salvaguardas, perícias e fórmulas de ataque/dano recebem uma pequena borda quadrada e se tornam clicáveis.
 - Clicar em um valor envia uma rolagem pelo Dice+.
-- O resultado aparece ao lado do valor na ficha.
+- O resultado permanece no popup e no histórico do Dice+, sem ser inserido na ficha.
 
 ### Fluxo de rolagem
 
 1. A extensão verifica se o Dice+ está pronto ao carregar.
-2. Se disponível, os valores numéricos na ficha ganham estilo interativo (sublinhado pontilhado, cursor pointer).
+2. Se disponível, os valores numéricos na ficha recebem uma pequena borda quadrada.
 3. Ao clicar ou pressionar Enter/Espaço em um valor, a rolagem é enviada.
-4. O valor mostra estado de "pendente" com animação.
-5. O resultado (total e resumo dos dados) ou erro aparece ao lado do valor.
-6. Rolagens com timeout permitem nova tentativa.
+4. Durante a rolagem, a borda fica tracejada e o valor perde opacidade temporariamente.
+5. Ao receber resultado, erro ou timeout, o valor retorna ao estado pronto.
+6. O Dice+ exibe o resultado e mantém seu histórico; a ficha não duplica essas informações.
 
 ### Canais Dice+ utilizados
 

@@ -26,8 +26,12 @@ The sheet SHALL use the displayed bonus or dice formula itself as the enhanced r
 - **WHEN** a weapon has explicit attack and damage formulas and Dice+ is available
 - **THEN** each displayed formula SHALL independently trigger its corresponding attack or damage roll without adding a separate roll button.
 
-### Requirement: Character roll actions expose progressive states
-An enhanced roll value SHALL expose ready, rolling, completed, error, and timeout behavior without blocking navigation or reference content. Result and error messages SHALL be inserted as text and associated with the originating value.
+### Requirement: Enhanced roll values use minimal visual states
+An enhanced roll value SHALL use a small square border to indicate that the visible number or formula is interactive. It SHALL expose a temporary pending state without inserting roll totals, summaries, errors, symbols, or history into the character sheet. Dice+ SHALL remain responsible for displaying roll outcomes.
+
+#### Scenario: Value becomes rollable
+- **WHEN** Dice+ readiness is confirmed
+- **THEN** each eligible value SHALL receive a small square border, visible focus, and an accessible action label without changing its displayed text.
 
 #### Scenario: Roll starts
 - **WHEN** the player activates an enhanced value
@@ -35,18 +39,18 @@ An enhanced roll value SHALL expose ready, rolling, completed, error, and timeou
 
 #### Scenario: Roll succeeds
 - **WHEN** a matching Dice+ result returns through the extension bridge
-- **THEN** the sheet SHALL show the total and readable summary near the originating value and SHALL permit a later reroll.
+- **THEN** the originating value SHALL return to ready state without displaying the total or summary in the sheet.
 
 #### Scenario: Roll fails or times out
 - **WHEN** a matching error returns or the request exceeds its timeout
-- **THEN** the sheet SHALL show a retryable error near the originating value while keeping the rest of the sheet usable.
+- **THEN** the originating value SHALL return to ready state without inserting an error message into the sheet.
 
 ### Requirement: Character bridge messages are versioned and correlated
 The character client SHALL communicate with the parent extension using a versioned message envelope and unique request and roll identifiers. It SHALL accept responses only from the parent window, expected origin, supported protocol version, and matching pending identifier.
 
 #### Scenario: Matching result arrives
 - **WHEN** the parent sends a valid result for a pending request and roll ID
-- **THEN** the sheet SHALL update only the action that originated that request.
+- **THEN** the sheet SHALL clear the pending state only from the action that originated that request.
 
 #### Scenario: Unrelated message arrives
 - **WHEN** the sheet receives a message from another origin, another window, an unsupported version, or an unknown identifier
