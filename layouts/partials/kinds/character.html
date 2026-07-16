@@ -49,14 +49,14 @@
       <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Armadura (AC)">
         <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-shield"></i> {{ .ac }}</div>
       </div>
-      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Pontos de Vida (HP)">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-health"></i> {{ .hp_current | default .hp }}/{{ .hp_max }}</div>
+      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Vida Máxima (HP Max)">
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-health"></i> {{ .hp_max }}</div>
       </div>
       <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Deslocamento (Speed)">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-boot"></i> {{ .speed.walk }}m</div>
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-feather-winged"></i> {{ .speed.walk }}m</div>
       </div>
       <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Bônus de Proficiência">
-        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-level-up"></i> +{{ .proficiency_bonus }}</div>
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-laurel"></i> +{{ .proficiency_bonus }}</div>
       </div>
       {{ if gt .spell_dc 0.0 }}
       <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="CD de Salvamento de Magia">
