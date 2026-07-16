@@ -7,7 +7,7 @@
 
 ## 2. Shell e manifest da extensão
 
-- [x] 2.1 Criar `static/owlbear-character-sheet/manifest.json` com nome, versão, ícone, popover e dimensões válidas sob o prefixo de publicação `/gmvault/`, sem usar `gm-vault` como identidade da extensão.
+- [x] 2.1 Criar `static/owlbear-character-sheet/manifest.json` com `manifest_version: 1`, versão inicial `1.0.0`, nome, autor, descrição, ícone, popover e dimensões válidas sob o prefixo de publicação `/gmvault/`, sem usar `gm-vault` como identidade da extensão.
 - [x] 2.2 Criar o shell estático em `static/owlbear-character-sheet/index.html` com estrutura semântica para status, seleção de personagem e iframe.
 - [x] 2.3 Criar CSS leve e responsivo para o popover, seletor, estado vazio, status e iframe sem overflow horizontal.
 - [x] 2.4 Importar uma versão fixa do SDK Owlbear no JavaScript do shell, aguardar `OBR.onReady` e tratar execução fora do Owlbear sem falha fatal.

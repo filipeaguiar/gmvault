@@ -7,7 +7,7 @@ Uma extensão própria, estática e hospedada junto ao site Hugo permite control
 ## What Changes
 
 - Criar uma extensão própria para Owlbear Rodeo em `static/owlbear-character-sheet/`, publicada pelo mesmo GitHub Pages do site e identificada separadamente da extensão externa `gm-vault`.
-- Adicionar um manifest instalável que abre uma interface leve de fichas em um popover do Owlbear.
+- Adicionar um manifest instalável com `manifest_version: 1` e versão inicial `1.0.0`, abrindo uma interface leve de fichas em um popover do Owlbear.
 - Gerar pelo Hugo um catálogo JSON contendo apenas personagens seguros para jogadores (`visibility: players` ou `public`).
 - Permitir que cada jogador selecione sua ficha e persistir essa escolha localmente no navegador.
 - Carregar a página Hugo selecionada em um iframe interno da extensão, preservando a ficha como fonte canônica de conteúdo.

@@ -1,6 +1,9 @@
 {
   "name": "Fichas de Personagem",
   "version": "1.0.0",
+  "manifest_version": 1,
+  "author": "Filipe Aguiar",
+  "description": "Fichas de personagem do RPG Campaign Vault para Owlbear Rodeo.",
   "icon": "/gmvault/owlbear-character-sheet/icon.svg",
   "action": {
     "title": "Fichas de Personagem",

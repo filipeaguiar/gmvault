@@ -40,7 +40,7 @@ O site e a extensão permanecerão estáticos, hospedados sob `https://filipeagu
 
 ### 1. Hospedar a extensão no mesmo GitHub Pages
 
-Os arquivos ficarão em `static/owlbear-character-sheet/`, produzindo URLs estáveis sob `/gmvault/owlbear-character-sheet/`. O manifest usará caminhos que incluem o prefixo de publicação `/gmvault/`, mas a identidade da extensão e seus canais não usarão `gm-vault`, evitando confusão com a extensão externa existente.
+Os arquivos ficarão em `static/owlbear-character-sheet/`, produzindo URLs estáveis sob `/gmvault/owlbear-character-sheet/`. O manifest usará `manifest_version: 1`, versão inicial `1.0.0` e caminhos que incluem o prefixo de publicação `/gmvault/`, mas a identidade da extensão e seus canais não usarão `gm-vault`, evitando confusão com a extensão externa existente.
 
 Essa escolha reutiliza o deploy atual, HTTPS e cache estático. Hospedagem separada em Netlify foi descartada porque recriaria dependência externa sem benefício necessário para o MVP.
 
