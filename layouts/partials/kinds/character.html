@@ -3,41 +3,43 @@
     if (window.self !== window.top) document.documentElement.classList.add('vtt-iframe');
   </script>
 
-  <!-- Header -->
-  <div class="char-header">
-    {{ $avatar := or .Params.char_info.avatar .Params.image .Params.avatar }}
-    {{ if $avatar }}
-      {{ $avatarURL := $avatar }}
-      {{ if hasPrefix $avatar "/" }}{{ $avatarURL = relURL (replaceRE "^/" "" $avatar) }}{{ end }}
-      <img src="{{ $avatarURL }}" alt="{{ .Title }}" class="char-portrait-img" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
-    {{ else }}
-      <div class="char-portrait-placeholder" style="width: 80px; height: 80px; border-radius: 50%; border: 2px dashed var(--border-color, #ccc); background: var(--card-bg, #f4f4f4); margin-right: 20px; display: flex; align-items: center; justify-content: center; color: var(--text-color-muted, #888); flex-shrink: 0;"><i class="ra ra-player" style="font-size: 2em;"></i></div>
-    {{ end }}
-    <div>
-      <h1 style="margin:0;">{{ .Title }}</h1>
-      <div class="char-meta">
-        {{ with .Params.char_info }}
-          {{ or .species .race }}{{ with .species_variant }} ({{ . }}){{ end }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
-          {{ with .alignment }} | {{ . }}{{ end }}
-          {{ with .size }} | {{ . }}{{ end }}
-        {{ end }}
+  <div class="char-sticky-wrapper">
+    <!-- Header -->
+    <div class="char-header">
+      {{ $avatar := or .Params.char_info.avatar .Params.image .Params.avatar }}
+      {{ if $avatar }}
+        {{ $avatarURL := $avatar }}
+        {{ if hasPrefix $avatar "/" }}{{ $avatarURL = relURL (replaceRE "^/" "" $avatar) }}{{ end }}
+        <img src="{{ $avatarURL }}" alt="{{ .Title }}" class="char-portrait-img" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
+      {{ else }}
+        <div class="char-portrait-placeholder" style="width: 80px; height: 80px; border-radius: 50%; border: 2px dashed var(--border-color, #ccc); background: var(--card-bg, #f4f4f4); margin-right: 20px; display: flex; align-items: center; justify-content: center; color: var(--text-color-muted, #888); flex-shrink: 0;"><i class="ra ra-player" style="font-size: 2em;"></i></div>
+      {{ end }}
+      <div>
+        <h1 style="margin:0;">{{ .Title }}</h1>
+        <div class="char-meta">
+          {{ with .Params.char_info }}
+            {{ or .species .race }}{{ with .species_variant }} ({{ . }}){{ end }} | {{ .class }}{{ with .class_level }} {{ . }}{{ end }}{{ with .subclass }} ({{ . }}){{ end }}
+            {{ with .alignment }} | {{ . }}{{ end }}
+            {{ with .size }} | {{ . }}{{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Tabs Navigation -->
-  {{ $hasSpells := and .Params.char_info.spells (gt (len .Params.char_info.spells) 0) }}
-  <div class="char-tabs-nav">
-    <button class="char-tab-btn active" onclick="openCharTab(event, 'tab-stats')" title="Atributos"><i class="ra ra-player" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-aware" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-actions')" title="Ações"><i class="ra ra-axe-swing" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-vest" style="font-size: 1.3em;"></i></button>
-    {{ if $hasSpells }}
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-grimoire')" title="Grimório"><i class="ra ra-book" style="font-size: 1.3em;"></i></button>
-    {{ end }}
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-class')" title="Classe"><i class="ra ra-player-lift" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-features')" title="Características"><i class="ra ra-crossed-pistols" style="font-size: 1.3em;"></i></button>
-    <button class="char-tab-btn" onclick="openCharTab(event, 'tab-image')" title="Imagem"><i class="ra ra-eyeball" style="font-size: 1.3em;"></i></button>
+    <!-- Tabs Navigation -->
+    {{ $hasSpells := and .Params.char_info.spells (gt (len .Params.char_info.spells) 0) }}
+    <div class="char-tabs-nav">
+      <button class="char-tab-btn active" onclick="openCharTab(event, 'tab-stats')" title="Atributos"><i class="ra ra-player" style="font-size: 1.3em;"></i></button>
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-aware" style="font-size: 1.3em;"></i></button>
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-actions')" title="Ações"><i class="ra ra-axe-swing" style="font-size: 1.3em;"></i></button>
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-vest" style="font-size: 1.3em;"></i></button>
+      {{ if $hasSpells }}
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-grimoire')" title="Grimório"><i class="ra ra-book" style="font-size: 1.3em;"></i></button>
+      {{ end }}
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-class')" title="Classe"><i class="ra ra-player-lift" style="font-size: 1.3em;"></i></button>
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-features')" title="Características"><i class="ra ra-crossed-pistols" style="font-size: 1.3em;"></i></button>
+      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-image')" title="Imagem"><i class="ra ra-eyeball" style="font-size: 1.3em;"></i></button>
+    </div>
   </div>
 
   <!-- TAB 1: Atributos -->
@@ -522,6 +524,29 @@ function openCharTab(evt, tabName) {
   for (var i = 0; i < btns.length; i++) { btns[i].classList.remove("active"); }
   document.getElementById(tabName).classList.add("active");
   evt.currentTarget.classList.add("active");
+
+  var container = document.querySelector(".char-sheet-container");
+  if (container) container.scrollTop = 0;
+  window.scrollTo({ top: 0 });
 }
+
+(function() {
+  var container = document.querySelector(".char-sheet-container");
+  function handleScroll() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (container && window.self !== window.top) {
+      scrollTop = container.scrollTop;
+    }
+    if (scrollTop > 15) {
+      container.classList.add("scrolled");
+    } else {
+      container.classList.remove("scrolled");
+    }
+  }
+  if (container) {
+    container.addEventListener("scroll", handleScroll);
+  }
+  window.addEventListener("scroll", handleScroll);
+})();
 </script>
 <script src="{{ "owlbear-character-sheet/sheet-client.js?v=1.0.2" | relURL }}" defer></script>

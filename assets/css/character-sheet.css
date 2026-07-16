@@ -25,6 +25,52 @@ html.vtt-iframe .global-nav {
 
 html.vtt-iframe .char-sheet-container {
   height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Sticky wrapper for header and tabs */
+.char-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-color, #ffffff);
+  border-bottom: 2px solid var(--border-color);
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+/* Scrolled state (docked/sticky shrink effect) */
+.char-sheet-container.scrolled .char-sticky-wrapper {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.char-sheet-container.scrolled .char-header {
+  padding: 6px 12px !important;
+  border-bottom-width: 1px !important;
+}
+
+.char-sheet-container.scrolled .char-header img,
+.char-sheet-container.scrolled .char-header .char-portrait-placeholder {
+  width: 32px !important;
+  height: 32px !important;
+  margin-right: 10px !important;
+}
+
+.char-sheet-container.scrolled .char-header h1 {
+  font-size: 1.15em !important;
+}
+
+.char-sheet-container.scrolled .char-tabs-nav {
+  padding: 4px 8px !important;
+  margin: 4px 10px 4px 10px !important;
+  gap: 4px !important;
+}
+
+.char-sheet-container.scrolled .char-tab-btn {
+  padding: 4px 8px !important;
+  font-size: 0.8em !important;
+  border-radius: 4px !important;
 }
 
 /* Header */
@@ -34,11 +80,18 @@ html.vtt-iframe .char-sheet-container {
   padding: 15px;
   background-color: var(--card-bg);
   border-bottom: 2px solid var(--border-color);
+  transition: all 0.25s ease;
+}
+
+.char-header img, 
+.char-header .char-portrait-placeholder {
+  transition: all 0.25s ease;
 }
 
 .char-header h1 {
   margin: 0;
   font-size: 2em;
+  transition: all 0.25s ease;
 }
 
 .char-meta {
@@ -92,6 +145,11 @@ html.vtt-iframe .char-sheet-container {
   padding: 20px;
   flex: 1;
   overflow-y: auto; /* Internal scrolling for VTT */
+}
+
+html.vtt-iframe .char-tab-content {
+  overflow-y: visible;
+  flex: none;
 }
 
 .char-tab-content.active {
@@ -588,5 +646,16 @@ html.vtt-iframe .char-sheet-container {
   .compendium-fallback {
     padding: 6px !important;
     font-size: 0.85em !important;
+  }
+
+  /* Scrolled overrides for compact mode */
+  .char-sheet-container.scrolled .char-header img,
+  .char-sheet-container.scrolled .char-header .char-portrait-placeholder {
+    width: 32px !important;
+    height: 32px !important;
+    margin-right: 10px !important;
+  }
+  .char-sheet-container.scrolled .char-header h1 {
+    font-size: 1.1em !important;
   }
 }
