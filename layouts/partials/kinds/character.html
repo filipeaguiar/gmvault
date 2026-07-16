@@ -45,27 +45,22 @@
     {{ with .Params.char_info }}
 
     <!-- Meta stats row -->
-    <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 25px; justify-content: space-between;">
-      <div style="flex: 1; min-width: 90px; text-align:center; padding: 15px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 8px;">
-        <div style="font-size:1.8em; font-weight:bold; margin-bottom: 5px;"><i class="ra ra-shield"></i> {{ .ac }}</div>
-        <div style="font-size:0.8em; color:var(--text-color-muted,#888); text-transform: uppercase;">Armadura</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; justify-content: space-between;">
+      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Armadura (AC)">
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-shield"></i> {{ .ac }}</div>
       </div>
-      <div style="flex: 1; min-width: 90px; text-align:center; padding: 15px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 8px;">
-        <div style="font-size:1.8em; font-weight:bold; margin-bottom: 5px;"><i class="ra ra-health"></i> {{ .hp_current | default .hp }} / {{ .hp_max }}</div>
-        <div style="font-size:0.8em; color:var(--text-color-muted,#888); text-transform: uppercase;">Vida</div>
+      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Pontos de Vida (HP)">
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-health"></i> {{ .hp_current | default .hp }}/{{ .hp_max }}</div>
       </div>
-      <div style="flex: 1; min-width: 90px; text-align:center; padding: 15px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 8px;">
-        <div style="font-size:1.8em; font-weight:bold; margin-bottom: 5px;"><i class="ra ra-boot"></i> {{ .speed.walk }}m</div>
-        <div style="font-size:0.8em; color:var(--text-color-muted,#888); text-transform: uppercase;">Desloc.</div>
+      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Deslocamento (Speed)">
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-boot"></i> {{ .speed.walk }}m</div>
       </div>
-      <div style="flex: 1; min-width: 90px; text-align:center; padding: 15px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 8px;">
-        <div style="font-size:1.8em; font-weight:bold; margin-bottom: 5px;"><i class="ra ra-level-up"></i> +{{ .proficiency_bonus }}</div>
-        <div style="font-size:0.8em; color:var(--text-color-muted,#888); text-transform: uppercase;">Proficiência</div>
+      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="Bônus de Proficiência">
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-level-up"></i> +{{ .proficiency_bonus }}</div>
       </div>
       {{ if gt .spell_dc 0.0 }}
-      <div style="flex: 1; min-width: 90px; text-align:center; padding: 15px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 8px;">
-        <div style="font-size:1.8em; font-weight:bold; margin-bottom: 5px;"><i class="ra ra-crystal-wand"></i> {{ .spell_dc }}</div>
-        <div style="font-size:0.8em; color:var(--text-color-muted,#888); text-transform: uppercase;">CD Magia</div>
+      <div style="flex: 1; min-width: 60px; text-align:center; padding: 8px 5px; background: var(--card-bg, #f4f4f4); border: 1px solid var(--border-color, #ccc); border-radius: 6px;" title="CD de Salvamento de Magia">
+        <div style="font-size:1.25em; font-weight:bold;"><i class="ra ra-crystal-wand"></i> {{ .spell_dc }}</div>
       </div>
       {{ end }}
     </div>
