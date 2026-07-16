@@ -648,6 +648,15 @@ html.vtt-iframe .char-tab-content {
     display: none !important;
   }
 
+  .char-header-stats {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 4px !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+    margin-top: 6px !important;
+  }
+
   /* Compact Tabs Navigation */
   .char-tabs-nav {
     padding: 6px 8px !important;
