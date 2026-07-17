@@ -5,6 +5,7 @@ import os
 import sys
 import argparse
 import yaml
+import dnd_utils
 
 from dnd_utils import (
     slugify,
@@ -19,6 +20,80 @@ from dnd_utils import (
     ensure_compendium_class_overview,
     STANDARD_ACTION_REFS,
 )
+
+
+def get_spell_usage(spell):
+    """Resume o recurso operacional sem copiar mecânica compartilhada."""
+    definition = spell.get("definition", {}) or {}
+    if definition.get("level", 0) == 0:
+        return "Truque"
+    limited = spell.get("limitedUse")
+    if isinstance(limited, dict) and limited.get("maxUses"):
+        reset = {1: "Descanso Curto", 2: "Descanso Longo"}.get(
+            limited.get("resetType"), "Dia"
+        )
+        return f"{limited['maxUses']}x/{reset}"
+    if definition.get("ritual"):
+        return "Slot / Ritual" if spell.get("usesSpellSlot", True) else "Ritual"
+    return "Slot de Magia" if spell.get("usesSpellSlot", True) else "Especial"
+
+
+def collect_dndbeyond_spell_entries(char, class_name="", fetcher=None):
+    """Materializa e consolida magias de todas as fontes suportadas pela API."""
+    class_key = (class_name or "").strip().lower()
+    if class_key in dnd_utils.SPELLCASTING_PREPARED_CLASSES:
+        class_kind = "prepared"
+    elif class_key in dnd_utils.SPELLCASTING_PACT_CLASSES:
+        class_kind = "pact"
+    else:
+        class_kind = "known"
+
+    entries = []
+    unresolved = []
+
+    def add(raw_spell, source, *, is_class=False):
+        definition = raw_spell.get("definition", {}) or {}
+        name = definition.get("name")
+        if not name:
+            return
+        prepared = bool(raw_spell.get("prepared"))
+        if is_class:
+            availability = "prepared" if prepared else (
+                "known" if class_kind in {"known", "pact"} else "catalog"
+            )
+            can_prepare = class_kind == "prepared"
+        else:
+            availability = "always" if source in {"race", "background", "feat"} else "granted"
+            can_prepare = False
+        entry = dnd_utils.materialize_spell_entry(
+            name,
+            fetcher=fetcher,
+            prepared=prepared if is_class else None,
+            availability=availability,
+            source=source,
+            usage=get_spell_usage(raw_spell),
+            can_prepare=can_prepare,
+        )
+        if entry:
+            entries.append(entry)
+        else:
+            unresolved.append(name)
+            print(f"  [Compêndio] Magia ignorada por não resolver: {name}")
+
+    for group in char.get("classSpells", []) or []:
+        if isinstance(group, dict):
+            for raw_spell in group.get("spells", []) or []:
+                if isinstance(raw_spell, dict):
+                    add(raw_spell, "class", is_class=True)
+
+    other = char.get("spells", {}) or {}
+    if isinstance(other, dict):
+        for source, spell_list in other.items():
+            for raw_spell in spell_list or []:
+                if isinstance(raw_spell, dict):
+                    add(raw_spell, str(source), is_class=False)
+
+    return dnd_utils.deduplicate_spell_entries(entries), sorted(set(unresolved))
 
 
 def main():
@@ -385,32 +460,7 @@ def main():
         spells_usage_map = {}
         
         def get_spell_usage_str(s):
-            s_def = s.get('definition', {})
-            level = s_def.get('level', 0)
-            if level == 0:
-                return "Truque"
-                
-            is_ritual = s_def.get('ritual', False)
-            uses_slot = s.get('usesSpellSlot', True)
-            
-            # Checar limites de uso (feats / items)
-            lim = s.get('limitedUse')
-            if lim and isinstance(lim, dict) and lim.get('maxUses'):
-                max_u = lim.get('maxUses')
-                reset = lim.get('resetType')
-                reset_str = "Descanso Longo" if reset == 2 else "Descanso Curto" if reset == 1 else "Dia"
-                return f"{max_u}x/{reset_str}"
-                
-            if is_ritual:
-                if uses_slot:
-                    return "Slot / Ritual"
-                else:
-                    return "Ritual"
-                    
-            if uses_slot:
-                return "Slot de Magia"
-                
-            return "Especial"
+            return get_spell_usage(s)
 
         for class_spell_obj in char.get('classSpells', []):
             if isinstance(class_spell_obj, dict):
@@ -777,45 +827,14 @@ def main():
                 print(f"  [Compêndio] Item sem nota local, mantendo sem ref: {item_name}")
             equipment_list.append(equipment_entry)
 
-        # 8. Grimório Estruturado
-        structured_spells = []
-        for class_spell_obj in char.get('classSpells', []):
-            if isinstance(class_spell_obj, dict):
-                slist = class_spell_obj.get('spells', [])
-                if slist:
-                    for s in slist:
-                        s_def = s.get('definition', {})
-                        if s_def and s_def.get('name'):
-                            name = s_def.get('name')
-                            spell_ref = f"/compendium/spells/{slugify(name)}/"
-                            spell_entry = {
-                                "name": name,
-                                "level": s_def.get('level', 0),
-                                "prepared": s.get('prepared', False),
-                                "usage": get_spell_usage_str(s)
-                            }
-                            if os.path.exists(f"content{spell_ref.rstrip('/')}.md"):
-                                spell_entry["ref"] = spell_ref
-                            structured_spells.append(spell_entry)
-        other_spells = char.get('spells', {})
-        if isinstance(other_spells, dict):
-            for source, slist in other_spells.items():
-                if slist:
-                    for s in slist:
-                        s_def = s.get('definition', {})
-                        if s_def and s_def.get('name'):
-                            name = s_def.get('name')
-                            spell_ref = f"/compendium/spells/{slugify(name)}/"
-                            spell_entry = {
-                                "name": name,
-                                "level": s_def.get('level', 0),
-                                "prepared": s.get('prepared', False) or (source in ['race', 'background', 'feat']),
-                                "usage": get_spell_usage_str(s)
-                            }
-                            if os.path.exists(f"content{spell_ref.rstrip('/')}.md"):
-                                spell_entry["ref"] = spell_ref
-                            structured_spells.append(spell_entry)
-        structured_spells = sorted(structured_spells, key=lambda k: (k['level'], k['name']))
+        # 8. Grimório referencial: conteúdo compartilhado permanece no compêndio.
+        structured_spells, unresolved_spells = collect_dndbeyond_spell_entries(
+            char, primary_class_name
+        )
+        compendium_refs.extend(
+            entry["ref"] for entry in structured_spells if entry.get("ref")
+        )
+        compendium_refs = sorted(set(compendium_refs))
 
         # 9. Classes e Progressão por Nível
         classes_data = []

@@ -149,7 +149,7 @@ def test_character_spell_headers_render_only_usable_rolls():
             / "campaigns/journeys-through-the-radiant-citadel/characters/pinky/index.html"
         ).read_text(encoding="utf-8")
 
-    assert html.count("Fire Bolt — Dano") >= 2
+    assert html.count("Fire Bolt — Dano") == 1
     assert re.search(r'data-roll-notation="?2d10"?', html)
     assert "3d10" not in html
     assert "4d10" not in html
@@ -164,4 +164,4 @@ def test_character_spell_headers_render_only_usable_rolls():
     assert re.search(r'data-roll-notation="?1d4\+1"?', html)
     assert "3d4+3" not in html
     assert "Mage Armor —" not in html
-    assert "cloneNode(true)" in (ROOT / "assets/js/spells.js").read_text(encoding="utf-8")
+    assert "cloneNode(true)" not in (ROOT / "assets/js/spells.js").read_text(encoding="utf-8")

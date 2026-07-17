@@ -119,7 +119,8 @@ def add_spells(
     spells = char_info.get("spells")
     if not isinstance(spells, list):
         spells = []
-        char_info["spells"] = spells
+    spells = dnd_utils.normalize_character_spell_entries(spells)
+    char_info["spells"] = spells
 
     references = post.get("compendium_refs")
     if not isinstance(references, list):
@@ -134,17 +135,6 @@ def add_spells(
         slots = dnd_utils.calculate_spell_slots(class_name, level)
         if slots:
             char_info["spell_slots"] = slots
-
-    spellcasting_profile = char_info.get("spellcasting")
-    if not isinstance(spellcasting_profile, dict) or not spellcasting_profile:
-        class_spells = char_info.get("class_spells")
-        char_info["spellcasting"] = dnd_utils.infer_spellcasting_profile(
-            class_name,
-            level,
-            spell_slots=char_info.get("spell_slots") or {},
-            spells=spells,
-            class_spells=class_spells if isinstance(class_spells, list) else [],
-        )
 
     # Auto import class list if prepared caster
     prepared_caster_classes = {
@@ -162,40 +152,69 @@ def add_spells(
         class_spells = char_info.get("class_spells")
         if not isinstance(class_spells, list) or len(class_spells) == 0:
             print(f"Baixando automaticamente todas as magias de {class_name}...")
-            class_spell_refs = dnd_utils.import_all_class_spells(class_name)
+            class_spell_refs = list(dict.fromkeys(
+                ref for ref in dnd_utils.import_all_class_spells(class_name)
+                if dnd_utils.canonical_spell_ref(ref)
+            ))
             char_info["class_spells"] = class_spell_refs
             for r in class_spell_refs:
                 if r not in references:
                     references.append(r)
 
+    profile_kind = dnd_utils.infer_spellcasting_profile(class_name, level)["kind"]
+    is_prepared = profile_kind == "prepared"
     added = 0
+    existing_refs = {
+        entry.get("ref") for entry in spells
+        if isinstance(entry, dict) and entry.get("ref")
+    }
     for selected in selected_spells:
         name = str(selected["name"])
-        spell_ref = dnd_utils.fetch_from_5etools("spell", name)
-        if not spell_ref:
+        entry = dnd_utils.materialize_spell_entry(
+            name,
+            prepared=True if is_prepared else None,
+            availability="prepared" if is_prepared else "known",
+            source="class",
+            usage="1 action",
+            can_prepare=is_prepared,
+        )
+        if not entry:
             print(
                 f"Não foi possível adicionar {name}: "
                 "magia não resolvida no compêndio."
             )
             continue
 
-        if not any(
-            spell.get("name") == name
-            for spell in spells
-            if isinstance(spell, dict)
-        ):
-            spells.append(
-                {
-                    "name": name,
-                    "ref": spell_ref,
-                    "level": int(selected["level"]),
-                    "usage": "1 action",
-                }
-            )
+        if entry["ref"] not in existing_refs:
+            spells.append(entry)
+            existing_refs.add(entry["ref"])
+            added += 1
+        if entry["ref"] not in references:
+            references.append(entry["ref"])
 
-        if spell_ref not in references:
-            references.append(spell_ref)
-        added += 1
+    canonical = dnd_utils.deduplicate_spell_entries(
+        entry for entry in spells if isinstance(entry, dict) and entry.get("ref")
+    )
+    unresolved = [
+        entry for entry in spells
+        if isinstance(entry, dict) and not entry.get("ref")
+    ]
+    char_info["spells"] = canonical + unresolved
+    class_spells = char_info.get("class_spells")
+    if isinstance(class_spells, list):
+        char_info["class_spells"] = list(dict.fromkeys(
+            ref for ref in class_spells if dnd_utils.canonical_spell_ref(ref)
+        ))
+    else:
+        char_info["class_spells"] = []
+    char_info["spellcasting"] = dnd_utils.infer_spellcasting_profile(
+        class_name,
+        level,
+        spell_slots=char_info.get("spell_slots") or {},
+        spells=char_info["spells"],
+        class_spells=char_info["class_spells"],
+    )
+    post["compendium_refs"] = list(dict.fromkeys(references))
     return added
 
 

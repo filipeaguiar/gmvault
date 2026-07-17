@@ -498,6 +498,174 @@ def calculate_spell_slots(class_name, level):
 SPELLCASTING_PREPARED_CLASSES = {"cleric", "druid", "paladin", "wizard", "artificer", "clérigo", "druida", "paladino", "mago", "artífice"}
 SPELLCASTING_KNOWN_CLASSES = {"bard", "sorcerer", "ranger", "bardo", "feiticeiro", "patrulheiro"}
 SPELLCASTING_PACT_CLASSES = {"warlock", "bruxo"}
+SPELL_AVAILABILITY_PRIORITY = {
+    "": 0,
+    "catalog": 0,
+    "known": 1,
+    "prepared": 2,
+    "granted": 3,
+    "always": 4,
+}
+
+
+def canonical_spell_ref(ref):
+    """Normaliza somente URLs internas canônicas de magia."""
+    if not isinstance(ref, str):
+        return None
+    value = ref.strip()
+    if not value.startswith("/compendium/spells/"):
+        return None
+    return value.rstrip("/") + "/"
+
+
+def materialize_spell(name, fetcher=None):
+    """Materializa uma magia pelo resolvedor compartilhado, sem fabricar URL."""
+    if not isinstance(name, str) or not name.strip():
+        return None
+    resolver = fetcher or fetch_from_5etools
+    ref = resolver("spell", name.strip())
+    normalized = canonical_spell_ref(ref)
+    if not normalized:
+        print(f"  [Compêndio] Magia não resolvida: {name}")
+    return normalized
+
+
+def build_spell_entry(
+    ref,
+    *,
+    prepared=None,
+    availability=None,
+    source=None,
+    usage=None,
+    can_prepare=None,
+):
+    """Cria uma associação mínima; identidade e mecânica ficam no compêndio."""
+    normalized = canonical_spell_ref(ref)
+    if not normalized:
+        return None
+    entry = {"ref": normalized}
+    if prepared is not None:
+        entry["prepared"] = bool(prepared)
+    if availability:
+        entry["availability"] = str(availability).lower()
+    if source:
+        entry["source"] = str(source)
+    if usage:
+        entry["usage"] = str(usage)
+    if can_prepare is not None:
+        entry["can_prepare"] = bool(can_prepare)
+    return entry
+
+
+def merge_spell_entries(current, incoming):
+    """Mescla estado operacional pela referência, favorecendo disponibilidade."""
+    merged = dict(current)
+    merged["ref"] = canonical_spell_ref(incoming.get("ref") or current.get("ref"))
+    if current.get("prepared") or incoming.get("prepared"):
+        merged["prepared"] = True
+    elif "prepared" in current or "prepared" in incoming:
+        merged["prepared"] = False
+
+    old_availability = str(current.get("availability") or "").lower()
+    new_availability = str(incoming.get("availability") or "").lower()
+    if SPELL_AVAILABILITY_PRIORITY.get(new_availability, 0) > SPELL_AVAILABILITY_PRIORITY.get(old_availability, 0):
+        merged["availability"] = new_availability
+    elif old_availability:
+        merged["availability"] = old_availability
+
+    sources = []
+    for entry in (current, incoming):
+        values = entry.get("sources") or [entry.get("source")]
+        if not isinstance(values, list):
+            values = [values]
+        for value in values:
+            if value and value not in sources:
+                sources.append(value)
+    if sources:
+        merged["source"] = sources[0]
+        if len(sources) > 1:
+            merged["sources"] = sources
+
+    usages = []
+    for entry in (current, incoming):
+        values = entry.get("usages") or [entry.get("usage")]
+        if not isinstance(values, list):
+            values = [values]
+        for value in values:
+            if value and value not in usages:
+                usages.append(value)
+    if usages:
+        merged["usage"] = usages[0]
+        if len(usages) > 1:
+            merged["usages"] = usages
+
+    if current.get("can_prepare") is True or incoming.get("can_prepare") is True:
+        merged["can_prepare"] = True
+    elif "can_prepare" in current or "can_prepare" in incoming:
+        merged["can_prepare"] = False
+    return merged
+
+
+def deduplicate_spell_entries(entries):
+    """Deduplica associações canônicas sem copiar título, nível ou mecânica."""
+    by_ref = {}
+    order = []
+    for raw in entries or []:
+        if not isinstance(raw, dict):
+            continue
+        ref = canonical_spell_ref(raw.get("ref"))
+        if not ref:
+            continue
+        minimal = build_spell_entry(
+            ref,
+            prepared=raw.get("prepared") if "prepared" in raw else None,
+            availability=raw.get("availability"),
+            source=raw.get("source"),
+            usage=raw.get("usage"),
+            can_prepare=raw.get("can_prepare") if "can_prepare" in raw else None,
+        )
+        if raw.get("sources"):
+            minimal["sources"] = list(raw["sources"])
+        if raw.get("usages"):
+            minimal["usages"] = list(raw["usages"])
+        if ref not in by_ref:
+            by_ref[ref] = minimal
+            order.append(ref)
+        else:
+            by_ref[ref] = merge_spell_entries(by_ref[ref], minimal)
+    return [by_ref[ref] for ref in order]
+
+
+def materialize_spell_entry(name, *, fetcher=None, **state):
+    """Resolve o nome e produz uma entrada operacional, ou ``None``."""
+    ref = materialize_spell(name, fetcher=fetcher)
+    return build_spell_entry(ref, **state) if ref else None
+
+
+def normalize_character_spell_entries(entries, fetcher=None, preserve_unresolved=True):
+    """Normaliza legado resolvível e preserva fallback inline não resolvido."""
+    normalized = []
+    unresolved = []
+    for raw in entries or []:
+        if not isinstance(raw, dict):
+            continue
+        ref = canonical_spell_ref(raw.get("ref"))
+        if not ref and raw.get("name"):
+            ref = materialize_spell(str(raw["name"]), fetcher=fetcher)
+        if not ref:
+            if preserve_unresolved:
+                unresolved.append(dict(raw))
+            continue
+        entry = build_spell_entry(
+            ref,
+            prepared=raw.get("prepared") if "prepared" in raw else None,
+            availability=raw.get("availability"),
+            source=raw.get("source"),
+            usage=raw.get("usage"),
+            can_prepare=raw.get("can_prepare") if "can_prepare" in raw else None,
+        )
+        normalized.append(entry)
+    return deduplicate_spell_entries(normalized) + unresolved
 
 
 def infer_spellcasting_profile(
@@ -521,7 +689,7 @@ def infer_spellcasting_profile(
     for spell in spells:
         if not isinstance(spell, dict):
             continue
-        if spell.get("level", 0) == 0:
+        if "level" in spell and spell.get("level") == 0:
             cantrips_known += 1
         if spell.get("prepared"):
             prepared_spells.append(spell)
@@ -546,13 +714,22 @@ def infer_spellcasting_profile(
         kind = "none"
 
     slot_total = 0
-    for value in spell_slots.values():
+    slot_levels = []
+    normalized_slots = {}
+    for raw_level, value in spell_slots.items():
         try:
-            slot_total += int(value)
+            slot_level = int(raw_level)
+            slot_count = int(value)
         except (TypeError, ValueError):
             continue
+        if slot_level > 0 and slot_count > 0:
+            normalized_slots[slot_level] = slot_count
+            slot_levels.append(slot_level)
+            slot_total += slot_count
 
-    can_prepare = kind in {"prepared", "hybrid"}
+    # Perfis híbridos exigem ``can_prepare`` por entrada; a regra global é
+    # deliberadamente somente leitura para não oferecer uma ação inválida.
+    can_prepare = kind == "prepared"
     can_mark_known = kind in {"known", "hybrid", "pact"}
     uses_pact_slots = kind == "pact"
     slot_label = "Espaços de Magia" if not uses_pact_slots else "Espaços de Pacto"
@@ -578,7 +755,14 @@ def infer_spellcasting_profile(
         "uses_pact_slots": uses_pact_slots,
         "slot_label": slot_label,
         "slot_total": slot_total,
+        "slot_levels": sorted(set(slot_levels)),
         "slot_summary": slot_summary,
+        "pact_slot_level": max(slot_levels) if uses_pact_slots and slot_levels else 0,
+        "pact_slot_count": (
+            normalized_slots.get(max(slot_levels), 0)
+            if uses_pact_slots and slot_levels
+            else 0
+        ),
         "prepared_label": prepared_label,
         "known_label": known_label,
         "prepared_count": len(prepared_spells),

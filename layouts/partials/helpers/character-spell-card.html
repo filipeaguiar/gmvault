@@ -1,0 +1,38 @@
+{{- $spell := .spell -}}
+{{- $character := .character -}}
+<article class="spell-card char-feature-card {{ if $spell.ready }}ready-spell-item{{ else }}management-spell-item{{ end }}"
+  data-spell-ref="{{ $spell.ref }}"
+  data-spell-key="{{ $spell.key }}"
+  data-spell-name="{{ $spell.name }}"
+  data-spell-level="{{ $spell.level }}"
+  data-spell-can-prepare="{{ $spell.can_prepare }}"
+  data-spell-initial-ready="{{ $spell.ready }}">
+  <div class="spell-card-title-row">
+    <div class="spell-name-roll-row">
+      <strong class="spell-card-name">{{ $spell.name | default "Magia sem nome" }}</strong>
+      {{- if $spell.canonical -}}
+        {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
+      {{- end }}
+    </div>
+    {{- if $spell.can_prepare }}
+      <label class="prepare-spell-label">
+        <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $spell.ref }}" {{ if $spell.ready }}checked{{ end }}>
+        <span class="prepare-spell-text">{{ if $spell.ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
+      </label>
+    {{- else if not $spell.ready }}
+      <span class="spell-readonly-state">{{ if in (slice "known" "pact") $spell.availability }}Conhecida{{ else if in (slice "always" "granted") $spell.availability }}Concedida{{ else }}Somente leitura{{ end }}</span>
+    {{- end }}
+  </div>
+  {{- with $spell.usage }}<div class="spell-operational-meta"><strong>Uso:</strong> {{ . }}</div>{{ end }}
+  {{- with $spell.source }}<div class="spell-operational-meta"><strong>Fonte:</strong> {{ . }}</div>{{ end }}
+  <details class="spell-details-accordion">
+    <summary>Ver detalhes</summary>
+    <div class="spell-details-content">
+      {{- if $spell.canonical -}}
+        {{ partial "helpers/compendium-content.html" (dict "ref" $spell.ref "name" $spell.name) }}
+      {{- else -}}
+        {{ partial "helpers/compendium-content.html" (dict "ref" $spell.ref "name" $spell.name "legacy" (index $spell.legacy "description")) }}
+      {{- end -}}
+    </div>
+  </details>
+</article>

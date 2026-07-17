@@ -1,8 +1,5 @@
-# interactive-character-sheet-spells Specification
+## MODIFIED Requirements
 
-## Purpose
-TBD - created by archiving change interactive-spells-search. Update Purpose after archive.
-## Requirements
 ### Requirement: Spells UI Layout
 The character sheet template SHALL display a top operational list containing only spells ready for use and a lower management list containing the other accessible referenced spells. Both lists SHALL resolve spell identity, level, content, and shared mechanics from canonical compendium pages, group entries by accessible spell level, and remain usable without JavaScript.
 
@@ -99,4 +96,3 @@ The system SHALL render structured spell roll controls from each resolved compen
 #### Scenario: Spell has no structured roll
 - **WHEN** the resolved compendium page exposes no valid structured roll metadata
 - **THEN** the spell card SHALL remain readable and SHALL NOT infer a roll from its description
-

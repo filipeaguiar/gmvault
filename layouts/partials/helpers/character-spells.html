@@ -1,0 +1,96 @@
+{{- $character := . -}}
+{{- $collection := partial "helpers/character-spell-collection.html" $character -}}
+{{- $ready := $collection.ready -}}
+{{- $management := $collection.management -}}
+{{- $levels := $collection.levels -}}
+{{- $profile := $collection.profile -}}
+{{- $mode := index $profile "kind" | default "none" -}}
+
+<div class="spell-manager" data-spell-mode="{{ $mode }}">
+  <div class="spell-manager-counters" aria-live="polite">
+    <span class="spell-counter"><strong data-spell-counter-value="ready">{{ len $ready }}</strong> prontas para uso</span>
+    {{- with index $profile "prepared_limit" }}<span class="spell-counter">Limite preparado: {{ . }}</span>{{ end }}
+    {{- with index $profile "slot_summary" }}<span class="spell-counter">{{ . }}</span>{{ end }}
+  </div>
+
+  {{- $usesPact := index $profile "uses_pact_slots" | default false -}}
+  {{- if $usesPact -}}
+    {{- $pactLevel := index $profile "pact_slot_level" | default 0 -}}
+    {{- $pactCount := index $profile "pact_slot_count" | default 0 -}}
+    {{- if and (gt ($pactLevel | int) 0) (gt ($pactCount | int) 0) }}
+    <div class="spell-slots-tracker pact-slots-tracker">
+      <h4><i class="ra ra-crystals"></i> Espaços de Pacto — nível {{ $pactLevel }}</h4>
+      <div class="slot-level-group" data-slot-level="pact-{{ $pactLevel }}">
+        {{ range seq ($pactCount | int) }}<input type="checkbox" class="spell-slot-checkbox" aria-label="Espaço de pacto {{ . }} consumido">{{ end }}
+      </div>
+    </div>
+    {{- end -}}
+  {{- else -}}
+    {{- $positiveSlots := slice -}}
+    {{- range $level, $count := $collection.slots }}{{ if gt ($count | int) 0 }}{{ $positiveSlots = $positiveSlots | append (dict "level" ($level | int) "count" ($count | int)) }}{{ end }}{{ end -}}
+    {{- if $positiveSlots }}
+    <div class="spell-slots-tracker">
+      <h4><i class="ra ra-crystals"></i> Espaços de Magia</h4>
+      <div class="spell-slot-groups">
+        {{ range sort $positiveSlots "level" }}
+        {{ $slotLevel := .level }}
+        <div class="slot-level-group" data-slot-level="{{ $slotLevel }}">
+          <strong>Nv {{ $slotLevel }}:</strong>
+          {{ range seq .count }}<input type="checkbox" class="spell-slot-checkbox" aria-label="Espaço de nível {{ $slotLevel }} consumido">{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{- end -}}
+  {{- end }}
+
+  <div class="spell-manager-toolbar">
+    <label class="spell-search-label" for="spell-search">Buscar magias</label>
+    <input type="search" id="spell-search" placeholder="Nome da magia" class="spell-search-input">
+    <div id="spell-level-filters" class="spell-level-filters" aria-label="Filtrar magias por nível">
+      <button type="button" class="spell-level-filter is-active" data-level-filter="all">Todas</button>
+      {{ range $levels }}
+        <button type="button" class="spell-level-filter" data-level-filter="{{ . }}">{{ if eq (. | int) 0 }}Truques{{ else }}{{ . }}º{{ end }}</button>
+      {{ end }}
+    </div>
+  </div>
+
+  {{- $levelNames := dict "0" "Truques" "1" "1º Nível" "2" "2º Nível" "3" "3º Nível" "4" "4º Nível" "5" "5º Nível" "6" "6º Nível" "7" "7º Nível" "8" "8º Nível" "9" "9º Nível" -}}
+  <section id="ready-spells-container" class="spell-collection spell-ready-section" aria-labelledby="ready-spells-title">
+    <header class="spell-collection-heading">
+      <h4 id="ready-spells-title"><i class="ra ra-crystal-wand"></i> Prontas para uso</h4>
+      <p>Truques, magias preparadas, conhecidas ou concedidas disponíveis ao personagem.</p>
+    </header>
+    <p class="spell-empty-message{{ if $ready }} is-hidden{{ end }}" data-empty-for="ready">Nenhuma magia pronta para uso.</p>
+    <div id="ready-spells-list" class="spell-level-groups">
+      {{ range $level := $levels }}
+        {{ $atLevel := where $ready "level" ($level | int) }}
+        <section class="spell-level-group{{ if not $atLevel }} is-empty{{ end }}" data-spell-level-group="{{ $level }}">
+          <h5>{{ index $levelNames (string $level) | default (printf "Nível %v" $level) }}</h5>
+          <div class="spell-cards" data-spell-level-list="{{ $level }}">
+            {{ range $atLevel }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </section>
+
+  <section id="management-spells-container" class="spell-collection spell-management-section" aria-labelledby="management-spells-title">
+    <header class="spell-collection-heading">
+      <h4 id="management-spells-title"><i class="ra ra-book"></i> Gerenciamento</h4>
+      <p>Outras magias referenciadas nos círculos acessíveis. Somente magias elegíveis oferecem preparo.</p>
+    </header>
+    <p class="spell-empty-message{{ if $management }} is-hidden{{ end }}" data-empty-for="management">Nenhuma magia adicional para gerenciar.</p>
+    <div id="management-spells-list" class="spell-level-groups">
+      {{ range $level := $levels }}
+        {{ $atLevel := where $management "level" ($level | int) }}
+        <section class="spell-level-group{{ if not $atLevel }} is-empty{{ end }}" data-spell-level-group="{{ $level }}">
+          <h5>{{ index $levelNames (string $level) | default (printf "Nível %v" $level) }}</h5>
+          <div class="spell-cards" data-spell-level-list="{{ $level }}">
+            {{ range $atLevel }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </section>
+</div>

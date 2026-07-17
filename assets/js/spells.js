@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             preparedSpellsList.querySelectorAll(".prepared-spell-item").forEach((card) => {
                 const ref = card.getAttribute("data-spell-ref");
                 if (ref && !basePreparedTemplates.has(ref)) {
-                    basePreparedTemplates.set(ref, card.cloneNode(true));
+                    basePreparedTemplates.set(ref, document.importNode(card, true));
                 }
             });
         }
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
             classSpellsList.querySelectorAll(".class-spell-item").forEach((card) => {
                 const ref = card.getAttribute("data-spell-ref");
                 if (ref && !classSpellTemplates.has(ref)) {
-                    classSpellTemplates.set(ref, card.cloneNode(true));
+                    classSpellTemplates.set(ref, document.importNode(card, true));
                 }
             });
         }
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return null;
         }
 
-        const preparedCard = template.cloneNode(true);
+        const preparedCard = document.importNode(template, true);
         preparedCard.classList.remove("class-spell-item");
         preparedCard.classList.add("prepared-spell-item");
         preparedCard.style.borderLeftColor = "var(--accent-color)";

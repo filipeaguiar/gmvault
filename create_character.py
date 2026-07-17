@@ -502,6 +502,35 @@ def calculate_saves_data(class_entry, mods, prof_bonus):
     return saves, class_saves, ", ".join(summary)
 
 
+def build_selected_spell_entries(selected_spells, class_name, fetcher=None):
+    """Materializa escolhas interativas e devolve associações mínimas."""
+    class_key = (class_name or "").strip().lower()
+    is_prepared = class_key in dnd_utils.SPELLCASTING_PREPARED_CLASSES
+    is_pact = class_key in dnd_utils.SPELLCASTING_PACT_CLASSES
+    availability = "prepared" if is_prepared else "known"
+    entries = []
+    unresolved = []
+    for selected in selected_spells or []:
+        name = selected.get("name") if isinstance(selected, dict) else None
+        if not name:
+            continue
+        entry = dnd_utils.materialize_spell_entry(
+            str(name),
+            fetcher=fetcher,
+            prepared=True if is_prepared else None,
+            availability=availability,
+            source="class",
+            usage=selected.get("usage") or "1 action",
+            can_prepare=is_prepared,
+        )
+        if entry:
+            entries.append(entry)
+        else:
+            unresolved.append(str(name))
+            print(f"  [Compêndio] Magia não adicionada: {name}")
+    return dnd_utils.deduplicate_spell_entries(entries), unresolved
+
+
 # ──────────────────────────────────────────────
 # Fluxo Principal de Criação
 # ──────────────────────────────────────────────
@@ -1126,21 +1155,17 @@ def main():
         })
 
     # Spells consolidation
-    spells_field_data = []
-    for sp in extra_spells:
-        spell_ref = dnd_utils.fetch_from_5etools("spell", sp["name"])
-        if spell_ref:
-            compendium_refs.append(spell_ref)
-        else:
-            spell_ref = f"/compendium/spells/{slugify(sp['name'])}/"
+    spells_field_data, unresolved_spells = build_selected_spell_entries(
+        extra_spells, selected_class_name
+    )
+    compendium_refs.extend(
+        entry["ref"] for entry in spells_field_data if entry.get("ref")
+    )
 
-        spells_field_data.append({
-            "name": sp["name"],
-            "level": sp["level"],
-            "ref": spell_ref,
-            "usage": "1 action"
-        })
-
+    class_spells_field_data = list(dict.fromkeys(
+        ref for ref in class_spells_field_data
+        if dnd_utils.canonical_spell_ref(ref)
+    ))
     if class_spells_field_data:
         compendium_refs.extend(class_spells_field_data)
 

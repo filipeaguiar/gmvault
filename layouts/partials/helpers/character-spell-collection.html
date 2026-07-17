@@ -1,0 +1,106 @@
+{{- $character := . -}}
+{{- $info := $character.Params.char_info | default dict -}}
+{{- $profile := $info.spellcasting | default dict -}}
+{{- $mode := index $profile "kind" | default "none" -}}
+{{- $profileCanPrepare := index $profile "can_prepare" | default false -}}
+{{- $slots := $info.spell_slots | default dict -}}
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "seen" dict -}}
+{{- $scratch.Set "ready" slice -}}
+{{- $scratch.Set "management" slice -}}
+{{- $scratch.Set "levels" slice -}}
+
+{{- range $raw := ($info.spells | default slice) -}}
+    {{- $ref := index $raw "ref" | default "" -}}
+    {{- $spellPage := false -}}
+    {{- with $ref }}{{ $spellPage = site.GetPage . }}{{ end -}}
+    {{- $canonical := and $spellPage (hasPrefix $ref "/compendium/spells/") -}}
+    {{- $name := index $raw "name" | default $ref -}}
+    {{- $level := -1 -}}
+    {{- if isset $raw "level" }}{{ $level = index $raw "level" }}{{ end -}}
+    {{- if $canonical -}}
+      {{- $name = $spellPage.Title -}}
+      {{- if isset $spellPage.Params.spell_info "level_number" }}{{ $level = $spellPage.Params.spell_info.level_number }}{{ end -}}
+    {{- end -}}
+    {{- $key := $ref -}}
+    {{- if not $key }}{{ $key = printf "legacy:%s" ($name | urlize) }}{{ end -}}
+    {{- if not (index ($scratch.Get "seen") $key) -}}
+      {{- $scratch.SetInMap "seen" $key true -}}
+      {{- $availability := lower (index $raw "availability" | default "") -}}
+      {{- $prepared := index $raw "prepared" | default false -}}
+      {{- $readyState := or (eq ($level | int) 0) $prepared (in (slice "prepared" "known" "always" "granted") $availability) (and (in (slice "known" "pact") $mode) (not (eq $availability "catalog"))) -}}
+      {{- $canPrepare := false -}}
+      {{- if isset $raw "can_prepare" -}}
+        {{- $canPrepare = index $raw "can_prepare" -}}
+      {{- else if eq $mode "prepared" -}}
+        {{- $canPrepare = $profileCanPrepare -}}
+      {{- end -}}
+      {{- if in (slice "known" "always" "granted") $availability }}{{ $canPrepare = false }}{{ end -}}
+      {{- $entry := dict "key" $key "ref" $ref "page" $spellPage "canonical" $canonical "name" $name "level" ($level | int) "prepared" $prepared "availability" $availability "source" (index $raw "source" | default "") "usage" (index $raw "usage" | default "") "can_prepare" $canPrepare "ready" $readyState "legacy" $raw -}}
+      {{- if $readyState -}}
+        {{- $scratch.Add "ready" $entry -}}
+        {{- $scratch.Add "levels" ($level | int) -}}
+      {{- else -}}
+        {{- $accessible := eq ($level | int) 0 -}}
+        {{- range $slotLevel, $count := $slots }}
+          {{- if and (gt ($count | int) 0) (eq ($slotLevel | int) ($level | int)) }}{{ $accessible = true }}{{ end -}}
+        {{- end -}}
+        {{- if or $accessible (lt ($level | int) 0) -}}
+          {{- $scratch.Add "management" $entry -}}
+          {{- if ge ($level | int) 0 }}{{ $scratch.Add "levels" ($level | int) }}{{ end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- range $ref := ($info.class_spells | default slice) -}}
+  {{- $spellPage := site.GetPage $ref -}}
+  {{- if and $spellPage (hasPrefix $ref "/compendium/spells/") (not (index ($scratch.Get "seen") $ref)) -}}
+    {{- $level := -1 -}}
+    {{- if isset $spellPage.Params.spell_info "level_number" }}{{ $level = $spellPage.Params.spell_info.level_number }}{{ end -}}
+    {{- $accessible := eq ($level | int) 0 -}}
+    {{- range $slotLevel, $count := $slots }}
+      {{- if and (gt ($count | int) 0) (eq ($slotLevel | int) ($level | int)) }}{{ $accessible = true }}{{ end -}}
+    {{- end -}}
+    {{- if $accessible -}}
+      {{- $scratch.SetInMap "seen" $ref true -}}
+      {{- $canPrepare := and (eq $mode "prepared") $profileCanPrepare -}}
+      {{- $entry := dict "key" $ref "ref" $ref "page" $spellPage "canonical" true "name" $spellPage.Title "level" ($level | int) "prepared" false "availability" "catalog" "source" "class" "usage" "" "can_prepare" $canPrepare "ready" false "legacy" dict -}}
+      {{- $scratch.Add "management" $entry -}}
+      {{- $scratch.Add "levels" ($level | int) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $ref := ($character.Params.compendium_refs | default slice) -}}
+  {{- $spellPage := site.GetPage $ref -}}
+  {{- if and $spellPage (hasPrefix $ref "/compendium/spells/") (not (index ($scratch.Get "seen") $ref)) -}}
+    {{- $level := -1 -}}
+    {{- if isset $spellPage.Params.spell_info "level_number" }}{{ $level = $spellPage.Params.spell_info.level_number }}{{ end -}}
+    {{- $accessible := eq ($level | int) 0 -}}
+    {{- range $slotLevel, $count := $slots }}
+      {{- if and (gt ($count | int) 0) (eq ($slotLevel | int) ($level | int)) }}{{ $accessible = true }}{{ end -}}
+    {{- end -}}
+    {{- if $accessible -}}
+      {{- $scratch.SetInMap "seen" $ref true -}}
+      {{- $entry := dict "key" $ref "ref" $ref "page" $spellPage "canonical" true "name" $spellPage.Title "level" ($level | int) "prepared" false "availability" "catalog" "source" "reference" "usage" "" "can_prepare" false "ready" false "legacy" dict -}}
+      {{- $scratch.Add "management" $entry -}}
+      {{- $scratch.Add "levels" ($level | int) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $slotLevel, $count := $slots -}}
+  {{- if gt ($count | int) 0 }}{{ $scratch.Add "levels" ($slotLevel | int) }}{{ end -}}
+{{- end -}}
+{{- with index $profile "pact_slot_level" -}}
+  {{- if gt (. | int) 0 }}{{ $scratch.Add "levels" (. | int) }}{{ end -}}
+{{- end -}}
+
+{{- return (dict
+  "ready" (sort ($scratch.Get "ready") "level")
+  "management" (sort ($scratch.Get "management") "level")
+  "levels" (sort (($scratch.Get "levels") | uniq))
+  "slots" $slots
+  "profile" $profile
+) -}}
