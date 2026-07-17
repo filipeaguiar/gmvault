@@ -1,19 +1,28 @@
 ---
-title: griffon
-draft: false
-titulo_pt_br: grifo
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Griffon
 params:
   kind: monster
-stats_meta: Large monstrosity, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Griffon
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 8cf19c4a3e926f00
 stats:
   ac: '12'
   hp: 59 (7d10 + 21)
-  speed: 30 ft., fly 80 ft.
+  speed: walk 30 ft., fly 80 ft.
   attributes:
     str: 18
     dex: 15
@@ -21,44 +30,38 @@ stats:
     int: 2
     wis: 13
     cha: 8
-  skills: Perception +5
-  senses: darkvision 60 ft., passive Perception 15
+  saves: {}
+  skills:
+    perception: '+5'
+  senses: darkvision 60 ft.
+  languages: ''
   cr: '2'
+stats_meta: Large monstrosity U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Grifo
 ---
 
-![Arte: grifo](/images/campaigns/journeys-through-the-radiant-citadel/griffon.webp)
+## Características
 
-Grifos são carnívoros aviários ferozes com os corpos musculosos de leões e a cabeça, patas dianteiras e asas de águias. Quando atacam, os grifos são tão rápidos e mortais quanto águias, mesmo enquanto golpeiam com a força e a graça selvagens de um leão.
+### Visão Aguçada
 
-### Devoradores de Cavalos
+O grifo tem Vantagem em Testes de Sabedoria (Percepção) que dependam da visão.
 
-Grifos caçam em pequenos bandos, voando alto sobre planícies e florestas perto de seus ninhos rochosos em penhascos. Animais de rebanho e cavalos são as presas que mais desejam, embora também cacem e matem hipogrifos. Quando avista cavalos, um grifo solta um grito para alertar seus companheiros de bando, que descem rapidamente em direção à presa.
-Aqueles que montam ou pastoreiam cavalos temem o grito penetrante do grifo, preparando-se para a luta sangrenta que inevitavelmente se segue. Um grifo ignora o cavaleiro de um cavalo quando possível, e um cavaleiro que abandona sua montaria, ou um pastor que solta um ou dois cavalos, pode escapar ileso enquanto o grifo mira sua presa escolhida. Cavaleiros que tentam proteger seus cavalos atraem a fúria total de um grifo atacante.
+## Ações
 
-### Habitantes dos Céus
+### Ataques Múltiplos
 
-Grifos fazem seus ninhos em tocas rochosas no topo de penhascos altos, construindo seus ninhos com galhos, folhas e ossos de suas presas. Uma vez que os grifos estabelecem um território, eles permanecem naquela área até que o suprimento de comida se esgote.
-Agressivos e territoriais, os grifos se envolvem em combates aéreos brutais para defender seus ninhos, rasgando e dilacerando as asas de intrusos voadores para fazê-los cair em espiral no chão. Criaturas que escalam até o ninho de um grifo são arrancadas dos penhascos e devoradas, ou são derrubadas das alturas para cair e morrer.
+O grifo realiza dois ataques: um com seu bico e um com suas garras.
 
-### Montarias Treinadas
+### Bico
 
-Um grifo criado a partir de um ovo pode ser treinado para servir como montaria. No entanto, tal treinamento é demorado, caro (principalmente pela grande quantidade de comida que a criatura requer) e perigoso. Treinadores especialistas bem versados na ferocidade lendária do grifo são tipicamente os únicos capazes de criar essas criaturas com segurança.
-Uma vez treinado, um grifo é um corcel feroz e leal. Ele se liga a um único mestre para o resto da vida, lutando até a morte para proteger esse cavaleiro. Uma montaria grifo mantém seu apetite voraz por carne de cavalo, e um mestre sábio garante que um grifo permaneça saciado com outras presas ao passar por terras civilizadas.
+mw 6 para atingir, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano perfurante.
 
-### Características
+### Garras
 
-**Visão Aguçada.** O grifo tem vantagem em testes de Sabedoria (Percepção) que dependem da visão.
-
-### Ações
-
-**Ataques Múltiplos.** O grifo realiza dois ataques: um com seu bico e um com suas garras.
-
-**Bico.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 1,5 m, um alvo. *Dano:* 8 ([[1d8+4]]) dano perfurante.
-
-**Garras.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 1,5 m, um alvo. *Dano:* 11 ([[2d6+4]]) dano cortante.
+mw 6 para atingir, alcance 1,5 m, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano cortante.

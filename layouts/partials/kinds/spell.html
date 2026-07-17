@@ -1,5 +1,8 @@
 <header class="page-header">
-  <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
+  <div class="spell-page-title-row">
+    <h1>{{ or .Params.titulo_pt_br .Title }}</h1>
+    {{ partial "helpers/spell-rolls.html" (dict "page" .) }}
+  </div>
   {{ partial "metadata.html" . }}
 </header>
 

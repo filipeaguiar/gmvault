@@ -1,15 +1,24 @@
 ---
-title: reef shark
-draft: false
-titulo_pt_br: tubarão dos recifes
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Reef Shark
 params:
   kind: monster
-stats_meta: Medium beast, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Reef Shark
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: ff80b5d542f8b81f
 stats:
   ac: '12'
   hp: 22 (4d8 + 4)
@@ -21,25 +30,37 @@ stats:
     int: 1
     wis: 10
     cha: 4
-  skills: Perception +2
-  senses: blindsight 30 ft., passive Perception 12
+  saves: {}
+  skills:
+    perception: '+2'
+  senses: blindsight 30 ft.
+  languages: ''
   cr: 1/2
+stats_meta: Medium beast U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Tubarão-de-recife
 ---
 
-Menores que tubarões gigantes e tubarões caçadores, os tubarões de recife habitam águas rasas e recifes de coral, reunindo-se em pequenos grupos para caçar. Um espécime adulto mede de 1,8 a 3 metros de comprimento.
+## Características
 
-### Características
 
-**Táticas de Matilha.** O tubarão tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um dos aliados do tubarão estiver a 1,5 metro da criatura e o aliado não estiver incapacitado.
+### Tática de Matilha
 
-**Respiração Aquática.** O tubarão só pode respirar debaixo d'água.
+O tubarão tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um aliado do tubarão estiver a 5 pés da criatura e o aliado não estiver incapacitado.
 
-### Ações
 
-**Mordida.** Ataque Corpo a Corpo com Arma: +4 para acertar, alcance 1,5 m, um alvo. {@h}6 ([[1d8+2]]) de dano perfurante.
+### Respiração Aquática
+
+O tubarão só pode respirar debaixo d'água.
+
+## Ações
+
+
+### Mordida
+
+Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 5 pés, um alvo. *Acerto:* 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) de dano perfurante.

@@ -1,19 +1,28 @@
 ---
-title: acolyte
-draft: false
-titulo_pt_br: acólito
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Acolyte
 params:
   kind: monster
-stats_meta: Medium humanoid, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Acolyte
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 1c9d44025a4de82c
 stats:
   ac: '10'
   hp: 9 (2d8)
-  speed: 30 ft.
+  speed: walk 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,20 +30,25 @@ stats:
     int: 10
     wis: 14
     cha: 11
-  skills: Medicine +4, Religion +2
-  senses: passive Perception 12
+  saves: {}
+  skills:
+    medicine: '+4'
+    religion: '+2'
+  senses: ''
   languages: any one language (usually Common)
   cr: 1/4
+stats_meta: Medium humanoid A
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Acólito
 ---
 
-Acólitos são membros juniores de um clero, geralmente subordinados a um sacerdote. Eles desempenham várias funções em um templo e recebem poder menor de conjuração de suas divindades.
+## Ações
 
-### Ações
+### Clava
 
-**Clava.** Ataque Corpo a Corpo com Arma: +2 para acertar, alcance 1,5 m, um alvo. *Dano:* 2 ([[1d4]]) dano de concussão.
+Ataque Corpo a Corpo com Arma: +2 para atingir, alcance 5 pés, um alvo. Acerto: 2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) de dano de concussão.

@@ -42,3 +42,8 @@ outputs:
   section:
     - HTML
     - GMVault
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

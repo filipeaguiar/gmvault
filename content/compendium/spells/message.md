@@ -2,30 +2,43 @@
 title: Message
 params:
   kind: spell
-draft: false
+draft: true
 weight: 10
-summary: Rascunho importado de 5e.tools. Requer tradução.
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
 - draft
 - importado
+- 5etools
 visibility: public
 status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: spell
+  entity_name: Message
+  remote_file: spells/spells-xphb.json
+  remote_key: spell
+  remote_id: 7cb0820571760086
 spell_info:
   level: Cantrip
   school: Transmutation
   cast_time: 1 action
   range: 120 feet
-  components: V, S, M (a short piece of copper wire)
+  components: S, M (a copper wire)
   duration: 1 round
-titulo_pt_br: Claro! Por favor, forneça o texto que você gostaria que eu traduzisse.
+  level_number: 0
+  attack_type: null
+  damage_types: []
+  saving_throws: []
+  rolls: []
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
 ---
 
-Você aponta o dedo em direção a uma criatura dentro do alcance e sussurra uma mensagem. O alvo (e apenas o alvo) ouve a mensagem e pode responder em um sussurro que apenas você pode ouvir.
+Você aponta para uma criatura dentro do alcance e sussurra uma mensagem. O alvo (e apenas o alvo) ouve a mensagem e pode responder em um sussurro que apenas você pode ouvir.
 
-Você pode conjurar esta magia através de objetos sólidos se estiver familiarizado com o alvo e souber que ele está além da barreira. Silêncio mágico, 30 centímetros de pedra, 2,5 centímetros de metal comum, uma fina folha de chumbo ou 90 centímetros de madeira bloqueiam a magia. A magia não precisa seguir uma linha reta e pode viajar livremente ao redor de cantos ou através de aberturas.
+Você pode conjurar esta magia através de objetos sólidos se estiver familiarizado com o alvo e souber que ele está além da barreira. Silêncio mágico; 30 centímetros de pedra, metal ou madeira; ou uma fina folha de chumbo bloqueiam a magia.

@@ -1,19 +1,28 @@
 ---
-title: riverine
-draft: false
-titulo_pt_br: '**Fluvial**'
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Riverine
 params:
   kind: monster
-stats_meta: Large fey, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: JTTRC
+  entity_type: monster
+  entity_name: Riverine
+  remote_file: bestiary/bestiary-jttrc.json
+  remote_key: monster
+  remote_id: 061d06f1d868ea7a
 stats:
   ac: '14'
   hp: 204 (24d10 + 72)
-  speed: 30 ft., swim 60 ft.
+  speed: walk 30 ft., swim 60 ft.
   attributes:
     str: 20
     dex: 19
@@ -21,36 +30,66 @@ stats:
     int: 12
     wis: 16
     cha: 21
-  saves: Int +5, Wis +7, Cha +9
-  skills: Insight +7, Nature +5, Perception +7
-  senses: blindsight 60 ft., passive Perception 17
+  saves:
+    int: '+5'
+    wis: '+7'
+    cha: '+9'
+  skills:
+    insight: '+7'
+    nature: '+5'
+    perception: '+7'
+  senses: blindsight 60 ft.
   languages: Aquan, Common, Sylvan
   cr: '12'
+stats_meta: Large fey A
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Fluvial
 ---
 
-![Arte: riverina](/images/campaigns/journeys-through-the-radiant-citadel/riverine.webp)
+## Características
 
-Mais do que meros guardiões de cursos d'água, as riverinas são a personificação de rios específicos. Esses espíritos da natureza tomam forma para defender suas águas e interagir com aqueles que viajam por suas correntezas. Da cintura para cima, as riverinas têm a pele da cor das águas que protegem, mas são humanoides em aparência. Da cintura para baixo, podem manifestar pernas humanoides ou jatos de água agitados. A personalidade de uma riverina reflete a natureza do rio do qual ela surge — algumas são letárgicas, enquanto outras são selvagens e imprudentes.
 
-### O Covil de uma Riverina
+### Anfíbio
 
-Algumas riverinas desfrutam de uma reverência que beira a adoração. Suas efígies são esculpidas em estátuas e abrigadas em templos, e os adoradores agem como intermediários entre os espíritos do rio e as pessoas que os veneram. Esses templos frequentemente se tornam o lar da própria riverina, servindo como seu covil, embora outros nexos de poder ao longo do caminho do rio — como sua nascente ou uma cachoeira significativa — também possam ser usados como covis por uma riverina.
-Uma riverina encontrada em seu covil tem um nível de desafio 13 (10.000 XP).
+O ribeirinho pode respirar ar e água.
 
-### Características
 
-**Anfíbia.** A riverina pode respirar ar e água.
+### Resistência Lendária (3/dia)
 
-**Resistência Lendária (3/Dia).** Se a riverina falhar em um teste de resistência, ela pode escolher ser bem-sucedida.
+Se o ribeirinho falhar em um teste de resistência, ele pode escolher ser bem-sucedido em vez disso.
 
-### Ações
+## Ações
 
-**Ataques Múltiplos.** A riverina realiza dois ataques de Golpe de Inundação.
 
-**Golpe de Inundação.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 3 m, um alvo. *Dano:* 14 ([[2d8+5]]) de dano de concussão mais 10 ([[3d6]]) de dano de frio.
+### Ataques Múltiplos
+
+O ribeirinho realiza dois ataques Golpe de Dilúvio.
+
+
+### Golpe de Dilúvio
+
+Ataque Corpo a Corpo com Arma: +9 para atingir, alcance 3 m, um alvo. Acerto: 14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano de concussão mais 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano de frio.
+
+## Ações Bônus
+
+
+### Passo do Redemoinho
+
+O ribeirinho se teleporta magicamente para um espaço desocupado que possa ver num raio de 9 metros de si. Tanto o espaço que ele deixa quanto seu destino devem estar na água ou sobre a superfície da água.
+
+## Ações Lendárias
+
+
+### Ímpeto do Redemoinho
+
+O ribeirinho usa seu Passo do Redemoinho. Imediatamente após se teleportar, cada criatura num raio de 1,5 m do espaço de destino do ribeirinho sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de frio.
+
+
+### Dilúvio Furioso (Custa 2 Ações)
+
+O ribeirinho desencadeia uma torrente de água do rio em uma linha de 9 m de comprimento e 1,5 m de largura. Cada criatura nessa área deve realizar um teste de resistência de Destreza CD 17. Em caso de falha no teste de resistência, a criatura sofre 11 (<span class="dice+" data-roll-notation="2d10">2d10</span>) de dano de concussão e é derrubada no chão. Em caso de sucesso no teste de resistência, a criatura sofre metade desse dano e não é derrubada.

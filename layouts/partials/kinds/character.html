@@ -607,7 +607,7 @@
       <div style="display: flex; flex-wrap: wrap; gap: 15px;">
         {{ range $lvl, $slots := .Params.char_info.spell_slots }}
           {{ if gt $slots 0 }}
-          <div class="slot-level-group" style="display: flex; align-items: center; gap: 8px;">
+          <div class="slot-level-group" data-slot-level="{{ $lvl }}" style="display: flex; align-items: center; gap: 8px;">
             <span style="font-weight: bold; font-size: 0.95em;">Nv {{ $lvl }}:</span>
             {{ range seq $slots }}
               <input type="checkbox" class="spell-slot-checkbox" style="width: 18px; height: 18px; cursor: pointer; margin: 0;">
@@ -621,10 +621,10 @@
 
     <div class="spell-manager" data-spell-mode="{{ $spellMode }}">
       <div class="spell-manager-counters">
-        <span class="spell-counter"><strong>{{ $spellPreparedCount }}</strong> / {{ $spellPreparedLimit }} {{ $spellPreparedLabel }}</span>
-        <span class="spell-counter"><strong>{{ $spellKnownCount }}</strong> {{ $spellKnownLabel }}</span>
-        <span class="spell-counter"><strong>{{ $spellCantripsKnown }}</strong> Truques</span>
-        <span class="spell-counter"><strong>{{ $spellSlotLabel }}</strong>: {{ if $spellSlotSummary }}{{ $spellSlotSummary }}{{ else }}—{{ end }}</span>
+        <span class="spell-counter" data-spell-counter="prepared"><strong data-spell-counter-value="prepared">{{ $spellPreparedCount }}</strong> / <span data-spell-counter-limit="prepared">{{ $spellPreparedLimit }}</span> {{ $spellPreparedLabel }}</span>
+        <span class="spell-counter" data-spell-counter="known"><strong data-spell-counter-value="known">{{ $spellKnownCount }}</strong> {{ $spellKnownLabel }}</span>
+        <span class="spell-counter" data-spell-counter="cantrips"><strong data-spell-counter-value="cantrips">{{ $spellCantripsKnown }}</strong> Truques</span>
+        <span class="spell-counter" data-spell-counter="slots"><strong>{{ $spellSlotLabel }}</strong>: {{ if $spellSlotSummary }}{{ $spellSlotSummary }}{{ else }}—{{ end }}</span>
       </div>
       <div class="spell-manager-toolbar">
         <input type="text" id="spell-search" placeholder="Buscar magias..." class="spell-search-input">

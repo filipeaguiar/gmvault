@@ -2,16 +2,32 @@
 title: Evasion
 params:
   kind: rule
-draft: false
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
 status: draft
-summary: Habilidade de classe.
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Evasion
+  remote_file: class/class-monk.json
+  remote_key: classFeature
+  remote_id: ad2aaa77b1681ca4
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
-visibility: "public"
+  model: deepseek-v4-pro
+titulo_pt_br: Evasão
 ---
 
-Você pode se esquivar agilmente de certos perigos. Quando for sujeito a um efeito que permita realizar um teste de resistência de Destreza para sofrer apenas metade do dano, você não sofre dano algum em caso de sucesso no teste de resistência e sofre apenas metade do dano em caso de falha. Você não pode usar esta característica se estiver sob a condição XPHB.
+Quando você é submetido a um efeito que permite realizar um Teste de Resistência de Destreza para sofrer apenas metade do dano, você, em vez disso, não sofre dano se for bem-sucedido no teste de resistência e apenas metade do dano se falhar.
+
+Você não se beneficia desta característica se tiver a condição XPHB.

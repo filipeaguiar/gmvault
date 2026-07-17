@@ -1,19 +1,28 @@
 ---
-title: dragon turtle
-draft: false
-titulo_pt_br: tartaruga-dragão
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Dragon Turtle
 params:
   kind: monster
-stats_meta: Gargantuan dragon, neutro
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Dragon Turtle
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 4f7662ca14648bdd
 stats:
   ac: '20'
   hp: 341 (22d20 + 110)
-  speed: 20 ft., swim 40 ft.
+  speed: walk 20 ft., swim 40 ft.
   attributes:
     str: 25
     dex: 10
@@ -21,48 +30,48 @@ stats:
     int: 10
     wis: 12
     cha: 12
-  saves: Dex +6, Con +11, Wis +7
-  senses: darkvision 120 ft., passive Perception 11
+  saves:
+    dex: '+6'
+    con: '+11'
+    wis: '+7'
+  skills: {}
+  senses: darkvision 120 ft.
   languages: Aquan, Draconic
   cr: '17'
+stats_meta: Gargantuan dragon N
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Dragão Tartaruga
 ---
 
-![Arte: tartaruga-dragão](/images/campaigns/journeys-through-the-radiant-citadel/dragon-turtle.webp)
+## Características
 
-Tartarugas-dragão estão entre as criaturas mais temíveis dos oceanos. Tão grandes e vorazes quanto os mais velhos de seus parentes dragões terrestres, uma tartaruga-dragão ataca com suas mandíbulas mortais, sopro escaldante e cauda esmagadora.
-A carapaça áspera de uma tartaruga-dragão tem a mesma cor verde-escura das águas profundas onde este monstro habita. Detalhes prateados que revestem a carapaça lembram a luz dançando na superfície da água, e uma tartaruga-dragão emergindo às vezes é confundida com o reflexo do sol ou da lua nas ondas.
+### Anfíbio
 
-### Dragões das Profundezas
+A tartaruga-dragão pode respirar ar e água.
 
-Como dragões verdadeiros, tartarugas-dragão colecionam tesouros, primeiro afundando navios e depois vasculhando os destroços em busca de moedas e outros itens preciosos. Uma tartaruga-dragão engole o tesouro para transporte e depois o regurgita ao chegar em seu covil.
-Tartarugas-dragão habitam cavernas escondidas em recifes de coral ou sob o leito marinho, ou ao longo de trechos acidentados da costa. Se uma caverna ideal já estiver habitada, uma tartaruga-dragão ataca seus residentes atuais na tentativa de tomá-la.
+## Ações
 
-### Monstros Mercenários
+### Ataques Múltiplos
 
-Uma tartaruga-dragão é inteligente o suficiente para ser subornada, e piratas que navegam mares patrulhados por essas criaturas aprendem rapidamente a oferecer-lhes tesouro em troca de passagem segura. Sahuagin astutos às vezes se aliam a tartarugas-dragão, atraindo-as com tesouro para usar suas armas de sopro escaldante em ataques sahuagin contra navios e assentamentos costeiros.
+A tartaruga-dragão realiza três ataques: um com sua mordida e dois com suas garras. Ela pode realizar um ataque de cauda no lugar dos dois ataques de garra.
 
-### Poder Elemental
+### Mordida
 
-Tartarugas-dragão às vezes encontram seu caminho através de fendas planares submersas até o Plano Elemental da Água. Esses espécimes monstruosos podem ser frequentemente encontrados a serviço de marids, que prendem magníficos tronos de coral às costas de tartarugas-dragão e as montam como montarias.
+mw 13 para atingir, alcance 15 ft., um alvo. {@h}26 (<span class="dice+" data-roll-notation="3d12+7">3d12 + 7</span>) de dano perfurante.
 
-### Características
+### Garra
 
-**Anfíbia.** A tartaruga-dragão pode respirar ar e água.
+mw 13 para atingir, alcance 10 ft., um alvo. {@h}16 (<span class="dice+" data-roll-notation="2d8+7">2d8 + 7</span>) de dano cortante.
 
-### Ações
+### Cauda
 
-**Ataques Múltiplos.** A tartaruga-dragão realiza três ataques: um com sua mordida e dois com suas garras. Ela pode realizar um ataque de cauda no lugar de seus dois ataques de garra.
+mw 13 para atingir, alcance 15 ft., um alvo. {@h}26 (<span class="dice+" data-roll-notation="3d12+7">3d12 + 7</span>) de dano de concussão. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 20 ou será empurrada até 10 pés para longe da tartaruga-dragão e ficará caída.
 
-**Mordida.** *Ataque Corpo a Corpo com Arma:* +13 para acertar, alcance 4,5 m, um alvo. *Dano:* 26 ([[3d12+7]]) dano perfurante.
+### Sopro de Vapor 5
 
-**Garra.** *Ataque Corpo a Corpo com Arma:* +13 para acertar, alcance 3 m, um alvo. *Dano:* 16 ([[2d8+7]]) dano cortante.
-
-**Cauda.** *Ataque Corpo a Corpo com Arma:* +13 para acertar, alcance 4,5 m, um alvo. *Dano:* 26 ([[3d12+7]]) dano de concussão. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 20 ou ser empurrada até 3 metros para longe da tartaruga-dragão e cair.
-
-**Sopro de Vapor {@recharge 5}.** A tartaruga-dragão exala vapor escaldante em um cone de 18 metros. Cada criatura nessa área deve realizar um teste de resistência de Constituição CD 18, sofrendo 52 ([[15d6]]) dano de fogo em caso de falha, ou metade desse dano em caso de sucesso. Estar debaixo d'água não concede resistência a este dano.
+A tartaruga-dragão exala vapor escaldante em um cone de 60 pés. Cada criatura nessa área deve fazer um teste de resistência de Constituição CD 18, sofrendo 52 (<span class="dice+" data-roll-notation="15d6">15d6</span>) de dano de fogo em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso. Estar submerso não concede resistência a este dano.

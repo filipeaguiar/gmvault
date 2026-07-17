@@ -1,19 +1,28 @@
 ---
-title: spy
-draft: false
-titulo_pt_br: espião
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Spy
 params:
   kind: monster
-stats_meta: Medium humanoid, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Spy
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: d3a5686f9868021a
 stats:
   ac: '12'
   hp: 27 (6d8)
-  speed: 30 ft.
+  speed: walk 30 ft.
   attributes:
     str: 10
     dex: 15
@@ -21,32 +30,48 @@ stats:
     int: 12
     wis: 14
     cha: 16
-  skills: Deception +5, Insight +4, Investigation +5, Perception +6, Persuasion +5, Sleight Of Hand +4, Stealth +4
-  senses: passive Perception 16
+  saves: {}
+  skills:
+    deception: '+5'
+    insight: '+4'
+    investigation: '+5'
+    perception: '+6'
+    persuasion: '+5'
+    sleight of hand: '+4'
+    stealth: '+4'
+  senses: ''
   languages: any two languages
   cr: '1'
+stats_meta: Medium humanoid A
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Espião
 ---
 
-![Arte: espião](/images/campaigns/journeys-through-the-radiant-citadel/spy.webp)
+## Características
 
-Governantes, nobres, mercadores, mestres de guildas e outros indivíduos ricos usam espiões para obter vantagem em um mundo de política impiedosa. Um espião é treinado para coletar informações secretamente. Espiões leais preferem morrer a divulgar informações que possam comprometê-los ou a seus empregadores.
+### Ação Astuta
 
-### Características
+Em cada um de seus turnos, o espião pode usar uma ação bônus para realizar a ação Disparada, Desengajar ou Esconder-se.
 
-**Ação Astuta.** Em cada um de seus turnos, o espião pode usar uma ação bônus para realizar as ações Disparada, Desengajar ou Esconder-se.
+### Ataque Furtivo (1/Turno)
 
-**Ataque Furtivo (1/Turno).** O espião causa 7 ([[2d6]]) de dano adicional quando atinge um alvo com um ataque com arma e tem vantagem na jogada de ataque, ou quando o alvo está a 1,5 metro de um aliado do espião que não esteja incapacitado e o espião não tem desvantagem na jogada de ataque.
+O espião causa 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano extra quando atinge um alvo com um ataque com arma e tem vantagem na jogada de ataque, ou quando o alvo está a 1,5 metro de um aliado do espião que não esteja incapacitado e o espião não tenha desvantagem na jogada de ataque.
 
-### Ações
+## Ações
 
-**Ataques Múltiplos.** O espião realiza dois ataques corpo a corpo.
+### Ataques Múltiplos
 
-**Espada Curta.** Ataque Corpo a Corpo com Arma: +4 para acertar, alcance 1,5 m., um alvo. {@h}5 ([[1d6+2]]) de dano perfurante.
+O espião realiza dois ataques corpo a corpo.
 
-**Bestinha de Mão.** Ataque à Distância com Arma: +4 para acertar, alcance 9/36 m., um alvo. {@h}5 ([[1d6+2]]) de dano perfurante.
+### Espada Curta
+
+Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 1,5 m, um alvo. Dano: 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
+
+### Besta de Mão
+
+Ataque à Distância com Arma: +4 para atingir, alcance 9/36 m, um alvo. Dano: 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.

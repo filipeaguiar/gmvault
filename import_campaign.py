@@ -1138,6 +1138,19 @@ def fetch_bestiary_data(slug):
         
     return bestiary_data
 
+def sync_campaign_compendium_entity(kind, name, slug, source):
+    """Regenerate campaign compendium content through the shared 5e.tools serializer."""
+    try:
+        from compendium_rebuild import sync_compendium_entity
+
+        return sync_compendium_entity(
+            kind, name, slug=slug, source=str(source).upper(), origin="campaign"
+        )
+    except Exception as exc:
+        print(f"    [5e.tools] Falha ao sincronizar {name} no schema compartilhado: {exc}")
+        return None
+
+
 def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_set, monsters_set, bestiary_data, all_npcs, all_monsters, all_handouts):
     # Separa criaturas, monstros e itens da campanha e cria stubs corretos
     scene_npcs_refs = []
@@ -1167,6 +1180,7 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
                 all_handouts.add(hr)
         else:
             h_refs = write_monster_stub(campaign_slug, c_slug, c_name, entry, target_slug)
+            sync_campaign_compendium_entity("monster", c_name, c_slug, target_slug)
             monster_ref = f"/compendium/monsters/{c_slug}/"
             scene_monsters_refs.append(monster_ref)
             all_monsters.add(monster_ref)
@@ -1183,6 +1197,7 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
         
         entry = get_monster_from_source(m_name, m_source)
         h_refs = write_monster_stub(campaign_slug, m_slug, m_name, entry, target_slug)
+        sync_campaign_compendium_entity("monster", m_name, m_slug, m_source)
         for hr in h_refs:
             scene_handouts_refs.append(hr)
             all_handouts.add(hr)
@@ -1190,6 +1205,7 @@ def handle_campaign_entities(campaign_slug, target_slug, creatures_set, items_se
     # 3. Processar itens mágicos específicos da aventura
     for i_slug, i_name in items_set:
         write_magic_item_stub(campaign_slug, i_slug, i_name)
+        sync_campaign_compendium_entity("magic_item", i_name, i_slug, target_slug)
         item_ref = f"/compendium/magic-items/{i_slug}/"
         scene_items_refs.append(item_ref)
         

@@ -1,19 +1,28 @@
 ---
-title: cat
-draft: false
-titulo_pt_br: gato
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Cat
 params:
   kind: monster
-stats_meta: Tiny beast, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Cat
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 8634c77e263ca3a7
 stats:
   ac: '12'
   hp: 2 (1d4)
-  speed: 40 ft., climb 30 ft.
+  speed: walk 40 ft., climb 30 ft.
   attributes:
     str: 3
     dex: 15
@@ -21,20 +30,31 @@ stats:
     int: 3
     wis: 12
     cha: 7
-  skills: Perception +3, Stealth +4
-  senses: passive Perception 13
+  saves: {}
+  skills:
+    perception: '+3'
+    stealth: '+4'
+  senses: ''
+  languages: ''
   cr: '0'
+stats_meta: Tiny beast U
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: openai-compatible
   status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Gato
 ---
 
-### Características
+## Características
 
-* Keen Smell.** O gato tem vantagem em Sabedoria (Percepção) verificações que dependem do cheiro.
+### Faro Aguçado
 
-### Ações
+O gato tem vantagem em testes de Sabedoria (Percepção) que dependam do olfato.
 
-** Garras.** mw 0 para acertar, atingir 5 pés, um alvo. {@h}1 a cortar danos.
+## Ações
+
+### Garras
+
+Ataque Corpo a Corpo com Arma: 0 para atingir, alcance 1,5 m, um alvo. {@h}1 dano cortante.

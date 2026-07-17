@@ -2,14 +2,23 @@
 title: Eldritch Blast
 params:
   kind: spell
-draft: false
+draft: true
 weight: 10
-summary: Rascunho importado de 5e.tools. Requer tradução.
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
 - draft
 - importado
+- 5etools
 visibility: public
 status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: spell
+  entity_name: Eldritch Blast
+  remote_file: spells/spells-xphb.json
+  remote_key: spell
+  remote_id: 78a7bc02146efae9
 spell_info:
   level: Cantrip
   school: Evocation
@@ -17,15 +26,28 @@ spell_info:
   range: 120 feet
   components: V, S
   duration: Instantaneous
-titulo_pt_br: Rajada Mística
+  level_number: 0
+  attack_type: ranged
+  damage_types:
+  - force
+  saving_throws: []
+  rolls:
+  - kind: damage
+    notation: 1d10
+    label: Dano
+    damage_type: force
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
 ---
 
-Um raio de energia crepitante dispara em direção a uma criatura dentro do alcance. Faça um ataque à distância com magia contra o alvo. Em caso de acerto, o alvo sofre 1d10 de dano de energia.
+Você arremessa um raio de energia crepitante. Faça um ataque à distância com magia contra uma criatura ou objeto dentro do alcance. Se atingir, o alvo sofre <span class="dice+" data-roll-notation="1d10">1d10</span> de dano de Energia.
 
-A magia cria mais de um raio quando você atinge níveis mais altos: dois raios no 5º nível, três raios no 11º nível e quatro raios no 17º nível. Você pode direcionar os raios para o mesmo alvo ou para alvos diferentes. Faça uma jogada de ataque separada para cada raio.
+## Em Níveis Superiores
+
+### Aprimoramento do Truque
+
+A magia cria dois raios no 5º nível, três raios no 11º nível e quatro raios no 17º nível. Você pode direcionar os raios para o mesmo alvo ou para alvos diferentes. Faça uma jogada de ataque separada para cada raio.

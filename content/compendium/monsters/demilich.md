@@ -1,19 +1,28 @@
 ---
-title: demilich
-draft: false
-titulo_pt_br: '**demilich**'
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Demilich
 params:
   kind: monster
-stats_meta: Tiny undead, neutro e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Demilich
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 8774eba43ff3d4e8
 stats:
   ac: '20'
   hp: 80 (32d4)
-  speed: '0 ft., fly {''number'': 30, ''condition'': ''(hover)''} ft., canHover True ft.'
+  speed: walk 0 ft., fly 30 ft.
   attributes:
     str: 1
     dex: 20
@@ -21,56 +30,63 @@ stats:
     int: 20
     wis: 17
     cha: 20
-  saves: Con +6, Int +11, Wis +9, Cha +11
-  senses: truesight 120 ft., passive Perception 13
-  cr: '{''cr'': ''18'', ''lair'': ''20''}'
+  saves:
+    con: '+6'
+    int: '+11'
+    wis: '+9'
+    cha: '+11'
+  skills: {}
+  senses: truesight 120 ft.
+  languages: ''
+  cr: '18'
+stats_meta: Tiny undead N/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Semilich
 ---
 
-![Arte: demilich](/images/campaigns/journeys-through-the-radiant-citadel/demilich.webp)
+## Características
 
-A imortalidade concedida a um lich dura apenas enquanto ele alimenta sua filactéria com almas mortais. Se ele vacilar ou falhar nessa tarefa, seus ossos se desfazem em pó até restar apenas seu crânio. Este "demilich" contém apenas um fragmento da força vital maligna do lich — o suficiente para que, se for perturbado, esses restos mortais se ergam no ar e assumam uma forma espectroide. O crânio então emite um uivo aterrorizante que pode matar os fracos de coração e deixar outros tremendo de medo. Se deixado em paz, ele afunda de volta e retorna à paz vazia de sua existência.
-Poucos liches buscam se tornar demiliches, pois isso significa o fim da existência que esperavam preservar ao se tornarem mortos-vivos. No entanto, o tempo pode corroer a razão e a memória do lich, fazendo-o se retirar para sua tumba ancestral e esquecer de se alimentar de almas. As magias que ele outrora conhecia se desvanecem de sua mente, e ele não canaliza mais a energia arcana que empunhava como lich. No entanto, mesmo como um mero crânio, ele continua sendo um inimigo mortal e irritante.
+### Esquiva
 
-### Existência Duradoura
+Se o demilich for submetido a um efeito que permita que ele faça um teste de resistência para sofrer apenas metade do dano, em vez disso, ele não sofre dano se for bem-sucedido no teste de resistência, e apenas metade do dano se falhar.
 
-Mesmo depois que um lich é reduzido ao estado de demilich, sua filactéria sobrevive. Enquanto sua filactéria estiver intacta, o demilich não pode ser destruído permanentemente. Seu crânio se reforma após [[1d10]] dias, restaurando a criatura ao seu estado miserável. Se tiver presença de espírito para isso, um demilich pode recuperar seu poder anterior alimentando sua filactéria com apenas uma alma. Fazer isso restaura o demilich à forma de lich, reconstituindo seu corpo morto-vivo.
+### Resistência Lendária (3/Dia)
 
-### Natureza Morta-Viva
+Se o demilich falhar em um teste de resistência, ele pode escolher ser bem-sucedido.
 
-Um demilich não precisa de ar, comida, bebida ou sono. Tão grande é a vontade de sobreviver de um demilich que ele sempre tem o número máximo de pontos de vida para seus Dados de Vida, em vez da média.
+### Imunidade a Expulsão
 
-### O Covil de um Demilich
+O demilich é imune a efeitos que expulsam mortos-vivos.
 
-Um demilich esconde seus restos mortais e tesouros em uma tumba labiríntica guardada por monstros e armadilhas. No coração deste labirinto repousam o crânio do demilich e o pó de seus outros ossos. Em sua cripta, um demilich tem acesso a ações de covil e usos adicionais para suas ações lendárias. Todo o seu covil também possui características únicas. Um demilich em seu covil tem um nível de desafio 20 (24.500 XP).
+## Ações
 
-### Acererak e Seus Discípulos
+### Uivo 5
 
-A transformação em um demilich não é um fim amargo para todos os liches que a experimentam. Feita como uma escolha consciente, o caminho do demilich se torna o próximo passo em uma evolução sombria. O lich Acererak — um poderoso mago e demonologista e o infame mestre da Tumba dos Horrores — antecipou sua própria transformação, preparando-se para ela colocando gemas encantadas nas órbitas oculares e dentes de seu crânio. Cada uma dessas gemas da alma possuía o poder de capturar as almas das quais sua filactéria se alimentaria.
-Acererak abandonou seu corpo físico, aceitando que ele mofaria e se dissolveria em pó enquanto ele viajava pelos planos como uma consciência descarnada. Se o crânio que era seu último resto físico fosse algum dia perturbado, suas gemas reivindicariam as almas dos insolentes intrusos em sua tumba, transferindo-as magicamente para sua filactéria.
-Liches que seguem o caminho de Acererak acreditam que, ao se libertarem de seus corpos, podem continuar sua busca por poder além do mundo mortal. Como seu patrono fez, eles protegem seus restos mortais dentro de cofres bem guardados, usando gemas da alma para manter suas filactérias e destruir os aventureiros que perturbam seus covis.
-Acererak ou outro demilich como ele tem um nível de desafio 21 (33.000 XP), ou 23 (50.000 XP) em seu covil, e ganha a seguinte opção de ação adicional.
+O demilich emite um uivo horripilante. Cada criatura a até 30 pés do demilich que possa ouvir o uivo deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou cair para 0 Pontos de Vida. Em caso de sucesso no teste de resistência, a criatura fica amedrontada até o final do próximo turno dela.
 
-### Aprisionar Alma
+### Drenar Vida
 
-O demilich escolhe uma criatura que possa ver a até 30 pés dele. O alvo deve realizar um teste de resistência de Carisma CD 19. Em caso de falha, a alma do alvo é magicamente aprisionada dentro de uma das gemas do demilich. Enquanto a alma está aprisionada, o corpo do alvo e todo o equipamento que ele está carregando deixam de existir. Em caso de sucesso, o alvo sofre 24 ([[7d6]]) de dano necrótico e, se esse dano reduzir o alvo a 0 pontos de vida, sua alma é aprisionada como se ele tivesse falhado no teste de resistência. Uma alma aprisionada em uma gema por 24 horas é devorada e deixa de existir.
-Se o demilich for reduzido a 0 pontos de vida, ele é destruído e se transforma em pó, deixando suas gemas para trás. Esmagar uma gema liberta qualquer alma aprisionada dentro dela; nesse momento, o corpo do alvo se re-forma no espaço desocupado mais próximo da gema e no mesmo estado em que estava quando foi aprisionado.
+O demilich escolhe até três criaturas que ele possa ver a até 3 metros de distância. Cada alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 19 ou sofrer 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) de dano necrótico, e o demilich recupera Pontos de Vida igual ao dano total causado a todos os alvos.
 
-### Características
+## Ações Lendárias
 
-**Esquiva.** Se o demilich for submetido a um efeito que permita que ele faça um teste de resistência para sofrer apenas metade do dano, ele não sofre dano algum se for bem-sucedido no teste de resistência e sofre apenas metade do dano se falhar.
+### Voo
 
-**Resistência Lendária (3/Dia).** Se o demilich falhar em um teste de resistência, ele pode escolher ser bem-sucedido.
+O demilich voa até metade do seu deslocamento de voo.
 
-**Imunidade a Virar.** O demilich é imune a efeitos que viram mortos-vivos.
+### Nuvem de Poeira
 
-### Ações
+O demilich agita magicamente seus restos empoeirados. Cada criatura a até 3 metros do demilich, incluindo aquelas atrás de cobertura, deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou ficará cega até o final do próximo turno do demilich. Uma criatura que for bem-sucedida no teste de resistência fica imune a este efeito até o final do próximo turno do demilich.
 
-**Uivo {@recharge 5}.** O demilich emite um uivo horripilante. Cada criatura a até 30 pés do demilich que possa ouvir o uivo deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou ser reduzida a 0 pontos de vida. Em caso de sucesso, a criatura fica amedrontada até o final do próximo turno dela.
+### Drenar Energia (Custa 2 Ações)
 
-**Drenar Vida.** O demilich escolhe até três criaturas que possa ver a até 10 pés dele. Cada alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 19 ou sofrer 21 ([[6d6]]) de dano necrótico, e o demilich recupera pontos de vida iguais ao dano total causado a todos os alvos.
+Cada criatura a até 30 pés do demilich deve fazer um teste de resistência de Constituição CD 15. Em caso de falha no teste de resistência, o máximo de Pontos de Vida da criatura é magicamente reduzido em 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>). Se o máximo de Pontos de Vida de uma criatura for reduzido a 0 por este efeito, a criatura morre. O máximo de Pontos de Vida de uma criatura pode ser restaurado com a magia restauração maior ou magia similar.
+
+### Maldição Vil (Custa 3 Ações)
+
+O demilich escolhe uma criatura que ele possa ver a até 30 pés de distância. O alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 15 ou ser magicamente amaldiçoado. Até a maldição terminar, o alvo tem desvantagem em jogadas de ataque e testes de resistência. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando a maldição em caso de sucesso.

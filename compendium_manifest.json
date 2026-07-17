@@ -1,0 +1,3723 @@
+{
+  "schema_version": 1,
+  "provider": "5e.tools",
+  "data_base_url": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/",
+  "input_fingerprint": "627ce61021ecc6f7f53e3cf03f4ad517cd0574fb9c89711ec059f3ae730f502c",
+  "counts": {
+    "direct": 171,
+    "transitive_dependencies": 20,
+    "selected": 191,
+    "unused": 263,
+    "total_entities": 454
+  },
+  "selected": [
+    {
+      "url": "/compendium/classes/rogue/",
+      "category": "classes",
+      "kind": "class",
+      "slug": "rogue",
+      "canonical_name": "Rogue",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "class",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6ef75fc769ee1826"
+    },
+    {
+      "url": "/compendium/classes/warlock/",
+      "category": "classes",
+      "kind": "class",
+      "slug": "warlock",
+      "canonical_name": "Warlock",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "class",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a078c2db2753ef74"
+    },
+    {
+      "url": "/compendium/feats/alert/",
+      "category": "feats",
+      "kind": "feat",
+      "slug": "alert",
+      "canonical_name": "Alert",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "feats.json",
+      "remote_key": "feat",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a787bdd88fb3d84b"
+    },
+    {
+      "url": "/compendium/feats/magic-initiate/",
+      "category": "feats",
+      "kind": "feat",
+      "slug": "magic-initiate",
+      "canonical_name": "Magic Initiate",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "feats.json",
+      "remote_key": "feat",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c9e3154ab7cdaca5"
+    },
+    {
+      "url": "/compendium/items/backpack/",
+      "category": "items",
+      "kind": "item",
+      "slug": "backpack",
+      "canonical_name": "Backpack",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4550a4a0c11c0a25"
+    },
+    {
+      "url": "/compendium/items/book/",
+      "category": "items",
+      "kind": "item",
+      "slug": "book",
+      "canonical_name": "Book",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "57c3071ffb705e05"
+    },
+    {
+      "url": "/compendium/items/burglars-pack/",
+      "category": "items",
+      "kind": "item",
+      "slug": "burglars-pack",
+      "canonical_name": "Burglar's Pack",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "695b082c2bd88fbf"
+    },
+    {
+      "url": "/compendium/items/dagger/",
+      "category": "items",
+      "kind": "item",
+      "slug": "dagger",
+      "canonical_name": "Dagger",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items-base.json",
+      "remote_key": "baseitem",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a23c231952906737"
+    },
+    {
+      "url": "/compendium/items/ink-1-ounce-bottle/",
+      "category": "items",
+      "kind": "item",
+      "slug": "ink-1-ounce-bottle",
+      "canonical_name": "Ink (1-ounce bottle)",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "PHB",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "prioridade de fonte: PHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "733320f1f3e5ba4c"
+    },
+    {
+      "url": "/compendium/items/ink-pen/",
+      "category": "items",
+      "kind": "item",
+      "slug": "ink-pen",
+      "canonical_name": "Ink Pen",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "befbc1432413f46f"
+    },
+    {
+      "url": "/compendium/items/leather-armor/",
+      "category": "items",
+      "kind": "item",
+      "slug": "leather-armor",
+      "canonical_name": "Leather Armor",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items-base.json",
+      "remote_key": "baseitem",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "73a8c329f53e07fd"
+    },
+    {
+      "url": "/compendium/items/parchment-one-sheet/",
+      "category": "items",
+      "kind": "item",
+      "slug": "parchment-one-sheet",
+      "canonical_name": "Parchment (one sheet)",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "PHB",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "prioridade de fonte: PHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "31faa786bddf7795"
+    },
+    {
+      "url": "/compendium/items/quarterstaff/",
+      "category": "items",
+      "kind": "item",
+      "slug": "quarterstaff",
+      "canonical_name": "Quarterstaff",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items-base.json",
+      "remote_key": "baseitem",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "02274fdd7b86277b"
+    },
+    {
+      "url": "/compendium/items/shortbow/",
+      "category": "items",
+      "kind": "item",
+      "slug": "shortbow",
+      "canonical_name": "Shortbow",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items-base.json",
+      "remote_key": "baseitem",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0ca9fe0efeaf0f1a"
+    },
+    {
+      "url": "/compendium/items/shortsword/",
+      "category": "items",
+      "kind": "item",
+      "slug": "shortsword",
+      "canonical_name": "Shortsword",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items-base.json",
+      "remote_key": "baseitem",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6268a8bd1d7937a8"
+    },
+    {
+      "url": "/compendium/items/sickle/",
+      "category": "items",
+      "kind": "item",
+      "slug": "sickle",
+      "canonical_name": "Sickle",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "items-base.json",
+      "remote_key": "baseitem",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a9333f9dce1cf7d5"
+    },
+    {
+      "url": "/compendium/magic-items/bizas-breath/",
+      "category": "magic-items",
+      "kind": "magic_item",
+      "slug": "bizas-breath",
+      "canonical_name": "Biza's Breath",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "única fonte disponível: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "cabef4cbb8cf5b7b"
+    },
+    {
+      "url": "/compendium/magic-items/black-ghost-orchid-seed/",
+      "category": "magic-items",
+      "kind": "magic_item",
+      "slug": "black-ghost-orchid-seed",
+      "canonical_name": "Black Ghost Orchid Seed",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0043d75cf7bcc278"
+    },
+    {
+      "url": "/compendium/magic-items/hammock-of-worlds/",
+      "category": "magic-items",
+      "kind": "magic_item",
+      "slug": "hammock-of-worlds",
+      "canonical_name": "Hammock of Worlds",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e1b839c66e0bdd9f"
+    },
+    {
+      "url": "/compendium/magic-items/lesser-hammock-of-worlds/",
+      "category": "magic-items",
+      "kind": "magic_item",
+      "slug": "lesser-hammock-of-worlds",
+      "canonical_name": "Lesser Hammock of Worlds",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "587668658ad9afde"
+    },
+    {
+      "url": "/compendium/magic-items/white-ghost-orchid-seed/",
+      "category": "magic-items",
+      "kind": "magic_item",
+      "slug": "white-ghost-orchid-seed",
+      "canonical_name": "White Ghost Orchid Seed",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "items.json",
+      "remote_key": "item",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "167eb8ef4c7069c0"
+    },
+    {
+      "url": "/compendium/monsters/aboleth/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "aboleth",
+      "canonical_name": "Aboleth",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "db56ad72a7edb04a"
+    },
+    {
+      "url": "/compendium/monsters/acolyte/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "acolyte",
+      "canonical_name": "Acolyte",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1c9d44025a4de82c"
+    },
+    {
+      "url": "/compendium/monsters/adult-blue-dracolich/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "adult-blue-dracolich",
+      "canonical_name": "Adult Blue Dracolich",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "50c7504aa2820625"
+    },
+    {
+      "url": "/compendium/monsters/adult-blue-dragon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "adult-blue-dragon",
+      "canonical_name": "Adult Blue Dragon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "98a71e29165266f5"
+    },
+    {
+      "url": "/compendium/monsters/adult-bronze-dragon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "adult-bronze-dragon",
+      "canonical_name": "Adult Bronze Dragon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d8e41857ee60cd48"
+    },
+    {
+      "url": "/compendium/monsters/adult-gold-dragon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "adult-gold-dragon",
+      "canonical_name": "Adult Gold Dragon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1163df6002d21a27"
+    },
+    {
+      "url": "/compendium/monsters/air-elemental/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "air-elemental",
+      "canonical_name": "Air Elemental",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "295d95f1ffa589c3"
+    },
+    {
+      "url": "/compendium/monsters/allosaurus/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "allosaurus",
+      "canonical_name": "Allosaurus",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8c6071dd3f2893c3"
+    },
+    {
+      "url": "/compendium/monsters/ancient-brass-dragon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ancient-brass-dragon",
+      "canonical_name": "Ancient Brass Dragon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "52898fd527d968f6"
+    },
+    {
+      "url": "/compendium/monsters/ankheg/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ankheg",
+      "canonical_name": "Ankheg",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d571da270fdb9dcb"
+    },
+    {
+      "url": "/compendium/monsters/archmage/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "archmage",
+      "canonical_name": "Archmage",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8a507d67b0a4ee84"
+    },
+    {
+      "url": "/compendium/monsters/ashen-heir-assassin/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ashen-heir-assassin",
+      "canonical_name": "Ashen Heir Assassin",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "99d51ce501bd505a"
+    },
+    {
+      "url": "/compendium/monsters/ashen-heir-mage/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ashen-heir-mage",
+      "canonical_name": "Ashen Heir Mage",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8f35a50c1e69a055"
+    },
+    {
+      "url": "/compendium/monsters/ashen-heir-veteran/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ashen-heir-veteran",
+      "canonical_name": "Ashen Heir Veteran",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "028041b7e460e9cb"
+    },
+    {
+      "url": "/compendium/monsters/assassin/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "assassin",
+      "canonical_name": "Assassin",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9509d5d3a05c6a57"
+    },
+    {
+      "url": "/compendium/monsters/aurumvorax-den-leader/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "aurumvorax-den-leader",
+      "canonical_name": "Aurumvorax Den Leader",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c6523d0f3189c9e5"
+    },
+    {
+      "url": "/compendium/monsters/aurumvorax/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "aurumvorax",
+      "canonical_name": "Aurumvorax",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "130aa656026d549e"
+    },
+    {
+      "url": "/compendium/monsters/bakunawa/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "bakunawa",
+      "canonical_name": "Bakunawa",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "94bf1eab1bf4a20b"
+    },
+    {
+      "url": "/compendium/monsters/bandit/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "bandit",
+      "canonical_name": "Bandit",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4b650c3af10ec4df"
+    },
+    {
+      "url": "/compendium/monsters/banshee/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "banshee",
+      "canonical_name": "Banshee",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "b8dfb039ce1ca46f"
+    },
+    {
+      "url": "/compendium/monsters/behir/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "behir",
+      "canonical_name": "Behir",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "b78b8a92bc5fff6a"
+    },
+    {
+      "url": "/compendium/monsters/beholder/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "beholder",
+      "canonical_name": "Beholder",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1bc771170f77fb86"
+    },
+    {
+      "url": "/compendium/monsters/black-pudding/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "black-pudding",
+      "canonical_name": "Black Pudding",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "84d4a7f287bb0ea8"
+    },
+    {
+      "url": "/compendium/monsters/bulette/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "bulette",
+      "canonical_name": "Bulette",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "2c9f3747ded59f3a"
+    },
+    {
+      "url": "/compendium/monsters/cat/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "cat",
+      "canonical_name": "Cat",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8634c77e263ca3a7"
+    },
+    {
+      "url": "/compendium/monsters/cloaker/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "cloaker",
+      "canonical_name": "Cloaker",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "994169514b0cfde4"
+    },
+    {
+      "url": "/compendium/monsters/cloud-giant/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "cloud-giant",
+      "canonical_name": "Cloud Giant",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0d59c649733c1b79"
+    },
+    {
+      "url": "/compendium/monsters/commoner/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "commoner",
+      "canonical_name": "Commoner",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4eb205a54fc0a7c0"
+    },
+    {
+      "url": "/compendium/monsters/crawling-claw/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "crawling-claw",
+      "canonical_name": "Crawling Claw",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e80c0f8414caef28"
+    },
+    {
+      "url": "/compendium/monsters/cult-fanatic/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "cult-fanatic",
+      "canonical_name": "Cult Fanatic",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ccfcc8492de60ffb"
+    },
+    {
+      "url": "/compendium/monsters/cultist/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "cultist",
+      "canonical_name": "Cultist",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ce464572294684a3"
+    },
+    {
+      "url": "/compendium/monsters/demilich/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "demilich",
+      "canonical_name": "Demilich",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8774eba43ff3d4e8"
+    },
+    {
+      "url": "/compendium/monsters/deva/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "deva",
+      "canonical_name": "Deva",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "574bfc4bd5d920f2"
+    },
+    {
+      "url": "/compendium/monsters/dinosaur-skeleton/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "dinosaur-skeleton",
+      "canonical_name": "Dinosaur Skeleton",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6cfd3c67708f3ece"
+    },
+    {
+      "url": "/compendium/monsters/dire-wolf/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "dire-wolf",
+      "canonical_name": "Dire Wolf",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9ae32856e3407dd8"
+    },
+    {
+      "url": "/compendium/monsters/displacer-beast/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "displacer-beast",
+      "canonical_name": "Displacer Beast",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "374ff851ddf2f9f7"
+    },
+    {
+      "url": "/compendium/monsters/diva/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "diva",
+      "canonical_name": "Diva",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "aaef86eab75f0469"
+    },
+    {
+      "url": "/compendium/monsters/djinni/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "djinni",
+      "canonical_name": "Djinni",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "23fef1ace79eb7f4"
+    },
+    {
+      "url": "/compendium/monsters/doppelganger/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "doppelganger",
+      "canonical_name": "Doppelganger",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "7f1eb92e105a2621"
+    },
+    {
+      "url": "/compendium/monsters/dragon-hunter/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "dragon-hunter",
+      "canonical_name": "Dragon Hunter",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c4170033e3e1db26"
+    },
+    {
+      "url": "/compendium/monsters/dragon-turtle/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "dragon-turtle",
+      "canonical_name": "Dragon Turtle",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4f7662ca14648bdd"
+    },
+    {
+      "url": "/compendium/monsters/druid/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "druid",
+      "canonical_name": "Druid",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3b76be06652d503a"
+    },
+    {
+      "url": "/compendium/monsters/dryad/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "dryad",
+      "canonical_name": "Dryad",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "af44bdb429bf62a6"
+    },
+    {
+      "url": "/compendium/monsters/efreeti/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "efreeti",
+      "canonical_name": "Efreeti",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c3bc0f2143cc3715"
+    },
+    {
+      "url": "/compendium/monsters/ettin/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ettin",
+      "canonical_name": "Ettin",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a073528a2c5b7e27"
+    },
+    {
+      "url": "/compendium/monsters/fire-giant/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "fire-giant",
+      "canonical_name": "Fire Giant",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9101946e8ae9a7cc"
+    },
+    {
+      "url": "/compendium/monsters/fire-snake/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "fire-snake",
+      "canonical_name": "Fire Snake",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1e591f948548869e"
+    },
+    {
+      "url": "/compendium/monsters/flameskull/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "flameskull",
+      "canonical_name": "Flameskull",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a18dc1bcb9e099f1"
+    },
+    {
+      "url": "/compendium/monsters/fomorian/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "fomorian",
+      "canonical_name": "Fomorian",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3851e00ac11df4e4"
+    },
+    {
+      "url": "/compendium/monsters/gargoyle/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "gargoyle",
+      "canonical_name": "Gargoyle",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "246afab19ec550d2"
+    },
+    {
+      "url": "/compendium/monsters/ghost/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ghost",
+      "canonical_name": "Ghost",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e7e10ac09214e1ef"
+    },
+    {
+      "url": "/compendium/monsters/ghoul/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ghoul",
+      "canonical_name": "Ghoul",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "b026202afde35985"
+    },
+    {
+      "url": "/compendium/monsters/giant-badger/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-badger",
+      "canonical_name": "Giant Badger",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d59d4b3f3127639d"
+    },
+    {
+      "url": "/compendium/monsters/giant-crocodile/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-crocodile",
+      "canonical_name": "Giant Crocodile",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "7ab41fe41d4bddbd"
+    },
+    {
+      "url": "/compendium/monsters/giant-lizard/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-lizard",
+      "canonical_name": "Giant Lizard",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a91e6bc9e0aca594"
+    },
+    {
+      "url": "/compendium/monsters/giant-scorpion/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-scorpion",
+      "canonical_name": "Giant Scorpion",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "77129552f8bbb9fc"
+    },
+    {
+      "url": "/compendium/monsters/giant-sea-horse/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-sea-horse",
+      "canonical_name": "Giant Sea Horse",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "21a5481c46269dac"
+    },
+    {
+      "url": "/compendium/monsters/giant-shark/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-shark",
+      "canonical_name": "Giant Shark",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f3dc28a0b2ee4011"
+    },
+    {
+      "url": "/compendium/monsters/gibbering-mouther/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "gibbering-mouther",
+      "canonical_name": "Gibbering Mouther",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "eca235fc87e81c2c"
+    },
+    {
+      "url": "/compendium/monsters/green-hag/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "green-hag",
+      "canonical_name": "Green Hag",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e73c8f027fbef57b"
+    },
+    {
+      "url": "/compendium/monsters/griffon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "griffon",
+      "canonical_name": "Griffon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8cf19c4a3e926f00"
+    },
+    {
+      "url": "/compendium/monsters/guard/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "guard",
+      "canonical_name": "Guard",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a9859fd84cc9e0d1"
+    },
+    {
+      "url": "/compendium/monsters/gynosphinx/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "gynosphinx",
+      "canonical_name": "Gynosphinx",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4a026afcbbc51850"
+    },
+    {
+      "url": "/compendium/monsters/haint/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "haint",
+      "canonical_name": "Haint",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "7d340d08ef3f6daa"
+    },
+    {
+      "url": "/compendium/monsters/hawk/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "hawk",
+      "canonical_name": "Hawk",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "32d0b346541b1a4f"
+    },
+    {
+      "url": "/compendium/monsters/helmed-horror/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "helmed-horror",
+      "canonical_name": "Helmed Horror",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d926ed2934be422a"
+    },
+    {
+      "url": "/compendium/monsters/hydra/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "hydra",
+      "canonical_name": "Hydra",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "46cdf0b64feaa436"
+    },
+    {
+      "url": "/compendium/monsters/jackalwere/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "jackalwere",
+      "canonical_name": "Jackalwere",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "788b6aa30710ad4c"
+    },
+    {
+      "url": "/compendium/monsters/kenku/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "kenku",
+      "canonical_name": "Kenku",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3837c90373e5bfbc"
+    },
+    {
+      "url": "/compendium/monsters/knight/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "knight",
+      "canonical_name": "Knight",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c2b9dab93a7ee2c6"
+    },
+    {
+      "url": "/compendium/monsters/koi-prawn/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "koi-prawn",
+      "canonical_name": "Koi Prawn",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6c5057b2779054eb"
+    },
+    {
+      "url": "/compendium/monsters/lizard/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "lizard",
+      "canonical_name": "Lizard",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "21be2f0a456a72bc"
+    },
+    {
+      "url": "/compendium/monsters/lizardfolk/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "lizardfolk",
+      "canonical_name": "Lizardfolk",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "b7cee1533625786f"
+    },
+    {
+      "url": "/compendium/monsters/mage/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "mage",
+      "canonical_name": "Mage",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "54bf5d5138cbb9fd"
+    },
+    {
+      "url": "/compendium/monsters/manticore/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "manticore",
+      "canonical_name": "Manticore",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "fd80ab6c3edcad57"
+    },
+    {
+      "url": "/compendium/monsters/marid/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "marid",
+      "canonical_name": "Marid",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3b3a46b1ad860eb8"
+    },
+    {
+      "url": "/compendium/monsters/merfolk/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "merfolk",
+      "canonical_name": "Merfolk",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "fe880756c2b334f2"
+    },
+    {
+      "url": "/compendium/monsters/mud-mephit/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "mud-mephit",
+      "canonical_name": "Mud Mephit",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3a29f5edfc5f7326"
+    },
+    {
+      "url": "/compendium/monsters/night-hag/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "night-hag",
+      "canonical_name": "Night Hag",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "640e3c159d97a0e8"
+    },
+    {
+      "url": "/compendium/monsters/nightsea-chil-liren/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "nightsea-chil-liren",
+      "canonical_name": "Nightsea Chil-liren",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "efffcc5af797ed86"
+    },
+    {
+      "url": "/compendium/monsters/noble/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "noble",
+      "canonical_name": "Noble",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "16375cae8ff64de9"
+    },
+    {
+      "url": "/compendium/monsters/nothic/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "nothic",
+      "canonical_name": "Nothic",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "da927ec0f9df34cd"
+    },
+    {
+      "url": "/compendium/monsters/ochre-jelly/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ochre-jelly",
+      "canonical_name": "Ochre Jelly",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e5cc7b350c204fd5"
+    },
+    {
+      "url": "/compendium/monsters/oni/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "oni",
+      "canonical_name": "Oni",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f4a5a6419b8f9d0a"
+    },
+    {
+      "url": "/compendium/monsters/otyugh/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "otyugh",
+      "canonical_name": "Otyugh",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e5696b738ba5a643"
+    },
+    {
+      "url": "/compendium/monsters/pari/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "pari",
+      "canonical_name": "Pari",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "492372510258ce60"
+    },
+    {
+      "url": "/compendium/monsters/pegasus/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "pegasus",
+      "canonical_name": "Pegasus",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "59d27988821de731"
+    },
+    {
+      "url": "/compendium/monsters/peryton/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "peryton",
+      "canonical_name": "Peryton",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1e031338b6e9f833"
+    },
+    {
+      "url": "/compendium/monsters/planetar/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "planetar",
+      "canonical_name": "Planetar",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6675bd50ca72d9fd"
+    },
+    {
+      "url": "/compendium/monsters/priest/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "priest",
+      "canonical_name": "Priest",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9dde4cddef4c07e4"
+    },
+    {
+      "url": "/compendium/monsters/purple-worm/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "purple-worm",
+      "canonical_name": "Purple Worm",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "094b2ceebe20587c"
+    },
+    {
+      "url": "/compendium/monsters/reef-shark/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "reef-shark",
+      "canonical_name": "Reef Shark",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ff80b5d542f8b81f"
+    },
+    {
+      "url": "/compendium/monsters/revenant/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "revenant",
+      "canonical_name": "Revenant",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "b3a1cdcce4a55d4c"
+    },
+    {
+      "url": "/compendium/monsters/riding-horse/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "riding-horse",
+      "canonical_name": "Riding Horse",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "85d5527428ce36b4"
+    },
+    {
+      "url": "/compendium/monsters/riverine/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "riverine",
+      "canonical_name": "Riverine",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "061d06f1d868ea7a"
+    },
+    {
+      "url": "/compendium/monsters/rooster/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "rooster",
+      "canonical_name": "Rooster",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "357b2ddac876a792"
+    },
+    {
+      "url": "/compendium/monsters/roper/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "roper",
+      "canonical_name": "Roper",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4245a0198f6b0ac8"
+    },
+    {
+      "url": "/compendium/monsters/saber-toothed-tiger/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "saber-toothed-tiger",
+      "canonical_name": "Saber-Toothed Tiger",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "2f557950e320493d"
+    },
+    {
+      "url": "/compendium/monsters/sahuagin-baron/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "sahuagin-baron",
+      "canonical_name": "Sahuagin Baron",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6d41f612b5eff415"
+    },
+    {
+      "url": "/compendium/monsters/salamander/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "salamander",
+      "canonical_name": "Salamander",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ac60516621017743"
+    },
+    {
+      "url": "/compendium/monsters/scout/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "scout",
+      "canonical_name": "Scout",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "96eb90451320e17c"
+    },
+    {
+      "url": "/compendium/monsters/sea-hag/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "sea-hag",
+      "canonical_name": "Sea Hag",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3d1898eab62d0519"
+    },
+    {
+      "url": "/compendium/monsters/shadow-demon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "shadow-demon",
+      "canonical_name": "Shadow Demon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "81afc5b2e67b5378"
+    },
+    {
+      "url": "/compendium/monsters/shambling-mound/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "shambling-mound",
+      "canonical_name": "Shambling Mound",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "018594a06de9ee95"
+    },
+    {
+      "url": "/compendium/monsters/skeleton/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "skeleton",
+      "canonical_name": "Skeleton",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0ff00a38079df022"
+    },
+    {
+      "url": "/compendium/monsters/solar/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "solar",
+      "canonical_name": "Solar",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0c49cb155bc41b64"
+    },
+    {
+      "url": "/compendium/monsters/soul-shaker/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "soul-shaker",
+      "canonical_name": "Soul Shaker",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "724e33e4dc993fa3"
+    },
+    {
+      "url": "/compendium/monsters/specter/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "specter",
+      "canonical_name": "Specter",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0297bf294d3021b5"
+    },
+    {
+      "url": "/compendium/monsters/spirit-naga/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "spirit-naga",
+      "canonical_name": "Spirit Naga",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "688460e92cc5d4ab"
+    },
+    {
+      "url": "/compendium/monsters/spy/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "spy",
+      "canonical_name": "Spy",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d3a5686f9868021a"
+    },
+    {
+      "url": "/compendium/monsters/stone-golem/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "stone-golem",
+      "canonical_name": "Stone Golem",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d89615192796206a"
+    },
+    {
+      "url": "/compendium/monsters/storm-giant/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "storm-giant",
+      "canonical_name": "Storm Giant",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ddf5620d24dfa3a9"
+    },
+    {
+      "url": "/compendium/monsters/swarm-of-poisonous-snakes/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "swarm-of-poisonous-snakes",
+      "canonical_name": "Swarm of Poisonous Snakes",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "71c3d55805654846"
+    },
+    {
+      "url": "/compendium/monsters/swarm-of-quippers/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "swarm-of-quippers",
+      "canonical_name": "Swarm of Quippers",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "76704c3c4f6f605c"
+    },
+    {
+      "url": "/compendium/monsters/thri-kreen/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "thri-kreen",
+      "canonical_name": "Thri-kreen",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "db249a03c9543815"
+    },
+    {
+      "url": "/compendium/monsters/thug/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "thug",
+      "canonical_name": "Thug",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "60c6d7cf8995e0fd"
+    },
+    {
+      "url": "/compendium/monsters/tlacatecolo/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "tlacatecolo",
+      "canonical_name": "Tlacatecolo",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "78069ba15ca284fb"
+    },
+    {
+      "url": "/compendium/monsters/tlexolotl/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "tlexolotl",
+      "canonical_name": "Tlexolotl",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "61a6dde4c602817e"
+    },
+    {
+      "url": "/compendium/monsters/treant/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "treant",
+      "canonical_name": "Treant",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "719eff632bb69322"
+    },
+    {
+      "url": "/compendium/monsters/ultroloth/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "ultroloth",
+      "canonical_name": "Ultroloth",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1fb3043048929d93"
+    },
+    {
+      "url": "/compendium/monsters/veteran/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "veteran",
+      "canonical_name": "Veteran",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "947c779ad9c13cbe"
+    },
+    {
+      "url": "/compendium/monsters/water-elemental/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "water-elemental",
+      "canonical_name": "Water Elemental",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e43233cef8316bf8"
+    },
+    {
+      "url": "/compendium/monsters/water-weird/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "water-weird",
+      "canonical_name": "Water Weird",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e816e2dc9d4db0f6"
+    },
+    {
+      "url": "/compendium/monsters/weretiger/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "weretiger",
+      "canonical_name": "Weretiger",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "5500ff1753ce0092"
+    },
+    {
+      "url": "/compendium/monsters/whistler/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "whistler",
+      "canonical_name": "Whistler",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6ecdb499b03c7d2e"
+    },
+    {
+      "url": "/compendium/monsters/will-o-wisp/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "will-o-wisp",
+      "canonical_name": "Will-o'-Wisp",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f707f0e9d8da80bb"
+    },
+    {
+      "url": "/compendium/monsters/wraith/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "wraith",
+      "canonical_name": "Wraith",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8d40c17d4aac4470"
+    },
+    {
+      "url": "/compendium/monsters/wynling/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "wynling",
+      "canonical_name": "Wynling",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "JTTRC",
+      "remote_file": "bestiary/bestiary-jttrc.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: JTTRC",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "cb621c796e77cf16"
+    },
+    {
+      "url": "/compendium/monsters/wyvern/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "wyvern",
+      "canonical_name": "Wyvern",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "894a8702c3fa1ab9"
+    },
+    {
+      "url": "/compendium/monsters/young-red-dragon/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "young-red-dragon",
+      "canonical_name": "Young Red Dragon",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d99bf94e3dc953a3"
+    },
+    {
+      "url": "/compendium/monsters/zombie/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "zombie",
+      "canonical_name": "Zombie",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MM",
+      "remote_file": "bestiary/bestiary-mm.json",
+      "remote_key": "monster",
+      "selection_reason": "fonte explícita de JttRC: MM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "62b59f51632d22d2"
+    },
+    {
+      "url": "/compendium/rules/action-attack/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-attack",
+      "canonical_name": "Attack",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "7ef320f25cb51bd8"
+    },
+    {
+      "url": "/compendium/rules/action-dash/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-dash",
+      "canonical_name": "Dash",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "feeb471af522801b"
+    },
+    {
+      "url": "/compendium/rules/action-disengage/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-disengage",
+      "canonical_name": "Disengage",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "232c97ef3aee6354"
+    },
+    {
+      "url": "/compendium/rules/action-dodge/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-dodge",
+      "canonical_name": "Dodge",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f81e3c8d8f9820d6"
+    },
+    {
+      "url": "/compendium/rules/action-help/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-help",
+      "canonical_name": "Help",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "053812e5cf446f2d"
+    },
+    {
+      "url": "/compendium/rules/action-hide/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-hide",
+      "canonical_name": "Hide",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9b34afd251d31c27"
+    },
+    {
+      "url": "/compendium/rules/action-use-object/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "action-use-object",
+      "canonical_name": "Use an Object",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "PHB",
+      "remote_file": "actions.json",
+      "remote_key": "action",
+      "selection_reason": "prioridade de fonte: PHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "6bd27ed8cc22b505"
+    },
+    {
+      "url": "/compendium/rules/cunning-action/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "cunning-action",
+      "canonical_name": "Cunning Action",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "560578b8a98aab75"
+    },
+    {
+      "url": "/compendium/rules/cunning-strike/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "cunning-strike",
+      "canonical_name": "Cunning Strike",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ac0e8737fccf3c64"
+    },
+    {
+      "url": "/compendium/rules/eldritch-invocation-options/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "eldritch-invocation-options",
+      "canonical_name": "Eldritch Invocation Options",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/warlock/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "24308c98b99b53ec"
+    },
+    {
+      "url": "/compendium/rules/eldritch-invocations/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "eldritch-invocations",
+      "canonical_name": "Eldritch Invocations",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/warlock/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "22088f737d3ee61b"
+    },
+    {
+      "url": "/compendium/rules/epic-boon/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "epic-boon",
+      "canonical_name": "Epic Boon",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/",
+        "/compendium/classes/warlock/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-barbarian.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "1e0349f8bd14b2f7"
+    },
+    {
+      "url": "/compendium/rules/evasion/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "evasion",
+      "canonical_name": "Evasion",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-monk.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "ad2aaa77b1681ca4"
+    },
+    {
+      "url": "/compendium/rules/expertise/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "expertise",
+      "canonical_name": "Expertise",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-bard.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3f9cd0bda2e4ef84"
+    },
+    {
+      "url": "/compendium/rules/magical-cunning/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "magical-cunning",
+      "canonical_name": "Magical Cunning",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/warlock/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "5cd1b215859c46ea"
+    },
+    {
+      "url": "/compendium/rules/otherworldly-patron/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "otherworldly-patron",
+      "canonical_name": "Warlock Subclass",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/warlock/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "74da09407e427ff7"
+    },
+    {
+      "url": "/compendium/rules/pact-magic/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "pact-magic",
+      "canonical_name": "Pact Magic",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/warlock/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "db10fb2ba7fcec16"
+    },
+    {
+      "url": "/compendium/rules/poison-cost-1d6/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "poison-cost-1d6",
+      "canonical_name": "Poison (Cost: 1d6)",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a65591d762674d1c"
+    },
+    {
+      "url": "/compendium/rules/reliable-talent/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "reliable-talent",
+      "canonical_name": "Reliable Talent",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "668766da73e727c5"
+    },
+    {
+      "url": "/compendium/rules/rogue-subclass/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "rogue-subclass",
+      "canonical_name": "Rogue Subclass",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "e5f141b909bd00a9"
+    },
+    {
+      "url": "/compendium/rules/sneak-attack/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "sneak-attack",
+      "canonical_name": "Sneak Attack",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "b53d53bbe3643ea8"
+    },
+    {
+      "url": "/compendium/rules/steady-aim/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "steady-aim",
+      "canonical_name": "Steady Aim",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "58c0f3746e69b9fd"
+    },
+    {
+      "url": "/compendium/rules/thieves-cant/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "thieves-cant",
+      "canonical_name": "Thieves' Cant",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "db2851ff5f982e88"
+    },
+    {
+      "url": "/compendium/rules/trip-cost-1d6/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "trip-cost-1d6",
+      "canonical_name": "Trip (Cost: 1d6)",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "3938303cf48ce178"
+    },
+    {
+      "url": "/compendium/rules/uncanny-dodge/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "uncanny-dodge",
+      "canonical_name": "Uncanny Dodge",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "5717434e0262b0ca"
+    },
+    {
+      "url": "/compendium/rules/weapon-mastery/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "weapon-mastery",
+      "canonical_name": "Weapon Mastery",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-barbarian.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "0c245502cef3280a"
+    },
+    {
+      "url": "/compendium/rules/withdraw-cost-1d6/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "withdraw-cost-1d6",
+      "canonical_name": "Withdraw (Cost: 1d6)",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/rogue/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "classFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c0c56c7028c00d89"
+    },
+    {
+      "url": "/compendium/species/elf/",
+      "category": "species",
+      "kind": "species",
+      "slug": "elf",
+      "canonical_name": "Elf",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "races.json",
+      "remote_key": "race",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9bd2220c9d81b528"
+    },
+    {
+      "url": "/compendium/species/goblin/",
+      "category": "species",
+      "kind": "species",
+      "slug": "goblin",
+      "canonical_name": "Goblin",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "MPMM",
+      "remote_file": "races.json",
+      "remote_key": "race",
+      "selection_reason": "prioridade de fonte: MPMM",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "262a4b4c90e86efc"
+    },
+    {
+      "url": "/compendium/spells/charm-person/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "charm-person",
+      "canonical_name": "Charm Person",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "86f3b34219bf5ad1"
+    },
+    {
+      "url": "/compendium/spells/eldritch-blast/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "eldritch-blast",
+      "canonical_name": "Eldritch Blast",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "78a7bc02146efae9"
+    },
+    {
+      "url": "/compendium/spells/find-familiar/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "find-familiar",
+      "canonical_name": "Find Familiar",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "a55c3ec71d4a91aa"
+    },
+    {
+      "url": "/compendium/spells/guidance/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "guidance",
+      "canonical_name": "Guidance",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4d67aef64e15293e"
+    },
+    {
+      "url": "/compendium/spells/gust/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "gust",
+      "canonical_name": "Gust",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XGE",
+      "remote_file": "spells/spells-xge.json",
+      "remote_key": "spell",
+      "selection_reason": "única fonte disponível: XGE",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f9cfa0107139a1a0"
+    },
+    {
+      "url": "/compendium/spells/mage-hand/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "mage-hand",
+      "canonical_name": "Mage Hand",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "aed139a433ba8080"
+    },
+    {
+      "url": "/compendium/spells/message/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "message",
+      "canonical_name": "Message",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "7cb0820571760086"
+    },
+    {
+      "url": "/compendium/spells/ray-of-frost/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "ray-of-frost",
+      "canonical_name": "Ray of Frost",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4cc9181c11843cdb"
+    },
+    {
+      "url": "/compendium/spells/speak-with-animals/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "speak-with-animals",
+      "canonical_name": "Speak with Animals",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "fd92fd3994c30d7d"
+    },
+    {
+      "url": "/compendium/spells/unseen-servant/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "unseen-servant",
+      "canonical_name": "Unseen Servant",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "956d5336730cef15"
+    }
+  ],
+  "unused": [
+    "/compendium/classes/barbarian/",
+    "/compendium/classes/bard/",
+    "/compendium/classes/champion/",
+    "/compendium/classes/fighter/",
+    "/compendium/classes/monk/",
+    "/compendium/classes/sorcerer/",
+    "/compendium/classes/thief/",
+    "/compendium/feats/defensive-duelist/",
+    "/compendium/feats/dual-wielder/",
+    "/compendium/feats/elven-accuracy/",
+    "/compendium/feats/sentinel/",
+    "/compendium/feats/skill-expert/",
+    "/compendium/feats/skilled/",
+    "/compendium/feats/tough/",
+    "/compendium/feats/weapon-master/",
+    "/compendium/items/bedroll/",
+    "/compendium/items/bell/",
+    "/compendium/items/blunderbuss-bullets/",
+    "/compendium/items/brewers-supplies/",
+    "/compendium/items/bullseye-lantern/",
+    "/compendium/items/calligraphers-supplies/",
+    "/compendium/items/caltrops/",
+    "/compendium/items/costume/",
+    "/compendium/items/crowbar/",
+    "/compendium/items/crystal/",
+    "/compendium/items/flute/",
+    "/compendium/items/greataxe/",
+    "/compendium/items/handaxe/",
+    "/compendium/items/hunting-trap/",
+    "/compendium/items/ink/",
+    "/compendium/items/lamp/",
+    "/compendium/items/mirror/",
+    "/compendium/items/oil/",
+    "/compendium/items/orb/",
+    "/compendium/items/padded-armor/",
+    "/compendium/items/parchment/",
+    "/compendium/items/pouch/",
+    "/compendium/items/rations/",
+    "/compendium/items/robe/",
+    "/compendium/items/rope/",
+    "/compendium/items/shovel/",
+    "/compendium/items/signet-ring/",
+    "/compendium/items/spear/",
+    "/compendium/items/tinderbox/",
+    "/compendium/items/torch/",
+    "/compendium/items/waterskin/",
+    "/compendium/items/weavers-tools/",
+    "/compendium/magic-items/boots-of-elvenkind/",
+    "/compendium/magic-items/bracers-of-defense/",
+    "/compendium/magic-items/musket-3/",
+    "/compendium/magic-items/padded-armor/",
+    "/compendium/magic-items/pistol-2/",
+    "/compendium/magic-items/plate-armor/",
+    "/compendium/magic-items/ring-of-protection/",
+    "/compendium/magic-items/stone-of-good-luck/",
+    "/compendium/rules/10-ability-score-improvement/",
+    "/compendium/rules/6-expertise/",
+    "/compendium/rules/8-ability-score-improvement/",
+    "/compendium/rules/ability-score-improvement/",
+    "/compendium/rules/acrobatic-movement/",
+    "/compendium/rules/action-surge-two-uses/",
+    "/compendium/rules/action-surge/",
+    "/compendium/rules/additional-fighting-style/",
+    "/compendium/rules/agonizing-blast-eldritch-blast/",
+    "/compendium/rules/arcane-apotheosis/",
+    "/compendium/rules/barbarian-subclass/",
+    "/compendium/rules/bard-college-feature/",
+    "/compendium/rules/bard-college/",
+    "/compendium/rules/bard-subclass/",
+    "/compendium/rules/bardic-inspiration-d10/",
+    "/compendium/rules/bardic-inspiration-d12/",
+    "/compendium/rules/bardic-inspiration-d8/",
+    "/compendium/rules/bardic-inspiration/",
+    "/compendium/rules/bardic-versatility/",
+    "/compendium/rules/blind-fighting/",
+    "/compendium/rules/blindsense/",
+    "/compendium/rules/body-and-mind/",
+    "/compendium/rules/bonus-unarmed-strike/",
+    "/compendium/rules/brutal-critical-1-die/",
+    "/compendium/rules/brutal-critical-2-dice/",
+    "/compendium/rules/brutal-critical-3-dice/",
+    "/compendium/rules/brutal-strike/",
+    "/compendium/rules/champion/",
+    "/compendium/rules/circle-spell-augment/",
+    "/compendium/rules/circle-spell-distribute/",
+    "/compendium/rules/circle-spell-expand/",
+    "/compendium/rules/circle-spell-prolong/",
+    "/compendium/rules/circle-spell-safeguard/",
+    "/compendium/rules/circle-spell-supplant/",
+    "/compendium/rules/cleave-greataxe/",
+    "/compendium/rules/contact-patron/",
+    "/compendium/rules/countercharm/",
+    "/compendium/rules/danger-sense/",
+    "/compendium/rules/daze-cost-2d6/",
+    "/compendium/rules/dedicated-weapon/",
+    "/compendium/rules/deflect-attacks/",
+    "/compendium/rules/deflect-energy/",
+    "/compendium/rules/deflect-missiles/",
+    "/compendium/rules/devious-strikes/",
+    "/compendium/rules/dexterous-attacks/",
+    "/compendium/rules/diamond-soul/",
+    "/compendium/rules/disciplined-survivor/",
+    "/compendium/rules/eldritch-master/",
+    "/compendium/rules/eldritch-versatility/",
+    "/compendium/rules/elusive/",
+    "/compendium/rules/empowered-strikes/",
+    "/compendium/rules/empty-body/",
+    "/compendium/rules/equipment/",
+    "/compendium/rules/extra-attack-2/",
+    "/compendium/rules/extra-attack-3/",
+    "/compendium/rules/extra-attack/",
+    "/compendium/rules/fast-hands-sleight-of-hand/",
+    "/compendium/rules/fast-hands-use-magic-item/",
+    "/compendium/rules/fast-hands-utilize/",
+    "/compendium/rules/fast-hands/",
+    "/compendium/rules/fast-movement/",
+    "/compendium/rules/feral-instinct/",
+    "/compendium/rules/fighter-subclass/",
+    "/compendium/rules/fighting-style/",
+    "/compendium/rules/firearm-specialist/",
+    "/compendium/rules/flexible-casting/",
+    "/compendium/rules/flurry-of-blows/",
+    "/compendium/rules/focus-points/",
+    "/compendium/rules/focused-aim/",
+    "/compendium/rules/font-of-inspiration/",
+    "/compendium/rules/font-of-magic/",
+    "/compendium/rules/healing-hands/",
+    "/compendium/rules/heightened-focus/",
+    "/compendium/rules/heroic-warrior/",
+    "/compendium/rules/hills-tumble-hill-giant/",
+    "/compendium/rules/hit-points/",
+    "/compendium/rules/improved-brutal-strike/",
+    "/compendium/rules/improved-critical/",
+    "/compendium/rules/improved-cunning-strike/",
+    "/compendium/rules/indomitable-might/",
+    "/compendium/rules/indomitable-three-uses/",
+    "/compendium/rules/indomitable-two-uses/",
+    "/compendium/rules/indomitable/",
+    "/compendium/rules/initiate-a-circle-spell/",
+    "/compendium/rules/innate-sorcery/",
+    "/compendium/rules/instinctive-pounce/",
+    "/compendium/rules/jack-of-all-trades/",
+    "/compendium/rules/ki-empowered-strikes/",
+    "/compendium/rules/ki-fueled-attack/",
+    "/compendium/rules/ki/",
+    "/compendium/rules/knock-out-cost-6d6/",
+    "/compendium/rules/magical-guidance/",
+    "/compendium/rules/magical-inspiration/",
+    "/compendium/rules/magical-secrets/",
+    "/compendium/rules/martial-archetype-feature/",
+    "/compendium/rules/martial-archetype/",
+    "/compendium/rules/martial-arts-die/",
+    "/compendium/rules/martial-arts/",
+    "/compendium/rules/martial-versatility/",
+    "/compendium/rules/metamagic-options/",
+    "/compendium/rules/metamagic/",
+    "/compendium/rules/monastic-tradition-feature/",
+    "/compendium/rules/monastic-tradition/",
+    "/compendium/rules/monk-subclass/",
+    "/compendium/rules/monks-focus/",
+    "/compendium/rules/mystic-arcanum-6th-level/",
+    "/compendium/rules/mystic-arcanum-7th-level/",
+    "/compendium/rules/mystic-arcanum-8th-level/",
+    "/compendium/rules/mystic-arcanum-9th-level/",
+    "/compendium/rules/mystic-arcanum/",
+    "/compendium/rules/obscure-cost-3d6/",
+    "/compendium/rules/otherworldly-patron-feature/",
+    "/compendium/rules/pact-boon/",
+    "/compendium/rules/pact-of-the-chain-attack/",
+    "/compendium/rules/pact-of-the-chain/",
+    "/compendium/rules/pact-of-the-tome/",
+    "/compendium/rules/path-feature/",
+    "/compendium/rules/patient-defense/",
+    "/compendium/rules/perfect-focus/",
+    "/compendium/rules/perfect-self/",
+    "/compendium/rules/persistent-rage/",
+    "/compendium/rules/primal-champion/",
+    "/compendium/rules/primal-knowledge/",
+    "/compendium/rules/primal-path/",
+    "/compendium/rules/proficiencies/",
+    "/compendium/rules/purity-of-body/",
+    "/compendium/rules/quickened-healing/",
+    "/compendium/rules/rage-enter/",
+    "/compendium/rules/rage/",
+    "/compendium/rules/reckless-attack/",
+    "/compendium/rules/relentless-rage/",
+    "/compendium/rules/remarkable-athlete/",
+    "/compendium/rules/roguish-archetype-feature/",
+    "/compendium/rules/roguish-archetype/",
+    "/compendium/rules/sap-mace/",
+    "/compendium/rules/second-story-work/",
+    "/compendium/rules/second-wind/",
+    "/compendium/rules/self-restoration/",
+    "/compendium/rules/slippery-mind/",
+    "/compendium/rules/slow-fall/",
+    "/compendium/rules/slow-musket/",
+    "/compendium/rules/sneak-attack-poison-cost-1d6/",
+    "/compendium/rules/sneak-attack-supreme-sneak-cost-1d6/",
+    "/compendium/rules/sneak-attack-trip-cost-1d6/",
+    "/compendium/rules/sneak-attack-withdraw-cost-1d6/",
+    "/compendium/rules/song-of-rest-d10/",
+    "/compendium/rules/song-of-rest-d12/",
+    "/compendium/rules/song-of-rest-d6/",
+    "/compendium/rules/song-of-rest-d8/",
+    "/compendium/rules/sorcerer-subclass/",
+    "/compendium/rules/sorcerous-origin-feature/",
+    "/compendium/rules/sorcerous-origin/",
+    "/compendium/rules/sorcerous-restoration/",
+    "/compendium/rules/sorcerous-versatility/",
+    "/compendium/rules/sorcery-incarnate/",
+    "/compendium/rules/sorcery-points/",
+    "/compendium/rules/spellcasting/",
+    "/compendium/rules/step-of-the-wind/",
+    "/compendium/rules/stillness-of-mind/",
+    "/compendium/rules/stonecunning-tremorsense/",
+    "/compendium/rules/stroke-of-luck/",
+    "/compendium/rules/studied-attacks/",
+    "/compendium/rules/stunning-strike/",
+    "/compendium/rules/subclass-feature/",
+    "/compendium/rules/superior-critical/",
+    "/compendium/rules/superior-defense/",
+    "/compendium/rules/superior-inspiration/",
+    "/compendium/rules/supreme-sneak/",
+    "/compendium/rules/survivor/",
+    "/compendium/rules/tactical-master/",
+    "/compendium/rules/tactical-mind/",
+    "/compendium/rules/tactical-shift/",
+    "/compendium/rules/thief/",
+    "/compendium/rules/three-extra-attacks/",
+    "/compendium/rules/timeless-body/",
+    "/compendium/rules/tongue-of-the-sun-and-moon/",
+    "/compendium/rules/two-extra-attacks/",
+    "/compendium/rules/two-weapon-fighting/",
+    "/compendium/rules/unarmed-strike/",
+    "/compendium/rules/unarmored-defense/",
+    "/compendium/rules/unarmored-movement-improvement/",
+    "/compendium/rules/unarmored-movement/",
+    "/compendium/rules/uncanny-metabolism/",
+    "/compendium/rules/vex-pistol/",
+    "/compendium/rules/warlock-subclass/",
+    "/compendium/rules/weapon-mastery-slow/",
+    "/compendium/rules/words-of-creation/",
+    "/compendium/species/aasimar/",
+    "/compendium/species/dwarf/",
+    "/compendium/species/goliath/",
+    "/compendium/species/halfling/",
+    "/compendium/species/human/",
+    "/compendium/spells/acid-splash/",
+    "/compendium/spells/bane/",
+    "/compendium/spells/burning-hands/",
+    "/compendium/spells/daylight/",
+    "/compendium/spells/detect-magic/",
+    "/compendium/spells/fireball/",
+    "/compendium/spells/lesser-restoration/",
+    "/compendium/spells/light/",
+    "/compendium/spells/mage-armor/",
+    "/compendium/spells/mending/",
+    "/compendium/spells/minor-illusion/",
+    "/compendium/spells/prestidigitation/",
+    "/compendium/spells/shocking-grasp/",
+    "/compendium/spells/spare-the-dying/",
+    "/compendium/spells/thaumaturgy/",
+    "/compendium/spells/vicious-mockery/"
+  ],
+  "missing_local": [],
+  "resolution": {
+    "resolved": 191
+  }
+}

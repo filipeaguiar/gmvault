@@ -1,20 +1,70 @@
 ---
 title: Manticore
-draft: false
-titulo_pt_br: Manticora
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
 params:
   kind: monster
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Manticore
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: fd80ab6c3edcad57
+stats:
+  ac: '14'
+  hp: 68 (8d10 + 24)
+  speed: walk 30 ft., fly 50 ft.
+  attributes:
+    str: 17
+    dex: 16
+    con: 17
+    int: 7
+    wis: 12
+    cha: 8
+  saves: {}
+  skills: {}
+  senses: darkvision 60 ft.
+  languages: Common
+  cr: '3'
+stats_meta: Large monstrosity L/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Mantícora
 ---
 
-Monstro **Manticora** importado automaticamente da campanha.
+## Características
+
+### Regeneração de Espinhos da Cauda
+
+A manticora possui vinte e quatro espinhos na cauda. Espinhos usados regeneram quando a manticora termina um descanso longo.
+
+## Ações
+
+### Ataques Múltiplos
+
+A manticora faz três ataques: um com sua mordida e dois com suas garras ou três com seus espinhos da cauda.
+
+### Mordida
+
+mw 5 no ataque, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) dano perfurante.
+
+### Garra
+
+mw 5 no ataque, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) dano cortante.
+
+### Espinho da Cauda
+
+rw 5 no ataque, alcance 30/60 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) dano perfurante.

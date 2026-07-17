@@ -1,19 +1,28 @@
 ---
-title: lizard
-draft: false
-titulo_pt_br: lagarto
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Lizard
 params:
   kind: monster
-stats_meta: Tiny beast, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Lizard
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 21be2f0a456a72bc
 stats:
   ac: '10'
   hp: 2 (1d4)
-  speed: 20 ft., climb 20 ft.
+  speed: walk 20 ft., climb 20 ft.
   attributes:
     str: 2
     dex: 11
@@ -21,15 +30,24 @@ stats:
     int: 1
     wis: 8
     cha: 3
-  senses: darkvision 30 ft., passive Perception 9
+  saves: {}
+  skills: {}
+  senses: darkvision 30 ft.
+  languages: ''
   cr: '0'
+stats_meta: Tiny beast U
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: openai-compatible
   status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Lagarto
 ---
 
-### Ações
+## Ações
 
-** Mordida.** MW 0 para atingir, atingir 5 pés, um alvo. Danos piercing.
+
+### Mordida
+
+Ataque Corpo a Corpo com Arma: +0 para atingir, alcance 1,5 m, um alvo. Acerto: 1 de dano perfurante.

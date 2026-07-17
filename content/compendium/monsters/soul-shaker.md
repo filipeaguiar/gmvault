@@ -1,19 +1,28 @@
 ---
-title: soul shaker
-draft: false
-titulo_pt_br: agitador de almas
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Soul Shaker
 params:
   kind: monster
-stats_meta: Large undead, caótico e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: JTTRC
+  entity_type: monster
+  entity_name: Soul Shaker
+  remote_file: bestiary/bestiary-jttrc.json
+  remote_key: monster
+  remote_id: 724e33e4dc993fa3
 stats:
   ac: '13'
   hp: 76 (8d10 + 32)
-  speed: 20 ft.
+  speed: walk 20 ft.
   attributes:
     str: 20
     dex: 8
@@ -21,31 +30,48 @@ stats:
     int: 8
     wis: 11
     cha: 14
-  senses: blindsight 60 ft. (blind beyond this radius), passive Perception 10
+  saves: {}
+  skills: {}
+  senses: blindsight 60 ft. (blind beyond this radius)
   languages: telepathy 60 ft.
   cr: '4'
+stats_meta: Large undead C/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Abalador de Almas
 ---
 
-![Arte: agitador de almas](/images/campaigns/journeys-through-the-radiant-citadel/soul-shaker.webp)
+## Características
 
-Uma massa agarradora de membros humanoides, um agitador de almas é um reivindicador obsessivo de cadáveres e colecionador de partes do corpo. Essas criaturas pesadelares surgem de coleções macabras de membros decepados expostas a energias necromânticas ou quando várias garras rastejantes formam uma relação cooperativa.
-A maioria das vítimas de um agitador de almas tem sua vitalidade drenada e sua carne pulverizada por seus muitos braços. No entanto, se um agitador de almas encontrar alguém com uma mente impressionável, a criatura tenta enfeitiçar o indivíduo, usando-o como isca para atrair outros para seus terrenos de caça.
-Se derrotado, um agitador de almas se dispersa em vários membros animados que se espalham. O terror só pode ser verdadeiramente aniquilado destruindo esses apêndices desmembrados. Se mais de um desses pedaços escapar, o agitador de almas se reforma ao longo de dias e começa a caçar novamente.
 
-### Características
+### Fascínio Arrebatador (1/Dia)
 
-**Isca Enfeitiçada (1/Dia).** O agitador de almas pode conjurar a magia *geas*, sem necessidade de componentes de magia e usando Carisma como atributo de conjuração (CD para evitar magia 12).
+O agitador de almas pode conjurar a magia *geas*, sem necessidade de componentes materiais e usando Carisma como atributo de conjuração (CD para evitar magia 12).
 
-**Reconstrução.** Quando o agitador de almas é reduzido a 0 pontos de vida, ele explode em 7 ([[1d4+5]]) garras rastejantes. Após 6 ([[1d12]]) dias, se pelo menos duas dessas garras rastejantes estiverem vivas, elas se teletransportam para o local da morte do agitador de almas e se fundem, momento em que o agitador de almas se reforma e recupera todos os seus pontos de vida.
 
-**Natureza Incomum.** O agitador de almas não precisa de ar, comida, bebida ou sono.
+### Reconstrução
 
-### Ações
+Quando o agitador de almas é reduzido a 0 pontos de vida, ele explode em 7 (<span class="dice+" data-roll-notation="1d4+5">1d4 + 5</span>) garras rastejantes. Após 6 (<span class="dice+" data-roll-notation="1d12">1d12</span>) dias, se pelo menos duas dessas garras rastejantes estiverem vivas, elas se teletransportam para o local da morte do agitador de almas e se fundem, então o agitador de almas se reforma e recupera todos os seus pontos de vida.
 
-**Agarramento Esmagador.** Ataque Corpo a Corpo com Arma: +7 para acertar, alcance 1,5 m., um alvo. {@h}14 ([[2d8+5]]) de dano de concussão. Se o alvo for uma criatura Média ou menor, ele é agarrado (CD de escape 15). O agitador de almas pode ter apenas uma criatura agarrada desta forma por vez.
+
+### Natureza Incomum
+
+O agitador de almas não precisa de ar, comida, bebida ou sono.
+
+## Ações
+
+
+### Aperto Esmagador
+
+Corpo a Corpo com Arma +7 para atingir, alcance 1,5 m, um alvo. 14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano de concussão. Se o alvo for uma criatura de tamanho Médio ou menor, ele fica agarrado (escapar CD 15). O agitador de almas só pode ter uma criatura agarrada dessa forma por vez.
+
+## Ações Bônus
+
+
+### Consumir Vitalidade
+
+O agitador de almas escolhe uma criatura que esteja agarrando. Se o alvo não for um Constructo ou Morto-vivo, o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou sofrerá 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano necrótico. O máximo de pontos de vida do alvo é reduzido em uma quantia igual ao dano necrótico sofrido, e o agitador de almas recupera pontos de vida iguais a essa quantia. Essa redução dura até o alvo terminar um descanso longo. O alvo morre se seu máximo de pontos de vida for reduzido a 0.

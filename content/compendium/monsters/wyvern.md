@@ -1,19 +1,28 @@
 ---
-title: wyvern
-draft: false
-titulo_pt_br: Wyvern
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Wyvern
 params:
   kind: monster
-stats_meta: Large dragon, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Wyvern
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 894a8702c3fa1ab9
 stats:
   ac: '13'
   hp: 110 (13d10 + 39)
-  speed: 20 ft., fly 80 ft.
+  speed: walk 20 ft., fly 80 ft.
   attributes:
     str: 19
     dex: 10
@@ -21,41 +30,36 @@ stats:
     int: 5
     wis: 12
     cha: 6
-  skills: Perception +4
-  senses: darkvision 60 ft., passive Perception 14
+  saves: {}
+  skills:
+    perception: '+4'
+  senses: darkvision 60 ft.
+  languages: ''
   cr: '6'
+stats_meta: Large dragon U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Wyvern
 ---
 
-![Arte: wyvern](/images/campaigns/journeys-through-the-radiant-citadel/wyvern.webp)
+## Ações
 
-Viajantes em regiões selvagens às vezes olham para os céus para ver a forma de asas escuras de um wyvern carregando sua presa. Esses primos dos grandes dragões caçam as mesmas florestas emaranhadas e cavernas que seus parentes. Sua aparição envia ondas de alarme através das fronteiras da civilização.
-Um wyvern tem duas pernas escamosas, asas coriáceas e uma cauda musculosa encimada por sua arma mais potente: um ferrão venenoso. O veneno no ferrão de um wyvern pode matar uma criatura em segundos. Extremamente potente, o veneno do wyvern queima através da corrente sanguínea da vítima, desintegrando veias e artérias em seu caminho até o coração. Por mais mortais que os wyverns possam ser, no entanto, caçadores e aventureiros frequentemente os rastreiam para reivindicar o veneno, que é usado em compostos alquímicos e para revestir armas.
+### Ataques Múltiplos
 
-### Caçadores Aéreos
+A wyvern realiza dois ataques: um com sua mordida e outro com seu ferrão. Enquanto estiver voando, ela pode usar suas garras no lugar de um outro ataque.
 
-Um wyvern não luta no chão a menos que não possa alcançar sua presa por nenhum outro meio, ou se tiver sido enganado para uma posição onde o combate aéreo não seja uma opção. Se forçado a um confronto no chão, um wyvern se agacha, mantendo seu ferrão erguido acima da cabeça enquanto sibila e rosna.
+### Mordida
 
-### Agressivo e Imprudente
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 3 m, uma criatura. Dano: 11 (2d6 + 4) de dano perfurante.
 
-Um wyvern focado em sua presa só recua se sofrer ferimentos graves, ou se sua presa escapar por tempo suficiente para que outra refeição potencial mais fácil apareça. Se encurralar uma criatura em fuga em um recinto pequeno demais para entrar, um wyvern guarda o local onde a presa se esconde, golpeando com seu ferrão sempre que surge uma oportunidade.
-Embora possuam mais astúcia que bestas comuns, os wyverns carecem da inteligência de seus primos draconicos. Assim, criaturas que mantêm a compostura enquanto um wyvern as caça do alto podem frequentemente iludi-lo ou enganá-lo. Wyverns seguem um caminho direto até sua presa, sem pensar em possíveis emboscadas.
+### Garras
 
-### Wyverns Domados
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. Dano: 13 (2d8 + 4) de dano cortante.
 
-Um wyvern pode ser domado para uso como montaria, mas fazer isso apresenta um desafio difícil e mortal. Criar um desde filhote oferece os melhores resultados. No entanto, o temperamento violento de um wyvern já custou a vida de muitos aspirantes a mestres.
+### Ferrão
 
-### Ações
-
-**Ataques Múltiplos.** O wyvern realiza dois ataques: um com sua mordida e um com seu ferrão. Enquanto voa, pode usar suas garras no lugar de um dos outros ataques.
-
-**Mordida.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 3 m, uma criatura. *Dano:* 11 ([[2d6+4]]) dano perfurante.
-
-**Garras.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 1,5 m, um alvo. *Dano:* 13 ([[2d8+4]]) dano cortante.
-
-**Ferrão.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 3 m, uma criatura. *Dano:* 11 ([[2d6+4]]) dano perfurante. O alvo deve realizar um teste de resistência de Constituição CD 15, sofrendo 24 ([[7d6]]) dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 3 m, uma criatura. Dano: 11 (2d6 + 4) de dano perfurante. O alvo deve realizar um teste de resistência de Constituição CD 15, sofrendo 24 (7d6) de dano de veneno em caso de falha no teste, ou metade desse dano em caso de sucesso.

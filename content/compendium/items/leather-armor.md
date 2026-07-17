@@ -2,20 +2,40 @@
 title: Leather Armor
 params:
   kind: item
-draft: false
+draft: true
 weight: 10
-summary: Draft imported from 5e.tools. Requires translation.
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
 - draft
 - importado
+- 5etools
 visibility: public
-status: ready
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: item
+  entity_name: Leather Armor
+  remote_file: items-base.json
+  remote_key: baseitem
+  remote_id: 73a8c329f53e07fd
 item_info:
-  type: Light Armor
-  cost: 10.0 gp
-  weight: 10 lb
-  armor_class: 11
-  armor_type: 1
+  type: LA|XPHB
+  rarity: none
+  attunement: ''
+  cost: 1000 cp
+  weight: 10
+  damage: ''
+  damage_type: ''
+  properties: []
+  range: ''
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Armadura de Couro
 ---
 
-The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.
+

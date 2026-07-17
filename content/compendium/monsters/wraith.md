@@ -1,19 +1,28 @@
 ---
-title: wraith
-draft: false
-titulo_pt_br: Espectro
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Wraith
 params:
   kind: monster
-stats_meta: Medium undead, neutro e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Wraith
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 8d40c17d4aac4470
 stats:
   ac: '13'
   hp: 67 (9d8 + 27)
-  speed: '0 ft., fly {''number'': 60, ''condition'': ''(hover)''} ft., canHover True ft.'
+  speed: walk 0 ft., fly 60 ft.
   attributes:
     str: 6
     dex: 16
@@ -21,47 +30,37 @@ stats:
     int: 12
     wis: 14
     cha: 15
-  senses: darkvision 60 ft., passive Perception 12
+  saves: {}
+  skills: {}
+  senses: darkvision 60 ft.
   languages: the languages it knew in life
   cr: '5'
+stats_meta: Medium undead N/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Aparição
 ---
 
-![Arte: wraith](/images/campaigns/journeys-through-the-radiant-citadel/wraith.webp)
+## Traços
 
-Um wraith é a maldade encarnada, concentrada em uma forma incorpórea que busca extinguir toda a vida. A criatura está imbuída de energia negativa, e sua mera passagem pelo mundo deixa as plantas próximas enegrecidas e murchas. Animais fogem de sua presença. Até pequenas fogueiras podem ser extintas pelo vácuo devorador da existência horripilante do wraith.
+### Movimento Incorpóreo
 
-### Oblívio Vil
+A aparição pode mover-se através de outras criaturas e objetos como se fossem terreno difícil. Ela sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar o turno dela dentro de um objeto.
 
-Quando um humanoide mortal vive uma vida depravada ou faz um pacto infernal, ele condena sua alma à danação eterna nos Planos Inferiores. No entanto, às vezes a alma se torna tão imbuída de energia negativa que colapsa sobre si mesma e deixa de existir no instante antes de poder seguir para alguma terrível vida após a morte. Quando isso ocorre, o espírito se torna um wraith sem alma — um vácuo malévolo preso no plano onde morreu. Quase nada da existência anterior do wraith é preservado; nesta nova forma, ele existe apenas para aniquilar outras vidas.
+### Sensibilidade à Luz Solar
 
-### Desprovido de Corpo
+Enquanto estiver sob luz solar, a aparição tem desvantagem em jogadas de ataque, bem como em testes de Sabedoria (Percepção) que dependam da visão.
 
-Um wraith pode se mover através de criaturas e objetos sólidos com a mesma facilidade com que uma criatura mortal se move através da névoa.
-Um wraith pode reter algumas memórias de sua vida mortal como ecos sombrios. No entanto, mesmo os eventos e emoções mais fortes se tornam pouco mais que impressões fracas, fugazes como sonhos mal lembrados. Um wraith pode parar para olhar algo que o fascinava em vida, ou pode conter sua ira em reconhecimento a uma amizade passada. Tais momentos são raros, porém, pois a maioria dos wraiths despreza o que foram como um lembrete do que se tornaram.
+## Ações
 
-### Comandantes Mortos-Vivos
+### Drenar Vida
 
-Um wraith pode criar um servo morto-vivo a partir do espírito de uma criatura humanoide que sofreu recentemente uma morte violenta. Tal fragmento de desgraça se torna um espectro, rancoroso de tudo que vive.
-Wraiths às vezes governam legiões de mortos, tramando a ruína de criaturas vivas. Quando emergem de seus túmulos para lutar, a vida e a esperança murcham diante deles. Mesmo que os exércitos de um wraith sejam forçados a recuar, as terras que suas forças ocuparam são tão arrasadas e murchas que aqueles que vivem lá muitas vezes passam fome e morrem.
+Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 1,5 m, uma criatura. *Acerto:* 21 (<span class="dice+" data-roll-notation="4d8+3">4d8 + 3</span>) de dano necrótico. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou ter seu máximo de pontos de vida reduzido em uma quantidade igual ao dano sofrido. Essa redução dura até o alvo terminar um descanso longo. O alvo morre se esse efeito reduzir seu máximo de pontos de vida a 0.
 
-### Natureza Morta-Viva
+### Criar Espectro
 
-Um wraith não precisa de ar, comida, bebida ou sono.
-
-### Características
-
-**Movimento Incorpóreo.** O wraith pode se mover através de outras criaturas e objetos como se fossem terreno difícil. Ele sofre 5 ([[1d10]]) de dano de energia se terminar seu turno dentro de um objeto.
-
-**Sensibilidade à Luz Solar.** Enquanto estiver sob luz solar, o wraith tem desvantagem em jogadas de ataque, bem como em testes de Sabedoria (Percepção) que dependam da visão.
-
-### Ações
-
-**Dreno de Vida.** *Ataque Corpo a Corpo com Arma:* +6 para acertar, alcance 1,5 m, uma criatura. *Dano:* 21 ([[4d8+3]]) de dano necrótico. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou seu máximo de pontos de vida é reduzido em um valor igual ao dano sofrido. Esta redução dura até o alvo terminar um descanso longo. O alvo morre se este efeito reduzir seu máximo de pontos de vida a 0.
-
-**Criar Espectro.** O wraith escolhe um humanoide a até 3 metros dele que esteja morto há não mais de 1 minuto e que tenha morrido violentamente. O espírito do alvo surge como um espectro no espaço de seu cadáver ou no espaço desocupado mais próximo. O espectro está sob o controle do wraith. O wraith não pode ter mais de sete espectros sob seu controle ao mesmo tempo.
+A aparição escolhe um humanoide a até 3 metros dela que esteja morto há não mais que 1 minuto e tenha morrido de forma violenta. O espírito do alvo se ergue como um espectro no espaço do cadáver ou no espaço desocupado mais próximo. O espectro está sob o controle da aparição. A aparição não pode ter mais de sete espectros sob seu controle ao mesmo tempo.

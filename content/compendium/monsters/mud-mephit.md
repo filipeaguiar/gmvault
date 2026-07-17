@@ -1,19 +1,28 @@
 ---
-title: mud mephit
-draft: false
-titulo_pt_br: '**Mefit de Lama**'
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Mud Mephit
 params:
   kind: monster
-stats_meta: Small elemental, neutro e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Mud Mephit
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 3a29f5edfc5f7326
 stats:
   ac: '11'
   hp: 27 (6d6 + 6)
-  speed: 20 ft., fly 20 ft., swim 20 ft.
+  speed: walk 20 ft., fly 20 ft., swim 20 ft.
   attributes:
     str: 8
     dex: 12
@@ -21,26 +30,42 @@ stats:
     int: 9
     wis: 11
     cha: 7
-  skills: Stealth +3
-  senses: darkvision 60 ft., passive Perception 10
+  saves: {}
+  skills:
+    stealth: '+3'
+  senses: darkvision 60 ft.
   languages: Aquan, Terran
   cr: 1/4
+stats_meta: Small elemental N/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Mefítico de Lama
 ---
 
-### Características
+## Características
 
-**Explosão Mortal.** Quando o mefito morre, ele explode em uma explosão de lama pegajosa. Cada criatura Média ou menor a até 1,5 metro dele deve ser bem-sucedida em um teste de resistência de Destreza CD 11 ou ficará contida até o final do próximo turno da criatura.
 
-**Aparência Falsa.** Enquanto o mefito permanece imóvel, é indistinguível de um monte de lama comum.
+### Explosão de Morte
 
-### Ações
+Quando o mephit morre, ele explode em uma erupção de lama grudenta. Cada criatura de tamanho Médio ou menor a 1,5 metro dele deve ser bem-sucedida em um teste de resistência de Destreza CD 11 ou ficará contida até o final do próximo turno da criatura.
 
-**Socos.** Ataque Corpo a Corpo com Arma +3 para acertar, alcance 1,5 m, uma criatura. {@h}4 ([[1d6+1]]) de dano de concussão.
 
-**Baforada de Lama {@recharge}.** O mefito arrota lama viscosa em uma criatura a até 1,5 metro dele. Se o alvo for Médio ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza CD 11 ou ficará contido por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesma em caso de sucesso.
+### Aparência Falsa
+
+Enquanto o mephit permanece imóvel, ele é indistinguível de um monte comum de lama.
+
+## Ações
+
+
+### Punhos
+
+Ataque Corpo a Corpo com Arma: 3 para atingir, alcance 1,5 m, uma criatura. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano de concussão.
+
+
+### Sopro de Lama {@recharge}
+
+O mephit vomita lama viscosa em uma criatura a até 1,5 metro dele. Se o alvo for de tamanho Médio ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza CD 11 ou ficará contido por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesma em caso de sucesso.

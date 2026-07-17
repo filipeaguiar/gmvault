@@ -1,33 +1,42 @@
 ---
 title: Dinosaur Skeleton
-draft: false
-titulo_pt_br: Esqueleto de Dinossauro
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
 params:
   kind: monster
-stats_meta: Medium undead, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: JTTRC
+  entity_type: monster
+  entity_name: Dinosaur Skeleton
+  remote_file: bestiary/bestiary-jttrc.json
+  remote_key: monster
+  remote_id: 6cfd3c67708f3ece
 stats:
-  ac: '10'
-  hp: '10'
-  speed: 30 ft.
-  attributes:
-    str: 10
-    dex: 10
-    con: 10
-    int: 10
-    wis: 10
-    cha: 10
+  ac: ''
+  hp: ''
+  speed: ''
+  attributes: {}
+  saves: {}
+  skills: {}
   senses: darkvision 60 ft.
+  languages: ''
+  cr: ''
+stats_meta: undead
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Esqueleto de Dinossauro
 ---
 
-Esses esqueletos gigantes foram desenterrados pouco antes de a prata na mina acabar, inspirando conversas de que a mina era amaldiçoada. Quando Teocín se juntou a Itzmin aqui pela primeira vez, ela recorreu ao poder de Pazuzu para transformar esses esqueletos em guardiões.
+

@@ -1,80 +1,124 @@
 ---
-title: "Rogue"
+title: Rogue
 params:
-  kind: "class"
-draft: false
+  kind: class
+draft: true
 weight: 10
-summary: "Progressão da classe Rogue."
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "ready"
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: class
+  entity_name: Rogue
+  remote_file: class/class-rogue.json
+  remote_key: class
+  remote_id: 6ef75fc769ee1826
+class_info:
+  hit_dice: 1d8
+  primary_ability: '{''dex'': True}'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Ladino
 ---
 
-### Nível 1
+## Nível 1
 
-- [Expertise](/compendium/rules/expertise/)
-- [Sneak Attack](/compendium/rules/sneak-attack/)
-- [Thieves' Cant](/compendium/rules/thieves-cant/)
-- [Weapon Mastery](/compendium/rules/weapon-mastery/)
+- [Especialização](/compendium/rules/expertise/)
+- [Ataque Furtivo](/compendium/rules/sneak-attack/)
+- [Ladinoês](/compendium/rules/thieves-cant/)
+- [Maestria de Arma](/compendium/rules/weapon-mastery/)
 
-### Nível 2
+## Nível 2
 
-- [Cunning Action](/compendium/rules/cunning-action/)
+- [Ação Ardilosa](/compendium/rules/cunning-action/)
 
-### Nível 3
+## Nível 3
 
-- [Rogue Subclass](/compendium/rules/rogue-subclass/)
-- Roguish Archetype
-- [Steady Aim](/compendium/rules/steady-aim/)
+- [Subclasse de Ladino](/compendium/rules/rogue-subclass/)
+- [Mira Estável](/compendium/rules/steady-aim/)
 
-### Nível 4
+## Nível 4
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-### Nível 5
+## Nível 5
 
-- [Cunning Strike](/compendium/rules/cunning-strike/)
-- [Poison (Cost: 1d6)](/compendium/rules/poison-cost-1d6/)
-- [Trip (Cost: 1d6)](/compendium/rules/trip-cost-1d6/)
-- [Uncanny Dodge](/compendium/rules/uncanny-dodge/)
-- [Withdraw (Cost: 1d6)](/compendium/rules/withdraw-cost-1d6/)
+- [Golpe Ardiloso](/compendium/rules/cunning-strike/)
+- [Veneno (Custo: 1d6)](/compendium/rules/poison-cost-1d6/)
+- [Rasteira (Custo: 1d6)](/compendium/rules/trip-cost-1d6/)
+- [Esquiva Sobrenatural](/compendium/rules/uncanny-dodge/)
+- [Retirada (Custo: 1d6)](/compendium/rules/withdraw-cost-1d6/)
 
-### Nível 7
+## Nível 6
 
-- [Evasion](/compendium/rules/evasion/)
-- [Reliable Talent](/compendium/rules/reliable-talent/)
+- [Especialização](/compendium/rules/expertise/)
 
-### Nível 9
+## Nível 7
 
-- Roguish Archetype feature
-- Subclass Feature
+- [Evasão](/compendium/rules/evasion/)
+- [Talento Confiável](/compendium/rules/reliable-talent/)
 
-### Nível 11
+## Nível 8
 
-- Improved Cunning Strike
+- Aumento de Valor de Atributo
 
-### Nível 14
+## Nível 9
 
-- Blindsense
-- Daze (Cost: 2d6)
-- Devious Strikes
-- Knock Out (Cost: 6d6)
-- Obscure (Cost: 3d6)
+- Característica de Subclasse
 
-### Nível 15
+## Nível 10
 
-- Slippery Mind
+- Aumento de Valor de Atributo
 
-### Nível 18
+## Nível 11
 
-- Elusive
+- Golpe Ardiloso Aprimorado
 
-### Nível 19
+## Nível 12
 
-- [Epic Boon](/compendium/rules/epic-boon/)
+- Aumento de Valor de Atributo
 
-### Nível 20
+## Nível 13
 
-- Stroke of Luck
+- Característica de Subclasse
+
+## Nível 14
+
+- Atordoar (Custo: 2d6)
+- Golpes Traiçoeiros
+- Nocautear (Custo: 6d6)
+- Obscurecer (Custo: 3d6)
+
+## Nível 15
+
+- Mente Escorregadia
+
+## Nível 16
+
+- Aumento de Valor de Atributo
+
+## Nível 17
+
+- Característica de Subclasse
+
+## Nível 18
+
+- Elusivo
+
+## Nível 19
+
+- [Dádiva Épica](/compendium/rules/epic-boon/)
+
+## Nível 20
+
+- Golpe de Sorte

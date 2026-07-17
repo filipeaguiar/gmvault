@@ -1,19 +1,28 @@
 ---
-title: fire giant
-draft: false
-titulo_pt_br: gigante do fogo
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Fire Giant
 params:
   kind: monster
-stats_meta: Huge giant, leal e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Fire Giant
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 9101946e8ae9a7cc
 stats:
   ac: '18'
   hp: 162 (13d12 + 78)
-  speed: 30 ft.
+  speed: walk 30 ft.
   attributes:
     str: 25
     dex: 9
@@ -21,23 +30,36 @@ stats:
     int: 10
     wis: 14
     cha: 13
-  saves: Dex +3, Con +10, Cha +5
-  skills: Athletics +11, Perception +6
-  senses: passive Perception 16
+  saves:
+    dex: '+3'
+    con: '+10'
+    cha: '+5'
+  skills:
+    athletics: '+11'
+    perception: '+6'
+  senses: ''
   languages: Giant
   cr: '9'
+stats_meta: Huge giant L/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Gigante do Fogo
 ---
 
-### Ações
+## Ações
 
-**Ataques Múltiplos.** O gigante realiza dois ataques com espada grande.
+### Ataques Múltiplos
 
-**Espada Grande.** +11 para acertar, alcance 3 m, um alvo. {@h}28 ([[6d6+7]]) de dano cortante.
+O gigante realiza dois ataques com montante.
 
-**Rocha.** +11 para acertar, alcance 18/72 m, um alvo. {@h}29 ([[4d10+7]]) de dano de concussão.
+### Montante
+
+mw 11 para atingir, alcance 10 ft., um alvo. {@h}28 (<span class="dice+" data-roll-notation="6d6+7">6d6 + 7</span>) dano cortante.
+
+### Pedra
+
+rw 11 para atingir, alcance 60/240 ft., um alvo. {@h}29 (<span class="dice+" data-roll-notation="4d10+7">4d10 + 7</span>) dano de concussão.

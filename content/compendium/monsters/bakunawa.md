@@ -1,19 +1,28 @@
 ---
-title: bakunawa
-draft: false
-titulo_pt_br: Desculpe, não encontrei o texto a ser traduzido na sua mensagem. Você poderia enviá-lo novamente?
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Bakunawa
 params:
   kind: monster
-stats_meta: Gargantuan dragon, neutro
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: JTTRC
+  entity_type: monster
+  entity_name: Bakunawa
+  remote_file: bestiary/bestiary-jttrc.json
+  remote_key: monster
+  remote_id: 94bf1eab1bf4a20b
 stats:
   ac: '15'
   hp: 150 (12d20 + 24)
-  speed: 20 ft., fly 60 ft., swim 60 ft.
+  speed: walk 20 ft., fly 60 ft., swim 60 ft.
   attributes:
     str: 21
     dex: 12
@@ -21,34 +30,68 @@ stats:
     int: 14
     wis: 17
     cha: 16
-  saves: Dex +5, Con +6, Wis +7
-  senses: blindsight 60 ft., darkvision 120 ft., passive Perception 21
+  saves:
+    dex: '+5'
+    con: '+6'
+    wis: '+7'
+  skills: {}
+  senses: blindsight 60 ft., darkvision 120 ft.
   languages: Celestial, Common, Draconic
   cr: '12'
+stats_meta: Gargantuan dragon N
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Bakunawa
 ---
 
-![Arte: bakunawa](/images/campaigns/journeys-through-the-radiant-citadel/bakunawa.webp)
+## Características
 
-Adoradas como avatares dracônicos da tempestade e da maré, as bakunawa planam sobre os arquipélagos que chamam de lar. Escamas iridescentes crepitando com relâmpagos cobrem o temível corpo serpentino de uma bakunawa, e os movimentos bruscos de suas asas poderosas ecoam com ventos trovejantes. Conhecidas por sua impiedade em batalha, as bakunawa engolem inteiros qualquer um que as desafie.
 
-### Características
+### Anfíbio
 
-**Anfíbia.** A bakunawa pode respirar ar e água.
+O bakunawa pode respirar ar e água.
 
-**Resistência Lendária (3/Dia).** Se a bakunawa falhar em um teste de resistência, ela pode escolher ser bem-sucedida.
 
-### Ações
+### Resistência Lendária (3/Dia)
 
-**Ataques Múltiplos.** A bakunawa realiza um ataque de Mordida e um ataque de Pancada Tempestuosa.
+Se o bakunawa falhar em um teste de resistência, ele pode escolher ser bem-sucedido em vez disso.
 
-**Mordida.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 3 m, um alvo. *Dano:* 12 ([[2d6+5]]) dano perfurante mais 7 ([[2d6]]) dano elétrico. Se o alvo for uma criatura Grande ou menor, ela deve ser bem-sucedida em um teste de resistência de Força CD 17 ou ser engolida pela bakunawa. Uma criatura engolida está cega e contida, e tem cobertura total contra ataques e outros efeitos vindos de fora da bakunawa. No início de cada turno da bakunawa, cada criatura engolida sofre 10 ([[3d6]]) dano elétrico.
+## Ações
 
-O papo da bakunawa pode conter até duas criaturas por vez. Se a bakunawa sofrer 30 de dano ou mais em um único turno de uma criatura engolida, a bakunawa deve ser bem-sucedida em um teste de resistência de Constituição CD 16 no final daquele turno ou regurgitar todas as criaturas engolidas, que caem caídas em um espaço a até 4,5 m da bakunawa. Se a bakunawa morrer, uma criatura engolida não está mais contida por ela e pode escapar do cadáver usando 4,5 m de deslocamento, saindo caída.
 
-**Pancada Tempestuosa.** *Ataque Corpo a Corpo com Arma:* +9 para acertar, alcance 3 m, um alvo. *Dano:* 9 ([[1d8+5]]) dano de concussão mais 5 ([[1d10]]) dano trovejante, e o alvo é empurrado até 3 m em uma direção horizontal para longe da bakunawa.
+### Ataques Múltiplos
+
+O bakunawa realiza um ataque de Mordida e um ataque de Pancada Tempestuosa.
+
+
+### Mordida
+
+mw 9 para atingir, alcance 3 m, um alvo. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) de dano perfurante mais 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano elétrico. Se o alvo for uma criatura Grande ou menor, ela deve ser bem-sucedida em um teste de resistência de Força CD 17 ou será engolida pelo bakunawa. Uma criatura engolida fica cega e contida, e tem cobertura total contra ataques e outros efeitos fora do bakunawa. No início de cada um dos turnos do bakunawa, cada criatura engolida sofre 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano elétrico.
+
+A garganta do bakunawa pode conter até duas criaturas por vez. Se o bakunawa sofrer 30 ou mais de dano em um único turno de uma criatura engolida, o bakunawa deve ser bem-sucedido em um teste de resistência de Constituição CD 16 no final desse turno ou regurgitará todas as criaturas engolidas, que caem caídas em um espaço a até 4,5 m do bakunawa. Se o bakunawa morrer, uma criatura engolida não estará mais contida por ele e pode escapar do cadáver usando 4,5 m de movimento, saindo caída.
+
+
+### Pancada Tempestuosa
+
+mw 9 para atingir, alcance 3 m, um alvo. {@h}9 (<span class="dice+" data-roll-notation="1d8+5">1d8 + 5</span>) de dano de concussão mais 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano trovejante, e o alvo é empurrado até 3 m em uma direção horizontal para longe do bakunawa.
+
+## Ações Lendárias
+
+
+### Deslize Ágil
+
+O bakunawa voa ou nada até metade de seu deslocamento. Este movimento não provoca ataques de oportunidade.
+
+
+### Pancada
+
+O bakunawa realiza um ataque de Pancada Tempestuosa.
+
+
+### Relâmpagos (Custa 3 Ações)
+
+O bakunawa direciona relâmpagos em até duas criaturas que possa ver a até 18 m de si. Cada alvo deve ser bem-sucedido em um teste de resistência de Destreza CD 15 ou sofrer 22 (<span class="dice+" data-roll-notation="4d10">4d10</span>) de dano elétrico.

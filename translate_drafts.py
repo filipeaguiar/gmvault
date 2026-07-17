@@ -29,6 +29,14 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_GLOSSARY = PROJECT_ROOT / "translation_glossary.json"
 DEFAULT_OPENAI_COMPATIBLE_URL = "http://127.0.0.1:1234/v1"
 DEFAULT_OPENAI_COMPATIBLE_MODEL = "google/gemma-4-e4b"
+DEEPSEEK_V4_PRO_PROFILE = {
+    "engine": "openai-compatible",
+    "model": "deepseek-v4-pro",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_env_var": "DEEPSEEK_API_KEY",
+    "strategy": "full_document",
+    "timeout": 300.0,
+}
 DEFAULT_OPENAI_COMPATIBLE_TIMEOUT = 300.0
 DEFAULT_LMSTUDIO_URL = DEFAULT_OPENAI_COMPATIBLE_URL
 DEFAULT_LMSTUDIO_MODEL = DEFAULT_OPENAI_COMPATIBLE_MODEL
@@ -70,6 +78,8 @@ STRUCTURAL_FRONT_MATTER_KEYS = {
     "type",
     "outputs",
     "translation",
+    "source",
+    "provenance",
 }
 
 TEXTUAL_FRONT_MATTER_KEYS = {"summary", "description"}
@@ -175,7 +185,7 @@ Observações:
   - --jobs pode acelerar em máquinas com CPU disponível, mas use valores moderados (2-4) para evitar excesso de memória.
 """,
     )
-    parser.add_argument("--scope", choices=["compendium", "campaign"], help="Escopo de tradução.")
+    parser.add_argument("--scope", choices=["compendium", "campaign", "staging"], help="Escopo de tradução.")
     parser.add_argument("--campaign", help="Slug da campanha. Obrigatório com --scope campaign.")
     parser.add_argument("--path", help="Subcaminho opcional dentro do escopo selecionado.")
     parser.add_argument("--apply", action="store_true", help="Grava alterações. Sem esta flag, executa dry-run.")
@@ -240,6 +250,9 @@ Observações:
     # 2. Carrega as configurações do JSON
     config_path = PROJECT_ROOT / args.config
     config_data = load_translation_config(config_path)
+    profiles = dict(config_data.get("profiles") or {})
+    profiles.setdefault("deepseek-v4-pro", DEEPSEEK_V4_PRO_PROFILE)
+    config_data["profiles"] = profiles
 
     # 3. Inicializa atributos adicionais padrão
     args.strategy = "split_blocks"
@@ -284,6 +297,8 @@ Observações:
 def resolve_scope(args: argparse.Namespace) -> Path:
     if args.scope == "compendium":
         base = PROJECT_ROOT / "content" / "compendium"
+    elif args.scope == "staging":
+        base = PROJECT_ROOT / ".compendium-staging" / "compendium"
     else:
         if not args.campaign:
             raise TranslationError("--campaign <slug> é obrigatório quando --scope campaign é usado.")
@@ -336,12 +351,10 @@ def filter_image_only_handouts(files: list[Path], include: bool = False) -> tupl
 
 def parse_markdown(path: Path) -> MarkdownDocument | None:
     text = path.read_text(encoding="utf-8")
-    if not text.startswith("---\n"):
+    match = re.match(r"^---\r?\n(.*?)\r?\n---(.*)$", text, re.DOTALL)
+    if not match:
         return None
-    try:
-        _, front_matter_raw, body = text.split("---", 2)
-    except ValueError:
-        return None
+    front_matter_raw, body = match.groups()
     if yaml is None:
         raise TranslationError("PyYAML não está instalado. Ative .venv e instale as dependências do script.")
     data = yaml.safe_load(front_matter_raw) or {}
@@ -779,6 +792,7 @@ def process_document(
     model: str | None = None,
     force_retranslate: bool = False,
     strategy: str = "split_blocks",
+    forbidden_outputs: list[str] | None = None,
     translate_fm: Callable[[str], str] | None = None,
     progress: Callable[[int, int, float], None] | None = None,
 ) -> ProcessResult:
@@ -818,6 +832,14 @@ def process_document(
     translated_body = translate_text(
         document.body, translate, glossary, strategy=active_strategy, on_block=checkpoint
     )
+    forbidden_outputs = forbidden_outputs or []
+    leaked_tokens = [token for token in (PROTECTED_PREFIX, GLOSSARY_PREFIX) if token in translated_body]
+    forbidden_found = [value for value in forbidden_outputs if value and value.casefold() in translated_body.casefold()]
+    unresolved_tags = re.findall(r"\{@[a-zA-Z]+\s", translated_body)
+    if leaked_tokens or forbidden_found or unresolved_tags:
+        details = leaked_tokens + forbidden_found + unresolved_tags
+        raise TranslationError(f"Saída traduzida rejeitada por validação: {', '.join(details)}")
+
     front_matter = document.front_matter
     if translate_frontmatter and translate_fm is not None:
         front_matter = translate_front_matter(front_matter, translate_fm, glossary)
@@ -1083,6 +1105,7 @@ def main() -> int:
                 model=args.model if args.engine == "openai-compatible" else None,
                 force_retranslate=args.force_retranslate,
                 strategy=args.strategy,
+                forbidden_outputs=glossary_config.get("forbidden_outputs", []),
                 translate_fm=translate_for_document(document, for_frontmatter=True) if args.translate_frontmatter else None,
                 progress=lambda current, total, elapsed: print(
                     f"[block] {path} {current}/{total} ({elapsed:.1f}s)", flush=True

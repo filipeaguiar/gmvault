@@ -1,19 +1,28 @@
 ---
-title: cult fanatic
-draft: false
-titulo_pt_br: fanático de culto
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Cult Fanatic
 params:
   kind: monster
-stats_meta: Medium humanoid, leal e caótico e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Cult Fanatic
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: ccfcc8492de60ffb
 stats:
   ac: '13'
   hp: 33 (6d8 + 6)
-  speed: 30 ft.
+  speed: walk 30 ft.
   attributes:
     str: 11
     dex: 14
@@ -21,28 +30,39 @@ stats:
     int: 10
     wis: 13
     cha: 14
-  skills: Deception +4, Persuasion +4, Religion +2
-  senses: passive Perception 11
+  saves: {}
+  skills:
+    deception: '+4'
+    persuasion: '+4'
+    religion: '+2'
+  senses: ''
   languages: any one language (usually Common)
   cr: '2'
+stats_meta: Medium humanoid L/NX/C/NY/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Fanático Cultista
 ---
 
-![Arte: fanático cultista](/images/campaigns/journeys-through-the-radiant-citadel/cult-fanatic.webp)
+## Características
 
-Fanáticos geralmente fazem parte da liderança de um culto, usando seu carisma e dogma para influenciar e explorar os de vontade fraca. A maioria está interessada acima de tudo no poder pessoal.
 
-### Características
+### Devoção Sombria
 
-**Devoção Sombria.** O fanático tem vantagem em testes de resistência para não ser enfeitiçado ou amedrontado.
+O fanático tem vantagem em testes de resistência contra ser enfeitiçado ou amedrontado.
 
-### Ações
+## Ações
 
-**Ataques Múltiplos.** O fanático realiza dois ataques corpo a corpo.
 
-**Adaga.** Acm, Ad +4 para acertar, alcance 1,5 m ou alcance 6/18 m, uma criatura. {@h}4 ([[1d4+2]]) de dano perfurante.
+### Ataques Múltiplos
+
+O fanático faz dois ataques corpo a corpo.
+
+
+### Adaga
+
+Ataque Corpo a Corpo com Arma ou Ataque à Distância com Arma +4 para acertar, alcance 1,5 m ou distância 6/18 m, uma criatura. {@Acerto}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) dano perfurante.

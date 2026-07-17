@@ -1,19 +1,28 @@
 ---
-title: commoner
-draft: false
-titulo_pt_br: plemander
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Commoner
 params:
   kind: monster
-stats_meta: Medium humanoid, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Commoner
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 4eb205a54fc0a7c0
 stats:
   ac: '10'
   hp: 4 (1d8)
-  speed: 30 ft.
+  speed: walk 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,18 +30,23 @@ stats:
     int: 10
     wis: 10
     cha: 10
-  senses: passive Perception 10
+  saves: {}
+  skills: {}
+  senses: ''
   languages: any one language (usually Common)
   cr: '0'
+stats_meta: Medium humanoid A
 translation:
   source_language: en
   target_language: pt-BR
-  engine: argos
+  engine: openai-compatible
   status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Plebeu
 ---
 
-Os plebeus incluem camponeses, servos, escravos, servos, peregrinos, comerciantes, artesãos e eremitas.
+## Ações
 
-### Ações
+### Clava
 
-** Clube.** MW 2 para atingir, atingir 5 pés, um alvo. {@ h}2 ([[1d4]]) danos ao espancamento.
+Ataque Corpo a Corpo com Arma: +2 para atingir, alcance 1,5 m, um alvo. Acerto: 2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) de dano de concussão.

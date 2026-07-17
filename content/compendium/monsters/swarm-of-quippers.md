@@ -1,19 +1,28 @@
 ---
-title: swarm of quippers
-draft: false
-titulo_pt_br: enxame de quipers
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Swarm of Quippers
 params:
   kind: monster
-stats_meta: Medium beast, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Swarm of Quippers
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 76704c3c4f6f605c
 stats:
   ac: '13'
   hp: 28 (8d8 - 8)
-  speed: 0 ft., swim 40 ft.
+  speed: walk 0 ft., swim 40 ft.
   attributes:
     str: 13
     dex: 16
@@ -21,28 +30,41 @@ stats:
     int: 1
     wis: 7
     cha: 2
-  senses: darkvision 60 ft., passive Perception 8
+  saves: {}
+  skills: {}
+  senses: darkvision 60 ft.
+  languages: ''
   cr: '1'
+stats_meta: Medium beast U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Enxame de Piranhas
 ---
 
-![Arte: enxame de quipers](/images/campaigns/journeys-through-the-radiant-citadel/quipper.webp)
+## Características
 
 
+### Frenesi Sangrento
 
-### Características
+O enxame tem vantagem em jogadas de ataque corpo a corpo contra qualquer criatura que não tenha todos os seus pontos de vida.
 
-**Frenesi de Sangue.** O enxame tem vantagem nas jogadas de ataque corpo a corpo contra qualquer criatura que não esteja com todos os seus pontos de vida.
 
-**Enxame.** O enxame pode ocupar o espaço de outra criatura e vice-versa, e pode se mover por qualquer abertura grande o suficiente para um quiper Miúdo. O enxame não pode recuperar pontos de vida nem ganhar pontos de vida temporários.
+### Enxame
 
-**Respiração Aquática.** O enxame só pode respirar debaixo d'água.
+O enxame pode ocupar o espaço de outra criatura e vice-versa, e o enxame pode se mover através de qualquer abertura grande o suficiente para um quipper Miúdo. O enxame não pode recuperar pontos de vida ou ganhar pontos de vida temporários.
 
-### Ações
 
-**Mordidas.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 0 m, uma criatura no espaço do enxame. {@h}14 ([[4d6]]) de dano perfurante, ou 7 ([[2d6]]) de dano perfurante se o enxame estiver com metade ou menos dos seus pontos de vida.
+### Respirar na Água
+
+O enxame pode respirar apenas debaixo d'água.
+
+## Ações
+
+
+### Mordidas
+
+Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 0 m, uma criatura no espaço do enxame. <em>Acerto:</em> 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano perfurante, ou 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano perfurante se o enxame tiver metade ou menos de seus pontos de vida.

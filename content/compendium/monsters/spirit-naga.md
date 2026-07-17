@@ -1,19 +1,28 @@
 ---
-title: spirit naga
-draft: false
-titulo_pt_br: espírito naga
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Spirit Naga
 params:
   kind: monster
-stats_meta: Large monstrosity, caótico e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Spirit Naga
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 688460e92cc5d4ab
 stats:
   ac: '15'
   hp: 75 (10d10 + 20)
-  speed: 40 ft.
+  speed: walk 40 ft.
   attributes:
     str: 18
     dex: 17
@@ -21,26 +30,33 @@ stats:
     int: 16
     wis: 15
     cha: 16
-  saves: Dex +6, Con +5, Wis +5, Cha +6
-  senses: darkvision 60 ft., passive Perception 12
+  saves:
+    dex: '+6'
+    con: '+5'
+    wis: '+5'
+    cha: '+6'
+  skills: {}
+  senses: darkvision 60 ft.
   languages: Abyssal, Common
   cr: '8'
+stats_meta: Large monstrosity C/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Naga Espiritual
 ---
 
-![Arte: naga espiritual](/images/campaigns/journeys-through-the-radiant-citadel/spirit-naga.webp)
+## Características
 
+### Rejuvenescimento
 
+Se morrer, a naga retorna à vida em <span class="dice+" data-roll-notation="1d6">1d6</span> dias e recupera todos os seus pontos de vida. Apenas uma magia desejo pode impedir que esta característica funcione.
 
-### Características
+## Ações
 
-**Rejuvenescimento.** Se morrer, a naga retorna à vida em [[1d6]] dias e recupera todos os seus pontos de vida. Apenas uma magia *desejo* pode impedir que esta característica funcione.
+### Mordida
 
-### Ações
-
-**Mordida.** *Ataque Corpo a Corpo com Arma:* +7 para acertar, alcance 3 m, uma criatura. *Dano:* 7 ([[1d6+4]]) dano perfurante, e o alvo deve realizar um teste de resistência de Constituição CD 13, sofrendo 31 ([[7d8]]) dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.
+Ataque Corpo a Corpo com Arma: +7 para acertar, alcance 3 m, uma criatura. *Acerto:* {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6+4</span>) de dano perfurante, e o alvo deve fazer um teste de resistência de Constituição CD 13, sofrendo 31 (<span class="dice+" data-roll-notation="7d8">7d8</span>) de dano de veneno em caso de falha no teste, ou metade desse dano em caso de sucesso.

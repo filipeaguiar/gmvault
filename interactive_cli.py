@@ -103,6 +103,10 @@ def _translation_targets() -> list[tuple[str, dict[str, Any]]]:
     if compendium.is_dir():
         targets.append(("Compêndio", {"scope": "compendium", "campaign": None}))
 
+    staging = PROJECT_ROOT / ".compendium-staging" / "compendium"
+    if staging.is_dir():
+        targets.append(("Compêndio em staging (recomendado para reconstrução)", {"scope": "staging", "campaign": None}))
+
     campaigns = PROJECT_ROOT / "content" / "campaigns"
     if campaigns.is_dir():
         for campaign in sorted(path for path in campaigns.iterdir() if path.is_dir()):
@@ -123,6 +127,26 @@ def translation_menu() -> dict[str, Any] | None:
         return None
 
     target = _numbered_choice("Conteúdo para traduzir", targets)
+    translation_profile = _numbered_choice(
+        "Motor/modelo de tradução",
+        [
+            (
+                "DeepSeek V4 Pro — maior qualidade (API paga, recomendado)",
+                {
+                    "profile": "deepseek-v4-pro",
+                    "engine": "openai-compatible",
+                    "model": "deepseek-v4-pro",
+                    "base_url": "https://api.deepseek.com/v1",
+                    "timeout": 300.0,
+                },
+            ),
+            ("Perfil ativo de translation_config.json", {"profile": None}),
+            (
+                "Argos Translate local",
+                {"profile": "argos-local", "engine": "argos", "model": None},
+            ),
+        ],
+    )
     jobs = _numbered_choice(
         "Número de workers",
         [("1 worker", 1), ("2 workers", 2), ("4 workers", 4), ("8 workers", 8)],
@@ -142,6 +166,7 @@ def translation_menu() -> dict[str, Any] | None:
     )
     values = {
         **target,
+        **translation_profile,
         "path": None,
         "apply": apply,
         "include_non_draft": include_non_draft,
@@ -154,9 +179,20 @@ def translation_menu() -> dict[str, Any] | None:
     return values if _summary("Resumo da tradução", values) else None
 
 
+def reset_terminal() -> None:
+    """Restaura modos ANSI herdados do subprocesso e limpa a tela."""
+    sys.stdout.write("\x1b[>4m\x1b[?1l\x1b[0m\x1b[2J\x1b[H")
+    sys.stdout.flush()
+
+
 def main() -> int:
     """Delega operações e retorna ao menu até o usuário escolher sair."""
+    notice = ""
     while True:
+        reset_terminal()
+        if notice:
+            console.print(notice)
+            notice = ""
         console.print(Panel("GM Vault — ferramentas interativas", style="bold magenta"))
         for key, (label, _) in OPERATIONS.items():
             console.print(f"  [bold cyan]{key}[/]  {label}")
@@ -176,9 +212,16 @@ def main() -> int:
         )
         if completed.returncode:
             console.print(
-                f"[yellow]A operação terminou com código {completed.returncode}.[/]"
+                f"\n[bold red]A operação terminou com código "
+                f"{completed.returncode}.[/]"
             )
-        console.print("\n[cyan]Retornando ao menu inicial…[/]\n")
+            console.print(
+                "[yellow]A saída acima foi preservada para diagnóstico.[/]"
+            )
+            Prompt.ask("Pressione Enter para voltar ao menu principal", default="")
+            notice = "[yellow]Operação encerrada com erro. Consulte a saída anterior.[/]"
+        else:
+            notice = "[green]Operação concluída. Menu principal restaurado.[/]"
 
 
 if __name__ == "__main__":

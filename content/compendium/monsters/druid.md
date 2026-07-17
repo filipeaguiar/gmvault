@@ -1,19 +1,28 @@
 ---
-title: druid
-draft: false
-titulo_pt_br: druida
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Druid
 params:
   kind: monster
-stats_meta: Medium humanoid, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Druid
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 3b76be06652d503a
 stats:
-  ac: 11, 16 (with {@spell barkskin})
+  ac: '11'
   hp: 27 (5d8 + 5)
-  speed: 30 ft.
+  speed: walk 30 ft.
   attributes:
     str: 10
     dex: 12
@@ -21,22 +30,26 @@ stats:
     int: 12
     wis: 15
     cha: 11
-  skills: Medicine +4, Nature +3, Perception +4
-  senses: passive Perception 14
+  saves: {}
+  skills:
+    medicine: '+4'
+    nature: '+3'
+    perception: '+4'
+  senses: ''
   languages: Druidic plus any two languages
   cr: '2'
+stats_meta: Medium humanoid A
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Druida
 ---
 
-![Arte: druida](/images/campaigns/journeys-through-the-radiant-citadel/druid.webp)
+## Ações
 
-Druidas habitam florestas e outras regiões selvagens isoladas, onde protegem o mundo natural de monstros e da invasão da civilização. Alguns são xamãs tribais que curam os doentes, rezam para espíritos animais e fornecem orientação espiritual.
+### Bordão
 
-### Ações
-
-**Bordão.** +2 para acertar (+4 para acertar com *shillelagh*), alcance 1,5 m, um alvo. {@h}3 ([[1d6]]) de dano de concussão, 4 ([[1d8]]) de dano de concussão se empunhado com duas mãos, ou 6 ([[1d8+2]]) de dano de concussão com *shillelagh*.
+mw 2 para acertar (4 para acertar com shillelagh), alcance 1,5 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) dano de Concussão, 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) dano de Concussão se empunhado com as duas mãos, ou 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) dano de Concussão com shillelagh.

@@ -1,19 +1,28 @@
 ---
-title: flameskull
-draft: false
-titulo_pt_br: '**flameskull**'
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Flameskull
 params:
   kind: monster
-stats_meta: Tiny undead, neutro e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Flameskull
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: a18dc1bcb9e099f1
 stats:
   ac: '13'
   hp: 40 (9d4 + 18)
-  speed: '0 ft., fly {''number'': 40, ''condition'': ''(hover)''} ft., canHover True ft.'
+  speed: walk 0 ft., fly 40 ft.
   attributes:
     str: 1
     dex: 17
@@ -21,53 +30,48 @@ stats:
     int: 16
     wis: 10
     cha: 11
-  skills: Arcana +5, Perception +2
-  senses: darkvision 60 ft., passive Perception 12
+  saves: {}
+  skills:
+    arcana: '+5'
+    perception: '+2'
+  senses: darkvision 60 ft.
   languages: Common
   cr: '4'
+stats_meta: Tiny undead N/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Crânio Flamejante
 ---
 
-![Arte: flameskull](/images/campaigns/journeys-through-the-radiant-citadel/flameskull.webp)
+## Características
 
-Chamas verdes ardentes e risadas enlouquecedoras e ecoantes seguem um crânio desencarnado enquanto ele patrulha seu domínio. Quando o morto-vivo flameskull descobre invasores, ele ataca os intrusos com raios flamejantes de seus olhos e terríveis magias evocadas dos recônditos sombrios de sua memória.
-Conjuradores sombrios criam flameskulls a partir dos restos de magos mortos. Quando o ritual é completo, chamas verdes irrompem do crânio para completar sua hedionda transformação.
 
-### Legado de Vida
+### Iluminação
 
-Um flameskull mal se lembra de sua vida anterior. Embora possa falar com sua voz antiga e relatar eventos-chave de seu passado, ele é apenas um eco de seu antigo eu. No entanto, sua transformação de morto-vivo lhe concede acesso total à magia que empunhava em vida, permitindo-lhe conjurar magias ignorando os componentes materiais e somáticos que não pode mais empregar.
+A caveira flamejante emite luz baixa em um raio de 15 pés, ou luz plena em um raio de 15 pés e luz baixa por 15 pés adicionais. Ela pode alternar entre as opções como uma ação.
 
-### Eternamente Vinculado
 
-Inteligente e vigilante, um flameskull serve a seu criador protegendo um tesouro escondido, uma câmara secreta ou um indivíduo específico. Um flameskull executa as diretrizes que lhe foram dadas quando foi criado, e interpreta essas ordens ao pé da letra. O mestre de um flameskull deve elaborar suas instruções com cuidado para garantir que a criatura execute suas tarefas adequadamente.
+### Resistência à Magia
 
-### Coroado em Chamas
+A caveira flamejante tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-O fogo que coroa um flameskull queima continuamente, emitindo luz brilhante que a criatura controla. Ela usa essas chamas como arma, focando-as para liberá-las como raios flamejantes de suas órbitas oculares.
 
-### Rejuvenescimento Arcano
+### Rejuvenescimento
 
-Os fragmentos despedaçados de um flameskull se reconstituem, a menos que sejam aspergidos com água benta ou submetidos a uma magia *dissipar magia* ou *remover maldição*. Se não puder mais cumprir seu propósito pretendido, o flameskull reconstituído não deve obediência a ninguém e se torna autônomo.
+Se a caveira flamejante for destruída, ela recupera todos os seus pontos de vida em 1 hora, a menos que água benta seja aspergida sobre seus restos ou uma magia dissipar magia ou remover maldição seja conjurada sobre eles.
 
-### Natureza de Morto-Vivo
+## Ações
 
-Um flameskull não precisa de ar, comida, bebida ou sono.
 
-### Características
+### Ataques Múltiplos
 
-**Iluminação.** O flameskull emite luz fraca em um raio de 4,5 metros, ou luz brilhante em um raio de 4,5 metros e luz fraca por mais 4,5 metros adicionais. Ele pode alternar entre as opções como uma ação.
+A caveira flamejante usa Raio de Fogo duas vezes.
 
-**Resistência à Magia.** O flameskull tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-**Rejuvenescimento.** Se o flameskull for destruído, ele recupera todos os seus pontos de vida em 1 hora, a menos que água benta seja aspergida sobre seus restos mortais ou uma magia *dissipar magia* ou *remover maldição* seja conjurada sobre eles.
+### Raio de Fogo
 
-### Ações
-
-**Ataques Múltiplos.** O flameskull usa Raio de Fogo duas vezes.
-
-**Raio de Fogo.** *Ataque à Distância com Magia:* +5 para acertar, alcance 9 metros, um alvo. *Dano:* 10 ([[3d6]]) dano de fogo.
+Atq +5 para atingir, alcance 30 pés, um alvo. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) dano de fogo.

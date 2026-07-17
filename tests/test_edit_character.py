@@ -155,6 +155,41 @@ class EditCharacterTests(unittest.TestCase):
         self.assertFalse(edit_character.choose_equipped_items(post))
         self.assertTrue(post["char_info"]["equipment"][0]["equipped"])
 
+    @patch(
+        "edit_character.ask_choice",
+        side_effect=["Adicionar equipamentos", "Voltar ao menu principal"],
+    )
+    @patch("edit_character.choose_equipment", return_value=[])
+    @patch("edit_character.add_equipment", return_value=0)
+    @patch("edit_character.choose_equipped_items", return_value=False)
+    def test_character_editor_repeats_until_main_menu_is_explicit(
+        self, _equipped, _add, _choose_equipment, choice
+    ):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "pinky.md"
+            path.write_text(
+                "---\ntitle: Pinky\nchar_info:\n  equipment: []\n---\n\nBiography\n",
+                encoding="utf-8",
+            )
+
+            destination = edit_character.edit_selected_character(path)
+
+        self.assertEqual(destination, "main_menu")
+        self.assertEqual(choice.call_count, 2)
+
+    @patch("edit_character.ask_choice", return_value="Escolher outro personagem")
+    def test_character_editor_can_return_to_character_list(self, _choice):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "pinky.md"
+            path.write_text(
+                "---\ntitle: Pinky\nchar_info:\n  equipment: []\n---\n\nBiography\n",
+                encoding="utf-8",
+            )
+
+            self.assertEqual(
+                edit_character.edit_selected_character(path), "character_list"
+            )
+
     def test_save_character_preserves_markdown_body_exactly(self):
         original = (
             b"---\n"

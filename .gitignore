@@ -6,6 +6,8 @@ __pycache__/
 .venv/
 .env
 translation_config.json
+.compendium-staging/
+.cache/5etools/
 *_cache.json
 .*_cache.json
 .races_cache.json

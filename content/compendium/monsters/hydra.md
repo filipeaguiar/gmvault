@@ -1,19 +1,28 @@
 ---
-title: hydra
-draft: false
-titulo_pt_br: hidra
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Hydra
 params:
   kind: monster
-stats_meta: Huge monstrosity, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Hydra
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 46cdf0b64feaa436
 stats:
   ac: '15'
   hp: 172 (15d12 + 75)
-  speed: 30 ft., swim 30 ft.
+  speed: walk 30 ft., swim 30 ft.
   attributes:
     str: 20
     dex: 12
@@ -21,45 +30,50 @@ stats:
     int: 2
     wis: 10
     cha: 7
-  skills: Perception +6
-  senses: darkvision 60 ft., passive Perception 16
+  saves: {}
+  skills:
+    perception: '+6'
+  senses: darkvision 60 ft.
+  languages: ''
   cr: '8'
+stats_meta: Huge monstrosity U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Hidra
 ---
 
-![Arte: hidra](/images/campaigns/journeys-through-the-radiant-citadel/hydra.webp)
+## Características
 
-A hidra é um horror reptiliano com corpo crocodiliano e múltiplas cabeças em longos pescoços serpentinos. Embora suas cabeças possam ser decepadas, a hidra as regenera magicamente em pouco tempo. Um espécime típico tem cinco cabeças. No alvorecer dos tempos, Tiamat, a Rainha dos Dragões Maus, matou um deus dragão rival chamado Lernaea e lançou seu sangue pelo multiverso. Cada gota que caiu em um mundo gerou uma hidra de múltiplas cabeças consumida por uma fome tão grande quanto o ódio do deus caído. Grandes campeões são conhecidos por testar seu valor contra essas criaturas temíveis.
+### Prender a Respiração
 
-### Fome Eterna
+A hidra pode prender a respiração por 1 hora.
 
-Um monstro voraz e glutão, uma hidra agarra e despedaça suas presas em um frenesi de alimentação. Quando uma hidra limpa um território de comida e afugenta quaisquer criaturas inteligentes o suficiente para evitá-la, ela se move para buscar suas refeições em outro lugar. A fome de uma hidra é tão grande que, se não puder se alimentar, ela pode se voltar contra si mesma, suas cabeças atacando umas às outras enquanto a criatura se devora viva.
+### Cabeças Múltiplas
 
-### Habitantes Aquáticos Resistentes
-
-Hidras são nadadoras naturais, habitando rios, margens de lagos, baías oceânicas e pântanos. Uma hidra raramente precisa de abrigo contra os elementos, então normalmente não tem um covil. Apenas em climas mais frios as hidras são atraídas para a proteção de cavernas e ruínas abrigadas. Quando uma hidra dorme, pelo menos uma de suas cabeças permanece acordada e alerta, tornando a criatura difícil de ser pega de surpresa.
-
-### Características
-
-**Prender a Respiração.** A hidra pode prender a respiração por 1 hora.
-
-**Múltiplas Cabeças.** A hidra tem cinco cabeças. Enquanto tiver mais de uma cabeça, a hidra tem vantagem em testes de resistência contra ser cegada, enfeitiçada, surda, amedrontada, atordoada e ficar inconsciente.
+A hidra tem cinco cabeças. Enquanto tiver mais de uma cabeça, a hidra tem vantagem nos testes de resistência contra ser cego, enfeitiçado, surdo, amedrontado, atordoado e contra ficar inconsciente.
 
 Sempre que a hidra sofre 25 ou mais de dano em um único turno, uma de suas cabeças morre. Se todas as suas cabeças morrerem, a hidra morre.
 
-Ao final de seu turno, ela cria duas cabeças para cada uma de suas cabeças que morreu desde seu último turno, a menos que tenha sofrido dano de fogo desde seu último turno. A hidra recupera 10 pontos de vida para cada cabeça regenerada desta forma.
+No final do turno dela, ela regenera duas cabeças para cada cabeça que morreu desde o último turno dela, a menos que tenha sofrido dano de fogo desde então. A hidra recupera 10 pontos de vida para cada cabeça regenerada dessa forma.
 
-**Cabeças Reativas.** Para cada cabeça que a hidra tiver além de uma, ela ganha uma reação extra que pode ser usada apenas para ataques de oportunidade.
+### Cabeças Reativas
 
-**Vigilante.** Enquanto a hidra dorme, pelo menos uma de suas cabeças está acordada.
+Para cada cabeça que a hidra tiver além de uma, ela ganha uma reação adicional que só pode ser usada para ataques de oportunidade.
 
-### Ações
+### Alerta
 
-**Ataques Múltiplos.** A hidra realiza tantos ataques de mordida quantas forem suas cabeças.
+Enquanto a hidra dorme, pelo menos uma de suas cabeças permanece acordada.
 
-**Mordida.** *Ataque Corpo a Corpo com Arma:* +8 para acertar, alcance 3 m, um alvo. *Dano:* 10 ([[1d10+5]]) dano perfurante.
+## Ações
+
+### Ataques Múltiplos
+
+A hidra realiza tantos ataques de mordida quanto o número de cabeças que possui.
+
+### Mordida
+
+mw 8 para atingir, alcance 3 m, um alvo. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) de dano perfurante.

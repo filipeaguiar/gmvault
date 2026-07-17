@@ -1,19 +1,28 @@
 ---
-title: allosaurus
-draft: false
-titulo_pt_br: alossauro
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Allosaurus
 params:
   kind: monster
-stats_meta: Large beast, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Allosaurus
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 8c6071dd3f2893c3
 stats:
   ac: '13'
   hp: 51 (6d10 + 18)
-  speed: 60 ft.
+  speed: walk 60 ft.
   attributes:
     str: 19
     dex: 13
@@ -21,32 +30,34 @@ stats:
     int: 2
     wis: 12
     cha: 5
-  skills: Perception +5
-  senses: passive Perception 15
+  saves: {}
+  skills:
+    perception: '+5'
+  senses: ''
+  languages: ''
   cr: '2'
+stats_meta: Large beast U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Alossauro
 ---
 
-![Arte: alossauro](/images/campaigns/journeys-through-the-radiant-citadel/dinosaurs.webp)
+## Características
 
-O alossauro é um predador que possui grande tamanho, força e velocidade. Ele pode perseguir quase qualquer presa em terreno aberto, saltando para derrubar as criaturas com suas garras perversas.
+### Bote
 
-### Dinossauros
+Se o alossauro se mover pelo menos 9 metros em linha reta na direção de uma criatura e então atingi-la com um ataque de garra no mesmo turno, o alvo deve ser bem-sucedido em um teste de resistência de Força CD 13 ou ficará caído. Se o alvo estiver caído, o alossauro pode realizar um ataque de mordida contra ele como uma ação bônus.
 
-Dinossauros, ou beemotes, estão entre os répteis mais antigos do mundo. Dinossauros predadores são caçadores selvagens e territoriais. Dinossauros herbívoros são menos agressivos, mas podem atacar para defender seus filhotes, ou se forem assustados ou provocados.
-Dinossauros vêm em muitos tamanhos e formas. Variedades maiores geralmente têm coloração opaca, enquanto dinossauros menores têm marcas coloridas semelhantes a pássaros. Dinossauros vagam por áreas acidentadas e isoladas que humanoides raramente visitam, incluindo vales montanhosos remotos, planaltos inacessíveis, ilhas tropicais e pântanos profundos.
+## Ações
 
-### Características
+### Mordida
 
-**Salto.** Se o alossauro se mover pelo menos 9 metros em linha reta na direção de uma criatura e acertá-la com um ataque de garra no mesmo turno, o alvo deve ser bem-sucedido em um teste de resistência de Força CD 13 ou ser derrubado. Se o alvo estiver caído, o alossauro pode realizar um ataque de mordida contra ele como uma ação bônus.
+Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 1,5 metro, um alvo. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) de dano perfurante.
 
-### Ações
+### Garra
 
-**Mordida.** Ataque Corpo a Corpo com Arma +6 para acertar, alcance 1,5 m, um alvo. {@h}15 ([[2d10+4]]) de dano perfurante.
-
-**Garra.** Ataque Corpo a Corpo com Arma +6 para acertar, alcance 1,5 m, um alvo. {@h}8 ([[1d8+4]]) de dano cortante.
+Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 1,5 metro, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano cortante.

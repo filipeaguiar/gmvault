@@ -16,6 +16,8 @@
   {{ if eq (partial "helpers/kind.html" .) "character" }}
   {{ $charCss := resources.Get "css/character-sheet.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $charCss.RelPermalink }}" integrity="{{ $charCss.Data.Integrity }}">
+  {{ $spellsJs := resources.Get "js/spells.js" | minify | fingerprint }}
+  <script src="{{ $spellsJs.RelPermalink }}" integrity="{{ $spellsJs.Data.Integrity }}" defer></script>
   {{ end }}
   {{ if .Params.summary }}
   <meta name="description" content="{{ .Params.summary }}">

@@ -1,19 +1,28 @@
 ---
 title: Whistler
-draft: false
-titulo_pt_br: Assobiador
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
 params:
   kind: monster
-stats_meta: Large aberration, neutro e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: JTTRC
+  entity_type: monster
+  entity_name: Whistler
+  remote_file: bestiary/bestiary-jttrc.json
+  remote_key: monster
+  remote_id: 6ecdb499b03c7d2e
 stats:
   ac: '15'
   hp: 180 (24d10 + 48)
-  speed: 40 ft.
+  speed: walk 40 ft.
   attributes:
     str: 13
     dex: 16
@@ -21,33 +30,50 @@ stats:
     int: 15
     wis: 16
     cha: 18
-  saves: Dex +7, Cha +8
-  skills: Stealth +11
-  senses: blindsight 60 ft., passive Perception 13
+  saves:
+    dex: '+7'
+    cha: '+8'
+  skills:
+    stealth: '+11'
+  senses: blindsight 60 ft.
   languages: Deep Speech, telepathy 120 ft.
   cr: '9'
+stats_meta: Large aberration N/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Whistler
 ---
 
-![Arte: Whistler](/images/campaigns/journeys-through-the-radiant-citadel/whistler.webp)
+## Características
 
-Whistlers são perseguidores inescrutáveis vindos de extensões aéreas e estridentes do Reino Distante. Eles são difíceis de ver, pois não estão presos a um ponto no espaço, borrando-se em um estado de perpétua incerteza física. Um whistler morto aparece como um bípede cinza, sem traços, semelhante a um humano, com membros longos e dedos finos. Aqueles perseguidos por um whistler não conseguem silenciar sua melodia silenciosa de sete notas, uma melodia de outro mundo que invade e flagela a mente. Poucas criaturas que encontram um whistler escapam; aquelas que o fazem são para sempre assombradas pela melodia aterrorizante do perseguidor.
+### Forma Borrada
 
-### Características
+As jogadas de ataque contra o assoviador são feitas com desvantagem, a menos que o assoviador esteja incapacitado.
 
-**Forma Borrada.** Jogadas de ataque contra o whistler são feitas com desvantagem, a menos que o whistler esteja incapacitado.
+### Natureza Incomum
 
-**Natureza Incomum.** O whistler não precisa de ar, comida, bebida ou sono.
+O assoviador não requer ar, comida, bebida ou sono.
 
-### Ações
+## Ações
 
-**Ataques Múltiplos.** O whistler realiza três ataques de Golpe Psíquico.
+### Ataques Múltiplos
 
-**Golpe Psíquico.** *Ataque Corpo a Corpo com Magia:* +8 para acertar, alcance 3 m, uma criatura. *Dano:* 15 ([[2d10+4]]) de dano psíquico.
+O assoviador realiza três ataques de Golpe Psíquico.
 
-**Melodia de Outro Mundo {@recharge 5}.** O whistler assobia telepaticamente uma melodia de outro mundo nas mentes de até duas criaturas que possa ver dentro do alcance de sua telepatia. Cada alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 16 ou sofrer 33 ([[6d10]]) de dano psíquico e ficar amedrontado do whistler por 1 minuto. Uma criatura amedrontada pode repetir este teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesma em caso de sucesso.
+### Golpe Psíquico
+
+ms 8 para atingir, alcance 3 m, uma criatura. {@h}15 (2d10 + 4) de dano psíquico.
+
+### Melodia Sobrenatural 5
+
+O assoviador assovia telepaticamente uma melodia sobrenatural nas mentes de até duas criaturas que possa ver dentro do alcance de sua telepatia. Cada alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 16 ou sofrerá 33 (6d10) de dano psíquico e ficará amedrontado pelo assoviador por 1 minuto. Uma criatura amedrontada pode repetir esse teste de resistência no final de cada um de seus turnos, terminando o efeito em si mesma em caso de sucesso.
+
+## Ações Bônus
+
+### Passo Surreal
+
+O assoviador se teletransporta por até 6 metros para um espaço desocupado que possa ver.

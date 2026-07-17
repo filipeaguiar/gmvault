@@ -1,21 +1,41 @@
 ---
-title: "Book"
+title: Book
 params:
-  kind: "item"
-draft: false
+  kind: item
+draft: true
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
-  - draft
-  - importado
-visibility: "public"
-status: "draft"
-
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: item
+  entity_name: Book
+  remote_file: items.json
+  remote_key: item
+  remote_id: 57c3071ffb705e05
 item_info:
-  type: "Adventuring Gear"
-  cost: "25.0 gp"
-  weight: "5 lb"
-  properties: ""
+  type: G|XPHB
+  rarity: none
+  attunement: ''
+  cost: 2500 cp
+  weight: 5
+  damage: ''
+  damage_type: ''
+  properties: []
+  range: ''
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Livro
 ---
 
-A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a phb.
+Um Livro contém ficção ou não ficção. Se você consultar um Livro de não ficção preciso sobre o tópico dele, você recebe um bônus de +5 em testes de Inteligência (XPHB, XPHB, XPHB ou XPHB) que fizer sobre esse tópico.

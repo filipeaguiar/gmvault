@@ -2,46 +2,40 @@
 title: Burglar's Pack
 params:
   kind: item
-draft: false
+draft: true
 weight: 10
-summary: Draft imported from 5e.tools. Requires translation.
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
 - draft
 - importado
+- 5etools
 visibility: public
 status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: item
+  entity_name: Burglar's Pack
+  remote_file: items.json
+  remote_key: item
+  remote_id: 695b082c2bd88fbf
 item_info:
-  type: Adventuring Gear
-  cost: 16.0 gp
-  weight: 44.5 lb
+  type: G|XPHB
+  rarity: none
+  attunement: ''
+  cost: 1600 cp
+  weight: 47.5
+  damage: ''
+  damage_type: ''
+  properties: []
+  range: ''
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Pacote de Ladrão
 ---
 
-Includes:
-
-* a phb
-
-* a bag of 1,000 ball bearings
-
-* 10 feet of string
-
-* a phb
-
-* 5 candles
-
-* a phb
-
-* a phb
-
-* 10 pitons
-
-* a phb
-
-* 2 flasks of oil
-
-* 5 days rations
-
-* a phb
-
-* a phb
-
-* 50 feet of hempen rope
+Um Pacote do Ladrão contém os seguintes itens: XPHB, XPHB, XPHB, 10 Velas, XPHB, XPHB, 7 frascos de XPHB, 5 dias de XPHB, XPHB, XPHB e XPHB.

@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {"kind": "monster", "name": "Aboleth", "sources": ["MM", "XMM"], "explicit_source": "MM", "expected": "MM"},
+    {"kind": "magic_item", "name": "Biza's Breath", "sources": ["JttRC"], "explicit_source": "JttRC", "expected": "JttRC"},
+    {"kind": "class", "name": "Rogue", "sources": ["PHB", "XPHB"], "expected": "XPHB"},
+    {"kind": "species", "name": "Goblin", "sources": ["VGM", "MPMM"], "expected": "MPMM"},
+    {"kind": "rule", "name": "Attack", "sources": ["PHB", "XPHB"], "expected": "XPHB"},
+    {"kind": "rule", "name": "Cunning Action", "sources": ["PHB", "XPHB"], "expected": "XPHB"},
+    {"kind": "spell", "name": "Guidance", "sources": ["PHB", "XPHB"], "expected": "XPHB"},
+    {"kind": "item", "name": "Dagger", "sources": ["PHB", "XPHB"], "expected": "XPHB"}
+  ]
+}

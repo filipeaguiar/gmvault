@@ -1,0 +1,22 @@
+{
+  "direct_references": 171,
+  "transitive_dependencies": 20,
+  "selected_entities": 191,
+  "unused_entities": 263,
+  "total_entity_pages": 454,
+  "reserved_index_pages": 1,
+  "total_markdown_files": 455,
+  "direct_by_category": {
+    "classes": 2,
+    "feats": 2,
+    "items": 12,
+    "magic-items": 5,
+    "monsters": 131,
+    "rules": 7,
+    "species": 2,
+    "spells": 10
+  },
+  "transitive_by_category": {
+    "rules": 20
+  }
+}

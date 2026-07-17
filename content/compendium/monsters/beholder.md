@@ -1,19 +1,28 @@
 ---
-title: beholder
-draft: false
-titulo_pt_br: beholder
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Beholder
 params:
   kind: monster
-stats_meta: Large aberration, leal e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Beholder
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 1bc771170f77fb86
 stats:
   ac: '18'
   hp: 180 (19d10 + 76)
-  speed: '0 ft., fly {''number'': 20, ''condition'': ''(hover)''} ft., canHover True ft.'
+  speed: walk 0 ft., fly 20 ft.
   attributes:
     str: 10
     dex: 14
@@ -21,48 +30,67 @@ stats:
     int: 17
     wis: 15
     cha: 17
-  saves: Int +8, Wis +7, Cha +8
-  skills: Perception +12
-  senses: darkvision 120 ft., passive Perception 22
+  saves:
+    int: '+8'
+    wis: '+7'
+    cha: '+8'
+  skills:
+    perception: '+12'
+  senses: darkvision 120 ft.
   languages: Deep Speech, Undercommon
-  cr: '{''cr'': ''13'', ''lair'': ''14''}'
+  cr: '13'
+stats_meta: Large aberration L/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Beholder
 ---
 
-![Arte: beholder](/images/campaigns/journeys-through-the-radiant-citadel/beholder.webp)
+## Características
 
-Um olhar para um beholder é suficiente para perceber sua natureza repugnante e sobrenatural. Agressivos, odientos e gananciosos, essas aberrações consideram todas as outras criaturas como seres inferiores, com as quais brincam ou que destroem conforme sua vontade.
-O corpo esferoide de um beholder levita o tempo todo, e seu grande olho protuberante fica acima de uma boca larga e cheia de dentes, enquanto os caules oculares menores que coroam seu corpo se viram e torcem para manter seus inimigos à vista. Quando um beholder dorme, ele fecha seu olho central, mas mantém seus olhos menores abertos e alertas.
 
-### Isolacionistas Xenófobos
+### Cone Antimagia
 
-Inimigos existem em abundância, ou assim acredita todo beholder. Beholders estão convencidos de que outras criaturas os ressentem por sua inteligência e poder mágico, mesmo enquanto descartam essas criaturas inferiores como grosseiras e nojentas. Beholders sempre suspeitam que outros estão conspirando contra eles, mesmo quando não há outras criaturas por perto.
-O desdém que um beholder tem por outras criaturas se estende a outros beholders. Cada beholder acredita que sua forma é um ideal, e que qualquer desvio dessa forma é uma falha na pureza racial de sua espécie. Beholders variam muito em suas formas físicas, tornando o conflito entre eles inevitável. Alguns beholders são protegidos por placas quitinosas sobrepostas. Alguns têm peles lisas. Alguns têm caules oculares que se contorcem como tentáculos, enquanto os caules de outros possuem juntas semelhantes a crustáceos. Mesmo pequenas diferenças na coloração da pele podem transformar dois beholders em inimigos vitalícios.
+O olho central do beholder cria uma área de antimagia, como na magia campo antimagia, em um cone de 150 pés. No início de cada um de seus turnos, o beholder decide para qual direção o cone está voltado e se está ativo. A área afeta os raios oculares do próprio beholder.
 
-### Tirano Ocular
+## Ações
 
-Alguns beholders conseguem canalizar suas tendências xenófobas em um terrível despotismo. Em vez de viverem isolados, os tiranos oculares, como são apropriadamente chamados, escravizam essas outras criaturas, fundando e controlando vastos impérios. Um tirano ocular às vezes esculpe um domínio dentro ou sob uma grande cidade, comandando redes de agentes que operam em nome de seu mestre.
 
-### Covis Alienígenas
+### Mordida
 
-Por se recusarem a dividir território com outros, a maioria dos beholders se retira para colinas frias, ruínas abandonadas e cavernas profundas para conspirar. O covil de um beholder é escavado por seu raio ocular de desintegração, enfatizando passagens verticais conectando câmaras empilhadas umas sobre as outras. Tal ambiente permite que um beholder se mova livremente, mesmo enquanto impede que intrusos se esgueirem facilmente. Quando intrusos conseguem invadir, a altura de seus tetos abertos permite que um beholder flutue para cima e atormente os inimigos no chão.
-Tão alienígenas quanto seu criador, os cômodos no covil de um beholder refletem a arrogância da criatura. Ele enfeita suas câmaras com troféus das batalhas que venceu, incluindo aventureiros petrificados congelados em seus momentos finais de horror, pedaços de outros beholders e itens mágicos arrancados de inimigos poderosos. Um beholder julga seu próprio valor por suas aquisições e nunca se separa voluntariamente de seus tesouros.
+Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. {@h}14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano perfurante.
 
-### O Covil de um Beholder
 
-O covil central de um beholder é tipicamente uma caverna grande e espaçosa com tetos altos, onde ele pode atacar sem medo de se aproximar para o combate corpo a corpo. Um beholder encontrado em seu covil tem um nível de desafio de 14 (11.500 XP).
+### Raios Oculares
 
-### Características
+O beholder dispara três dos seguintes raios oculares mágicos aleatoriamente (jogue novamente resultados duplicados), escolhendo de um a três alvos que possa ver, a até 36 metros de distância:
 
-**Cone Antimagia.** O olho central do beholder cria uma área de antimagia, como na magia *campo antimagia*, em um cone de 45 metros. No início de cada um de seus turnos, o beholder decide para qual lado o cone está voltado e se o cone está ativo. A área funciona contra os próprios raios oculares do beholder.
+* {'type': 'itemSub', 'name': '1. Raio Enfeitiçante', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 16 ou ficará enfeitiçada pelo beholder por 1 hora, ou até que o beholder a machuque.'}
 
-### Ações
+* {'type': 'itemSub', 'name': '2. Raio Paralisante', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Constituição CD 16 ou ficará paralisada por 1 minuto. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.'}
 
-**Mordida.** Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 1,5 m, um alvo. *Dano:* 14 ([[4d6]]) dano perfurante.
+* {'type': 'itemSub', 'name': '3. Raio do Medo', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 16 ou ficará amedrontada por 1 minuto. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.'}
 
-**Raios Oculares.** O beholder dispara três dos seguintes raios oculares mágicos aleatoriamente (role novamente resultados duplicados), escolhendo de um a três alvos que possa ver a até 36 metros dele:
+* {'type': 'itemSub', 'name': '4. Raio Lentificador', 'entry': "A criatura alvo deve ser bem-sucedida em um teste de resistência de Destreza CD 16. Em caso de falha, o deslocamento do alvo é reduzido à metade por 1 minuto. Além disso, a criatura não pode realizar reações e, em seu turno, pode realizar uma ação ou uma ação bônus, mas não ambas. A criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso."}
+
+* {'type': 'itemSub', 'name': '5. Raio de Enervação', 'entry': 'A criatura alvo deve realizar um teste de resistência de Constituição CD 16, sofrendo 36 (<span class="dice+" data-roll-notation="8d8">8d8</span>) de dano necrótico em caso de falha, ou metade desse dano em caso de sucesso.'}
+
+* {'type': 'itemSub', 'name': '6. Raio Telecinético', 'entries': ["Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 16 ou o beholder a move até 9 metros em qualquer direção. Ela fica contida pelo aperto telecinético do raio até o início do próximo turno do beholder ou até que o beholder fique incapacitado.", "Se o alvo for um objeto pesando 300 libras ou menos que não esteja sendo vestido ou carregado, ele é movido até 9 metros em qualquer direção. O beholder também pode exercer controle preciso sobre objetos com este raio, como manipular uma ferramenta simples ou abrir uma porta ou recipiente."]}
+
+* {'type': 'itemSub', 'name': '7. Raio do Sono', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 16 ou cairá no sono e permanecerá inconsciente por 1 minuto. O alvo acorda se sofrer dano ou se outra criatura usar uma ação para acordá-lo. Este raio não afeta constructos e mortos-vivos.'}
+
+* {'type': 'itemSub', 'name': '8. Raio de Petrificação', 'entry': 'A criatura alvo deve realizar um teste de resistência de Destreza CD 16. Em caso de falha, a criatura começa a se transformar em pedra e fica contida. Ela deve repetir o teste de resistência no final de seu próximo turno. Em caso de sucesso, o efeito termina. Em caso de falha, a criatura fica petrificada até ser libertada pela magia restauração maior ou outra magia.'}
+
+* {'type': 'itemSub', 'name': '9. Raio de Desintegração', 'entries': ['Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Destreza CD 16 ou sofrerá 45 (<span class="dice+" data-roll-notation="10d8">10d8</span>) de dano de energia. Se este dano reduzir a criatura a 0 pontos de vida, seu corpo se transforma em uma pilha de cinzas finas e cinzentas.', 'Se o alvo for um objeto não mágico ou uma criação de energia mágica de tamanho Grande ou menor, ele é desintegrado sem um teste de resistência. Se o alvo for um objeto ou criação de energia mágica de tamanho Enorme ou maior, este raio desintegra um cubo de 3 metros dele.']}
+
+* {'type': 'itemSub', 'name': '10. Raio da Morte', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Destreza CD 16 ou sofrerá 55 (<span class="dice+" data-roll-notation="10d10">10d10</span>) de dano necrótico. O alvo morre se o raio o reduzir a 0 pontos de vida.'}
+
+## Ações Lendárias
+
+
+### Raio Ocular
+
+O beholder usa um raio ocular aleatório.

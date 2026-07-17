@@ -1,19 +1,28 @@
 ---
-title: swarm of poisonous snakes
-draft: false
-titulo_pt_br: enxame de cobras venenosas
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Swarm of Poisonous Snakes
 params:
   kind: monster
-stats_meta: Medium beast, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Swarm of Poisonous Snakes
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: 71c3d55805654846
 stats:
   ac: '14'
   hp: 36 (8d8)
-  speed: 30 ft., swim 30 ft.
+  speed: walk 30 ft., swim 30 ft.
   attributes:
     str: 8
     dex: 18
@@ -21,20 +30,29 @@ stats:
     int: 1
     wis: 10
     cha: 3
-  senses: blindsight 10 ft., passive Perception 10
+  saves: {}
+  skills: {}
+  senses: blindsight 10 ft.
+  languages: ''
   cr: '2'
+stats_meta: Medium beast U
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Enxame de Cobras Venenosas
 ---
 
-### Características
+## Características
 
-**Enxame.** O enxame pode ocupar o espaço de outra criatura e vice-versa, e pode se mover por qualquer abertura grande o suficiente para uma serpente Miúda. O enxame não pode recuperar pontos de vida nem ganhar pontos de vida temporários.
+### Enxame
 
-### Ações
+O enxame pode ocupar o espaço de outra criatura e vice-versa, e o enxame pode se mover através de qualquer abertura grande o suficiente para uma serpente Miúda. O enxame não pode recuperar pontos de vida ou ganhar pontos de vida temporários.
 
-**Mordidas.** Ataque Corpo a Corpo com Arma: +6 para acertar, alcance 0 pés, uma criatura no espaço do enxame. {@h}7 ([[2d6]]) de dano perfurante, ou 3 ([[1d6]]) de dano perfurante se o enxame tiver metade ou menos de seus pontos de vida. O alvo deve realizar um teste de resistência de Constituição CD 10, sofrendo 14 ([[4d6]]) de dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.
+## Ações
+
+### Mordidas
+
+mw 6 para atingir, alcance 0 ft., uma criatura no espaço do enxame. {@h}7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano perfurante, ou 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano perfurante se o enxame tiver metade dos seus pontos de vida ou menos. O alvo deve realizar um teste de resistência de Constituição CD 10, sofrendo 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano de veneno em caso de falha no teste, ou metade do dano em caso de sucesso.

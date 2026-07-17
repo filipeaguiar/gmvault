@@ -409,6 +409,23 @@
       "Aroon Family": "Família Aroon",
       "Tyenmo Family": "Família Tyenmo"
     },
+    "rules_2024_and_areas": {
+      "Weapon Mastery": "Maestria de Arma",
+      "Mastery Property": "Propriedade de Maestria",
+      "Creature Type": "Tipo de Criatura",
+      "D20 Test": "Teste de d20",
+      "Heroic Inspiration": "Inspiração Heroica",
+      "Influence Action": "Ação Influenciar",
+      "Magic Action": "Ação Mágica",
+      "Study Action": "Ação Estudar",
+      "Utilize Action": "Ação Utilizar",
+      "Emanation": "Emanação",
+      "Cone": "Cone",
+      "Cube": "Cubo",
+      "Cylinder": "Cilindro",
+      "Line": "Linha",
+      "Sphere": "Esfera"
+    },
     "rules_phrases": {
       "must succeed on": "deve ser bem-sucedido em",
       "on a successful check": "em caso de sucesso no teste",
@@ -509,6 +526,9 @@
     "ZXQPROTECTED",
     "ZXQGLOSSARY",
     "Thinking Process:",
+    "Thinking:",
+    "<think>",
+    "</think>",
     "reasoning_content"
   ]
 }

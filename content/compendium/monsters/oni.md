@@ -1,19 +1,28 @@
 ---
-title: oni
-draft: false
-titulo_pt_br: oni
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Oni
 params:
   kind: monster
-stats_meta: Large giant, leal e mau
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Oni
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: f4a5a6419b8f9d0a
 stats:
   ac: '16'
   hp: 110 (13d10 + 39)
-  speed: 30 ft., fly 30 ft.
+  speed: walk 30 ft., fly 30 ft.
   attributes:
     str: 19
     dex: 11
@@ -21,43 +30,58 @@ stats:
     int: 14
     wis: 12
     cha: 15
-  saves: Dex +3, Con +6, Wis +4, Cha +5
-  skills: Arcana +5, Deception +8, Perception +4
-  senses: darkvision 60 ft., passive Perception 14
+  saves:
+    dex: '+3'
+    con: '+6'
+    wis: '+4'
+    cha: '+5'
+  skills:
+    arcana: '+5'
+    deception: '+8'
+    perception: '+4'
+  senses: darkvision 60 ft.
   languages: Common, Giant
   cr: '7'
+stats_meta: Large giant L/E
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Oni
 ---
 
-![Arte: oni](/images/campaigns/journeys-through-the-radiant-citadel/oni.webp)
+## Características
 
-Nas cantigas de ninar, onis são bichos-papões temíveis que assombram os pesadelos de crianças e adultos, mas são muito reais e estão sempre famintos. Eles acham bebês humanos especialmente deliciosos. Onis se parecem com ogros demoníacos de pele azul ou verde, cabelos escuros e um par de chifres curtos de marfim saindo de suas testas. Seus olhos são escuros com pupilas brancas impressionantes, e seus dentes e garras são negros como carvão.
 
-### Assombradores Noturnos
+### Armas Mágicas
 
-À luz do dia, um oni esconde sua verdadeira forma com magia, ganhando a confiança daqueles que pretende trair quando a escuridão cair. Essas criaturas podem mudar de tamanho, bem como de forma, aparecendo como humanoides enquanto passam por cidades, fingindo ser viajantes, lenhadores ou povos da fronteira. Em tal forma, um oni avalia a seleção de humanoides em um assentamento e elabora maneiras de sequestrar e devorar alguns deles.
+Os ataques com arma do oni são mágicos.
 
-### Ogros Mágicos
 
-Onis são às vezes chamados de ogros magos por causa de sua habilidade mágica inata. Embora sejam apenas distantemente relacionados aos ogros verdadeiros, eles compartilham o hábito dos ogros de se unir a outras criaturas malignas. Um oni serve a um mestre se isso for lucrativo ou lhe proporcionar uma casa luxuosa e bem defendida. Onis cobiçam magia e trabalham para magos malignos e bruxas em troca de itens mágicos úteis.
+### Regeneração
 
-### Características
+O oni recupera 10 pontos de vida no início do turno dele se tiver pelo menos 1 ponto de vida.
 
-**Armas Mágicas.** Os ataques com arma do oni são mágicos.
+## Ações
 
-**Regeneração.** O oni recupera 10 pontos de vida no início de seu turno se tiver pelo menos 1 ponto de vida.
 
-### Ações
+### Ataques Múltiplos
 
-**Ataques Múltiplos.** O oni realiza dois ataques, seja com suas garras ou com sua glaive.
+O oni realiza dois ataques, seja com suas garras ou com sua glaive.
 
-**Garra (Apenas na Forma de Oni).** +7 para acertar, alcance 1,5 m, um alvo. {@h}8 ([[1d8+4]]) dano cortante.
 
-**Glaive.** +7 para acertar, alcance 3 m, um alvo. {@h}15 ([[2d10+4]]) dano cortante, ou 9 ([[1d10+4]]) dano cortante na forma Pequena ou Média.
+### Garra (Apenas na Forma de Oni)
 
-**Trocar Forma.** O oni se polimorfa magicamente em um humanoide Pequeno ou Médio, em um gigante Grande, ou de volta à sua forma verdadeira. Exceto pelo seu tamanho, suas estatísticas são as mesmas em cada forma. O único equipamento que é transformado é sua glaive, que encolhe para que possa ser empunhada em forma humanoide. Se o oni morrer, ele reverte à sua forma verdadeira, e sua glaive reverte ao seu tamanho normal.
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano cortante.
+
+
+### Glaive
+
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 3 m, um alvo. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) de dano cortante, ou 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) de dano cortante na forma Pequena ou Média.
+
+
+### Mudar de Forma
+
+O oni se transforma magicamente em um humanoide Pequeno ou Médio, em um gigante Grande ou de volta à sua forma verdadeira. Com exceção do seu tamanho, suas estatísticas são as mesmas em cada forma. O único equipamento que é transformado é sua glaive, que encolhe para que possa ser empunhada na forma humanoide. Se o oni morrer, ele reverte para sua forma verdadeira e sua glaive reverte ao seu tamanho normal.

@@ -2,14 +2,23 @@
 title: Ray of Frost
 params:
   kind: spell
-draft: false
+draft: true
 weight: 10
-summary: Rascunho importado de 5e.tools. Requer tradução.
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
 - draft
 - importado
+- 5etools
 visibility: public
 status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: spell
+  entity_name: Ray of Frost
+  remote_file: spells/spells-xphb.json
+  remote_key: spell
+  remote_id: 4cc9181c11843cdb
 spell_info:
   level: Cantrip
   school: Evocation
@@ -17,15 +26,35 @@ spell_info:
   range: 60 feet
   components: V, S
   duration: Instantaneous
-titulo_pt_br: '**Raio de Gelo**'
+  level_number: 0
+  attack_type: ranged
+  damage_types:
+  - cold
+  saving_throws: []
+  rolls:
+  - kind: damage
+    notation: 1d8
+    label: Dano
+    damage_type: cold
+    scaling:
+      mode: character_level
+      thresholds:
+        '1': 1d8
+        '5': 2d8
+        '11': 3d8
+        '17': 4d8
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
 ---
 
-Um feixe gélido de luz branco-azulada dispara em direção a uma criatura dentro do alcance. Faça um ataque à distância com magia contra o alvo. Em caso de acerto, ele sofre 1d8 de dano de frio e seu deslocamento é reduzido em 3 metros até o início do seu próximo turno.
+Um raio gélido de luz branco-azulada avança em direção a uma criatura dentro do alcance. Faça um ataque à distância com magia contra o alvo. Em caso de acerto, ele sofre <span class="dice+" data-roll-notation="1d8">1d8</span> de Dano de Frio e seu XPHB é reduzido em 3 metros até o início do seu próximo turno.
 
-O dano da magia aumenta em 1d8 quando você atinge o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8).
+## Em Círculos Superiores
+
+### Aprimoramento de Truque
+
+O dano aumenta em <span class="dice+" data-roll-notation="1d8">1d8</span> quando você atinge os níveis 5 (<span class="dice+" data-roll-notation="2d8">2d8</span>), 11 (<span class="dice+" data-roll-notation="3d8">3d8</span>) e 17 (<span class="dice+" data-roll-notation="4d8">4d8</span>).

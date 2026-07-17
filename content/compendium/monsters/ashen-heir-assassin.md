@@ -1,32 +1,42 @@
 ---
 title: Ashen Heir Assassin
-draft: false
-titulo_pt_br: '**Assassino(a) do Herdeiro Cinzento**'
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
 params:
   kind: monster
-stats_meta: Medium monstrosity, sem tendência
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: JTTRC
+  entity_type: monster
+  entity_name: Ashen Heir Assassin
+  remote_file: bestiary/bestiary-jttrc.json
+  remote_key: monster
+  remote_id: 99d51ce501bd505a
 stats:
-  ac: '10'
-  hp: '10'
-  speed: 30 ft.
-  attributes:
-    str: 10
-    dex: 10
-    con: 10
-    int: 10
-    wis: 10
-    cha: 10
+  ac: ''
+  hp: ''
+  speed: ''
+  attributes: {}
+  saves: {}
+  skills: {}
+  senses: ''
+  languages: ''
+  cr: ''
+stats_meta: ''
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Assassino Herdeiro Cinzento
 ---
 
 

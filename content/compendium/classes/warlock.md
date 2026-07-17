@@ -1,68 +1,102 @@
 ---
-title: "Warlock"
+title: Warlock
 params:
-  kind: "class"
-draft: false
+  kind: class
+draft: true
 weight: 10
-summary: "Progressão da classe Warlock."
+summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "ready"
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: class
+  entity_name: Warlock
+  remote_file: class/class-warlock.json
+  remote_key: class
+  remote_id: a078c2db2753ef74
+class_info:
+  hit_dice: 1d8
+  primary_ability: '{''cha'': True}'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
+titulo_pt_br: Bruxo
 ---
 
-### Nível 1
+## Nível 1
 
-- [Eldritch Invocation Options](/compendium/rules/eldritch-invocation-options/)
-- [Eldritch Invocations](/compendium/rules/eldritch-invocations/)
-- [Otherworldly Patron](/compendium/rules/otherworldly-patron/)
-- [Pact Magic](/compendium/rules/pact-magic/)
+- [Opções de Invocação Sobrenatural](/compendium/rules/eldritch-invocation-options/)
+- [Invocações Sobrenaturais](/compendium/rules/eldritch-invocations/)
+- [Magia de Pacto](/compendium/rules/pact-magic/)
 
-### Nível 2
+## Nível 2
 
-- [Magical Cunning](/compendium/rules/magical-cunning/)
+- [Astúcia Mágica](/compendium/rules/magical-cunning/)
 
-### Nível 3
+## Nível 3
 
-- Pact Boon
-- Warlock Subclass
+- [Subclasse de Bruxo](/compendium/rules/otherworldly-patron/)
 
-### Nível 4
+## Nível 4
 
-- Ability Score Improvement
-- Eldritch Versatility
+- Melhoria de Valor de Atributo
 
-### Nível 6
+## Nível 6
 
-- Otherworldly Patron feature
-- Subclass Feature
+- Característica de Subclasse
 
-### Nível 9
+## Nível 8
 
-- Contact Patron
+- Melhoria de Valor de Atributo
 
-### Nível 11
+## Nível 9
 
-- Mystic Arcanum
-- Mystic Arcanum (6th level)
+- Contatar Patrono
 
-### Nível 13
+## Nível 10
 
-- Mystic Arcanum (7th level)
+- Característica de Subclasse
 
-### Nível 15
+## Nível 11
 
-- Mystic Arcanum (8th level)
+- Arcana Mística
 
-### Nível 17
+## Nível 12
 
-- Mystic Arcanum (9th level)
+- Melhoria de Valor de Atributo
 
-### Nível 19
+## Nível 13
 
-- [Epic Boon](/compendium/rules/epic-boon/)
+- Arcana Mística
 
-### Nível 20
+## Nível 14
 
-- Eldritch Master
+- Característica de Subclasse
+
+## Nível 15
+
+- Arcana Mística
+
+## Nível 16
+
+- Melhoria de Valor de Atributo
+
+## Nível 17
+
+- Arcana Mística
+
+## Nível 19
+
+- [Dádiva Épica](/compendium/rules/epic-boon/)
+
+## Nível 20
+
+- Mestre Sobrenatural

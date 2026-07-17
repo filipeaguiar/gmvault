@@ -1055,6 +1055,100 @@ main.container {
   padding-bottom: 0;
 }
 
+.spell-page-title-row,
+.spell-card-title-row,
+.spell-name-roll-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.spell-page-title-row {
+  justify-content: space-between;
+}
+
+.spell-page-title-row h1 {
+  margin-bottom: 0;
+}
+
+.spell-card-title-row {
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.spell-name-roll-row {
+  min-width: 0;
+}
+
+.spell-card-name {
+  font-size: 1.1em;
+}
+
+.spell-inline-rolls {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.spell-inline-roll {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.42rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card-bg) 90%, var(--primary-color) 10%);
+  white-space: nowrap;
+}
+
+.spell-inline-roll small {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+}
+
+.spell-inline-roll strong {
+  color: var(--text-color);
+  font-size: 0.82rem;
+}
+
+.spell-roll-attack { border-color: color-mix(in srgb, var(--primary-color) 45%, var(--border-color)); }
+.spell-roll-damage { border-color: rgba(192, 57, 43, 0.45); }
+.spell-roll-healing { border-color: rgba(39, 174, 96, 0.5); }
+.spell-roll-dice { border-color: rgba(142, 68, 173, 0.45); }
+
+.prepared-spell-badge {
+  color: var(--accent-color);
+  font-size: 0.85em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.prepare-spell-label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .spell-page-title-row,
+  .spell-card-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .spell-inline-roll small {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
 .spell-info-row strong, .item-info-row strong, .race-info-row strong, .species-info-row strong, .class-info-row strong, .character-info-row strong {
   color: var(--primary-color);
 }

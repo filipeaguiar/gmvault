@@ -511,6 +511,48 @@ class LmStudioTranslationTests(unittest.TestCase):
             self.assertTrue(all("/campaigns/demo/locations/market/" in snapshot for snapshot in snapshots))
             self.assertTrue(all("/campanhas/" not in snapshot for snapshot in snapshots))
 
+    def test_builtin_deepseek_v4_pro_profile_is_available_without_local_config(self):
+        with tempfile.TemporaryDirectory() as temp_dir, patch(
+            "sys.argv",
+            [
+                "translate_drafts.py",
+                "--scope",
+                "compendium",
+                "--profile",
+                "deepseek-v4-pro",
+                "--config",
+                str(Path(temp_dir) / "missing.json"),
+            ],
+        ):
+            args = parse_args()
+
+        self.assertEqual(args.engine, "openai-compatible")
+        self.assertEqual(args.model, "deepseek-v4-pro")
+        self.assertEqual(args.base_url, "https://api.deepseek.com/v1")
+
+    def test_translation_rejects_forbidden_output_and_preserves_provenance(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "rule.md"
+            source = {"provider": "5e.tools", "book": "XPHB", "remote_id": "abc"}
+            path.write_text("---\ndraft: true\n---\n\nSaving Throw.\n", encoding="utf-8")
+            document = MarkdownDocument(path, "", {"draft": True, "source": source}, "Saving Throw.\n")
+
+            with self.assertRaises(TranslationError):
+                process_document(
+                    document,
+                    lambda _text: "Salvaguarda",
+                    {},
+                    apply=False,
+                    include_non_draft=False,
+                    translate_frontmatter=False,
+                    source="en",
+                    target="pb",
+                    engine="openai-compatible",
+                    model="deepseek-v4-pro",
+                    forbidden_outputs=["Salvaguarda"],
+                )
+            self.assertEqual(document.front_matter["source"], source)
+
     def test_batch_continues_after_file_error_and_reports_path(self):
         paths = [Path("one.md"), Path("broken.md"), Path("three.md")]
         completed = []

@@ -1,19 +1,28 @@
 ---
-title: thri-kreen
-draft: false
-titulo_pt_br: thri-kreen
-visibility: gm
-status: draft
-tags:
-- monstro
-- importado
+title: Thri-kreen
 params:
   kind: monster
-stats_meta: Medium humanoid, caótico e neutro
+draft: true
+weight: 10
+summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+tags:
+- draft
+- importado
+- 5etools
+visibility: gm
+status: draft
+source:
+  provider: 5e.tools
+  book: MM
+  entity_type: monster
+  entity_name: Thri-kreen
+  remote_file: bestiary/bestiary-mm.json
+  remote_key: monster
+  remote_id: db249a03c9543815
 stats:
   ac: '15'
   hp: 33 (6d8 + 6)
-  speed: 40 ft.
+  speed: walk 40 ft.
   attributes:
     str: 12
     dex: 15
@@ -21,49 +30,44 @@ stats:
     int: 8
     wis: 12
     cha: 7
-  skills: Perception +3, Stealth +4, Survival +3
-  senses: darkvision 60 ft., passive Perception 13
+  saves: {}
+  skills:
+    perception: '+3'
+    stealth: '+4'
+    survival: '+3'
+  senses: darkvision 60 ft.
   languages: Thri-kreen
   cr: '1'
+stats_meta: Medium humanoid C/N
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
-  model: deepseek-chat
+  model: deepseek-v4-pro
+titulo_pt_br: Thri-kreen
 ---
 
-![Arte: thri-kreen](/images/campaigns/journeys-through-the-radiant-citadel/thri-kreen.webp)
+## Características
 
-Thri-kreen vagam pelos desertos e savanas do mundo, evitando todas as outras raças.
+### Carapaça de Camaleão
 
-### Comunicação dos Thri-kreen
+O thri-kreen pode mudar a cor de sua carapaça para igualar-se à cor e textura do ambiente. Como resultado, ele tem Vantagem em testes de Destreza (Furtividade) realizados para se esconder.
 
-Thri-kreen empregam uma linguagem sem palavras. Para mostrar emoção e reação, um thri-kreen estala suas mandíbulas e agita suas antenas, dando a outros thri-kreen uma noção do que está pensando e sentindo. Outras criaturas acham essa forma de comunicação difícil de interpretar e impossível de duplicar.
-Quando forçados a interagir com criaturas de outras espécies inteligentes, thri-kreen empregam métodos alternativos de comunicação, como desenhar figuras na areia ou fazer imagens com gravetos ou folhas de grama.
+### Salto Parado
 
-### Emoções Limitadas
+O salto em distância do thri-kreen é de até 9 metros e seu salto em altura é de até 4,5 metros, com ou sem impulso.
 
-Thri-kreen experimentam toda a gama de emoções, mas não são tão propensos a explosões emocionais quanto os humanos. Thri-kreen com habilidade psíquica frequentemente demonstram uma gama maior de emoções, particularmente se vivem perto ou interagem com humanos ou outras criaturas altamente emocionais.
+## Ações
 
-### Isolacionistas e Andarilhos
+### Ataques Múltiplos
 
-Thri-kreen consideram todas as outras criaturas vivas como nutrição em potencial, e amam especialmente o sabor da carne de elfo. Se uma criatura pode ser útil para algo além de comida, o thri-kreen provavelmente não a atacará à primeira vista. Thri-kreen matam para sobreviver, nunca por esporte.
+O thri-kreen realiza dois ataques: um com sua mordida e outro com suas garras.
 
-### Sem Sono
+### Mordida
 
-Thri-kreen não precisam dormir e podem descansar enquanto permanecem alertas e realizam tarefas leves. Acredita-se que sua incapacidade de dormir seja a razão pela qual thri-kreen têm vidas tão curtas, com a expectativa de vida média de um thri-kreen sendo de apenas trinta anos.
+Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, uma criatura. Acerto: 4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano perfurante, e o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 11 ou ficará envenenado por 1 minuto. Se o teste de resistência falhar em 5 ou mais, o alvo também ficará paralisado enquanto estiver envenenado dessa forma. O alvo envenenado pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.
 
-### Características
+### Garras
 
-**Carapaça Camaleônica.** O thri-kreen pode mudar a cor de sua carapaça para combinar com a cor e textura de seus arredores. Como resultado, ele tem vantagem em testes de Destreza (Furtividade) feitos para se esconder.
-
-**Salto em Pé.** O salto em distância do thri-kreen é de até 9 metros e seu salto em altura é de até 4,5 metros, com ou sem uma corrida de aproximação.
-
-### Ações
-
-**Ataques Múltiplos.** O thri-kreen faz dois ataques: um com sua mordida e um com suas garras.
-
-**Mordida.** Ataque Corpo a Corpo com Arma: +3 para acertar, alcance 1,5 m, uma criatura. {@h}4 ([[1d6+1]]) de dano perfurante, e o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 11 ou ficará envenenado por 1 minuto. Se a falha no teste de resistência for por 5 ou mais, o alvo também fica paralisado enquanto estiver envenenado desta forma. O alvo envenenado pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesmo em caso de sucesso.
-
-**Garras.** Ataque Corpo a Corpo com Arma: +3 para acertar, alcance 1,5 m, um alvo. {@h}6 ([[2d4+1]]) de dano cortante.
+Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. Acerto: 6 (<span class="dice+" data-roll-notation="2d4+1">2d4 + 1</span>) de dano cortante.
