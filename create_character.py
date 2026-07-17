@@ -23,6 +23,7 @@ from dnd_utils import (
     ensure_compendium_class_overview,
     STANDARD_ACTION_REFS,
     parse_entries,
+    GoBackException,
 )
 
 # ──────────────────────────────────────────────
@@ -116,7 +117,9 @@ def load_class_data(filename):
 # ──────────────────────────────────────────────
 def ask(prompt, default=None):
     suffix = f" [{default}]" if default is not None else ""
-    value = input(f"{prompt}{suffix}: ").strip()
+    value = input(f"{prompt}{suffix} (00: voltar): ").strip()
+    if value == "00":
+        raise GoBackException()
     return value if value else (str(default) if default is not None else "")
 
 def ask_int(prompt, default=0):
@@ -136,7 +139,6 @@ def ask_choice(prompt, options):
         console = Console()
         console.print(f"\n[bold]{prompt}[/]")
 
-        # Se houver muitas opções, organiza em até 4 colunas
         num_cols = 4 if len(options) >= 8 else 1
 
         if num_cols > 1:
@@ -150,7 +152,6 @@ def ask_choice(prompt, options):
                 for c in range(num_cols):
                     idx = r + c * num_rows
                     if idx < len(options):
-                        # Formata o item: converte tuplas em string caso ocorra na lista de subespécies
                         opt_val = options[idx]
                         if isinstance(opt_val, tuple):
                             opt_label = str(opt_val[0])
@@ -165,21 +166,27 @@ def ask_choice(prompt, options):
             for i, opt in enumerate(options, 1):
                 opt_label = opt[0] if isinstance(opt, tuple) else opt
                 console.print(f"  [bold cyan]{i}[/]  {opt_label}")
+        console.print("  [bold cyan]00[/]  Voltar")
     except ImportError:
         print(f"\n{prompt}")
         for i, opt in enumerate(options, 1):
             opt_label = opt[0] if isinstance(opt, tuple) else opt
             print(f"  {i}. {opt_label}")
+        print("  00. Voltar")
 
     while True:
-        raw = ask("Escolha", "1")
         try:
+            raw = input("Escolha (00: voltar): ").strip()
+            if raw == "00":
+                raise GoBackException()
+            if not raw:
+                raw = "1"
             idx = int(raw)
             if 1 <= idx <= len(options):
                 return options[idx - 1]
         except ValueError:
             pass
-        print(f"  ⚠ Escolha inválida. Escolha entre 1 e {len(options)}.")
+        print(f"  ⚠ Escolha inválida. Escolha entre 1 e {len(options)} (ou 00 para voltar).")
 
 def filter_feats(feats_data, categories, source="XPHB"):
     """Retorna talentos das categorias indicadas, filtrando opcionalmente pela fonte."""
@@ -340,7 +347,7 @@ def deduplicate_features(features_list, get_source_priority_fn):
         if key not in grouped:
             grouped[key] = []
         grouped[key].append(f)
-    
+
     deduped = []
     for key, group in grouped.items():
         group.sort(key=get_source_priority_fn)
@@ -350,15 +357,15 @@ def deduplicate_features(features_list, get_source_priority_fn):
 
 def extract_roll_formula(feature_name, description, level, mods):
     name_lower = feature_name.lower()
-    
+
     # Special overrides for well-known features
     if name_lower == "sneak attack" or name_lower == "ataque furtivo":
         sneak_dice = (level + 1) // 2
         return f"{sneak_dice}d6"
-    
+
     if name_lower == "second wind" or name_lower == "retomar o fôlego":
         return f"1d10+{level}"
-        
+
     if name_lower == "bardic inspiration" or name_lower == "inspiração bárdica":
         if level >= 15:
             return "1d12"
@@ -380,14 +387,14 @@ def extract_roll_formula(feature_name, description, level, mods):
                 formula = formula.replace(stat, f"{sign}{val}")
                 formula = formula.replace("++", "+").replace("+-", "-").replace("-+", "-").replace("--", "+")
         return formula
-        
+
     return None
 
 
 def prompt_choices_for_feature(feature_name, level):
     name_lower = feature_name.lower()
     choices = []
-    
+
     if "fighting style" in name_lower or "estilo de luta" in name_lower:
         options = ["Defense", "Archery", "Dueling", "Great Weapon Fighting", "Two-Weapon Fighting", "Protection", "Interception", "Thrown Weapon Fighting", "Blind Fighting"]
         choice = ask_choice("Escolha seu Estilo de Luta (Fighting Style):", options)
@@ -395,21 +402,7 @@ def prompt_choices_for_feature(feature_name, level):
             "name": f"Fighting Style: {choice}",
             "description": f"Estilo de Luta escolhido: {choice}."
         })
-        
-    elif "eldritch invocations" in name_lower or "invocações de bruxo" in name_lower or "invocações místicas" in name_lower:
-        options = ["Agonizing Blast", "Armor of Shadows", "Beast Speech", "Book of Ancient Secrets", "Devil's Sight", "Eldritch Mind", "Eldritch Spear", "Eyes of the Rune Keeper", "Fiendish Vigor", "Gaze of Two Minds", "Mask of Many Faces", "Misty Visions", "Repelling Blast", "Thief of Five Fates"]
-        count = 2 if level < 5 else 3 if level < 7 else 4 if level < 9 else 5
-        print(f"\nSua classe permite escolher {count} Invocações Místicas:")
-        selected = set()
-        while len(selected) < count:
-            c = ask_choice(f"Escolha a {len(selected)+1}ª Invocação:", [opt for opt in options if opt not in selected])
-            selected.add(c)
-        for sel in selected:
-            choices.append({
-                "name": f"Eldritch Invocation: {sel}",
-                "description": f"Invocação mística escolhida: {sel}."
-            })
-            
+
     elif "metamagic" in name_lower or "metamagia" in name_lower:
         options = ["Careful Spell", "Distant Spell", "Empowered Spell", "Extended Spell", "Heightened Spell", "Quickened Spell", "Subtle Spell", "Twinned Spell"]
         count = 2 if level < 10 else 3 if level < 17 else 4
@@ -423,7 +416,7 @@ def prompt_choices_for_feature(feature_name, level):
                 "name": f"Metamagic: {sel}",
                 "description": f"Opção de Metamagia escolhida: {sel}."
             })
-            
+
     return choices
 
 
@@ -433,11 +426,11 @@ def create_rule_stub(name, entries):
     path = f"content/compendium/rules/{slug}.md"
     if os.path.exists(path):
         return ref
-        
+
     description = parse_entries(entries)
     if not description:
         description = f"Descrição da característica {name}."
-        
+
     os.makedirs(os.path.dirname(path), exist_ok=True)
     markdown = f"""---
 title: "{name}"
@@ -465,6 +458,50 @@ status: "ready"
 def print_header(title):
     print(f"\n{'═' * 50}\n  {title}\n{'═' * 50}")
 
+
+def calculate_skills_data(proficient_skills, mods, prof_bonus):
+    """Calcula perícias no formato canônico de ``char_info.skills``."""
+    skills_data = {}
+    for skill, ability in SKILL_MAP.items():
+        is_proficient = skill in proficient_skills
+        skills_data[skill] = {
+            "bonus": mods[ability] + (prof_bonus if is_proficient else 0),
+            "proficient": is_proficient,
+            "expertise": False,
+            "stat": ability,
+        }
+    return skills_data
+
+
+def calculate_saves_data(class_entry, mods, prof_bonus):
+    """Normaliza proficiências de resistência vindas do 5e.tools."""
+    raw_proficiencies = class_entry.get("proficiency", [])
+    if isinstance(raw_proficiencies, dict):
+        proficient = {
+            stat
+            for stat, enabled in raw_proficiencies.items()
+            if stat in STAT_NAMES and enabled
+        }
+    elif isinstance(raw_proficiencies, list):
+        proficient = {
+            str(stat).lower() for stat in raw_proficiencies if stat in STAT_NAMES
+        }
+    else:
+        proficient = set()
+
+    class_saves = {stat: stat in proficient for stat in STAT_NAMES}
+    saves = {
+        stat: mods[stat] + (prof_bonus if class_saves[stat] else 0)
+        for stat in STAT_NAMES
+    }
+    summary = []
+    for stat in STAT_NAMES:
+        if class_saves[stat]:
+            value = saves[stat]
+            summary.append(f"{stat.capitalize()} {'+' if value >= 0 else ''}{value}")
+    return saves, class_saves, ", ".join(summary)
+
+
 # ──────────────────────────────────────────────
 # Fluxo Principal de Criação
 # ──────────────────────────────────────────────
@@ -485,366 +522,470 @@ def main():
         except ImportError:
             print("  [AVISO] interactive_cli não disponível, usando modo texto.")
 
-    # 1. Selecionar campanha
-    if not args.campaign:
-        campaigns_dir = "content/campaigns"
-        if os.path.isdir(campaigns_dir):
-            campaigns = sorted([d for d in os.listdir(campaigns_dir) if os.path.isdir(os.path.join(campaigns_dir, d))])
-            if campaigns:
-                args.campaign = ask_choice("Selecione a campanha:", campaigns)
-            else:
-                args.campaign = ask("Slug da campanha", "cidadela-radiante")
-        else:
-            args.campaign = ask("Slug da campanha", "cidadela-radiante")
-
-    print(f"\n📋 Campanha de destino: {args.campaign}")
-
-    # 2. Coletar Nome
-    print_header("NOME DO PERSONAGEM")
-    char_name = ask("Nome do personagem")
-    while not char_name:
-        print("  ⚠ Nome é obrigatório.")
-        char_name = ask("Nome do personagem")
-
-    alignment = ask("Alinhamento (ex: Neutral Good)", "True Neutral")
-
-    # 3. Escolher Espécie
-    print_header("SELEÇÃO DE ESPÉCIE")
-    sp_data = load_species_data()
-    if not sp_data:
-        print("ERRO: Não foi possível carregar as espécies do 5e.tools.", file=sys.stderr)
-        sys.exit(1)
-
-    # Filtrar espécies principais
-    base_species = sorted(list(set(
-        r.get("name") for r in sp_data.get("race", [])
-        if "name" in r and not r.get("_copy")
-    )))
-    selected_species_name = ask_choice("Selecione a Espécie Base:", base_species)
-
-    # Procurar a melhor entrada de espécie base considerando prioridade de fontes (evita DMG/NPC templates)
-    SOURCE_PRIORITY = ["PHB", "XPHB", "MPMM", "VGM", "ERLW", "GGR", "DMG"]
-    matching_races = [r for r in sp_data.get("race", []) if r.get("name") == selected_species_name]
-    def get_source_priority(entry):
-        src = entry.get("source", "")
-        if src in SOURCE_PRIORITY:
-            return SOURCE_PRIORITY.index(src)
-        return 999
-    matching_races.sort(key=get_source_priority)
-    base_race_entry = matching_races[0] if matching_races else None
-    
-    subspecies_options = []
-    # Inclui a opção "Sem variante / Base"
-    subspecies_options.append(("Espécie Base", base_race_entry))
-    
-    for s in sp_data.get("subrace", []):
-        if s.get("raceName") == selected_species_name:
-            subspecies_options.append((f"Variante: {s.get('name')}", s))
-
-    selected_subspecies_label, selected_sub_entry = ask_choice(
-        f"Selecione uma Variante/Subespécie para {selected_species_name}:",
-        subspecies_options
-    )
-
-    is_variant = selected_subspecies_label != "Espécie Base"
-    species_variant = selected_sub_entry.get('name', '') if is_variant else ""
-    full_species_name = selected_species_name
-    if is_variant:
-        full_species_name = f"{selected_species_name} ({species_variant})"
-
-    # Resolver bônus de atributos da espécie
+    # Inicializar variáveis para evitar UnboundLocalError ao navegar
+    char_name = ""
+    alignment = "True Neutral"
+    selected_species_name = ""
+    species_variant = ""
+    is_variant = False
+    full_species_name = ""
     ability_bonuses = {"str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0}
-    def apply_ab(entry):
-        if not entry or not entry.get("ability"):
-            return
-        for ab in entry.get("ability", []):
-            if isinstance(ab, dict):
-                for k, v in ab.items():
-                    if k in ability_bonuses and isinstance(v, int):
-                        ability_bonuses[k] += v
-
-    apply_ab(base_race_entry)
-    if is_variant:
-        apply_ab(selected_sub_entry)
-
-    # 4. Escolher Classe e Nível
-    print_header("SELEÇÃO DE CLASSE")
-    class_index = load_class_index()
-    if not class_index:
-        print("ERRO: Não foi possível carregar o index de classes.", file=sys.stderr)
-        sys.exit(1)
-
-    classes_available = sorted(list(class_index.keys()))
-    selected_class_name = ask_choice("Selecione a Classe principal:", [c.title() for c in classes_available])
-    class_filename = class_index[selected_class_name.lower()]
-    class_data = load_class_data(class_filename)
-
-    level = ask_int("Nível do personagem", 1)
-    if level < 1:
-        level = 1
+    selected_class_name = ""
+    level = 1
+    prof_bonus = 2
     subclass = ""
     subclass_short = ""
-    if "subclass" in class_data:
-        subclass_options = ["Nenhuma"] + sorted(list(set(sc.get("name") for sc in class_data["subclass"] if sc.get("name"))))
-        selected_subclass = ask_choice("Selecione a Subclasse (se houver):", subclass_options)
-        if selected_subclass != "Nenhuma":
-            subclass = selected_subclass
-            matching_scs = [sc for sc in class_data["subclass"] if sc.get("name") == selected_subclass]
-            matching_scs.sort(key=get_source_priority)
-            subclass_short = matching_scs[0].get("shortName", selected_subclass)
-
-    # 4.1 Selecionar talentos conforme o nível
-    selected_feats = select_feats_for_level(level)
-    if selected_feats:
-        print(f"  Talentos escolhidos: {', '.join(selected_feats)}")
-        print("  ⚠ Verifique no passo de atributos os possíveis aumentos concedidos pelos talentos escolhidos.")
-
-    # Obter dados de vida (Hit Dice)
-    classes_list = class_data.get("class", [])
-    classes_list.sort(key=get_source_priority)
-    class_entry = classes_list[0] if classes_list else {}
-    hd_info = class_entry.get("hd", {"number": 1, "faces": 8})
-    hd_faces = hd_info.get("faces", 8)
-    hd_str = f"d{hd_faces}"
-
-    # 5. Coletar Background e Pacote Inicial
-    print_header("BACKGROUND E EQUIPAMENTO INICIAL")
-    bg_data = dnd_utils.load_background_data()
-    item_data = dnd_utils.load_item_data()
-    
-    backgrounds = []
-    if bg_data:
-        backgrounds = sorted([b.get("name") for b in bg_data.get("background", []) if b.get("source") == "XPHB"])
-    
-    selected_bg = ""
+    selected_feats = []
+    hd_str = "d8"
+    bg_name = ""
     bg_items = []
     bg_gold = 0
-    if backgrounds:
-        selected_bg = ask_choice("Selecione o seu Antecedente (Background):", backgrounds)
-        bg_items, bg_gold = dnd_utils.extract_background_equipment(selected_bg, bg_data)
-        print(f"  [Equipamento] Itens recebidos do background: {', '.join([i['name'] for i in bg_items])} (+{bg_gold} GP)")
-    else:
-        print("  [Aviso] Dados de backgrounds não encontrados.")
-
-    pack_options = [
-        "Nenhum",
-        "Burglar's Pack",
-        "Diplomat's Pack",
-        "Dungeoneer's Pack",
-        "Entertainer's Pack",
-        "Explorer's Pack",
-        "Priest's Pack",
-        "Scholar's Pack"
-    ]
-    selected_pack = ask_choice("Selecione o seu Pacote Inicial (geralmente concedido pela sua Classe):", pack_options)
+    selected_pack = "Nenhum"
     pack_items = []
-    if selected_pack != "Nenhum" and item_data:
-        pack_items = dnd_utils.extract_pack_items(selected_pack, item_data)
-        print(f"  [Equipamento] Itens do {selected_pack} descompactados e adicionados ao inventário.")
+    base_stats = {s: 10 for s in STAT_NAMES}
+    final_stats = {s: 10 for s in STAT_NAMES}
+    mods = {s: 0 for s in STAT_NAMES}
+    proficient_skills = set()
+    extra_items = []
+    extra_spells = []
+    class_spells_field_data = []
+    class_entry = {}
+    base_race_entry = {}
+    selected_sub_entry = {}
+    class_data = {}
+    compendium_refs = []
+    equipment_data = []
+    spells_field_data = []
+    spell_slots_val = {}
+    hd_faces = 8
+    feature_actions = []
 
-    # 6. Coletar Atributos
-    print_header("ATRIBUTOS BASE (Standard Array / Point Buy / Rolado)")
-    print("Digite seus atributos base (antes dos aumentos).")
-    
-    base_stats = {}
-    for s in STAT_NAMES:
-        base_stats[s] = ask_int(f"  {STAT_LABELS[s]}", 10)
+    step = 1
+    while step <= 10:
+        try:
+            if step == 1:
+                # 1. Selecionar campanha
+                if not args.campaign:
+                    campaigns_dir = "content/campaigns"
+                    if os.path.isdir(campaigns_dir):
+                        campaigns = sorted([d for d in os.listdir(campaigns_dir) if os.path.isdir(os.path.join(campaigns_dir, d))])
+                        if campaigns:
+                            args.campaign = ask_choice("Selecione a campanha:", campaigns)
+                        else:
+                            args.campaign = ask("Slug da campanha", "cidadela-radiante")
+                    else:
+                        args.campaign = ask("Slug da campanha", "cidadela-radiante")
 
-    # Inicializa final_stats com base_stats
-    final_stats = {s: base_stats[s] for s in STAT_NAMES}
+                print(f"\n📋 Campanha de destino: {args.campaign}")
 
-    # Mostrar aumentos padrão calculados da espécie
-    print(f"\nAumentos padrão calculados da espécie {full_species_name}:")
-    has_defaults = False
-    for s in STAT_NAMES:
-        if ability_bonuses[s] > 0:
-            print(f"  {STAT_LABELS[s]}: +{ability_bonuses[s]}")
-            has_defaults = True
-        elif ability_bonuses[s] < 0:
-            print(f"  {STAT_LABELS[s]}: {ability_bonuses[s]}")
-            has_defaults = True
-            
-    if not has_defaults:
-        print("  Nenhum (aumentos customizáveis ou de background)")
+                # 2. Coletar Nome
+                print_header("NOME DO PERSONAGEM")
+                char_name = ask("Nome do personagem")
+                while not char_name:
+                    print("  ⚠ Nome é obrigatório.")
+                    char_name = ask("Nome do personagem")
 
-    # Sempre oferecer as opções de aplicação de bônus
-    bonus_rule = ask_choice(
-        "Como deseja aplicar os aumentos de atributos?",
-        [
-            "Usar padrão da espécie (se houver)",
-            "Definir aumentos customizados de Background (+2 / +1)",
-            "Definir aumentos customizados de Background (+1 / +1 / +1)",
-            "Não aplicar aumentos (manter atributos base secos)"
-        ]
+                alignment = ask("Alinhamento (ex: Neutral Good)", "True Neutral")
+                step = 2
+
+            elif step == 2:
+                # 3. Escolher Espécie
+                print_header("SELEÇÃO DE ESPÉCIE")
+                sp_data = load_species_data()
+                if not sp_data:
+                    print("ERRO: Não foi possível carregar as espécies do 5e.tools.", file=sys.stderr)
+                    sys.exit(1)
+
+                base_species = sorted(list(set(
+                    r.get("name") for r in sp_data.get("race", [])
+                    if "name" in r and not r.get("_copy")
+                )))
+                selected_species_name = ask_choice("Selecione a Espécie Base:", base_species)
+
+                SOURCE_PRIORITY = ["PHB", "XPHB", "MPMM", "VGM", "ERLW", "GGR", "DMG"]
+                matching_races = [r for r in sp_data.get("race", []) if r.get("name") == selected_species_name]
+                def get_source_priority(entry):
+                    src = entry.get("source", "")
+                    if src in SOURCE_PRIORITY:
+                        return SOURCE_PRIORITY.index(src)
+                    return 999
+                matching_races.sort(key=get_source_priority)
+                base_race_entry = matching_races[0] if matching_races else None
+
+                subspecies_options = []
+                subspecies_options.append(("Espécie Base", base_race_entry))
+
+                for s in sp_data.get("subrace", []):
+                    if s.get("raceName") == selected_species_name:
+                        subspecies_options.append((f"Variante: {s.get('name')}", s))
+
+                selected_subspecies_label, selected_sub_entry = ask_choice(
+                    f"Selecione uma Variante/Subespécie para {selected_species_name}:",
+                    subspecies_options
+                )
+
+                is_variant = selected_subspecies_label != "Espécie Base"
+                species_variant = selected_sub_entry.get('name', '') if is_variant else ""
+                full_species_name = selected_species_name
+                if is_variant:
+                    full_species_name = f"{selected_species_name} ({species_variant})"
+
+                ability_bonuses = {"str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0}
+                def apply_ab(entry):
+                    if not entry or not entry.get("ability"):
+                        return
+                    for ab in entry.get("ability", []):
+                        if isinstance(ab, dict):
+                            for k, v in ab.items():
+                                if k in ability_bonuses and isinstance(v, int):
+                                    ability_bonuses[k] += v
+
+                apply_ab(base_race_entry)
+                if is_variant:
+                    apply_ab(selected_sub_entry)
+                step = 3
+
+            elif step == 3:
+                # 4. Escolher Classe e Nível
+                print_header("SELEÇÃO DE CLASSE")
+                class_index = load_class_index()
+                if not class_index:
+                    print("ERRO: Não foi possível carregar o index de classes.", file=sys.stderr)
+                    sys.exit(1)
+
+                classes_available = sorted(list(class_index.keys()))
+                selected_class_name = ask_choice("Selecione a Classe principal:", [c.title() for c in classes_available])
+                class_filename = class_index[selected_class_name.lower()]
+                class_data = load_class_data(class_filename)
+
+                level = ask_int("Nível do personagem", 1)
+                if level < 1:
+                    level = 1
+                prof_bonus = (level - 1) // 4 + 2
+                subclass = ""
+                subclass_short = ""
+
+                # Source priority function for subclass sorting
+                SOURCE_PRIORITY = ["PHB", "XPHB", "MPMM", "VGM", "ERLW", "GGR", "DMG"]
+                def get_source_priority(entry):
+                    src = entry.get("source", "")
+                    if src in SOURCE_PRIORITY:
+                        return SOURCE_PRIORITY.index(src)
+                    return 999
+
+                if "subclass" in class_data:
+                    subclass_options = ["Nenhuma"] + sorted(list(set(sc.get("name") for sc in class_data["subclass"] if sc.get("name"))))
+                    selected_subclass = ask_choice("Selecione a Subclasse (se houver):", subclass_options)
+                    if selected_subclass != "Nenhuma":
+                        subclass = selected_subclass
+                        matching_scs = [sc for sc in class_data["subclass"] if sc.get("name") == selected_subclass]
+                        matching_scs.sort(key=get_source_priority)
+                        subclass_short = matching_scs[0].get("shortName", selected_subclass)
+                step = 4
+
+            elif step == 4:
+                # 4.1 Selecionar talentos conforme o nível
+                selected_feats = select_feats_for_level(level)
+                if selected_feats:
+                    print(f"  Talentos escolhidos: {', '.join(selected_feats)}")
+                    print("  ⚠ Verifique no passo de atributos os possíveis aumentos concedidos pelos talentos escolhidos.")
+
+                classes_list = class_data.get("class", [])
+                classes_list.sort(key=get_source_priority)
+                class_entry = classes_list[0] if classes_list else {}
+                hd_info = class_entry.get("hd", {"number": 1, "faces": 8})
+                hd_faces = hd_info.get("faces", 8)
+                hd_str = f"d{hd_faces}"
+                step = 5
+
+            elif step == 5:
+                # 5. Coletar Background e Pacote Inicial
+                print_header("BACKGROUND E EQUIPAMENTO INICIAL")
+                bg_data = dnd_utils.load_background_data()
+                item_data = dnd_utils.load_item_data()
+
+                backgrounds = []
+                if bg_data:
+                    backgrounds = sorted([b.get("name") for b in bg_data.get("background", []) if b.get("source") == "XPHB"])
+
+                selected_bg = ""
+                bg_items = []
+                bg_gold = 0
+                if backgrounds:
+                    selected_bg = ask_choice("Selecione o seu Antecedente (Background):", backgrounds)
+                    bg_items, bg_gold = dnd_utils.extract_background_equipment(selected_bg, bg_data)
+                    print(f"  [Equipamento] Itens recebidos do background: {', '.join([i['name'] for i in bg_items])} (+{bg_gold} GP)")
+                else:
+                    print("  [Aviso] Dados de backgrounds não encontrados.")
+
+                pack_options = [
+                    "Nenhum",
+                    "Burglar's Pack",
+                    "Diplomat's Pack",
+                    "Dungeoneer's Pack",
+                    "Entertainer's Pack",
+                    "Explorer's Pack",
+                    "Priest's Pack",
+                    "Scholar's Pack"
+                ]
+                selected_pack = ask_choice("Selecione o seu Pacote Inicial (geralmente concedido pela sua Classe):", pack_options)
+                pack_items = []
+                if selected_pack != "Nenhum" and item_data:
+                    pack_items = dnd_utils.extract_pack_items(selected_pack, item_data)
+                    print(f"  [Equipamento] Itens do {selected_pack} descompactados e adicionados ao inventário.")
+                step = 6
+
+            elif step == 6:
+                # 6. Coletar Atributos
+                print_header("ATRIBUTOS BASE (Standard Array / Point Buy / Rolado)")
+                print("Digite seus atributos base (antes dos aumentos).")
+
+                base_stats = {}
+                for s in STAT_NAMES:
+                    base_stats[s] = ask_int(f"  {STAT_LABELS[s]}", 10)
+
+                final_stats = {s: base_stats[s] for s in STAT_NAMES}
+
+                print(f"\nAumentos padrão calculados da espécie {full_species_name}:")
+                has_defaults = False
+                for s in STAT_NAMES:
+                    if ability_bonuses[s] > 0:
+                        print(f"  {STAT_LABELS[s]}: +{ability_bonuses[s]}")
+                        has_defaults = True
+                    elif ability_bonuses[s] < 0:
+                        print(f"  {STAT_LABELS[s]}: {ability_bonuses[s]}")
+                        has_defaults = True
+
+                if not has_defaults:
+                    print("  Nenhum (aumentos customizáveis ou de background)")
+
+                bonus_rule = ask_choice(
+                    "Como deseja aplicar os aumentos de atributos?",
+                    [
+                        "Usar padrão da espécie (se houver)",
+                        "Definir aumentos customizados de Background (+2 / +1)",
+                        "Definir aumentos customizados de Background (+1 / +1 / +1)",
+                        "Não aplicar aumentos (manter atributos base secos)"
+                    ]
+                )
+
+                if bonus_rule == "Usar padrão da espécie (se houver)":
+                    for s in STAT_NAMES:
+                        final_stats[s] += ability_bonuses[s]
+
+                elif bonus_rule == "Definir aumentos customizados de Background (+2 / +1)":
+                    custom_stat_plus2 = ask_choice("Selecione o atributo para receber +2:", [STAT_LABELS[s] for s in STAT_NAMES])
+                    custom_stat_plus1 = ask_choice("Selecione o atributo para receber +1 (deve ser diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_plus2])
+
+                    for k, label in STAT_LABELS.items():
+                        if label == custom_stat_plus2:
+                            final_stats[k] += 2
+                        elif label == custom_stat_plus1:
+                            final_stats[k] += 1
+
+                elif bonus_rule == "Definir aumentos customizados de Background (+1 / +1 / +1)":
+                    custom_stat_1 = ask_choice("Selecione o 1º atributo para receber +1:", [STAT_LABELS[s] for s in STAT_NAMES])
+                    custom_stat_2 = ask_choice("Selecione o 2º atributo para receber +1 (diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_1])
+                    custom_stat_3 = ask_choice("Selecione o 3º atributo para receber +1 (diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] not in (custom_stat_1, custom_stat_2)])
+
+                    for k, label in STAT_LABELS.items():
+                        if label in (custom_stat_1, custom_stat_2, custom_stat_3):
+                            final_stats[k] += 1
+
+                mods = {s: get_modifier(final_stats[s]) for s in STAT_NAMES}
+                step = 7
+
+            elif step == 7:
+                # 6. Coletar Perícias (Skills) e Especializações (Expertise)
+                print_header("PROFICIÊNCIAS EM PERÍCIAS (SKILLS)")
+
+                auto_skills = set()
+                def extract_skills(entry):
+                    if not entry:
+                        return
+                    for p in entry.get("skillProficiencies", []):
+                        for k, v in p.items():
+                            if isinstance(v, bool) and v:
+                                auto_skills.add(k.lower().replace(" ", "-"))
+                            elif k.lower() == "choose":
+                                pass
+                extract_skills(base_race_entry)
+                if is_variant:
+                    extract_skills(selected_sub_entry)
+
+                if auto_skills:
+                    print(f"  Perícias automáticas da espécie: {', '.join(s.title() for s in auto_skills)}")
+
+                class_skills_list = []
+                choose_count = 2
+
+                starting_prof = class_entry.get("startingProficiencies", {})
+                skills_prof = starting_prof.get("skills", [])
+                if skills_prof:
+                    choose_info = skills_prof[0].get("choose", {})
+                    choose_count = choose_info.get("count", 2)
+                    class_skills_raw = choose_info.get("from", [])
+                    for s_raw in class_skills_raw:
+                        clean_s = s_raw.split("|")[0].strip().lower().replace(" ", "-")
+                        if clean_s in SKILL_MAP:
+                            class_skills_list.append(clean_s)
+
+                if not class_skills_list:
+                    class_skills_list = sorted(list(SKILL_MAP.keys()))
+
+                class_skills_filtered = [s for s in class_skills_list if s not in auto_skills]
+                if not class_skills_filtered:
+                    class_skills_filtered = sorted([s for s in SKILL_MAP.keys() if s not in auto_skills])
+
+                print(f"  Sua classe {selected_class_name} permite escolher {choose_count} perícias:")
+                selected_skills = set()
+
+                actual_choose_count = min(choose_count, len(class_skills_filtered))
+
+                if actual_choose_count > 0:
+                    for i, sk in enumerate(class_skills_filtered, 1):
+                        print(f"    {i}. {sk.replace('-', ' ').title()}")
+
+                    while len(selected_skills) < actual_choose_count:
+                        prompt_msg = f"Escolha até {actual_choose_count} perícias (ex: 1,3)"
+                        raw_sel = ask(prompt_msg, "1")
+                        try:
+                            indices = [int(x.strip()) for x in raw_sel.split(",") if x.strip()]
+                            valid_indices = [idx for idx in indices if 1 <= idx <= len(class_skills_filtered)]
+                            for idx in valid_indices:
+                                selected_skills.add(class_skills_filtered[idx - 1])
+                                if len(selected_skills) >= actual_choose_count:
+                                    break
+                        except ValueError:
+                            print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
+
+                if selected_skills:
+                    print(f"  Perícias escolhidas: {', '.join(s.title() for s in selected_skills)}")
+
+                extra_skills = set()
+                extra_count = ask_int("Quantas perícias adicionais você ganha por outras fontes (Background, Talentos, etc.)?", 2)
+                if extra_count > 0:
+                    current_proficient = auto_skills.union(selected_skills)
+                    remaining_skills = sorted([s for s in SKILL_MAP.keys() if s not in current_proficient])
+                    actual_extra_count = min(extra_count, len(remaining_skills))
+
+                    if actual_extra_count > 0:
+                        print(f"\n  Escolha mais {actual_extra_count} perícias adicionais da lista geral:")
+                        for i, sk in enumerate(remaining_skills, 1):
+                            print(f"    {i}. {sk.replace('-', ' ').title()}")
+
+                        while len(extra_skills) < actual_extra_count:
+                            prompt_msg = f"Escolha até {actual_extra_count} perícias (ex: 1,2)"
+                            raw_sel = ask(prompt_msg, "1")
+                            try:
+                                indices = [int(x.strip()) for x in raw_sel.split(",") if x.strip()]
+                                valid_indices = [idx for idx in indices if 1 <= idx <= len(remaining_skills)]
+                                for idx in valid_indices:
+                                    extra_skills.add(remaining_skills[idx - 1])
+                                    if len(extra_skills) >= actual_extra_count:
+                                        break
+                            except ValueError:
+                                print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
+
+                proficient_skills = auto_skills.union(selected_skills).union(extra_skills)
+                step = 8
+
+            elif step == 8:
+                # 8. Extra Equipment Choice
+                print_header("EQUIPAMENTOS ADICIONAIS / EXTRAS")
+                extra_items = []
+                while True:
+                    query = ask("Digite o nome de um equipamento extra (ou deixe em branco para finalizar)")
+                    if not query.strip():
+                        break
+
+                    matches = dnd_utils.search_item_by_name(query.strip())
+                    if not matches:
+                        print("  [Aviso] Nenhum item encontrado.")
+                        continue
+
+                    if len(matches) == 1:
+                        selected_item = matches[0]
+                        print(f"  Item encontrado: {selected_item}")
+                    else:
+                        selected_item = ask_choice("Múltiplos itens encontrados. Qual deseja?", matches)
+
+                    qty = ask_int(f"Quantidade de {selected_item}", 1)
+                    extra_items.append({"name": selected_item, "quantity": qty})
+                    print(f"  {qty}x {selected_item} adicionado(s) à lista.")
+                step = 9
+
+            elif step == 9:
+                # 9. Spells Choice
+                print_header("MAGIAS EXTRAS / CONHECIDAS")
+                extra_spells = []
+                spell_data = None
+
+                prepared_caster_classes = {"cleric", "paladin", "druid", "artificer", "clérigo", "paladino", "druida", "artífice"}
+                is_prepared_caster = selected_class_name.lower() in prepared_caster_classes
+
+                class_spells_field_data = []
+                if is_prepared_caster:
+                    print(f"  [Classe Conjuradora Preparada] Baixando automaticamente todas as magias de {selected_class_name}...")
+                    class_spell_refs = dnd_utils.import_all_class_spells(selected_class_name)
+                    class_spells_field_data = class_spell_refs
+
+                while True:
+                    query = ask("Deseja adicionar uma magia conhecida/preparada? (Deixe em branco para pular/finalizar)")
+                    if not query.strip():
+                        break
+
+                    if not spell_data:
+                        spell_data = dnd_utils.load_spell_data()
+
+                    matches = dnd_utils.search_spell_by_name(query.strip(), spell_data)
+                    if not matches:
+                        print("  [Aviso] Nenhuma magia encontrada com esse nome.")
+                        continue
+
+                    if len(matches) == 1:
+                        selected_spell = matches[0]
+                        print(f"  Magia encontrada: {selected_spell}")
+                    else:
+                        selected_spell = ask_choice("Múltiplas magias encontradas. Qual deseja?", matches)
+
+                    spell_lvl = 0
+                    for s in spell_data.get("spell", []):
+                        if s.get("name") == selected_spell:
+                            spell_lvl = s.get("level", 0)
+                            break
+
+                    extra_spells.append({"name": selected_spell, "level": spell_lvl})
+                    print(f"  {selected_spell} adicionada.")
+                step = 10
+
+            elif step == 10:
+                # Break to final computations
+                break
+
+        except GoBackException:
+            if step > 1:
+                step -= 1
+                if step == 7:
+                    step = 6
+                print(f"\n↩ Voltando para o Passo {step}...")
+            else:
+                print("\n⚠ Operação cancelada.")
+                return
+
+    # Non-interactive Calculations & File Saving
+    skills_data = calculate_skills_data(proficient_skills, mods, prof_bonus)
+    saves, class_saves, saves_summary = calculate_saves_data(
+        class_entry, mods, prof_bonus
     )
 
-    if bonus_rule == "Usar padrão da espécie (se houver)":
-        for s in STAT_NAMES:
-            final_stats[s] += ability_bonuses[s]
-            
-    elif bonus_rule == "Definir aumentos customizados de Background (+2 / +1)":
-        custom_stat_plus2 = ask_choice("Selecione o atributo para receber +2:", [STAT_LABELS[s] for s in STAT_NAMES])
-        custom_stat_plus1 = ask_choice("Selecione o atributo para receber +1 (deve ser diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_plus2])
-        
-        for k, label in STAT_LABELS.items():
-            if label == custom_stat_plus2:
-                final_stats[k] += 2
-            elif label == custom_stat_plus1:
-                final_stats[k] += 1
-                
-    elif bonus_rule == "Definir aumentos customizados de Background (+1 / +1 / +1)":
-        custom_stat_1 = ask_choice("Selecione o 1º atributo para receber +1:", [STAT_LABELS[s] for s in STAT_NAMES])
-        custom_stat_2 = ask_choice("Selecione o 2º atributo para receber +1 (diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] != custom_stat_1])
-        custom_stat_3 = ask_choice("Selecione o 3º atributo para receber +1 (diferente):", [STAT_LABELS[s] for s in STAT_NAMES if STAT_LABELS[s] not in (custom_stat_1, custom_stat_2)])
-        
-        for k, label in STAT_LABELS.items():
-            if label in (custom_stat_1, custom_stat_2, custom_stat_3):
-                final_stats[k] += 1
+    # HP calculation
+    max_hp = hd_faces + mods["con"]
+    if level > 1:
+        avg_hd = int(hd_faces / 2) + 1
+        max_hp += (level - 1) * (avg_hd + mods["con"])
 
-    # Calcular modificadores finais
-    mods = {s: get_modifier(final_stats[s]) for s in STAT_NAMES}
-
-    # 6. Coletar Perícias (Skills) e Especializações (Expertise)
-    print_header("PROFICIÊNCIAS EM PERÍCIAS (SKILLS)")
-    
-    # 6.1 Identificar perícias automáticas da espécie
-    auto_skills = set()
-    def extract_skills(entry):
-        if not entry:
-            return
-        for p in entry.get("skillProficiencies", []):
-            for k, v in p.items():
-                if isinstance(v, bool) and v:
-                    auto_skills.add(k.lower().replace(" ", "-"))
-                elif k.lower() == "choose":
-                    pass
-    extract_skills(base_race_entry)
-    if is_variant:
-        extract_skills(selected_sub_entry)
-
-    if auto_skills:
-        print(f"  Perícias automáticas da espécie: {', '.join(s.title() for s in auto_skills)}")
-
-    # 6.2 Perícias de Classe
-    class_skills_list = []
-    choose_count = 2
-    
-    starting_prof = class_entry.get("startingProficiencies", {})
-    skills_prof = starting_prof.get("skills", [])
-    if skills_prof:
-        choose_info = skills_prof[0].get("choose", {})
-        choose_count = choose_info.get("count", 2)
-        class_skills_raw = choose_info.get("from", [])
-        for s_raw in class_skills_raw:
-            clean_s = s_raw.split("|")[0].strip().lower().replace(" ", "-")
-            if clean_s in SKILL_MAP:
-                class_skills_list.append(clean_s)
-                
-    if not class_skills_list:
-        class_skills_list = sorted(list(SKILL_MAP.keys()))
-
-    class_skills_filtered = [s for s in class_skills_list if s not in auto_skills]
-    if not class_skills_filtered:
-        class_skills_filtered = sorted([s for s in SKILL_MAP.keys() if s not in auto_skills])
-
-    print(f"  Sua classe {selected_class_name} permite escolher {choose_count} perícias:")
-    selected_skills = set()
-    
-    actual_choose_count = min(choose_count, len(class_skills_filtered))
-    
-    if actual_choose_count > 0:
-        for i, sk in enumerate(class_skills_filtered, 1):
-            print(f"    {i}. {sk.replace('-', ' ').title()}")
-            
-        while len(selected_skills) < actual_choose_count:
-            prompt_msg = f"Escolha até {actual_choose_count} perícias (ex: 1,3)"
-            raw_sel = ask(prompt_msg, "1")
-            try:
-                indices = [int(x.strip()) for x in raw_sel.split(",") if x.strip()]
-                valid_indices = [idx for idx in indices if 1 <= idx <= len(class_skills_filtered)]
-                for idx in valid_indices:
-                    selected_skills.add(class_skills_filtered[idx - 1])
-                    if len(selected_skills) >= actual_choose_count:
-                        break
-            except ValueError:
-                print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
-    
-    if selected_skills:
-        print(f"  Perícias escolhidas: {', '.join(s.title() for s in selected_skills)}")
-
-    # 6.2.5 Perícias extras (Background, etc.)
-    extra_skills = set()
-    extra_count = ask_int("Quantas perícias adicionais você ganha por outras fontes (Background, Talentos, etc.)?", 2)
-    if extra_count > 0:
-        current_proficient = auto_skills.union(selected_skills)
-        remaining_skills = sorted([s for s in SKILL_MAP.keys() if s not in current_proficient])
-        actual_extra_count = min(extra_count, len(remaining_skills))
-        
-        if actual_extra_count > 0:
-            print(f"\n  Escolha mais {actual_extra_count} perícias adicionais da lista geral:")
-            for i, sk in enumerate(remaining_skills, 1):
-                print(f"    {i}. {sk.replace('-', ' ').title()}")
-                
-            while len(extra_skills) < actual_extra_count:
-                prompt_msg = f"Escolha até {actual_extra_count} perícias (ex: 1,2)"
-                raw_sel = ask(prompt_msg, "1")
-                try:
-                    indices = [int(x.strip()) for x in raw_sel.split(",") if x.strip()]
-                    valid_indices = [idx for idx in indices if 1 <= idx <= len(remaining_skills)]
-                    for idx in valid_indices:
-                        extra_skills.add(remaining_skills[idx - 1])
-                        if len(extra_skills) >= actual_extra_count:
-                            break
-                except ValueError:
-                    print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
-            print(f"  Perícias extras escolhidas: {', '.join(s.title() for s in extra_skills)}")
-
-    # 6.3 Especialização (Expertise)
-    expertise_count = 0
-    if selected_class_name.lower() == "rogue":
-        expertise_count = 2 if level < 6 else 4
-    elif selected_class_name.lower() == "bard":
-        if level >= 10:
-            expertise_count = 4
-        elif level >= 3:
-            expertise_count = 2
-
-    expertises_selected = set()
-    all_proficient = auto_skills.union(selected_skills).union(extra_skills)
-    
-    actual_exp_count = min(expertise_count, len(all_proficient))
-    
-    if actual_exp_count > 0 and all_proficient:
-        print_header("ESPECIALIZAÇÃO (EXPERTISE)")
-        proficient_list = sorted(list(all_proficient))
-        print(f"  Escolha até {actual_exp_count} perícias para especialização (bônus duplicado):")
-        for i, sk in enumerate(proficient_list, 1):
-            print(f"    {i}. {sk.replace('-', ' ').title()}")
-            
-        while len(expertises_selected) < actual_exp_count:
-            raw_exp = ask(f"Escolha até {actual_exp_count} perícias (ex: 1,2)", "1")
-            try:
-                indices = [int(x.strip()) for x in raw_exp.split(",") if x.strip()]
-                valid_indices = [idx for idx in indices if 1 <= idx <= len(proficient_list)]
-                for idx in valid_indices:
-                    expertises_selected.add(proficient_list[idx - 1])
-                    if len(expertises_selected) >= actual_exp_count:
-                        break
-            except ValueError:
-                print("    ⚠ Entrada inválida. Digite apenas números separados por vírgula.")
-                
-        print(f"  Especializações escolhidas: {', '.join(s.title() for s in expertises_selected)}")
-
-    # 6. Calcular HP e Valores Derivados
-    # HP Máximo: Dado máximo no nível 1 + Mod de CON, e a média nos níveis subsequentes
-    con_mod = mods["con"]
-    hd_average = (hd_faces // 2) + 1
-    max_hp = hd_faces + con_mod + (level - 1) * (hd_average + con_mod)
-    # Garante que HP seja pelo menos 1 por nível
-    if max_hp < level:
-        max_hp = level
-
-    # 6.5. Mapear e Extrair Características de Classe e Subclasse
+    # Features
     feature_actions = []
     class_features = []
     if "classFeature" in class_data:
@@ -852,24 +993,24 @@ def main():
             if f.get("className", "").lower() == selected_class_name.lower():
                 if f.get("level", 1) <= level:
                     class_features.append(f)
-                    
+
     subclass_features = []
     if subclass_short and "subclassFeature" in class_data:
         for f in class_data["subclassFeature"]:
             if f.get("subclassShortName", "").lower() == subclass_short.lower():
                 if f.get("level", 1) <= level:
                     subclass_features.append(f)
-                    
+
     all_features = deduplicate_features(class_features + subclass_features, get_source_priority)
-    
+
     for f in all_features:
         name = f.get("name")
         if not name:
             continue
-            
+
         entries = f.get("entries", [])
         desc = parse_entries(entries)
-        
+
         choices = prompt_choices_for_feature(name, level)
         if choices:
             for choice in choices:
@@ -885,7 +1026,7 @@ def main():
             try:
                 ref = create_rule_stub(name, entries)
                 roll_formula = extract_roll_formula(name, desc, level, mods)
-                
+
                 action_item = {
                     "name": name,
                     "ref": ref,
@@ -894,165 +1035,89 @@ def main():
                     "source": "class"
                 }
                 if roll_formula:
-                    action_item["roll_formula"] = roll_formula
-                    
+                    action_item["roll"] = roll_formula
+
                 feature_actions.append(action_item)
             except Exception as e:
-                print(f"  [AVISO] Erro ao processar '{name}': {e}. Usando fallback simples.")
-                ref = create_rule_stub(name, [f"Característica {name}."])
-                feature_actions.append({
-                    "name": name,
-                    "ref": ref,
-                    "max_uses": 0,
-                    "reset": "",
-                    "source": "class"
-                })
+                print(f"  [Aviso] Falha ao criar stub para característica '{name}': {e}")
 
-    # Velocidade e Sentidos derivados da espécie
+    # Standard calculations: walk speed, size, darkvision
     walk_speed = 30
-    darkvision_dist = 0
     size_val = "Medium"
+    darkvision_dist = 0
 
     if base_race_entry:
+        size_val = base_race_entry.get("size", ["M"])[0]
+        if size_val == "M":
+            size_val = "Medium"
+        elif size_val == "S":
+            size_val = "Small"
+
         spd_info = base_race_entry.get("speed", 30)
         if isinstance(spd_info, dict):
             walk_speed = spd_info.get("walk", 30)
-        elif isinstance(spd_info, (int, float)):
+        elif isinstance(spd_info, int):
             walk_speed = spd_info
-        
-        darkvision_dist = base_race_entry.get("darkvision", 0)
-        size_list = base_race_entry.get("size", ["M"])
-        size_val = "Medium" if "M" in size_list else "Small" if "S" in size_list else "Medium"
+
+        if "darkvision" in base_race_entry:
+            darkvision_dist = base_race_entry.get("darkvision", 0)
 
     if is_variant and selected_sub_entry:
-        if "speed" in selected_sub_entry:
-            spd_info = selected_sub_entry.get("speed", 30)
-            if isinstance(spd_info, dict):
-                walk_speed = spd_info.get("walk", 30)
-            elif isinstance(spd_info, (int, float)):
-                walk_speed = spd_info
+        size_val = selected_sub_entry.get("size", [size_val])[0]
+        if size_val == "M":
+            size_val = "Medium"
+        elif size_val == "S":
+            size_val = "Small"
+
+        spd_info = selected_sub_entry.get("speed", walk_speed)
+        if isinstance(spd_info, dict):
+            walk_speed = spd_info.get("walk", walk_speed)
+        elif isinstance(spd_info, int):
+            walk_speed = spd_info
         if "darkvision" in selected_sub_entry:
             darkvision_dist = selected_sub_entry.get("darkvision", darkvision_dist)
 
     walk_speed_m = f"{walk_speed * 0.3:.1f}m".replace(".0", "")
 
-    # 7. Sincronizar com o Compêndio
-    print_header("SINCRONIZANDO COMPÊNDIO")
+    # Sync compendium refs
     compendium_refs = []
-
-    # Sincroniza Espécie (kind: species)
     ref_species = fetch_from_5etools("species", selected_species_name)
     if ref_species:
         compendium_refs.append(ref_species)
 
-    # Sincroniza Variante/Subespécie se houver
     if is_variant:
         ref_sub = fetch_from_5etools("subclass" if "subclass" in selected_subspecies_label else "species", selected_sub_entry.get("name"))
         if ref_sub:
             compendium_refs.append(ref_sub)
 
-    # Sincroniza Classe
     ref_class = fetch_from_5etools("class", selected_class_name)
     if ref_class:
         compendium_refs.append(ref_class)
         ensure_compendium_class_overview(selected_class_name, class_data)
 
-    # Sincroniza talentos escolhidos
     for feat_name in selected_feats:
         ref_feat = fetch_from_5etools("feat", feat_name)
         if ref_feat:
             compendium_refs.append(ref_feat)
 
-    # Adicionar ações básicas
     for action_name, action_ref in STANDARD_ACTION_REFS.items():
         compendium_refs.append(action_ref)
         publish_compendium_page(action_ref)
 
-    # Adicionar referências das características de classe/subclasse
     for act in feature_actions:
         if act.get("ref"):
             compendium_refs.append(act["ref"])
 
-    # 8. Gerar Arquivo Final
-    print_header("GRAVANDO FICHA")
-    
-    slug = slugify(char_name)
-    file_path = f"content/campaigns/{args.campaign}/characters/{slug}.md"
-    prof_bonus = (level - 1) // 4 + 2
-
-    # Criar saves padrão da classe
-    class_saves = {s: False for s in STAT_NAMES}
-    prof_saves_from_class = class_entry.get("proficiency", [])
-    # Geralmente os saves da classe estão definidos como proficiencies de saving throws no 5e.tools
-    # Se não encontrado diretamente, vamos perguntar ao usuário
-    print("\nQuais saving throws são proficientes para sua classe?")
-    for s in STAT_NAMES:
-        class_saves[s] = ask(f"  Proficiente em Save de {STAT_LABELS[s]}? (s/N)").lower() in ("s", "sim", "y", "yes")
-
-    saves = {s: mods[s] + (prof_bonus if class_saves[s] else 0) for s in STAT_NAMES}
-    saves_summary_parts = []
-    for s in STAT_NAMES:
-        if class_saves[s]:
-            sign = "+" if saves[s] >= 0 else ""
-            saves_summary_parts.append(f"{s.capitalize()} {sign}{saves[s]}")
-    saves_summary = ", ".join(saves_summary_parts)
-
-    # Calcula bônus das skills com base em proficiências e expertise
-    skills_data = {}
-    for sk, stat_key in SKILL_MAP.items():
-        is_prof = sk in all_proficient
-        is_exp = sk in expertises_selected
-        
-        bonus = mods[stat_key]
-        if is_exp:
-            bonus += 2 * prof_bonus
-        elif is_prof:
-            bonus += prof_bonus
-            
-        skills_data[sk] = {
-            "bonus": bonus,
-            "proficient": is_prof,
-            "expertise": is_exp,
-            "stat": stat_key
-        }
-            
-    # 8.2 Equipamentos Extras (Busca)
-    print_header("EQUIPAMENTOS EXTRAS")
-    extra_items = []
-    while True:
-        query = ask("Deseja adicionar um item extra? (Deixe em branco para pular/finalizar)")
-        if not query.strip():
-            break
-        
-        matches = dnd_utils.search_item_by_name(query.strip(), item_data)
-        if not matches:
-            print("  [Aviso] Nenhum item encontrado com esse nome.")
-            continue
-            
-        if len(matches) == 1:
-            selected_item = matches[0]
-            print(f"  Item encontrado: {selected_item}")
-        else:
-            selected_item = ask_choice("Múltiplos itens encontrados. Qual deseja?", matches)
-            
-        qty = ask_int(f"Quantidade de {selected_item}", 1)
-        extra_items.append({"name": selected_item, "quantity": qty})
-        print(f"  {qty}x {selected_item} adicionado(s) à lista.")
-
-    # 8.3 Consolidação de Equipamentos (Background e Packs)
+    # Equipment consolidation
     equipment_data = []
     combined_items = bg_items + pack_items + extra_items
-    
     for item in combined_items:
-        # Tenta resolver o compêndio.
-        # Itens podem não existir ou precisarem de fallback. O fetch_from_5etools baixa.
         item_ref = dnd_utils.fetch_from_5etools("item", item["name"])
         if item_ref:
             compendium_refs.append(item_ref)
         else:
-            # Fallback seguro caso falhe
             item_ref = f"/compendium/items/{slugify(item['name'])}/"
-            
+
         equipment_data.append({
             "name": item["name"],
             "ref": item_ref,
@@ -1060,12 +1125,33 @@ def main():
             "equipped": False
         })
 
-    def dump_yaml_indented(data, indent):
-        if not data:
-            return " []"
-        lines = yaml.dump(data, allow_unicode=True, default_flow_style=False, sort_keys=False).strip().split('\n')
-        # fix the indentation
-        return "\n" + "\n".join(" " * indent + line for line in lines)
+    # Spells consolidation
+    spells_field_data = []
+    for sp in extra_spells:
+        spell_ref = dnd_utils.fetch_from_5etools("spell", sp["name"])
+        if spell_ref:
+            compendium_refs.append(spell_ref)
+        else:
+            spell_ref = f"/compendium/spells/{slugify(sp['name'])}/"
+
+        spells_field_data.append({
+            "name": sp["name"],
+            "level": sp["level"],
+            "ref": spell_ref,
+            "usage": "1 action"
+        })
+
+    if class_spells_field_data:
+        compendium_refs.extend(class_spells_field_data)
+
+    spell_slots_val = dnd_utils.calculate_spell_slots(selected_class_name, level)
+    spellcasting_profile = dnd_utils.infer_spellcasting_profile(
+        selected_class_name,
+        level,
+        spell_slots=spell_slots_val,
+        spells=spells_field_data,
+        class_spells=class_spells_field_data,
+    )
 
     passive_senses = {
         "perception": 10 + skills_data["perception"]["bonus"],
@@ -1076,7 +1162,6 @@ def main():
     if darkvision_dist > 0:
         senses_str += f", Darkvision {darkvision_dist} ft."
 
-    # Ações
     actions_data = []
     for action_name, action_ref in STANDARD_ACTION_REFS.items():
         actions_data.append({
@@ -1094,7 +1179,6 @@ def main():
     }]
 
     summary_str = f"{full_species_name} {selected_class_name} {level} criado manualmente guiado por dados."
-
     feats_field = f"feats:{dump_yaml_indented(selected_feats, 2)}" if selected_feats else "feats: []"
 
     markdown = f"""---
@@ -1133,6 +1217,7 @@ char_info:
   spell_dc: 0
   spell_attack_bonus: 0
   avatar: ""
+  spellcasting:{dump_yaml_indented(spellcasting_profile, 4)}
   speed:
     walk: {walk_speed}
     fly: 0
@@ -1183,7 +1268,9 @@ char_info:
   skills:{dump_yaml_indented(skills_data, 4)}
   actions:{dump_yaml_indented(actions_data, 4)}
   equipment:{dump_yaml_indented(equipment_data, 4)}
-  spells: []
+  spells:{dump_yaml_indented(spells_field_data, 4)}
+  spell_slots:{dump_yaml_indented(spell_slots_val, 4)}
+  class_spells:{dump_yaml_indented(class_spells_field_data, 4)}
   classes_progression:{dump_yaml_indented(classes_data, 4)}
 
 # Relacionamentos
@@ -1200,11 +1287,13 @@ Este personagem foi criado manualmente via script interativo guiado por dados do
 Ficha básica de V1. Use os comandos estendidos nas próximas fases para adicionar recursos adicionais.
 """
 
+    file_path = f"content/campaigns/{args.campaign}/characters/{slugify(char_name)}.md"
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(markdown)
 
     print(f"\n✅ Ficha de personagem V1 criada com sucesso em: {file_path}")
+
 
 if __name__ == "__main__":
     main()

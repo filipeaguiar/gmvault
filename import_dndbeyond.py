@@ -510,48 +510,12 @@ def main():
                 "usage": spells_usage_map[name]
             })
             
-        # Função para garantir a criação da regra no compêndio
-        def ensure_compendium_rule(name, description):
-            # Limpar indentações no início de cada linha que geram blocos de código em markdown
-            cleaned_lines = []
-            for line in description.split('\n'):
-                stripped = line.strip()
-                if stripped.startswith('•') or stripped.startswith('-') or stripped.startswith('*') or stripped.startswith('+') or stripped.startswith('o'):
-                    cleaned_lines.append(stripped)
-                else:
-                    cleaned_lines.append(line.lstrip(' \t'))
-            description = '\n'.join(cleaned_lines)
-            
-            slug = slugify(name)
-            ref_path = f"/compendium/rules/{slug}/"
-            dest_path = f"content/compendium/rules/{slug}.md"
-            
-            os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-            if os.path.exists(dest_path):
-                try:
-                    with open(dest_path, "r", encoding="utf-8") as f:
-                        existing = f.read()
-                    existing_body = existing.split("---", 2)[-1].strip() if existing.startswith("---") else existing.strip()
-                    if existing_body:
-                        print(f"  [Compêndio] Preservando nota existente: {dest_path}")
-                        return ref_path
-                except OSError:
-                    pass
-
-            markdown = f"""---
-title: "{name}"
-params:
-  kind: "rule"
-draft: true
-status: "draft"
-summary: "Habilidade de classe."
----
-
-{description}
-"""
-            with open(dest_path, "w", encoding="utf-8") as f:
-                f.write(markdown)
-            print(f"  [Compêndio] Habilidade de classe criada: {dest_path}")
+        # Regras reutilizáveis são resolvidas exclusivamente no 5e.tools. A
+        # descrição recebida do D&D Beyond é deliberadamente ignorada.
+        def ensure_compendium_rule(name, _description):
+            ref_path = fetch_from_5etools("rule", name)
+            if not ref_path:
+                print(f"  [Compêndio] Regra não encontrada no 5e.tools: {name}")
             return ref_path
 
         # 10. Coletar e criar opções customizadas de classe (Pactos e Invocações) no Compêndio
@@ -566,7 +530,8 @@ summary: "Habilidade de classe."
                         if opt_name and opt_snippet:
                             clean_snippet = clean_5etools_tags(opt_snippet.replace('<em>', '').replace('</em>', '').replace('<p>', '').replace('</p>', '\n').replace('<br>', '\n'))
                             ref = ensure_compendium_rule(opt_name, clean_snippet.strip())
-                            compendium_refs.append(ref)
+                            if ref:
+                                compendium_refs.append(ref)
             
         # 11. Coletar e criar habilidades de classe e subclasse a partir do 5e.tools no Compêndio
         feature_blacklist = [
@@ -643,7 +608,8 @@ summary: "Habilidade de classe."
                     continue
                     
                 ref = ensure_compendium_rule(name, description.strip())
-                compendium_refs.append(ref)
+                if ref:
+                    compendium_refs.append(ref)
 
             ensure_compendium_class_overview(class_name, class_data)
             if subclass_name:
@@ -774,10 +740,7 @@ summary: "Habilidade de classe."
                 reset_str = "Descanso Longo" if reset == 2 else "Descanso Curto" if reset == 1 else "Dia" if reset else ""
                 
                 clean_desc = clean_5etools_tags(act_desc.replace('<p>', '').replace('</p>', '\n').replace('<br>', '\n')).strip()
-                action_ref = f"/compendium/rules/{slugify(act_name)}/"
-                action_path = f"content{action_ref.rstrip('/')}.md"
-                if not os.path.exists(action_path) and clean_desc:
-                    action_ref = ensure_compendium_rule(act_name, clean_desc)
+                action_ref = ensure_compendium_rule(act_name, clean_desc) if clean_desc else None
 
                 action_entry = {
                     "name": act_name,
@@ -875,6 +838,17 @@ summary: "Habilidade de classe."
             primary_class_level = classes_data[0]["level"] if classes_data else 0
             primary_subclass_name = classes_data[0]["subclass"] if classes_data else ""
 
+        profile_level = primary_class_level if isinstance(primary_class_level, int) else total_level
+        spell_slots_val = dnd_utils.calculate_spell_slots(primary_class_name, profile_level)
+        spellcasting_profile = dnd_utils.infer_spellcasting_profile(
+            primary_class_name,
+            profile_level,
+            spell_slots=spell_slots_val,
+            spells=structured_spells,
+            class_spells=char.get('classSpells', []),
+            casting_ability=casting_stat_name if 'casting_stat_name' in locals() else None,
+        )
+
         # 10. Montar conteúdo Markdown
         slug = slugify(char_name)
         slug_map = {
@@ -929,6 +903,7 @@ char_info:
   spell_dc: {spell_dc}
   spell_attack_bonus: {spell_attack_bonus}
   avatar: "{avatar_url}"
+  spellcasting:{dump_yaml_indented(spellcasting_profile, 4)}
   speed:
     walk: {char_speeds['walk']}
     fly: {char_speeds['fly']}
@@ -980,6 +955,7 @@ char_info:
   actions:{dump_yaml_indented(actions_data, 4)}
   equipment:{dump_yaml_indented(equipment_list, 4)}
   spells:{dump_yaml_indented(structured_spells, 4)}
+  spell_slots:{dump_yaml_indented(spell_slots_val, 4)}
   classes_progression:{dump_yaml_indented(classes_data, 4)}
 
 # Relacionamentos

@@ -174,7 +174,7 @@
     </div>
 
     <!-- Tabs Navigation -->
-    {{ $hasSpells := and .Params.char_info.spells (gt (len .Params.char_info.spells) 0) }}
+    {{ $hasSpells := or (and .Params.char_info.spells (gt (len .Params.char_info.spells) 0)) (and .Params.char_info.class_spells (gt (len .Params.char_info.class_spells) 0)) }}
     <div class="char-tabs-nav">
       <button class="char-tab-btn active" onclick="openCharTab(event, 'tab-stats')" title="Atributos"><i class="ra ra-player" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-aware" style="font-size: 1.3em;"></i></button>
@@ -580,32 +580,176 @@
   <!-- TAB 5: Grimório (only if has spells) -->
   {{ if $hasSpells }}
   <div id="tab-grimoire" class="char-tab-content">
-    <h3>Grimório</h3>
-    {{ $spells := .Params.char_info.spells }}
-    {{ $levels := slice 0 1 2 3 4 5 6 7 8 9 }}
-    {{ $levelNames := dict "0" "Truques" "1" "1º Nível" "2" "2º Nível" "3" "3º Nível" "4" "4º Nível" "5" "5º Nível" "6" "6º Nível" "7" "7º Nível" "8" "8º Nível" "9" "9º Nível" }}
-    {{ range $lvl := $levels }}
-      {{ $filtered := slice }}
-      {{ range $spells }}
-        {{ if eq (.level | int) $lvl }}
-          {{ $filtered = $filtered | append . }}
-        {{ end }}
-      {{ end }}
-      {{ if gt (len $filtered) 0 }}
-        <h4 style="margin-top:30px; margin-bottom:15px; border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; color: var(--primary-color); font-size:1.4em;">{{ index $levelNames (string $lvl) }}</h4>
-        <div class="spell-cards">
-          {{ range $filtered }}
-          <div class="spell-card char-feature-card" style="border-left-color: var(--accent-color);">
-            <strong style="display:block; margin-bottom:8px; font-size:1.1em;">{{ .name }}</strong>
-            {{ if .usage }}<div style="font-size:0.85em; color:var(--text-muted);"><strong>Uso:</strong> {{ .usage }}</div>{{ end }}
-            {{ if .prepared }}<div style="font-size:0.85em; color:#27ae60; font-weight:bold; margin-top:4px;"><i class="ra ra-health"></i> Preparada</div>{{ end }}
-            <div style="font-size:0.9em; margin-top:10px; padding-top:10px; border-top:1px dashed var(--border-color); color:var(--text-color);">
-              {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name) }}
-            </div>
+    <div class="grimoire-intro" style="margin-bottom: 25px;">
+      <span class="section-kicker">Magias & Espaços de Conjurador</span>
+      <h3>Grimório de Conjurador</h3>
+    </div>
+
+    {{ $spells := .Params.char_info.spells | default slice }}
+    {{ $classSpells := .Params.char_info.class_spells | default slice }}
+    {{ $spellcasting := .Params.char_info.spellcasting | default dict }}
+    {{ $spellMode := index $spellcasting "kind" | default "" }}
+    {{ $spellPreparedCount := index $spellcasting "prepared_count" | default (len $spells) }}
+    {{ $spellPreparedLimit := index $spellcasting "prepared_limit" | default (len $spells) }}
+    {{ $spellKnownCount := index $spellcasting "known_count" | default (len $classSpells) }}
+    {{ $spellCantripsKnown := index $spellcasting "cantrips_known" | default 0 }}
+    {{ $spellSlotLabel := index $spellcasting "slot_label" | default "Espaços de Magia" }}
+    {{ $spellSlotSummary := index $spellcasting "slot_summary" | default "" }}
+    {{ $spellPreparedLabel := index $spellcasting "prepared_label" | default "Magias Preparadas" }}
+    {{ $spellKnownLabel := index $spellcasting "known_label" | default "Magias Conhecidas" }}
+    {{ $canPrepare := true }}
+    {{ with index $spellcasting "can_prepare" }}{{ $canPrepare = . }}{{ end }}
+
+    <!-- Tracker de Spell Slots (Espaços de Magia) -->
+    {{ if .Params.char_info.spell_slots }}
+    <div class="spell-slots-tracker" style="margin-bottom: 25px; padding: 15px; background: var(--bg-card); border-radius: 8px; border: 1px solid var(--border-color);">
+      <h4 style="margin-top: 0; margin-bottom: 10px; color: var(--primary-color);"><i class="ra ra-crystals"></i> Espaços de Magia (Spell Slots)</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+        {{ range $lvl, $slots := .Params.char_info.spell_slots }}
+          {{ if gt $slots 0 }}
+          <div class="slot-level-group" style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-weight: bold; font-size: 0.95em;">Nv {{ $lvl }}:</span>
+            {{ range seq $slots }}
+              <input type="checkbox" class="spell-slot-checkbox" style="width: 18px; height: 18px; cursor: pointer; margin: 0;">
+            {{ end }}
           </div>
           {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    <div class="spell-manager" data-spell-mode="{{ $spellMode }}">
+      <div class="spell-manager-counters">
+        <span class="spell-counter"><strong>{{ $spellPreparedCount }}</strong> / {{ $spellPreparedLimit }} {{ $spellPreparedLabel }}</span>
+        <span class="spell-counter"><strong>{{ $spellKnownCount }}</strong> {{ $spellKnownLabel }}</span>
+        <span class="spell-counter"><strong>{{ $spellCantripsKnown }}</strong> Truques</span>
+        <span class="spell-counter"><strong>{{ $spellSlotLabel }}</strong>: {{ if $spellSlotSummary }}{{ $spellSlotSummary }}{{ else }}—{{ end }}</span>
+      </div>
+      <div class="spell-manager-toolbar">
+        <input type="text" id="spell-search" placeholder="Buscar magias..." class="spell-search-input">
+        <div id="spell-level-filters" class="spell-level-filters" role="tablist" aria-label="Filtrar magias por nível">
+          <button type="button" class="spell-level-filter is-active" data-level-filter="all">Todas</button>
+          <button type="button" class="spell-level-filter" data-level-filter="0">Truques</button>
+          <button type="button" class="spell-level-filter" data-level-filter="1">1º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="2">2º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="3">3º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="4">4º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="5">5º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="6">6º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="7">7º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="8">8º</button>
+          <button type="button" class="spell-level-filter" data-level-filter="9">9º</button>
         </div>
-      {{ end }}
+      </div>
+
+    <!-- Seção de Magias Preparadas/Disponíveis -->
+    <div id="prepared-spells-container">
+      <h4 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; color: var(--primary-color); font-size:1.3em; margin-bottom: 15px;"><i class="ra ra-health"></i> Gerenciador de Magias</h4>
+      <p style="font-size:0.85em; color:var(--text-muted); margin-bottom: 15px;">Busque, filtre por nível e ajuste preparo/conhecimento quando o conjurador permitir.</p>
+      <div id="prepared-spells-list" class="spell-cards">
+        {{ if and $spells (gt (len $spells) 0) }}
+          {{ range $spells }}
+          {{ $spPage := site.GetPage .ref }}
+          <div class="spell-card char-feature-card prepared-spell-item" data-spell-ref="{{ .ref }}" data-spell-name="{{ .name }}" data-spell-level="{{ .level }}" style="border-left-color: var(--accent-color);">
+            <div class="spell-card-title-row">
+              <div class="spell-name-roll-row">
+                <strong class="spell-card-name">{{ .name }}</strong>
+                {{ if $spPage }}{{ partial "helpers/spell-rolls.html" (dict "page" $spPage "character" $) }}{{ end }}
+              </div>
+              <span class="prepared-spell-badge"><i class="ra ra-health"></i> {{ $spellPreparedLabel }}</span>
+            </div>
+            {{ if .usage }}<div style="font-size:0.85em; color:var(--text-muted); margin-bottom: 8px;"><strong>Uso:</strong> {{ .usage }}</div>{{ end }}
+
+            <details class="spell-details-accordion">
+              <summary style="font-size:0.85em; color:var(--primary-color); cursor:pointer;">Ver detalhes</summary>
+              <div style="font-size:0.9em; margin-top:10px; padding-top:10px; border-top:1px dashed var(--border-color); color:var(--text-color);">
+                {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name) }}
+              </div>
+            </details>
+          </div>
+          {{ end }}
+        {{ else }}
+          <p class="no-prepared-msg" style="color:var(--text-muted); font-style:italic;">Nenhuma magia preparada no momento.</p>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Lista Completa da Classe -->
+    {{ if and $classSpells (gt (len $classSpells) 0) }}
+    <div id="class-spells-container" style="margin-top: 40px; padding-top: 25px; border-top: 2px dashed var(--border-color);">
+      <h4 style="border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; color: var(--primary-color); font-size:1.3em; margin-bottom: 15px;"><i class="ra ra-health"></i> Gerenciador de Magias</h4>
+      <p style="font-size:0.85em; color:var(--text-muted); margin-bottom: 15px;">Busque, filtre por nível e ajuste preparo/conhecimento quando o conjurador permitir.</p>
+
+      <div id="class-spells-list">
+        {{ $levels := slice 0 1 2 3 4 5 6 7 8 9 }}
+        {{ $levelNames := dict "0" "Truques" "1" "1º Nível" "2" "2º Nível" "3" "3º Nível" "4" "4º Nível" "5" "5º Nível" "6" "6º Nível" "7" "7º Nível" "8" "8º Nível" "9" "9º Nível" }}
+
+        {{ range $lvl := $levels }}
+          {{ $filteredClassSpells := slice }}
+          {{ range $classSpells }}
+            {{ $spPage := site.GetPage . }}
+            {{ if $spPage }}
+              {{ $lvlStr := $spPage.Params.spell_info.level }}
+              {{ $spellLvl := -1 }}
+              {{ if eq $lvlStr "Cantrip" }}{{ $spellLvl = 0 }}
+              {{ else if hasPrefix $lvlStr "1" }}{{ $spellLvl = 1 }}
+              {{ else if hasPrefix $lvlStr "2" }}{{ $spellLvl = 2 }}
+              {{ else if hasPrefix $lvlStr "3" }}{{ $spellLvl = 3 }}
+              {{ else if hasPrefix $lvlStr "4" }}{{ $spellLvl = 4 }}
+              {{ else if hasPrefix $lvlStr "5" }}{{ $spellLvl = 5 }}
+              {{ else if hasPrefix $lvlStr "6" }}{{ $spellLvl = 6 }}
+              {{ else if hasPrefix $lvlStr "7" }}{{ $spellLvl = 7 }}
+              {{ else if hasPrefix $lvlStr "8" }}{{ $spellLvl = 8 }}
+              {{ else if hasPrefix $lvlStr "9" }}{{ $spellLvl = 9 }}
+              {{ end }}
+
+              {{ if eq $spellLvl $lvl }}
+                {{ $filteredClassSpells = $filteredClassSpells | append (dict "name" $spPage.Title "ref" . "level" $lvl "page" $spPage) }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+
+          {{ if gt (len $filteredClassSpells) 0 }}
+            <h5 style="margin-top:25px; margin-bottom:10px; border-bottom: 1px solid var(--border-color); padding-bottom: 3px; color: var(--primary-color); font-size:1.15em;">{{ index $levelNames (string $lvl) }}</h5>
+            <div class="spell-cards">
+              {{ range $filteredClassSpells }}
+              {{ $isAlreadyPrepared := false }}
+              {{ $currentRef := .ref }}
+              {{ range $spells }}
+                {{ if eq .ref $currentRef }}
+                  {{ $isAlreadyPrepared = true }}
+                {{ end }}
+              {{ end }}
+              <div class="spell-card char-feature-card class-spell-item" data-spell-name="{{ .name }}" data-spell-level="{{ .level }}" style="border-left-color: var(--border-color);">
+                <div class="spell-card-title-row">
+                  <div class="spell-name-roll-row">
+                    <strong class="spell-card-name">{{ .name }}</strong>
+                    {{ partial "helpers/spell-rolls.html" (dict "page" .page "character" $) }}
+                  </div>
+                  {{ if $canPrepare }}
+                  <label class="prepare-spell-label">
+                    <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ .ref }}" data-spell-name="{{ .name }}" {{ if $isAlreadyPrepared }}checked{{ end }}> Preparar
+                  </label>
+                  {{ else }}
+                  <span class="prepared-spell-badge known-spell-badge">{{ $spellKnownLabel }}</span>
+                  {{ end }}
+                </div>
+
+                <details class="spell-details-accordion">
+                  <summary style="font-size:0.85em; color:var(--primary-color); cursor:pointer;">Ver detalhes</summary>
+                  <div style="font-size:0.9em; margin-top:10px; padding-top:10px; border-top:1px dashed var(--border-color); color:var(--text-color);">
+                    {{ partial "helpers/compendium-content.html" (dict "ref" .ref "name" .name) }}
+                  </div>
+                </details>
+              </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    </div>
     {{ end }}
   </div>
   {{ end }}

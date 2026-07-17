@@ -1,0 +1,95 @@
+{{- $spellPage := .page -}}
+{{- $characterPage := .character | default false -}}
+{{- $spellInfo := $spellPage.Params.spell_info | default dict -}}
+{{- $charInfo := dict -}}
+{{- $hasCharacter := false -}}
+{{- with $characterPage -}}
+  {{- $charInfo = .Params.char_info | default dict -}}
+  {{- $hasCharacter = true -}}
+{{- end -}}
+{{- $controls := slice -}}
+{{- $spellLevel := $spellInfo.level_number | default 0 | int -}}
+{{- $spellUsable := not $hasCharacter -}}
+{{- if $hasCharacter -}}
+  {{- if eq $spellLevel 0 -}}
+    {{- $spellUsable = true -}}
+  {{- else -}}
+    {{- range $slotLevel, $slotCount := $charInfo.spell_slots -}}
+      {{- if and (gt ($slotCount | int) 0) (ge ($slotLevel | int) $spellLevel) -}}
+        {{- $spellUsable = true -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and $hasCharacter $spellUsable $spellInfo.attack_type -}}
+  {{- $attackBonus := $charInfo.spell_attack_bonus | default 0 | int -}}
+  {{- $attackNotation := printf "1d20%+d" $attackBonus -}}
+  {{- $controls = $controls | append (dict
+    "kind" "attack"
+    "notation" $attackNotation
+    "label" "Ataque mágico"
+    "display" (printf "%+d" $attackBonus)
+  ) -}}
+{{- end -}}
+
+{{- $kindLabels := dict "damage" "Dano" "healing" "Cura" "dice" "Dados" -}}
+{{- range $roll := $spellInfo.rolls -}}
+  {{- $kind := $roll.kind | default "dice" -}}
+  {{- $label := $roll.label | default (index $kindLabels $kind) | default "Dados" -}}
+  {{- $scaling := $roll.scaling | default dict -}}
+  {{- $mode := $scaling.mode | default "" -}}
+  {{- if and $hasCharacter (eq $mode "character_level") -}}
+    {{- $bestLevel := -1 -}}
+    {{- $bestNotation := "" -}}
+    {{- $characterLevel := $charInfo.level | default 1 | int -}}
+    {{- range $threshold, $notation := $scaling.thresholds -}}
+      {{- $thresholdLevel := $threshold | int -}}
+      {{- if and (le $thresholdLevel $characterLevel) (gt $thresholdLevel $bestLevel) -}}
+        {{- $bestLevel = $thresholdLevel -}}
+        {{- $bestNotation = $notation -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and $spellUsable $bestNotation -}}
+      {{- $controls = $controls | append (dict "kind" $kind "notation" $bestNotation "label" $label "display" $bestNotation) -}}
+    {{- end -}}
+  {{- else if and $hasCharacter (eq $mode "spell_slot") -}}
+    {{- range $slotLevel, $slotCount := $charInfo.spell_slots -}}
+      {{- $slot := $slotLevel | int -}}
+      {{- if and (gt ($slotCount | int) 0) (ge $slot $spellLevel) -}}
+        {{- $bestLevel := -1 -}}
+        {{- $bestNotation := "" -}}
+        {{- range $threshold, $notation := $scaling.thresholds -}}
+          {{- $thresholdLevel := $threshold | int -}}
+          {{- if and (le $thresholdLevel $slot) (gt $thresholdLevel $bestLevel) -}}
+            {{- $bestLevel = $thresholdLevel -}}
+            {{- $bestNotation = $notation -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if $bestNotation -}}
+          {{- $controls = $controls | append (dict
+            "kind" $kind
+            "notation" $bestNotation
+            "label" (printf "%s — slot %d" $label $slot)
+            "display" (printf "Nv%d %s" $slot $bestNotation)
+          ) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else if or (not $hasCharacter) $spellUsable -}}
+    {{- with $roll.notation -}}
+      {{- $controls = $controls | append (dict "kind" $kind "notation" . "label" $label "display" .) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if gt (len $controls) 0 -}}
+<span class="spell-inline-rolls" aria-label="Rolagens da magia">
+  {{- range $controls -}}
+    <span class="spell-inline-roll spell-roll-{{ .kind }}">
+      <small>{{ .label }}</small>
+      <strong class="roll-ready" data-roll-notation="{{ .notation }}" data-roll-label="{{ $spellPage.Title }} — {{ .label }}">{{ .display }}</strong>
+    </span>
+  {{- end -}}
+</span>
+{{- end -}}

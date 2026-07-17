@@ -95,7 +95,6 @@
   function _handleDiceReady(payload) {
     const wasReady = _diceReady;
     _diceReady = payload && payload.ready === true;
-
     if (_diceReady && !wasReady) {
       _enhanceRollValues();
     } else if (!_diceReady && wasReady) {

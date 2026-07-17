@@ -81,6 +81,124 @@ def choose_equipment() -> list[dict[str, object]]:
     return selected_items
 
 
+def choose_spells() -> list[dict[str, object]]:
+    """Busca e coleta magias a adicionar."""
+    selected_spells: list[dict[str, object]] = []
+    spell_data = dnd_utils.load_spell_data()
+    while True:
+        query = ask("Nome da magia a adicionar (vazio para finalizar)").strip()
+        if not query:
+            break
+        matches = dnd_utils.search_spell_by_name(query, spell_data)
+        if not matches:
+            print("Nenhuma magia encontrada com esse nome.")
+            continue
+        selected = matches[0] if len(matches) == 1 else ask_choice(
+            "Múltiplos resultados. Qual deseja adicionar?", matches
+        )
+
+        spell_lvl = 0
+        for spell in spell_data.get("spell", []):
+            if spell.get("name") == selected:
+                spell_lvl = spell.get("level", 0)
+                break
+
+        selected_spells.append({"name": selected, "level": spell_lvl})
+    return selected_spells
+
+
+def add_spells(
+    post: frontmatter.Post, selected_spells: list[dict[str, object]]
+) -> int:
+    """Adiciona magias, calcula slots e registra referências."""
+    char_info = post.get("char_info")
+    if not isinstance(char_info, dict):
+        char_info = {}
+        post["char_info"] = char_info
+
+    spells = char_info.get("spells")
+    if not isinstance(spells, list):
+        spells = []
+        char_info["spells"] = spells
+
+    references = post.get("compendium_refs")
+    if not isinstance(references, list):
+        references = []
+        post["compendium_refs"] = references
+
+    class_name = char_info.get("class", "")
+    level = int(char_info.get("level") or char_info.get("class_level") or 1)
+
+    # Calculate slots if not already present
+    if "spell_slots" not in char_info or not char_info["spell_slots"]:
+        slots = dnd_utils.calculate_spell_slots(class_name, level)
+        if slots:
+            char_info["spell_slots"] = slots
+
+    spellcasting_profile = char_info.get("spellcasting")
+    if not isinstance(spellcasting_profile, dict) or not spellcasting_profile:
+        class_spells = char_info.get("class_spells")
+        char_info["spellcasting"] = dnd_utils.infer_spellcasting_profile(
+            class_name,
+            level,
+            spell_slots=char_info.get("spell_slots") or {},
+            spells=spells,
+            class_spells=class_spells if isinstance(class_spells, list) else [],
+        )
+
+    # Auto import class list if prepared caster
+    prepared_caster_classes = {
+        "cleric",
+        "paladin",
+        "druid",
+        "artificer",
+        "clérigo",
+        "paladino",
+        "druida",
+        "artífice",
+    }
+    is_prepared_caster = class_name.lower() in prepared_caster_classes
+    if is_prepared_caster:
+        class_spells = char_info.get("class_spells")
+        if not isinstance(class_spells, list) or len(class_spells) == 0:
+            print(f"Baixando automaticamente todas as magias de {class_name}...")
+            class_spell_refs = dnd_utils.import_all_class_spells(class_name)
+            char_info["class_spells"] = class_spell_refs
+            for r in class_spell_refs:
+                if r not in references:
+                    references.append(r)
+
+    added = 0
+    for selected in selected_spells:
+        name = str(selected["name"])
+        spell_ref = dnd_utils.fetch_from_5etools("spell", name)
+        if not spell_ref:
+            print(
+                f"Não foi possível adicionar {name}: "
+                "magia não resolvida no compêndio."
+            )
+            continue
+
+        if not any(
+            spell.get("name") == name
+            for spell in spells
+            if isinstance(spell, dict)
+        ):
+            spells.append(
+                {
+                    "name": name,
+                    "ref": spell_ref,
+                    "level": int(selected["level"]),
+                    "usage": "1 action",
+                }
+            )
+
+        if spell_ref not in references:
+            references.append(spell_ref)
+        added += 1
+    return added
+
+
 def add_equipment(post: frontmatter.Post, selected_items: list[dict[str, object]]) -> int:
     """Adiciona os itens resolvidos e suas referências ao front matter."""
     char_info = post.get("char_info")
@@ -237,31 +355,57 @@ def save_character(path: Path, post: frontmatter.Post, body: bytes) -> None:
     path.write_bytes(header + body)
 
 
-def main() -> int:
-    """Executa o fluxo interativo de edição de personagem."""
-    characters = find_characters()
-    if not characters:
-        print("Nenhum personagem encontrado.")
-        return 1
-    path = choose_character(characters)
+def edit_selected_character(path: Path) -> str:
+    """Mantém o usuário no menu do personagem até uma navegação explícita."""
     original_body = read_body_bytes(path)
     post = frontmatter.load(path)
-    print(f"Personagem selecionado: {post.get('title') or path.stem}")
-    action = ask_choice(
-        "O que deseja editar?", ["Adicionar equipamentos", "Cancelar"]
-    )
-    if action == "Cancelar":
-        print("Operação cancelada.")
-        return 0
-    selected_items = choose_equipment()
-    added = add_equipment(post, selected_items)
-    equipment_changed = choose_equipped_items(post)
-    if added or equipment_changed:
-        save_character(path, post, original_body)
-        print(f"Ficha atualizada: {path}")
-    else:
-        print("Nenhuma alteração realizada.")
-    return 0
+    title = post.get("title") or path.stem
+    print(f"\nPersonagem selecionado: {title}")
+
+    while True:
+        action = ask_choice(
+            f"Editar {title}",
+            [
+                "Adicionar equipamentos",
+                "Adicionar magias",
+                "Escolher outro personagem",
+                "Voltar ao menu principal",
+            ],
+        )
+        if action == "Voltar ao menu principal":
+            return "main_menu"
+        if action == "Escolher outro personagem":
+            return "character_list"
+
+        changed = False
+        if action == "Adicionar equipamentos":
+            selected_items = choose_equipment()
+            added = add_equipment(post, selected_items)
+            equipment_changed = choose_equipped_items(post)
+            changed = (added > 0) or equipment_changed
+        elif action == "Adicionar magias":
+            selected_spells = choose_spells()
+            added = add_spells(post, selected_spells)
+            changed = added > 0
+
+        if changed:
+            save_character(path, post, original_body)
+            print(f"Ficha atualizada: {path}")
+        else:
+            print("Nenhuma alteração realizada.")
+
+
+def main() -> int:
+    """Seleciona personagens até o usuário voltar ao menu principal."""
+    while True:
+        characters = find_characters()
+        if not characters:
+            print("Nenhum personagem encontrado.")
+            return 1
+        path = choose_character(characters)
+        destination = edit_selected_character(path)
+        if destination == "main_menu":
+            return 0
 
 
 if __name__ == "__main__":
