@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,30 +36,33 @@ stats:
   languages: Ignan
   cr: '5'
 stats_meta: Large elemental N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Salamandra
 ---
 
-## Características
+## Traits
 
-### Corpo Aquecido
-Uma criatura que toque a salamandra ou a acerte com um ataque corpo a corpo enquanto estiver a 5 pés dela sofre 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano de fogo.
 
-### Armas Aquecidas
-Qualquer arma corpo a corpo de metal que a salamandra empunhe causa 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo adicional em um acerto (incluído no ataque).
+### Heated Body
 
-## Ações
+A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) fire damage.
 
-### Ataques Múltiplos
-A salamandra faz dois ataques: um com sua lança e outro com sua cauda.
 
-### Lança
- mw,rw 7 para acertar, alcance 5 pés ou alcance 20/60 pés, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano perfurante, ou 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano perfurante se usada com as duas mãos para fazer um ataque corpo a corpo, mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
+### Heated Weapons
 
-### Cauda
-mw 7 para acertar, alcance 10 pés, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano de concussão mais 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano de fogo, e o alvo fica agarrado (fuga 14). Até esse agarrão terminar, o alvo está contido, a salamandra acerta automaticamente o alvo com sua cauda e não pode fazer ataques com a cauda contra outros alvos.
+Any metal melee weapon the salamander wields deals an extra 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage on a hit (included in the attack).
+
+## Actions
+
+
+### Multiattack
+
+The salamander makes two attacks: one with its spear and one with its tail.
+
+
+### Spear
+
+mw,rw 7 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) piercing damage, or 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) piercing damage if used with two hands to make a melee attack, plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+
+
+### Tail
+
+mw 7 to hit, reach 10 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) bludgeoning damage plus 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) fire damage, and the target is grappled (escape 14). Until this grapple ends, the target is restrained, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.

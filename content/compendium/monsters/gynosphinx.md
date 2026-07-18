@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,52 +40,45 @@ stats:
   languages: Common, Sphinx
   cr: '11'
 stats_meta: Large monstrosity L/N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Ginoesfinge
 ---
 
-## Características
+## Traits
 
 
-### Inescrutável
+### Inscrutable
 
-A esfinge é imune a qualquer efeito que detecte suas emoções ou leia seus pensamentos, bem como a qualquer magia de adivinhação que ela recuse. Testes de Sabedoria (Intuição) realizados para determinar as intenções ou a sinceridade da esfinge têm desvantagem.
-
-
-### Armas Mágicas
-
-Os ataques com arma da esfinge são mágicos.
-
-## Ações
+The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.
 
 
-### Ataques Múltiplos
+### Magic Weapons
 
-A esfinge realiza dois ataques de garra.
+The sphinx's weapon attacks are magical.
 
-
-### Garra
-
-Ataque Corpo a Corpo com Arma: +8 para atingir, alcance 1,5 m, um alvo. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano cortante.
-
-## Ações Lendárias
+## Actions
 
 
-### Ataque de Garra
+### Multiattack
 
-A esfinge realiza um ataque de garra.
-
-
-### Teleportar (Custa 2 Ações)
-
-A esfinge se teletransporta magicamente, junto com qualquer equipamento que esteja vestindo ou carregando, por até 36 m para um espaço desocupado que possa ver.
+The sphinx makes two claw attacks.
 
 
-### Conjurar uma Magia (Custa 3 Ações)
+### Claw
 
-A esfinge conjura uma magia de sua lista de magias preparadas, usando um espaço de magia como normal.
+mw 8 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) slashing damage.
+
+## Legendary Actions
+
+
+### Claw Attack
+
+The sphinx makes one claw attack.
+
+
+### Teleport (Costs 2 Actions)
+
+The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+
+### Cast a Spell (Costs 3 Actions)
+
+The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.

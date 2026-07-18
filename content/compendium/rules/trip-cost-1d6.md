@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,12 +19,6 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: 3938303cf48ce178
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Se o alvo for Grande ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza ou ficará com a condição XPHB.
+If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the XPHB condition.

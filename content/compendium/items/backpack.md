@@ -4,7 +4,7 @@ params:
   kind: item
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -20,22 +20,10 @@ source:
   remote_key: item
   remote_id: 4550a4a0c11c0a25
 item_info:
-  type: G|XPHB
-  rarity: none
-  attunement: ''
-  cost: 200 cp
-  weight: 5
-  damage: ''
-  damage_type: ''
-  properties: []
-  range: ''
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Mochila
+  type: Adventuring Gear
+  cost: 2 gp
+  weight: 5 lb
+  rarity: None
 ---
 
-Uma Mochila comporta até 30 libras em 1 pé cúbico. Ela também pode servir como um alforje.
+A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.

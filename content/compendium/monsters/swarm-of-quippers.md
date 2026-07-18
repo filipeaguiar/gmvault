@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,35 +36,28 @@ stats:
   languages: ''
   cr: '1'
 stats_meta: Medium beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Enxame de Piranhas
 ---
 
-## Características
+## Traits
 
 
-### Frenesi Sangrento
+### Blood Frenzy
 
-O enxame tem vantagem em jogadas de ataque corpo a corpo contra qualquer criatura que não tenha todos os seus pontos de vida.
-
-
-### Enxame
-
-O enxame pode ocupar o espaço de outra criatura e vice-versa, e o enxame pode se mover através de qualquer abertura grande o suficiente para um quipper Miúdo. O enxame não pode recuperar pontos de vida ou ganhar pontos de vida temporários.
+The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.
 
 
-### Respirar na Água
+### Swarm
 
-O enxame pode respirar apenas debaixo d'água.
-
-## Ações
+The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.
 
 
-### Mordidas
+### Water Breathing
 
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 0 m, uma criatura no espaço do enxame. <em>Acerto:</em> 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano perfurante, ou 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano perfurante se o enxame tiver metade ou menos de seus pontos de vida.
+The swarm can breathe only underwater.
+
+## Actions
+
+
+### Bites
+
+mw 5 to hit, reach 0 ft., one creature in the swarm's space. {@h}14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) piercing damage, or 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) piercing damage if the swarm has half of its hit points or fewer.

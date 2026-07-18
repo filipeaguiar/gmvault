@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,55 +38,48 @@ stats:
   languages: Common (can't speak in tiger form)
   cr: '4'
 stats_meta: Medium humanoid N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Tigre-lobisomem
 ---
 
-## Características
+## Traits
 
 
-### Mudar de Forma
+### Shapechanger
 
-O tigre-lobisomem pode usar sua ação para se transformar em um híbrido de tigre e humanoide ou em um tigre, ou voltar à sua forma verdadeira, que é humanoide. Suas estatísticas, exceto pelo tamanho, são as mesmas em cada forma. Qualquer equipamento que esteja vestindo ou carregando não é transformado. Ele reverte à sua forma verdadeira se morrer.
-
-
-### Audição e Olfato Aguçados
-
-O tigre-lobisomem tem vantagem em testes de Sabedoria (Percepção) que dependem de audição ou olfato.
+The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
 
 
-### Bote (Apenas em Forma de Tigre ou Híbrida)
+### Keen Hearing and Smell
 
-Se o tigre-lobisomem se mover pelo menos 4,5 metros em linha reta em direção a uma criatura e então acertá-la com um ataque de garra no mesmo turno, o alvo deve ser bem-sucedido em um teste de resistência de Força CD 14 ou ser derrubado caído. Se o alvo estiver caído, o tigre-lobisomem pode realizar um ataque de mordida contra ele como uma ação bônus.
-
-## Ações
+The weretiger has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 
-### Ataques Múltiplos (Apenas em Forma Humanoide ou Híbrida)
+### Pounce (Tiger or Hybrid Form Only)
 
-Na forma humanoide, o tigre-lobisomem realiza dois ataques de cimitarra ou dois ataques de arco longo. Na forma híbrida, ele pode atacar como um humanoide ou realizar dois ataques de garra.
+If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.
 
-
-### Mordida (Apenas em Forma de Tigre ou Híbrida)
-
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. Acerto: 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) de dano perfurante. Se o alvo for um humanoide, ele deve ser bem-sucedido em um teste de resistência de Constituição CD 13 ou ser amaldiçoado com licantropia de tigre-lobisomem.
+## Actions
 
 
-### Garra (Apenas em Forma de Tigre ou Híbrida)
+### Multiattack (Humanoid or Hybrid Form Only)
 
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. Acerto: 7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano cortante.
-
-
-### Cimitarra (Apenas em Forma Humanoide ou Híbrida)
-
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. Acerto: 6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano cortante.
+In humanoid form, the weretiger makes two scimitar attacks or two longbow attacks. In hybrid form, it can attack like a humanoid or make two claw attacks.
 
 
-### Arco Longo (Apenas em Forma Humanoide ou Híbrida)
+### Bite (Tiger or Hybrid Form Only)
 
-Ataque à Distância com Arma: +4 para atingir, alcance 45/180 m, um alvo. Acerto: 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) de dano perfurante.
+mw 5 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) piercing damage. If the target is a humanoid, it must succeed on a 13 Constitution saving throw or be cursed with weretiger lycanthropy.
+
+
+### Claw (Tiger or Hybrid Form Only)
+
+mw 5 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) slashing damage.
+
+
+### Scimitar (Humanoid or Hybrid Form Only)
+
+mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) slashing damage.
+
+
+### Longbow (Humanoid or Hybrid Form Only)
+
+rw 4 to hit, range 150/600 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) piercing damage.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,27 +36,23 @@ stats:
   languages: ''
   cr: 1/2
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Cavalo-marinho Gigante
 ---
 
-## Características
+## Traits
 
-### Carga
 
-Se o cavalo-marinho se mover pelo menos 6 metros em linha reta em direção a um alvo e então atingi-lo com um ataque de aríete no mesmo turno, o alvo sofre 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano de concussão adicional. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 11 ou ficará caída.
+### Charge
 
-### Respiração Aquática
+If the sea horse moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) bludgeoning damage. If the target is a creature, it must succeed on a 11 Strength saving throw or be knocked prone.
 
-O cavalo-marinho só pode respirar debaixo d'água.
 
-## Ações
+### Water Breathing
 
-### Aríete
+The sea horse can breathe only underwater.
 
-mw 3 to hit, alcance 5 ft., um alvo. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano de concussão.
+## Actions
+
+
+### Ram
+
+mw 3 to hit, reach 5 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) bludgeoning damage.

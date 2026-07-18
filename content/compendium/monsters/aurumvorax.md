@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,31 +40,28 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Small monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Aurumvorax
 ---
 
-## Características
+## Traits
 
-### Escavador
 
-O aurumvorax pode escavar através de rocha sólida e metal com metade do seu deslocamento de escavação e deixa para trás um túnel de 1,5 metro de diâmetro.
+### Tunneler
 
-## Ações
+The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake.
 
-### Ataques Múltiplos
+## Actions
 
-O aurumvorax realiza um ataque de Mordida e dois ataques de Garra.
 
-### Mordida
+### Multiattack
 
-+4 para atingir, alcance 1,5 m, um alvo. ***Acerto:*** 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) de dano perfurante. Se o alvo for uma criatura vestindo qualquer tipo de armadura, o aurumvorax recupera 4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) pontos de vida.
+The aurumvorax makes one Bite attack and two Claw attacks.
 
-### Garra
 
-+5 para atingir, alcance 1,5 m, um alvo. ***Acerto:*** 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano cortante. Se o alvo for uma criatura de tamanho Médio ou menor, ela ficará agarrada (CD 12 para escapar). Enquanto estiver agarrada, o aurumvorax não pode usar seu ataque de Garra em outro alvo e, quando se move, pode arrastar a criatura agarrada consigo sem que seu deslocamento seja reduzido à metade.
+### Bite
+
+mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax regains 4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) hit points.
+
+
+### Claw
+
+mw 5 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) slashing damage. If the target is a Medium or smaller creature, it is grappled (escape 12). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the grappled creature with it, without the aurumvorax's speed being halved.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,45 +39,38 @@ stats:
   languages: Common (can't speak in jackal form)
   cr: 1/2
 stats_meta: Medium humanoid C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Chacalwere
 ---
 
-## Características
+## Traits
 
 
-### Metamorfo
+### Shapechanger
 
-O lobisomem-do-chacal pode usar sua ação para se polimorfar em um Humano Médio específico ou em um híbrido de chacal e humanoide, ou voltar à sua forma verdadeira (a de um chacal Pequeno). Com exceção do tamanho, suas estatísticas são as mesmas em cada forma. Qualquer equipamento que esteja vestindo ou carregando não é transformado. Ele reverte à sua forma verdadeira se morrer.
-
-
-### Audição e Olfato Aguçados
-
-O lobisomem-do-chacal tem Vantagem em testes de Sabedoria (Percepção) que dependam de audição ou olfato.
+The jackalwere can use its action to polymorph into a specific Medium human or a jackal-humanoid hybrid, or back into its true form (that of a Small jackal). Other than its size, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
 
 
-### Táticas de Matilha
+### Keen Hearing and Smell
 
-O lobisomem-do-chacal tem Vantagem em uma jogada de ataque contra uma criatura se pelo menos um dos aliados do lobisomem-do-chacal estiver a 1,5 metro da criatura e o aliado não estiver Incapacitado.
-
-## Ações
+The jackalwere has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 
-### Mordida (Apenas na Forma de Chacal ou Híbrida)
+### Pack Tactics
 
-mw 4 para atingir, Alcance 1,5 m, um Alvo. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) de Dano Perfurante.
+The jackalwere has advantage on an attack roll against a creature if at least one of the jackalwere's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
-
-### Cimitarra (Apenas na Forma Humana ou Híbrida)
-
-mw 4 para atingir, Alcance 1,5 m, um Alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de Dano Cortante.
+## Actions
 
 
-### Olhar Sonífero
+### Bite (Jackal or Hybrid Form Only)
 
-O lobisomem-do-chacal contempla uma criatura que possa ver a até 9 metros dele. O alvo deve realizar um teste de resistência de Sabedoria CD 10. Em caso de falha no teste, o alvo sucumbe a um sono mágico, ficando Inconsciente por 10 minutos ou até que alguém use uma ação para sacudir o alvo para acordá-lo. Uma criatura que for bem-sucedida no teste de resistência contra o efeito fica imune ao olhar deste lobisomem-do-chacal pelas próximas 24 horas. Mortos-vivos e criaturas imunes a serem enfeitiçadas não são afetadas por ele.
+mw 4 to hit, reach 5 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) piercing damage.
+
+
+### Scimitar (Human or Hybrid Form Only)
+
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) slashing damage.
+
+
+### Sleep Gaze
+
+The jackalwere gazes at one creature it can see within 30 feet of it. The target must make a 10 Wisdom saving throw. On a failed save, the target succumbs to a magical slumber, falling unconscious for 10 minutes or until someone uses an action to shake the target awake. A creature that successfully saves against the effect is immune to this jackalwere's gaze for the next 24 hours. Undead and creatures immune to being charmed aren't affected by it.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,29 +38,26 @@ stats:
   languages: any one language (usually Common)
   cr: '3'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Veterano
 ---
 
-## Ações
+## Actions
 
-### Ataques Múltiplos
 
-O veterano realiza dois ataques com espada longa. Se ele estiver com uma espada curta em punho, também pode realizar um ataque com espada curta.
+### Multiattack
 
-### Espada Longa
+The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.
 
-mw 5 para atingir, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano cortante, ou 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) de dano cortante se usada com as duas mãos.
 
-### Espada Curta
+### Longsword
 
-mw 5 para atingir, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante.
+mw 5 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) slashing damage, or 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) slashing damage if used with two hands.
 
-### Besta Pesada
 
-rw 3 para atingir, alcance 30/120 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d10+1">1d10 + 1</span>) de dano perfurante.
+### Shortsword
+
+mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage.
+
+
+### Heavy Crossbow
+
+rw 3 to hit, range 100/400 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d10+1">1d10 + 1</span>) piercing damage.

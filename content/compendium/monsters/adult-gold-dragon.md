@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -44,83 +44,76 @@ stats:
   languages: Common, Draconic
   cr: '17'
 stats_meta: Huge dragon L/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Dragão Dourado Adulto
 ---
 
-## Características
+## Traits
 
 
-### Anfíbio
+### Amphibious
 
-O dragão pode respirar ar e água.
-
-
-### Resistência Lendária (3/Dia)
-
-Se o dragão falhar em um teste de resistência, ele pode escolher ser bem-sucedido em vez disso.
-
-## Ações
+The dragon can breathe air and water.
 
 
-### Ataques Múltiplos
+### Legendary Resistance (3/Day)
 
-O dragão pode usar sua Presença Amedrontadora. Em seguida, ele faz três ataques: um com sua mordida e dois com suas garras.
+If the dragon fails a saving throw, it can choose to succeed instead.
 
-
-### Mordida
-
-mw 14 para atingir, alcance 10 pés, um alvo. {@h}19 (<span class="dice+" data-roll-notation="2d10+8">2d10 + 8</span>) de dano perfurante.
+## Actions
 
 
-### Garra
+### Multiattack
 
-mw 14 para atingir, alcance 5 pés, um alvo. {@h}15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) de dano cortante.
-
-
-### Cauda
-
-mw 14 para atingir, alcance 15 pés, um alvo. {@h}17 (<span class="dice+" data-roll-notation="2d8+8">2d8 + 8</span>) de dano de concussão.
+The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
 
 
-### Presença Amedrontadora
+### Bite
 
-Cada criatura à escolha do dragão que esteja a até 120 pés do dragão e ciente dele deve ser bem-sucedida em um teste de resistência de Sabedoria CD 21 ou ficará amedrontada por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesma em caso de sucesso. Se o teste de resistência de uma criatura for bem-sucedido ou o efeito terminar para ela, a criatura fica imune à Presença Amedrontadora do dragão pelas próximas 24 horas.
-
-
-### Armas de Sopro 5
-
-O dragão usa uma das seguintes armas de sopro.
-
-* {'type': 'item', 'name': 'Sopro de Fogo', 'entry': 'O dragão exala fogo em um cone de 60 pés. Cada criatura na área deve fazer um teste de resistência de Destreza CD 21, sofrendo 66 (<span class="dice+" data-roll-notation="12d10">12d10</span>) de dano de fogo em caso de falha no teste, ou metade do dano em caso de sucesso.'}
-
-* {'type': 'item', 'name': 'Sopro Enfraquecedor', 'entry': 'O dragão exala gás em um cone de 60 pés. Cada criatura na área deve ser bem-sucedida em um teste de resistência de Força CD 21 ou terá desvantagem em jogadas de ataque baseadas em Força, testes de Força e testes de resistência de Força por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesma em caso de sucesso.'}
+mw 14 to hit, reach 10 ft., one target. {@h}19 (<span class="dice+" data-roll-notation="2d10+8">2d10 + 8</span>) piercing damage.
 
 
-### Mudar Forma
+### Claw
 
-O dragão se transforma magicamente em um humanoide ou em uma besta que tenha um Nível de Desafio não superior ao seu, ou de volta à sua forma verdadeira. Ele retorna à sua forma verdadeira se morrer. Qualquer equipamento que esteja vestindo ou carregando é absorvido ou usado pela nova forma (à escolha do dragão).
-
-Na nova forma, o dragão mantém sua tendência, Pontos de Vida, Dados de Vida, capacidade de falar, proficiências, Resistência Lendária, ações de covil e valores de Inteligência, Sabedoria e Carisma, bem como esta ação. Suas estatísticas e capacidades, fora isso, são substituídas pelas da nova forma, exceto quaisquer características de classe ou ações lendárias dessa forma.
-
-## Ações Lendárias
+mw 14 to hit, reach 5 ft., one target. {@h}15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) slashing damage.
 
 
-### Detectar
+### Tail
 
-O dragão faz um teste de Sabedoria (Percepção).
-
-
-### Ataque de Cauda
-
-O dragão faz um ataque de cauda.
+mw 14 to hit, reach 15 ft., one target. {@h}17 (<span class="dice+" data-roll-notation="2d8+8">2d8 + 8</span>) bludgeoning damage.
 
 
-### Ataque de Asas (Custa 2 Ações)
+### Frightful Presence
 
-O dragão bate suas asas. Cada criatura a até 10 pés do dragão deve ser bem-sucedida em um teste de resistência de Destreza CD 22 ou sofre 15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) de dano de concussão e fica caída. O dragão pode então voar até metade do seu deslocamento de voo.
+Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.
+
+
+### Breath Weapons 5
+
+The dragon uses one of the following breath weapons.
+
+* {'type': 'item', 'name': 'Fire Breath', 'entry': 'The dragon exhales fire in a 60-foot cone. Each creature in that area must make a 21 Dexterity saving throw, taking 66 (<span class="dice+" data-roll-notation="12d10">12d10</span>) fire damage on a failed save, or half as much damage on a successful one.'}
+
+* {'type': 'item', 'name': 'Weakening Breath', 'entry': 'The dragon exhales gas in a 60-foot cone. Each creature in that area must succeed on a 21 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.'}
+
+
+### Change Shape
+
+The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).
+
+In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
+
+## Legendary Actions
+
+
+### Detect
+
+The dragon makes a Wisdom (Perception) check.
+
+
+### Tail Attack
+
+The dragon makes a tail attack.
+
+
+### Wing Attack (Costs 2 Actions)
+
+The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a 22 Dexterity saving throw or take 15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,36 +40,43 @@ stats:
   languages: ''
   cr: '4'
 stats_meta: Medium monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Aurumvorax Líder da Toca
 ---
 
-## Características
+## Traits
 
-### Líder da Matilha
-Os aliados do aurumvorax têm vantagem nas jogadas de ataque enquanto estiverem a até 10 pés do aurumvorax, desde que ele não esteja incapacitado.
 
-### Escavador
-O aurumvorax pode escavar através de rocha sólida e metal com metade de seu deslocamento de escavação e deixa um túnel de 1,5 metro de diâmetro em seu rastro.
+### Pack Leader
 
-## Ações
+The aurumvorax's allies have advantage on attack rolls while within 10 feet of the aurumvorax, provided it isn't incapacitated.
 
-### Ataques Múltiplos
-O aurumvorax realiza um ataque de Mordida e dois ataques de Garra.
 
-### Mordida
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 5 pés, um alvo. Acerto: 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano perfurante. Se o alvo for uma criatura vestindo armadura de qualquer tipo, o aurumvorax ganha um dos seguintes benefícios, à sua escolha:
+### Tunneler
 
-### Frenesi
-O aurumvorax tem vantagem nas jogadas de ataque até o início do seu próximo turno.
+The aurumvorax can burrow through solid rock and metal at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake.
 
-### Revigorar
-O aurumvorax recupera 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) pontos de vida.
+## Actions
 
-### Garra
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 5 pés, um alvo. Acerto: 11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano cortante. Se o alvo for uma criatura Grande ou menor, ela fica agarrada (CD para escapar 14). Até esse agarrão terminar, o aurumvorax não pode usar seu ataque de Garra em outro alvo e, quando ele se move, pode arrastar a criatura agarrada consigo, sem que o deslocamento do aurumvorax seja reduzido à metade.
+
+### Multiattack
+
+The aurumvorax makes one Bite attack and two Claw attacks.
+
+
+### Bite
+
+mw 6 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) piercing damage. If the target is a creature wearing armor of any type, the aurumvorax gains one of the following benefits of its choice:
+
+
+### Frenzy
+
+The aurumvorax has advantage on attack rolls until start of its next turn.
+
+
+### Invigorate
+
+The aurumvorax regains 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) hit points.
+
+
+### Claw
+
+mw 6 to hit, reach 5 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) slashing damage. If the target is a Large or smaller creature, it is grappled (escape 14). Until this grapple ends, the aurumvorax can't use its Claw attack on another target, and when it moves, it can drag the grappled creature with it, without the aurumvorax's speed being halved.

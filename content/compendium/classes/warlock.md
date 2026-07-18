@@ -4,7 +4,7 @@ params:
   kind: class
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -22,81 +22,74 @@ source:
 class_info:
   hit_dice: 1d8
   primary_ability: '{''cha'': True}'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Bruxo
 ---
 
-## Nível 1
+## Level 1
 
-- [Opções de Invocação Sobrenatural](/compendium/rules/eldritch-invocation-options/)
-- [Invocações Sobrenaturais](/compendium/rules/eldritch-invocations/)
-- [Magia de Pacto](/compendium/rules/pact-magic/)
+- [Eldritch Invocation Options](/compendium/rules/eldritch-invocation-options/)
+- [Eldritch Invocations](/compendium/rules/eldritch-invocations/)
+- [Pact Magic](/compendium/rules/pact-magic/)
 
-## Nível 2
+## Level 2
 
-- [Astúcia Mágica](/compendium/rules/magical-cunning/)
+- [Magical Cunning](/compendium/rules/magical-cunning/)
 
-## Nível 3
+## Level 3
 
-- [Subclasse de Bruxo](/compendium/rules/otherworldly-patron/)
+- [Warlock Subclass](/compendium/rules/otherworldly-patron/)
 
-## Nível 4
+## Level 4
 
-- Melhoria de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 6
+## Level 6
 
-- Característica de Subclasse
+- Subclass Feature
 
-## Nível 8
+## Level 8
 
-- Melhoria de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 9
+## Level 9
 
-- Contatar Patrono
+- Contact Patron
 
-## Nível 10
+## Level 10
 
-- Característica de Subclasse
+- Subclass Feature
 
-## Nível 11
+## Level 11
 
-- Arcana Mística
+- Mystic Arcanum
 
-## Nível 12
+## Level 12
 
-- Melhoria de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 13
+## Level 13
 
-- Arcana Mística
+- Mystic Arcanum
 
-## Nível 14
+## Level 14
 
-- Característica de Subclasse
+- Subclass Feature
 
-## Nível 15
+## Level 15
 
-- Arcana Mística
+- Mystic Arcanum
 
-## Nível 16
+## Level 16
 
-- Melhoria de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 17
+## Level 17
 
-- Arcana Mística
+- Mystic Arcanum
 
-## Nível 19
+## Level 19
 
-- [Dádiva Épica](/compendium/rules/epic-boon/)
+- [Epic Boon](/compendium/rules/epic-boon/)
 
-## Nível 20
+## Level 20
 
-- Mestre Sobrenatural
+- Eldritch Master

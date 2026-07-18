@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,23 +36,16 @@ stats:
   languages: Common
   cr: '1'
 stats_meta: Medium undead C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Carniçal
 ---
 
-## Ações
+## Actions
 
 
-### Mordida
+### Bite
 
-_Ataque Corpo a Corpo com Arma:_ +2 para atingir, alcance 1,5 m, uma criatura. **Alvo:** 9 (<span class="dice+" data-roll-notation="2d6+2">2d6 + 2</span>) de dano perfurante.
+mw 2 to hit, reach 5 ft., one creature. {@h}9 (<span class="dice+" data-roll-notation="2d6+2">2d6 + 2</span>) piercing damage.
 
 
-### Garras
+### Claws
 
-_Ataque Corpo a Corpo com Arma:_ +4 para atingir, alcance 1,5 m, um alvo. **Alvo:** 7 (<span class="dice+" data-roll-notation="2d4+2">2d4 + 2</span>) de dano cortante. Se o alvo for uma criatura que não seja um elfo ou morto-vivo, deve ser bem-sucedido em um teste de resistência de Constituição CD 10 ou ficará paralisado por 1 minuto. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesmo em caso de sucesso.
+mw 4 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="2d4+2">2d4 + 2</span>) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,34 +40,37 @@ stats:
   languages: Abyssal, Common
   cr: '5'
 stats_meta: Medium fiend N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Tlacatecolo
 ---
 
-## Características
+## Traits
 
-### Resistência à Magia
-O tlacatecolo tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-## Ações
+### Magic Resistance
 
-### Ataques Múltiplos
-O tlacatecolo realiza dois ataques de Garra.
+The tlacatecolo has advantage on saving throws against spells and other magical effects.
 
-### Garra
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 5 ft., um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano perfurante mais 14 (<span class="dice+" data-roll-notation="3d8">3d8</span>) de dano de veneno.
+## Actions
 
-### Mudar Forma
-O tlacatecolo se transforma magicamente em uma coruja Média, mantendo suas estatísticas de jogo (exceto pelo seu tamanho). Esta transformação termina se o tlacatecolo for reduzido a 0 pontos de vida ou se ele usar sua ação para terminá-la.
 
-### Ventos da Peste (Apenas na Forma de Corruptor; Recarga 5-6)
-O tlacatecolo emite um vento gélido e carregado de doenças em uma linha de 60 ft. de comprimento e 10 ft. de largura. Cada criatura na área deve ser bem-sucedida em um teste de resistência de Constituição CD 13 ou sofre 26 (<span class="dice+" data-roll-notation="4d12">4d12</span>) de dano de frio e fica envenenada.
+### Multiattack
 
-Enquanto envenenada dessa forma, a criatura não pode recuperar pontos de vida. No final de cada hora, a criatura deve ser bem-sucedida em um teste de resistência de Constituição CD 13 ou ganha 1 nível de exaustão. Se a criatura estiver sob luz solar direta quando realizar este teste de resistência, ela é bem-sucedida automaticamente.
+The tlacatecolo makes two Talon attacks.
 
-Se a criatura for alvo de uma magia que remove um veneno ou doença, como restauração menor, enquanto a criatura não estiver sob luz solar direta, o efeito não termina.
+
+### Talon
+
+mw 6 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage plus 14 (<span class="dice+" data-roll-notation="3d8">3d8</span>) poison damage.
+
+
+### Change Shape
+
+The tlacatecolo magically transforms into a Medium owl, while retaining its game statistics (other than its size). This transformation ends if the tlacatecolo is reduced to 0 hit points or if it uses its action to end it.
+
+
+### Plague Winds (Fiend Form Only; Recharge 5-6)
+
+The tlacatecolo emits a chilling, disease-ridden wind in a 60-foot line that is 10 feet wide. Each creature in that area must succeed on a 13 Constitution saving throw or take 26 (<span class="dice+" data-roll-notation="4d12">4d12</span>) cold damage and become poisoned.
+
+While poisoned in this way, the creature can't regain hit points. At the end of every hour, the creature must succeed on a 13 Constitution saving throw or gain 1 level of exhaustion. If the creature is in direct sunlight when it makes this saving throw, it automatically succeeds on the save.
+
+If the creature is targeted by magic that ends a poison or disease, such as lesser restoration, while the creature isn't in direct sunlight, the effect does not end.

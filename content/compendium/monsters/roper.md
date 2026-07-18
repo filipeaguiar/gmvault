@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,50 +38,43 @@ stats:
   languages: ''
   cr: '5'
 stats_meta: Large monstrosity N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Roper
 ---
 
-## Características
+## Traits
 
 
-### Aparência Falsa
+### False Appearance
 
-Enquanto o roper permanecer imóvel, ele é indistinguível de uma formação normal de caverna, como uma estalagmite.
-
-
-### Tentáculos Agarradores
-
-O roper pode ter até seis tentáculos por vez. Cada tentáculo pode ser atacado (CA 20; 10 pontos de vida; imunidade a dano de veneno e dano psíquico). Destruir um tentáculo não causa dano ao roper, que pode estender um tentáculo substituto no próximo turno dele. Um tentáculo também pode ser quebrado se uma criatura usar uma ação e for bem-sucedida em um teste de Força CD 15 contra ele.
+While the roper remains motionless, it is indistinguishable from a normal cave formation, such as a stalagmite.
 
 
-### Escalada de Aranha
+### Grasping Tendrils
 
-O roper pode escalar superfícies difíceis, inclusive de cabeça para baixo em tetos, sem precisar fazer um teste de atributo.
-
-## Ações
+The roper can have up to six tendrils at a time. Each tendril can be attacked (AC 20; 10 hit points; immunity to poison and psychic damage). Destroying a tendril deals no damage to the roper, which can extrude a replacement tendril on its next turn. A tendril can also be broken if a creature takes an action and succeeds on a 15 Strength check against it.
 
 
-### Ataques Múltiplos
+### Spider Climb
 
-O roper faz quatro ataques com seus tentáculos, usa Reel e faz um ataque com sua mordida.
+The roper can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
-
-### Mordida
-
-mw 7 para acertar, alcance 5 pés, um alvo. {@h}22 (<span class="dice+" data-roll-notation="4d8+4">4d8 + 4</span>) de dano perfurante.
+## Actions
 
 
-### Tentáculo
+### Multiattack
 
-mw 7 para acertar, alcance 50 pés, uma criatura. {@h}O alvo fica agarrado (escapar CD 15). Até a condição de agarrado terminar, o alvo está contido e tem desvantagem em testes de Força e testes de resistência de Força, e o roper não pode usar o mesmo tentáculo em outro alvo.
+The roper makes four attacks with its tendrils, uses Reel, and makes one attack with its bite.
+
+
+### Bite
+
+mw 7 to hit, reach 5 ft., one target. {@h}22 (<span class="dice+" data-roll-notation="4d8+4">4d8 + 4</span>) piercing damage.
+
+
+### Tendril
+
+mw 7 to hit, reach 50 ft., one creature. {@h}The target is grappled (escape 15). Until the grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target.
 
 
 ### Reel
 
-O roper puxa cada criatura agarrada por ele até 25 pés diretamente em sua direção.
+The roper pulls each creature grappled by it up to 25 feet straight toward it.

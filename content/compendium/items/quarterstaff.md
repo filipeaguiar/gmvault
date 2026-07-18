@@ -4,7 +4,7 @@ params:
   kind: item
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -20,23 +20,15 @@ source:
   remote_key: baseitem
   remote_id: 02274fdd7b86277b
 item_info:
-  type: M|XPHB
-  rarity: none
-  attunement: ''
-  cost: 20 cp
-  weight: 4
-  damage: 1d6
-  damage_type: B
+  type: Weapon
+  cost: 0.2 gp
+  weight: 4 lb
+  rarity: None
+  weapon_type: melee
   properties:
-  - V|XPHB
-  range: ''
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Bordão
+  - versatile
+  damage: 1d6
+  damage_type: bludgeoning
 ---
 
 

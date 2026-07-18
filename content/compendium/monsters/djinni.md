@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,33 +39,30 @@ stats:
   languages: Auran
   cr: '11'
 stats_meta: Large elemental C/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Djinni
 ---
 
-## Características
+## Traits
 
-### Fim Elemental
 
-Se o gênio morrer, seu corpo se desintegra em uma brisa quente, deixando para trás apenas o equipamento que estava vestindo ou carregando.
+### Elemental Demise
 
-## Ações
+If the djinni dies, its body disintegrates into a warm breeze, leaving behind only equipment the djinni was wearing or carrying.
 
-### Ataques Múltiplos
+## Actions
 
-O gênio faz três ataques com cimitarra.
 
-### Cimitarra
+### Multiattack
 
-Corpo a Corpo com Arma: +9 para atingir, alcance 5 pés, um alvo. **Acerto:** 12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) de dano cortante mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano elétrico ou trovejante (escolha do gênio).
+The djinni makes three scimitar attacks.
 
-### Criar Redemoinho
 
-Um cilindro de ar giratório com 5 pés de raio e 30 pés de altura se forma magicamente em um ponto que o gênio possa ver, a até 120 pés de distância. O redemoinho dura enquanto o gênio mantiver concentração (como se estivesse se concentrando em uma magia). Qualquer criatura que não seja o gênio e que entre no redemoinho deve ser bem-sucedida em um teste de resistência de Força CD 18 ou será contida por ele. O gênio pode mover o redemoinho até 60 pés como uma ação, e as criaturas contidas pelo redemoinho se movem com ele. O redemoinho termina se o gênio perder de vista.
+### Scimitar
 
-Uma criatura pode usar sua ação para libertar uma criatura contida pelo redemoinho, incluindo a si mesma, sendo bem-sucedida em um teste de Força CD 18. Se o teste for bem-sucedido, a criatura não estará mais contida e se moverá para o espaço desocupado mais próximo fora do redemoinho.
+mw 9 to hit, reach 5 ft., one target. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) slashing damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) lightning or thunder damage (djinni's choice).
+
+
+### Create Whirlwind
+
+A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.
+
+A creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.

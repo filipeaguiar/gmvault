@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,31 +37,28 @@ stats:
   languages: understands the languages of its creator but can't speak
   cr: '4'
 stats_meta: Medium construct U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Horror com Elmo
 ---
 
-## Características
+## Traits
 
-### Resistência à Magia
 
-O montante de armadura tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
+### Magic Resistance
 
-### Imunidade a Magia
+The helmed horror has advantage on saving throws against spells and other magical effects.
 
-O montante de armadura é imune a três magias escolhidas por seu criador. Imunidades típicas incluem *bola de fogo*, *esquentar metal* e *relâmpago*.
 
-## Ações
+### Spell Immunity
 
-### Ataques Múltiplos
+The helmed horror is immune to three spells chosen by its creator. Typical immunities include fireball, heat metal, and lightning bolt.
 
-O montante de armadura faz dois ataques com espada longa.
+## Actions
 
-### Espada Longa
 
-Ataque Corpo a Corpo com Arma: 6 para acertar, alcance 1,5 m, um alvo. Acerto: 8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano cortante, ou 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) de dano cortante se usada com duas mãos.
+### Multiattack
+
+The helmed horror makes two longsword attacks.
+
+
+### Longsword
+
+mw 6 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) slashing damage, or 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) slashing damage if used with two hands.

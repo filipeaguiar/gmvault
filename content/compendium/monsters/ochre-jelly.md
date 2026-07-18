@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,29 +36,30 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Large ooze U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Gelatina Ocre
 ---
 
-## Características
+## Traits
 
-### Amorfo
-A gelatina pode se mover através de um espaço tão estreito quanto 1 polegada sem precisar se espremer.
 
-### Escalada de Aranha
-A gelatina pode escalar superfícies difíceis, inclusive de cabeça para baixo em tetos, sem precisar fazer um teste de atributo.
+### Amorphous
 
-## Ações
+The jelly can move through a space as narrow as 1 inch wide without squeezing.
 
-### Pseudópode
-Ataque Corpo a Corpo com Arma: +4 para acertar, alcance 5 pés, um alvo. {@h}9 (<span class="dice+" data-roll-notation="2d6+2">2d6 + 2</span>) de dano de concussão mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de ácido.
 
-## Reações
+### Spider Climb
 
-### Dividir
-Quando uma gelatina de tamanho Médio ou maior é submetida a dano elétrico ou dano cortante, ela se divide em duas novas gelatinas se tiver ao menos 10 pontos de vida. Cada nova gelatina tem pontos de vida iguais à metade dos pontos de vida da gelatina original, arredondados para baixo. As novas gelatinas são de um tamanho menor que a gelatina original.
+The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+
+## Actions
+
+
+### Pseudopod
+
+mw 4 to hit, reach 5 ft., one target. {@h}9 (<span class="dice+" data-roll-notation="2d6+2">2d6 + 2</span>) bludgeoning damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) acid damage.
+
+## Reactions
+
+
+### Split
+
+When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly.

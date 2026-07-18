@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,55 +40,48 @@ stats:
   languages: Abyssal, Common, Infernal, Primordial
   cr: '5'
 stats_meta: Medium fiend N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Bruxa da Noite
 ---
 
-## Características
+## Traits
 
 
-### Resistência à Magia
+### Magic Resistance
 
-A bruxa tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
+The hag has advantage on saving throws against spells and other magical effects.
 
 
-### Itens da Bruxa Noturna
+### Night Hag Items
 
-Uma bruxa noturna carrega dois itens mágicos muito raros que ela mesma deve criar. Se qualquer desses objetos for perdido, a bruxa noturna fará de tudo para recuperá-lo, já que criar uma nova ferramenta demanda tempo e esforço.
+A night hag carries two very rare magic items that she must craft for herself. If either object is lost, the night hag will go to great lengths to retrieve it, as creating a new tool takes time and effort.
 
 
 ### Heartstone
 
-Esta gema negra e reluzente permite que a bruxa noturna se torne etérea enquanto estiver em sua posse. O toque da heartstone também cura qualquer doença. Criar uma heartstone leva 30 dias.
+This lustrous black gem allows a night hag to become ethereal while it is in her possession. The touch of a MM also cures any disease. Crafting a heartstone takes 30 days.
 
 
 ### Soul Bag
 
-Quando um humanoide maligno morre em consequência da Assombração do Pesadelo da bruxa noturna, ela captura a alma neste saco negro feito de carne costurada. Uma soul bag pode conter apenas uma alma maligna por vez, e somente a bruxa noturna que a criou pode capturar uma alma com ela. Criar uma soul bag leva 7 dias e exige o sacrifício de um humanoide (cuja carne é usada para fazer o saco).
+When an evil humanoid dies as a result of a night hag's Nightmare Haunting, the hag catches the soul in this black sack made of stitched flesh. A MM can hold only one evil soul at a time, and only the night hag who crafted the bag can catch a soul with it. Crafting a soul bag takes 7 days and a humanoid sacrifice (whose flesh is used to make the bag).
 
-## Ações
-
-
-### Garras (Apenas na Forma de Bruxa)
-
-Ataque corpo a corpo com arma: +7 para atingir, alcance 1,5 m, um alvo. Acerto: 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano cortante.
+## Actions
 
 
-### Mudar Forma
+### Claws (Hag Form Only)
 
-A bruxa se transforma magicamente em uma humanoide fêmea de tamanho Pequeno ou Médio, ou de volta à sua forma verdadeira. Suas estatísticas são as mesmas em cada forma. Qualquer equipamento que ela esteja vestindo ou carregando não é transformado. Ela reverte à sua forma verdadeira se morrer.
-
-
-### Eterealidade
-
-A bruxa entra magicamente no Plano Etéreo vinda do Plano Material, ou vice-versa. Para isso, ela precisa ter uma heartstone em sua posse.
+mw 7 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) slashing damage.
 
 
-### Assombração do Pesadelo (1/Dia)
+### Change Shape
 
-Enquanto estiver no Plano Etéreo, a bruxa toca magicamente um humanoide adormecido no Plano Material. Uma magia de proteção contra o bem e o mal conjurada sobre o alvo impede esse contato, assim como um círculo mágico. Enquanto o contato persistir, o alvo tem visões terríveis. Se essas visões durarem pelo menos 1 hora, o alvo não ganha benefício de seu descanso, e seu máximo de pontos de vida é reduzido em 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>). Se esse efeito reduzir o máximo de pontos de vida do alvo a 0, o alvo morre e, se era maligno, sua alma fica presa na soul bag da bruxa. A redução do máximo de pontos de vida do alvo dura até ser removida pela magia restauração maior ou magia similar.
+The hag magically polymorphs into a Small or Medium female humanoid, or back into her true form. Her statistics are the same in each form. Any equipment she is wearing or carrying isn't transformed. She reverts to her true form if she dies.
+
+
+### Etherealness
+
+The hag magically enters the Ethereal Plane from the Material Plane, or vice versa. To do so, the hag must have a heartstone in her possession.
+
+
+### Nightmare Haunting (1/Day)
+
+While on the Ethereal Plane, the hag magically touches a sleeping humanoid on the Material Plane. A protection from evil and good spell cast on the target prevents this contact, as does a magic circle. As long as the contact persists, the target has dreadful visions. If these visions last for at least 1 hour, the target gains no benefit from its rest, and its hit point maximum is reduced by 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>). If this effect reduces the target's hit point maximum to 0, the target dies, and if the target was evil, its soul is trapped in the hag's soul bag. The reduction to the target's hit point maximum lasts until removed by the greater restoration spell or similar magic.

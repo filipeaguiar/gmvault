@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -31,18 +31,12 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Uma mão espectral e flutuante aparece em um ponto que você escolher dentro do alcance. A mão dura pela duração. A mão desaparece se estiver a mais de 30 pés de você ou se conjurar esta magia novamente.
+A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.
 
-Quando você conjura a magia, pode usar a mão para manipular um objeto, abrir uma porta ou recipiente destrancado, guardar ou recuperar um item de um recipiente aberto, ou derramar o conteúdo de um frasco.
+When you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial.
 
-Com uma ação XPHB em seus turnos posteriores, você pode controlar a mão dessa forma novamente. Como parte dessa ação, você pode mover a mão até 30 pés.
+As a XPHB action on your later turns, you can control the hand thus again. As part of that action, you can move the hand up to 30 feet.
 
-A mão não pode atacar, ativar itens mágicos ou carregar mais de 10 libras.
+The hand can't attack, activate magic items, or carry more than 10 pounds.

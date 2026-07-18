@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,18 +36,11 @@ stats:
   languages: ''
   cr: 1/4
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Cavalo de montaria
 ---
 
-## Ações
+## Actions
 
 
-### Cascos
+### Hooves
 
-mw 5 para acertar, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="2d4+3">2d4 + 3</span>) dano de concussão.
+mw 5 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="2d4+3">2d4 + 3</span>) bludgeoning damage.

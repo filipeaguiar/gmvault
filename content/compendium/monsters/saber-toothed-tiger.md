@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,31 +38,28 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Tigre-dentes-de-sabre
 ---
 
-## Características
+## Traits
 
-### Faro Aguçado
 
-O tigre tem vantagem em testes de Sabedoria (Percepção) que dependem do olfato.
+### Keen Smell
 
-### Bote
+The tiger has advantage on Wisdom (Perception) checks that rely on smell.
 
-Se o tigre se mover pelo menos 6 metros em linha reta em direção a uma criatura e então a atingir com um ataque de garra no mesmo turno, aquele alvo deve ser bem-sucedido em um teste de resistência de Força CD 14 ou será derrubado e ficará caído. Se o alvo estiver caído, o tigre pode fazer um ataque de mordida contra ele como uma ação bônus.
 
-## Ações
+### Pounce
 
-### Mordida
+If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
 
-mw 6 para atingir, alcance 1,5 m, um alvo. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) de dano perfurante.
+## Actions
 
-### Garra
 
-mw 6 para atingir, alcance 1,5 m, um alvo. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) de dano cortante.
+### Bite
+
+mw 6 to hit, reach 5 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) piercing damage.
+
+
+### Claw
+
+mw 6 to hit, reach 5 ft., one target. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) slashing damage.

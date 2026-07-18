@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,17 +19,10 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 22088f737d3ee61b
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Invocações Místicas
 ---
 
-Você descobriu Invocações Místicas, fragmentos de conhecimento proibido que imbuem você com uma habilidade mágica duradoura ou outros ensinamentos. Você ganha uma invocação de sua escolha, como Pacto do Tomo. As invocações são descritas na seção "source=XPHB" posteriormente na descrição desta classe.
+You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons. You gain one invocation of your choice, such as Pact of the Tome. Invocations are described in the "source=XPHB" section later in this class's description.
 
-Quando você atinge certos níveis de Bruxo, você ganha mais invocações de sua escolha, conforme mostrado na coluna de Invocações da tabela de Características do Bruxo.
+When you gain certain Warlock levels, you gain more invocations of your choice, as shown in the Invocations column of the Warlock Features table.
 
-Você não pode escolher a mesma invocação mais de uma vez, a menos que sua descrição diga o contrário.
+You can't pick the same invocation more than once unless its description says otherwise.

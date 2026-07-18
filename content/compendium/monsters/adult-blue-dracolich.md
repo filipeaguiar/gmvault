@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -42,72 +42,65 @@ stats:
   languages: Common, Draconic
   cr: '17'
 stats_meta: Huge undead L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Draco-Lich Azul Adulto
 ---
 
-## Características
+## Traits
 
 
-### Resistência Lendária (3/Dia)
+### Legendary Resistance (3/Day)
 
-Se o dracolich falhar em um teste de resistência, ele pode escolher ser bem-sucedido em vez disso.
-
-
-### Resistência à Magia
-
-O dracolich tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
-
-## Ações
+If the dracolich fails a saving throw, it can choose to succeed instead.
 
 
-### Ataques Múltiplos
+### Magic Resistance
 
-O dracolich pode usar sua Presença Amedrontadora. Ele então realiza três ataques: um com sua mordida e dois com suas garras.
+The dracolich has advantage on saving throws against spells and other magical effects.
 
-
-### Mordida
-
-mw 13 para atingir, alcance 3 m, um alvo. {@h}18 (2d10 + 7) de dano perfurante mais 5 (1d10) de dano elétrico.
+## Actions
 
 
-### Garra
+### Multiattack
 
-mw 13 para atingir, alcance 1,5 m, um alvo. {@h}14 (2d6 + 7) de dano cortante.
-
-
-### Cauda
-
-mw 13 para atingir, alcance 4,5 m, um alvo. {@h}16 (2d8 + 7) de dano de concussão.
+The dracolich can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
 
 
-### Presença Amedrontadora
+### Bite
 
-Cada criatura, escolhida pelo dracolich, que esteja em um raio de 36 m do dracolich e ciente dele, deve ser bem-sucedida em um teste de resistência de Sabedoria CD 18 ou ficará amedrontada por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito em si mesma em caso de sucesso. Se o teste de resistência de uma criatura for bem-sucedido ou o efeito terminar para ela, a criatura fica imune à Presença Amedrontadora do dracolich pelas próximas 24 horas.
-
-
-### Sopro Elétrico (Recarga 5–6)
-
-O dracolich exala eletricidade em uma linha de 27 m de comprimento e 1,5 m de largura. Cada criatura nessa linha deve realizar um teste de resistência de Destreza CD 20, sofrendo 66 (12d10) de dano elétrico em caso de falha no teste, ou metade desse dano em caso de sucesso.
-
-## Ações Lendárias
+mw 13 to hit, reach 10 ft., one target. {@h}18 (<span class="dice+" data-roll-notation="2d10+7">2d10 + 7</span>) piercing damage plus 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) lightning damage.
 
 
-### Detectar
+### Claw
 
-O dracolich realiza um teste de Sabedoria (Percepção).
-
-
-### Ataque de Cauda
-
-O dracolich realiza um ataque de cauda.
+mw 13 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d6+7">2d6 + 7</span>) slashing damage.
 
 
-### Ataque de Asas (Custa 2 Ações)
+### Tail
 
-O dracolich bate suas asas esfarrapadas. Cada criatura a até 3 m do dracolich deve ser bem-sucedida em um teste de resistência de Destreza CD 21 ou sofre 14 (2d6 + 7) de dano de concussão e é derrubada caída. Após bater suas asas dessa forma, o dracolich pode voar até metade de seu deslocamento de voo.
+mw 13 to hit, reach 15 ft., one target. {@h}16 (<span class="dice+" data-roll-notation="2d8+7">2d8 + 7</span>) bludgeoning damage.
+
+
+### Frightful Presence
+
+Each creature of the dracolich's choice that is within 120 feet of the dracolich and aware of it must succeed on a 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours.
+
+
+### Lightning Breath 5
+
+The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a 20 Dexterity saving throw, taking 66 (<span class="dice+" data-roll-notation="12d10">12d10</span>) lightning damage on a failed save, or half as much damage on a successful one.
+
+## Legendary Actions
+
+
+### Detect
+
+The dracolich makes a Wisdom (Perception) check.
+
+
+### Tail Attack
+
+The dracolich makes a tail attack.
+
+
+### Wing Attack (Costs 2 Actions)
+
+The dracolich beats its tattered wings. Each creature within 10 feet of the dracolich must succeed on a 21 Dexterity saving throw or take 14 (<span class="dice+" data-roll-notation="2d6+7">2d6 + 7</span>) bludgeoning damage and be knocked prone. After beating its wings this way, the dracolich can fly up to half its flying speed.

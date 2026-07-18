@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -30,13 +30,6 @@ stats:
   languages: ''
   cr: ''
 stats_meta: ''
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Caçador de Dragão
 ---
 
 

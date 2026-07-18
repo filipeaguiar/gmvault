@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -42,29 +42,26 @@ stats:
   languages: Common, Draconic
   cr: '10'
 stats_meta: Large dragon C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Dragão Vermelho Jovem
 ---
 
-## Ações
+## Actions
 
-### Ataques Múltiplos
 
-O dragão faz três ataques: um com sua mordida e dois com suas garras.
+### Multiattack
 
-### Mordida
+The dragon makes three attacks: one with its bite and two with its claws.
 
-Ataque Corpo a Corpo com Arma: +10 para atingir, alcance 10 ft., um alvo. {@h}17 (2d10 + 6) de dano perfurante mais 3 (1d6) de dano de fogo.
 
-### Garra
+### Bite
 
-Ataque Corpo a Corpo com Arma: +10 para atingir, alcance 5 ft., um alvo. {@h}13 (2d6 + 6) de dano cortante.
+mw 10 to hit, reach 10 ft., one target. {@h}17 (<span class="dice+" data-roll-notation="2d10+6">2d10 + 6</span>) piercing damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
 
-### Sopro de Fogo (Recarga 5–6)
 
-O dragão exala fogo em um cone de 30 pés. Cada criatura nessa área deve fazer um teste de resistência de Destreza CD 17; em caso de falha, a criatura sofre 56 (16d6) de dano de fogo, ou metade desse dano em caso de sucesso.
+### Claw
+
+mw 10 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) slashing damage.
+
+
+### Fire Breath 5
+
+The dragon exhales fire in a 30-foot cone. Each creature in that area must make a 17 Dexterity saving throw, taking 56 (<span class="dice+" data-roll-notation="16d6">16d6</span>) fire damage on a failed save, or half as much damage on a successful one.

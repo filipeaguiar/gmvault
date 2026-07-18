@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,27 +36,23 @@ stats:
   languages: understands Aquan but doesn't speak
   cr: '3'
 stats_meta: Large elemental N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Estranho da Água
 ---
 
-## Características
+## Traits
 
-### Invisível na Água
 
-A água estranha fica invisível enquanto estiver completamente imersa em água.
+### Invisible in Water
 
-### Ligado à Água
+The water weird is invisible while fully immersed in water.
 
-A água estranha morre se sair da água à qual está ligada ou se essa água for destruída.
 
-## Ações
+### Water Bound
 
-### Constrição
+The water weird dies if it leaves the water to which it is bound or if that water is destroyed.
 
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 10 ft., uma criatura. Acerto: 13 (<span class="dice+" data-roll-notation="3d6+3">3d6 + 3</span>) de Dano de Concussão. Se o alvo for Médio ou menor, ele fica agarrado (CD para escapar 13) e é puxado 1,5 metro em direção à água estranha. Até que essa condição de agarrado termine, o alvo estará contido, a água estranha tentará afogá-lo e a água estranha não poderá usar sua Constrição em outro alvo.
+## Actions
+
+
+### Constrict
+
+mw 5 to hit, reach 10 ft., one creature. {@h}13 (<span class="dice+" data-roll-notation="3d6+3">3d6 + 3</span>) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape 13) and pulled 5 feet toward the water weird. Until this grapple ends, the target is restrained, the water weird tries to drown it, and the water weird can't constrict another target.

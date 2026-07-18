@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XGE) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XGE). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -32,18 +32,12 @@ spell_info:
   saving_throws:
   - strength
   rolls: []
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Você domina o ar e o compele a criar um dos seguintes efeitos em um ponto que você possa ver dentro do alcance:
+You seize the air and compel it to create one of the following effects at a point you can see within range:
 
-* Uma criatura de tamanho Médio ou menor, à sua escolha, deve ser bem-sucedida em um teste de resistência de Força ou ser empurrada até 5 pés para longe de você.
+* One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.
 
-* Você cria uma pequena rajada de ar capaz de mover um objeto que não esteja sendo segurado nem carregado e que pese no máximo 5 libras. O objeto é empurrado até 10 pés para longe de você. Não é empurrado com força suficiente para causar dano.
+* You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.
 
-* Você cria um efeito sensorial inofensivo usando ar, como fazer folhas farfalharem, o vento bater persianas fechadas ou suas roupas ondularem com a brisa.
+* You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze.

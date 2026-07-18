@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,35 +38,40 @@ stats:
   languages: any one language (usually Common)
   cr: '3'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Cavaleiro
 ---
 
-## Características
+## Traits
 
-### Coragem
-O cavaleiro tem vantagem em testes de resistência contra ser amedrontado.
 
-## Ações
+### Brave
 
-### Ataques Múltiplos
-O cavaleiro realiza dois ataques corpo a corpo.
+The knight has advantage on saving throws against being frightened.
 
-### Montante
-Ataque Corpo a Corpo com Arma +5 para atingir, alcance 1,5 m, um alvo. _Dano:_ 10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) de dano cortante.
+## Actions
 
-### Besta Pesada
-Ataque à Distância com Arma +2 para atingir, alcance 30/120 m, um alvo. _Dano:_ 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano perfurante.
 
-### Liderança (Recarga após um Descanso Curto ou Longo)
-Durante 1 minuto, o cavaleiro pode proferir um comando ou aviso especial sempre que uma criatura não hostil que possa ver a até 9 metros dele fizer uma jogada de ataque ou um teste de resistência. A criatura pode adicionar um <span class="dice+" data-roll-notation="d4">d4</span> à sua jogada, desde que possa ouvir e entender o cavaleiro. Uma criatura pode se beneficiar de apenas um dado de Liderança por vez. Este efeito termina se o cavaleiro estiver incapacitado.
+### Multiattack
 
-## Reações
+The knight makes two melee attacks.
 
-### Aparar
-O cavaleiro adiciona 2 à sua Classe de Armadura contra um ataque corpo a corpo que o atingiria. Para fazer isso, o cavaleiro deve ver o atacante e estar empunhando uma arma corpo a corpo.
+
+### Greatsword
+
+mw 5 to hit, reach 5 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) slashing damage.
+
+
+### Heavy Crossbow
+
+rw 2 to hit, range 100/400 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) piercing damage.
+
+
+### Leadership (Recharges after a Short or Long Rest)
+
+For 1 minute, the knight can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a <span class="dice+" data-roll-notation="d4">d4</span> to its roll provided it can hear and understand the knight. A creature can benefit from only one Leadership die at a time. This effect ends if the knight is incapacitated.
+
+## Reactions
+
+
+### Parry
+
+The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon.

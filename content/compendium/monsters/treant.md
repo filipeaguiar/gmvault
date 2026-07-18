@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,45 +36,38 @@ stats:
   languages: Common, Druidic, Elvish, Sylvan
   cr: '9'
 stats_meta: Huge plant C/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Ent
 ---
 
-## Características
+## Traits
 
 
-### Aparência Falsa
+### False Appearance
 
-Enquanto o treante permanece imóvel, ele é indistinguível de uma árvore normal.
-
-
-### Monstro de Cerco
-
-O treante causa o dobro do dano a objetos e estruturas.
-
-## Ações
+While the treant remains motionless, it is indistinguishable from a normal tree.
 
 
-### Ataques Múltiplos
+### Siege Monster
 
-O treante realiza dois ataques de pancada.
+The treant deals double damage to objects and structures.
 
-
-### Pancada
-
-Ataque Corpo a Corpo com Arma: +10 para atingir, alcance de 1,5 m, um alvo. Acerto: 16 (<span class="dice+" data-roll-notation="3d6+6">3d6 + 6</span>) de dano de concussão.
+## Actions
 
 
-### Rocha
+### Multiattack
 
-Ataque à Distância com Arma: +10 para atingir, alcance 18/54 m, um alvo. Acerto: 28 (<span class="dice+" data-roll-notation="4d10+6">4d10 + 6</span>) de dano de concussão.
+The treant makes two slam attacks.
 
 
-### Animar Árvores (1/Dia)
+### Slam
 
-O treante anima magicamente uma ou duas árvores que possa ver a até 18 m dele. Essas árvores têm as mesmas estatísticas de um treante, exceto que possuem valores de Inteligência e Carisma iguais a 1, não podem falar e possuem apenas a opção de ação Pancada. Uma árvore animada age como aliada do treante. A árvore permanece animada por 1 dia ou até morrer; até o treante morrer ou estiver a mais de 36 m da árvore; ou até o treante usar uma ação bônus para transformá-la novamente em uma árvore inanimada. A árvore então cria raízes, se possível.
+mw 10 to hit, reach 5 ft., one target. {@h}16 (<span class="dice+" data-roll-notation="3d6+6">3d6 + 6</span>) bludgeoning damage.
+
+
+### Rock
+
+rw 10 to hit, range 60/180 ft., one target. {@h}28 (<span class="dice+" data-roll-notation="4d10+6">4d10 + 6</span>) bludgeoning damage.
+
+
+### Animate Trees (1/Day)
+
+The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.

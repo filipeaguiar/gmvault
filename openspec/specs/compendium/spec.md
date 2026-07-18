@@ -19,7 +19,7 @@ Reusable rules content SHALL live under `content/compendium/` and SHALL not belo
 - **THEN** the index SHALL omit empty groups and SHALL render an unknown non-empty section through a generic fallback without failing the build.
 
 ### Requirement: Compendium supports core RPG entity kinds
-The compendium SHALL support monsters, items, magic items, classes, races, feats, spells, backgrounds, conditions, and rules.
+The compendium SHALL support monsters, items, magic items, classes, races, feats, spells, backgrounds, conditions, and rules. Item and magic item pages SHALL use mapped values in `item_info` fields, not raw 5e.tools abbreviations.
 
 #### Scenario: Entity page exists
 - **WHEN** a compendium entity page is rendered
@@ -28,6 +28,16 @@ The compendium SHALL support monsters, items, magic items, classes, races, feats
 #### Scenario: Monster page exists
 - **WHEN** a monster page has stat block metadata
 - **THEN** the monster renderer SHALL display a stat block-oriented view before or alongside the Markdown content
+
+#### Scenario: Weapon item has mapped item_info
+- **WHEN** a weapon item page has `item_info.type` containing a 5e.tools type code like `M|XPHB`
+- **THEN** the compendium rebuild process SHALL map it to `Weapon` (melee) or `Weapon` (ranged)
+- **THEN** the `damage_type` SHALL be mapped from abbreviation to full name (e.g., `P` → `piercing`)
+- **THEN** the `properties` SHALL be mapped from abbreviations to full names (e.g., `F|XPHB` → `finesse`)
+
+#### Scenario: Armor item has mapped item_info
+- **WHEN** an armor item page has `item_info.type` containing a 5e.tools type code like `LA|XPHB`
+- **THEN** the compendium rebuild process SHALL map it to `Light Armor`, `Medium Armor`, `Heavy Armor`, or `Shield`
 
 ### Requirement: Campaign pages can reference compendium pages
 Campaign-scoped pages SHALL be able to reference compendium pages through URL lists in front matter.
@@ -53,6 +63,23 @@ Character pages SHALL group referenced compendium pages into useful player-facin
 
 ### Requirement: Class progression pages have structured visual presentation
 Class pages in the compendium SHALL render their title, metadata, progression content grouped by level, level entries, and subclass links with a coherent visual hierarchy. Internal compendium links SHALL use project styling instead of relying on default browser link presentation. The grouped progression HTML SHALL remain reusable when the class page is embedded in a character sheet.
+
+#### Scenario: Class feature card displays with equipment-like layout
+- **WHEN** a character sheet renders class features
+- **THEN** each feature SHALL use the `equipment-card` visual pattern with icon container, heading, and badges
+- **THEN** the card SHALL have a colored left border distinguishing it from equipment cards
+
+#### Scenario: Class feature card shows level badge
+- **WHEN** a class feature has level metadata available
+- **THEN** the card SHALL display a badge with the level number
+
+#### Scenario: Class feature card shows source badge
+- **WHEN** a class feature is rendered
+- **THEN** the card SHALL display a badge indicating the source ("Classe" or "Subclasse")
+
+#### Scenario: Class feature card preserves content
+- **WHEN** a class feature card is rendered
+- **THEN** the compendium content SHALL remain visible below the header
 
 #### Scenario: Class page displays progression hierarchy
 - **WHEN** a class page contains Markdown headings and level-based progression entries

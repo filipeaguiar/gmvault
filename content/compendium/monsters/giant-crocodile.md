@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,31 +37,28 @@ stats:
   languages: ''
   cr: '5'
 stats_meta: Huge beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Crocodilo Gigante
 ---
 
-## Características
+## Traits
 
-### Prender a Respiração
 
-O crocodilo pode prender a respiração por 30 minutos.
+### Hold Breath
 
-## Ações
+The crocodile can hold its breath for 30 minutes.
 
-### Ataques Múltiplos
+## Actions
 
-O crocodilo realiza dois ataques: um com sua mordida e outro com sua cauda.
 
-### Mordida
+### Multiattack
 
-mw 8 para atingir, alcance 1,5 m, um alvo. {@h}21 (<span class="dice+" data-roll-notation="3d10+5">3d10 + 5</span>) de dano perfurante, e o alvo fica agarrado (escapar CD 16). Até que este agarrão termine, o alvo fica contido e o crocodilo não pode morder outro alvo.
+The crocodile makes two attacks: one with its bite and one with its tail.
 
-### Cauda
 
-mw 8 para atingir, alcance 3 m, um alvo que não esteja agarrado pelo crocodilo. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano de concussão. Se o alvo for uma criatura, deve ser bem-sucedido em um teste de resistência de Força CD 16 ou ficará caído.
+### Bite
+
+mw 8 to hit, reach 5 ft., one target. {@h}21 (<span class="dice+" data-roll-notation="3d10+5">3d10 + 5</span>) piercing damage, and the target is grappled (escape 16). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.
+
+
+### Tail
+
+mw 8 to hit, reach 10 ft., one target not grappled by the crocodile. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) bludgeoning damage. If the target is a creature, it must succeed on a 16 Strength saving throw or be knocked prone.

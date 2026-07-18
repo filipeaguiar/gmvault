@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,21 +36,16 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Large monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Anquegue
 ---
 
-## Ações
+## Actions
 
-### Mordida
 
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. *Acerto:* 10 (2d6 + 3) de dano cortante mais 3 (1d6) de dano de ácido. Se o alvo for uma criatura Grande ou menor, ela fica agarrada (CD 13 para escapar). Até esse agarrão terminar, o ankheg só pode morder a criatura agarrada e tem Vantagem nas jogadas de ataque para fazê-lo.
+### Bite
 
-### Borrifo Ácido (Recarga 6)
+mw 5 to hit, reach 5 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) slashing damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) acid damage. If the target is a Large or smaller creature, it is grappled (escape 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so.
 
-O ankheg cospe ácido em uma linha de 9 metros de comprimento e 1,5 metro de largura, desde que não tenha nenhuma criatura agarrada. Cada criatura nessa linha deve realizar um teste de resistência de Destreza CD 13, sofrendo 10 (3d6) de dano de ácido em caso de falha, ou metade desse dano em caso de sucesso.
+
+### Acid Spray {@recharge}
+
+The ankheg spits acid in a line that is 30 feet long and 5 feet wide, provided that it has no creature grappled. Each creature in that line must make a 13 Dexterity saving throw, taking 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) acid damage on a failed save, or half as much damage on a successful one.

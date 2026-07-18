@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,27 +37,23 @@ stats:
   languages: ''
   cr: '5'
 stats_meta: Large monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Bulette
 ---
 
-## Características
+## Traits
 
-### Salto sem Impulso
 
-O salto em distância do bulette é de até 9 metros e o seu salto em altura é de até 4,5 metros, com ou sem impulsão.
+### Standing Leap
 
-## Ações
+The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
 
-### Mordida
+## Actions
 
-+7 para atingir, alcance 1,5 metro, um alvo. **Acerto:** 30 (4d12 + 4) de dano perfurante.
 
-### Salto Mortal
+### Bite
 
-Se o bulette saltar pelo menos 4,5 metros como parte do seu movimento, ele pode então usar esta ação para cair de pé em um espaço que contenha uma ou mais criaturas adicionais. Cada uma dessas criaturas deve obter sucesso em um teste de resistência de Força ou Destreza CD 16 (à escolha do alvo) ou ficará caída e sofrerá 14 (3d6 + 4) de dano de concussão mais 14 (3d6 + 4) de dano cortante. Em um sucesso no teste, a criatura sofre apenas metade do dano, não fica caída, e é empurrada 1,5 metro para fora do espaço do bulette, para um espaço desocupado à escolha da criatura. Se não houver um espaço desocupado ao alcance, a criatura, em vez disso, cai no chão no espaço do bulette.
+mw 7 to hit, reach 5 ft., one target. {@h}30 (<span class="dice+" data-roll-notation="4d12+4">4d12 + 4</span>) piercing damage.
+
+
+### Deadly Leap
+
+If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (<span class="dice+" data-roll-notation="3d6+4">3d6 + 4</span>) bludgeoning damage plus 14 (<span class="dice+" data-roll-notation="3d6+4">3d6 + 4</span>) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.

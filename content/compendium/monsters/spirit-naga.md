@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,23 +40,18 @@ stats:
   languages: Abyssal, Common
   cr: '8'
 stats_meta: Large monstrosity C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Naga Espiritual
 ---
 
-## Características
+## Traits
 
-### Rejuvenescimento
 
-Se morrer, a naga retorna à vida em <span class="dice+" data-roll-notation="1d6">1d6</span> dias e recupera todos os seus pontos de vida. Apenas uma magia desejo pode impedir que esta característica funcione.
+### Rejuvenation
 
-## Ações
+If it dies, the naga returns to life in <span class="dice+" data-roll-notation="1d6">1d6</span> days and regains all its hit points. Only a wish spell can prevent this trait from functioning.
 
-### Mordida
+## Actions
 
-Ataque Corpo a Corpo com Arma: +7 para acertar, alcance 3 m, uma criatura. *Acerto:* {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6+4</span>) de dano perfurante, e o alvo deve fazer um teste de resistência de Constituição CD 13, sofrendo 31 (<span class="dice+" data-roll-notation="7d8">7d8</span>) de dano de veneno em caso de falha no teste, ou metade desse dano em caso de sucesso.
+
+### Bite
+
+mw 7 to hit, reach 10 ft., one creature. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) piercing damage, and the target must make a 13 Constitution saving throw, taking 31 (<span class="dice+" data-roll-notation="7d8">7d8</span>) poison damage on a failed save, or half as much damage on a successful one.

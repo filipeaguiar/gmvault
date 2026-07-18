@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,22 +36,23 @@ stats:
   languages: understands all languages it knew in life but can't speak
   cr: '1'
 stats_meta: Medium undead C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Espectro
 ---
 
-## Características
-### Movimento Incorpóreo
-O espectro pode se mover através de outras criaturas e objetos como se fossem 3. Ele sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar seu turno dentro de um objeto.
+## Traits
 
-### Sensibilidade à Luz Solar
-Enquanto estiver sob a luz solar, o espectro tem desvantagem em jogadas de ataque, bem como em testes de Sabedoria (Percepção) que dependem da visão.
 
-## Ações
-### Drenar Vida
-ms 4 para acertar, alcance 5 pés, uma criatura. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano necrótico. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 10 ou seu máximo de pontos de vida é reduzido em uma quantidade igual ao dano sofrido. Essa redução dura até que a criatura conclua um descanso longo. O alvo morre se este efeito reduzir seu máximo de pontos de vida a 0.
+### Incorporeal Movement
+
+The specter can move through other creatures and objects as if they were 3. It takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if it ends its turn inside an object.
+
+
+### Sunlight Sensitivity
+
+While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
+
+## Actions
+
+
+### Life Drain
+
+ms 4 to hit, reach 5 ft., one creature. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) necrotic damage. The target must succeed on a 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.

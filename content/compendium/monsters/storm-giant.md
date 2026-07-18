@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -44,40 +44,33 @@ stats:
   languages: Common, Giant
   cr: '13'
 stats_meta: Huge giant C/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Gigante da Tempestade
 ---
 
-## Características
+## Traits
 
 
-### Anfíbio
+### Amphibious
 
-O gigante pode respirar ar e água.
+The giant can breathe air and water.
 
-## Ações
-
-
-### Ataques Múltiplos
-
-O gigante realiza dois ataques com espada grande.
+## Actions
 
 
-### Espada Grande
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +14 para atingir, alcance 3 m, um alvo. Acerto: 30 (<span class="dice+" data-roll-notation="6d6+9">6d6 + 9</span>) de dano cortante.
-
-
-### Rocha
-
-Ataque à Distância com Arma: +14 para atingir, alcance 18/72 m, um alvo. Acerto: 35 (<span class="dice+" data-roll-notation="4d12+9">4d12 + 9</span>) de dano de concussão.
+The giant makes two greatsword attacks.
 
 
-### Raio 5
+### Greatsword
 
-O gigante arremessa um raio mágico em um ponto que possa ver dentro de 150 metros de si. Cada criatura em um raio de 3 metros daquele ponto deve ser bem-sucedida em um teste de resistência de Destreza CD 17, sofrendo 54 (<span class="dice+" data-roll-notation="12d8">12d8</span>) de dano elétrico em caso de falha, ou metade desse dano em caso de sucesso.
+mw 14 to hit, reach 10 ft., one target. {@h}30 (<span class="dice+" data-roll-notation="6d6+9">6d6 + 9</span>) slashing damage.
+
+
+### Rock
+
+rw 14 to hit, range 60/240 ft., one target. {@h}35 (<span class="dice+" data-roll-notation="4d12+9">4d12 + 9</span>) bludgeoning damage.
+
+
+### Lightning Strike 5
+
+The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a 17 Dexterity saving throw, taking 54 (<span class="dice+" data-roll-notation="12d8">12d8</span>) lightning damage on a failed save, or half as much damage on a successful one.

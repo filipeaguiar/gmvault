@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,18 +36,13 @@ spell_info:
     notation: 1d10
     label: Dano
     damage_type: force
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Você arremessa um raio de energia crepitante. Faça um ataque à distância com magia contra uma criatura ou objeto dentro do alcance. Se atingir, o alvo sofre <span class="dice+" data-roll-notation="1d10">1d10</span> de dano de Energia.
+You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes <span class="dice+" data-roll-notation="1d10">1d10</span> Force damage.
 
-## Em Níveis Superiores
+## At Higher Levels
 
-### Aprimoramento do Truque
 
-A magia cria dois raios no 5º nível, três raios no 11º nível e quatro raios no 17º nível. Você pode direcionar os raios para o mesmo alvo ou para alvos diferentes. Faça uma jogada de ataque separada para cada raio.
+### Cantrip Upgrade
+
+The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.

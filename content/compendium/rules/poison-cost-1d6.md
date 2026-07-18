@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,15 +19,8 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: a65591d762674d1c
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: 'Veneno (Custo: 1d6)'
 ---
 
-Você adiciona uma toxina ao seu ataque, forçando o alvo a realizar um teste de resistência de Constituição. Em caso de falha no teste, o alvo fica com a condição XPHB por 1 minuto. No final de cada um dos turnos dele, o alvo com XPHB repete o teste, encerrando o efeito sobre si em caso de sucesso no teste.
+You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the XPHB condition for 1 minute. At the end of each of its turns, the XPHB target repeats the save, ending the effect on itself on a success.
 
-Para usar este efeito, você deve ter XPHB consigo.
+To use this effect, you must have a XPHB on your person.

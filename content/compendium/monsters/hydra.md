@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,43 +37,42 @@ stats:
   languages: ''
   cr: '8'
 stats_meta: Huge monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Hidra
 ---
 
-## Características
+## Traits
 
-### Prender a Respiração
 
-A hidra pode prender a respiração por 1 hora.
+### Hold Breath
 
-### Cabeças Múltiplas
+The hydra can hold its breath for 1 hour.
 
-A hidra tem cinco cabeças. Enquanto tiver mais de uma cabeça, a hidra tem vantagem nos testes de resistência contra ser cego, enfeitiçado, surdo, amedrontado, atordoado e contra ficar inconsciente.
 
-Sempre que a hidra sofre 25 ou mais de dano em um único turno, uma de suas cabeças morre. Se todas as suas cabeças morrerem, a hidra morre.
+### Multiple Heads
 
-No final do turno dela, ela regenera duas cabeças para cada cabeça que morreu desde o último turno dela, a menos que tenha sofrido dano de fogo desde então. A hidra recupera 10 pontos de vida para cada cabeça regenerada dessa forma.
+The hydra has five heads. While it has more than one head, the hydra has advantage on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
 
-### Cabeças Reativas
+Whenever the hydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the hydra dies.
 
-Para cada cabeça que a hidra tiver além de uma, ela ganha uma reação adicional que só pode ser usada para ataques de oportunidade.
+At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The hydra regains 10 hit points for each head regrown in this way.
 
-### Alerta
 
-Enquanto a hidra dorme, pelo menos uma de suas cabeças permanece acordada.
+### Reactive Heads
 
-## Ações
+For each head the hydra has beyond one, it gets an extra reaction that can be used only for opportunity attacks.
 
-### Ataques Múltiplos
 
-A hidra realiza tantos ataques de mordida quanto o número de cabeças que possui.
+### Wakeful
 
-### Mordida
+While the hydra sleeps, at least one of its heads is awake.
 
-mw 8 para atingir, alcance 3 m, um alvo. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) de dano perfurante.
+## Actions
+
+
+### Multiattack
+
+The hydra makes as many bite attacks as it has heads.
+
+
+### Bite
+
+mw 8 to hit, reach 10 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) piercing damage.

@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,13 +19,6 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 1e0349f8bd14b2f7
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Dom Épico
 ---
 
-Você ganha um category=EB ou outro feats.html de sua escolha para o qual você se qualifica. XPHB é recomendado.
+You gain an category=EB or another feats.html of your choice for which you qualify. XPHB is recommended.

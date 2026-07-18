@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,13 +19,6 @@ source:
   remote_file: actions.json
   remote_key: action
   remote_id: 7ef320f25cb51bd8
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Ataque
 ---
 
-Quando você realiza a ação Atacar, você pode fazer uma jogada de ataque com uma arma ou um XPHB.
+When you take the Attack action, you can make one attack roll with a weapon or an XPHB.

@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,12 +19,6 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: db2851ff5f982e88
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Você aprendeu vários idiomas nas comunidades onde exerceu seus talentos de ladino. Você conhece a Gíria dos Ladinos e outro idioma de sua escolha, que você escolhe das tabelas de idiomas em Escolher Idiomas.
+You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice, which you choose from the language tables in Choose Languages.

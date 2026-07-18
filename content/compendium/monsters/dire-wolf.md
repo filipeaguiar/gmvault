@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,27 +38,23 @@ stats:
   languages: ''
   cr: '1'
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Lobo Atroz
 ---
 
-## Características
+## Traits
 
-### Audição e Olfato Aguçados
 
-O lobo tem vantagem em testes de Sabedoria (Percepção) que dependem de audição ou olfato.
+### Keen Hearing and Smell
 
-### Táticas de Matilha
+The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
-O lobo tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um dos aliados do lobo estiver a até 1,5 metro da criatura e o aliado não estiver incapacitado.
 
-## Ações
+### Pack Tactics
 
-### Mordida
+The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
-mw 5 to hit, alcance 1,5 m, um alvo. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) dano perfurante. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 13 ou ficará caída.
+## Actions
+
+
+### Bite
+
+mw 5 to hit, reach 5 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) piercing damage. If the target is a creature, it must succeed on a 13 Strength saving throw or be knocked prone.

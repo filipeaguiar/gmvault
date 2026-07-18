@@ -4,7 +4,7 @@ params:
   kind: item
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -20,25 +20,18 @@ source:
   remote_key: baseitem
   remote_id: a23c231952906737
 item_info:
-  type: M|XPHB
-  rarity: none
-  attunement: ''
-  cost: 200 cp
-  weight: 1
-  damage: 1d4
-  damage_type: P
+  type: Weapon
+  cost: 2 gp
+  weight: 1 lb
+  rarity: None
+  weapon_type: melee
   properties:
-  - F|XPHB
-  - L|XPHB
-  - T|XPHB
+  - finesse
+  - light
+  - thrown
   range: 20/60
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: adaga
+  damage: 1d4
+  damage_type: piercing
 ---
 
 

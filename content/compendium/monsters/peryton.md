@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,45 +37,38 @@ stats:
   languages: understands Common and Elvish but can't speak
   cr: '2'
 stats_meta: Medium monstrosity C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Períton
 ---
 
-## Características
+## Traits
 
 
-### Ataque em Mergulho
+### Dive Attack
 
-Se o peryton estiver voando e mergulhar pelo menos 9 metros em linha reta em direção a um alvo e então atingi-lo com um ataque corpo a corpo com arma, o ataque causa 9 (<span class="dice+" data-roll-notation="2d8">2d8</span>) de dano extra ao alvo.
-
-
-### Sobrevoar
-
-O peryton não provoca um ataque de oportunidade quando sai voando do alcance de um inimigo.
+If the peryton is flying and dives at least 30 feet straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 (<span class="dice+" data-roll-notation="2d8">2d8</span>) damage to the target.
 
 
-### Visão e Olfato Aguçados
+### Flyby
 
-O peryton tem vantagem em testes de Sabedoria (Percepção) que dependem da visão ou do olfato.
-
-## Ações
+The peryton doesn't provoke an opportunity attack when it flies out of an enemy's reach.
 
 
-### Ataques Múltiplos
+### Keen Sight and Smell
 
-O peryton realiza um ataque de chifrada e um ataque de garras.
+The peryton has advantage on Wisdom (Perception) checks that rely on sight or smell.
 
-
-### Chifrada
-
-+5 para atingir, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano perfurante.
+## Actions
 
 
-### Garras
+### Multiattack
 
-+5 para atingir, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="2d4+3">2d4 + 3</span>) de dano perfurante.
+The peryton makes one gore attack and one talon attack.
+
+
+### Gore
+
+mw 5 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage.
+
+
+### Talons
+
+mw 5 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="2d4+3">2d4 + 3</span>) piercing damage.

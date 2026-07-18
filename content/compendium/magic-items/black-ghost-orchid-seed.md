@@ -4,7 +4,7 @@ params:
   kind: magic_item
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -20,22 +20,10 @@ source:
   remote_key: item
   remote_id: 0043d75cf7bcc278
 item_info:
-  type: G
-  rarity: none
-  attunement: ''
-  cost: ''
-  weight: ''
-  damage: ''
-  damage_type: ''
-  properties: []
-  range: ''
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Semente de Orquídea Fantasma Negra
+  type: Adventuring Gear
+  cost: —
+  weight: —
+  rarity: None
 ---
 
-A cada poucos anos, uma colônia de orquídeas-fantasmas produz uma vagem negra da grossura de um punho humano que contém três sementes negras e macias. Uma criatura que consumir uma dessas sementes negras é afetada pela magia Morte Falsa. Se a criatura não souber dos efeitos da vagem ou não desejar ser afetada, ela pode resistir ao efeito sendo bem-sucedida em um teste de resistência de Constituição CD 16. Caso contrário, ela é considerada uma receptora voluntária da magia.
+Every few years, a ghost orchid colony grows a black pod as thick as a human fist that holds three soft, black seeds. A creature that consumes one of these black seeds is affected by the spell feign death. If the creature is unaware of the pod's effects or does not wish to be affected, it can resist the effect by succeeding on a 16 Constitution saving throw. Otherwise, it is considered to be a willing recipient of the spell.

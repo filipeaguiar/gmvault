@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -41,25 +41,21 @@ stats:
   languages: Giant
   cr: '9'
 stats_meta: Huge giant L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Gigante do Fogo
 ---
 
-## Ações
+## Actions
 
-### Ataques Múltiplos
 
-O gigante realiza dois ataques com montante.
+### Multiattack
 
-### Montante
+The giant makes two greatsword attacks.
 
-mw 11 para atingir, alcance 10 ft., um alvo. {@h}28 (<span class="dice+" data-roll-notation="6d6+7">6d6 + 7</span>) dano cortante.
 
-### Pedra
+### Greatsword
 
-rw 11 para atingir, alcance 60/240 ft., um alvo. {@h}29 (<span class="dice+" data-roll-notation="4d10+7">4d10 + 7</span>) dano de concussão.
+mw 11 to hit, reach 10 ft., one target. {@h}28 (<span class="dice+" data-roll-notation="6d6+7">6d6 + 7</span>) slashing damage.
+
+
+### Rock
+
+rw 11 to hit, range 60/240 ft., one target. {@h}29 (<span class="dice+" data-roll-notation="4d10+7">4d10 + 7</span>) bludgeoning damage.

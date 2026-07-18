@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,35 +37,33 @@ stats:
   languages: Giant, Orc
   cr: '4'
 stats_meta: Large giant C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Ettin
 ---
 
-## Características
+## Traits
 
-### Duas Cabeças
 
-O ettin tem vantagem em testes de Sabedoria (Percepção) e em testes de resistência contra as condições cego, enfeitiçado, surdo, amedrontado, atordoado e inconsciente.
+### Two Heads
 
-### Alerta
+The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
 
-Quando uma das cabeças do ettin está adormecida, a outra cabeça está acordada.
 
-## Ações
+### Wakeful
 
-### Ataques Múltiplos
+When one of the ettin's heads is asleep, its other head is awake.
 
-O ettin realiza dois ataques: um com seu machado de batalha e outro com sua clava de espinhos.
+## Actions
 
-### Machado de Batalha
 
-Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) dano cortante.
+### Multiattack
 
-### Clava de Espinhos
+The ettin makes two attacks: one with its battleaxe and one with its morningstar.
 
-Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) dano perfurante.
+
+### Battleaxe
+
+mw 7 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) slashing damage.
+
+
+### Morningstar
+
+mw 7 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) piercing damage.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,33 +38,30 @@ stats:
   languages: ''
   cr: '15'
 stats_meta: Gargantuan monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Verme Púrpura
 ---
 
-## Características
+## Traits
 
-### Escavador
 
-A criatura pode escavar através de rocha sólida com metade do seu deslocamento de escavação e deixa um túnel de 3 metros de diâmetro em seu rastro.
+### Tunneler
 
-## Ações
+The worm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake.
 
-### Ataques Múltiplos
+## Actions
 
-A criatura realiza dois ataques: um com sua mordida e outro com seu ferrão.
 
-### Mordida
+### Multiattack
 
-mw 14 para atingir, alcance 3 m, um alvo. {@h}22 (<span class="dice+" data-roll-notation="3d8+9">3d8 + 9</span>) de dano perfurante. Se o alvo for uma criatura Grande ou menor, deve ser bem-sucedido em um teste de resistência de Destreza CD 19 ou será engolido pela criatura. Uma criatura engolida fica cega e contida, tem cobertura total contra ataques e outros efeitos fora da criatura, e sofre 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) de dano de ácido no início de cada turno da criatura.
+The worm makes two attacks: one with its bite and one with its stinger.
 
-Se a criatura sofrer 30 de dano ou mais em um único turno de uma criatura dentro dela, a criatura deve ser bem-sucedida em um teste de resistência de Constituição CD 21 no final desse turno ou regurgitará todas as criaturas engolidas, que caem e ficam caídas em um espaço a até 3 metros da criatura. Se a criatura morrer, uma criatura engolida não estará mais contida por ela e poderá escapar do cadáver usando 6 metros de movimento, saindo caída.
 
-### Ferrão da Cauda
+### Bite
 
-mw 14 para atingir, alcance 3 m, uma criatura. {@h}19 (<span class="dice+" data-roll-notation="3d6+9">3d6 + 9</span>) de dano perfurante, e o alvo deve realizar um teste de resistência de Constituição CD 19, sofrendo 42 (<span class="dice+" data-roll-notation="12d6">12d6</span>) de dano de veneno em caso de falha no teste, ou metade desse dano em caso de sucesso.
+mw 14 to hit, reach 10 ft., one target. {@h}22 (<span class="dice+" data-roll-notation="3d8+9">3d8 + 9</span>) piercing damage. If the target is a Large or smaller creature, it must succeed on a 19 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) acid damage at the start of each of the worm's turns.
+
+If the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone.
+
+
+### Tail Stinger
+
+mw 14 to hit, reach 10 ft., one creature. {@h}19 (<span class="dice+" data-roll-notation="3d6+9">3d6 + 9</span>) piercing damage, and the target must make a 19 Constitution saving throw, taking 42 (<span class="dice+" data-roll-notation="12d6">12d6</span>) poison damage on a failed save, or half as much damage on a successful one.

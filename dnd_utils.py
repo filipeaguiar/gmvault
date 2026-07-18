@@ -495,6 +495,44 @@ def calculate_spell_slots(class_name, level):
     return {}
 
 
+def get_class_features_at_level(class_data, class_name, subclass_short, level):
+    """Retorna lista de características novas da classe e subclasse para um nível específico."""
+    features = []
+
+    # Class features
+    for f in class_data.get("classFeature", []):
+        if f.get("className", "").lower() == class_name.lower() and f.get("level", 1) == level:
+            features.append(f)
+
+    # Subclass features
+    if subclass_short:
+        for f in class_data.get("subclassFeature", []):
+            if (f.get("subclassShortName", "").lower() == subclass_short.lower()
+                    and f.get("level", 1) == level):
+                features.append(f)
+
+    return features
+
+
+def get_asi_levels(class_name):
+    """Retorna os níveis em que a classe ganha ASI/Talento."""
+    # Default ASI levels for most classes
+    default_asi = {4, 8, 12, 16, 19}
+
+    # Fighter gets extra ASIs at 6 and 14
+    fighter_asi = {4, 6, 8, 12, 14, 16, 19}
+
+    # Rogue gets extra ASI at 10
+    rogue_asi = {4, 8, 10, 12, 16, 19}
+
+    c_name = class_name.lower()
+    if c_name in ("fighter", "guerreiro"):
+        return fighter_asi
+    elif c_name in ("rogue", "ladino"):
+        return rogue_asi
+    return default_asi
+
+
 SPELLCASTING_PREPARED_CLASSES = {"cleric", "druid", "paladin", "wizard", "artificer", "clérigo", "druida", "paladino", "mago", "artífice"}
 SPELLCASTING_KNOWN_CLASSES = {"bard", "sorcerer", "ranger", "bardo", "feiticeiro", "patrulheiro"}
 SPELLCASTING_PACT_CLASSES = {"warlock", "bruxo"}

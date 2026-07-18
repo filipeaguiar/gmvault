@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,33 +36,30 @@ stats:
   languages: Auran
   cr: '5'
 stats_meta: Large elemental N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Elemental do Ar
 ---
 
-## Características
+## Traits
 
-### Forma Aérea
 
-O elemental pode entrar no espaço de uma criatura hostil e parar ali. Ele pode se mover por um espaço tão estreito quanto 1 polegada de largura sem se espremer.
+### Air Form
 
-## Ações
+The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.
 
-### Ataques Múltiplos
+## Actions
 
-O elemental realiza dois ataques de pancada.
 
-### Pancada
+### Multiattack
 
-mw 8 to hit, alcance 5 ft., um alvo. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) dano de concussão.
+The elemental makes two slam attacks.
 
-### Redemoinho 4
 
-Cada criatura no espaço do elemental deve realizar um teste de resistência de Força CD 13. Em caso de falha, o alvo sofre 15 (<span class="dice+" data-roll-notation="3d8+2">3d8 + 2</span>) de dano de concussão e é arremessado a até 20 pés de distância do elemental em uma direção aleatória e fica caído. Se um alvo arremessado atingir um objeto, como uma parede ou chão, o alvo sofre 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de concussão para cada 10 pés que foi arremessado. Se o alvo for arremessado contra outra criatura, essa criatura deve ser bem-sucedida em um teste de resistência de Destreza CD 13 ou sofrer o mesmo dano e ficar caída.
+### Slam
 
-Se o teste de resistência for bem-sucedido, o alvo sofre metade do dano de concussão e não é arremessado nem fica caído.
+mw 8 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) bludgeoning damage.
+
+
+### Whirlwind 4
+
+Each creature in the elemental's space must make a 13 Strength saving throw. On a failure, a target takes 15 (<span class="dice+" data-roll-notation="3d8+2">3d8 + 2</span>) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a 13 Dexterity saving throw or take the same damage and be knocked prone.
+
+If the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.

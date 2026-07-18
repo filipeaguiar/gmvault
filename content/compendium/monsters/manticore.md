@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,35 +36,33 @@ stats:
   languages: Common
   cr: '3'
 stats_meta: Large monstrosity L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Mantícora
 ---
 
-## Características
+## Traits
 
-### Regeneração de Espinhos da Cauda
 
-A manticora possui vinte e quatro espinhos na cauda. Espinhos usados regeneram quando a manticora termina um descanso longo.
+### Tail Spike Regrowth
 
-## Ações
+The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest.
 
-### Ataques Múltiplos
+## Actions
 
-A manticora faz três ataques: um com sua mordida e dois com suas garras ou três com seus espinhos da cauda.
 
-### Mordida
+### Multiattack
 
-mw 5 no ataque, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) dano perfurante.
+The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.
 
-### Garra
 
-mw 5 no ataque, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) dano cortante.
+### Bite
 
-### Espinho da Cauda
+mw 5 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage.
 
-rw 5 no ataque, alcance 30/60 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) dano perfurante.
+
+### Claw
+
+mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) slashing damage.
+
+
+### Tail Spike
+
+rw 5 to hit, range 100/200 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage.

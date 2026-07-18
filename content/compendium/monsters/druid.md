@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,17 +39,11 @@ stats:
   languages: Druidic plus any two languages
   cr: '2'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Druida
 ---
 
-## Ações
+## Actions
 
-### Bordão
 
-mw 2 para acertar (4 para acertar com shillelagh), alcance 1,5 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) dano de Concussão, 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) dano de Concussão se empunhado com as duas mãos, ou 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) dano de Concussão com shillelagh.
+### Quarterstaff
+
+mw 2 to hit (4 to hit with shillelagh), reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) bludgeoning damage, 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) bludgeoning damage if wielded with two hands, or 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) bludgeoning damage with shillelagh.

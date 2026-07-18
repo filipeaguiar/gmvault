@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -42,57 +42,60 @@ stats:
   languages: Common, Draconic
   cr: '16'
 stats_meta: Huge dragon L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Dragão Azul Adulto
 ---
 
-## Características
+## Traits
 
-### Resistência Lendária (3/dia)
 
-Se o dragão falhar em um teste de resistência, ele pode escolher ser bem-sucedido em seu lugar.
+### Legendary Resistance (3/Day)
 
-## Ações
+If the dragon fails a saving throw, it can choose to succeed instead.
 
-### Ataques Múltiplos
+## Actions
 
-O dragão pode usar sua Presença Amedrontadora. Em seguida, realiza três ataques: um com sua mordida e dois com suas garras.
 
-### Mordida
+### Multiattack
 
-Corpo a Corpo com Arma: 12 para atingir, alcance 3 m, um alvo. Dano: 18 (2d10 + 7) de dano perfurante mais 5 (1d10) de dano elétrico.
+The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
 
-### Garra
 
-Corpo a Corpo com Arma: 12 para atingir, alcance 1,5 m, um alvo. Dano: 14 (2d6 + 7) de dano cortante.
+### Bite
 
-### Cauda
+mw 12 to hit, reach 10 ft., one target. {@h}18 (<span class="dice+" data-roll-notation="2d10+7">2d10 + 7</span>) piercing damage plus 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) lightning damage.
 
-Corpo a Corpo com Arma: 12 para atingir, alcance 4,5 m, um alvo. Dano: 16 (2d8 + 7) de dano de concussão.
 
-### Presença Amedrontadora
+### Claw
 
-Cada criatura à escolha do dragão, que esteja a até 36 metros dele e que esteja ciente de sua presença, deve ser bem-sucedida em um teste de resistência de Sabedoria CD 17 ou ficará amedrontada por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesma em caso de sucesso. Se o teste de resistência de uma criatura for bem-sucedido ou o efeito terminar para ela, a criatura fica imune à Presença Amedrontadora do dragão pelas próximas 24 horas.
+mw 12 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d6+7">2d6 + 7</span>) slashing damage.
 
-### Sopro Elétrico 5
 
-O dragão exala um raio em uma linha de 27 metros de comprimento e 1,5 metro de largura. Cada criatura nessa linha deve realizar um teste de resistência de Destreza CD 19, sofrendo 66 (12d10) de dano elétrico em caso de falha no teste, ou metade desse dano em caso de sucesso.
+### Tail
 
-## Ações Lendárias
+mw 12 to hit, reach 15 ft., one target. {@h}16 (<span class="dice+" data-roll-notation="2d8+7">2d8 + 7</span>) bludgeoning damage.
 
-### Detectar
 
-O dragão realiza um teste de Sabedoria (Percepção).
+### Frightful Presence
 
-### Ataque de Cauda
+Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.
 
-O dragão realiza um ataque de cauda.
 
-### Ataque de Asas (Custa 2 Ações)
+### Lightning Breath 5
 
-O dragão bate suas asas. Cada criatura a até 3 metros do dragão deve ser bem-sucedida em um teste de resistência de Destreza CD 20 ou sofrerá 14 (2d6 + 7) de dano de concussão e será derrubada caída. O dragão pode então voar até metade do seu deslocamento de voo.
+The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a 19 Dexterity saving throw, taking 66 (<span class="dice+" data-roll-notation="12d10">12d10</span>) lightning damage on a failed save, or half as much damage on a successful one.
+
+## Legendary Actions
+
+
+### Detect
+
+The dragon makes a Wisdom (Perception) check.
+
+
+### Tail Attack
+
+The dragon makes a tail attack.
+
+
+### Wing Attack (Costs 2 Actions)
+
+The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a 20 Dexterity saving throw or take 14 (<span class="dice+" data-roll-notation="2d6+7">2d6 + 7</span>) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.

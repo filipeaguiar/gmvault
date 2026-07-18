@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,15 +19,8 @@ source:
   remote_file: actions.json
   remote_key: action
   remote_id: f81e3c8d8f9820d6
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Esquivar
 ---
 
-Se você executar a ação Esquivar, você ganha os seguintes benefícios: até o início do seu próximo turno, qualquer jogada de ataque feita contra você tem XPHB se você puder ver o atacante, e você faz testes de resistência de Destreza com XPHB.
+If you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has XPHB if you can see the attacker, and you make Dexterity saving throws with XPHB.
 
-Você perde esses benefícios se tiver a condição XPHB ou se seu XPHB for 0.
+You lose these benefits if you have the XPHB condition or if your XPHB is 0.

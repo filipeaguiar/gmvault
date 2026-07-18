@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,45 +39,38 @@ stats:
   languages: Draconic
   cr: 1/2
 stats_meta: Medium humanoid N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Povo Lagarto
 ---
 
-## Características
+## Traits
 
 
-### Prender a Respiração
+### Hold Breath
 
-O povo lagarto pode prender a respiração por 15 minutos.
+The lizardfolk can hold its breath for 15 minutes.
 
-## Ações
-
-
-### Ataques Múltiplos
-
-O povo lagarto realiza dois ataques corpo a corpo, cada um com uma arma diferente.
+## Actions
 
 
-### Mordida
+### Multiattack
 
-mw +4 para acertar, alcance 1,5 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) dano perfurante.
-
-
-### Clava Pesada
-
-mw +4 para acertar, alcance 1,5 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) dano de concussão.
+The lizardfolk makes two melee attacks, each one with a different weapon.
 
 
-### Dardo
+### Bite
 
-mw +4 para acertar, alcance 1,5 m ou alcance 9 m/36 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) dano perfurante.
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
 
 
-### Escudo com Espinhos
+### Heavy Club
 
-mw +4 para acertar, alcance 1,5 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) dano perfurante.
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) bludgeoning damage.
+
+
+### Javelin
+
+mw,rw 4 to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+
+
+### Spiked Shield
+
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.

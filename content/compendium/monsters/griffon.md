@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,31 +37,28 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Large monstrosity U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Grifo
 ---
 
-## Características
+## Traits
 
-### Visão Aguçada
 
-O grifo tem Vantagem em Testes de Sabedoria (Percepção) que dependam da visão.
+### Keen Sight
 
-## Ações
+The griffon has advantage on Wisdom (Perception) checks that rely on sight.
 
-### Ataques Múltiplos
+## Actions
 
-O grifo realiza dois ataques: um com seu bico e um com suas garras.
 
-### Bico
+### Multiattack
 
-mw 6 para atingir, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano perfurante.
+The griffon makes two attacks: one with its beak and one with its claws.
 
-### Garras
 
-mw 6 para atingir, alcance 1,5 m, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano cortante.
+### Beak
+
+mw 6 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) piercing damage.
+
+
+### Claws
+
+mw 6 to hit, reach 5 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) slashing damage.

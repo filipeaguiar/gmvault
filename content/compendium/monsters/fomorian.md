@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,31 +38,28 @@ stats:
   languages: Giant, Undercommon
   cr: '8'
 stats_meta: Huge giant C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Fomoriano
 ---
 
-## Ações
+## Actions
 
-### Ataques Múltiplos
 
-O fomori ataca duas vezes com sua clava pesada ou faz um ataque com a clava pesada e usa Olho Maligno uma vez.
+### Multiattack
 
-### Clava Pesada
+The fomorian attacks twice with its greatclub or makes one greatclub attack and uses Evil Eye once.
 
-+9 para acertar, alcance 4,5 m, um alvo. *Acerto:* 19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) de dano de concussão.
 
-### Olho Maligno
+### Greatclub
 
-O fomori força magicamente uma criatura que ele possa ver a até 18 metros dele a realizar um teste de resistência de Carisma CD 14. A criatura sofre 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) de dano psíquico em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso.
+mw 9 to hit, reach 15 ft., one target. {@h}19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) bludgeoning damage.
 
-### Maldição do Olho Maligno (Recarrega após um Descanso Curto ou Longo)
 
-Com um olhar, o fomori usa Olho Maligno mas, em caso de falha no teste de resistência, a criatura também é amaldiçoada com deformidades mágicas. Enquanto deformada, a criatura tem seu deslocamento reduzido à metade e sofre desvantagem em testes de atributo, testes de resistência e ataques baseados em Força ou Destreza.
+### Evil Eye
 
-A criatura transformada pode repetir o teste de resistência sempre que terminar um descanso longo, terminando o efeito em caso de sucesso.
+The fomorian magically forces a creature it can see within 60 feet of it to make a 14 Charisma saving throw. The creature takes 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) psychic damage on a failed save, or half as much damage on a successful one.
+
+
+### Curse of the Evil Eye (Recharges after a Short or Long Rest)
+
+With a stare, the fomorian uses Evil Eye, but on a failed save, the creature is also cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity.
+
+The transformed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.

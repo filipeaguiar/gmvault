@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,27 +36,28 @@ stats:
   languages: ''
   cr: '3'
 stats_meta: Large monstrosity L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Besta Deslocadora
 ---
 
-## Características
+## Traits
 
-### Esquiva
-Se a fera deslocadora for submetida a um efeito que permita um teste de resistência para sofrer apenas metade do dano, em caso de sucesso no teste de resistência, em vez disso ela não sofre dano algum e, em caso de falha, sofre apenas metade do dano.
 
-### Distorção
-A fera deslocadora projeta uma ilusão mágica que a faz parecer estar próxima de sua localização real, fazendo com que as jogadas de ataque contra ela tenham desvantagem. Se for atingida por um ataque, esta característica é interrompida até o final do próximo turno dela. Esta característica também é interrompida enquanto a fera deslocadora estiver incapacitada ou tiver deslocamento 0.
+### Avoidance
 
-## Ações
+If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
 
-### Ataques Múltiplos
-A fera deslocadora realiza dois ataques com seus tentáculos.
 
-### Tentáculo
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 3 m, um alvo. *Acerto:* 7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) de dano de concussão mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano perfurante.
+### Displacement
+
+The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0.
+
+## Actions
+
+
+### Multiattack
+
+The displacer beast makes two attacks with its tentacles.
+
+
+### Tentacle
+
+mw 6 to hit, reach 10 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) bludgeoning damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) piercing damage.

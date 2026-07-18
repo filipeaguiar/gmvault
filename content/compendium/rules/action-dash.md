@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,15 +19,8 @@ source:
   remote_file: actions.json
   remote_key: action
   remote_id: feeb471af522801b
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Disparada
 ---
 
-Quando você realiza a ação Disparada, você ganha movimento extra no turno atual. O aumento é igual ao seu Deslocamento após aplicar quaisquer modificadores. Com um Deslocamento de 30 pés, por exemplo, você pode se mover até 60 pés no seu turno se usar a ação Disparada. Se seu Deslocamento de 30 pés for reduzido a 15 pés, você pode se mover até 30 pés neste turno se usar a ação Disparada.
+When you take the Dash action, you gain extra movement for the current turn. The increase equals your XPHB after applying any modifiers. With a XPHB of 30 feet, for example, you can move up to 60 feet on your turn if you Dash. If your XPHB of 30 feet is reduced to 15 feet, you can move up to 30 feet this turn if you Dash.
 
-Se você tiver um deslocamento especial, como um deslocamento de voo ou natação, você pode usar esse deslocamento em vez do seu Deslocamento quando realizar esta ação. Você escolhe qual deslocamento usar cada vez que realiza a ação.
+If you have a special speed, such as a XPHB or XPHB, you can use that speed instead of your XPHB when you take this action. You choose which speed to use each time you take it.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,31 +39,28 @@ stats:
   languages: Abyssal, telepathy 120 ft.
   cr: '4'
 stats_meta: Medium fiend C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Demônio das Sombras
 ---
 
-## Características
+## Traits
 
-### Movimento Incorpóreo
 
-O demônio pode se mover através de outras criaturas e objetos como se fossem 3. Ele sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar seu turno dentro de um objeto.
+### Incorporeal Movement
 
-### Sensibilidade à Luz
+The demon can move through other creatures and objects as if they were 3. It takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if it ends its turn inside an object.
 
-Enquanto estiver sob luz brilhante, o demônio tem desvantagem nas jogadas de ataque, bem como nos testes de Sabedoria (Percepção) que dependam da visão.
 
-### Furtividade nas Sombras
+### Light Sensitivity
 
-Enquanto estiver em penumbra ou escuridão, o demônio pode usar a ação Esconder-se como uma ação bônus.
+While in bright light, the demon has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
 
-## Ações
 
-### Garras
+### Shadow Stealth
 
-Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 5 pés, uma criatura. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) de dano psíquico ou, se o demônio tiver vantagem na jogada de ataque, 17 (<span class="dice+" data-roll-notation="4d6+3">4d6 + 3</span>) de dano psíquico.
+While in dim light or darkness, the demon can take the Hide action as a bonus action.
+
+## Actions
+
+
+### Claws
+
+mw 5 to hit, reach 5 ft., one creature. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) psychic damage or, if the demon had advantage on the attack roll, 17 (<span class="dice+" data-roll-notation="4d6+3">4d6 + 3</span>) psychic damage.

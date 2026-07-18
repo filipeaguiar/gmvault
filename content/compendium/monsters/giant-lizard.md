@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,17 +36,11 @@ stats:
   languages: ''
   cr: 1/4
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Lagarto Gigante
 ---
 
-## Ações
+## Actions
 
-### Mordida
 
-mw 4 para atingir, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) dano perfurante.
+### Bite
+
+mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) piercing damage.

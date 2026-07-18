@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,35 +39,28 @@ stats:
   languages: understands Auran and Common but speaks only through the use of its Mimicry trait
   cr: 1/4
 stats_meta: Medium humanoid C/N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Kenku
 ---
 
-## Características
+## Traits
 
 
-### Emboscador
+### Ambusher
 
-Na primeira rodada de um combate, o kenku tem Vantagem nas jogadas de ataque contra qualquer criatura que tenha surpreendido.
-
-
-### Imitação
-
-O kenku pode imitar quaisquer sons que tenha ouvido, incluindo vozes. Uma criatura que ouve os sons pode perceber que são imitações com um teste bem-sucedido de Sabedoria (Intuição) CD 14.
-
-## Ações
+In the first round of a combat, the kenku has advantage on attack rolls against any creature it surprised.
 
 
-### Espada Curta
+### Mimicry
 
-Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante.
+The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful 14 Wisdom (Insight) check.
+
+## Actions
 
 
-### Arco Curto
+### Shortsword
 
-Ataque à Distância com Arma: +5 para atingir, alcance 80/320 ft., um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante.
+mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage.
+
+
+### Shortbow
+
+rw 5 to hit, range 80/320 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage.

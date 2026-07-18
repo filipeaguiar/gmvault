@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,31 +36,28 @@ stats:
   languages: Terran
   cr: '2'
 stats_meta: Medium elemental C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Gárgula
 ---
 
-## Características
+## Traits
 
-### Aparência Falsa
 
-Enquanto a gárgula permanecer imóvel, ela é indistinguível de uma estátua inanimada.
+### False Appearance
 
-## Ações
+While the gargoyle remains motionless, it is indistinguishable from an inanimate statue.
 
-### Ataques Múltiplos
+## Actions
 
-A gárgula realiza dois ataques: um com sua mordida e outro com suas garras.
 
-### Mordida
+### Multiattack
 
-mw 4 para atingir, alcance 5 ft., um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
+The gargoyle makes two attacks: one with its bite and one with its claws.
 
-### Garras
 
-mw 4 para atingir, alcance 5 ft., um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano cortante.
+### Bite
+
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+
+
+### Claws
+
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) slashing damage.

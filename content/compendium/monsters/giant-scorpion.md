@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,25 +36,21 @@ stats:
   languages: ''
   cr: '3'
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Escorpião Gigante
 ---
 
-## Ações
+## Actions
 
-### Ataques Múltiplos
 
-O escorpião realiza três ataques: dois com suas garras e um com seu ferrão.
+### Multiattack
 
-### Garra
+The scorpion makes three attacks: two with its claws and one with its sting.
 
-Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 1,5 metro, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) de dano de concussão, e o alvo fica agarrado (CD 12 para escapar). O escorpião tem duas garras, cada uma podendo agarrar apenas um alvo.
 
-### Ferrão
+### Claw
 
-Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 1,5 metro, uma criatura. {@h}7 (<span class="dice+" data-roll-notation="1d10+2">1d10 + 2</span>) de dano perfurante, e o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 12, sofrendo 22 (<span class="dice+" data-roll-notation="4d10">4d10</span>) de dano de veneno em caso de falha no teste de resistência, ou metade do dano em caso de sucesso.
+mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) bludgeoning damage, and the target is grappled (escape 12). The scorpion has two claws, each of which can grapple only one target.
+
+
+### Sting
+
+mw 4 to hit, reach 5 ft., one creature. {@h}7 (<span class="dice+" data-roll-notation="1d10+2">1d10 + 2</span>) piercing damage, and the target must make a 12 Constitution saving throw, taking 22 (<span class="dice+" data-roll-notation="4d10">4d10</span>) poison damage on a failed save, or half as much damage on a successful one.

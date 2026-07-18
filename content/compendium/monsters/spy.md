@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -43,35 +43,33 @@ stats:
   languages: any two languages
   cr: '1'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Espião
 ---
 
-## Características
+## Traits
 
-### Ação Astuta
 
-Em cada um de seus turnos, o espião pode usar uma ação bônus para realizar a ação Disparada, Desengajar ou Esconder-se.
+### Cunning Action
 
-### Ataque Furtivo (1/Turno)
+On each of its turns, the spy can use a bonus action to take the Dash, Disengage, or Hide action.
 
-O espião causa 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano extra quando atinge um alvo com um ataque com arma e tem vantagem na jogada de ataque, ou quando o alvo está a 1,5 metro de um aliado do espião que não esteja incapacitado e o espião não tenha desvantagem na jogada de ataque.
 
-## Ações
+### Sneak Attack (1/Turn)
 
-### Ataques Múltiplos
+The spy deals an extra 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the spy that isn't incapacitated and the spy doesn't have disadvantage on the attack roll.
 
-O espião realiza dois ataques corpo a corpo.
+## Actions
 
-### Espada Curta
 
-Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 1,5 m, um alvo. Dano: 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
+### Multiattack
 
-### Besta de Mão
+The spy makes two melee attacks.
 
-Ataque à Distância com Arma: +4 para atingir, alcance 9/36 m, um alvo. Dano: 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
+
+### Shortsword
+
+mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+
+
+### Hand Crossbow
+
+rw 4 to hit, range 30/120 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,30 +39,23 @@ stats:
   languages: any one language (usually Common)
   cr: '2'
 stats_meta: Medium humanoid L/NX/C/NY/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Fanático Cultista
 ---
 
-## Características
+## Traits
 
 
-### Devoção Sombria
+### Dark Devotion
 
-O fanático tem vantagem em testes de resistência contra ser enfeitiçado ou amedrontado.
+The fanatic has advantage on saving throws against being charmed or frightened.
 
-## Ações
-
-
-### Ataques Múltiplos
-
-O fanático faz dois ataques corpo a corpo.
+## Actions
 
 
-### Adaga
+### Multiattack
 
-Ataque Corpo a Corpo com Arma ou Ataque à Distância com Arma +4 para acertar, alcance 1,5 m ou distância 6/18 m, uma criatura. {@Acerto}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) dano perfurante.
+The fanatic makes two melee attacks.
+
+
+### Dagger
+
+mw,rw 4 to hit, reach 5 ft. or range 20/60 ft., one creature. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) piercing damage.

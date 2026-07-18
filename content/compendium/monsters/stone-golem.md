@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,45 +36,38 @@ stats:
   languages: understands the languages of its creator but can't speak
   cr: '10'
 stats_meta: Large construct U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Golem de Pedra
 ---
 
-## Características
+## Traits
 
 
-### Forma Imutável
+### Immutable Form
 
-O golem é imune a qualquer magia ou efeito que alteraria sua forma.
-
-
-### Resistência à Magia
-
-O golem tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.
+The golem is immune to any spell or effect that would alter its form.
 
 
-### Armas Mágicas
+### Magic Resistance
 
-Os ataques com arma do golem são mágicos.
-
-## Ações
+The golem has advantage on saving throws against spells and other magical effects.
 
 
-### Ataques Múltiplos
+### Magic Weapons
 
-O golem realiza dois ataques de pancada.
+The golem's weapon attacks are magical.
 
-
-### Pancada
-
-mw 10 para atingir, alcance 1,5 m, um alvo. {@h}19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) de dano de concussão.
+## Actions
 
 
-### Lentidão 5
+### Multiattack
 
-O golem escolhe uma ou mais criaturas que possa ver, a até 3 m de distância. Cada alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 17 contra esta magia. Em caso de falha no teste de resistência, o alvo não pode usar reações, seu deslocamento é reduzido à metade e ele não pode realizar mais de um ataque em seu turno. Além disso, o alvo pode usar uma ação ou uma ação bônus em seu turno, não ambas. Estes efeitos duram 1 minuto. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesmo em caso de sucesso no teste de resistência.
+The golem makes two slam attacks.
+
+
+### Slam
+
+mw 10 to hit, reach 5 ft., one target. {@h}19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) bludgeoning damage.
+
+
+### Slow 5
+
+The golem targets one or more creatures it can see within 10 feet of it. Each target must make a 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.

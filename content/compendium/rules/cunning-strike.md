@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,15 +19,8 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: ac0e8737fccf3c64
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Golpe Ardiloso
 ---
 
-Você desenvolveu maneiras astutas de usar seu Ataque Furtivo. Quando você causa dano de Ataque Furtivo, pode adicionar um dos seguintes efeitos de Golpe Astuto. Cada efeito tem um custo em dados, que é o número de dados de dano do Ataque Furtivo que você deve abdicar para adicionar o efeito. Você remove o dado antes de rolar, e o efeito ocorre imediatamente após o dano do ataque ser causado. Por exemplo, se você adiciona o efeito Veneno, remova <span class="dice+" data-roll-notation="1d6">1d6</span> do dano do Ataque Furtivo antes de rolar.
+You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove <span class="dice+" data-roll-notation="1d6">1d6</span> from the Sneak Attack's damage before rolling.
 
-Se um efeito de Golpe Astuto exigir um teste de resistência, a CD é igual a 8 mais seu modificador de Destreza e seu Bônus de Proficiência.
+If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.

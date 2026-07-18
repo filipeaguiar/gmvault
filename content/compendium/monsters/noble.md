@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,23 +39,18 @@ stats:
   languages: any two languages
   cr: 1/8
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Nobre
 ---
 
-## Ações
+## Actions
 
-### Rapieira
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. Acerto: 5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) de dano perfurante.
+### Rapier
 
-## Reações
+mw 3 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) piercing damage.
 
-### Aparar
+## Reactions
 
-O nobre adiciona 2 à sua CA contra um ataque corpo a corpo que o atingiria. Para isso, o nobre deve ver o atacante e estar empunhando uma arma corpo a corpo.
+
+### Parry
+
+The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,39 +38,33 @@ stats:
   languages: Draconic
   cr: '11'
 stats_meta: Huge monstrosity N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Behir
 ---
 
-## Ações
-
-### Ataques Múltiplos
-
-O behir realiza dois ataques: um com sua mordida e outro para constringir.
+## Actions
 
 
-### Mordida
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +10 de acerto, alcance 3 m, um alvo. *Acerto:* 22 (<span class="dice+" data-roll-notation="3d10+6">3d10+6</span>) de dano perfurante.
-
-
-### Constrição
-
-Ataque Corpo a Corpo com Arma: +10 de acerto, alcance 1,5 m, uma criatura Grande ou menor. *Acerto:* 17 (<span class="dice+" data-roll-notation="2d10+6">2d10+6</span>) de dano de concussão mais 17 (<span class="dice+" data-roll-notation="2d10+6">2d10+6</span>) de dano cortante. O alvo fica agarrado (CD 16 para escapar) se o behir ainda não estiver constringindo uma criatura, e o alvo fica contido até que este agarrão termine.
+The behir makes two attacks: one with its bite and one to constrict.
 
 
-### Sopro Elétrico (Recarga 5–6)
+### Bite
 
-O behir exala uma linha de eletricidade com 6 metros de comprimento e 1,5 metro de largura. Cada criatura nessa linha deve realizar um teste de resistência de Destreza CD 16, sofrendo 66 (<span class="dice+" data-roll-notation="12d10">12d10</span>) de dano elétrico em caso de falha no teste, ou metade desse dano em caso de sucesso.
+mw 10 to hit, reach 10 ft., one target. {@h}22 (<span class="dice+" data-roll-notation="3d10+6">3d10 + 6</span>) piercing damage.
 
 
-### Engolir
+### Constrict
 
-O behir realiza um ataque de mordida contra um alvo Médio ou menor que esteja agarrado por ele. Se o ataque acertar, o alvo também é engolido e o agarrão termina. Enquanto estiver engolido, o alvo fica cego e contido, tem cobertura total contra ataques e outros efeitos fora do behir e sofre 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) de dano de ácido no início de cada turno do behir. Um behir só pode ter uma criatura engolida por vez.
+mw 10 to hit, reach 5 ft., one Large or smaller creature. {@h}17 (<span class="dice+" data-roll-notation="2d10+6">2d10 + 6</span>) bludgeoning damage plus 17 (<span class="dice+" data-roll-notation="2d10+6">2d10 + 6</span>) slashing damage. The target is grappled (escape 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends.
 
-Se o behir sofrer 30 ou mais de dano em um único turno da criatura engolida, ele deve ser bem-sucedido em um teste de resistência de Constituição CD 14 no final desse turno ou regurgitará a criatura, que fica caída em um espaço a até 3 metros do behir. Se o behir morrer, uma criatura engolida não estará mais contida por ele e poderá escapar do cadáver usando 4,5 metros de deslocamento, saindo caída.
+
+### Lightning Breath 5
+
+The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a 16 Dexterity saving throw, taking 66 (<span class="dice+" data-roll-notation="12d10">12d10</span>) lightning damage on a failed save, or half as much damage on a successful one.
+
+
+### Swallow
+
+The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.
+
+If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.

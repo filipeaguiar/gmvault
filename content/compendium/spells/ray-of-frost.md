@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -43,18 +43,13 @@ spell_info:
         '5': 2d8
         '11': 3d8
         '17': 4d8
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Um raio gélido de luz branco-azulada avança em direção a uma criatura dentro do alcance. Faça um ataque à distância com magia contra o alvo. Em caso de acerto, ele sofre <span class="dice+" data-roll-notation="1d8">1d8</span> de Dano de Frio e seu XPHB é reduzido em 3 metros até o início do seu próximo turno.
+A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes <span class="dice+" data-roll-notation="1d8">1d8</span> Cold damage, and its XPHB is reduced by 10 feet until the start of your next turn.
 
-## Em Círculos Superiores
+## At Higher Levels
 
-### Aprimoramento de Truque
 
-O dano aumenta em <span class="dice+" data-roll-notation="1d8">1d8</span> quando você atinge os níveis 5 (<span class="dice+" data-roll-notation="2d8">2d8</span>), 11 (<span class="dice+" data-roll-notation="3d8">3d8</span>) e 17 (<span class="dice+" data-roll-notation="4d8">4d8</span>).
+### Cantrip Upgrade
+
+The damage increases by <span class="dice+" data-roll-notation="1d8">1d8</span> when you reach levels 5 (<span class="dice+" data-roll-notation="2d8">2d8</span>), 11 (<span class="dice+" data-roll-notation="3d8">3d8</span>), and 17 (<span class="dice+" data-roll-notation="4d8">4d8</span>).

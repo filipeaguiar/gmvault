@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,18 +36,11 @@ stats:
   languages: ''
   cr: '0'
 stats_meta: Tiny beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Lagarto
 ---
 
-## Ações
+## Actions
 
 
-### Mordida
+### Bite
 
-Ataque Corpo a Corpo com Arma: +0 para atingir, alcance 1,5 m, um alvo. Acerto: 1 de dano perfurante.
+mw 0 to hit, reach 5 ft., one target. {@h}1 piercing damage.

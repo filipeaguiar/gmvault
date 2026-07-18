@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -32,19 +32,13 @@ spell_info:
   saving_throws:
   - wisdom
   rolls: []
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Um Humanoide que você possa ver dentro do alcance realiza um teste de resistência de Sabedoria. Ele o faz com XPHB se você ou seus aliados estiverem lutando contra ele. Em caso de falha no teste de resistência, o alvo fica sob a condição XPHB até a magia terminar ou até que você ou seus aliados causem dano a ele. A criatura XPHB é Amigável a você. Quando a magia termina, o alvo sabe que foi XPHB por você.
+One Humanoid you can see within range makes a Wisdom saving throw. It does so with XPHB if you or your allies are fighting it. On a failed save, the target has the XPHB condition until the spell ends or until you or your allies damage it. The XPHB creature is Friendly to you. When the spell ends, the target knows it was XPHB by you.
 
-## Em Círculos Superiores
+## At Higher Levels
 
 
-### Usando um Espaço de Magia de Círculo Superior
+### Using a Higher-Level Spell Slot
 
-Você pode alvejar uma criatura adicional para cada círculo do espaço de magia acima do 1º.
+You can target one additional creature for each spell slot level above 1.

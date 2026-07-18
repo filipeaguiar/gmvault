@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -41,35 +41,33 @@ stats:
   languages: all, telepathy 120 ft.
   cr: '13'
 stats_meta: Medium celestial L/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Pari
 ---
 
-## Características
+## Traits
 
-### Resistência à Magia
 
-O pari tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
+### Magic Resistance
 
-### Natureza Incomum
+The pari has advantage on saving throws against spells and other magical effects.
 
-O pari não precisa de comida, bebida ou sono.
 
-## Ações
+### Unusual Nature
 
-### Ataques Múltiplos
+The pari doesn't require food, drink, or sleep.
 
-O pari realiza três ataques de Maça.
+## Actions
 
-### Maça
 
-mw 10 para atingir, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d6+5">1d6 + 5</span>) dano de concussão mais 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) dano radiante.
+### Multiattack
 
-### Futuros Desorientadores
+The pari makes three Mace attacks.
 
-O pari tenta inundar a mente de uma criatura que possa ver, a até 60 pés de si, com visões do futuro. O alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 19 ou sofre 27 (<span class="dice+" data-roll-notation="5d10">5d10</span>) dano psíquico e tem desvantagem nas jogadas de ataque até o início do próximo turno do pari.
+
+### Mace
+
+mw 10 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d6+5">1d6 + 5</span>) bludgeoning damage plus 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) radiant damage.
+
+
+### Disorienting Futures
+
+The pari attempts to flood the mind of one creature it can see within 60 feet of itself with visions of the future. The target must succeed on a 19 Wisdom saving throw or take 27 (<span class="dice+" data-roll-notation="5d10">5d10</span>) psychic damage and have disadvantage on attack rolls until the start of the pari's next turn.

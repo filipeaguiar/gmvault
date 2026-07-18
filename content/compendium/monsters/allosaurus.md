@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,27 +37,23 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Large beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Alossauro
 ---
 
-## Características
+## Traits
 
-### Bote
 
-Se o alossauro se mover pelo menos 9 metros em linha reta na direção de uma criatura e então atingi-la com um ataque de garra no mesmo turno, o alvo deve ser bem-sucedido em um teste de resistência de Força CD 13 ou ficará caído. Se o alvo estiver caído, o alossauro pode realizar um ataque de mordida contra ele como uma ação bônus.
+### Pounce
 
-## Ações
+If the allosaurus moves at least 30 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action.
 
-### Mordida
+## Actions
 
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 1,5 metro, um alvo. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) de dano perfurante.
 
-### Garra
+### Bite
 
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 1,5 metro, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano cortante.
+mw 6 to hit, reach 5 ft., one target. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) piercing damage.
+
+
+### Claw
+
+mw 6 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) slashing damage.

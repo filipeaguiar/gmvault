@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,31 +36,28 @@ stats:
   languages: ''
   cr: 1/4
 stats_meta: Medium beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Texugo Gigante
 ---
 
-## Características
+## Traits
 
-### Faro Aguçado
 
-O texugo tem vantagem em testes de Sabedoria (Percepção) que dependam do olfato.
+### Keen Smell
 
-## Ações
+The badger has advantage on Wisdom (Perception) checks that rely on smell.
 
-### Ataques Múltiplos
+## Actions
 
-O texugo realiza dois ataques: um com sua mordida e outro com suas garras.
 
-### Mordida
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. {@h}4 (1d6 + 1) dano perfurante.
+The badger makes two attacks: one with its bite and one with its claws.
 
-### Garras
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. {@h}6 (2d4 + 1) dano cortante.
+### Bite
+
+mw 3 to hit, reach 5 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) piercing damage.
+
+
+### Claws
+
+mw 3 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="2d4+1">2d4 + 1</span>) slashing damage.

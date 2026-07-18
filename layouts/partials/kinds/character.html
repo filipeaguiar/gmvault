@@ -657,16 +657,32 @@
         <span class="section-kicker">Recursos ativos</span>
         <h4>Habilidades de Classe</h4>
       </div>
-      <div class="class-feature-grid">
+      <div class="equipment-grid feature-grid">
         {{ range $classRuleRefs }}
           {{ $rulePage := site.GetPage . }}
           {{ if $rulePage }}
-          <article class="class-feature-card">
-            <div class="class-feature-card-title"><i class="ra ra-lightning-bolt" aria-hidden="true"></i><strong>{{ $rulePage.Title }}</strong></div>
+          <article class="equipment-card feature-card">
+            <header class="equipment-card-header">
+              <span class="equipment-card-icon feature-card-icon"><i class="ra ra-lightning-bolt" aria-hidden="true"></i></span>
+              <div class="equipment-card-heading">
+                <strong class="equipment-card-name">{{ $rulePage.Title }}</strong>
+                <div class="equipment-badges">
+                  <span class="equipment-badge feature-badge">Classe</span>
+                </div>
+              </div>
+            </header>
             {{ partial "helpers/compendium-content.html" (dict "ref" . "name" $rulePage.Title) }}
           </article>
           {{ else }}
-          <article class="class-feature-card class-feature-missing"><strong>{{ . }}</strong><small>Conteúdo do compêndio indisponível.</small></article>
+          <article class="equipment-card feature-card feature-card-missing">
+            <header class="equipment-card-header">
+              <span class="equipment-card-icon feature-card-icon"><i class="ra ra-lightning-bolt" aria-hidden="true"></i></span>
+              <div class="equipment-card-heading">
+                <strong class="equipment-card-name">{{ . }}</strong>
+              </div>
+            </header>
+            <small class="feature-missing-text">Conteúdo do compêndio indisponível.</small>
+          </article>
           {{ end }}
         {{ end }}
       </div>

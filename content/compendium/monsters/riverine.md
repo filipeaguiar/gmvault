@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -42,54 +42,47 @@ stats:
   languages: Aquan, Common, Sylvan
   cr: '12'
 stats_meta: Large fey A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Fluvial
 ---
 
-## Características
+## Traits
 
 
-### Anfíbio
+### Amphibious
 
-O ribeirinho pode respirar ar e água.
-
-
-### Resistência Lendária (3/dia)
-
-Se o ribeirinho falhar em um teste de resistência, ele pode escolher ser bem-sucedido em vez disso.
-
-## Ações
+The riverine can breathe air and water.
 
 
-### Ataques Múltiplos
+### Legendary Resistance (3/Day)
 
-O ribeirinho realiza dois ataques Golpe de Dilúvio.
+If the riverine fails a saving throw, it can choose to succeed instead.
 
-
-### Golpe de Dilúvio
-
-Ataque Corpo a Corpo com Arma: +9 para atingir, alcance 3 m, um alvo. Acerto: 14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano de concussão mais 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano de frio.
-
-## Ações Bônus
+## Actions
 
 
-### Passo do Redemoinho
+### Multiattack
 
-O ribeirinho se teleporta magicamente para um espaço desocupado que possa ver num raio de 9 metros de si. Tanto o espaço que ele deixa quanto seu destino devem estar na água ou sobre a superfície da água.
-
-## Ações Lendárias
+The riverine makes two Flood Strike attacks.
 
 
-### Ímpeto do Redemoinho
+### Flood Strike
 
-O ribeirinho usa seu Passo do Redemoinho. Imediatamente após se teleportar, cada criatura num raio de 1,5 m do espaço de destino do ribeirinho sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de frio.
+mw 9 to hit, reach 10 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) bludgeoning damage plus 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) cold damage.
+
+## Bonus Actions
 
 
-### Dilúvio Furioso (Custa 2 Ações)
+### Whirlpool Step
 
-O ribeirinho desencadeia uma torrente de água do rio em uma linha de 9 m de comprimento e 1,5 m de largura. Cada criatura nessa área deve realizar um teste de resistência de Destreza CD 17. Em caso de falha no teste de resistência, a criatura sofre 11 (<span class="dice+" data-roll-notation="2d10">2d10</span>) de dano de concussão e é derrubada no chão. Em caso de sucesso no teste de resistência, a criatura sofre metade desse dano e não é derrubada.
+The riverine magically teleports to an unoccupied space it can see within 30 feet of itself. Both the space it leaves and its destination must be in or on the surface of water.
+
+## Legendary Actions
+
+
+### Whirlpool Rush
+
+The riverine uses its Whirlpool Step. Immediately after it teleports, each creature within 5 feet of the riverine's destination space takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) cold damage.
+
+
+### Raging Deluge (Costs 2 Actions)
+
+The riverine unleashes a torrent of river water in a 30-foot line that is 5 feet wide. Each creature in that area must make a 17 Dexterity saving throw. On a failed save, a creature takes 11 (<span class="dice+" data-roll-notation="2d10">2d10</span>) bludgeoning damage and is knocked prone. On a successful save, a creature takes half as much damage and isn't knocked prone.

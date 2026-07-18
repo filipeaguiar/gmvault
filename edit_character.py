@@ -385,6 +385,7 @@ def edit_selected_character(path: Path) -> str:
         action = ask_choice(
             f"Editar {title}",
             [
+                "Subir de nível",
                 "Adicionar equipamentos",
                 "Adicionar magias",
                 "Escolher outro personagem",
@@ -397,7 +398,9 @@ def edit_selected_character(path: Path) -> str:
             return "character_list"
 
         changed = False
-        if action == "Adicionar equipamentos":
+        if action == "Subir de nível":
+            changed = level_up_character(post, path)
+        elif action == "Adicionar equipamentos":
             selected_items = choose_equipment()
             added = add_equipment(post, selected_items)
             equipment_changed = choose_equipped_items(post)
@@ -412,6 +415,182 @@ def edit_selected_character(path: Path) -> str:
             print(f"Ficha atualizada: {path}")
         else:
             print("Nenhuma alteração realizada.")
+
+
+def level_up_character(post: frontmatter.Post, path: Path) -> bool:
+    """Orquestra o fluxo de subida de nível do personagem."""
+    char_info = post.get("char_info")
+    if not isinstance(char_info, dict):
+        print("Erro: ficha não possui char_info válido.")
+        return False
+
+    current_level = int(char_info.get("level") or char_info.get("class_level") or 1)
+    new_level = current_level + 1
+    class_name = char_info.get("class", "")
+    subclass = char_info.get("subclass", "")
+    subclass_short = subclass
+
+    print(f"\n{'═' * 50}")
+    print(f"  SUBINDO DE NÍVEL: {post.get('title')} ({class_name} {current_level} → {new_level})")
+    print(f"{'═' * 50}")
+
+    # Step 1: Increment level and proficiency bonus
+    char_info["level"] = new_level
+    char_info["class_level"] = new_level
+    prof_bonus = (new_level - 1) // 4 + 2
+    char_info["proficiency_bonus"] = prof_bonus
+    print(f"\n✓ Nível: {new_level}")
+    print(f"✓ Bônus de proficiência: +{prof_bonus}")
+
+    # Step 2: HP increase
+    print(f"\n--- Ganho de HP ---")
+    stats = char_info.get("stats", {})
+    con_mod = dnd_utils.get_modifier(int(stats.get("con", 10)))
+
+    # Get hit dice from class data
+    hd_str = char_info.get("hit_dice", "d8")
+    hd_faces = int(hd_str.replace("d", "")) if hd_str.startswith("d") else 8
+    avg_hp = int(hd_faces / 2) + 1 + con_mod
+
+    hp_choice = ask_choice(
+        f"Ganho de HP (dado: d{hd_faces}, CON mod: {'+' if con_mod >= 0 else ''}{con_mod})",
+        [
+            f"Média: +{avg_hp} HP",
+            "Rolagem: digitar resultado do dado",
+            "Fixo: digitar valor exato"
+        ]
+    )
+
+    hp_gain = 0
+    if "Média" in hp_choice:
+        hp_gain = avg_hp
+    elif "Rolagem" in hp_choice:
+        roll = ask_int(f"Resultado da rolagem do d{hd_faces}", hd_faces // 2 + 1)
+        hp_gain = roll + con_mod
+    else:
+        hp_gain = ask_int("Valor exato a adicionar ao HP máximo", avg_hp)
+
+    hp_max = int(char_info.get("hp_max") or char_info.get("hp") or 0)
+    hp_max += hp_gain
+    char_info["hp_max"] = str(hp_max)
+    char_info["hp"] = str(hp_max)
+    char_info["hp_current"] = str(hp_max)
+    print(f"✓ HP: {hp_max} (+{hp_gain})")
+
+    # Step 3: New class features
+    print(f"\n--- Novas Características ---")
+    try:
+        class_index = dnd_utils.fetch_class_json(class_name)
+        if class_index:
+            class_filename = class_index.get("class", {}).get(class_name.lower(), "")
+            if class_filename:
+                class_data = dnd_utils.load_class_data(class_filename) if class_filename else {}
+            else:
+                class_data = {}
+        else:
+            class_data = {}
+    except Exception:
+        class_data = {}
+
+    new_features = dnd_utils.get_class_features_at_level(class_data, class_name, subclass_short, new_level)
+
+    feature_actions = char_info.get("feature_actions") or char_info.get("actions") or []
+    if not isinstance(feature_actions, list):
+        feature_actions = []
+
+    references = post.get("compendium_refs")
+    if not isinstance(references, list):
+        references = []
+        post["compendium_refs"] = references
+
+    for feat in new_features:
+        name = feat.get("name")
+        if not name:
+            continue
+        print(f"  → {name}")
+        ref = dnd_utils.create_rule_stub(name, feat.get("entries", []))
+        if ref:
+            feature_actions.append({
+                "name": name,
+                "ref": ref,
+                "max_uses": 0,
+                "reset": "",
+                "source": "class"
+            })
+            if ref not in references:
+                references.append(ref)
+
+    char_info["feature_actions"] = feature_actions
+
+    # Step 4: Feats/ASI at appropriate levels
+    asi_levels = dnd_utils.get_asi_levels(class_name)
+    if new_level in asi_levels:
+        print(f"\n--- Talento / ASI (Nível {new_level}) ---")
+        from create_character import select_feats_for_level
+        selected_feats = select_feats_for_level(new_level)
+        if selected_feats:
+            feats_list = char_info.get("feats") or []
+            if not isinstance(feats_list, list):
+                feats_list = []
+            feats_list.extend(selected_feats)
+            char_info["feats"] = list(dict.fromkeys(feats_list))
+            for feat_name in selected_feats:
+                ref = dnd_utils.fetch_from_5etools("feat", feat_name)
+                if ref and ref not in references:
+                    references.append(ref)
+            print(f"  Talentos adicionados: {', '.join(selected_feats)}")
+
+    # Step 5: Recalculate spell slots
+    print(f"\n--- Slots de Magia ---")
+    spell_slots = dnd_utils.calculate_spell_slots(class_name, new_level)
+    if spell_slots:
+        char_info["spell_slots"] = spell_slots
+        print(f"  Slots atualizados: {spell_slots}")
+
+    # Recalculate saves
+    mods = {}
+    for stat in ("str", "dex", "con", "int", "wis", "cha"):
+        mods[stat] = dnd_utils.get_modifier(int(stats.get(stat, 10)))
+    char_info["mods"] = mods
+
+    saves_proficient = char_info.get("saves_proficient", {})
+    saves = {}
+    for stat in ("str", "dex", "con", "int", "wis", "cha"):
+        prof = saves_proficient.get(stat, False)
+        saves[stat] = mods[stat] + (prof_bonus if prof else 0)
+    char_info["saves"] = saves
+
+    # Recalculate skills
+    skills = char_info.get("skills", {})
+    if isinstance(skills, dict):
+        for skill_name, skill_data in skills.items():
+            if isinstance(skill_data, dict):
+                stat = skill_data.get("stat", "")
+                stat_mod = mods.get(stat, 0)
+                prof = skill_data.get("proficient", False)
+                expertise = skill_data.get("expertise", False)
+                bonus = stat_mod
+                if expertise:
+                    bonus += prof_bonus * 2
+                elif prof:
+                    bonus += prof_bonus
+                skill_data["bonus"] = bonus
+
+    # Update spellcasting
+    spells = char_info.get("spells", [])
+    class_spells = char_info.get("class_spells", [])
+    char_info["spellcasting"] = dnd_utils.infer_spellcasting_profile(
+        class_name, new_level,
+        spell_slots=spell_slots,
+        spells=spells,
+        class_spells=class_spells,
+    )
+
+    print(f"\n{'═' * 50}")
+    print(f"  ✓ Nível {new_level} concluído!")
+    print(f"{'═' * 50}")
+
+    return True
 
 
 def main() -> int:

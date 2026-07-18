@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,31 +37,28 @@ stats:
   languages: any one language (usually Common)
   cr: 1/2
 stats_meta: Medium humanoid L/NX/C/NY/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Capanga
 ---
 
-## Características
+## Traits
 
-### Táticas de Matilha
 
-O bandido tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um aliado do bandido estiver a 5 pés dela e o aliado não estiver incapacitado.
+### Pack Tactics
 
-## Ações
+The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
-### Ataques Múltiplos
+## Actions
 
-O bandido realiza dois ataques corpo a corpo.
 
-### Maça
+### Multiattack
 
-Ataque Corpo a Corpo com Arma +4 para atingir, alcance 5 pés, uma criatura. {@h}5 (1d6 + 2) de dano de concussão.
+The thug makes two melee attacks.
 
-### Besta Pesada
 
-Ataque à Distância com Arma +2 para atingir, alcance 100/400 pés, um alvo. {@h}5 (1d10) de dano perfurante.
+### Mace
+
+mw 4 to hit, reach 5 ft., one creature. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) bludgeoning damage.
+
+
+### Heavy Crossbow
+
+rw 2 to hit, range 100/400 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) piercing damage.

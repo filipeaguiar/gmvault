@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,35 +37,28 @@ stats:
   languages: Aquan, Terran
   cr: 1/4
 stats_meta: Small elemental N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Mefítico de Lama
 ---
 
-## Características
+## Traits
 
 
-### Explosão de Morte
+### Death Burst
 
-Quando o mephit morre, ele explode em uma erupção de lama grudenta. Cada criatura de tamanho Médio ou menor a 1,5 metro dele deve ser bem-sucedida em um teste de resistência de Destreza CD 11 ou ficará contida até o final do próximo turno da criatura.
-
-
-### Aparência Falsa
-
-Enquanto o mephit permanece imóvel, ele é indistinguível de um monte comum de lama.
-
-## Ações
+When the mephit dies, it explodes in a burst of sticky mud. Each Medium or smaller creature within 5 feet of it must succeed on a 11 Dexterity saving throw or be restrained until the end of the creature's next turn.
 
 
-### Punhos
+### False Appearance
 
-Ataque Corpo a Corpo com Arma: 3 para atingir, alcance 1,5 m, uma criatura. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano de concussão.
+While the mephit remains motionless, it is indistinguishable from an ordinary mound of mud.
+
+## Actions
 
 
-### Sopro de Lama {@recharge}
+### Fists
 
-O mephit vomita lama viscosa em uma criatura a até 1,5 metro dele. Se o alvo for de tamanho Médio ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza CD 11 ou ficará contido por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesma em caso de sucesso.
+mw 3 to hit, reach 5 ft., one creature. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) bludgeoning damage.
+
+
+### Mud Breath {@recharge}
+
+The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.

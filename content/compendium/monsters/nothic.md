@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,35 +40,33 @@ stats:
   languages: Undercommon
   cr: '2'
 stats_meta: Medium aberration N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Nótico
 ---
 
-## Traços
+## Traits
 
-### Visão Aguçada
 
-O Nothic tem vantagem em testes de Sabedoria (Percepção) que dependem da visão.
+### Keen Sight
 
-## Ações
+The nothic has advantage on Wisdom (Perception) checks that rely on sight.
 
-### Ataques Múltiplos
+## Actions
 
-O Nothic faz dois ataques de garra.
 
-### Garra
+### Multiattack
 
-mw 4 to hit, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano cortante.
+The nothic makes two claw attacks.
 
-### Olhar Putrefante
 
-O Nothic escolhe uma criatura que possa ver, a até 9 metros de distância. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 12 contra esta magia ou sofre 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano necrótico.
+### Claw
 
-### Percepção Sobrenatural
+mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) slashing damage.
 
-O Nothic escolhe uma criatura que possa ver, a até 9 metros de distância. O alvo deve fazer um teste resistido de Carisma (Enganação) contra o teste de Sabedoria (Intuição) do Nothic. Se o Nothic vencer, ele aprende magicamente um fato ou segredo sobre o alvo. O alvo vence automaticamente se for imune a ser enfeitiçado.
+
+### Rotting Gaze
+
+The nothic targets one creature it can see within 30 feet of it. The target must succeed on a 12 Constitution saving throw against this magic or take 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) necrotic damage.
+
+
+### Weird Insight
+
+The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic's Wisdom (Insight) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.

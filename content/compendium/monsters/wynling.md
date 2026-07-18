@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,30 +38,23 @@ stats:
   languages: Sylvan
   cr: 1/2
 stats_meta: Tiny fey C/N
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Wynling
 ---
 
-## Ações
+## Actions
 
 
-### Pancada
+### Slam
 
-Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d4+5">1d4 + 5</span>) de dano de concussão.
-
-
-### Manto da Montanha 4
-
-O wynling se torna invisível, magicamente, juntamente com qualquer equipamento que esteja vestindo ou carregando, por 1 minuto ou até fazer uma jogada de ataque.
-
-## Reações
+mw 7 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d4+5">1d4 + 5</span>) bludgeoning damage.
 
 
-### Voo do Trapaceiro
+### Cloak of the Mountain 4
 
-Imediatamente após uma criatura que o wynling possa ver errar uma jogada de ataque contra o wynling, o wynling pode se mover até 9 metros. Esse movimento não provoca ataques de oportunidade.
+The wynling magically turns invisible, along with any equipment it is wearing or carrying, for 1 minute or until it makes an attack roll.
+
+## Reactions
+
+
+### Trickster's Flight
+
+Immediately after a creature the wynling can see misses the wynling with an attack roll, the wynling can move up to 30 feet. This movement doesn't provoke opportunity attacks.

@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (PHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (PHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,13 +19,6 @@ source:
   remote_file: actions.json
   remote_key: action
   remote_id: 6bd27ed8cc22b505
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Usar um Objeto
 ---
 
-Você normalmente interage com um objeto enquanto faz outra coisa, como quando saca uma espada como parte de um ataque. Quando um objeto exige sua ação para seu uso, você realiza a ação Usar um Objeto. Essa ação também é útil quando você quer interagir com mais de um objeto no seu turno.
+You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.

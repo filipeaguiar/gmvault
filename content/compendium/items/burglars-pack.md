@@ -4,7 +4,7 @@ params:
   kind: item
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -20,22 +20,10 @@ source:
   remote_key: item
   remote_id: 695b082c2bd88fbf
 item_info:
-  type: G|XPHB
-  rarity: none
-  attunement: ''
-  cost: 1600 cp
-  weight: 47.5
-  damage: ''
-  damage_type: ''
-  properties: []
-  range: ''
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Pacote de Ladrão
+  type: Adventuring Gear
+  cost: 16 gp
+  weight: 47.5 lb
+  rarity: None
 ---
 
-Um Pacote do Ladrão contém os seguintes itens: XPHB, XPHB, XPHB, 10 Velas, XPHB, XPHB, 7 frascos de XPHB, 5 dias de XPHB, XPHB, XPHB e XPHB.
+A Burglar's Pack contains the following items: XPHB, XPHB, XPHB, 10 Candles, XPHB, XPHB, 7 flasks of XPHB, 5 days of XPHB, XPHB, XPHB, and XPHB.

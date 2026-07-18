@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,23 +39,18 @@ stats:
   languages: any two languages
   cr: '2'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Sacerdote
 ---
 
-## Características
+## Traits
 
-### Eminência Divina
 
-Como uma ação bônus, o sacerdote pode gastar um espaço de magia para fazer com que seus ataques corpo a corpo com arma causem magicamente um dano radiante extra de 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) a um alvo ao atingi-lo. Este benefício dura até o final do turno. Se o sacerdote gastar um espaço de magia de 2º círculo ou superior, o dano extra aumenta em <span class="dice+" data-roll-notation="1d6">1d6</span> para cada círculo acima do 1º.
+### Divine Eminence
 
-## Ações
+As a bonus action, the priest can expend a spell slot to cause its melee weapon attacks to magically deal an extra 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) radiant damage to a target on a hit. This benefit lasts until the end of the turn. If the priest expends a spell slot of 2nd level or higher, the extra damage increases by <span class="dice+" data-roll-notation="1d6">1d6</span> for each level above 1st.
 
-### Maça
+## Actions
 
-*+2 para atingir, alcance 1,5 m, um alvo.* {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de concussão.
+
+### Mace
+
+mw 2 to hit, reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) bludgeoning damage.

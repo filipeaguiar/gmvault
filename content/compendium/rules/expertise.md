@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,15 +19,8 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: 3f9cd0bda2e4ef84
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Especialização
 ---
 
-Você ganha XPHB em duas de suas proficiências em perícia à sua escolha. XPHB e XPHB são recomendadas se você tiver proficiência nelas.
+You gain XPHB in two of your skill proficiencies of your choice. XPHB and XPHB are recommended if you have proficiency in them.
 
-No 9º nível de bardo, você ganha XPHB em mais duas proficiências em perícia à sua escolha.
+At Bard level 9, you gain XPHB in two more of your skill proficiencies of your choice.

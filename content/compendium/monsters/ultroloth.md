@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -39,39 +39,38 @@ stats:
   languages: Abyssal, Infernal, telepathy 120 ft.
   cr: '13'
 stats_meta: Medium fiend N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Ultroloth
 ---
 
-## Características
+## Traits
 
-### Resistência à Magia
 
-O ultroloth tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
+### Magic Resistance
 
-### Armas Mágicas
+The ultroloth has advantage on saving throws against spells and other magical effects.
 
-Os ataques com arma do ultroloth são mágicos.
 
-## Ações
+### Magic Weapons
 
-### Ataques Múltiplos
+The ultroloth's weapon attacks are magical.
 
-O ultroloth pode usar seu Olhar Hipnótico e realizar três ataques corpo a corpo.
+## Actions
 
-### Espada Longa
 
-Ataque Corpo a Corpo com Arma: +8 para atingir, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano cortante, ou 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) de dano cortante se usada com as duas mãos.
+### Multiattack
 
-### Olhar Hipnótico
+The ultroloth can use its Hypnotic Gaze and makes three melee attacks.
 
-Os olhos do ultroloth cintilam com uma luz opalescente enquanto ele escolhe uma criatura que possa ver, a até 9 metros de distância. Se o alvo puder ver o ultroloth, o alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 17 contra esta magia ou ficará enfeitiçado até o final do próximo turno do ultroloth. O alvo enfeitiçado fica atordoado. Se o teste de resistência do alvo for bem-sucedido, ele fica imune ao olhar do ultroloth pelas próximas 24 horas.
 
-### Teletransporte
+### Longsword
 
-O ultroloth se teletransporta magicamente, junto com qualquer equipamento que esteja vestindo ou carregando, para um espaço desocupado que possa ver, a até 18 metros de distância.
+mw 8 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) slashing damage, or 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) slashing damage if used with two hands.
+
+
+### Hypnotic Gaze
+
+The ultroloth's eyes sparkle with opalescent light as it targets one creature it can see within 30 feet of it. If the target can see the ultroloth, the target must succeed on a 17 Wisdom saving throw against this magic or be charmed until the end of the ultroloth's next turn. The charmed target is stunned. If the target's saving throw is successful, the target is immune to the ultroloth's gaze for the next 24 hours.
+
+
+### Teleport
+
+The ultroloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,72 +40,65 @@ stats:
   languages: all, telepathy 120 ft.
   cr: '21'
 stats_meta: Large celestial L/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Solar
 ---
 
-## Características
+## Traits
 
 
-### Armas Angelicais
+### Angelic Weapons
 
-Os ataques com arma do solar são mágicos. Quando o solar atinge com qualquer arma, a arma causa um dano radiante extra de <span class="dice+" data-roll-notation="6d8">6d8</span> (já incluído no ataque).
-
-
-### Consciência Divina
-
-O solar sabe se ouvir uma mentira.
+The solar's weapon attacks are magical. When the solar hits with any weapon, the weapon deals an extra <span class="dice+" data-roll-notation="6d8">6d8</span> radiant damage (included in the attack).
 
 
-### Resistência à Magia
+### Divine Awareness
 
-O solar tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
-
-## Ações
+The solar knows if it hears a lie.
 
 
-### Ataques Múltiplos
+### Magic Resistance
 
-O solar realiza dois ataques com a espada grande.
+The solar has advantage on saving throws against spells and other magical effects.
 
-
-### Espada Grande
-
-mw 15 para atingir, alcance 1,5 m, um alvo. {@h}22 (<span class="dice+" data-roll-notation="4d6+8">4d6 + 8</span>) de dano cortante mais 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) de dano radiante.
+## Actions
 
 
-### Arco Longo Matador
+### Multiattack
 
-rw 13 para atingir, alcance 45/180 m, um alvo. {@h}15 (<span class="dice+" data-roll-notation="2d8+6">2d8 + 6</span>) de dano perfurante mais 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) de dano radiante. Se o alvo for uma criatura que tiver 100 pontos de vida ou menos, ela deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou morre.
-
-
-### Espada Voadora
-
-O solar libera sua espada grande para pairar magicamente em um espaço desocupado a até 1,5 metro dele. Se o solar puder ver a espada, ele pode comandá-la mentalmente como uma ação bônus para voar até 15 metros e realizar um ataque contra um alvo ou retornar às mãos do solar. Se a espada flutuante for alvo de qualquer efeito, considera-se que o solar a está empunhando. A espada flutuante cai se o solar morrer.
+The solar makes two greatsword attacks.
 
 
-### Toque Curativo (4/Dia)
+### Greatsword
 
-O solar toca outra criatura. O alvo recupera magicamente 40 (<span class="dice+" data-roll-notation="8d8+4">8d8 + 4</span>) pontos de vida e fica liberto de qualquer maldição, doença, veneno, cegueira ou surdez.
-
-## Ações Lendárias
+mw 15 to hit, reach 5 ft., one target. {@h}22 (<span class="dice+" data-roll-notation="4d6+8">4d6 + 8</span>) slashing damage plus 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) radiant damage.
 
 
-### Teleporte
+### Slaying Longbow
 
-O solar se teletransporta magicamente, junto com qualquer equipamento que esteja vestindo ou carregando, para um espaço desocupado que possa ver, a até 36 metros.
-
-
-### Explosão Ardente (Custa 2 Ações)
-
-O solar emite energia mágica divina. Cada criatura à sua escolha em um raio de 3 metros deve realizar um teste de resistência de Destreza CD 23, sofrendo 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano de fogo mais 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano radiante em caso de falha no teste, ou metade do dano em caso de sucesso.
+rw 13 to hit, range 150/600 ft., one target. {@h}15 (<span class="dice+" data-roll-notation="2d8+6">2d8 + 6</span>) piercing damage plus 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) radiant damage. If the target is a creature that has 100 hit points or fewer, it must succeed on a 15 Constitution saving throw or die.
 
 
-### Olhar Ofuscante (Custa 3 Ações)
+### Flying Sword
 
-O solar escolhe uma criatura que possa ver a até 9 metros dele. Se o alvo puder ver o solar, ele deve ser bem-sucedido em um teste de resistência de Constituição CD 15 ou fica cego até que uma magia como restauração menor remova a cegueira.
+The solar releases its greatsword to hover magically in an unoccupied space within 5 feet of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies.
+
+
+### Healing Touch (4/Day)
+
+The solar touches another creature. The target magically regains 40 (<span class="dice+" data-roll-notation="8d8+4">8d8 + 4</span>) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+
+## Legendary Actions
+
+
+### Teleport
+
+The solar magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+
+
+### Searing Burst (Costs 2 Actions)
+
+The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a 23 Dexterity saving throw, taking 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) fire damage plus 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) radiant damage on a failed save, or half as much damage on a successful one.
+
+
+### Blinding Gaze (Costs 3 Actions)
+
+The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness.

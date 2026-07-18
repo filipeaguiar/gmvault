@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,25 +38,18 @@ stats:
   languages: any one language (usually Common)
   cr: 1/8
 stats_meta: Medium humanoid L/NX/C/NY/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Cultista
 ---
 
-## Características
+## Traits
 
 
-### Devoção Sombria
+### Dark Devotion
 
-O cultista tem vantagem nos testes de resistência contra ser enfeitiçado ou amedrontado.
+The cultist has advantage on saving throws against being charmed or frightened.
 
-## Ações
+## Actions
 
 
-### Cimitarra
+### Scimitar
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 5 pés, uma criatura. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano cortante.
+mw 3 to hit, reach 5 ft., one creature. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) slashing damage.

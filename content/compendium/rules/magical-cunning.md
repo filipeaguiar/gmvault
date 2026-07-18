@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,13 +19,6 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 5cd1b215859c46ea
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Astúcia Mágica
 ---
 
-Você pode realizar um rito esotérico por 1 minuto. Ao final, você recupera espaços de magia de Magia de Pacto gastos, mas não mais do que um número igual à metade do seu máximo (arredonde para cima). Uma vez que usar esta característica, não pode fazê-lo novamente até terminar um XPHB.
+You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a XPHB.

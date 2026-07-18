@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,23 +36,16 @@ stats:
   languages: any one language (usually Common)
   cr: 1/8
 stats_meta: Medium humanoid NX/C/G/NY/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Bandido
 ---
 
-## Ações
+## Actions
 
 
-### Cimitarra
+### Scimitar
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) dano cortante.
+mw 3 to hit, reach 5 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) slashing damage.
 
 
-### Besta Leve
+### Light Crossbow
 
-Ataque à Distância com Arma: +3 para atingir, alcance 24/96 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) dano perfurante.
+rw 3 to hit, range 80/320 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) piercing damage.

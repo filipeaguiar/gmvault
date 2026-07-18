@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -41,69 +41,62 @@ stats:
   languages: Deep Speech, telepathy 120 ft.
   cr: '10'
 stats_meta: Large aberration L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Aboleth
 ---
 
-## Características
+## Traits
 
 
-### Anfíbio
+### Amphibious
 
-O aboleth pode respirar ar e água.
-
-
-### Nuvem Mucosa
-
-Enquanto submerso, o aboleth é cercado por muco transformador. Uma criatura que tocar o aboleth ou que o acertar com um ataque corpo a corpo enquanto estiver a até 1,5 metro dele deve realizar um teste de resistência de Constituição 14. Em caso de falha, a criatura fica doente por <span class="dice+" data-roll-notation="1d4">1d4</span> horas. A criatura doente pode respirar apenas debaixo d'água.
+The aboleth can breathe air and water.
 
 
-### Telepatia Investigativa
+### Mucous Cloud
 
-Se uma criatura se comunicar telepaticamente com o aboleth, o aboleth aprende os desejos mais profundos da criatura, se puder vê-la.
-
-## Ações
+While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a 14 Constitution saving throw. On a failure, the creature is diseased for <span class="dice+" data-roll-notation="1d4">1d4</span> hours. The diseased creature can breathe only underwater.
 
 
-### Ataques Múltiplos
+### Probing Telepathy
 
-O aboleth realiza três ataques de tentáculo.
+If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.
 
-
-### Tentáculo
-
-mw 9 para atingir, alcance 3 metros, um alvo. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) de dano de concussão. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Constituição 14 ou ficará doente. A doença não tem efeito por 1 minuto e pode ser removida por qualquer magia que cure doenças. Após 1 minuto, a pele da criatura doente se torna translúcida e viscosa, a criatura não pode recuperar pontos de vida a menos que esteja submersa, e a doença só pode ser removida por curar ou outra magia de cura de doenças de 6º círculo ou superior. Quando a criatura está fora de um corpo d'água, ela sofre 6 (<span class="dice+" data-roll-notation="1d12">1d12</span>) de dano de ácido a cada 10 minutos, a menos que umidade seja aplicada à pele antes que os 10 minutos tenham passado.
+## Actions
 
 
-### Cauda
+### Multiattack
 
-mw 9 para atingir, alcance 3 metros, um alvo. {@h}15 (<span class="dice+" data-roll-notation="3d6+5">3d6 + 5</span>) de dano de concussão.
-
-
-### Escravizar (3/Dia)
-
-O aboleth escolhe uma criatura que possa ver a até 9 metros dele. O alvo deve ser bem-sucedido em um teste de resistência de Sabedoria 14 ou ficará magicamente enfeitiçado pelo aboleth até que o aboleth morra ou até que esteja em um plano de existência diferente do alvo. O alvo enfeitiçado está sob o controle do aboleth e não pode realizar reações, e o aboleth e o alvo podem se comunicar telepaticamente entre si a qualquer distância.
-
-Sempre que o alvo enfeitiçado sofre dano, ele pode repetir o teste de resistência. Em caso de sucesso, o efeito termina. Não mais que uma vez a cada 24 horas, o alvo também pode repetir o teste de resistência quando estiver a pelo menos 1,5 quilômetro de distância do aboleth.
-
-## Ações Lendárias
+The aboleth makes three tentacle attacks.
 
 
-### Detectar
+### Tentacle
 
-O aboleth realiza um teste de Sabedoria (Percepção).
-
-
-### Golpe de Cauda
-
-O aboleth realiza um ataque de cauda.
+mw 9 to hit, reach 10 ft., one target. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) bludgeoning damage. If the target is a creature, it must succeed on a 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (<span class="dice+" data-roll-notation="1d12">1d12</span>) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.
 
 
-### Dreno Psíquico (Custa 2 Ações)
+### Tail
 
-Uma criatura enfeitiçada pelo aboleth sofre 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano psíquico, e o aboleth recupera pontos de vida iguais ao dano que a criatura sofre.
+mw 9 to hit, reach 10 ft., one target. {@h}15 (<span class="dice+" data-roll-notation="3d6+5">3d6 + 5</span>) bludgeoning damage.
+
+
+### Enslave (3/Day)
+
+The aboleth targets one creature it can see within 30 feet of it. The target must succeed on a 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.
+
+Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.
+
+## Legendary Actions
+
+
+### Detect
+
+The aboleth makes a Wisdom (Perception) check.
+
+
+### Tail Swipe
+
+The aboleth makes one tail attack.
+
+
+### Psychic Drain (Costs 2 Actions)
+
+One creature charmed by the aboleth takes 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.

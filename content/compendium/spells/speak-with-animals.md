@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -31,14 +31,8 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Pela duração, você pode compreender e se comunicar verbalmente com Bestas, e pode usar qualquer uma das opções de perícia da ação XPHB com elas.
+For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the XPHB action's skill options with them.
 
-A maioria das Bestas tem pouco a dizer sobre tópicos não relacionados à sobrevivência ou companheirismo, mas, no mínimo, uma Besta pode fornecer informações sobre locais e monstros próximos, incluindo tudo que tenha percebido no último dia.
+Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.

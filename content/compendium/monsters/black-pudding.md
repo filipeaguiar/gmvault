@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,42 +36,35 @@ stats:
   languages: ''
   cr: '4'
 stats_meta: Large ooze U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Pudim Negro
 ---
 
-## Características
+## Traits
 
 
-### Amorfo
+### Amorphous
 
-O pudim pode se mover através de um espaço tão estreito quanto 2,5 centímetros de largura sem se espremer.
-
-
-### Forma Corrosiva
-
-Uma criatura que tocar o pudim ou atingi-lo com um ataque corpo a corpo enquanto estiver a até 1,5 metro dele sofre 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) de dano de ácido. Qualquer arma não mágica feita de metal ou madeira que atingir o pudim corrói. Após causar dano, a arma recebe uma penalidade permanente e cumulativa de −1 nas jogadas de dano. Se a penalidade chegar a −5, a arma é destruída. Munição não mágica feita de metal ou madeira que atingir o pudim é destruída após causar dano. O pudim pode corroer madeira ou metal não mágico com 5 centímetros de espessura em 1 rodada.
+The pudding can move through a space as narrow as 1 inch wide without squeezing.
 
 
-### Escalada de Aranha
+### Corrosive Form
 
-O pudim pode escalar superfícies difíceis, incluindo de cabeça para baixo em tetos, sem precisar fazer um teste de atributo.
-
-## Ações
+A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
 
 
-### Pseudópode
+### Spider Climb
 
-<i>Corpo a Corpo com Arma: </i>+5 para atingir, alcance 1,5 m, um alvo. <i>Acerto: </i>6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano de concussão mais 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) de dano de ácido. Além disso, a armadura não mágica vestida pelo alvo é parcialmente dissolvida e recebe uma penalidade permanente e cumulativa de −1 na CA que fornece. A armadura é destruída se a penalidade reduzir sua CA para 10.
+The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
 
-## Reações
+## Actions
 
 
-### Dividir
+### Pseudopod
 
-Quando um pudim que é Médio ou maior é submetido a dano elétrico ou cortante, ele se divide em dois novos pudins se tiver no mínimo 10 pontos de vida. Cada novo pudim tem pontos de vida iguais à metade dos pontos de vida do pudim original, arredondado para baixo. Os novos pudins são um tamanho menor que o pudim original.
+mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) bludgeoning damage plus 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+
+## Reactions
+
+
+### Split
+
+When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -41,50 +41,43 @@ stats:
   languages: Sahuagin
   cr: '5'
 stats_meta: Large humanoid L/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Sahuagin Baron
 ---
 
-## Características
+## Traits
 
 
-### Frenesi Sangrento
+### Blood Frenzy
 
-O sahuagin tem vantagem em jogadas de ataque corpo a corpo contra qualquer criatura que não tenha todos os seus pontos de vida.
-
-
-### Anfíbio Limitado
-
-O sahuagin pode respirar ar e água, mas precisa ficar submerso pelo menos uma vez a cada 4 horas para evitar sufocamento.
+The sahuagin has advantage on melee attack rolls against any creature that doesn't have all its hit points.
 
 
-### Telepatia com Tubarões
+### Limited Amphibiousness
 
-O sahuagin pode comandar magicamente qualquer tubarão a até 36 metros de distância, usando uma telepatia limitada.
-
-## Ações
+The sahuagin can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating.
 
 
-### Ataques Múltiplos
+### Shark Telepathy
 
-O sahuagin realiza três ataques: um com sua mordida e dois com suas garras ou tridente.
+The sahuagin can magically command any shark within 120 feet of it, using a limited telepathy.
 
-
-### Mordida
-
-Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}9 (<span class="dice+" data-roll-notation="2d4+4">2d4 + 4</span>) de dano perfurante.
+## Actions
 
 
-### Garras
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano cortante.
+The sahuagin makes three attacks: one with his bite and two with his claws or trident.
 
 
-### Tridente
+### Bite
 
-Ataque Corpo a Corpo ou à Distância com Arma: +7 para atingir, alcance 1,5 m ou alcance de arremesso 6/18 m, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano perfurante, ou 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano perfurante se usado com as duas mãos para realizar um ataque corpo a corpo.
+mw 7 to hit, reach 5 ft., one target. {@h}9 (<span class="dice+" data-roll-notation="2d4+4">2d4 + 4</span>) piercing damage.
+
+
+### Claws
+
+mw 7 to hit, reach 5 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) slashing damage.
+
+
+### Trident
+
+mw,rw 7 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) piercing damage, or 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) piercing damage if used with two hands to make a melee attack.

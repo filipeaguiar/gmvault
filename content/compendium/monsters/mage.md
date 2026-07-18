@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,17 +40,11 @@ stats:
   languages: any four languages
   cr: '6'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Mago
 ---
 
-## Ações
+## Actions
 
-### Adaga
 
-mw,rw 5 para atingir, alcance 5 ft. ou alcance 20/60 ft., um alvo. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) de dano perfurante.
+### Dagger
+
+mw,rw 5 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) piercing damage.

@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,12 +19,6 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: 58c0f3746e69b9fd
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Como um XPHB, você concede a si mesmo XPHB na sua próxima jogada de ataque do turno atual. Você pode usar esta característica apenas se não tiver se movido neste turno e, depois de usá-la, seu XPHB será 0 até o final do turno atual.
+As a XPHB, you give yourself XPHB on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your XPHB is 0 until the end of the current turn.

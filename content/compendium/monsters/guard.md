@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,15 +37,11 @@ stats:
   languages: any one language (usually Common)
   cr: 1/8
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Guarda
 ---
 
-### Lança
+## Actions
 
-mw,rw 3 para atingir, alcance 5 ft. ou alcance 20/60 ft., um alvo. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) dano perfurante, ou 5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) dano perfurante se usada com as duas mãos para fazer um ataque corpo a corpo.
+
+### Spear
+
+mw,rw 3 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) piercing damage, or 5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) piercing damage if used with two hands to make a melee attack.

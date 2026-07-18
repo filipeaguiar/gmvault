@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,13 +19,6 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: 668766da73e727c5
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Talento Confiável
 ---
 
-Sempre que você fizer um teste de atributo que utilize uma de suas proficiências em perícias ou ferramentas, você pode tratar uma jogada de <span class="dice+" data-roll-notation="d20">d20</span> de 9 ou menos como um 10.
+Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a <span class="dice+" data-roll-notation="d20">d20</span> roll of 9 or lower as a 10.

@@ -4,7 +4,7 @@ params:
   kind: species
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MPMM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MPMM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -26,32 +26,30 @@ species_info: &id001
   size:
   - S
 race_info: *id001
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-### Tipo de Criatura
+### Creature Type
 
-Você é um Humanoide. Você também é considerado um goblinoide para qualquer pré-requisito ou efeito que exija que você seja um goblinoide.
+You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid.
 
-### Visão no Escuro
 
-Você pode enxergar em penumbra a até 60 pés de você como se fosse luz plena e na escuridão como se fosse penumbra. Você percebe cores nessa escuridão apenas como tons de cinza.
+### Darkvision
 
-### Ascendência Feérica
+You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray.
 
-Você tem vantagem nos testes de resistência que realizar para evitar ou encerrar a condição enfeitiçado em você.
 
-### Fúria dos Pequenos
+### Fey Ancestry
 
-Quando você causa dano a uma criatura com um ataque ou uma magia e o tamanho da criatura é maior que o seu, você pode fazer com que o ataque ou magia cause dano extra à criatura. O dano extra é igual ao seu bônus de proficiência.
+You have advantage on saving throws you make to avoid or end the charmed condition on yourself.
 
-Você pode usar esta característica um número de vezes igual ao seu bônus de proficiência, recuperando todos os usos gastos quando terminar um descanso longo, e não pode usá-la mais do que uma vez por turno.
 
-### Fuga Ágil
+### Fury of the Small
 
-Você pode usar a ação Desengajar ou Esconder-se como uma ação bônus em cada um dos seus turnos.
+When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.
+
+You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.
+
+
+### Nimble Escape
+
+You can take the Disengage or Hide action as a bonus action on each of your turns.

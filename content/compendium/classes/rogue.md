@@ -4,7 +4,7 @@ params:
   kind: class
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -22,103 +22,96 @@ source:
 class_info:
   hit_dice: 1d8
   primary_ability: '{''dex'': True}'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Ladino
 ---
 
-## Nível 1
+## Level 1
 
-- [Especialização](/compendium/rules/expertise/)
-- [Ataque Furtivo](/compendium/rules/sneak-attack/)
-- [Ladinoês](/compendium/rules/thieves-cant/)
-- [Maestria de Arma](/compendium/rules/weapon-mastery/)
+- [Expertise](/compendium/rules/expertise/)
+- [Sneak Attack](/compendium/rules/sneak-attack/)
+- [Thieves' Cant](/compendium/rules/thieves-cant/)
+- [Weapon Mastery](/compendium/rules/weapon-mastery/)
 
-## Nível 2
+## Level 2
 
-- [Ação Ardilosa](/compendium/rules/cunning-action/)
+- [Cunning Action](/compendium/rules/cunning-action/)
 
-## Nível 3
+## Level 3
 
-- [Subclasse de Ladino](/compendium/rules/rogue-subclass/)
-- [Mira Estável](/compendium/rules/steady-aim/)
+- [Rogue Subclass](/compendium/rules/rogue-subclass/)
+- [Steady Aim](/compendium/rules/steady-aim/)
 
-## Nível 4
+## Level 4
 
-- Aumento de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 5
+## Level 5
 
-- [Golpe Ardiloso](/compendium/rules/cunning-strike/)
-- [Veneno (Custo: 1d6)](/compendium/rules/poison-cost-1d6/)
-- [Rasteira (Custo: 1d6)](/compendium/rules/trip-cost-1d6/)
-- [Esquiva Sobrenatural](/compendium/rules/uncanny-dodge/)
-- [Retirada (Custo: 1d6)](/compendium/rules/withdraw-cost-1d6/)
+- [Cunning Strike](/compendium/rules/cunning-strike/)
+- [Poison (Cost: 1d6)](/compendium/rules/poison-cost-1d6/)
+- [Trip (Cost: 1d6)](/compendium/rules/trip-cost-1d6/)
+- [Uncanny Dodge](/compendium/rules/uncanny-dodge/)
+- [Withdraw (Cost: 1d6)](/compendium/rules/withdraw-cost-1d6/)
 
-## Nível 6
+## Level 6
 
-- [Especialização](/compendium/rules/expertise/)
+- [Expertise](/compendium/rules/expertise/)
 
-## Nível 7
+## Level 7
 
-- [Evasão](/compendium/rules/evasion/)
-- [Talento Confiável](/compendium/rules/reliable-talent/)
+- [Evasion](/compendium/rules/evasion/)
+- [Reliable Talent](/compendium/rules/reliable-talent/)
 
-## Nível 8
+## Level 8
 
-- Aumento de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 9
+## Level 9
 
-- Característica de Subclasse
+- Subclass Feature
 
-## Nível 10
+## Level 10
 
-- Aumento de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 11
+## Level 11
 
-- Golpe Ardiloso Aprimorado
+- Improved Cunning Strike
 
-## Nível 12
+## Level 12
 
-- Aumento de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 13
+## Level 13
 
-- Característica de Subclasse
+- Subclass Feature
 
-## Nível 14
+## Level 14
 
-- Atordoar (Custo: 2d6)
-- Golpes Traiçoeiros
-- Nocautear (Custo: 6d6)
-- Obscurecer (Custo: 3d6)
+- Daze (Cost: 2d6)
+- Devious Strikes
+- Knock Out (Cost: 6d6)
+- Obscure (Cost: 3d6)
 
-## Nível 15
+## Level 15
 
-- Mente Escorregadia
+- Slippery Mind
 
-## Nível 16
+## Level 16
 
-- Aumento de Valor de Atributo
+- Ability Score Improvement
 
-## Nível 17
+## Level 17
 
-- Característica de Subclasse
+- Subclass Feature
 
-## Nível 18
+## Level 18
 
-- Elusivo
+- Elusive
 
-## Nível 19
+## Level 19
 
-- [Dádiva Épica](/compendium/rules/epic-boon/)
+- [Epic Boon](/compendium/rules/epic-boon/)
 
-## Nível 20
+## Level 20
 
-- Golpe de Sorte
+- Stroke of Luck

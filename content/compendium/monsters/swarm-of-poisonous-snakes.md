@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,23 +36,18 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Medium beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Enxame de Cobras Venenosas
 ---
 
-## Características
+## Traits
 
-### Enxame
 
-O enxame pode ocupar o espaço de outra criatura e vice-versa, e o enxame pode se mover através de qualquer abertura grande o suficiente para uma serpente Miúda. O enxame não pode recuperar pontos de vida ou ganhar pontos de vida temporários.
+### Swarm
 
-## Ações
+The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points.
 
-### Mordidas
+## Actions
 
-mw 6 para atingir, alcance 0 ft., uma criatura no espaço do enxame. {@h}7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano perfurante, ou 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano perfurante se o enxame tiver metade dos seus pontos de vida ou menos. O alvo deve realizar um teste de resistência de Constituição CD 10, sofrendo 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano de veneno em caso de falha no teste, ou metade do dano em caso de sucesso.
+
+### Bites
+
+mw 6 to hit, reach 0 ft., one creature in the swarm's space. {@h}7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) piercing damage, or 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) piercing damage if the swarm has half of its hit points or fewer. The target must make a 10 Constitution saving throw, taking 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) poison damage on a failed save, or half as much damage on a successful one.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,40 +38,33 @@ stats:
   languages: Common
   cr: '4'
 stats_meta: Tiny undead N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Crânio Flamejante
 ---
 
-## Características
+## Traits
 
 
-### Iluminação
+### Illumination
 
-A caveira flamejante emite luz baixa em um raio de 15 pés, ou luz plena em um raio de 15 pés e luz baixa por 15 pés adicionais. Ela pode alternar entre as opções como uma ação.
-
-
-### Resistência à Magia
-
-A caveira flamejante tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.
+The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional 15 feet. It can switch between the options as an action.
 
 
-### Rejuvenescimento
+### Magic Resistance
 
-Se a caveira flamejante for destruída, ela recupera todos os seus pontos de vida em 1 hora, a menos que água benta seja aspergida sobre seus restos ou uma magia dissipar magia ou remover maldição seja conjurada sobre eles.
-
-## Ações
+The flameskull has advantage on saving throws against spells and other magical effects.
 
 
-### Ataques Múltiplos
+### Rejuvenation
 
-A caveira flamejante usa Raio de Fogo duas vezes.
+If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a dispel magic or remove curse spell is cast on them.
+
+## Actions
 
 
-### Raio de Fogo
+### Multiattack
 
-Atq +5 para atingir, alcance 30 pés, um alvo. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) dano de fogo.
+The flameskull uses Fire Ray twice.
+
+
+### Fire Ray
+
+rs 5 to hit, range 30 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) fire damage.

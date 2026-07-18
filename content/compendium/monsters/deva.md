@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,47 +40,40 @@ stats:
   languages: all, telepathy 120 ft.
   cr: '10'
 stats_meta: Medium celestial L/G
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Deva
 ---
 
-## Características
+## Traits
 
 
-### Armas Angelicais
+### Angelic Weapons
 
-Os ataques com arma do deva são mágicos. Quando o deva atinge com qualquer arma, a arma causa um dano radiante extra de 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) (incluído no ataque).
-
-
-### Resistência à Magia
-
-O deva tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
-
-## Ações
+The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra <span class="dice+" data-roll-notation="4d8">4d8</span> radiant damage (included in the attack).
 
 
-### Ataques Múltiplos
+### Magic Resistance
 
-O deva realiza dois ataques corpo a corpo.
+The deva has advantage on saving throws against spells and other magical effects.
 
-
-### Maça
-
-+8 para atingir, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) de dano de concussão mais 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) de dano radiante.
+## Actions
 
 
-### Toque Curativo (3/Dia)
+### Multiattack
 
-O deva toca outra criatura. O alvo recupera magicamente 20 (<span class="dice+" data-roll-notation="4d8+2">4d8 + 2</span>) pontos de vida e é libertado de qualquer maldição, doença, veneno, cegueira ou surdez.
+The deva makes two melee attacks.
 
 
-### Mudar Forma
+### Mace
 
-O deva se polimorfa magicamente em um humanoide ou besta que tenha um nível de desafio igual ou menor que o seu, ou de volta à sua forma verdadeira. Ele reverte à sua forma verdadeira se morrer. Qualquer equipamento que ele esteja vestindo ou carregando é absorvido ou carregado pela nova forma (escolha do deva).
+mw 8 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) bludgeoning damage plus 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) radiant damage.
 
-Em uma nova forma, o deva mantém suas estatísticas de jogo e capacidade de falar, mas sua CA, modos de deslocamento, Força, Destreza e sentidos especiais são substituídos pelos da nova forma, e ele ganha quaisquer estatísticas e capacidades (exceto características de classe, ações lendárias e ações de covil) que a nova forma tenha, mas que ele não possua.
+
+### Healing Touch (3/Day)
+
+The deva touches another creature. The target magically regains 20 (<span class="dice+" data-roll-notation="4d8+2">4d8 + 2</span>) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+
+
+### Change Shape
+
+The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).
+
+In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.

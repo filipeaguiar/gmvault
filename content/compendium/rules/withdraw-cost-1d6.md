@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,12 +19,6 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: c0c56c7028c00d89
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Imediatamente após o ataque, você se desloca até metade do seu XPHB sem provocar Ataques de Oportunidade.
+Immediately after the attack, you move up to half your XPHB without provoking Opportunity Attacks.

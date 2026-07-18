@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -34,12 +34,6 @@ spell_info:
   - kind: dice
     notation: 1d4
     label: Dados
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Você toca uma criatura voluntária e escolhe uma perícia. Pela duração da magia, a criatura adiciona <span class="dice+" data-roll-notation="1d4">1d4</span> a qualquer teste de atributo que utilize a perícia escolhida.
+You touch a willing creature and choose a skill. Until the spell ends, the creature adds <span class="dice+" data-roll-notation="1d4">1d4</span> to any ability check using the chosen skill.

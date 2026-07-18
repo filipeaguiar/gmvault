@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -41,35 +41,28 @@ stats:
   languages: Common, Giant
   cr: '9'
 stats_meta: 'Huge giant {''alignment'': [''N'', ''G''], ''chance'': 50}/{''alignment'': [''N'', ''E''], ''chance'': 50}'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Gigante das Nuvens
 ---
 
-## Características
+## Traits
 
 
-### Faro Aguçado
+### Keen Smell
 
-O gigante tem Vantagem em testes de Sabedoria (Percepção) que dependem do olfato.
+The giant has advantage on Wisdom (Perception) checks that rely on smell.
 
-## Ações
-
-
-### Ataques Múltiplos
-
-O gigante realiza dois ataques com sua maça-estrela.
+## Actions
 
 
-### Maça-estrela
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +12 para atingir, alcance de 3 m, um alvo. _Acerto:_ 21 (<span class="dice+" data-roll-notation="3d8+8">3d8 + 8</span>) de Dano Perfurante.
+The giant makes two morningstar attacks.
 
 
-### Rocha
+### Morningstar
 
-Ataque à Distância com Arma: +12 para atingir, alcance de 18/72 m, um alvo. _Acerto:_ 30 (<span class="dice+" data-roll-notation="4d10+8">4d10 + 8</span>) de Dano de Concussão.
+mw 12 to hit, reach 10 ft., one target. {@h}21 (<span class="dice+" data-roll-notation="3d8+8">3d8 + 8</span>) piercing damage.
+
+
+### Rock
+
+rw 12 to hit, range 60/240 ft., one target. {@h}30 (<span class="dice+" data-roll-notation="4d10+8">4d10 + 8</span>) bludgeoning damage.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,35 +37,28 @@ stats:
   languages: ''
   cr: '5'
 stats_meta: Large plant U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Montículo Ambulante
 ---
 
-## Características
+## Traits
 
 
-### Absorção de Eletricidade
+### Lightning Absorption
 
-Sempre que o montículo ambulante é submetido a dano elétrico, ele não sofre dano e recupera um número de pontos de vida igual ao dano elétrico causado.
+Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.
 
-## Ações
-
-
-### Ataques Múltiplos
-
-O montículo ambulante realiza dois ataques de pancada. Se ambos os ataques atingirem um alvo Médio ou menor, o alvo fica agarrado (CD 14 para escapar) e o montículo ambulante usa Engolfar nele.
+## Actions
 
 
-### Pancada
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano de concussão.
+The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape 14), and the shambling mound uses its Engulf on it.
 
 
-### Engolfar
+### Slam
 
-O montículo ambulante engolfa uma criatura de tamanho Médio ou menor que esteja agarrada por ele. O alvo engolfado fica cego, contido e incapaz de respirar, e deve ser bem-sucedido em um teste de resistência de Constituição CD 14 no início de cada turno do montículo ou sofre 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano de concussão. Se o montículo se mover, o alvo engolfado se move com ele. O montículo pode ter apenas uma criatura engolfada por vez.
+mw 7 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) bludgeoning damage.
+
+
+### Engulf
+
+The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a 14 Constitution saving throw at the start of each of the mound's turns or take 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.

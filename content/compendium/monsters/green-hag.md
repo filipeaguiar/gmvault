@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -40,42 +40,35 @@ stats:
   languages: Common, Draconic, Sylvan
   cr: '3'
 stats_meta: Medium fey N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Bruxa Verde
 ---
 
-## Características
+## Traits
 
 
-### Anfíbio
+### Amphibious
 
-A bruxa pode respirar ar e água.
-
-
-### Mimetismo
-
-A bruxa pode imitar sons de animais e vozes de humanoides. Uma criatura que ouvir os sons pode perceber que são imitações em caso de sucesso em um teste de Sabedoria (Intuição) CD 14.
-
-## Ações
+The hag can breathe air and water.
 
 
-### Garras
+### Mimicry
 
-Corpo a Corpo: +6 para atingir, alcance 1,5 m, um alvo. Acerto: 13 (2d8 + 4) de dano cortante.
+The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a successful 14 Wisdom (Insight) check.
 
-
-### Aparência Ilusória
-
-A bruxa cobre a si mesma e qualquer coisa que esteja vestindo ou carregando com uma ilusão mágica que a faz parecer outra criatura de seu tamanho geral e forma humanoide. A ilusão termina se a bruxa usar uma ação bônus para encerrá-la ou se ela morrer.
-
-As mudanças provocadas por este efeito não resistem a uma inspeção física. Por exemplo, a bruxa pode aparentar ter pele lisa, mas alguém que a tocasse sentiria sua carne áspera. Caso contrário, uma criatura deve usar uma ação para inspecionar visualmente a ilusão e ser bem-sucedida em um teste de Inteligência (Investigação) CD 20 para discernir que a bruxa está disfarçada.
+## Actions
 
 
-### Passagem Invisível
+### Claws
 
-A bruxa se torna magicamente invisível até atacar ou conjurar uma magia, ou até que sua concentração termine (como se estivesse se concentrando em uma magia). Enquanto estiver invisível, ela não deixa nenhum vestígio físico de sua passagem, portanto, só pode ser rastreada por magia. Qualquer equipamento que ela vista ou carregue fica invisível com ela.
+mw 6 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) slashing damage.
+
+
+### Illusory Appearance
+
+The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like another creature of her general size and humanoid shape. The illusion ends if the hag takes a bonus action to end it or if she dies.
+
+The changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have smooth skin, but someone touching her would feel her rough flesh. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a 20 Intelligence (Investigation) check to discern that the hag is disguised.
+
+
+### Invisible Passage
+
+The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her.

@@ -4,7 +4,7 @@ params:
   kind: species
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -26,38 +26,32 @@ species_info: &id001
   size:
   - M
 race_info: *id001
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-### Visão no Escuro
+### Darkvision
 
-Você tem XPHB com alcance de 60 pés.
-
-
-### Linhagem Élfica
-
-Você faz parte de uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma linhagem da tabela Linhagens Élficas. Você recebe o benefício de 1º nível dessa linhagem.
-
-Quando atinge os níveis de personagem 3 e 5, você aprende uma magia de círculo mais alto, conforme mostrado na tabela. Você sempre tem essa magia preparada. Você pode conjurá-la uma vez sem gastar um espaço de magia e recupera a capacidade de conjurá-la dessa forma quando termina um XPHB. Você também pode conjurar a magia usando quaisquer espaços de magia que possua do círculo apropriado.
-
-Inteligência, Sabedoria ou Carisma é seu atributo de conjuração para as magias que você conjura com esta característica (escolha o atributo quando selecionar a linhagem).
+You have XPHB with a range of 60 feet.
 
 
-### Ancestralidade Feérica
+### Elven Lineage
 
-Você tem XPHB em testes de resistência que faz para evitar ou encerrar a condição XPHB.
+You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.
+
+When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a XPHB. You can also cast the spell using any spell slots you have of the appropriate level.
+
+Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).
 
 
-### Sentidos Aguçados
+### Fey Ancestry
 
-Você tem proficiência na perícia XPHB, XPHB ou XPHB.
+You have XPHB on saving throws you make to avoid or end the XPHB condition.
 
 
-### Transe
+### Keen Senses
 
-Você não precisa dormir, e magia não pode fazer você dormir. Você pode terminar um XPHB em 4 horas se passar essas horas em uma meditação semelhante a um transe, durante a qual mantém consciência.
+You have proficiency in the XPHB, XPHB, or XPHB skill.
+
+
+### Trance
+
+You don't need to sleep, and magic can't put you to sleep. You can finish a XPHB in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.

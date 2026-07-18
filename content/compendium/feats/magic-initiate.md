@@ -4,7 +4,7 @@ params:
   kind: feat
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -21,33 +21,26 @@ source:
   remote_id: c9e3154ab7cdaca5
 feat_info:
   prerequisite: []
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Iniciado em Magia
 ---
 
-Você recebe os seguintes benefícios.
+You gain the following benefits.
 
 
-### Dois Truques
+### Two Cantrips
 
-Você aprende dois truques à sua escolha da lista de magias de class=Cleric, class=Druid ou class=Wizard. Inteligência, Sabedoria ou Carisma é o seu atributo de conjuração para as magias deste talento (escolha ao selecionar este talento).
-
-
-### Magia de 1º Círculo
-
-Escolha uma magia de 1º círculo da mesma lista que você selecionou para os truques deste talento. Você sempre tem essa magia preparada. Você pode conjurá-la uma vez sem gastar um espaço de magia, e recupera a capacidade de conjurá-la dessa forma quando termina um XPHB. Você também pode conjurar a magia usando quaisquer espaços de magia que possua.
+You learn two cantrips of your choice from the class=Cleric, class=Druid, or class=Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
 
 
-### Mudança de Magia
+### Level 1 Spell
 
-Sempre que ganha um novo nível, você pode substituir uma das magias que escolheu para este talento por uma magia diferente do mesmo círculo da lista de magias escolhida.
+Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a XPHB. You can also cast the spell using any spell slots you have.
 
 
-### Repetível
+### Spell Change
 
-Você pode escolher este talento mais de uma vez, mas precisa escolher uma lista de magias diferente a cada vez.
+Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
+
+
+### Repeatable
+
+You can take this feat more than once, but you must choose a different spell list each time.

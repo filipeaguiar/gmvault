@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -37,30 +37,23 @@ stats:
   languages: ''
   cr: 1/2
 stats_meta: Medium beast U
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Tubarão-de-recife
 ---
 
-## Características
+## Traits
 
 
-### Tática de Matilha
+### Pack Tactics
 
-O tubarão tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um aliado do tubarão estiver a 5 pés da criatura e o aliado não estiver incapacitado.
-
-
-### Respiração Aquática
-
-O tubarão só pode respirar debaixo d'água.
-
-## Ações
+The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 
-### Mordida
+### Water Breathing
 
-Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 5 pés, um alvo. *Acerto:* 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) de dano perfurante.
+The shark can breathe only underwater.
+
+## Actions
+
+
+### Bite
+
+mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) piercing damage.

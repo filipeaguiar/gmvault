@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,17 +19,10 @@ source:
   remote_file: actions.json
   remote_key: action
   remote_id: 9b34afd251d31c27
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Esconder-se
 ---
 
-Com a ação Esconder-se, você tenta se ocultar. Para isso, você deve ser bem-sucedido em um teste de Destreza (XPHB) CD 15 enquanto estiver XPHB ou atrás de Três Quartos de Cobertura ou Cobertura Total, e você deve estar fora da linha de visão de qualquer inimigo; se você puder ver uma criatura, você pode discernir se ela pode vê-lo.
+With the Hide action, you try to conceal yourself. To do so, you must succeed on a 15 Dexterity (XPHB) check while you're XPHB or behind Three-Quarters Cover or Total Cover, and you must be out of any enemy's line of sight; if you can see a creature, you can discern whether it can see you.
 
-Em caso de sucesso no teste, você tem a condição XPHB enquanto escondido. Anote o resultado total do seu teste, que é a CD para uma criatura encontrá-lo com um teste de Sabedoria (XPHB).
+On a successful check, you have the XPHB condition while hidden. Make note of your check's total, which is the DC for a creature to find you with a Wisdom (XPHB) check.
 
-Você deixa de estar escondido imediatamente após qualquer um dos seguintes ocorrer: você faz um som mais alto que um sussurro, um inimigo o encontra, você faz uma jogada de ataque, ou você conjura uma magia com componente Verbal.
+You stop being hidden immediately after any of the following occurs: you make a sound louder than a whisper, an enemy finds you, you make an attack roll, or you cast a spell with a Verbal component.

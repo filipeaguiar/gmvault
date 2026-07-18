@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,35 +36,28 @@ stats:
   languages: understands Ignan but can't speak
   cr: '1'
 stats_meta: Medium elemental N/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Cobra Ígnea
 ---
 
-## Características
+## Traits
 
 
-### Corpo Aquecido
+### Heated Body
 
-Uma criatura que tocar a cobra ou atingi-la com um ataque corpo a corpo enquanto estiver a até 1,5 metro dela sofre 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
+A creature that touches the snake or hits it with a melee attack while within 5 feet of it takes 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
 
-## Ações
-
-
-### Ataques Múltiplos
-
-A cobra realiza dois ataques: um com sua mordida e outro com sua cauda.
+## Actions
 
 
-### Mordida
+### Multiattack
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) de dano perfurante mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
+The snake makes two attacks: one with its bite and one with its tail.
 
 
-### Cauda
+### Bite
 
-Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) de dano de concussão mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
+mw 3 to hit, reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) piercing damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+
+
+### Tail
+
+mw 3 to hit, reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) bludgeoning damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.

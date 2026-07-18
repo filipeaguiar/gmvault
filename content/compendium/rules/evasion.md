@@ -4,7 +4,7 @@ params:
   kind: rule
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -19,15 +19,8 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: ad2aaa77b1681ca4
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Evasão
 ---
 
-Quando você é submetido a um efeito que permite realizar um Teste de Resistência de Destreza para sofrer apenas metade do dano, você, em vez disso, não sofre dano se for bem-sucedido no teste de resistência e apenas metade do dano se falhar.
+When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail.
 
-Você não se beneficia desta característica se tiver a condição XPHB.
+You don't benefit from this feature if you have the XPHB condition.

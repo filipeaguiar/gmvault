@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,17 +36,11 @@ stats:
   languages: any one language (usually Common)
   cr: '0'
 stats_meta: Medium humanoid A
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Plebeu
 ---
 
-## Ações
+## Actions
 
-### Clava
 
-Ataque Corpo a Corpo com Arma: +2 para atingir, alcance 1,5 m, um alvo. Acerto: 2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) de dano de concussão.
+### Club
+
+mw 2 to hit, reach 5 ft., one target. {@h}2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) bludgeoning damage.

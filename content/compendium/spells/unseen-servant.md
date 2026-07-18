@@ -4,7 +4,7 @@ params:
   kind: spell
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (XPHB) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -31,16 +31,10 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-Esta magia cria um XPHB, força Média, sem mente e disforme que realiza tarefas simples ao seu comando até a magia terminar. O servo surge em um espaço desocupado no chão dentro do alcance. Ele tem CA 10, 1 Ponto de Vida e Força 2, e não pode atacar. Se ele cair para 0 XPHB, a magia termina.
+This spell creates an XPHB, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 2, and it can't attack. If it drops to 0 XPHB, the spell ends.
 
-Uma vez em cada um de seus turnos como uma XPHB, você pode comandar mentalmente o servo para se mover até 4,5 metros e interagir com um objeto. O servo pode realizar tarefas simples que um humano poderia fazer, como buscar coisas, limpar, consertar, dobrar roupas, acender fogos, servir comida e derramar bebidas. Uma vez que você dá o comando, o servo realiza a tarefa com o melhor de sua capacidade até completá-la, então aguarda seu próximo comando.
+Once on each of your turns as a XPHB, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.
 
-Se você comandar o servo para realizar uma tarefa que o moveria a mais de 18 metros de você, a magia termina.
+If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.

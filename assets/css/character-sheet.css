@@ -890,6 +890,37 @@ html.vtt-iframe .char-tab-content {
   margin-top: 6px;
 }
 
+/* Feature cards - equipment-card pattern */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.feature-card {
+  border-left-color: #2980b9;
+}
+
+.feature-card-icon {
+  background: rgba(41, 128, 185, 0.12);
+  color: #2980b9;
+}
+
+.feature-badge {
+  background: rgba(41, 128, 185, 0.1);
+  color: #2980b9;
+}
+
+.feature-card-missing {
+  opacity: 0.6;
+}
+
+.feature-missing-text {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-muted, #777);
+}
+
 .compendium-content,
 .compendium-legacy-content {
   margin-top: 8px;

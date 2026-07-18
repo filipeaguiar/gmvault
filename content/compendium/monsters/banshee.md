@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -38,35 +38,33 @@ stats:
   languages: Common, Elvish
   cr: '4'
 stats_meta: Medium undead C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Banshee
 ---
 
-## Características
+## Traits
 
-### Detectar Vida
 
-A banshee pode sentir magicamente a presença de criaturas vivas a até 8 quilômetros de distância que não sejam mortos-vivos ou constructos. Ela sabe a direção geral em que estão, mas não suas localizações exatas.
+### Detect Life
 
-### Movimento Incorpóreo
+The banshee can magically sense the presence of living creatures up to 5 miles away that aren't undead or constructs. She knows the general direction they're in but not their exact locations.
 
-A banshee pode se mover através de outras criaturas e objetos como se fossem terreno difícil. Ela sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar o turno dela dentro de um objeto.
 
-## Ações
+### Incorporeal Movement
 
-### Toque Corruptor
+The banshee can move through other creatures and objects as if they were 3. She takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if she ends her turn inside an object.
 
-*Ataque Corpo a Corpo com Magia:* +4 para atingir, alcance 1,5 m, um alvo. *Acerto:* 12 (<span class="dice+" data-roll-notation="3d6+2">3d6 + 2</span>) de dano necrótico.
+## Actions
 
-### Aspecto Horripilante
 
-Cada criatura a até 18 metros da banshee que possa vê-la e não seja morto-vivo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 13 ou ficará amedrontada por 1 minuto. Um alvo amedrontado pode repetir o teste de resistência no final de cada um de seus turnos, com desvantagem se a banshee estiver na linha de visão, terminando o efeito em si mesmo em caso de sucesso. Se o teste de resistência de um alvo for bem-sucedido ou o efeito terminar para ele, o alvo fica imune ao Aspecto Horripilante da banshee pelas próximas 24 horas.
+### Corrupting Touch
 
-### Lamento (1/Dia)
+ms 4 to hit, reach 5 ft., one target. {@h}12 (<span class="dice+" data-roll-notation="3d6+2">3d6 + 2</span>) necrotic damage.
 
-A banshee libera um lamento pesaroso, desde que não esteja sob a luz do sol. Este lamento não tem efeito em constructos e mortos-vivos. Todas as outras criaturas a até 9 metros dela que possam ouvi-la devem realizar um teste de resistência de Constituição CD 13. Em caso de falha, uma criatura cai para 0 pontos de vida. Em caso de sucesso, uma criatura sofre 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano psíquico.
+
+### Horrifying Visage
+
+Each non-undead creature within 60 feet of the banshee that can see her must succeed on a 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the banshee's Horrifying Visage for the next 24 hours.
+
+
+### Wail (1/Day)
+
+The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) psychic damage.

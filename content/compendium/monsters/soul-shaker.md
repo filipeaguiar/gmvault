@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (JTTRC) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -36,42 +36,35 @@ stats:
   languages: telepathy 60 ft.
   cr: '4'
 stats_meta: Large undead C/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Abalador de Almas
 ---
 
-## Características
+## Traits
 
 
-### Fascínio Arrebatador (1/Dia)
+### Enthralled Lure (1/Day)
 
-O agitador de almas pode conjurar a magia *geas*, sem necessidade de componentes materiais e usando Carisma como atributo de conjuração (CD para evitar magia 12).
-
-
-### Reconstrução
-
-Quando o agitador de almas é reduzido a 0 pontos de vida, ele explode em 7 (<span class="dice+" data-roll-notation="1d4+5">1d4 + 5</span>) garras rastejantes. Após 6 (<span class="dice+" data-roll-notation="1d12">1d12</span>) dias, se pelo menos duas dessas garras rastejantes estiverem vivas, elas se teletransportam para o local da morte do agitador de almas e se fundem, então o agitador de almas se reforma e recupera todos os seus pontos de vida.
+The soul shaker can cast the geas spell, requiring no spell components and using Charisma as the spellcasting ability (spell save 12).
 
 
-### Natureza Incomum
+### Reconstruction
 
-O agitador de almas não precisa de ar, comida, bebida ou sono.
-
-## Ações
+When the soul shaker is reduced to 0 hit points, it explodes into 7 (<span class="dice+" data-roll-notation="1d4+5">1d4 + 5</span>) crawling claws. After 6 (<span class="dice+" data-roll-notation="1d12">1d12</span>) days, if at least two of those crawling claws are alive, they teleport to the location of the soul shaker's death and merge together, whereupon the soul shaker reforms and regains all its hit points.
 
 
-### Aperto Esmagador
+### Unusual Nature
 
-Corpo a Corpo com Arma +7 para atingir, alcance 1,5 m, um alvo. 14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano de concussão. Se o alvo for uma criatura de tamanho Médio ou menor, ele fica agarrado (escapar CD 15). O agitador de almas só pode ter uma criatura agarrada dessa forma por vez.
+The soul shaker doesn't require air, food, drink, or sleep.
 
-## Ações Bônus
+## Actions
 
 
-### Consumir Vitalidade
+### Crushing Grasp
 
-O agitador de almas escolhe uma criatura que esteja agarrando. Se o alvo não for um Constructo ou Morto-vivo, o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou sofrerá 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano necrótico. O máximo de pontos de vida do alvo é reduzido em uma quantia igual ao dano necrótico sofrido, e o agitador de almas recupera pontos de vida iguais a essa quantia. Essa redução dura até o alvo terminar um descanso longo. O alvo morre se seu máximo de pontos de vida for reduzido a 0.
+mw 7 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) bludgeoning damage. If the target is a Medium or smaller creature, it is grappled (escape 15). The soul shaker can have only one creature grappled in this way at a time.
+
+## Bonus Actions
+
+
+### Consume Vitality
+
+The soul shaker targets a creature it is grappling. If the target is not a Construct or an Undead, the target must succeed on a 14 Constitution saving throw or take 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the soul shaker regains hit points equal to that amount. This reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0.

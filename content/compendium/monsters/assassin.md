@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Conteúdo importado do 5e.tools (MM) e traduzido automaticamente; requer revisão editorial.
+summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -42,45 +42,38 @@ stats:
   languages: Thieves' cant plus any two languages
   cr: '8'
 stats_meta: Medium humanoid L/NX/C/NY/E
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
-titulo_pt_br: Assassino
 ---
 
-## Características
+## Traits
 
 
-### Assassinar
+### Assassinate
 
-Durante seu primeiro turno, o assassino tem vantagem em jogadas de ataque contra qualquer criatura que ainda não tenha agido. Qualquer acerto que o assassino obtiver contra uma criatura surpresa é um acerto crítico.
-
-
-### Evasão
-
-Se o assassino for submetido a um efeito que permita um teste de resistência de Destreza para sofrer apenas metade do dano, em vez disso, o assassino não sofre dano se for bem-sucedido no teste de resistência, e sofre apenas metade do dano se falhar.
+During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.
 
 
-### Ataque Furtivo (1/Turno)
+### Evasion
 
-O assassino causa 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano extra quando atinge um alvo com um ataque com arma e tem vantagem na jogada de ataque, ou quando o alvo está a 5 pés de um aliado do assassino que não esteja incapacitado e o assassino não tenha desvantagem na jogada de ataque.
-
-## Ações
+If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
 
 
-### Ataques Múltiplos
+### Sneak Attack (1/Turn)
 
-O assassino faz dois ataques com espada curta.
+The assassin deals an extra 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll.
 
-
-### Espada Curta
-
-Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 5 pés, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante, e o alvo deve realizar um teste de resistência de Constituição CD 15, sofrendo 24 (<span class="dice+" data-roll-notation="7d6">7d6</span>) de dano de veneno em caso de falha no teste de resistência, ou metade do dano em caso de sucesso.
+## Actions
 
 
-### Besta Leve
+### Multiattack
 
-Ataque à Distância com Arma: +6 para atingir, alcance 80/320 pés, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano perfurante, e o alvo deve realizar um teste de resistência de Constituição CD 15, sofrendo 24 (<span class="dice+" data-roll-notation="7d6">7d6</span>) de dano de veneno em caso de falha no teste de resistência, ou metade do dano em caso de sucesso.
+The assassin makes two shortsword attacks.
+
+
+### Shortsword
+
+mw 6 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage, and the target must make a 15 Constitution saving throw, taking 24 (<span class="dice+" data-roll-notation="7d6">7d6</span>) poison damage on a failed save, or half as much damage on a successful one.
+
+
+### Light Crossbow
+
+rw 6 to hit, range 80/320 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage, and the target must make a 15 Constitution saving throw, taking 24 (<span class="dice+" data-roll-notation="7d6">7d6</span>) poison damage on a failed save, or half as much damage on a successful one.
