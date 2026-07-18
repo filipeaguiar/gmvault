@@ -183,6 +183,55 @@ test("roll request matches the documented Dice+ payload and result shape", async
   destroyBridge();
 });
 
+test("main waits for player identity and preserves the bridge player reference", async () => {
+  const mainSource = await readFile(
+    new URL("../static/owlbear-character-sheet/main.js", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(mainSource, /Object\.assign\(playerInfo, \{ id, name \}\)/);
+  assert.doesNotMatch(mainSource, /playerInfo = \{ id, name \}/);
+
+  const awaitIdentityAt = mainSource.indexOf("await loadPlayerInfo()");
+  const initBridgeAt = mainSource.indexOf("initBridge(OBR, playerInfo");
+  assert.ok(awaitIdentityAt >= 0, "player identity must be awaited");
+  assert.ok(awaitIdentityAt < initBridgeAt, "identity must load before bridge initialization");
+});
+
+test("roll request is rejected when Owlbear player identity is missing", async () => {
+  const obr = createOBRMock();
+  const iframe = createIframe();
+  initBridge(obr, { id: null, name: null });
+  bindIframe(iframe);
+
+  const readyRequest = obr.sent.find((entry) => entry.channel === DicePlusChannel.IS_READY);
+  obr.deliver(DicePlusChannel.IS_READY, {
+    requestId: readyRequest.data.requestId,
+    ready: true,
+  });
+  iframe.messages.length = 0;
+
+  windowMock.dispatchMessage({
+    source: iframe.contentWindow,
+    origin: "https://filipeaguiar.github.io",
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "sheet-request-no-player",
+      notation: "1d20+4",
+      label: "Percepção",
+    }),
+  });
+
+  assert.equal(
+    obr.sent.some((entry) => entry.channel === DicePlusChannel.ROLL_REQUEST),
+    false,
+  );
+  const error = iframe.messages.find((entry) => entry.data.type === MessageType.ROLL_ERROR);
+  assert.ok(error);
+  assert.equal(error.data.payload.requestId, "sheet-request-no-player");
+  assert.equal(error.data.payload.error, "Owlbear player identity unavailable");
+  destroyBridge();
+});
+
 test("Dice+ errors are correlated and cleanup removes listeners", async () => {
   const obr = createOBRMock();
   const iframe = createIframe();

@@ -262,6 +262,19 @@ function _handleRollRequest(payload) {
     return;
   }
 
+  const hasPlayerIdentity =
+    typeof _player.id === "string" && _player.id.trim() !== "" &&
+    typeof _player.name === "string" && _player.name.trim() !== "";
+  if (!hasPlayerIdentity) {
+    _sendToIframe(MessageType.ROLL_ERROR, {
+      requestId: payload.requestId,
+      rollId: null,
+      error: "Owlbear player identity unavailable",
+      retryable: false,
+    });
+    return;
+  }
+
   // 3.3: Validate notation.
   const notationCheck = validateNotation(payload.notation);
   if (!notationCheck.valid) {
