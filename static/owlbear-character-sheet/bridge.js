@@ -43,6 +43,20 @@ let _onDiceReadyChange = null; // external callback
 // ── Public API ──────────────────────────────────────────────────────
 
 /**
+ * Validate and normalize the Owlbear player identity used by Dice+.
+ * @returns {{ id: string, name: string } | null}
+ */
+export function normalizePlayerIdentity(id, name) {
+  if (
+    typeof id !== "string" || id.trim() === "" ||
+    typeof name !== "string" || name.trim() === ""
+  ) {
+    return null;
+  }
+  return { id: id.trim(), name: name.trim() };
+}
+
+/**
  * Initialize the bridge with the Owlbear SDK instance.
  *
  * @param {object} obr - The OBR SDK instance.
@@ -262,10 +276,8 @@ function _handleRollRequest(payload) {
     return;
   }
 
-  const hasPlayerIdentity =
-    typeof _player.id === "string" && _player.id.trim() !== "" &&
-    typeof _player.name === "string" && _player.name.trim() !== "";
-  if (!hasPlayerIdentity) {
+  const playerIdentity = normalizePlayerIdentity(_player.id, _player.name);
+  if (!playerIdentity) {
     _sendToIframe(MessageType.ROLL_ERROR, {
       requestId: payload.requestId,
       rollId: null,
@@ -292,8 +304,8 @@ function _handleRollRequest(payload) {
   const rollRequest = {
     rollId,
     source: SOURCE,
-    playerName: _player.name,
-    playerId: _player.id,
+    playerName: playerIdentity.name,
+    playerId: playerIdentity.id,
     rollTarget: "everyone",
     diceNotation: payload.notation.trim(),
     showResults: true,

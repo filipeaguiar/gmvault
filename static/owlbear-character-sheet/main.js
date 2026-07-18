@@ -6,14 +6,14 @@
  * Vanilla JavaScript, no frameworks, no bundler.
  */
 
-import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady } from "./bridge.js?v=1.0.3";
+import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady, normalizePlayerIdentity } from "./bridge.js?v=1.0.4";
 
 // ---------------------------------------------------------------------------
 // SDK Import
 // ---------------------------------------------------------------------------
 
 let OBR = null;
-let obrReady = false;
+let bridgeInitialized = false;
 let playerInfo = { id: null, name: null };
 
 const CATALOG_URL = "/gmvault/character-catalog.json";
@@ -144,7 +144,7 @@ function showSheet(url) {
   // Bind bridge after iframe loads (task 3.2). Register before changing
   // src so a cached character page cannot win the load-event race.
   characterIframe.onload = () => {
-    if (obrReady) {
+    if (bridgeInitialized) {
       bindIframe(characterIframe);
     }
   };
@@ -191,8 +191,10 @@ async function loadPlayerInfo() {
       OBR.player.getName(),
       OBR.player.getId(),
     ]);
+    const identity = normalizePlayerIdentity(id, name);
+    if (!identity) return false;
     // Preserve the object reference passed to the Dice+ bridge.
-    Object.assign(playerInfo, { id, name });
+    Object.assign(playerInfo, identity);
     return true;
   } catch {
     return false;
@@ -269,23 +271,31 @@ async function initOBR() {
     OBR.onReady(async () => {
       readyHandled = true;
       clearTimeout(readyFallback);
-      obrReady = true;
 
       // Player identity is required by the Dice+ roll-request contract. Wait
       // for it before exposing the bridge to a character iframe.
       const playerLoaded = await loadPlayerInfo();
-      if (playerLoaded) {
-        setStatus(`Conectado: ${playerInfo.name}`, "ok");
-      } else {
+      if (!playerLoaded) {
         setStatus("Conectado ao Owlbear — jogador não identificado", "error");
+        await fetchCatalog();
+        return;
       }
+      setStatus(`Conectado: ${playerInfo.name}`, "ok");
 
-      // Initialize Dice+ bridge (task 3.2).
+      // Initialize Dice+ bridge only after a valid identity is available.
       initBridge(OBR, playerInfo, (ready) => {
         if (ready) {
           setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ ativo`, "ok");
         }
       });
+      bridgeInitialized = true;
+
+      // The degraded fallback may already have loaded a saved character before
+      // OBR became ready. Bind it now if its load event fired before the bridge
+      // existed; otherwise the onload handler below performs the same binding.
+      if (!sheetContainer.hidden && characterIframe.getAttribute("src")) {
+        bindIframe(characterIframe);
+      }
 
       // The bridge is ready before a saved character can bind its iframe.
       await fetchCatalog();

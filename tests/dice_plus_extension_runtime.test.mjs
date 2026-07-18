@@ -93,7 +93,27 @@ const {
   bindIframe,
   destroyBridge,
   isDiceReady,
+  normalizePlayerIdentity,
 } = bridge;
+
+test("player identity normalization rejects malformed values and trims valid strings", () => {
+  for (const [id, name] of [
+    [null, null],
+    [undefined, undefined],
+    [42, "Ana"],
+    ["player-1", { value: "Ana" }],
+    ["", "Ana"],
+    ["player-1", ""],
+    ["   ", "Ana"],
+    ["player-1", "\t"],
+  ]) {
+    assert.equal(normalizePlayerIdentity(id, name), null);
+  }
+  assert.deepEqual(normalizePlayerIdentity(" player-1 ", " Ana "), {
+    id: "player-1",
+    name: "Ana",
+  });
+});
 
 test.after(async () => {
   destroyBridge();
@@ -183,54 +203,73 @@ test("roll request matches the documented Dice+ payload and result shape", async
   destroyBridge();
 });
 
-test("main waits for player identity and preserves the bridge player reference", async () => {
+test("main waits for validated player identity and safely binds an early iframe", async () => {
   const mainSource = await readFile(
     new URL("../static/owlbear-character-sheet/main.js", import.meta.url),
     "utf8",
   );
 
-  assert.match(mainSource, /Object\.assign\(playerInfo, \{ id, name \}\)/);
+  assert.match(mainSource, /const identity = normalizePlayerIdentity\(id, name\)/);
+  assert.match(mainSource, /Object\.assign\(playerInfo, identity\)/);
   assert.doesNotMatch(mainSource, /playerInfo = \{ id, name \}/);
 
-  const awaitIdentityAt = mainSource.indexOf("await loadPlayerInfo()");
-  const initBridgeAt = mainSource.indexOf("initBridge(OBR, playerInfo");
+  const readyHandlerAt = mainSource.indexOf("OBR.onReady(async () =>");
+  const readyHandler = mainSource.slice(readyHandlerAt);
+  const awaitIdentityAt = readyHandler.indexOf("await loadPlayerInfo()");
+  const initBridgeAt = readyHandler.indexOf("initBridge(OBR, playerInfo");
+  const bridgeReadyAt = readyHandler.indexOf("bridgeInitialized = true");
+  const earlyIframeBindAt = readyHandler.indexOf("bindIframe(characterIframe)");
+  const catalogAt = readyHandler.indexOf("await fetchCatalog()", bridgeReadyAt);
+
   assert.ok(awaitIdentityAt >= 0, "player identity must be awaited");
   assert.ok(awaitIdentityAt < initBridgeAt, "identity must load before bridge initialization");
+  assert.ok(initBridgeAt < bridgeReadyAt, "bridge readiness flag must follow initialization");
+  assert.ok(bridgeReadyAt < earlyIframeBindAt, "an early iframe can bind only after bridge initialization");
+  assert.ok(earlyIframeBindAt < catalogAt, "early iframe recovery must precede the ready-path catalog fetch");
+  assert.match(mainSource, /characterIframe\.onload = \(\) => \{\s+if \(bridgeInitialized\)/);
 });
 
-test("roll request is rejected when Owlbear player identity is missing", async () => {
-  const obr = createOBRMock();
-  const iframe = createIframe();
-  initBridge(obr, { id: null, name: null });
-  bindIframe(iframe);
+for (const [label, player] of [
+  ["null values", { id: null, name: null }],
+  ["undefined values", { id: undefined, name: undefined }],
+  ["non-string values", { id: 42, name: { value: "Ana" } }],
+  ["empty values", { id: "", name: "" }],
+  ["whitespace values", { id: "   ", name: "\t" }],
+]) {
+  test(`roll request is rejected for ${label} in Owlbear player identity`, async () => {
+    const obr = createOBRMock();
+    const iframe = createIframe();
+    initBridge(obr, player);
+    bindIframe(iframe);
 
-  const readyRequest = obr.sent.find((entry) => entry.channel === DicePlusChannel.IS_READY);
-  obr.deliver(DicePlusChannel.IS_READY, {
-    requestId: readyRequest.data.requestId,
-    ready: true,
+    const readyRequest = obr.sent.find((entry) => entry.channel === DicePlusChannel.IS_READY);
+    obr.deliver(DicePlusChannel.IS_READY, {
+      requestId: readyRequest.data.requestId,
+      ready: true,
+    });
+    iframe.messages.length = 0;
+
+    windowMock.dispatchMessage({
+      source: iframe.contentWindow,
+      origin: "https://filipeaguiar.github.io",
+      data: createEnvelope(MessageType.ROLL_REQUEST, {
+        requestId: "sheet-request-no-player",
+        notation: "1d20+4",
+        label: "Percepção",
+      }),
+    });
+
+    assert.equal(
+      obr.sent.some((entry) => entry.channel === DicePlusChannel.ROLL_REQUEST),
+      false,
+    );
+    const error = iframe.messages.find((entry) => entry.data.type === MessageType.ROLL_ERROR);
+    assert.ok(error);
+    assert.equal(error.data.payload.requestId, "sheet-request-no-player");
+    assert.equal(error.data.payload.error, "Owlbear player identity unavailable");
+    destroyBridge();
   });
-  iframe.messages.length = 0;
-
-  windowMock.dispatchMessage({
-    source: iframe.contentWindow,
-    origin: "https://filipeaguiar.github.io",
-    data: createEnvelope(MessageType.ROLL_REQUEST, {
-      requestId: "sheet-request-no-player",
-      notation: "1d20+4",
-      label: "Percepção",
-    }),
-  });
-
-  assert.equal(
-    obr.sent.some((entry) => entry.channel === DicePlusChannel.ROLL_REQUEST),
-    false,
-  );
-  const error = iframe.messages.find((entry) => entry.data.type === MessageType.ROLL_ERROR);
-  assert.ok(error);
-  assert.equal(error.data.payload.requestId, "sheet-request-no-player");
-  assert.equal(error.data.payload.error, "Owlbear player identity unavailable");
-  destroyBridge();
-});
+}
 
 test("Dice+ errors are correlated and cleanup removes listeners", async () => {
   const obr = createOBRMock();
