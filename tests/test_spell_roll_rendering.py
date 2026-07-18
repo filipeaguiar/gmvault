@@ -65,6 +65,7 @@ def test_character_spell_headers_render_only_usable_rolls():
                         "kind": "damage",
                         "notation": "8d6",
                         "label": "Dano",
+                        "damage_type": "fire",
                         "scaling": {
                             "mode": "spell_slot",
                             "thresholds": {
@@ -157,11 +158,27 @@ def test_character_spell_headers_render_only_usable_rolls():
     assert "Fireball — Dano — slot 4" in html
     assert re.search(r'data-roll-notation="?8d6"?', html)
     assert re.search(r'data-roll-notation="?9d6"?', html)
+    assert re.search(r'data-roll-kind="?damage"?', html)
+    assert re.search(r'data-roll-damage-type="?fire"?', html)
     assert "10d6" not in html
     assert "Eldritch Blast — Ataque mágico" in html
     assert re.search(r'data-roll-notation="?1d20\+6"?', html)
+    assert re.search(r'data-roll-kind="?attack"?', html)
+    assert re.search(r'data-roll-attack-type="?ranged"?', html)
     assert "Magic Missile — Dano por dardo" in html
     assert re.search(r'data-roll-notation="?1d4\+1"?', html)
     assert "3d4+3" not in html
     assert "Mage Armor —" not in html
-    assert "cloneNode(true)" not in (ROOT / "assets/js/spells.js").read_text(encoding="utf-8")
+
+
+def test_spell_manager_moves_existing_cards_without_rebuilding_roll_controls():
+    source = (ROOT / "assets/js/spells.js").read_text(encoding="utf-8")
+
+    assert 'getElementById("ready-spells-list")' in source
+    assert 'getElementById("management-spells-list")' in source
+    assert "destination.appendChild(card)" in source
+    assert 'card.style.display = matchesSearch && matchesLevel ? "" : "none"' in source
+    assert "document.importNode" not in source
+    assert "cloneNode" not in source
+    assert ".innerHTML" not in source
+    assert ".outerHTML" not in source

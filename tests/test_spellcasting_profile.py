@@ -90,8 +90,7 @@ def test_character_sheet_renders_spell_manager_chrome():
     assert "spell-manager" in html
     assert "spell-manager-counters" in html
     normalized = html.replace('"', '')
-    assert 'data-spell-counter=prepared' in normalized
-    assert 'data-spell-counter-value=prepared' in normalized
+    assert 'data-spell-counter-value=ready' in normalized
     assert 'data-slot-level=1' in normalized
     assert "spell-manager-toolbar" in html
     assert "spell-level-filters" in html

@@ -30,6 +30,7 @@
     "notation" $attackNotation
     "label" "Ataque mágico"
     "display" (printf "%+d" $attackBonus)
+    "attack_type" $spellInfo.attack_type
   ) -}}
 {{- end -}}
 
@@ -51,7 +52,7 @@
       {{- end -}}
     {{- end -}}
     {{- if and $spellUsable $bestNotation -}}
-      {{- $controls = $controls | append (dict "kind" $kind "notation" $bestNotation "label" $label "display" $bestNotation) -}}
+      {{- $controls = $controls | append (dict "kind" $kind "notation" $bestNotation "label" $label "display" $bestNotation "damage_type" ($roll.damage_type | default "")) -}}
     {{- end -}}
   {{- else if and $hasCharacter (eq $mode "spell_slot") -}}
     {{- range $slotLevel, $slotCount := $charInfo.spell_slots -}}
@@ -72,13 +73,14 @@
             "notation" $bestNotation
             "label" (printf "%s — slot %d" $label $slot)
             "display" (printf "Nv%d %s" $slot $bestNotation)
+            "damage_type" ($roll.damage_type | default "")
           ) -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}
   {{- else if or (not $hasCharacter) $spellUsable -}}
     {{- with $roll.notation -}}
-      {{- $controls = $controls | append (dict "kind" $kind "notation" . "label" $label "display" .) -}}
+      {{- $controls = $controls | append (dict "kind" $kind "notation" . "label" $label "display" . "damage_type" ($roll.damage_type | default "")) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -88,7 +90,7 @@
   {{- range $controls -}}
     <span class="spell-inline-roll spell-roll-{{ .kind }}">
       <small>{{ .label }}</small>
-      <strong class="roll-ready" data-roll-notation="{{ .notation }}" data-roll-label="{{ $spellPage.Title }} — {{ .label }}">{{ .display }}</strong>
+      <strong class="roll-ready" data-roll-notation="{{ .notation }}" data-roll-kind="{{ .kind }}" data-roll-label="{{ $spellPage.Title }} — {{ .label }}"{{ with .damage_type }} data-roll-damage-type="{{ . }}"{{ end }}{{ with .attack_type }} data-roll-attack-type="{{ . }}"{{ end }}>{{ .display }}</strong>
     </span>
   {{- end -}}
 </span>

@@ -5,12 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const searchInput = document.getElementById("spell-search");
-    const preparedSpellsList = document.getElementById("prepared-spells-list");
-    const classSpellsList = document.getElementById("class-spells-list");
+    const readySpellsList = document.getElementById("ready-spells-list");
+    const managementSpellsList = document.getElementById("management-spells-list");
     const levelButtons = Array.from(spellManager.querySelectorAll(".spell-level-filter"));
     const slotGroups = Array.from(spellManager.querySelectorAll(".spell-slots-tracker .slot-level-group"));
-    const preparedCounter = spellManager.querySelector('[data-spell-counter="prepared"] [data-spell-counter-value="prepared"]');
-    const preparedLimitCounter = spellManager.querySelector('[data-spell-counter="prepared"] [data-spell-counter-limit="prepared"]');
+    const readyCounter = spellManager.querySelector('[data-spell-counter-value="ready"]');
     const storageKey = `gmvault.spell-manager:${window.location.pathname}`;
 
     let activeLevel = "all";
@@ -27,36 +26,40 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })();
 
-    const basePreparedTemplates = new Map();
-    const classSpellTemplates = new Map();
-
-    function safeEscape(value) {
-        if (window.CSS && typeof window.CSS.escape === "function") {
-            return window.CSS.escape(value);
-        }
-        return String(value).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
-    }
-
     function getSpellCards() {
         return Array.from(spellManager.querySelectorAll(".spell-card"));
     }
 
-    function getPreparedRefs() {
-        if (!preparedSpellsList) {
+    function getReadyRefs() {
+        if (!readySpellsList) {
             return [];
         }
-        return Array.from(preparedSpellsList.querySelectorAll(".prepared-spell-item"))
+        return Array.from(readySpellsList.querySelectorAll(".spell-card"))
             .map((card) => card.getAttribute("data-spell-ref"))
             .filter(Boolean);
     }
 
-    function updatePreparedCounter() {
-        if (!preparedCounter) {
+    function updateReadyCounter() {
+        if (readyCounter) {
+            readyCounter.textContent = String(getReadyRefs().length);
+        }
+    }
+
+    function updateCollectionState(collection) {
+        if (!collection) {
             return;
         }
-        preparedCounter.textContent = String(getPreparedRefs().length);
-        if (preparedLimitCounter && preparedLimitCounter.textContent.trim() === "") {
-            preparedLimitCounter.textContent = "0";
+
+        collection.querySelectorAll(".spell-level-group").forEach((group) => {
+            const cards = Array.from(group.querySelectorAll(".spell-card"));
+            group.classList.toggle("is-empty", cards.length === 0);
+            group.hidden = cards.length === 0 || cards.every((card) => card.style.display === "none");
+        });
+
+        const section = collection.closest(".spell-collection");
+        const emptyMessage = section ? section.querySelector(".spell-empty-message") : null;
+        if (emptyMessage) {
+            emptyMessage.classList.toggle("is-hidden", collection.querySelectorAll(".spell-card").length > 0);
         }
     }
 
@@ -68,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const matchesLevel = activeLevel === "all" || level === activeLevel;
             card.style.display = matchesSearch && matchesLevel ? "" : "none";
         });
+        updateCollectionState(readySpellsList);
+        updateCollectionState(managementSpellsList);
     }
 
     function setActiveButton(targetButton) {
@@ -76,75 +81,44 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function snapshotPreparedTemplates() {
-        if (preparedSpellsList) {
-            preparedSpellsList.querySelectorAll(".prepared-spell-item").forEach((card) => {
-                const ref = card.getAttribute("data-spell-ref");
-                if (ref && !basePreparedTemplates.has(ref)) {
-                    basePreparedTemplates.set(ref, document.importNode(card, true));
-                }
-            });
-        }
-
-        if (classSpellsList) {
-            classSpellsList.querySelectorAll(".class-spell-item").forEach((card) => {
-                const ref = card.getAttribute("data-spell-ref");
-                if (ref && !classSpellTemplates.has(ref)) {
-                    classSpellTemplates.set(ref, document.importNode(card, true));
-                }
-            });
-        }
-    }
-
-    function getTemplateForSpell(ref) {
-        return basePreparedTemplates.get(ref) || classSpellTemplates.get(ref) || null;
-    }
-
-    function buildPreparedCard(ref) {
-        const template = getTemplateForSpell(ref);
-        if (!template) {
+    function destinationFor(card, ready) {
+        const collection = ready ? readySpellsList : managementSpellsList;
+        if (!collection) {
             return null;
         }
-
-        const preparedCard = document.importNode(template, true);
-        preparedCard.classList.remove("class-spell-item");
-        preparedCard.classList.add("prepared-spell-item");
-        preparedCard.style.borderLeftColor = "var(--accent-color)";
-        preparedCard.setAttribute("data-spell-ref", ref);
-
-        const checkboxContainer = preparedCard.querySelector(".prepare-spell-label");
-        if (checkboxContainer) {
-            checkboxContainer.outerHTML = `<span class="prepared-spell-badge"><i class="ra ra-health"></i> Preparada</span>`;
-        }
-
-        const details = preparedCard.querySelector(".spell-details-accordion");
-        if (details) {
-            details.removeAttribute("open");
-        }
-
-        return preparedCard;
+        const level = card.getAttribute("data-spell-level") || "";
+        return Array.from(collection.querySelectorAll("[data-spell-level-list]"))
+            .find((list) => list.getAttribute("data-spell-level-list") === level) || null;
     }
 
-    function syncClassCheckboxes(preparedRefs) {
-        if (!classSpellsList) {
+    function moveSpellCard(card, ready) {
+        const destination = destinationFor(card, ready);
+        if (!destination) {
             return;
         }
 
-        const preparedSet = new Set(preparedRefs);
-        classSpellsList.querySelectorAll(".prepare-spell-checkbox").forEach((checkbox) => {
-            const spellRef = checkbox.getAttribute("data-spell-ref");
-            checkbox.checked = Boolean(spellRef && preparedSet.has(spellRef));
-        });
+        // Move the existing node: Dice+ classes and every data-roll-* attribute stay intact.
+        destination.appendChild(card);
+        card.classList.toggle("ready-spell-item", ready);
+        card.classList.toggle("management-spell-item", !ready);
+
+        const checkbox = card.querySelector(".prepare-spell-checkbox");
+        if (checkbox) {
+            checkbox.checked = ready;
+        }
+        const text = card.querySelector(".prepare-spell-text");
+        if (text) {
+            text.textContent = ready ? "Remover preparo" : "Preparar";
+        }
     }
 
     function snapshotSlotState() {
         const slotState = {};
-
         slotGroups.forEach((group) => {
             const level = group.getAttribute("data-slot-level") || "";
-            slotState[level] = Array.from(group.querySelectorAll(".spell-slot-checkbox")).map((checkbox) => checkbox.checked);
+            slotState[level] = Array.from(group.querySelectorAll(".spell-slot-checkbox"))
+                .map((checkbox) => checkbox.checked);
         });
-
         return slotState;
     }
 
@@ -152,14 +126,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!slotState) {
             return;
         }
-
         slotGroups.forEach((group) => {
-            const level = group.getAttribute("data-slot-level") || "";
-            const savedState = slotState[level];
+            const savedState = slotState[group.getAttribute("data-slot-level") || ""];
             if (!Array.isArray(savedState)) {
                 return;
             }
-
             Array.from(group.querySelectorAll(".spell-slot-checkbox")).forEach((checkbox, index) => {
                 checkbox.checked = Boolean(savedState[index]);
             });
@@ -170,20 +141,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!hasStorage) {
             return null;
         }
-
         try {
-            const raw = window.localStorage.getItem(storageKey);
-            if (!raw) {
-                return null;
-            }
-
-            const parsed = JSON.parse(raw);
+            const parsed = JSON.parse(window.localStorage.getItem(storageKey) || "null");
             if (!parsed || typeof parsed !== "object") {
                 return null;
             }
-
             return {
-                preparedRefs: Array.isArray(parsed.preparedRefs) ? parsed.preparedRefs.filter(Boolean) : null,
+                readyRefs: Array.isArray(parsed.readyRefs) ? parsed.readyRefs.filter(Boolean) : null,
                 slotState: parsed.slotState && typeof parsed.slotState === "object" ? parsed.slotState : null,
             };
         } catch (error) {
@@ -195,10 +159,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!hasStorage) {
             return;
         }
-
         try {
             window.localStorage.setItem(storageKey, JSON.stringify({
-                preparedRefs: getPreparedRefs(),
+                readyRefs: getReadyRefs(),
                 slotState: snapshotSlotState(),
             }));
         } catch (error) {
@@ -206,38 +169,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function renderPreparedList(preparedRefs) {
-        if (!preparedSpellsList) {
-            return;
-        }
-
-        const uniqueRefs = Array.from(new Set((preparedRefs || []).filter(Boolean)));
-        const fragment = document.createDocumentFragment();
-
-        uniqueRefs.forEach((ref) => {
-            const card = buildPreparedCard(ref);
-            if (card) {
-                fragment.appendChild(card);
+    function syncReadyState(readyRefs) {
+        const readySet = new Set((readyRefs || []).filter(Boolean));
+        getSpellCards().forEach((card) => {
+            if (card.getAttribute("data-spell-can-prepare") !== "true") {
+                return;
             }
+            const ref = card.getAttribute("data-spell-ref");
+            moveSpellCard(card, Boolean(ref && readySet.has(ref)));
         });
-
-        preparedSpellsList.innerHTML = "";
-        if (fragment.childNodes.length > 0) {
-            preparedSpellsList.appendChild(fragment);
-        } else {
-            preparedSpellsList.innerHTML = `<p class="no-prepared-msg" style="color:var(--text-muted); font-style:italic;">Nenhuma magia preparada no momento.</p>`;
-        }
-    }
-
-    function syncPreparedState(preparedRefs) {
-        if (!preparedSpellsList) {
-            return;
-        }
-
-        const currentRefs = Array.from(new Set((preparedRefs || []).filter(Boolean)));
-        renderPreparedList(currentRefs);
-        syncClassCheckboxes(currentRefs);
-        updatePreparedCounter();
+        updateReadyCounter();
         applyFilters();
         saveState();
     }
@@ -257,50 +198,30 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    if (classSpellsList && preparedSpellsList) {
-        classSpellsList.addEventListener("change", (event) => {
-            const checkbox = event.target.closest(".prepare-spell-checkbox");
-            if (!checkbox) {
-                return;
-            }
-
-            const spellRef = checkbox.getAttribute("data-spell-ref");
-            if (!spellRef) {
-                return;
-            }
-
-            const nextPreparedRefs = getPreparedRefs();
-            const nextSet = new Set(nextPreparedRefs);
-
-            if (checkbox.checked) {
-                nextSet.add(spellRef);
-            } else {
-                nextSet.delete(spellRef);
-            }
-
-            syncPreparedState(Array.from(nextSet));
-        });
-    }
-
-    slotGroups.forEach((group) => {
-        group.addEventListener("change", saveState);
+    spellManager.addEventListener("change", (event) => {
+        const checkbox = event.target.closest(".prepare-spell-checkbox");
+        if (!checkbox) {
+            return;
+        }
+        const card = checkbox.closest(".spell-card");
+        if (!card) {
+            return;
+        }
+        moveSpellCard(card, checkbox.checked);
+        updateReadyCounter();
+        applyFilters();
+        saveState();
     });
 
-    snapshotPreparedTemplates();
+    slotGroups.forEach((group) => group.addEventListener("change", saveState));
 
     const savedState = readState();
-    const initialPreparedRefs = getPreparedRefs();
-    const preparedRefs = savedState && Array.isArray(savedState.preparedRefs)
-        ? savedState.preparedRefs
-        : initialPreparedRefs;
-
-    renderPreparedList(preparedRefs);
-    syncClassCheckboxes(preparedRefs);
-    applySlotState(savedState ? savedState.slotState : null);
-    updatePreparedCounter();
-    applyFilters();
-
-    if (!savedState) {
+    if (savedState && Array.isArray(savedState.readyRefs)) {
+        syncReadyState(savedState.readyRefs);
+    } else {
+        updateReadyCounter();
+        applyFilters();
         saveState();
     }
+    applySlotState(savedState ? savedState.slotState : null);
 });

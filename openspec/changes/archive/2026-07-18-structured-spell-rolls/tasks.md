@@ -24,4 +24,4 @@
 - [x] 4.2 Adicionar teste de regressão que confirme sincronização de `spell_info` sem alteração do corpo e dos metadados de tradução.
 - [x] 4.3 Adicionar teste de renderização Hugo para rolagens ao lado do nome, ataque com `spell_attack_bonus`, seleção do patamar atual de truques, filtragem por slots disponíveis, ausência segura de controles e clonagem de cards preparados.
 - [x] 4.4 Sincronizar magias representativas, revisar o diff e então migrar as páginas resolvíveis em `content/compendium/spells/`, relatando as não encontradas sem modificá-las.
-- [ ] 4.5 Executar os testes Python e JavaScript relacionados ao Dice+, `hugo -D --gc --minify` e `hugo --gc --minify`.
+- [x] 4.5 Executar os testes Python e JavaScript relacionados ao Dice+, `hugo -D --gc --minify` e `hugo --gc --minify`.
