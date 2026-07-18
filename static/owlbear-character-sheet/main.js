@@ -167,6 +167,37 @@ function changeCharacter() {
   setStatus("Selecione um personagem", "ok");
 }
 
+function applySavedSelection() {
+  const saved = loadSelection();
+  if (saved && catalogHasUrl(saved)) {
+    showSheet(saved);
+    setStatus("Ficha carregada", "ok");
+    return true;
+  }
+
+  if (saved) {
+    clearSelection();
+  }
+
+  setStatus("Selecione um personagem", "ok");
+  return false;
+}
+
+async function loadPlayerInfo() {
+  if (!OBR?.isAvailable) return false;
+
+  try {
+    const [name, id] = await Promise.all([
+      OBR.player.getName(),
+      OBR.player.getId(),
+    ]);
+    playerInfo = { id, name };
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Catalog Fetch
 // ---------------------------------------------------------------------------
@@ -198,16 +229,7 @@ async function fetchCatalog() {
       return;
     }
 
-    // Check for saved selection.
-    const saved = loadSelection();
-    if (saved && catalogHasUrl(saved)) {
-      showSheet(saved);
-      setStatus("Ficha carregada", "ok");
-    } else {
-      // Discard stale selection if any.
-      if (saved) clearSelection();
-      setStatus("Selecione um personagem", "ok");
-    }
+    applySavedSelection();
   } catch (err) {
     characterList.innerHTML = "";
     const errDiv = document.createElement("div");
@@ -235,16 +257,29 @@ async function initOBR() {
       return;
     }
 
-    OBR.onReady(async () => {
-      obrReady = true;
-      try {
-        const name = await OBR.player.getName();
-        const id = await OBR.player.getId();
-        playerInfo = { id, name };
-        setStatus(`Conectado: ${name}`, "ok");
-      } catch {
-        setStatus("Conectado ao Owlbear", "ok");
+    let readyHandled = false;
+    const readyFallback = setTimeout(() => {
+      if (!readyHandled) {
+        console.warn("[Character Sheet] OBR.onReady não respondeu a tempo; carregando catálogo em modo degradado.");
+        void fetchCatalog();
       }
+    }, 1500);
+
+    OBR.onReady(async () => {
+      readyHandled = true;
+      clearTimeout(readyFallback);
+      obrReady = true;
+
+      void loadPlayerInfo().then((loaded) => {
+        if (loaded) {
+          setStatus(`Conectado: ${playerInfo.name}`, "ok");
+          if (catalog.length > 0 && sheetContainer.hidden) {
+            applySavedSelection();
+          }
+        } else {
+          setStatus("Conectado ao Owlbear", "ok");
+        }
+      });
 
       // Initialize Dice+ bridge (task 3.2).
       initBridge(OBR, playerInfo, (ready) => {
@@ -253,7 +288,7 @@ async function initOBR() {
         }
       });
 
-      // Re-fetch catalog now that we have a player ID for localStorage key.
+      // Load the catalog immediately; don't wait on player metadata.
       await fetchCatalog();
     });
   } catch (error) {
