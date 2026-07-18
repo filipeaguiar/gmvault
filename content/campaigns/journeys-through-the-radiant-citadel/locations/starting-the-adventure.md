@@ -1,16 +1,16 @@
 ---
-title: Starting the Adventure
+title: "Starting the Adventure"
 params:
-  kind: location
-draft: false
-titulo_pt_br: Starting the Adventure
-visibility: gm
-status: published
+  kind: "location"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 tags:
-- localidade
-- importado
+  - localidade
+  - importado
 handouts:
-- /campaigns/journeys-through-the-radiant-citadel/handouts/map-101-map-111-three-sun-square-player/
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-101-map-111-three-sun-square-player/"
 ---
 
 Localidade **Starting the Adventure** importada automaticamente.
@@ -33,3 +33,4 @@ Localidade **Starting the Adventure** importada automaticamente.
 
 #### 101 111 Three Sun Square Player
 ![101 111 Three Sun Square Player](/images/campaigns/journeys-through-the-radiant-citadel/101-map-111-three-sun-square-player.webp)
+

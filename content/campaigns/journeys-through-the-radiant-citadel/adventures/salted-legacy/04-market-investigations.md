@@ -1,53 +1,57 @@
 ---
-title: Cena 4 - Market Investigations
+title: "Cena 4 - Market Investigations"
 weight: 40
 params:
-  kind: scene
-draft: false
-titulo_pt_br: Cena 4 - Investigações no Mercado
-visibility: gm
-status: published
-summary: Cena operacional para conduzir na sessão.
-npcs: null
-locations: null
-compendium_refs: null
-handouts: null
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "scene"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+
+compendium_refs:
+
+handouts:
+
 ---
 
-Assim que os personagens decidirem investigar os eventos nas barracas Tyenmo e Xungoon, eles estão livres para iniciar sua investigação. Um personagem que visitar uma das barracas e passar pelo menos 5 minutos inspecionando o local pode fazer um teste de Inteligência (Investigação) CD 14. Em caso de sucesso no teste, o personagem não descobre nada incomum, exceto algumas cascas de caqui (veja "**Área O Plano de Kasem**" para detalhes sobre a origem dessas cascas). Um personagem que investigar mais a fundo essas cascas de fruta descobre que nenhuma barraca no mercado noturno vende caquis atualmente.
+### Descrição e Elementos Importantes
 
-Kusa e Lamai estão em suas respectivas barracas, mas nenhuma delas ajuda muito nas investigações dos personagens. Cada uma está convencida de que sua rival é a culpada por uma série de furtos e acidentes, apesar de não terem provas. Se os personagens perguntarem sobre esses eventos em barracas próximas, outros vendedores do mercado inicialmente afirmam não ter visto nada de estranho. Se um personagem for bem-sucedido em um teste de Carisma (Persuasão) CD 10, um vendedor diz: "Negócios do mercado não são para estranhos. Nós resolvemos nossos problemas entre nós." Durante as investigações iniciais, outros donos de barracas se recusam a falar sobre a rivalidade Tyenmo-Xungoon ou sobre estranhezas em suas barracas. Os personagens podem descobrir mais depois de ganharem reputação no mercado (veja "Descobrindo Mais" e "**Área O Que os Vendedores Sabem**").
+Once the characters decide to look into the events at the Tyenmo and Xungoon shops, they're free to start their investigation. A character who visits one of the shops and spends at least 5 minutes inspecting the space can make a CD 14 Intelligence (Investigation) check. On a successful check, the character discovers nothing unusual except for a few persimmon peels (see "**Área Kasem's Plan**" for details on the origins of these peels). A character who further investigates these fruit peels learns no stalls in the night market currently sell persimmons.
 
-Se os personagens vigiarem ou montarem campana perto da Tyenmo Noodle Bowl ou do Xungoon Family Seafood, nenhum evento estranho acontece enquanto estiverem por perto. Investigações usando magia também não revelam nada fora do comum.
+Kusa and Lamai are at their respective shops, but neither is much help to the characters' investigations. Each is convinced her rival is to blame for a string of thefts and accidents, despite having no proof. If the characters ask about these events at nearby booths, other market vendors initially claim not to have seen anything strange. If a character succeeds on a CD 10 Charisma (Persuasion) check, a vendor says, "Market business isn't for outsiders. We keep our issues to ourselves." During initial investigations, other shop owners refuse to speak about the Tyenmo-Xungoon rivalry or strangeness at their stalls. Characters can learn more once they've made names for themselves in the market (see "Learning More" and "**Área What Vendors Know**").
 
-### Descobrindo Mais
+If the characters guard or stake out either Tyenmo Noodle Bowl or Xungoon Family Seafood, no strange events unfold while they're nearby. Investigations using magic also reveal nothing out of the ordinary.
 
-Se os personagens perguntarem a Kusa ou Lamai por que seus colegas vendedores relutam em se envolver em suas investigações, o dono da barraca explica que os outros vendedores veem os personagens como estranhos. Durante a conversa, eles mencionam os seguintes pontos:
-* Os vendedores provavelmente veem os personagens como estranhos intrometidos e querem proteger os seus.
-* Reputação e fazer parte do mercado significam muito para os vendedores locais.
-* Há uma maneira fácil de ganhar reputação rapidamente no mercado: participar dos Jogos do Mercado.
-* Os Jogos do Mercado são eventos prestigiados realizados no centro do mercado. Os vencedores são celebridades menores e temporárias em todo o mercado.
-O dono da barraca especula que outros vendedores veriam os personagens como algo mais do que meros visitantes se eles vencessem alguns Jogos do Mercado. Veja a seção "**Área Jogos do Mercado**" para mais detalhes.
 
-### Ganhando Renome
+### Learning More
 
-Personagens que participam dos Jogos do Mercado aumentam seu renome entre os vendedores do Mercado Noturno Dyn Singh. Renome é um valor numérico que começa em 0. Cada jogador controla o renome de seu personagem separadamente. Cada Jogo do Mercado indica quanto renome os personagens ganham ao participar ou vencer o evento. Os vendedores do Mercado Noturno Dyn Singh ficam mais dispostos a compartilhar informações com os personagens conforme o renome dos personagens aumenta, conforme detalhado na seção "**Área O Que os Vendedores Sabem**".
+If the characters ask either Kusa or Lamai why their fellow vendors are loath to get involved in their investigations, the shop owner explains other vendors view the characters as outsiders. During the conversation, they mention the following points:
+* The vendors probably see the characters as nosy strangers and want to protect their own.
+* Reputation and being part of the market mean a lot to local vendors.
+* There's an easy way to quickly get a reputation in the market: participate in the Market Games.
+* The Market Games are prestigious events held at the market's center. Winners are temporary, minor celebrities throughout the market.
+The shop owner speculates other vendors would view the characters as more than just visitors if they win some Market Games. See the "**Área Market Games**" section for more details.
 
-### Travessuras dos Wynlings
+### Gaining Renown
 
-Os personagens não são os únicos vagando pelo mercado noturno. Após cada Jogo do Mercado, ou sempre que os personagens estiverem longe das barracas Tyenmo e Xungoon, role na tabela Travessuras no Mercado para ver quais problemas os wynlings causam.
+Characters who participate in Market Games increase their renown among the Dyn Singh Night Market's vendors. Renown is a numerical value that starts at 0. Each player tracks their character's renown separately. Every Market Game notes how much renown characters gain by participating in or winning the event. The Dyn Singh Night Market vendors grow more willing to share information with characters as the characters' renown increases, as detailed in the "**Área What Vendors Know**" section.
 
-**Tabela: Travessuras no Mercado**
+
+### Wynling Mischief
+
+The characters aren't the only ones roaming the night market. After each Market Game, or whenever the characters are away from the Tyenmo and Xungoon shops, roll on the Market Mischief table to see what trouble the wynlings cause.
+
+**Tabela: Market Mischief**
 
 |  |  |
 | --- | --- |
-| 1 | Um incêndio no Xungoon Family Seafood faz a perna direita da barraca desabar. A barraca agora está torta. |
-| 2 | Duas dúzias de pãezinhos de baunilha desaparecem de Vada's Otherworldly Goods. Um rastro de açúcar de confeiteiro leva até a Tyenmo Noodle Bowl. |
-| 3 | Uma chuva de caquis atinge a barraca Tyenmo ou a Xungoon. Os donos ficam machucados, mas ilesos, e suco de caqui está por toda parte. |
-| 4 | Gammon avista um wok grande da Tyenmo Noodle Bowl no Xungoon Family Seafood. Um personagem que examinar o wok e for bem-sucedido em um teste de Inteligência (Investigação) CD 14 percebe que o cabo de madeira foi roído por dentes do tamanho de uma criança. |
+| 1 | A fire at Xungoon Family Seafood causes the stall's right leg to collapse. The stall is now crooked. |
+| 2 | Two dozen vanilla buns are missing from Vada's Otherworldly Goods. A trail of powdered sugar leads to Tyenmo Noodle Bowl. |
+| 3 | A rain of persimmons pelts either the Tyenmo or the Xungoon shop. The owners are battered but unharmed, and persimmon juice is everywhere. |
+| 4 | Gammon spots a large wok from Tyenmo Noodle Bowl at Xungoon Family Seafood. A character who examines the wok and succeeds on a CD 14 Intelligence (Investigation) check notices the wooden handle has been gnawed by child-sized teeth. |
+
+

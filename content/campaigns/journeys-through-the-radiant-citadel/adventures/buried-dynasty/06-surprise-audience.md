@@ -13,9 +13,9 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/surprise-audience/"
 compendium_refs:
-  - "/compendium/monsters/mage/"
   - "/compendium/monsters/veteran/"
   - "/compendium/monsters/noble/"
+  - "/compendium/monsters/mage/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"

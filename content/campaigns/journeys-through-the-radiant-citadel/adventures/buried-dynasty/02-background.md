@@ -11,16 +11,16 @@ status: "draft"
 summary: "Introdução e contextualização da aventura."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/"
 locations:
 
 compendium_refs:
 
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
 ---
 
 ### Descrição e Elementos Importantes

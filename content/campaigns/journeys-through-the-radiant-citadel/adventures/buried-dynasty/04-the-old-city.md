@@ -13,10 +13,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-old-city/"
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/roper/"
   - "/compendium/monsters/otyugh/"
+  - "/compendium/monsters/roper/"
   - "/compendium/monsters/revenant/"
+  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/wraith/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/otyugh-art/"

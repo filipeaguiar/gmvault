@@ -13,13 +13,13 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/umizu/"
 compendium_refs:
-  - "/compendium/monsters/dragon-turtle/"
-  - "/compendium/monsters/oni/"
   - "/compendium/monsters/bandit/"
   - "/compendium/monsters/shadow-demon/"
+  - "/compendium/monsters/oni/"
+  - "/compendium/monsters/dragon-turtle/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-turtle-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/oni-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-turtle-art/"
 ---
 
 ### Descrição e Elementos Importantes

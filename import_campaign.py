@@ -16,9 +16,10 @@ IMG_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-img/m
 
 # Lista de fontes conhecidas do D&D para ignorar se aparecerem como argumento de exibição nas tags
 KNOWN_SOURCES = {
-    "phb", "mm", "dmg", "scag", "vgm", "xge", "toa", "mtof", "tcoe", "vrgr", 
-    "jttrc", "cos", "erlw", "wbw", "bgdia", "idrotf", "lmop", "oota", "typt", 
-    "ggr", "ftd", "scc", "aag", "bam", "dltso", "pactc", "sat", "bmt", "kftgv"
+    "phb", "mm", "dmg", "scag", "vgm", "xge", "toa", "mtof", "tcoe", "vrgr",
+    "jttrc", "cos", "erlw", "wbw", "bgdia", "idrotf", "lmop", "oota", "typt",
+    "ggr", "ftd", "scc", "aag", "bam", "dltso", "pactc", "sat", "bmt", "kftgv",
+    "xphb", "xdmg"
 }
 
 # Cache global para bestiários de outros livros

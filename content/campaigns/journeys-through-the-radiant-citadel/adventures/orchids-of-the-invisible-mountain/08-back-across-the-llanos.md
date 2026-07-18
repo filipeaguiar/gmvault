@@ -14,8 +14,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/back-across-the-llanos/"
 compendium_refs:
-  - "/compendium/monsters/thri-kreen/"
   - "/compendium/monsters/storm-giant/"
+  - "/compendium/monsters/thri-kreen/"
   - "/compendium/magic-items/hammock-of-worlds/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"

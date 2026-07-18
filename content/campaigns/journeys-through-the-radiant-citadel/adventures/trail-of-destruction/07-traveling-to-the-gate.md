@@ -15,8 +15,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/traveling-to-the-gate/"
 compendium_refs:
-  - "/compendium/monsters/salamander/"
   - "/compendium/monsters/fire-giant/"
+  - "/compendium/monsters/salamander/"
   - "/compendium/monsters/fire-snake/"
   - "/compendium/monsters/tlexolotl/"
 handouts:

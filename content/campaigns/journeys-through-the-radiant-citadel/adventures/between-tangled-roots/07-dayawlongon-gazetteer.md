@@ -13,8 +13,8 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/storm-giant/"
   - "/compendium/monsters/dryad/"
+  - "/compendium/monsters/storm-giant/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dryad-art/"
 ---

@@ -13,8 +13,8 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/ankheg/"
   - "/compendium/monsters/thug/"
+  - "/compendium/monsters/ankheg/"
   - "/compendium/monsters/helmed-horror/"
   - "/compendium/monsters/banshee/"
 handouts:

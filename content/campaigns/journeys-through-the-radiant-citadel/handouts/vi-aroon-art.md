@@ -1,15 +1,15 @@
 ---
-title: 'Arte: Vi Aroon'
+title: "Arte: Vi Aroon"
 params:
-  kind: handout
-draft: false
-titulo_pt_br: 'Arte: Vi Aroon'
-visibility: players
-status: published
+  kind: "handout"
+draft: true
+titulo_pt_br: ""
+visibility: "players"
+status: "draft"
 tags:
-- handout
-- arte
-- importado
+  - handout
+  - arte
+  - importado
 ---
 
 ![Arte: Vi Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)

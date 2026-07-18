@@ -13,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
+  - "/compendium/monsters/young-red-dragon/"
   - "/compendium/monsters/spy/"
   - "/compendium/monsters/specter/"
   - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/young-red-dragon/"
   - "/compendium/monsters/doppelganger/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"

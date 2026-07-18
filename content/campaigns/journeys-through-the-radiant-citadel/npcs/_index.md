@@ -1,11 +1,9 @@
 ---
-title: Personagens Não-Jogáveis (NPCs)
+title: "Personagens Não-Jogáveis (NPCs)"
 params:
-  kind: npcs_index
+  kind: "npcs_index"
 draft: false
-titulo_pt_br: Personagens Não-Jogáveis (NPCs)
-visibility: gm
-status: published
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 ---
-
-

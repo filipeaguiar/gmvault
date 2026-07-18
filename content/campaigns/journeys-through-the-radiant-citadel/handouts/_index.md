@@ -1,11 +1,9 @@
 ---
-title: Handouts e Materiais
+title: "Handouts e Materiais"
 params:
-  kind: handouts_index
+  kind: "handouts_index"
 draft: false
-titulo_pt_br: Handouts e Materiais
-visibility: gm
-status: published
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 ---
-
-

@@ -15,14 +15,14 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/dryad/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/mage/"
   - "/compendium/monsters/bakunawa/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nimuel-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dryad-art/"
 ---
 

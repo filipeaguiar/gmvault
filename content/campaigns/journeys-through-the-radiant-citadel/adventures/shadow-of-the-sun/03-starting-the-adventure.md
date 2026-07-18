@@ -17,17 +17,17 @@ locations:
 compendium_refs:
   - "/compendium/monsters/spy/"
   - "/compendium/monsters/deva/"
-  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/purple-worm/"
   - "/compendium/monsters/guard/"
+  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/pari/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/pari-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/pari-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/purple-worm-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-101-map-111-three-sun-square-player/"
 ---
 

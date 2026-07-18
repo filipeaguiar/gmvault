@@ -9,20 +9,20 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-lions-plea/"
 compendium_refs:
-  - "/compendium/monsters/scout/"
   - "/compendium/monsters/spy/"
+  - "/compendium/monsters/scout/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
 ---
 
 ### Descrição e Elementos Importantes

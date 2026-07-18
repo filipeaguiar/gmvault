@@ -9,17 +9,17 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/bandit/"
+  - "/compendium/monsters/air-elemental/"
   - "/compendium/monsters/giant-scorpion/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-066-map-72-sensa-empire-player/"
 ---
 

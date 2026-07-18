@@ -15,8 +15,8 @@ locations:
 compendium_refs:
   - "/compendium/monsters/priest/"
   - "/compendium/monsters/archmage/"
-  - "/compendium/magic-items/hammock-of-worlds/"
   - "/compendium/magic-items/white-ghost-orchid-seed/"
+  - "/compendium/magic-items/hammock-of-worlds/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"

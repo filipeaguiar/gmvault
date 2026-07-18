@@ -9,21 +9,21 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/the-goldwarren/"
 compendium_refs:
   - "/compendium/monsters/commoner/"
   - "/compendium/monsters/giant-lizard/"
-  - "/compendium/monsters/aurumvorax-den-leader/"
   - "/compendium/monsters/aurumvorax/"
+  - "/compendium/monsters/aurumvorax-den-leader/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aurumvorax-den-leader-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aurumvorax-den-leader-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-063-map-71-the-goldwarren-player/"
 ---
 

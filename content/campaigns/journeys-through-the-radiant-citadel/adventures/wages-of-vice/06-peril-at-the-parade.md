@@ -14,10 +14,10 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/peril-at-the-parade/"
 compendium_refs:
-  - "/compendium/monsters/acolyte/"
   - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/guard/"
+  - "/compendium/monsters/acolyte/"
   - "/compendium/monsters/druid/"
+  - "/compendium/monsters/guard/"
   - "/compendium/magic-items/bizas-breath/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"

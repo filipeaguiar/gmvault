@@ -1,15 +1,14 @@
 ---
-title: 'Mapa: Kianna''s Farmhouse (Player Version)'
+title: "Mapa: Kianna's Farmhouse (Player Version)"
 params:
-  kind: handout
-draft: false
-visibility: players
-status: published
+  kind: "handout"
+draft: true
+visibility: "players"
+status: "draft"
 tags:
-- mapa
-- handout
-- importado
-titulo_pt_br: 'Mapa: Kianna''s Farmhouse (Player Version)'
+  - mapa
+  - handout
+  - importado
 ---
 
 ![Kianna's Farmhouse (Player Version)](/images/campaigns/journeys-through-the-radiant-citadel/026-map-31-kianas-farmhouse-player.webp)

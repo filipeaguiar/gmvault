@@ -1,11 +1,9 @@
 ---
-title: Locations
+title: "Locations"
 params:
-  kind: locations_index
+  kind: "locations_index"
 draft: false
-titulo_pt_br: Locations
-visibility: gm
-status: published
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 ---
-
-

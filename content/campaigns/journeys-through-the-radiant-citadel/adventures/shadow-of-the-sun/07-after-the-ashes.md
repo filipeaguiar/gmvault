@@ -9,18 +9,18 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/after-the-ashes/"
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
 ---
 

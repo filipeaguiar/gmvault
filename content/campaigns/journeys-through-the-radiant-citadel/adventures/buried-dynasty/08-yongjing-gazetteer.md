@@ -13,14 +13,14 @@ npcs:
 locations:
 
 compendium_refs:
+  - "/compendium/monsters/ghost/"
   - "/compendium/monsters/reef-shark/"
   - "/compendium/monsters/mage/"
   - "/compendium/monsters/kenku/"
-  - "/compendium/monsters/ghost/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kenku-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kenku-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-133-map-133-yongjing-player/"
 ---
 

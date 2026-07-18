@@ -1,25 +1,27 @@
 ---
-title: Cena 8 - Conclusion
+title: "Cena 8 - Conclusion"
 weight: 80
 params:
-  kind: scene
-draft: false
-titulo_pt_br: Cena 8 - Conclusão
-visibility: gm
-status: published
-summary: Cena operacional para conduzir na sessão.
-npcs: null
-locations: null
-compendium_refs: null
-handouts: null
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "scene"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+
+compendium_refs:
+
+handouts:
+
 ---
 
-A aventura termina quando a trama de Kasem — e potencialmente os wynlings — é revelada a Lamai ou Kusa. Se os personagens ainda não confrontaram Kasem, Lamai ou Kusa o encontra e o acusa publicamente de sabotar a barraca dela. Se os vendedores forem apoiados pelos personagens, por testemunhas e por evidências, Kasem confessa rapidamente. Os guardas do mercado escoltam Kasem para fora do mercado e o proíbem de retornar, a menos que os personagens intercedam por ele. Se os personagens defenderem Kasem, outro vendedor se oferece para adotá-lo em sua família, caso ele prometa não mais enganar ninguém.
+### Descrição e Elementos Importantes
 
-Depois disso, Kusa e Lamai se apressam em se desculpar uma com a outra e reconciliar suas diferenças. Elas agradecem ao grupo e concedem aos personagens 100 PO e refeições vitalícias em suas barracas.
+The adventure ends when Kasem's plot—and potentially the wynlings—are revealed to Lamai or Kusa. If the characters haven't already confronted Kasem, Lamai or Kusa finds him and publicly accuses him of sabotaging her stall. If the vendors are backed up by the characters, witness claims, and evidence, Kasem quickly confesses. Market guards usher Kasem from the market and forbid him from returning unless the characters intercede on his behalf. If the characters advocate for Kasem, another vendor offers to adopt him into their family if he promises no more deceit.
+
+In the aftermath, Kusa and Lamai are quick to apologize to one another and reconcile their differences. They thank the party and award the characters 100 gp and a lifetime of meals from their stalls.
+
+

@@ -1,15 +1,16 @@
 ---
-title: To the Rattle
+title: "To the Rattle"
 params:
-  kind: location
-draft: false
-titulo_pt_br: To the Rattle
-visibility: gm
-status: published
+  kind: "location"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 tags:
-- localidade
-- importado
-handouts: null
+  - localidade
+  - importado
+handouts:
+
 ---
 
 Localidade **To the Rattle** importada automaticamente.

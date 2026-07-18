@@ -1,30 +1,31 @@
 ---
-title: Cena 10 - Wynling
+title: "Cena 10 - Wynling"
 weight: 100
 params:
-  kind: scene
-draft: false
-titulo_pt_br: Cena 10 - Wynling
-visibility: gm
-status: published
-summary: Cena operacional para conduzir na sessão.
-npcs: null
+  kind: "scene"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+summary: "Cena operacional para conduzir na sessão."
+npcs:
+
 locations:
-- /campaigns/journeys-through-the-radiant-citadel/locations/wynling/
+  - "/campaigns/journeys-through-the-radiant-citadel/locations/wynling/"
 compendium_refs:
-- /compendium/monsters/wynling/
+  - "/compendium/monsters/wynling/"
 handouts:
-- /campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
 ---
 
-Brincalhões e travessos, os wynlings defendem picos de montanhas e vales alpinos contra intrusos. Um wynling raramente enfrenta uma ameaça diretamente, preferindo dissuadir invasores importunando-os com furtos e travessuras. Muitos viajantes retornam de terras protegidas por wynlings com histórias de equipamentos que desaparecem e olhos curiosos observando das sombras.
+### Descrição e Elementos Importantes
 
-Os wynlings normalmente vivem nas montanhas que protegem, mas frequentemente se aventuram em assentamentos próximos, atraídos por música animada e comidas doces. Longe de seus lares abertos e selvagens, os wynlings causam todo tipo de acidente misterioso.
+Playful and mischievous, wynlings defend mountain heights and alpine vales against trespassers. A wynling rarely engages a threat directly, preferring to deter intruders by harassing them with thefts and pranks. Many travelers return from lands protected by wynlings with stories of vanishing equipment and curious eyes staring from the shadows.
+
+Wynlings typically live on the mountains they protect, but they often venture into nearby settlements, lured by high-spirited music and sweet foods. Away from their open, wild homes, wynlings cause all manner of mysterious accidents.
+
 
 ![Wynling](/images/campaigns/journeys-through-the-radiant-citadel/020-637937472242420945.webp)
+
+
+

@@ -14,18 +14,18 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/across-the-llanos/"
 compendium_refs:
-  - "/compendium/monsters/griffon/"
   - "/compendium/monsters/thri-kreen/"
-  - "/compendium/monsters/giant-badger/"
+  - "/compendium/monsters/griffon/"
   - "/compendium/monsters/hawk/"
+  - "/compendium/monsters/giant-badger/"
   - "/compendium/monsters/rooster/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/"
 ---
 
 ### Descrição e Elementos Importantes

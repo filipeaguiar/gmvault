@@ -13,12 +13,12 @@ npcs:
 locations:
 
 compendium_refs:
+  - "/compendium/monsters/assassin/"
   - "/compendium/monsters/giant-crocodile/"
   - "/compendium/monsters/banshee/"
-  - "/compendium/monsters/assassin/"
-  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/zombie/"
   - "/compendium/monsters/sea-hag/"
+  - "/compendium/monsters/archmage/"
   - "/compendium/monsters/diva/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"

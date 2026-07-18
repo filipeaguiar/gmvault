@@ -14,14 +14,14 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/commoner/"
   - "/compendium/monsters/assassin/"
+  - "/compendium/monsters/commoner/"
+  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/tlacatecolo/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
 ---
 

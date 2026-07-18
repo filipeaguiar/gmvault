@@ -13,8 +13,8 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/spirit-of-the-past/"
 compendium_refs:
-  - "/compendium/monsters/gargoyle/"
   - "/compendium/monsters/ghost/"
+  - "/compendium/monsters/gargoyle/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/young-gi-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"

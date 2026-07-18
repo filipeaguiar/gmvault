@@ -14,21 +14,21 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/lambakluha/"
 compendium_refs:
-  - "/compendium/monsters/treant/"
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/veteran/"
   - "/compendium/monsters/wraith/"
   - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/bakunawa/"
+  - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/treant/"
   - "/compendium/monsters/dragon-hunter/"
+  - "/compendium/monsters/bakunawa/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-097-map-102-roots-of-bathalang-puno-player/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-094-map-101-lambakluha-player/"
 ---

@@ -1,19 +1,19 @@
 ---
-title: Kasem Aroon
-draft: false
-titulo_pt_br: Kasem Aroon
-visibility: gm
-status: published
+title: "Kasem Aroon"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 tags:
-- npc
-- importado
+  - npc
+  - importado
 params:
-  kind: npc
-stats_meta: Medium humanoid, caótico e neutro
+  kind: "npc"
+stats_meta: "Medium humanoid, caótico e neutro"
 stats:
-  ac: '10'
-  hp: '10'
-  speed: 30 ft.
+  ac: "10"
+  hp: "10"
+  speed: "30 ft."
   attributes:
     str: 10
     dex: 10
@@ -24,3 +24,7 @@ stats:
 ---
 
 ![Arte: Kasem Aroon](/images/campaigns/journeys-through-the-radiant-citadel/013-02-003kasem-vi-aroon.webp)
+
+
+
+

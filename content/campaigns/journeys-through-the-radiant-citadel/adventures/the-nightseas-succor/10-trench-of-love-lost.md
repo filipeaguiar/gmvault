@@ -14,9 +14,9 @@ locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/trench-of-love-lost/"
 compendium_refs:
   - "/compendium/monsters/wraith/"
+  - "/compendium/monsters/flameskull/"
   - "/compendium/monsters/giant-shark/"
   - "/compendium/monsters/aboleth/"
-  - "/compendium/monsters/flameskull/"
   - "/compendium/monsters/haint/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/"

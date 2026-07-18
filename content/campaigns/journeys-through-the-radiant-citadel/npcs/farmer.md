@@ -1,19 +1,19 @@
 ---
-title: farmer
-draft: false
-titulo_pt_br: farmer
-visibility: gm
-status: published
+title: "farmer"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 tags:
-- npc
-- importado
+  - npc
+  - importado
 params:
-  kind: npc
-stats_meta: Medium monstrosity, sem tendência
+  kind: "npc"
+stats_meta: "Medium monstrosity, sem tendência"
 stats:
-  ac: '10'
-  hp: '10'
-  speed: 30 ft.
+  ac: "10"
+  hp: "10"
+  speed: "30 ft."
   attributes:
     str: 10
     dex: 10
@@ -24,3 +24,7 @@ stats:
 ---
 
 ![Arte: farmer](/images/campaigns/journeys-through-the-radiant-citadel/021-03-001enchanted-farmers-attack.webp)
+
+
+
+

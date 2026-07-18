@@ -10,18 +10,18 @@ visibility: "gm"
 status: "draft"
 summary: "Introdução e contextualização da aventura."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/"
 locations:
 
 compendium_refs:
 
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/"
 ---
 

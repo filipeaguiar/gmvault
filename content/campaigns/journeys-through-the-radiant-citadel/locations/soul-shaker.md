@@ -1,15 +1,16 @@
 ---
-title: Soul Shaker
+title: "Soul Shaker"
 params:
-  kind: location
-draft: false
-titulo_pt_br: Soul Shaker
-visibility: gm
-status: published
+  kind: "location"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 tags:
-- localidade
-- importado
-handouts: null
+  - localidade
+  - importado
+handouts:
+
 ---
 
 Localidade **Soul Shaker** importada automaticamente.

@@ -1,28 +1,27 @@
 ---
-title: Introdução
+title: "Cena 1 - Introdução"
 weight: 10
 params:
-  kind: scene
-content_role: "introduction"
-draft: false
-titulo_pt_br: Introdução
-visibility: gm
-status: published
-summary: Cena operacional para conduzir na sessão.
-npcs: null
-locations: null
-compendium_refs: null
-handouts: null
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  kind: "scene"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+summary: "Cena operacional para conduzir na sessão."
+npcs:
+
+locations:
+
+compendium_refs:
+
+handouts:
+
 ---
 
 ### Descrição e Elementos Importantes
 
-*Uma Aventura para Personagens de 1º Nível*
+*An Adventure for 1st-Level Characters*
 
-Uma série de perturbações assola o Mercado Noturno Dyn Singh, um labirinto em constante mudança de barracas repletas de mercadorias incríveis, cheiros tentadores e luzes mágicas. Acusações voam enquanto os personagens se envolvem em uma rivalidade entre as respeitadas famílias de comerciantes Tyenmo e Xungoon do vale de Siabsungkoh. Para evitar que o conflito das famílias se intensifique, os personagens devem conquistar a confiança dos vendedores do mercado e obter sua ajuda para desmascarar quem está por trás de uma onda de vandalismo e furtos.
+A series of disturbances plagues the Dyn Singh Night Market, an endlessly changing maze of stalls filled with incredible wares, enticing smells, and magical lights. Accusations fly as the characters become entangled in a feud between the well-respected Tyenmo and Xungoon merchant families of the Siabsungkoh valley. To prevent the families' conflict from escalating, the characters must earn the trust of the market's vendors and gain their help to unmask who's behind a rash of vandalism and thefts.
+
+

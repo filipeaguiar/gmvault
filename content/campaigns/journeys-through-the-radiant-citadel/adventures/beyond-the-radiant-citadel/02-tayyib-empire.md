@@ -13,13 +13,13 @@ npcs:
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/tayyib-empire/"
 compendium_refs:
-  - "/compendium/monsters/efreeti/"
-  - "/compendium/monsters/nothic/"
   - "/compendium/monsters/jackalwere/"
+  - "/compendium/monsters/nothic/"
+  - "/compendium/monsters/efreeti/"
   - "/compendium/monsters/wyvern/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/efreeti-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/nothic-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/efreeti-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/wyvern-art/"
 ---
 

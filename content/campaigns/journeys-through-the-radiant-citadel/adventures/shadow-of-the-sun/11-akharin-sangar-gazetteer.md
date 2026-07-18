@@ -13,22 +13,22 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/adult-blue-dragon/"
-  - "/compendium/monsters/solar/"
-  - "/compendium/monsters/beholder/"
-  - "/compendium/monsters/shadow-demon/"
   - "/compendium/monsters/marid/"
-  - "/compendium/monsters/night-hag/"
-  - "/compendium/monsters/adult-blue-dracolich/"
+  - "/compendium/monsters/adult-blue-dragon/"
+  - "/compendium/monsters/beholder/"
   - "/compendium/monsters/planetar/"
+  - "/compendium/monsters/solar/"
+  - "/compendium/monsters/adult-blue-dracolich/"
+  - "/compendium/monsters/night-hag/"
+  - "/compendium/monsters/shadow-demon/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dragon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/solar-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/beholder-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dracolich-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dragon-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/beholder-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/planetar-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/solar-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/adult-blue-dracolich-art/"
 ---
 
 ### Descrição e Elementos Importantes

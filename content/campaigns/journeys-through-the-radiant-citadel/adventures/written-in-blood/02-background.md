@@ -1,51 +1,48 @@
 ---
-title: Background
+title: "Background"
 weight: 20
 params:
-  kind: scene
-  content_role: introduction
-draft: false
-titulo_pt_br: Antecedentes
-visibility: gm
-status: published
-summary: Introdução e contextualização da aventura.
+  kind: "scene"
+  content_role: "introduction"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
+summary: "Introdução e contextualização da aventura."
 npcs:
-- /campaigns/journeys-through-the-radiant-citadel/npcs/kianna/
-- /campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/
-locations: null
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
+locations:
+
 compendium_refs:
-- /compendium/monsters/soul-shaker/
+  - "/compendium/monsters/soul-shaker/"
 handouts:
-- /campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/
-- /campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-chat
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/"
 ---
 
 ### Descrição e Elementos Importantes
 
-A vida em Godsbreath gira em torno da comunidade e da agricultura, com os moradores trabalhando duro para se alimentar e manter suas terras fortes. Mas, à medida que a terra agrícola tingida de carmesim conhecida como Ribbon se torna menos fértil a cada ano, grupos de jovens fazendeiros e aventureiros começaram a plantar colheitas ao longo das perigosas terras de fronteira chamadas Rattle. Apesar da ameaça constante de predadores monstruosos, novos voluntários continuam trabalhando no Rattle para ajudar a prover seu povo. Se a generosidade da Ribbon continuar a desaparecer, aprender a sobreviver no Rattle será vital para sustentar o povo de Godsbreath.
+Life in Godsbreath revolves around community and agriculture, with locals working hard to feed themselves and keep their land strong. But as the crimson-tinged farmland known as the Ribbon becomes less fertile each year, groups of young farmers and adventurers have begun to plant crops along the dangerous borderlands called the Rattle. Despite the constant threat of monstrous predators, new volunteers keep working in the Rattle to help provide for their people. If the bounty of the Ribbon continues to fade, learning to survive in the Rattle will prove vital to supporting Godsbreath's people.
 
-Mas o Rattle abriga mais do que bestas selvagens. Um Morto-vivo aterrorizante conhecido como abalador de almas surgiu destas terras sangrentas, mirando uma jovem trabalhadora chamada Kianna em uma fazenda remota.
+But the Rattle is home to more than feral beasts. A nightmarish Undead known as a soul shaker has risen from these bloody lands, targeting a young worker named Kianna at a remote farm.
 
-### Alma Fragmentada
 
-Um Morto-vivo maligno chamado abalador de almas (detalhado no **final desta aventura**) manipula muitos dos eventos desta história. Sua origem e objetivos estão ligados a uma das assombrações mais infames de Godsbreath.
-Histórias contam que o Lago Cradlelace já foi uma fazenda próspera, mas isolada, lar de uma família grande e feliz. Porém, durante uma tempestade terrível, uma dolina engoliu a casa da fazenda, que então inundou, afogando a casa em lodo salobro. Contos dizem que os moradores da casa lutaram para escapar do poço, mas a dona da fazenda — desesperada para manter sua família com ela — os arrastou de volta para dentro da casa que afundava. Depois disso, quando os vizinhos chegaram à borda da dolina, encontraram seis pares de mãos decepadas de Mortos-vivos lutando para escapar da água lamacenta.
-Nos anos que se seguiram, mais tragédias se abateram sobre aqueles que se aproximavam do Lago Cradlelace, como se os mortos enterrados buscassem aumentar seu número. Entre os perdidos estava um jovem chamado Culley, que desapareceu na água diante de sua amiga Kianna.
-Diferente da maioria dos perdidos no lago, Culley eventualmente emergiu — pelo menos, parte dele emergiu. Uma única mão Morta-viva escapou do lago, e eventualmente encontrou outras de seu tipo conhecidas como garras rastejantes. Gradualmente, esses Mortos-vivos sem pensamento se combinaram em um abalador de almas. Embora a mente desse novo horror fosse uma amálgama fragmentada de pensamentos, ela se lembrava da alma perdida chamada Culley, cujas memórias eram a semente de seu ser. Também se lembrava da última pessoa viva que Culley viu, sua querida amiga Kianna.
-Impulsionado pelo instinto, memórias despedaçadas e os impulsos discordantes de dúzias de pequenos Mortos-vivos, o abalador de almas cresceu em poder e então procurou sua velha amiga.
+### Fractured Soul
 
-### Guia de Pronúncia
+An evil Undead called a soul shaker (detailed at the **Área end of this adventure**) manipulates many of the events in this story. Its origin and objectives are tied to one of the most infamous hauntings in Godsbreath.
+Stories tell that Cradlelace Lake was once a thriving but isolated farm, home to a large, happy family. But during a terrible storm, a sinkhole swallowed the farmhouse, then flooded, drowning the house in brackish muck. Tales say the house's residents struggled to escape the pit, but the farm's owner—desperate to keep her family with her—dragged them back into the sinking house. In the aftermath, when neighbors arrived at the sinkhole's edge, they found six pairs of severed, Undead hands struggling to escape the muddy water.
+In the years that followed, more tragedies befell those who came near Cradlelace Lake, as if the buried dead sought to add to their number. Among those lost was a young man named Culley, who vanished into the water in front of his friend Kianna.
+Unlike most lost to the lake, Culley eventually emerged—at least, part of him did. A single Undead hand escaped the lake, and it eventually found others of its kind known as crawling claws. Gradually, these unthinking Undead combined into a soul shaker. Although the mind of this new horror was a fractured amalgam of thoughts, it remembered the lost soul named Culley, whose memories were the seed of its being. It also remembered the last living person Culley ever saw, his dear friend Kianna.
+Driven by instinct, shattered memories, and the discordant urges of dozens of tiny Undead, the soul shaker grew in power, then sought out its old friend.
 
-A tabela Pronúncia de Godsbreath mostra como pronunciar os nomes-chave nesta aventura.
 
-**Tabela: Pronúncia de Godsbreath**
+### Pronunciation Guide
+
+The Godsbreath Pronunciations table shows how to pronounce key names in this adventure.
+
+**Tabela: Godsbreath Pronunciations**
 
 |  |  |
 | --- | --- |
@@ -56,12 +53,17 @@ A tabela Pronúncia de Godsbreath mostra como pronunciar os nomes-chave nesta av
 | Polder | POHL-der |
 | Tungsten | TUHNG-sten |
 
-### Contextualizando a Aventura
 
-![Fazendeiros enfeitiçados atacam Tia Dellie nas ruas de Promise](/images/campaigns/journeys-through-the-radiant-citadel/021-03-001enchanted-farmers-attack.webp)
+### Setting the Adventure
 
-Use as seguintes sugestões para ajudar a contextualizar Godsbreath em um mundo mais amplo:
 
-### Ganchos para Personagens
+![Enchanted farmers attack Aunt Dellie on the streets of Promise](/images/campaigns/journeys-through-the-radiant-citadel/021-03-001enchanted-farmers-attack.webp)
 
-Os personagens podem se envolver nos perigos que afetam Godsbreath de qualquer uma das seguintes maneiras:
+Use the following suggestions to help contextualize Godsbreath in a wider world:
+
+
+### Character Hooks
+
+The characters might become involved in the dangers affecting Godsbreath in any of the following ways:
+
+

@@ -12,9 +12,9 @@ summary: "Introdução e contextualização da aventura."
 npcs:
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
 locations:
 
 compendium_refs:
@@ -22,9 +22,9 @@ compendium_refs:
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kedjou-kamal-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kedjou-kamal-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
 ---
 
 ### Descrição e Elementos Importantes

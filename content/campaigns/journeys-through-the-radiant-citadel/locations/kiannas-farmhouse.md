@@ -1,16 +1,16 @@
 ---
-title: Kianna's Farmhouse
+title: "Kianna's Farmhouse"
 params:
-  kind: location
-draft: false
-titulo_pt_br: Kianna's Farmhouse
-visibility: gm
-status: published
+  kind: "location"
+draft: true
+titulo_pt_br: ""
+visibility: "gm"
+status: "draft"
 tags:
-- localidade
-- importado
+  - localidade
+  - importado
 handouts:
-- /campaigns/journeys-through-the-radiant-citadel/handouts/map-026-map-31-kianas-farmhouse-player/
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-026-map-31-kianas-farmhouse-player/"
 ---
 
 Localidade **Kianna's Farmhouse** importada automaticamente.
@@ -22,3 +22,4 @@ Localidade **Kianna's Farmhouse** importada automaticamente.
 
 #### 026 31 Kianas Farmhouse Player
 ![026 31 Kianas Farmhouse Player](/images/campaigns/journeys-through-the-radiant-citadel/026-map-31-kianas-farmhouse-player.webp)
+

@@ -10,19 +10,19 @@ visibility: "gm"
 status: "draft"
 summary: "Introdução e contextualização da aventura."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
 compendium_refs:
-  - "/compendium/monsters/giant-scorpion/"
-  - "/compendium/monsters/guard/"
   - "/compendium/monsters/veteran/"
+  - "/compendium/monsters/guard/"
+  - "/compendium/monsters/giant-scorpion/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -9,18 +9,18 @@ visibility: "gm"
 status: "draft"
 summary: "Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/"
   - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/"
+  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
 locations:
   - "/campaigns/journeys-through-the-radiant-citadel/locations/anisa-academy/"
 compendium_refs:
   - "/compendium/monsters/priest/"
   - "/compendium/monsters/guard/"
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kedjou-kamal-art/"
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kedjou-kamal-art/"
+  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
 ---
 
 ### Descrição e Elementos Importantes

@@ -13,10 +13,10 @@ npcs:
 locations:
 
 compendium_refs:
-  - "/compendium/monsters/thri-kreen/"
-  - "/compendium/monsters/bulette/"
   - "/compendium/monsters/shambling-mound/"
   - "/compendium/monsters/behir/"
+  - "/compendium/monsters/thri-kreen/"
+  - "/compendium/monsters/bulette/"
   - "/compendium/monsters/whistler/"
 handouts:
   - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
