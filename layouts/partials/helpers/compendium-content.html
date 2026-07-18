@@ -20,7 +20,7 @@
     </div>
   {{- end -}}
 {{- else if $legacy -}}
-  <div class="compendium-legacy-content">{{ $legacy | safeHTML }}</div>
+  <div class="compendium-legacy-content">{{ $legacy | markdownify }}</div>
 {{- else -}}
   <div class="compendium-fallback"><span>{{ $name }}</span><small>Referência do compêndio pendente.</small></div>
 {{- end -}}
