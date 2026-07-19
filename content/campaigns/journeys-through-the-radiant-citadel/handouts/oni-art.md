@@ -1,15 +1,15 @@
 ---
-title: "Arte: oni"
+title: 'Arte: oni'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: oni'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: oni](/images/campaigns/journeys-through-the-radiant-citadel/oni.webp)

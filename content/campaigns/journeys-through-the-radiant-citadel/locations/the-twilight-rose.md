@@ -1,19 +1,24 @@
 ---
-title: "The Twilight Rose"
+title: The Twilight Rose
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: A Rosa do Crepúsculo
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **The Twilight Rose** importada automaticamente.
+Localidade **A Rosa do Crepúsculo** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Twilight Rose](../../adventures/shadow-of-the-sun/08-the-twilight-rose/)
+- [A Rosa do Crepúsculo](../../adventures/shadow-of-the-sun/08-the-twilight-rose/)

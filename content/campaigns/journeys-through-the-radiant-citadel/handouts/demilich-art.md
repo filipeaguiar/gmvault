@@ -1,15 +1,15 @@
 ---
-title: "Arte: demilich"
+title: 'Arte: demilich'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: demilich'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: demilich](/images/campaigns/journeys-through-the-radiant-citadel/demilich.webp)

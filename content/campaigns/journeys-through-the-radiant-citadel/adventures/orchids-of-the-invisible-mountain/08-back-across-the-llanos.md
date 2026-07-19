@@ -1,63 +1,72 @@
 ---
-title: "Cena 8 - Back across the Llanos"
+title: Cena 8 - Back across the Llanos
 weight: 80
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 8 - De volta pelos Llanos
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/back-across-the-llanos/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/back-across-the-llanos/
 compendium_refs:
-  - "/compendium/monsters/storm-giant/"
-  - "/compendium/monsters/thri-kreen/"
-  - "/compendium/magic-items/hammock-of-worlds/"
+- /compendium/monsters/storm-giant/
+- /compendium/monsters/thri-kreen/
+- /compendium/magic-items/hammock-of-worlds/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Once the characters are ready to return to Atagua, Yarana escorts them back to the portal they used to reach the tepui. Nene travels with them through the portal, carrying with him a message to the Green Doctors. Upon returning through the portal, the characters find themselves back in the field of termite mounds in eastern Atagua. The macaw swiftly departs to deliver his message to the Silver Tapir Monastery.
+Quando os personagens estiverem prontos para retornar a Atagua, Yarana os escolta de volta ao portal que usaram para chegar ao tepui. Nene viaja com eles pelo portal, levando uma mensagem para os Doutores Verdes. Ao retornar pelo portal, os personagens se encontram de volta no campo de cupinzeiros no leste de Atagua. A arara parte rapidamente para entregar sua mensagem ao Mosteiro da Anta Prateada.
 
-The Basket is 30 miles from the portal, a journey that takes one full day and a quarter of the next at a normal pace. The fastest route by land is via the Grassroads. During this journey, the characters might encounter any of the sights mentioned in the "**Área Journey across the Llanos**" section from earlier in the adventure.
+O Cesto fica a 30 milhas do portal, uma jornada que leva um dia inteiro e um quarto do dia seguinte em ritmo normal. A rota mais rápida por terra é pelas Estradas de Grama. Durante essa jornada, os personagens podem encontrar quaisquer das paisagens mencionadas na seção "**Uma Jornada pelos Llanos**" do início da aventura.
 
+### Inseto Açucarado
 
-### Sugar Bug
+Conforme os personagens se aproximam do Cesto, eles encontram uma thri-kreen de tons iridescentes apressando-se pelas Estradas de Grama na direção oposta. A thri-kreen saúda os personagens e explica que seu povo precisa de ajuda. Se os personagens concordarem em ouvir, ela rapidamente compartilha as seguintes informações:
 
-As the characters near the Basket, they encounter an iridescent-hued thri-kreen hurrying along the Grassroads in the opposite direction. The thri-kreen hails the characters and explains that her people need help. If the characters agree to listen, she rapidly shares the following information:
-* The thri-kreen's name is Cht-Chak, and she's a leader of a nomadic band of thri-kreen traders who deal in panela.
-* Her people were camped at the Basket when a terrible storm appeared out of nowhere.
-* Soon after, a terrifying, root-covered giant—the Dawn Mother—appeared and attacked her people without provocation.
-* Cht-Chak is desperately trying to find help.
-If pressed for details, Cht-Chak explains she's never seen the Dawn Mother act like this. She's willing to pay the characters to help her band, though she can offer only a load of panela worth 200 gp. She can, however, lead the characters directly to the Dawn Mother.
+- O nome da thri-kreen é Cht-Chak, e ela é uma líder de um bando nômade de comerciantes thri-kreen que lidam com panela.
+- Seu povo estava acampado no Cesto quando uma terrível tempestade surgiu do nada.
+- Logo depois, uma aterrorizante gigante coberta de raízes — a Mãe Aurora — apareceu e atacou seu povo sem provocação.
+- Cht-Chak está desesperadamente tentando encontrar ajuda.
 
+Se pressionada por detalhes, Cht-Chak explica que nunca viu a Mãe Aurora agir assim. Ela está disposta a pagar os personagens para ajudar seu bando, embora possa oferecer apenas uma carga de panela no valor de 200 po. Ela pode, no entanto, levar os personagens diretamente até a Mãe Aurora.
 
-### The Dawn Mother
+### A Mãe Aurora
 
-It takes Cht-Chak and the characters only a few hours to reach the Basket and, from there, to follow a trail of lightning scorches to where the Dawn Mother still pursues a group of thri-kreen. Read the following as the characters approach:
-> Numerous thri-kreen dash through the tall grass, attempting to avoid the steps of a massive figure. A gigantic, ancient woman dressed in thick tree roots and vines stomps after the mantis-folk. Amid her roaring, she occasionally plucks a sizable seed pod from her garb and chucks it after her quarry.
-The hostile storm giant chasing the thri-kreen is the Dawn Mother. Although the giant has long been a stoic guardian of the Llanos, her recent dreams of otherworldly insects have confused and enraged her. Fearing the thri-kreen are to blame, she has attacked Cht-Chak's innocent band.
-If attacked, the Dawn Mother turns her rage on whoever harmed her. Her rage continues until she is reduced 50 hit points or fewer, after which she comes to her senses and stops attacking. Characters can also use an action to talk her down, then make a CD 22 Charisma (Persuasion) check. Succeeding on this check once dulls her fury, while two successful checks cause the Dawn Mother to stop attacking.
+Leva apenas algumas horas para Cht-Chak e os personagens chegarem ao Cesto e, de lá, seguirem um rastro de queimaduras de relâmpago até onde a Mãe Aurora ainda persegue um grupo de thri-kreen. Leia o seguinte conforme os personagens se aproximam:
 
-### Consulting with the Dawn Mother
+> Numerosos thri-kreen correm pela grama alta, tentando evitar os passos de uma figura massiva. Uma gigantesca mulher ancestral, vestida com grossas raízes de árvores e cipós, pisa atrás do povo-mantis. Em meio aos seus rugidos, ela ocasionalmente arranca uma vagem de sementes considerável de sua vestimenta e a arremessa contra sua presa.
 
-Once the Dawn Mother comes to her senses, she apologizes for her rage and explains that she's been suffering terrible dreams. If asked for the Hammock of Worlds, she rummages amid the vines covering her and produces it. If the characters explain why they need it, she's eager to help them and not only gives them the hammock but also leads them to the Silver Tapir Monastery.
-If the Dawn Mother is calmed or defeated, Cht-Chak thanks the characters and rewards them. If the characters kill the giant, Cht-Chak helps them retrieve the Hammock of Worlds from the giant's body and directs them to the Silver Taper Monastery.
+A gigante da tempestade hostil perseguindo os thri-kreen é a Mãe Aurora. Embora a gigante tenha sido por muito tempo uma guardiã estoica dos Llanos, seus sonhos recentes com insetos de outro mundo a confundiram e enfureceram. Temendo que os thri-kreen sejam os culpados, ela atacou o bando inocente de Cht-Chak.
 
+Se atacada, a Mãe Aurora volta sua fúria contra quem a feriu. Sua fúria continua até que ela seja reduzida a 50 pontos de vida ou menos, após o que ela recobra o juízo e para de atacar. Os personagens também podem usar uma ação para acalmá-la com palavras e, então, fazer um teste de Carisma (Persuasão) CD 22. Ter sucesso nesse teste uma vez diminui sua fúria, enquanto dois testes bem-sucedidos fazem a Mãe Aurora parar de atacar.
 
-### The Hammock of Worlds
+### Consultando a Mãe Aurora
 
-The Hammock of Worlds is a colorful hammock woven with traditional Ataguan designs. It functions as a well of many worlds with two exceptions:
-* It can be used only by a member of the order known as the Green Doctors.
-* The portal it creates can connect only to the Ghost Orchid Tepui in the Feywild or to the Drought Elder in the Far Realm (the user's choice)—the two planes linked to Atagua.
-Any member of the Green Doctors at the Silver Tapir Monastery can use the Hammock of Worlds.
+Quando a Mãe Aurora recobra o juízo, ela se desculpa por sua fúria e explica que tem sofrido sonhos terríveis. Se perguntarem pela Rede dos Mundos, ela vasculha as vinhas que a cobrem e a produz. Se os personagens explicarem por que precisam dela, ela fica ansiosa para ajudá-los e não apenas lhes dá a rede, mas também os leva ao Mosteiro da Anta Prateada.
 
+Se a Mãe Aurora for acalmada ou derrotada, Cht-Chak agradece aos personagens e os recompensa. Se os personagens matarem a gigante, Cht-Chak os ajuda a recuperar a Rede dos Mundos do corpo da gigante e os direciona ao Mosteiro da Anta Prateada.
 
+### A Rede dos Mundos
+
+A Rede dos Mundos é uma rede colorida tecida com desenhos tradicionais ataguanos. Ela funciona como um poço de muitos mundos com duas exceções:
+
+- Ela só pode ser usada por um membro da ordem conhecida como os Doutores Verdes.
+- O portal que ela cria só pode se conectar ao Tepui da Orquídea Fantasma no Feywild ou ao Ancião da Seca no Reino Distante (à escolha do usuário) — os dois planos ligados a Atagua.
+
+Qualquer membro dos Doutores Verdes no Mosteiro da Anta Prateada pode usar a Rede dos Mundos.

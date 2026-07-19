@@ -1,29 +1,31 @@
 ---
-title: "Cena 1 - Introdução"
+title: Cena 1 - Introdução
 weight: 10
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 1 - Introdução
+visibility: gm
+status: published
+summary: Operational scene to conduct in the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/serapio/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-*An Adventure for 4th-Level Characters*
+*Uma Aventura para Personagens de 4º Nível*
 
-A deadly magical curse called sereno is killing people in the arid borderlands around the city of San Citlán. After an encounter with an outlaw in the village of Milpazul, the characters learn the source of the curse is a tlacatecolo—a shape-shifting fiend. Fearing for the folk under her protection, the outlaw directs the characters to the ghost town of Hollow and its abandoned mine, where she believes the creature lurks.
+Uma maldição mágica mortal chamada sereno está matando pessoas nas áridas terras fronteiriças ao redor da cidade de San Citlán. Após um encontro com uma fora da lei no vilarejo de Milpazul, os personagens descobrem que a origem da maldição é um tlacatecolo — um corruptor metamorfo. Temendo pelo povo sob sua proteção, a fora da lei direciona os personagens para a cidade fantasma de Hollow e sua mina abandonada, onde ela acredita que a criatura se esconde.
 
-When the characters explore the mine, they find a connection to a humble home in the city of San Citlán, where they learn the tlacatecolo is controlling a troubled young man named Serapio. Amid the celebration known as the Night of the Remembered, the characters must find Serapio, confront the evil within him, and destroy it if they can.
-
-
+Quando os personagens exploram a mina, eles encontram uma conexão com um lar humilde na cidade de San Citlán, onde descobrem que o tlacatecolo está controlando um jovem problemático chamado Serapio. Em meio à celebração conhecida como a Noite dos Lembrados, os personagens devem encontrar Serapio, confrontar o mal dentro dele e destruí-lo, se puderem.

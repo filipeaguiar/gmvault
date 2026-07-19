@@ -1,141 +1,145 @@
 ---
-title: "Cena 6 - Crystal Caves"
+title: Cena 6 - Crystal Caves
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Cavernas de Cristal
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/crystal-caves/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/crystal-caves/
 compendium_refs:
-  - "/compendium/monsters/night-hag/"
-  - "/compendium/monsters/aboleth/"
-  - "/compendium/monsters/aboleth/"
-  - "/compendium/monsters/scout/"
-  - "/compendium/monsters/whistler/"
-  - "/compendium/magic-items/black-ghost-orchid-seed/"
-  - "/compendium/magic-items/white-ghost-orchid-seed/"
-  - "/compendium/magic-items/white-ghost-orchid-seed/"
+- /compendium/monsters/night-hag/
+- /compendium/monsters/aboleth/
+- /compendium/monsters/aboleth/
+- /compendium/monsters/scout/
+- /compendium/monsters/whistler/
+- /compendium/magic-items/black-ghost-orchid-seed/
+- /compendium/magic-items/white-ghost-orchid-seed/
+- /compendium/magic-items/white-ghost-orchid-seed/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-140-map-142-crystal-caves-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-140-map-142-crystal-caves-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Nene leads the characters to the mouth of a cave but refuses to enter the noxious mist that flows from within. This is the entrance to the Crystal Caves, the dwelling place of the spirit Chimagua, whom Yarana entreated the characters to save.
+Nene conduz os personagens até a entrada de uma caverna, mas se recusa a entrar na névoa nociva que emana de seu interior. Esta é a entrada das Cavernas de Cristal, a morada do espírito Chimagua, a quem Yarana implorou que os personagens salvassem.
 
 
-### Crystal Caves Features
+### Características das Cavernas de Cristal
 
-Locations throughout the Crystal Caves have the following features.
-
-
-### Crystal Caves Locations
-
-The following locations are keyed to map 14.2.
-
-![Map 14.2: Crystal Caves](/images/campaigns/journeys-through-the-radiant-citadel/139-map-142-crystal-caves.webp)
+As localizações por toda as Cavernas de Cristal possuem as características a seguir.
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/140-map-142-crystal-caves-player.webp)
+### Localizações das Cavernas de Cristal
+
+As localizações a seguir correspondem ao mapa 14.2.
+
+![Mapa 14.2: Cavernas de Cristal](/images/campaigns/journeys-through-the-radiant-citadel/139-map-142-crystal-caves.webp)
 
 
-### C1: Pool of Skins
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/140-map-142-crystal-caves-player.webp)
 
-A tunnel filled with noxious gas runs 100 feet from **Área area A4** on the Ghost Orchid Tepui before opening into a larger chamber. Read the following description when the characters enter the cavern:
-> Glowing crystals speckle this cavern's walls like stars in the night sky. At the chamber's center, a thick, foul-smelling mist billows from a shallow pool of brackish liquid. Something large and scaly lies within. Beyond it stands a sculpted pillar and a broad stone table.
-The pool in this room once served as a reflecting pool for a pillar sculpted with images of serene, intertwined snakes with glowing crystalline eyes. The waters have since been despoiled by rotting skin shed by the spirit snake Chimagua.
-The stone table bears two empty stone candle holders.
 
-### Tainted Mist
+### C1: Piscina de Peles
 
-The same tainted mist from **Área area A3** fills this chamber and the tunnel leading back to the Ghost Orchid Tepui.
+Um túnel cheio de gás nocivo se estende por 30 metros a partir da **Área A4** no Tepui da Orquídea-Fantasma antes de se abrir para uma câmara maior. Leia a descrição a seguir quando os personagens entrarem na caverna:
+> Cristais brilhantes salpicam as paredes desta caverna como estrelas no céu noturno. No centro da câmara, uma névoa espessa e fétida borbulha de uma piscina rasa de líquido salobro. Algo grande e escamoso repousa ali. Atrás dela, ergue-se um pilar esculpido e uma ampla mesa de pedra.
+A piscina nesta sala já serviu como um espelho d'água para um pilar esculpido com imagens de serpentes entrelaçadas e serenas, com olhos de cristal brilhantes. As águas foram profanadas pela pele apodrecida, trocada pela serpente espiritual Chimagua.
+A mesa de pedra contém dois castiçais de pedra vazios.
 
-### Pool
+### Névoa Contaminada
 
-The pool is the source of the tainted mist. Air from deeper in the cavern blows the mist rising from the pool outside. Any creature that enters the pool must succeed on a CD 18 Constitution saving throw or become infected with sight rot (detailed in the Dungeon Master's Guide). If the pool is drained (perhaps using spells like stone shape) or the skin within is destroyed or removed, the poison mist ceases rising from the water.
-**Snake's Skin**. Partially submerged in the pool is a 100-foot-long, opalescent skin shed by the gigantic anaconda Chimagua. The skin has AC 15, hp 40, immunity to poison and psychic damage, and vulnerability to fire if it is removed from the water. Creatures that touch the skin without protective gear must succeed on a CD 18 Constitution saving throw or become infected with sight rot (detailed in the Dungeon Master's Guide). A character who examines the skin and succeeds on a CD 14 Intelligence (Nature) check can tell it comes from a Feywild creature, not a natural snake, and that the skin has become riddled with disease as it rotted.
+A mesma névoa contaminada da **Área A3** preenche esta câmara e o túnel que leva de volta ao Tepui da Orquídea-Fantasma.
 
-### C2: Meditation Nook
+### Piscina
 
-> Several sleeping mats circle an empty firepit in this small side cave. Upon a modest altar sits a stone censer and several sticks of incense.
-Students and guests of Chimagua once rested and meditated here.
+A piscina é a fonte da névoa contaminada. O ar vindo do interior da caverna sopra a névoa que sobe da piscina para fora. Qualquer criatura que entre na piscina deve ser bem-sucedida em um teste de resistência de Constituição CD 18 ou será infectada por podridão visual (detalhada no Livro do Mestre). Se a piscina for drenada (talvez usando magias como *moldar rocha*) ou a pele dentro dela for destruída ou removida, a névoa venenosa para de subir da água.
+**Pele da Serpente**. Parcialmente submersa na piscina está uma pele opalescente de 30 metros de comprimento, trocada pela gigantesca sucuri Chimagua. A pele tem Classe de Armadura 15, 40 pontos de vida, imunidade a dano de veneno e dano psíquico e vulnerabilidade a dano de fogo se for removida da água. Criaturas que tocarem a pele sem equipamento de proteção devem ser bem-sucedidas em um teste de resistência de Constituição CD 18 ou serão infectadas por podridão visual (detalhada no Livro do Mestre). Um personagem que examinar a pele e for bem-sucedido em um teste de Inteligência (Natureza) CD 14 pode perceber que ela vem de uma criatura de Faéria, não uma cobra natural, e que a pele se tornou infestada de doenças conforme apodreceu.
 
-### Incense
+### C2: Recanto de Meditação
 
-The incense sticks are broken and useless, with the exception of one. If the intact incense stick is burned, the area within 10 feet of the incense fills with acrid smoke for 5 minutes or until the incense is extinguished. A creature that enters the smoke or starts its turn there must succeed on a CD 16 Constitution saving throw or become poisoned for 1 hour. A creature poisoned by the incense is unconscious and experiences what feels like years' worth of dreams about infinitely long, psychedelic serpents. When the creature awakes, it gains inspiration.
+> Várias esteiras de dormir circundam uma fogueira vazia nesta pequena caverna lateral. Sobre um altar modesto, repousam um incensário de pedra e vários bastões de incenso.
+Estudantes e convidados de Chimagua outrora descansavam e meditavam aqui.
 
-### Secret Path
+### Incenso
 
-A character who searches this cavern and succeeds on a CD 18 Wisdom (Perception) check discovers a segment of the stone wall behind the altar easily shifts aside, revealing a passage leading to area C4. Characters who have the Stonecunning trait have advantage on this check. This door is obvious to any creature in the passage beyond.
+Os bastões de incenso estão quebrados e inúteis, com exceção de um. Se o bastão de incenso intacto for queimado, a área em um raio de 3 metros dele se enche de fumaça acre por 5 minutos ou até o incenso ser apagado. Uma criatura que entrar na fumaça ou começar seu turno ali deve ser bem-sucedida em um teste de resistência de Constituição CD 16 ou ficará envenenada por 1 hora. Uma criatura envenenada pelo incenso fica inconsciente e vivencia o que parecem anos de sonhos sobre serpentes psicodélicas infinitamente longas. Quando a criatura desperta, ela ganha inspiração.
 
-### C3: Whistling Hall
+### Passagem Secreta
 
-Two whistlers (detailed at the **Área end of this adventure**) lurk in this hall. If creatures make considerable noise in area C2, the whistlers attempt to teleport behind the intruders, following them into area C4 to ambush them with the other whistler in that area. Otherwise, they attack when the characters enter this passage.
+Um personagem que vasculhar esta caverna e for bem-sucedido em um teste de Sabedoria (Percepção) CD 18 descobre um segmento da parede de pedra atrás do altar que se desloca facilmente, revelando uma passagem que leva à área C4. Personagens que possuírem o traço Conhecedor da Rocha têm vantagem neste teste. Esta porta é óbvia para qualquer criatura na passagem além dela.
 
-### C4: Orchid Cavern
+### C3: Corredor Assobiante
 
-> Ledges within this cavern overlook a pool of black liquid twenty feet below. At the center of the cave, an island supports an ancient, bare tree. Rope bridges connect this island to the ledge at the cavern's entrance and another along the back wall.
-A whistler (detailed at the **Área end of this adventure**) lurks at the western edge of the northern platform. It waits to attack until intruders appear vulnerable—such as when they're crossing the rope bridges.
+Dois assobiadores (detalhados ao **final desta aventura**) espreitam neste corredor. Se criaturas fizerem barulho considerável na área C2, os assobiadores tentam se teletransportar para trás dos intrusos, seguindo-os para a área C4 para emboscá-los juntamente com o outro assobiador naquela área. Caso contrário, eles atacam quando os personagens entrarem nesta passagem.
 
-### Rope Bridge
+### C4: Caverna das Orquídeas
 
-The rope bridge to area C5 looks ancient and fragile. It has AC 10, hp 14, and immunity to poison and psychic damage.
+> Saliências dentro desta caverna dão vista para uma piscina de líquido negro seis metros abaixo. No centro da caverna, uma ilha sustenta uma árvore antiga e desfolhada. Pontes de corda conectam esta ilha à saliência na entrada da caverna e a outra ao longo da parede do fundo.
+Um assobiador (detalhado ao **final desta aventura**) espreita na extremidade oeste da plataforma norte. Ele espera para atacar até que os intrusos pareçam vulneráveis – como quando estiverem atravessando as pontes de corda.
 
-### Secret Door
+### Ponte de Corda
 
-A character who searches the southwest ledge and succeeds on a CD 18 Wisdom (Perception) check discovers a segment of the stone wall moves, revealing a passage leading to area C2. Characters who have the Stonecunning trait have advantage on this check. This door is obvious to any creature in the passage beyond.
+A ponte de corda para a área C5 parece antiga e frágil. Ela tem Classe de Armadura 10, 14 pontos de vida e imunidade a dano de veneno e dano psíquico.
 
-### C5: Ghost Orchid Tree
+### Porta Secreta
 
-> The roots of a great, bare-limbed tree wind through the flat-topped rock at the cavern's center. Orchids bearing large white flowers wrap around the tree.
-The ancient tree is a sacred plant that Chimagua cultivated. It rises 20 feet to the cavern ceiling.
+Um personagem que vasculhar a saliência sudoeste e for bem-sucedido em um teste de Sabedoria (Percepção) CD 18 descobre um segmento da parede de pedra que se move, revelando uma passagem que leva à área C2. Personagens que possuírem o traço Conhecedor da Rocha têm vantagem neste teste. Esta porta é óbvia para qualquer criatura na passagem além dela.
 
-### Night Hags
+### C5: Árvore da Orquídea-Fantasma
 
-Three night hags—Lola la Lúgubre, Tia Tóxica, and Ofilia la Odiosa—claim this cavern and the ghost orchids that grow here. The crones are invisible and lurk at the base of the tree. As soon as a character reaches the island, all three appear, disguised as elf priests in white robes. They claim to be magically bound to the island by the creature that lies on the ledge beyond—pointing to area C6. They try to convince intruders to free them by slaying the monster there. In truth, they want to trick the characters onto the rope bridge so they can destroy it, dropping the characters into the water of **Área area C7** and then disposing of them via magic.
+> As raízes de uma grande árvore de galhos desfolhados serpenteiam pela rocha de topo plano no centro da caverna. Orquídeas com grandes flores brancas envolvem a árvore.
+A árvore antiga é uma planta sagrada que Chimagua cultivou. Ela se eleva 6 metros até o teto da caverna.
 
-### Ghost Orchids
+### Bruxas da Noite
 
-The pale flowers growing on the tree are ghost orchids. A character who succeeds on a CD 18 Intelligence (Nature) check identifies the ghost orchids and their properties (see the "**Área Ghost Orchids**" sidebar). Additionally, a character who succeeds on a CD 16 Wisdom (Perception) check notices the orchids bear one black seed pod and one white seed pod, both of which can be removed.
+Três bruxas da noite – Lola la Lúgubre, Tia Tóxica e Ofilia la Odiosa – reivindicam esta caverna e as orquídeas-fantasma que crescem aqui. As bruxas estão invisíveis e espreitam na base da árvore. Assim que um personagem chegar à ilha, todas as três aparecem, disfarçadas de sacerdotisas elfas em vestes brancas. Elas afirmam estar magicamente presas à ilha pela criatura que jaz na saliência adiante – apontando para a área C6. Elas tentam convencer os intrusos a libertá-las matando o monstro ali. Na verdade, elas querem enganar os personagens para que subam na ponte de corda para poderem destruí-la, derrubando os personagens na água da **Área C7** e depois eliminando-os com magia.
 
-### Treasure
+### Orquídeas-Fantasma
 
-The hags have left their treasure in a hollow at the base of the tree. Inside are three black opals (worth 1,000 gp each), a bag of devouring, a potion of flying, and a toucan skull with a wax plug that is a container filled with sovereign glue.
+As flores pálidas que crescem na árvore são orquídeas-fantasma. Um personagem bem-sucedido em um teste de Inteligência (Natureza) CD 18 identifica as orquídeas-fantasma e suas propriedades (veja o quadro "**Orquídeas-Fantasma**"). Além disso, um personagem bem-sucedido em um teste de Sabedoria (Percepção) CD 16 percebe que as orquídeas possuem uma vagem negra e uma vagem branca, ambas podendo ser removidas.
 
-### C6: The Sleeping Stone
+### Tesouro
 
-> A ten-foot-tall, chipped gray crystal rises from this ledge, pulsing with pale light. On the rock shelf behind it, a familiar woman stands near an enormous anaconda that's coiled and motionless.
-Chimagua, the guardian spirit of the Ghost Orchid Tepui, lies here. Tainted by foul Far Realm energies, the coiled, 40-foot-long anaconda is unconscious. A character who has a passive Wisdom (Perception) score of 14 or higher sees that Chimagua is incorporeal, fading in and out of existence with each slow breath.
+As bruxas deixaram seu tesouro em um oco na base da árvore. Dentro estão três opalas negras (no valor de 1.000 po cada), uma *bolsa devoradora*, uma *poção de voo* e um crânio de tucano com uma rolha de cera que é um recipiente cheio de *cola soberana*.
+
+### C6: A Pedra Adormecida
+
+> Um cristal cinzento lascado, de três metros de altura, ergue-se nesta saliência, pulsando com uma luz pálida. Na prateleira de rocha atrás dele, uma mulher familiar está perto de uma enorme sucuri, imóvel e enrolada.
+Chimagua, o espírito guardião do Tepui da Orquídea-Fantasma, jaz aqui. Contaminada por energias vis do Reino Distante, a sucuri de 12 metros de comprimento está inconsciente. Um personagem que tiver uma pontuação passiva de Sabedoria (Percepção) 14 ou mais vê que Chimagua está incorpórea, sumindo e reaparecendo a cada respiração lenta.
 
 ### Yarana
 
-Since contacting to the characters, Chimagua's ally Yarana (scout) has been enthralled by the aboleths lurking beneath the water in area C7. When a character approaches this area, Yarana urges them to come quickly, saying that Chimagua is dying and needs assistance. As soon as the first character reaches this area, she attacks. Any time Yarana takes damage, she can make a CD 14 Wisdom saving throw to escape the aboleths' control. If freed, Yarana points to the water and warns that the true threat is there, prompting the aboleth Glol to emerge and attack if the characters haven't already encountered that aboleth. If Yarana is incapacitated, the aboleths from area C7 emerge and attack.
+Desde que contatou os personagens, Yarana (exploradora), aliada de Chimagua, foi subjugada pelos aboletes que espreitam sob a água na área C7. Quando um personagem se aproximar desta área, Yarana insiste para que venham rapidamente, dizendo que Chimagua está morrendo e precisa de ajuda. Assim que o primeiro personagem chegar a esta área, ela ataca. Sempre que Yarana sofrer dano, ela pode fazer um teste de resistência de Sabedoria CD 14 para escapar do controle dos aboletes. Se libertada, Yarana aponta para a água e avisa que a verdadeira ameaça está lá, fazendo com que o abolete Glol emerja e ataque, caso os personagens ainda não tenham encontrado aquele abolete. Se Yarana for incapacitada, os aboletes da área C7 emergem e atacam.
 
-### The Sleeping Stone
+### A Pedra Adormecida
 
-The crystal is the Sleeping Stone, a magical device Chimagua once used to influence the dreams of Atagua's people. The power of the Drought Elder has corrupted the stone, forcing Chimagua into a deathly slumber and accelerating the planar instability in Atagua.
-Any creature that touches the Sleeping Stone must make a CD 20 Wisdom saving throw, taking 42 ([[12d6]]) psychic damage on a failed save, or half as much damage on a successful one. Regardless of the saving throw result, the creature also receives the following grim vision:
-> Within an expanse of broken worlds drifts a gargantuan alien form—one that is far from a centipede yet closer to that shape than any other. The shape is shattered and crawling with convulsing, bipedal parasites. Despite the shape's ruin, the darkness within one of its hollow eyes deepens and fixates. It sees you.
+O cristal é a Pedra Adormecida, um dispositivo mágico que Chimagua outrora usava para influenciar os sonhos do povo de Atagua. O poder do Ancião da Seca corrompeu a pedra, forçando Chimagua a um sono mortal e acelerando a instabilidade planar em Atagua.
+Qualquer criatura que tocar a Pedra Adormecida deve fazer um teste de resistência de Sabedoria CD 20, sofrendo 42 ([[12d6]]) de dano psíquico em caso de falha no teste, ou metade desse dano em caso de sucesso. Independentemente do resultado do teste de resistência, a criatura também recebe a seguinte visão sinistra:
+> Dentro de uma extensão de mundos despedaçados, flutua uma forma alienígena gigantesca – que está longe de ser uma centopeia, mas é mais próxima dessa forma do que de qualquer outra. A forma está despedaçada e rastejando com parasitas bípedes convulsivos. Apesar da ruína da forma, a escuridão dentro de um de seus olhos ocos se aprofunda e se fixa. Ela vê você.
 
-### C7: Polluted Pool
+### C7: Piscina Poluída
 
-Two aboleths, Glol and Kilzilg, lurk in the brackish but mundane waters of this pool. These servants of the Drought Elder infiltrated the tepui and used their master's magic to corrupt Chimagua and the Sleeping Stone. When Yarana arrived, they took control of her. They are using the warrior to watch Chimagua's final days.
-The aboleths prefer to stay in the cavern's foul water, which heavily obscures them while they're below the surface. If the aboleths are revealed or the characters enter the water, the aboleths attack. Both use their telepathy to threaten foes, promising eternities of desiccated doom within the Drought Elder's immortal corpse.
-> ### Ghost Orchids
-> Manifestations of Chimagua's magic, these magical plants are unique to the tepui named after them. Every few years, a ghost orchid colony grows a black pod as thick as a human fist that holds three soft, black seeds. A creature that consumes one of these black seeds is affected by the spell feign death. If the creature is unaware of the pod's effects or does not wish to be affected, it can resist the effect by succeeding on a CD 16 Constitution saving throw. Otherwise, it is considered to be a willing recipient of the spell.
-> More rarely, the orchids produce a smaller pod holding a single white seed. Among its various magical properties, if a white seed is ground and scattered over a dead body, the body is affected by the resurrection spell. A white ghost orchid seed has no effect if consumed.
-
-
+Dois aboletes, Glol e Kilzilg, espreitam nas águas salobras, porém mundanas, desta piscina. Estes servos do Ancião da Seca se infiltraram no tepui e usaram a magia de seu mestre para corromper Chimagua e a Pedra Adormecida. Quando Yarana chegou, eles assumiram o controle dela. Eles estão usando a guerreira para observar os dias finais de Chimagua.
+Os aboletes preferem permanecer na água fétida da caverna, que os obscurece totalmente enquanto estão abaixo da superfície. Se os aboletes forem revelados ou os personagens entrarem na água, os aboletes atacam. Ambos usam sua telepatia para ameaçar os inimigos, prometendo eternidades de condenação ressequida dentro do cadáver imortal do Ancião da Seca.
+> ### Orquídeas-Fantasma
+> Manifestações da magia de Chimagua, estas plantas mágicas são únicas ao tepui que leva seu nome. A cada poucos anos, uma colônia de orquídea-fantasma produz uma vagem negra, grossa como um punho humano, que contém três sementes negras e macias. Uma criatura que consumir uma dessas sementes negras é afetada pela magia *morte fingida*. Se a criatura não souber dos efeitos da vagem ou não quiser ser afetada, ela pode resistir ao efeito sendo bem-sucedida em um teste de resistência de Constituição CD 16. Caso contrário, ela é considerada um recipiente voluntário da magia.
+> Mais raramente, as orquídeas produzem uma vagem menor contendo uma única semente branca. Entre suas várias propriedades mágicas, se uma semente branca for triturada e espalhada sobre um corpo morto, o corpo é afetado pela magia *ressurreição*. Uma semente de orquídea-fantasma branca não tem efeito se consumida.

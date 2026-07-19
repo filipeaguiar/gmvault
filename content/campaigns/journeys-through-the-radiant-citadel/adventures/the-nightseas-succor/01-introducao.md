@@ -1,27 +1,25 @@
 ---
-title: "Cena 1 - Introdução"
+title: Cena 1 - Introdução
 weight: 10
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+titulo_pt_br: Cena 1 - Introdução
+visibility: gm
+status: draft
+summary: Operational scene to run in the session.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+*Uma Aventura para Personagens de 12° Nível*
 
-*An Adventure for 12th-Level Characters*
-
-After experiencing a mysterious haunting, the characters become embroiled in a quest to restore lost lore to the realm of Djaynai. As they journey from the misty coast of Djaynai to the phantasmagoric realm of Janya beneath the sea, the characters discover not all folk are of one mind concerning the mysterious Djaynaian teachings called the Blackmist Way and the Blackthrone Arts. Some believe these mystical practices and defensive martial strategies should be restored to reestablish the power Djaynai held in the past. Others believe they should only be used as the basis for new arts and then retired. Still others want the lost lore destroyed so Djaynai and Janya can break from the past that binds them. Ultimately, the characters must decide which path to follow and face a forgotten terror in the deepest reaches of the Nightsea.
-
-
+Após vivenciarem uma assombração misteriosa, os personagens se envolvem em uma missão para restaurar o conhecimento perdido no reino de Djaynai. Enquanto viajam da costa enevoada de Djaynai para o reino fantasmagórico de Janya, sob o mar, os personagens descobrem que nem todos pensam da mesma forma sobre os misteriosos ensinamentos Djaynaianos chamados Caminho da Névoa Negra e Artes do Trono Negro. Alguns acreditam que essas práticas místicas e estratégias marciais defensivas devem ser restauradas para restabelecer o poder que Djaynai possuía no passado. Outros acreditam que elas devem ser usadas apenas como base para novas artes e, em seguida, aposentadas. Outros ainda desejam que o conhecimento perdido seja destruído para que Djaynai e Janya possam romper com o passado que os aprisiona. Por fim, os personagens devem decidir qual caminho seguir e enfrentar um terror esquecido nas mais profundas regiões do Mar Noturno.

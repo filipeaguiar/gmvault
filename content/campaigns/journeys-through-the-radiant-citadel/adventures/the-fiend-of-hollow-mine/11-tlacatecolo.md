@@ -1,29 +1,29 @@
 ---
-title: "Cena 11 - Tlacatecolo"
+title: Cena 11 - Tlacatecolo
 weight: 110
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 11 - Tlacatecolo
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/tlacatecolo/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/tlacatecolo/
 compendium_refs:
-  - "/compendium/monsters/tlacatecolo/"
+- /compendium/monsters/tlacatecolo/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
-
-Appearing as plague-stricken, bipedal owls, tlacatecolo sow sickness and feed on the suffering of mortals. These fiends spread an affliction that leaches heat and life from the living, dispersing it upon winds that rattle like a gasp from a frozen body. Sunlight staves off the disease, but those affected rarely survive the dark of night.
+Apresentando-se como corujas bípedes assoladas pela peste, os tlacatecolo semeiam doenças e se alimentam do sofrimento dos mortais. Esses corruptores espalham uma aflição que suga o calor e a vida dos vivos, dispersando-a pelos ventos que chocalham como o suspiro de um corpo congelado. A luz do sol afasta a doença, mas os afetados raramente sobrevivem à escuridão da noite.
 
 
 ![Tlacatecolo](/images/campaigns/journeys-through-the-radiant-citadel/040-637937472229339929.webp)
-
-
-

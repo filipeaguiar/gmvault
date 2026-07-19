@@ -1,122 +1,158 @@
 ---
-title: "Cena 10 - San Citlán Gazetteer"
+title: Cena 10 - San Citlán Gazetteer
 weight: 100
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
+  kind: scene
+draft: false
+titulo_pt_br: Cena 10 - San Citlán Guia Geográfico
+visibility: gm
+status: published
+summary: '**CENA: A Cidade-Fantasma de Crepúsculo**
 
-locations:
 
+  **Gancho:** Vocês foram contratados para resgatar um mensageiro da guilda que desapareceu a caminho de Forte Fronteira. A última pista leva a Crepúsculo, uma cidade mineira abandonada há décadas, aninhada em um desfiladeiro.
+
+
+  **Percepção Inicial (Visão e Som):**
+
+  A garganta se abre revelando a cidade fantasma. Uma neblina cor de chumbo abraça as ruínas de madeira apodrecida e os andaimes da mina, que rangem com o vento. O único som é o gotejar da água e o eco distante de um sino de vento de ferro. No centro da praça, uma fonte seca ostenta uma estátua de um anão segurando uma lamparina, sua boca congelada em um grito silencioso.
+
+
+  **O Perigo: Ecos de Cinzas**
+
+  O solo está coberto por uma fina camada de cinza vulcânica, que esconde uma ameaça: *Ecos de Cinzas*. Estas estranhas formações de fuligem imitam os últimos momentos de desespero dos antigos moradores, repetindo ações em um ciclo eterno.
+
+
+  - **Risco:** Perturbar a cinza faz com que uma nuvem se aglutine em uma figura humanoide espectral (use as estatísticas de **Espectro** com a adição da habilidade *Forma de Cinzas*: pode se mover como uma nuvem, imune a dano de armas não mágicas).
+
+  - **Pista:** Um Eco de um menino anão repete o ato de enfiar uma pequena chave enferrujada em um buraco de um barril, uma e outra vez.
+
+  - **Interação:** Um Eco de um minerador cambaleia em direção à entrada da mina, apontando freneticamente para dentro antes de se desfazer.
+
+
+  **O Local: O Poço do Lamento**
+
+  A entrada da mina principal, o Poço do Lamento, exala um ar rarefeito. O elevador da mina está destruído. As cordas apodrecidas balançam sobre um abismo de 60 metros de profundidade.
+
+
+  - **Desafio (Atletismo CD 14):** Descer pelas vigas de suporte e cordas podres. Falha resulta em uma queda de 6 metros antes de conseguir se segurar novamente.
+
+  - **Alternativa (Investigação CD 13):** Um túnel de ventilação lateral, estreito e tomado por teias de aranha, desce em espiral pela rocha.
+
+
+  **O Clímax: A Fornalha Silenciosa**
+
+  No fundo do poço, uma vasta caverna abriga uma fundição abandonada onde o mensageiro está preso. Ele está ileso, porém mudo de terror, acorrentado à grande fornalha de pedra. Ele se comunica apenas escrevendo na fuligem.
+
+
+  - **A Ameaça:** Um **Elemental da Cinza** (use **Elemental do Ar**, mas o dano é de fogo, e ele tem a habilidade *Silêncio*, que cria uma zona de silêncio mágico num raio de 3 metros, uma vez por turno) está incorporado na fornalha.
+
+  - **A Verdade:** O mensageiro não foi atacado. A entidade, nascida do desespero dos mineradores presos, está desesperadamente solitária. Ela o mantém prisioneiro porque anseia por silêncio e companhia. Ela não ataca primeiro, apenas cria zonas de silêncio para impedir que o mensageiro grite.
+
+  - **A Escolha:** Os jogadores podem combater a criatura (CD de Carisma 15 para acalmá-la se perceberem sua motivação), ou podem acionar o mecanismo da fornalha. Para libertar o refém e dar paz à entidade, devem simbolicamente "alimentá-la". Jogar suas próprias rações, um objeto de valor sentimental ou acender a fornalha com magia de fogo dissipa o Elemental em um redemoinho de fagulhas silenciosas, libertando o mensageiro.'
+npcs: null
+locations: null
 compendium_refs:
-  - "/compendium/monsters/thug/"
-  - "/compendium/monsters/ankheg/"
-  - "/compendium/monsters/helmed-horror/"
-  - "/compendium/monsters/banshee/"
+- /compendium/monsters/thug/
+- /compendium/monsters/ankheg/
+- /compendium/monsters/helmed-horror/
+- /compendium/monsters/banshee/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/banshee-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-039-map-43-san-citlan-and-borderlands-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/banshee-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-039-map-43-san-citlan-and-borderlands-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The stone-and-iron city of San Citlán stands at a confluence of ley lines, where the veil between the worlds of the living and the dead is thin. It's a place suffused with magic, where citizens commune with the dead in joyful festivals, and industrious minds create wonders of magic and technology. Despite San Citlán's rich culture and magical marvels, economic inequality is stark between the majority of its inhabitants and the wealthy landowners and technocrats who control the land's resources. These elite reap the rewards of progress with little regard for those left behind. As harsh as life can be for those in the city, the borderlands are harsher still. There, every day is a struggle to survive in the face of poverty, banditry, and drought.
+A cidade de pedra e ferro de San Citlán ergue-se em uma confluência de linhas ley, onde o véu entre os mundos dos vivos e dos mortos é tênue. É um local repleto de magia, onde os cidadãos se comunicam com os mortos em festivais alegres e mentes engenhosas criam maravilhas de magia e tecnologia. Apesar da rica cultura e das maravilhas mágicas de San Citlán, a desigualdade econômica é gritante entre a maioria de seus habitantes e os abastados proprietários de terras e tecnocratas que controlam os recursos da região. Essas elites colhem as recompensas do progresso com pouca consideração pelos que ficam para trás. Por mais dura que a vida possa ser para aqueles na cidade, as terras fronteiriças são ainda mais implacáveis. Lá, cada dia é uma luta para sobreviver diante da pobreza, do banditismo e da seca.
 
-A cosmopolitan trade hub, San Citlán is home to grand plazas, vibrant markets, and countless neighborhoods competing for space against towering industrial facilities. Smokestacks rise over cobbled streets. Silence is a commodity, as hammers ring out and forge fires roar in the city's ironworks at all hours.
+Um centro comercial cosmopolita, San Citlán abriga grandes praças, mercados vibrantes e inúmeros bairros competindo por espaço contra imponentes instalações industriais. Chaminés se elevam sobre ruas de paralelepípedos. O silêncio é uma mercadoria rara, já que martelos ressoam e fornalhas rugem nas metalúrgicas da cidade a todas as horas.
 
-Discontent among the common people has given rise to revolutionaries in the borderlands who are determined to fight the Trecena—the city's ruling council—to bring an end to corruption. Outrage recently reached a fever pitch as the city reels from political instability wrought by the death of a high-profile politician, Doña Estela. She was the longest-serving member of the Trecena, and rumors that magical resurrection will restore her to rule indefinitely have shattered the government's democratic facade. Discord brews among members of the Trecena, some of whom support Doña Estela's return while others vie for her coveted station.
+O descontentamento entre o povo comum deu origem a revolucionários nas terras fronteiriças, determinados a lutar contra a Trecena — o conselho governante da cidade — para pôr fim à corrupção. A revolta atingiu recentemente um ponto de ebulição enquanto a cidade se recupera da instabilidade política causada pela morte de uma política de destaque, Doña Estela. Ela era o membro mais antigo da Trecena, e rumores de que uma ressurreição mágica a restaurará para governar indefinidamente destruíram a fachada democrática do governo. A discórdia cresce entre os membros da Trecena, alguns dos quais apoiam o retorno de Doña Estela, enquanto outros disputam sua cobiçada posição.
 
+### Características
 
-### Features
+Aqueles familiarizados com San Citlán conhecem os seguintes fatos:
 
-Those familiar with San Citlán know the following facts:
+### Locais Notáveis
 
+San Citlán é uma terra de contrastes. Mansões luxuosas abrigam os ricos enquanto os pobres lutam para sobreviver. Bolsos se enchem em mercados animados e se esvaziam em cantinas e ringues de luta. Complexos industriais massivos se agigantam sobre casas coloridas em ruas e becos pitorescos.
 
-### Noteworthy Sites
+![Mapa 4.3: San Citlán e Terras Fronteiriças](/images/campaigns/journeys-through-the-radiant-citadel/038-map-43-san-citlan-and-borderlands.webp)
 
-San Citlán is a land of contrasts. Lavish mansions cradle the wealthy while the poor scrape to survive. Purses are filled in lively markets and emptied in cantinas and wrestling rings. Massive industrial complexes loom over colorful homes in quaint streets and alleys.
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/039-map-43-san-citlan-and-borderlands-player.webp)
 
-![Map 4.3: San Citlán and Borderlands](/images/campaigns/journeys-through-the-radiant-citadel/038-map-43-san-citlan-and-borderlands.webp)
+### Colina Papalotlán
 
+Esta colina verdejante no coração da cidade é o centro de poder e riqueza. Os conselheiros da Trecena tentam manter a ordem a partir das torres da Corte do Crisol, a sede do governo da cidade. Dentro dos salões encantados da Congregação Argêntea, as mentes por trás do progresso de San Citlán preparam as futuras gerações de conjuradores proficientes. A base da colina está repleta de monumentos, templos e propriedades extravagantes. Esses bairros ricos e círculos aristocráticos fornecem o cenário para intrigas políticas e sociais.
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/039-map-43-san-citlan-and-borderlands-player.webp)
+### Metalúrgicas Marfil
 
-
-### Papalotlán Hill
-
-This verdant hill at the heart of the city is the center of power and wealth. Councilors of the Trecena try to maintain order from the towers of the Crucible Court, the city's seat of government. Within the enchanted halls of the Argent Congregation, the minds behind San Citlán's progress prepare future generations of spellcasting adepts. The base of the hill teems with monuments, temples, and extravagant estates. These wealthy neighborhoods and aristocratic circles provide the backdrop for political and social intrigue.
-
-### Marfil Ironworks
-
-The city's primary source of wealth is the industrial collective known as Marfil Ironworks, which processes local minerals using a mix of innovative technology and magic. The ironworks have many complexes across the city, and these labyrinthine facilities house all kinds of wondrous experimental creations.
+A principal fonte de riqueza da cidade é o coletivo industrial conhecido como Metalúrgicas Marfil, que processa minerais locais usando uma mistura de tecnologia inovadora e magia. As metalúrgicas têm muitos complexos pela cidade, e essas instalações labirínticas abrigam todos os tipos de criações experimentais maravilhosas.
 
 ### Los Gavilanes
 
-Los Gavilanes is the informal name given to San Citlán's old town. It's the most populous district, where ancient manors turned into collective living quarters are rented to industrial workers and their families. These buildings, known as *vecindades*, each house dozens of tenants and abide by complex internal community structures.
+Los Gavilanes é o nome informal dado ao centro histórico de San Citlán. É o distrito mais populoso, onde antigos solares transformados em moradias coletivas são alugados para trabalhadores industriais e suas famílias. Esses edifícios, conhecidos como *vecindades*, abrigam cada um dezenas de inquilinos e seguem estruturas comunitárias internas complexas.
 
-### The Borderlands and Milpazul
+### As Terras Fronteiriças e Milpazul
 
-The dry, rocky landscape outside San Citlán offers little in the way of comfort. Over half the city's workers live in these borderlands, while many more folk labor at mines and farms in the area. These communities have suffered neglect that has led to increased banditry on top of the usual attacks by monsters. One of the largest borderlands settlements, Milpazul, caters to travelers looking for shelter. It has acquired a reputation as a hub for mercenaries, as locals turn to *caporales*—traditional defenders on horseback—for security in the absence of city support.
+A paisagem seca e rochosa fora de San Citlán oferece pouco em termos de conforto. Mais da metade dos trabalhadores da cidade vive nessas terras fronteiriças, enquanto muitos outros trabalham em minas e fazendas na área. Essas comunidades sofreram negligência, o que levou ao aumento do banditismo, além dos ataques habituais de monstros. Um dos maiores assentamentos fronteiriços, Milpazul, atende viajantes em busca de abrigo. Adquiriu reputação como um centro de mercenários, já que os locais recorrem aos *caporales* — defensores tradicionais a cavalo — para segurança na ausência de apoio da cidade.
 
+### A Vida em San Citlán
 
-### Life in San Citlán
+Moldada por gerações de mistura cosmopolita, a cultura de San Citlán está em constante evolução, mas não sem tradições honradas.
 
-Molded through generations of cosmopolitan mingling, San Citlán's culture is ever-evolving but not without honored traditions.
+### Comida e Recreação
 
-### Food and Recreation
+A comida é um motivo de particular orgulho em San Citlán, cujo povo a utiliza para expressar sua herança. Ingredientes locais incluem agave, feijão, cacto, pimenta, milho e tomatillos. Estes são combinados com muitos produtos importados para criar pratos, desde ensopados meticulosamente preparados, como o pozole de milho e carne, até lanches onipresentes como tacos.
+Para os moradores da cidade, muitas recreações aliviam as pressões da vida diária. Junto com música e dança, jogos de bola são um passatempo comum, variando de variações antigas jogadas com o quadril a jogos de chute mais contemporâneos. A luta evoluiu para sua própria forma de entretenimento teatral: La Lucha, onde luchadores usam máscaras coloridas, adotam personas épicas e lutam usando manobras acrobáticas.
 
-Food is a particular point of pride in San Citlán, whose peoples use it to express their heritage. Local ingredients include agave, beans, cactus, chili peppers, maize, and tomatillos. These are combined with many imported goods to create dishes from painstakingly prepared stews such as hominy-and-meat pozole to ubiquitous snacks like tacos.
-For city folk, many recreations relieve the pressures of daily life. Along with music and dance, ball games are a common pastime, ranging from ancient variations played with the hip to more contemporary kicking games. Wrestling evolved into its own form of theatrical entertainment: La Lucha, where luchadores don colorful masks, adopt epic personas, and battle using acrobatic maneuvers.
+### Fé e Festivais
 
-### Faith and Festivals
-
-Worship is ingrained in city culture, and major religions have temples ranging from grandiose to quaint. "Don't piss outside the cantina lest you soil a temple" is a local saying that both offers etiquette advice and references the city's many centers of worship. La Catrina—believed to be death herself—is the patron spirit of the city. She is a capricious figure who wishes to be celebrated rather than feared.
-While numerous festivals are held throughout the year, the most splendid and anticipated is the Night of the Remembered, a celebration that evolved from ancient funerary rites and draws on the magic of the city. During this night, people can be visited by deceased loved ones if they honor them with an ofrenda: food and drink enjoyed in life, among other traditional offerings, presented on elaborate altars that guide souls back to the world. The days leading up to this event are marked by colorful citywide parades that display San Citlán's diverse culture.
+A adoração está enraizada na cultura da cidade, e as principais religiões têm templos que variam de grandiosos a pitorescos. "Não urine fora da cantina para não sujar um templo" é um ditado local que oferece tanto conselhos de etiqueta quanto faz referência aos muitos centros de adoração da cidade. La Catrina — acreditada ser a própria morte — é o espírito patrono da cidade. Ela é uma figura caprichosa que deseja ser celebrada em vez de temida.
+Embora vários festivais sejam realizados ao longo do ano, o mais esplêndido e antecipado é a Noite dos Lembrados, uma celebração que evoluiu de antigos ritos funerários e se baseia na magia da cidade. Durante esta noite, as pessoas podem ser visitadas por entes queridos falecidos se os honrarem com uma ofrenda: comida e bebida apreciadas em vida, entre outras oferendas tradicionais, apresentadas em altares elaborados que guiam as almas de volta ao mundo. Os dias que antecedem este evento são marcados por desfiles coloridos por toda a cidade que exibem a cultura diversificada de San Citlán.
 
 ### Olvidados
 
-In rare circumstances, the deceased remain in San Citlán as Undead following the Night of the Remembered. Known as *olvidados*, or "forgotten," these intelligent Undead often take the form of sapient, peaceful skeletons or spirits. Most retain the memories and personality they had in life, but they have no recollection of the afterlife.
+Em raras circunstâncias, os falecidos permanecem em San Citlán como Mortos-vivos após a Noite dos Lembrados. Conhecidos como *olvidados*, ou "esquecidos", esses Mortos-vivos inteligentes muitas vezes assumem a forma de esqueletos ou espíritos sencientes e pacíficos. A maioria retém as memórias e a personalidade que tinham em vida, mas não têm lembrança da vida após a morte.
 
-### Governance and Growth
+### Governança e Crescimento
 
-San Citlán is governed by the Trecena, a council consisting of thirteen elected representatives. The ability to vote for these representatives is limited to landowners and their descendants, those who serve in the military, graduates of the Argent Congregation, and those who make a considerable contribution to the city's economy.
-In recent decades, the city has undergone significant transformations marked by great discoveries attributed to the Argent Congregation. Doña Estela, a dwarf landowner who held a seat in the Trecena for more than fifty years, was the congregation's founder and is credited with San Citlán's economic rise. However, her focus on progress and city aesthetics has drawn heavy criticism, as the majority of the populace lives in poverty. The seat of Councilor of the Foundry remains vacant following Doña Estela's recent death, as it has become clear that the oligarch intended to be resurrected to continue her rule indefinitely.
+San Citlán é governada pela Trecena, um conselho composto por treze representantes eleitos. A capacidade de votar nesses representantes é limitada a proprietários de terras e seus descendentes, aqueles que servem nas forças armadas, graduados da Congregação Argêntea e aqueles que fazem uma contribuição considerável para a economia da cidade.
+Nas últimas décadas, a cidade passou por transformações significativas marcadas por grandes descobertas atribuídas à Congregação Argêntea. Doña Estela, uma anã proprietária de terras que ocupou um assento na Trecena por mais de cinquenta anos, foi a fundadora da congregação e é creditada pelo crescimento econômico de San Citlán. No entanto, seu foco no progresso e na estética da cidade atraiu fortes críticas, já que a maioria da população vive na pobreza. O assento de Conselheiro da Fundição permanece vago após a morte recente de Doña Estela, pois ficou claro que a oligarca pretendia ser ressuscitada para continuar seu governo indefinidamente.
 
-### Names
+### Nomes
 
-Those native to San Citlán often have up to three names: a given name and two family surnames, inherited from their parents. The following are common names in San Citlán:
+Aqueles nativos de San Citlán costumam ter até três nomes: um nome próprio e dois sobrenomes de família, herdados de seus pais. Os seguintes são nomes comuns em San Citlán:
 
+### Lendas de San Citlán
 
-### Legends of San Citlán
+De acordo com o conto da fundação de San Citlán, uma exploradora chamada Citlali se perdeu no vale do Rio Calaveras. Depois de vagar por dias, Citlali viu uma figura esquelética elegantemente vestida a seguindo, nunca se aproximando muito nem se afastando demais. Ela tentou fugir, mas a figura sempre a alcançava. Quando ela se virou e seguiu sua perseguidora, o esqueleto levou Citlali a um cenote escondido. Citlali mergulhou para saciar sua sede e, quando retornou à superfície, a figura esquelética havia desaparecido.
+Observando que a área era rica em minerais preciosos, Citlali retornou para casa e convenceu outros a se juntarem a ela para colonizar o vale ao norte do cenote e as montanhas agora conhecidas como Descanso de Citlali. Citlali envelheceu, e a figura esquelética retornou para levá-la, mas o assentamento permaneceu. Foi nomeado em sua honra, com Citlán traduzido aproximadamente como "o lugar perto de Citlali." As pessoas começaram a chamar a figura esquelética de La Catrina por suas roupas elegantes.
+A história de San Citlán está repleta de conflitos. Após anos de invasões fracassadas durante seu primeiro século de existência, a cidade foi dominada e ocupada por uma força colonizadora. O domínio colonial durou duzentos anos e terminou em uma série sangrenta de conflitos chamada de Guerras de Separação. Posteriormente, o povo de San Citlán realizou suas primeiras eleições, finalmente ansioso por um tempo de paz. As guerras deixaram cicatrizes, transformando terras anteriormente férteis em estéreis e afugentando as fadas que outrora habitavam a região — alguns dizem que para sempre.
 
-According to the tale of San Citlán's founding, an explorer named Citlali became lost in the valley of the Calaveras River. After wandering for days, Citlali saw an elegantly dressed skeletal figure trailing behind her, never moving too close or straying too far. She tried to flee, but the figure always caught up. When she turned and followed her pursuer instead, the skeleton led Citlali to a hidden cenote. Citlali dove in to assuage her thirst, and when she resurfaced, the skeletal figure was gone.
-Observing that the area was rich in precious minerals, Citlali returned home and convinced others to join her to settle the valley north of the cenote and the mountains now known as Citlali's Rest. Citlali grew old, and the skeletal figure returned to take her, but the settlement remained. It was named in her honor, with Citlán roughly translating to "the place near Citlali." People began calling the skeletal figure La Catrina for her elegant clothing.
-San Citlán's history is rife with conflict. After years of failed invasions over its first century of existence, the city was overcome and occupied by a colonizing force. Colonial rule lasted for two hundred years and ended in a bloody series of conflicts called the Wars of Separation. In the aftermath, the folk of San Citlán held their first elections, finally looking forward to a time of peace. The wars have left scars, turning previously fertile lands barren and driving away the fey that once inhabited the region—some say forever.
+### Aventuras em San Citlán
 
+Considere as tramas na tabela Aventuras em San Citlán ao planejar aventuras em San Citlán.
 
-### Adventures in San Citlán
-
-Consider the plots on the San Citlán Adventures table when planning adventures in San Citlán.
-
-**Tabela: San Citlán Adventures**
+**Tabela: Aventuras em San Citlán**
 
 |  |  |
 | --- | --- |
-| 1 | A revolutionary asks the characters to rid a mine connected to Los Gavilanes of ankhegs so it can be used to smuggle information out of the city. |
-| 2 | Intrigued by Marfil Ironworks' signature magical bodyguards (helmed horrors), a wizard named Montesco hires the characters to capture one. |
-| 3 | A spectral olvidado named Don Edelmiro hires the characters for protection after a band of criminal thugs raid his estate. He's convinced his descendants are behind the attack. |
-| 4 | A street child named Anita approaches the characters for help. Her friends were taken by a banshee that wanders the streets near the Calaveras River at night. |
+| 1 | Um revolucionário pede aos personagens que livrem uma mina conectada a Los Gavilanes de ankhegs para que possa ser usada para contrabandear informações para fora da cidade. |
+| 2 | Intrigado pelos guarda-costas mágicos característicos das Metalúrgicas Marfil (horrores com elmo), um mago chamado Montesco contrata os personagens para capturar um. |
+| 3 | Um olvidado espectral chamado Don Edelmiro contrata os personagens para proteção depois que um bando de bandidos criminosos invade sua propriedade. Ele está convencido de que seus descendentes estão por trás do ataque. |
+| 4 | Uma criança de rua chamada Anita aborda os personagens em busca de ajuda. Seus amigos foram levados por uma banshee que vagueia pelas ruas perto do Rio Calaveras à noite. |
 
+### Personagens de San Citlán
 
-### Characters from San Citlán
-
-If players want to create characters from San Citlán, consider asking them the following questions during character creation:
-**Where do you stand in society?** San Citlán's economic inequality shapes the lives of its people. Are you one of the privileged or one of the destitute? If you're privileged, do you have a vote? If destitute, do you live in or outside the city?
-**Whom do you honor with your ofrenda?** Most in San Citlán eagerly look forward to the Night of the Remembered so they can commune with their loved ones. Do you? What does your ofrenda look like, and who is it for?
-**Does tradition color how you adventure?** Are you familiar with the ways of an adventuring caporal or lifestyles that give you a close connection to your steed and the open road? Do you have experience as a larger-than-life luchador wrestler—maybe even wearing a signature mask?
-
-
+Se os jogadores quiserem criar personagens de San Citlán, considere fazer as seguintes perguntas durante a criação de personagem:
+**Qual a sua posição na sociedade?** A desigualdade econômica de San Citlán molda a vida de seu povo. Você é um dos privilegiados ou um dos destituídos? Se for privilegiado, você tem direito a voto? Se for destituído, você vive dentro ou fora da cidade?
+**A quem você honra com sua ofrenda?** A maioria em San Citlán anseia pela Noite dos Lembrados para se comunicar com seus entes queridos. Você também? Como é sua ofrenda e para quem é?
+**A tradição influencia como você se aventura?** Você está familiarizado com os costumes de um caporal aventureiro ou estilos de vida que lhe dão uma conexão próxima com sua montaria e a estrada? Você tem experiência como um lutador luchador extravagante — talvez até usando uma máscara característica?

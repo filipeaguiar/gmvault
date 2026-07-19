@@ -1,16 +1,23 @@
 ---
-title: "Thief"
+title: Thief
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Thief."
+summary: 'Característica de Classe: Ladrão'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Ladino
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.
+Você aprimora suas habilidades nas artes do furto. Ladrões, bandidos, batedores de carteira e outros criminosos geralmente seguem este arquétipo, mas também o fazem ladinos que preferem se ver como caçadores de tesouros profissionais, exploradores, escavadores e investigadores. Além de melhorar sua agilidade e furtividade, você aprende perícias úteis para explorar ruínas antigas, ler idiomas desconhecidos e usar itens mágicos que, normalmente, você não teria capacidade de utilizar.

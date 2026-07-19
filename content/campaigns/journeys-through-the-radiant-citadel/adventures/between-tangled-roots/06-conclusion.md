@@ -1,34 +1,34 @@
 ---
-title: "Cena 6 - Conclusion"
+title: Cena 6 - Conclusion
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Conclusão
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nimuel/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nimuel/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nimuel-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nimuel-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+Se os personagens salvarem Pangil ng Buwan, a bakunawa os acompanha de volta para Kalapang. Pangil ng Buwan se desculpa com os habitantes da cidade, explica a causa do ataque e promete ajudar na restauração da cidade. Nimuel e Lungtian recompensam os personagens como prometido, com Lungtian concedendo o amuleto Marca do Ninuno a cada um deles (veja "Marca do Ninuno" abaixo).
 
-If the characters save Pangil ng Buwan, the bakunawa accompanies them back to Kalapang. Pangil ng Buwan apologizes to the townsfolk, explains the cause of the attack, and promises to aid in restoring the town. Nimuel and Lungtian reward the characters as promised, with Lungtian bestowing the Ninuno's Mark charm upon each of them (see "Ninuno's Mark" below).
-
-If the party is unable to save Pangil ng Buwan, Nimuel and Lungtian accept their report of the corruption that destroyed the bakunawa, assigns them no blame, and pays them as promised. If Paolo's band slays the bakunawa and the characters leave them with its body, a week later the characters receive a parcel from Paolo with 150 gp and a bakunawa tooth for each character—their cut for assisting the dragon hunters or not standing in their way.
+Se o grupo não conseguir salvar Pangil ng Buwan, Nimuel e Lungtian aceitam seu relato da corrupção que destruiu a bakunawa, não lhes atribuem culpa alguma e pagam a eles como prometido. Se o bando de Paolo matar a bakunawa e os personagens deixarem o corpo com eles, uma semana depois os personagens recebem um pacote de Paolo com 150 gp e um dente de bakunawa para cada personagem — sua parte por auxiliar os caçadores de dragões ou não atrapalhar seu caminho.
 
 
-### Ninuno's Mark
+### Marca do Ninuno
 
-A ninuno, one of the spirits of the Dayawlongon archipelago, grants you its insight as a charm (a type of Charms detailed in the Dungeon Master's Guide). This charm allows you to cast either augury or speak with plants once per day. Once used three times, this charm vanishes from you.
-
-
+Um ninuno, um dos espíritos do arquipélago Dayawlongon, concede a você sua perspicácia como um amuleto (um tipo de Amuletos detalhado no Guia do Mestre). Este amuleto permite que você lance augúrio ou Falar com Plantas uma vez por dia. Uma vez usado três vezes, este amuleto desaparece de você.

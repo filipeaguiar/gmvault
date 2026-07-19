@@ -1,15 +1,15 @@
 ---
-title: "Arte: assassin"
+title: 'Arte: assassin'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: assassin'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: assassin](/images/campaigns/journeys-through-the-radiant-citadel/assassin.webp)

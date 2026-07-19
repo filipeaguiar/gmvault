@@ -1,135 +1,138 @@
 ---
-title: "Cena 8 - Zinda Gazetteer"
+title: Cena 8 - Zinda Gazetteer
 weight: 80
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 8 - Guia Geográfico de Zinda
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/assassin/"
-  - "/compendium/monsters/giant-crocodile/"
-  - "/compendium/monsters/banshee/"
-  - "/compendium/monsters/zombie/"
-  - "/compendium/monsters/sea-hag/"
-  - "/compendium/monsters/archmage/"
-  - "/compendium/monsters/diva/"
+- /compendium/monsters/assassin/
+- /compendium/monsters/giant-crocodile/
+- /compendium/monsters/banshee/
+- /compendium/monsters/zombie/
+- /compendium/monsters/sea-hag/
+- /compendium/monsters/archmage/
+- /compendium/monsters/diva/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-049-map-52-zinda-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/diva-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-049-map-52-zinda-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Zinda is a city of spiraling marble towers and turrets, of universities and guildhalls, and of specialty shops lining paved streets. Far below the balconies, the Court of Flowers and the pier ring with the merry laughter and the songs of laborers. Year round, Zinda's plazas and parlors are full of academics, merchants, and pilgrims. But for ten days in the summer, the March of Vice draws even larger crowds as the city celebrates the local wine trade—specifically, the jeli wine that has made Zinda the wealthiest city in the land. Zindanese citizens garb themselves in brightly colored costumes and feathered headdresses and indulge in feasting, song, and dance.
+Zinda é uma cidade de torres e torreões de mármore espiralados, de universidades e salões de guilda, e de lojas especializadas alinhando ruas pavimentadas. Muito abaixo dos balcões, a Corte das Flores e o píer ressoam com o riso alegre e as canções dos trabalhadores. Durante todo o ano, as praças e salões de Zinda estão repletos de acadêmicos, mercadores e peregrinos. Mas por dez dias no verão, a Marcha do Vício atrai multidões ainda maiores enquanto a cidade celebra o comércio local de vinho – especificamente, o vinho de jeli que fez de Zinda a cidade mais rica da região. Os cidadãos zindaneses vestem-se com fantasias coloridas e cocares emplumados e se entregam a banquetes, canções e dança.
 
-After its recent years of prosperity, a cloud has settled over the city. Political dissidents are rumored to disappear from their beds as the Silent Verse, the enforcers of the ruling Kings of Coin, stalk the streets. The newest member of the Kings of Coin, Madame Samira Arah, grows restless with ambition and regularly hires mercenaries and spies to investigate her rivals' secrets. The Bloodletters laborers' union opposes the leadership of the aristocracy at every turn. And beneath it all, the dire secret on which Zinda's prosperity was built waits to be exposed.
-
-
-### Features
-
-Those familiar with Zinda know the following facts:
+Após seus recentes anos de prosperidade, uma nuvem se instalou sobre a cidade. Há rumores de que dissidentes políticos desaparecem de suas camas enquanto o Verso Silencioso, os executores dos governantes Reis da Moeda, percorrem as ruas. A mais nova membra dos Reis da Moeda, Madame Samira Arah, torna-se inquieta com a ambição e regularmente contrata mercenários e espiões para investigar os segredos de suas rivais. O sindicato dos trabalhadores dos Sanguinários opõe-se à liderança da aristocracia a cada passo. E sob tudo isso, o terrível segredo sobre o qual a prosperidade de Zinda foi construída aguarda para ser exposto.
 
 
-### Noteworthy Sites
+### Características
 
-In addition to its robust agricultural holdings, Zinda is home to magical universities, conservatories, museums, and other centers of the arts.
-
-![Map 5.2: Zinda](/images/campaigns/journeys-through-the-radiant-citadel/048-map-52-zinda.webp)
+Aqueles familiarizados com Zinda conhecem os seguintes fatos:
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/049-map-52-zinda-player.webp)
+### Locais Notáveis
+
+Além de suas robustas propriedades agrícolas, Zinda abriga universidades mágicas, conservatórios, museus e outros centros de artes.
+
+![Mapa 5.2: Zinda](/images/campaigns/journeys-through-the-radiant-citadel/048-map-52-zinda.webp)
 
 
-### Court of Flowers
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/049-map-52-zinda-player.webp)
 
-The Court of Flowers is the vibrant heart of commerce and art in Zinda. The district hosts streets lined with multiple palatial homes, towers with overflowing gardens, and museums. Performers gather here throughout the day, and merchants keep their shops open day and night. Most of the city's guilds—known in the city as trades—keep their headquarters among the district's towers. Artisans are expected to register with the headquarters of the appropriate trade and support the furthering of their craft.
 
-### Covenant
+### Corte das Flores
 
-Hunched over brass cauldrons in their manor-like headquarters, members of the Covenant of Magic—an exclusive circle of traditionalist mages—preside over festivals, weddings, funerals, and similar events. Most covenant members are elderly; several have great-great-grandchildren who lead their own trades or are Kings of Coin. Their power stems less from magic and more from their far-reaching connections.
+A Corte das Flores é o vibrante coração do comércio e da arte em Zinda. O distrito abriga ruas alinhadas com múltiplas casas palacianas, torres com jardins transbordantes e museus. Artistas se reúnem aqui durante todo o dia, e os mercadores mantêm suas lojas abertas dia e noite. A maioria das guildas da cidade – conhecidas na cidade como ofícios – mantém seus quartéis-generais entre as torres do distrito. Espera-se que os artesãos se registrem no quartel-general do ofício apropriado e apoiem o avanço de seu artesanato.
+
+### Pacto
+
+Debruçados sobre caldeirões de latão em seu quartel-general semelhante a uma mansão, os membros do Pacto da Magia – um círculo exclusivo de magos tradicionalistas – presidem festivais, casamentos, funerais e eventos similares. A maioria dos membros do pacto é idosa; vários têm trinetos que lideram seus próprios ofícios ou são Reis da Moeda. Seu poder deriva menos da magia e mais de suas conexões de longo alcance.
 
 ### Elucidarium
 
-The bardic college of Zinda, the Elucidarium, is the extravagant home of the famous divas of Zinda. Draped in bright silk and exuberant florals, the building is made of sculpted glass set with sparkling gemstones. Inside, musicians, dancers, orators, and thespians hone their talents. In addition to these public skills, students can also study spy-craft and information brokering. Those who visit looking for training in the arts might find themselves embroiled in the machinations of ruthless social climbers.
+O colégio dos bardos de Zinda, o Elucidarium, é o lar extravagante das famosas divas de Zinda. Coberto de seda brilhante e florais exuberantes, o edifício é feito de vidro esculpido incrustado com pedras preciosas cintilantes. Lá dentro, músicos, dançarinos, oradores e atores aprimoram seus talentos. Além dessas habilidades públicas, os estudantes também podem estudar espionagem e intermediação de informações. Aqueles que visitam em busca de treinamento nas artes podem se ver envolvidos nas maquinações de arrivistas sociais implacáveis.
 
-### Jeli Gardens
+### Jardins de Jeli
 
-The great gardens that spread to the west of the city are the source of Zinda's wealth. Many Zindanese laborers tend the jeli flowers that grow there, living in wood-and-stone huts in the heart of the gardens. These velvety flowers were discovered several years ago and can't be successfully cultivated elsewhere. Why Zinda is the only place where jeli flowers can grow is a mystery, but this single crop now supplies the city with raw materials for wine, dye, fabric, and paper. Gardeners occasionally fall prey to wicked spirits, zombies, and green hags that lurk in the jungle beyond the city, as Zinda has no standing army to protect these outlying regions.
-
-
-### Life in Zinda
-
-Art, commerce, and magic fill the lives of Zinda's people and touch on every aspect of society.
-
-### The Bloodletters
-
-Clad in aprons stained with jeli dye, Bloodletters proselytize a life free from oppression by the elite. The group's name originates from its members' desire to drain the greed from Zinda like blood from a wound. Under the leadership of Captain Adann, the group works in open defiance of the Kings of Coin. The Bloodletters' attacks upon the Court of Flowers and sabotage of the jeli gardens make the group a frequent target of the Silent Verse.
-
-### Class Divide
-
-Zinda has a stark class divide. The city's wealthy citizens live in large homes and revere academia, a strong work ethic, and wealth. Members of less affluent families sleep together in cramped quarters and often hold multiple jobs to survive. The rich feast on goat, fish, and mutton; wear gold and silk; and drink from spotless glass flutes while boasting of their academic achievements and frivolously displaying magic. The poor eat grains and roots served on palm leaves spread upon straw floors.
-
-### Faith and Ancestors
-
-Though Zinda welcomes the practices of all citizens, the city's one common faith involves the daturas, also known as spirit shepherds. Daturas speak for and protect the spirits of the jungle. A datura might go years without meeting another member of the order, spending their life escorting caravans, performing exorcisms, and guarding sacred reaches of the forest. Others are hired to escort mourners to the sites of rare silk cotton trees, where the bereaved hang tokens for their recently departed ancestors. In some homes, particularly among the wealthy, whole rooms might be given over to altars intricately decorated to honor a family's ancestors.
-
-### March of Vice
-
-During the height of summer, the people of Zinda celebrate the cultivation of the jeli flower with a multiday carnival. Built on traditions celebrating the city's wine trade, the March of Vice is overseen by the Prince of Vice—an organizer and theatrical figure. Chosen by the Kings of Coin, the masked Prince of Vice marches in the parade every evening. The parade is followed by the Covenant of Magic, magic-using elders who wave fans and brooms, symbolically sweeping Zinda's sin into the sea. On the tenth night, the Prince of Vice steps into the sea and sheds their mask, bringing the festivities to a close.
-
-### Kings of Coin
-
-The Kings of Coin are the ruling council of Zinda, a collection of six elders from affluent families that represent specific trades. Their meetings occur weekly at the gilded collection of offices and towers known as the Vault of Justice. The following individuals currently hold positions on the council:
-**Grand Messer Amos Nir** is head of the Kings of Coin and represents the Jeli Trade. He is the wealthiest, most influential leader in Zinda.
-**Madame Kit Mata** represents the Grocers' Trade.
-**Madame Samira Arah** is the newest member of the Kings of Coin. She represents the Jewelers' Trade and oversees the Silent Verse as head of security for the Kings of Coin.
-**Messer Solenn Avim** represents the Weavers' Trade.
-**Myx Nargis Ruba** represents the Tavern Keepers' Trade.
-**Myx Massimo Ain** represents the Smiths' Trade.
-The Kings of Coin keep order using their vast wealth, their societal influence, and the Silent Verse—the rulers' police force. The Silent Verse protects the Kings of Coin, collects information, and issues shadowy threats to keep political rivals in line.
-
-### Names
-
-Zindanese of all origins receive their given name on the tenth day after their birth. The family gathers at this time, and the elders choose an appropriate ancestor's name to bestow upon the child. The following are examples of common names:
+Os grandes jardins que se espalham a oeste da cidade são a fonte da riqueza de Zinda. Muitos trabalhadores zindaneses cuidam das flores de jeli que crescem lá, vivendo em cabanas de madeira e pedra no coração dos jardins. Essas flores aveludadas foram descobertas há vários anos e não podem ser cultivadas com sucesso em outro lugar. Por que Zinda é o único lugar onde as flores de jeli podem crescer é um mistério, mas esta única colheita agora abastece a cidade com matéria-prima para vinho, tintura, tecido e papel. Os jardineiros ocasionalmente são vítimas de espíritos perversos, zumbis e bruxas verdes que espreitam na selva além da cidade, já que Zinda não tem um exército permanente para proteger essas regiões periféricas.
 
 
-### Legends of Zinda
+### Vida em Zinda
 
-In the oldest legends, spirits of the jungle and ocean worked together to create Zinda where fire once met the sea, creating the black volcanic sand above which the city stands. These beings raised stone buildings from the earth, shifting rivers and trees to accommodate them. Satisfied with their creations, the ancestral apparitions welcomed the first Zindanese. Lately, the datura who walk the jungles warn that these spirits are agitated and seek appeasement from Zinda for its avarice.
-The festival called the March of Vice shares similar supernatural origins. Tales tell of wicked spirits corrupting the people before being cast into the sea by a parade of elders. This legend is commemorated every summer through the March of Vice, with the members of the Covenant of Magic assuming the mantle of the elders.
+Arte, comércio e magia preenchem as vidas do povo de Zinda e tocam todos os aspectos da sociedade.
+
+### Os Sanguinários
+
+Vestidos com aventais manchados de tintura de jeli, os Sanguinários pregam uma vida livre da opressão da elite. O nome do grupo se origina do desejo de seus membros de drenar a ganância de Zinda como sangue de uma ferida. Sob a liderança do Capitão Adann, o grupo trabalha em aberto desafio aos Reis da Moeda. Os ataques dos Sanguinários à Corte das Flores e a sabotagem dos jardins de jeli tornam o grupo um alvo frequente do Verso Silencioso.
+
+### Divisão de Classes
+
+Zinda tem uma divisão de classes gritante. Os cidadãos ricos da cidade vivem em grandes casas e reverenciam a academia, uma forte ética de trabalho e a riqueza. Membros de famílias menos abastadas dormem juntos em quartos apertados e frequentemente têm múltiplos empregos para sobreviver. Os ricos banqueteiam-se com cabra, peixe e carneiro; vestem ouro e seda; e bebem em flautas de vidro imaculadas enquanto se gabam de suas conquistas acadêmicas e exibem magia frivolamente. Os pobres comem grãos e raízes servidos em folhas de palmeira espalhadas sobre pisos de palha.
+
+### Fé e Ancestrais
+
+Embora Zinda acolha as práticas de todos os cidadãos, a única fé comum da cidade envolve as daturas, também conhecidas como pastoras de espíritos. As daturas falam pelos espíritos da selva e os protegem. Uma datura pode passar anos sem encontrar outro membro da ordem, passando a vida escoltando caravanas, realizando exorcismos e guardando alcances sagrados da floresta. Outras são contratadas para escoltar enlutados até os locais de raras árvores de sumaúma, onde os enlutados penduram lembranças para seus ancestrais recentemente falecidos. Em alguns lares, particularmente entre os ricos, cômodos inteiros podem ser dedicados a altares intricadamente decorados para honrar os ancestrais de uma família.
+
+### Marcha do Vício
+
+Durante o auge do verão, o povo de Zinda celebra o cultivo da flor de jeli com um carnaval de vários dias. Construída sobre tradições que celebram o comércio de vinho da cidade, a Marcha do Vício é supervisionada pelo Príncipe do Vício – um organizador e figura teatral. Escolhido pelos Reis da Moeda, o Príncipe do Vício mascarado marcha no desfile todas as noites. O desfile é seguido pelo Pacto da Magia, anciãos usuários de magia que agitam leques e vassouras, simbolicamente varrendo o pecado de Zinda para o mar. Na décima noite, o Príncipe do Vício adentra o mar e remove sua máscara, encerrando as festividades.
+
+### Reis da Moeda
+
+Os Reis da Moeda são o conselho governante de Zinda, uma coleção de seis anciãos de famílias abastadas que representam ofícios específicos. Suas reuniões ocorrem semanalmente no dourado conjunto de escritórios e torres conhecido como Cofre da Justiça. Os seguintes indivíduos atualmente ocupam posições no conselho:
+**Grão-Messer Amos Nir** é o chefe dos Reis da Moeda e representa o Ofício do Jeli. Ele é o líder mais rico e influente de Zinda.
+**Madame Kit Mata** representa o Ofício dos Merceeiros.
+**Madame Samira Arah** é a mais nova membra dos Reis da Moeda. Ela representa o Ofício dos Joalheiros e supervisiona o Verso Silencioso como chefe de segurança dos Reis da Moeda.
+**Messer Solenn Avim** representa o Ofício dos Tecelões.
+**Myx Nargis Ruba** representa o Ofício dos Taverneiros.
+**Myx Massimo Ain** representa o Ofício dos Ferreiros.
+Os Reis da Moeda mantêm a ordem usando sua vasta riqueza, sua influência social e o Verso Silencioso – a força policial dos governantes. O Verso Silencioso protege os Reis da Moeda, coleta informações e emite ameaças sombrias para manter os rivais políticos na linha.
+
+### Nomes
+
+Zindaneses de todas as origens recebem seu nome próprio no décimo dia após o nascimento. A família se reúne neste momento, e os anciãos escolhem um nome de ancestral apropriado para conceder à criança. Os seguintes são exemplos de nomes comuns:
 
 
-### Adventures in Zinda
+### Lendas de Zinda
 
-Consider the plots on the Zinda Adventures table when planning adventures in the city.
+Nas lendas mais antigas, espíritos da selva e do oceano trabalharam juntos para criar Zinda onde o fogo uma vez encontrou o mar, criando a areia vulcânica negra sobre a qual a cidade se ergue. Esses seres ergueram edifícios de pedra da terra, deslocando rios e árvores para acomodá-los. Satisfeitas com suas criações, as aparições ancestrais deram as boas-vindas aos primeiros zindaneses. Ultimamente, as daturas que caminham pelas selvas alertam que esses espíritos estão agitados e buscam apaziguamento de Zinda por sua avareza.
+O festival chamado Marcha do Vício compartilha origens sobrenaturais similares. Contos falam de espíritos perversos corrompendo o povo antes de serem lançados ao mar por um desfile de anciãos. Esta lenda é comemorada todo verão através da Marcha do Vício, com os membros do Pacto da Magia assumindo o manto dos anciãos.
 
-**Tabela: Zinda Adventures**
+
+### Aventuras em Zinda
+
+Considere as tramas na tabela Aventuras em Zinda ao planejar aventuras na cidade.
+
+**Tabela: Aventuras em Zinda**
 
 |  |  |
 | --- | --- |
-| 1 | Madame Nasana Lar hosted an exquisite banquet for her rival Elucidarium divas, then the guests transformed into zombies. Diva Lar needs help clearing her home and her name—supposedly having had nothing to do with her guests' fates. |
-| 2 | Myx Janisa Davi, an archmage of a school called the Arcane Coterie, has chosen their apprentice: a youngster in the city's laborer district. The apprentice has disappeared, and Janisa seeks assistance locating them. |
-| 3 | The notorious giant caiman called Tikoloshe (giant crocodile) has wrecked many ships bound for Zinda. The Kings of Coin hire the characters to slay the deadly—and perhaps possessed—beast. |
-| 4 | The lover of one of the Kings of Coin is revealed as a member of the Bloodletters. The paramour now needs help escaping the city ahead of Silent Verse assassins. |
-| 5 | Locals are disappearing while swimming in forested pools near Zinda. Evidence suggests they have been kidnapped by a cabal of sea hags. |
-| 6 | A massive silk cotton tree with a fiendish aura attracts a host of banshees. A datura seeks help in appeasing these mournful spirits. |
+| 1 | Madame Nasana Lar ofereceu um banquete requintado para suas divas rivais do Elucidarium, então as convidadas se transformaram em zumbis. A Diva Lar precisa de ajuda para limpar sua casa e seu nome – supostamente não tendo nada a ver com o destino de suas convidadas. |
+| 2 | Myx Janisa Davi, uma arquimaga de uma escola chamada Coterie Arcana, escolheu seu aprendiz: um jovem no distrito dos trabalhadores da cidade. O aprendiz desapareceu, e Janisa busca assistência para localizá-lo. |
+| 3 | O notório jacaré-açu chamado Tikoloshe (crocodilo gigante) destruiu muitos navios com destino a Zinda. Os Reis da Moeda contratam os personagens para matar a besta mortal – e talvez possuída. |
+| 4 | O amante de um dos Reis da Moeda é revelado como um membro dos Sanguinários. O amante agora precisa de ajuda para escapar da cidade à frente dos assassinos do Verso Silencioso. |
+| 5 | Moradores estão desaparecendo enquanto nadam em piscinas florestais perto de Zinda. Evidências sugerem que eles foram sequestrados por um coven de bruxas do mar. |
+| 6 | Uma enorme árvore de sumaúma com uma aura corruptora atrai um bando de banshees. Uma datura busca ajuda para apaziguar esses espíritos lamentadores. |
 
 
-### Characters from Zinda
+### Personagens de Zinda
 
-If players want to create characters native to Zinda, consider asking them the following questions during character creation:
-**Are you affiliated with any of the organizations in Zinda?** Do you belong to the Bloodletters or the Silent Verse? Should laborers be permitted the same rights as plutocratic rulers?
-**How do you celebrate the March of Vice**? Do you revel with friends and local laborers? Do you attend galas among the wealthy? Do you perform in sequins and feathers as a Elucidarium diva?
-**What do you know of the forest's spirits?** Have you trained as a mystical datura to hear spirits' voices and learn their ways?
-
-
+Se os jogadores quiserem criar personagens nativos de Zinda, considere fazer as seguintes perguntas durante a criação de personagem:
+**Você é afiliado a alguma das organizações em Zinda?** Você pertence aos Sanguinários ou ao Verso Silencioso? Os trabalhadores deveriam ter os mesmos direitos que os governantes plutocráticos?
+**Como você celebra a Marcha do Vício?** Você se diverte com amigos e trabalhadores locais? Você comparece a galas entre os ricos? Você se apresenta em lantejoulas e penas como uma diva do Elucidarium?
+**O que você sabe sobre os espíritos da floresta?** Você treinou como uma datura mística para ouvir as vozes dos espíritos e aprender seus caminhos?

@@ -1,15 +1,22 @@
 ---
-title: "Withdraw (Cost: 1d6)"
+title: 'Withdraw (Cost: 1d6)'
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Withdraw (Cost: 1d6)."
+summary: 'Característica de classe: Retirada (Custo: 1d6)'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: 'Retirada (Custo: 1d6)'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Immediately after the attack, you move up to half your XPHB without provoking Opportunity Attacks.
+Imediatamente após o ataque, você se move até metade do seu XPHB sem provocar Ataques de Oportunidade.

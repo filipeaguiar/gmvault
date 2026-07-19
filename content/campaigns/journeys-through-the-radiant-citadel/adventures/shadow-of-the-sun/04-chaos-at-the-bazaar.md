@@ -1,131 +1,135 @@
 ---
-title: "Cena 4 - Chaos at the Bazaar"
+title: Cena 4 - Chaos at the Bazaar
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 4 - Caos no Bazar
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/navid/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/chaos-at-the-bazaar/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/chaos-at-the-bazaar/
 compendium_refs:
-  - "/compendium/monsters/djinni/"
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/ashen-heir-mage/"
+- /compendium/monsters/djinni/
+- /compendium/monsters/noble/
+- /compendium/monsters/ashen-heir-mage/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ashen-heir-mage-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The Ruz Bazaar is a sprawling market as old as the city. The Ashen Heirs have been searching the bazaar recently, seeking a magic samovar. None of the merchants the Ashen Heirs shook down had the samovar, and the search was disrupted by the Brightguard just as the Ashen Heirs were interrogating a well-known rug merchant, Emad Farrokh.
+O Ruz Bazaar é um mercado labiríntico tão antigo quanto a cidade. Os Herdeiros das Cinzas têm vasculhado o bazaar recentemente, em busca de um samovar mágico. Nenhum dos mercadores que os Herdeiros das Cinzas extorquiram possuía o samovar, e a busca foi interrompida pela Brightguard justo quando os Herdeiros das Cinzas interrogavam um conhecido mercador de tapetes, Emad Farrokh.
 
 
 ### Ruz Bazaar
 
-The main entrance to Ruz Bazaar is near Three Sun Square. When the characters enter the bazaar, read or paraphrase the following text:
-> The covered stone halls of the Ruz Bazaar echo with the voices of merchants proclaiming the wonders of heady spices, fresh produce, and sun-themed Shabe Taabaan souvenirs.
-Anything made or grown in Akharin Sangar eventually finds its way to the Ruz. Characters can purchase crafts, food, festive keepsakes, and any Adventuring Gear in the Player's Handbook at normal cost.
-If the characters accepted Artavazda's mission, they can spend 10 minutes conversing with merchants to confirm the angel's story: four Ashen Heirs using magic threatened and attacked multiple merchants. If a character succeeds on a CD 14 Charisma (Intimidation or Persuasion) check or offers a merchant at least 1 gp, a merchant adds that the Ashen Heirs were looking for a magic vessel of some sort, and the last shop owner they attacked was Emad the rug merchant.
-The characters can also learn about Emad by spending an hour investigating the bazaar. After doing so, have each character investigating the market make a Wisdom (Perception) check. The character who has the highest check notices a halfling merchant watching them from the doorway of one of the bazaar's shops. This is Emad, and he slips inside his shop as soon as he's noticed.
+A entrada principal do Ruz Bazaar fica próxima à Praça dos Três Sóis. Quando os personagens entrarem no bazaar, leia ou parafraseie o seguinte texto:
+> Os salões cobertos de pedra do Ruz Bazaar ecoam com as vozes de mercadores proclamando as maravilhas de especiarias entorpecentes, produtos frescos e souvenirs com tema solar do Shabe Taabaan.
+Qualquer coisa feita ou cultivada em Akharin Sangar eventualmente chega ao Ruz. Os personagens podem comprar artesanato, comida, lembranças festivas e qualquer Equipamento de Aventura do Livro do Jogador ao custo normal.
+Se os personagens aceitaram a missão de Artavazda, eles podem passar 10 minutos conversando com os mercadores para confirmar a história do anjo: quatro Herdeiros das Cinzas usando magia ameaçaram e atacaram vários mercadores. Se um personagem passar em um teste de Carisma (Intimidação ou Persuasão) CD 14 ou oferecer a um mercador ao menos 1 po, um mercador acrescenta que os Herdeiros das Cinzas procuravam um tipo de vaso mágico, e o último dono de loja que eles atacaram foi Emad, o mercador de tapetes.
+Os personagens também podem descobrir sobre Emad passando uma hora investigando o bazaar. Depois de fazê-lo, peça a cada personagem investigando o mercado que faça um teste de Sabedoria (Percepção). O personagem que obtiver o maior resultado percebe um mercador halfling os observando da porta de uma das lojas do bazaar. Este é Emad, e ele se esgueira para dentro de sua loja assim que é notado.
 
-### Emad's Rug Shop
+### Loja de Tapetes do Emad
 
-Emad is a middle-aged merchant (neutral, halfling noble) and the proprietor of a sizable black-market business. If the characters enter his shop, read the following text:
-> The cramped, musty shop is filled with ornate rugs of many styles and designs. A brown-skinned halfling smiles and hops down from atop a stack of folded carpets beside the shop's wide-open doors. "Welcome! Does anything catch your eye?"
-From the front of his store, Emad sells all manner of rugs. At the shop's rear, several hanging rugs hide a secret room containing Emad's stock of foreign goods. Most of these wares are mundane, but all have been deemed illegal by the Brightguard. Emad has survived decades of inspections thanks to his calm, friendly demeanor, but the Ashen Heirs' shakedown has rattled him.
+Emad é um mercador de meia-idade (neutro, halfling nobre) e proprietário de um negócio substancial de mercado negro. Se os personagens entrarem em sua loja, leia o seguinte texto:
+> A loja apertada e empoeirada está abarrotada de tapetes ornamentados em muitos estilos e designs. Um halfling de pele morena sorri e salta de cima de uma pilha de tapetes dobrados ao lado das portas escancaradas da loja. "Bem-vindos! Alguma coisa lhes agrada?"
+Na parte da frente de sua loja, Emad vende todos os tipos de tapetes. Nos fundos da loja, vários tapetes pendurados ocultam uma sala secreta contendo o estoque de produtos estrangeiros de Emad. A maioria dessas mercadorias é mundana, mas todas foram consideradas ilegais pela Brightguard. Emad sobreviveu a décadas de inspeções graças ao seu comportamento calmo e amigável, mas a extorsão dos Herdeiros das Cinzas o abalou.
 
-### Talking to Emad
+### Conversando com Emad
 
-If questioned, the merchant plays down the day's events but confirms the Ashen Heirs sought a magic vessel. He denies knowing anything about it, but a character who succeeds on a CD 16 Wisdom (Insight) check suspects he's lying.
-Emad misses the time before Atash's rule when the bazaar was packed with shoppers from faraway lands. That was before Atash's stringent edicts limited visitors to the city. A character who succeeds on CD 16 Charisma (Persuasion) check can get Emad to reveal his illegal dealings. Characters dressed in a way that marks them as being from lands far from Akharin Sangar have advantage on this check.
-Once Emad feels he can trust the characters—or is coerced—he reveals the following information:
-* Emad smuggles luxuries and other contraband Atash and the Brightguard have outlawed.
-* His smuggling business is dwindling, as his contacts fear provoking Atash or believe there's no money to be made in the isolated city.
-* Emad recently received a strange samovar from a treasure hunter in the Burning Dunes. He knows the jar is magical, but he hasn't been able to sell it or even have it identified due to the increased presence of the Brightguard in the bazaar.
-* With citizens being detained despite scant evidence of wrongdoing, Emad's usual clients and contacts are wary of being seen at his shop until things settle down.
-Additionally, Emad will show the characters his secret room if he thinks they're interested in buying contraband.
+Se questionado, o mercador minimiza os eventos do dia, mas confirma que os Herdeiros das Cinzas procuravam um vaso mágico. Ele nega saber qualquer coisa a respeito, mas um personagem que passar em um teste de Sabedoria (Intuição) CD 16 suspeita que ele está mentindo.
+Emad sente falta do tempo anterior ao governo de Atash, quando o bazaar ficava lotado de compradores de terras distantes. Isso foi antes dos éditos rigorosos de Atash limitarem os visitantes à cidade. Um personagem que passar em um teste de Carisma (Persuasão) CD 16 pode fazer Emad revelar seus negócios ilegais. Personagens vestidos de forma que os marque como sendo de terras distantes de Akharin Sangar têm Vantagem neste teste.
+Uma vez que Emad sente que pode confiar nos personagens—ou é coagido—ele revela as seguintes informações:
+* Emad contrabandeia luxos e outros contrabandos que Atash e a Brightguard proibiram.
+* Seu negócio de contrabando está diminuindo, pois seus contatos temem provocar Atash ou acreditam que não há dinheiro a ser feito na cidade isolada.
+* Emad recentemente recebeu um estranho samovar de um caçador de tesouros nas Dunas Ardentes. Ele sabe que o jarro é mágico, mas não conseguiu vendê-lo ou sequer identificá-lo devido à presença aumentada da Brightguard no bazaar.
+* Com cidadãos sendo detidos apesar de evidências escassas de irregularidades, os clientes e contatos habituais de Emad temem ser vistos em sua loja até as coisas se acalmarem.
+Além disso, Emad mostrará aos personagens sua sala secreta se achar que eles estão interessados em comprar contrabando.
 
-### Investigating the Shop
+### Investigando a Loja
 
-A character who inspects the goods piled in Emad's shop and succeeds on a CD 18 Intelligence (Investigation) check notes that the thick rugs hanging at the back of the shop have been moved more often than the goods around them. If these display rugs are moved, the door to the hidden chamber is revealed. Proceed with the "Backroom Thieves" encounter.
+Um personagem que inspecionar as mercadorias empilhadas na loja de Emad e passar em um teste de Inteligência (Investigação) CD 18 nota que os tapetes grossos pendurados nos fundos da loja foram movidos com mais frequência do que as mercadorias ao redor. Se esses tapetes de exposição forem movidos, a porta para a câmara oculta é revelada. Prossiga com o encontro "Ladrões dos Fundos".
 
-### Backroom Thieves
+### Ladrões dos Fundos
 
-Whether Emad shows the characters his shop's secret room willingly or they find it themselves, there's a surprise waiting inside. Even if the characters don't seek out the room, the sound of something shattering inside reveals the room before they leave.
-Two of the Ashen Heir Mage who shook down local merchants earlier in the day have returned. When the mages threatened Emad before, one of them found the shop's secret room, but the Brightguard's arrival forced them to flee before they could investigate.
-These two Ashen Heirs have squeezed through a window in the secret room that's disguised from the outside. They've riffled through the space and found not just the samovar they've been searching for but also a carpet of flying Emad has been trying to sell for months. The rug merchant foolishly scribed the rug's command word, "baalaa," on the carpet's tag.
-Read the following text when the characters enter the secret room:
-> This chamber's shelves sag under crates and curios. On the far wall, a narrow window opens into a cluttered alley beyond. Just outside, two figures wearing menacing scarlet masks kneel on a flying carpet, one holding an ornate samovar. They laugh as the carpet shoots down the alley.
+Quer Emad mostre aos personagens a sala secreta de sua loja voluntariamente ou eles a encontrem por conta própria, há uma surpresa esperando lá dentro. Mesmo que os personagens não procurem a sala, o som de algo se estilhaçando lá dentro revela a sala antes que eles partam.
+Dois dos Magos Herdeiros das Cinzas que extorquiram os mercadores locais mais cedo no dia retornaram. Quando os magos ameaçaram Emad antes, um deles encontrou a sala secreta da loja, mas a chegada da Brightguard os forçou a fugir antes que pudessem investigar.
+Esses dois Herdeiros das Cinzas se espremeram por uma janela na sala secreta que está disfarçada do lado de fora. Eles vasculharam o espaço e encontraram não apenas o samovar que estavam procurando, mas também um tapete voador que Emad tentava vender há meses. O mercador de tapetes tolamente anotou a palavra de comando do tapete, "baalaa", na etiqueta do tapete.
+Leia o seguinte texto quando os personagens entrarem na sala secreta:
+> As prateleiras desta câmara estão abarrotadas de engradados e curiosidades. Na parede oposta, uma janela estreita se abre para um beco atulhado lá fora. Do lado de fora, duas figuras usando máscaras escarlates ameaçadoras se ajoelham em um tapete voador, uma segurando um samovar ornamentado. Eles riem enquanto o tapete dispara pelo beco.
 
 
-### Bazaar Chase
+### Perseguição no Bazaar
 
-As the two masked thieves soar away on the carpet, the characters can give chase.
-Give the characters a moment to spring into action and swiftly come up with their own ways to fly after the thieves. If they don't have a method of flying, Emad produces another carpet of flying and loans it to the characters. He is vocal about wanting both carpets and the samovar back. Each carpet of flying from Emad's shop measures 4 feet by 6 feet, has a capacity of 400 pounds, and has a flying speed of 60 feet. It can accommodate two Medium or Small creatures.
-After rolling initiative, each participant in the chase can take one action and move on its turn. The Ashen Heirs begin 120 feet ahead of the pursuers and 15 feet off the ground. Track the distance between the Ashen Heirs and the pursuers, and designate the pursuer closest to the thieves as the lead. The lead pursuer might change from round to round.
-As the Ashen Heirs seek to escape, one controls the carpet while the other casts spells at any pursuers in range.
+Enquanto os dois ladrões mascarados voam para longe no tapete, os personagens podem iniciar uma perseguição.
+Dê aos personagens um momento para entrar em ação e rapidamente inventar suas próprias maneiras de voar atrás dos ladrões. Se eles não tiverem um método de voar, Emad produz outro tapete voador e o empresta aos personagens. Ele é veemente sobre querer ambos os tapetes e o samovar de volta. Cada tapete voador da loja de Emad mede 1,2 m por 1,8 m, tem uma capacidade de 200 kg e um deslocamento de voo de 18 m. Ele pode acomodar duas criaturas Médias ou Pequenas.
+Após rolarem Iniciativa, cada participante da perseguição pode realizar uma ação e se mover em seu turno. Os Herdeiros das Cinzas começam 36 m à frente dos perseguidores e a 4,5 m do chão. Acompanhe a distância entre os Herdeiros das Cinzas e os perseguidores, e designe o perseguidor mais próximo dos ladrões como o líder. O líder da perseguição pode mudar de rodada para rodada.
+Enquanto os Herdeiros das Cinzas buscam escapar, um controla o tapete enquanto o outro lança magias em quaisquer perseguidores dentro do alcance.
 
-### Dashing
+### Disparada
 
-During the chase, a participant can freely use the Dash action a number of times equal to 3 + its Constitution modifier. Each additional Dash action it takes during the chase requires the creature to succeed on a CD 10 Constitution check at the end of its turn or gain 1 level of exhaustion. Unless it can move in some other manner, like riding a carpet of flying, a creature drops out of the chase if its exhaustion reaches level 5, since its speed becomes 0. A creature can remove the levels of exhaustion it gained during the chase by finishing a short or long rest. The Dash action cannot make a carpet of flying move faster.
+Durante a perseguição, um participante pode usar livremente a ação Disparada um número de vezes igual a 3 + seu modificador de Constituição. Cada ação Disparada adicional que ele realizar durante a perseguição exige que a criatura passe em um teste de Constituição CD 10 ao final de seu turno ou ganhe 1 nível de exaustão. A menos que possa se mover de alguma outra maneira, como montando um tapete voador, uma criatura abandona a perseguição se sua exaustão atingir o nível 5, já que seu deslocamento se torna 0. Uma criatura pode remover os níveis de exaustão que ganhou durante a perseguição ao terminar um Descanso Curto ou Longo. A ação Disparada não pode fazer um tapete voador se mover mais rápido.
 
-### Spells and Attacks
+### Magias e Ataques
 
-A chase participant can make attacks and cast spells against other creatures within range. Apply the normal rules for cover, terrain, and so on to the attacks and spells. Chase participants can't normally make opportunity attacks against each other, since they are all assumed to be moving in the same direction at the same time.
+Um participante da perseguição pode fazer ataques e lançar magias contra outras criaturas dentro do alcance. Aplique as regras normais de cobertura, terreno e assim por diante aos ataques e magias. Os participantes da perseguição normalmente não podem fazer Ataques de Oportunidade uns contra os outros, já que se assume que todos estão se movendo na mesma direção ao mesmo tempo.
 
-### Chase Complications
+### Complicações da Perseguição
 
-Complications occur randomly during the chase for both the Ashen Heirs and the characters pursing them. Each participant in the chase rolls on the Bazaar Chase Complications table at the end of its turn. If a complication occurs, it affects the next chase participant in the initiative order, not the participant who rolled the die. The participant who rolled the die or the participant affected by the complication can spend inspiration to negate the complication. Unless otherwise noted, the events on the Bazaar Complications table affect a single creature; this should be the one controlling a carpet of flying if multiple creatures are on such a magic item.
+Complicações ocorrem aleatoriamente durante a perseguição, tanto para os Herdeiros das Cinzas quanto para os personagens que os perseguem. Cada participante da perseguição rola na tabela Complicações da Perseguição no Bazaar ao final de seu turno. Se uma complicação ocorrer, ela afeta o próximo participante da perseguição na ordem de Iniciativa, não o participante que rolou o dado. O participante que rolou o dado ou o participante afetado pela complicação pode gastar Inspiração para anular a complicação. A menos que indicado de outra forma, os eventos na tabela Complicações do Bazaar afetam uma única criatura; esta deve ser a que está controlando um tapete voador, se houver múltiplas criaturas em tal item mágico.
 
-**Tabela: Bazaar Chase Complications**
+**Tabela: Complicações da Perseguição no Bazaar**
 
-|  |  |
+| d10 | Complicação |
 | --- | --- |
-| 1 | A taught line of pennants stretches across your path. You must succeed on a CD 10 Dexterity saving throw, or you fall [[2d4×5]] feet, taking [[1d6]] bludgeoning damage per 10 feet fallen and landing prone. If you are using a carpet of flying, any character on the same conveyance must also make this saving throw. |
-| 2 | Choose to fly around or through a gap between bazaar stalls. If you fly around, the area counts as 10 feet of Difficult Terrain. If you fly through the gap, you must succeed on a CD 16 Dexterity saving throw, or you break through the stall and take [[4d6]] bludgeoning damage. If you are using a carpet of flying, any other character on the same conveyance must also make this saving throw. |
-| 3 | An overturned crate releases chickens and a cloud of feathers into the air. Make a CD 16 Wisdom (Survival) check to try to stay on course through the distractions. On a failed check, the obstacle counts as 10 feet of Difficult Terrain. |
-| 4 | You pass through an arc of knives thrown by performing food vendors (3 to hit, [[4d4+1]] piercing damage on a hit). |
-| 5 | You fly through hanging textiles. Make a CD 14 Dexterity (Acrobatics) check to navigate the fabric. On a failed check, the path counts as 10 feet of Difficult Terrain. |
-| 6 | Spices from an overturned stand fill the air. You must succeed on a CD 16 Constitution saving throw, or you are blinded until the end of your turn, roll on this table again, and immediately experience that complication. You can avoid rolling on the table again if you don't move this turn. |
-| 7–10 | No complication |
+| 1 | Uma linha esticada de flâmulas se estende pelo seu caminho. Você deve passar em um teste de resistência de Destreza CD 10, ou você cai [[2d4×5]] pés, sofrendo [[1d6]] de dano de concussão por cada 3 m caídos e caindo Caído. Se você estiver usando um tapete voador, qualquer personagem no mesmo veículo também deve fazer este teste de resistência. |
+| 2 | Escolha voar ao redor ou através de um vão entre as barracas do bazaar. Se você voar ao redor, a área conta como 3 m de Terreno Difícil. Se você voar através do vão, deve passar em um teste de resistência de Destreza CD 16, ou você arrebenta através da barraca e sofre [[4d6]] de dano de concussão. Se você estiver usando um tapete voador, qualquer outro personagem no mesmo veículo também deve fazer este teste de resistência. |
+| 3 | Um engradado tombado solta galinhas e uma nuvem de penas no ar. Faça um teste de Sabedoria (Sobrevivência) CD 16 para tentar manter o curso através das distrações. Em um teste falho, o obstáculo conta como 3 m de Terreno Difícil. |
+| 4 | Você passa através de um arco de facas arremessadas por vendedores de comida fazendo performances (+3 para atingir, [[4d4+1]] de dano perfurante em um acerto). |
+| 5 | Você voa através de tecidos pendurados. Faça um teste de Destreza (Acrobacia) CD 14 para navegar pelo tecido. Em um teste falho, o caminho conta como 3 m de Terreno Difícil. |
+| 6 | Especiarias de uma barraca derrubada enchem o ar. Você deve passar em um teste de resistência de Constituição CD 16, ou você fica Cego até o final do seu turno, rola nesta tabela novamente e imediatamente experimenta essa complicação. Você pode evitar rolar na tabela novamente se não se mover neste turno. |
+| 7–10 | Sem complicação |
 
-### Ending the Chase
+### Terminando a Perseguição
 
-The chase ends when either side gives up the chase, when the Ashen Heirs escape, or when the pursuers are close enough to catch the thieves. If neither side gives up the chase, one Ashen Heir mage makes a Dexterity (Stealth) check at the end of each round in which the Ashen Heirs get out of the lead pursuer's sight, after every participant in the chase has taken its turn. The check's result is compared to the passive Wisdom (Perception) scores of the pursuers. If the result of the mage's check is greater than the highest passive Wisdom (Perception) score, the Ashen Heirs escape. If not, the chase continues for another round.
+A perseguição termina quando um dos lados desiste da perseguição, quando os Herdeiros das Cinzas escapam ou quando os perseguidores estão próximos o suficiente para capturar os ladrões. Se nenhum dos lados desistir da perseguição, um mago Herdeiro das Cinzas faz um teste de Destreza (Furtividade) ao final de cada rodada em que os Herdeiros das Cinzas saírem do campo de visão do líder da perseguição, depois que todos os participantes da perseguição tiverem realizado seus turnos. O resultado do teste é comparado às Percepções Passivas (Sabedoria) dos perseguidores. Se o resultado do teste do mago for maior do que a maior Percepção Passiva (Sabedoria), os Herdeiros das Cinzas escapam. Caso contrário, a perseguição continua por mais uma rodada.
 
 ![Imagem](/images/campaigns/journeys-through-the-radiant-citadel/102-11-002ashen-carpet.webp)
 
 
-### Questioning the Ashen Heirs
+### Interrogando os Herdeiros das Cinzas
 
-If the characters catch the Ashen Heirs, the mages tell the characters everything they know in exchange for being let go before the Brightguard arrives. They share the following facts:
-* The Ashen Heirs were ordered to find the samovar and return it to their cell's hideout.
-* Their hideout is an abandoned temple in the Old City.
-* Their cell leader is a wise sage named Navid.
-If a character succeeds on a CD 15 Charisma (Intimidation) check, the thieves also hand over their masks and share the passphrase required to access their hideout: "Let the embers light the way."
+Se os personagens capturarem os Herdeiros das Cinzas, os magos contam aos personagens tudo que sabem em troca de serem libertados antes que a Brightguard chegue. Eles compartilham os seguintes fatos:
+* Os Herdeiros das Cinzas receberam ordens para encontrar o samovar e devolvê-lo ao esconderijo de sua célula.
+* Seu esconderijo é um templo abandonado na Cidade Velha.
+* Seu líder de célula é um sábio chamado Navid.
+Se um personagem passar em um teste de Carisma (Intimidação) CD 15, os ladrões também entregam suas máscaras e compartilham a senha necessária para acessar seu esconderijo: "Que as brasas iluminem o caminho."
 
-### The Stolen Samovar
+### O Samovar Roubado
 
-The stolen samovar is an iron flask containing a djinni. If opened, the samovar loses its magic (unlike a typical iron flask) and releases a friendly djinni named Baadi. Baadi is a bombastic fellow who offers to grant the characters a wish if they help him find his cousin—another genie who lives in Akharin Sangar—though Baadi doesn't know where he is or what name he's using. A character who succeeds on a CD 18 Wisdom (Insight) check notes that Baadi is bluffing and can't grant wishes. Baadi doesn't know that his cousin is the Ashen Heir leader, the efreeti Navid.
+O samovar roubado é um frasco de ferro contendo um djinni. Se aberto, o samovar perde sua magia (ao contrário de um frasco de ferro típico) e liberta um djinni amigável chamado Baadi. Baadi é um sujeito bombástico que se oferece para conceder um desejo aos personagens se eles o ajudarem a encontrar seu primo—outro gênio que vive em Akharin Sangar—embora Baadi não saiba onde ele está ou que nome está usando. Um personagem que passar em um teste de Sabedoria (Intuição) CD 18 nota que Baadi está blefando e não pode conceder desejos. Baadi não sabe que seu primo é o líder dos Herdeiros das Cinzas, o efreeti Navid.
 
-### Returning to Emad
+### Retornando a Emad
 
-If the characters capture the Ashen Heirs, Emad gives them a carpet of flying as a reward—particularly if the characters don't reveal his illegal operations. If the mages escape, Emad promises to give the characters a carpet of flying if they retrieve and return the stolen samovar.
-If the characters return the samovar without opening it, the halfling opens it while checking for damage and releases Baadi (see the previous section).
+Se os personagens capturarem os Herdeiros das Cinzas, Emad lhes dá um tapete voador como recompensa—particularmente se os personagens não revelarem suas operações ilegais. Se os magos escaparem, Emad promete dar aos personagens um tapete voador se eles recuperarem e devolverem o samovar roubado.
+Se os personagens devolverem o samovar sem abri-lo, o halfling o abre enquanto verifica por danos e liberta Baadi (veja a seção anterior).
 
-### To Navid's Hideout
+### Para o Esconderijo de Navid
 
-The characters' next move is likely finding the Ashen Heirs' hideout so they can complete Artavazda's mission. If the characters lost the Ashen Heir thieves or otherwise aren't sure where to go next, they can spend 15 minutes asking locals if they saw a flying carpet and make a CD 12 Charisma (Persuasion) check. On a success, they get vague directions that bring them to an abandoned temple (see the "**Área Ashen Heir Hideout**" section).
-
-
+O próximo passo dos personagens é provavelmente encontrar o esconderijo dos Herdeiros das Cinzas para que possam completar a missão de Artavazda. Se os personagens perderem os ladrões Herdeiros das Cinzas ou não tiverem certeza de para onde ir em seguida, eles podem passar 15 minutos perguntando aos locais se viram um tapete voador e fazer um teste de Carisma (Persuasão) CD 12. Em caso de sucesso, eles recebem direções vagas que os levam a um templo abandonado (veja a seção "**Área Ashen Heir Hideout**").

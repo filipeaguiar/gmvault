@@ -1,157 +1,161 @@
 ---
-title: "Cena 6 - Groups of the Citadel"
+title: Cena 6 - Groups of the Citadel
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Grupos da Cidadela
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/sholeh/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/sholeh/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/groups-of-the-citadel/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/groups-of-the-citadel/
 compendium_refs:
-  - "/compendium/monsters/ancient-brass-dragon/"
-  - "/compendium/monsters/assassin/"
+- /compendium/monsters/ancient-brass-dragon/
+- /compendium/monsters/assassin/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/sholeh-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/sholeh-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Several groups hold influence within the Radiant Citadel, guiding and protecting the city's peoples.
+Vários grupos exercem influência sobre a Cidadela Radiante, guiando e protegendo os povos da cidade.
 
 
-![In the Preserve of the Ancestors, a traveler seeks the wisdom of the Amethyst Tiger, Dawn Incarnate of Yeonido](/images/campaigns/journeys-through-the-radiant-citadel/005-01-004amethyst-tiger.webp)
+![Na Reserva dos Ancestrais, um viajante busca a sabedoria do Tigre Ametista, Encarnação da Alvorada de Yeonido](/images/campaigns/journeys-through-the-radiant-citadel/005-01-004amethyst-tiger.webp)
 
 
 
-### Incarnates
+### As Encarnações
 
-The keepers of vast wisdom from distant lands, the Incarnates are collections of spirits bound within gemstones. Each of an Incarnate's component gemstones holds a spirit from the same land on the Material Plane. These might be nature spirits from a particular place or the spirits of individuals who once dwelled there. Upon forming, an Incarnate manifests a unique personality and identity, a gestalt of its constituents and their shared background. The greater the number of spirits that make up an Incarnate, the broader and deeper both its personality and its knowledge are.
-Most Incarnates are small, no more than a handful of gems in the shape of a plant or animal. The least of them originate from spirits lost on the Ethereal Plane and are tiny collections of wayward spirits of similar origins with nowhere else to go. The largest and most influential are those of the fifteen founding civilizations collectively known as the Dawn Incarnates. Spanning more than a dozen feet in height, these Incarnates are composed of thousands of smaller gems of the same type. Each holds court in a portion of the Preserve, such as the Amethyst Tiger's knoll or the Obsidian Eagle's aerie.
-The Dawn Incarnates have existed since the creation of the Radiant Citadel. While the Citadel's creators left behind no texts, it's believed that their collective wisdom is held by the Dawn Incarnates.
-The Dawn Incarnates know everything that transpires in the Preserve of the Ancestors, which is why they require the Speakers for the Ancestors to meet there. While they do not interfere in the day-to-day administration of the city, they hold the Speakers responsible to the duties of their office. While a Dawn Incarnate has never removed a Speaker for the Ancestors (see "**Área Speakers for the Ancestors**" below), it is believed they could do so if displeased.
+Guardiãs de vasta sabedoria de terras distantes, as Encarnações são conjuntos de espíritos vinculados a pedras preciosas. Cada uma das gemas componentes de uma Encarnação contém um espírito da mesma terra no Plano Material. Estes podem ser espíritos da natureza de um local específico ou espíritos de indivíduos que ali habitaram. Ao se formar, uma Encarnação manifesta uma personalidade e identidade únicas, uma gestalt de seus constituintes e de seu contexto comum. Quanto maior o número de espíritos que compõem uma Encarnação, mais amplos e profundos são tanto sua personalidade quanto seu conhecimento.
+A maioria das Encarnações são pequenas, não mais do que um punhado de gemas na forma de uma planta ou animal. As menores delas se originam de espíritos perdidos no Plano Etéreo e são pequenas coleções de espíritos desgarrados de origens similares sem outro lugar para ir. As maiores e mais influentes são aquelas das quinze civilizações fundadoras, conhecidas coletivamente como as Encarnações da Alvorada. Com mais de três metros de altura, essas Encarnações são compostas por milhares de gemas menores do mesmo tipo. Cada uma mantém sua corte em uma porção da Reserva, como o outeiro do Tigre Ametista ou o ninho da Águia Obsidiana.
+As Encarnações da Alvorada existem desde a criação da Cidadela Radiante. Embora os criadores da Cidadela não tenham deixado textos, acredita-se que sua sabedoria coletiva é mantida pelas Encarnações da Alvorada.
+As Encarnações da Alvorada sabem tudo o que acontece na Reserva dos Ancestrais, razão pela qual exigem que os Porta-vozes dos Ancestrais se reúnam lá. Embora não interfiram na administração cotidiana da cidade, elas responsabilizam os Porta-vozes pelos deveres de seu cargo. Embora uma Encarnação da Alvorada nunca tenha removido um Porta-voz dos Ancestrais (veja "**Área Porta-vozes dos Ancestrais**" abaixo), acredita-se que poderiam fazê-lo se estivessem descontentes.
 
-### Identities of the Incarnates
+### Identidades das Encarnações
 
-Each Incarnate has a unique, amalgamated personality. Most who interact with an Incarnate interact with this primary identity. However, an Incarnate's primary personality is not a repository of its constituent spirits' knowledge; these spirits have their own thoughts and personalities. While an Incarnate broadly knows what its spirits know, a wealth of information is locked inside them. A constituent spirit within an Incarnate might be awakened by evoking the spirit's name or presenting something of significance to that spirit. Once a spirit is awakened, it takes over as the dominant personality of the Incarnate for a matter of minutes and might share its specific memories.
-A spirit knows only what it has observed. A nature spirit that inhabited a small pond might know a great deal about the fisher who visited its banks every week for fifty years, but might not know that person's name or where they lived. An ancestor spirit might know the intimate details of their family and town, but nothing about their neighbor's great-grandchildren. Each spirit is a single window into the civilization; together, an Incarnate's spirits have a wide but not infallible perspective on the history of their people.
+Cada Encarnação possui uma personalidade única e amalgamada. A maioria dos que interagem com uma Encarnação interage com esta identidade primária. No entanto, a personalidade primária de uma Encarnação não é um repositório do conhecimento de seus espíritos constituintes; esses espíritos têm seus próprios pensamentos e personalidades. Embora uma Encarnação saiba amplamente o que seus espíritos sabem, uma riqueza de informações está trancada dentro deles. Um espírito constituinte dentro de uma Encarnação pode ser despertado evocando o nome do espírito ou apresentando algo significativo para aquele espírito. Uma vez que um espírito é despertado, ele assume como a personalidade dominante da Encarnação por alguns minutos e pode compartilhar suas memórias específicas.
+Um espírito sabe apenas o que observou. Um espírito da natureza que habitava um pequeno lago pode saber muito sobre o pescador que visitava suas margens toda semana por cinquenta anos, mas pode não saber o nome dessa pessoa ou onde ela vivia. Um espírito ancestral pode conhecer os detalhes íntimos de sua família e cidade, mas nada sobre os bisnetos de seu vizinho. Cada espírito é uma janela única para a civilização; juntos, os espíritos de uma Encarnação têm uma perspectiva ampla, mas não infalível, sobre a história de seu povo.
 
-![The Amber Scorpion, Dawn Incarnate of the Sensa Empire](/images/campaigns/journeys-through-the-radiant-citadel/006-01-005amber-scorpion.webp)
+![O Escorpião Âmbar, Encarnação da Alvorada do Império Sensa](/images/campaigns/journeys-through-the-radiant-citadel/006-01-005amber-scorpion.webp)
 
 
-### Audiences with Incarnates
+### Audiências com as Encarnações
 
-An Incarnate and its constituent spirits are not malicious or duplicitous, but they do not necessarily answer questions easily or without a price. Some require the completion of a quest, while others might give a puzzle to solve. Some speak plainly; others respond in poem or parable. And some refuse to speak at all.
+Uma Encarnação e seus espíritos constituintes não são maliciosos ou enganosos, mas não necessariamente respondem a perguntas facilmente ou sem um preço. Alguns exigem a conclusão de uma missão, enquanto outros podem dar um enigma para resolver. Alguns falam claramente; outros respondem em poesia ou parábolas. E alguns se recusam a falar completamente.
 
-### Dawn Incarnates of the Preserve
+### As Encarnações da Alvorada da Reserva
 
-Each Dawn Incarnate that inhabits the Preserve of the Ancestors is related to a founding civilization active in the Citadel, as detailed on the Dawn Incarnates table.
+Cada Encarnação da Alvorada que habita a Reserva dos Ancestrais está relacionada a uma civilização fundadora ativa na Cidadela, conforme detalhado na tabela Encarnações da Alvorada.
 
-**Tabela: Dawn Incarnates**
+**Tabela: Encarnações da Alvorada**
 
 |  |  |
 | --- | --- |
-| Akharin Sangar | Turquoise Lion |
-| Atagua | Yellow Quartz Kapok Tree |
-| Dayawlongon | Serpentine Banyan Tree |
-| Djaynai | Water Opal Saltwater Salamander |
-| Godsbreath | Jasper Pecan Tree |
-| San Citlán | Fire Opal Xoloitzcuintle |
-| Sensa | Amber Scorpion |
-| Shankhabhumi | Moonstone Water Lily |
-| Siabsungkoh | Ruby Pangolin |
-| Tayyib | Sard Elephant |
-| Tletepec | Obsidian Eagle |
-| Umizu | Pearl Carp |
-| Yeonido | Amethyst Tiger |
-| Yongjing | White Jade Flowering Pear Tree |
-| Zinda | Bastite Caiman |
-A grim anomaly, a dead Dawn Incarnate known as the Sapphire Wyvern, disturbs the tranquility of the Preserve of the Ancestors. It lies inert, its gemstones blackened and cracked. Scholars believe it was the Dawn Incarnate of one of the Radiant Citadel's twelve lost civilizations, but all efforts to awaken it have failed. What happened to it and the eleven absent Dawn Incarnates of the other founding civilizations, none know.
+| Akharin Sangar | Leão Turquesa |
+| Atagua | Sumaúma de Quartzo Amarelo |
+| Dayawlongon | Figueira-de-bengala de Serpentina |
+| Djaynai | Salamandra de Água Salgada de Opala d'Água |
+| Godsbreath | Nogueira-pecã de Jaspe |
+| San Citlán | Xoloitzcuintle de Opala de Fogo |
+| Sensa | Escorpião Âmbar |
+| Shankhabhumi | Vitória-Régia de Pedra-da-lua |
+| Siabsungkoh | Pangolim Rubi |
+| Tayyib | Elefante de Sardônica |
+| Tletepec | Águia Obsidiana |
+| Umizu | Carpa de Pérola |
+| Yeonido | Tigre Ametista |
+| Yongjing | Pereira Florífera de Jade Branco |
+| Zinda | Jacaré de Bastita |
+Uma anomalia sombria, uma Encarnação da Alvorada morta conhecida como Wyvern de Safira, perturba a tranquilidade da Reserva dos Ancestrais. Ela jaz inerte, suas gemas enegrecidas e rachadas. Eruditos acreditam que era a Encarnação da Alvorada de uma das doze civilizações perdidas da Cidadela Radiante, mas todos os esforços para despertá-la falharam. O que aconteceu com ela e as onze Encarnações da Alvorada ausentes das outras civilizações fundadoras, ninguém sabe.
 
 
-### Speakers for the Ancestors
+### Os Porta-vozes dos Ancestrais
 
-The Speakers for the Ancestors are the ruling body of the Radiant Citadel. Candidates are chosen through an election among the diaspora of the people they represent. Once a candidate has been elected, they must face the fifteen founding Dawn Incarnates and pass their tests. Some Dawn Incarnates question the candidate until they are satisfied, while others send the candidate on a quest. These trials ensure Speakers understand each of the founding civilizations of the Radiant Citadel.
-Once a Speaker for the Ancestors is chosen, they hold office for ten years. At the end of their tenure, they can step down; if they don't, they must face the same selection process again. There is no assurance a Speaker will be reelected, or if they are, that the Dawn Incarnates will approve them again.
-As founding civilizations are rediscovered and rejoin the Radiant Citadel, the council is expanded, and the new Speakers gain power equal to that of their peers.
+Os Porta-vozes dos Ancestrais são o corpo governante da Cidadela Radiante. Os candidatos são escolhidos através de uma eleição entre a diáspora do povo que representam. Uma vez que um candidato foi eleito, deve enfrentar as quinze Encarnações da Alvorada fundadoras e passar em seus testes. Algumas Encarnações da Alvorada questionam o candidato até ficarem satisfeitas, enquanto outras o enviam em uma missão. Esses testes garantem que os Porta-vozes compreendam cada uma das civilizações fundadoras da Cidadela Radiante.
+Uma vez escolhido um Porta-voz dos Ancestrais, ele mantém o cargo por dez anos. Ao final de seu mandato, pode renunciar; caso contrário, deve enfrentar o mesmo processo de seleção novamente. Não há garantia de que um Porta-voz será reeleito, ou, se for, de que as Encarnações da Alvorada o aprovarão novamente.
+Conforme as civilizações fundadoras são redescobertas e retornam à Cidadela Radiante, o conselho é expandido e os novos Porta-vozes ganham poder igual ao de seus pares.
 
-### A Speaker's Role
+### O Papel de um Porta-voz
 
-The Speakers for the Ancestors face incredible challenges in their role. They must maintain the internal stability of a large and diverse city and ensure its people are treated equally and fairly under the law. Simultaneously, they manage a complex relationship with the founding civilizations. The Speakers' first duty is to the Radiant Citadel, which sometimes puts them at odds with the governments of the founding civilizations, particularly in tariff disputes or major crises. Thus far, the Radiant Citadel's policy is to resolutely remain neutral in all conflicts—whether they involve the founding civilizations or otherwise. However, the Citadel seeks to rescue refugees and send humanitarian aid to the limits of its resources.
-While decisions by the Speakers are made by simple majority, each Speaker has a very powerful veto that prevents them from being marginalized by political alliances.
+Os Porta-vozes dos Ancestrais enfrentam desafios incríveis em seu papel. Eles devem manter a estabilidade interna de uma cidade grande e diversa e garantir que seu povo seja tratado de forma igualitária e justa perante a lei. Simultaneamente, gerenciam um relacionamento complexo com as civilizações fundadoras. O primeiro dever dos Porta-vozes é para com a Cidadela Radiante, o que às vezes os coloca em desacordo com os governos das civilizações fundadoras, particularmente em disputas tarifárias ou grandes crises. Até agora, a política da Cidadela Radiante é permanecer resolutamente neutra em todos os conflitos – envolvam eles as civilizações fundadoras ou não. No entanto, a Cidadela busca resgatar refugiados e enviar ajuda humanitária até o limite de seus recursos.
+Embora as decisões dos Porta-vozes sejam tomadas por maioria simples, cada Porta-voz tem um veto muito poderoso que os impede de serem marginalizados por alianças políticas.
 
-### Power of the Speakers
+### O Poder dos Porta-vozes
 
-While in the Radiant Citadel, each Speaker rightfully chosen by the Radiant Citadel's people and the Dawn Incarnates can take an action to exert control over the Concord Jewels in the following ways:
-* They can deactivate all Concord Jewels that are in orbit around the Radiant Citadel, preventing the Jewels' controls from functioning and rendering the vessels stranded.
-* The Speaker who deactivated the Concord Jewels can reactivate the Jewels. (The rightful successor of a Speaker who deactivated the Concord Jewels can also take this action.)
-Since every Speaker has the ability to paralyze trade and major transit to the city, they are forced to find diplomatic resolutions to disagreements. Though the use or threat of a veto might prompt furious debates and intense rivalries, eventually the Speakers for the Ancestors find solutions.
+Enquanto na Cidadela Radiante, cada Porta-voz legitimamente escolhido pelo povo da Cidadela Radiante e pelas Encarnações da Alvorada pode usar uma ação para exercer controle sobre as Joias da Concórdia das seguintes maneiras:
+* Eles podem desativar todas as Joias da Concórdia que estão em órbita ao redor da Cidadela Radiante, impedindo que os controles das Joias funcionem e deixando as embarcações encalhadas.
+* O Porta-voz que desativou as Joias da Concórdia pode reativá-las. (O sucessor legítimo de um Porta-voz que desativou as Joias da Concórdia também pode usar esta ação.)
+Uma vez que cada Porta-voz tem a capacidade de paralisar o comércio e o trânsito principal para a cidade, eles são forçados a encontrar soluções diplomáticas para desacordos. Embora o uso ou ameaça de um veto possa provocar debates furiosos e rivalidades intensas, eventualmente os Porta-vozes dos Ancestrais encontram soluções.
 
-### Bound to the Citadel
+### Vinculados à Cidadela
 
-Once a Speaker no longer holds office, they lose the powers related to their position. If a Speaker steps down before the end of their term or dies while in office, all basic necessities in the Radiant Citadel gradually cease to function. Unless a suitable replacement for that Speaker is elected and approved by the Dawn Incarnates within thirty days, plants in the Radiant Citadel stop growing, wells run dry, and lighting ceases to function. Similarly, a Speaker cannot leave the Radiant Citadel for more than thirty days before the city's basic utilities begin to fail.
-Speakers for the Ancestors are often celebrated heroes capable of handling most danger that comes their way, yet they are so vital to the integrity of the Radiant Citadel that each is carefully protected, both magically and by contingents of guards.
+Uma vez que um Porta-voz não ocupa mais o cargo, perde os poderes relacionados à sua posição. Se um Porta-voz renuncia antes do fim de seu mandato ou morre no cargo, todas as necessidades básicas na Cidadela Radiante gradualmente deixam de funcionar. A menos que um substituto adequado para esse Porta-voz seja eleito e aprovado pelas Encarnações da Alvorada em trinta dias, as plantas na Cidadela Radiante param de crescer, os poços secam e a iluminação deixa de funcionar. Da mesma forma, um Porta-voz não pode deixar a Cidadela Radiante por mais de trinta dias antes que os serviços básicos da cidade comecem a falhar.
+Os Porta-vozes dos Ancestrais são frequentemente heróis aclamados, capazes de lidar com a maioria dos perigos que surgem em seu caminho; no entanto, são tão vitais para a integridade da Cidadela Radiante que cada um é cuidadosamente protegido, tanto magicamente quanto por contingentes de guardas.
 
 ### Sholeh
 
-Sholeh is a legendary figure in the history of the Citadel. Having led the successful effort to rediscover the Radiant Citadel, she was the first Speaker for the Ancestors and is the only originator of that position to still hold the office. This is, at least in part, because she is a famed ancient brass dragon of Akharin Sangar. Unlike many of her kind, she is neutral good and a pragmatic, shrewd leader. For two hundred and fifty years, she has been a consummate councilor and has deftly managed the complex politics of the city. She hopes to find the missing twelve founding civilizations and believes the fate of the Citadel depends on it.
-Known affectionately (or derisively) as the Old Lady, she often takes the form of an older, brown-skinned human woman. Quick to anger and quicker to love, she has rivals and adversaries aplenty, but friends and suitors in even greater number. She loves a good drink, loves dancing even more, and spends her free time with the common citizens of the city. More frequently, she's legislating in the council or negotiating in a secret corner of the Court of Whispers, trading for information or sending spies on missions.
-She has a complex relationship with her homeland. While she loves Akharin Sangar, she refuses to bend to the will of its angelic ruler, Atash. Rather than oppose him directly, she plays a delicate political game even as she worries about the future of her native land.
+Sholeh é uma figura lendária na história da Cidadela. Tendo liderado o esforço bem-sucedido para redescobrir a Cidadela Radiante, ela foi a primeira Porta-voz dos Ancestrais e é a única originadora dessa posição a ainda ocupar o cargo. Isso se deve, pelo menos em parte, ao fato de ser uma famosa e antiga dragão de bronze de Akharin Sangar. Diferente de muitos de sua espécie, ela é neutra e boa e uma líder pragmática e astuta. Por duzentos e cinquenta anos, ela tem sido uma conselheira consumada e administrou habilmente a política complexa da cidade. Ela espera encontrar as doze civilizações fundadoras perdidas e acredita que o destino da Cidadela depende disso.
+Conhecida afetuosamente (ou pejorativamente) como a Velha Senhora, ela frequentemente assume a forma de uma mulher humana mais velha, de pele morena. De pavio curto para a raiva e ainda mais curto para o amor, ela tem rivais e adversários em abundância, mas amigos e pretendentes em número ainda maior. Ela adora uma boa bebida, ama ainda mais dançar e passa seu tempo livre com os cidadãos comuns da cidade. Mais frequentemente, ela está legislando no conselho ou negociando em um canto secreto da Corte dos Sussurros, trocando informações ou enviando espiões em missões.
+Ela tem um relacionamento complexo com sua terra natal. Embora ame Akharin Sangar, recusa-se a curvar-se à vontade de seu governante angelical, Atash. Em vez de se opor a ele diretamente, ela joga um delicado jogo político, mesmo enquanto se preocupa com o futuro de sua terra natal.
 
-![Speaker Sholeh](/images/campaigns/journeys-through-the-radiant-citadel/007-01-006speaker-sholeh.webp)
+![Porta-voz Sholeh](/images/campaigns/journeys-through-the-radiant-citadel/007-01-006speaker-sholeh.webp)
 
-In recent years, the weight of leadership has taken a toll on Sholeh. She picks her scales in private as she tries to find relief.
+Nos últimos anos, o peso da liderança cobrou seu preço de Sholeh. Ela arranca suas próprias escamas em particular enquanto tenta encontrar alívio.
 
-### Personality Trait
+### Traço de Personalidade
 
-"True leaders must see what others do not, but they must remain connected to those they lead."
+"Verdadeiros líderes devem ver o que os outros não veem, mas devem permanecer conectados àqueles que lideram."
 
 ### Ideal
 
-"I will find the missing twelve and bring back the full glory of the Radiant Citadel."
+"Encontrarei os doze perdidos e trarei de volta a glória total da Cidadela Radiante."
 
-### Bond
+### Vínculo
 
-"I love the city and all its people. I will do anything for them."
+"Amo a cidade e todo o seu povo. Farei qualquer coisa por eles."
 
-### Flaw
+### Defeito
 
-"Do I exist only because others need me?"
+"Será que existo apenas porque os outros precisam de mim?"
 
 
-### Shieldbearers
+### Porta-escudos
 
-Since their founding, the Shieldbearers have led the Radiant Citadel's rescue and relocation missions. Typically organized in cohorts of four to six members, they are deployed to lands in crisis. Strict rules of engagement prevent them from impacting local conditions or taking sides in a conflict; their mandate allows them only to extract those in danger and defend themselves if attacked. They are among the bravest of the Citadel, and heroes who die in service to the Shieldbearers receive the city's highest honors.
-Shieldbearers stand ready to make the ultimate sacrifice to save the vulnerable and the defenseless. Many members adhere to a tradition of getting a ritual scar or tattoo after each successful deployment, designed to represent a pivotal moment in that quest. The most accomplished veterans display such body art with pride.
-Many adventurers who come to the Radiant Citadel eventually join the Shieldbearers, particularly those with the folk hero, soldier, or outlander backgrounds.
+Desde sua fundação, os Porta-escudos lideram as missões de resgate e realocação da Cidadela Radiante. Tipicamente organizados em coortes de quatro a seis membros, são enviados para terras em crise. Regras de engajamento estritas os impedem de impactar as condições locais ou tomar partido em um conflito; seu mandato permite apenas extrair aqueles em perigo e defender-se se atacados. Eles estão entre os mais bravos da Cidadela, e heróis que morrem a serviço dos Porta-escudos recebem as mais altas honrarias da cidade.
+Os Porta-escudos estão prontos para fazer o sacrifício supremo para salvar os vulneráveis e indefesos. Muitos membros aderem a uma tradição de fazer uma cicatriz ou tatuagem ritual após cada missão bem-sucedida, projetada para representar um momento crucial naquela missão. Os veteranos mais condecorados exibem tal arte corporal com orgulho.
+Muitos aventureiros que vêm para a Cidadela Radiante eventualmente se juntam aos Porta-escudos, particularmente aqueles com antecedentes de herói popular, soldado ou forasteiro.
 
 ### Arayat
 
-Arayat (neutral, human assassin) was born to a family of Dayawlongon freedom fighters who had no more wars to fight. Peace did not bring them prosperity, and the family's glory faded. Arayat grew up on the streets until luck brought him to the Radiant Citadel. He soon joined the Shieldbearers, which gave him meaning and purpose. Defying the odds, Arayat has survived hundreds of deployments to the most dangerous situations across the founding civilizations and beyond. He is a master of the Dayawlongon martial art of eskrima and favors a pair of shortswords in combat.
-Now in his forties, he leads the Shieldbearers. He is a canny tactician and a highly competent leader, but he bristles against the rules of engagement imposed on the Shieldbearers by the Speakers for the Ancestors. He has cremated a hundred fallen comrades-in-arms and seen horrors few can comprehend. The toll has pushed him to his limits, and he believes a more aggressive, proactive strategy will save lives. But thus far, he has not defied the council.
-In secret, Arayat drinks heavily. It is the only way he can sleep at night.
+Arayat (neutro, humano, assassino) nasceu em uma família de combatentes da liberdade de Dayawlongon que não tinham mais guerras para lutar. A paz não lhes trouxe prosperidade, e a glória da família desapareceu. Arayat cresceu nas ruas até que a sorte o trouxe à Cidadela Radiante. Ele logo se juntou aos Porta-escudos, o que lhe deu significado e propósito. Desafiando as probabilidades, Arayat sobreviveu a centenas de missões nas situações mais perigosas através das civilizações fundadoras e além. Ele é um mestre da arte marcial eskrima de Dayawlongon e favorece um par de espadas curtas em combate.
+Agora na casa dos quarenta, ele lidera os Porta-escudos. Ele é um estrategista astuto e um líder altamente competente, mas se irrita com as regras de engajamento impostas aos Porta-escudos pelos Porta-vozes dos Ancestrais. Ele cremou uma centena de camaradas de armas caídos e viu horrores que poucos podem compreender. O preço o levou aos seus limites, e ele acredita que uma estratégia mais agressiva e proativa salvará vidas. Mas, até agora, ele não desafiou o conselho.
+Em segredo, Arayat bebe pesadamente. É a única maneira de conseguir dormir à noite.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I will do anything and everything to protect the innocent."
+"Farei tudo e qualquer coisa para proteger os inocentes."
 
 ### Ideal
 
-"I was born to save those who cannot save themselves."
+"Nasci para salvar aqueles que não podem salvar a si mesmos."
 
-### Bond
+### Vínculo
 
-"The Shieldbearers are my family and the Citadel my home."
+"Os Porta-escudos são minha família e a Cidadela, meu lar."
 
-### Flaw
+### Defeito
 
-"I cannot stop seeing the faces of those I've lost."
-
-
+"Não consigo parar de ver os rostos daqueles que perdi."

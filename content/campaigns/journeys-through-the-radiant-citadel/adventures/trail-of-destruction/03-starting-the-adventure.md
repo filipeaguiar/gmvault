@@ -1,75 +1,76 @@
 ---
-title: "Starting the Adventure"
+title: Starting the Adventure
 weight: 30
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Iniciando a Aventura
+visibility: gm
+status: published
+summary: Introdução e contextualização da aventura.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/
 compendium_refs:
-  - "/compendium/monsters/salamander/"
-  - "/compendium/monsters/fire-snake/"
-  - "/compendium/monsters/priest/"
+- /compendium/monsters/salamander/
+- /compendium/monsters/fire-snake/
+- /compendium/monsters/priest/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
+![Saqueadores salamandras emboscam a caravana de Ameyali na estrada perto de Etizalan](/images/campaigns/journeys-through-the-radiant-citadel/069-08-001salamander-raiders.webp)
 
-![Salamander raiders ambush Ameyali's caravan on the road near Etizalan](/images/campaigns/journeys-through-the-radiant-citadel/069-08-001salamander-raiders.webp)
+A aventura começa quando os personagens se aproximam da cidade de Etizalan. Antes de chegarem à comunidade, eles encontram uma caravana sendo atacada. Leia ou parafraseie a seguinte descrição:
 
+> A estrada serpenteia por um trecho de floresta tropical que margeia um vale profundo, aproximando-se da cidade de Etizalan. Depois de uma curva, fumaça sobe por entre as árvores e gritos ecoam. Uma carroça tombada está caída na estrada, e através da fumaça vocês podem ver pessoas sendo atacadas por criaturas serpentinas envoltas em chamas.
 
-The adventure begins as the characters approach the town of Etizalan. Before they reach the community, they encounter a caravan being raided. Read or paraphrase the following description:
+Duas cobras de fogo e duas salamandras emboscaram três viajantes de Etizalan. Os três viajantes usam o bloco de estatísticas de sacerdote e lutam para defender uma carroça cheia de comida, flores e artesanatos coloridos. Se os personagens defenderem os viajantes, as criaturas Elementais concentram seus ataques nos recém-chegados.
 
-> The road weaves through a stretch of rain forest that flanks a deep valley, drawing near the town of Etizalan. Past a bend, smoke rises through the trees and shouts ring out. An overturned wagon lies in the road, and through the smoke you can see people being attacked by serpentine creatures wreathed in flame.
+A área em um raio de 7,5 metros da carroça tombada está obscurecida por fumaça, que pode ser dispersada por um vento forte em 1 rodada. Chamas queimam na área florestada em ambos os lados da estrada de 4,5 metros de largura. Qualquer criatura que entrar na floresta em chamas deve ser bem-sucedida em um teste de resistência de Constituição CD 14 ou sofre 10 ([[3d6]]) pontos de dano de fogo. O fogo produz uma grande quantidade de fumaça, mas se extinguirá na floresta úmida em cerca de 10 minutos. Um personagem que for bem-sucedido em um teste de Inteligência (Natureza) CD 12 percebe que as chamas não se espalharão muito longe.
 
-Two fire snakes and two salamanders have ambushed three travelers from Etizalan. The three travelers use the priest stat block and fight to defend a wagon full of food, flowers, and colorful crafts. If the characters defend the travelers, the Elemental creatures focus their attacks on the newcomers.
+### Após a Batalha
 
-The area within 25 feet of the overturned wagon is obscured by smoke, which can be dispersed by a strong wind in 1 round. Flames burn in the forested area on either side of the 15-foot-wide road. Any creature who enters the burning forest must succeed on a CD 14 Constitution saving throw or take 10 ([[3d6]]) points of fire damage. The fire produces a great deal of smoke but will burn out in the wet forest in about 10 minutes. A character who succeeds on a CD 12 Intelligence (Nature) check realizes the flames won't spread far.
-
-
-### After the Battle
-
-Once the characters deal with the vicious Elementals, their problems aren't over. The ground heaves as a small earthquake ripples through the area. Characters must succeed on a CD 12 Dexterity saving throw to keep their footing. The sound of wood splintering and trees falling echoes from deeper in the forest, but the tremor soon passes.
-In the aftermath of the battle and earthquake, the travelers are thankful for the characters' help. Their leader introduces herself as Ameyali.
+Uma vez que os personagens lidam com os Elementais cruéis, seus problemas não acabaram. O chão se agita enquanto um pequeno terremoto percorre a área. Os personagens devem ser bem-sucedidos em um teste de resistência de Destreza CD 12 para manter o equilíbrio. O som de madeira se partindo e árvores caindo ecoa do interior da floresta, mas o tremor logo passa.
+Após a batalha e o terremoto, os viajantes estão gratos pela ajuda dos personagens. A líder deles se apresenta como Ameyali.
 
 ### Ameyali
 
-Ameyali (neutral good, human priest) has lived in Etizalan for years. After fire elementals destroyed her birth village and killed her parents, neighbors took her in and moved to Etizalan. There she learned a sense of community and acquired a strong desire to help others. As a youth, her aptitude with tools and weapons led her to train with the inventors known as the Shapers of Obsidian in Itzimico. She returned to Etizalan as an adult to ensure her birth village's fate would never befall her new home. Her many useful inventions impressed the people of Etizalan, and she eventually became a local leader.
+Ameyali (neutra e boa, humana sacerdotisa) vive em Etizalan há anos. Após elementais do fogo destruírem sua vila natal e matarem seus pais, vizinhos a acolheram e se mudaram para Etizalan. Lá, ela aprendeu o senso de comunidade e adquiriu um forte desejo de ajudar os outros. Na juventude, sua aptidão com ferramentas e armas a levou a treinar com os inventores conhecidos como Moldadores de Obsidiana em Itzimico. Ela retornou a Etizalan já adulta para garantir que o destino de sua vila natal jamais se abatesse sobre seu novo lar. Suas muitas invenções úteis impressionaram o povo de Etizalan, e ela eventualmente se tornou uma líder local.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I like building things. Seeing a complete work after hours of placing pieces is wonderful."
+"Eu gosto de construir coisas. Ver um trabalho completo após horas encaixando peças é maravilhoso."
 
 ### Ideal
 
-"I want my inventions to ensure fewer children lose their parents."
+"Quero que minhas invenções garantam que menos crianças percam seus pais."
 
-### Bond
+### Vínculo
 
-"I always wear the necklace my adoptive sister gave me. When I feel anxious about a project, I hold the necklace to give me confidence."
+"Eu sempre uso o colar que minha irmã adotiva me deu. Quando me sinto ansiosa com um projeto, seguro o colar para me dar confiança."
 
-### Flaw
+### Defeito
 
-"The world disappears when I'm focused. I often don't notice people talking to me at such times."
+"O mundo desaparece quando estou concentrada. Frequentemente não percebo que as pessoas estão falando comigo nesses momentos."
 
-### Ameyali's Request
+### O Pedido de Ameyali
 
-Ameyali can use her magic and three potions of healing she has to heal wounded characters. She gladly gives the characters any unused potions, sharing her wish that these items will keep the brave travelers safe.
-While her companions right their cart, Ameyali can answer the characters' questions. She then asks if her caravan might travel back to Etizalan with them. Along the way, she shares the following information:
-* The region around Etizalan is suffering a spate of earthquakes and incursions from fiery monsters.
-* Three days ago, Ameyali sent four of the town's best warriors to seek insight from the Watchers of the Ashes. They dwell at the Twin Gods Observatory, a site of volcanic study that normally warns Etizalan of impending earthquakes and eruptions. The warriors have not returned.
-* Ameyali and her fellow travelers intended to look for the warriors and then take offerings to the Gate of Illumination, a shrine to the gods, in hopes of placating them and quelling the earthquakes.
-* The group has traveled only a couple of miles from Etizalan, and the journey has already proven more dangerous than expected. For their safety, her group must abandon its mission.
-Once the characters and Ameyali reach Etizalan, she thanks them again and asks if they'll do her another favor. She's still concerned about her town's warriors. She asks the characters to go to the Twin Gods Observatory and find out what happened to them. In return, she offers to pay the characters 400 gp each, and they will have earned the gratitude of her people.
-If the characters have questions about monsters in the area or how to prepare for the journey, Ameyali suggests they talk to other locals (see the following section).
-
-
+Ameyali pode usar sua magia e três poções de cura que ela possui para curar personagens feridos. Ela alegremente entrega aos personagens quaisquer poções não utilizadas, compartilhando seu desejo de que esses itens mantenham os bravos viajantes em segurança.
+Enquanto seus companheiros ajeitam a carroça, Ameyali pode responder às perguntas dos personagens. Ela então pergunta se sua caravana pode viajar de volta para Etizalan com eles. No caminho, ela compartilha as seguintes informações:
+* A região ao redor de Etizalan está sofrendo uma série de terremotos e incursões de monstros flamejantes.
+* Três dias atrás, Ameyali enviou quatro dos melhores guerreiros da cidade para buscar orientação com os Observadores das Cinzas. Eles habitam o Observatório dos Deuses Gêmeos, um local de estudo vulcânico que normalmente alerta Etizalan sobre terremotos e erupções iminentes. Os guerreiros não retornaram.
+* Ameyali e seus companheiros viajantes pretendiam procurar os guerreiros e então levar oferendas ao Portão da Iluminação, um santuário aos deuses, na esperança de apaziguá-los e acalmar os terremotos.
+* O grupo viajou apenas alguns quilômetros de Etizalan, e a jornada já provou ser mais perigosa do que o esperado. Para sua segurança, o grupo dela precisa abandonar sua missão.
+Uma vez que os personagens e Ameyali cheguem a Etizalan, ela os agradece novamente e pergunta se eles podem lhe fazer outro favor. Ela ainda está preocupada com os guerreiros de sua cidade. Ela pede aos personagens que vão ao Observatório dos Deuses Gêmeos e descubram o que aconteceu com eles. Em troca, ela se oferece para pagar 400 po aos personagens cada um, e eles terão conquistado a gratidão de seu povo.
+Se os personagens tiverem perguntas sobre monstros na área ou como se preparar para a jornada, Ameyali sugere que eles conversem com outros moradores locais (veja a seção a seguir).

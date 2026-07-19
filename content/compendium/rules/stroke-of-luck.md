@@ -1,17 +1,24 @@
 ---
-title: "Stroke of Luck"
+title: Stroke of Luck
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Stroke of Luck."
+summary: 'Característica de classe: Golpe de Sorte.'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Golpe de Sorte
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the <span class="dice+" data-roll-notation="d20">d20</span> roll as a 20.
+No 20º nível, você possui um talento misterioso para ter sucesso quando precisa. Se seu ataque errar um alvo dentro do alcance, você pode transformar o erro em um acerto. Alternativamente, se você falhar em um teste de atributo, pode considerar a jogada do <span class="dice+" data-roll-notation="d20">d20</span> como 20.
 
-Once you use this feature, you can't use it again until you finish a short or long rest.
+Após usar esta característica, você não pode usá-la novamente até concluir um descanso curto ou longo.

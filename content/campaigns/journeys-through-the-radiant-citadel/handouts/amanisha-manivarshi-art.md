@@ -1,15 +1,15 @@
 ---
-title: "Arte: Amanisha Manivarshi"
+title: 'Arte: Amanisha Manivarshi'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Amanisha Manivarshi'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Amanisha Manivarshi](/images/campaigns/journeys-through-the-radiant-citadel/080-09-002amanisha-manivarshi.webp)

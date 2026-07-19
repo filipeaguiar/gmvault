@@ -1,19 +1,21 @@
 ---
-title: "The Fiend's Identity"
+title: The Fiend's Identity
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: A Identidade do Corruptor
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **The Fiend's Identity** importada automaticamente.
-
-### Cenas e Sub-áreas
-- [The Fiend's Identity](../../adventures/the-fiend-of-hollow-mine/05-the-fiends-identity/)
+**Material Protegido por Direitos Autorais — Não é Permitida a Tradução**

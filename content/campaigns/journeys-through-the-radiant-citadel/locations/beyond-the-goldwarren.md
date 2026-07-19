@@ -1,19 +1,24 @@
 ---
-title: "Beyond the Goldwarren"
+title: Beyond the Goldwarren
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Além do Goldwarren
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Beyond the Goldwarren** importada automaticamente.
+Localidade **Além da Toca Dourada** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Beyond the Goldwarren](../../adventures/gold-for-fools-and-princes/07-beyond-the-goldwarren/)
+- [Além da Toca Dourada](../../adventures/gold-for-fools-and-princes/07-beyond-the-goldwarren/)

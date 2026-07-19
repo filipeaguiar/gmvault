@@ -1,120 +1,132 @@
 ---
-title: "Cena 6 - Ashen Heir Hideout"
+title: Cena 6 - Ashen Heir Hideout
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Esconderijo do Ashen Heir
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/navid/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/ashen-heir-hideout/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/ashen-heir-hideout/
 compendium_refs:
-  - "/compendium/monsters/djinni/"
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/efreeti/"
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/ashen-heir-assassin/"
-  - "/compendium/monsters/ashen-heir-veteran/"
+- /compendium/monsters/djinni/
+- /compendium/monsters/veteran/
+- /compendium/monsters/efreeti/
+- /compendium/monsters/mage/
+- /compendium/monsters/mage/
+- /compendium/monsters/ashen-heir-assassin/
+- /compendium/monsters/ashen-heir-veteran/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/efreeti-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-105-map-112-ashen-heir-hideout-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/djinni-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/efreeti-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-105-map-112-ashen-heir-hideout-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The Ashen Heir hideout is a crumbling, one-story temple located in the Old City. Captured Ashen Heir agents or Laleh Ghorbani might direct the characters to the location.
+O esconderijo dos Ashen Heir é um templo em ruínas de um só andar, localizado na Cidade Velha. Agentes dos Ashen Heir capturados ou Laleh Ghorbani podem direcionar os personagens ao local.
 
-Read the following as the characters approach the site:
+Leia o seguinte conforme os personagens se aproximam do local:
 
-> A small, neglected temple stands within a courtyard surrounded by an iron fence and containing only dead overgrowth and a dry fountain full of garbage. A tower juts from the temple's roof; one of its walls bears tall vents to catch the wind.
+> Um templo pequeno e negligenciado ergue-se em um pátio cercado por uma cerca de ferro, contendo apenas vegetação morta e uma fonte seca cheia de lixo. Uma torre se projeta do telhado do templo; uma de suas paredes possui aberturas altas para capturar o vento.
 
-A padlock holds closed a gate in the temple's 8-foot-tall fence, but it can be unlocked as an action with a successful CD 12 Dexterity check using thieves' tools or broken with a successful CD 18 Strength check.
+Um cadeado mantém fechado um portão na cerca de 2,5 metros de altura do templo, mas ele pode ser destrancado como uma ação com um teste bem-sucedido de Destreza CD 12 usando ferramentas de ladrão, ou arrombado com um teste bem-sucedido de Força CD 18.
 
-Characters who succeed on a CD 16 Wisdom (Perception) check also notice that the double door leading into the temple has a sliding peephole.
+Personagens que forem bem-sucedidos em um teste de Sabedoria (Percepção) CD 16 também notam que a porta dupla que leva ao interior do templo tem um olho mágico deslizante.
 
+### Locais do Esconderijo dos Ashen Heir
 
-### Ashen Heir Hideout Locations
+Os locais a seguir estão marcados no mapa 11.2.
 
-The following locations are keyed to map 11.2.
+![Mapa 11.2: Esconderijo dos Ashen Heir](/images/campaigns/journeys-through-the-radiant-citadel/104-map-112-ashen-heir-hideout.webp)
 
-![Map 11.2: Ashen Heir Hideout](/images/campaigns/journeys-through-the-radiant-citadel/104-map-112-ashen-heir-hideout.webp)
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/105-map-112-ashen-heir-hideout-player.webp)
 
+### A1: Pátio
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/105-map-112-ashen-heir-hideout-player.webp)
+O pátio do templo está em ruínas, com seu pavimento de pedra coberto de ervas daninhas. A fonte em seu centro está quebrada e cheia de móveis descartados.
 
+### Entrada do Templo
 
-### A1: Courtyard
+A porta principal do templo é feita de madeira maciça e está trancada com uma barra pelo lado de dentro. A porta pode ser aberta à força com um teste bem-sucedido de Força CD 20, mas fazer isso alerta o veterano dos Ashen Heir que guarda a porta na área A2.
 
-The temple's courtyard lies in ruin, its stone paving overgrown with weeds. The fountain at its center is broken and filled with discarded furnishings.
+Se os personagens baterem na porta ou de alguma forma se anunciarem, o guarda desliza o olho mágico e verifica se eles estão usando as distintas máscaras de efreeti dos Ashen Heir. Se estiverem, ele então pergunta pela senha. Se um personagem responder: "Que as brasas iluminem o caminho", o guarda remove a barra e os admite. Mesmo que os personagens nunca tenham aprendido a senha, um personagem que obtiver sucesso em um teste de Inteligência (Investigação) CD 18 recorda que esse foi um dos slogans mais proeminentes que os Ashen Heir gritavam durante o incidente na Praça dos Três Sóis.
 
-### Temple Entrance
+Se o guarda perceber que os personagens não estão usando máscaras de efreeti ou se eles oferecerem a senha errada, ele fecha o olho mágico bruscamente e alerta os outros Ashen Heir na área A2.
 
-The main door to the temple is made of solid wood and is barred from the opposite side. The door can be forced open with a successful CD 20 Strength check, but doing so alerts the Ashen Heir veteran guarding the door in area A2.
-If the characters knock on the door or otherwise make themselves known, the guard slides open the peephole and checks to see if they're wearing the Ashen Heirs' distinctive efreeti masks. If they are, he then asks for the passphrase. If a character answers, "Let the embers light the way," the guard unbars the door and admits them. Even if the characters never learned the passphrase, a character who succeeds on a CD 18 Intelligence (Investigation) check recalls that this was one of the more prominent slogans the Ashen Heirs were shouting during the incident at Three Suns Square.
-If the guard sees the characters aren't wearing efreeti masks or the characters offer the wrong passphrase, he slams the peephole shut and alerts the other Ashen Heirs in area A2.
+### Captador de Vento
 
-### Windcatcher
+Um captador de vento verde-areia se ergue do telhado do templo e direciona ar fresco pelo edifício. As aberturas da torre estão a 15 metros do chão e se abrem para um poço de 3 metros de largura que desce até o centro da área A2. Esse poço está marcado com um círculo pontilhado no mapa 11.2. Um personagem pode escalar as paredes do templo e o interior da torre com um teste bem-sucedido de Força (Atletismo) CD 14.
 
-A sand-green windcatcher rises from the temple's roof and directs cool air through the building. The tower's vents are 50 feet from the ground and open into a 10-foot-wide shaft that descends into the center of area A2. This shaft is marked with a dotted circle on map 11.2. A character can climb the temple's walls and the tower's interior with a successful CD 14 Strength (Athletics) check.
-A glyph of warding spell cast at 5th level is etched onto the south side of the windcatcher's interior. The first Small or larger creature that descends 10 feet down the shaft activates explosive runes. Any creature within 20 feet of the runes must make a CD 17 Dexterity saving throw. Creatures that fail take 31 ([[7d8]]) lightning damage, and then must succeed on a CD 15 Dexterity saving throw or plummet 40 feet to area A2, taking 14 ([[4d6]]) bludgeoning damage and landing prone. Creatures that succeed on the saving throw against the explosive runes take half damage and don't fall. In either case, all creatures in area A2 are alerted to the intruders' presence.
+Um glifo de proteção, conjurado no 5º círculo, está gravado no lado sul do interior do captador de vento. A primeira criatura de tamanho Pequeno ou maior que descer 3 metros pelo poço ativa as runas explosivas. Qualquer criatura a até 6 metros das runas deve fazer um teste de resistência de Destreza CD 17. Criaturas que falharem sofrem 31 ([[7d8]]) de dano elétrico e, em seguida, devem ser bem-sucedidas em um teste de resistência de Destreza CD 15 ou despencarão 12 metros até a área A2, sofrendo 14 ([[4d6]]) de dano de concussão e caindo caídas. Criaturas que forem bem-sucedidas no teste de resistência contra as runas explosivas sofrem metade do dano e não caem. Em ambos os casos, todas as criaturas na área A2 são alertadas sobre a presença dos intrusos.
 
-### A2: Prayer Hall
+### A2: Salão de Preces
 
-> An unfinished mosaic depicting plants flourishing under a glowing moon adorns the walls of this prayer hall, though the mosaic is partially obscured by graffiti. Crates are strewn across the marble floor, and rickety scaffolding along the east wall serves as makeshift sleeping spaces.
-This temple was once consecrated to a god other than the Sunweaver, but it was abandoned years ago and became home to Navid's cell of the Ashen Heirs. Characters can enter this area via the front door or the windcatcher tower above its 20-foot-high ceiling.
-If the characters have not alerted the anarchists to their presence, four Ashen Heirs are here: a guard near the door (veteran), two more veterans playing cards, and an assassin resting on the scaffolding. So long as the characters wear efreeti masks and attempt to pass as members of the group, the Ashen Heirs treat them as fellow anarchists. These cell members don't know much about Navid's plans or the samovar some of them were sent to track down, but they know their leader has big plans.
-If the characters attack or damage anything in the area, the Ashen Heirs turn hostile.
+> Um mosaico inacabado, representando plantas florescendo sob uma lua brilhante, adorna as paredes deste salão de preces, embora o mosaico esteja parcialmente obscurecido por pichações. Engradados estão espalhados pelo chão de mármore, e andaimes precários ao longo da parede leste servem como espaços improvisados para dormir.
 
-### Scaffolding
+Este templo já foi consagrado a um deus que não o Sunweaver, mas foi abandonado anos atrás e se tornou o lar da célula de Navid dos Ashen Heir. Os personagens podem entrar nesta área pela porta da frente ou pelo poço do captador de vento, acima de seu teto de 6 metros.
 
-Three sections of sturdy wooden scaffolding were here when the Ashen Heirs claimed the temple. The scaffolding now serves as a resting place for members of Navid's crew. Each section of scaffolding rises 10 feet high.
+Se os personagens não alertaram os anarquistas sobre sua presença, quatro Ashen Heir estão aqui: um guarda perto da porta (veterano), mais dois veteranos jogando cartas e um assassino descansando nos andaimes. Contanto que os personagens usem máscaras de efreeti e tentem se passar por membros do grupo, os Ashen Heir os tratam como companheiros anarquistas. Esses membros da célula não sabem muito sobre os planos de Navid ou o samovar que alguns deles foram enviados para rastrear, mas sabem que seu líder tem grandes planos.
 
-### Treasure
+Se os personagens atacarem ou danificarem qualquer coisa na área, os Ashen Heir se tornam hostis.
 
-The crates scattered through the room hold 500 gp worth of stolen goods, including numerous fine jars stolen from the bazaar. A character who succeeds on a CD 15 Wisdom (Perception) check while searching the scaffolding also discovers a set of Nolzur's marvelous pigments.
+### Andaimes
 
-### A3: Hallway
+Três seções de andaimes de madeira resistentes estavam aqui quando os Ashen Heir tomaram o templo. Os andaimes agora servem como local de descanso para membros do bando de Navid. Cada seção de andaime se eleva a 3 metros de altura.
 
-This hallway features mosaics depicting the cycles of the moon. If both mages from the bazaar escaped with the samovar, one is lingering here. If one or neither of the mages escaped, this area is empty.
+### Tesouro
 
-### A4: Selenic Garden
+Os engradados espalhados pela sala contêm 500 po no valor de bens roubados, incluindo vários jarros finos roubados do bazar. Um personagem que tiver sucesso em um teste de Sabedoria (Percepção) CD 15 enquanto vasculha os andaimes também encontra um conjunto de pigmentos maravilhosos de Nolzur.
 
-> Natural rocks jut from the sizzling, red-sand floor of this sweltering, domed chamber. Dust-speckled light streams from eight stained-glass magic lanterns set around the ceiling, each embossed with the phases of the moon. At the room's center, a brown-skinned man with glowing eyes reclines upon a cushion. An attendant wearing a mask designed to look like an efreeti's face stands nearby.
-This cylindrical chamber once housed a lush garden, but Navid torched it to create more comfortable surroundings. The man here is Navid, leader of the Ashen Heirs, and his attendant is an Ashen Heir mage. The characters recognize the mage from the bazaar if either of those Ashen Heirs escaped; otherwise, he's a stranger.
+### A3: Corredor
 
-### Burning Sand
+Este corredor apresenta mosaicos representando os ciclos da lua. Se ambos os magos do bazar escaparam com o samovar, um deles está permanecendo aqui. Se um ou nenhum dos magos escaparam, esta área está vazia.
 
-The sand here is Difficult Terrain. Any creature that enters the area of the sand or starts its turn there takes 7 ([[2d6]]) fire damage. Navid is immune to this effect, but his attendant keeps off the sand. A few large pieces of volcanic rock are scattered about the room and are safe to stand on.
+### A4: Jardim Selênico
 
-### Baadi the Djinni
+> Rochas naturais se projetam do chão de areia vermelha escaldante desta câmara abafada e abobadada. A luz salpicada de poeira emana de oito lanternas mágicas de vitral dispostas ao redor do teto, cada uma com as fases da lua em relevo. No centro da sala, um homem de pele morena com olhos brilhantes reclina-se sobre uma almofada. Um assistente, usando uma máscara projetada para parecer o rosto de um efreeti, está próximo.
 
-If the characters failed to retrieve the stolen samovar during the bazaar chase, the djinni Baadi and the samovar are also present. If Baadi is here, read the following text after reading the initial boxed text:
-> Several feet above the room's other occupants, an 8-foot-tall man with blue skin casually flies about the room. As he does, he peppers the reclining man with questions about sightseeing opportunities in the city.
-Baadi is eager to learn about Akharin Sangar after his century of imprisonment, but Navid silences him with a wave when the characters appear. Baadi stays out of combat. His samovar is discarded among the rocks near where Navid sits.
-If Baadi is with the characters or is released from the samovar here, Navid reveals his efreeti form and is delighted to see his cousin. Not wanting to have their reunion in front of strangers, both genies thank the characters for reuniting them, then use plane shift to catch up elsewhere. Navid might return to Akharin Sangar someday, but without their leader any remaining Ashen Heirs are no longer a threat.
+Esta câmara cilíndrica outrora abrigava um jardim exuberante, mas Navid o incendiou para criar um ambiente mais confortável. O homem aqui é Navid, líder dos Ashen Heir, e seu assistente é um mago dos Ashen Heir. Os personagens reconhecem o mago do bazar se algum daqueles Ashen Heir escapou; caso contrário, ele é um estranho.
 
-### Audience with Navid
+### Areia Ardente
 
-Navid is an efreeti with the additional ability to cast polymorph (self only) at will. He's currently wearing his preferred disguise, that of a human man in black and crimson garb. Navid was in line to rule the region around Akharin Sangar before Atash deposed his father, forcing the efreeti prince into hiding. Now he plots in the shadows, disguised as a visionary who disdains authority.
-If the characters don't attack immediately, Navid calmly asks why they've paid him a visit. If asked about the actions of the Ashen Heirs, Navid justifies them by pointing out the futility of serving either the Brightguard or the Silent Roar. He describes both organizations as preserving a crumbling husk of a city-state, stating that the only way to move forward is to start anew.
-Navid attacks if threatened, revealing his true form. He fights until reduced to 50 hit points or fewer, at which point he uses plane shift to escape. His mage ally attacks along side him but surrenders if Navid is defeated.
+A areia aqui é Terreno Difícil. Qualquer criatura que entrar na área da areia ou começar seu turno nela sofre 7 ([[2d6]]) de dano de fogo. Navid é imune a este efeito, mas seu assistente se mantém fora da areia. Algumas grandes peças de rocha vulcânica estão espalhadas pela sala e são seguras para se pisar.
 
-![Navid the efreeti in his human disguise](/images/campaigns/journeys-through-the-radiant-citadel/106-11-004navid-the-efreeti.webp)
+### Baadi, o Gênio
 
+Se os personagens não conseguiram recuperar o samovar roubado durante a perseguição no bazar, o gênio Baadi e o samovar também estão presentes. Se Baadi estiver aqui, leia o seguinte texto após ler o texto inicial em destaque:
 
-### Treasure
+> Vários palmos acima dos outros ocupantes da sala, um homem de 2,5 metros de altura, de pele azul, voa casualmente pelo aposento. Enquanto faz isso, bombardeia o homem reclinado com perguntas sobre oportunidades turísticas na cidade.
 
-An iron chest is buried just beneath the burning sand. Any character who searches the room for treasure and succeeds on a CD 15 Intelligence (Investigation) check notes a patch of sand that was recently dug up. The iron chest can be exposed and opened by two or more characters working for 1 minute. The chest contains a gold crown inlaid with fire opals (worth 3,000 gp), a silvered sickle with a pearlescent pommel (worth 750 gp), and a spell scroll of fly. If the Ashen Heirs in the bazaar escaped on Emad's carpet of flying, the carpet is here as well.
+Baadi está ansioso para aprender sobre Akharin Sangar após seu século de aprisionamento, mas Navid o silencia com um gesto quando os personagens aparecem. Baadi fica fora do combate. Seu samovar está descartado entre as rochas perto de onde Navid se senta.
 
+Se Baadi estiver com os personagens ou for libertado do samovar aqui, Navid revela sua forma de efreeti e fica encantado em ver seu primo. Não querendo ter seu reencontro na frente de estranhos, ambos os gênios agradecem aos personagens por reuni-los e, em seguida, usam mudança de plano para colocar a conversa em dia em outro lugar. Navid pode retornar a Akharin Sangar algum dia, mas sem seu líder, quaisquer Ashen Heir remanescentes não são mais uma ameaça.
 
+### Audiência com Navid
+
+Navid é um efreeti com a habilidade adicional de conjurar metamorfose (apenas em si mesmo) à vontade. Ele está atualmente usando seu disfarce preferido, o de um homem humano com vestes negras e carmesim. Navid estava na linha de sucessão para governar a região ao redor de Akharin Sangar antes de Atash depor seu pai, forçando o príncipe efreeti a se esconder. Agora ele conspira nas sombras, disfarçado de um visionário que despreza a autoridade.
+
+Se os personagens não atacarem imediatamente, Navid calmamente pergunta por que eles o visitaram. Se questionado sobre as ações dos Ashen Heir, Navid as justifica apontando a futilidade de servir tanto ao Brightguard quanto ao Silent Roar. Ele descreve ambas as organizações como preservadoras de uma casca em ruínas de uma cidade-estado, afirmando que a única maneira de avançar é começar de novo.
+
+Navid ataca se ameaçado, revelando sua forma verdadeira. Ele luta até ser reduzido a 50 pontos de vida ou menos, momento em que usa mudança de plano para escapar. Seu aliado mago ataca ao seu lado, mas se rende se Navid for derrotado.
+
+![Navid, o efreeti, em seu disfarce humano](/images/campaigns/journeys-through-the-radiant-citadel/106-11-004navid-the-efreeti.webp)
+
+### Tesouro
+
+Um baú de ferro está enterrado logo abaixo da areia ardente. Qualquer personagem que procurar tesouro na sala e for bem-sucedido em um teste de Inteligência (Investigação) CD 15 nota um trecho de areia que foi recentemente revolvido. O baú de ferro pode ser exposto e aberto por dois ou mais personagens trabalhando por 1 minuto. O baú contém uma coroa de ouro incrustada com opalas de fogo (no valor de 3.000 po), uma foice prateada com um pomo perolado (no valor de 750 po) e um pergaminho de magia de voo. Se os Ashen Heir no bazar escaparam no tapete voador de Emad, o tapete também está aqui.

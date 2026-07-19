@@ -1,147 +1,151 @@
 ---
-title: "Cena 7 - Forest of Hands"
+title: Cena 7 - Forest of Hands
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - Floresta das Mãos
+visibility: gm
+status: published
+summary: Operational scene to run during the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/jijibisha-manivarshi/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/jijibisha-manivarshi/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/forest-of-hands/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/forest-of-hands/
 compendium_refs:
-  - "/compendium/monsters/spy/"
-  - "/compendium/monsters/water-elemental/"
-  - "/compendium/monsters/black-pudding/"
-  - "/compendium/monsters/ultroloth/"
-  - "/compendium/monsters/will-o-wisp/"
-  - "/compendium/monsters/fomorian/"
-  - "/compendium/monsters/hydra/"
-  - "/compendium/monsters/riverine/"
+- /compendium/monsters/spy/
+- /compendium/monsters/water-elemental/
+- /compendium/monsters/black-pudding/
+- /compendium/monsters/ultroloth/
+- /compendium/monsters/will-o-wisp/
+- /compendium/monsters/fomorian/
+- /compendium/monsters/hydra/
+- /compendium/monsters/riverine/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/black-pudding-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/fomorian-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/hydra-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-085-map-91-forest-heart-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/black-pudding-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/fomorian-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/hydra-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-085-map-91-forest-heart-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-From the waterfalls, the journey to the Forest of Hands takes 10 hours. Dukha continues to serve as the characters' navigator, regardless of the events at the waterfall. For every 3 hours the characters spend traveling on the Tinjhorna River, or whenever you please, roll on the River Journey Encounters in "**Área The Swamp Forest**" section.
+Das cachoeiras, a jornada até a Floresta das Mãos leva 10 horas. Dukha continua servindo como navegador dos personagens, independentemente dos eventos na cachoeira. A cada 3 horas que os personagens passam viajando pelo Rio Tinjhorna, ou sempre que desejar, role na tabela Encontros da Jornada Fluvial na seção "**Área A Floresta do Pântano**".
 
-When the characters reach the Forest of Hands, read the following description:
+Quando os personagens chegarem à Floresta das Mãos, leia a descrição a seguir:
 
-> The scent of the swamp takes on the sweet stink of rotting flesh. Trees with drooping limbs stand amid the river, their branches like hundreds of gray hands and their dangling leaves like long, leathery fingers.
+> O cheiro do pântano ganha o fedor adocicado de carne podre. Árvores com galhos caídos erguem-se no meio do rio, seus ramos como centenas de mãos cinzentas e suas folhas pendentes como dedos longos e coriáceos.
 
-Characters who succeed on a CD 14 Intelligence (History or Nature) check recognize the region's notorious angul trees, plants that stink of rotting flesh and drip crimson sap. The trees are harmless, but many travelers find the long, finger-like leaves gliding over them as they pass beneath more than a little disconcerting.
-
-
-![The swamp forests of Shankhabhumi hold equal measure of beauty and danger](/images/campaigns/journeys-through-the-radiant-citadel/083-09-005swamp-forests.webp)
+Personagens que forem bem-sucedidos em um teste de Inteligência (História ou Natureza) CD 14 reconhecem as notórias árvores angul da região, plantas que fedem a carne podre e gotejam seiva carmesim. As árvores são inofensivas, mas muitos viajantes acham as longas folhas, semelhantes a dedos, deslizando sobre eles enquanto passam por baixo, no mínimo desconcertante.
 
 
-The journey through the Forest of Hands lasts 3 hours. Roll for or choose an encounter from the Forest of Hands Encounters table after every hour of travel.
+![As florestas pantanosas de Shankhabhumi guardam beleza e perigo em igual medida](/images/campaigns/journeys-through-the-radiant-citadel/083-09-005swamp-forests.webp)
 
 
-**Tabela: Forest of Hands Encounters**
+A jornada pela Floresta das Mãos dura 3 horas. Role ou escolha um encontro da tabela Encontros da Floresta das Mãos após cada hora de viagem.
+
+
+**Tabela: Encontros da Floresta das Mãos**
 
 |  |  |
 | --- | --- |
-| 1 | Three clots of animate angul tree sap (use the black pudding stat block) attack from underwater. |
-| 2 | Spectral boats appear through the trees. Dukha or a character who succeeds on a CD 14 Intelligence (History) check knows these phantoms are travelers who were lost when Manivarsha was ruined. The spirits are unnerving but harmless. |
-| 3 | Fog rises and lightly obscures the forest. Through it, two will-o-wisps try to lead the characters into the path of a hostile hydra. |
-| 4 | A fomorian hermit blocks the boat's passage. It demands the characters cook a meal for it, or it will eat them. It likes only disgusting food. |
+| 1 | Três coágulos de seiva animada de árvore angul (use o bloco de estatísticas do pudim negro) atacam debaixo d'água. |
+| 2 | Barcos espectrais aparecem por entre as árvores. Dukha ou um personagem que for bem-sucedido em um teste de Inteligência (História) CD 14 sabe que esses fantasmas são viajantes que se perderam quando Manivarsha foi arruinada. Os espíritos são inquietantes, mas inofensivos. |
+| 3 | A névoa se eleva e obscurece levemente a floresta. Através dela, dois fogos-fátuos tentam conduzir os personagens para o caminho de uma hidra hostil. |
+| 4 | Um eremita fomoriano bloqueia a passagem do barco. Ele exige que os personagens cozinhem uma refeição para ele, ou irá comê-los. Ele só gosta de comida repugnante. |
 
 
-### Forest Heart
+### Coração da Floresta
 
-Pushing through the Forest of Hands eventually brings the characters to a clearing at the forest's heart. This area is depicted on map 9.1. Read the following description when the characters arrive:
-> Several slow-moving waterways convene at a rocky island covered in moss and ruined stones. Atop it stands the blackened, rotting stump of a great tree. On the stump, Amanisha Manivarshi lies motionless.
-The water in this area is 10 feet deep (see the Player's Handbook for details on Climbing, Swimming, and Crawling). The island rises gently to the north and south, while on its east and west sides, 10-foot-high bluffs rise from the river. Characters who succeed on a CD 18 Wisdom (Perception) check notice the island's rocks look like pieces of an ancient structure.
-Amanisha (neutral good, human spy) is unconscious. She currently has no weapons and 5 hit points. Magical healing or a successful CD 20 Wisdom (Medicine) check restores her to consciousness. Characters who look for her trophy from the Shankha Trials, the Riverine's Shankha, don't see it.
+Abrir caminho pela Floresta das Mãos eventualmente leva os personagens a uma clareira no coração da floresta. Esta área está representada no mapa 9.1. Leia a descrição a seguir quando os personagens chegarem:
+> Vários cursos d'água lentos convergem para uma ilha rochosa coberta de musgo e pedras em ruínas. Sobre ela ergue-se o toco enegrecido e apodrecido de uma grande árvore. Sobre o toco, Amanisha Manivarshi jaz imóvel.
+A água nesta área tem 3 metros de profundidade (veja o Livro do Jogador para detalhes sobre Escalar, Nadar e Rastejar). A ilha se eleva suavemente ao norte e ao sul, enquanto nos lados leste e oeste, penhascos de 3 metros de altura se erguem do rio. Personagens que forem bem-sucedidos em um teste de Sabedoria (Percepção) CD 18 percebem que as rochas da ilha parecem pedaços de uma estrutura antiga.
+Amanisha (neutra e boa, espiã humana) está inconsciente. Ela atualmente não possui armas e tem 5 pontos de vida. Cura mágica ou um teste bem-sucedido de Sabedoria (Medicina) CD 20 a restauram à consciência. Personagens que procurarem seu troféu das Provações Shankha, o Shankha do Riverino, não o veem.
 
-![Map 9.1: Forest Heart](/images/campaigns/journeys-through-the-radiant-citadel/084-map-91-forest-heart.webp)
+![Mapa 9.1: Coração da Floresta](/images/campaigns/journeys-through-the-radiant-citadel/084-map-91-forest-heart.webp)
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/085-map-91-forest-heart-player.webp)
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/085-map-91-forest-heart-player.webp)
 
 
 ### Amanisha Manivarshi
 
-Amanisha Manivarshi is an accomplished dancer and the most recent champion of the Shankha Trials. Known as Nisha to her friends and fans, she is a charming young woman whose Manivarshi ancestors settled in Tippurika after their home disappeared. Nisha uses the last name "Manivarshi" out of respect for her family and heritage.
+Amanisha Manivarshi é uma dançarina talentosa e a campeã mais recente das Provações Shankha. Conhecida como Nisha por seus amigos e fãs, ela é uma jovem encantadora cujos ancestrais Manivarshi se estabeleceram em Tippurika depois que seu lar desapareceu. Nisha usa o sobrenome "Manivarshi" por respeito à sua família e herança.
 
-### Personality Trait
+### Traço de Personalidade
 
-"Many see my focus and assume I'm not approachable. But I welcome new friends."
+"Muitos veem meu foco e presumem que não sou acessível. Mas eu aceito novos amigos."
 
 ### Ideal
 
-"I will make the city of my birth and descendants of Manivarsha proud by bringing home the Riverine's Shankha."
+"Farei a cidade do meu nascimento e os descendentes de Manivarsha se orgulharem trazendo para casa o Shankha do Riverino."
 
-### Bond
+### Vínculo
 
-"The folk of the Manivarshi diaspora cling too much to memories. I will give them something new to celebrate."
+"O povo da diáspora Manivarshi se apega demais às memórias. Eu lhes darei algo novo para celebrar."
 
-### Flaw
+### Defeito
 
-"I am both a child of Tippurika and a descendant of Manivarsha. I am quick to hold a grudge against those who tell me I have to be one or the other."
+"Sou tanto uma filha de Tippurika quanto uma descendente de Manivarsha. Sou rápida em guardar rancor daqueles que me dizem que tenho que ser uma ou outra."
 
-### Prisoner of the Past
+### Prisioneira do Passado
 
-Nisha awakens in a fog, confused and disoriented. She calms down if the characters assure her that they've come to help. Nisha shares the following information:
-* The wave that smashed Sagorpur seized Nisha and the Riverine's Shankha, then dragged them here.
-* Once here, Nisha was attacked by a monstrous woman with gray skin that oozes crimson ichor, like the surrounding forest's angul trees. The fiend seized the Riverine's Shankha, declaring it belonged to her.
-* The fiend claimed this place marks the edge of the ruins of lost Manivarsha.
-* The fiend said that if Nisha thinks she's Manivarshi, then she can be a prisoner here for the rest of her days.
-
-
-### Jijibisha's Vengeance
-
-Jijibisha Manivarshi, a vicious soul from the land's past, lurks in the nearby forest. Long ago she made a deal with wicked otherworldly forces that gave her longevity and fiendish powers, a bargain that ultimately resulted in the ruin of Manivarsha. She is behind Amanisha's capture and is loath to let her prisoner escape.
-Before the party can complete their conversation with Amanisha, the effects of Jijibisha's wall of fire spell spring up, separating as many characters from their boat as possible. Read the following description:
-> A woman with tattered, ancient robes and skin the color of a drowned corpse walks out of swamp at the south edge of the island.
-> "Welcome, visitors! I am Jijibisha Manivarshi—I'm sure you've heard of me. I know you've come to steal my trophy," the woman says, holding up the Riverine's Shankha. "But I am the last champion of Manivarshi to win the Riverine's Shankha—not this upstart. It cost me everything, but my victory is eternal!"
-Jijibisha Manivarshi uses the ultroloth stat block, but she has access to only the wall of fire spell and the at-will spells from her Innate Spellcasting trait. Despite her fiendish powers, she looks like an ancient, withered human.
-After she finishes speaking, Jijibisha attacks. She attempts to use her Hypnotic Gaze to turn Dukha and Amanisha against the characters. While she fights, Jijibisha mocks the characters, claiming to be the last champion of Manivarsha and the only Manivarshi who can rightfully claim the Riverine's Shankha. If Jijibisha is separated from the Riverine's Shankha, she has disadvantage on ability checks and attack rolls until she regains it. She fights to the death.
-A character who succeeds on a CD 20 Intelligence (History) check has heard of Jijibisha Manivarshi and can confirm that she was favored to win the Shankha Trials the year Manivarsha was destroyed.
+Nisha desperta em uma névoa, confusa e desorientada. Ela se acalma se os personagens lhe garantirem que vieram ajudar. Nisha compartilha as seguintes informações:
+* A onda que atingiu Sagorpur agarrou Nisha e o Shankha do Riverino, e então os arrastou para cá.
+* Uma vez aqui, Nisha foi atacada por uma mulher monstruosa de pele cinzenta que exsudava icor carmesim, como as árvores angul da floresta ao redor. A criatura maligna tomou o Shankha do Riverino, declarando que ele pertencia a ela.
+* A criatura afirmou que este lugar marca o limite das ruínas da perdida Manivarsha.
+* A criatura disse que se Nisha pensa que é Manivarshi, então pode ser uma prisioneira aqui pelo resto de seus dias.
 
 
-### Adirohit's Retribution
+### A Vingança de Jijibisha
 
-When Jijibisha Manivarshi is destroyed, all is silent for a moment before a voice drifts from beneath the tree stump at the center of the Forest Heart.
-> "You out there!" calls a voice from beneath the tree stump. "Has that horror been banished? Is she finally gone? Set things right. Set me free!"
-If the characters respond to the voice, the speaker shares the following information:
-* The voice says he is Adirohit, the riverine of the lost Adirohit River, which once nourished the great city of Manivarsha.
-* Adirohit has been locked away for hundreds of years beneath a mighty mangrove that once adorned a temple built in his honor—ever since the Shankha Trials that precipitated the destruction of Manivarsha.
-* Jijibisha trapped him here using her fiendish power and forced him to cause the flood in Sagorpur.
-* Now that Jijibisha is gone, touching any blessed shankha to the tree stump will release him.
-Using either the Riverine's Shankha or the magical shankha Plabon gifted the characters releases Adirohit. However, Amanisha urges the characters to consider cautiously.
-Through roleplaying or by succeeding on a CD 12 Charisma (Persuasion) check, a character can convince Adirohit to reveal the following details:
-* Long ago, Jijibisha Manivarshi made a deal with a wicked god to give her fiendish powers that would ensure her victory in the Shankha Trials.
-* Adirohit was outraged that humans would pervert the sacred trials and unleashed a flood to punish the whole city by sinking it into the swamp.
-* Jijibisha Manivarshi survived, though, and declared herself winner of the trials.
-* Jijibisha used her sinister powers to bind Adirohit within his ruined temple.
-* Jijibisha was delighted that she would be the last Manivarshi to ever win the Shankha Trials—at least, until Amanisha's victory.
-While Adirohit is a captive now and has been used by Jijibisha, he was not when he sank Manivarsha.
-It's up to the characters to determine whether or not they free Adirohit. Amanisha has complex feelings about this, seeing Adirohit as a tie to her ancient people and one who could restore a measure of what was lost, but also a tempestuous being who destroyed her ancestors. She will not impede the characters no matter what choice they make.
-
-### Adirohit's Fate
-
-If the characters free Adirohit, he emerges from the stump in a torrent of river water. He is an arrogant, chaotic neutral riverine (detailed at the **Área end of this adventure**) who looks like a muscular, middle-aged man with white hair and blue skin. He thanks the characters for their service and brings forth treasure to reward them with (see the following section). Adirohit is unapologetic for his past deeds, even if Amanisha or others ask him to explain Manivarsha's fate. He's confident, though, that he can reestablish his river and that soon enough humans will build a new, greater city on its banks. He invites the characters to rest here under his protection and tell him how the world has changed. Amanisha has no interest in doing this, though—what Adirohit did to Manivarsha fills her with anger. Feel free to roleplaying the contentious dynamic between Amanisha and Adirohit, or encourage the characters to choose sides, as much as you please.
-Ultimately, the riverine allows the characters to leave whenever they like but insists on rewarding them for freeing him before they do.
-
-### Treasure
-
-Using his magic, Adirohit causes the following treasures to rise upon a geyser from the ruins beneath the island, bequeathing them upon the characters:
-* A fist-sized sapphire worth 6,000 gp
-* An emerald elemental gem that conjures a water elemental that resembles Adirohit
-* An intricately carved jade statuette depicting a muscular version of Adirohit, worth 500 gp
-* A waterproof sack containing a length of the finest silk bastra, embroidered with pearls worth 250 gp
+Jijibisha Manivarshi, uma alma cruel do passado da terra, espreita na floresta próxima. Há muito tempo ela fez um acordo com forças sobrenaturais malignas que lhe concederam longevidade e poderes corruptores, uma barganha que resultou, em última análise, na ruína de Manivarsha. Ela está por trás da captura de Amanisha e reluta em deixar sua prisioneira escapar.
+Antes que o grupo possa concluir sua conversa com Amanisha, os efeitos da magia parede de fogo de Jijibisha surgem, separando tantos personagens de seu barco quanto possível. Leia a descrição a seguir:
+> Uma mulher com vestes antigas e esfarrapadas e a pele da cor de um cadáver afogado sai do pântano na borda sul da ilha.
+> "Bem-vindos, visitantes! Sou Jijibisha Manivarshi – com certeza já ouviram falar de mim. Sei que vieram roubar meu troféu", diz a mulher, erguendo o Shankha do Riverino. "Mas eu sou a última campeã Manivarshi a vencer o Shankha do Riverino – não essa novata. Isso me custou tudo, mas minha vitória é eterna!"
+Jijibisha Manivarshi usa o bloco de estatísticas do ultroloth, mas ela tem acesso apenas à magia parede de fogo e às magias à vontade de sua característica Conjuração Inata. Apesar de seus poderes corruptores, ela se parece com uma humana ancestral e definhada.
+Depois que termina de falar, Jijibisha ataca. Ela tenta usar seu Olhar Hipnótico para virar Dukha e Amanisha contra os personagens. Enquanto luta, Jijibisha zomba dos personagens, afirmando ser a última campeã de Manivarsha e a única Manivarshi que pode legitimamente reivindicar o Shankha do Riverino. Se Jijibisha for separada do Shankha do Riverino, ela terá desvantagem em testes de atributo e jogadas de ataque até recuperá-lo. Ela luta até a morte.
+Um personagem que for bem-sucedido em um teste de Inteligência (História) CD 20 já ouviu falar de Jijibisha Manivarshi e pode confirmar que ela era a favorita para vencer as Provações Shankha no ano em que Manivarsha foi destruída.
 
 
+### A Retribuição de Adirohit
+
+Quando Jijibisha Manivarshi é destruída, tudo fica em silêncio por um momento antes que uma voz flutue debaixo do toco da árvore no centro do Coração da Floresta.
+> "Vocês aí!" chama uma voz debaixo do toco da árvore. "Aquele horror foi banido? Ela finalmente se foi? Corrijam as coisas. Libertem-me!"
+Se os personagens responderem à voz, o interlocutor compartilha as seguintes informações:
+* A voz diz que ele é Adirohit, o riverino do perdido Rio Adirohit, que outrora nutriu a grande cidade de Manivarsha.
+* Adirohit está trancado há centenas de anos sob um imponente mangue que outrora adornava um templo construído em sua honra – desde as Provações Shankha que precipitaram a destruição de Manivarsha.
+* Jijibisha o aprisionou aqui usando seu poder corruptor e o forçou a causar a inundação em Sagorpur.
+* Agora que Jijibisha se foi, tocar qualquer shankha abençoado no toco da árvore o libertará.
+Usar o Shankha do Riverino ou o shankha mágico que Plabon presenteou aos personagens liberta Adirohit. No entanto, Amanisha pede que os personagens considerem com cautela.
+Através da interpretação ou sendo bem-sucedido em um teste de Carisma (Persuasão) CD 12, um personagem pode convencer Adirohit a revelar os seguintes detalhes:
+* Há muito tempo, Jijibisha Manivarshi fez um acordo com um deus maligno para obter poderes corruptores que garantissem sua vitória nas Provações Shankha.
+* Adirohit ficou indignado que humanos perverteriam as provações sagradas e desencadeou uma inundação para punir a cidade inteira, afundando-a no pântano.
+* Jijibisha Manivarshi sobreviveu, no entanto, e declarou-se vencedora das provações.
+* Jijibisha usou seus poderes sinistros para aprisionar Adirohit dentro de seu templo em ruínas.
+* Jijibisha ficou encantada por ser a última Manivarshi a vencer as Provações Shankha – pelo menos, até a vitória de Amanisha.
+Embora Adirohit seja um cativo agora e tenha sido usado por Jijibisha, ele não o era quando afundou Manivarsha.
+Cabe aos personagens determinar se libertam ou não Adirohit. Amanisha tem sentimentos complexos sobre isso, vendo Adirohit como um elo com seu povo ancestral e alguém que poderia restaurar uma medida do que foi perdido, mas também um ser tempestuoso que destruiu seus ancestrais. Ela não impedirá os personagens, independentemente da escolha que fizerem.
+
+### O Destino de Adirohit
+
+Se os personagens libertarem Adirohit, ele emerge do toco em uma torrente de água fluvial. Ele é um arrogante riverino caótico e neutro (detalhado no **Área final desta aventura**) que se parece com um homem musculoso de meia-idade, com cabelos brancos e pele azul. Ele agradece aos personagens por seus serviços e faz surgir um tesouro para recompensá-los (veja a seção seguinte). Adirohit não se desculpa por seus atos passados, mesmo que Amanisha ou outros lhe peçam para explicar o destino de Manivarsha. Ele está confiante, porém, de que pode restabelecer seu rio e que logo os humanos construirão uma cidade nova e maior em suas margens. Ele convida os personagens a descansar aqui sob sua proteção e lhe contar como o mundo mudou. Amanisha, no entanto, não tem interesse em fazer isso – o que Adirohit fez a Manivarsha a enche de raiva. Sinta-se à vontade para interpretar a dinâmica contenciosa entre Amanisha e Adirohit, ou encorajar os personagens a escolher lados, tanto quanto desejar.
+Por fim, o riverino permite que os personagens partam quando quiserem, mas insiste em recompensá-los por libertá-lo antes que o façam.
+
+### Tesouro
+
+Usando sua magia, Adirohit faz os seguintes tesouros surgirem em um gêiser das ruínas sob a ilha, legando-os aos personagens:
+* Uma safira do tamanho de um punho no valor de 6.000 po
+* Uma gema elemental de esmeralda que conjura um elemental da água que se assemelha a Adirohit
+* Uma estatueta de jade intricadamente esculpida representando uma versão musculosa de Adirohit, no valor de 500 po
+* Um saco impermeável contendo uma peça do mais fino tecido de seda bastra, bordada com pérolas no valor de 250 po

@@ -1,65 +1,67 @@
 ---
-title: "Cena 7 - Revealing the Plot"
+title: Cena 7 - Revealing the Plot
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - Revelando a Trama
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
 compendium_refs:
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/wynling/"
+- /compendium/monsters/noble/
+- /compendium/monsters/wynling/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wynling-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-After the characters complete a few Market Games and make inquires around the market, they likely learn the following facts:
+Após os personagens completarem alguns Desafios do Mercado e fazerem perguntas pelo mercado, eles provavelmente descobrem os seguintes fatos:
 
-* No one has seen members of either the Tyenmo family or the Xungoon family sabotaging the other family's stand.
-* Vi is leaving the market, making Kasem's future uncertain.
-* Kasem is behaving strangely and seems fixated on the Tyenmo and Xungoon stands.
+* Ninguém viu membros da família Tyenmo ou da família Xungoon sabotando a barraca da outra família.
+* Vi está deixando o mercado, tornando o futuro de Kasem incerto.
+* Kasem está se comportando de forma estranha e parece obcecado pelas barracas Tyenmo e Xungoon.
 
-If the characters take information pointing toward Kasem to either Lamai or Kusa, the aggrieved vendor listens but remains fixated on her rival. Neither believes someone else is responsible unless the culprit confesses, the characters present accounts from other vendors, or the characters reveal a wynling.
-
-
-### Investigating Kasem
-
-If the characters suspect Kasem of inflaming the Tyenmo-Xungoon rivalry, they might investigate him further. The brothers have a tent for storing supplies and conducting business next to their Spicy Brothers stall. Characters who visit the shop can slip into the tent by succeeding on a CD 12 Dexterity (Stealth) check. The tent contains business records, cots for both brothers, a large crate marked "peppers" that holds three straw-lined bird cages, and a box of persimmons.
-Kasem used the cages to smuggle the wynlings into the market, and the creatures use them as tiny homes. Persimmons are rare in the market, but they are one of the wynlings' favorite foods. Kasem uses the fruit to encourage the wynlings to harass his targets, promising them the treats when they do good work or stashing them in other vendors' stalls. While the cages and fruit aren't enough evidence of Kasem's wrongdoing on their own, they might help the characters reveal Kasem's plot.
+Se os personagens levarem informações que apontam para Kasem a Lamai ou Kusa, a vendedora injustiçada ouve, mas continua obcecada por sua rival. Nenhuma delas acredita que outra pessoa seja responsável, a menos que o culpado confesse, os personagens apresentem relatos de outros vendedores ou os personagens revelem um wynling.
 
 
-### Revealing the Wynlings
+### Investigando Kasem
 
-The characters might suspect Kasem is using a creature to harass the Tyenmo and Xungoon market stands—either due to stories from vendors or from what they've witnessed themselves. If a character casts detect evil and good near one of the sabotaged stalls, it reveals the presence of a Fey creature nearby, a wynling drowsing on a nearby stall roof. If approached, the wynling turns invisible and flees.
-A character can convince a wynling to reveal itself by going to either Tyenmo Noodles or Xungoon Family Seafood and holding out a persimmon. Doing so causes at least one wynling to appear and try to take the fruit. A character can befriend a wynling once it reveals itself by succeeding on a CD 10 Charisma (Persuasion) check. If characters who can speak and understand Sylvan ask the wynling questions, the Fey creature squeaks the following details in reply:
-* Kasem found the wynlings in the nearby mountains and brought them to the market recently.
-* The wynlings live with their friend Kasem at the Spicy Brothers tent.
-* Kasem offers the wynlings persimmons to do errands and to play in certain places (usually the Tyenmo and Xungoon stalls).
-* The wynlings aren't malicious; they're just playful and really like persimmons.
-The wynlings have no loyalty to Kasem, but they also don't understand why anything they've done is wrong. If the characters show the wynlings to Lamai or Kusa, the vendor is surprised and wants to know why the wynlings are harassing her. The wynlings explain they've only done what Kasem asked them to—thinking it was all good fun. If Kasem is confronted with the wynlings, the creatures are clearly friendly with him. Kasem then confesses he sowed discord between the Tyenmo and Xungoon families to make it easier to buy their stalls.
+Se os personagens suspeitarem que Kasem está inflamando a rivalidade Tyenmo-Xungoon, eles podem investigá-lo mais a fundo. Os irmãos têm uma tenda para armazenar suprimentos e conduzir negócios ao lado de sua barraca Irmãos Picantes. Personagens que visitam a loja podem entrar furtivamente na tenda sendo bem-sucedidos em um teste de Destreza (Furtividade) CD 12. A tenda contém registros comerciais, catres para ambos os irmãos, um grande caixote marcado como "pimentas" que guarda três gaiolas forradas com palha e uma caixa de caquis.
+Kasem usou as gaiolas para contrabandear os wynlings para o mercado, e as criaturas as usam como pequenos lares. Caquis são raros no mercado, mas são uma das comidas favoritas dos wynlings. Kasem usa a fruta para encorajar os wynlings a assediar seus alvos, prometendo-lhes as guloseimas quando fazem um bom trabalho ou escondendo-as nas barracas de outros vendedores. Embora as gaiolas e a fruta não sejam provas suficientes do delito de Kasem por si sós, elas podem ajudar os personagens a revelar o plano de Kasem.
 
 
-### Confronting Kasem
+### Revelando os Wynlings
 
-If characters challenge Kasem with details they learned about him from local vendors, he laughs them off, explaining the market is full of gossip. A character who succeeds on a CD 10 Wisdom (Insight) check realizes Kasem is hiding something. If the characters confront Kasem with multiple accounts or pieces of evidence, they can coax a confession from him (see the following section). If characters take a more hostile approach, Kasem defends himself. Kasem has the statistics of a noble and calls out to three wynlings (presented at the **Área end of this adventure**), who appear and aid him.
-
-### Convincing Kasem to Confess
-
-The characters can convince Kasem to confess by presenting all three of the following rumors to Kasem—or presenting two and succeeding on a CD 12 Charisma (Intimidation or Persuasion) check; if the characters do so, Kasem then confesses to everything in the "**Área Kasem's Plan**" section:
-
-
-### Rivals Explode
-
-If the party fails at the Market Games or reaches dead ends in its investigations, the Tyenmo-Xungoon rivalry comes to a head when Lamai and Kusa get into a public scrap at one of their stands. While the shop vendors fight, any character can make a CD 12 Wisdom (Insight) check to notice Kasem watching with a smile. Not realizing he's being watched, Kasem offers a persimmon to something unseen on his shoulder and the fruit rapidly vanishes. Characters who confront Kasem with what they saw and succeed on a CD 14 Charisma (Intimidation) check convince him to confess to everything in the "**Área Kasem's Plan**" section.
+Os personagens podem suspeitar que Kasem está usando uma criatura para assediar as barracas de mercado Tyenmo e Xungoon — seja por histórias de vendedores ou pelo que testemunharam pessoalmente. Se um personagem conjurar detectar o bem e o mal perto de uma das barracas sabotadas, a magia revela a presença de uma criatura de Fada nas proximidades, um wynling cochilando no telhado de uma barraca próxima. Se abordado, o wynling fica invisível e foge.
+Um personagem pode convencer um wynling a se revelar indo até o Macarrão Tyenmo ou Frutos do Mar da Família Xungoon e estendendo um caqui. Fazer isso faz com que pelo menos um wynling apareça e tente pegar a fruta. Um personagem pode fazer amizade com um wynling, uma vez que ele se revele, sendo bem-sucedido em um teste de Carisma (Persuasão) CD 10. Se personagens que podem falar e entender Silvestre fizerem perguntas ao wynling, a criatura de Fada responde com os seguintes detalhes em guinchos:
+* Kasem encontrou os wynlings nas montanhas próximas e os trouxe para o mercado recentemente.
+* Os wynlings vivem com seu amigo Kasem na tenda dos Irmãos Picantes.
+* Kasem oferece caquis aos wynlings para fazerem tarefas e para brincarem em certos lugares (geralmente as barracas Tyenmo e Xungoon).
+* Os wynlings não são maliciosos; são apenas brincalhões e gostam muito de caquis.
+Os wynlings não têm lealdade a Kasem, mas também não entendem por que algo que fizeram é errado. Se os personagens mostrarem os wynlings a Lamai ou Kusa, a vendedora fica surpresa e quer saber por que os wynlings estão a assediando. Os wynlings explicam que só fizeram o que Kasem lhes pediu — achando que era tudo uma boa diversão. Se Kasem for confrontado com os wynlings, as criaturas são claramente amigáveis com ele. Kasem então confessa que semeou discórdia entre as famílias Tyenmo e Xungoon para tornar mais fácil comprar suas barracas.
 
 
+### Confrontando Kasem
+
+Se os personagens desafiarem Kasem com detalhes que descobriram sobre ele com vendedores locais, ele ri da situação, explicando que o mercado está cheio de fofocas. Um personagem que for bem-sucedido em um teste de Sabedoria (Intuição) CD 10 percebe que Kasem está escondendo algo. Se os personagens confrontarem Kasem com múltiplos relatos ou evidências, eles podem obter uma confissão dele (veja a seção a seguir). Se os personagens adotarem uma abordagem mais hostil, Kasem se defende. Kasem tem as estatísticas de um nobre e chama três wynlings (apresentados no **Área final desta aventura**), que aparecem e o ajudam.
+
+### Convencendo Kasem a Confessar
+
+Os personagens podem convencer Kasem a confessar apresentando todos os três boatos a seguir a Kasem — ou apresentando dois e sendo bem-sucedidos em um teste de Carisma (Intimidação ou Persuasão) CD 12; se os personagens fizerem isso, Kasem então confessa tudo na seção "**Área Plano de Kasem**":
+
+
+### Rivais Explodem
+
+Se o grupo falhar nos Desafios do Mercado ou chegar a becos sem saída em suas investigações, a rivalidade Tyenmo-Xungoon atinge o ápice quando Lamai e Kusa entram em uma briga pública em uma de suas barracas. Enquanto as vendedoras brigam, qualquer personagem pode fazer um teste de Sabedoria (Intuição) CD 12 para notar Kasem observando com um sorriso. Sem perceber que está sendo observado, Kasem oferece um caqui a algo invisível em seu ombro e a fruta desaparece rapidamente. Personagens que confrontarem Kasem com o que viram e forem bem-sucedidos em um teste de Carisma (Intimidação) CD 14 o convencem a confessar tudo na seção "**Área Plano de Kasem**".

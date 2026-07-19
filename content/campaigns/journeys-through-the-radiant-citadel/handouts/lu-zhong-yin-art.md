@@ -1,15 +1,15 @@
 ---
-title: "Arte: Lu Zhong Yin"
+title: 'Arte: Lu Zhong Yin'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Lu Zhong Yin'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Lu Zhong Yin](/images/campaigns/journeys-through-the-radiant-citadel/125-13-003lu-zhong-yin.webp)

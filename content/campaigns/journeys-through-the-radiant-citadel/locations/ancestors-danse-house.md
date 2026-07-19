@@ -1,19 +1,24 @@
 ---
-title: "Ancestors' Danse House"
+title: Ancestors' Danse House
 params:
-  kind: "location"
+  kind: location
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Casa da Dança dos Ancestrais
+visibility: gm
+status: draft
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Ancestors' Danse House** importada automaticamente.
+**Localidade Casa de Danse dos Ancestrais importada automaticamente.**
 
 ### Cenas e Sub-áreas
-- [Ancestors' Danse House](../../adventures/the-nightseas-succor/07-ancestors-danse-house/)
+- [Casa de Danse dos Ancestrais](../../adventures/the-nightseas-succor/07-ancestors-danse-house/)

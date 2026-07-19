@@ -1,18 +1,25 @@
 ---
-title: "Expertise"
+title: Expertise
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Expertise."
+summary: 'Característica de Classe: Especialização'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Especialização
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with phb. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
+No 1º nível, escolha duas de suas proficiências em perícias, ou uma de suas proficiências em perícias e sua proficiência com phb. Seu bônus de proficiência é dobrado para qualquer teste de atributo que você fizer que usar qualquer uma das proficiências escolhidas.
 
-At 6th level, you can choose two more of your proficiencies (in skills or with phb) to gain this benefit.
+No 6º nível, você pode escolher mais duas de suas proficiências (em perícias ou com phb) para receber este benefício.

@@ -1,15 +1,15 @@
 ---
-title: "Arte: druid"
+title: 'Arte: druid'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: druid'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: druid](/images/campaigns/journeys-through-the-radiant-citadel/druid.webp)

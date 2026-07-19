@@ -1,15 +1,15 @@
 ---
-title: "Arte: cultist"
+title: 'Arte: cultist'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: cultist'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: cultist](/images/campaigns/journeys-through-the-radiant-citadel/cultist.webp)

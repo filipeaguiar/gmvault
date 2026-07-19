@@ -1,19 +1,24 @@
 ---
-title: "Arrival in Janya"
+title: Arrival in Janya
 params:
-  kind: "location"
+  kind: location
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Chegada em Janya
+visibility: gm
+status: draft
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Arrival in Janya** importada automaticamente.
+Localidade **Chegada em Janya** importada automaticamente.
 
-### Cenas e Sub-áreas
-- [Arrival in Janya](../../adventures/the-nightseas-succor/09-arrival-in-janya/)
+### Cenas e Subáreas
+- [Chegada em Janya](../../adventures/the-nightseas-succor/09-arrival-in-janya/)

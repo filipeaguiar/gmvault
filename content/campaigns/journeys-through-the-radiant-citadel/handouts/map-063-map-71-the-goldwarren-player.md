@@ -1,14 +1,15 @@
 ---
-title: "Mapa: The Goldwarren (Player Version)"
+title: 'Mapa: The Goldwarren (Player Version)'
 params:
-  kind: "handout"
-draft: true
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+visibility: players
+status: published
 tags:
-  - mapa
-  - handout
-  - importado
+- mapa
+- handout
+- importado
+titulo_pt_br: 'Mapa: The Goldwarren (Player Version)'
 ---
 
 ![The Goldwarren (Player Version)](/images/campaigns/journeys-through-the-radiant-citadel/063-map-71-the-goldwarren-player.webp)

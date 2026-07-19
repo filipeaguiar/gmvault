@@ -1,55 +1,58 @@
 ---
-title: "Cena 4 - Death in the Mines"
+title: Cena 4 - Death in the Mines
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 4 - Morte nas Minas
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/awa/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/awa/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/death-in-the-mines/"
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/death-in-the-mines/
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/awa-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Soon after the giant scorpions are defeated, the crowd throngs Prince Simbon and Prince Kirina, lauding their heroics and asking what they'll do next. Uzoma ignores the chaos and, when the characters are ready, guides them to a young human at the crowd's edge whom she introduces as Awa—a young miner who escaped the Goldwarren. At Uzoma's prompting, Awa shares the following story:
+Logo após os escorpiões gigantes serem derrotados, a multidão cerca o Príncipe Simbon e o Príncipe Kirina, enaltecendo seus feitos heroicos e perguntando o que farão a seguir. Uzoma ignora o caos e, quando os personagens estiverem prontos, os guia até um jovem humano na borda da multidão, a quem ela apresenta como Awa — um jovem mineiro que escapou da Toca Dourada. Por insistência de Uzoma, Awa compartilha a seguinte história:
 
-* Awa and the rest of his crew—including his mother—were working a new excavation when it collapsed.
-* Awa and the others were trying to escape when a snarling, eight-legged beast appeared.
-* The beast would've killed Awa, but his mother, Zihaya, defended him. The creature attacked her in turn and dragged her away.
-* In the chaos, Awa was separated from the others. He made his way to the entrance and was the last miner out before the entrance collapsed. No one else from his crew escaped.
+* Awa e o resto de sua equipe — incluindo sua mãe — estavam trabalhando em uma nova escavação quando ela desabou.
+* Awa e os outros estavam tentando escapar quando uma criatura de oito patas, rosnando, apareceu.
+* A criatura teria matado Awa, mas sua mãe, Zihaya, o defendeu. A criatura a atacou em seguida e a arrastou para longe.
+* No caos, Awa foi separado dos outros. Ele abriu caminho até a entrada e foi o último mineiro a sair antes que a entrada desabasse. Ninguém mais de sua equipe escapou.
 
-If pressed, Awa can detail the creature that attacked him further (see the "**Área Aurumvoraxes**" section at the end of this adventure). A character who succeeds on a CD 16 Intelligence (Arcana or Nature) check recognizes the creature as an aurumvorax, a predator that eats precious metals but is thought to be extinct in the region.
+Se pressionado, Awa pode detalhar melhor a criatura que o atacou (veja a seção "**Área Aurumvoraxes**" no final desta aventura). Um personagem que seja bem-sucedido em um teste de Inteligência (Arcanismo ou Natureza) CD 16 reconhece a criatura como um aurumvorax, um predador que come metais preciosos, mas que se acredita estar extinto na região.
 
-After Awa shares his experience, Uzoma tells the characters how King Diara has been pushing to increase output at the mine to please Empress Inaya, excavating newer tunnels so quickly there's not time to fully reinforce them. The Aurum Guild has been warning of the potential for collapses within the mine, but has been ignored.
-
-
-![Overseer Uzoma](/images/campaigns/journeys-through-the-radiant-citadel/060-07-002overseer-uzoma.webp)
+Depois que Awa compartilha sua experiência, Uzoma conta aos personagens como o Rei Diara tem pressionado para aumentar a produção na mina para agradar a Imperatriz Inaya, escavando novos túneis tão rapidamente que não há tempo para reforçá-los adequadamente. A Guilda Áurea tem alertado sobre o potencial de desabamentos dentro da mina, mas tem sido ignorada.
 
 
-
-### Next Steps
-
-As the characters finish their conversation with Awa, shouting among the princes' supporters causes Uzoma to intervene:
-> "That's enough! All this talk is wasting breath. The crews at the entrance should have it cleared and shored up by day's end. We'll sort out who's on the rescue team then. But for now..."
-> As Uzoma speaks, Kirina and Simbon both step up, interrupting her to announce they'll gladly take a place in the rescue party. Their followers begin arguing again until Uzoma blows a piercing whistle.
-> "If you want to help, stop arguing and do what I need you to do. Prince Kirina, you'll come to the Goldwarren with me. Prince Simbon, go find out what could be waiting for us in the mine. These adventurers will go with you. Let's get this done."
-Uzoma tasks Simbon and the characters with seeking out Kedjou, a high priest visiting Anisa Academy. Kedjou has a rich understanding of the Sensa Empire's history and might know what lurks in the mine. Even if the characters already suspect aurumvoraxes, Kedjou can relate more about their history and how they were once removed from the region.
-
-### To the Academy
-
-Prince Simbon escorts the characters to Anisa Academy, a ten-minute walk through the city. He's personable and speaks plainly, saying Kirina only seeks to make himself a hero to gain favor with the wealthy Aurum Guild. It's clear Simbon is frustrated, but characters who succeed on a CD 15 Wisdom (Insight) check recognize his complaints conceal jealousy of the well-liked rival prince.
+![Supervisora Uzoma](/images/campaigns/journeys-through-the-radiant-citadel/060-07-002overseer-uzoma.webp)
 
 
+
+### Próximos Passos
+
+Enquanto os personagens terminam sua conversa com Awa, gritos entre os apoiadores dos príncipes fazem Uzoma intervir:
+> "Já chega! Toda essa conversa está desperdiçando fôlego. As equipes na entrada já devem ter limpado e escorado tudo até o fim do dia. Vamos definir quem está na equipe de resgate então. Mas por enquanto..."
+> Enquanto Uzoma fala, Kirina e Simbon se aproximam, interrompendo-a para anunciar que ocuparão com prazer um lugar na equipe de resgate. Seus seguidores começam a discutir novamente até Uzoma dar um apito estridente.
+> "Se vocês querem ajudar, parem de discutir e façam o que preciso que façam. Príncipe Kirina, você virá comigo para a Toca Dourada. Príncipe Simbon, vá descobrir o que pode estar nos esperando na mina. Esses aventureiros irão com você. Vamos resolver isso."
+Uzoma encarrega Simbon e os personagens de procurar Kedjou, um alto sacerdote visitando a Academia Anisa. Kedjou tem um profundo conhecimento da história do Império Sensa e pode saber o que se esconde na mina. Mesmo que os personagens já suspeitem dos aurumvoraxes, Kedjou pode relatar mais sobre sua história e como eles foram removidos da região no passado.
+
+### Para a Academia
+
+O Príncipe Simbon escolta os personagens até a Academia Anisa, uma caminhada de dez minutos pela cidade. Ele é afável e fala com franqueza, dizendo que Kirina só busca se tornar um herói para ganhar o favor da rica Guilda Áurea. É evidente que Simbon está frustrado, mas personagens que sejam bem-sucedidos em um teste de Sabedoria (Intuição) CD 15 reconhecem que suas queixas escondem inveja do popular príncipe rival.

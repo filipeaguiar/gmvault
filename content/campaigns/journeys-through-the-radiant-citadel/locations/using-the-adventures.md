@@ -1,19 +1,24 @@
 ---
-title: "Using the Adventures"
+title: Using the Adventures
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Usando as Aventuras
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Using the Adventures** importada automaticamente.
+Localidade **Usando as Aventuras** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Using the Adventures](../../adventures/welcome-to-the-radiant-citadel/02-using-the-adventures/)
+- [Usando as Aventuras](../../adventures/welcome-to-the-radiant-citadel/02-using-the-adventures/)

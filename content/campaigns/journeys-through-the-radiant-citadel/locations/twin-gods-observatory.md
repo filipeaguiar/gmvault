@@ -1,19 +1,24 @@
 ---
-title: "Twin Gods Observatory"
+title: Twin Gods Observatory
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Observatório dos Deuses Gêmeos
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Twin Gods Observatory** importada automaticamente.
+Localidade **Observatório dos Deuses Gêmeos** importada automaticamente.
 
-### Cenas e Sub-áreas
-- [Twin Gods Observatory](../../adventures/trail-of-destruction/06-twin-gods-observatory/)
+### Cenas e Subáreas
+- [Observatório dos Deuses Gêmeos](../../adventures/trail-of-destruction/06-twin-gods-observatory/)

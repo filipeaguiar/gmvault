@@ -1,122 +1,116 @@
 ---
-title: "Cena 9 - Shankhabhumi Gazetteer"
+title: Cena 9 - Shankhabhumi Gazetteer
 weight: 90
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 9 - Shankhabhumi Guia Geográfico
+visibility: gm
+status: published
+summary: Mission scene to run during the session.
+npcs: null
+locations: null
 compendium_refs:
-  - "/compendium/monsters/cultist/"
-  - "/compendium/monsters/marid/"
-  - "/compendium/monsters/spirit-naga/"
-  - "/compendium/monsters/riverine/"
+- /compendium/monsters/cultist/
+- /compendium/monsters/marid/
+- /compendium/monsters/spirit-naga/
+- /compendium/monsters/riverine/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-087-map-92-shankhabhumi-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/marid-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-087-map-92-shankhabhumi-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Shaped and defined by its rivers, Shankhabhumi is a dynamic floodplain surrounded by mountains and crisscrossed by waterways. Most of the land is covered in swamp forests infested with unknown perils, except for three city-states that stand proudly on broad islands of miraculously dry land. The islands on which the cities of Ashwadhatu, Sagorpur, and Tippurika stand were each granted to the people by a different riverine, and at the heart of each city is a temple dedicated to that city's patron riverine. A fourth city, Manivarsha, was destroyed in a cataclysm five hundred years ago.
+Moldada e definida por seus rios, Shankhabhumi é uma planície de inundação dinâmica cercada por montanhas e entrecortada por cursos d'água. A maior parte da terra é coberta por florestas pantanosas infestadas de perigos desconhecidos, exceto por três cidades-estado que se erguem orgulhosamente em amplas ilhas de terra milagrosamente seca. As ilhas onde se situam as cidades de Ashwadhatu, Sagorpur e Tippurika foram concedidas ao povo por um riverine diferente, e no coração de cada cidade há um templo dedicado ao riverine patrono da cidade. Uma quarta cidade, Manivarsha, foi destruída em um cataclismo há quinhentos anos.
 
-Each city spreads out in concentric circles from its riverine temple. The innermost circle holds the city's senate house, main market, and academy, as well as the houses of wealthy citizens. Past these lie modest residential neighborhoods and trade wards. At its edges, each city slopes down to submerged rice fields before dissipating into the swamps. The skies of Shankhabhumi are eternally heavy with rainclouds, and even well-maintained buildings wear a fine coat of moss.
+Cada cidade se expande em círculos concêntricos a partir de seu templo riverine. O círculo mais interno abriga a sede do senado, o mercado principal e a academia da cidade, bem como as residências dos cidadãos abastados. Após estes, encontram-se bairros residenciais modestos e alas comerciais. Em suas bordas, cada cidade desce em declive para campos de arroz submersos antes de se dissipar nos pântanos. Os céus de Shankhabhumi estão eternamente carregados de nuvens de chuva, e até mesmo as edificações mais bem conservadas ostentam uma fina camada de musgo.
 
-To experience Shankhabhumi at its finest, one must visit during the Shankha Trials, held every twelve years in one of the three cities. A twelve-day spectacle of skill and might, the trials feature contestants representing each city who entertain thousands of spectators. But the trials are more than a competition; they represent the origin story of the land and a pact endlessly renewed between the people and the riverines to whom the land belongs.
+Para vivenciar Shankhabhumi em seu auge, é preciso visitá-la durante os Torneios Shankha, realizados a cada doze anos em uma das três cidades. Um espetáculo de habilidade e poder com doze dias de duração, os torneios apresentam competidores representando cada cidade, que entretêm milhares de espectadores. Mas os torneios são mais do que uma competição; eles representam a história de origem da terra e um pacto renovado incessantemente entre o povo e os riverines aos quais a terra pertence.
 
+### Características
 
-### Features
+Aqueles familiarizados com Shankhabhumi conhecem os seguintes detalhes:
 
-Those familiar with Shankhabhumi know the following details:
+### Locais Notáveis
 
-
-### Noteworthy Sites
-
-Hundreds of rivers flow through Shankhabhumi, creating natural paths to its three great cities.
+Centenas de rios correm por Shankhabhumi, criando caminhos naturais para suas três grandes cidades.
 
 ![Map 9.2: Shankhabhumi](/images/campaigns/journeys-through-the-radiant-citadel/086-map-92-shankhabhumi.webp)
 
-
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/087-map-92-shankhabhumi-player.webp)
-
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/087-map-92-shankhabhumi-player.webp)
 
 ### Ashwadhatu
 
-The Mehul River flows from the Nirjhar Highlands, through Ashwadhatu, and on to Dishahara Bay. The city of Shankhabhumi with the largest area of solid land, Ashwadhatu has long been the home of proud, traditionalist farmers, miners, and boatbuilders. More recently, metalworkers and inventors are fueling a growing industry, though some citizens dismiss them as eccentrics creating unnecessary, newfangled contrivances.
+O Rio Mehul flui das Terras Altas de Nirjhar, através de Ashwadhatu, e segue para a Baía de Dishahara. A cidade de Shankhabhumi com a maior área de terra firme, Ashwadhatu tem sido por muito tempo o lar de agricultores, mineradores e construtores de barcos orgulhosos e tradicionalistas. Mais recentemente, metalúrgicos e inventores estão impulsionando uma indústria crescente, embora alguns cidadãos os considerem excêntricos que criam engenhocas desnecessárias e ultramodernas.
 
 ### Sagorpur
 
-Sagorpur is the mightiest city of Shankhabhumi, having inherited that mantle when Manivarsha was ruined five centuries ago. The city lies where the Iravati River flows into Dishahara Bay, and its mainstay is sea trade. A wide array of goods can be purchased in the city's sprawling markets, and seafaring foreigners and inland travelers from Tippurika and Ashwadhatu mingle with locals in Sagorpur's numerous inns, playhouses, gambling dens, and restaurants.
+Sagorpur é a cidade mais poderosa de Shankhabhumi, tendo herdado esse manto quando Manivarsha foi arruinada há cinco séculos. A cidade se situa onde o Rio Iravati deságua na Baía de Dishahara, e sua principal atividade é o comércio marítimo. Uma ampla variedade de bens pode ser adquirida nos mercados extensos da cidade, e estrangeiros navegantes e viajantes do interior, vindos de Tippurika e Ashwadhatu, misturam-se aos locais nas inúmeras estalagens, casas de espetáculo, antros de jogo e restaurantes de Sagorpur.
 
 ### Tippurika
 
-The city of Tippurika stands where the Joltara River flows from the Adhameru Mountains into a deep canyon, frothing with whitewater rapids. Tippuri citizens—a majority of them dwarves and halflings—are adept at climbing steep paths, traversing unstable rope bridges, fishing in mountain rapids, and exploring the inaccessible caves of the mountains. The city is known for its hill crops—particularly tea and timber. Locals take pride in their staunch courage and infuriating stubbornness in equal measure.
+A cidade de Tippurika ergue-se onde o Rio Joltara flui das Montanhas Adhameru para um cânion profundo, espumando com corredeiras de águas bravas. Os cidadãos de Tippuri — em sua maioria anões e halflings — são hábeis em escalar caminhos íngremes, atravessar pontes de corda instáveis, pescar nas corredeiras das montanhas e explorar as cavernas inacessíveis das montanhas. A cidade é conhecida por suas culturas de colina — particularmente chá e madeira. Os locais orgulham-se de sua coragem inabalável e teimosia exasperante em igual medida.
 
+### A Vida em Shankhabhumi
 
-### Life in Shankhabhumi
+Os forasteiros costumam se referir ao povo de Shankhabhumi coletivamente como "ribeirinhos", mas os habitantes das três cidades-estado chamam a si mesmos de Sagorpuri, Ashwadhatuj ou Tippuri, e afirmam ter pouco em comum uns com os outros. No entanto, isso é um exagero; o povo de Shankhabhumi compartilha traços e experiências unificadoras.
 
-Outsiders often refer to the people of Shankhabhumi collectively as "riverlanders," but the folk of the three city-states call themselves Sagorpuri, Ashwadhatuj, or Tippuri, and claim to have little in common with one another. However, that's an exaggeration; the people of Shankhabhumi share unifying traits and experiences.
+### Vestimentas e Adornos
 
-### Clothing and Accoutrements
+O povo de Shankhabhumi prefere roupas compostas por faixas de tecido de algodão ou seda chamadas bastras, que são enroladas ao redor do corpo em vários estilos. Estas incluem as dobras soltas e volumosas de um nobre sedentário, o envoltório apertado, semelhante a uma corda, de um competidor dos Torneios Shankha, e as vestes práticas e ajustadas de um trabalhador ou navegador fluvial.
+Cabelos ondulados ou cacheados são comuns na região; as pessoas os esfregam com óleo de coco para dar brilho e os usam longos ou em tranças grossas. Os ornamentos incluem pulseiras e adornos de cabeça feitos de concha, bem como desenhos de argila branca pintados diretamente sobre a pele. Joias de ouro e pedras preciosas, uma especialidade da cidade em ruínas de Manivarsha, são populares entre os cidadãos ricos e frequentemente trabalhadas pelos descendentes dos artesãos da diáspora Manivarshi.
 
-The folk of Shankhabhumi favor clothing composed of lengths of cotton or silk cloth called bastras, which are wrapped around the body in various styles. These include the loose, voluminous drapes of a sedentary noble, the tight, rope-like wrap of a Shankha Trials contestant, and the practical, gathered garments of a laborer or river navigator.
-Wavy or curly hair is common in the region; people rub it to a shine with coconut oil and wear it long or in thick plaits. Ornaments include conch-shell bangles and hairpieces, as well as designs of white clay painted directly onto the skin. Gold and gemstone jewelry, a specialty of the ruined city of Manivarsha, is popular among wealthy citizens and often crafted by the descendants of artisans from the Manivarshi diaspora.
+### A Diáspora Manivarshi
 
-### Manivarshi Diaspora
+A cidade-estado de Manivarsha foi destruída há quinhentos anos sob circunstâncias que nunca foram totalmente explicadas. No último dia dos Torneios Shankha daquele ano, a cidade simplesmente desapareceu, junto com todos que lá estavam. Alguns sobreviventes que estavam do lado de fora da cidade naquele momento falaram de uma onda colossal no Rio Adirohit que marcou seu fim; tentativas subsequentes de alcançar sua antiga localização não encontraram nada além de pântanos infindáveis. Os cidadãos que estavam longe de casa ficaram desabrigados. Esses sobreviventes e seus descendentes assimilaram-se nas outras cidades, trazendo as tradições de lapidação de gemas e engaste de joias de Manivarsha para seus novos lares. Essas joias são agora comuns em toda a terra, e muitas peças são fantasticamente valiosas.
 
-The city-state of Manivarsha was destroyed five hundred years ago under circumstances that have never fully been explained. On the last day of that year's Shankha Trials, the city simply vanished, along with everyone there. A few survivors who were just outside the city at the time told of a towering wave along the Adirohit River that marked its demise; subsequent attempts to reach its former location found nothing but endless swamps. Citizens who were away from home were left stranded. Those survivors and their descendants assimilated into the other cities, bringing Manivarsha's traditions of gem-cutting and jewel-setting to their new homes. This jewelry is now common throughout the land, and many pieces are fantastically valuable.
+### Poder e Política
 
-### Power and Politics
+Além de suas rivalidades culturais, Sagorpur, Tippurika e Ashwadhatu raramente se envolvem em grandes conflitos — viver em uma terra que muda constantemente com os caprichos dos riverines já é precário o suficiente. A sombra da cidade perdida de Manivarsha paira sobre as cidades restantes como um lembrete de que a vida em Shankhabhumi pode ser facilmente varrida.
+O poder em cada cidade é compartilhado entre três facções — quinze senadores que governam oficialmente os assuntos da cidade-estado; uma rede de navegadores fluviais majhis conhecida como Bhatiyali; e ex-competidores dos Torneios Shankha que se tornam artistas públicos famosos e heróis, quando não se tornam eles próprios senadores.
 
-Aside from their cultural rivalries, Sagorpur, Tippurika and Ashwadhatu rarely engage in major conflicts—living in a land that constantly changes with the caprices of the riverines is precarious enough. The shadow of the lost city of Manivarsha hangs over the remaining cities as a reminder that life in Shankhabhumi can easily be swept away.
-Power in each city is shared between three factions—fifteen senators who officially govern the affairs of the city-state; a network of river-navigator majhis known as the Bhatiyali; and former Shankha Trials contestants who become famous public entertainers and heroes, if they don't become senators themselves.
+### A Generosidade do Rio
 
-### River Bounty
+Toda refeição em Shankhabhumi inclui peixe, embora cada cidade proclame que seu próprio estilo de preparo é o melhor. Na verdade, a culinária é uma disciplina competitiva nos Torneios Shankha. Os caris de peixe de Sagorpuri são perfumados com especiarias importadas de terras estrangeiras, enquanto os de Ashwadhatuj cozinham seu peixe com vegetais cultivados localmente, e os Tippuris fermentam seu peixe de montanha em chá.
 
-Every meal in Shankhabhumi includes fish, though each city proclaims its own style of preparing it to be the best. In fact, cooking is a competitive discipline at the Shankha Trials. Sagorpuri fish curries are fragrant with spices imported from foreign lands, while Ashwadhatuj cook their fish with locally farmed vegetables, and Tippuris ferment their mountain fish in tea.
+### O Símbolo do Shankha
 
-### Sign of the Shankha
+A concha do molusco concha, conhecida localmente como shankha, é o ícone epônimo de Shankhabhumi. O considerável Shankha do Riverine é o lendário troféu de concha que circula entre as cidades através dos Torneios Shankha, mantido no templo riverine na cidade do atual campeão até que essa cidade hospede os próximos torneios. Shankhas menores são raras e preciosas, e muitas vezes são usadas como pingentes por aqueles que podem pagar por elas. Motivos de shankha decoram todos os templos riverine e adornam tecelagem, arte corporal de argila branca, joalheria, brinquedos infantis, confeitaria e muito mais.
 
-The shell of the conch mollusk, known locally as a shankha, is the eponymous icon of Shankhabhumi. The sizable Riverine's Shankha is the legendary shell trophy that circulates among the cities via the Shankha Trials, kept at the riverine temple in the current champion's city until that city hosts the next trials. Smaller shankhas are rare and precious, and they are often worn like pendants by those who can afford them. Shankha motifs decorate all riverine temples and adorn weaving, white-clay body art, jewelry, children's toys, pastries, and more.
+### Nomes
 
-### Names
+Os nomes próprios das pessoas em Shankhabhumi tendem a ter muitas sílabas e indicam o gênero do portador. A maioria das pessoas usa um sobrenome baseado em sua cidade de nascimento — Sagorpuri, Ashwadhatuj ou Tippuri. As únicas exceções são os descendentes de Manivarsha (muitos dos quais ainda usam "Manivarshi") e os majhis que adotam o sobrenome "Bhatiyali". Os seguintes são nomes comuns em Shankhabhumi:
 
-The given names of people in Shankhabhumi tend to be many syllables long and indicate the bearer's gender. Most folk use a last name based on their city of birth—Sagorpuri, Ashwadhatuj or Tippuri. The only exceptions are the descendants of Manivarsha (many of whom still use "Manivarshi") and majhis who take the last name "Bhatiyali." The following are common names in Shankhabhumi:
+### Lendas de Shankhabhumi
 
+Os ancestrais do povo de Shankhabhumi migraram para cá de outras terras há cerca de mil anos. Eles chegaram e encontraram florestas pantanosas infestadas de monstros e outros perigos — uma terra moldada por centenas de riverines que eram indiferentes aos recém-chegados e seus destinos. Então, a líder elfa Kubjhatika matou um molusco gigante que atacava seu povo. Após a batalha, ela entalhou o relato de sua vitória e da jornada de seu povo em uma bela concha de cristas vermelhas. Esta concha tornou-se o Shankha do Riverine. Kubjhatika ofereceu-o como tributo aos riverines, apelando a eles por refúgio em meio à terra implacável.
+Os quatro maiores riverines — Adirohit, Iravati, Mehul e Joltara — desejavam, cada um, reivindicar o Shankha do Riverine como seu. Kubjhatika propôs os Torneios Shankha para garantir que ele circulasse de forma justa. Mas, como pessoas que mal podiam sobreviver nesta terra instável não poderiam realizar um evento tão espetacular, Kubjhatika persuadiu os riverines a cada um criar um local para uma grande cidade. Assim, os riverines criaram as ilhas estáveis nas quais Manivarsha, Sagorpur, Ashwadhatu e Tippurika seriam construídas, e as histórias dessas grandes cidades começaram.
 
-### Legends of Shankhabhumi
+### Aventuras em Shankhabhumi
 
-The ancestors of the people of Shankhabhumi migrated here from other lands about a thousand years ago. They arrived to find swamp forests infested with monsters and other dangers—a land shaped by hundreds of riverines who were indifferent to the newcomers and their fates. Then the elven leader Kubjhatika killed a giant mollusk that attacked her people. After the battle, she carved the tale of her victory and her people's journey on a beautiful, red-ridged shell. This shell became the Riverine's Shankha. Kubjhatika offered it as tribute to the riverines, appealing to them for refuge amid the unforgiving land.
-The four greatest riverines—Adirohit, Iravati, Mehul, and Joltara—each wished to claim the Riverine's Shankha as their own. Kubjhatika proposed the Shankha Trials to ensure it would circulate fairly. But since people who could barely survive in this unstable land couldn't put on such a spectacular event, Kubjhatika persuaded the riverines to each create a site for a great city. Thus, the riverines created the stable islands on which Manivarsha, Sagorpur, Ashwadhatu, and Tippurika would be built, and the histories of those great cities began.
+Considere as tramas na tabela Aventuras em Shankhabhumi ao planejar aventuras em Shankhabhumi.
 
-
-### Adventures in Shankhabhumi
-
-Consider the plots on the Shankhabhumi Adventures table when planning adventures in Shankhabhumi.
-
-**Tabela: Shankhabhumi Adventures**
+**Tabela: Aventuras em Shankhabhumi**
 
 |  |  |
 | --- | --- |
-| 1 | A den of cultists high in the Adhameru Mountains worships a spirit naga and seeks to poison the riverine Joltara. |
-| 2 | A Sagorpuri merchant has imprisoned a marid within a shankha and intends to use its powers to help create a new city—potentially creating conflict with the riverines of the existing city-states. |
-| 3 | A hermit asks for help when a newly born riverine (detailed at the **Área end of this adventure**) appears in a stream near her home. The hermit fears the aggressive riverine of a nearby river will see the young spirit as a rival and harm it. |
-| 4 | Dense swamp trees grow overnight among a city-state's farmlands. Thousands of acres of thriving agricultural land will decay unless the magic that spawned the forest is identified and destroyed. |
+| 1 | Um covil de cultistas no alto das Montanhas Adhameru venera uma naga espiritual e busca envenenar o riverine Joltara. |
+| 2 | Um mercador Sagorpuri aprisionou uma marid dentro de um shankha e pretende usar seus poderes para ajudar a criar uma nova cidade — potencialmente gerando conflito com os riverines das cidades-estado existentes. |
+| 3 | Um eremita pede ajuda quando um riverine recém-nascido (detalhado ao **final desta aventura**) surge em um riacho próximo à sua casa. O eremita teme que o riverine agressivo de um rio vizinho veja o jovem espírito como um rival e o machuque. |
+| 4 | Árvores densas do pântano crescem da noite para o dia entre as terras agrícolas de uma cidade-estado. Milhares de acres de prósperas terras agrícolas irão se deteriorar, a menos que a magia que gerou a floresta seja identificada e destruída. |
 
+### Personagens de Shankhabhumi
 
-### Characters from Shankhabhumi
-
-If players create characters from Shankhabhumi, consider asking them the following questions during character creation:
-**Which city do you come from?** Were you raised in cosmopolitan Sagorpur, traditionalist Ashwadhatu, or hardy Tippurika?
-**Are you looking forward to the next Shankha Trials**? Are the trials the best part of living in Shankhabhumi for you, or just a spectacular nuisance every twelve years? Have you participated in past trials?
-**Have you ever encountered a riverine?** Did the unpredictable spirit harm you or bless you in some way? Have you seen the riverine since then? Do you now have a deeper connection to it?
-
-
+Se os jogadores criarem personagens de Shankhabhumi, considere fazer as seguintes perguntas durante a criação de personagens:
+**De qual cidade você vem?** Você foi criado na cosmopolita Sagorpur, na tradicionalista Ashwadhatu ou na resistente Tippurika?
+**Você está ansioso pelos próximos Torneios Shankha?** Os torneios são a melhor parte de se viver em Shankhabhumi para você, ou apenas um espetáculo incômodo a cada doze anos? Você já participou de torneios passados?
+**Você já encontrou um riverine?** O espírito imprevisível o feriu ou o abençoou de alguma forma? Você já viu o riverine desde então? Você agora tem uma conexão mais profunda com ele?

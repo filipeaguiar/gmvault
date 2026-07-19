@@ -1,9 +1,17 @@
 ---
-title: "Adventures"
+title: Adventures
 params:
-  kind: "adventures_index"
+  kind: adventures_index
 draft: false
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Aventuras
+visibility: gm
+status: published
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
+
+

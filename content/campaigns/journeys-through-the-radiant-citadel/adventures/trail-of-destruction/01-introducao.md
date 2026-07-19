@@ -1,27 +1,27 @@
 ---
-title: "Cena 1 - Introdução"
+title: Cena 1 - Introdução
 weight: 10
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 1 - Introdução
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-*An Adventure for 8th-Level Characters*
+*Uma Aventura para Personagens de 8º Nível*
 
-Disaster might strike at any moment, a truth the characters learn soon after arriving in the volcanic region of Tletepec. The town of Etizalan reels from monstrous attacks and unexplained earthquakes, leading the community's leaders to send for aid. When these requests go unanswered, the townsfolk enlist the characters to seek answers. The party must cross a region in the throes of volcanic upheaval and locate a shrine known as the Gate of Illumination. There the characters must placate a fiery creature awakened from its age-long slumber or face region-wide devastation.
-
-
+O desastre pode acontecer a qualquer momento, uma verdade que os personagens aprendem logo após chegar na região vulcânica de Tletepec. A cidade de Etizalan se recupera de ataques monstruosos e terremotos inexplicáveis, levando os líderes da comunidade a enviar pedidos de ajuda. Quando esses pedidos não são respondidos, os habitantes da cidade recrutam os personagens para buscar respostas. O grupo deve atravessar uma região em meio a uma convulsão vulcânica e localizar um santuário conhecido como Portal da Iluminação. Lá, os personagens devem aplacar uma criatura ígnea despertada de seu sono milenar ou enfrentará uma devastação em toda a região.

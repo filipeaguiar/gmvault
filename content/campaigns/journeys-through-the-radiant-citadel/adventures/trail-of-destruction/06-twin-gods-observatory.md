@@ -1,86 +1,92 @@
 ---
-title: "Cena 6 - Twin Gods Observatory"
+title: Cena 6 - Twin Gods Observatory
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Observatório dos Deuses Gêmeos
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/twin-gods-observatory/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/twin-gods-observatory/
 compendium_refs:
-  - "/compendium/monsters/priest/"
-  - "/compendium/monsters/acolyte/"
-  - "/compendium/monsters/tlexolotl/"
+- /compendium/monsters/priest/
+- /compendium/monsters/acolyte/
+- /compendium/monsters/tlexolotl/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-> Above the trees on the rocky slope ahead rises a tower covered in elaborate carvings of local animals and majestic mountains. Beyond it, smoke rises from a volcanic peak.
+> Acima das árvores na encosta rochosa à frente ergue-se uma torre coberta de entalhes elaborados de animais locais e montanhas majestosas. Além dela, fumaça sobe de um pico vulcânico.
 
-Twin Gods Observatory is home to a group of scholars and regional guardians called the Watchers of the Ashes. These scientists observe and record the behavior of Tletepec's volcanoes, predicting eruptions and warning locals before danger strikes. The Observatory itself is a narrow, 120-foot-high tower.
+O Observatório dos Deuses Gêmeos é o lar de um grupo de estudiosos e guardiões regionais chamados Vigias das Cinzas. Esses cientistas observam e registram o comportamento dos vulcões de Tletepec, prevendo erupções e alertando os locais antes que o perigo ocorra. O Observatório em si é uma torre estreita de 36 metros de altura.
 
+### Encontrando os Vigias
 
-### Meeting the Watchers
+Quando os personagens chegam, três Vigias (neutros, acólitos humanos) os saúdam com um leve desdém. Os Vigias explicam que estão cientes da atividade vulcânica incomum e estão fazendo o possível para determinar a causa, mas seu trabalho prosseguirá mais rápido se não forem interrompidos. Inicialmente, eles afirmam não saber nada sobre guerreiros de Etizalan.
 
-When the characters arrive, three Watchers (neutral, human acolytes) greet them with a hint of disdain. The Watchers explain they are aware of the unusual volcanic activity and are doing their best to determine the cause, but their work will proceed faster if they're not interrupted. They initially claim to know nothing about warriors from Etizalan.
-A character who succeeds on a CD 14 Charisma (Intimidation or Persuasion) check convinces a Watcher to behave more hospitably, whereupon the acolyte shares the following information:
-* The observatory has been besieged by inquiries from across the land seeking answers the scholars don't have.
-* Dozens of volcanoes are showing activity across Tletepec, which is unprecedented.
-* The acolyte doesn't recall warriors from Etizalan arriving, but the Watchers' leader, Tonalli, might.
-* Tonalli has been tirelessly observing the volcanoes from atop the observatory.
-Regardless of the acolytes' attitudes, the characters are free to enter the tower.
+Um personagem que for bem-sucedido em um teste de Carisma (Intimidação ou Persuasão) CD 14 convence um Vigia a se comportar de forma mais hospitaleira, momento em que o acólito compartilha as seguintes informações:
+
+* O observatório tem sido sitiado por perguntas de toda a terra, buscando respostas que os estudiosos não têm.
+* Dezenas de vulcões estão mostrando atividade em Tletepec, o que é sem precedentes.
+* O acólito não se lembra da chegada de guerreiros de Etizalan, mas o líder dos Vigias, Tonalli, pode se lembrar.
+* Tonalli tem observado incansavelmente os vulcões do topo do observatório.
+
+Independentemente da atitude dos acólitos, os personagens são livres para entrar na torre.
 
 ![Tonalli](/images/campaigns/journeys-through-the-radiant-citadel/071-08-003tonalli.webp)
 
+### Dentro do Observatório
 
+O interior do Observatório dos Deuses Gêmeos é oco, com uma escada de pedra em espiral subindo até um telhado com uma vista imponente da região. Entalhes ao longo do interior do observatório retratam eventos vulcânicos e formações de fumaça, que os Vigias consultam para embasar suas previsões. Os degraus que levam ao topo da torre são rasos e não têm corrimão, serpenteando ao redor de um espaço central aberto de 4,5 metros de largura. Os degraus contam como Terreno Difícil e, seguindo os passos, a rota da base da torre até o topo tem 60 metros de comprimento.
 
-### Inside the Observatory
+Um personagem que passar pelo menos 5 minutos examinando os entalhes dentro do observatório e for bem-sucedido em um teste de Inteligência (Investigação) CD 16 nota um entalhe de um réptil gigantesco com babados irrompendo de um vulcão em explosão. Se perguntado, qualquer um dos Vigias identifica essa criatura como um ser mítico chamado tlexolotl, um espírito que se diz dormir em vulcões. A maioria dos Vigias não acredita que tlexolotls sejam reais.
 
-The interior of Twin Gods Observatory is hollow, with a spiral stone staircase rising to a roof with a commanding view of the region. Carvings along the observatory's interior depict volcanic events and smoke formations, which the Watchers consult to inform their predictions. The stairs leading to the top of the tower are shallow and have no railing, winding around an open, 15-foot-wide, central space. The stairs count as Difficult Terrain and, following the steps, the route from the bottom of the tower to the top is 200 feet long.
-A character who spends at least 5 minutes examining the carvings inside the observatory and succeeds on a CD 16 Intelligence (Investigation) check notes a carving of a gigantic, frilled reptile bursting from an exploding volcano. If asked, any of the Watchers identify this creature as a mythical being called a tlexolotl, a spirit said to sleep in volcanoes. Most Watchers don't believe tlexolotls are real.
+### O Desastre Acontece
 
+![Enquanto erupções vulcânicas sacodem a terra, o antigo Observatório dos Deuses Gêmeos desaba](/images/campaigns/journeys-through-the-radiant-citadel/072-08-004ancient-twin-observatory.webp)
 
-### Disaster Strikes
+Quando um personagem sobe pelo menos metade da altura do observatório — seja usando os degraus ou outro método — a estrutura começa a tremer, e um estrondo como um trovão soa lá de baixo. Qualquer um do lado de fora do observatório vê a estrutura balançar, enquanto aqueles dentro sentem o chão inclinar-se sob eles. Criaturas nos degraus dentro da torre devem ser bem-sucedidas em um teste de Resistência de Destreza CD 16 ou cairão. A menos que os personagens estejam monitorando sua subida, presuma que eles subiram 18 metros quando o terremoto acontece, fazendo com que sofram 21 ([[6d6]]) de dano de concussão e ficando caídos se caírem.
 
+### Contagem Regressiva para a Ruína
 
-![As volcanic eruptions shake the earth, the ancient Twin Gods Observatory topples](/images/campaigns/journeys-through-the-radiant-citadel/072-08-004ancient-twin-observatory.webp)
-
-When a character climbs to at least half the height of the observatory—whether using the steps or via another method—the structure begins shaking, and a crack like a thunderclap sounds from below. Anyone outside the observatory sees the structure sway, while those inside feel the floor pitch beneath them. Creatures on the stairs inside the tower must succeed on a CD 16 Dexterity saving throw or fall. Unless characters have been tracking their ascent, assume they've climbed 60 feet when the earthquake hits, causing them to take 21 ([[6d6]]) bludgeoning damage and knocking them prone if they fall.
-
-### Countdown to Ruin
-
-After the initial quake, have characters roll initiative to emphasize the urgency of the situation and track their movement through the tower. Twin Gods Observatory will collapse after 6 rounds or whenever feels appropriately dramatic. Emphasize the tower's precarious state by describing the continued swaying of the building and crumbling of walls.
+Após o tremor inicial, faça os personagens rolarem Iniciativa para enfatizar a urgência da situação e acompanhar seu movimento pela torre. O Observatório dos Deuses Gêmeos desabará após 6 rodadas ou quando parecer dramaticamente apropriado. Enfatize o estado precário da torre descrevendo o balanço contínuo do edifício e o desmoronamento das paredes.
 
 ### Tonalli
 
-The leader of the Watchers, Tonalli (lawful neutral, dwarf priest), is on the rooftop when the structure begins to collapse. He survives only if the characters reach the roof and encourage him to flee back down the stairs immediately or save him via some other method. Desperate to escape, he eagerly follows the characters' instructions.
+O líder dos Vigias, Tonalli (leal e neutro, sacerdote anão), está no telhado quando a estrutura começa a desabar. Ele sobrevive apenas se os personagens chegarem ao telhado e o encorajarem a fugir de volta pelas escadas imediatamente ou o salvarem por algum outro método. Desesperado para escapar, ele segue ansiosamente as instruções dos personagens.
 
-### Collapse
+### Desabamento
 
-When the tower collapses, each creature in or atop Twin Gods Observatory must make a CD 16 Dexterity saving throw. On a success, a creature falls from its current height and takes [[1d6]] bludgeoning damage for every 10 feet it fell, but lands free of the collapsing structure. On a failed saving throw, the creature takes the falling damage and an additional 17 ([[5d6]]) bludgeoning damage, and the creature is buried under rubble. A creature buried in this way is blinded, restrained, and has total cover. It can try to dig itself free as an action, ending the blinded and restrained conditions on itself and crawling to the surface with a successful CD 16 Strength (Athletics) check. A creature that fails this check three times can't attempt to dig itself out again.
-A creature that is neither restrained nor incapacitated can spend 1 minute freeing another creature buried in the rubble. Once free, that creature is no longer blinded or restrained by the collapsed structure.
+Quando a torre desaba, cada criatura dentro ou no topo do Observatório dos Deuses Gêmeos deve fazer um teste de Resistência de Destreza CD 16. Em caso de sucesso, uma criatura cai de sua altura atual e sofre [[1d6]] de dano de concussão para cada 3 metros que caiu, mas aterrissa livre da estrutura em colapso. Em caso de falha no teste de resistência, a criatura sofre o dano da queda e um adicional de 17 ([[5d6]]) de dano de concussão, e a criatura fica soterrada sob os escombros. Uma criatura soterrada dessa forma fica cega, contida e tem cobertura total. Ela pode tentar se desenterrar como uma ação, encerrando as condições de cego e contido sobre si mesma e rastejando para a superfície com um teste bem-sucedido de Força (Atletismo) CD 16. Uma criatura que falhar neste teste três vezes não pode mais tentar se desenterrar.
 
+Uma criatura que não esteja contida nem incapacitada pode gastar 1 minuto libertando outra criatura soterrada nos escombros. Uma vez livre, essa criatura não está mais cega ou contida pela estrutura desabada.
 
-### In the Ruins
+### Nas Ruínas
 
-As dust rises from the ruins of Twin Gods Observatory, the earthquake ceases. All of the Watchers survived, with the possible exception of Tonalli. If the characters didn't rescue Tonalli, the other Watchers soon find his body. They entreat the characters to rush the dead scholar back to Xoxotla, where he can be resurrected.
-Once saved or revived, Tonalli is thankful for the characters' help. If the characters explain why they came, Tonalli tells them what he knows:
-* Ameyali's warriors arrived three days earlier.
-* At the time they arrived, Tonalli didn't have any theories about what was causing the eruptions, but he knew they were strongest near the volcano called Jademount.
-* Tonalli sent the warriors to the Gate of Illumination, a shrine to the gods on Jademount, to see if they could learn anything more. They haven't returned.
-* Just before the observatory collapsed, Tonalli's research into the tower's writings and signs in the surrounding lands convinced him that the cause of the eruptions is a tlexolotl—a spirit of the volcanoes.
-* Tales say many of the volcanoes in Tletepec have tlexolotls dwelling within them. Tonalli believes these volcanic spirits are all gradually awaking at once—which in turn increases the activity of their volcanoes.
-* Based on his observations, Tonalli believes there's already an awakened tlexolotl near where the volcanic disturbances began: Jademount.
-Tonalli regrets sending Ameyali's people to the Gate of Illumination—he didn't realize the danger. He asks the characters to travel to the shrine to check on the warriors and seek signs of the tlexolotl.
+Conforme a poeira sobe das ruínas do Observatório dos Deuses Gêmeos, o terremoto cessa. Todos os Vigias sobreviveram, com a possível exceção de Tonalli. Se os personagens não resgataram Tonalli, os outros Vigias logo encontram seu corpo. Eles suplicam aos personagens que levem às pressas o estudioso morto de volta para Xoxotla, onde ele pode ser ressuscitado.
 
+Uma vez salvo ou revivido, Tonalli agradece pela ajuda dos personagens. Se os personagens explicarem por que vieram, Tonalli conta a eles o que sabe:
 
+* Os guerreiros de Ameyali chegaram três dias antes.
+* Na época em que chegaram, Tonalli não tinha nenhuma teoria sobre o que estava causando as erupções, mas sabia que elas eram mais fortes perto do vulcão chamado Montanha de Jade.
+* Tonalli enviou os guerreiros para o Portão da Iluminação, um santuário aos deuses na Montanha de Jade, para ver se poderiam aprender algo mais. Eles não retornaram.
+* Pouco antes do observatório desabar, a pesquisa de Tonalli sobre os escritos da torre e os sinais nas terras ao redor o convenceu de que a causa das erupções é um tlexolotl — um espírito dos vulcões.
+* Contos dizem que muitos dos vulcões em Tletepec têm tlexolotls habitando dentro deles. Tonalli acredita que esses espíritos vulcânicos estão todos gradualmente despertando ao mesmo tempo — o que, por sua vez, aumenta a atividade de seus vulcões.
+* Com base em suas observações, Tonalli acredita que já existe um tlexolotl desperto perto de onde as perturbações vulcânicas começaram: a Montanha de Jade.
+
+Tonalli lamenta ter enviado o povo de Ameyali para o Portão da Iluminação — ele não percebeu o perigo. Ele pede aos personagens que viajem até o santuário para verificar os guerreiros e buscar sinais do tlexolotl.

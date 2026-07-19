@@ -1,15 +1,22 @@
 ---
-title: "Evasion"
+title: Evasion
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Evasion."
+summary: 'Característica de classe: Evasão.'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Evasão
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
+A partir do 7º nível, você pode se esquivar agilmente de certos efeitos de área, como o sopro flamejante de um dragão vermelho ou uma magia tempestade de gelo. Quando você é submetido a um efeito que permite fazer um teste de resistência de Destreza para sofrer apenas metade do dano, você em vez disso não sofre dano se for bem-sucedido no teste de resistência, e sofre apenas metade do dano se falhar.

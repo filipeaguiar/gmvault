@@ -1,16 +1,22 @@
 ---
-title: "The Drought Elder"
+title: The Drought Elder
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Ancião da Seca
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-144-map-143-the-drought-elder-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-144-map-143-the-drought-elder-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Localidade **The Drought Elder** importada automaticamente.
@@ -22,4 +28,3 @@ Localidade **The Drought Elder** importada automaticamente.
 
 #### 144 143 The Drought Elder Player
 ![144 143 The Drought Elder Player](/images/campaigns/journeys-through-the-radiant-citadel/144-map-143-the-drought-elder-player.webp)
-

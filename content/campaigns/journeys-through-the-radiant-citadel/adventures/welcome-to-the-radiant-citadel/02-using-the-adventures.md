@@ -1,98 +1,96 @@
 ---
-title: "Using the Adventures"
+title: Using the Adventures
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
-npcs:
-
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Usando as Aventuras
+visibility: gm
+status: published
+summary: O sol poente lançava longas sombras sobre o vale, pintando o céu com tons de laranja e púrpura enquanto os primeiros rumores de uma ameaça esquecida ecoavam pelas tavernas e encruzilhadas. É neste crepúsculo de incertezas que nossa história começa, convocando heróis de todos os cantos para desvendar os segredos que se ocultam nas ruínas ancestrais. A aventura que se desenrola a seguir é um convite à exploração de perigos e maravilhas, onde cada escolha tece o destino não apenas dos aventureiros, mas de toda a região.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/"
-compendium_refs:
-
-handouts:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+A tabela Jornadas pela Cidadela Radiante resume as aventuras desta antologia. Cada aventura foi projetada para quatro a seis personagens de um determinado nível, mas você pode ajustá-la para grupos maiores ou menores, bem como para personagens de nível mais alto ou mais baixo, fazendo algumas mudanças, como trocar um monstro ou armadilha por outro, alterar o número de inimigos em um encontro ou ajustar as CDs para tornar tarefas importantes mais fáceis ou mais difíceis de serem realizadas pelos personagens.
 
-The Journeys through the Radiant Citadel table summarizes the adventures in this anthology. Each adventure is designed for four to six characters of a particular level, but you can adjust it for larger or smaller groups as well as for characters of higher or lower level by making a few changes, like swapping one monster or trap for another, changing the number of foes in an encounter, or adjusting DCs to make important tasks easier or harder for the characters to accomplish.
+Cada aventura desta antologia é versátil, e os personagens podem se envolver de qualquer uma das seguintes maneiras:
 
-Each adventure in this anthology is versatile, and characters might become involved in any of the following ways:
+* Os personagens têm laços com a trama, conforme detalhado na seção "Ganchos de Personagem" em cada aventura.
+* Os personagens viajaram para a Cidadela Radiante, e suas conexões com indivíduos ou organizações de lá os levam a investigar a trama.
+* Um personagem é natural da terra onde a aventura ocorre e tem uma conexão com a trama.
 
-* The characters have ties to the plot as detailed in the "Character Hooks" section in each adventure.
-* The characters have journeyed to the Radiant Citadel, and their connections to individuals or organizations there lead them to investigate the plot.
-* A character hails from the land where the adventure takes place and has a connection to the plot.
+Estas aventuras curtas funcionam melhor com jogadores que gostam de explorar novas terras e encontrar soluções engenhosas para desafios complexos. Dito isso, cada aventura contém oportunidades de exploração, interpretação e combate para atrair jogadores de todos os estilos.
 
-These short adventures work best with players who like exploring new lands and finding clever solutions to complex challenges. That said, each adventure contains opportunities for exploration, roleplaying, and combat to appeal to players of all persuasions.
+### Conduzindo as Aventuras
 
+Para conduzir estas aventuras, você precisa dos livros básicos da quinta edição: Livro do Jogador, Guia do Mestre e Livro dos Monstros.
+> O texto que aparece em uma caixa como esta deve ser lido em voz alta ou parafraseado para os jogadores quando seus personagens chegarem a um local ou sob uma circunstância específica, conforme descrito no texto.
+O Livro dos Monstros contém blocos de estatísticas para a maioria das criaturas encontradas nestas aventuras. Quando o nome de uma criatura aparece em **negrito**, essa é uma dica visual para você preparar seu bloco de estatísticas, como se dissesse: "Ei, Mestre, prepare o bloco de estatísticas desta criatura. Você precisará dele." Se um bloco de estatísticas for novo, o texto da aventura informa onde encontrá-lo.
+Magias e equipamentos mencionados nas aventuras estão descritos no Livro do Jogador. Itens mágicos estão descritos no Guia do Mestre.
 
-### Running the Adventures
+### Explorando Novos Alcances
 
-To run these adventures, you need the fifth edition core rulebooks: Player's Handbook, Dungeon Master's Guide, and Monster Manual.
-> Text that appears in a box like this is meant to be read aloud or paraphrased for the players when their characters first arrive at a location or under a specific circumstance, as described in the text.
-The Monster Manual contains stat blocks for most of the creatures encountered in these adventures. When a creature's name appears in **bold** type, that's a visual cue pointing you to its stat block as a way of saying, "Hey, DM, get this creature's stat block ready. You'll need it." If a stat block is new, the adventure's text tells you where to find it.
-Spells and equipment mentioned in the adventures are described in the Player's Handbook. Magic items are described in the Dungeon Master's Guide.
+Cada aventura deste livro apresenta um novo local — seja uma cidade, uma nação, uma região ou outro. Antes de conduzir uma aventura, revise o guia geográfico apresentado no final da aventura. Além de fornecer uma visão geral das pessoas e tramas daquela terra, cada guia geográfico fornece detalhes culturais úteis para descrever o cenário e torná-lo vibrante.
 
+### Ambientando as Aventuras
 
-### Exploring New Reaches
+Os locais deste livro podem ser incorporados a qualquer cenário de D&D ou a um mundo de sua própria criação. Cada aventura inclui uma seção "Ambientando a Aventura" que sugere onde você pode situar a aventura. Entrelace esses locais na sua versão do seu mundo favorito, adicionando-os onde desejar — até mesmo substituindo outras terras no mapa do seu mundo. Alternativamente, use a magia de viagem planar para colocar esses locais em mundos totalmente novos e use-os como os limiares de reinos definidos como preferir.
 
-Each adventure in this book introduces a new location—be it a city, a nation, a region, or otherwise. Before running an adventure, review the gazetteer presented at the adventure's end. Aside from providing an overview of the people and plots in that land, each gazetteer provides cultural details useful in describing the setting and making it feel vibrant.
+**Tabela: Jornadas pela Cidadela Radiante**
 
-### Setting the Adventures
-
-The locations in this book can be incorporated into any D&D setting or a world of your own design. Each adventure includes a "Setting the Adventure" section that suggests where you might place the adventure. Weave these locations into your version of your favorite world, adding them where you like—even replacing other lands on your world map. Alternatively, use the 1 or planes-spanning magic to place these locations in entirely new worlds, and use them as the thresholds of realms defined how you please.
-
-**Tabela: Journeys through the Radiant Citadel**
-
-|  |  |  |
+| | | |
 | --- | --- | --- |
-| 1–2 | 2 | A conflict between rival night market vendors draws characters into a hunt for a mysterious saboteur and a series of whimsical contests. |
-| 3 | 3 | A community is terrorized by a horror lurking in a distant farmhouse. |
-| 4 | 4 | The cure for a spreading curse leads from an abandoned mine to a city celebrating the departed. |
-| 5 | 5 | A murderer stalks the streets during a raucous festival. |
-| 6 | 6 | A slighted spirit takes vengeance on the community that forgot her by stealing their memories. |
-| 7 | 7 | Mysterious creatures cause a gold mine to collapse, precipitating a race between rival princes to save those trapped. |
-| 8 | 8 | A legendary creature reawakens and begins a chain reaction of volcanic eruptions that threaten the land. |
-| 9 | 9 | A local champion goes missing after a deadly flood, leading to a search for her along the rivers of a vast swamp. |
-| 10 | 10 | Rageful spirits provoke a dragon to go on a deadly rampage. |
-| 11 | 11 | Rival factions clash in an angel-ruled city on the brink of rebellion. |
-| 12 | 12 | A quest for ancient lore reveals threats from the past and leads to a mysterious nation beneath the waves. |
-| 13 | 13 | Agents of a long-lived emperor seek a timeless secret to keep their ruler in power at any cost. |
-| 14 | 14 | Adventurers must travel to the Feywild and the Far Realm to prevent otherworldly forces from tearing a land apart. |
+| 1–2 | 2 | Um conflito entre vendedores rivais do mercado noturno leva os personagens a uma caçada por um misterioso sabotador e uma série de disputas extravagantes. |
+| 3 | 3 | Uma comunidade é aterrorizada por um horror à espreita em uma casa de fazenda distante. |
+| 4 | 4 | A cura para uma maldição que se espalha leva de uma mina abandonada a uma cidade que celebra os falecidos. |
+| 5 | 5 | Um assassino ronda as ruas durante um festival turbulento. |
+| 6 | 6 | Um espírito desdenhado se vinga da comunidade que a esqueceu roubando suas memórias. |
+| 7 | 7 | Criaturas misteriosas causam o desabamento de uma mina de ouro, precipitando uma corrida entre príncipes rivais para salvar os presos. |
+| 8 | 8 | Uma criatura lendária desperta e desencadeia uma reação em cadeia de erupções vulcânicas que ameaçam a terra. |
+| 9 | 9 | Uma campeã local desaparece depois de uma enchente mortal, desencadeando uma busca por ela ao longo dos rios de um vasto pântano. |
+| 10 | 10 | Espíritos furiosos incitam um dragão a entrar em um tumulto mortal. |
+| 11 | 11 | Facções rivais se enfrentam em uma cidade governada por anjos à beira da rebelião. |
+| 12 | 12 | Uma busca por conhecimento antigo revela ameaças do passado e leva a uma nação misteriosa sob as ondas. |
+| 13 | 13 | Agentes de um imperador longevo buscam um segredo atemporal para manter seu governante no poder a qualquer custo. |
+| 14 | 14 | Os aventureiros devem viajar para o Reino das Fadas e o Reino Distante para impedir que forças sobrenaturais dilacerem uma terra. |
 
-### New Homes
+### Novos Lares
 
-At your discretion, players can create characters who are from the locations presented in this book. Consider allowing players to review the gazetteers of the lands that appeal to them. Each gazetteer provides questions you can ask players during character creation to help them create characters immersed in their homeland.
+A seu critério, os jogadores podem criar personagens originários dos locais apresentados neste livro. Considere permitir que os jogadores consultem os guias geográficos das terras que lhes interessam. Cada guia geográfico fornece perguntas que você pode fazer aos jogadores durante a criação dos personagens para ajudá-los a criar personagens imersos em sua terra natal.
 
-### Thoughtful Introductions
+### Introduções Cuidadosas
 
-While exploring the locations introduced through these adventures, be thoughtful about how you roleplay and describe groups of people. Consider the guidance here when running adventures.
+Ao explorar os locais apresentados nestas aventuras, seja cuidadoso ao interpretar e descrever grupos de pessoas. Considere estas orientações ao conduzir as aventuras.
 
-### Broad Descriptions
+### Descrições Amplas
 
-Describe everyone's features, not just those whose features are different from your own.
+Descreva as características de todos, não apenas daqueles cujas características são diferentes das suas.
 
-### Detail, Not Stereotypes
+### Detalhe, Não Estereótipos
 
-When describing a character's appearance, strive to detail more than just one thing and avoid descriptions based on stereotypes. The more you can say about body type, hair style and texture, skin tone, clothes, accessories, and the like, the more dimension a character has. As some societies strongly associate ethnicity with skin color, take extra care when describing characters' skin colors. Consider a range of literal descriptions, such as copper, umber, onyx, or ebony, with modifiers such as rich, lustrous, warm, or cool.
+Ao descrever a aparência de um personagem, esforce-se para detalhar mais do que apenas uma coisa e evite descrições baseadas em estereótipos. Quanto mais você puder dizer sobre tipo físico, estilo e textura do cabelo, tom de pele, roupas, acessórios e afins, mais dimensão o personagem terá. Como algumas sociedades associam fortemente etnia à cor da pele, tome cuidado extra ao descrever as cores de pele dos personagens. Considere uma variedade de descrições literais, como cobre, ocre, ônix ou ébano, com modificadores como rico, lustroso, quente ou frio.
 
-### Gradual Explorations
+### Explorações Graduais
 
-You don't have to reveal a setting's entire culture at once. Skip details that aren't immediately relevant to characters, and reveal details as they arise. A scene in a tavern presents opportunities to introduce distinct foods, while a market trip is a great time to note varieties of dress.
+Você não precisa revelar toda a cultura de um cenário de uma vez. Pule detalhes que não são imediatamente relevantes para os personagens e revele detalhes conforme surgirem. Uma cena em uma taverna oferece oportunidades para apresentar comidas distintas, enquanto uma ida ao mercado é um ótimo momento para notar variedades de vestimentas.
 
-### Highlight What's Familiar
+### Destaque o Que É Familiar
 
-Highlight what's familiar in a culture and how it's like other locations. This can help characters ground their experiences and better understand where they're visiting.
+Destaque o que é familiar em uma cultura e como ela se assemelha a outros locais. Isso pode ajudar os personagens a fundamentar suas experiências e entender melhor onde estão visitando.
 
-### Online and Streamed Games
+### Jogos Online e Transmitidos
 
-Just as you don't have to breathe fire in real life to play a dragonborn in D&D, you don't need to be from the cultures that inspired the adventures in this book to play characters from them. However, take care to portray characters as three-dimensional people with relatable desires and fears.
-One person's culture isn't another's costume. If you dress up, simple outfits are best. Avoid leaning into stereotypes or clothing with real-world religious significance. Instead, focus on "everyday wear" from the cultures you're exploring. Don't change your skin color, alter your features, or emulate hair styles you wouldn't normally have to appear like a different real-world ethnicity. Similarly, avoid mocking real-world accents in your roleplay.
+Assim como você não precisa cuspir fogo na vida real para interpretar um dragonato em D&D, você não precisa ser das culturas que inspiraram as aventuras deste livro para interpretar personagens delas. No entanto, tenha cuidado para retratar os personagens como pessoas tridimensionais com desejos e medos compreensíveis.
 
-
+A cultura de uma pessoa não é a fantasia de outra. Se você se vestir a caráter, roupas simples são a melhor opção. Evite estereótipos ou roupas com significado religioso do mundo real. Em vez disso, concentre-se em "roupas do dia a dia" das culturas que você está explorando. Não mude a cor da sua pele, não altere seus traços nem imite estilos de cabelo que você normalmente não usaria para parecer uma etnia do mundo real diferente. Da mesma forma, evite zombar de sotaques do mundo real em sua interpretação.

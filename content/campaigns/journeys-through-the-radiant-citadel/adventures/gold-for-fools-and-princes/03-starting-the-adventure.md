@@ -1,127 +1,186 @@
 ---
-title: "Starting the Adventure"
+title: Starting the Adventure
 weight: 30
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Iniciando a Aventura
+visibility: gm
+status: published
+summary: 'A introdução e contextualização de uma aventura são os primeiros passos para engajar os jogadores e estabelecer o tom da história. É aqui que você define o mundo, o problema inicial e a motivação para os personagens agirem. Uma contextualização eficaz deve ser concisa, evocativa e plantar as sementes do que está por vir.
+
+
+  ### Estrutura Básica
+
+
+  1.  **O Gancho (Hook):** É o evento, rumor ou pedido que captura a atenção dos personagens e os coloca no caminho da aventura.
+
+  2.  **A Contextualização (Setup):** Fornece o pano de fundo essencial. Onde estão? O que está acontecendo? Quem está envolvido? Isso define o cenário e a atmosfera.
+
+  3.  **A Chamada para Ação:** O motivo claro e urgente pelo qual os heróis precisam se envolver agora.
+
+
+  ### Exemplos de Introdução e Contextualização
+
+
+  #### Exemplo 1: Mistério Urbano (Fantasia)
+
+
+  **Introdução:**
+
+  Chova torrencialmente sobre Vielamarga, a cidade dos mil vícios, transformando suas ruas em um lamaçal fedorento. Reunidos na taverna "O Furão Prateado", vocês são abordados por uma figura encapuzada. Suas mãos trêmulas deixam cair um medalhão de prata com o símbolo da família nobre Van Deroth sobre a mesa de madeira gasta. "Preciso de ajuda," sussurra a figura com uma voz desesperada. "Meu mestre foi assassinado... e a milícia se recusa a investigar. Dizem que a morte não foi natural, que as paredes do castelo guardam um segredo terrível."
+
+
+  **Contextualização:**
+
+  A família Van Deroth governa o distrito de Altaprata há três gerações. O patriarca, Lorde Alistair Van Deroth, era um mecenas das artes e um colecionador de antiguidades arcanas. Sua morte repentina, oficialmente um infarto, abalou a elite local. No entanto, rumores sobre um objeto amaldiçoado trazido de uma expedição recente ao deserto de Khemri começaram a circular. O medalhão, uma chave para a câmara secreta do lorde, é a única pista.
+
+
+  #### Exemplo 2: Aventura Selvagem (Exploração)
+
+
+  **Introdução:**
+
+  Uma flecha de penas negras crava-se no tronco da árvore ao seu lado. Os tambores de guerra ecoam pela selva espessa de Chult, abafando o som do seu guia, Círith, gritando: "Avançada Yuan-ti! Em formação de batalha!". Vocês não estão aqui para lutar uma guerra contra os homens-serpente. Sua missão é clara: chegar à isolada Mina dos Anões antes que a maldição da morte, que já definha as selvas costeiras, se espalhe, mas parece que os perigos da selva têm outros planos.
+
+
+  **Contextualização:**
+
+  Por séculos, a Mina dos Anões foi a principal fonte de um minério raro que protegia os assentamentos da fronteira contra energias necróticas. Há três luas, um silêncio sepulcral tomou conta da mina, e uma praga letárgica começou a corroer a vitalidade da região. Vocês foram contratados pelo Conselho de Baldur''s Gate para descobrir a fonte da maldição, restaurar o fluxo de minério e resgatar qualquer sobrevivente. O pagamento é generoso, mas o tempo é curto e a selva está repleta de predadores famintos.
+
+
+  #### Exemplo 3: Horror Cósmico (Investigação)
+
+
+  **Introdução:**
+
+  O gramofone na biblioteca empoeirada do Professor Armitage range e começa a tocar uma melodia dissonante, desconexa, que parece distorcer o próprio ar. O diário do explorador desaparecido, aberto sobre a mesa, contém uma última e frenética anotação: "A arquitetura dos ângulos é toda errada. A cidade não foi construída, ela foi *sonhada* para cá. O sono é a única porta, e eu não posso mais fechar os olhos." Uma brisa gélida apaga a chama do lampião a óleo da sala, mergulhando-a na penumbra, e um som úmido e arrastado começa a se aproximar do corredor.
+
+
+  **Contextualização:**
+
+  Vocês são investigadores unidos por um propósito comum: desvendar o destino da expedição do renomado arqueólogo Malcolm Webb, desaparecido há exatamente um ano. Webb buscava as ruínas de uma civilização pré-humana nas profundezas das Montanhas do Eco. Seu diário, enviado misteriosamente para o colega Professor Armitage, é a única pista. Ele fala de uma "cidade sem nome" onde a geometria não-euclidiana confunde a mente e entidades ancestrais sussurram verdades proibidas nos sonhos. O que começou como uma investigação acadêmica agora os coloca frente a frente com forças que desafiam a sanidade e a própria realidade.
+
+
+  ---
+
+  *Nota da Versão para o Corredor: Em qualquer uma dessas introduções, adapte nomes, locais e o tom exato (mais leve ou mais sombrio) para se adequar ao seu cenário de campanha específico.*'
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/uzoma-baten/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/guard/"
-  - "/compendium/monsters/giant-scorpion/"
+- /compendium/monsters/veteran/
+- /compendium/monsters/guard/
+- /compendium/monsters/giant-scorpion/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/uzoma-baten-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
+![Príncipe Kirina se defende de um ataque de escorpiões das dunas crepusculares](/images/campaigns/journeys-through-the-radiant-citadel/059-07-001twilight-dune-scorpions.webp)
 
-![Prince Kirina fends off an attack by twilight dune scorpions](/images/campaigns/journeys-through-the-radiant-citadel/059-07-001twilight-dune-scorpions.webp)
+Após chegar em Anisa, os personagens ouvem que a famosa mina de ouro da cidade, a Goldwarren, desabou. Nas proximidades, pessoas estão se reunindo para ouvir notícias dos mineiros desaparecidos, e dois príncipes locais farão discursos. Personagens que fizerem perguntas sobre a situação entre as pessoas reunidas podem descobrir as seguintes informações:
 
+* A Goldwarren é a famosa mina de ouro de Anisa. Ela é administrada por um grupo chamado Guilda Aurum.
+* Pelo menos sete mineiros estão presos na mina.
+* O Príncipe Simbon, filho do rei de Anisa, não é amplamente respeitado no império.
+* O Príncipe Kirina vem da cidade vizinha de Niba. Ele é uma figura carismática e muito querido pela Guilda Aurum.
 
-After arriving in Anisa, the characters overhear that the city's famed gold mine, the Goldwarren, has collapsed. Nearby, people are gathering to hear news of the missing miners, and two local princes will be speaking. Characters who ask questions about the situation among the gathered people can learn the following information:
-
-* The Goldwarren is Anisa's famous gold mine. It's run by a group called the Aurum Guild.
-* At least seven miners are trapped in the mine.
-* Prince Simbon, the son of Anisa's king, is not widely respected in the empire.
-* Prince Kirina comes from the neighboring city of Niba. He's a charismatic figure who's well-liked by the Aurum Guild.
-
-Feel free to supplement this information with any details you wish to share about Anisa or the **Área Aurum Guild** from the "**Área Sensa Gazetteer**" section at the end of this adventure.
+Fique à vontade para complementar essas informações com quaisquer detalhes que deseje compartilhar sobre Anisa ou a **Área Guilda Aurum** da seção "**Área Guia Geográfico de Sensa**" no final desta aventura.
 
 
-### Rival Princes
+### Príncipes Rivais
 
-When the characters arrive at the square, read or paraphrase the following:
-> Locals crowd a shaded square, listening to a fervent argument between two well-dressed human men wearing dark colors and gold jewelry.
-> "This isn't your place, Prince Kirina!" one man shouts. "This isn't your city! The trapped miners are my responsibility. As soon as the entrance is cleared—"
-> "But these are my people!" Kirina interrupts. "I value the friendship of the Aurum Guild, and I stand with my friends in their time of need. But don't worry, Prince Simbon. We can find something safe for you to do while we bring our missing family home."
-Voices in the crowd rise as they declare support for one prince or the other. Most of the folk wearing the grimy tunics of miners are impressed when Kirina speaks, while the Anisan city folk shout agreement when Simbon speaks. As the debate continues, a muscular dwarf miner carrying a polished copper pick approaches the characters. This is Uzoma, the overseer at the Goldwarren.
+Quando os personagens chegam à praça, leia ou parafraseie o seguinte:
+> Os moradores lotam uma praça sombreada, ouvindo uma discussão fervorosa entre dois homens humanos bem vestidos, usando cores escuras e joias de ouro.
+> "Este não é o seu lugar, Príncipe Kirina!", grita um dos homens. "Esta não é a sua cidade! Os mineiros presos são minha responsabilidade. Assim que a entrada for liberada—"
+> "Mas esse é o meu povo!", interrompe Kirina. "Eu valorizo a amizade da Guilda Aurum e apoio meus amigos em seu momento de necessidade. Mas não se preocupe, Príncipe Simbon. Podemos encontrar algo seguro para você fazer enquanto trazemos nossos familiares desaparecidos para casa."
+As vozes na multidão se elevam enquanto declaram apoio a um ou outro príncipe. A maioria das pessoas usando as túnicas sujas de mineiros fica impressionada quando Kirina fala, enquanto os cidadãos de Anisa gritam concordando quando Simbon fala. Enquanto o debate continua, uma anã mineira musculosa carregando uma picareta de cobre polida se aproxima dos personagens. Esta é Uzoma, a supervisora da Goldwarren.
 
-### Overseer Uzoma
+### Supervisora Uzoma
 
-Uzoma Baten (lawful good, dwarf guard) was selected as the Goldwarren's overseer due to her compassion and diligence. She sees this position as the highest possible honor and strives daily to be worthy as she labors alongside her fellow miners. Determined to do right by them, Uzoma doesn't hesitate to challenge orders she deems unfair—even if those orders come directly from King Diara.
+Uzoma Baten (leal e boa, guarda anã) foi escolhida como supervisora da Goldwarren devido à sua compaixão e diligência. Ela vê este cargo como a maior honra possível e se esforça diariamente para ser digna enquanto trabalha lado a lado com seus colegas mineiros. Determinada a fazer o certo por eles, Uzoma não hesita em desafiar ordens que considera injustas—mesmo que essas ordens venham diretamente do Rei Diara.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I'm happiest when I'm working with my hands."
+"Fico mais feliz quando estou trabalhando com minhas mãos."
 
 ### Ideal
 
-"Though I might have more responsibility, I'm no better than anyone else who works in the Goldwarren."
+"Embora eu possa ter mais responsabilidade, não sou melhor do que ninguém que trabalha na Goldwarren."
 
-### Bond
+### Vínculo
 
-"I would die to protect the miners of the Goldwarren."
+"Eu morreria para proteger os mineiros da Goldwarren."
 
-### Flaw
+### Defeito
 
-"I have to prove that I deserve my position."
-
-
-### Meeting Uzoma
-
-Uzoma bluntly notes that she's looking for adventurers. She hopes to hire the characters to head into the mine and rescue the trapped miners, offering 300 gp to each character.
-Uzoma also fills the characters in on the tension in the crowd:
-* The folk of the Sensa Empire are loyal to the empress and their own city-states in equal measure. As such, most folk of Anisa favor Prince Simbon as the would-be heir to Empress Inaya.
-* The Aurum Guild has thrown its support behind the more adventurous Prince Kirina of Niba, so many of the miners in the crowd favor him.
-* Simbon has technically been given charge of the rescue mission by his father, King Diara. However, the prince seems rattled by the responsibility.
-* Kirina has been in the city on private business for weeks, but he made a very public appearance after the accident at the mine. He's taken it on himself to volunteer for the rescue mission.
-Once the characters agree to the mission, or if they want to learn more before signing on, Uzoma says she has someone she wants them to meet—a young miner who saw monsters in the mine before making his escape. She motions for the characters to follow her through the crowd.
+"Tenho que provar que mereço meu cargo."
 
 
-### Princes and Scorpions
+### Encontrando Uzoma
 
-As Uzoma leads the characters through the crowd, they notice movement in the shadows across the street. Read the following description:
-> Shouts ring out at the crowd's edge as massive, glowing scorpions rush from a shadowed alley. Prince Kirina draws a sword and races forward, while Prince Simbon hesitates before following.
-The crowd flees, leaving only the characters and the princes to face five giant scorpions. Uzoma stands back and watches as the encounter unfolds.
-The princes are friendly toward the characters and are quick to ally with them. Both use the veteran stat block, but they have only AC 11 and their Multiattack and Longsword actions. If a prince is reduced to half of his hit points or fewer, he uses the Dodge action to avoid taking further damage.
-The scorpions are hostile and of a rare, fluorescent breed known as twilight dune scorpions. Any character who succeeds on a CD 16 Intelligence (Nature) check knows this and that the scorpions rarely venture from the deserts' depths.
-The scorpions vanish when killed. A character who succeeds on a CD 12 Intelligence (Arcana or Religion) check realizes this is the mark of a magically summoned creature. A character familiar with conjuration magic recognizes that summoning giant scorpions in such numbers far exceeds the power of the conjure animals spell or other common magic.
-In the aftermath of the battle, both princes thank the characters for their assistance.
+Uzoma observa de forma direta que está procurando aventureiros. Ela espera contratar os personagens para entrar na mina e resgatar os mineiros presos, oferecendo 300 po para cada personagem.
+Uzoma também informa os personagens sobre a tensão na multidão:
+* O povo do Império Sensa é leal à imperatriz e às suas próprias cidades-estado em igual medida. Como tal, a maioria do povo de Anisa favorece o Príncipe Simbon como o provável herdeiro da Imperatriz Inaya.
+* A Guilda Aurum declarou apoio ao mais aventureiro Príncipe Kirina de Niba, de modo que muitos dos mineiros na multidão o favorecem.
+* Simbon foi tecnicamente encarregado da missão de resgate por seu pai, o Rei Diara. No entanto, o príncipe parece abalado pela responsabilidade.
+* Kirina está na cidade a negócios particulares há semanas, mas fez uma aparição muito pública após o acidente na mina. Ele assumiu a responsabilidade de se voluntariar para a missão de resgate.
+Uma vez que os personagens concordem com a missão, ou se quiserem saber mais antes de aceitar, Uzoma diz que tem alguém que quer que eles conheçam—um jovem mineiro que viu monstros na mina antes de escapar. Ela faz um gesto para os personagens a seguirem pela multidão.
 
-### Kirina, Prince of Niba
 
-As the eldest son of the king of Niba, Kirina (chaotic evil, human veteran) was raised knowing he might be named heir to the land's ruler, Empress Inaya. His childhood was filled with trips to her palace, the Azure Dome. In time, Kirina grew close to the empress. He came to see Inaya as a benevolent aunt, and his place as her heir seemed assured. Yet, as Kirina grew to adulthood, the empress didn't name him as her successor, a decision he came to resent.
-Now, Kirina has made an alliance with the scheming High Priest Kedjou. They've used Kedjou's magical experiments to manufacture a calamity at the Goldwarren and to summon the giant scorpions. They plan to use these perils to establish Kirina as a hero in the eyes of the people and an obvious choice to be the empress's heir.
+### Príncipes e Escorpiões
 
-### Personality Trait
+Enquanto Uzoma conduz os personagens pela multidão, eles notam movimento nas sombras do outro lado da rua. Leia a seguinte descrição:
+> Gritos ecoam na borda da multidão quando escorpiões enormes e brilhantes irrompem de um beco sombrio. O Príncipe Kirina saca uma espada e corre para a frente, enquanto o Príncipe Simbon hesita antes de segui-lo.
+A multidão foge, deixando apenas os personagens e os príncipes para enfrentar cinco escorpiões gigantes. Uzoma fica para trás e observa enquanto o encontro se desenrola.
+Os príncipes são amigáveis com os personagens e rapidamente se aliam a eles. Ambos usam o bloco de estatísticas de veterano, mas têm apenas CA 11 e suas ações de Ataques Múltiplos e Espada Longa. Se um príncipe for reduzido a metade de seus pontos de vida ou menos, ele usa a ação Esquivar para evitar sofrer mais dano.
+Os escorpiões são hostis e de uma raça rara e fluorescente conhecida como escorpiões das dunas crepusculares. Qualquer personagem que seja bem-sucedido em um teste de Inteligência (Natureza) CD 16 sabe disso e que os escorpiões raramente se aventuram das profundezas dos desertos.
+Os escorpiões desaparecem quando mortos. Um personagem bem-sucedido em um teste de Inteligência (Arcanismo ou Religião) CD 12 percebe que esta é a marca de uma criatura invocada magicamente. Um personagem familiarizado com magia de conjuração reconhece que invocar escorpiões gigantes em tal número excede em muito o poder da magia conjurar animais ou de outras magias comuns.
+Após a batalha, ambos os príncipes agradecem aos personagens por sua assistência.
 
-"It's excusable to take abhorrent actions in pursuit of a higher goal."
+### Kirina, Príncipe de Niba
+
+Como o filho mais velho do rei de Niba, Kirina (caótico e mau, veterano humano) foi criado sabendo que poderia ser nomeado herdeiro do governante da terra, a Imperatriz Inaya. Sua infância foi repleta de viagens ao palácio dela, o Domo Azul. Com o tempo, Kirina se aproximou da imperatriz. Ele passou a ver Inaya como uma tia benevolente, e seu lugar como herdeiro parecia garantido. No entanto, conforme Kirina chegou à idade adulta, a imperatriz não o nomeou seu sucessor, uma decisão que ele passou a ressentir.
+Agora, Kirina fez uma aliança com o maquinador Alto Sacerdote Kedjou. Eles usaram os experimentos mágicos de Kedjou para fabricar uma calamidade na Goldwarren e para invocar os escorpiões gigantes. Eles planejam usar esses perigos para estabelecer Kirina como um herói aos olhos do povo e uma escolha óbvia para ser o herdeiro da imperatriz.
+
+### Traço de Personalidade
+
+"É desculpável tomar ações abomináveis em busca de um objetivo maior."
 
 ### Ideal
 
-"Sometimes it's necessary to hurt those I love to accomplish my goals."
+"Às vezes é necessário machucar aqueles que amo para alcançar meus objetivos."
 
-### Bond
+### Vínculo
 
-"I've devoted my entire life to becoming Empress Inaya's heir."
+"Dediquei minha vida inteira para me tornar herdeiro da Imperatriz Inaya."
 
-### Flaw
+### Defeito
 
-"I'll stop at nothing to attain the throne."
+"Não pararei por nada para alcançar o trono."
 
-### Simbon, Prince of Anisa
+### Simbon, Príncipe de Anisa
 
-Prince Simbon (neutral, human veteran) is loyal to Empress Inaya. His family seeks to ensure she chooses him as her heir, though he has never aspired to the position. But if one of Anisa's own were to rule the empire, it would be a point of pride for the whole land—so Simbon feels obligated to act as though he wants to be Empress Inaya's heir. In reality, Simbon believes his poor tactical mind and hedonistic bent make him a lackluster candidate.
+O Príncipe Simbon (neutro, veterano humano) é leal à Imperatriz Inaya. Sua família busca garantir que ela o escolha como seu herdeiro, embora ele nunca tenha aspirado ao cargo. Mas se um dos filhos de Anisa governasse o império, seria motivo de orgulho para toda a terra—então Simbon se sente obrigado a agir como se quisesse ser o herdeiro da Imperatriz Inaya. Na realidade, Simbon acredita que sua mente tática ruim e sua tendência hedonista fazem dele um candidato medíocre.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I was raised to rule not only Anisa, but the entire Sensa Empire. Would that it were not so."
+"Fui criado para governar não apenas Anisa, mas todo o Império Sensa. Quem dera não fosse assim."
 
-### Searching the Alley
+### Revistando o Beco
 
-After the battle, characters who investigate the alley the scorpions originated from can make a CD 14 Intelligence (Investigation) check. If they succeed, they find a partial series of smeared magical runes drawn on the alley wall. A character who succeeds on a CD 12 Intelligence (Arcana or Religion) check knows that the runes are related to conjuration magic but can tell nothing more.
-
-
+Após a batalha, personagens que investigarem o beco de onde os escorpiões se originaram podem fazer um teste de Inteligência (Investigação) CD 14. Se forem bem-sucedidos, encontram uma série parcial de runas mágicas borradas desenhadas na parede do beco. Um personagem bem-sucedido em um teste de Inteligência (Arcanismo ou Religião) CD 12 sabe que as runas estão relacionadas à magia de conjuração, mas não pode dizer mais nada.

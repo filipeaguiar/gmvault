@@ -237,7 +237,7 @@ params:
   kind: character
 spells_usage: []
 status: ready
-summary: Goblin Rogue 1 criado manualmente guiado por dados.
+summary: Goblin Ladino 1 criado manualmente guiado por dados.
 tags:
 - jogador
 - goblin
@@ -245,6 +245,13 @@ tags:
 title: Pinky
 visibility: players
 weight: 10
+titulo_pt_br: Pinky
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Biografia

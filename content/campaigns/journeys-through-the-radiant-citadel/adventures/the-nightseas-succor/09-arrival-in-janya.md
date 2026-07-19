@@ -1,161 +1,165 @@
 ---
-title: "Cena 9 - Arrival in Janya"
+title: Cena 9 - Arrival in Janya
 weight: 90
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: Cena 9 - Chegada em Janya
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/brother-broumane/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/zisatta/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/brother-broumane/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/arrival-in-janya/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/arrival-in-janya/
 compendium_refs:
-  - "/compendium/monsters/merfolk/"
-  - "/compendium/monsters/nightsea-chil-liren/"
+- /compendium/monsters/merfolk/
+- /compendium/monsters/nightsea-chil-liren/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/brother-broumane-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/merfolk-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/zisatta-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/brother-broumane-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/merfolk-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-As the characters near the seafloor, a pearlescent haze cuts through the darkness. Below they see a shimmering dome of light, a great magical barrier that shelters the city below. As the characters pass through, read or paraphrase the following text:
+À medida que os personagens se aproximam do fundo do mar, uma névoa perolada corta a escuridão. Abaixo, eles veem um domo cintilante de luz, uma grande barreira mágica que abriga a cidade submersa. Conforme os personagens passam por ele, leia ou parafraseie o seguinte texto:
 
-> A majestic vista spreads beneath the dome: the undersea city of Janya. The city's dark towers are carved with circular windows and covered with designs marked by bioluminescent barnacles. People slip through open corridors between buildings, swimming high above the volcanic rock and coral of the seafloor below.
+> Um panorama majestoso se estende sob o domo: a cidade subaquática de Janya. As torres escuras da cidade são esculpidas com janelas circulares e cobertas por desenhos marcados por cracas bioluminescentes. Pessoas deslizam por corredores abertos entre os edifícios, nadando bem acima da rocha vulcânica e do coral do fundo do mar.
 
-As the characters take in the beauty of the city, a figure approaches them.
-
-
-![The shadows of aquatic residents flit beneath the iridescent magic that protects the undersea city of Janya](/images/campaigns/journeys-through-the-radiant-citadel/117-12-004undersea-janya.webp)
+Enquanto os personagens absorvem a beleza da cidade, uma figura se aproxima deles.
 
 
-
-### Meeting Xoese-Addae
-
-A figure with kelp-colored hair and stingray-colored skin approaches the characters, introducing himself as Xoese-Addae, an emissary of the High Court of Janya. Xoese-Addae is neutral good and one of the Nightsea Chil-liren (see below). He greets the characters warmly, saying his friend Gurau sent word of their coming, and asks what brings them to the city.
-Once the characters relate their story, Xoese-Addae ponders a moment. If the characters mention the phantom ship they encountered on the way to Janya, he is particularly concerned. Many of the wreck sites dotting the seafloor around Janya are known to be haunted, but he's never heard of similar manifestations in open water.
-Xoese-Addae notes that if anyone has heard of ghost ships or knows if the wreck of the *Girscamen* is charted, it's Zisatta, who commands Janya's security force. He offers to escort the characters to the Cerulean Lyceum, Janya's great bardic college, where Zisatta and the other members of the High Court are attending a gala.
-If the characters want to explore Janya, Xoese-Addae can guide the characters around the city before taking them to the Cerulean Lyceum. Use the "**Área Djaynai and Janya Gazetteer**" section to guide explorations of Janya.
-
-### Nightsea Chil-liren
-
-Xoese-Addae or any of Janya's other residents can tell the characters that the undersea city of Janya is populated by descendants of Djaynai who escaped into the sea during the Passage of Vultures. The magic of Djaynaian transmuters and that of the Nightsea itself gave these people the ability to live beneath the waves. Now known as Nightsea Chil-liren, the people of Janya look similar to the humans of Djaynai, but their brown skin is often tinged shades of gray, and eel-like fins run along their arms and legs.
-Nightsea Chil-liren use the merfolk stat block with the following changes:
-* They have darkvision out to a range of 60 feet.
-* Replace the Amphibious trait with the trait below.
-> 
-> ### Water Breathing
-> 
-> Nightsea Chil-liren can breathe only underwater.
+![As sombras dos residentes aquáticos esvoaçam sob a magia iridescente que protege a cidade subaquática de Janya](/images/campaigns/journeys-through-the-radiant-citadel/117-12-004undersea-janya.webp)
 
 
-### Gala at the Cerulean Lyceum
 
-Xoese-Addae leads the characters to the Cerulean Lyceum, a series of vaulted, crystalline halls set around a broad quadrangle. When the characters arrive, the quad is filled with Janyans enraptured by the low-toned, hypnotic music of a group of bards.
-Xoese-Addae leads the characters to a private audience suite overlooking the quad, occupied by a single Janyan wearing fine, billowing robes—this is Zisatta.
+### Encontrando Xoese-Addae
+
+Uma figura com cabelos cor de alga e pele cor de arraia se aproxima dos personagens, apresentando-se como Xoese-Addae, um emissário da Suprema Corte de Janya. Xoese-Addae é Neutro e Bom e um dos Chil-liren do Mar Noturno (veja abaixo). Ele cumprimenta os personagens calorosamente, dizendo que seu amigo Gurau enviou notícias da chegada deles, e pergunta o que os traz à cidade.
+Quando os personagens contam sua história, Xoese-Addae pondera por um momento. Se os personagens mencionarem o navio fantasma que encontraram a caminho de Janya, ele fica particularmente preocupado. Muitos dos locais de naufrágio que pontilham o fundo do mar ao redor de Janya são conhecidos por serem assombrados, mas ele nunca ouviu falar de manifestações semelhantes em mar aberto.
+Xoese-Addae observa que, se alguém ouviu falar de navios fantasmas ou sabe se os destroços do *Girscamen* estão mapeados, essa pessoa é Zisatta, que comanda a força de segurança de Janya. Ele se oferece para escoltar os personagens até o Liceu Cerúleo, o grande colégio de bardos de Janya, onde Zisatta e os outros membros da Suprema Corte estão participando de um evento de gala.
+Se os personagens quiserem explorar Janya, Xoese-Addae pode guiá-los pela cidade antes de levá-los ao Liceu Cerúleo. Use a seção "**Guia Geográfico de Área Djaynai e Janya**" para orientar as explorações em Janya.
+
+### Chil-liren do Mar Noturno
+
+Xoese-Addae ou qualquer outro residente de Janya pode contar aos personagens que a cidade subaquática de Janya é povoada por descendentes de Djaynai que escaparam para o mar durante a Passagem dos Abutres. A magia dos transmutadores de Djaynai e a do próprio Mar Noturno deram a essas pessoas a capacidade de viver sob as ondas. Agora conhecidos como Chil-liren do Mar Noturno, o povo de Janya se parece com os humanos de Djaynai, mas sua pele morena geralmente tem tons acinzentados, e barbatanas semelhantes às de enguias percorrem seus braços e pernas.
+Os Chil-liren do Mar Noturno usam o bloco de estatísticas de tritão com as seguintes alterações:
+* Eles têm visão no escuro a um alcance de 18 metros.
+* Substitua a característica Anfíbio pela característica abaixo.
+>
+> ### Respiração Aquática
+>
+> Os Chil-liren do Mar Noturno podem respirar apenas debaixo d'água.
+
+
+### Gala no Liceu Cerúleo
+
+Xoese-Addae conduz os personagens ao Liceu Cerúleo, uma série de salões abobadados e cristalinos dispostos ao redor de um amplo quadrilátero. Quando os personagens chegam, o pátio está repleto de janyanos absortos pela música grave e hipnótica de um grupo de bardos.
+Xoese-Addae leva os personagens a uma suíte de audiência privada com vista para o pátio, ocupada por uma única janyana usando túnicas finas e ondulantes — esta é Zisatta.
 
 ![Zisatta](/images/campaigns/journeys-through-the-radiant-citadel/118-12-005zisatta.webp)
 
 
 ### Zisatta
 
-The aloof Zisatta is a member of the High Court and commands Janya's security forces, called the Billowing Patrol for their sable robes that undulate like jellyfish. She is lawful neutral and one of the Nightsea Chil-liren (see the "Nightsea Chil-liren" section). Tattoos of ancient Djaynaian symbols peak out from beneath her flowing robes—signs of her fervent desire to prove her connection and dedication to Djaynai.
+A reservada Zisatta é um membro da Suprema Corte e comanda as forças de segurança de Janya, chamadas de Patrulha Ondulante por suas túnicas cor de zibelina que ondulam como águas-vivas. Ela é Leal e Neutra e uma dos Chil-liren do Mar Noturno (veja a seção "Chil-liren do Mar Noturno"). Tatuagens de antigos símbolos de Djaynai aparecem sob suas vestes fluidas — sinais de seu desejo fervoroso de provar sua conexão e dedicação a Djaynai.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I have more important matters to attend to than you."
-
-### Ideal
-
-"Tradition must be preserved at all costs."
-
-### Bond
-
-"While Janya and Djaynai are separate nations, we must defend our Djaynaian kin."
-
-### Flaw
-
-"I'm enraged by any suggestion that I am not Djaynaian."
-
-### What Zisatta Knows
-
-Zisatta rises without introducing herself and is initially indifferent to the characters. She acknowledges Xoese-Addae and imperiously asks why he and his surface-world friends have interrupted her enjoyment of the performance.
-Use the following points to guide the initial conversation, but see "Unexpected Interruption" below if the characters get into the details of their mission:
-* As soon as a character speaks, Zisatta interrupts and orders all the characters to introduce themselves rather than first sharing her own name.
-* If the characters speak about the ghost ship, Zisatta tensely reports that sightings of a ghostly vessel above Janya began several days ago.
-* Zisatta remembers the name *Girscamen* and says the Billowing Patrol knows the location of its wreckage.
-
-### Unexpected Interruption
-
-Before the characters can share all the details of their mission with Zisatta, the door to her suite bursts open, and a figure swims in: Brother Broumane, another member of the High Court.
-Brother Broumane announces he learned of a group of surface-world heroes coming to Janya through "friends among the Night Revelers." He saw the characters arrive while he was watching the performance and wants to learn if they have come to Janya on "mercenary business from the surface."
-
-### Brother Broumane
-
-Brother Broumane is one of the charismatic leaders of the New Janyan movement, a political group focused on Janya's self-reliance and future greatness. He secretly also heads the Untethered, a cult dedicated to chaotic philosophies. He's chaotic neutral and one of the Nightsea Chil-liren (see the "**Área Nightsea Chil-liren**" section). He wears robes made from a patchwork of rough-spun and fine white fabrics.
-
-![Brother Broumane](/images/campaigns/journeys-through-the-radiant-citadel/119-12-006brother-broumane.webp)
-
-
-### Personality Trait
-
-"I want our culture to swim free from irrelevant traditions."
+"Tenho assuntos mais importantes para tratar do que vocês."
 
 ### Ideal
 
-"Janya is its own realm."
+"A tradição deve ser preservada a todo custo."
 
-### Bond
+### Vínculo
 
-"We serve Janya by defining the future instead of dwelling on the past."
+"Embora Janya e Djaynai sejam nações separadas, devemos defender nossos parentes djaynaianos."
 
-### Flaw
+### Defeito
 
-"Cross me and you'll regret it more than you can imagine."
+"Fico furiosa com qualquer sugestão de que eu não seja djaynaiana."
 
-### Caught in the Middle
+### O Que Zisatta Sabe
 
-Both Zisatta and Brother Broumane want to learn the scope of the characters' mission. They largely ignore each other as they each attempt to win the characters to their side. During the conversation, Zisatta focuses on the following points:
-* Zisatta tries to discern whether the characters are working for the People's Stewards and is pleased if they are.
-* She tries to get the characters to admit their mission is connected to lost lore essential to the future of both Djaynai and Janya.
-At the same time, Brother Broumane focuses on the following points:
-* Brother Broumane tries to find out if the characters are working for the Night Revelers and is pleased if they are.
-* He tries to get the characters to admit they're seeking the outdated lore of a foreign land.
-* He claims his faction has ways of learning everything the Billowing Patrol knows, and if there's information the characters need, he can provide it.
-The two High Court members eventually insist the characters choose who they—and, by extension, Djaynai—will align with. Xoese-Addae, a consummate politician, keeps his opinions to himself.
+Zisatta se levanta sem se apresentar e está inicialmente indiferente aos personagens. Ela reconhece Xoese-Addae e pergunta imperiosamente por que ele e seus amigos do mundo da superfície interromperam seu prazer na apresentação.
+Use os pontos a seguir para guiar a conversa inicial, mas veja "Interrupção Inesperada" abaixo se os personagens entrarem nos detalhes de sua missão:
+* Assim que um personagem fala, Zisatta o interrompe e ordena que todos os personagens se apresentem, em vez de primeiro compartilhar seu próprio nome.
+* Se os personagens falarem sobre o navio fantasma, Zisatta relata tensamente que avistamentos de um navio fantasmagórico acima de Janya começaram há vários dias.
+* Zisatta lembra do nome *Girscamen* e diz que a Patrulha Ondulante conhece a localização de seus destroços.
 
-### A Fraught Debate
+### Interrupção Inesperada
 
-It should be clear that the characters' mission puts them in the middle of a political and philosophical debate that stretches back generations. Zisatta's group, the Djaynaists, believe in cultivating the Janyan people's connection to their original homeland, Djaynai. Brother Broumane's group, the New Janyans, want Janyans to forge their own identity. The characters are unlikely to have strong opinions one way or the other but need to get information from one of the High Court members.
+Antes que os personagens possam compartilhar todos os detalhes de sua missão com Zisatta, a porta de sua suíte se escancara, e uma figura entra nadando: Irmão Broumane, outro membro da Suprema Corte.
+Irmão Broumane anuncia que soube da chegada de um grupo de heróis do mundo da superfície a Janya por meio de "amigos entre os Foliões Noturnos". Ele viu os personagens chegarem enquanto assistia à apresentação e quer saber se eles vieram a Janya para "negócios mercenários da superfície".
 
-### Choosing Sides
+### Irmão Broumane
 
-The easiest route to gaining the information the characters need is to declare support for one High Court member's philosophy. This earns the chosen person's favor, but the other leaves, insulted. While the insulted politician won't oppose the characters' mission, they take the characters' choice as indicative of all surface dwellers' stances, which might fray the relationship between the two civilizations.
+Irmão Broumane é um dos líderes carismáticos do movimento Nova Janya, um grupo político focado na autossuficiência e na grandeza futura de Janya. Secretamente, ele também lidera os Desacorrentados, um culto dedicado a filosofias caóticas. Ele é Caótico e Neutro e um dos Chil-liren do Mar Noturno (veja a seção "**Área Chil-liren do Mar Noturno**"). Ele usa vestes feitas de uma colcha de retalhos de tecidos brancos de fiação rústica e fina.
 
-### Diplomacy
-
-If the characters don't want to publicly align themselves with either faction, a character brings the debate to an end civilly by succeeding on a CD 16 Charisma (Deception or Persuasion) check. The characters can then reconvene with either High Court member in private. Alternatively, if a character succeeds on a CD 20 Charisma (Persuasion) check, they present a point that both court members agree to, winning the support of both.
-
-### Ending the Debate
-
-Whichever High Council member the characters align with can get them directions to the *Girscamen*'s wreck with only a few hours of work. But they pass on their information only if the characters agree to a request.
-
-### What Zisatta Wants
-
-In return for directions to the wreck of the Girscamen, Zisatta wants the characters to bring her whatever lore they find so her people can learn more about their lost heritage. She asserts that it is her duty to share this cultural wisdom with the People's Stewards (and believes that doing so will validate the viewpoint of her faction). Through compelling roleplaying or by succeeding on a CD 14 Charisma (Persuasion) check, a character can convince her to settle for making a copy of whatever they find before they return to Djaynai—a process that takes a week.
-
-### What Brother Broumane Wants
-
-Brother Broumane tells the characters the location of the Girscamen's wreck if they swear to return any lore they find to him so he can destroy it. When the party returns, a character can fool Brother Broumane by claiming they found nothing and succeeding on a CD 18 Charisma (Deception) check. If the characters return and give him something that looks like an ancient relic but isn't the lost Djaynaian lore, they can convince him it was all they found with a successful CD 14 Charisma (Deception) check.
-
-### Destination in the Depths
-
-Once the characters have reached an agreement with a High Court member, that person provides a map of the region around Janya with a location 15 miles from the city marked. This spot, known as the Trench of Love Lost, is where members of the Billowing Patrol found the wreck of the Girscamen.
-Xoese-Addae is familiar with the region around Janya and is willing to escort the characters to the top of the trench. If the characters please, they can spend some time in Janya before seeking the *Girscamen*.
+![Irmão Broumane](/images/campaigns/journeys-through-the-radiant-citadel/119-12-006brother-broumane.webp)
 
 
+### Traço de Personalidade
+
+"Quero que nossa cultura nade livre de tradições irrelevantes."
+
+### Ideal
+
+"Janya é seu próprio reino."
+
+### Vínculo
+
+"Servimos a Janya definindo o futuro em vez de remoer o passado."
+
+### Defeito
+
+"Me contrariem, e vocês se arrependerão mais do que podem imaginar."
+
+### No Meio do Fogo Cruzado
+
+Ambos, Zisatta e Irmão Broumane, querem saber o escopo da missão dos personagens. Eles praticamente se ignoram enquanto cada um tenta conquistar os personagens para seu lado. Durante a conversa, Zisatta se concentra nos seguintes pontos:
+* Zisatta tenta discernir se os personagens estão trabalhando para os Guardiões do Povo e fica satisfeita se estiverem.
+* Ela tenta fazer com que os personagens admitam que sua missão está conectada a conhecimentos perdidos essenciais para o futuro tanto de Djaynai quanto de Janya.
+Ao mesmo tempo, Irmão Broumane se concentra nos seguintes pontos:
+* Irmão Broumane tenta descobrir se os personagens estão trabalhando para os Foliões Noturnos e fica satisfeito se estiverem.
+* Ele tenta fazer com que os personagens admitam que estão buscando os conhecimentos ultrapassados de uma terra estrangeira.
+* Ele afirma que sua facção tem meios de descobrir tudo o que a Patrulha Ondulante sabe, e se houver alguma informação que os personagens precisam, ele pode fornecê-la.
+Os dois membros da Suprema Corte eventualmente insistem que os personagens escolham com quem eles — e, por extensão, Djaynai — se aliarão. Xoese-Addae, um político consumado, guarda suas opiniões para si.
+
+### Um Debate Tensivo
+
+Deve ficar claro que a missão dos personagens os coloca no meio de um debate político e filosófico que se estende por gerações. O grupo de Zisatta, os Djaynaístas, acredita em cultivar a conexão do povo janyano com sua terra natal original, Djaynai. O grupo do Irmão Broumane, os Novos Janyanos, quer que os janyanos forjem sua própria identidade. É improvável que os personagens tenham opiniões fortes de um jeito ou de outro, mas precisam obter informações de um dos membros da Suprema Corte.
+
+### Escolhendo um Lado
+
+A rota mais fácil para obter as informações de que os personagens precisam é declarar apoio à filosofia de um dos membros da Suprema Corte. Isso conquista o favor da pessoa escolhida, mas o outro vai embora, insultado. Embora o político insultado não se oponha à missão dos personagens, ele toma a escolha dos personagens como indicativa da postura de todos os habitantes da superfície, o que pode desgastar a relação entre as duas civilizações.
+
+### Diplomacia
+
+Se os personagens não quiserem se alinhar publicamente com nenhuma das facções, um personagem pode encerrar o debate civilizadamente sendo bem-sucedido em um teste de Carisma (Enganação ou Persuasão) com CD 16. Os personagens podem então se reunir com qualquer um dos membros da Suprema Corte em particular. Alternativamente, se um personagem for bem-sucedido em um teste de Carisma (Persuasão) com CD 20, ele apresenta um ponto com o qual ambos os membros da corte concordam, conquistando o apoio de ambos.
+
+### Encerrando o Debate
+
+Qualquer que seja o membro do Supremo Conselho com o qual os personagens se alinharem, ele pode obter as direções para os destroços do *Girscamen* com apenas algumas horas de trabalho. Mas eles passam suas informações apenas se os personagens concordarem com um pedido.
+
+### O Que Zisatta Quer
+
+Em troca das direções para os destroços do Girscamen, Zisatta quer que os personagens tragam a ela qualquer conhecimento que encontrarem, para que seu povo possa aprender mais sobre sua herança perdida. Ela afirma que é seu dever compartilhar essa sabedoria cultural com os Guardiões do Povo (e acredita que fazer isso validará o ponto de vista de sua facção). Por meio de interpretação convincente ou sendo bem-sucedido em um teste de Carisma (Persuasão) com CD 14, um personagem pode convencê-la a se contentar em fazer uma cópia do que encontrarem antes de retornar a Djaynai — um processo que leva uma semana.
+
+### O Que Irmão Broumane Quer
+
+Irmão Broumane conta aos personagens a localização dos destroços do Girscamen se eles jurarem devolver a ele qualquer conhecimento que encontrarem para que ele possa destruí-lo. Quando o grupo retorna, um personagem pode enganar Irmão Broumane afirmando que não encontraram nada e sendo bem-sucedido em um teste de Carisma (Enganação) com CD 18. Se os personagens retornarem e lhe derem algo que pareça uma relíquia antiga, mas que não seja o conhecimento perdido de Djaynai, eles podem convencê-lo de que foi tudo o que encontraram com um teste bem-sucedido de Carisma (Enganação) com CD 14.
+
+### Destino nas Profundezas
+
+Uma vez que os personagens tenham chegado a um acordo com um membro da Suprema Corte, essa pessoa fornece um mapa da região ao redor de Janya com um local a 24 quilômetros da cidade marcado. Este local, conhecido como a Fossa do Amor Perdido, é onde os membros da Patrulha Ondulante encontraram os destroços do Girscamen.
+Xoese-Addae está familiarizado com a região ao redor de Janya e está disposto a escoltar os personagens até o topo da fossa. Se os personagens quiserem, podem passar algum tempo em Janya antes de procurar o *Girscamen*.

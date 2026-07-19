@@ -1,19 +1,24 @@
 ---
-title: "Venturing from Sagorpur"
+title: Venturing from Sagorpur
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Partindo de Sagorpur
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Venturing from Sagorpur** importada automaticamente.
+Localidade **Aventurando-se de Sagorpur** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Venturing from Sagorpur](../../adventures/in-the-mists-of-manivarsha/05-venturing-from-sagorpur/)
+- [Aventurando-se de Sagorpur](../../adventures/in-the-mists-of-manivarsha/05-venturing-from-sagorpur/)

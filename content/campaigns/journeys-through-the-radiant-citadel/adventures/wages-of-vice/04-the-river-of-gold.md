@@ -1,96 +1,100 @@
 ---
-title: "Cena 4 - The River of Gold"
+title: Cena 4 - The River of Gold
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 4 - O Rio de Ouro
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/the-river-of-gold/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/the-river-of-gold/
 compendium_refs:
-  - "/compendium/monsters/spy/"
-  - "/compendium/monsters/veteran/"
+- /compendium/monsters/spy/
+- /compendium/monsters/veteran/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The trail from the northwest widens as it reaches the city, feeding into the River of Gold, a thoroughfare paved with yellow potsherds. The caravanners cheer loudly as they enter the fields around the city and the bustling community comes fully into view. At Zinda's open gates, agents of the city collect a toll of 5 sp per entrant or goods of equal value. The tax collectors are in good spirits, so a character who succeeds on a CD 15 Charisma (Persuasion) check can convince a tax collector to allow the group free entry.
+A trilha vinda do noroeste se alarga ao chegar à cidade, alimentando o Rio de Ouro, uma via pavimentada com cacos de cerâmica amarelos. Os caravanistas gritam de alegria ao entrarem nos campos ao redor da cidade e a comunidade movimentada surge totalmente à vista. Nos portões abertos de Zinda, agentes da cidade cobram um pedágio de 5 pp por entrante ou mercadorias de valor equivalente. Os coletores de impostos estão de bom humor, então um personagem bem-sucedido em um teste de Carisma (Persuasão) CD 15 pode convencer um coletor a permitir a entrada gratuita do grupo.
 
-As the characters enter the city, read the following description:
+Quando os personagens entram na cidade, leia a descrição a seguir:
 
-> Beyond the city gates, the golden road continues amid silk-draped booths and squat buildings with conical roofs. The chatter of merchants and cheerful youths rings out along the road. Folk sell colorful flowers, beaded charms, and other wares from woven baskets atop their heads, while street performers spin in tight circles, waving long silk streamers.
+> Além dos portões da cidade, a estrada dourada continua entre tendas cobertas de seda e construções baixas com telhados cônicos. O burburinho de mercadores e jovens alegres ecoa pela estrada. Pessoas vendem flores coloridas, amuletos de contas e outras mercadorias em cestos trançados sobre suas cabeças, enquanto artistas de rua giram em círculos apertados, agitando longas fitas de seda.
 
-Hundreds of revelers, merchants, jeli wine vendors, and entertainers pack the River of Gold. Buildings bear brightly painted signs and are covered with colorful vines bearing lush flowers. Beyond the crowds, the characters can see the bustling city center called the Court of Flowers, lined with tropical trees whose branches droop to the pavement.
-
-
-### A Grim Discovery
-
-As the characters make their way from the River of Gold to the Court of Flowers, they pass a shadowed alley. Glancing down it, the character who has the highest passive Wisdom (Perception) score sees a still figure surrounded by spilled gold coins and slumped against the wall, head tilted to stare at them.
-Characters who investigate find a dead dwarf wearing lavish robes. Nearby are 20 gp fallen from an open pouch the dwarf wears. His body shows no wounds, but a character who makes a successful CD 12 Wisdom (Medicine) check finds signs of poison. If the check succeeds by 5 or more, the character confirms that the dwarf was killed by burnt othur fumes (Sample Poisons in the Dungeon Master's Guide). The dwarf has been dead for 5 minutes and thus is beyond the help of a revivify spell.
-Characters who search the alley confirm it is a dead end, and the shop doors along it are all locked. There is no sign of any other creature in the area.
-The characters currently have no way of learning that the dwarf was murdered by the vengeful Kala Mabarin, who got close enough to him in the crowd to poison him, then led him to the alley to die.
+Centenas de foliões, mercadores, vendedores de vinho de jeli e artistas lotam o Rio de Ouro. As construções exibem letreiros coloridos e são cobertas por videiras vibrantes carregadas de flores exuberantes. Além das multidões, os personagens podem ver o movimentado centro da cidade chamado Corte das Flores, repleto de árvores tropicais cujos galhos se curvam até o calçamento.
 
 
-### Guilt by Association
+### Uma Descoberta Sombria
 
-Before the characters conclude their investigation of the body and the alley, three veterans wearing gold filigreed armor shout for the characters to stay where they are, attacking if the characters flee. These veterans were hired by Madame Samira Arah, the newest member of the Kings of Coin, to protect the dwarf, but they lost sight of him during the celebrations.
-The alley is only 10 feet wide. Each veteran fights until reduced to 10 hit points, then flees. The veterans stand down if all the characters surrender or if a character uses an action to explain they had nothing to with the dwarf's death and succeeds on a CD 14 Charisma (Persuasion) check. A character has disadvantage on this check if the group has wounded any of the veterans.
+Enquanto os personagens seguem do Rio de Ouro para a Corte das Flores, eles passam por um beco sombreado. Olhando para dentro dele, o personagem com o maior valor passivo de Sabedoria (Percepção) vê uma figura imóvel cercada por moedas de ouro derramadas e caída contra a parede, com a cabeça inclinada, fitando-os.
+Personagens que investigarem encontrarão um anão morto vestindo túnicas luxuosas. Próximo a ele, há 20 po caídas de uma bolsa aberta que o anão carrega. Seu corpo não apresenta ferimentos, mas um personagem que obtiver sucesso em um teste de Sabedoria (Medicina) CD 12 encontrará sinais de veneno. Se o teste for bem-sucedido por 5 ou mais, o personagem confirma que o anão foi morto por vapores de othur queimado (Venenos de Exemplo no Guia do Mestre). O anão está morto há 5 minutos e, portanto, está além do alcance de uma magia *revivify*.
+Personagens que vasculharem o beco confirmam que é um beco sem saída e que todas as portas das lojas ao longo dele estão trancadas. Não há sinal de nenhuma outra criatura na área.
+Os personagens atualmente não têm como saber que o anão foi assassinado pela vingativa Kala Mabarin, que se aproximou o suficiente dele na multidão para envenená-lo e então o conduziu ao beco para morrer.
 
 
-### First Blood
+### Culpa por Associação
 
-After the last veteran is defeated or once the veterans stand down, read the following:
-> A tall elf woman wearing a sumptuous gown appears at the mouth of the alley, shaking her head. "Jacopo, you fool, I hope your last March of Vice was worth it."
-> A smile touches her lips as she takes you in. "These guards are members of the Silent Verse, protectors in my employ. I apologize for their overzealousness. Seeing how you handle yourselves, though, I might be able to better apologize with an offer of employment."
-The woman introduces herself as Madame Samira Arah, the newest member of Zinda's ruling council, the Kings of Coin (see the "**Área Zinda Gazetteer**" section).
+Antes que os personagens concluam sua investigação do corpo e do beco, três **veteranos** vestindo armaduras com detalhes em ouro gritam para que os personagens fiquem onde estão, atacando se eles fugirem. Esses veteranos foram contratados por Madame Samira Arah, a mais nova integrante dos Reis da Moeda, para proteger o anão, mas eles o perderam de vista durante as celebrações.
+O beco tem apenas 3 metros de largura. Cada veterano luta até ser reduzido a 10 pontos de vida, então foge. Os veteranos recuam se todos os personagens se renderem ou se um personagem usar uma ação para explicar que eles não tiveram nada a ver com a morte do anão e obtiver sucesso em um teste de Carisma (Persuasão) CD 14. Um personagem tem desvantagem neste teste se o grupo tiver ferido algum dos veteranos.
+
+
+### Primeiro Sangue
+
+Após o último veterano ser derrotado ou os veteranos recuarem, leia o seguinte:
+> Uma alta mulher elfa usando um vestido suntuoso aparece na entrada do beco, balançando a cabeça. "Jacopo, seu tolo, espero que sua última Marcha do Vício tenha valido a pena."
+> Um sorriso toca seus lábios enquanto ela os observa. "Esses guardas são membros do Verso Silencioso, protetores a meu serviço. Peço desculpas pelo excesso de zelo deles. Vendo como vocês se saem, no entanto, talvez eu possa me desculpar melhor com uma oferta de trabalho."
+A mulher se apresenta como Madame Samira Arah, a mais nova integrante do conselho governante de Zinda, os Reis da Moeda (veja a seção "**Guia Geográfico de Zinda**").
 
 
 ### Madame Samira Arah
 
-Madame Samira Arah (neutral, elf spy) joined the Kings of Coin within the last year. She was the chosen heir of the King of Coin she replaced but not part of their family (an important detail as it relates to Kala Mabarin's vengeance). Her peers' embrace of the status quo frustrates her grand plans for making Zinda even more prosperous. Samira plots to usurp the leadership of the Kings of Coin from Grand Messer Amos Nir and claim rulership of the city. Samira is sharp and severe, and she presents herself as haughty and imperturbable.
+Madame Samira Arah (neutro, elfo **espião**) juntou-se aos Reis da Moeda no último ano. Ela era a herdeira escolhida do Rei da Moeda que substituiu, mas não fazia parte da família dele (um detalhe importante no que diz respeito à vingança de Kala Mabarin). A aceitação do status quo por seus pares frustra seus planos grandiosos de tornar Zinda ainda mais próspera. Samira conspira para usurpar a liderança dos Reis da Moeda do Grão-Messer Amos Nir e reivindicar o governo da cidade. Samira é astuta e severa, apresentando-se como arrogante e imperturbável.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I deserve only the best."
+"Eu mereço apenas o melhor."
 
 ### Ideal
 
-"Someone must always command. Why not the one with the most ambition?"
+"Alguém deve sempre comandar. Por que não aquele com a maior ambição?"
 
-### Bond
+### Vínculo
 
-"The common folk are sheep to be led, and I am the capable shepherd."
+"O povo comum são ovelhas a serem conduzidas, e eu sou o pastor capaz."
 
-### Flaw
+### Defeito
 
-"Why should I settle for less than everything?"
+"Por que eu deveria me contentar com menos do que tudo?"
 
 
-### Samira's Offer
+### A Oferta de Samira
 
 
 ![Madame Samira Arah](/images/campaigns/journeys-through-the-radiant-citadel/042-05-002madame-samira-arah.webp)
 
-Samira instructs any remaining veterans to deal with Jacopo's body quietly and to alert the other Kings of Coin. She then leads the characters to a small café at the edge of the city's central market, where she has a private room. After offering the characters jeli wine, she explains who she is and answers their questions. Use the following details to guide the conversation:
-* Madame Samira Arah is the head of the Jewelers' Trade, the guild for those who craft and deal in gems and jewelry.
-* Due to her experience protecting the valuable assets of her guild, she also acts as the security specialist for the Kings of Coin, controlling enforcers known as the Silent Verse.
-* The murder victim is Jacopo Ain, eldest son of King of Coin Massimo Ain.
-* Jacopo was under protective guard in response to a recent attack against the family member of another King of Coin. But he slipped past his guardians, intent on reveling amid the March of Vice.
-* Last night, Zenia Ruba—the eldest daughter of Myx Nargis Ruba, another of the Kings of Coin—was attacked and nearly killed. Samira doesn't know if the attacks are related but fears they might be.
-Samira wants to hire the characters to question Zenia and discover any information tying her attack and Jacopo's murder to Grand Messer Amos. Though she controls the Silent Verse, Samira fears some of its agents are loyal to Amos. A group of capable adventurers seeking information might yield the results she needs. In return for their assistance, Samira offers the characters 200 gp each. She's a shrewd bargainer but can be coaxed to increase her offer to 300 gp each if a character succeeds on a CD 18 Charisma (Persuasion) check.
-If the characters agree to Samira's terms, she warns them to be discreet. The Kings of Coin took great pains to keep the attack on Zenia quiet for fear of jeopardizing the success of the March of Vice. Jacopo's death will likewise be concealed until the festival is over. She then provides directions to an establishment owned by Zenia's family, a tavern called the Thornapple, where Zenia is under guard. Zenia's directions avoid several streets closed by festivities and lead through the city market.
-Samira also gives the characters a rose-shaped token that confirms the characters are her representatives. She tells them she will be among the celebrants on the city's main thoroughfare, the River of Gold, until the March of Vice begins.
-
-
+Samira instrui quaisquer veteranos restantes a lidarem com o corpo de Jacopo discretamente e a alertarem os outros Reis da Moeda. Ela então conduz os personagens a um pequeno café na borda do mercado central da cidade, onde dispõe de uma sala privada. Após oferecer vinho de jeli aos personagens, ela explica quem é e responde às suas perguntas. Use os detalhes a seguir para guiar a conversa:
+* Madame Samira Arah é a líder da Guilda dos Joalheiros, a guilda daqueles que fabricam e negociam gemas e joias.
+* Devido à sua experiência protegendo os bens valiosos de sua guilda, ela também atua como especialista em segurança dos Reis da Moeda, controlando os executores conhecidos como o Verso Silencioso.
+* A vítima do assassinato é Jacopo Ain, filho mais velho do Rei da Moeda Massimo Ain.
+* Jacopo estava sob proteção em resposta a um ataque recente contra o membro da família de outro Rei da Moeda. Mas ele escapou de seus guardiões, determinado a se divertir durante a Marcha do Vício.
+* Na noite passada, Zenia Ruba — a filha mais velha de Myx Nargis Ruba, outro dos Reis da Moeda — foi atacada e quase morta. Samira não sabe se os ataques estão relacionados, mas teme que possam estar.
+Samira quer contratar os personagens para interrogar Zenia e descobrir qualquer informação que relacione o ataque a ela e o assassinato de Jacopo ao Grão-Messer Amos. Embora controle o Verso Silencioso, Samira teme que alguns de seus agentes sejam leais a Amos. Um grupo de aventureiros capazes em busca de informações pode render os resultados de que ela precisa. Em troca de sua ajuda, Samira oferece aos personagens 200 po cada. Ela é uma negociante astuta, mas pode ser persuadida a aumentar sua oferta para 300 po cada se um personagem obtiver sucesso em um teste de Carisma (Persuasão) CD 18.
+Se os personagens concordarem com os termos de Samira, ela os alerta para serem discretos. Os Reis da Moeda se esforçaram muito para manter o ataque a Zenia em segredo, temendo comprometer o sucesso da Marcha do Vício. A morte de Jacopo também será encoberta até o festival terminar. Ela então fornece direções para um estabelecimento de propriedade da família de Zenia, uma taverna chamada Maçã-Espinhosa, onde Zenia está sob guarda. As direções para a casa de Zenia evitam várias ruas fechadas por festividades e passam pelo mercado da cidade.
+Samira também entrega aos personagens uma ficha em forma de rosa que confirma que os personagens são seus representantes. Ela diz que estará entre os celebrantes na via principal da cidade, o Rio de Ouro, até que a Marcha do Vício comece.

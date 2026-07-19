@@ -1,19 +1,19 @@
 ---
-title: "Nene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Nene
+draft: false
+titulo_pt_br: Nene
+visibility: gm
+status: published
 tags:
-  - npc
-  - importado
+- npc
+- importado
 params:
-  kind: "npc"
-stats_meta: "Medium fey, sem tendência"
+  kind: npc
+stats_meta: Medium fey, sem tendência
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,11 +21,13 @@ stats:
     int: 7
     wis: 10
     cha: 10
-  languages: "Understands simple phrases and concepts in Common"
+  languages: Understands simple phrases and concepts in Common
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-![Arte: Nene](/images/campaigns/journeys-through-the-radiant-citadel/135-14-002yarana-and-nene.webp)
-
-
-
-
+![Art: Nene](/images/campaigns/journeys-through-the-radiant-citadel/135-14-002yarana-and-nene.webp)

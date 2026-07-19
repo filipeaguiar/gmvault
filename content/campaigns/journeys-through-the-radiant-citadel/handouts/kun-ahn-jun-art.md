@@ -1,15 +1,15 @@
 ---
-title: "Arte: Kun Ahn-Jun"
+title: 'Arte: Kun Ahn-Jun'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Kun Ahn-Jun'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Kun Ahn-Jun](/images/campaigns/journeys-through-the-radiant-citadel/051-06-002magistrate-kun-ahn-jun.webp)

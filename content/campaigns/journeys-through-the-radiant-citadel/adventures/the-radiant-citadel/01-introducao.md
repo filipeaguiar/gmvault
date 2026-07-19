@@ -1,31 +1,31 @@
 ---
-title: "Cena 1 - Introdução"
+title: Cena 1 - Introdução
 weight: 10
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 1 - Introdução
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-*Gathering Place of Strangers and Stories*
+*Local de Encontro de Estranhos e Histórias*
 
-Against the unending mist and unseen terrors of the Ethereal Plane, the Radiant Citadel stands bright as a bastion of hope. It's a living relic of the ingenuity and collaboration of twenty-seven great civilizations. Abandoned and lost for ages, the Citadel was resurrected from its slumber and reclaimed by descendants of those societies, though some peoples remain missing. The city serves as a nexus of diplomacy and trade, a repository of histories and secrets, and a thriving sanctuary for those seeking safety or a better life.
+Contra a névoa infindável e os terrores invisíveis do Plano Etéreo, a Radiant Citadel se ergue brilhante como um bastião de esperança. É uma relíquia viva da engenhosidade e colaboração de vinte e sete grandes civilizações. Abandonada e perdida por eras, a Citadel foi ressuscitada de seu sono e recuperada pelos descendentes dessas sociedades, embora alguns povos permaneçam desaparecidos. A cidade serve como um elo de diplomacia e comércio, um repositório de histórias e segredos, e um santuário próspero para aqueles que buscam segurança ou uma vida melhor.
 
-The Radiant Citadel is a miracle of architecture, a floating city carved out of a single, massive fossil that snakes around a colossal gemstone shard known as the Auroral Diamond. The luminescence of the Auroral Diamond is mirrored in the constellation of fifteen structure-sized gemstones, the Concord Jewels, which orbit the city and provide transportation to the far-flung homes of the Citadel's founding civilizations. In the haze of the Ethereal Plane, the Auroral Diamond is a scintillating beacon visible from leagues away. The diamond itself seems to have moods, changing colors unpredictably, but it is always visible for wanderers lost and in need. Just beyond the city whirls a massive, ever-threatening, ethereal cyclone known as the Keening Gloom—a looming threat that's a grim reminder of the Citadel's precarious position.
+A Radiant Citadel é um milagre da arquitetura, uma cidade flutuante esculpida em um único fóssil massivo que serpenteia ao redor de um fragmento colossal de gema conhecido como Diamante Auroral. A luminescência do Diamante Auroral é refletida na constelação de quinze gemas do tamanho de estruturas, as Joias da Concórdia, que orbitam a cidade e fornecem transporte para os lares distantes das civilizações fundadoras da Citadel. Na névoa do Plano Etéreo, o Diamante Auroral é um farol cintilante visível a léguas de distância. O próprio diamante parece ter humores, mudando de cor de forma imprevisível, mas está sempre visível para os errantes perdidos e necessitados. Logo além da cidade, redemoinha um massivo e sempre ameaçador ciclone etéreo conhecido como Keening Gloom — uma ameaça iminente que é um sombrio lembrete da posição precária da Citadel.
 
-Heroes and paupers meet on equal footing in the Radiant Citadel. By common agreement, power and resources are equitably shared. Dignity is afforded to all, and great need is met with great aid.
-
-
+Heróis e mendigos se encontram em pé de igualdade na Radiant Citadel. Por comum acordo, poder e recursos são compartilhados de forma equitativa. A dignidade é concedida a todos, e grandes necessidades são atendidas com grande auxílio.

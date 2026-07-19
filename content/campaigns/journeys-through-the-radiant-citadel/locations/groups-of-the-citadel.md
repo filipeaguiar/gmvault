@@ -1,19 +1,24 @@
 ---
-title: "Groups of the Citadel"
+title: Groups of the Citadel
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Grupos da Cidadela
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Groups of the Citadel** importada automaticamente.
+Localidade **Grupos da Cidadela** importada automaticamente.
 
 ### Cenas e Sub-áreas
 - [Groups of the Citadel](../../adventures/the-radiant-citadel/06-groups-of-the-citadel/)

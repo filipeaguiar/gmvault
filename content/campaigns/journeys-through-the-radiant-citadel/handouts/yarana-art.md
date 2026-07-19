@@ -1,15 +1,15 @@
 ---
-title: "Arte: Yarana"
+title: 'Arte: Yarana'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Yarana'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Yarana](/images/campaigns/journeys-through-the-radiant-citadel/135-14-002yarana-and-nene.webp)

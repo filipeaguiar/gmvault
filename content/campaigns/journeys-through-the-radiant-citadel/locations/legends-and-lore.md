@@ -1,19 +1,24 @@
 ---
-title: "Legends and Lore"
+title: Legends and Lore
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Lendas e Conhecimento
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Legends and Lore** importada automaticamente.
+Localidade **Lendas e Saberes** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Legends and Lore](../../adventures/the-radiant-citadel/09-legends-and-lore/)
+- [Lendas e Saberes](../../adventures/the-radiant-citadel/09-legends-and-lore/)

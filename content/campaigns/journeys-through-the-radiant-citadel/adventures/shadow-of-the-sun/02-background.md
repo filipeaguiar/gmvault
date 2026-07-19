@@ -1,117 +1,128 @@
 ---
-title: "Background"
+title: Background
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Antecedentes
+visibility: gm
+status: published
+summary: '# Introdução
+
+
+  *Bem-vindo(a) à Faéria, uma terra de maravilhas e encantamentos, lar dos arquifadas e de suas cortes feéricas. Viaje por esta estranha e fantástica região de The Wild Beyond the Witchlight, uma aventura de Dungeons & Dragons situada na Faéria, que começa nas cercanias do Witchlight Carnival e termina com o terrível confronto contra membros da Corte dos Pesadelos.*
+
+
+  *Esta seção prepara o cenário para a aventura, apresentando a história de fundo que desencadeou os eventos e a profecia do Orrery of Tragedies, um resumo dos capítulos da aventura e sugestões para dar o pontapé inicial na história.*
+
+
+  (O texto desta seção foi extraído da primeira parte de *The Wild Beyond the Witchlight*)'
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/navid/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/navid/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/afsoun-ghorbani-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/laleh-ghorbani-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/navid-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-For about one week every three years, a mysterious lunar phenomenon bathes Akharin Sangar with light in the dead of night. Ancient magic causes the moon to blaze like the sun for a short while. Sangarians call this phenomenon Shabe Taabaan, or "Brilliant Night," and celebrate it with a multiday festival commemorating light's triumph over darkness. Atash, an angel who has ruled Akharin Sangar since he delivered it from catastrophe fifty years ago, suspends the city-state's nightly curfew in honor of the holiday. This year, however, celebrations are muted.
+Por cerca de uma semana a cada três anos, um misterioso fenômeno lunar banha Akharin Sangar com luz na calada da noite. Magia ancestral faz a lua brilhar como o sol por um curto período. Os sangarianos chamam esse fenômeno de Shabe Taabaan, ou "Noite Brilhante", e o celebram com um festival de vários dias comemorando o triunfo da luz sobre a escuridão. Atash, um anjo que governa Akharin Sangar desde que a livrou da catástrofe cinquenta anos atrás, suspende o toque de recolher noturno da cidade-estado em honra ao feriado. Este ano, no entanto, as celebrações estão contidas.
 
-Recently, anarchists called the Ashen Heirs have tormented the city with propaganda and violence, seeking to incite rebellion against Atash. The Brightguard struggles to maintain law amid the havoc. Stretched thin, the order detains suspected resistance members and issues citations. This makes hiding in plain sight difficult for members of a more peaceable resistance group, the Silent Roar, that hopes to restore Sangarian society to its former glory.
+Recentemente, anarquistas chamados de Herdeiros das Cinzas têm atormentado a cidade com propaganda e violência, buscando incitar rebelião contra Atash. A Brightguard luta para manter a lei em meio ao caos. SobreCarregada, a ordem detém supostos membros da resistência e emite citações. Isso dificulta que membros de um grupo de resistência mais pacífico, o Silent Roar, que espera restaurar a sociedade sangariana à sua antiga glória, se escondam à vista de todos.
 
 
-### Pronunciation Guide
+### Guia de Pronúncia
 
-The Akharin Sangar Pronunciations table shows how to pronounce key names in this adventure.
+A tabela de Pronúncias de Akharin Sangar mostra como pronunciar nomes-chave nesta aventura.
 
-**Tabela: Akharin Sangar Pronunciations**
+**Tabela: Pronúncias de Akharin Sangar**
 
 |  |  |
 | --- | --- |
-| Afsoun Ghorbani | af-SOON ghor-bah-NEE |
-| Akharin Sangar | ah-khar-EEN san-GAR |
-| Artavazda | ahr-tah-vaz-DAH |
-| Atash | ah-TASH |
-| Avalin Sahar | a-val-EEN sa-HAR |
-| Baadi | bah-DEE |
-| Emad Farrokh | eh-MAHD fa-ROKH |
-| Laleh Ghorbani | lah-LEH ghor-bah-NEE |
-| Marzieh | mar-zee-YEH |
-| Navid | na-VEED |
-| Pari | pa-REE |
-| Piruzan | pee-roo-ZAN |
-| Ruz Bazaar | rooz bah-ZAHR |
-| Shabe Taabaan | SHAB-eh tah-BAHN |
-| Zolmate Shab | zohl-MAT-eh shab |
+| Afsoun Ghorbani | af-SUN gor-ba-NI |
+| Akharin Sangar | a-ca-RIN san-GAR |
+| Artavazda | ar-ta-vaz-DA |
+| Atash | a-TASH |
+| Avalin Sahar | a-va-LIN sa-HAR |
+| Baadi | ba-DI |
+| Emad Farrokh | e-MAD fa-ROK |
+| Laleh Ghorbani | la-LÉ gor-ba-NI |
+| Marzieh | mar-zi-IÉ |
+| Navid | na-VID |
+| Pari | pa-RI |
+| Piruzan | pi-ru-ZAN |
+| Ruz Bazaar | ruz ba-ZAR |
+| Shabe Taabaan | CHÁ-be tá-BAN |
+| Zolmate Shab | zol-MAT-e chab |
 
 
-### Setting the Adventure
+### Ambientando a Aventura
 
-Use the following suggestions to help contextualize Akharin Sangar in a wider world:
-
-
-### Character Hooks
-
-Consider the following ways to involve characters in this adventure:
+Use as seguintes sugestões para ajudar a contextualizar Akharin Sangar em um mundo mais amplo:
 
 
-### Splitting Loyalties
+### Ganchos de Personagem
+
+Considere as seguintes maneiras de envolver os personagens nesta aventura:
 
 
-![The plans of Ashen Heir anarchists go awry when a purple worm erupts into Three Suns Square](/images/campaigns/journeys-through-the-radiant-citadel/099-11-001ashen-heir-plans.webp)
+### Lealdades Divididas
 
-During the adventure, characters will ally with one of two factions: the Brightguard or the Silent Roar. The Brightguard approaches them first, but characters might change their loyalties. How the characters manage relationships with these factions affects how the adventure unfolds.
+
+![Os planos dos anarquistas Herdeiros das Cinzas são frustrados quando um verme púrpura irrompe na Praça dos Três Sóis](/images/campaigns/journeys-through-the-radiant-citadel/099-11-001ashen-heir-plans.webp)
+
+Durante a aventura, os personagens se aliarão a uma das duas facções: a Brightguard ou o Silent Roar. A Brightguard os aborda primeiro, mas os personagens podem mudar suas lealdades. A forma como os personagens gerenciam os relacionamentos com essas facções afeta como a aventura se desenrola.
 
 ### Brightguard
 
-Before Atash, the Brightguard was a fringe collective of devout protectors who vowed to defend Akharin Sangar from evil in the name of their deity, the Sunweaver. When the angel Atash—an agent of the Sunweaver—deemed service in the Brightguard a holy calling, the group's ranks swelled. Most members have unshakable resolve, but recent revolutionary acts have the order on edge. The Brightguard obeys Atash and, through him, the Sunweaver (see the "**Área Akharin Sangar Gazetteer**" section for details).
+Antes de Atash, a Brightguard era um coletivo marginal de protetores devotos que juraram defender Akharin Sangar do mal em nome de sua divindade, o Tecelão Solar. Quando o anjo Atash—um agente do Tecelão Solar—considerou o serviço na Brightguard um chamado sagrado, as fileiras do grupo aumentaram. A maioria dos membros tem uma determinação inabalável, mas atos revolucionários recentes deixaram a ordem em estado de alerta. A Brightguard obedece a Atash e, através dele, ao Tecelão Solar (veja a seção "**Área Guia Geográfico de Akharin Sangar**" para detalhes).
 
-### Motto
+### Lema
 
-"All good acts take place under the sun."
+"Todos os bons atos acontecem sob o sol."
 
-### Beliefs
+### Crenças
 
-The Sunweaver sets my path.
+O Tecelão Solar define meu caminho.
 
-### Goals
+### Objetivos
 
-Maintain order under the enlightened direction of Atash.
+Manter a ordem sob a direção iluminada de Atash.
 
-### Character Role
+### Papel do Personagem
 
-Characters who align with the Brightguard find the group earnestly seeks to enforce Akharin Sangar's laws and keep the city-state peaceful and pristine. At the behest of the group, the characters investigate the activities of the Ashen Heirs and come into contact with the Silent Roar.
+Personagens que se aliam à Brightguard descobrem que o grupo busca sinceramente fazer cumprir as leis de Akharin Sangar e manter a cidade-estado pacífica e imaculada. A pedido do grupo, os personagens investigam as atividades dos Herdeiros das Cinzas e entram em contato com o Silent Roar.
 
 ### Silent Roar
 
-Members of the Silent Roar seek to return Atash to the Sunweaver and restore Akharin Sangar to a state of self-rule. Named for the lions that roam the lands beyond the city, the faction is secretly led by famed actor Afsoun Ghorbani, and its agents are largely chaotic good artisans, philosophers, and merchants who have suffered under Atash's isolationist policies. Silent Roar agents are usually patient and nonviolent, but they defend the order and its members like lions protect their prides. They resent other revolutionary groups whose violent ways cause the people to distrust the Silent Roar by extension. Many Silent Roar members romanticize Akharin Sangar's past even as they acknowledge that the city-state has faced dire problems and might not have survived without Atash's intervention.
+Membros do Silent Roar buscam devolver Atash ao Tecelão Solar e restaurar Akharin Sangar a um estado de autonomia. Nomeada em homenagem aos leões que vagam pelas terras além da cidade, a facção é secretamente liderada pelo famoso ator Afsoun Ghorbani, e seus agentes são em grande parte artesãos, filósofos e mercadores caóticos e bons que sofreram sob as políticas isolacionistas de Atash. Os agentes do Silent Roar são geralmente pacientes e não violentos, mas defendem a ordem e seus membros como leões protegem seus bandos. Eles se ressentem de outros grupos revolucionários cujos métodos violentos fazem o povo desconfiar do Silent Roar por extensão. Muitos membros do Silent Roar romantizam o passado de Akharin Sangar, mesmo reconhecendo que a cidade-estado enfrentou problemas terríveis e poderia não ter sobrevivido sem a intervenção de Atash.
 
-### Motto
+### Lema
 
-"Protect the pride, preserve the city."
+"Proteja o bando, preserve a cidade."
 
-### Beliefs
+### Crenças
 
-Atash has cost this once-great city-state its splendor.
+Atash custou a esta outrora grandiosa cidade-estado seu esplendor.
 
-### Goals
+### Objetivos
 
-Remove Atash and remake the city.
+Remover Atash e refazer a cidade.
 
-### Character Role
+### Papel do Personagem
 
-After the Brightguard initially sets the characters on the path to track down disruptive anarchists, Afsoun's sister, Laleh Ghorbani, approaches the characters for aid. Characters who align themselves with the Silent Roar end up opposing Artavazda, an angel prominent in the Brightguard, as they try to free Afsoun.
-
-
+Depois que a Brightguard inicialmente coloca os personagens no caminho para rastrear anarquistas disruptivos, a irmã de Afsoun, Laleh Ghorbani, aborda os personagens em busca de ajuda. Personagens que se aliam ao Silent Roar acabam se opondo a Artavazda, um anjo proeminente na Brightguard, enquanto tentam libertar Afsoun.

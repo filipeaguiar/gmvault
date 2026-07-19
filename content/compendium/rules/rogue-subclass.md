@@ -1,16 +1,23 @@
 ---
-title: "Rogue Subclass"
+title: Rogue Subclass
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Rogue Subclass."
+summary: 'Característica de classe: Subclasse de Ladino'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Subclasse de Ladino
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain a Rogue subclass of your choice. A subclass is a specialization that grants you features at certain Rogue levels. For the rest of your career, you gain each of your subclass's features that are of your Rogue level or lower.
+Você ganha uma subclasse de Ladino à sua escolha. Uma subclasse é uma especialização que concede características em determinados níveis de Ladino. Pelo restante de sua carreira, você ganha cada uma das características da sua subclasse que sejam do seu nível de Ladino ou inferior.

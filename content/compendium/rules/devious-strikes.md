@@ -1,15 +1,22 @@
 ---
-title: "Devious Strikes"
+title: Devious Strikes
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Devious Strikes."
+summary: 'Característica de classe: Golpes Ardilosos'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Golpes Ardilosos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
+Você praticou novas maneiras de usar seu Ataque Furtivo de forma ardilosa. Os seguintes efeitos agora estão entre suas opções de Golpe Astuto.

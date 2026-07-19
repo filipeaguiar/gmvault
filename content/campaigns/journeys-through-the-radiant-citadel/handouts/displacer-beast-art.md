@@ -1,15 +1,15 @@
 ---
-title: "Arte: displacer beast"
+title: 'Arte: displacer beast'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: displacer beast'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: displacer beast](/images/campaigns/journeys-through-the-radiant-citadel/displacer-beast.webp)

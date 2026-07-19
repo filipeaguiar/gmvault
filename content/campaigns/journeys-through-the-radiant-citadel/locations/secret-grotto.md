@@ -1,25 +1,30 @@
 ---
-title: "Secret Grotto"
+title: Secret Grotto
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Segredo Gruta
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-129-map-132-secret-grotto-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-129-map-132-secret-grotto-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Secret Grotto** importada automaticamente.
+Localidade **Gruta Secreta** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Secret Grotto](../../adventures/buried-dynasty/05-secret-grotto/)
+- [Gruta Secreta](../../adventures/buried-dynasty/05-secret-grotto/)
 
 ### Mapas
 
-#### 129 132 Secret Grotto Player
-![129 132 Secret Grotto Player](/images/campaigns/journeys-through-the-radiant-citadel/129-map-132-secret-grotto-player.webp)
-
+#### 129 132 Gruta Secreta - Jogador
+![129 132 Gruta Secreta - Jogador](/images/campaigns/journeys-through-the-radiant-citadel/129-map-132-secret-grotto-player.webp)

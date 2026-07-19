@@ -1,16 +1,23 @@
 ---
-title: "Cunning Action"
+title: Cunning Action
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Cunning Action."
+summary: 'Característica de classe: Ação Ardilosa'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Ação Astuta
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
+A partir do 2º nível, seu raciocínio rápido e agilidade permitem que você se mova e aja rapidamente. Você pode realizar uma Ação Bônus em cada um de seus turnos de combate. Esta ação só pode ser usada para realizar a ação Disparada, Desengajar ou Esconder-se.

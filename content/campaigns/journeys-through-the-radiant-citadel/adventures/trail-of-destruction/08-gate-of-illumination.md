@@ -1,151 +1,151 @@
 ---
-title: "Cena 8 - Gate of Illumination"
+title: Cena 8 - Gate of Illumination
 weight: 80
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 8 - Gate of Illumination
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ollin/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/gate-of-illumination/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/gate-of-illumination/
 compendium_refs:
-  - "/compendium/monsters/salamander/"
-  - "/compendium/monsters/fire-snake/"
-  - "/compendium/monsters/scout/"
-  - "/compendium/monsters/tlexolotl/"
+- /compendium/monsters/salamander/
+- /compendium/monsters/fire-snake/
+- /compendium/monsters/scout/
+- /compendium/monsters/tlexolotl/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/salamander-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-075-map-81-gate-of-illumination-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/salamander-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-075-map-81-gate-of-illumination-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The Gate of Illumination is a centuries-old shrine consecrated to the gods of nature, fire, and renewal. It's cut into the slope of the Jademount volcano and tunnels to the lake of magma within the caldera. The slopes of Jademount are steep and treacherous to climb, making passage through the shrine the most direct route to the volcano's interior. Traditionally, offerings of flowers, fruits, and crafts are brought here and to similar shrines to thank the gods for their bounty, as the volcanic pools are viewed as passages to the gods' realm.
+O Portão da Iluminação é um santuário secular consagrado aos deuses da natureza, do fogo e da renovação. Ele foi escavado na encosta do vulcão Jademount e se aprofunda em túneis até o lago de magma dentro da caldeira. As encostas do Jademount são íngremes e traiçoeiras de escalar, o que torna a passagem pelo santuário a rota mais direta para o interior do vulcão. Tradicionalmente, oferendas de flores, frutas e artesanatos são trazidas para cá e para santuários similares a fim de agradecer aos deuses por sua abundância, pois as poças vulcânicas são vistas como passagens para o reino dos deuses.
 
-As the characters near the Gate of Illumination, read the following text:
+Conforme os personagens se aproximam do Portão da Iluminação, leia o seguinte texto:
 
-> A well-traveled trail climbs into the mountains, the haze of volcanic smoke hanging overhead. The path ends at the entrance to a cavern carved with images of divine figures and gigantic lizards amid cracking mountains, clouds, and geometric flourishes. Crimson light emanates from within, and the smell of sulfur is thick in the air.
+> Uma trilha muito percorrida sobe pelas montanhas, com a névoa de fumaça vulcânica pairando no alto. O caminho termina na entrada de uma caverna esculpida com imagens de figuras divinas e lagartos gigantescos entre montanhas se partindo, nuvens e arabescos geométricos. Uma luz carmesim emana do interior, e o cheiro de enxofre é forte no ar.
 
-Characters who noticed the tlexolotl carvings at the Twin Gods Observatory recognize similar imagery here. A character who succeeds on a CD 16 Intelligence (Nature or Religion) realizes the carvings depict reptilian spirits that dwell in volcanoes.
+Personagens que notaram as esculturas de tlexolotl no Observatório dos Deuses Gêmeos reconhecem imagens similares aqui. Um personagem que for bem-sucedido em um teste de Inteligência (Natureza ou Religião) CD 16 percebe que as esculturas representam espíritos reptilianos que habitam vulcões.
 
+### Características do Portão da Iluminação
 
-### Gate of Illumination Features
+As características a seguir são comuns a todas as áreas do santuário.
 
-The following features are common to all areas of the shrine:
+### Locais do Portão da Iluminação
 
+Os locais a seguir estão associados ao mapa 8.1.
 
-### Gate of Illumination Locations
+![Mapa 8.1: Portão da Iluminação](/images/campaigns/journeys-through-the-radiant-citadel/074-map-81-gate-of-illumination.webp)
 
-The following locations are keyed to map 8.1.
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/075-map-81-gate-of-illumination-player.webp)
 
-![Map 8.1: Gate of Illumination](/images/campaigns/journeys-through-the-radiant-citadel/074-map-81-gate-of-illumination.webp)
+### I1: Entrada da Caverna
 
+Um túnel de 9 metros de comprimento leva da entrada do santuário até suas câmaras principais. Decorações mágicas parecem veios de magma fluindo pelas paredes, mas são frias ao toque e não escorrem para dentro da sala. Um personagem que possua o traço Astúcia de Pedra pode perceber que a passagem não é natural e foi construída com magia (sem necessidade de teste).
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/075-map-81-gate-of-illumination-player.webp)
+### I2: Salão das Histórias
 
+> Murais brilhantes cobrem as paredes deste amplo salão com pilares, mostrando pessoas de várias eras recebendo bênçãos dos deuses. Uma porta dupla de pedra fica no extremo oposto da sala, enquanto escadas sobem a oeste e outro salão se abre a leste.
+As pessoas que trazem suas oferendas aos deuses preparam suas preces nesta área, meditando sobre a bênção que desejam. Uma salamandra e quatro cobras de fogo estão nesta sala. A salamandra monta guarda diante da porta para a **Área área I5**, enquanto cada cobra de fogo permanece perto de um dos pilares da sala. Essas criaturas são hostis e atacam quaisquer estranhos que entrem na sala.
 
-### I1: Cave Entrance
+### Porta
 
-A 30-foot-long tunnel leads from the entrance of the shrine to its main chambers. Magical decorations look like veins of magma flowing through the walls, but they're cool to the touch and don't seep into the room. A character who has the Stonecunning trait can tell the passage isn't natural and was constructed using magic (no check required).
+Uma porta dupla de pedra estreita, com 3 metros de altura, bloqueia o caminho para a área I5. Um personagem deve ser bem-sucedido em um teste de Força (Atletismo) CD 14 para abrir a porta. Ao ser aberta, a porta range ruidosamente, alertando quaisquer criaturas nesta sala e nas **Área áreas I4** e I5.
 
-### I2: Hall of Histories
+### Murais
 
-> Bright murals cover the walls of this broad, pillared hall, depicting people through the ages receiving blessings from the gods. A stone double door stands at the far end of the room, while stairs rise to the west and another hall opens to the east.
-People who bring their offerings to the gods prepare their prayers in this area, meditating on the blessing they want. A salamander and four fire snakes are in this room. The salamander stands guard before the door to **Área area I5**, while each fire snake lingers near one of the room's pillars. These creatures are hostile and attack any strangers that enter the room.
+Os murais que cobrem as paredes retratam vários mitos conhecidos na região. Qualquer uma das lendas mencionadas na seção "**Área Tletepec**" no final desta aventura pode estar representada aqui, como o conto dos dois amantes.
 
-### Door
+### Dançarino Moribundo
 
-A narrow, 10-foot-tall stone double door bars the way to area I5. A character must succeed on a CD 14 Strength (Athletics) check to open the door. As the door opens, it grinds nosily, alerting any creatures in this room and **Área areas I4** and I5.
+Se Ollin não se juntou aos personagens em Xoxotla, o dançarino veio ao santuário sozinho e foi vítima da salamandra e das cobras de fogo. O dançarino tem 0 pontos de vida, está inconsciente e morrerá se não receber cura na próxima hora.
 
-### Murals
+### I3: Memorial das Bênçãos
 
-The murals covering the walls depict several myths known throughout the region. Any of the legends mentioned in the "**Área Tletepec**" section at the end of this adventure might be represented here, such as the tale of the two lovers.
+> Murais de pessoas fazendo oferendas aos deuses cobrem as paredes desta sala. No centro da câmara, três estátuas sobre pedestais baixos: uma de tiefling, uma de anão e uma de humano, todas em poses de súplica. Duas das estátuas — a do tiefling e a do humano — parecem estar faltando alguma coisa.
+Esta sala memorializa algumas das maiores oferendas feitas aos deuses, bem como figuras lendárias que fizeram sacrifícios sinceros e foram recompensadas. As três estátuas no centro da sala têm inscrições escritas no idioma local, Tletlahtolli, que incluem os seguintes detalhes:
+Um personagem que for bem-sucedido em um teste de Inteligência (História ou Religião) CD 12 reconhece essas estátuas como figuras devotas de lendas locais que conquistaram o favor dos deuses. Se Ollin estiver com o grupo, também pode compartilhar essa informação.
+As estátuas são mágicas, mas seu poder foi interrompido quando as urnas seguradas por duas delas foram removidas. Elas estão atualmente nas áreas I4 e I5. Apenas a urna na estátua de Lilva permanece; dentro da urna há uma taça de pedra desgastada.
+Se a urna branca vazia for colocada de volta sobre a estátua de Leuchis, a urna se enche com óleo não inflamável. Se a urna azul vazia for colocada de volta sobre a estátua de Pattox, a urna se enche com água. Ambas as urnas se enchem magicamente dessa maneira uma vez por semana.
+Se o conteúdo das urnas branca e azul for derramado na urna vermelha, eles criam um fluido mágico vermelho brilhante equivalente a três poções de resistência (fogo).
 
-### Dying Dancer
+### I4: Memorial Saqueado
 
-If Ollin didn't join the characters in Xoxotla, the dancer came to the shrine on their own and fell victim to the salamander and fire snakes. The dancer has 0 hit points, is unconscious, and will die if they don't receive healing within the next hour.
+> Prateleiras estão esculpidas nas paredes desta sala, seus conteúdos espalhados pelo chão, reduzidos a cacos de cerâmica quebrada e montes de cinzas. Um mural na parede norte retrata vulcões em erupção e fumaça na forma de pessoas minúsculas flutuando para o céu. Sob o mural, uma salamandra está enrolada em um canto.
+Esta sala guardava as cinzas de sacerdotes que desejavam ser sepultados perto dos deuses, junto com pequenas lembranças para os mortos. As salamandras saquearam esta sala e jogaram a maioria dos itens memoriais no vulcão, deixando pouco para trás.
+A salamandra que descansa aqui se chama Xind e foi ferida durante um encontro com Xocopol.
 
-### I3: Blessings Memorial
+### Xind, a Salamandra
 
-> Murals of people making offerings to the gods cover this room's walls. At the chamber's center stand three statues on short pedestals: one of a tiefling, one of a dwarf, and one of a human, all in poses of supplication. Two of the statues—the tiefling and the human—appear to be missing something.
-This room memorializes some of the greatest offerings made to the gods, as well as legendary figures who made earnest sacrifices and were rewarded. The three statues at the room's center have inscriptions written in the local language, Tletlahtolli, that include the following details:
-A character who succeeds on a CD 12 Intelligence (History or Religion) check recognizes these statues as devout figures from local legends who earned the favor of the gods. If Ollin is with the party, they can also share this information.
-The statues are magical, but their power was disrupted when the urns held by two of the statues were removed. They're currently in areas I4 and I5. Only the urn on the statue of Lilva remains; inside the urn is a worn, stone cup.
-If the empty white urn is placed back upon the statue of Leuchis, the urn fills with nonflammable oil. If the empty blue urn is placed back upon the statue of Pattox, the urn fills with water. Both urns magically fill in this way once per week.
-If the contents of the white and blue urns are poured into the red urn, they create a bright red magical fluid that is equivalent to three potions of resistance (fire).
-
-### I4: Raided Memorial
-
-> Shelves are carved into this room's walls, their contents swept onto the floor, reduced to shards of shattered pottery and heaps of ashes. A mural on the north wall depicts erupting volcanoes and smoke in the shape of tiny people drifting into the sky. Beneath the mural, a salamander lies curled in a corner.
-This room held the ashes of priests who sought to be interred near the gods, along with small remembrances for the dead. Salamanders have raided this room and thrown most of the memorial items into the volcano, leaving little behind.
-The salamander resting here is named Xind, and it was wounded during an encounter with Xocopol.
-
-### Xind the Salamander
-
-Xind is a salamander with 1 hit point and no will to fight. Upon seeing the characters, it throws up its hands and says in Ignan, "I give up." In return for being left alone, Xind is willing to tell the characters about Izel's plan to collect offerings and cast them into volcanoes across the region, waking dozens of other tlexolotls. It can also relate any other detail of the Izel's plot from the adventure's background.
+Xind é uma salamandra com 1 ponto de vida e sem vontade de lutar. Ao ver os personagens, ela ergue as mãos e diz em Ígneo: "Eu desisto". Em troca de ser deixada em paz, Xind está disposta a contar aos personagens sobre o plano de Izel de coletar oferendas e jogá-las em vulcões por toda a região, despertando dezenas de outros tlexolotls. Ela também pode relatar qualquer outro detalhe do plano de Izel a partir do histórico da aventura.
 
 ### Mural
 
-A character who succeeds on a CD 14 Knowledge (Religion) check recognizes that the mural depicts a local myth about the Ashrise, a period when all the volcanoes in the area will erupt, devastating the region. If Ollin is with the group, they can also explain the mural's significance.
+Um personagem que for bem-sucedido em um teste de Conhecimento (Religião) CD 14 reconhece que o mural retrata um mito local sobre o Ashrise, um período em que todos os vulcões da região entrarão em erupção, devastando a área. Se Ollin estiver com o grupo, também pode explicar o significado do mural.
 
-### Treasure
+### Tesouro
 
-A character who spends at least 5 minutes sifting through the debris finds a sand-colored pouch embroidered with colorful, geometrically stylized animals. This is a tan bag of tricks. Any creature created by the bag looks artistically stylized in a manner similar to the embroidery on the bag. This doesn't affect the creatures' statistics.
-An intact white stone urn lies near the mural. This urn is part of one of the statues in area I3.
+Um personagem que passar pelo menos 5 minutos revirando os destroços encontra uma bolsa cor de areia bordada com animais coloridos e geometricamente estilizados. Este é um saco de truques marrom. Qualquer criatura criada pelo saco parece artisticamente estilizada de maneira similar ao bordado na bolsa. Isso não afeta as estatísticas das criaturas.
+Uma urna de pedra branca intacta está perto do mural. Esta urna faz parte de uma das estátuas na área I3.
 
-### I5: Preparation Room
+### I5: Sala de Preparação
 
-> Crates and heaps of supplies surround a stone altar with a flame burning in a depression at its center. Stone double doors lead to the north and south. The door to the north is carved with the image of a frilled, lizard-like creature amid flames.
-The salamanders serving Izel have brought the stolen offerings here. One salamander is currently organizing the offerings. It attacks any strangers who enter the chamber.
+> Engradados e pilhas de suprimentos cercam um altar de pedra com uma chama queimando em uma depressão em seu centro. Portas duplas de pedra levam ao norte e ao sul. A porta ao norte é esculpida com a imagem de uma criatura parecida com um lagarto com babado, em meio a chamas.
+As salamandras que servem a Izel trouxeram as oferendas roubadas para cá. Uma salamandra está organizando as oferendas. Ela ataca quaisquer estranhos que entrem na câmara.
 
 ### Altar
 
-The stone altar is consecrated to the gods of fire and nature. A candle-sized flame burns in a bowl-sized depression upon its surface. The flame is magical and relights after 10 seconds if extinguished.
+O altar de pedra é consagrado aos deuses do fogo e da natureza. Uma chama do tamanho de uma vela queima em uma depressão do tamanho de uma tigela em sua superfície. A chama é mágica e reacende após 10 segundos se for extinta.
 
-### Gate
+### Portão
 
-A 10-foot-tall stone double door bars the way to area I6. A character must succeed on a CD 14 Strength (Athletics) check to open the door. As the door opens, it grinds nosily across the ground, alerting any creatures in this room and area I6.
+Uma porta dupla de pedra com 3 metros de altura bloqueia o caminho para a área I6. Um personagem deve ser bem-sucedido em um teste de Força (Atletismo) CD 14 para abrir a porta. Ao ser aberta, a porta range ruidosamente pelo chão, alertando quaisquer criaturas nesta sala e na área I6.
 
-### Offerings
+### Oferendas
 
-The offerings consist of foodstuffs and colorful crafts with little monetary value. The edges of the room hold hundreds of pounds of such goods, all of which are flammable. If purposefully set aflame, all of the offerings burn up in less than 10 minutes. A character who succeeds on a CD 14 Wisdom (Perception) check notices a blue stone urn amid the offerings. This urn is part of one of the statues in area I3.
+As oferendas consistem em alimentos e artesanatos coloridos com pouco valor monetário. Os cantos da sala contêm centenas de quilos desses itens, todos inflamáveis. Se propositalmente incendiadas, todas as oferendas queimam em menos de 10 minutos. Um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) CD 14 nota uma urna de pedra azul em meio às oferendas. Esta urna faz parte de uma das estátuas na área I3.
 
-### Offering with Intention
+### Oferenda com Intenção
 
-A character who succeeds on a CD 12 Intelligence (Religion) check knows locals value the intention behind the offerings they make more than an offering's monetary value. A small offering made with an earnest prayer to the gods is considered greater than a valuable offering made while going through the motions of piety. Should the offerings in this room be burned or thrown into the volcano along with a prayer to the gods, every character that participates in making the offering gains advantage on their next saving throw as a minor blessing. Destroying these offerings undermines Izel's plan, as the offerings are consecrated to the gods and can't be used to coax forth other tlexolotls.
+Um personagem que for bem-sucedido em um teste de Inteligência (Religião) CD 12 sabe que os habitantes locais valorizam a intenção por trás das oferendas que fazem mais do que o valor monetário da oferenda. Uma pequena oferenda feita com uma prece sincera aos deuses é considerada maior do que uma oferenda valiosa feita de forma mecânica e sem devoção. Se as oferendas nesta sala forem queimadas ou jogadas no vulcão acompanhadas de uma prece aos deuses, todo personagem que participar da oferenda ganha vantagem em seu próximo teste de resistência como uma bênção menor. Destruir essas oferendas mina o plano de Izel, pois elas são consagradas aos deuses e não podem ser usadas para atrair outros tlexolotls.
 
-### I6: Caldera
+### I6: Caldeira
 
-> The masonry of the shrine gives way to the natural formation of the volcano's caldera. A blast of heat and gas billows off the lake of magma roiling here. At the magma's edge stands a pair of ornate altars carved of obsidian. Nearby, four humans are slumped against the west wall, their arms dangling from rusty manacles. Beyond, sooty rock juts into the molten lake. Something moves amid the lava.
-The magmatic pool at the heart of Jademount is the lair of the tlexolotl (detailed at the **Área end of this adventure**) named Izel. The tlexolotl resents any interruptions to his plans. The four humans chained to the wall are the missing warriors from Etizalan.
+> A alvenaria do santuário dá lugar à formação natural da caldeira do vulcão. Uma rajada de calor e gás sai do lago de magma agitado aqui. Na borda do magma, há um par de altares ornamentados esculpidos em obsidiana. Perto, quatro humanos estão caídos contra a parede oeste, seus braços pendendo de algemas enferrujadas. Adiante, rocha coberta de fuligem se projeta para dentro do lago derretido. Algo se move em meio à lava.
+A poça magmática no coração do Jademount é o covil do tlexolotl (detalhado no **Área final desta aventura**) chamado Izel. O tlexolotl se ressente de qualquer interrupção em seus planos. Os quatro humanos acorrentados à parede são os guerreiros desaparecidos de Etizalan.
 
 ### Izel
 
-Izel emerges from the lava and speaks in Ignan, demanding the characters leave. If the characters don't respond, he attacks. If they do, he's willing to converse with them and explain the following:
-* Izel awoke several months ago and can tell that the other tlexolotls dwelling in volcanoes across the region are still asleep. Izel treats these other tlexolotls as his family.
-* Izel has instructed his salamander servants to make offerings at the volcanoes where his family dwells and wake them. So far the salamanders have made some small offerings, causing other tlexolotls to stir.
-* Izel doesn't understand or care that the awakening tlexolotls endanger the region's populace. The Elemental has little experience with Humanoids or the concept of mortality.
-* The magma vents beneath the volcano connect to the Elemental Plane of Fire. Izel convinced the awed salamanders on the other side to assist him. He knows nothing of the vicious attacks they've conducted to fetch offerings for him.
-Through convincing roleplaying or by succeeding on a CD 20 Charisma (Persuasion) check, a character can talk Izel out of his plans and persuade him to send his salamander allies away. Any such negotiation needs to account for the fact that Izel will be lonely if this happens. If Ollin is with the party, they volunteer to stay at the Gate of Illumination—Ollin believes keeping Izel content is important and wants to help keep the region safe (they also like the idea of having a regular audience).
+Izel emerge da lava e fala em Ígneo, exigindo que os personagens vão embora. Se os personagens não responderem, ele ataca. Se responderem, ele está disposto a conversar com eles e explicar o seguinte:
+* Izel despertou há vários meses e pode sentir que os outros tlexolotls que habitam vulcões na região ainda estão adormecidos. Izel trata esses outros tlexolotls como sua família.
+* Izel instruiu seus servos salamandras a fazer oferendas nos vulcões onde sua família habita e despertá-los. Até agora, as salamandras fizeram algumas pequenas oferendas, fazendo outros tlexolotls se agitarem.
+* Izel não entende nem se importa que o despertar dos tlexolotls coloque em perigo a população da região. O Elemental tem pouca experiência com humanoides ou com o conceito de mortalidade.
+* As saídas de magma sob o vulcão se conectam ao Plano Elemental do Fogo. Izel convenceu as admiradas salamandras do outro lado a ajudá-lo. Ele não sabe nada sobre os ataques cruéis que elas realizaram para obter oferendas para ele.
+Através de interpretação convincente ou com um teste de Carisma (Persuasão) CD 20 bem-sucedido, um personagem pode dissuadir Izel de seus planos e convencê-lo a mandar seus aliados salamandras embora. Qualquer negociação desse tipo precisa levar em conta o fato de que Izel ficará solitário se isso acontecer. Se Ollin estiver com o grupo, ele se oferece para permanecer no Portão da Iluminação — Ollin acredita que manter Izel satisfeito é importante e quer ajudar a manter a região segura (ele também gosta da ideia de ter uma plateia regular).
 
 ### Lava
 
-A creature that enters the lava in this area for the first time on a turn or that starts its turn there takes 55 ([[10d10]]) fire damage.
+Uma criatura que entrar na lava nesta área pela primeira vez em um turno ou que começar seu turno lá sofre 55 ([[10d10]]) de dano de fogo.
 
-### Missing Warriors
+### Guerreiros Desaparecidos
 
-The four missing warriors from Etizalan found their way to the Gates of Illumination and would have been killed by salamanders if Izel hadn't been curious about them. The tlexolotl can't understand them, so it has had them manacled to the western wall. If asked, they explain that the tlexolotl didn't harm them—it seemed curious about them, not hostile. The warriors use the stat blocks of scouts, but their weapons have been destroyed and they each have 1 hit point remaining. Their manacles have no locks, as the salamanders melted them closed. Each manacle has AC 19, 10 hit points, and immunity to poison and psychic damage, or can be broken as an action with a successful CD 18 Strength (Athletics) check.
+Os quatro guerreiros desaparecidos de Etizalan encontraram o caminho até os Portões da Iluminação e teriam sido mortos pelas salamandras se Izel não tivesse ficado curioso a respeito deles. O tlexolotl não consegue entendê-los, por isso os manteve algemados à parede oeste. Se questionados, eles explicam que o tlexolotl não os feriu — ele parecia curioso a respeito deles, não hostil. Os guerreiros usam o bloco de estatísticas de exploradores, mas suas armas foram destruídas e cada um tem 1 ponto de vida restante. Suas algemas não têm fechaduras, pois as salamandras as derreteram para fechar. Cada algema tem CA 19, 10 pontos de vida e imunidade a dano de veneno e psíquico, ou podem ser quebradas como uma ação com um teste de Força (Atletismo) CD 18 bem-sucedido.
 
-### Treasure
+### Tesouro
 
-The obsidian altars are bare except for four ruby-encrusted torch sconces, two on each altar. The sconces are easily removed, and each is worth 750 gp.
-
-
+Os altares de obsidiana estão vazios, exceto por quatro suportes de tocha incrustados de rubis, dois em cada altar. Os suportes são facilmente removidos, e cada um vale 750 po.

@@ -4,7 +4,7 @@ params:
   kind: class
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (XPHB). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -22,96 +22,103 @@ source:
 class_info:
   hit_dice: 1d8
   primary_ability: '{''dex'': True}'
+titulo_pt_br: Ladino
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Level 1
+## Nível 1
 
-- Expertise
-- Sneak Attack
-- Thieves' Cant
-- Weapon Mastery
+- Especialização
+- Ataque Furtivo
+- Gíria de Ladrões
+- Maestria de Arma
 
-## Level 2
+## Nível 2
 
-- Cunning Action
+- Ação Ardilosa
 
-## Level 3
+## Nível 3
 
-- Rogue Subclass
-- Steady Aim
+- Subclasse de Ladino
+- Mira Firme
 
-## Level 4
+## Nível 4
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 5
+## Nível 5
 
-- Cunning Strike
-- Poison (Cost: 1d6)
-- Trip (Cost: 1d6)
-- Uncanny Dodge
-- Withdraw (Cost: 1d6)
+- Golpe Ardiloso
+- Veneno (Custo: 1d6)
+- Derrubar (Custo: 1d6)
+- Esquiva Sobrenatural
+- Retirada (Custo: 1d6)
 
-## Level 6
+## Nível 6
 
-- Expertise
+- Especialização
 
-## Level 7
+## Nível 7
 
-- Evasion
-- Reliable Talent
+- Evasão
+- Talento Confiável
 
-## Level 8
+## Nível 8
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 9
+## Nível 9
 
-- Subclass Feature
+- Característica de Subclasse
 
-## Level 10
+## Nível 10
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 11
+## Nível 11
 
-- Improved Cunning Strike
+- Golpe Ardiloso Aprimorado
 
-## Level 12
+## Nível 12
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 13
+## Nível 13
 
-- Subclass Feature
+- Característica de Subclasse
 
-## Level 14
+## Nível 14
 
-- Daze (Cost: 2d6)
-- Devious Strikes
-- Knock Out (Cost: 6d6)
-- Obscure (Cost: 3d6)
+- Pasmar (Custo: 2d6)
+- Golpes Traiçoeiros
+- Nocautear (Custo: 6d6)
+- Obscurecer (Custo: 3d6)
 
-## Level 15
+## Nível 15
 
-- Slippery Mind
+- Mente Escorregadia
 
-## Level 16
+## Nível 16
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 17
+## Nível 17
 
-- Subclass Feature
+- Característica de Subclasse
 
-## Level 18
+## Nível 18
 
-- Elusive
+- Elusivo
 
-## Level 19
+## Nível 19
 
-- Epic Boon
+- Dádiva Épica
 
-## Level 20
+## Nível 20
 
-- Stroke of Luck
+- Golpe de Sorte

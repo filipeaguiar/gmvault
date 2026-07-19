@@ -1,62 +1,63 @@
 ---
-title: "Cena 4 - Concord Jewels"
+title: Cena 4 - Concord Jewels
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
+  kind: scene
+draft: false
+titulo_pt_br: Joias da Concórdia
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/concord-jewels/"
-compendium_refs:
-
-handouts:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/concord-jewels/
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
 
-![The Radiant Citadel, Which drifts through the depths of the Deep Ethereal, is a beacon of possibility and adventure](/images/campaigns/journeys-through-the-radiant-citadel/003-01-002drifting-citadel.webp)
+![A Cidadela Radiante, que flutua pelas profundezas do Éter Profundo, é um farol de possibilidades e aventura](/images/campaigns/journeys-through-the-radiant-citadel/003-01-002drifting-citadel.webp)
 
 
-Beyond the Radiant Citadel drift the Concord Jewels, which connect the city to its founding civilizations. Each Jewel is a building-sized vessel capable of holding hundreds of people and tons of goods. Though the Jewels take a variety of shapes, their interiors are similar. A cylindrical core holds containers for goods, including livestock. Surrounding the core is seating for passengers. The Citadel employs official operators called Clavigers to pilot the Jewels.
+Além da Cidadela Radiante flutuam as Joias da Concórdia, que conectam a cidade às suas civilizações fundadoras. Cada Joia é uma estrutura do tamanho de uma construção, capaz de conter centenas de pessoas e toneladas de bens. Embora as Joias assumam uma variedade de formatos, seus interiores são similares. Um núcleo cilíndrico contém contêineres para bens, incluindo gado. Ao redor do núcleo, há assentos para os passageiros. A Cidadela emprega operadores oficiais chamados Clavígeros para pilotar as Joias.
 
-Each Concord Jewel is linked to one of the civilizations that founded the Radiant Citadel. A Jewel unerringly travels between the Radiant Citadel and the homeland of the Jewel's linked people. Even if the Jewel's people have migrated to another world on the Material Plane, the Jewel finds its way to their current home. While not in use, the Concord Jewels orbit the Radiant Citadel in an incandescent constellation. Each Jewel corresponds to one of the founding civilizations and resembles a giant gemstone of the type noted for that civilization on the Concord Jewels table. Missing civilizations and their Jewels are not listed and can be detailed as you please.
+Cada Joia da Concórdia está ligada a uma das civilizações que fundaram a Cidadela Radiante. Uma Joia viaja infalivelmente entre a Cidadela Radiante e a terra natal do povo vinculado à Joia. Mesmo que o povo da Joia tenha migrado para outro mundo no Plano Material, a Joia encontra o caminho para seu lar atual. Enquanto não estão em uso, as Joias da Concórdia orbitam a Cidadela Radiante em uma constelação incandescente. Cada Joia corresponde a uma das civilizações fundadoras e se assemelha a uma gema gigante do tipo indicado para aquela civilização na tabela Joias da Concórdia. Civilizações desaparecidas e suas Joias não estão listadas e podem ser detalhadas como você desejar.
 
 
-**Tabela: Concord Jewels**
+**Tabela: Joias da Concórdia**
 
 |  |  |
 | --- | --- |
-| Akharin Sangar | Turquoise |
-| Atagua | Yellow Quartz |
-| Dayawlongon | Serpentine |
-| Djaynai | Water Opal |
-| Godsbreath | Jasper |
-| San Citlán | Fire Opal |
-| Sensa | Amber |
-| Shankhabhumi | Moonstone |
-| Siabsungkoh | Ruby |
-| Tayyib | Sard |
-| Tletepec | Obsidian |
-| Umizu | Pearl |
-| Yeonido | Amethyst |
-| Yongjing | White Jade |
-| Zinda | Bastite |
+| Akharin Sangar | Turquesa |
+| Atagua | Quartzo Amarelo |
+| Dayawlongon | Serpentina |
+| Djaynai | Opala d'Água |
+| Godsbreath | Jaspe |
+| San Citlán | Opala de Fogo |
+| Sensa | Âmbar |
+| Shankhabhumi | Pedra da Lua |
+| Siabsungkoh | Rubi |
+| Tayyib | Sárdio |
+| Tletepec | Obsidiana |
+| Umizu | Pérola |
+| Yeonido | Ametista |
+| Yongjing | Jade Branco |
+| Zinda | Bastita |
 
 
-### Controlling a Concord Jewel
+### Controlando uma Joia da Concórdia
 
-At a Concord Jewel's center are controls for the structure. A creature adjacent to these controls that spends a minute manipulating them can make a CD 14 Intelligence (Arcana) check. On a success, the creature can direct the Concord Jewel to take one of the following actions:
-
-
-### Clavigers
-
-Clavigers oversee the Concord Jewels. Each Speaker for the Ancestors chooses the Clavigers for the Jewel linked to that Speaker's civilization. A dozen Clavigers are assigned to each Concord Jewel, and at least two keep watch from each Jewel as it orbits the Radiant Citadel and guide it during its travels. Clavigers not only maintain transit and trade to and from the Radiant Citadel but also serve as ambassadors from the city to the founding civilizations. Many Clavigers go on to become Speakers for the Ancestors.
+No centro de uma Joia da Concórdia, estão os controles da estrutura. Uma criatura adjacente a esses controles que passe um minuto manipulando-os pode fazer um teste de Arcanismo (Inteligência) CD 14. Em caso de sucesso, a criatura pode direcionar a Joia da Concórdia para realizar uma das seguintes ações:
 
 
+### Clavígeros
+
+Os Clavígeros supervisionam as Joias da Concórdia. Cada Porta-voz dos Ancestrais escolhe os Clavígeros para a Joia vinculada à civilização daquele Porta-voz. Uma dúzia de Clavígeros é designada para cada Joia da Concórdia, e ao menos dois mantêm vigilância em cada Joia enquanto ela orbita a Cidadela Radiante e a guiam durante suas viagens. Os Clavígeros não apenas mantêm o trânsito e o comércio de ida e volta da Cidadela Radiante, mas também servem como embaixadores da cidade para as civilizações fundadoras. Muitos Clavígeros depois se tornam Porta-vozes dos Ancestrais.

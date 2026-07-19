@@ -1,15 +1,15 @@
 ---
-title: "Arte: Navid"
+title: 'Arte: Navid'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Navid'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Navid](/images/campaigns/journeys-through-the-radiant-citadel/106-11-004navid-the-efreeti.webp)

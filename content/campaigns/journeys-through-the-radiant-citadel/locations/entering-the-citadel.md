@@ -1,19 +1,24 @@
 ---
-title: "Entering the Citadel"
+title: Entering the Citadel
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Adentrando a Cidadela
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Entering the Citadel** importada automaticamente.
+Localidade **Entrando na Cidadela** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Entering the Citadel](../../adventures/the-radiant-citadel/08-entering-the-citadel/)
+- [Entrando na Cidadela](../../adventures/the-radiant-citadel/08-entering-the-citadel/)

@@ -1,27 +1,27 @@
 ---
-title: "Cena 1 - Introdução"
+title: Cena 1 - Introdução
 weight: 10
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 1 - Introdução
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-*An Adventure for 9th-Level Characters*
+*Uma Aventura para Personagens de 9º Nível*
 
-The final day of the Shankha Trials unfolds in the city of Sagorpur. But the joy of this most auspicious competition turns to terror as the city's great river swells in a destructive wave—sweeping away both the trials' champion and the sacred trophy. The characters join the effort to rescue those lost and seek out an ancient corruption that has returned.
-
-
+O dia final das Provações Shankha se desenrola na cidade de Sagorpur. Mas a alegria desta competição tão auspiciosa se transforma em terror quando o grande rio da cidade se avoluma em uma onda destrutiva — varrendo tanto o campeão das provações quanto o troféu sagrado. Os personagens se unem ao esforço para resgatar aqueles que se perderam e investigar uma corrupção ancestral que retornou.

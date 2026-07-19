@@ -1,104 +1,106 @@
 ---
-title: "Cena 7 - Dayawlongon Gazetteer"
+title: Cena 7 - Dayawlongon Gazetteer
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - Guia Geográfico de Dayawlongon
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
 compendium_refs:
-  - "/compendium/monsters/dryad/"
-  - "/compendium/monsters/storm-giant/"
+- /compendium/monsters/dryad/
+- /compendium/monsters/storm-giant/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dryad-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/dryad-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-For any first-time visitor to the archipelago of Dayawlongon, the skybridges are a stunning sight. Both roadways and refuges, with whole communities dwelling along some of the miles-long spans, these structures were built centuries ago with the help of great bakunawa—massive, serpentine dragons endemic to Dayawlongon's five main islands and dozens of smaller islands, which were much larger than the bakunawa that remain. The skybridges are the safest way to travel between many islands, high above the whirlpools that churn in the sea below. However, centuries of conflict have taken their toll on those structures; the great bakunawa whose bones and magic infuse them are long gone; and the artisan-warriors who maintain the bridges, known as bonesingers, are disappearing from history.
+Para qualquer visitante de primeira viagem ao arquipélago de Dayawlongon, as ponte-céus são uma visão deslumbrante. Tanto estradas quanto refúgios, com comunidades inteiras vivendo ao longo de alguns dos vãos de quilômetros de extensão, essas estruturas foram construídas séculos atrás com a ajuda de grandes bakunawa — dragões serpentinos massivos, endêmicos das cinco ilhas principais e dezenas de ilhas menores de Dayawlongon, que eram muito maiores do que os bakunawa que restam. As ponte-céus são a forma mais segura de viajar entre muitas ilhas, bem acima dos redemoinhos que agitam o mar abaixo. No entanto, séculos de conflito cobraram seu preço dessas estruturas; os grandes bakunawa cujos ossos e magia as infundem já se foram há muito tempo; e os artesãos-guerreiros que mantêm as pontes, conhecidos como bonesingers, estão desaparecendo da história.
 
-Dayawlongon has survived battles between its resident clans and the incursions of five foreign powers, and it has been independent and largely at peace for the last two centuries. In ages past, bakunawa served as mediators and defenders of the islands, but successive waves of invasion targeted the creatures, drastically reducing their numbers. Today, the islands' residents fiercely defend their home and seek to honor the history stolen by centuries of war.
+Dayawlongon sobreviveu a batalhas entre seus clãs residentes e às incursões de cinco potências estrangeiras, e tem sido independente e majoritariamente pacífico pelos últimos dois séculos. Em eras passadas, os bakunawa serviam como mediadores e defensores das ilhas, mas ondas sucessivas de invasão tiveram as criaturas como alvo, reduzindo drasticamente seus números. Hoje, os residentes das ilhas defendem ferozmente seu lar e buscam honrar a história roubada por séculos de guerra.
 
+### Características
 
-### Features
+Aqueles familiarizados com o arquipélago de Dayawlongon conhecem os seguintes detalhes:
 
-Those familiar with the Dayawlongon archipelago know the following details:
+### Locais Notáveis
 
+Dayawlongon é um arquipélago tropical cujas águas abrigam redemoinhos massivos que tornam a viagem de barco entre as ilhas desafiadora. Rios sinuosos, selvas profundas e montanhas definem suas cinco ilhas principais.
 
-### Noteworthy Sites
+#### Kalapang
 
-Dayawlongon is a tropical archipelago whose waters hold massive whirlpools that make boat travel between the islands challenging. Winding rivers, deep jungles, and mountains define its five major islands.
+Kalapang, a maior comunidade na ilha de Malabulak, ergue-se entre campos verdejantes. A cidade é uma mistura do antigo e do novo, com sítios religiosos ancestrais e relíquias do domínio estrangeiro construídos ao lado de estruturas mais novas erguidas por comerciantes e imigrantes em busca de segurança. Kalapang é acolhedora com estrangeiros e incentiva visitantes. Clãs poderosos e empreendimentos mercantis frequentemente contratam aventureiros para excursões comerciais e exploração — como jornadas para a ilha de Lambakluha.
 
-### Kalapang
+#### Lambakluha
 
-Kalapang, the largest community on the island of Malabulak, stands among verdant fields. The city is a blend of old and new, with ancient religious sites and relics of foreign rule constructed alongside newer structures built by traders and immigrants looking for security. Kalapang is welcoming toward foreigners and encourages visitors. Powerful clans and the mercantile ventures regularly hire adventurers for trade excursions and exploration—such as journeys to the island of Lambakluha.
+A ilha de Lambakluha é conhecida como o "Vale das Lágrimas" na Canção da Serpente. Outrora foi o lugar mais sagrado em Dayawlongon, lar de Bathalang Puno, uma cidade-templo aninhada nas raízes de uma colossal figueira-de-bengala que compartilhava o nome da cidade. Dizia-se que aquela grande árvore era para onde as almas dos ilhéus iam após a morte. Algumas dessas almas transcendiam para ninunos — espíritos da terra similares a fadas que servem como guardiões dos deuses e residiam nas terras circundantes. Invasores colonizadores queimaram a grande árvore e arrasaram Bathalang Puno, matando incontáveis pessoas e espíritos. Após o ocorrido, Lambakluha tornou-se um lugar amaldiçoado, onde espíritos fervem na terra, espalhando corrupção pela ilha.
 
-### Lambakluha
+Décadas atrás, uma expedição de Kalapang estabeleceu um acampamento na ilha chamado Últimos Passos de Coragem, esperando exorcizar os espíritos atormentados da terra. Até agora, esses soldados e estudiosos fizeram pouco progresso em direção ao seu objetivo.
 
-The island of Lambakluha is known as the "Vale of Tears" in Snakesong. It was once the holiest place in Dayawlongon, home to Bathalang Puno, a temple city nestled within the roots of a colossal banyan tree that shared the city's name. That great tree was said to be where islanders' souls went after death. Some of these souls transcended into ninunos—dryad-like spirits of the land who serve as stewards to the gods and resided in the surrounding lands. Colonizing invaders burned the great tree and razed Bathalang Puno, killing untold people and spirits alike. In the aftermath, Lambakluha became a cursed place, where spirits seethe in the land, spreading corruption across the island.
-Decades ago, an expedition from Kalapang set up a camp on the island called the Final Steps of Courage, hoping to exorcise the land's tormented spirits. Thus far, these soldiers and scholars have made little progress toward their goal.
+#### Ponte-Céus
 
-### Skybridges
+Um presente dos bakunawa ao primeiro povo do arquipélago, as ponte-céus de Dayawlongon são feitos arquitetônicos mágicos que conectam muitas das ilhas da região. Viajantes são comuns, e as ponte-céus mais movimentadas abrigam pequenas comunidades onde podem descansar e se reabastecer. A lenda diz que os ossos de enormes bakunawa foram infundidos nas ponte-céus em eras passadas, com a bênção das criaturas. Apenas os bonesingers, pessoas escolhidas como guardiões das ponte-céus, sabem como manter a magia que as mantém seguras.
 
-A gift from bakunawa to the first folk of the archipelago, the skybridges of Dayawlongon are magical feats of architecture that connect many of the region's islands. Travelers are common, and the most traveled skybridges hold small communities where they can rest and resupply. Legend holds that the bones of enormous bakunawa were infused into the skybridges in ages past, with the creatures' blessing. Only bonesingers, people chosen as stewards of the skybridges, know how to maintain the magic that keeps the skybridges safe.
+### Vida em Dayawlongon
 
+Várias verdades moldam a vida no arquipélago de Dayawlongon; algumas são tradições profundamente enraizadas, e outras foram moldadas por influências estrangeiras.
 
-### Life in Dayawlongon
+#### Força Ancestral
 
-Several truths shape life on the Dayawlongon archipelago; some are deeply rooted traditions, and others have been molded by foreign influences.
+A reverência aos ancestrais está profundamente enraizada na sociedade Dayawlongo, onde a paixão pelo passado é demonstrada pelo amor das pessoas por juramentos, poesia e canção. Os ancestrais às vezes retornam como guardiões chamados ninunos, espíritos dos mortos que assumiram novas formas, similares a fadas, e servem como intercessores entre mortais, deuses e a terra. Os ninunos zelam por suas linhagens, concedendo boa sorte a descendentes piedosos ou maldições àqueles que colocam suas próprias necessidades acima das da família e da comunidade em geral.
 
-### Ancestral Strength
+#### Bonesingers
 
-Reverence toward one's ancestors is deeply ingrained in Dayawlongo society, where a passion for the past is demonstrated by people's love for oaths, poetry, and song. Ancestors sometimes return as guardians called ninunos, spirits of the dead who have taken on new, dryad-like forms and serve as intercessors between mortals, the gods, and the land. Ninunos watch over their bloodlines, bestowing good fortune on pious descendants or curses upon those who put their own needs over those of the family and broader community.
+Artesãos-guerreiros, os bonesingers dedicam suas vidas a manter as ponte-céus. No passado antigo, os bonesingers supervisionavam os ritos finais quando grandes bakunawa morriam, e então infundiam os ossos das criaturas nas pontes mágicas que unem Dayawlongon como uma só terra. Durante os dias das primeiras incursões coloniais, os bonesingers tornaram-se os primeiros combatentes da liberdade de Dayawlongon, mas suas vitórias tiveram um grande custo. Muitas ponte-céus tornaram-se campos de batalha, e incontáveis bakunawa aliados foram perdidos. Hoje, os gigantescos bakunawa de outrora se foram, e poucos de seus descendentes menores permanecem. A perda dessas grandes criaturas e sua magia impede a criação de novas ponte-céus.
 
-### Bonesingers
+#### Clãs e Reputação
 
-Artisan-warriors, bonesingers dedicate their lives to maintaining the skybridges. In the ancient past, bonesingers oversaw the final rites when great bakunawa died, then infused the creatures' bones into the magical bridges that unite Dayawlongon as one land. During the days of the first colonial incursions, bonesingers became Dayawlongon's earliest freedom fighters, but their victories came at a great cost. Many skybridges became battlegrounds, and countless allied bakunawa were lost. Today, the gigantic bakunawa of old are gone, and few of their smaller descendants remain. The loss of these great creatures and their magic prevents the creation of new skybridges.
+Dezenas de clãs unem famílias por todo o arquipélago de Dayawlongon. Casamentos são uniões de clãs tanto quanto uniões entre indivíduos. Adoções, relacionamentos poliamorosos e outros laços familiares generosos criam maneiras variadas de se juntar a diferentes clãs. Os clãs têm poucos papéis prescritos para seus membros, com cada grupo compartilhando responsabilidades de maneiras que funcionam para seus integrantes.
 
-### Clans and Reputation
+A reputação tem grande valor em Dayawlongon, e a reputação de uma pessoa também molda a de seus entes queridos aos olhos dos pares. Um Dayawlongo trata os filhos de seu melhor amigo como sua própria prole e amaldiçoa os nomes da família de seu inimigo.
 
-Dozens of clans unite families across the Dayawlongon archipelago. Marriages are unions of clans as much as unions between individuals. Adoptions, polyamorous relationships, and other generous family bonds create varied ways to join different clans. Clans have few proscribed roles for their members, with each group sharing responsibilities in ways that work for their members.
-Reputation carries great value in Dayawlongon, and a person's reputation also shapes that of their loved ones in the eyes of peers. A Dayawlongo treats their best friend's children like their own offspring and curses the names of their enemy's family.
+#### Dívida da Alma
 
-### Debt of the Soul
+Um dos pilares da cultura Dayawlonga é o conceito de *utang ng loob*, uma dívida da alma. Se alguém salva outro de perigo mortal ou auxilia outro a um grande custo para si mesmo, uma dívida de alma é formada entre as pessoas em questão e suas linhagens. Essa dívida perdura por qualquer número de gerações até ser quitada. Deixar de respeitar uma dívida de alma é a forma mais profunda de traição para os Dayawlongos e a raiz de inúmeras rixas de sangue.
 
-One of the cornerstones of Dayawlongo culture is the concept of *utang ng loob*, a debt of the soul. If someone saves another from mortal peril or assists another at great cost to themself, a soul debt is formed between the people in question and their bloodlines. This debt holds throughout any number of generations until it is repaid. Failing to respect a soul debt is the deepest form of betrayal for Dayawlongos and the root of countless blood feuds.
+#### Nomes
 
-### Names
+Tradicionalmente, os Dayawlongos têm um nome pessoal seguido por um nome de clã. Nomes pessoais são variados e frequentemente refletem uma característica que um ninuno conectado ao indivíduo ou sua família considerava desejável. No entanto, alguns nomes pessoais são relíquias da colonização e têm origens estrangeiras. Os seguintes nomes são comuns em Dayawlongo:
 
-Traditionally, Dayawlongos have a personal name followed by a clan name. Personal names are varied and often reflect a characteristic that a ninuno connected to an individual or their family found desirable. However, some personal names are relics of colonization and have foreign origins. The following names are common in Dayawlongo:
+### Lendas de Dayawlongon
 
+A crença antiga afirma que toda a vida em Dayawlongon nasce das palavras faladas de uma deusa poeta — conhecida como Kamatayang-Langit — da qual vem a profunda reverência do povo pela poesia e canção. É por isso que cada comunidade tem um ou mais binukots, bardos que servem como repositórios vivos de arte, cultura, costumes e leis. A morte de um binukot pode resultar na perda de gerações de história, já que a tradição Dayawlonga evita escrever histórias ou canções. Os bonesingers sustentam que os bakunawa estão entre os maiores binukots, suas vastas memórias os tornando portadores de verdades antigas.
 
-### Legends of Dayawlongon
+### Aventuras em Dayawlongon
 
-Ancient belief states that all life on Dayawlongon is born from the spoken words of a poet goddess—known as Kamatayang-Langit—from which comes the people's deep reverence for poetry and song. This is why every community has one or more binukots, bards who serve as living repositories of art, culture, custom, and law. The death of a binukot can result in the loss of generations of history, as Dayawlongo tradition eschews writing stories or songs down. Bonesingers maintain that bakunawa are among the greatest binukots, their vast memories making them bearers of ancient truths.
+Considere as tramas na tabela Aventuras em Dayawlongon ao planejar aventuras em Dayawlongon.
 
-
-### Adventures in Dayawlongon
-
-Consider the plots on the Dayawlongon Adventures table when planning adventures in Dayawlongon.
-
-**Tabela: Dayawlongon Adventures**
+**Tabela: Aventuras em Dayawlongon**
 
 |  |  |
 | --- | --- |
-| 1 | A merchant the characters know is being pursued by a vengeful ninuno (dryad) for her mother's broken oath. The merchant is desperate for the characters to intervene and placate the spirit. |
-| 2 | A binukot named Panfilio offers to handsomely reward anyone who can impress them with a riveting tale of love and adventure from each of the archipelago's largest islands. |
-| 3 | A storm giant has claimed a skybridge as her domain and refuses to let anyone cross, trapping the residents of an island to which the bridge connects. |
-| 4 | A foreign trader has found a bakunawa egg and is waiting for severe weather to pass before leaving the islands with it. A bonesinger entreats the characters to rescue the egg. |
+| 1 | Um mercador que os personagens conhecem está sendo perseguido por um ninuno (fada) vingativo pelo juramento quebrado de sua mãe. O mercador está desesperado para que os personagens intervenham e aplaquem o espírito. |
+| 2 | Um binukot chamado Panfilio oferece uma recompensa generosa a qualquer um que possa impressioná-lo com um conto cativante de amor e aventura de cada uma das maiores ilhas do arquipélago. |
+| 3 | Uma gigante da tempestade reivindicou uma ponte-céu como seu domínio e se recusa a deixar alguém cruzar, prendendo os residentes de uma ilha à qual a ponte se conecta. |
+| 4 | Um comerciante estrangeiro encontrou um ovo de bakunawa e está esperando o tempo severo passar antes de deixar as ilhas com ele. Um bonesinger implora aos personagens que resgatem o ovo. |
 
 
-### Characters from Dayawlongon
+### Personagens de Dayawlongon
 
-If players want to create characters from the Dayawlongon archipelago, ask them the following questions:
-**What stories can you tell about yourself?** Has a ninuno ever spoken to you? Is a particular song, poem, or tale the binukots tell your favorite? What stories do you want others to tell about you after your death?
-**What do you think of bakunawa?** Does a bakunawa feature in your family's history? Do you believe bakunawa are creatures to be revered or monsters?
-**Are you trained as a binukot?** Do you collect the stories of your people? Do you want to broaden your peoples' knowledge by collecting stories from distant lands and sharing them at home?
+Se os jogadores quiserem criar personagens do arquipélago de Dayawlongon, faça a eles as seguintes perguntas:
 
+**Que histórias você pode contar sobre si mesmo?** Um ninuno já falou com você? Uma canção, poema ou conto específico que os binukots contam é o seu favorito? Que histórias você quer que os outros contem sobre você após sua morte?
 
+**O que você pensa dos bakunawa?** Um bakunawa faz parte da história de sua família? Você acredita que os bakunawa são criaturas a serem reverenciadas ou monstros?
+
+**Você foi treinado como um binukot?** Você coleciona as histórias de seu povo? Você quer ampliar o conhecimento de seu povo coletando histórias de terras distantes e compartilhando-as em casa?

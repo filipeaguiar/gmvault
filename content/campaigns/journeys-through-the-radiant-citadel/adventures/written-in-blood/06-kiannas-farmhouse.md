@@ -1,138 +1,148 @@
 ---
-title: "Cena 6 - Kianna's Farmhouse"
+title: Cena 6 - Kianna's Farmhouse
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Casa de Fazenda de Kianna
+visibility: gm
+status: published
+summary: 'As velas tremeluzem na sala secreta de comando, projetando sombras dançantes sobre o mapa do castelo. O capitão aponta para a torre oeste. "A guarnição inimiga troca de turno ao terceiro dobrar dos sinos. Esse é o nosso momento." Seus olhos percorrem cada rosto na penumbra, pesando a coragem e o medo. Lá fora, o vento uiva como um presságio.
+
+
+  Os passos ritmados dos guardas ecoam nas muralhas. O cheiro de chuva iminente mistura-se ao metal oleado das armas. Cada um sabe seu papel: o escudeiro silencia os cães de guarda com carne enfeitiçada; a arqueira escala o muro leste; o ladrão desarma a fechadura da poterna. O plano é uma corrente frágil — um elo quebrado e tudo se desfaz em sangue.
+
+
+  "Vocês são a ponta da lança", sussurra o capitão, passando um frasco de vidro escuro. "Fogo de alquimista para a casa da pólvora. Um disparo no céu vermelho significa recuo. Dois, vitória." Ele hesita, e por um instante não é o comandante, apenas um soldado cansado. "Confio mais em vocês do que nos deuses. Vão."'
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kianna/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/kiannas-farmhouse/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/kiannas-farmhouse/
 compendium_refs:
-  - "/compendium/monsters/cultist/"
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/crawling-claw/"
-  - "/compendium/monsters/soul-shaker/"
+- /compendium/monsters/cultist/
+- /compendium/monsters/commoner/
+- /compendium/monsters/crawling-claw/
+- /compendium/monsters/soul-shaker/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-026-map-31-kianas-farmhouse-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/soul-shaker-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-026-map-31-kianas-farmhouse-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-A farmhouse near the center of the steading serves as a main kitchen, dining area, and meeting place for the smaller houses around it. This is the farmhouse where Kianna was a resident. As the characters approach, read or paraphrase the following description:
+Uma casa de fazenda perto do centro da propriedade serve como cozinha principal, área de jantar e local de encontro para as casas menores ao redor. Esta é a casa de fazenda onde Kianna residia. Conforme os personagens se aproximam, leia ou parafraseie a descrição a seguir:
 
-> This large farmhouse appears abandoned like the smaller houses around it, but no *X* marks it. Farming implements lie abandoned in the mud, and wild plants have grown up to the house's faded wooden porch. The crops in the surrounding field appear sickly.
-
-
-### Kianna's Farmhouse Locations
-
-The following locations are keyed to map 3.1.
-
-![Map 3.1: Kianna's Farmhouse](/images/campaigns/journeys-through-the-radiant-citadel/025-map-31-kianas-farmhouse.webp)
+> Esta grande casa de fazenda parece abandonada como as casas menores ao redor, mas nenhum *X* a marca. Implementos agrícolas estão abandonados na lama, e plantas selvagens cresceram até a varanda de madeira desbotada da casa. As plantações no campo ao redor parecem doentias.
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/026-map-31-kianas-farmhouse-player.webp)
+### Localizações da Casa de Fazenda de Kianna
+
+As localizações a seguir correspondem ao mapa 3.1.
+
+![Mapa 3.1: Casa de Fazenda de Kianna](/images/campaigns/journeys-through-the-radiant-citadel/025-map-31-kianas-farmhouse.webp)
 
 
-### F1: Overgrown Yard
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/026-map-31-kianas-farmhouse-player.webp)
 
-The house's yard is muddy red clay. Several rusty shovels and rakes lie scattered about.
 
-### Farming Implements
+### F1: Quintal Cheio de Mato
 
-A character who looks around the back of the house sees a pitchfork stuck into the earth near the house's northeast corner. On further investigation, they see it's stuck through the severed hand of a young woman. The characters have no way of knowing this, but the hand was once a crawling claw and was dispatched by a farmer.
+O quintal da casa é de argila vermelha lamacenta. Várias pás e ancinhos enferrujados estão espalhados.
 
-### Sickly Crops
+### Implementos Agrícolas
 
-Wheat and corn struggle to grow in the fields surrounding the house. Any character who succeeds on a CD 14 Intelligence (Nature) check can tell the plants around this farm are sickly because something's wrong with the soil. A character who succeeds on a CD 16 Wisdom (Perception) check notices raised paths through the dirt, like mole tunnels, though no creatures are obvious. Although it's not evident, the soul shaker's evil and the excavations of the crawling claws have spoiled the land around the house.
-If Proclaimer Ward is with the party, the Proclaimer investigates the crops and grows concerned. Ward stays in the field and documents the strange blight rather than joining the characters inside.
+Um personagem que olhar ao redor da parte de trás da casa vê um forcado cravado na terra perto do canto nordeste da casa. Investigando mais, ele vê que está cravado através da mão decepada de uma jovem mulher. Os personagens não têm como saber disso, mas a mão já foi uma garra rastejante e foi destruída por um fazendeiro.
 
-### F2: Porch
+### Plantações Doentias
 
-A large wooden porch wraps around the front and one side of the farmhouse. Its planks creak ominously when stepped on, but there is no danger here. Closed curtains shroud the windows, but the doors to the interior are unlocked and ajar. Both lead to a musty central hallway.
+Trigo e milho lutam para crescer nos campos ao redor da casa. Qualquer personagem que for bem-sucedido em um teste de Inteligência (Natureza) CD 14 percebe que as plantas ao redor desta fazenda estão doentias porque há algo errado com o solo. Um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) CD 16 nota caminhos elevados na terra, como túneis de toupeira, embora nenhuma criatura seja óbvia. Embora não seja evidente, a maldade do abalador de almas e as escavações das garras rastejantes corromperam a terra ao redor da casa.
+Se o Proclamador Ward estiver com o grupo, o Proclamador investiga as plantações e fica preocupado. Ward permanece no campo e documenta a estranha praga em vez de se juntar aos personagens no interior.
 
-### Doors
+### F2: Varanda
 
-The doors leading off the hallway are closed but not locked.
+Uma grande varanda de madeira envolve a frente e um lado da casa de fazenda. Suas tábuas rangem de forma ameaçadora quando pisadas, mas não há perigo aqui. Cortinas fechadas encobrem as janelas, mas as portas para o interior estão destrancadas e entreabertas. Ambas levam a um corredor central com cheiro de mofo.
 
-### F3: Living Room
+### Portas
 
-> The furniture in this living room is haphazardly arranged and looks close to falling apart. Beneath, the floor is covered in hundreds of handprints painted using crimson mud.
-The art style is similar to that of the picture Aunt Dellie found in Promise. Any character who succeeds on a CD 14 Wisdom (Perception) check notices a break in the pattern under a chair. If the chair is moved, it reveals a muddy depiction of two children—one is reaching for the other, who is being dragged into the water by large hands. Scrapes in the muddy image form the name "Culley."
+As portas que dão para o corredor estão fechadas, mas não trancadas.
 
-### F4: Bedroom
+### F3: Sala de Estar
 
-The bedroom holds a bed and writing desk for a single occupant. Most of the space is neat and orderly, but the desk is strewn with art supplies and scraps of paper bearing fragmented images.
+> Os móveis nesta sala de estar estão dispostos de forma desordenada e parecem prestes a desmoronar. Por baixo, o chão está coberto por centenas de marcas de mãos pintadas com lama carmesim.
+O estilo artístico é semelhante ao da gravura que a Tia Dellie encontrou em Promise. Qualquer personagem que for bem-sucedido em um teste de Sabedoria (Percepção) CD 14 nota uma quebra no padrão sob uma cadeira. Se a cadeira for movida, revela uma representação lamacenta de duas crianças – uma está estendendo a mão para a outra, que está sendo arrastada para a água por mãos grandes. Arranhões na imagem lamacenta formam o nome "Culley".
 
-### Paintings
+### F4: Quarto
 
-Any character who riffles through the paper on the desk finds repeating images of hands, lakes, and wide eyes looking up through water. The largest work shows a pair of eyes with handprints for pupils. All these images look similar in style to the picture Aunt Dellie found in Promise.
+O quarto contém uma cama e uma escrivaninha para um único ocupante. A maior parte do espaço está limpa e organizada, mas a escrivaninha está coberta de materiais de arte e pedaços de papel com imagens fragmentadas.
 
-### Chest
+### Pinturas
 
-A small chest against the wall is unlocked and holds work clothes sized for a woman. A character who searches the chest and succeeds on a CD 12 Intelligence (Investigation) check finds a pair of overalls with a pocket containing thirteen rings—plain rings, wedding bands, and formal jewelry sized for men and women—worth [[2d10]] gp each.
+Qualquer personagem que vasculhar os papéis na escrivaninha encontra imagens repetidas de mãos, lagos e olhos arregalados olhando através da água. O maior trabalho mostra um par de olhos com marcas de mãos como pupilas. Todas essas imagens são semelhantes em estilo à gravura que a Tia Dellie encontrou em Promise.
 
-### F5: Dining Room
+### Baú
 
-> A long plain table, a wooden sideboard, and several chairs lie shattered on the floor. The debris is streaked with crimson stains.
-This dining room has been ransacked, and red mud covers the furnishings and floor.
-A character who approaches the table hears scratching coming from under it. Nothing is immediately visible beneath the table, but characters who investigate more closely find six crawling claws clinging to the underside. Once discovered, the monsters attack.
-After the crawling claws are dispatched, any character who searches the room thoroughly can make a CD 16 Intelligence (Investigation) check. On a successful check, the character finds several floorboards that have been pushed up from below, as though the crawling claws dug their way up through the loose soil beneath the house.
+Um pequeno baú encostado na parede está destrancado e contém roupas de trabalho do tamanho de uma mulher. Um personagem que revistar o baú e for bem-sucedido em um teste de Inteligência (Investigação) CD 12 encontra um par de macacões com um bolso contendo treze anéis – anéis simples, alianças de casamento e joias formais de tamanhos masculinos e femininos – valendo [[2d10]] po cada.
 
-### F6: Kitchen
+### F5: Sala de Jantar
 
-> This kitchen has been torn apart. Pots and pans are scattered everywhere, and rotting food streaks the floorboards.
-In the center of the room, four enchanted farmers stand facing each other, their crimson eyes unblinking. Each holds a sharp knife or farming implement. They don't react when the characters enter or if they are touched or spoken to. They react only if harmed, stolen from, or commanded by the soul shaker. Each uses the cultist stat block. Although the farmers are initially harmless, their appearance and lack of reaction are unnerving.
+> Uma longa mesa simples, um aparador de madeira e várias cadeiras estão despedaçados no chão. Os destroços estão manchados com listras carmesim.
+Esta sala de jantar foi saqueada, e lama vermelha cobre os móveis e o chão.
+Um personagem que se aproxima da mesa ouve arranhões vindos de baixo dela. Nada é imediatamente visível debaixo da mesa, mas personagens que investigarem mais de perto encontram seis garras rastejantes agarradas à parte inferior. Uma vez descobertas, os monstros atacam.
+Depois que as garras rastejantes forem eliminadas, qualquer personagem que revistar a sala completamente pode fazer um teste de Inteligência (Investigação) CD 16. Em caso de sucesso no teste, o personagem encontra várias tábuas do assoalho que foram levantadas por baixo, como se as garras rastejantes tivessem cavado seu caminho através do solo solto sob a casa.
 
-### Pantry
+### F6: Cozinha
 
-The foodstuffs and supplies that once filled the pantry have been ransacked, and a large cupboard stands open. A trapdoor in the pantry's floor opens to reveal a 10-foot-tall ladder descending into a darkened cold-storage cellar. The stench of something rotting rises from below.
+> Esta cozinha foi destruída. Panelas e frigideiras estão espalhadas por toda parte, e comida apodrecendo mancha as tábuas do assoalho.
+No centro da sala, quatro fazendeiros enfeitiçados estão de pé, encarando uns aos outros, seus olhos carmesim sem piscar. Cada um segura uma faca afiada ou implemento agrícola. Eles não reagem quando os personagens entram ou se são tocados ou abordados. Eles reagem apenas se forem feridos, roubados ou comandados pelo abalador de almas. Cada um usa o bloco de estatísticas de cultista. Embora os fazendeiros sejam inicialmente inofensivos, sua aparência e falta de reação são inquietantes.
 
-### F7: Cellar and Tunnel
+### Despensa
 
-Shelves bearing root vegetables and other foodstuffs line the walls of this unfinished cellar. The south wall has partially collapsed, revealing a dark, narrow tunnel.
-The smell the characters noticed above is worse here, issuing from the tunnel. Character who have a passive Wisdom (Perception) score of 15 or higher hear the faint sound of a woman singing farther down the tunnel.
-Characters who proceed 40 feet into the tunnel see a faint light emanating from around a bend.
+Os alimentos e suprimentos que antes enchiam a despensa foram saqueados, e um grande armário está aberto. Um alçapão no chão da despensa se abre para revelar uma escada de 3 metros de altura descendo para uma adega de armazenagem refrigerada e escura. O fedor de algo apodrecendo sobe lá de baixo.
 
-### Tunnel Song
+### F7: Adega e Túnel
 
-As the characters move through the tunnel, the song's volume increases. The characters recognize this as part of the Awakening Song they overheard in Promise. This part of the song tells the story of a young man named Culley. Rather than its usual content, where the boy dies by drowning, the song has been sloppily rewritten to feature Culley being saved by his closest friend.
+Prateleiras com raízes vegetais e outros alimentos alinham as paredes desta adega inacabada. A parede sul desabou parcialmente, revelando um túnel escuro e estreito.
+O cheiro que os personagens notaram acima é pior aqui, vindo do túnel. Personagens que tenham uma pontuação passiva de Sabedoria (Percepção) de 15 ou mais ouvem o som fraco de uma mulher cantando mais adiante no túnel.
+Os personagens que avançarem 12 metros pelo túnel veem uma luz fraca emanando de uma curva.
 
-### F8: Cavern
+### Canção do Túnel
 
-> The tunnel opens into a lantern-lit, packed-dirt chamber, where the cause of the stench becomes apparent. A dozen bodies lie strewn across the floor, all wearing the clothes of farmers. Many of their limbs have been cleanly removed and set into a sizable pile on the far side of the cavern. In the center of the room, a young woman is singing.
-The bodies are the farmers missing from the surrounding farms—save for Kianna. They've been killed and dismembered by the soul shaker.
+Conforme os personagens se movem pelo túnel, o volume da canção aumenta. Os personagens reconhecem isso como parte da Canção do Despertar que ouviram em Promise. Esta parte da canção conta a história de um jovem chamado Culley. Em vez de seu conteúdo normal, onde o garoto morre por afogamento, a canção foi reescrita de forma descuidada para mostrar Culley sendo salvo por seu amigo mais próximo.
+
+### F8: Caverna
+
+> O túnel se abre para uma câmara de terra batida iluminada por lanternas, onde a causa do fedor se torna aparente. Uma dúzia de corpos jaz espalhada pelo chão, todos vestindo as roupas de fazendeiros. Muitos de seus membros foram removidos de forma limpa e colocados em uma pilha considerável no lado oposto da caverna. No centro da sala, uma jovem mulher está cantando.
+Os corpos são os fazendeiros desaparecidos das fazendas vizinhas – exceto Kianna. Eles foram mortos e desmembrados pelo abalador de almas.
 
 ![Kianna](/images/campaigns/journeys-through-the-radiant-citadel/027-03-005kianna.webp)
 
 
 ### Kianna
 
-The young woman is Kianna (chaotic neutral, human commoner). She looks like she's in a dream state, and she holds a knife loosely, but her eyes aren't crimson like those of the other farmers. Kianna stops singing as soon as she notices the characters and says, "Please go. You shouldn't be here." If the characters speak with Kianna, she drifts between fearfully urging them to leave and coaxing them to stay and meet her friend, Culley, her mood and manner shifting erratically. Use the following points to guide the conversation:
-* Kianna confirms she's the person the party seeks. She's saddened at any talk of Aunt Dellie having sent the characters to find her.
-* She speaks brightly of how Culley finally came back to her after she lost him in Cradlelace Lake. It was so good to hear his voice again!
-* When Kianna heard Culley's voice beyond the cellar, she dug and found this old cavern.
-* Something happened to the farmers when they entered the caverns. After that they did whatever Culley said—including hurting one another and marking the houses with *X*'s to note who had visited the cellar.
-* If asked about Culley, Kianna sadly says her friend drowned long ago—then cheerfully says he didn't drown because she saved him. He went away for a long while, but he came back.
-* If asked where Culley is now, Kianna fearfully says he's sleeping after having fed. She believes her song helps keep him quiet, but she's tired.
-As the characters speak with Kianna, a character who succeeds on a CD 12 Wisdom (Insight) check notices Kianna's eyes darting to the pile of limbs whenever she speaks brightly of Culley.
-If the characters ask Kianna to leave with them, she seems confused and scared, saying she can't. If she's coerced, or if a character investigates the pile of limbs, the soul shaker awakens.
+A jovem mulher é Kianna (caótica e neutra, humana plebeia). Ela parece estar em um estado de sonho e segura uma faca frouxamente, mas seus olhos não são carmesim como os dos outros fazendeiros. Kianna para de cantar assim que percebe os personagens e diz: "Por favor, vão embora. Vocês não deveriam estar aqui." Se os personagens falarem com Kianna, ela oscila entre instá-los com medo a irem embora e convencê-los a ficar e conhecer seu amigo, Culley, seu humor e comportamento mudando erraticamente. Use os seguintes pontos para guiar a conversa:
+* Kianna confirma que é a pessoa que o grupo procura. Ela fica triste com qualquer menção de a Tia Dellie ter enviado os personagens para encontrá-la.
+* Ela fala alegremente sobre como Culley finalmente voltou para ela depois que ela o perdeu no Lago Cradlelace. Foi tão bom ouvir a voz dele novamente!
+* Quando Kianna ouviu a voz de Culley além da adega, ela cavou e encontrou esta velha caverna.
+* Algo aconteceu com os fazendeiros quando eles entraram nas cavernas. Depois disso, eles faziam tudo o que Culley mandava – incluindo machucar uns aos outros e marcar as casas com *X* para anotar quem havia visitado a adega.
+* Se perguntarem sobre Culley, Kianna diz tristemente que seu amigo se afogou há muito tempo – então diz alegremente que ele não se afogou porque ela o salvou. Ele ficou longe por um bom tempo, mas voltou.
+* Se perguntarem onde Culley está agora, Kianna diz, com medo, que ele está dormindo depois de ter se alimentado. Ela acredita que sua canção ajuda a mantê-lo quieto, mas está cansada.
+Enquanto os personagens falam com Kianna, um personagem que for bem-sucedido em um teste de Sabedoria (Intuição) CD 12 percebe os olhos de Kianna se dirigindo para a pilha de membros sempre que ela fala alegremente de Culley.
+Se os personagens pedirem a Kianna para ir embora com eles, ela parece confusa e assustada, dizendo que não pode. Se for coagida, ou se um personagem investigar a pilha de membros, o abalador de almas desperta.
 
-### Soul Shaker
+### Abalador de Almas
 
-When the characters try to leave the area or disturb the pile of limbs, the heap begins to move, revealing itself as an Undead made entirely of arms and hands. This is a soul shaker (detailed at the **Área end of this adventure**). This creature has a fraction of the memories of Kianna's friend Culley, but the horror has perverted those thoughts, seeking to control Kianna, manipulate her guilt, and use her to lure other victims into its lair. When it reveals itself, the soul shaker targets a character with its telepathy, whispering things like "Come play with us!", "Are you lonely?", and "Be with us forever!" as it attacks. It might also relate snippets from the "**Área Fractured Soul**" section of the adventure's background.
-As soon as the soul shaker awakens, if the farmers the soul shaker controls are still in **Área area F6**, it summons them to aid it. The four farmers (use the cultist stat block) arrive in 2 rounds.
-Kianna is confused and terrified, and she stays out of the battle.
-
-
+Quando os personagens tentam sair da área ou perturbam a pilha de membros, o amontoado começa a se mover, revelando-se como um Morto-vivo feito inteiramente de braços e mãos. Este é um abalador de almas (detalhado no **final desta aventura**). Esta criatura tem uma fração das memórias do amigo de Kianna, Culley, mas o horror perverteu esses pensamentos, buscando controlar Kianna, manipular sua culpa e usá-la para atrair outras vítimas para seu covil. Quando se revela, o abalador de almas mira um personagem com sua telepatia, sussurrando coisas como "Venham brincar conosco!", "Você está solitário?" e "Fique conosco para sempre!" enquanto ataca. Ele também pode relatar trechos da seção "**Alma Fraturada**" do plano de fundo da aventura.
+Assim que o abalador de almas desperta, se os fazendeiros que o abalador de almas controla ainda estiverem na **área F6**, ele os convoca para ajudá-lo. Os quatro fazendeiros (use o bloco de estatísticas de cultista) chegam em 2 rodadas.
+Kianna está confusa e aterrorizada, e ela fica fora do combate.

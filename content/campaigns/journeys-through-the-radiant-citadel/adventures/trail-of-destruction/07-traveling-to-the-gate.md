@@ -1,61 +1,64 @@
 ---
-title: "Cena 7 - Traveling to the Gate"
+title: Cena 7 - Traveling to the Gate
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - Viajando para o Gate
+visibility: gm
+status: published
+summary: Operational scene to run during the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/traveling-to-the-gate/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/traveling-to-the-gate/
 compendium_refs:
-  - "/compendium/monsters/fire-giant/"
-  - "/compendium/monsters/salamander/"
-  - "/compendium/monsters/fire-snake/"
-  - "/compendium/monsters/tlexolotl/"
+- /compendium/monsters/fire-giant/
+- /compendium/monsters/salamander/
+- /compendium/monsters/fire-snake/
+- /compendium/monsters/tlexolotl/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Tonalli or other locals can easily mark a trail on the characters' map leading to the Gate of Illumination, a well-known sacred site. The route from the ruins of Twin Gods Observatory leads 9 miles back to Xoxotla. From there, it follows the Atialli River 18 miles to the shrine. At a normal pace, the journey takes a little over a day.
+Tonalli ou outros locais podem facilmente marcar uma trilha no mapa dos personagens que leva ao Portão da Iluminação, um local sagrado bem conhecido. A rota das ruínas do Observatório dos Deuses Gêmeos leva 9 milhas de volta a Xoxotla. De lá, segue o Rio Atialli por 18 milhas até o santuário. Em um ritmo normal, a jornada leva pouco mais de um dia.
 
-As the characters travel, volcanic events continue to rock the region. Consult the "**Área Volcanic Threats**" section earlier in the adventure for dangers that might occur. Additionally, at a point between the Xoxotla and the shrine, the characters come upon the aftermath of a battle.
+Conforme os personagens viajam, eventos vulcânicos continuam a sacudir a região. Consulte a seção "**Ameaças Vulcânicas da Área**" no início da aventura para perigos que podem ocorrer. Além disso, em um ponto entre Xoxotla e o santuário, os personagens encontram as consequências de uma batalha.
 
+### Campo de Batalha Cinzento
 
-### Ashen Battlefield
+> Quatro corpos jazem onde caíram na estrada à frente, todos mostrando marcas de queimaduras e ferimentos de lança. Flechas quebradas e fragmentos de uma carroça de madeira destruída estão espalhados.
+Os quatro corpos eram viajantes humanos da cidade de Itzimico que estavam indo para o Observatório dos Deuses Gêmeos buscar respostas sobre os crescentes distúrbios vulcânicos com os Vigias das Cinzas. Como os guerreiros de Ameyali, eles carregavam oferendas de frutas e artesanato, mas estas foram roubadas. Um personagem que investigar os corpos e for bem-sucedido em um teste de Sabedoria (Percepção) CD 14 encontra queimaduras neles e rastros consideráveis, semelhantes a cobras, nas proximidades, sugerindo que os viajantes foram mortos por salamandras. Os rastros levam em direção ao Portão da Iluminação, com alguns figos da Índia caídos ao longo do caminho — oferendas que os saqueadores roubaram.
 
-> Four bodies lie where they've fallen on the road ahead, all showing burn marks and spear wounds. Broken arrows and fragments of a shattered wooden cart are strewn about.
-The four bodies were human travelers from the town of Itzimico who were headed to Twin Gods Observatory to seek answers about the growing volcanic disturbances from the Watchers of the Ashes. Like Ameyali's warriors, they carried offerings of fruits and crafts, but those have been stolen. A character who investigates the bodies and succeeds on a CD 14 Wisdom (Perception) check finds burns on them and sizable, snakelike tracks nearby, suggesting the travelers were killed by salamanders. The tracks lead toward the Gate of Illumination, with a few dropped prickly pears along the path—offerings the raiders stole.
+### Ira do Gigante
 
-### Giant's Wrath
+Enquanto os personagens se preparam para seguir em frente, um rugido vem de uma elevação arborizada sobre a estrada. A figura imponente de um gigante do fogo abre caminho através das árvores em direção aos personagens. "Voltem!" ele grita em Comum. "Abandonem suas oferendas! Vocês não sabem o que estão fazendo!"
+Este é o gigante do fogo Xocopol, sobre quem os personagens podem ter aprendido em Etizalan. Xocopol é neutro. Ele empunha um martelo maciço, que causa dano de concussão mas é, em outros aspectos, idêntico ao ataque de Greatsword de um gigante do fogo. Ele pode falar Comum, Gigante e Tletlahtolli.
+Xocopol não está interessado em lutar a menos que seja atacado primeiro, mas ele bloqueia o caminho dos personagens e tenta assustá-los para que retornem pelo caminho de onde vieram. Acalmar o gigante e convencê-lo a conversar requer um teste de Carisma (Persuasão) CD 14 bem-sucedido ou uma interpretação apropriada.
+Se os personagens convencerem Xocopol a conversar, ele compartilha as informações angustiantes que soube recentemente.
 
-As the characters prepare to move on, a roar comes from a forested rise over the road. The towering figure of a fire giant pushes through the trees toward the characters. "Go back!" he yells in Common. "Abandon your offerings! You know not what you do!"
-This is the fire giant Xocopol, whom characters might have learned about in Etizalan. Xocopol is neutral. He wields a massive hammer, which deals bludgeoning damage but is otherwise identical to a fire giant's Greatsword attack. He can speak Common, Giant, and Tletlahtolli.
-Xocopol isn't interested in fighting unless he's attacked first, but he blocks the characters' way and tries to frighten them into returning the way they came. Calming the giant and convincing him to talk requires either a successful CD 14 Charisma (Persuasion) check or appropriate roleplaying.
-If the characters convince Xocopol to talk, he shares the distressing information he has recently learned.
-
-### What Xocopol Knows
+### O Que Xocopol Sabe
 
 
 ![Xocopol](/images/campaigns/journeys-through-the-radiant-citadel/073-08-005xocopol.webp)
 
-Like many of his kin, Xocopol dislikes the tendency of Humanoids to build settlements near the volcanic mountains. The awakening tlexolotls, however, have made the small folk of these lands the lesser of two evils. Xocopol's people have long known about the tlexolotls that slumber deep in the region's mountains and don't consider them myths.
-If the characters calm Xocopol and explain they aren't headed to the Gate of Illumination to make an offering, the fire giant stops threatening them and shares the following information:
-* Tlexolotls dwell deep in volcanoes. When their sleep is disturbed, volcanic eruptions often follow.
-* The tlexolotl that inhabits Jademount has awakened. Xocopol has seen it moving inside the volcanic pool connected to the Gate of Illumination.
-* Salamanders and fire snakes serve this tlexolotl. They have been stealing offerings meant for the gods and are carrying them back to Jademount.
-* Xocopol doesn't know why the tlexolotl is hoarding offerings, but he has seen salamanders going to volcanoes throughout the region with them.
-Xocopol doesn't know much more. While he's happy to fight any salamanders he encounters, he's too large to slip into the Gate of Illumination and find out what's happening there. If the characters are willing to do so, Xocopol offers to travel with them and defend them along the way.
-
-
+Como muitos de sua espécie, Xocopol não gosta da tendência dos Humanoides de construir assentamentos próximos às montanhas vulcânicas. No entanto, o despertar dos tlexolotls tornou os pequenos povos destas terras o menor dos dois males. O povo de Xocopol sabe há muito tempo sobre os tlexolotls que dormem nas profundezas das montanhas da região e não os consideram mitos.
+Se os personagens acalmarem Xocopol e explicarem que não estão indo ao Portão da Iluminação para fazer uma oferenda, o gigante do fogo para de ameaçá-los e compartilha as seguintes informações:
+* Os Tlexolotls habitam as profundezas dos vulcões. Quando seu sono é perturbado, erupções vulcânicas geralmente ocorrem.
+* O tlexolotl que habita o Monte de Jade despertou. Xocopol o viu se movendo dentro da piscina vulcânica conectada ao Portão da Iluminação.
+* Salamandras e cobras de fogo servem a este tlexolotl. Elas têm roubado oferendas destinadas aos deuses e as levado de volta ao Monte de Jade.
+* Xocopol não sabe por que o tlexolotl está acumulando oferendas, mas ele viu salamandras indo para vulcões por toda a região com elas.
+Xocopol não sabe muito mais. Embora ele fique feliz em lutar contra quaisquer salamandras que encontrar, ele é grande demais para entrar no Portão da Iluminação e descobrir o que está acontecendo lá. Se os personagens estiverem dispostos a fazê-lo, Xocopol se oferece para viajar com eles e defendê-los ao longo do caminho.

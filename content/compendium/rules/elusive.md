@@ -1,15 +1,22 @@
 ---
-title: "Elusive"
+title: Elusive
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Elusive."
+summary: 'Característica de classe: Elusivo'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Elusivo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.
+A partir do 18º nível, você é tão evasivo que os atacantes raramente conseguem obter vantagem sobre você. Nenhuma jogada de ataque tem vantagem contra você enquanto você não estiver incapacitado.

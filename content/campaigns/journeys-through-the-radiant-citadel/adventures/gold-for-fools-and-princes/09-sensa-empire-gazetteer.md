@@ -1,121 +1,117 @@
 ---
-title: "Cena 9 - Sensa Empire Gazetteer"
+title: Cena 9 - Sensa Empire Gazetteer
 weight: 90
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 9 - Guia Geográfico de Sensa Empire
+visibility: gm
+status: published
+summary: Cena Operacional
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/bandit/"
-  - "/compendium/monsters/air-elemental/"
-  - "/compendium/monsters/giant-scorpion/"
+- /compendium/monsters/bandit/
+- /compendium/monsters/air-elemental/
+- /compendium/monsters/giant-scorpion/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-066-map-72-sensa-empire-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-066-map-72-sensa-empire-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The Sensa Empire runs on gold. Its three principal city-states—Anisa, Niba, and Tarikh—were each built around gold mines, and as their wealth has grown, so has their population, influence, and foreign trade. Most of the empire is arid and difficult to cultivate, so the regions between the city-states are sparsely inhabited and often lack the resources available in cosmopolitan areas. Still, the city-states and the outlands are tied together by Empress Inaya's rule, with each city governed autonomously by a hereditary monarch subject to the empress's ultimate authority.
+O Império Sensa funciona à base de ouro. Suas três principais cidades-estado — Anisa, Niba e Tarikh — foram construídas ao redor de minas de ouro e, conforme sua riqueza cresceu, também cresceram sua população, influência e comércio exterior. A maior parte do império é árida e difícil de cultivar, então as regiões entre as cidades-estado são escassamente habitadas e frequentemente carecem dos recursos disponíveis nas áreas cosmopolitas. Ainda assim, as cidades-estado e as terras distantes estão unidas sob o governo da Imperatriz Inaya, com cada cidade governada de forma autônoma por uma monarca hereditária sujeita à autoridade suprema da imperatriz.
 
-Though the Sensa Empire is known as a peaceful realm, it faces a rocky transition of power. The next ruler is traditionally chosen from among the three city-states' royal families, excluding the direct descendants of the current ruler. But for years, Empress Inaya quietly made it known that she planned to appoint her own son to follow her—and in so doing, seemingly brought down a legendary curse that claimed the lives of her husband and eldest son. When the grieving empress announced she would appoint her successor from among the royal families of Anisa, Niba, or Tarikh as tradition dictated, the rulers of the city-states began to fight for favor—and competition for that favor is brutal.
+Embora o Império Sensa seja conhecido como um reino pacífico, ele enfrenta uma transição de poder turbulenta. A próxima governante é tradicionalmente escolhida entre as famílias reais das três cidades-estado, excluindo as descendentes diretas da governante atual. Mas, por anos, a Imperatriz Inaya discretamente deu a entender que planejava nomear seu próprio filho para sucedê-la — e, ao fazê-lo, aparentemente invocou uma maldição lendária que ceifou as vidas de seu marido e filho mais velho. Quando a imperatriz enlutada anunciou que nomearia sua sucessora entre as famílias reais de Anisa, Niba ou Tarikh, conforme a tradição ditava, as governantes das cidades-estado começaram a lutar por favor — e a competição por esse favor é brutal.
 
+### Características
 
-### Features
+Aquelas familiarizadas com o Império Sensa conhecem os seguintes fatos:
 
-Those familiar with the Sensa Empire know the following facts:
+### Locais Notáveis
 
+O Império Sensa é estruturado ao redor das três cidades-estado de Anisa, Niba e Tarikh, cada uma um oásis de riqueza em uma paisagem árida e implacável.
 
-### Noteworthy Sites
+![Mapa 7.2: Império Sensa](/images/campaigns/journeys-through-the-radiant-citadel/065-map-72-sensa-empire.webp)
 
-The Sensa Empire is structured around the three city-states of Anisa, Niba, and Tarikh, each a wealthy oasis in an arid and unforgiving landscape.
-
-![Map 7.2: Sensa Empire](/images/campaigns/journeys-through-the-radiant-citadel/065-map-72-sensa-empire.webp)
-
-
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/066-map-72-sensa-empire-player.webp)
-
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/066-map-72-sensa-empire-player.webp)
 
 ### Anisa
 
-The city-state of Anisa, in the east of Sensa, is ruled by the aging King Diara. Thanks to the wealth of the Goldwarren mine, the city's gold production far outpaces that of its neighbors. The people value education highly, and the city is home to Anisa Academy, the only university in the empire. Politically, the city has enjoyed years of peace under King Diara's rule, but many dread his inevitable retirement. While the king's heir—his oldest child, Simbon—waffles on how seriously he takes his responsibilities, Diara's daughter, Zahra, seeks to replace her brother as heir to the throne.
+A cidade-estado de Anisa, no leste de Sensa, é governada pelo idoso Rei Diara. Graças à riqueza da mina Goldwarren, a produção de ouro da cidade supera em muito a de suas vizinhas. O povo valoriza muito a educação, e a cidade abriga a Academia Anisa, a única universidade do império. Politicamente, a cidade desfrutou de anos de paz sob o governo do Rei Diara, mas muitas temem sua inevitável aposentadoria. Enquanto a herdeira do rei — sua filha mais velha, Simbon — hesita sobre a seriedade com que encara suas responsabilidades, a filha de Diara, Zahra, busca substituir seu irmão como herdeira do trono.
 
 ### Niba
 
-The city-state of Niba lies along Sensa's southeastern coast. Ruled by Queen Sainesha, the city is known for its grand bazaars and for being home to some of the most talented goldsmiths in the region. Entertainment in the form of cafes, theaters, and raceways is also central to life in the city. Among Niba's many celebrities is the queen's firstborn and heir, the ambitious and charismatic Prince Kirina.
+A cidade-estado de Niba situa-se ao longo da costa sudeste de Sensa. Governada pela Rainha Sainesha, a cidade é conhecida por seus grandes bazares e por ser o lar de algumas das ourives mais talentosas da região. O entretenimento na forma de cafés, teatros e pistas de corrida também é central para a vida na cidade. Entre as muitas celebridades de Niba está a primogênita e herdeira da rainha, a ambiciosa e carismática Príncipe Kirina.
 
 ### Tarikh
 
-The city-state of Tarikh lies in Sensa's northwestern reaches, nestled against jagged peaks. Its young ruler, King Sundasha, balances commercial needs and the local environment, as the city's scattered oases provide it with some of the only arable land in the region. While much of this land provides for the empire's people, a significant fraction is used to grow feed for the city's prized herds of camels. Tarikh also hosts the Seven Stairs, the headquarters of the Acolytes of the Faceless Prophet.
+A cidade-estado de Tarikh situa-se nos confins noroeste de Sensa, aninhada contra picos irregulares. Sua jovem governante, o Rei Sundasha, equilibra as necessidades comerciais e o meio ambiente local, já que os oásis dispersos da cidade fornecem algumas das únicas terras aráveis da região. Embora grande parte desta terra supra o povo do império, uma fração significativa é usada para cultivar alimento para os estimados rebanhos de camelos da cidade. Tarikh também abriga as Sete Escadarias, a sede dos Acólitos do Profeta Sem Rosto.
 
-### The Azure Dome
+### A Cúpula Azure
 
-The deep-blue dome of Empress Inaya's coastal palace holds the seat of the Sensa Empire's power. Within the Azure Dome, the empress meets with her councilors and entertains the rulers of her three city-states. Merely entering the Azure Dome is considered a high honor for citizens of the empire.
+A cúpula azul-profundo do palácio costeiro da Imperatriz Inaya abriga a sede do poder do Império Sensa. Dentro da Cúpula Azure, a imperatriz reúne-se com suas conselheiras e entretém as governantes de suas três cidades-estado. A mera entrada na Cúpula Azure é considerada uma grande honra para as cidadãs do império.
 
-![Prince Simbon](/images/campaigns/journeys-through-the-radiant-citadel/067-07-005prince-simon.webp)
+![Príncipe Simbon](/images/campaigns/journeys-through-the-radiant-citadel/067-07-005prince-simon.webp)
 
-The Azure Dome's legendary security couldn't protect Empress Inaya's husband and eldest son, Salaba and Shayan, from dying under unusual circumstances. Both passed away in their sleep after a state dinner—as they were in perfect health, it's believed they were poisoned by an unknown hand.
+A segurança lendária da Cúpula Azure não pôde proteger o marido e o filho mais velho da Imperatriz Inaya, Salaba e Shayan, de morrerem sob circunstâncias incomuns. Ambos faleceram durante o sono após um jantar de estado — como estavam em perfeita saúde, acredita-se que foram envenenados por uma mão desconhecida.
 
-### Tomb of the Faceless
+### Tumba do Sem Rosto
 
-Half a day's ride north from Tarikh, the Tomb of the Faceless stands alone in the desert. A site of ritual pilgrimage and worship, the tomb is a large golden dome without an entrance that holds the Prophet's bones. The Prophet was a respected scholar and reformer adamant that her persona not eclipse her teachings. She insisted that after her death her followers not repeat her name or depict her face in art. Today, the faithful leave offerings of gold and salt at the site, which are collected at dusk by the clergy known as the Acolytes of the Faceless Prophet.
-According to the acolytes who tend the tomb, learning the Prophet's name grants forbidden and dangerous power. Every so often, someone attempts to break into the tomb in search of clues to the Prophet's identity—a crime punished by permanent exile from the empire.
+A meio dia de viagem ao norte de Tarikh, a Tumba do Sem Rosto ergue-se solitária no deserto. Um local de peregrinação ritual e adoração, a tumba é um grande domo dourado sem entrada que guarda os ossos do Profeta. O Profeta foi uma estudiosa e reformadora respeitada, determinada a que sua persona não eclipsasse seus ensinamentos. Ela insistiu que, após sua morte, suas seguidoras não repetissem seu nome ou retratassem seu rosto em arte. Hoje, as fiéis deixam oferendas de ouro e sal no local, que são recolhidas ao anoitecer pelo clero conhecido como os Acólitos do Profeta Sem Rosto.
+De acordo com as acólitas que cuidam da tumba, aprender o nome do Profeta concede um poder proibido e perigoso. De tempos em tempos, alguém tenta invadir a tumba em busca de pistas sobre a identidade do Profeta — um crime punido com exílio permanente do império.
 
+### Vida no Império Sensa
 
-### Life in the Sensa Empire
+Aquelas que vivem no Império Sensa ou que viajam pela terra experimentam sua riqueza, tanto em riquezas quanto em tradições profundas.
 
-Those who live in the Sensa Empire or who travel through the land experience its wealth, both in riches and deep traditions.
+### Guilda Aurum
 
-### Aurum Guild
+A mineração de ouro é uma carreira respeitada, crucial para a prosperidade do império. Aquelas que trabalham com as riquezas da terra figuram entre as artesãs mais respeitadas da terra e têm poucas iguais. Para apoiar suas membras, a Guilda Aurum permite que mineradoras e artesãs construam conexões sociais e profissionais, aprimorem seu ofício e se organizem por melhores condições de trabalho. Cada cidade-estado tem seu próprio capítulo da guilda que reage quando governantes locais fazem exigências injustas às mineradoras para benefício pessoal — frequentemente colocando a guilda em conflito com essas governantes.
 
-Gold mining is a respected career, crucial to the empire's prosperity. Those who work with the riches of the earth number among the land's most respect artisans and have few peers. To support its members, the Aurum Guild allows miners and craftspeople to build social and professional connections, better their craft, and organize for improved labor conditions. Each city-state has its own chapter of the guild that pushes back when local rulers make unfair demands of miners for personal benefit—often placing the guild in conflict with those rulers.
+### Vida e Lendas
 
-### Life and Legends
+O império é conhecido por sua rica tradição de narrativa oral, na qual viajantes historiadoras-contadoras de histórias conhecidas como griots transmitem contos de geração em geração. Os contos mais comuns são sobre o Imperador Kassa, que fundou o Império Sensa após derrotar as agora extintas aurumvoraxes — predadoras comedoras de ouro — que outrora assolavam a região.
+A terra árida do Império Sensa inspirou modas simples, e as sensanas de todos os gêneros usam túnicas de algodão soltas, calças, vestidos ou caftans para se manterem frescas. Os desertos da região oferecem oportunidades limitadas para a agricultura. Embora especiarias e alimentos preservados sejam frequentemente importados, peixe branco pescado no oceano e plátanos, mandioca e inhame cultivados localmente servem como base da dieta sensana.
 
-The empire is known for its rich tradition of oral storytelling, in which traveling historian-storytellers known as griots pass down tales from generation to generation. The most common tales are of Emperor Kassa, who founded the Sensa Empire after defeating the now-extinct aurumvoraxes—gold-eating predators—that once plagued the region.
-The arid land of the Sensan Empire has inspired simple fashions, and Sensans of all genders wear loose cotton tunics, trousers, dresses, or caftans to stay cool. The region's deserts provide limited opportunities for agriculture. While spices and preserved foods are frequently imported, ocean-caught whitefish and locally grown plantains, cassava, and yams serve as staples of the Sensan diet.
+### Governo Dividido
 
-### Split Rule
+As três cidades-estado do Império Sensa são monarquias hereditárias unidas em uma coalizão sob o controle da imperatriz. Historicamente, em vez de uma única linha imperial controlando o trono, cada imperatriz ou imperador seleciona uma herdeira entre as filhas mais velhas da monarca de cada cidade-estado. Embora nenhuma lei impeça as governantes de selecionar suas próprias filhas como herdeiras, poucas o fazem, temendo serem vítimas de uma terrível maldição. As herdeiras são geralmente escolhidas com base no mérito.
 
-The Sensa Empire's three city-states are hereditary monarchies united into a coalition under the empress's control. Historically, rather than a single imperial line controlling the throne, each empress or emperor selects an heir from among the eldest children of each city-state's monarch. While no law prevents rulers from selecting their own children as heirs, few do so, fearing they'll fall victim to a terrible curse. Heirs are usually chosen based on merit.
+### Riqueza do Império
 
-### Wealth of the Empire
+Com ouro abundante no Império Sensa, não faltam empregos lucrativos e respeitados nas minas, embora o trabalho traga riscos ocupacionais. Mas a riqueza do império frequentemente atrai ameaças. O banditismo é um problema contínuo e, às vezes, a diplomacia é tudo o que impede incursões de territórios vizinhos.
 
-With gold abundant in the Sensa Empire, there's no lack of lucrative, respected jobs in the mines, though the work comes with occupational hazards. But the wealth of the empire often draws threats. Banditry is an ongoing problem, and sometimes diplomacy is all that prevents raids from neighboring territories.
+### Nomes
 
-### Names
+Nomes sensanos são tipicamente extraídos de locais significativos conectados ao relacionamento dos pais, à gravidez ou ao nascimento da criança:
 
-Sensan names are typically drawn from significant locations connected to the parents' relationship, the pregnancy, or the child's birth:
+### Aventuras no Império Sensa
 
+Considere as tramas na tabela Aventuras no Império Sensa ao planejar aventuras na região.
 
-### Adventures in the Sensa Empire
-
-Consider the plots on the Sensa Empire Adventures table when planning adventures in the region.
-
-**Tabela: Sensa Empire Adventures**
+**Tabela: Aventuras no Império Sensa**
 
 |  |  |
 | --- | --- |
-| 1 | Increasingly dissatisfied with the investigation into the death of her husband and son, Empress Inaya seeks adventurers to find new leads. |
-| 2 | A deadly illness, introduced by bandits to weaken trade, ravages camels throughout the empire. Empress Inaya hires the party to learn who paid the bandits and whether the ailment can be cured. |
-| 3 | Caravans traveling between Niba and Anisa have recently come under attack by air elementals. A consortium of merchants hires the party to escort a caravan and deal with the threat. |
-| 4 | King Sundasha of Tarikh declares his city-state independent of the Sensa Empire, using magic to line his borders with giant scorpions. Empress Inaya hires the characters to secretly infiltrate Tarikh and make the rogue king see sense. |
+| 1 | Cada vez mais insatisfeita com a investigação sobre a morte de seu marido e filho, a Imperatriz Inaya busca aventureiras para encontrar novas pistas. |
+| 2 | Uma doença mortal, introduzida por bandidas para enfraquecer o comércio, devasta camelos por todo o império. A Imperatriz Inaya contrata o grupo para descobrir quem pagou as bandidas e se a enfermidade pode ser curada. |
+| 3 | Caravanas viajando entre Niba e Anisa foram recentemente atacadas por elementais do ar. Um consórcio de mercadoras contrata o grupo para escoltar uma caravana e lidar com a ameaça. |
+| 4 | O Rei Sundasha de Tarikh declara sua cidade-estado independente do Império Sensa, usando magia para alinhar suas fronteiras com escorpiões gigantes. A Imperatriz Inaya contrata as personagens para se infiltrar secretamente em Tarikh e fazer o rei rebelde cair em si. |
 
+### Personagens de Sensa
 
-### Characters from Sensa
-
-If players want to create a character from the Sensa Empire, consider asking them the following questions during character creation:
-**What city-state do you originate from?** Are you staunchly loyal to your home city? If you grew up in the hostile outlands, how did your family survive?
-**Have you worked with the earth or its riches?** Mining and goldsmithing are respected work in the Sensa Empire—are you experienced with such work? Do you bear scars from such labor? If you avoided it, why?
-**How does gold impact your life?** The Sensa Empire's prosperity comes at a price—have you experienced these costs personally? Have you ever been targeted by bandits? Are there any resources you want or need that can't be bought?
-
-
+Se as jogadoras quiserem criar uma personagem do Império Sensa, considere fazer as seguintes perguntas durante a criação de personagem:
+**De qual cidade-estado você se origina?** Você é ferrenhamente leal à sua cidade natal? Se você cresceu nas inóspitas terras distantes, como sua família sobreviveu?
+**Você já trabalhou com a terra ou suas riquezas?** Mineração e ourivesaria são trabalhos respeitados no Império Sensa — você tem experiência com tal trabalho? Você carrega cicatrizes desse tipo de labor? Se você o evitou, por quê?
+**Como o ouro impacta sua vida?** A prosperidade do Império Sensa tem um preço — você já experimentou esses custos pessoalmente? Você já foi alvo de bandidas? Existem recursos que você deseja ou precisa que não podem ser comprados?

@@ -1,15 +1,15 @@
 ---
-title: "Arte: nothic"
+title: 'Arte: nothic'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: nothic'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: nothic](/images/campaigns/journeys-through-the-radiant-citadel/nothic.webp)

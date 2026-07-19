@@ -1,172 +1,176 @@
 ---
-title: "Cena 5 - Lambakluha"
+title: Cena 5 - Lambakluha
 weight: 50
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 5 - Lambakluha
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paolo-maykapal/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/paolo-maykapal/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/lambakluha/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/lambakluha/
 compendium_refs:
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/shambling-mound/"
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/treant/"
-  - "/compendium/monsters/dragon-hunter/"
-  - "/compendium/monsters/bakunawa/"
+- /compendium/monsters/wraith/
+- /compendium/monsters/veteran/
+- /compendium/monsters/wraith/
+- /compendium/monsters/shambling-mound/
+- /compendium/monsters/veteran/
+- /compendium/monsters/treant/
+- /compendium/monsters/dragon-hunter/
+- /compendium/monsters/bakunawa/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-097-map-102-roots-of-bathalang-puno-player/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-094-map-101-lambakluha-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/paolo-maykapal-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/dragon-hunter-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/bakunawa-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-097-map-102-roots-of-bathalang-puno-player/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-094-map-101-lambakluha-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Once a verdant island with an expansive network of rivers and mangrove forests, Lambakluha is now a rank swamp. Tormented spirits haunt the island, especially its ruined communities, and their corruptive influence blights the surviving life. The island can be reached by two skybridges: Flames Everlasting, which the characters traveled, and Hope's Dagger, which leads to another island to the west.
+Antes uma ilha verdejante com uma extensa rede de rios e florestas de mangue, Lambakluha é hoje um pântano fétido. Espíritos atormentados assombram a ilha, especialmente suas comunidades em ruínas, e sua influência corruptora arruína a vida remanescente. É possível chegar à ilha por duas pontes celestes: Chamas Eternas, pela qual os personagens viajaram, e Adaga da Esperança, que leva a outra ilha a oeste.
 
-Lambakluha is depicted on map 10.1.
-
-
-![Map 10.1: Lambakluha](/images/campaigns/journeys-through-the-radiant-citadel/093-map-101-lambakluha.webp)
+Lambakluha está representada no mapa 10.1.
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/094-map-101-lambakluha-player.webp)
+![Mapa 10.1: Lambakluha](/images/campaigns/journeys-through-the-radiant-citadel/093-map-101-lambakluha.webp)
+
+
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/094-map-101-lambakluha-player.webp)
 
 
 
-### The Final Steps of Courage
+### Os Passos Finais da Coragem
 
-As the characters pass the final bend of Flames Everlasting, read the following description of the skybridge's end:
-> The skybridge descends onto a sizable island overgrown with tangled swamp vegetation and covered in a haze tasting of ash. A few acres at the skybridge's end have been cleared and surrounded by a wooden palisade. Within, simple wooden buildings and dingy tents form an encampment.
-The camp is called the Final Steps of Courage, and beyond it spreads the blighted landscape of Lambakluha. The skybridge ends within the redoubt's wooden walls, which hold tents for a few dozen soldiers and scholars, as well as a mess hall and trading post. The camp's amenities are for those working there, but if the characters distinguish themselves as the soldiers' allies or succeed on a CD 14 Charisma (Persuasion) check with mess hall or trading post staff, they can use the facilities, too.
-Should the characters follow the skybridge into the camp, four sentries (use the veteran stat block) armed with crossbows stop them and question them about their origins, business, and destination.
+Conforme os personagens contornam a última curva das Chamas Eternas, leia a seguinte descrição do final da ponte celeste:
+> A ponte celeste desce até uma ilha considerável, coberta por vegetação emaranhada de pântano e envolta em uma neblina com gosto de cinzas. Alguns acres ao final da ponte celeste foram limpos e cercados por uma paliçada de madeira. Em seu interior, construções simples de madeira e tendas surradas formam um acampamento.
+O acampamento se chama Passos Finais da Coragem, e além dele se estende a paisagem arruinada de Lambakluha. A ponte celeste termina dentro das muralhas de madeira do reduto, que abrigam tendas para algumas dúzias de soldados e estudiosos, além de um refeitório e um posto de comércio. As comodidades do acampamento são para aqueles que ali trabalham, mas se os personagens se destacarem como aliados dos soldados ou forem bem-sucedidos em um teste de Carisma (Persuasão) CD 14 com a equipe do refeitório ou do posto de comércio, eles também podem usar as instalações.
+Se os personagens seguirem pela ponte celeste até o acampamento, quatro sentinelas (use o bloco de estatísticas de veterano) armados com bestas os param e os questionam sobre suas origens, negócios e destino.
 
-### Attack on the Final Steps
+### Ataque aos Passos Finais
 
-As the characters converse with the sentries, a horn sounds from the camp's south gate. The sentries run toward the opposite side of the camp while the camp staff scatter. If the characters follow the sound, they see several tortured-looking incorporeal Undead attacking the camp's south gate and soldiers making an organized defense. A moment later, whether the characters are near the gate or elsewhere, three wraiths that look like the spirits of burn victims close in on the characters and attack.
+Enquanto os personagens conversam com os sentinelas, uma corneta soa no portão sul do acampamento. Os sentinelas correm para o lado oposto do acampamento, enquanto a equipe do acampamento se dispersa. Se os personagens seguirem o som, eles veem vários Mortos-vivos incorpóreos de aparência torturada atacando o portão sul do acampamento, e os soldados organizando uma defesa. Um momento depois, estejam os personagens próximos ao portão ou em outro lugar, três aparições que se parecem com espíritos de vítimas de queimaduras se aproximam dos personagens e atacam.
 
-### What the Soldiers Know
+### O Que os Soldados Sabem
 
-If the characters defeat the wraiths, the camp's commander, Captain Atoy, thanks the characters and welcomes them to rest, eat, and resupply.
-The soldiers and scholars of the camp are here in hopes of reclaiming Lambakluha and making it safe for resettlement. Their work is slow, as the tortured spirits of the land attack at random intervals. The soldiers are used to defending against spirits, but in recent weeks they've spotted flashes of blue lightning near Bathalang Puno, Pangil ng Buwan's storied lair.
-If the characters explain to Captain Atoy or others in the camp that they're seeking Bathalang Puno and Pangil ng Buwan, the soldiers warn them of the danger, not just of the bakunawa but of the miles of swamp known as the Weeping Paths that the characters will have to traverse. If the characters ask anyone in the camp about what dangers they might face, the soldiers speak of Undead and of vicious vegetation.
+Se os personagens derrotarem as aparições, o comandante do acampamento, Capitão Atoy, agradece aos personagens e os convida a descansar, comer e reabastecer.
+Os soldados e estudiosos do acampamento estão aqui na esperança de recuperar Lambakluha e torná-la segura para reassentamento. O trabalho deles é lento, pois os espíritos torturados da terra atacam em intervalos aleatórios. Os soldados estão acostumados a se defender de espíritos, mas nas últimas semanas eles avistaram lampejos de relâmpagos azuis perto de Bathalang Puno, o lendário covil de Pangil ng Buwan.
+Se os personagens explicarem ao Capitão Atoy ou a outros no acampamento que estão procurando Bathalang Puno e Pangil ng Buwan, os soldados os alertam sobre o perigo, não apenas da bakunawa, mas dos quilômetros de pântano conhecidos como Sendas Lamentosas que os personagens terão que atravessar. Se os personagens perguntarem a alguém no acampamento sobre os perigos que podem encontrar, os soldados falam sobre Mortos-vivos e vegetação perversa.
 
-### Swapping Stories
+### Trocando Histórias
 
-The camp's inhabitants are starved for stories of the outside world. After the attack, several ask the characters to share a meal and tell them of their travels. If the characters agree, in the course of their discussions a soldier relates recent gossip about a scouting troop that returned from a ruin called Sorrow's Zenith and described strange vegetation that "breathed with hatred." No one in the camp knows more than this, as the scouts left the island weeks ago. However, the remaining troops can direct the characters to Sorrow's Zenith if the characters wish to investigate further.
+Os habitantes do acampamento estão famintos por histórias do mundo exterior. Após o ataque, vários convidam os personagens para compartilhar uma refeição e contar sobre suas viagens. Se os personagens concordarem, no decorrer das discussões, um soldado relata uma fofoca recente sobre uma tropa de batedores que retornou de uma ruína chamada Zênite do Pesar e descreveu uma vegetação estranha que "respirava com ódio". Ninguém no acampamento sabe mais do que isso, pois os batedores deixaram a ilha semanas atrás. No entanto, as tropas restantes podem indicar o caminho para o Zênite do Pesar, se os personagens desejarem investigar mais a fundo.
 
 
-### The Weeping Paths
+### As Sendas Lamentosas
 
-When the characters leave the Final Steps of Courage for the Weeping Paths, read the following:
-> Beyond the camp, the ash-heavy air closes in. Decay and ruin are everywhere, from the murky water flowing through the endless swamp to the mildewed vines and the rotting roots of swollen mangrove and banyan trees.
-The Weeping Paths is a treacherous quagmire home to malicious spirits. The swamp and the overgrown hills beyond are Difficult Terrain. At a normal pace, it takes the party a full day to reach Bathalang Puno (24 miles away), or half a day to reach Sorrow's Zenith (12 miles away) and then two thirds of a day to reach Bathalang Puno (9 miles away; see the Player's Handbook for Travel Pace). The entire region is also lightly obscured by foliage and haze, causing creatures to have disadvantage on Wisdom (Perception) checks that rely on sight.
-Threats lurk amid the wilds. For every 3 miles the party travels, roll on the Weeping Paths Encounters table.
+Quando os personagens deixam os Passos Finais da Coragem rumo às Sendas Lamentosas, leia o seguinte:
+> Além do acampamento, o ar carregado de cinzas se aproxima. A decadência e a ruína estão por toda parte, desde a água turva que flui pelo pântano sem fim até as videiras mofadas e as raízes apodrecidas de árvores de mangue e figueiras-de-bengala inchadas.
+As Sendas Lamentosas são um atoleiro traiçoeiro, lar de espíritos malévolos. O pântano e as colinas cobertas de vegetação além dele são Terreno Difícil. Em um ritmo normal, o grupo leva um dia inteiro para chegar a Bathalang Puno (38 quilômetros de distância), ou meio dia para chegar ao Zênite do Pesar (19 quilômetros de distância) e, em seguida, dois terços de um dia para chegar a Bathalang Puno (14 quilômetros de distância; veja o Livro do Jogador para Ritmo de Viagem). Toda a região também é levemente obscurecida pela folhagem e pela neblina, fazendo com que as criaturas tenham desvantagem em testes de Sabedoria (Percepção) que dependam da visão.
+Ameaças espreitam na selva. A cada 4,5 quilômetros que o grupo viajar, role na tabela Encontros das Sendas Lamentosas.
 
-**Tabela: Weeping Paths Encounters**
+**Tabela: Encontros das Sendas Lamentosas**
 
 |  |  |
 | --- | --- |
-| 1–3 | Miasma (see below) |
-| 4–5 | A wraith appears and attacks the party. It looks like one of the characters, albeit covered in terrible burns. |
-| 6–7 | Three shambling mounds emerge from a heap of rotting vegetation near a ruined statue and attack the party. |
-| 8–9 | A fire-scarred treant awakens and attacks the characters, blaming them for the destruction of its home. |
-| 10 | Voices of Flame (see below) |
+| 1–3 | Miasma (veja abaixo) |
+| 4–5 | Uma aparição surge e ataca o grupo. Ela se parece com um dos personagens, embora coberto por queimaduras terríveis. |
+| 6–7 | Três montículos ambulantes emergem de um monte de vegetação apodrecida perto de uma estátua em ruínas e atacam o grupo. |
+| 8–9 | Um treante com cicatrizes de fogo desperta e ataca os personagens, culpando-os pela destruição do seu lar. |
+| 10 | Vozes da Chama (veja abaixo) |
 
 ### Miasma
 
-The haze surrounding the characters coalesces into a dense, gray miasma. A minute before this occurs, characters who succeed on a CD 12 Wisdom (Perception) or (Survival) check notice the haze growing thicker and more pungent. If the characters notice, they can avoid the miasma by rushing out of the area. If they don't, a toxic, 20-foot-radius sphere surrounds a random character. Creatures in this sphere must succeed on a CD 15 Constitution saving throw, taking 21 ([[6d6]]) poison damage on a failure, or half as much on a success. The miasma is stationary and dissipates 1 minute later.
-Roll on the Weeping Paths Encounters table again for another encounter that occurs soon after, rerolling another miasma encounter.
+A neblina ao redor dos personagens se condensa em um denso miasma cinzento. Um minuto antes que isso ocorra, personagens que forem bem-sucedidos em um teste de Sabedoria (Percepção) ou (Sobrevivência) CD 12 percebem a neblina ficando mais densa e pungente. Se os personagens perceberem, eles podem evitar o miasma saindo correndo da área. Se não, uma esfera tóxica de 6 metros de raio envolve um personagem aleatório. Criaturas nessa esfera devem ser bem-sucedidas em um teste de resistência de Constituição CD 15, sofrendo 21 ([[6d6]]) de dano de veneno em caso de falha, ou metade do dano em caso de sucesso. O miasma é estacionário e se dissipa 1 minuto depois.
+Role novamente na tabela de Encontros das Sendas Lamentosas para outro encontro que ocorre logo em seguida, rolando novamente em caso de outro encontro de miasma.
 
-### Voices of Flame
+### Vozes da Chama
 
-Dozens of gray, spectral figures appear in the haze around the party and move along with them. The forms can't be harmed or warded away by any means. Soon after the shapes appear, the figures begin speaking as one, telling the grim fates of those who perished during the razing of Bathalang Puno. The figures relate terrible ends like burning alive in their homes or being crushed by massive, falling tree limbs. After the recitation of each grim fate, one of the forms bursts into flames and vanishes. After a minute, a voice from the haze asks each character, "Tell us. How did you die?" Characters who respond with a tragic tale, even a fictitious one, are unharmed. Characters who don't must succeed on a CD 15 Wisdom saving throw or burst into flames and take 35 ([[10d6]]) points of fire damage.
-
-
-### Sorrow's Zenith
-
-Out of the way from the path to Bathalang Puno is a ruined temple called Sorrow's Zenith. If the characters visit the site, they notice an unusual growth covering a weathered statue. Read or paraphrase the following:
-> An ancient statue of a bakunawa is cracked with age and covered with unusual vines. Amid a cluster of tangled roots, a blister-like growth heaves like a breathing thing and glows with a sickly light.
-A character who studies the blister and succeeds on a CD 14 Wisdom (Perception) check realizes that the movement within the mass is the shifting of tiny, ghostly figures. A character who has proficiency in the Nature skill recognizes that these vines and the blister are unnatural. With a successful CD 18 Intelligence (Arcana or Religion) check made to examine the blister, a character determines the vines are drawing spiritual energy from the land and concentrating that energy within the blister. However, the nature and purpose of that magic are unclear.
-
-![A Spirit Blister at Sorrow's Zenith](/images/campaigns/journeys-through-the-radiant-citadel/095-10-005spirit-blister.webp)
-
-The blister is a Medium object with AC 17; 30 hit points; vulnerability to fire and radiant damage; and immunity to acid, necrotic, and psychic damage. If destroyed, the blister bursts with a chorus of distant sighs. A moment later, a spectral figure appears.
-
-### Memory of Peace
-
-If the characters destroy the spirit blister, the spirit of a ninuno appears and thanks them for releasing it from the bitter memories trapped within the blister. The spirit has forgotten its name, but it can share the following details:
-* It was once a protector of Lambakluha and the temple that stood here, but when invaders burned the sacred tree Bathalang Puno and the surrounding city, the ninuno was overwhelmed by the pain of those who died.
-* Angry spirits still haunt the island, their memories corrupting its vegetation and creatures.
-* The spirit knows stories of Pangil ng Buwan, but fears that if the bakunawa went into dormancy on the island, wicked spirits could have corrupted it.
-* The spirit encourages the characters to destroy any other spirit blisters they see and release the spirits brooding within. It knows that the blisters are vulnerable to flames and divine light.
-After conversing with the characters, the spirit vanishes.
+Dezenas de figuras cinzentas e espectrais aparecem na neblina ao redor do grupo e se movem junto com eles. As formas não podem ser feridas ou afastadas por nenhum meio. Logo após as formas aparecerem, as figuras começam a falar em uníssono, contando os destinos terríveis daqueles que pereceram durante a devastação de Bathalang Puno. As figuras relatam fins terríveis como queimar vivos em suas casas ou serem esmagados por enormes galhos de árvore caindo. Após a narração de cada destino terrível, uma das formas explode em chamas e desaparece. Depois de um minuto, uma voz vinda da neblina pergunta a cada personagem: "Conte-nos. Como você morreu?" Personagens que responderem com uma história trágica, mesmo que fictícia, saem ilesos. Personagens que não o fizerem devem ser bem-sucedidos em um teste de resistência de Sabedoria CD 15 ou explodir em chamas e sofrer 35 ([[10d6]]) pontos de dano de fogo.
 
 
-### Roots of Bathalang Puno
+### Zênite do Pesar
 
-The swamps grow drier and more densely forested within a couple miles of Bathalang Puno, with vines and mangroves ensnaring ancient, overgrown ruins. A character who succeeds on a CD 16 Intelligence (History) check knows that a great city once spread around the sacred tree; the crumbled structures are that city's ruins and the remnants of a destroyed skybridge called Moon's Respite.
-Once the characters reach Bathalang Puno, they must still find Pangil ng Buwan's lair. Circling the great tree takes over an hour. But while searching for the lair, if a character succeeds on a CD 16 Wisdom (Survival) check, they find marks suggesting the passage of a massive creature and can follow that trail to Pangil ng Buwan's lair in 10 minutes.
-If the characters are not traveling with Paolo and his group, a character who succeeds on a CD 14 Wisdom (Perception or Survival) check notices booted tracks headed in the direction opposite them—the wrong way around the massive tree. These are the tracks of Paolo Maykapal and his dragon hunters, who arrived ahead of the characters and who are also searching for the bakunawa.
+Fora do caminho para Bathalang Puno, há um templo em ruínas chamado Zênite do Pesar. Se os personagens visitarem o local, eles notam um crescimento incomum cobrindo uma estátua desgastada. Leia ou parafraseie o seguinte:
+> Uma antiga estátua de uma bakunawa está rachada pelo tempo e coberta por vinhas incomuns. Em meio a um aglomerado de raízes emaranhadas, uma protuberância semelhante a uma bolha pulsa como uma coisa que respira e brilha com uma luz doentia.
+Um personagem que estudar a bolha e for bem-sucedido em um teste de Sabedoria (Percepção) CD 14 percebe que o movimento dentro da massa é o deslocamento de figuras minúsculas e fantasmagóricas. Um personagem que tiver proficiência na perícia Natureza reconhece que essas vinhas e a bolha não são naturais. Com um teste bem-sucedido de Inteligência (Arcanismo ou Religião) CD 18 feito para examinar a bolha, um personagem determina que as vinhas estão extraindo energia espiritual da terra e concentrando essa energia dentro da bolha. No entanto, a natureza e o propósito dessa magia não são claros.
 
-### Facing the Dragon Hunters
+![Uma Bolha Espiritual no Zênite do Pesar](/images/campaigns/journeys-through-the-radiant-citadel/095-10-005spirit-blister.webp)
 
-If the characters follow the dragon hunters, they catch up to them as the hunters conduct a stealthy—and slow—search. Paolo and his cousins are surprised to see the characters but aren't deterred from their hunt. If a character tells the dragon hunters that Pangil ng Buwan isn't behaving naturally and succeeds on a CD 18 Charisma (Persuasion) check, Paolo wants to see the bakunawa himself and will decide its fate then. If hostilities break out, the dragon hunters defend themselves, using the stat blocks of five veterans (see "**Área The Dragon Hunters**" earlier in this adventure).
+A bolha é um objeto Médio com CA 17; 30 pontos de vida; vulnerabilidade a dano de fogo e radiante; e imunidade a dano de ácido, necrótico e psíquico. Se destruída, a bolha explode com um coro de suspiros distantes. Um momento depois, uma figura espectral aparece.
 
-### The Bakunawa's Lair
+### Memória de Paz
 
-
-![Map 10.2: Roots of Bathalang Puno](/images/campaigns/journeys-through-the-radiant-citadel/096-map-102-roots-of-bathalang-puno.webp)
-
-
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/097-map-102-roots-of-bathalang-puno-player.webp)
-
-Map 10.2 represents Pangil ng Buwan's lair. When the characters arrive, read the following description:
-> Charred roots the size of buildings surround an open clearing with a broad patch of blackened ground. Nearby lie pieces of a fallen skybridge. At the clearing's center, writhing vines with glowing, green veins wrap around the massive form of Pangil ng Buwan. These vines emanate from four green, blister-like growths entangled amid the great tree's roots.
-Whether the creature is alone or the dragon hunters are present depends on whether the characters found a direct path to the lair and whether they met the dragon hunters along the way. See "Dragon Hunters" below for more details.
-Pangil ng Buwan (see the bakunawa stat block at the **Área end of this adventure**) is covered in vines but is not restrained. The creature is half awake, resting as the corrupt vines spread hateful thoughts into its mind. Once the bakunawa notices creatures in its lair, it attacks.
-
-### Calming the Bakunawa
-
-Pangil ng Buwan isn't currently in control of itself and can't be reasoned with, as the spirit blisters in its lair cause it to see the party as the invaders of Lambakluha who haunt its dreams. The dragon's eyes glow with sickly green light the same color as the nearby spirit blisters. If a creature casts dispel magic (CD 15) or greater restoration on Pangil ng Buwan, the bakunawa is stunned until the end of its next turn, but then its rage surges anew. The only way to end Pangil ng Buwan's rampage is destroying the four spirit blisters in its lair.
-
-### Corrupted Ground
-
-Gigantic roots surround the area where Pangil ng Buwan rests. The roots and the rubble of the fallen skybridge are Difficult Terrain.
-At the center of the clearing, a patch of blighted ground marks the area of intense corruption where the bakunawa suffered years of nightmares. A creature that enters that area or starts its turn there is overwhelmed by visions of the burning of Bathalang Puno and must succeed on a CD 15 Wisdom saving throw or take 18 ([[4d8]]) psychic damage.
-
-### Spirit Blisters
-
-Four spirit blisters have corrupted the bakunawa's mind. A character who investigates a blister can make a CD 14 Intelligence (Arcana) or Wisdom (Perception) check. On a success, they notice the glow of the blisters matches the glow of the bakunawa's eyes.
-The blisters are Medium objects with AC 17; 30 hit points; vulnerability to fire and radiant damage; and immunity to acid, necrotic, and psychic damage. Pangil ng Buwan defends the spirit blisters and prioritizes attacking any creature that damages the blisters.
-
-### Dragon Hunters
-
-If, after arriving at the great tree, the characters took the direct path to Pangil ng Buwan's lair, the bakunawa is alone when they arrive, but Paolo and his dragon hunters (five veterans; see "**Área The Dragon Hunters**" earlier in this adventure) arrive 3 rounds later. If the characters took an indirect path but didn't interact with the dragon hunters, the dragon hunters are already there and are about to attack.
-Unless the characters have previously convinced Paolo to hold back, the dragon hunters immediately attack. Rather than rolling for the dragon hunters' attacks, assume any of the five dragon hunters not engaged in combat with the characters or otherwise prevented from attacking deals 10 damage to Pangil ng Buwan each round. If a character points out to Paolo that the spirit blisters are affecting Pangil ng Buwan and succeeds on a CD 20 Charisma (Persuasion) check, Paolo and his allies stand down.
-
-### Treasure
-
-Pangil ng Buwan has a small hoard beneath the burnt tree roots. If the bakunawa is freed, it gives the characters its treasure in thanks. If it is slain, a character who succeeds on a CD 16 Wisdom (Perception) check notices the hidden cache beneath one of the giant roots. Pangil ng Buwan's treasure consists of 320 gp, 5,800 sp, three opal figurines of dugongs worth 150 gp a piece, an arrow of dragon slaying, a necklace of adaptation, and a staff of the python.
-
-### The End of Despair
-
-If Pangil ng Buwan is cleansed of the spirit blisters' corruption, the bakunawa thanks the party for saving it and shares the following information:
-* Pangil ng Buwan recounts the details in the "**Área Background**" section.
-* The bakunawa remembers Lungtian fondly and was able to stop itself from harming the people of Kalapang when it sensed the ninuno's presence.
-* If the characters mention Laguna, Pangil ng Buwan expresses remorse for not being there when the city was attacked. The bakunawa and Urian Maykapal, Paolo's ancestor, were close friends, but the day prior to the attack, the two had a disagreement. Pangil ng Buwan left Laguna to clear its head and heard about the violence too late.
+Se os personagens destruírem a bolha espiritual, o espírito de um ninuno aparece e agradece por libertá-lo das memórias amargas presas dentro da bolha. O espírito esqueceu seu nome, mas pode compartilhar os seguintes detalhes:
+* Antigamente, era um protetor de Lambakluha e do templo que existia aqui, mas quando invasores queimaram a árvore sagrada Bathalang Puno e a cidade ao redor, o ninuno foi dominado pela dor daqueles que morreram.
+* Espíritos furiosos ainda assombram a ilha, suas memórias corrompendo sua vegetação e criaturas.
+* O espírito conhece histórias de Pangil ng Buwan, mas teme que, se a bakunawa entrou em dormência na ilha, espíritos perversos possam tê-la corrompido.
+* O espírito encoraja os personagens a destruir quaisquer outras bolhas espirituais que virem e libertar os espíritos que remoem em seu interior. Ele sabe que as bolhas são vulneráveis a chamas e luz divina.
+Após conversar com os personagens, o espírito desaparece.
 
 
+### Raízes de Bathalang Puno
+
+Os pântanos ficam mais secos e densamente florestados a alguns quilômetros de Bathalang Puno, com vinhas e mangues prendendo ruínas antigas e cobertas de vegetação. Um personagem que for bem-sucedido em um teste de Inteligência (História) CD 16 sabe que uma grande cidade outrora se espalhava ao redor da árvore sagrada; as estruturas desmoronadas são as ruínas dessa cidade e os restos de uma ponte celeste destruída chamada Descanso da Lua.
+Quando os personagens chegarem a Bathalang Puno, eles ainda precisam encontrar o covil de Pangil ng Buwan. Circundar a grande árvore leva mais de uma hora. Mas, ao procurar o covil, se um personagem for bem-sucedido em um teste de Sabedoria (Sobrevivência) CD 16, ele encontra marcas que sugerem a passagem de uma criatura massiva e pode seguir essa trilha até o covil de Pangil ng Buwan em 10 minutos.
+Se os personagens não estiverem viajando com Paolo e seu grupo, um personagem que for bem-sucedido em um teste de Sabedoria (Percepção ou Sobrevivência) CD 14 nota pegadas de botas indo na direção oposta à deles — o caminho errado ao redor da árvore massiva. Essas são as pegadas de Paolo Maykapal e seus caçadores de dragões, que chegaram antes dos personagens e também estão procurando a bakunawa.
+
+### Enfrentando os Caçadores de Dragões
+
+Se os personagens seguirem os caçadores de dragões, eles os alcançam enquanto os caçadores conduzem uma busca sigilosa — e lenta. Paolo e seus primos ficam surpresos ao ver os personagens, mas não desistem de sua caçada. Se um personagem disser aos caçadores de dragões que Pangil ng Buwan não está se comportando naturalmente e for bem-sucedido em um teste de Carisma (Persuasão) CD 18, Paolo quer ver a bakunawa pessoalmente e decidirá seu destino então. Se hostilidades começarem, os caçadores de dragões se defendem, usando os blocos de estatísticas de cinco veteranos (veja "**Área Os Caçadores de Dragões**" anteriormente nesta aventura).
+
+### O Covil da Bakunawa
+
+
+![Mapa 10.2: Raízes de Bathalang Puno](/images/campaigns/journeys-through-the-radiant-citadel/096-map-102-roots-of-bathalang-puno.webp)
+
+
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/097-map-102-roots-of-bathalang-puno-player.webp)
+
+O Mapa 10.2 representa o covil de Pangil ng Buwan. Quando os personagens chegarem, leia a seguinte descrição:
+> Raízes carbonizadas do tamanho de edifícios cercam uma clareira aberta com uma vasta área de solo enegrecido. Perto dali, jazem pedaços de uma ponte celeste caída. No centro da clareira, vinhas retorcidas com veios verdes brilhantes envolvem a forma massiva de Pangil ng Buwan. Essas vinhas emanam de quatro protuberâncias verdes, semelhantes a bolhas, emaranhadas nas raízes da grande árvore.
+A criatura estar sozinha ou os caçadores de dragões estarem presentes depende se os personagens encontraram um caminho direto para o covil e se encontraram os caçadores de dragões ao longo do caminho. Veja "Caçadores de Dragões" abaixo para mais detalhes.
+Pangil ng Buwan (veja o bloco de estatísticas da bakunawa ao **Área final desta aventura**) está coberto por vinhas, mas não está contido. A criatura está meio adormecida, descansando enquanto as vinhas corruptoras espalham pensamentos odiosos em sua mente. Uma vez que a bakunawa perceba criaturas em seu covil, ela ataca.
+
+### Acalmando a Bakunawa
+
+Pangil ng Buwan atualmente não está no controle de si mesma e não pode ser persuadida, pois as bolhas espirituais em seu covil a fazem ver o grupo como os invasores de Lambakluha que assombram seus sonhos. Os olhos do dragão brilham com uma luz verde doentia, da mesma cor das bolhas espirituais próximas. Se uma criatura conjurar dissipar magia (CD 15) ou restauração maior em Pangil ng Buwan, a bakunawa fica atordoada até o final do próximo turno dela, mas então sua fúria ressurge novamente. A única maneira de acabar com o tumulto de Pangil ng Buwan é destruindo as quatro bolhas espirituais em seu covil.
+
+### Solo Corrompido
+
+Raízes gigantescas cercam a área onde Pangil ng Buwan descansa. As raízes e os escombros da ponte celeste caída são Terreno Difícil.
+No centro da clareira, uma mancha de solo arruinado marca a área de intensa corrupção onde a bakunawa sofreu anos de pesadelos. Uma criatura que entrar nessa área ou começar seu turno lá é dominada por visões da queima de Bathalang Puno e deve ser bem-sucedida em um teste de resistência de Sabedoria CD 15 ou sofrer 18 ([[4d8]]) de dano psíquico.
+
+### Bolhas Espirituais
+
+Quatro bolhas espirituais corromperam a mente da bakunawa. Um personagem que investigar uma bolha pode fazer um teste de Inteligência (Arcanismo) ou Sabedoria (Percepção) CD 14. Em caso de sucesso, ele percebe que o brilho das bolhas é igual ao brilho dos olhos da bakunawa.
+As bolhas são objetos Médios com CA 17; 30 pontos de vida; vulnerabilidade a dano de fogo e radiante; e imunidade a dano de ácido, necrótico e psíquico. Pangil ng Buwan defende as bolhas espirituais e prioriza atacar qualquer criatura que danificar as bolhas.
+
+### Caçadores de Dragões
+
+Se, após chegarem à grande árvore, os personagens tomaram o caminho direto para o covil de Pangil ng Buwan, a bakunawa está sozinha quando eles chegam, mas Paolo e seus caçadores de dragões (cinco veteranos; veja "**Área Os Caçadores de Dragões**" anteriormente nesta aventura) chegam 3 rodadas depois. Se os personagens tomaram um caminho indireto, mas não interagiram com os caçadores de dragões, os caçadores de dragões já estão lá e estão prestes a atacar.
+A menos que os personagens tenham convencido Paolo anteriormente a recuar, os caçadores de dragões atacam imediatamente. Em vez de rolar para os ataques dos caçadores de dragões, assuma que qualquer um dos cinco caçadores de dragões que não estiver em combate com os personagens ou de outra forma impedido de atacar causa 10 de dano a Pangil ng Buwan a cada rodada. Se um personagem apontar para Paolo que as bolhas espirituais estão afetando Pangil ng Buwan e for bem-sucedido em um teste de Carisma (Persuasão) CD 20, Paolo e seus aliados recuam.
+
+### Tesouro
+
+Pangil ng Buwan tem um pequeno tesouro sob as raízes queimadas da árvore. Se a bakunawa for libertada, ela dá seu tesouro aos personagens como agradecimento. Se for morta, um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) CD 16 percebe o esconderijo oculto sob uma das raízes gigantes. O tesouro de Pangil ng Buwan consiste em 320 po, 5.800 pp, três estatuetas de opala de dugongos no valor de 150 po cada, uma flecha de matar dragões, um colar de adaptação e um cajado da píton.
+
+### O Fim do Desespero
+
+Se Pangil ng Buwan for purificada da corrupção das bolhas espirituais, a bakunawa agradece ao grupo por salvá-la e compartilha as seguintes informações:
+* Pangil ng Buwan relata os detalhes da seção "**Área Antecedentes**".
+* A bakunawa se lembra de Lungtian com carinho e conseguiu se impedir de machucar o povo de Kalapang quando sentiu a presença do ninuno.
+* Se os personagens mencionarem Laguna, Pangil ng Buwan expressa remorso por não estar lá quando a cidade foi atacada. A bakunawa e Urian Maykapal, ancestral de Paolo, eram amigos próximos, mas no dia anterior ao ataque, os dois tiveram um desentendimento. Pangil ng Buwan deixou Laguna para clarear a cabeça e soube da violência tarde demais.

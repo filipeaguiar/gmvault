@@ -1,16 +1,23 @@
 ---
-title: "Roguish Archetype"
+title: Roguish Archetype
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Roguish Archetype."
+summary: 'Característica de classe: Arquétipo de Ladino'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Arquétipo de Ladino
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities from the list of available archetypes. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.
+No 3º nível, você escolhe um arquétipo que você emula no exercício das suas habilidades de ladino de uma lista de arquétipos disponíveis. Sua escolha de arquétipo concede a você características no 3º nível e novamente no 9º, 13º e 17º nível.

@@ -1,15 +1,22 @@
 ---
-title: "Roguish Archetype feature"
+title: Roguish Archetype feature
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Roguish Archetype feature."
+summary: 'Característica de classe: Arquétipo do Ladino'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Característica de Arquétipo Ladino
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 9th level, you gain a feature granted by your Roguish Archetype.
+No 9º nível, você ganha uma característica concedida pelo seu Arquétipo Ladino.

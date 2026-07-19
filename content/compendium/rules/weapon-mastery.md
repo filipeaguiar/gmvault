@@ -1,18 +1,25 @@
 ---
-title: "Weapon Mastery"
+title: Weapon Mastery
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Weapon Mastery."
+summary: 'Característica de classe: Maestria de Arma.'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Maestria de Arma
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your training with weapons allows you to use the mastery properties of two kinds of type=simple weapon;martial weapon of your choice with which you have proficiency, such as Daggers and Shortbows.
+Seu treinamento com armas permite usar as propriedades de maestria de dois tipos de arma simples ou marcial, à sua escolha, com os quais tenha proficiência, como Adagas e Arcos Curtos.
 
-Whenever you finish a XPHB, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords.
+Sempre que terminar um XPHB, você pode alterar os tipos de armas escolhidos. Por exemplo, você poderia mudar para usar as propriedades de maestria de Cimitarras e Espadas Curtas.

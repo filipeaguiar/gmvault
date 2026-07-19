@@ -1,15 +1,15 @@
 ---
-title: "Arte: riverine"
+title: 'Arte: riverine'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: riverine'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: riverine](/images/campaigns/journeys-through-the-radiant-citadel/riverine.webp)

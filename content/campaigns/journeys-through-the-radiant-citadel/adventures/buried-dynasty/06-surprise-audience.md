@@ -1,72 +1,76 @@
 ---
-title: "Cena 6 - Surprise Audience"
+title: Cena 6 - Surprise Audience
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Audiência Surpresa
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/surprise-audience/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/surprise-audience/
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/mage/"
+- /compendium/monsters/veteran/
+- /compendium/monsters/noble/
+- /compendium/monsters/mage/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-When the characters emerge from the hatch, read or paraphrase the following:
+Quando os personagens emergirem da escotilha, leia ou parafraseie o seguinte:
 
-> The space beyond is a windowless room with a wooden ceiling only four feet off the floor and a trapdoor at its center. A smiling mask with peeling paint lies on the floor. From above comes the sound of someone singing an operatic aria.
+> O espaço além é uma sala sem janelas com um teto de madeira a apenas um metro e vinte do chão e um alçapão em seu centro. Uma máscara sorridente com tinta descascada está caída no chão. De cima, vem o som de alguém cantando uma ária operística.
 
-The characters are in the crawlspace beneath the stage of the Pear Garden Imperial Opera. The room has no doors, but the trapdoor in the ceiling can be pulled down to provide access to the stage above.
-
-
-### An Unexpected Cameo
-
-Read the following if the characters open the door and climb up onto the stage, or if they unexpectedly emerge in some other manner:
-> Two singers wearing heavy makeup freeze in mid-embrace as you make your presence known. At the back of the stage, musicians stare in shock but continue playing.
-> The audience area beyond is a profusion of colorful parasols held by people wearing expensive clothes, all watching the performance with rapt attention.
-> Sitting on a raised dais in the center of the crowd is the White Jade Emperor, dressed in magnificent yellow and gold robes. Several guards stand nearby.
-The emperor's dais is 30 feet from the front of the stage. The emperor's guards notice any disturbance immediately, and two mages and five veterans move to surround the emperor. They order the characters to lay down their weapons and submit themselves for arrest.
-If a character addresses the emperor, the ruler raises his hand and the guards pause. If no character does so, Zhong Yin calls to the emperor, and he prevents the guards from arresting the group.
-Characters should be encouraged not to attack the emperor or his guards, but if they do, more mages and veterans join the fight until the characters are taken into custody, soon to be exiled from the city.
+Os personagens estão no espaço sob o palco da Ópera Imperial Jardim das Peras. A sala não tem portas, mas o alçapão no teto pode ser puxado para baixo para fornecer acesso ao palco acima.
 
 
-### Conversing with the Emperor
+### Uma Aparição Inesperada
 
-With a few imperious words, the White Jade Emperor (lawful neutral, hill dwarf noble) dismisses everyone except his guards. As the crowd disperses, Secretary Wei remains on the scene. As soon as the area is empty of opera-goers, he orders the characters to explain themselves.
-
-![The White Jade Emperor](/images/campaigns/journeys-through-the-radiant-citadel/131-13-005the-white-jade-emperor.webp)
-
-
-### Presenting Evidence
-
-The emperor listens patiently to the characters' story. He believes their tale if they can support it with any three of the following pieces of evidence:
-* The documents to and from Secretary Wei found in **Área area S3**
-* The confession of one of the alchemists from **Área area S4**
-* The potions of longevity the characters found in the Old City
-* A gold dragon scale from area S4
-Zhong Yin's confession also counts as a piece of evidence, but the spy is reluctant to betray the Grand Secretary. A character who succeeds on a CD 18 Charisma (Intimidation or Persuasion) check can compel Zhong Yin to fully confess.
-Additionally, a character who succeeds on a CD 20 Charisma (Persuasion) check can convince the emperor to believe them even if they present only two pieces of evidence.
-The emperor will not allow the characters to reenter the Old City to search for additional evidence.
-
-### The Emperor Is Not Convinced
-
-If the characters aren't able to convince the emperor of the truth of their story through presenting evidence, he asks Secretary Wei what she has to say about the situation. The secretary flatly denies the accusation, claiming that Zhong Yin and the characters were sent on a scholarly investigation into the Old City, but stole relics from the site and eluded her attempts to capture and punish them.
-The emperor accepts her answer as the truth of the matter. Unless the characters come up with a compelling way to convince the emperor that Secretary Wei is lying, he gives them and Zhong Yin one hour to exile themselves from the city before his guards compel them to do so. Continue with "**Área Conclusion**" below.
-
-### The Emperor Is Convinced
-
-If the emperor believes the characters' story, he finds the evidence against Secretary Wei irrefutable. Nevertheless, in her defense, the secretary shares the information from the "**Área End of an Era**" section at the start of the adventure, claiming that she sought to protect not only the emperor but the stability of the empire. She'll go on to calmly answer any questions the characters have, revealing any details from the "**Área Secrets of Immortality**" section. She clearly believes what she says and considers her actions to be in the best interests of the empire.
-After Secretary Wei has spoken on her own behalf, the emperor dismisses the characters and those with them, but he tells the secretary to stay for a private audience. This session ends with the Grand Secretary being taken into custody by the imperial guard.
+Leia o seguinte se os personagens abrirem a porta e subirem ao palco, ou se eles emergirem inesperadamente de alguma outra maneira:
+> Dois cantores com maquiagem pesada congelam no meio de um abraço quando vocês revelam sua presença. No fundo do palco, os músicos encaram em choque, mas continuam tocando.
+> A área da plateia adiante é uma profusão de sombrinhas coloridas seguradas por pessoas vestindo roupas caras, todas assistindo à apresentação com atenção absorta.
+> Sentado em um estrado elevado no centro da multidão está o Imperador de Jade Branco, vestido com magníficos robes amarelos e dourados. Vários guardas estão próximos.
+O estrado do imperador está a 9 metros da frente do palco. Os guardas do imperador percebem qualquer perturbação imediatamente, e dois magos e cinco veteranos se movem para cercar o imperador. Eles ordenam que os personagens larguem suas armas e se entreguem para serem presos.
+Se um personagem se dirigir ao imperador, o governante levanta sua mão e os guardas fazem uma pausa. Se nenhum personagem fizer isso, Zhong Yin chama pelo imperador, e ele impede os guardas de prender o grupo.
+Os personagens devem ser encorajados a não atacar o imperador ou seus guardas, mas se o fizerem, mais magos e veteranos se juntam ao combate até que os personagens sejam levados sob custódia, para logo serem exilados da cidade.
 
 
+### Conversando com o Imperador
+
+Com algumas palavras imperiosas, o Imperador de Jade Branco (leal e neutro, nobre anão das colinas) dispensa todos, exceto seus guardas. Enquanto a multidão se dispersa, a Secretária Wei permanece em cena. Assim que a área está vazia de frequentadores da ópera, ele ordena que os personagens se expliquem.
+
+![O Imperador de Jade Branco](/images/campaigns/journeys-through-the-radiant-citadel/131-13-005the-white-jade-emperor.webp)
+
+
+### Apresentando Evidências
+
+O imperador ouve pacientemente a história dos personagens. Ele acredita no relato deles se puderem apoiá-lo com quaisquer três das seguintes evidências:
+* Os documentos de e para a Secretária Wei encontrados na **Área S3**
+* A confissão de um dos alquimistas da **Área S4**
+* As poções de longevidade que os personagens encontraram na Cidade Antiga
+* Uma escama de dragão dourado da área S4
+A confissão de Zhong Yin também conta como uma evidência, mas o espião está relutante em trair a Grã-Secretária. Um personagem que for bem-sucedido em um teste de CD 18 de Carisma (Intimidação ou Persuasão) pode compelir Zhong Yin a confessar completamente.
+Além disso, um personagem que for bem-sucedido em um teste de CD 20 de Carisma (Persuasão) pode convencer o imperador a acreditar neles mesmo que apresentem apenas duas evidências.
+O imperador não permitirá que os personagens voltem à Cidade Antiga para procurar evidências adicionais.
+
+### O Imperador Não Está Convencido
+
+Se os personagens não conseguirem convencer o imperador da verdade de sua história através da apresentação de evidências, ele pergunta à Secretária Wei o que ela tem a dizer sobre a situação. A secretária nega veementemente a acusação, alegando que Zhong Yin e os personagens foram enviados em uma investigação acadêmica à Cidade Antiga, mas roubaram relíquias do local e escaparam de suas tentativas de capturá-los e puni-los.
+O imperador aceita a resposta dela como a verdade sobre o assunto. A menos que os personagens apresentem uma maneira convincente de persuadir o imperador de que a Secretária Wei está mentindo, ele dá a eles e a Zhong Yin uma hora para se exilarem da cidade antes que seus guardas os obriguem a fazê-lo. Continue com "**Conclusão**" abaixo.
+
+### O Imperador Está Convencido
+
+Se o imperador acreditar na história dos personagens, ele considera as evidências contra a Secretária Wei irrefutáveis. No entanto, em sua defesa, a secretária compartilha a informação da seção "**Fim de uma Era**" no início da aventura, alegando que ela buscava proteger não apenas o imperador, mas a estabilidade do império. Ela responderá calmamente a quaisquer perguntas que os personagens tenham, revelando quaisquer detalhes da seção "**Segredos da Imortalidade**". Ela claramente acredita no que diz e considera suas ações como sendo do melhor interesse do império.
+Depois que a Secretária Wei falar em sua própria defesa, o imperador dispensa os personagens e aqueles que estão com eles, mas diz à secretária para ficar para uma audiência privada. Esta sessão termina com a Grã-Secretária sendo levada sob custódia pela guarda imperial.

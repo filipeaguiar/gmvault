@@ -1,15 +1,15 @@
 ---
-title: "Arte: bakunawa"
+title: 'Arte: bakunawa'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: bakunawa'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: bakunawa](/images/campaigns/journeys-through-the-radiant-citadel/bakunawa.webp)

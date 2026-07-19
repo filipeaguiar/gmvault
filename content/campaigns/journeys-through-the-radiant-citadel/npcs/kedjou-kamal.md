@@ -1,19 +1,19 @@
 ---
-title: "Kedjou Kamal"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Kedjou Kamal
+draft: false
+titulo_pt_br: Kedjou Kamal
+visibility: gm
+status: published
 tags:
-  - npc
-  - importado
+- npc
+- importado
 params:
-  kind: "npc"
-stats_meta: "Medium humanoid, neutro e mau"
+  kind: npc
+stats_meta: Medium humanoid, neutro e mau
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,10 +21,12 @@ stats:
     int: 10
     wis: 10
     cha: 10
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ![Arte: Kedjou Kamal](/images/campaigns/journeys-through-the-radiant-citadel/061-07-003high-priest-kedjou.webp)
-
-
-
-

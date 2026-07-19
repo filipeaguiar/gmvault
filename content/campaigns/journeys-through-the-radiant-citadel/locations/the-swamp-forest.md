@@ -1,19 +1,24 @@
 ---
-title: "The Swamp Forest"
+title: The Swamp Forest
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: A Floresta Pantanosa
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **The Swamp Forest** importada automaticamente.
+Localidade **A Floresta do Pântano** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Swamp Forest](../../adventures/in-the-mists-of-manivarsha/06-the-swamp-forest/)
+- [A Floresta do Pântano](../../adventures/in-the-mists-of-manivarsha/06-the-swamp-forest/)

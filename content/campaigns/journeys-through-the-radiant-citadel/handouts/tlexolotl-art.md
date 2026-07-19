@@ -1,15 +1,15 @@
 ---
-title: "Arte: tlexolotl"
+title: 'Arte: tlexolotl'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: tlexolotl'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: tlexolotl](/images/campaigns/journeys-through-the-radiant-citadel/tlexolotl.webp)

@@ -1,15 +1,15 @@
 ---
-title: "Arte: Wei Feng Ying"
+title: 'Arte: Wei Feng Ying'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Wei Feng Ying'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Wei Feng Ying](/images/campaigns/journeys-through-the-radiant-citadel/124-13-001grand-secretary-wei-feng-ying.webp)

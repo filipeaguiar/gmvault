@@ -1,15 +1,15 @@
 ---
-title: "Arte: aboleth"
+title: 'Arte: aboleth'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: aboleth'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: aboleth](/images/campaigns/journeys-through-the-radiant-citadel/aboleth.webp)

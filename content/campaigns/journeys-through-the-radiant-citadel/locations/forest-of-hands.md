@@ -1,25 +1,30 @@
 ---
-title: "Forest of Hands"
+title: Forest of Hands
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Floresta das Mãos
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-085-map-91-forest-heart-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-085-map-91-forest-heart-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Forest of Hands** importada automaticamente.
+Localidade **Floresta das Mãos** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Forest of Hands](../../adventures/in-the-mists-of-manivarsha/07-forest-of-hands/)
+- [Floresta das Mãos](../../adventures/in-the-mists-of-manivarsha/07-forest-of-hands/)
 
 ### Mapas
 
-#### 085 91 Forest Heart Player
-![085 91 Forest Heart Player](/images/campaigns/journeys-through-the-radiant-citadel/085-map-91-forest-heart-player.webp)
-
+#### 085 91 Coração da Floresta - Jogador
+![085 91 Coração da Floresta - Jogador](/images/campaigns/journeys-through-the-radiant-citadel/085-map-91-forest-heart-player.webp)

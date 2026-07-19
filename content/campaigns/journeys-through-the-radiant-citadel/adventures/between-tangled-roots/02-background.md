@@ -1,38 +1,41 @@
 ---
-title: "Background"
+title: Background
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Antecedentes
+visibility: gm
+status: published
+summary: Introdução e contextualização da aventura.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nimuel/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nimuel/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nimuel-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lungtian-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nimuel-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The bakunawa known as Pangil ng Buwan has long dwelled on the dangerous island of Lambakluha, once the holiest site on the Dayawlongon archipelago. Its dwelling lies before the great tree-temple called Bathalang Puno, a massive, mighty, sacred tree that was long ago burned by invaders. In the years that followed the tree's desecration, evil spirits infested the island. These foul spirits caused unnatural growths to manifest—spirit blisters that corrupt the land and its creatures. Gradually, this sickness encroached on Pangil ng Buwan's lair. While the ancient bakunawa slept, strangling roots enveloped it and poured poison into its being for centuries.
+O bakunawa conhecido como Pangil ng Buwan habita há muito tempo a perigosa ilha de Lambakluha, outrora o local mais sagrado do arquipélago Dayawlongon. Sua morada fica diante do grande templo-árvore chamado Bathalang Puno, uma árvore sagrada, imensa e poderosa, queimada por invasores há muito tempo. Nos anos que se seguiram à profanação da árvore, espíritos malignos infestaram a ilha. Esses espíritos imundos causaram crescimentos anormais — bolhas espirituais que corrompem a terra e suas criaturas. Gradualmente, essa doença invadiu o covil de Pangil ng Buwan. Enquanto o antigo bakunawa dormia, raízes estranguladoras o envolveram e derramaram veneno em seu ser por séculos.
 
-When Pangil ng Buwan awoke not long ago, its corruption caused it to hate all it once loved. After raging across Lambakluha, it sought its ancient spirit companion, Lungtian. But its one-time feelings of companionship has turned to rage, and it wreaks vast destruction in its search.
+Quando Pangil ng Buwan despertou não muito tempo atrás, sua corrupção o fez odiar tudo o que antes amava. Após devastar Lambakluha, ele procurou seu antigo companheiro espiritual, Lungtian. Mas seus antigos sentimentos de companheirismo se transformaram em fúria, e ele causa vasta destruição em sua busca.
 
+### Guia de Pronúncia
 
-### Pronunciation Guide
+A tabela Pronúncias de Dayawlongon detalha como pronunciar nomes importantes nesta aventura.
 
-The Dayawlongon Pronunciations table details how to pronounce key names in this adventure.
-
-**Tabela: Dayawlongon Pronunciations**
+**Tabela: Pronúncias de Dayawlongon**
 
 |  |  |
 | --- | --- |
@@ -48,14 +51,10 @@ The Dayawlongon Pronunciations table details how to pronounce key names in this 
 | Pangil ng Buwan | pahng-IL nang BWONE |
 | Paolo | PAO-low |
 
+### Cenário da Aventura
 
-### Setting the Adventure
+Esta aventura e as ilhas do arquipélago Dayawlongon podem aparecer em qualquer cenário. A seguir estão sugestões para contextualizar a aventura em um mundo mais amplo:
 
-This adventure and the islands of the Dayawlongon archipelago can appear in any setting. The following are suggestions for contextualizing the adventure in a wider world:
+### Ganchos de Personagem
 
-
-### Character Hooks
-
-Consider the following ways to involve characters in this adventure:
-
-
+Considere as seguintes maneiras de envolver os personagens nesta aventura:

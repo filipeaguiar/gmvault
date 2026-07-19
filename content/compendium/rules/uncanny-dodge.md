@@ -1,15 +1,22 @@
 ---
-title: "Uncanny Dodge"
+title: Uncanny Dodge
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Uncanny Dodge."
+summary: 'Característica de classe: Esquiva Sobrenatural.'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Esquiva Sobrenatural
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
+A partir do 5º nível, quando um atacante que você possa ver acertar você com um ataque, você pode usar sua reação para reduzir à metade o dano do ataque contra você.

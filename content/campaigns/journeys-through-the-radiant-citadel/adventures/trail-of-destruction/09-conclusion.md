@@ -1,30 +1,33 @@
 ---
-title: "Cena 9 - Conclusion"
+title: Cena 9 - Conclusion
 weight: 90
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 9 - Conclusão
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/tlexolotl/"
+- /compendium/monsters/tlexolotl/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlexolotl-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-After the characters defeat or placate Izel, the remaining salamanders and fire snakes in the region return to the Plane of Fire. Without offerings being made to awaken the region's other tlexolotls, the volcanic threats cease, and the characters find their travels back to Etizalan free of volcanic dangers. If the warriors from Etizalan survived, they ask to accompany the characters.
+Depois que os personagens derrotam ou apaziguam Izel, os salamandras e serpentes de fogo restantes na região retornam ao Plano do Fogo. Sem oferendas sendo feitas para despertar os outros tlexolotls da região, as ameaças vulcânicas cessam, e os personagens descobrem que suas viagens de volta para Etizalan estão livres de perigos vulcânicos. Se os guerreiros de Etizalan sobreviveram, eles pedem para acompanhar os personagens.
 
-Back in Etizalan, Ameyali is eager to hear the characters' story. So long as the volcanic threats to the region have ended, she rewards the characters with 250 gp each regardless of whether her town's warriors survived. If the warriors did survive, through, local children also show the thanks of the whole community by gifting the characters a local treasure, an axolotl-shaped decanter of endless water.
+De volta em Etizalan, Ameyali está ansiosa para ouvir a história dos personagens. Contanto que as ameaças vulcânicas à região tenham terminado, ela recompensa os personagens com 250 po cada, independentemente de os guerreiros de sua cidade terem sobrevivido. Se os guerreiros sobreviveram, no entanto, as crianças locais também mostram a gratidão de toda a comunidade presenteando os personagens com um tesouro local, um decanter de água infinita em forma de axolote.
 
-If the characters fail to stop Izel's plan, the tlexolotl completes his offerings, and volcanoes across Tletepec begin erupting as numerous other tlexolotl awaken—some larger and more powerful than Izel. How the characters contribute to saving the region could be the focus of future adventures.
-
-
+Se os personagens falharem em deter o plano de Izel, o tlexolotl completa suas oferendas, e vulcões por toda Tletepec começam a entrar em erupção, conforme vários outros tlexolotls despertam — alguns maiores e mais poderosos que Izel. Como os personagens contribuem para salvar a região pode ser o foco de futuras aventuras.

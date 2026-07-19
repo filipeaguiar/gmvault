@@ -1,46 +1,50 @@
 ---
-title: "Background"
+title: Background
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Antecedentes
+visibility: gm
+status: published
+summary: Introdução e contextualização da aventura.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ollin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ollin/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/tonalli/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ollin-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ameyali-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/xocopol-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tonalli-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Volcanic eruptions have been devastating the region around the town of Etizalan. Ordinarily, scholars called the Watchers of the Ashes predict volcanic eruptions and warn local folk, mitigating loss of life. Lately though, more and more eruptions evade detection.
+Erupções vulcânicas vêm devastando a região ao redor da cidade de Etizalan. Habitualmente, estudiosos chamados Vigilantes das Cinzas preveem erupções vulcânicas e alertam a população local, reduzindo a perda de vidas. Ultimamente, porém, cada vez mais erupções escapam à detecção.
 
-Ameyali, one of Etizalan's leaders, believes the gods have grown angry and seeks to placate them. She has collected offerings from her town's people and now heads to the shrine known as the Gate of Illumination to pray for an end to the danger.
+Ameyali, uma das líderes de Etizalan, acredita que os deuses se enfureceram e busca apaziguá-los. Ela coletou oferendas de seu povo e agora se dirige ao santuário conhecido como Portal da Iluminação para rezar pelo fim do perigo.
 
-Unknown to Ameyali, dangerous Elemental creatures roam the land. Salamanders and fire snakes serve Izel, a powerful creature known as a tlexolotl. Tlexolotls, long thought to be myths, slumber within the volcanoes of Tletepec. So long as the tlexolotls are dormant, the volcanoes they slumber in are quiet. When they awaken, the volcanic dangers across Tletepec increase.
+Sem o conhecimento de Ameyali, criaturas elementais perigosas perambulam pela terra. Salamandras e serpentes de fogo servem a Izel, uma criatura poderosa conhecida como tlexolotl. Os tlexolotls, por muito tempo considerados mitos, dormitam dentro dos vulcões de Tletepec. Enquanto os tlexolotls permanecem adormecidos, os vulcões onde repousam ficam quietos. Quando despertam, os perigos vulcânicos por toda Tletepec aumentam.
 
-Izel, finding himself the only one of his kind active in the region, seeks to awaken his fellow tlexolotls. The salamanders allied with him are stealing offerings meant for the gods and plan to offer them to sleeping tlexolotls to rouse the creatures. If large enough offerings are made, the tlexolotls are sure to awaken, unleashing volcanic devastation.
+Izel, descobrindo-se o único de sua espécie ativo na região, busca despertar seus companheiros tlexolotls. As salamandras aliadas a ele estão roubando as oferendas destinadas aos deuses e planejam oferecê-las aos tlexolotls adormecidos para despertá-los. Se oferendas suficientemente grandes forem feitas, os tlexolotls certamente despertarão, desencadeando devastação vulcânica.
 
 
-### Pronunciation Guide
+### Guia de Pronúncia
 
-In Tletlahtolli, the language spoken alongside Common in Tletepec, when tl appears at the end of a word, it creates a sound like the **tl** in **subtle**, **brittle**, or **rattle**. The Tletepec Pronunciations table notes how to pronounce key names in this adventure.
+Em Tletlahtolli, o idioma falado juntamente com o Comum em Tletepec, quando *tl* aparece no final de uma palavra, cria um som como o **tl** em **subtle**, **brittle** ou **rattle**. A tabela de Pronúncias de Tletepec indica como pronunciar nomes importantes nesta aventura.
 
-**Tabela: Tletepec Pronunciations**
+**Tabela: Pronúncias de Tletepec**
 
 |  |  |
 | --- | --- |
@@ -58,13 +62,13 @@ In Tletlahtolli, the language spoken alongside Common in Tletepec, when tl appea
 | Xoxotla | shaw-SHAW-thlah |
 
 
-### Setting the Adventure
+### Configurando a Aventura
 
-Use the following suggestions to help contextualize Tletepec in a wider world:
-
-
-### Character Hooks
-
-Consider the following ways to involve characters in this adventure.
+Use as sugestões a seguir para ajudar a contextualizar Tletepec em um mundo mais amplo:
 
 
+### Ganchos de Personagens
+
+Considere as seguintes maneiras de envolver os personagens nesta aventura.
+
+...

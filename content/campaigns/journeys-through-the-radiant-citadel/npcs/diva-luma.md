@@ -1,19 +1,19 @@
 ---
-title: "Diva Luma"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Diva Luma
+draft: false
+titulo_pt_br: '*Diva Luma*'
+visibility: gm
+status: published
 tags:
-  - npc
-  - importado
+- npc
+- importado
 params:
-  kind: "npc"
-stats_meta: "Medium monstrosity, sem tendência"
+  kind: npc
+stats_meta: Medium monstrosity, sem tendência
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,6 +21,12 @@ stats:
     int: 10
     wis: 10
     cha: 10
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ![Arte: Diva Luma](/images/campaigns/journeys-through-the-radiant-citadel/045-05-005divas-attack.webp)
@@ -29,7 +35,6 @@ stats:
 
 ### Ações
 
-**Multiattack.** Diva Luma makes two high-heeled shoe attacks.
+**Ataques Múltiplos.** Diva Luma realiza dois ataques com sapato de salto alto.
 
-**High-Heeled Shoe.** mw 6 to hit, reach 5 ft., one target. {@h}6 ([[1d6+3]]) piercing damage.
-
+**Sapato de Salto Alto.** Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 1,5 m, um alvo. {@h}6 ([[1d6+3]]) dano perfurante.

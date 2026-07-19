@@ -1,19 +1,24 @@
 ---
-title: "Citadel Defenses"
+title: Citadel Defenses
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Defesas da Cidadela
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Citadel Defenses** importada automaticamente.
+Localidade **Defesas da Cidadela** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Citadel Defenses](../../adventures/the-radiant-citadel/07-citadel-defenses/)
+- [Defesas da Cidadela](../../adventures/the-radiant-citadel/07-citadel-defenses/)

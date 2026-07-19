@@ -1,19 +1,19 @@
 ---
-title: "Madam Kulp"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+title: Madam Kulp
+draft: false
+titulo_pt_br: Madam Kulp
+visibility: gm
+status: published
 tags:
-  - npc
-  - importado
+- npc
+- importado
 params:
-  kind: "npc"
-stats_meta: "Medium monstrosity, neutro"
+  kind: npc
+stats_meta: Medium monstrosity, neutro
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,10 +21,12 @@ stats:
     int: 10
     wis: 10
     cha: 10
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-![Arte: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)
-
-
-
-
+![Art: Madam Kulp](/images/campaigns/journeys-through-the-radiant-citadel/017-02-005madam-kulp.webp)

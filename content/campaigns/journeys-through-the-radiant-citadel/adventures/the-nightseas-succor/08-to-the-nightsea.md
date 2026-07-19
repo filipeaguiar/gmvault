@@ -1,62 +1,64 @@
 ---
-title: "Cena 8 - To the Nightsea"
+title: Cena 8 - To the Nightsea
 weight: 80
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: Cena 8 - Para o Mar Noturno
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/to-the-nightsea/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/to-the-nightsea/
 compendium_refs:
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/flameskull/"
-  - "/compendium/monsters/wraith/"
+- /compendium/monsters/veteran/
+- /compendium/monsters/flameskull/
+- /compendium/monsters/wraith/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/flameskull-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/flameskull-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+Não importa como os personagens passem a noite, os mesmos guardas que os levaram ao Castelo Djaynai na manhã anterior chegam à Casa de Repouso de Anadoua ao amanhecer para escoltá-los até as docas e embarcar no *Beden-Moon*. Se os personagens não ficaram na estalagem, os guardas os encontram na rua e os apressam para o navio.
 
-However the characters spend the night, the same guards who took them to Castle Djaynai the previous morning come to Anadoua's Rest House at dawn to escort them to the docks to board the *Beden-Moon*. If the characters didn't stay at the inn, the guards find them on the street and hasten them to the ship.
+Leia ou parafraseie a descrição a seguir quando os personagens chegarem às docas:
 
-Read or paraphrase the following description as the characters reach the docks:
+> Sob o céu rosado do amanhecer, uma embarcação veloz de dois mastros flutua na água azul-esverdeada. Duas figuras esguias vestindo armadura verde-azulada e capas de seda combinando estão no convés. Um parece taciturno, o outro, alegre.
 
-> Beneath the pink dawn sky, a swift-looking, double-masted vessel floats in the aquamarine water. Two wiry figures wearing green-blue armor and matching silk cloaks stand on the deck. One looks dour, the other cheerful.
+O barco é um beden-safar, uma embarcação comum em Djaynai. As figuras a bordo são Lanceiros do Lightsea, escoteiros e marinheiros locais habilidosos. Eles usam seus cabelos em dreads naturais e têm pele morena quente.
 
-The boat is a beden-safar, a common vessel in Djaynai. The figures on board are Lightsea Lancers, skilled local scouts and sailors. They wear their hair in natural locs and have warm brown skin.
+Conforme os personagens se aproximam, o Lanceiro alegre se apresenta como Gurau (neutro e bom, veterano humano). Ele é amigável e explica que os dois foram informados da missão dos personagens e estão ansiosos para ajudar. Sua companheira taciturna, Kisaroua (neutra e boa, veterana humana), encoraja os personagens a embarcarem rapidamente para que possam zarpar. Kisaroua é inicialmente mal-humorada, mas seu humor melhora com personagens que ajudam a preparar o navio, o que exige um teste de Força (Atletismo) CD 14 bem-sucedido.
 
-As the characters approach, the cheerful Lancer introduces himself as Gurau (neutral good, human veteran). He is friendly and explains that the two have been informed of the characters' mission and are eager to help. His brooding companion, Kisaroua (neutral good, human veteran), encourages the characters to board swiftly so they can embark. Kisaroua is initially sour, but her mood lightens toward characters who help prepare the ship, which requires a successful CD 14 Strength (Athletics) check.
-
-Once the *Beden-Moon* is underway, its journey takes two hours. During this time, the sailors can share with the characters any of the details about Janya from the "**Área Djaynai and Janya Gazetteer**" section.
+Quando o *Beden-Moon* está em curso, sua jornada leva duas horas. Durante esse tempo, os marinheiros podem compartilhar com os personagens quaisquer detalhes sobre Janya da seção "**Guia Geográfico de Djaynai e Janya**".
 
 
-### Preparing to Descend
+### Preparando-se para Descer
 
-The *Beden-Moon*'s journey across the calm, shallow waters known as the Lightsea is uneventful. Eventually the water darkens as the ship crosses the edge of the continental shelf, entering the Nightsea. Gurau and Kisaroua furl the sails and drop a sea anchor at what Gurau calls the gateway to Janya, an area of glassy open water that Kisaroua identifies by careful compass and sun reckonings. Gurau offers to wait for the characters and hold on to any equipment the characters don't want to take underwater.
-When the characters are ready to descend, Gurau explains what to expect.
-* The descent to Janya is approximately 4,500 feet. This should take about 4 minutes for characters who have a swimming speed of 60 feet, or 15 minutes for those who don't have a swimming speed.
-* Word has been sent ahead to Xoese-Addae, an emissary of the High Court that rules Janya. He'll meet the characters when they arrive.
-Once Gurau has shared these details, Kisaroua has little patience for lingering. She gives the characters three driftglobes and encourages them to dive into the water. She pushes in characters who tarry.
-
-
-### Beneath the Waves
-
-Schools of silvery fish swarm around the characters as they descend through the first few hundred feet of the Nightsea. Life in the sunlight zone begins to thin as the water changes from vibrant blue-green to deeper blue. Once the characters descend 500 feet, only dim light illuminates their surroundings. After the characters descend 3,000 feet, they enter an area of complete darkness.
-Unless characters are aided by magic, such as the cowrie shell necklaces from Atiba-Pa, they can't swim for a full 8 hours per day. After each hour of swimming, a character must succeed on a CD 10 Constitution saving throw or gain 1 level of exhaustion. A creature that has a swimming speed can swim all day without penalty and uses the normal Travel Pace in the Player's Handbook. The magic surrounding Janya protects visitors from being harmed or growing exhausted more swiftly because of the deep water's pressure and temperature.
-Before proceeding with the following encounters, review the rules for Underwater Combat in the Player's Handbook.
-
-### Death Helms a Ghost Ship
-
-After the party descends approximately 3,000 feet, the character who has the highest passive Wisdom (Perception) score spots something unexpected:
-> The water begins to churn. From the darkness below glides a glowing, translucent longship, its oars bringing it just below you. A cloudiness covers the deck, swirling into forms vaguely resembling people. On the foredeck, a figure resolves from the cloudiness—a transparent, rough-looking sailor in crusty scale mail, whose eyes blaze.
-The name *Girscamen* is plainly emblazoned on the ghost ship's hull. As the ship comes alongside the characters, the first mate (use the wraith stat block) is joined by four crew members who are little more than eerie light and drifting skulls (they use the flameskull stat block). At first, it appears they are searching for something—they're hunting for the haints that escaped them, Derek and Violette. Once they see the characters, however, the hostile Undead snarl challenges and attack.
-Once the Undead are destroyed, the ghost ship breaks apart as if wrecked by a spectral storm and disappears.
+A jornada do *Beden-Moon* pelas águas calmas e rasas conhecidas como Lightsea é tranquila. Eventualmente, a água escurece quando o navio cruza a borda da plataforma continental, entrando no Nightsea. Gurau e Kisaroua enrolam as velas e lançam uma âncora de mar no que Gurau chama de portal para Janya, uma área de água aberta e vítrea que Kisaroua identifica por meio de bússola e cálculos solares cuidadosos. Gurau se oferece para esperar pelos personagens e guardar qualquer equipamento que eles não queiram levar para debaixo d'água.
+Quando os personagens estão prontos para descer, Gurau explica o que esperar.
+* A descida até Janya é de aproximadamente 4.500 pés. Isso deve levar cerca de 4 minutos para personagens que têm um deslocamento de natação de 60 pés, ou 15 minutos para aqueles que não têm deslocamento de natação.
+* Uma mensagem foi enviada antecipadamente para Xoese-Addae, um emissário da Alta Corte que governa Janya. Ele encontrará os personagens quando eles chegarem.
+Assim que Gurau compartilha esses detalhes, Kisaroua tem pouca paciência para demora. Ela dá aos personagens três globos flutuantes e os encoraja a mergulharem na água. Ela empurra os personagens que demoram.
 
 
+### Sob as Ondas
+
+Cardumes de peixes prateados se aglomeram ao redor dos personagens enquanto eles descem pelos primeiros centenas de pés do Nightsea. A vida na zona de luz solar começa a diminuir conforme a água muda de azul-esverdeado vibrante para um azul mais profundo. Quando os personagens descem 500 pés, apenas luz fraca ilumina seus arredores. Depois que os personagens descem 3.000 pés, eles entram em uma área de escuridão total.
+A menos que sejam auxiliados por magia, como os colares de conchas de cauri de Atiba-Pa, eles não podem nadar por um período completo de 8 horas por dia. Após cada hora de nado, um personagem deve ser bem-sucedido em um teste de resistência de Constituição CD 10 ou ganhar 1 nível de exaustão. Uma criatura que tem deslocamento de natação pode nadar o dia todo sem penalidade e usa o ritmo de viagem normal do Livro do Jogador. A magia ao redor de Janya protege os visitantes de serem feridos ou ficarem exaustos mais rapidamente devido à pressão e temperatura da água profunda.
+Antes de prosseguir com os encontros a seguir, revise as regras para Combate Subaquático no Livro do Jogador.
+
+### A Morte Comanda um Navio Fantasma
+
+Depois que o grupo desce aproximadamente 3.000 pés, o personagem que tem o maior valor de Sabedoria (Percepção) passiva avista algo inesperado:
+> A água começa a agitar-se. Da escuridão abaixo desliza um barco longo brilhante e translúcido, cujos remos o trazem até logo abaixo de vocês. Uma nebulosidade cobre o convés, formando redemoinhos que lembram vagamente pessoas. No convés de proa, uma figura se define a partir da nebulosidade — um marinheiro transparente, de aparência rude, com cota de malha incrustada, cujos olhos brilham.
+O nome *Girscamen* está claramente estampado no casco do navio fantasma. Quando o navio se aproxima dos personagens, o primeiro imediato (use o bloco de estatísticas de espectro) é acompanhado por quatro tripulantes que são pouco mais que luz sinistra e crânios flutuantes (eles usam o bloco de estatísticas de caveira flamejante). A princípio, parece que eles estão procurando por algo — estão caçando as aparições que escaparam deles, Derek e Violette. Quando veem os personagens, no entanto, os Mortos-vivos hostis rosnam desafios e atacam.
+Quando os Mortos-vivos são destruídos, o navio fantasma se desfaz como se naufragado por uma tempestade espectral e desaparece.

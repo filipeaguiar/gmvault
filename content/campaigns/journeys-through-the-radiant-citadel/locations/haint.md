@@ -1,16 +1,21 @@
 ---
-title: "Haint"
+title: Haint
 params:
-  kind: "location"
+  kind: location
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Assombração
+visibility: gm
+status: draft
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Localidade **Haint** importada automaticamente.

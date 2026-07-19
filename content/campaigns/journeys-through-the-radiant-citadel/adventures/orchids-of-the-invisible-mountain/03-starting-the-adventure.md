@@ -1,104 +1,108 @@
 ---
-title: "Starting the Adventure"
+title: Starting the Adventure
 weight: 30
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Iniciando a Aventura
+visibility: gm
+status: published
+summary: Introduction and background of the adventure.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/
 compendium_refs:
-  - "/compendium/monsters/hawk/"
-  - "/compendium/monsters/noble/"
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/whistler/"
-  - "/compendium/magic-items/white-ghost-orchid-seed/"
+- /compendium/monsters/hawk/
+- /compendium/monsters/noble/
+- /compendium/monsters/commoner/
+- /compendium/monsters/whistler/
+- /compendium/magic-items/white-ghost-orchid-seed/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/whistler-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/noble-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-As the adventure begins, the characters are traveling to the Sarire sugar mill, most likely coming from Port Panela. If the characters seek to learn more about the region there, consult the "**Área Atagua Gazetteer**" section at the end of this adventure. From the port, the route called the Camino Rojo stretches between flamingo-filled wetlands and grassy plains covered with sugarcane fields. The surrounding flatland is hot, and few clouds provide respite from the relentless sun. The road is safe, and traders frequently pass by.
+No início da aventura, os personagens estão viajando para o engenho de açúcar Sarire, provavelmente vindos de Porto Panela. Se os personagens quiserem saber mais sobre a região ali, consultem a seção "**Guia Geográfico de Área Atagua**" no final desta aventura. Do porto, a rota chamada Caminho Rojo se estende entre pântanos repletos de flamingos e planícies gramadas cobertas de canaviais. A planície ao redor é quente, e poucas nuvens dão trégua ao sol implacável. A estrada é segura, e os comerciantes passam por ela com frequência.
 
 
-### Burning Sugar
+### Açúcar em Chamas
 
-As the Sarire sugar mill comes into view, the smell of cooking sugarcane rises on the breeze. Read or paraphrase the following text when the characters are about a quarter mile from the mill:
-> Ahead stands a sugar mill, a massive wooden shed with a pointed thatched roof. Smoke rises from its many chimneys, and the area is busy with workers sorting through piles of sugarcane.
-> An otherworldly shimmer warps the air around the mill, like a haze of silver rain that vanishes as quickly as it appears. A moment later, a scream rings out, followed by a crash. A column of smoke rises through the structure's roof.
-Workers race toward the building as smoke billows through the roof and doors. A character who succeeds on a CD 16 Intelligence (Arcana or Religion) check suspects that the shimmer in the air could have been some manner of planar disturbance.
+Quando o engenho de açúcar Sarire aparece diante dos olhos, o cheiro de cana cozinhando sobe na brisa. Leia ou parafraseie o seguinte texto quando os personagens estiverem a cerca de 400 metros do engenho:
+> Adiante, ergue-se um engenho de açúcar, um enorme galpão de madeira com um telhado pontudo de palha. Fumaça sobe de suas muitas chaminés, e a área está movimentada com trabalhadores separando pilhas de cana-de-açúcar.
+> Um brilho sobrenatural distorce o ar ao redor do engenho, como uma neblina de chuva prateada que desaparece tão rápido quanto surge. Um instante depois, um grito ecoa, seguido por um estrondo. Uma coluna de fumaça sobe através do telhado da estrutura.
+Os trabalhadores correm em direção ao prédio enquanto a fumaça sai em nuvens pelo telhado e pelas portas. Um personagem que for bem-sucedido em um teste de Inteligência (Arcanismo ou Religião) CD 16 suspeita que o brilho no ar pode ter sido algum tipo de perturbação planar.
 
-### Fire at the Mill
+### Incêndio no Engenho
 
-When the characters reach the mill, they see the full scope of the disturbance:
-> Through the broad, open doors of the mill, you see that the interior has collapsed into a great sinkhole. Large, overturned kettles spill boiling sugarcane juice across the broken floor, and the fires that once heated those kettles leap up nearby columns and race along the thatched reed roof. A half dozen workers have fallen into the sinkhole and struggle to clamber out.
-The mill is in chaos as a dozen workers make disorganized attempts to douse the fires. Over the noise, a character who has a passive Wisdom (Perception) score of 18 or higher notices an eerie, whistling emanating from no place in particular.
+Quando os personagens chegam ao engenho, eles veem a extensão total da perturbação:
+> Através das portas largas e abertas do engenho, vocês veem que o interior desabou em um grande sumidouro. Grandes caldeirões tombados derramam suco de cana fervente pelo chão quebrado, e os fogos que antes aqueciam esses caldeirões saltam sobre as colunas próximas e correm pelo telhado de junco trançado. Meia dúzia de trabalhadores caíram no sumidouro e lutam para sair de lá.
+O engenho está um caos, enquanto uma dúzia de trabalhadores faz tentativas desorganizadas de apagar os incêndios. Em meio ao ruído, um personagem que tenha uma pontuação passiva de Sabedoria (Percepção) igual ou superior a 18 nota um assobio sinistro, vindo de lugar nenhum.
 
-### Sinkhole
+### Sumidouro
 
-The opening of the sinkhole is 20 feet wide and descends into a 20-foot-deep pit. Six workers (neutral, human commoners) are at the bottom of the pit, frantically trying to climb out. Climbing the sinkhole's crumbling walls requires a successful CD 14 Strength (Athletics) check, but the panicked workers repeatedly fail to escape. A character who investigates the sinkhole and succeeds on a CD 16 Intelligence (Nature) check sees that the earth of its walls is dry and dead, like it's from somewhere else entirely.
+A abertura do sumidouro tem 6 metros de largura e desce para uma cova com 6 metros de profundidade. Seis trabalhadores (plebeus humanos, neutros) estão no fundo da cova, tentando desesperadamente sair. Escalar as paredes desmoronando do sumidouro requer um teste bem-sucedido de Força (Atletismo) CD 14, mas os trabalhadores em pânico falham repetidamente ao tentar escapar. Um personagem que investigar o sumidouro e for bem-sucedido em um teste de Inteligência (Natureza) CD 16 percebe que a terra de suas paredes está seca e morta, como se fosse de outro lugar completamente diferente.
 
-### Whistlers
+### Silvantes
 
-A moment after a character looks in the hole, two large, gaunt, bipedal figures appear within. These are creatures from the Far Realm called whistlers (detailed at the **Área end of this adventure**). They've teleported into the sinkhole and seek to feed on the trapped workers. If unimpeded, the hostile whistlers slay one worker per round, taking their time to savor the confused mortals' fear. If attacked, they teleport near their attacker and ignore the workers. The alien beings fight to the death.
+Instantes após um personagem olhar para o buraco, duas figuras bípedes, altas e emaciadas, surgem em seu interior. Essas são criaturas do Plano Distante chamadas silvantes (detalhadas no **Área final desta aventura**). Elas se teleportaram para dentro do sumidouro e procuram se alimentar dos trabalhadores presos. Se nada for feito, os silvantes hostis matam um trabalhador por rodada, tomando seu tempo para saborear o medo dos mortais confusos. Se atacados, eles se teleportam para perto de seu agressor e ignoram os trabalhadores. Os seres alienígenas lutam até a morte.
 
 
-### Mysterious Manifestations
+### Manifestações Misteriosas
 
-Once the whistlers are defeated, the threat isn't past. The mill's burning roof threatens to collapse. The characters have time to escape with the workers, but the structure gives way moments after they leave. The mill's workers can only watch as the building is consumed by flames.
-After the characters escape, another strange event occurs. Read the following description once all the characters are out of danger:
-> A tearing sound precedes the appearance of a silvery ripple hovering in the air nearby. From the anomaly, a frantic-looking scarlet macaw shoots forth, trailing silvery motes. A figure appears behind the bird, pushing as though trying to pass through, but held fast by the portal's flickering magic.
-> "Is anyone there?" a woman in a beaded vest shouts. "I can see you, but I can't get through!"
-The figure is Yarana, an Ataguan warrior lost to time. She stands on the far side of an unstable planar rift between the Material Plane and the Ghost Orchid Tepui in the Feywild. A character who succeeds on a CD 16 Intelligence (Arcana) check recognizes the planar rift, a temporary and potentially dangerous portal created by multiplanar energies, not deliberate magic. While Yarana's macaw was able to slip through, the rift is fading, preventing further passage in either direction.
-After a moment, Yarana continues:
-> "Listen, please!" the woman calls. "I'm Yarana. The Ghost Orchid Tepui is under siege by alien creatures. Chimagua, our guardian, has fallen into a deathly slumber. If the great spirit dies, all is lost. If you are brave souls, seek the tepui. Find the portal in the Llanos. Nene knows the way. But be—"
-> With a sound like breaking glass, the rift collapses and is gone.
-Characters who succeed on a CD 16 Intelligence (Arcana or History) check recognize references to the Ghost Orchid Tepui, along with any of the stories from the "**Área Legends of Atagua**" section at the end of this adventure.
-The macaw that passed through the rift squawks as he circles frantically. This is Yarana's companion, Nene. He lands on the shoulder of any character who beckons to him.
+Uma vez que os silvantes são derrotados, a ameaça ainda não passou. O telhado em chamas do engenho ameaça desabar. Os personagens têm tempo de escapar com os trabalhadores, mas a estrutura desaba momentos depois que eles saem. Os trabalhadores do engenho só podem assistir enquanto a construção é consumida pelas chamas.
+Após os personagens escaparem, outro evento estranho ocorre. Leia a descrição a seguir assim que todos os personagens estiverem fora de perigo:
+> Um som de rasgo precede o surgimento de uma ondulação prateada flutuando no ar por perto. Da anomalia, uma arara-escarlate de aparência frenética sai disparada, deixando um rastro de partículas prateadas. Uma figura aparece atrás da ave, empurrando como se tentasse passar, mas presa pela magia oscilante do portal.
+> "Tem alguém aí?" grita uma mulher usando um colete adornado com contas. "Consigo ver vocês, mas não consigo passar!"
+A figura é Yarana, uma guerreira Atagua perdida no tempo. Ela está do outro lado de uma fenda planar instável entre o Plano Material e o Tepui das Orquídeas Fantasmas, no Plano das Fadas. Um personagem que for bem-sucedido em um teste de Inteligência (Arcanismo) CD 16 reconhece a fenda planar, um portal temporário e potencialmente perigoso criado por energias multiplanares, e não por magia deliberada. Embora a arara de Yarana tenha conseguido passar, a fenda está desaparecendo, impedindo qualquer passagem adicional em ambos os sentidos.
+Após um momento, Yarana continua:
+> "Ouçam, por favor!", chama a mulher. "Sou Yarana. O Tepui das Orquídeas Fantasmas está sitiado por criaturas alienígenas. Chimagua, nosso guardião, caiu em um sono mortal. Se o grande espírito morrer, tudo estará perdido. Se vocês forem almas corajosas, procurem o tepui. Encontrem o portal nos Llanos. Nene conhece o caminho. Mas tenham—"
+> Com um som de vidro quebrando, a fenda colapsa e desaparece.
+Personagens que forem bem-sucedidos em um teste de Inteligência (Arcanismo ou História) CD 16 reconhecem as referências ao Tepui das Orquídeas Fantasmas, juntamente com quaisquer das histórias da seção "**Área Lendas de Atagua**" no final desta aventura.
+A arara que atravessou a fenda grasna enquanto circula freneticamente. Essa é Nene, a companheira de Yarana. Ela pousa no ombro de qualquer personagem que a chame.
 
 ### Nene
 
-Nene is a macaw from the Feywild. He uses the hawk stat block but has the Fey type, has Intelligence 7, and can speak and understand simple phrases and concepts in Common. Nene has a boisterous personality but is easily distracted. He can mime straightforward responses to questions, tap objects to get his point across, scratch simple images in the dirt, and so forth. The macaw is confused by the process of passing through the rift but is eager to get back to the Feywild and can lead the characters to a portal to the Ghost Orchid Tepui (see the "**Área Across the Llanos**" section).
+Nene é uma arara do Plano das Fadas. Ela usa o bloco de estatísticas de falcão, mas é do tipo Fada, tem Inteligência 7 e pode falar e entender frases e conceitos simples em Comum. Nene tem uma personalidade exuberante, mas se distrai com facilidade. Pode gesticular respostas diretas a perguntas, tocar objetos para explicar o que quer, riscar imagens simples na terra e assim por diante. A arara está confusa com o processo de atravessar a fenda, mas está ansiosa para voltar ao Plano das Fadas e pode guiar os personagens até um portal para o Tepui das Orquídeas Fantasmas (veja a seção "**Área Através dos Llanos**").
 
-![Yarana and Nene](/images/campaigns/journeys-through-the-radiant-citadel/135-14-002yarana-and-nene.webp)
-
-
-
-### The Sugar Man
-
-Though the mill can't be saved, the workers prevent the fire from spreading, and they are happy to accept the aid of any characters who want to help. As they work, several laborers whisper fearfully, claiming they saw whistlers. If asked, a worker tells the characters that whistlers are beings that emerge from the shadows, whistling a creepy tune as they steal away the unwary. They're a well-known local legend, but few have ever seen one—until now.
-Soon after the mill collapses, its owner, Alfonz "Sugar Man" Rubinaz-Zumdi, arrives on the scene, escorted by several bodyguards.
-
-### Alfonz "Sugar Man" Rubinaz-Zumdi
-
-The venerable Alfonz (neutral, human noble) reminds everyone he meets that he is the patriarch of a great estate and the landlord of every sugarcane field surrounding the city of El Caparazón. In just three generations, the razor-tongued Sugar Man has transformed his clan, the Zumdi, from farm laborers into the closest thing to nobility that Ataguan society has yet seen. From the stately old hacienda he calls the Sugar Alcázar, the Sugar Man hosts dazzling galas and subtly manipulates local farm owners and bosses from across Atagua to his service.
-
-### Assessing the Situation
-
-Workers quickly describe to Alfonz what happened. The Sugar Man asks the characters to join in the conversation, forgoing introductions to get to the heart of the situation. Use the following to guide the discussion:
-* The Sugar Man is astonished to hear of the sinkhole. He's thoughtful if the characters suggest a planar disturbance was responsible for it.
-* He pays particular attention to any report of Yarana's words. A worker mentions this to the Sugar Man if the characters don't.
-* In response to any description of the whistlers, the Sugar Man scoffs openly. He is taken aback if a character shows him evidence of a whistler.
-Once he has a grasp of the situation, the Sugar Man orders his bodyguards to help the survivors, assess the damage to the mill, and leave him to speak with the characters alone.
-
-### The Sugar Man's Offer
-
-Alfonz leads the characters into the privacy of a storehouse and thanks them for their aid. He focuses in on what Yarana told them and asks what they know about the Ghost Orchid Tepui. He can reveal any information from the "**Área Legends of Atagua**" section, but he insists that whistlers are folk tales to frighten children.
-He shares the following as he sets out an offer for the characters:
-* This Yarana person seems to think the macaw can lead the characters to the legendary Ghost Orchid Tepui. The Sugar Man wants the characters to undertake a mission for him if they find a way to that mysterious mountain.
-* Legends say that mythical plants called ghost orchids grow on the tepui. The white seed pod of a ghost orchid is said to have the power to bring the dead back to life. The Sugar Man wants the characters to bring him one of these white seed pods.
-The Sugar Man's excitement is obvious. If pressed as to why he wants the seed pod, he says only that someone dear to him was once lost, and he wishes to see that person live again. He doesn't share the details, but the Sugar Man plans to use the power of the seed pod to resurrect his son, Endis, who died a year ago. In exchange for procuring a white seed pod for him, the Sugar Man promises to pay the characters 1,250 gp each. Whether or not the characters take the Sugar Man up on his offer, Nene the macaw is anxious to return to Yarana. He begins repeating what the characters and the Sugar Man say in mocking tones until they move on.
+![Yarana e Nene](/images/campaigns/journeys-through-the-radiant-citadel/135-14-002yarana-and-nene.webp)
 
 
+
+### O Homem do Açúcar
+
+Embora o engenho não possa ser salvo, os trabalhadores impedem que o fogo se espalhe, e ficam felizes em aceitar a ajuda de quaisquer personagens que queiram auxiliar. Enquanto trabalham, vários trabalhadores sussurram com medo, afirmando ter visto silvantes. Se perguntados, um trabalhador conta aos personagens que silvantes são seres que emergem das sombras, assobiando uma melodia assustadora enquanto levam os desavisados. Eles são uma lenda local bem conhecida, mas poucos os viram — até agora.
+Logo após o desabamento do engenho, seu dono, Alfonz "Homem do Açúcar" Rubinaz-Zumdi, chega ao local, escoltado por vários guarda-costas.
+
+### Alfonz "Homem do Açúcar" Rubinaz-Zumdi
+
+O venerável Alfonz (humano nobre, neutro) faz questão de lembrar a todos que encontra que é o patriarca de uma grande propriedade e o senhorio de cada canavial ao redor de El Caparazón. Em apenas três gerações, o mordaz Homem do Açúcar transformou seu clã, os Zumdi, de trabalhadores rurais na coisa mais próxima da nobreza que a sociedade Atagua já viu. Da imponente e antiga fazenda que chama de Alcázar do Açúcar, o Homem do Açúcar promove galas deslumbrantes e sutilmente manipula os proprietários e chefes rurais de toda Atagua para seu serviço.
+
+### Avaliando a Situação
+
+Os trabalhadores rapidamente descrevem a Alfonz o que aconteceu. O Homem do Açúcar convida os personagens a participar da conversa, dispensando apresentações para ir direto ao cerne da situação. Use as orientações a seguir para conduzir a discussão:
+* O Homem do Açúcar fica surpreso ao ouvir sobre o sumidouro. Ele fica pensativo se os personagens sugerirem que uma perturbação planar foi responsável por ele.
+* Ele presta atenção especial a qualquer relato das palavras de Yarana. Um trabalhador menciona isso ao Homem do Açúcar se os personagens não o fizerem.
+* Em resposta a qualquer descrição dos silvantes, o Homem do Açúcar zomba abertamente. Ele fica estupefato se um personagem lhe mostrar evidências de um silvante.
+Assim que entende a situação, o Homem do Açúcar ordena que seus guarda-costas ajudem os sobreviventes, avaliem os danos ao engenho e o deixem a sós para falar com os personagens.
+
+### A Oferta do Homem do Açúcar
+
+Alfonz conduz os personagens para a privacidade de um armazém e agradece pela ajuda. Ele se concentra no que Yarana lhes contou e pergunta o que sabem sobre o Tepui das Orquídeas Fantasmas. Ele pode revelar qualquer informação da seção "**Área Lendas de Atagua**", mas insiste que os silvantes são contos populares para assustar crianças.
+Ele compartilha o seguinte ao expor uma oferta para os personagens:
+* Essa tal Yarana parece achar que a arara pode guiar os personagens ao lendário Tepui das Orquídeas Fantasmas. O Homem do Açúcar quer que os personagens realizem uma missão para ele, caso encontrem um caminho para aquela montanha misteriosa.
+* As lendas dizem que plantas míticas chamadas orquídeas fantasmas crescem no tepui. Diz-se que a vagem branca de uma orquídea fantasma tem o poder de trazer os mortos de volta à vida. O Homem do Açúcar quer que os personagens lhe tragam uma dessas vagens brancas.
+A empolgação do Homem do Açúcar é evidente. Se pressionado sobre o motivo pelo qual deseja a vagem, ele diz apenas que alguém querido para ele outrora se perdeu, e deseja ver essa pessoa viver novamente. Ele não compartilha os detalhes, mas o Homem do Açúcar planeja usar o poder da vagem para ressuscitar seu filho, Endis, que morreu há um ano. Em troca da obtenção de uma vagem branca para ele, o Homem do Açúcar promete pagar aos personagens 1.250 po cada. Independentemente de os personagens aceitarem ou não a oferta do Homem do Açúcar, Nene, a arara, está ansiosa para voltar para Yarana. Ela começa a repetir o que os personagens e o Homem do Açúcar dizem em tons de deboche até que eles sigam em frente.

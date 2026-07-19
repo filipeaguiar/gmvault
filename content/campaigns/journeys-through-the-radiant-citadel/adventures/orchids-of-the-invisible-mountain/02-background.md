@@ -1,88 +1,90 @@
 ---
-title: "Background"
+title: Background
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Antecedentes
+visibility: gm
+status: published
+summary: Introduction and background of the adventure.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The land of Atagua shares a connection to the Ghost Orchid Tepui, a mysterious region of the Feywild. That realm's serpentine protector, the spirit Chimagua, was fond of mortals and would bestow visions upon the folk of Atagua. However, when Atagua fell to invaders from a distant land, visions from Chimagua ended. The sages known as the Green Doctors sought to reconnect the land to the Feywild, but their attempts failed and weakened the planar fabric around Atagua. Soon, the region's people began experiencing terrible nightmares that gradually began manifesting in the form of terrifying creatures connected to an inscrutable Far Realm entity known as the Drought Elder. Horrified by their mistake, the Green Doctors scrambled to push back the eldritch creatures with a hastily woven magical ward.
+A terra de Atagua compartilha uma conexão com o Tepui da Orquídea Fantasma, uma região misteriosa de Faéria. O espírito protetor serpentino daquele reino, Chimagua, gostava dos mortais e concedia visões ao povo de Atagua. No entanto, quando Atagua caiu para invasores de uma terra distante, as visões de Chimagua cessaram. Os sábios conhecidos como os Doutores Verdes buscaram reconectar a terra a Faéria, mas suas tentativas falharam e enfraqueceram o tecido planar ao redor de Atagua. Em breve, o povo da região começou a ter pesadelos terríveis que gradualmente começaram a se manifestar na forma de criaturas aterrorizantes conectadas a uma entidade insondável do Reino Distante conhecida como o Ancião da Seca. Horrorizados com seu erro, os Doutores Verdes se apressaram para repelir as criaturas sobrenaturais com uma proteção mágica improvisada às pressas.
 
-Today, though Atagua is independent again, its magical ward has finally collapsed. The influence of the Drought Elder seeps in to Atagua once more. For years, this corruption has manifested only as dreams or the rare otherworldly predator, but recently more beings from the Far Realm have begun to slip into Atagua. Only the return of the spirit Chimagua might save the land, but all is not as it should be at the Ghost Orchid Tepui. Unless Atagua's ancient connection to the Feywild is restored, creatures from the Far Realm will overrun the land.
+Hoje, embora Atagua seja independente novamente, sua proteção mágica finalmente entrou em colapso. A influência do Ancião da Seca infiltra-se em Atagua mais uma vez. Por anos, essa corrupção se manifestou apenas como sonhos ou como um raro predador de outro mundo, mas recentemente mais seres do Reino Distante começaram a adentrar Atagua. Apenas o retorno do espírito Chimagua pode salvar a terra, mas nem tudo está como deveria no Tepui da Orquídea Fantasma. A menos que a conexão ancestral de Atagua com Faéria seja restaurada, criaturas do Reino Distante dominarão a terra.
 
 
-### Pronunciation Guide
+### Guia de Pronúncia
 
-The Atagua Pronunciations table shows how to pronounce key names in this adventure.
+A tabela de Pronúncias de Atagua mostra como pronunciar os nomes-chave nesta aventura.
 
-**Tabela: Atagua Pronunciations**
+**Tabela: Pronúncias de Atagua**
 
 |  |  |
 | --- | --- |
 | Alfonz Rubinaz-Zumdi | AL-fonz ru-BIN-ahz ZUM-dee |
 | Atagua | ah-TAH-gwah |
-| Camino Rojo | kah-MEE-no RO-ho |
+| Caminho Vermelho | kah-MEE-no RO-ho |
 | Chimagua | chee-MAH-gwah |
 | Cht-Chak | chit-CHAK |
-| El Caparazón | ehl kah-pah-rah-ZONE |
-| Llanos | YAH-nose |
+| A Carapaça | ehl kah-pah-rah-ZONE |
+| Planícies | YAH-nose |
 | Melecio | may-LAY-see-o |
-| Nene | NAY-nay |
+| Nenê | NAY-nay |
 | Phik-Pik | fik-PIK |
 | Sarire | sah-REE-ray |
 | Tepui | teh-PUH-wee |
 | Yarana | yah-RAH-nah |
 
 
-### Setting the Adventure
+### Ambientando a Aventura
 
-When preparing to run this adventure, use the following suggestions to help contextualize Atagua in a wider world:
-
-
-### Character Hooks
-
-Consider the following ways to involve characters in this adventure:
+Ao se preparar para conduzir esta aventura, use as seguintes sugestões para ajudar a contextualizar Atagua em um mundo mais amplo:
 
 
-### Dreams and Portents
+### Ganchos para Personagens
 
-Strange dreams are common in Atagua, the result of psychic energies from the Feywild and Far Realm. Whenever a character sleeps or meditates while in Atagua, roll on the Dreams in Atagua table to determine if they have a strange vision.
+Considere as seguintes maneiras de envolver os personagens nesta aventura:
 
-**Tabela: Dreams in Atagua**
+
+### Sonhos e Presságios
+
+Sonhos estranhos são comuns em Atagua, resultado de energias psíquicas de Faéria e do Reino Distante. Sempre que um personagem dormir ou meditar enquanto estiver em Atagua, role na tabela Sonhos em Atagua para determinar se ele tem uma visão estranha.
+
+**Tabela: Sonhos em Atagua**
 
 |  |  |
 | --- | --- |
-| 1–4 | No dream |
-| 5 | You are swimming up a sky-high waterfall. |
-| 6 | Orchids speak to you in the voices of fallen friends. |
-| 7 | A thri-kreen entrusts you with a crown of feathers. |
-| 8 | While you watch, one thousand weavers stitch together a massive hammock. |
-| 9 | A friend you haven't seen in years walks backward alongside you on a bridge of leaves. |
-| 10 | A snake twists around a massive centipede, the two struggling for dominance. |
+| 1–4 | Nenhum sonho |
+| 5 | Você está nadando em uma cachoeira que alcança o céu. |
+| 6 | Orquídeas falam com você nas vozes de amigos caídos. |
+| 7 | Um thri-kreen confia a você uma coroa de penas. |
+| 8 | Enquanto você observa, mil tecelões costuram juntos uma enorme rede de descanso. |
+| 9 | Um amigo que você não vê há anos caminha de costas ao seu lado em uma ponte de folhas. |
+| 10 | Uma serpente se enrola em torno de uma centopeia gigantesca, ambas lutando pelo domínio. |
 
 
-### Unreality
+### Irrealidade
 
 
-![The Grassroads span the vast savannas and forests of Atagua, a boon to both travelers and predators](/images/campaigns/journeys-through-the-radiant-citadel/134-14-001grassroads.webp)
+![As Estradas de Grama percorrem as vastas savanas e florestas de Atagua, um benefício tanto para viajantes quanto para predadores](/images/campaigns/journeys-through-the-radiant-citadel/134-14-001grassroads.webp)
 
-Atagua is influenced by dreams from the Feywild and nightmares from the Far Realm. Throughout the adventure, highlight how the Feywild has influenced the land, with vegetation and animals demonstrating friendly or capricious behavior, the sun rising amid a psychedelic dawn, or characters experiencing random instances of good luck. Meanwhile, Far Realm energies manifest as eyes staring from the dark, insidious insects, or misshapen silhouettes looming in the distance. The land's fraying planar boundaries might also allow glimpses into other planes or ghostly appearances of strange figures. Let Atagua's place between the real and surreal inspire your descriptions.
-
-
+Atagua é influenciada por sonhos de Faéria e pesadelos do Reino Distante. Ao longo da aventura, destaque como Faéria influenciou a terra, com vegetação e animais demonstrando comportamento amigável ou caprichoso, o sol nascendo em meio a um amanhecer psicodélico, ou personagens experimentando ocorrências aleatórias de boa sorte. Enquanto isso, as energias do Reino Distante se manifestam como olhos encarando da escuridão, insetos insidiosos ou silhuetas disformes surgindo à distância. Os limites planares desgastados da terra também podem permitir vislumbres de outros planos ou aparições fantasmagóricas de figuras estranhas. Deixe a situação de Atagua entre o real e o surreal inspirar suas descrições.

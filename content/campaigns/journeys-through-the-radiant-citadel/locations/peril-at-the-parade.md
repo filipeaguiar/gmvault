@@ -1,16 +1,22 @@
 ---
-title: "Peril at the Parade"
+title: Peril at the Parade
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Perigo no Desfile
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-047-map-51-parade-route-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-047-map-51-parade-route-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Localidade **Peril at the Parade** importada automaticamente.
@@ -22,4 +28,3 @@ Localidade **Peril at the Parade** importada automaticamente.
 
 #### 047 51 Parade Route Player
 ![047 51 Parade Route Player](/images/campaigns/journeys-through-the-radiant-citadel/047-map-51-parade-route-player.webp)
-

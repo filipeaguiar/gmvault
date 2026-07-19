@@ -1,31 +1,31 @@
 ---
-title: "Cena 9 - Conclusion"
+title: Cena 9 - Conclusion
 weight: 90
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 9 - Conclusão
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/serapio/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paloma/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+Se os personagens trouxerem Serapio vivo para Doña Rosa, ela chora de gratidão e os agradece profusamente. Se Serapio ainda estiver sob controle corruptor, Doña Rosa busca ajuda dos arquimagos da Congregação Argêntea — a academia local de usuários de magia — que são capazes de pôr fim à sua aflição e, assim, encerrar a maldição sobre todas as vítimas do sereno.
 
-If the characters bring Serapio to Doña Rosa alive, she weeps with gratitude and thanks them profusely. If Serapio is still under fiendish control, Doña Rosa seeks aid from the archmages of the Argent Congregation—the local academy of magic-users—who are able to put an end to his affliction and so end the curse on all victims of sereno.
+Se Serapio for morto enquanto estiver sob controle corruptor, os personagens ouvem um grito arrepiante enquanto sua alma é arrastada para o Abismo. Todas as vítimas do sereno são imediatamente libertadas da maldição, mas Doña Rosa cai em desespero e se recusa a falar com os personagens novamente.
 
-If Serapio is slain while under fiendish control, the characters hear a blood-curdling scream as his soul is dragged into the Abyss. All the victims of sereno are immediately freed from the curse, but Doña Rosa falls into despair and refuses to speak to the characters again.
-
-When the fiend is defeated, Paloma grants the characters their promised reward when they return to Milpazul. She also invites them to join her outlaw gang. The villagers freed from sereno's effects also express their gratitude to the characters.
-
-
+Quando o corruptor é derrotado, Paloma concede aos personagens a recompensa prometida quando eles retornam a Milpazul. Ela também os convida a se juntar à sua gangue fora da lei. Os aldeões libertados dos efeitos do sereno também expressam sua gratidão aos personagens.

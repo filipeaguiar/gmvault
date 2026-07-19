@@ -1,97 +1,125 @@
 ---
-title: "Cena 5 - Ghost Orchid Tepui"
+title: Cena 5 - Ghost Orchid Tepui
 weight: 50
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 5 - Tepui da Orquídea Fantasma
+visibility: gm
+status: published
+summary: '```xml
+
+  <Cena operacional para conduzir na sessão>
+
+  ```
+
+
+  Localização: Câmara de Vigília Abissal - Borda do mundo do Abismo.
+
+  Objetivo: Recuperar a Centelha Astral da Eternidade para completar o ritual de selamento planar.
+
+
+  Inimigos:
+
+  - Thal''korr, o Vínculo do Caos (utilizar bloco de Lorde Demônio, ajustar pontos de vida para 350)
+
+  - 3x Devoradores de Mundos (utilizar bloco Devorador de Mundos)
+
+  - 2x Cultistas do Fim Sombrio (utilizar bloco Arquimago)
+
+
+  A câmara pulsa com energia profana quando vocês entram. Cinco altares formam um pentagrama protegido por uma cúpula translúcida de força aprimorada (CD 22 para dissipar, 100 PV, imunidade a dano não mágico), no centro a Centelha Astral flutua sobre poço de trevas líquidas que anulam magicamente (ZXQ: campos antimagia). Thal''korr finaliza ritual flutuando entre os Devoradores enquanto os Cultistas mantêm a barreira protetora. O chão vibra com o despertar do Devorador de Mundos Supremo.
+
+
+  "Vocês ousam interromper a consumação de todos os mundos! Esmagá-los-ei com a força do próprio vazio!" - Thal''korr conjura seu machado de caos puro e ordena que seus lacaios matem todos. O tempo é crítico: em 1d4+1 rodadas o ritual completa e TUDO será destruído.
+
+
+  A Batalha Épica Final começa diante de vocês, heróis! O destino de todos os planos está em suas mãos. Rolem iniciativa e preparem-se para a última luta contra a aniquilação absoluta!'
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/ghost-orchid-tepui/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/ghost-orchid-tepui/
 compendium_refs:
-  - "/compendium/monsters/cloaker/"
-  - "/compendium/monsters/displacer-beast/"
+- /compendium/monsters/cloaker/
+- /compendium/monsters/displacer-beast/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/displacer-beast-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-138-map-141-ghost-orchid-tepui-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/displacer-beast-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-138-map-141-ghost-orchid-tepui-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-When a character enters the giant termite mound in the Llanos, read the following description:
+Quando um personagem entra no monte do cupinzeiro gigante nos Llanos, leia a seguinte descrição:
 
-> The Llanos vanishes, replaced by the earthy scent of jungle. As you emerge through a hollow in a large tree, thick rain forest vegetation surrounds you. Heavy mist hangs in the air, obscuring the top of a spire rising hundreds of feet into the sky, no more than a hundred feet away. A roaring waterfall cascades down the tepui, and a well-trodden path twists toward it through the trees.
+> Os Llanos desaparecem, substituídos pelo aroma terroso da selva. Conforme você emerge por uma cavidade em uma grande árvore, uma vegetação densa de floresta tropical o cerca. Uma névoa pesada paira no ar, obscurecendo o topo de um pináculo que se eleva a centenas de metros no céu, a não mais de trinta metros de distância. Uma cachoeira caudalosa despenca pelo tepui, e uma trilha bem percorrida serpenteia em direção a ela por entre as árvores.
 
-Upon passing through the portal, the characters arrive at the Ghost Orchid Tepui, a mysterious corner of the Feywild. This tiny realm stretches about a mile in all directions around the tepui—a steep, pale, flat-topped mountain. Around and atop the mountain is a lush rain forest full of mist, colorful flora, and curious insects. Creatures that wander into the rain forest find it increasingly dense and difficult to traverse. After an hour of travel, creatures emerge near the Ghost Orchid Tepui no matter which direction they were headed.
+Ao atravessar o portal, os personagens chegam ao Tepui da Orquídea Fantasma, um canto misterioso das Terras Feéricas. Este reino minúsculo se estende por cerca de um quilômetro e meio em todas as direções ao redor do tepui — uma montanha íngreme, clara, de topo plano. Ao redor e no topo da montanha, há uma floresta tropical exuberante, cheia de névoa, flora colorida e insetos curiosos. Criaturas que vagueiam pela floresta tropical a acham cada vez mais densa e difícil de atravessar. Após uma hora de viagem, as criaturas emergem perto do Tepui da Orquídea Fantasma, independentemente da direção para a qual estavam indo.
 
-With a shriek, Nene encourages the characters to proceed down the path toward the tepui. He then flies up the side of the tepui and over the top.
+Com um grito, Nene incentiva os personagens a prosseguir pela trilha em direção ao tepui. Ele então voa pela encosta do tepui e sobre o topo.
 
+### Localidades do Tepui
 
-### Tepui Locations
+As localidades a seguir estão indicadas no mapa 14.1.
 
-The following locations are keyed to map 14.1.
+![Mapa 14.1: Tepui da Orquídea Fantasma](/images/campaigns/journeys-through-the-radiant-citadel/137-map-141-ghost-orchid-tepui.webp)
 
-![Map 14.1: Ghost Orchid Tepui](/images/campaigns/journeys-through-the-radiant-citadel/137-map-141-ghost-orchid-tepui.webp)
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/138-map-141-ghost-orchid-tepui-player.webp)
 
+### A1: Lagoa da Cachoeira
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/138-map-141-ghost-orchid-tepui-player.webp)
+Conforme os personagens se aproximam da base do tepui, leia ou parafraseie o seguinte:
+> A trilha termina em uma clareira diante de uma cachoeira imensa. Ela despenca pelos penhascos do tepui para dentro de uma lagoa coberta por um lodo oleoso e cinzento. Uma névoa densa paira sobre a lagoa.
+A água da lagoa, da cachoeira e do riacho que as alimenta na **Área A4** foi corrompida magicamente, fazendo com que as criaturas que a tocam apodreçam rapidamente. Qualquer criatura que entrar na água pela primeira vez em um turno ou que começar seu turno na água sofre 44 ([[8d10]]) de dano necrótico. Um personagem que investigar a água e for bem-sucedido em um teste de Inteligência (Natureza) de CD 16, ou que testar a água submergindo qualquer tipo de material orgânico, reconhece a corrupção mágica da água. A magia *detectar magia* revela que a água tem uma aura de magia necromântica.
 
+### A2: Estátua Ancestral
 
-### A1: Waterfall Pool
+> Uma pequena plataforma de pedra se ergue da borda da lagoa, sustentando uma estátua de quartzo, maior que o tamanho natural, de um sacerdote elfo com braços estendidos.
+As ruínas aqui pertencem a uma tribo élfica que outrora habitou esta região. Eles partiram há muito tempo, mas deixaram para trás uma estátua de um curandeiro esquecido.
 
-As the characters approach the base of the tepui, read or paraphrase the following:
-> The path ends at a clearing before an immense waterfall. It cascades down the tepui's cliffs into a pool coated with oily, gray slime. Dense mist hangs above the pool.
-The water of the pool, the waterfall, and the stream that feeds them in **Área area A4** has been magically tainted, causing creatures that touch it to rapidly decay. Any creature that enters the water for the first time on a turn or that starts its turn in the water takes 44 ([[8d10]]) necrotic damage. A character who investigates the water and succeeds on a CD 16 Intelligence (Nature) check, or who tests the water by submerging any sort of organic material, recognizes the water's magical corruption. The detect magic spell reveals that the water has an aura of necromantic magic.
+### Cloakers
 
-### A2: Ancient Statue
+Dois cloakers pálidos que falam Comum e Élfico agarram-se às costas da estátua, disfarçando-se como asas de couro. Quando uma criatura se aproxima da estátua, os cloakers se revezam para posar como o espírito da estátua. Eles se oferecem para abençoar qualquer personagem que mostre sua pureza banhando-se na lagoa. Um personagem que for bem-sucedido em um teste de Sabedoria (Intuição) disputado pelo teste de Carisma (Enganação) dos cloakers reconhece que o "espírito" está um pouco ansioso demais com seu pedido. Além disso, um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) de CD 18 percebe que as vozes estão vindo de trás da estátua. Os cloakers atacam quando uma criatura se aproxima a 1,5 metro da estátua ou quando fica claro que ninguém está caindo em suas mentiras.
 
-> A small stone platform rises from the edge of the pool, supporting a larger-than-life quartz statue of an elf priest with outstretched arms.
-The ruins here belong to an elven tribe that once dwelled in this region. They moved on long ago but left behind a statue of a forgotten healer.
+### Estátua
 
-### Cloaker
+Um espírito realmente permanece na estátua. Uma vez que os cloakers são derrotados, a estátua brilha fracamente. A primeira criatura ferida a tocar a estátua recupera 45 ([[10d8]]) pontos de vida. Uma vez que a estátua cura uma criatura, seu brilho se desvanece e o espírito parte.
 
-Two pale cloakers that can speak Common and Elvish cling to the statue's back, disguising themselves as leathery wings. When a creature nears the statue, the cloakers take turns posing as the spirit of the statue. They offer to bless any character who shows their purity by bathing in the pool. A character who succeeds on a Wisdom (Insight) check contested by the cloakers' Charisma (Deception) check recognizes that the "spirit" is a little too eager with its request. Additionally, a character who succeeds on a CD 18 Wisdom (Perception) check realizes the voices are coming from behind the statue. The cloakers attack when a creature comes within 5 feet of the statue or it's clear no one's buying their lies.
+### A3: Subida da Cachoeira
 
-### Statue
+As paredes do tepui se elevam por 300 metros, mas oferecem apoios abundantes, tornando o tepui fácil de escalar sem um teste de atributo. A água da cachoeira é mortal, conforme descrito na **Área A1**.
 
-A spirit actually does linger in the statue. Once the cloakers are defeated, the statue glows faintly. The first injured creature to touch the statue regains 45 ([[10d8]]) hit points. Once the statue heals a creature, its glow fades and the spirit departs.
+### Névoa Contaminada
 
-### A3: Waterfall Ascent
+Um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) de CD 14 nota que a névoa ao redor do tepui fica mais espessa a 30 metros de altura e tem um leve tom esverdeado. Esta névoa tem 15 metros de espessura e se estende por 30 metros a partir da parede do penhasco. Criaturas que entrarem na névoa devem ser bem-sucedidas em um teste de resistência de Constituição de CD 15 ou serão infectadas com podridão visual (detalhada no Livro do Mestre). Vento forte dispersa a névoa por 1 minuto, enquanto remover sua fonte nas Cavernas de Cristal faz a névoa desaparecer.
 
-The walls of the tepui rise 1,000 feet but boast plentiful handholds, making the tepui easy to climb without an ability check. The waterfall's water is deadly, as described in **Área area A1**.
+### Através das Quedas
 
-### Tainted Mist
+Personagens que tiverem um valor de Sabedoria (Percepção) passiva de 20 ou mais, ou que passarem através da cachoeira para ver o que há por trás dela, encontram uma borda a cerca de 30 metros do solo. Sobre a borda, repousa um esqueleto élfico. Na mochila mofada do esqueleto, há um fragmento de cristal branco (valendo 300 po), uma adaga de veneno e uma poção de invulnerabilidade.
 
-A character who succeeds on a CD 14 Wisdom (Perception) check notes that the mist surrounding the tepui grows thicker 100 feet up and has a faint green tinge. This mist is 50 feet thick and extends 100 feet from the cliff wall. Creatures that enter the mist must succeed on a CD 15 Constitution saving throw or become infected with sight rot (detailed in the Dungeon Master's Guide). Strong wind disperses the mist for 1 minute, while removing its source in the Crystal Caves causes the mist to vanish.
+### A4: Planalto do Tepui
 
-### Through the Falls
+> O topo da montanha é coberto por uma vegetação de floresta tropical verde brilhante. Um riacho profundo corta a folhagem, correndo ao longo de um cume antes de despencar pela borda do tepui. Uma trilha desaparece através de uma fenda no cume, com vapor verde e baixo ondulando ao longo do caminho. Acima, um navio destroçado oscila no topo de uma borda mais alta.
+As águas do riacho são mortais, conforme detalhado na **Área A1**.
+A fenda no cume é a abertura para um desfiladeiro curto e estreito. Dentro dele, encontra-se uma caverna com vapor de tom esverdeado fluindo dela. Esta passagem leva à **Área C1** das **Cavernas de Cristal** (veja abaixo) e à fonte do gás. Uma criatura que entrar nesta trilha de gás ou na caverna das Cavernas de Cristal sofre os efeitos da névoa, conforme detalhado na área A3.
+Assim que os personagens chegam, Nene esvoaça animadamente em direção à fenda no cume, conduzindo-os para a entrada das Cavernas de Cristal enquanto evita o vapor tóxico.
 
-Characters who have a passive Wisdom (Perception) score of 20 or higher, or who pass through the waterfall to see what's behind it, find a ledge about 100 feet from the ground. Upon the ledge rests an elf skeleton. In the skeleton's moldy backpack is a shard of white crystal (worth 300 gp), a dagger of venom, and a potion of invulnerability.
+### A5: Aeronave Caída
 
-### A4: Tepui Plateau
+Uma aeronave caída repousa precariamente no topo do tepui. Aqueles que subirem mais 9 metros pela encosta da montanha alcançam o convés da embarcação destroçada.
+> Vinhas cobrem o casco destroçado do navio. Pouco mais que um convés mofado e mastros derrubados restam. Pedaços de corda desfiada e largos retalhos de tecido de retalhos estão espalhados pelo convés.
+Esta aeronave encontrou seu caminho para o Tepui da Orquídea Fantasma décadas atrás e ficou encalhada. Não há evidências de seu antigo proprietário. Um personagem que for bem-sucedido em um teste de Inteligência (Investigação) de CD 18 deduz que os retalhos de tecido e corda são tudo o que resta de um balão semelhante a um dirigível do qual o navio estava suspenso.
 
-> The top of the mountain is covered by brilliant green rain forest vegetation. A deep stream cuts through the foliage, running alongside a ridge before cascading off the tepui's edge. A trail vanishes through a cleft in the ridge, with low, green vapor billowing along the path. Above, a shattered ship teeters atop a higher ledge.
-The stream's waters are deadly, as detailed in **Área area A1**.
-The cleft in the ridge is the opening to a short, narrow canyon. Within lies a cave with green-tinged vapor flowing from it. This passage leads to **Área area C1** of the **Área Crystal Caves** (see below) and the source of the gas. A creature that enters this trail of gas or the cave into the Crystal Caves suffers the effects of the mist, as detailed in area A3.
-As soon as the characters arrive, Nene flutters excitedly toward the cleft in the ridge, leading them toward the entrance to the Crystal Caves while avoiding the toxic vapor.
+### Abaixo do Convés
 
-### A5: Crashed Airship
+Os conveses inferiores do navio estão esmagados, criando um espaço estreito e em ruínas entre o convés superior sobrevivente e a pedra abaixo. Uma fera deslocadora sonolenta faz sua toca neste espaço apertado, acessando-o através de uma abertura na parte norte do casco. A criatura é indiferente aos personagens e tenta se esconder deles se permanecerem no convés. Ela tenta fugir se for encurralada dentro de sua toca.
 
-A crashed airship rests precariously atop the tepui. Those who ascend an additional 30 feet up the mountainside reach the deck of the shattered vessel.
-> Vines cover the ship's shattered hull. Little more than a moldy deck and toppled masts remains. Bits of frayed rope and broad scraps of patchwork fabric litter the deck.
-This airship found its way to the Ghost Orchid Tepui decades ago and became stranded. There is no evidence of its former owner. A character who succeeds on a CD 18 Intelligence (Investigation) check surmises that the scraps of fabric and rope are all that remains of a blimp-like balloon the ship was once suspended from.
+### Tesouro
 
-### Below Decks
-
-The ship's lower decks are crushed, creating a narrow, crumbling space between the surviving upper deck and the stone below. A drowsy displacer beast makes its den in this tight space, accessing it via a gap in the northern part of the hull. The creature is indifferent to the characters and attempts to hide from them if they remain on deck. It tries to flee if cornered within its den.
-
-### Treasure
-
-Bones and scraps of hide litter the displacer beast's den. Characters who search through the debris find an electrum septum piercing worth 150 gp and a set of dimensional shackles.
-
-
+Ossos e pedaços de couro estão espalhados pela toca da fera deslocadora. Personagens que vasculharem os destroços encontram um piercing de septo de electro valendo 150 po e um par de grilhões dimensionais.

@@ -1,19 +1,19 @@
 ---
-title: "Atiba-Pa"
+title: Atiba-Pa
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Atiba-Pa
+visibility: gm
+status: draft
 tags:
-  - npc
-  - importado
+- npc
+- importado
 params:
-  kind: "npc"
-stats_meta: "Medium humanoid, leal e bom"
+  kind: npc
+stats_meta: Medium humanoid, leal e bom
 stats:
-  ac: "10"
-  hp: "10"
-  speed: "30 ft."
+  ac: '10'
+  hp: '10'
+  speed: 30 ft.
   attributes:
     str: 10
     dex: 10
@@ -21,10 +21,12 @@ stats:
     int: 10
     wis: 10
     cha: 10
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-![Arte: Atiba-Pa](/images/campaigns/journeys-through-the-radiant-citadel/115-12-002regent-atiba-pa.webp)
-
-
-
-
+/images/campaigns/journeys-through-the-radiant-citadel/115-12-002regent-atiba-pa.webp

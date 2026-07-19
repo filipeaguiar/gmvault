@@ -1,19 +1,24 @@
 ---
-title: "After the Ashes"
+title: After the Ashes
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Depois das Cinzas
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **After the Ashes** importada automaticamente.
+Localidade **Após as Cinzas** importada automaticamente.
 
-### Cenas e Sub-áreas
-- [After the Ashes](../../adventures/shadow-of-the-sun/07-after-the-ashes/)
+### Cenas e Subáreas
+- [Após as Cinzas](../../adventures/shadow-of-the-sun/07-after-the-ashes/)

@@ -1,166 +1,170 @@
 ---
-title: "Starting the Adventure"
+title: Starting the Adventure
 weight: 30
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Iniciando a Aventura
+visibility: gm
+status: published
+summary: Nas fronteiras ermas do reino, onde as montanhas tocam o céu e o vento sussurra segredos ancestrais, uma sombra despertou de seu sono milenar. Os aldeões de Monteprata, aninhados no sopé da Cordilheira Enevoada, falam em vozes trêmulas sobre desaparecimentos misteriosos e luzes dançantes nas profundezas da floresta. O velho sábio da taverna murmura sobre uma antiga profecia, enquanto mercadores desviam suas rotas, temerosos do que se esconde além das colinas. Neste cenário de mistério e perigo iminente, um grupo de heróis improváveis se encontra na encruzilhada do destino, prestes a embarcar em uma jornada que os levará das pacatas estradas rurais aos salões esquecidos das profundezas, onde o mal ancestral aguarda sua chance de renascer.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/farmer/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kianna/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/tungsten-ward/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kianna/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/tungsten-ward/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lady-dre/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/
 compendium_refs:
-  - "/compendium/monsters/cultist/"
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/acolyte/"
-  - "/compendium/monsters/scout/"
+- /compendium/monsters/cultist/
+- /compendium/monsters/commoner/
+- /compendium/monsters/acolyte/
+- /compendium/monsters/scout/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tungsten-ward-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/aunt-dellie-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/farmer-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kianna-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tungsten-ward-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lady-dre-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/cultist-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The adventure begins when the characters arrive in the town of Promise or, if they are already there, as they explore the Awakening Festival. Read or paraphrase the following to set the scene:
+A aventura começa quando os personagens chegam à cidade de Promise ou, se já estiverem lá, enquanto exploram o Festival do Despertar. Leia ou parafraseie o seguinte para definir a cena:
 
-> In the town of Promise, the annual Awakening Festival is underway, and the streets are alive with vibrant music. As the history of the land is recounted through song, musicians play instruments of many kinds. Their performances meld together as passersby join in during choruses, uniting the entire community in a single collective celebration.
+> Na cidade de Promise, o Festival do Despertar anual está em pleno andamento, e as ruas estão vibrantes com música animada. Enquanto a história da terra é recontada através de canções, músicos tocam instrumentos de vários tipos. Suas apresentações se misturam enquanto os transeuntes se juntam durante os refrões, unindo toda a comunidade em uma única celebração coletiva.
 
-Anyone on the streets of Promise during the Awakening Festival hears what the locals call the *Awakening Song*, a collection of songs recounting local histories. Characters who spend an hour exploring the festival learn much about the history of the land. They also have advantage on Intelligence (History) checks related to the *Awakening Song* made for the rest of the adventure.
+Qualquer pessoa nas ruas de Promise durante o Festival do Despertar ouve o que os locais chamam de *Canção do Despertar*, uma coleção de canções que recontam histórias locais. Personagens que passam uma hora explorando o festival aprendem muito sobre a história da terra. Eles também têm Vantagem em testes de Inteligência (História) relacionados à *Canção do Despertar* feitos pelo restante da aventura.
 
-During the festival, stalls throughout the community sell local crafts, musical instruments, and street foods. Small straw dolls wearing colorful shirts and dresses are widely available for 5 cp each. A doll can be made to resemble the buyer for 7 cp. The dolls are a popular local craft and nothing more.
+Durante o festival, barracas por toda a comunidade vendem artesanato local, instrumentos musicais e comidas de rua. Pequenas bonecas de palha vestindo camisas e vestidos coloridos estão amplamente disponíveis por 5 pc cada. Uma boneca pode ser feita para se parecer com o comprador por 7 pc. As bonecas são um artesanato local popular e nada mais.
 
 
-### Eyes of Blood
+### Olhos de Sangue
 
-After the characters have engaged with the local festival as much as they please, the character who has the highest passive Wisdom (Perception) score notices a group of celebrants acting strangely. Read or paraphrase the following:
-> As part of the crowd begins another verse of the *Awakening Song*, four people wearing the garb of farm folk wander into their midst. Rather than singing, they stare blankly. Then they surge forward into the celebrants, raising rusty farming implements.
-Four farmers attack the festival-goers. They use the cultist stat block; their rusty, bladed farming implements have the same statistics as scimitars. Any character who engages the farmers sees their eyes swirl with crimson, resembling bloody, unshed teardrops. Characters have no way of knowing it yet, but this is a mark of the soul shaker's control (see the "**Área Soul Shaker**" section at the end of this adventure).
-The festival-goers closest to the strange farmers panic and flee. Unless the characters do the same, the attackers target them.
-Only one local holds their ground: a surprised woman named Aunt Dellie (commoner). She clearly recognizes some of the strange farmers and tries to reason with them to no avail. Aunt Dellie shouts for the characters not to kill the farmers, noting that they're not behaving like themselves.
+Depois que os personagens tiverem se envolvido com o festival local o quanto quiserem, o personagem com o maior valor de Sabedoria (Percepção) Passiva percebe um grupo de celebrantes agindo de forma estranha. Leia ou parafraseie o seguinte:
+> Enquanto parte da multidão começa outro verso da *Canção do Despertar*, quatro pessoas vestindo trajes de fazendeiros vagam pelo meio deles. Em vez de cantar, eles olham fixamente de forma vazia. Então, eles avançam sobre os celebrantes, erguendo implementos agrícolas enferrujados.
+Quatro fazendeiros atacam os participantes do festival. Eles usam o bloco de estatísticas de cultista; seus implementos agrícolas enferrujados e laminados têm as mesmas estatísticas de cimitarras. Qualquer personagem que enfrentar os fazendeiros vê seus olhos girarem com um tom carmesim, lembrando lágrimas sangrentas não derramadas. Os personagens não têm como saber ainda, mas esta é uma marca do controle do abalador de almas (veja a seção "**Área Soul Shaker**" no final desta aventura).
+Os participantes do festival mais próximos dos fazendeiros estranhos entram em pânico e fogem. A menos que os personagens façam o mesmo, os atacantes os alvejam.
+Apenas uma local mantém sua posição: uma mulher surpresa chamada Tia Dellie (plebeu). Ela claramente reconhece alguns dos fazendeiros estranhos e tenta argumentar com eles, sem sucesso. Tia Dellie grita para os personagens não matarem os fazendeiros, observando que eles não estão se comportando como eles mesmos.
 
-### Memories of Death
+### Memórias de Morte
 
-When the last farmer is defeated, locals return to tend to the wounded. The farmers are known to many in the crowd, prompting confusion over their strange appearance and what caused them to attack. Talk of curses begins to spread.
+Quando o último fazendeiro é derrotado, os locais retornam para cuidar dos feridos. Os fazendeiros são conhecidos por muitos na multidão, provocando confusão sobre sua aparência estranha e o que os levou a atacar. Conversas sobre maldições começam a se espalhar.
 
-### Investigating the Farmers
+### Investigando os Fazendeiros
 
-A character who fought the farmers or examines them afterward can make a CD 13 Intelligence (Arcana or Religion) check. On a success, the character can tell the farmers are being magically controlled. Spells like detect magic also reveal that the farmers are surrounded by an aura of enchantment magic. While this magic—the effects of the soul shaker's geas spell—lingers, the farmers' eyes keep their crimson hue.
-If the farmers are healed or roused from unconsciousness, they refuse to speak. They don't attack again, but the locals keep them restrained.
-The characters likely don't have the resources to remove the enchantment affecting the farmers yet—only destroying the soul shaker or waiting approximately a month can do this. Even if the characters do remove the effect, the farmers are confused and remember nothing helpful.
+Um personagem que lutou contra os fazendeiros ou os examina depois pode fazer um teste de Inteligência (Arcanismo ou Religião) CD 13. Em caso de sucesso, o personagem pode dizer que os fazendeiros estão sendo controlados magicamente. Magias como *detectar magia* também revelam que os fazendeiros estão cercados por uma aura de magia de encantamento. Enquanto esta magia—os efeitos da magia *geas* do abalador de almas—persiste, os olhos dos fazendeiros mantêm seu tom carmesim.
+Se os fazendeiros forem curados ou despertados da inconsciência, eles se recusam a falar. Eles não atacam novamente, mas os locais os mantêm contidos.
+Os personagens provavelmente não têm os recursos para remover o encantamento que afeta os fazendeiros ainda—apenas destruir o abalador de almas ou esperar aproximadamente um mês pode fazer isso. Mesmo que os personagens removam o efeito, os fazendeiros ficam confusos e não se lembram de nada útil.
 
-### Strange Parchment
+### Pergaminho Estranho
 
-As the characters investigate the situation, Aunt Dellie notices that one of the farmers was clutching a crumpled sheet of parchment. She opens it, and nearby characters hear her curse in concerned shock. Aunt Dellie hands the crumpled parchment to any character who asks about it. It bears a charcoal sketch of a child struggling to swim in dark water while being grasped at by hands beneath the surface.
+Enquanto os personagens investigam a situação, Tia Dellie percebe que um dos fazendeiros estava segurando uma folha de pergaminho amassada. Ela a abre, e os personagens próximos a ouvem praguejar em choque preocupado. Tia Dellie entrega o pergaminho amassado a qualquer personagem que perguntar sobre ele. Ele contém um esboço a carvão de uma criança lutando para nadar em águas escuras enquanto é agarrada por mãos abaixo da superfície.
 
-### Aunt Dellie
+### Tia Dellie
 
-Aunt Delanore "Dellie" Godsen (neutral good, human commoner) is a savvy operator with an honest reputation, a soft heart, and a talent for hearing a bit about everyone's business. A trader and skimmer boat pilot, Aunt Dellie has never been afraid to go her own way and knows much about Godsbreath's lands and threats. Although she's a small woman, Aunt Dellie's charm and knack for survival have gotten her through numerous near disasters. Everyone calls her "aunt," a trend started by her beloved goddaughter Kianna.
+Tia Delanore "Dellie" Godsen (neutra e boa, humana plebeu) é uma operadora astuta com uma reputação honesta, um coração mole e um talento para ouvir um pouco sobre os negócios de todos. Uma comerciante e piloto de barco skimmer, Tia Dellie nunca teve medo de seguir seu próprio caminho e sabe muito sobre as terras e ameaças de Godsbreath. Embora seja uma mulher pequena, o charme e o talento para sobrevivência de Tia Dellie a fizeram superar inúmeros quase desastres. Todos a chamam de "tia", uma tendência iniciada por sua amada afilhada Kianna.
 
-### Personality Trait
+### Traço de Personalidade
 
-"Tell the truth of where you've been, and I'll let you know where you ought to be going."
+"Diga a verdade sobre onde você esteve, e eu lhe direi para onde você deveria estar indo."
 
 ### Ideal
 
-"I'll make trouble for trouble itself if that's what it takes to make someone smile."
+"Vou criar problemas para o próprio problema se for isso que for necessário para fazer alguém sorrir."
 
-### Bond
+### Vínculo
 
-"A place is the people you meet—and the ones you help along the way."
+"Um lugar são as pessoas que você conhece—e aquelas que você ajuda ao longo do caminho."
 
-### Flaw
+### Defeito
 
-"Nothing short of a god is going to take me down."
+"Nada menos que um deus vai me derrubar."
 
-### A Godmother's Fear
+### O Medo de uma Madrinha
 
-Aunt Dellie clearly recognizes the sketch on the parchment one of the strange farmers had with them. Her strong voice shakes as she explains its significance:
-* The sketch was drawn by Aunt Dellie's goddaughter, Kianna. Aunt Dellie knows her art style, and this is a scene she draws regularly.
-* As a child, Kianna saw her friend Culley drown in Cradlelace Lake while they were playing.
-* Since Culley's death, Kianna has used art to work through the sadness and guilt she carries to this day.
-* Kianna is currently working a farm in the Rattle—a half-day's travel from Promise. She was due to return to town for the Awakening Festival, but Aunt Dellie hasn't seen her yet.
-Characters who investigate further and ask those nearby about the attack learn that the strange farmers all worked in the Rattle—a dangerous but fertile farming region haunted by deadly predators.
-While the locals speculate about the fates of other farmers in the Rattle, Aunt Dellie has no patience for debates on what to do next. Aunt Dellie implores the characters to go to the Rattle where Kianna was working and make sure her goddaughter is safe, while she stays in Promise to organize a larger investigation. She offers the party 100 gp to undertake this mission, and 100 gp more if the characters return her goddaughter to Promise safely.
-Aunt Dellie gives the characters directions to the Rattle, but she doesn't know exactly where Kianna's farm is. The characters must search for it once they reach the Rattle.
+Tia Dellie claramente reconhece o esboço no pergaminho que um dos fazendeiros estranhos tinha consigo. Sua voz forte treme enquanto ela explica seu significado:
+* O esboço foi desenhado pela afilhada de Tia Dellie, Kianna. Tia Dellie conhece seu estilo artístico, e esta é uma cena que ela desenha regularmente.
+* Quando criança, Kianna viu seu amigo Culley se afogar no Lago Cradlelace enquanto brincavam.
+* Desde a morte de Culley, Kianna usa a arte para lidar com a tristeza e a culpa que ela carrega até hoje.
+* Kianna está atualmente trabalhando em uma fazenda no Rattle—a meio dia de viagem de Promise. Ela deveria retornar à cidade para o Festival do Despertar, mas Tia Dellie ainda não a viu.
+Personagens que investigam mais e perguntam aos próximos sobre o ataque aprendem que os fazendeiros estranhos trabalhavam no Rattle—uma região agrícola perigosa, mas fértil, assombrada por predadores mortais.
+Enquanto os locais especulam sobre o destino de outros fazendeiros no Rattle, Tia Dellie não tem paciência para debates sobre o que fazer a seguir. Tia Dellie implora aos personagens que vão ao Rattle, onde Kianna estava trabalhando, e garantam que sua afilhada esteja segura, enquanto ela fica em Promise para organizar uma investigação maior. Ela oferece ao grupo 100 po para realizar esta missão, e mais 100 po se os personagens trouxerem sua afilhada de volta a Promise em segurança.
+Tia Dellie dá aos personagens direções para o Rattle, mas ela não sabe exatamente onde fica a fazenda de Kianna. Os personagens devem procurá-la quando chegarem ao Rattle.
 
 
-### An Unexpected Offer
+### Uma Oferta Inesperada
 
-After the characters finish their conversation with Aunt Dellie, another local approaches them. Read or paraphrase the following text:
-> A broad-shouldered woman wearing a multicolored dress that complements her dark skin approaches boldly, sizing you up from beneath a stylish hat. "I overheard your conversation with Aunt Dellie. You see, nothing important gets past Lady Dre. I hear you're bound for the Rattle? Excellent—I'll accompany you. We should depart at once."
+Depois que os personagens terminam sua conversa com Tia Dellie, outro local se aproxima deles. Leia ou parafraseie o seguinte texto:
+> Uma mulher de ombros largos vestindo um vestido multicolorido que complementa sua pele escura se aproxima ousadamente, avaliando vocês de baixo de um chapéu estiloso. "Eu ouvi sua conversa com Tia Dellie. Veja bem, nada importante escapa de Lady Dre. Ouvi dizer que estão indo para o Rattle? Excelente—eu os acompanharei. Devemos partir imediatamente."
 
 ![Lady Dre](/images/campaigns/journeys-through-the-radiant-citadel/022-03-002lady-dre.webp)
 
 
 ### Lady Dre
 
-Lady Dre (chaotic good, human scout) is a trader who makes an impression on everyone she meets. Tall and broad with shoulder-length locs, she's known for bright-colored clothing meant to catch the eye of potential business partners. She's a shrewd negotiator, thanks in no small part to her storytelling skill. Personable but focused, Lady Dre is willing to forgo short-term gains in favor of long-term growth.
+Lady Dre (caótica e boa, humana exploradora) é uma comerciante que causa impressão em todos que conhece. Alta e larga, com dreads na altura dos ombros, ela é conhecida por roupas de cores vibrantes destinadas a chamar a atenção de potenciais parceiros de negócios. Ela é uma negociadora astuta, graças em grande parte à sua habilidade de contar histórias. Sociável, mas focada, Lady Dre está disposta a renunciar a ganhos de curto prazo em favor do crescimento a longo prazo.
 
-### Personality Trait
+### Traço de Personalidade
 
-"Half of business is showmanship, and I love to take center stage."
-
-### Ideal
-
-"Trades are like people—uniquely beautiful if appreciated properly."
-
-### Bond
-
-"Every deal is a promise, and I always keep my promises."
-
-### Flaw
-
-"It's okay if you lose, as long as I'm winning."
-
-### Business Concerns
-
-Lady Dre was horrified by the attack, and she wants to make sure no other folk in the Rattle are in danger. Characters who succeed on a CD 12 Wisdom (Insight) check recognize her motivations are not entirely altruistic. If pressed, Lady Dre admits she has made trade investments with several Rattle farms. She wants to ensure that no threats interfere with her getting first pick of the harvest.
-If the characters are reluctant to allow Lady Dre to accompany them, she tries to win them over by offering the use of her horses and a comfortable wagon. She remarks that if the characters are going to head into a mystery, they should be prepared to transport anyone who might have been harmed or afflicted.
-If the characters choose not to travel with Lady Dre, she accepts their choice and heads out on her own soon after they do.
-
-
-### The Larger Truth
-
-As the characters prepare for their journey, a human in scholars' garb approaches them. A character who succeeds on a CD 14 Intelligence (Religion) check recognizes the human as a Proclaimer of the Covenant, a servant of the pantheon of local deities who seeks new stories for the *Awakening Song*.
-
-![Proclaimer Tungsten Ward](/images/campaigns/journeys-through-the-radiant-citadel/023-03-003proclaimer-tungsten-ward.webp)
-
-
-### Proclaimer Tungsten Ward
-
-Proclaimer Tungsten Ward (lawful good, human acolyte) is small of stature and soft of voice, and their worldly appearance belies their young years. Despite Ward's relaxed demeanor, their approachability covers a calculating personality. Thanks to Ward's history of making friends, trading favors, and pulling strings, even rivals find the Proclaimer difficult to directly oppose. Ward seeks evidence of the gods' influence and motives in all things. Ward then adds such evidence to their orders' records and creates new verses of the *Awakening Song*.
-
-### Personality Trait
-
-"I listen for the words you dare not say."
+"Metade dos negócios é espetáculo, e eu adoro estar no centro do palco."
 
 ### Ideal
 
-"I'll know more about the gods than the gods themselves."
+"Trocas são como pessoas—singularmente belas se apreciadas adequadamente."
 
-### Bond
+### Vínculo
 
-"The Proclaimers of the Covenant know what story needs to be told."
+"Cada negócio é uma promessa, e eu sempre cumpro minhas promessas."
 
-### Flaw
+### Defeito
 
-"I don't really care if you believe—I care if you obey."
+"Tudo bem se você perder, contanto que eu esteja ganhando."
 
-### For the Record
+### Preocupações Comerciais
 
-Proclaimer Ward introduces themself and briefly explains that they research magical manifestations across Godsbreath that they believe are signs of the gods' power—or challenges to it. Having witnessed the attack and spoken with locals in the aftermath, Ward wants to join the characters' expedition. The Proclaimer hopes to investigate what led to the farmers' strange behavior and determine whether it's linked to other misfortunes in the region, like the waning crop yields in the Ribbon. If the results are significant enough to weave into the *Awakening Song*, Ward assures the party that each character's name will feature prominently.
+Lady Dre ficou horrorizada com o ataque e quer garantir que nenhuma outra pessoa no Rattle esteja em perigo. Personagens que são bem-sucedidos em um teste de Sabedoria (Intuição) CD 12 reconhecem que suas motivações não são inteiramente altruístas. Se pressionada, Lady Dre admite que fez investimentos comerciais com várias fazendas do Rattle. Ela quer garantir que nenhuma ameaça interfira em sua preferência na escolha da colheita.
+Se os personagens estiverem relutantes em permitir que Lady Dre os acompanhe, ela tenta convencê-los oferecendo o uso de seus cavalos e uma carroça confortável. Ela comenta que, se os personagens vão se meter em um mistério, eles deveriam estar preparados para transportar qualquer um que possa ter sido ferido ou afligido.
+Se os personagens optarem por não viajar com Lady Dre, ela aceita a escolha deles e sai por conta própria logo depois que eles partirem.
 
 
+### A Verdade Maior
+
+Enquanto os personagens se preparam para sua jornada, um humano em trajes de erudito se aproxima deles. Um personagem que é bem-sucedido em um teste de Inteligência (Religião) CD 14 reconhece o humano como um Proclamador do Pacto, um servo do panteão de divindades locais que busca novas histórias para a *Canção do Despertar*.
+
+![Proclamador Tungsten Ward](/images/campaigns/journeys-through-the-radiant-citadel/023-03-003proclaimer-tungsten-ward.webp)
+
+
+### Proclamador Tungsten Ward
+
+Proclamador Tungsten Ward (leal e bom, humano acólito) é de estatura pequena e voz suave, e sua aparência mundana desmente seus poucos anos. Apesar do comportamento relaxado de Ward, sua acessibilidade encobre uma personalidade calculista. Graças ao histórico de Ward de fazer amigos, trocar favores e manipular as coisas, até mesmo rivais acham difícil se opor diretamente ao Proclamador. Ward busca evidências da influência e dos motivos dos deuses em todas as coisas. Ward então adiciona tais evidências aos registros de sua ordem e cria novos versos da *Canção do Despertar*.
+
+### Traço de Personalidade
+
+"Eu escuto as palavras que você não ousa dizer."
+
+### Ideal
+
+"Eu saberei mais sobre os deuses do que os próprios deuses."
+
+### Vínculo
+
+"Os Proclamadores do Pacto sabem qual história precisa ser contada."
+
+### Defeito
+
+"Eu realmente não me importo se você acredita—eu me importo se você obedece."
+
+### Para o Registro
+
+Proclamador Ward se apresenta e explica brevemente que pesquisa manifestações mágicas por toda Godsbreath que acredita serem sinais do poder dos deuses—ou desafios a ele. Tendo testemunhado o ataque e falado com os locais após o ocorrido, Ward quer se juntar à expedição dos personagens. O Proclamador espera investigar o que levou ao comportamento estranho dos fazendeiros e determinar se está ligado a outros infortúnios na região, como a diminuição da produção agrícola no Ribbon. Se os resultados forem significativos o suficiente para serem incorporados à *Canção do Despertar*, Ward garante ao grupo que o nome de cada personagem aparecerá com destaque.

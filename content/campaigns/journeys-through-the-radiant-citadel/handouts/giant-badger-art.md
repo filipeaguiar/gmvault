@@ -1,15 +1,15 @@
 ---
-title: "Arte: giant badger"
+title: 'Arte: giant badger'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: giant badger'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: giant badger](/images/campaigns/journeys-through-the-radiant-citadel/giant-badger.webp)

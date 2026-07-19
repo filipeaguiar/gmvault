@@ -1,44 +1,48 @@
 ---
-title: "Background"
+title: Background
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Antecedentes
+visibility: gm
+status: published
+summary: Introdução e contexto da aventura.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kala-mabarin-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/myx-nargis-ruba-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/samira-arah-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The wealth of Zinda is defined by the jeli flower. This opalescent moonflower has graceful pink leaves and wide petals, and it's used to produce a sweet black wine. The flower was brought to the land several years ago and flourished, now growing exclusively around Zinda.
+A riqueza de Zinda é definida pela flor jeli. Esta flor lunar opalescente possui graciosas pétalas rosadas e folhas largas, e é usada para produzir um doce vinho preto. A flor foi trazida para a terra há vários anos e floresceu, agora crescendo exclusivamente ao redor de Zinda.
 
-The March of Vice festival originally honored the city's entire wine trade, but jeli wine has recently become the focus of the centuries-old tradition. Zinda's recent prosperity hides a dire secret, however. Five years ago, the Kings of Coin—Zinda's rulers—established a covenant with a witch named Proud Edun. She used her magic to create the jeli flower, a crop with fantastic commercial value. In exchange, the six Kings of Coin were to give her their firstborn children to serve as apprentices. At the suggestion of one of their members, Myx Nargis Ruba, the Kings of Coin betrayed Proud Edun and murdered her instead of giving up their heirs.
+O festival Marcha do Vício originalmente homenageava todo o comércio de vinho da cidade, mas o vinho de jeli recentemente se tornou o foco desta tradição centenária. A prosperidade recente de Zinda, no entanto, esconde um segredo terrível. Cinco anos atrás, os Reis da Moeda — os governantes de Zinda — estabeleceram um pacto com uma bruxa chamada Proud Edun. Ela usou sua magia para criar a flor jeli, uma colheita de fantástico valor comercial. Em troca, os seis Reis da Moeda deveriam entregar-lhe seus filhos primogênitos para servirem como aprendizes. Por sugestão de um de seus membros, Myx Nargis Ruba, os Reis da Moeda traíram Proud Edun e a assassinaram em vez de entregar seus herdeiros.
 
-For five years, the Kings of Coin have reaped the benefits of Zinda's prosperity, and Proud Edun's daughter, Kala Mabarin, has plotted her revenge.
+Por cinco anos, os Reis da Moeda colheram os benefícios da prosperidade de Zinda, e a filha de Proud Edun, Kala Mabarin, tramou sua vingança.
 
 
-### Pronunciations
+### Pronúncias
 
-The Zinda Pronunciations table shows how to pronounce names and words in this adventure.
+A tabela de Pronúncias de Zinda mostra como pronunciar nomes e palavras nesta aventura.
 
-**Tabela: Zinda Pronunciations**
+**Tabela: Pronúncias de Zinda**
 
 |  |  |
 | --- | --- |
@@ -53,13 +57,11 @@ The Zinda Pronunciations table shows how to pronounce names and words in this ad
 | Zinda | ZEEN-duh |
 
 
-### Setting the Adventure
+### Ambientando a Aventura
 
-Use the following suggestions to help contextualize Zinda in a wider world:
-
-
-### Character Hooks
-
-Consider the following ways to involve characters in this adventure:
+Use as seguintes sugestões para ajudar a contextualizar Zinda em um mundo mais amplo:
 
 
+### Ganchos de Personagem
+
+Considere as seguintes maneiras de envolver os personagens nesta aventura:

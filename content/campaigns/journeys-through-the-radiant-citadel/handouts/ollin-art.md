@@ -1,15 +1,15 @@
 ---
-title: "Arte: Ollin"
+title: 'Arte: Ollin'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Ollin'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Ollin](/images/campaigns/journeys-through-the-radiant-citadel/070-08-002ollin.webp)

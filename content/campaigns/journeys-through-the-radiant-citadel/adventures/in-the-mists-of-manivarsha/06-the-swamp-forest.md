@@ -1,92 +1,95 @@
 ---
-title: "Cena 6 - The Swamp Forest"
+title: Cena 6 - The Swamp Forest
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Floresta Pantanosa
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/the-swamp-forest/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/the-swamp-forest/
 compendium_refs:
-  - "/compendium/monsters/swarm-of-quippers/"
-  - "/compendium/monsters/weretiger/"
-  - "/compendium/monsters/mud-mephit/"
-  - "/compendium/monsters/spirit-naga/"
-  - "/compendium/monsters/water-elemental/"
-  - "/compendium/monsters/treant/"
-  - "/compendium/monsters/riverine/"
+- /compendium/monsters/swarm-of-quippers/
+- /compendium/monsters/weretiger/
+- /compendium/monsters/mud-mephit/
+- /compendium/monsters/spirit-naga/
+- /compendium/monsters/water-elemental/
+- /compendium/monsters/treant/
+- /compendium/monsters/riverine/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/swarm-of-quippers-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/riverine-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/swarm-of-quippers-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/spirit-naga-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/treant-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Dukha pilots his skiff to the mouth of the Tinjhorna River, a journey that takes 10 hours in his boat. From there, the journey to the waterfalls takes an additional 10 hours. Travel through the swamp forest is smooth until the ship reaches the Tinjhorna River's wilder and narrower waterways. For every 3 hours the characters spend traveling on the Tinjhorna River, or whenever you please, roll on the River Journey Encounters table to see what occurs.
+Dukha pilota seu esquife até a foz do Rio Tinjhorna, uma jornada que leva 10 horas em seu barco. De lá, a jornada até as cachoeiras leva mais 10 horas. A viagem pela floresta pantanosa é tranquila até o barco alcançar os cursos d'água mais selvagens e estreitos do Rio Tinjhorna. A cada 3 horas que os personagens passam viajando pelo Rio Tinjhorna, ou quando você desejar, role na tabela Encontros da Jornada pelo Rio para ver o que ocorre.
 
 
-**Tabela: River Journey Encounters**
+**Tabela: Encontros da Jornada pelo Rio**
 
 |  |  |
 | --- | --- |
-| 1–2 | It rains heavily. For the next hour, the boat and its surroundings are heavily obscured. Roll again on this table, ignoring another result of 1 or 2. |
-| 3 | The current increases along a narrow stretch of the river. Dukha urgently asks the characters to help row the boat upstream. All of the characters must succeed on a CD 10 Strength (Athletics) check. The boat loses a half-hour of progress for every failed check or character who doesn't assist. |
-| 4 | A mangrove-shaped treant blocks the path forward. The treant moves only if the party listens to its hour-long ode to the swamp, or if a character succeeds on a CD 18 Charisma (Persuasion) check to convince it to let the skiff pass. |
-| 5 | A spirit naga appears and asks where the characters are heading. It offers to give a single character its magical treasure, a pearl of power, if that character is brave enough to let it bite them three times. |
-| 6 | Six swamp spirits (use the mud mephit stat block) emerge from the river, demanding that the characters hand over their shiniest valuables. They can be driven off with force or a successful CD 14 Charisma (Intimidation) check. |
-| 7–10 | No encounter |
+| 1–2 | Chove torrencialmente. Pela próxima hora, o barco e seus arredores ficam Fortemente Obscurecidos. Role novamente nesta tabela, ignorando outro resultado de 1 ou 2. |
+| 3 | A correnteza aumenta ao longo de um trecho estreito do rio. Dukha pede urgentemente que os personagens ajudem a remar o barco rio acima. Todos os personagens devem ser bem-sucedidos em um teste de Força (Atletismo) CD 10. O barco perde meia hora de progresso para cada teste falho ou personagem que não auxiliar. |
+| 4 | Um ente em forma de mangue bloqueia o caminho adiante. O ente se move apenas se o grupo ouvir sua ode de uma hora ao pântano, ou se um personagem for bem-sucedido em um teste de Carisma (Persuasão) CD 18 para convencê-lo a deixar o esquife passar. |
+| 5 | Uma naga espiritual aparece e pergunta para onde os personagens estão indo. Ela oferece dar a um único personagem seu tesouro mágico, uma pérola de poder, se aquele personagem for corajoso o suficiente para deixá-la mordê-lo três vezes. |
+| 6 | Seis espíritos do pântano (use o bloco de estatísticas de mefita da lama) emergem do rio, exigindo que os personagens entreguem seus bens mais reluzentes. Eles podem ser afugentados com força ou com um teste bem-sucedido de Carisma (Intimidação) CD 14. |
+| 7–10 | Nenhum encontro |
 
 
-### Falls Clearing
+### Clareira das Cachoeiras
 
-As the characters approach the series of waterfalls, read the following description:
-> A gradually increasing roar drowns out the rain forest sounds long before the river turns, revealing a series of parallel waterfalls cascading from a ridge that runs alongside the river. A chain of sparsely forested islands lies along the far side of the river opposite the base of the falls.
-Dukha explains this is where he met the riverine Tinjhorna. He moors the boat amid the islands opposite the falls so the group can attempt to call upon the riverine—and to keep it safe in case the spirit proves hostile.
-As Dukha ties up the boat, characters who succeed on a CD 14 Wisdom (Perception) check notice several pairs of green, feline eyes watching from amid the island's foliage. Upon being noticed or soon after the characters land on the island, three hostile weretigers in hybrid form emerge with longbows drawn. They gauge the party's intentions for 1 round before attacking. A character who talks to the weretigers during this round can convince them not to attack by succeeding on a CD 16 Charisma (Intimidation or Persuasion) check. Even if the weretigers do attack, a character who spends an action can attempt this check, convincing the weretigers to stand down if they're successful. All the weretigers flee from combat when any of them are reduced to 10 hit points or fewer.
+Conforme os personagens se aproximam da série de cachoeiras, leia a seguinte descrição:
+> Um rugido que aumenta gradualmente abafa os sons da floresta tropical muito antes de o rio fazer uma curva, revelando uma série de cachoeiras paralelas caindo de um cume que corre ao longo do rio. Uma cadeia de ilhas com vegetação esparsa fica ao longo do lado oposto do rio, em frente à base das cachoeiras.
+Dukha explica que foi aqui que ele encontrou a entidade fluvial Tinjhorna. Ele atraca o barco em meio às ilhas em frente às cachoeiras para que o grupo possa tentar chamar a entidade fluvial — e para mantê-lo seguro caso o espírito se mostre hostil.
+Enquanto Dukha amarra o barco, personagens que forem bem-sucedidos em um teste de Sabedoria (Percepção) CD 14 notam vários pares de olhos felinos verdes observando por entre a folhagem da ilha. Ao serem notados ou logo após os personagens desembarcarem na ilha, três tigres-lobisomens hostis em forma híbrida emergem com arcos longos em punho. Eles avaliam as intenções do grupo por 1 rodada antes de atacar. Um personagem que falar com os tigres-lobisomens durante esta rodada pode convencê-los a não atacar se for bem-sucedido em um teste de Carisma (Intimidação ou Persuasão) CD 16. Mesmo se os tigres-lobisomens atacarem, um personagem que gastar uma ação pode tentar este teste, convencendo os tigres-lobisomens a recuar em caso de sucesso. Todos os tigres-lobisomens fogem do combate quando qualquer um deles for reduzido a 10 Pontos de Vida ou menos.
 
-### Dukha's Role
+### O Papel de Dukha
 
-Dukha tries to stay out of this conflict, but he doesn't want to see his fellow weretigers harmed. If the weretigers attack, Dukha shouts for the lycanthropes to fall back, telling them the characters come in peace. If the fight lasts more than 2 rounds, Dukha shifts into his hybrid form and fights alongside the characters until the other weretigers are driven off. If he does so, he resents the characters' lack of diplomacy and does not aid them in future battles. However, if he doesn't have to, he appreciates the characters' respect for the creatures of the forest and aids the party in any future conflicts where they need aid.
+Dukha tenta ficar de fora deste conflito, mas não quer ver seus companheiros tigres-lobisomens feridos. Se os tigres-lobisomens atacarem, Dukha grita para os licantropos recuarem, dizendo que os personagens vêm em paz. Se a luta durar mais de 2 rodadas, Dukha muda para sua forma híbrida e luta ao lado dos personagens até os outros tigres-lobisomens serem afugentados. Se ele fizer isso, ressente-se da falta de diplomacia dos personagens e não os auxiliará em batalhas futuras. No entanto, se ele não precisar, aprecia o respeito dos personagens pelas criaturas da floresta e auxilia o grupo em quaisquer conflitos futuros onde precisarem de ajuda.
 
-### Tiger Talk
+### Conversa de Tigre
 
-If the characters converse with the weretigers, or if they run the weretigers off and then question Dukha, it becomes clear that Dukha and the weretigers are familiar with each other. Dukha or the weretigers share the following information:
-* This area is the weretigers' territory, and they have noticed unnatural changes to the flow of the river.
-* The weretigers think that the people of Sagorpur have caused the disturbance.
-* They seek to protect their territory from anyone who would harm it or the riverine Tinjhorna.
-* The weretigers haven't seen the riverine Tinjhorna since he confronted Dukha, but the riverine often frequents the pool atop the falls.
-* If he hasn't already, Dukha reveals he is a lycanthrope and was raised among the weretigers who dwell in the forest.
-After conversing with the characters, the weretigers encourage the party not to linger in their territory; then they depart. Dukha makes no apologies for hiding his true nature and encourages the characters to continue their search for the riverine Tinjhorna atop the falls.
-
-
-### Headwater Pool
-
-From where Dukha moors his boat, the characters can follow an indirect but mostly dry path to the cliffs the parallel waterfalls cascade down. Climbing the slippery, 20-foot-tall rock face around the waterfalls requires a successful CD 12 Strength (Athletics) check. Those who fail the check fall 10 feet into the water. If more than one character falls, a swarm of quippers takes notice and attacks.
-When the first character reaches the top of the waterfalls, the following scene unfolds before them:
-> The adjacent waterfalls are fed by a broad, shallow pool surrounded by ancient mangrove trees. Twenty feet away, a young man with green skin walks atop the water, speaking softly while slowly circling two churning pillars of glowing green foam.
-Tinjhorna the riverine (detailed at the **Área end of this adventure**) is speaking in Aquan and trying to calm a pair of water elementals corrupted by the strange magic afflicting his river.
-Characters who succeed on a CD 12 Intelligence (Arcana) check recognize the frothing pillars as water elementals. Characters risk provoking the Elementals if they're noisy or approach without caution. Characters who approach carefully and succeed on a CD 15 Intelligence (Nature) or Charisma (Persuasion) check to calm the creatures aid Tinjhorna in pacifying the Elementals, and a moment later, the creatures vanish. If the characters are aggressive, the water elementals are startled and attack.
-The pool is 4 feet deep and is Difficult Terrain.
-
-![Tinjhorna the Riverine](/images/campaigns/journeys-through-the-radiant-citadel/082-09-004tinjhorna-the-riverine.webp)
+Se os personagens conversarem com os tigres-lobisomens, ou se eles afugentarem os tigres-lobisomens e então questionarem Dukha, fica claro que Dukha e os tigres-lobisomens se conhecem. Dukha ou os tigres-lobisomens compartilham as seguintes informações:
+* Esta área é o território dos tigres-lobisomens, e eles notaram mudanças não naturais no fluxo do rio.
+* Os tigres-lobisomens acham que o povo de Sagorpur causou o distúrbio.
+* Eles buscam proteger seu território de qualquer um que possa prejudicá-lo ou à entidade fluvial Tinjhorna.
+* Os tigres-lobisomens não viram a entidade fluvial Tinjhorna desde que ela confrontou Dukha, mas a entidade fluvial frequentemente visita a piscina no topo das cachoeiras.
+* Se ele ainda não o fez, Dukha revela que é um licantropo e foi criado entre os tigres-lobisomens que habitam a floresta.
+Após conversar com os personagens, os tigres-lobisomens encorajam o grupo a não se demorar em seu território; então eles partem. Dukha não pede desculpas por esconder sua verdadeira natureza e encoraja os personagens a continuar sua busca pela entidade fluvial Tinjhorna no topo das cachoeiras.
 
 
-### Speaking with Tinjhorna
+### Piscina da Nascente
 
-Tinjhorna is a youthful, neutral riverine who appears as a soft-spoken young man with long hair. His river was one of many waterways created in the geological fallout after the destruction of the city of Manivarsha and the great river Adirohit. Although he dreams of one day being a mighty river, his dream is imperiled by the strange magic infecting his waters.
-Tinjhorna thanks the characters for their help and eagerly converses with them. Use the following points to guide the conversation:
-* A week or so ago, Tinjhorna felt an ancient power affecting his river, as if something were moving through the waters to the southwest.
-* There's little in that direction except for a haunted area called the Forest of Hands.
-* The Forest of Hands occupies much of the same land as the vanished Adirohit River and the disappeared city of Manivarsha.
-* The magic Tinjhorna felt has angered many inhabitants of the surrounding swamp forest. He has his hands full trying to calm them.
-* Tinjhorna has seen no evidence of the lost dancer Amanisha, but he asks the characters to seek out the source of the magic affecting his river.
-If the characters agree to help the riverine, he thanks them and gives them a potion of healing (superior). The riverine offers to watch over the characters if they wish to rest near the falls but won't travel with them, as he must attend to the disturbed creatures along his river's length.
+De onde Dukha atraca seu barco, os personagens podem seguir um caminho indireto, mas quase todo seco, até os penhascos de onde as cachoeiras paralelas despencam. Escalar a face rochosa escorregadia de 6 metros ao redor das cachoeiras exige um teste bem-sucedido de Força (Atletismo) CD 12. Aqueles que falharem no teste caem 3 metros na água. Se mais de um personagem cair, um enxame de quipers percebe e ataca.
+Quando o primeiro personagem alcança o topo das cachoeiras, a seguinte cena se desenrola diante deles:
+> As cachoeiras adjacentes são alimentadas por uma piscina ampla e rasa, cercada por antigos manguezais. A seis metros de distância, um jovem de pele verde caminha sobre a água, falando suavemente enquanto lentamente circunda dois pilares rodopiantes de espuma verde brilhante.
+Tinjhorna, a entidade fluvial (detalhada ao final desta aventura), está falando em Aquan e tentando acalmar um par de elementais da água corrompidos pela magia estranha que aflige seu rio.
+Personagens que forem bem-sucedidos em um teste de Inteligência (Arcanismo) CD 12 reconhecem os pilares espumantes como elementais da água. Personagens correm o risco de provocar os Elementais se forem barulhentos ou se aproximarem sem cautela. Personagens que se aproximarem cuidadosamente e forem bem-sucedidos em um teste de Inteligência (Natureza) ou Carisma (Persuasão) CD 15 para acalmar as criaturas auxiliam Tinjhorna a pacificar os Elementais, e um momento depois, as criaturas desaparecem. Se os personagens forem agressivos, os elementais da água se assustam e atacam.
+A piscina tem 1,2 metro de profundidade e é considerada Terreno Difícil.
+
+![Tinjhorna, a Entidade Fluvial](/images/campaigns/journeys-through-the-radiant-citadel/082-09-004tinjhorna-the-riverine.webp)
 
 
+### Falando com Tinjhorna
+
+Tinjhorna é uma entidade fluvial jovem e neutra que aparece como um jovem de fala mansa e cabelos longos. Seu rio foi um dos muitos cursos d'água criados no rescaldo geológico após a destruição da cidade de Manivarsha e do grande rio Adirohit. Embora ele sonhe em ser um dia um rio poderoso, seu sonho está ameaçado pela magia estranha que infecta suas águas.
+Tinjhorna agradece aos personagens por sua ajuda e conversa entusiasticamente com eles. Use os seguintes pontos para guiar a conversa:
+* Há cerca de uma semana, Tinjhorna sentiu um poder ancestral afetando seu rio, como se algo estivesse se movendo pelas águas a sudoeste.
+* Há pouco naquela direção, exceto uma área assombrada chamada Floresta das Mãos.
+* A Floresta das Mãos ocupa grande parte da mesma terra que o desaparecido Rio Adirohit e a cidade sumida de Manivarsha.
+* A magia que Tinjhorna sentiu enfureceu muitos habitantes da floresta pantanosa circundante. Ele está muito ocupado tentando acalmá-los.
+* Tinjhorna não viu nenhuma evidência da dançarina desaparecida Amanisha, mas ele pede que os personagens procurem a fonte da magia que afeta seu rio.
+Se os personagens concordarem em ajudar a entidade fluvial, ele os agradece e lhes dá uma poção de cura (superior). A entidade fluvial oferece vigiar os personagens caso eles desejem descansar perto das cachoeiras, mas não viajará com eles, pois deve atender às criaturas perturbadas ao longo da extensão de seu rio.

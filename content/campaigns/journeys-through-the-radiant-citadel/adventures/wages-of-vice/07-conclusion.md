@@ -1,31 +1,33 @@
 ---
-title: "Cena 7 - Conclusion"
+title: Cena 7 - Conclusion
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - Conclusão
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/azra-nir-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Samira appears on the scene soon after Kala and the biza are defeated. Along with several Silent Verse guards, Samira quickly restores order. Azra Nir thanks the characters just before Samira has her guards move him somewhere safer.
+Samira aparece em cena logo após Kala e a biza serem derrotados. Junto com vários guardas do Verso Silencioso, Samira rapidamente restaura a ordem. Azra Nir agradece os personagens pouco antes de Samira fazer com que seus guardas o levem para um local mais seguro.
 
-If the characters defeat Kala and the biza, they can reveal what they've learned to Samira. Exposing the bargain the Kings of Coins made and Proud Edun's murder will bring turmoil to Zinda. Samira asks the characters not to share what they've learned until she determines how to respond.
+Se os personagens derrotarem Kala e a biza, eles podem revelar o que aprenderam a Samira. Expor o acordo feito pelos Reis das Moedas e o assassinato do Orgulhoso Edun trará tumulto para Zinda. Samira pede aos personagens que não compartilhem o que aprenderam até que ela determine como responder.
 
-If Kala survived, Samira is determined to bring her to justice but fears that the other Kings of Coin might seek revenge. At your discretion, Samira might have her guards spirit Kala away to a secret location, or she might ask the characters to take her to a safe place outside Zinda, like the Radiant Citadel. Either way, Samira will decide how to punish Kala and the Kings of Coin for their crimes.
+Se Kala sobreviveu, Samira está determinada a levá-la à justiça, mas teme que os outros Reis das Moedas possam buscar vingança. A critério do Mestre, Samira pode fazer com que seus guardas levem Kala secretamente para um local secreto, ou pode pedir aos personagens que a levem para um local seguro fora de Zinda, como a Cidadela Radiante. De qualquer forma, Samira decidirá como punir Kala e os Reis das Moedas por seus crimes.
 
-Whatever the outcome, Samira pays the characters the amount agreed upon at the start of the adventure, and she throws in a bag of holding filled with six flasks of jeli wine worth 25 gp each.
-
-
+Seja qual for o resultado, Samira paga aos personagens a quantia acordada no início da aventura e acrescenta uma bolsa de carga cheia de seis frascos de vinho de jeli no valor de 25 po cada.

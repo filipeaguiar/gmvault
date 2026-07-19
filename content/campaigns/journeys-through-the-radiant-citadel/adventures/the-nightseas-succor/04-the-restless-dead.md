@@ -1,54 +1,54 @@
 ---
-title: "Cena 4 - The Restless Dead"
+title: Cena 4 - The Restless Dead
 weight: 40
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
+titulo_pt_br: Cena 4 - Os Mortos Inquietos
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/the-restless-dead/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/the-restless-dead/
 compendium_refs:
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/haint/"
+- /compendium/monsters/wraith/
+- /compendium/monsters/haint/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+Depois que os personagens se recolhem para passar a noite, o silêncio da Casa de Repouso de Anadoua é perturbado. Leia ou parafraseie o texto a seguir:
 
-After the characters retire for the night, the quiet of Anadoua's Rest House is disturbed. Read or paraphrase the following text:
+> Uma música distante cria um fundo quase hipnótico para uma noite calma. Então, gritos irrompem, despedaçando a paz. Alguém está pedindo ajuda!
 
-> Distant music provides an almost hypnotic undertone to a calm night. Then shouts ring out, shattering the peace. Someone's calling for help!
+Os personagens percebem que os gritos vêm da sala comunal da estalagem. Seguindo o som, eles encontram a sala comunal levemente obscurecida, preenchida por uma névoa rodopiante. A bruma dá a sensação de que o local está mergulhado em neblina e flutuando em um mar tempestuoso. Os funcionários e outros hóspedes que saíram cambaleando de seus quartos estão assustados com a visão.
 
-The characters can tell the shouts are coming from the inn's common room. Following the sound, the characters find the common room lightly obscured, filled with swirling mist. The haze makes the area feel like it's full of fog and floating on a stormy sea. Staff and other patrons who've stumbled out of their rooms are frightened by the sight.
+Em meio à névoa, duas figuras aterrorizadas gritam, dizendo: "Por favor, eles estão vindo atrás de nós!" e "Não podemos perdê-los de novo!" Esses haints (detalhados no **final desta aventura**) são espíritos assassinados durante a Passage of Vultures. Ambos assumiram a aparência vívida dos artesãos que foram em vida e buscam escapar das almas perversas que os mantêm cativos na morte. Sua tristeza os faz temer que os personagens sejam aliados dos invasores que os assassinaram.
 
-Amid the mist are two terrified figures who cry out, saying "Please, they're coming after us!" and "We can't lose them again!" These haints (detailed at the **Área end of this adventure**) are spirits murdered during the Passage of Vultures. They've both taken on the lifelike appearances of the artisans they were in life and seek to escape the wicked souls who hold them captive in death. Their sorrow causes them to fear the characters are allies of the invaders who murdered them.
+Antes que os haints possam dizer muito, ou após 1 rodada de combate, uma wraith com aparência de um saqueador do mar sem rosto se manifesta perto deles. Este é o espírito de um dos captores maléficos de quem os haints estão tentando escapar. A wraith olha ao redor e então sinaliza na direção dos personagens. Se os haints ainda não tiverem atacado, eles recuam diante da wraith e, relutantemente, se unem a ela para atacar os personagens. Os três mortos-vivos atacam até que a wraith seja destruída.
 
-Before the haints can say much, or after 1 round of combat, a wraith that looks like a faceless sea raider manifests near them. This is the spirit of one of the wicked captors the haints are trying to escape. The wraith looks around, then signals toward the characters. If the haints haven't already attacked, they back away from the wraith and reluctantly join it in attacking the characters. All three Undead attack until the wraith is destroyed.
+### Súplica dos Espíritos
 
+Quando a wraith é derrotada, quaisquer haints sobreviventes permanecem, pairando no centro da sala comunal. Se ambos os haints tiverem sido destruídos, suas vozes emergem de silhuetas à deriva na névoa persistente. Os espíritos se desculpam por qualquer dano que tenham causado e suplicam pela ajuda dos personagens, compartilhando as seguintes informações:
+* Seus nomes são Derek e Violette.
+* Eles foram separados de suas famílias e levados de seus lares em Djaynai há muito tempo.
+* O navio em que estavam, o *Girscamen*, afundou, e eles se perderam no mar, junto com tomos importantes que estavam protegendo.
+* Algo perverso perturbou recentemente seus restos mortais e reivindicou o conhecimento que eles guardavam.
+* A wraith era um dos captores dos haints. Agora eles estão livres, mas os tomos que protegiam estão em perigo.
+* Eles imploram que os personagens os ajudem a encontrar seu local de descanso e recuperar os tomos. Somente quando esse conhecimento estiver seguro eles poderão encontrar a verdadeira paz.
 
-### Spirits' Plea
+Antes que os espíritos possam responder a todas as perguntas dos personagens, a névoa que preenche a sala comunal gira mais rápido, e os personagens ouvem o som distante de ventos uivantes e ondas quebrando. Os espíritos clamam: "Algo terrível ameaça nosso conhecimento precioso. Por favor, ajudem-nos, ou os segredos do nosso povo serão perdidos para sempre!" Então, a névoa se dissipa em nada e os haints desaparecem. A sala comunal volta ao normal, mas, onde os espíritos desapareceram, duas poças d'água permanecem, cada uma formando um sigilo distinto. Elas são claramente visíveis por um minuto antes de secarem.
 
-When the wraith is defeated, any surviving haints remain, lingering in the center of the common room. If both haints were destroyed, their voices emerge from silhouettes drifting in the lingering mist. The spirits apologize for any harm they caused and entreat the characters for help, sharing the following information:
-* Their names are Derek and Violette.
-* They were separated from their families and taken from their homes in Djaynai long ago.
-* The ship they were on, the *Girscamen*, sank, and they were lost to the sea, along with important tomes they were protecting.
-* Something wicked recently disturbed their remains and claimed the lore they were guarding.
-* The wraith was one of the haints' captors. The haints are free now, but the tomes they protected are in danger.
-* They entreat the characters to help them by finding their resting place and reclaiming the tomes. Only when that knowledge is safe can they find true peace.
-Before the spirits can answer all the characters' questions, the mist filling the common room swirls faster, and the characters hear the distant sound of howling wind and pounding waves. The spirits cry out, "Something terrible threatens our precious lore. Please help us, or our people's secrets will be lost forever!" Then the mist roils away to nothing and the haints vanish. The common room returns to normal, but where the spirits vanished, two puddles of water remain, each forming a distinctive sigil. They're clearly visible for a minute before drying.
+### O Que Foi Perdido
 
-
-### What Was Lost
-
-Characters who succeed on a CD 16 Intelligence (Arcana or History) check recognize that the sigils represent the Blackmist Way and the Blackthrone Arts: two local traditions lost during the Passage of Vultures. Any local in the common room or resident of Djaynai who sees a copy of the symbols can identify them and share the basics about these lost traditions–as described in the "**Área Background**" section of the adventure.
-The name *Girscamen* holds no meaning to anyone.
-If questioned, Anadoua is baffled by what's occurred. No other spiritual manifestation has occurred at her inn during the thirty years she's owned it.
-
-
+Personagens que sejam bem-sucedidos em um teste de CD 16 de Inteligência (Arcanismo ou História) reconhecem que os sigilos representam o Caminho da Névoa Negra e as Artes do Trono Negro: duas tradições locais perdidas durante a Passage of Vultures. Qualquer frequentador da sala comunal ou residente de Djaynai que veja uma cópia dos símbolos pode identificá-los e compartilhar o básico sobre essas tradições perdidas — conforme descrito na seção "**Antecedentes**" da aventura.
+O nome *Girscamen* não tem significado para ninguém.
+Se questionada, Anadoua fica perplexa com o ocorrido. Nenhuma outra manifestação espiritual aconteceu em sua estalagem durante os trinta anos em que é proprietária.

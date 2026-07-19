@@ -1,11 +1,18 @@
 ---
-title: "Capítulo I: O Mercado de Dyn Singh"
-summary: "Os aventureiros desvendam uma misteriosa sabotagem no Mercado de Dyn Singh, ajudando as famílias rivais Lamai e Shung, antes de partirem para a Cidadela Radiante."
+title: 'Capítulo I: O Mercado de Dyn Singh'
+summary: Os aventureiros desvendam uma misteriosa sabotagem no Mercado de Dyn Singh, ajudando as famílias rivais Lamai e Shung, antes de partirem para a Cidadela Radiante.
 draft: false
-status: "ready"
-visibility: "players"
+status: ready
+visibility: players
 params:
-  kind: "journal_entry"
+  kind: journal_entry
+titulo_pt_br: 'Capítulo I: O Mercado de Dyn Singh'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### A Chegada ao Mercado de Dyn Singh
@@ -14,7 +21,7 @@ O crepúsculo caía sobre o plano de Siabsungkoh, tingindo o céu de tons violet
 
 Após acumularem algumas moedas de ouro em seus últimos trabalhos, os aventureiros decidiram que era o momento perfeito para desfrutar de um descanso merecido. Durin, o anão monge de postura serena; Einvor, o imponente golias bárbaro; Detios CantoBaixo, o carismático bardo halfling; Pinky, o ladino goblin de olhos astutos; Nyx'Clair, a misteriosa bruxa elfa; e Violeta, a jovem feiticeira humana, caminhavam juntos pela feira. A intenção do grupo era simples: relaxar, experimentar as delícias locais e, quem sabe, testar a sorte em alguma das famosas gincanas noturnas do mercado.
 
-Contudo, o burburinho da feira escondia tensões profundas. No coração da praça rebaixada, cercada por três grandes tendas douradas, duas comerciantes tradicionais mantinham uma rivalidade histórica. Lamai Tiemo, uma gnomo obstinada e dona da prestigiada barraca de macarrão *Tiemo Noodles*, e Kusa Shung, uma orgulhosa kobold que comandava a *Shung Seafood* com seus pratos de lagostas e sopas de polvo, tentavam manter as aparências. No entanto, uma série de pequenas e misteriosas sabotagens recentes acirrou a velha picuinha familiar, ameaçando arruinar os negócios que sustentavam suas famílias por décadas.
+Contudo, o burburinho da feira escondia tensões profundas. No coração da praça rebaixada, cercada por três grandes tendas douradas, duas comerciantes tradicionais mantinham uma rivalidade histórica. Lamai Tyenmo, uma gnomo obstinada e dona da prestigiada barraca de macarrão *Tyenmo Noodles*, e Kusa Xungoon, uma orgulhosa kobold que comandava a *Xungoon Seafood* com seus pratos de lagostas e sopas de polvo, tentavam manter as aparências. No entanto, uma série de pequenas e misteriosas sabotagens recentes acirrou a velha picuinha familiar, ameaçando arruinar os negócios que sustentavam suas famílias por décadas.
 
 ---
 
@@ -30,7 +37,7 @@ Detios, agindo por puro instinto brincalhão e simpatia pelos pequenos, deu um s
 
 A gnomo parou, recuperando o fôlego com dificuldade, e bateu o pé no chão, encarando o bardo de baixo para cima.
 
-— Vocês não estão entendendo, vocês não são daqui, não é? Me permitam me apresentar. Meu nome é Lamai Tiemo, eu sou a dona do Tiemo Macarrão. Esse moleque ele não tá roubando porque tá com fome. Ele tá roubando porque a mãe dele mandou ele roubar da minha banca porque ela tá querendo me sabotar!
+— Vocês não estão entendendo, vocês não são daqui, não é? Me permitam me apresentar. Meu nome é Lamai Tyenmo, eu sou a dona do Tyenmo Macarrão. Esse moleque ele não tá roubando porque tá com fome. Ele tá roubando porque a mãe dele mandou ele roubar da minha banca porque ela tá querendo me sabotar!
 
 Gum, encolhido atrás do halfling, apontou o maço de vegetais e protestou com sua voz fina:
 
@@ -40,7 +47,7 @@ Gum, encolhido atrás do halfling, apontou o maço de vegetais e protestou com s
 
 — Não é verdade, você roubou as coisas da barraca da minha mãe! — insistiu o pequeno kobold.
 
-Antes que Lamai pudesse avançar, uma kobold adulta aproximou-se com passos firmes. Kusa Shung vestia roupas de trabalho impecáveis e exibia chifres enfeitados com ornamentos dourados. Ela encarou o garoto com severidade:
+Antes que Lamai pudesse avançar, uma kobold adulta aproximou-se com passos firmes. Kusa Xungoon vestia roupas de trabalho impecáveis e exibia chifres enfeitados com ornamentos dourados. Ela encarou o garoto com severidade:
 
 — O que é que está acontecendo aqui, Gum? O que é que você fez?
 
@@ -110,13 +117,13 @@ O monge recebeu a medalha de pimenta sob os aplausos do público. Com um gesto g
 
 ### O Começo da Investigação e Madame Kulp
 
-Quando a comemoração arrefeceu, Lamai Tiemo abordou os aventureiros mais uma vez, seu semblante marcado pela preocupação.
+Quando a comemoração arrefeceu, Lamai Tyenmo abordou os aventureiros mais uma vez, seu semblante marcado pela preocupação.
 
-— Eu entendo que vocês queiram se divertir e tal — disse a gnomo, com a voz embargada. — Mas vejam o macarrão... o macarrão Tiemo e todo mundo que tem tenda aqui no mercado sabe o quanto isso faz parte da nossa cultura. Eu não estou brincando quando digo que estou sendo sabotada. Eu realmente gostaria que vocês investigassem.
+— Eu entendo que vocês queiram se divertir e tal — disse a gnomo, com a voz embargada. — Mas vejam o macarrão... o macarrão Tyenmo e todo mundo que tem tenda aqui no mercado sabe o quanto isso faz parte da nossa cultura. Eu não estou brincando quando digo que estou sendo sabotada. Eu realmente gostaria que vocês investigassem.
 
 Durante o apelo de Lamai, a atenção de Pinky e Durin foi atraída para a barraca vizinha. Kasem Aroon estava de pé a alguma distância, observando o grupo conversar com a gnomo. O mercador mantinha os braços cruzados, uma expressão séria e vigilante gravada em seu rosto avermelhado, o que levantou suspeitas imediatas nos dois aventureiros.
 
-De repente, gritos de alerta ecoaram pelas ruelas. Uma fumaça escura começou a subir de uma das tendas próximas. A base da barraca de frutos do mar de Kusa Shung estava em chamas. As pessoas corriam para apagar o fogo com baldes de água, enquanto a confusão se instalava.
+De repente, gritos de alerta ecoaram pelas ruelas. Uma fumaça escura começou a subir de uma das tendas próximas. A base da barraca de frutos do mar de Kusa Xungoon estava em chamas. As pessoas corriam para apagar o fogo com baldes de água, enquanto a confusão se instalava.
 
 Nyx'Clair aproximou-se de Madame Kulp, uma simpática gnoma idosa que confeccionava roupas de seda fina e trazia uma lagarta verde e brilhante, do tamanho de um pequeno felino, repousando pacificamente em seu ombro.
 
@@ -178,38 +185,38 @@ Kasem estendeu a mão trêmula e puxou um caqui maduro do bolso de sua túnica v
 
 Nyx'Clair, reconhecendo a criatura, explicou ao grupo:
 
-— É um Wingling. São seres inteligentes e extremamente travessos. Eles se apegam facilmente às pessoas que lhes dão comida, mas adoram causar confusão.
+— É um Wynling. São seres inteligentes e extremamente travessos. Eles se apegam facilmente às pessoas que lhes dão comida, mas adoram causar confusão.
 
 Chorando, Kasem confessou que havia trazido os três seres invisíveis do outro plano. Ele os alimentava com caquis e os instruía a sabotar as barracas de Lamai e Kusa. O plano egoísta de Kasem era simples: ele acreditava que, se gerasse caos suficiente no mercado e fizesse as barracas vizinhas falirem, os Irmãos Apimentados poderiam expandir seus negócios. Mais do que isso, ele esperava que o tumulto fizesse seu irmão Vi Aroon adiar o casamento com Lila e desistir de se mudar para outro plano, mantendo a sociedade e a parceria deles intacta.
 
-Detios, curioso, tentou esticar a mão para colher um pelo da criatura para estudos mágicos, mas o Wingling deu uma cambalhota no ar, pousou no braço do halfling, correu até seu ombro e sussurrou algo zombeteiro em uma língua férica desconhecida antes de retornar a Kasem.
+Detios, curioso, tentou esticar a mão para colher um pelo da criatura para estudos mágicos, mas o Wynling deu uma cambalhota no ar, pousou no braço do halfling, correu até seu ombro e sussurrou algo zombeteiro em uma língua férica desconhecida antes de retornar a Kasem.
 
 ---
 
 ### A Resolução e o Acordo
 
-Com a verdade revelada, Madame Kulp e as duas comerciantes rivais, Lamai Tiemo e Kusa Shung, foram chamadas à barraca dos Irmãos Apimentados. Diante das evidências e da confissão chorosa de Kasem, o mistério das sabotagens foi finalmente desfeito perante a feira. A notícia de que o pequeno Gum era inocente espalhou-se rapidamente pelas ruelas, limpando o nome da família Shung dos boatos de roubo.
+Com a verdade revelada, Madame Kulp e as duas comerciantes rivais, Lamai Tyenmo e Kusa Xungoon, foram chamadas à barraca dos Irmãos Apimentados. Diante das evidências e da confissão chorosa de Kasem, o mistério das sabotagens foi finalmente desfeito perante a feira. A notícia de que o pequeno Gum era inocente espalhou-se rapidamente pelas ruelas, limpando o nome da família Xungoon dos boatos de roubo.
 
-Vi Aroon, profundamente envergonhado pela atitude do irmão, pediu desculpas formais em nome da família. Kasem, ainda soluçando, implorou pelo perdão das comerciantes, jurando que nunca mais usaria os Winglings para causar discórdia.
+Vi Aroon, profundamente envergonhado pela atitude do irmão, pediu desculpas formais em nome da família. Kasem, ainda soluçando, implorou pelo perdão das comerciantes, jurando que nunca mais usaria os Wynlings para causar discórdia.
 
 Para a surpresa de todos, Lamai e Kusa trocaram olhares e suspiraram. Ambas sabiam o quanto os gêmeos eram queridos e trabalhadores na comunidade do mercado.
 
 — Os rapazes são uns queridos, sabe? — comentou Lamai, com um sorriso brando. — Não podemos destruir a vida deles por causa de um erro desses.
 
-Kusa concordou, e as duas decidiram perdoar Kasem, impondo apenas que ele trabalhasse na reconstrução e reparo das tendas danificadas e compensasse as perdas financeiras. Diante daquela provação, a rivalidade de gerações entre a família Tiemo e a família Shung foi dissolvida de vez, abrindo espaço para um acordo de paz e cooperação mútua.
+Kusa concordou, e as duas decidiram perdoar Kasem, impondo apenas que ele trabalhasse na reconstrução e reparo das tendas danificadas e compensasse as perdas financeiras. Diante daquela provação, a rivalidade de gerações entre a família Tyenmo e a família Xungoon foi dissolvida de vez, abrindo espaço para um acordo de paz e cooperação mútua.
 
 Mantendo a promessa, Lamai e Kusa dividiram a recompensa e entregaram aos aventureiros o saco contendo cem moedas de ouro brilhantes. Além disso, reafirmaram o banquete de gratidão vitalício: toda vez que retornassem ao plano de Siabsungkoh, poderiam comer macarrão e ensopado de lagosta de graça em suas barracas. O grupo celebrou a vitória saboreando uma farta refeição sob a luz das lanternas coloridas da feira noturna.
 
 ---
 
-### A Concord Jewel e a Partida Interplanar
+### A Joia da Concórdia e a Partida Interplanar
 
 Após descansarem durante a noite em hospedarias confortáveis do mercado, os aventureiros prepararam-se para partir na manhã seguinte. Uma carruagem simples de madeira os aguardava. Como Einvor era um golias maciço e pesado demais para o veículo, ele decidiu seguir a pé, caminhando com passos firmes ao lado do cavalo. O goblin Pinky, orgulhoso, sentou-se na tábua do cocheiro e assumiu as rédeas, guiando o cavalo pelas estradas de terra do vale. No interior da carruagem, Detios, Durin, Nyx'Clair e Violeta conversavam de forma descontraída, rindo das lembranças do desafio da pimenta e do plano mirabolante do macaco azul.
 
-O caminho os levou até uma grande clareira no topo de uma colina, onde ficava o ponto de embarque interplanar. No céu límpido do amanhecer, flutuava a Concord Jewel: uma colossal pedra preciosa de formato irregular e lapidação brilhante, do tamanho de uma mansão. A gema pulsava com uma energia mágica suave.
+O caminho os levou até uma grande clareira no topo de uma colina, onde ficava o ponto de embarque interplanar. No céu límpido do amanhecer, flutuava a Joia da Concórdia: uma colossal pedra preciosa de formato irregular e lapidação brilhante, do tamanho de uma mansão. A gema pulsava com uma energia mágica suave.
 
 Os aventureiros posicionaram-se no círculo de embarque desenhado no chão, rodeado por cadeiras de pedra. Lentamente, a gema gigante começou a descer dos céus, flutuando de forma majestosa até tocar o solo sem produzir ruído. Uma porta de energia abriu-se em sua lateral geométrica.
 
 Um recepcionista uniformizado surgiu no portal e gesticulou com cortesia, convidando o grupo a entrar. Os aventureiros recolheram seus pertences, subiram a rampa e acomodaram-se nos assentos confortáveis no interior da gema.
 
-Em poucos instantes, a porta de energia fechou-se e a Concord Jewel voltou a acender, vibrando intensamente. Com um impulso silencioso, a pedra preciosa decolou em direção ao firmamento, rompendo as barreiras do plano de Siabsungkoh em uma veloz viagem interplanar que os levaria diretamente à fabulosa Cidadela Radiante.
+Em poucos instantes, a porta de energia fechou-se e a Joia da Concórdia voltou a acender, vibrando intensamente. Com um impulso silencioso, a pedra preciosa decolou em direção ao firmamento, rompendo as barreiras do plano de Siabsungkoh em uma veloz viagem interplanar que os levaria diretamente à fabulosa Cidadela Radiante.

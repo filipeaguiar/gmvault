@@ -1,101 +1,105 @@
 ---
-title: "Cena 5 - Castle Djaynai"
+title: Cena 5 - Castle Djaynai
 weight: 50
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: Cena 5 - Castelo Djaynai
+visibility: gm
+status: draft
+summary: '[ERRO DE PROCESSAMENTO: TEXTO DE ENTRADA JÁ ESTÁ EM PORTUGUÊS. NENHUMA TRADUÇÃO NECESSÁRIA OU POSSÍVEL.]'
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/castle-djaynai/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/castle-djaynai/
 compendium_refs:
-  - "/compendium/monsters/priest/"
-  - "/compendium/monsters/nightsea-chil-liren/"
+- /compendium/monsters/priest/
+- /compendium/monsters/nightsea-chil-liren/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-114-map-121-central-djaynai-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-114-map-121-central-djaynai-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The next morning, guards wearing long black tunics wait to escort the characters to their meeting at Castle Djaynai. The guards are members of Djaynai's elite reconnaissance patrol, called the Lightsea Lancers. They are formal and encourage the characters not to dawdle.
+Na manhã seguinte, guardas vestindo longas túnicas pretas aguardam para escoltar os personagens até sua reunião no Castelo Djaynai. Os guardas são membros da patrulha de reconhecimento de elite de Djaynai, chamada Lanceiros do Mar de Luz. Eles são formais e incentivam os personagens a não se demorarem.
 
-As the characters near Castle Djaynai, read or paraphrase the following description:
+À medida que os personagens se aproximam do Castelo Djaynai, leia ou parafraseie a seguinte descrição:
 
-> The onyx-colored Castle Djaynai towers over the surrounding structures. It is built of mud bricks and studded with the projecting ends of wooden supports. Stern guards stand watch alongside an open gate.
-
-
-![Map 12.1: Central Djaynai](/images/campaigns/journeys-through-the-radiant-citadel/113-map-121-central-djaynai.webp)
+> O Castelo Djaynai, cor de ônix, ergue-se imponente sobre as estruturas ao redor. É construído com tijolos de barro e cravejado com as extremidades salientes de suportes de madeira. Guardas austeros montam vigília ao lado de um portão aberto.
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/114-map-121-central-djaynai-player.webp)
+![Mapa 12.1: Djaynai Central](/images/campaigns/journeys-through-the-radiant-citadel/113-map-121-central-djaynai.webp)
+
+
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/114-map-121-central-djaynai-player.webp)
 
 
 
-### Meeting Atiba-Pa
+### Encontro com Atiba-Pa
 
-The characters' escorts lead them through magnificent corridors lined with glass-encased lights. Their trip ends in a tapestry-lined hall whose floor is covered in luxurious rugs. Instead of the official they expected to meet, they see a somber human man with gray hair wearing purple robes and sitting on a central rug among several books and sheafs of paper. As the guards retreat, the man introduces himself as Atiba-Pa, regent of the People's Stewards, and he thanks the characters for coming as he beckons them to join him.
+A escolta dos personagens os conduz por corredores magníficos, alinhados com luzes envoltas em vidro. A jornada deles termina em um salão decorado com tapeçarias, cujo chão é coberto por tapetes luxuosos. Em vez do oficial que esperavam encontrar, eles veem um homem sombrio de cabelos grisalhos, vestindo túnicas púrpuras, sentado em um tapete central entre vários livros e maços de papel. Enquanto os guardas se retiram, o homem se apresenta como Atiba-Pa, regente dos Guardiões do Povo, e agradece aos personagens por terem vindo, enquanto os convida a se juntarem a ele.
 
 ### Atiba-Pa
 
-Atiba-Pa (lawful good, human priest) is a former Lightsea Lancer and Djaynai's current regent. He is known not only for his falcon-eyed shrewdness but also for his compassion and kindness.
-Those close to him know he suffers bleak moods, during which it is challenging to obtain an audience with him. Yet during those times, he is still kind to those he meets, even as he speaks sparse and sorrowful words. Atiba-Pa fears that the Djaynaians' ancient traditions are lost forever, and that their loss puts his homeland at risk. Hearing of others' commitment to reclaiming lost lore acts as a balm for his bleak moods.
+Atiba-Pa (leal e bom, humano, sacerdote) é um ex-Lanceiro do Mar de Luz e o atual regente de Djaynai. Ele é conhecido não apenas por sua sagacidade com olhos de falcão, mas também por sua compaixão e bondade.
+Aqueles próximos a ele sabem que ele sofre de estados de espírito sombrios, durante os quais é difícil obter uma audiência com ele. No entanto, durante esses períodos, ele ainda é gentil com aqueles que encontra, mesmo que fale palavras esparsas e pesarosas. Atiba-Pa teme que as antigas tradições do povo de Djaynai estejam perdidas para sempre, e que sua perda coloque sua terra natal em risco. Ouvir sobre o compromisso de outros em recuperar saberes perdidos age como um bálsamo para seus estados de espírito sombrios.
 
-### Personality Trait
+### Traço de Personalidade
 
-"It isn't our way to simply treat guests with kindness. It is our way to welcome guests as family."
+"Não é do nosso feitio simplesmente tratar os convidados com gentileza. É do nosso feitio receber os convidados como família."
 
 ### Ideal
 
-"The nobility of each person's essence can never be sullied by the actions of others."
+"A nobreza da essência de cada pessoa jamais pode ser manchada pelas ações de outros."
 
-### Bond
+### Vínculo
 
-"It is my honor to serve my homeland. I will not pass beyond our borders for any reason."
+"É minha honra servir minha terra natal. Não cruzarei nossas fronteiras por motivo algum."
 
-### Flaw
+### Defeito
 
-"I can't let them see me when I'm like this. The melancholy in my bones is mine alone to bear."
-
-
-### Will of the People's Stewards
-
-The characters originally planned to meet with a lower-ranked official of the People's Stewards. However, rumors of the events at Anadoua's Rest House reached Atiba-Pa, and he decided to meet with the characters himself.
-Atiba-Pa quickly dismisses the characters' original mission in Djaynai and asks them to recount what they saw the previous night. A sheaf of notes before him makes it clear he has heard the story already, but he records any new details the characters share. When the characters' account is complete, Atiba-Pa pauses thoughtfully, then shares the following information:
-* The spirits called haints aren't uncommon in Djaynai, as spirits born of sorrow were spawned all too frequently during the Passage of Vultures.
-* The manifestation of the sigils connected to the Blackmist Way and the Blackthrone Arts is a noteworthy development, not seen elsewhere.
-* The appearance of these symbols is timely, as Atiba-Pa and the People's Stewards believe now is the time to restore the traditions of Djaynai's past—an endeavor they refer to as the Will of the Insurgent Tides.
-* If the characters haven't already learned about the Blackmist Way and the Blackthrone Arts, Atiba-Pa shares their history from the "**Área Background**" section.
-Before continuing, Atiba-Pa pauses and patiently answers any of the characters' questions before moving on to propose a theory. In answering questions, he can share any information from the "**Área Djaynai and Janya Gazetteer**" section.
+"Não posso deixá-los me ver quando estou assim. A melancolia em meus ossos é minha para suportar sozinho."
 
 
-### Atiba-Pa's Plan
+### Vontade dos Guardiões do Povo
 
-Once the characters understand how meaningful Atiba-Pa finds their encounter, he proceeds:
-> "For centuries, we have dreamed of reclaiming the Blackmist Way and the Blackthrone Arts so our people can defend their lands and our neighbors with all the strength of the past. I believe that you all have connections to Djaynai's ancestors... perhaps your roots or something gained in your life's journey. This drew the spirits to you, and we must learn why."
-Since hearing of the characters' encounter, Atiba-Pa has been engaged in research and verifying stories. Based on his investigations, he believes the following is true:
-
-![Regent Atiba-Pa](/images/campaigns/journeys-through-the-radiant-citadel/115-12-002regent-atiba-pa.webp)
-
-* The longship *Girscamen* was a raiding ship that captured Djaynaians took over and sank during the Passage of Vultures. The spirits the characters encountered likely died in the struggle before the ship sank.
-* Two great stone tomes holding the collected lore of the Blackmist Way and the Blackthrone Arts were lost during the Passage of Vultures.
-* The sigils suggest some connection between this lost lore and the *Girscamen*.
-* The People's Stewards now hope the tomes were on the *Girscamen* and can be recovered from its wreck.
-Atiba-Pa explains that he wants the characters to find the wreck and any hint of Djaynai's lost lore still aboard. In return for finding the ship and whatever it holds, he will reward them with 3,000 gp and whatever they originally came seeking.
-
-### The Regent's Mission
-
-Atiba-Pa admits that finding the *Girscamen* won't be easy. No one in Djaynai knows where the ship sank. However, the People's Regents know the undersea folk of Janya have detailed records of wreck sites and other points of interest around their undersea city. A character who succeeds on a CD 14 Intelligence (History) check knows that Janya is an aquatic city populated by the Nightsea Chil-liren, an aquatic people descended from the people of Djaynai. Atiba-Pa can also share this information and details about Janya from the "**Área Djaynai and Janya Gazetteer**" section. He solemnly speaks of the importance of recovering his people's lore:
-> "The Blackmist Way and the Blackthrone Arts helped save Djaynai in the ancient past. Without that knowledge, who knows how we might fare if another threat comes to our shores? If you succeed in this mission, you will help ensure Djaynai's future by reclaiming the strength and traditions of the past." Atiba-Pa then mutters, "If the Night Revelers don't drag us into chaos first."
-Characters who succeed on a CD 14 Intelligence (History or Religion) check know the Night Revelers are local philosopher-hedonists who embrace new ideals and oppose the People's Stewards. Atiba-Pa can also share this information. He clearly views the group as misguided and encourages the characters to avoid contact with them.
-
-### Making Preparations
-
-To help with the characters' journey to Janya, Atiba-Pa is having a sailboat called the *Beden-Moon*, crewed by Lightsea Lancers, prepared to sail at dawn. He also provides each character with a necklace of black cowrie shells. The necklaces are magic items that provide the same benefits as a cloak of the manta ray, except each is activated or deactivated as a bonus action. The necklaces are historic relics of Djaynai, and Atiba-Pa expects to get them back when the characters complete their mission.
-The characters are free to do what they please for the rest of the day, and Atiba-Pa has paid for their continued stay at Anadoua's Rest House. When the characters are ready to leave, Atiba-Pa thanks them warmly and summons guards to escort the group from the castle.
+Os personagens originalmente planejavam se encontrar com um oficial de baixo escalão dos Guardiões do Povo. No entanto, rumores sobre os eventos na Casa de Repouso de Anadoua chegaram a Atiba-Pa, e ele decidiu se encontrar pessoalmente com os personagens.
+Atiba-Pa rapidamente dispensa a missão original dos personagens em Djaynai e pede que eles relatem o que viram na noite anterior. Um maço de anotações diante dele deixa claro que ele já ouviu a história, mas ele registra quaisquer novos detalhes que os personagens compartilhem. Quando o relato dos personagens está completo, Atiba-Pa faz uma pausa pensativa e, então, compartilha as seguintes informações:
+* Os espíritos chamados de assombrações não são incomuns em Djaynai, já que espíritos nascidos da tristeza foram gerados com muita frequência durante a Passagem dos Abutres.
+* A manifestação dos sigilos conectados ao Caminho da Névoa Negra e às Artes do Trono Negro é um desenvolvimento notável, não visto em outros lugares.
+* O aparecimento desses símbolos é oportuno, pois Atiba-Pa e os Guardiões do Povo acreditam que agora é o momento de restaurar as tradições do passado de Djaynai — um esforço ao qual se referem como a Vontade das Marés Insurgentes.
+* Se os personagens ainda não aprenderam sobre o Caminho da Névoa Negra e as Artes do Trono Negro, Atiba-Pa compartilha sua história da seção "**Antecedentes da Área**".
+Antes de continuar, Atiba-Pa faz uma pausa e responde pacientemente a quaisquer perguntas dos personagens antes de prosseguir para propor uma teoria. Ao responder às perguntas, ele pode compartilhar qualquer informação da seção "**Guia Geográfico de Djaynai e Janya**".
 
 
+### Plano de Atiba-Pa
+
+Assim que os personagens entendem o quão significativo Atiba-Pa considera o encontro deles, ele prossegue:
+> "Por séculos, sonhamos em recuperar o Caminho da Névoa Negra e as Artes do Trono Negro para que nosso povo possa defender suas terras e nossos vizinhos com toda a força do passado. Acredito que vocês todos têm conexões com os ancestrais de Djaynai... talvez suas raízes ou algo adquirido em sua jornada de vida. Isso atraiu os espíritos para vocês, e precisamos descobrir o porquê."
+Desde que soube do encontro dos personagens, Atiba-Pa esteve envolvido em pesquisas e verificando histórias. Com base em suas investigações, ele acredita que o seguinte é verdade:
+
+![Regente Atiba-Pa](/images/campaigns/journeys-through-the-radiant-citadel/115-12-002regent-atiba-pa.webp)
+
+* O navio longo *Girscamen* era um navio de ataque que os djaynaianos capturados dominaram e afundaram durante a Passagem dos Abutres. Os espíritos que os personagens encontraram provavelmente morreram na luta antes de o navio afundar.
+* Dois grandes tomos de pedra contendo o saber coletado do Caminho da Névoa Negra e das Artes do Trono Negro foram perdidos durante a Passagem dos Abutres.
+* Os sigilos sugerem alguma conexão entre esse saber perdido e o *Girscamen*.
+* Os Guardiões do Povo agora esperam que os tomos estivessem no *Girscamen* e possam ser recuperados de seus destroços.
+Atiba-Pa explica que deseja que os personagens encontrem os destroços e qualquer vestígio do saber perdido de Djaynai que ainda esteja a bordo. Em troca de encontrar o navio e o que quer que ele contenha, ele os recompensará com 3.000 po e o que quer que tenham vindo buscar originalmente.
+
+### A Missão do Regente
+
+Atiba-Pa admite que encontrar o *Girscamen* não será fácil. Ninguém em Djaynai sabe onde o navio afundou. No entanto, os Regentes do Povo sabem que o povo submarino de Janya possui registros detalhados de locais de naufrágios e outros pontos de interesse ao redor de sua cidade submarina. Um personagem que seja bem-sucedido em um teste de Inteligência (História) CD 14 sabe que Janya é uma cidade aquática povoada pelos Chil-liren do Mar Noturno, um povo aquático descendente do povo de Djaynai. Atiba-Pa também pode compartilhar essa informação e detalhes sobre Janya da seção "**Guia Geográfico de Djaynai e Janya**". Ele fala solenemente sobre a importância de recuperar o saber de seu povo:
+> "O Caminho da Névoa Negra e as Artes do Trono Negro ajudaram a salvar Djaynai no passado antigo. Sem esse conhecimento, quem sabe como nos sairíamos se outra ameaça chegasse às nossas costas? Se tiverem sucesso nesta missão, vocês ajudarão a garantir o futuro de Djaynai, recuperando a força e as tradições do passado." Atiba-Pa então murmura: "Se os Foliões Noturnos não nos arrastarem para o caos primeiro."
+Personagens que sejam bem-sucedidos em um teste de Inteligência (História ou Religião) CD 14 sabem que os Foliões Noturnos são filósofos-hedonistas locais que abraçam novos ideais e se opõem aos Guardiões do Povo. Atiba-Pa também pode compartilhar essa informação. Ele claramente vê o grupo como equivocado e incentiva os personagens a evitar contato com eles.
+
+### Fazendo Preparativos
+
+Para ajudar na jornada dos personagens para Janya, Atiba-Pa está providenciando um barco à vela chamado *Beden-Moon*, tripulado por Lanceiros do Mar de Luz, para zarpar ao amanhecer. Ele também fornece a cada personagem um colar de conchas negras de cauri. Os colares são itens mágicos que fornecem os mesmos benefícios de uma capa da arraia-manta, exceto que cada um é ativado ou desativado como uma ação bônus. Os colares são relíquias históricas de Djaynai, e Atiba-Pa espera recebê-los de volta quando os personagens completarem sua missão.
+Os personagens estão livres para fazer o que quiserem pelo resto do dia, e Atiba-Pa pagou por sua estadia contínua na Casa de Repouso de Anadoua. Quando os personagens estiverem prontos para partir, Atiba-Pa os agradece calorosamente e chama guardas para escoltar o grupo para fora do castelo.

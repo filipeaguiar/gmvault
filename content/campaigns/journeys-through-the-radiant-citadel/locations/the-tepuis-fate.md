@@ -1,19 +1,24 @@
 ---
-title: "The Tepui's Fate"
+title: The Tepui's Fate
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: O Destino do Tepui
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **The Tepui's Fate** importada automaticamente.
+Localidade **O Destino do Tepui** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [The Tepui's Fate](../../adventures/orchids-of-the-invisible-mountain/07-the-tepuis-fate/)
+- [O Destino do Tepui](../../adventures/orchids-of-the-invisible-mountain/07-the-tepuis-fate/)

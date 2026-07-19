@@ -1,41 +1,43 @@
 ---
-title: "Cena 10 - Conclusion"
+title: Cena 10 - Conclusion
 weight: 100
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 10 - Conclusão
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-After the battle, the characters can return to the city and report to whichever faction they chose before the final encounter.
+Após a batalha, os personagens podem retornar à cidade e se reportar à facção que escolheram antes do confronto final.
 
 
-### Returning to the Brightguard
+### Retornando à Guarda Luminosa
 
-If the characters are working for the Brightguard, Artavazda waits for them in a garden terrace atop the Noble Jewel. The pari is eager to hear how the characters' mission went and thanks them profusely for keeping Akharin Sangar safe. Artavazda promises that any foes the characters killed will be returned to life so they can face justice. The pari gives each character a sapphire worth 500 gp before producing a cloak made of flawless white feathers with a single golden feather that would sit high on the wearer's back. The cloak has the properties of wings of flying, and Artavazda explains that the golden feather is from the wing of Atash himself. Any Brightguard member will recognize the cloak's wearer as a friend of the Sunweaver and Akharin Sangar.
-
-
-### Returning to the Silent Roar
-
-If the characters free Afsoun, the rebel leader accompanies them to the city to reunite with her sister. Though the Silent Roar has little money to offer, Laleh and Afsoun offer the party personal treasures as a reward. Laleh gifts them her hat of disguise, while Afsoun offers an Ioun stone of leadership. The sisters also promise the characters a lifetime supply of free treats from the Ghorbani Bakery.
-Afsoun must lie low now that she has defied the Brightguard, but the Silent Roar as a whole is invigorated by their leader's recovery. The group redoubles its efforts to oppose the Brightguard and Atash.
+Se os personagens estão trabalhando para a Guarda Luminosa, Artavazda os aguarda em um terraço ajardinado no topo da Joia Nobre. A pari está ansiosa para ouvir como foi a missão dos personagens e agradece profusamente por manter Akharin Sangar a salvo. Artavazda promete que quaisquer inimigos que os personagens tenham matado serão trazidos de volta à vida para que possam enfrentar a justiça. A pari entrega a cada personagem uma safira no valor de 500 po antes de produzir uma capa feita de imaculadas penas brancas com uma única pena dourada que se posicionaria no alto das costas do usuário. A capa possui as propriedades de uma *asa de voo*, e Artavazda explica que a pena dourada é da própria asa de Atash. Qualquer membro da Guarda Luminosa reconhecerá o usuário da capa como um amigo da Tecelã Solar e de Akharin Sangar.
 
 
-### What's Next?
+### Retornando ao Rugido Silencioso
 
-Regardless of the characters' allegiance, their actions and the fallout of Afsoun's detainment or escape have broad implications for Akharin Sangar. The Silent Roar's resistance efforts increase in either case, causing the organization to become the Brightguard's greatest rival. If the characters remain in Akharin Sangar, Artavazda or the Ghorbani sisters seek to enlist them in the factions' conflict. As either the Brightguard continues to crack down on rebels or the Silent Roar encourages wider resistance, the characters are likely to be drawn into increasingly desperate conflicts, eventually coming to the attention of the land's ruler, Atash himself.
+Se os personagens libertaram Afsoun, a líder rebelde os acompanha até a cidade para se reunir com sua irmã. Embora o Rugido Silencioso tenha pouco dinheiro a oferecer, Laleh e Afsoun oferecem tesouros pessoais ao grupo como recompensa. Laleh lhes presenteia com seu *chapéu de disfarce*, enquanto Afsoun oferece uma *pedra de Ioun de liderança*. As irmãs também prometem aos personagens um suprimento vitalício de guloseimas gratuitas da Padaria Ghorbani.
+Afsoun precisa manter-se escondida agora que desafiou a Guarda Luminosa, mas o Rugido Silencioso como um todo está revigorado pela recuperação de sua líder. O grupo redobra seus esforços para se opor à Guarda Luminosa e a Atash.
 
 
+### O Que Vem a Seguir?
+
+Independentemente da lealdade dos personagens, suas ações e as consequências da detenção ou fuga de Afsoun têm amplas implicações para Akharin Sangar. Os esforços de resistência do Rugido Silencioso aumentam em ambos os casos, fazendo com que a organização se torne a maior rival da Guarda Luminosa. Se os personagens permanecerem em Akharin Sangar, Artavazda ou as irmãs Ghorbani procurarão alistá-los no conflito das facções. À medida que a Guarda Luminosa continua a reprimir os rebeldes ou o Rugido Silencioso incentiva uma resistência mais ampla, os personagens provavelmente serão arrastados para conflitos cada vez mais desesperados, eventualmente chegando à atenção do governante da terra, o próprio Atash.

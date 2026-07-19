@@ -1,19 +1,24 @@
 ---
-title: "Across the Llanos"
+title: Across the Llanos
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Através dos Llanos
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Across the Llanos** importada automaticamente.
+**Localidade Através dos Llanos** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Across the Llanos](../../adventures/orchids-of-the-invisible-mountain/04-across-the-llanos/)
+- [Através dos Llanos](../../adventures/orchids-of-the-invisible-mountain/04-across-the-llanos/)

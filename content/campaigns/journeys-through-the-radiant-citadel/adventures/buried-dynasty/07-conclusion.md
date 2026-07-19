@@ -1,41 +1,42 @@
 ---
-title: "Cena 7 - Conclusion"
+title: Cena 7 - Conclusion
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - Conclusão
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-If the characters are exiled, they are never welcomed back in Yongjing while the White Jade Emperor rules. Zhong Yin leaves the party's company as soon as possible.
+Se os personagens forem exilados, nunca mais serão bem-vindos em Yongjing enquanto o Imperador do Jade Branco governar. Zhong Yin deixa a companhia do grupo assim que possível.
 
-If the characters convinced the emperor of Secretary Wei's schemes, they—along with Zhong Yin—are invited to a private audience with the emperor a day later. The emperor rewards each character with 1,000 gp, plus another 1,000 gp if they promise not to speak of what they have learned about Dragon's Blessing and his eventual death. If the characters break their promise, rumors spread quickly, but the emperor does not seek to punish the characters.
+Se os personagens convenceram o imperador das tramoias do Secretário Wei, eles, junto com Zhong Yin, serão convidados para uma audiência privada com o imperador um dia depois. O imperador recompensa cada personagem com 1.000 po, mais outros 1.000 po se prometerem não falar sobre o que descobriram sobre a Bênção do Dragão e sua morte iminente. Se os personagens quebrarem a promessa, rumores se espalham rapidamente, mas o imperador não busca punir os personagens.
 
-Before dismissing the characters, the emperor goes on to ask what they think he should do with Secretary Wei, who has served the nation well for decades and whose schemes seemed driven by a desire to keep the empire safe—even if she did keep his impending death a secret. He favors exiling her but will consider whatever the characters propose.
+Antes de dispensar os personagens, o imperador pergunta o que eles acham que ele deveria fazer com o Secretário Wei, que serviu bem a nação por décadas e cujas tramoias pareciam motivadas por um desejo de manter o império seguro – mesmo que ela tenha mantido em segredo sua morte iminente. Ele prefere exilá-la, mas considerará o que os personagens propuserem.
 
+### Um Raro Avistamento
 
-### A Rare Sighting
+Enquanto o grupo sai da audiência com o imperador, personagens que tenham uma Sabedoria (Percepção) Passiva de 12 ou mais vislumbram um agouro raro e fortuito: a sombra de um dragão serpentino – como o mítico Dragão das Bênçãos Celestiais – voando entre as nuvens. Todos os personagens, tenham visto ou não esse agouro, recebem o seguinte charm (um tipo de Charmes detalhado no Dungeon Master's Guide).
 
-As the party leaves their audience with the emperor, characters who have a passive Wisdom (Perception) score of 12 or higher catch a glimpse of a rare, fortuitous omen: the shadow of a serpentine dragon—like the mythical Dragon of Heavenly Blessings—soaring through the clouds. All the characters, whether they saw this omen or not, gain the following charm (a type of Charms detailed in the Dungeon Master's Guide).
+### Caminho do Dragão
 
-### Way of the Dragon
-
-You are as elusive and free as the Dragon of Heavenly Blessings. This charm has 6 charges. As an action, you can expend 1 charge and gain one of the following benefits:
-* Difficult Terrain doesn't cost you extra movement until the end of your next long rest.
-* The next time you end your turn paralyzed or restrained, that condition ends on you. This benefit then ends.
-After you expend a charge, you can't do so again until you finish a long rest. Once all its charges have been expended, the charm vanishes from you.
-
-
+Você é tão elusivo e livre quanto o Dragão das Bênçãos Celestiais. Este charm tem 6 cargas. Como uma ação, você pode gastar 1 carga e receber um dos seguintes benefícios:
+* Terreno Difícil não lhe custa movimento extra até o final do seu próximo descanso longo.
+* Na próxima vez que você terminar seu turno paralisado ou contido, essa condição termina em você. Este benefício então termina.
+Após gastar uma carga, você não pode fazê-lo novamente até terminar um descanso longo. Uma vez que todas as suas cargas forem gastas, o charm desaparece de você.

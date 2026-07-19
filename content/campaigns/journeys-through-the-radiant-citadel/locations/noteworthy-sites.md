@@ -1,25 +1,30 @@
 ---
-title: "Noteworthy Sites"
+title: Noteworthy Sites
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Locais Notáveis
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-001-map-11-radiant-citadel-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-001-map-11-radiant-citadel-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Noteworthy Sites** importada automaticamente.
+Localidade **Locais Notáveis** importada automaticamente.
 
-### Cenas e Sub-áreas
-- [Noteworthy Sites](../../adventures/the-radiant-citadel/03-noteworthy-sites/)
+### Cenas e Subáreas
+- [Locais Notáveis](../../adventures/the-radiant-citadel/03-noteworthy-sites/)
 
 ### Mapas
 
 #### 001 11 Radiant Citadel Player
 ![001 11 Radiant Citadel Player](/images/campaigns/journeys-through-the-radiant-citadel/001-map-11-radiant-citadel-player.webp)
-

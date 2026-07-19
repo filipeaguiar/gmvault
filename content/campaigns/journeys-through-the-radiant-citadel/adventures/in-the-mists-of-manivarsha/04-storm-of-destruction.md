@@ -1,75 +1,79 @@
 ---
-title: "Cena 4 - Storm of Destruction"
+title: Cena 4 - Storm of Destruction
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 4 - Tempestade de Destruição
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/storm-of-destruction/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/storm-of-destruction/
 compendium_refs:
-  - "/compendium/monsters/swarm-of-poisonous-snakes/"
-  - "/compendium/monsters/priest/"
-  - "/compendium/monsters/water-elemental/"
-  - "/compendium/monsters/water-weird/"
+- /compendium/monsters/swarm-of-poisonous-snakes/
+- /compendium/monsters/priest/
+- /compendium/monsters/water-elemental/
+- /compendium/monsters/water-weird/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/amanisha-manivarshi-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-As Nisha raises the Riverine's Shankha above her head and the Shankha Trials conclude, read the following description:
+Quando Nisha ergue o Shankha da Ribeirinha acima da cabeça e as Provações do Shankha terminam, leia a seguinte descrição:
 
-> Thunder rings out as the sky fills with clouds. From the formerly calm river, a surge of water rises, forming a towering wave that flings boats onto the banks. The massive wave crests in a mighty swell crashing toward the crowded shore and riverine temple.
+> Um trovão ecoa enquanto o céu se enche de nuvens. Do rio antes calmo, uma onda de água se ergue, formando uma parede colossal que arremessa barcos contra as margens. A onda gigantesca atinge seu pico em um poderoso swell que se precipita em direção à margem lotada e ao templo ribeirinho.
 
-The characters have a moment to react to the sudden disaster. The plaza surrounding the riverine temple is thousands of feet long and packed with people. There's little the characters can do to stop the sudden wave, but quick thinking or magic—such as teleporting atop surrounding buildings or a precisely timed control water spell—might spare the characters and those around them.
+Os personagens têm um momento para reagir ao desastre repentino. A praça ao redor do templo ribeirinho tem milhares de metros de extensão e está lotada. Há pouco que os personagens possam fazer para deter a onda repentina, mas raciocínio rápido ou magia — como teleportar-se para o topo dos edifícios ao redor ou uma magia *controlar a água* no momento preciso — pode poupar os personagens e aqueles ao seu redor.
 
-When the wave crashes on the plaza, each character must make a CD 15 Strength saving throw. Those who fail take 9 ([[2d8]]) bludgeoning damage and are knocked prone. Those who succeed take half as much damage and aren't knocked prone. This damage is less in other parts of the great plaza but causes chaos across the open space, smashing vendors' stalls, harming hundreds of people, and leaving behind a foot of standing water that turns the area into Difficult Terrain.
+Quando a onda atinge a praça, cada personagem deve fazer um teste de resistência de Força CD 15. Aqueles que falharem sofrem 9 ([[2d8]]) de dano de concussão e ficam caídos. Aqueles que obtiverem sucesso sofrem metade do dano e não ficam caídos. Este dano é menor em outras partes da grande praça, mas causa caos por todo o espaço aberto, destruindo barracas de vendedores, ferindo centenas de pessoas e deixando para trás trinta centímetros de água parada que transforma a área em terreno difícil.
 
 
-### Mass Destruction
+### Destruição em Massa
 
-The wave has caused utter devastation across the plaza, and hundreds of people rush to escape. Roll on the Wave Chaos table one or more times to see what perils confront the characters.
+A onda causou devastação total pela praça, e centenas de pessoas correm para fugir. Role na tabela Caos da Onda uma ou mais vezes para ver quais perigos confrontam os personagens.
 
-**Tabela: Wave Chaos**
+**Tabela: Caos da Onda**
 
 |  |  |
 | --- | --- |
-| 1 | A stall selling mango drinks has collapsed. A character must succeed on a CD 14 Strength (Athletics) check to free the frantic, trapped vendors. |
-| 2 | An overly helpful local insistently tries to get the frailest-looking character to flee with them. |
-| 3 | An elder has fallen down. They're bruised and separated from their family. A character must succeed on a CD 16 Wisdom (Perception) check to find the lost family amid the chaos. |
-| 4 | A desperate local searching the ground for the 20 sp they lost in the wave is in danger of being trampled by those fleeing. A character can cause the local to stop searching and move to safety by replacing the lost silver pieces or succeeding on a CD 14 Charisma (Intimidation or Persuasion) check. |
-| 5 | Drifting debris smashes into characters on the ground, each of whom must succeed on a CD 14 Dexterity saving throw or be knocked prone. |
-| 6 | The wave washes a hostile swarm of poisonous snakes into the nearby crowd. |
+| 1 | Uma barraca que vendia bebidas de manga desabou. Um personagem deve ser bem-sucedido em um teste de Força (Atletismo) CD 14 para libertar os vendedores frenéticos e presos. |
+| 2 | Um morador local excessivamente prestativo tenta insistentemente fazer com que o personagem de aparência mais frágil fuja com ele. |
+| 3 | Um ancião caiu. Ele está machucado e separado de sua família. Um personagem deve ser bem-sucedido em um teste de Sabedoria (Percepção) CD 16 para encontrar a família perdida em meio ao caos. |
+| 4 | Um morador local desesperado, procurando no chão as 20 pp que perdeu na onda, corre o risco de ser pisoteado pelos que fogem. Um personagem pode fazer o morador parar de procurar e ir para um local seguro substituindo as peças de prata perdidas ou sendo bem-sucedido em um teste de Carisma (Intimidação ou Persuasão) CD 14. |
+| 5 | Detritos à deriva atingem os personagens no chão, cada um dos quais deve ser bem-sucedido em um teste de resistência de Destreza CD 14 ou ficar caído. |
+| 6 | A onda arrasta um enxame hostil de cobras venenosas para a multidão próxima. |
 
 
-### Chaos at the Temple
+### Caos no Templo
 
-After a few rounds of contending with the destruction, the character who has the highest passive Wisdom (Perception) score sees the following scene:
-> At the base of the temple, creatures of living water attack people trying to flee.
-A hostile water elemental and two water weirds with heads shaped like king cobras attack anyone who comes near the temple.
-A character who succeeds on a CD 14 Intelligence (Religion) check realizes the water creatures are defenders of the temple. A character who uses an action and succeeds on a CD 16 Charisma (Intimidation or Persuasion) check convinces the confused creatures to stand down; the Elementals then dissolve back into the waters within the temple.
+Após algumas rodadas lidando com a destruição, o personagem que tiver o maior valor de Sabedoria (Percepção) passiva vê a seguinte cena:
+> Na base do templo, criaturas de água viva atacam pessoas que tentam fugir.
+Um elemental da água hostil e duas marafas de água com cabeças em forma de cobras-reais atacam qualquer um que se aproxime do templo.
+Um personagem que for bem-sucedido em um teste de Inteligência (Religião) CD 14 percebe que as criaturas de água são defensoras do templo. Um personagem que usar uma ação e for bem-sucedido em um teste de Carisma (Intimidação ou Persuasão) CD 16 convence as criaturas confusas a recuar; os Elementais então se dissolvem de volta nas águas dentro do templo.
 
-### Survivors at the Temple
+### Sobreviventes no Templo
 
-Once the temple's guardians are dealt with, several people emerge from within the temple. These are Shankha Trials contestants and judges, including the temple's leader, High Riversinger Plabon Bhatiyali—a 200-year-old, chaotic good, halfling priest. Many are wounded, but thankfully everyone is alive. However, both Amanisha Manivarshi and the Riverine's Shankha trophy are missing. Plabon approaches the characters, and he says:
-> "The river came for Amanisha and the Riverine's Shankha. The wall of water descended and flowed around us, seeking Amanisha as she tried to help others to safety. It seized her and the trophy, then pulled them both away!"
+Uma vez que os guardiões do templo são neutralizados, várias pessoas emergem de dentro do templo. Estes são competidores e juízes das Provações do Shankha, incluindo o líder do templo, o Alto Cantor Ribeirinho Plabon Bhatiyali — um sacerdote halfling caótico e bom de 200 anos. Muitos estão feridos, mas felizmente todos estão vivos. No entanto, tanto Amanisha Manivarshi quanto o troféu do Shankha da Ribeirinha estão desaparecidos. Plabon se aproxima dos personagens e diz:
+> "O rio veio buscar Amanisha e o Shankha da Ribeirinha. A parede de água desceu e fluiu ao nosso redor, procurando Amanisha enquanto ela tentava ajudar outros a se colocarem a salvo. Ele a agarrou e ao troféu, e então os arrastou para longe!"
 
-### The Riversinger's Fears
+### Os Temores do Cantor Ribeirinho
 
-Plabon is soft-spoken but insists on sharing what he witnessed with the characters. Use the following points to guide the conversation:
-* Plabon is one of the judges of the Shankha Trials.
-* Although riverines hold the power to control river water, Plabon doesn't believe this disaster is the doing of Iravati, the spirit of Sagorpur's river.
-* Plabon felt a deep jealousy in the storm and the river. He fears that today's destruction might be linked to the catastrophe that befell the city of Manivarsha.
-* Tales of Manivarsha's ruin tell of a sudden storm and a huge wave that rose above the swamp forest, then consumed the city.
-* He believes Amanisha is the key to understanding what happened and wants the characters to find her.
-Plabon offers the characters 400 gp each if they will find and return Amanisha. If the characters balk, other judges—influential locals and senators of the city—add to the reward, increasing it to 500 gp each in treasures and trade goods, as well as 20 acres of fertile farmland outside the city.
-If the characters accept, Plabon admits the task won't be easy; the flooded swamp forests of Shankhabhumi are vast. He encourages the characters to find a boat and a guide who can take them upriver to search for Amanisha.
-Before the characters leave, Plabon gives one of them a small shankha shell from the temple. This shell functions as a stone of good luck.
-
-
+Plabon fala em voz baixa, mas insiste em compartilhar o que testemunhou com os personagens. Use os seguintes pontos para guiar a conversa:
+* Plabon é um dos juízes das Provações do Shankha.
+* Embora os ribeirinhos possuam o poder de controlar a água do rio, Plabon não acredita que este desastre seja obra de Iravati, o espírito do rio de Sagorpur.
+* Plabon sentiu um ciúme profundo na tempestade e no rio. Ele teme que a destruição de hoje possa estar ligada à catástrofe que se abateu sobre a cidade de Manivarsha.
+* Os contos da ruína de Manivarsha falam de uma tempestade repentina e uma enorme onda que se ergueu acima da floresta pantanosa, e então consumiu a cidade.
+* Ele acredita que Amanisha é a chave para entender o que aconteceu e quer que os personagens a encontrem.
+Plabon oferece aos personagens 400 po cada um se eles encontrarem e trouxerem Amanisha de volta. Se os personagens hesitarem, outros juízes — moradores locais influentes e senadores da cidade — aumentam a recompensa, elevando-a para 500 po cada um em tesouros e mercadorias, bem como 20 acres de terras agrícolas férteis fora da cidade.
+Se os personagens aceitarem, Plabon admite que a tarefa não será fácil; as florestas pantanosas inundadas de Shankhabhumi são vastas. Ele encoraja os personagens a encontrar um barco e um guia que possa levá-los rio acima para procurar Amanisha.
+Antes que os personagens partam, Plabon dá a um deles uma pequena concha de shankha do templo. Esta concha funciona como uma pedra da boa sorte.

@@ -1,15 +1,15 @@
 ---
-title: "Arte: Xocopol"
+title: 'Arte: Xocopol'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Xocopol'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Xocopol](/images/campaigns/journeys-through-the-radiant-citadel/073-08-005xocopol.webp)

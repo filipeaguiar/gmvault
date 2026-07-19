@@ -1,81 +1,140 @@
 ---
-title: "Cena 3 - Umizu"
+title: Cena 3 - Umizu
 weight: 30
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
+  kind: scene
+draft: false
+titulo_pt_br: Cena 3 - Umizu
+visibility: gm
+status: published
+summary: 'Aqui está uma cena operacional pronta para ser conduzida em sua sessão:
 
+
+  ---
+
+
+  **Cena: Infiltração no Entreposto**
+
+
+  **Sistema:** Qualquer RPG de espionagem ou ação moderna
+
+  **Tom:** Tensão e furtividade
+
+  **Duração estimada:** 45-60 minutos
+
+
+  ---
+
+
+  ### Contexto
+
+  Os agentes precisam invadir um entreposto de uma organização criminosa para recuperar dados de um servidor offline. O local funciona como fachada de uma empresa de importação, com segurança privada e câmeras em pontos estratégicos.
+
+
+  ### O Cenário
+
+  Galpão portuário com dois andares. Térreo: área de carga com contêineres. Superior: escritórios administrativos e sala de servidores. A entrada principal tem dois guardas armados. Há uma entrada lateral usada por funcionários e uma claraboia de manutenção no telhado.
+
+
+  ### Pontos de Entrada Possíveis
+
+  1. **Entrada principal:** suborno ou disfarce de entregador
+
+  2. **Porta lateral:** fechadura eletrônica (passível de hackeamento)
+
+  3. **Claraboia:** acesso furtivo, exige escalada
+
+  4. **Doca de carga:** movimentação constante de funcionários
+
+
+  ### Desafios
+
+  - Sistema de câmeras com ciclo de varredura a cada 30 segundos
+
+  - Guarda fazendo ronda a cada 5 minutos
+
+  - Servidor protegido por senha biométrica
+
+  - Funcionários circulando até as 22h
+
+
+  ### Reviravolta (opcional)
+
+  Um grupo rival está realizando exatamente o mesmo roubo na mesma noite. Os agentes podem encontrá-los no meio da operação.
+
+
+  ---
+
+
+  **Pronta para adaptar conforme o sistema da sua mesa.**'
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/umizu/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/umizu/
 compendium_refs:
-  - "/compendium/monsters/bandit/"
-  - "/compendium/monsters/shadow-demon/"
-  - "/compendium/monsters/oni/"
-  - "/compendium/monsters/dragon-turtle/"
+- /compendium/monsters/bandit/
+- /compendium/monsters/shadow-demon/
+- /compendium/monsters/oni/
+- /compendium/monsters/dragon-turtle/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/oni-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/dragon-turtle-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/oni-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/dragon-turtle-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Residents of the city-state of Umizu enjoy their fair share of luck, but good fortune comes at a cost: a season of bad luck that arrives with the yearly monsoon. During this time, locals pray at shrines for protection against misfortune, and attendants keep a watchful eye for grim portents in the rains.
+Os residentes da cidade-estado de Umizu desfrutam de sua parcela justa de sorte, mas a boa fortuna tem um custo: uma temporada de má sorte que chega com a monção anual. Durante este período, os locais rezam em santuários por proteção contra o infortúnio, e os atendentes ficam atentos a presságios sombrios nas chuvas.
 
-Set amid glittering turquoise waters, Umizu has long enjoyed prosperity that masks ever-simmering tension. Daimyo Hogishi Takemi does his best to rein in crime, but the city's lackluster bureaucracy is run by complacent samurai administrators and riddled with corruption. Crime syndicates control the city's underground trade and administer their own brand of justice. Meanwhile, the Southwest Whaling Concern, an influential merchant organization, builds a private navy and clashes with the Rurapo, an indigenous clan of tritons who monitor fishing and whaling activity. In the wake of the whalers' blatant overfishing, the Rurapo are divided on whether to renegotiate their treaty with Umizu or declare war.
+Situada em meio a águas turquesa cintilantes, Umizu há muito desfruta de uma prosperidade que mascara uma tensão sempre latente. A Daimyo Hogishi Takemi faz o possível para conter o crime, mas a burocracia medíocre da cidade é administrada por administradores samurais complacentes e está infestada de corrupção. Sindicatos do crime controlam o comércio clandestino da cidade e administram sua própria marca de justiça. Enquanto isso, a Southwest Whaling Concern, uma influente organização mercante, constrói uma marinha particular e entra em conflito com os Rurapo, um clã indígena de tritões que monitora a atividade pesqueira e baleeira. Na esteira da pesca predatória descarada dos baleeiros, os Rurapo estão divididos entre renegociar seu tratado com Umizu ou declarar guerra.
 
+### Locais Notáveis
 
-### Noteworthy Sites
+Cada distrito da cidade apresenta sua própria estética arquitetônica. Os distritos se agarram a ilhas vulcânicas conectadas por pontes de pedra robustas, balsas e funiculares a vapor.
 
-Each city district features its own architectural aesthetics. The districts cling to volcanic islands connected by sturdy stone bridges, ferries, and steam-powered funiculars.
+### Cais da Lua Brilhante
 
-### Bright Moon Pier
+Esta coleção de píeres maciços abriga um mercado e é o refúgio do principal sindicato criminoso de Umizu, a Safe Oceans Society. A maioria dos mercadores aqui eventualmente lida com a Safe Oceans Society, seja para contrabandear mercadorias, evitar impostos ou resolver conflitos discretamente. Tenentes do sindicato administram antros de jogo disfarçados de casas de chá ao longo do cais, enquanto samurais e canalhas testam sua coragem sob as ondas em ringues de luta subaquáticos. Para evitar escrutínio, a Safe Oceans Society emprega aventureiros como agentes independentes — enquanto burocratas virtuosos da classe samurai os contratam para investigar os crimes do sindicato.
+Os Rurapo às vezes visitam o cais para negociar ou provar picles crocantes de Umizu. Alguns forjaram alianças desconfortáveis com a Safe Oceans Society, fornecendo relíquias ilegais de templos afundados e naufrágios.
 
-This collection of massive piers hosts a marketplace and is the haven of Umizu's premier criminal syndicate, the Safe Oceans Society. Most merchants here deal with the Safe Oceans Society eventually, whether to smuggle goods, avoid taxes, or quietly resolve conflicts. Society lieutenants run gambling dens disguised as tea rooms along the pier, while samurai and scoundrels test their mettle beneath the waves in underwater fighting rings. To avoid scrutiny, the Safe Oceans Society employs adventurers as independent operatives—while virtuous samurai-class bureaucrats hire them to investigate the syndicate's crimes.
-Rurapo sometimes visit the pier to trade or sample crunchy Umizu pickles. Some have forged uneasy alliances with the Safe Oceans Society, providing illegal relics from sunken temples and shipwrecks.
+### Palácio do Governador
 
-### Governor's Palace
+Uma vila maciça serve como escritório administrativo central de Umizu e residência de sua prefeita, Daimyo Hogishi Takemi. O palácio é famoso pelas festas elegantes de Hogishi e por uma competição anual de poesia que atrai nobres a Umizu — junto com suas rivalidades amargas e guardas pessoais.
 
-A massive villa serves as the central administrative offices of Umizu and the residence of its mayor, Daimyo Hogishi Takemi. The palace is famous for Hogishi's elegant parties and for an annual poetry competition that draws nobles to Umizu—along with their bitter rivalries and personal guards.
+### Santuário das Tempestades
 
-### Shrine of Storms
+O Santuário das Tempestades é um antigo local de poder espiritual. Escavado profundamente em sua ilha, ao lado de residências para os sacerdotes guerreiros do santuário e bibliotecas que guardam relíquias de todo o mundo, o santuário é central para as muitas celebrações de Umizu. A cada inverno, os cidadãos se reúnem para o Festival do Trovão e honram o Sábio Tartaruga — o espírito guardião das ilhas — com três dias de tambores, danças e orações.
 
-The Shrine of Storms is an ancient place of spiritual power. Cut deep into its island alongside residencies for the shrine's warrior-priests and libraries holding relics from around the world, the shrine is central to Umizu's many celebrations. Each winter, citizens gather for the Thunder Festival and honor the Turtle Sage—the guardian spirit of the islands—with three days of drumming, dancing, and prayer.
+### Vida em Umizu
 
+Umizu é uma cidade acolhedora, e muitos cidadãos vêm de terras distantes. Os humanos são os mais numerosos, com tons de pele variando de pálido a castanho médio, e com cabelos e olhos variando de castanho escuro a preto.
 
-### Life in Umizu
+### Costumes Sociais
 
-Umizu is a welcoming city, and many citizens hail from far-flung lands. Humans are the most numerous, with skin tones ranging from pale to medium brown, and with hair and eyes ranging from dark brown to black.
+Umizu é uma cultura matrilinear com preferência pela sucessão por mulheres. A maioria das famílias vive em lares multigeracionais, e os mais ricos favorecem casamentos poliamorosos, tipicamente com uma matriarca do clã e vários cônjuges de qualquer gênero. Clãs poderosos competem por prestígio através de duelos formais a cada poucos meses.
+Umizu tem poucos tabus em relação à sexualidade e gênero. Títulos como "daimyo" são neutros em termos de gênero, assim como a maioria dos nomes. As vestimentas variam de acordo com a classe social e não com o gênero — em vez disso, as pessoas expressam seu gênero através de perfumes. Aromas cítricos brilhantes são codificados como femininos, tons amadeirados almiscarados são neutros, e aromas florais são masculinos. Umizu tem leis suntuárias rígidas que reforçam a hierarquia social, restringindo cores, tecidos e estilos de vestimenta com base na classe.
 
-### Social Mores
+### Espíritos Ancestrais
 
-Umizu is a matrilineal culture with a preference for succession by women. Most families live in multigenerational homes, and the wealthiest favor polyamorous marriages, typically with a clan matriarch and several spouses of any gender. Powerful clans compete for prestige through formal dueling matches every few months.
-Umizu has few taboos around sexuality and gender. Titles such as "daimyo" are gender-neutral, as are most names. Clothing varies by class status rather than gender—instead, people express their gender through perfumes. Bright citrus scents are feminine coded, musky wood tones are gender-neutral, and floral scents are masculine. Umizu has rigid sumptuary laws that reinforce the social hierarchy, restricting colors, fabrics, and styles of dress based on class.
+O respeito pelos espíritos infunde a vida diária. Os residentes nativos mantêm santuários para seus ancestrais em seus lares e deixam oferendas ao amanhecer e ao entardecer. Eles consultam espíritos ancestrais antes de tomar decisões que mudam a vida, mas as perspectivas dos mortos podem ser tão falhas quanto as dos vivos. Desentendimentos em grandes clãs familiares às vezes resultam em batalhas envolvendo centenas de espíritos ancestrais, com consequências tumultuosas para seus descendentes vivos.
 
-### Ancestor Spirits
+### Infortúnio Sazonal
 
-Respect for the spirits infuses daily life. Native residents keep shrines to their ancestors in their homes and leave out offerings at dawn and dusk. They consult ancestral spirits before making life-changing decisions, but the perspectives of the dead can be just as flawed as those of the living. Disagreements in large family clans sometimes result in battles involving hundreds of ancestor spirits, with tumultuous consequences for their living descendants.
+O Festival dos Demônios dá início à temporada de monções de verão, marcando um período de infortúnio em toda a cidade. Os cidadãos visitam o Santuário das Tempestades para comprar talismãs de proteção e suplicar ao Sábio Tartaruga por boa sorte. Ao pôr do sol, os atendentes do santuário percorrem as vias navegáveis de Umizu em barcaças, gritando provocações para atrair espíritos malignos enquanto pessoas vestidas como demônios dançam em pontes e passarelas.
 
-### Seasonal Misfortune
+### Aventuras em Umizu
 
-The Demon Festival kicks off the summer monsoon season, marking a city-wide period of misfortune. Citizens visit the Shrine of Storms to purchase talismans of protection and beseech the Turtle Sage for good luck. At sundown, the shrine's attendants ride barges through Umizu's waterways, shouting taunts to draw out fell spirits while people dressed as demons dance on bridges and walkways.
+Considere as tramas na tabela Aventuras em Umizu ao planejar explorações em Umizu.
 
-
-### Adventures in Umizu
-
-Consider the plots on the Umizu Adventures table when planning explorations in Umizu.
-
-**Tabela: Umizu Adventures**
+**Tabela: Aventuras em Umizu**
 
 |  |  |
 | --- | --- |
-| 1 | A scholar in the Radiant Citadel believes the Shrine of Storms holds secrets to understanding the Keening Gloom, the cyclone threatening the Radiant Citadel. She sends the characters to gather information as pirates (bandits) prepare to plunder the temple. |
-| 2 | Daimyo Hogishi recruits the characters to help defend the city from theft during the Demon Festival, but this year, the priests' taunts provoke shadow demons intent on taking lives, not property. |
-| 3 | Rurapo and the fishers of Umizu blame each other for a dying reef, leaving the characters to uncover the real culprits: a trio of oni. |
-| 4 | The Southwest Whaling Concern begins operating near the lair of a slumbering dragon turtle. A carp that benefits from a druid's awaken spell warns the characters that the dragon turtle could cause a tsunami if disturbed. |
-
-
+| 1 | Uma estudiosa na Cidadela Radiante acredita que o Santuário das Tempestades guarda segredos para entender o Lamento Sombrio, o ciclone que ameaça a Cidadela Radiante. Ela envia os personagens para coletar informações enquanto piratas (bandidos) se preparam para saquear o templo. |
+| 2 | Daimyo Hogishi recruta os personagens para ajudar a defender a cidade de roubos durante o Festival dos Demônios, mas este ano, as provocações dos sacerdotes incitam demônios das sombras determinados a tirar vidas, não propriedades. |
+| 3 | Os Rurapo e os pescadores de Umizu culpam uns aos outros por um recife agonizante, deixando os personagens para descobrir os verdadeiros culpados: um trio de oni. |
+| 4 | A Southwest Whaling Concern começa a operar perto do covil de um dragão tartaruga adormecido. Uma carpa que se beneficia de uma magia despertar de um druida alerta os personagens de que o dragão tartaruga poderia causar um tsunami se perturbado. |

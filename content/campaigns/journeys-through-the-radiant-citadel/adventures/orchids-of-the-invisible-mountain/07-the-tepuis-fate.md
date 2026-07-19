@@ -1,64 +1,67 @@
 ---
-title: "Cena 7 - The Tepui's Fate"
+title: Cena 7 - The Tepui's Fate
 weight: 70
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 7 - O Destino do Tepui
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/the-tepuis-fate/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/the-tepuis-fate/
 compendium_refs:
-  - "/compendium/monsters/scout/"
-  - "/compendium/magic-items/white-ghost-orchid-seed/"
-  - "/compendium/magic-items/hammock-of-worlds/"
+- /compendium/monsters/scout/
+- /compendium/magic-items/white-ghost-orchid-seed/
+- /compendium/magic-items/hammock-of-worlds/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/scout-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-When the Drought Elder's minions in the Crystal Caves have been dealt with, the characters have a chance to talk to Yarana. If Yarana died during the encounter with the aboleths, Chimagua's spirit can telepathically reach out to the characters and convey the information Yarana would have—see "Yarana's Hope" below.
+Quando os lacaios do Ancião da Seca nas Cavernas de Cristal forem derrotados, os personagens terão a chance de conversar com Yarana. Se Yarana morreu durante o encontro com os aboletes, o espírito de Chimagua pode contatar telepaticamente os personagens e transmitir a informação que Yarana teria — veja "A Esperança de Yarana" abaixo.
 
-Once the characters are out of danger, they might try to heal Chimagua. The great anaconda can't be revived by any ability or magic available to the characters. A character who succeeds on a CD 16 Intelligence (Arcana) or Wisdom (Medicine) check determines that a magical affliction affects Chimagua, and the guardian will die in the coming weeks if the affliction is allowed to run its course. Yarana knows how to heal the great spirit, though.
+Uma vez que os personagens estejam fora de perigo, eles podem tentar curar Chimagua. A grande anaconda não pode ser revivida por nenhuma habilidade ou magia disponível aos personagens. Um personagem que seja bem-sucedido em um teste de Inteligência (Arcanismo) ou Sabedoria (Medicina) CD 16 determina que uma aflição mágica afeta Chimagua, e o guardião morrerá nas próximas semanas se a aflição seguir seu curso. Yarana sabe como curar o grande espírito, no entanto.
 
 
 ### Yarana
 
-Born nearly one thousand years ago in Atagua, Yarana (neutral good, human scout) was the most talented of the elite Cababa warriors of ancient times. Days before becoming her people's chief, Yarana and her faithful companion Nene were murdered by an envious rival. Their remains floated down the river Holroro and slipped into the realm of the Ghost Orchid Tepui. There, Chimagua found Yarana and Nene and restored them to be protectors of the spirit's mountain. Over ages, Yarana has protected Chimagua and learned the ways of the Feywild. But everything changed in recent days when beings from the Far Realm attacked the Ghost Orchid Tepui.
-Yarana would like to take a more active role in combating the threats to her original home, but her immortality is tied to the Feywild. If she leaves that plane, she will rapidly age and die after 24 hours. She risked this when she contacted the characters earlier only because of the dire circumstances to Chimagua.
+Nascida há quase mil anos em Atagua, Yarana (neutra e bondosa, batedora humana) era a mais talentosa dos guerreiros Cababa de elite dos tempos antigos. Dias antes de se tornar a chefe de seu povo, Yarana e sua fiel companheira Nene foram assassinadas por um rival invejoso. Seus restos flutuaram rio Holroro abaixo e deslizaram para o reino do Tepui da Orquídea Fantasma. Lá, Chimagua encontrou Yarana e Nene e as restaurou para serem protetoras da montanha do espírito. Por eras, Yarana protegeu Chimagua e aprendeu os costumes da Terras Féricas. Mas tudo mudou nos dias recentes quando seres do Reino Distante atacaram o Tepui da Orquídea Fantasma.
+Yarana gostaria de assumir um papel mais ativo no combate às ameaças ao seu lar original, mas sua imortalidade está vinculada à Terras Féricas. Se ela deixar esse plano, ela envelhecerá rapidamente e morrerá após 24 horas. Ela se arriscou quando contatou os personagens anteriormente apenas por causa das circunstâncias terríveis para Chimagua.
 
-### Yarana's Hope
+### A Esperança de Yarana
 
-Yarana thanks the characters for undertaking her mission. She shares the rest of the story she began when she first contacted the characters, along with any information in the "**Área Background**" section:
-* The Sleeping Stone, a focus of Chimagua's power, has sent the spirit visions of a Far Realm terror known as the Drought Elder that's trying to exert control over Atagua.
-* Recently, creatures from the Far Realm slipped from Atagua into the Ghost Orchid Tepui and attacked Chimagua.
-* The invaders broke the Sleeping Stone and spirited a piece of it away. This put Chimagua into a deathlike slumber.
-* Yarana believes they returned the fragment to the Drought Elder, which is using it as a way to draw power from the nightmares of Atagua's people.
-* Only by recovering the missing piece of the Sleeping Stone might Chimagua be saved.
-* Yarana believes the Drought Elder is vulnerable to Chimagua's magic, such as that of white ghost orchid seeds.
-Yarana beseeches the characters to help by stealing into the Drought Elder's domain and recovering the stolen Sleeping Stone fragment. She has little to offer them except for two potions of healing (supreme) and a pouch of Feywild herbs that functions as Keoghtom's ointment, but she suspects Chimagua will reward them handsomely if they aid the spirit.
-If pressed about the Drought Elder itself, Yarana knows only that it is a terrible being of desiccation and ruin. She doesn't know how to combat it, but she suggests the characters takes the white seed pod from the Ghost Orchid in **Área area C5**. Since the white seed pods hold the power of rebirth, perhaps it can be used against an entity of decay.
-
-
-### Opening a Path
-
-Reaching the Drought Elder in the Far Realm is no easy task. While spells like plane shift can convey characters to the Far Realm, reaching the unfathomable entity requires a more precise method of travel. But Yarana has a plan:
-> "A relic of Atagua's past holds the key to reaching the Drought Elder," Yarana says. "The *Hammock of Worlds* once allowed people to visit Chimagua, using the Ghost Orchid Tepui's connection to Atagua. But with the Far Realm's influence affecting the land, the hammock could likely follow those corrupted planar connections as well, creating a path to the Drought Elder. But if it's to work, we must move quickly."
-Yarana shares the following information, explaining how to recover the Hammock of Worlds:
-* The *Hammock of Worlds* is held by one of the most ancient beings in Atagua, the Dawn Mother.
-* The Dawn Mother is an ageless giant that wanders the Llanos and is said to call forth the sun every morning. She frequents an oasis called the Basket. Although she's aloof, she loves the land and is sure to help.
-* Once the characters have the hammock, they must take it to the mystics known as the Green Doctors at the Silver Tapir Monastery.
-* Yarana can't come with the characters because her immortality is tied to the Feywild (see the "**Área Yarana**" section).
-
-![Hammock of Worlds](/images/campaigns/journeys-through-the-radiant-citadel/141-14-004hammock-of-worlds.webp)
+Yarana agradece aos personagens por terem aceitado sua missão. Ela compartilha o resto da história que começou quando contatou os personagens pela primeira vez, junto com qualquer informação na seção "**Área Background**":
+* A Pedra Adormecida, um foco do poder de Chimagua, enviou ao espírito visões de um terror do Reino Distante conhecido como o Ancião da Seca que está tentando exercer controle sobre Atagua.
+* Recentemente, criaturas do Reino Distante deslizaram de Atagua para o Tepui da Orquídea Fantasma e atacaram Chimagua.
+* Os invasores quebraram a Pedra Adormecida e levaram um pedaço dela. Isso colocou Chimagua em um sono semelhante à morte.
+* Yarana acredita que eles devolveram o fragmento ao Ancião da Seca, que o está usando como uma forma de extrair poder dos pesadelos do povo de Atagua.
+* Somente recuperando o pedaço perdido da Pedra Adormecida Chimagua poderá ser salva.
+* Yarana acredita que o Ancião da Seca é vulnerável à magia de Chimagua, como a das sementes da orquídea fantasma branca.
+Yarana implora aos personagens que ajudem se infiltrando no domínio do Ancião da Seca e recuperando o fragmento roubado da Pedra Adormecida. Ela tem pouco a oferecer a eles exceto duas poções de cura (suprema) e um estojo de ervas da Terras Féricas que funciona como unguento de Keoghtom, mas ela suspeita que Chimagua os recompensará generosamente se eles ajudarem o espírito.
+Se pressionada sobre o próprio Ancião da Seca, Yarana sabe apenas que é um ser terrível de dessecação e ruína. Ela não sabe como combatê-lo, mas sugere que os personagens peguem a vagem de semente branca da Orquídea Fantasma na **Área area C5**. Já que as vagens de semente branca detêm o poder do renascimento, talvez possa ser usada contra uma entidade de decadência.
 
 
+### Abrindo um Caminho
 
+Alcançar o Ancião da Seca no Reino Distante não é tarefa fácil. Embora magias como *plane shift* possam transportar personagens para o Reino Distante, alcançar a entidade insondável requer um método mais preciso de viagem. Mas Yarana tem um plano:
+> "Uma relíquia do passado de Atagua detém a chave para alcançar o Ancião da Seca," Yarana diz. "A *Rede dos Mundos* uma vez permitiu que pessoas visitassem Chimagua, usando a conexão do Tepui da Orquídea Fantasma com Atagua. Mas com a influência do Reino Distante afetando a terra, a rede provavelmente poderia seguir essas conexões planares corrompidas também, criando um caminho para o Ancião da Seca. Mas se for para funcionar, devemos nos mover rapidamente."
+Yarana compartilha as seguintes informações, explicando como recuperar a Rede dos Mundos:
+* A *Rede dos Mundos* está em posse de um dos seres mais antigos de Atagua, a Mãe Alvorada.
+* A Mãe Alvorada é uma gigante sem idade que vagueia pelos Llanos e diz-se que chama o sol a cada manhã. Ela frequenta um oásis chamado o Cesto. Embora seja distante, ela ama a terra e certamente ajudará.
+* Uma vez que os personagens tenham a rede, eles devem levá-la aos místicos conhecidos como os Médicos Verdes no Monastério da Anta Prateada.
+* Yarana não pode acompanhar os personagens porque sua imortalidade está vinculada à Terras Féricas (veja a seção "**Área Yarana**").
+
+![Rede dos Mundos](/images/campaigns/journeys-through-the-radiant-citadel/141-14-004hammock-of-worlds.webp)

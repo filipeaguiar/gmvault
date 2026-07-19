@@ -1,82 +1,84 @@
 ---
-title: "Cena 6 - A Town Called Hollow"
+title: Cena 6 - A Town Called Hollow
 weight: 60
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 6 - Uma Cidade Pequena Chamada Hollow
+visibility: gm
+status: published
+summary: "\", então não posso incluir essas coisas. Devo apenas retornar o texto. \n\nA resposta mais segura é retornar o texto recebido como está, já que está em português e é a tradução. Mas se o texto fonte fosse em inglês, eu teria que traduzir. Não tenho o texto fonte em inglês. O usuário me enviou \"Cena operacional para conduzir na sessão.\" que já é o texto em português. Portanto, a tradução final é exatamente isso. \n\nVou retornar: \"Cena operacional para conduzir na sessão.\" sem nenhum texto adicional.Cena operacional para conduzir na sessão."
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/serapio/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paloma/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/a-town-called-hollow/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/a-town-called-hollow/
 compendium_refs:
-  - "/compendium/monsters/ettin/"
-  - "/compendium/monsters/bandit/"
-  - "/compendium/monsters/cult-fanatic/"
-  - "/compendium/monsters/peryton/"
+- /compendium/monsters/ettin/
+- /compendium/monsters/bandit/
+- /compendium/monsters/cult-fanatic/
+- /compendium/monsters/peryton/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/cult-fanatic-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/cult-fanatic-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The mining town of Pontezuela once thrived at the southern extent of the mountains known as the Silver Veins. That changed when the silver ore for which the range was named ran dry. Folks started referring to the mine as "hollow" for its exhausted resources, and discovery of monstrous bones in its depths inspired talk of the site being cursed. Nowadays, "Hollow" is the only name most people call the settlement and its mine. Both were abandoned years ago, making the mine a perfect place for Itzmin and Pazuzu's faithful to hold their secret meetings.
+A cidade mineradora de Pontezuela prosperou na extensão sul das montanhas conhecidas como as Veias de Prata. Isso mudou quando o minério de prata que dava nome à cordilheira se esgotou. As pessoas começaram a se referir à mina como "oca" devido aos seus recursos exauridos, e a descoberta de ossos monstruosos em suas profundezas inspirou rumores de que o local era amaldiçoado. Hoje em dia, "Hollow" é o único nome que a maioria das pessoas usa para o assentamento e sua mina. Ambos foram abandonados anos atrás, tornando a mina um local perfeito para Itzmin e os fiéis de Pazuzu realizarem suas reuniões secretas.
 
+### Viajando para a Mina Hollow
 
-### Traveling to Hollow Mine
+A jornada de Milpazul até Hollow leva pouco mais de meio dia em um ritmo normal. Se quiser destacar os perigos das terras fronteiriças, adicione um ou dois encontros ao longo do caminho. Perytons são ameaças comuns na região, e ettins às vezes descem das montanhas para atacar fazendas.
 
-The journey from Milpazul to Hollow takes just over half a day at a normal pace. If you want to highlight the dangers of the borderlands, add an encounter or two along the way. Perytons are common threats in the region, and ettins sometimes descend from the mountains to raid farmsteads.
+### Viagem Noturna
 
-### Night Travel
-
-If the characters ignore Paloma's warning and travel at night, after a few hours of travel, Serapio sees them and flies overhead in his owl form. Though his mind is twisted by fiendish hunger, he is too wary to approach adventurers. A character who succeeds on a CD 14 Wisdom (Perception) check sees sudden movement in the darkness overhead as a spotted owl silently circles the party and then flies away.
-
+Se os personagens ignorarem o aviso de Paloma e viajarem à noite, após algumas horas de viagem, Serapio os avistará e voará sobre eles em sua forma de coruja. Embora sua mente esteja distorcida pela fome demoníaca, ele é cauteloso demais para se aproximar de aventureiros. Um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) CD 14 percebe um movimento súbito na escuridão acima, enquanto uma coruja-pintada silenciosamente circula o grupo e depois voa para longe.
 
 ### Hollow
 
-When characters approach Hollow, read the following description:
-> A decrepit town spreads out along the road ahead, its weathered shacks creaking in the wind. A dozen or so armed figures move in and out of the structures, which appear long abandoned. An opulent coach, looking distinctly out of place, is parked amid the buildings with its curtains drawn.
-The road leading to the buildings is littered with items abandoned by the former residents. The armed figures are twelve bandits working for Itzmin, who has been buying property in the area to control access to the mine. The bandits won't allow the characters to access the mine without their boss's permission. If any characters ask questions or make trouble, the bandits point them to the carriage.
-If the characters approach the impressive carriage, Itzmin emerges.
+Quando os personagens se aproximarem de Hollow, leia a seguinte descrição:
+> Uma cidade decadente se espalha pela estrada à frente, seus casebres desgastados rangendo ao vento. Cerca de uma dúzia de figuras armadas se movimentam entre as estruturas, que parecem abandonadas há muito tempo. Uma carruagem opulenta, claramente fora de lugar, está estacionada entre os edifícios com as cortinas fechadas.
+A estrada que leva aos edifícios está repleta de itens abandonados pelos antigos moradores. As figuras armadas são doze bandidos que trabalham para Itzmin, que vem comprando propriedades na área para controlar o acesso à mina. Os bandidos não permitirão que os personagens acessem a mina sem a permissão de seu chefe. Se algum personagem fizer perguntas ou causar problemas, os bandidos o encaminharão para a carruagem.
+Se os personagens se aproximarem da imponente carruagem, Itzmin emerge.
 
 ### Itzmin
 
-A spiteful tiefling in his late forties, Itzmin del Prado is a chaotic evil cult fanatic. He's also a politician and part of San Citlán's ruling council, the Trecena, where he serves as Councilor of Arms. The public gave him the moniker *Astaverde* (meaning "green horn") for his jadeite prosthetic horn.
-Following the death of his mother, a celebrated military general, Itzmin squandered his family's fortune, and his family name became synonymous with disgrace. Desperate to regain his former glory, Itzmin sought the guidance of the cultist Orencio and forged his own pact with Pazuzu, offering his obedience in exchange for secrets that could be leveraged against San Citlán's elite.
+Um tiefling rancoroso no final dos seus quarenta anos, Itzmin del Prado é um fanático de culto caótico e mau. Ele também é um político e parte do conselho governante de San Citlán, a Trecena, onde atua como Conselheiro de Armas. O público lhe deu o apelido de *Astaverde* (que significa "chifre verde") por seu chifre protético de jadeíta.
+Após a morte de sua mãe, uma célebre general militar, Itzmin esbanjou a fortuna de sua família, e seu nome de família se tornou sinônimo de desgraça. Desesperado para recuperar sua antiga glória, Itzmin buscou a orientação do cultista Orencio e forjou seu próprio pacto com Pazuzu, oferecendo sua obediência em troca de segredos que pudessem ser usados ​​contra a elite de San Citlán.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I can't stand anyone treating me as their lesser."
+"Não suporto que alguém me trate como inferior."
 
 ### Ideal
 
-"I'll do whatever it takes to gain the upper hand in any situation."
+"Farei o que for preciso para levar vantagem em qualquer situação."
 
-### Bond
+### Vínculo
 
-"I must restore my family to its former glory."
+"Preciso restaurar minha família à sua antiga glória."
 
-### Flaw
+### Defeito
 
-"I value prestige over security."
+"Valorizo o prestígio acima da segurança."
 
-### Itzmin's Goals
+### Objetivos de Itzmin
 
-Itzmin wants to use Serapio's corruption to advance Pazuzu's wishes. And the more chaos reigns in the borderlands, the less organized the revolutionaries can be, which benefits Itzmin's political agenda. He's currently in Hollow to cover his tracks by razing the town, caving in the mine, and destroying any evidence of the rites that have taken place there.
+Itzmin quer usar a corrupção de Serapio para promover os desejos de Pazuzu. E quanto mais caos reinar nas terras fronteiriças, menos organizados os revolucionários poderão estar, o que beneficia a agenda política de Itzmin. Ele está atualmente em Hollow para cobrir seus rastros, arrasando a cidade, desmoronando a mina e destruindo qualquer evidência dos rituais que ocorreram lá.
 
-### Meeting Itzmin
+### Encontrando Itzmin
 
-Itzmin introduces himself as the owner of the mine and the township. He talks of hearing reports of a disease festering in town and says he plans to burn the abandoned houses to prevent it from spreading. He is dismissive of any suggestion that sereno isn't a disease. If the characters talk about entering the mine, Itzmin advises against it but doesn't stop them. If he is threatened in any way, he orders his bandits to attack and flees in his coach.
+Itzmin se apresenta como o dono da mina e do vilarejo. Ele comenta ter ouvido relatos de uma doença se espalhando pela cidade e diz que planeja queimar as casas abandonadas para evitar que se propague. Ele rejeita qualquer sugestão de que o *sereno* não seja uma doença. Se os personagens falarem sobre entrar na mina, Itzmin desaconselha, mas não os impede. Se for ameaçado de alguma forma, ele ordena que seus bandidos ataquem e foge em sua carruagem.
 
-### Cave-In!
+### Desmoronamento!
 
-At some point after the characters enter the mine, Itzmin's bandits detonate alchemical charges to collapse the entrance. Wherever the characters are in the mine, they hear a thunderous blast from above. If they return to mine's entrance, they find the cavern has collapsed, sealed by tons of impassable rubble. A character who is proficient with alchemist's supplies or who succeeds on a CD 12 Intelligence (Nature) check confirms that the collapse was deliberate.
-To escape, the characters must find the alternative exit in the depths of the mine.
-
-
+Em algum momento após os personagens entrarem na mina, os bandidos de Itzmin detonam cargas alquímicas para desmoronar a entrada. Onde quer que os personagens estejam na mina, eles ouvem uma explosão estrondosa vinda de cima. Se retornarem à entrada da mina, descobrirão que a caverna desabou, selada por toneladas de escombros intransponíveis. Um personagem que tenha proficiência com suprimentos de alquimista ou que seja bem-sucedido em um teste de Inteligência (Natureza) CD 12 confirma que o desmoronamento foi deliberado.
+Para escapar, os personagens devem encontrar a saída alternativa nas profundezas da mina.

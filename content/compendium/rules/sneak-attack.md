@@ -1,20 +1,27 @@
 ---
-title: "Sneak Attack"
+title: Sneak Attack
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Sneak Attack."
+summary: 'Característica de classe: Ataque Furtivo.'
 tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
+- compendio
+- regra
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Ataque Furtivo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra <span class="dice+" data-roll-notation="1d6">1d6</span> damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+A partir do 1º nível, você sabe como atacar sutilmente e explorar a distração de um inimigo. Uma vez por turno, você pode causar um dano extra de <span class="dice+" data-roll-notation="1d6">1d6</span> a uma criatura que você atingir com um ataque se tiver vantagem na jogada de ataque. O ataque deve usar uma arma de acuidade ou uma arma de ataque à distância.
 
-You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.
+Você não precisa de vantagem na jogada de ataque se outro inimigo do alvo estiver a até 1,5 metro dele, esse inimigo não estiver incapacitado e você não tiver desvantagem na jogada de ataque.
 
-The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.
+A quantidade de dano extra aumenta conforme você ganha níveis nesta classe, como mostrado na coluna de Ataque Furtivo da tabela do Ladino.

@@ -1,42 +1,46 @@
 ---
-title: "Cena 5 - The Fiend's Identity"
+title: Cena 5 - The Fiend's Identity
 weight: 50
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 5 - A Identidade do Corruptor
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/serapio/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paloma/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/the-fiends-identity/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/the-fiends-identity/
 compendium_refs:
-  - "/compendium/monsters/tlacatecolo/"
+- /compendium/monsters/tlacatecolo/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The fiend that Paloma's band is searching for is Serapio, a taciturn young man who lives in San Citlán with his mother, Doña Rosa. The son of the evil sorcerer Orencio, Serapio suffers from the corruption of the demon lord Pazuzu and has transformed into a tlacatecolo (detailed at the **Área end of the adventure**). His fiendish nature compels him to spread his curse and feed on the afflicted. When he's himself, Serapio is terrified and doesn't understand why he's changing. When he's overwhelmed by fiendish influence, he's ruled by the evil of his new form.
+O corruptor que o bando de Paloma procura é Serapio, um jovem taciturno que vive em San Citlán com sua mãe, Doña Rosa. Filho do maligno feiticeiro Orencio, Serapio sofre da corrupção do lorde demônio Pazuzu e se transformou em um *tlacatecolo* (detalhado no final da aventura). Sua natureza de corruptor o compele a espalhar sua maldição e se alimentar dos afligidos. Quando está em si, Serapio fica aterrorizado e não entende por que está mudando. Quando dominado pela influência corruptora, é regido pela maldade de sua nova forma.
 
 
 ![Serapio](/images/campaigns/journeys-through-the-radiant-citadel/031-04-003serapio.webp)
 
 
 
-### Family Matters
+### Assuntos de Família
 
-Serapio's mother, Doña Rosa, is unaware of her son's transformation and believes he's in some trouble that he's hiding from her. She never told him about his biological father, Orencio. Years ago, Rosa lived among the San Citlánian elite, but after Orencio's execution, she fled the city to escape his followers. Starting a new life, Rosa married a man named Evaristo who helped raise Serapio. Evaristo died three months ago from a sudden illness. In truth, Evaristo was the first victim of sereno. Soon after Evaristo died, when Serapio showed signs of his own strange affliction, Rosa decided to return to San Citlán to confront her past. She believes the cult Orencio was involved with is somehow responsible, but she's found no evidence of this thus far.
-
-
-### Pazuzu's Servant
-
-When the wicked sorcerer Orencio was executed, his protégé, Itzmin, made his own pact with Pazuzu. Two decades later, Itzmin has become a corrupt politician in San Citlán who serves Pazuzu as Orencio did, using the demon lord's favor to secure economic and political power. Under Pazuzu's guidance, Itzmin has befriended Serapio, arranging for the young man to get part-time jobs for a produce distributor and an ironworks warehouse he owns. As Serapio comes further under Pazuzu's control, Itzmin uses the youth's fiendish hunger to sow chaos in the borderlands.
+A mãe de Serapio, Doña Rosa, desconhece a transformação do filho e acredita que ele está com algum problema que esconde dela. Ela nunca lhe contou sobre seu pai biológico, Orencio. Anos atrás, Rosa vivia entre a elite de San Citlán, mas após a execução de Orencio, fugiu da cidade para escapar de seus seguidores. Começando uma nova vida, Rosa casou-se com um homem chamado Evaristo, que ajudou a criar Serapio. Evaristo morreu há três meses, vítima de uma doença repentina. Na verdade, Evaristo foi a primeira vítima do *sereno*. Logo após a morte de Evaristo, quando Serapio mostrou sinais de sua própria e estranha aflição, Rosa decidiu voltar a San Citlán para confrontar seu passado. Ela acredita que o culto no qual Orencio estava envolvido é de alguma forma responsável, mas até agora não encontrou nenhuma evidência disso.
 
 
+### Servo de Pazuzu
+
+Quando o perverso feiticeiro Orencio foi executado, seu protegido, Itzmin, fez seu próprio pacto com Pazuzu. Duas décadas depois, Itzmin tornou-se um político corrupto em San Citlán, servindo a Pazuzu como Orencio fazia, usando o favor do lorde demônio para assegurar poder econômico e político. Sob a orientação de Pazuzu, Itzmin fez amizade com Serapio, conseguindo para o jovem empregos de meio período em um distribuidor de produtos e um armazém de ferragens de sua propriedade. À medida que Serapio cai mais sob o controle de Pazuzu, Itzmin usa a fome corruptora do jovem para semear o caos nas terras fronteiriças.

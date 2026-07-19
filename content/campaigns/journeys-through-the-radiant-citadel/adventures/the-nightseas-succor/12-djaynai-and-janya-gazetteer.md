@@ -2,125 +2,122 @@
 title: "Cena 12 - Djaynai and Janya Gazetteer"
 weight: 120
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: "Cena 12 - Gazeta de Djaynai e Janya"
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/assassin/"
-  - "/compendium/monsters/lizardfolk/"
-  - "/compendium/monsters/sahuagin-baron/"
-  - "/compendium/monsters/skeleton/"
-  - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/adult-bronze-dragon/"
-  - "/compendium/monsters/sea-hag/"
-  - "/compendium/monsters/lizard/"
-  - "/compendium/monsters/nightsea-chil-liren/"
+- /compendium/monsters/assassin/
+- /compendium/monsters/lizardfolk/
+- /compendium/monsters/sahuagin-baron/
+- /compendium/monsters/skeleton/
+- /compendium/monsters/ghost/
+- /compendium/monsters/adult-bronze-dragon/
+- /compendium/monsters/sea-hag/
+- /compendium/monsters/lizard/
+- /compendium/monsters/nightsea-chil-liren/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lizardfolk-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lizardfolk-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Modern Djaynai is a coastal realm descended from a grand civilization. Though the nation has never been defeated by external forces, its fortunes were greatly diminished hundreds of years ago after raiders perpetrated atrocities upon the land and its people in a series of attacks known as the Passage of Vultures. Djaynai's defenders drove the raiders off, albeit at a high cost. Even in its diminished state, the nation serves as an exemplar of self-sovereignty and dignity, defended by scouts known as the Lightsea Lancers, who watch for bandit groups and marauders aiming to raid Djaynai and its neighbors.
+A Djaynai moderna é um reino costeiro descendente de uma grande civilização. Embora a nação nunca tenha sido derrotada por forças externas, sua fortuna diminuiu consideravelmente há centenas de anos, após saqueadores cometerem atrocidades contra a terra e seu povo em uma série de ataques conhecida como a Passagem dos Abutres. Os defensores de Djaynai expulsaram os invasores, mas a um alto custo. Mesmo em seu estado reduzido, a nação serve como exemplo de autossuficiência e dignidade, defendida por batedores conhecidos como Lanceiros do Mar Luminoso, que vigiam grupos de bandidos e saqueadores que visam atacar Djaynai e seus vizinhos.
 
-During the Passage of Vultures, countless captured Djaynaians leaped from the ships of the marauders, like raindrops falling into the sea. "Freedom now!" they shouted as they sought the ocean's embrace. In the midnight depths, those ancient Djaynaians called upon their magic and that of the Nightsea, and they were transformed into beings dubbed Nightsea Chil-liren, gifted with the ability to live in the deep. Over centuries, they became the civilization known as Janya.
+Durante a Passagem dos Abutres, incontáveis djaynaianos capturados saltaram dos navios dos saqueadores como gotas de chuva caindo no mar. "Liberdade agora!" eles gritavam enquanto buscavam o abraço do oceano. Nas profundezas da meia-noite, aqueles djaynaianos ancestrais invocaram sua própria magia e a do Mar Noturno, e foram transformados em seres chamados Chil-liren do Mar Noturno, agraciados com o dom de viver nas profundezas. Ao longo dos séculos, eles se tornaram a civilização conhecida como Janya.
 
-Modern Janya is a majestic, deep-sea city protected by magical wards that resemble an opalescent aurora with the sheen of a blue-black pearl. Its buildings are castle-like structures resembling those of Djaynai above, but made from magically hardened, obsidian-hued silt and studded by crystalline support beams jutting from the smooth walls.
+A Janya moderna é uma cidade submarina majestosa, protegida por proteções mágicas que lembram uma aurora opalescente com o brilho de uma pérola preto-azulada. Seus edifícios são estruturas semelhantes a castelos, lembrando as de Djaynai na superfície, mas feitas de lodo endurecido magicamente em tons de obsidiana e cravejadas por vigas de sustentação cristalinas que se projetam das paredes lisas.
 
+### Características de Djaynai e Janya
 
-### Djaynai and Janya Features
+Aqueles familiarizados com Djaynai e Janya geralmente conhecem os seguintes detalhes:
 
-Those familiar with Djaynai and Janya typically know the following details:
+### Lugares Notáveis
 
+Djaynai é uma terra pacífica dominada por florestas de mangue ao longo da costa sul e penhascos recortados ao norte. Suas águas costeiras calmas são conhecidas como Mar Luminoso, mas após a plataforma continental, as águas se tornam repentinamente mais profundas. Este é o Mar Noturno, as profundezas sombrias que abrigam a vibrante cidade de Janya.
 
-### Noteworthy Sites
+### Castelo Djaynai
 
-Djaynai is a peaceful land dominated by mangrove forests along the southern coast and jagged cliffs to the north. Its calm coastal waters are known as the Lightsea, but beyond a continental shelf the waters grow suddenly deeper. This is the Nightsea, the shadowy depths that hold the vibrant city of Janya.
+O Castelo Djaynai é feito de tijolos de barro cor de ônix com pilastras de madeira e possui um telhado de pináculos pontiagudos. É a sede do governo representativo rotativo chamado Guardiões do Povo, e suas câmaras contêm tapetes e tapeçarias ornamentados, fragrância de óleos essenciais e apresentações de música hipnótica, que se combinam para criar uma recepção calorosa para convidados. Para deter intrusos, o castelo é forrado com armadilhas mágicas que transformam as vítimas em salamandras de água salgada (use o bloco de estatísticas de lagarto) comuns entre os manguezais de Djaynai.
 
-### Castle Djaynai
+### Casa da Dança dos Ancestrais
 
-Castle Djaynai is made from onyx-colored mud brick studded with wooden pilasters and features a roof of sharp pinnacles. It is home to the rotating representative government called the People's Stewards, and its chambers hold ornate rugs and tapestries, the fragrance of essential oils, and performances of hypnotic music, which combine to create a warm welcome for invited guests. To deter intruders, the castle is lined with magical traps that polymorph victims into the saltwater salamanders (use the lizard stat block) common among Djaynai's mangroves.
+Lar da facção espiritual conhecida como Foliões Noturnos, a Casa da Dança dos Ancestrais em Djaynai é um mausoléu com paredes de tijolo de barro lisas, de um branco calcário. Sua biblioteca contém inúmeros pergaminhos de sabedoria mágica, e os milhares de ossos de ancestrais em ossários espalhados pelo local são encantados para se erguerem magicamente como esqueletos e defenderem-se de possíveis ladrões.
 
-### Ancestors' Danse House
+### Fossa do Amor Perdido
 
-Home to the spiritual faction known as the Night Revelers, the Ancestors' Danse House in Djaynai is a mausoleum with smooth, chalky-white, mud-brick walls. Its library contains numerous scrolls of magical lore, and thousands of ancestors' bones in ossuaries throughout the site are enchanted to magically rise as skeletons and defend against would-be-thieves.
+Esta grande fossa submarina perto de Janya ressoa com mistério e presságio. Ela recebeu esse nome em memória dos incontáveis djaynaianos que desapareceram em suas profundezas durante os primeiros dias da Passagem dos Abutres, antes do surgimento dos primeiros Chil-liren do Mar Noturno. A fossa é definida pelos prados rosa-claros de criaturas plumosas conhecidas como lírios-do-mar que crescem ao longo de suas bordas. Os batedores da Patrulha Ondulante de Janya exploraram apenas uma pequena fração da fossa, que contém destroços de inúmeros navios e lugares misteriosos.
 
-### Trench of Love Lost
+### Liceu Cerúleo
 
-This great undersea trench near Janya resonates with mystery and foreboding. It is named in memory of the countless Djaynaians who vanished into its depths during the earliest days of the Passage of Vultures, before the first Nightsea Chil-liren came to be. The trench is defined by the pale-pink meadows of feathery creatures known as sea lilies that grow along its edges. Scouts of Janya's Billowing Patrol have explored only a small fraction of the trench, which contains the wrecks of numerous ships and mysterious sites.
+Um centro de cultura em Janya, o Liceu Cerúleo é uma grande faculdade de bardos com uma série de salões abobadados dispostos ao redor de um amplo quadrilátero. Pontas semelhantes a pingentes de gelo cercam o conservatório principal do Liceu Cerúleo, que se assemelha a um enorme cristal azul. Djaynju, a ópera de Djaynai, é apenas uma das muitas formas musicais ali praticadas e aperfeiçoadas.
 
-### Cerulean Lyceum
+### A Vida em Djaynai e Janya
 
-A center of culture in Janya, the Cerulean Lyceum is a great bardic college with a connected series of vaulted halls set around a broad quadrangle. Icicle-like spikes surround the Cerulean Lyceum's main conservatory, which resembles a massive blue crystal. Djaynju, opera from Djaynai, is just one of the many musical forms practiced and perfected here.
+As verdades a seguir são conhecidas por aqueles que habitam Djaynai ou Janya, e por viajantes que passam tempo nesses reinos. Aqueles que vivem acima e abaixo do mar compartilham culturas e valores semelhantes, embora o ambiente aquático de Janya provoque algumas diferenças.
 
+### Educação e Religião
 
-### Life in Djaynai and Janya
+A cultura de ambos os reinos está intimamente ligada às raízes históricas de Djaynai como uma civilização avançada e influente. Educação e criatividade são os fundamentos da cultura, e seu povo abraça a filosofia, a magia, a matemática e o estudo de sociedades subaquáticas. De acordo com essas tradições, a espiritualidade não é focada em deuses, mas em reverenciar e emular forças como a libertação, a fluidez e a mudança. Dessa forma, a maioria das pessoas está aberta às visões espirituais dos outros, desde que esses pontos de vista não abracem o mal.
 
-The following truths are known to people who dwell in Djaynai or Janya, and to travelers who spend time in those realms. Those above and below the sea share similar cultures and values, though Janya's aquatic environment drives some differences.
+### Comida e Vestuário
 
-### Education and Religion
+As refeições são consideradas sagradas em Djaynai, e desperdiçar comida é uma grande violação de etiqueta. Ingredientes-chave da culinária de Djaynai incluem banana, amendoim, leite de diversos tipos de animais, feijão vermelho e preto e pimentas. Em Janya, plantas submarinas comestíveis formam a base da dieta das pessoas, complementadas por ingredientes importados de Djaynai. Via de regra, ambos os povos evitam comer carne.
+As vestimentas djaynaianas combinam materiais rústicos e delicados, e é comum ver linho com renda ou damasco com tecidos de crochê no mesmo traje. A maioria dos djaynaianos usa alguma forma de xale ou manto o tempo todo, e sua moda favorece cores sóbrias. Toucas são tipicamente usadas em público, mais comumente capuzes com gorros pontudos, chapéus de abas largas, ou tagelmusts e tasuwarts que podem funcionar como capacete e véu. As roupas em Janya seguem um estilo paralelo ao de Djaynai, mas utilizam materiais como pele de enguia e gramíneas marinhas elegantemente tecidas.
 
-Both realms' culture is tightly tied to Djaynai's historical roots as an advanced, influential civilization. Education and creativity are the foundations of the culture, and its people embrace philosophy, magic, mathematics, and the study of underwater societies. In keeping with these traditions, spirituality isn't focused on gods, but on revering and emulating forces such as liberation, fluidity, and change. As such, most people are open to the spiritual views of others, as long as those views don't embrace evil.
+### Governo em Djaynai
 
-### Food and Clothing
+O governo de Djaynai é chamado de Guardiões do Povo, cujos postos de liderança mudam sempre que um número significativo de cidadãos solicita publicamente novas eleições. Todos os cidadãos de Djaynai são simultaneamente vistos como nobres, trabalhadores e Guardiões em potencial. O grupo espiritual anarquista chamado Foliões Noturnos representa um desafio à autoridade dos Guardiões, argumentando que Djaynai deve abandonar todo governo para ser verdadeiramente livre.
+As forças de segurança que protegem Djaynai — incluindo os batedores conhecidos como Lanceiros do Mar Luminoso — são altamente eficazes em suas funções, mas a lei djaynaiana enfatiza a redenção em detrimento da punição. Nos casos criminais mais terríveis, rituais controversos são realizados para impedir que o infrator aja de acordo com seus impulsos malignos. O infrator é então banido para o resto da vida.
 
-Meals are considered sacred in Djaynai, and wasting food is a major breach of etiquette. Key ingredients of Djaynai's cuisine include banana, groundnut, milk from several types of animals, red and black beans, and chili peppers. In Janya, edible undersea plants form the bulk of people's diet, supplemented by ingredients imported from Djaynai. As a rule, both peoples eschew eating meat.
-Djaynaian clothing combines rough-spun and delicate materials, and it is common to see linen with lace or damask with crocheted fabrics in the same outfit. Most Djaynaians wear a form of shawl or cloak at all times, and their fashion favors muted colors. Headwear is typically worn in public, most commonly cowls with pointed caps, wide-brimmed hats, or tagelmusts and tasuwarts that can function as headgear and veil. Clothing in Janya parallels Djaynaian style but features materials like eel skin and elegantly woven sea grasses.
+### Governo em Janya
 
-### Government in Djaynai
+Janya é uma oligarquia governada por um grupo chamado Suprema Corte, cujos membros podem, em raras ocasiões, contatar líderes importantes em Djaynai através de meios mágicos. Os membros da Suprema Corte — e os muitos agentes e intermediários que a servem — trabalham na magnífica Câmara do Conselho da cidade, instalada dentro da concha de um gigantesco búzio. No entanto, o atrito entre as facções Djaynaísta e Neojanyana da Suprema Corte pode transformar as reuniões em debates tensos.
+As forças de segurança de Janya são chamadas de Patrulha Ondulante, nomeadas por suas vestes escuras e esvoaçantes. Seu quartel-general é uma fortaleza prateada e ameaçadora guardada por sentinelas imponentes com armaduras cravejadas de espinhos.
 
-The government of Djaynai is called the People's Stewards, whose leadership ranks change whenever a significant number of citizens publicly call for new elections. All citizens of Djaynai are simultaneously seen as nobles, workers, and potential Stewards. The anarchic spiritual group called the Night Revelers poses a challenge to the Stewards' authority, arguing that Djaynai must abandon all government to truly be free.
-The security forces that protect Djaynai—including the scouts known as Lightsea Lancers—are highly effective in their roles, but Djaynaian law emphasizes redemption over punishment. In the direst criminal cases, controversial rituals are performed to prevent the offender from acting on their wicked impulses. The offender is then banished for life.
+### Música
 
-### Government in Janya
+A música tradicional em ambos os reinos funciona para transfigurar espiritualmente os ouvintes. Ela enfatiza tons graves e ritmos sincopados, utilizando instrumentos de corda como o guembri, semelhante a um alaúde, o akoting e o xalam; o arco musical conhecido como berimbau; e o sonoro tambor atabaque.
 
-Janya is an oligarchy ruled by a group called the High Court, some members of which are able to contact key leaders in Djaynai on rare occasions through magical means. Members of the High Court—and the many agents and liaisons who serve it—work in the city's magnificent Council Chamber, which is housed within the shell of a gigantic whelk. However, friction between the Djaynaist and New Janyan factions of the High Court can turn meetings into fraught debates.
-The security forces of Janya are called the Billowing Patrol, named for their flowing, dark robes. Their headquarters is a looming silvery fortress guarded by imposing sentries in armor bristling with spikes.
+### Nomes
 
-### Music
+Djaynaianos e janyanos usam apenas nomes únicos em público, reservando os nomes de família para entes queridos próximos. Em ambos os reinos, esses nomes de família combinam palavras djaynaianas com foco na natureza, como Sombra de Pinheiro ou Lebre da Névoa. A seguir, alguns nomes públicos comuns:
 
-Traditional music in both realms functions to spiritually transfigure listeners. It emphasizes low tones and syncopated rhythms, utilizing stringed instruments such as the lute-like guembri, akoting, and xalam; the musical bow known as the berimbau; and the sonorous atabaque drum.
+### Lendas de Djaynai e Janya
 
-### Names
+Djaynai tem sido um farol de independência e conhecimento por milênios. De fato, Djaynai prevaleceu por fim sobre todos os invasores, com um papel fundamental desempenhado pelas práticas místicas conhecidas como o Caminho da Névoa Negra e as Artes do Trono Negro. Infelizmente, os reinos vizinhos amistosos de Djaynai são ameaçados com mais frequência. Por exemplo, inescrutáveis homens-lagarto nos pântanos periodicamente se reúnem e causam estragos no oceano próximo. Os Lanceiros do Mar Luminoso — que receberam o nome das águas costeiras rasas que os djaynaianos chamam de Mar Luminoso — foram formados para monitorar tais ameaças antes que elas afetem Djaynai. Viajantes ocasionalmente vão a Djaynai para aprender os métodos dos Lanceiros do Mar Luminoso, já que seus feitos heroicos, artes marciais semelhantes a danças e conhecimento de magia de transmutação são renomados em Djaynai e além.
+Sob o Mar Noturno, o reino de Janya tem seus próprios contos. Muitos narram como os primeiros janyanos estavam focados não apenas em reconstruir suas vidas, mas em preservar o que valorizavam da terra acima. Para manter tal saber a salvo, os janyanos ancestrais construíram estruturas em locais ocultos, como a Fossa do Amor Perdido, para arquivar sabedoria sagrada antes que ela se perdesse. Eventualmente, porém, esses arquivos caíram no esquecimento. Segredos profundos de Djaynai permanecem ocultos nas profundezas, aguardando serem reavivados.
 
-Djaynaians and Janyans use only single names publicly, reserving family names for close loved ones. In both realms, those family names combine Djaynaian words focused on nature, such as Pineshadow or Misthare. The following are common public names:
+### Aventuras em Djaynai e Janya
 
+Considere as tramas da tabela de Aventuras em Djaynai e Janya ao planejar aventuras nesses reinos.
 
-### Legends of Djaynai and Janya
-
-Djaynai has been a beacon of independence and knowledge for millennia. Indeed, Djaynai has ultimately prevailed over all invaders, with a key role played by the mystical practices known as the Blackmist Way and Blackthrone Arts. Unfortunately, Djaynai's friendly neighboring realms are more often threatened. For instance, inscrutable lizardfolk in the wetlands periodically congregate and cause havoc in the nearby ocean. The Lightsea Lancers—who take their name from the shallow coastal waters Djaynaians call the Lightsea—was formed to monitor such threats before they impact Djaynai. Travelers occasionally come to Djaynai to learn the Lightsea Lancers' ways, as their heroics, dance-like martial arts, and knowledge of transmutation magic are renowned throughout Djaynai and beyond.
-Beneath the Nightsea, the realm of Janya has its own tales. Many tell of how early Janyans were focused not only on rebuilding their lives but on preserving what they treasured from the land above. To keep such lore safe, ancestral Janyans built structures in hidden reaches, like the Trench of Love Lost, to archive sacred wisdom before it was lost. Eventually, though, such archives faded from memory. Profound Djaynaian secrets remain hidden in the deep, awaiting rekindling.
-
-
-### Adventures in Djaynai and Janya
-
-Consider the plots on the Djaynai and Janya Adventures table when planning adventures in these realms.
-
-**Tabela: Djaynai and Janya Adventures**
+**Tabela: Aventuras em Djaynai e Janya**
 
 |  |  |
 | --- | --- |
-| 1 | The People's Stewards hope to raise the regent Atiba-Pa's stormy mood by having the characters recover his famed magical cutlass, stolen by seafaring assassins. |
-| 2 | A Lightsea Lancer seeks the characters' aid in stopping twin sahuagin barons and their band from raiding kelp farms between Djaynai and Janya. |
-| 3 | Night Revelers invite the characters to join their seaside festivities, but they unknowingly disturb a coven of sea hags. |
-| 4 | Lizardfolk marauders raid farms in lands adjacent to Djaynai, and the Lightsea Lancers seek adventurers to help repel them. |
-| 5 | A botched memorial ritual at the Ancestors' Danse House transports the characters into the Djaynai of the past, bringing them face-to-face with a band of foul invaders. |
-| 6 | While visiting Janya, the characters encounter a shipwreck laden with treasure—and ghosts. The spirits wish to be put to rest, but the adult bronze dragon that sank the ship considers them part of its hoard. |
+| 1 | Os Guardiões do Povo esperam melhorar o humor tempestuoso do regente Atiba-Pa fazendo com que os personagens recuperem sua famosa cimitarra mágica, roubada por assassinos marítimos. |
+| 2 | Uma Lanceira do Mar Luminoso busca a ajuda dos personagens para impedir que dois barões sahuagin e seu bando saqueiem fazendas de algas entre Djaynai e Janya. |
+| 3 | Foliões Noturnos convidam os personagens para suas festividades à beira-mar, mas eles perturbam, sem saber, um coven de bruxas do mar. |
+| 4 | Saqueadores homens-lagarto atacam fazendas em terras adjacentes a Djaynai, e os Lanceiros do Mar Luminoso buscam aventureiros para ajudar a repeli-los. |
+| 5 | Um ritual memorial fracassado na Casa da Dança dos Ancestrais transporta os personagens para a Djaynai do passado, colocando-os face a face com um bando de invasores vis. |
+| 6 | Ao visitar Janya, os personagens encontram um naufrágio carregado de tesouros — e fantasmas. Os espíritos desejam ser postos para descansar, mas o dragão de bronze adulto que afundou o navio os considera parte de seu tesouro. |
 
+### Personagens de Djaynai
 
-### Characters from Djaynai
-
-If players create characters from Djaynai or with ties to Janya, consider asking them the following questions during character creation:
-**How do you feel about the Will of the Insurgent Tides**? Do you support the quest to recover the lore of the Blackmist Way and the Blackthrone Arts, or are they relics of an unrecoverable past?
-**Do you or anyone in your family have a connection to the Night Revelers**? Do you embrace that faction's call to anarchy, or do you seek to undermine that call before it spreads further?
-**Whether you come from Djaynai or Janya, how much do you know of the other realm**? Do you consider yourself a person of two worlds? Or do you yearn for a greater understanding of your kin on the other side of the water's surface?
-
-
+Se os jogadores criarem personagens de Djaynai ou com laços com Janya, considere fazer as seguintes perguntas durante a criação de personagem:
+**Como você se sente em relação à Vontade das Marés Insurgentes**? Você apoia a busca para recuperar o conhecimento do Caminho da Névoa Negra e das Artes do Trono Negro, ou eles são relíquias de um passado irrecuperável?
+**Você ou alguém de sua família tem alguma ligação com os Foliões Noturnos**? Você abraça o chamado dessa facção à anarquia ou busca minar esse chamado antes que ele se espalhe ainda mais?
+**Quer você venha de Djaynai ou de Janya, o quanto você conhece do outro reino**? Você se considera uma pessoa de dois mundos? Ou anseia por uma compreensão maior de seus parentes do outro lado da superfície da água?

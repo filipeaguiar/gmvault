@@ -1,27 +1,27 @@
 ---
-title: "Cena 1 - Introdução"
+title: Cena 1 - Introdução
 weight: 10
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 1 - Introdução
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-*An Adventure for 14th-Level Characters*
+*Aventura para Personagens de 14º Nível*
 
-The land of Atagua exists at a weak point between several planes of existence. Feywild influences work upon the land, but in recent years, corruption from the Far Realm has begun leaking into the savanna. The characters must journey to the Feywild and beyond to quell the alien forces spreading across the increasingly surreal plains.
-
-
+A terra de Atagua existe em um ponto fraco entre vários planos de existência. Influências de Feywild agem sobre a terra, mas, nos últimos anos, a corrupção do Far Realm começou a vazar para a savana. Os personagens devem viajar para Feywild e além para conter as forças alienígenas que se espalham pelas planícies cada vez mais surreais.

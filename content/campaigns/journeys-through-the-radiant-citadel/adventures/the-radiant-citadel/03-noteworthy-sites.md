@@ -1,83 +1,85 @@
 ---
-title: "Cena 3 - Noteworthy Sites"
+title: Cena 3 - Noteworthy Sites
 weight: 30
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
+  kind: scene
+draft: false
+titulo_pt_br: Área 3 - Locais Notáveis
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/noteworthy-sites/"
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/noteworthy-sites/
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-001-map-11-radiant-citadel-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-001-map-11-radiant-citadel-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The Radiant Citadel is a testament to a lost age of extraordinary magic and mythical beasts. The city rises from a gargantuan fossil, and every road and building has been carved from it. The Citadel is a place of beauty and wonder, with a vast array of vegetation and a multitude of sites and inhabitants.
+A Cidadela Radiante é um testemunho de uma era perdida de magia extraordinária e bestas míticas. A cidade ergue-se de um fóssil colossal, e cada estrada e edifício foi esculpido dele. A Cidadela é um lugar de beleza e maravilha, com uma vasta gama de vegetação e uma infinidade de locais e habitantes.
 
 
-![Map 1.1: Radiant Citadel](/images/campaigns/journeys-through-the-radiant-citadel/000-map-11-radiant-citadel.webp)
+![Mapa 1.1: Cidadela Radiante](/images/campaigns/journeys-through-the-radiant-citadel/000-map-11-radiant-citadel.webp)
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/001-map-11-radiant-citadel-player.webp)
-
-
-
-### Auroral Diamond
-
-The Auroral Diamond is the heart of the Radiant Citadel. A massive gemstone of unfathomable power, its life-giving magic runs through the entire city; the city's vegetation, water, light, and unique artifices depend on the Diamond.
-The Auroral Diamond changes color for unknown reasons. Sometimes it holds a color for an entire year, while other times it shifts twice in a single week. Rarely does it ever repeat a color. Some scholars believe each color represents the birth of a new civilization somewhere in the multiverse, and repetition of a color means the death of that civilization. Other scholars hypothesize the changing colors are a countdown to some unknown event.
-The Auroral Diamond is indestructible. Whatever magic hollowed out the gemstone's center and created the **Área Preserve of the Ancestors** (described later) is unknown.
-
-
-### Court of Whispers
-
-The denizens of the Court of Whispers barter for current knowledge. Heralds, criers, bards, and griots buy and sell information from the fifteen founding civilizations active in the Citadel, as well as other lands. Skilled scouts and spies can also be hired for short-term reconnaissance or long-term infiltration. The Court is a mixed outdoor-indoor space with quiet alcoves and open plazas, and plentiful work is available here for talented adventurers.
-The Speakers for the Ancestors—the leaders of the Radiant Citadel—employ freelancers from the Court of Whispers to keep track of major concerns in their people's homelands, as well as potential threats to the Citadel, while the Shieldbearers of the Citadel (see the "**Área Palace of Exile**" section) seek information so they can identify crisis points where their operatives are needed. Even common citizens might hire folk from the Court to find missing loved ones, locate lost family treasures, or gather information on rivals.
-Powerful organizations and individuals from across the planes send agents to the Court of Whispers to collect information and do business on their behalf. Noteworthy examples include the Harpers of Abeir-Toril, Sigil's Fraternity of Order, and agents of the planes-traveling gnome fixer Vi.
-
-![The Ruby Pangolin, Dawn Incarnate of Siabsungkoh](/images/campaigns/journeys-through-the-radiant-citadel/002-01-001ruby-pangolin.webp)
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/001-map-11-radiant-citadel-player.webp)
 
 
 
-### House of Convalescence
+### Diamante Auroral
 
-The House of Convalescence focuses the life-giving energies of the Auroral Diamond, allowing for incredible feats of healing magic. This makes the House of Convalescence an oasis for the sick, the injured, and the desperate. It also draws clerics and healers of many traditions. Most come to serve those in need, but some seek to understand the magical properties of the place itself.
-Magic is affected in the following ways in the House of Convalescence:
-
-
-### The Keening Gloom
-
-Just beyond the light of the Radiant Citadel rages the Keening Gloom, a massive ethereal cyclone. Nothing that enters the cyclone is seen again.
-When explorers rediscovered the Citadel, the Keening Gloom hungrily circled the city. Its endless howl struck terror in their hearts and engulfed several adventurers. After the heroes entered the Citadel and reawakened its power, the cyclone was driven back. But in times of turmoil within the Citadel, the cyclone ominously draws closer.
-Scholars have studied the Keening Gloom for decades but have only theories about its nature, its connection to the Radiant Citadel, and what befalls those caught in its terrible throes. Many fear the cyclone cannot be held at bay forever.
+O Diamante Auroral é o coração da Cidadela Radiante. Uma gema massiva de poder insondável, sua magia vitalizadora percorre toda a cidade; a vegetação, a água, a luz e os artifícios únicos da cidade dependem do Diamante.
+O Diamante Auroral muda de cor por razões desconhecidas. Às vezes, mantém uma cor por um ano inteiro, enquanto outras vezes muda duas vezes em uma única semana. Raramente repete uma cor. Alguns estudiosos acreditam que cada cor representa o nascimento de uma nova civilização em algum lugar do multiverso, e a repetição de uma cor significa a morte dessa civilização. Outros estudiosos especulam que as mudanças de cor são uma contagem regressiva para algum evento desconhecido.
+O Diamante Auroral é indestrutível. Qualquer que seja a magia que escavou o centro da gema e criou a **Reserva dos Ancestrais** (descrita posteriormente), ela é desconhecida.
 
 
-### Palace of Exile
+### Corte dos Sussurros
 
-The adventurers who discovered and reoccupied the Radiant Citadel were from the civilizations that founded the city long ago. Among them, several had been set on the path of adventure after conflict or disaster drove them from their homes, and the Citadel provided solace. In turn, they established the Palace of Exile to help others in need.
-The palace was named in honor of Socorro the Exile, its founding leader. He was a refugee of war in the land of San Citlán, and he selected one of the most beautiful complexes in the Citadel to house the needy as they arrived. He swore that while his homeland was occupied, he would be an exile and would make his home in the Palace, alongside any others with nowhere else to go.
-The Palace of Exile has spacious living quarters with adjoining gardens and recovery centers, where refugees are cared for physically, mentally, and emotionally as they make the transition to either living in the Radiant Citadel permanently or relocating to a new land. The Palace's staff coordinate with the House of Convalescence to provide the best possible aid to the sick and wounded.
-The Shieldbearers, the Radiant Citadel's dedicated search-and-rescue force, are headquartered at the Palace of Exile. Where there is a need, the Shieldbearers help.
+Os habitantes da Corte dos Sussurros negociam conhecimento atual. Arautos, pregoeiros, bardos e griots compram e vendem informações das quinze civilizações fundadoras ativas na Cidadela, bem como de outras terras. Batedores e espiões habilidosos também podem ser contratados para reconhecimento de curto prazo ou infiltração de longo prazo. A Corte é um espaço misto ao ar livre e interno, com alcovas silenciosas e praças abertas, e há trabalho abundante disponível aqui para aventureiros talentosos.
+Os Porta-vozes dos Ancestrais — os líderes da Cidadela Radiante — empregam freelancers da Corte dos Sussurros para acompanhar as principais preocupações nas terras natais de seu povo, bem como ameaças potenciais à Cidadela, enquanto os Portadores de Escudo da Cidadela (veja a seção "**Palácio do Exílio**") buscam informações para identificar pontos de crise onde seus agentes são necessários. Até mesmo cidadãos comuns podem contratar pessoas da Corte para encontrar entes queridos desaparecidos, localizar tesouros de família perdidos ou reunir informações sobre rivais.
+Organizações e indivíduos poderosos de todo o plano enviam agentes para a Corte dos Sussurros para coletar informações e fazer negócios em seu nome. Exemplos notáveis incluem os Harpistas de Abeir-Toril, a Fraternidade da Ordem de Sigil e agentes do consertador gnomo viajante dos planos, Vi.
 
-
-### Preserve of the Ancestors
-
-The Preserve of the Ancestors is a sprawling, domed wilderness cut into the heart of the Auroral Diamond. Lush vegetation grows directly out of the diamond, and the expanse is dotted with jackalberry trees, whistling thorn, and zebrawood. Insects, small birds, and the occasional hare make their home here. In the center of the Preserve is a circular, in-ground amphitheater that serves as the meeting place of the Citadel's ruling council, the Speakers for the Ancestors.
-While the Preserve has little indigenous wildlife—mostly birds and small mammals—a sect of druids frequently brings injured animals here to be healed and rehabilitated. The Preserve is where the druids keep animals that can no longer survive in their native habitats, creating a menagerie of rare creatures from across many worlds.
-Drawn by the power of the Auroral Diamond, spirits from countless lands make their home in the Preserve. Spirits from the same lands or of similar origins inhabit tiny jewels and assemble into amalgamations known as Incarnates. Some are small collections of spirits, but the greatest—related to the citadel's founding civilizations—are larger-than-life beings that embody the wisdom of ages (see the **Área "Incarnates" section** for details).
+![O Pangolim Rubi, Encarnação da Alvorada de Siabsungkoh](/images/campaigns/journeys-through-the-radiant-citadel/002-01-001ruby-pangolin.webp)
 
 
-### Trade Discal
 
-Encircling the Auroral Diamond, the Trade Discal is a massive marketplace designed so that the founding civilizations could trade on equitable terms. It serves the needs of cities and nations or major trading companies, rather than individual sellers or producers, which is enforced by its high taxes and fees. Large quantities of goods, such as entire herds of animals or tons of metal ore, can be transported via the Concord Jewels (described below) to the Trade Discal quickly and safely.
-The Trade Discal is a vital outlet; if something were to happen to it, the impact would be severe for both the Radiant Citadel and the civilizations that depend on it. Adventurers are sometimes hired to oversee the transport of commodities to and from the Citadel or to negotiate on behalf of a major trading company or government. Normally this is a smooth process, but when large amounts of gold are involved, trade is never risk free.
+### Casa de Convalescença
+
+A Casa de Convalescença concentra as energias vitalizadoras do Diamante Auroral, permitindo feitos incríveis de magia de cura. Isso torna a Casa de Convalescença um oásis para os doentes, os feridos e os desesperados. Também atrai clérigos e curandeiros de muitas tradições. A maioria vem para servir os necessitados, mas alguns buscam entender as propriedades mágicas do próprio lugar.
+A magia é afetada das seguintes maneiras na Casa de Convalescença:
 
 
+### A Penumbra Lamentosa
+
+Logo além da luz da Cidadela Radiante ruge a Penumbra Lamentosa, um ciclone etéreo massivo. Nada que entra no ciclone é visto novamente.
+Quando os exploradores redescobriram a Cidadela, a Penumbra Lamentosa circulava faminta a cidade. Seu uivo interminável aterrorizou seus corações e engolfou vários aventureiros. Depois que os heróis entraram na Cidadela e reativaram seu poder, o ciclone foi repelido. Mas em tempos de turbulência dentro da Cidadela, o ciclone se aproxima ameaçadoramente.
+Estudiosos estudam a Penumbra Lamentosa há décadas, mas têm apenas teorias sobre sua natureza, sua conexão com a Cidadela Radiante e o que acontece com aqueles apanhados em seus terríveis espasmos. Muitos temem que o ciclone não possa ser mantido à distância para sempre.
+
+
+### Palácio do Exílio
+
+Os aventureiros que descobriram e reocuparam a Cidadela Radiante eram das civilizações que fundaram a cidade há muito tempo. Entre eles, vários haviam sido colocados no caminho da aventura depois que conflitos ou desastres os expulsaram de seus lares, e a Cidadela forneceu consolo. Em troca, eles estabeleceram o Palácio do Exílio para ajudar outros necessitados.
+O palácio foi nomeado em homenagem a Socorro, o Exilado, seu líder fundador. Ele era um refugiado de guerra na terra de San Citlán e selecionou um dos complexos mais belos da Cidadela para abrigar os necessitados à medida que chegavam. Ele jurou que, enquanto sua terra natal estivesse ocupada, ele seria um exilado e faria seu lar no Palácio, ao lado de quaisquer outros sem outro lugar para ir.
+O Palácio do Exílio possui alojamentos espaçosos com jardins adjacentes e centros de recuperação, onde os refugiados são cuidados física, mental e emocionalmente enquanto fazem a transição para viver permanentemente na Cidadela Radiante ou se mudar para uma nova terra. A equipe do Palácio coordena com a Casa de Convalescença para fornecer a melhor ajuda possível aos doentes e feridos.
+Os Portadores de Escudo, a força dedicada de busca e resgate da Cidadela Radiante, têm sua sede no Palácio do Exílio. Onde há necessidade, os Portadores de Escudo ajudam.
+
+
+### Reserva dos Ancestrais
+
+A Reserva dos Ancestrais é uma vasta região selvagem abobadada, escavada no coração do Diamante Auroral. A vegetação exuberante cresce diretamente do diamante, e a extensão é pontilhada com árvores de baga-de-chacal, acácias-assobiadoras e zebrawood. Insetos, pequenos pássaros e a lebre ocasional fazem seu lar aqui. No centro da Reserva há um anfiteatro circular subterrâneo que serve como local de reunião do conselho governante da Cidadela, os Porta-vozes dos Ancestrais.
+Embora a Reserva tenha pouca fauna silvestre nativa — principalmente pássaros e pequenos mamíferos — uma seita de druidas frequentemente traz animais feridos para cá para serem curados e reabilitados. A Reserva é onde os druidas mantêm animais que não podem mais sobreviver em seus habitats nativos, criando um zoológico de criaturas raras de muitos mundos.
+Atraídos pelo poder do Diamante Auroral, espíritos de inúmeras terras fazem seu lar na Reserva. Espíritos das mesmas terras ou de origens similares habitam pequenas joias e se reúnem em amalgamações conhecidas como Encarnações. Algumas são pequenas coleções de espíritos, mas as maiores — relacionadas às civilizações fundadoras da cidadela — são seres maiores que a vida que incorporam a sabedoria das eras (veja a seção **"Encarnações"** para detalhes).
+
+
+### Discal de Comércio
+
+Circundando o Diamante Auroral, o Discal de Comércio é um mercado massivo projetado para que as civilizações fundadoras pudessem negociar em termos equitativos. Ele atende às necessidades de cidades e nações ou grandes empresas comerciais, em vez de vendedores ou produtores individuais, o que é imposto por seus altos impostos e taxas. Grandes quantidades de mercadorias, como rebanhos inteiros de animais ou toneladas de minério de metal, podem ser transportadas através das Joias da Concórdia (descritas abaixo) para o Discal de Comércio de forma rápida e segura.
+O Discal de Comércio é uma saída vital; se algo acontecesse com ele, o impacto seria severo tanto para a Cidadela Radiante quanto para as civilizações que dependem dele. Aventureiros às vezes são contratados para supervisionar o transporte de mercadorias de e para a Cidadela ou para negociar em nome de uma grande empresa comercial ou governo. Normalmente, este é um processo tranquilo, mas quando grandes quantidades de ouro estão envolvidas, o comércio nunca é livre de riscos.

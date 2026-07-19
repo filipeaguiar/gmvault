@@ -1,16 +1,22 @@
 ---
-title: "Spirit of the Past"
+title: Spirit of the Past
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Espírito do Passado
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-057-map-62-park-of-the-elders-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-057-map-62-park-of-the-elders-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Localidade **Spirit of the Past** importada automaticamente.
@@ -20,6 +26,5 @@ Localidade **Spirit of the Past** importada automaticamente.
 
 ### Mapas
 
-#### 057 62 Park Of The Elders Player
-![057 62 Park Of The Elders Player](/images/campaigns/journeys-through-the-radiant-citadel/057-map-62-park-of-the-elders-player.webp)
-
+#### 057 62 Parque dos Anciões do Jogador
+![057 62 Parque dos Anciões do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/057-map-62-park-of-the-elders-player.webp)

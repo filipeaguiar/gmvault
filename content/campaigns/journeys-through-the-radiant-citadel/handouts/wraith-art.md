@@ -1,15 +1,15 @@
 ---
-title: "Arte: wraith"
+title: 'Arte: wraith'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: wraith'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: wraith](/images/campaigns/journeys-through-the-radiant-citadel/wraith.webp)

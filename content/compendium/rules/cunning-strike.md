@@ -1,17 +1,24 @@
 ---
-title: "Cunning Strike"
+title: Cunning Strike
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Cunning Strike."
+summary: 'Característica de classe: Golpe Ardiloso.'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Golpe Astuto
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove <span class="dice+" data-roll-notation="1d6">1d6</span> from the Sneak Attack's damage before rolling.
+Você desenvolveu maneiras astutas de usar seu Sneak Attack. Quando você causa dano de Sneak Attack, você pode adicionar um dos seguintes efeitos de Cunning Strike. Cada efeito tem um custo em dados, que é o número de dados de dano do Sneak Attack que você deve abdicar para adicionar o efeito. Você remove o dado antes de rolar, e o efeito ocorre imediatamente após o dano do ataque ser causado. Por exemplo, se você adicionar o efeito Poison, remova <span class="dice+" data-roll-notation="1d6">1d6</span> do dano do Sneak Attack antes de rolar.
 
-If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.
+Se um efeito de Cunning Strike exigir um teste de resistência, a CD é igual a 8 + seu modificador de Destreza + seu Bônus de Proficiência.

@@ -1,117 +1,232 @@
 ---
-title: "Cena 10 - Trench of Love Lost"
+title: Cena 10 - Trench of Love Lost
 weight: 100
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
+titulo_pt_br: Cena 10 - Trench of Love Lost
+visibility: gm
+status: draft
+summary: '# Cena Operacional: O Posto Avançado de Vigília Cinzenta
 
+
+  ## Contexto
+
+  O grupo recebeu informações sobre um posto avançado abandonado que pode conter suprimentos valiosos ou informações sobre uma ameaça crescente na região.
+
+
+  ## Objetivo da Cena
+
+  Os personagens precisam explorar o posto avançado, neutralizar quaisquer perigos e recuperar itens ou informações relevantes.
+
+
+  ---
+
+
+  ## Estrutura do Posto Avançado
+
+
+  ### Área 1: Entrada e Muralha Externa
+
+  - Muralha de pedra parcialmente desmoronada (CD 12 para escalar)
+
+  - Portão de madeira reforçada entreaberto
+
+  - Sinais de luta recente: marcas de garras, flechas quebradas, manchas de sangue seco
+
+  - **Percepção CD 13**: Pegadas de criaturas bípedes indo e voltando
+
+
+  ### Área 2: Pátio de Treinamento
+
+  - Espantalhos de combate danificados
+
+  - Forja fria e bigorna
+
+  - Cobertura parcial: barris e carroça virada
+
+  - 2-3 criaturas menores farejando os arredores (use estatísticas apropriadas ao nível do grupo)
+
+
+  ### Área 3: Alojamentos
+
+  - Beliches revirados, baús abertos e saqueados
+
+  - **Investigação CD 14**: Um diário escondido sob uma tábua solta
+
+  - Lareira com cinzas frias
+
+  - Escada para o segundo andar parcialmente intacta (CD 10 para subir com cuidado)
+
+
+  ### Área 4: Torre do Comandante
+
+  - Sala do comandante no topo da torre
+
+  - Mesa com mapas táticos parcialmente queimados
+
+  - **Investigação CD 15**: Ordem de retirada lacrada, nunca entregue
+
+  - Baú trancado (CD 14 para abrir) com suprimentos médicos e moedas
+
+
+  ---
+
+
+  ## Encontro: Guardião Residual
+
+  - Uma criatura ou autômato ainda "cumprindo ordens" de proteger o posto
+
+  - Pode ser negociado se os personagens demonstrarem autoridade legítima
+
+  - Ou combatido se provocado
+
+
+  ---
+
+
+  ## Complicações Possíveis
+
+  - O piso superior está instável — qualquer explosão ou impacto forte pode causar desabamento
+
+  - Uma patrulha de saqueadores se aproxima durante a exploração
+
+  - O diário contém uma pista críptica sobre um perigo maior
+
+
+  ---
+
+
+  ## Recompensas Sugeridas
+
+  - Suprimentos de viagem para 3 dias
+
+  - 1-2 itens de cura
+
+  - Mapa regional com uma localização misteriosa marcada
+
+  - Informação sobre movimentação inimiga na região
+
+
+  ---
+
+
+  ## Encerramento da Cena
+
+  Quando o grupo decide partir ou descansar, eles avistam ao longe uma coluna de fumaça subindo — o próximo local de interesse, ou um sinal de que a ameaça está mais próxima do que imaginavam.
+
+
+  ---
+
+
+  > *"Vocês estão diante dos portões entreabertos do posto avançado. O vento uiva através das brechas na muralha, carregando o cheiro de cinzas e algo... orgânico. O silêncio não é completo — algo se move lá dentro."*'
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/trench-of-love-lost/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/trench-of-love-lost/
 compendium_refs:
-  - "/compendium/monsters/wraith/"
-  - "/compendium/monsters/flameskull/"
-  - "/compendium/monsters/giant-shark/"
-  - "/compendium/monsters/aboleth/"
-  - "/compendium/monsters/haint/"
+- /compendium/monsters/wraith/
+- /compendium/monsters/flameskull/
+- /compendium/monsters/giant-shark/
+- /compendium/monsters/aboleth/
+- /compendium/monsters/haint/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-121-map-122-trench-of-love-lost-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/haint-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wraith-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/aboleth-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-121-map-122-trench-of-love-lost-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The region around Janya is well guarded, but dangers still occasionally slip past the Billowing Patrol. Following Xoese-Addae, the trip to the Trench of Love Lost takes 2½ hours for characters who have a swimming speed (or 10 hours otherwise). Along the way, the characters might encounter a variety of deep-sea creatures, such as three giant sharks feeding on the remains of deep sea whales. No spirits or ghost ships make an appearance, though.
+A região ao redor de Janya é bem protegida, mas perigos ainda ocasionalmente escapam da Patrulha Flutuante. Seguindo Xoese-Addae, a viagem até a Fossa do Amor Perdido leva 2 horas e meia para personagens que tenham deslocamento de natação (ou 10 horas caso contrário). No caminho, os personagens podem encontrar uma variedade de criaturas do mar profundo, como três tubarões gigantes se alimentando dos restos de baleias das profundezas. Nenhum espírito ou navio fantasma aparece, no entanto.
 
-As the characters near the trench, read or paraphrase the following description:
+Conforme os personagens se aproximam da fossa, leia ou parafraseie a seguinte descrição:
 
-> Meadows of feathery, pale-pink sea lilies move slowly to and fro in the gentle current. The view is idyllic up to the trench's edge, which crumbles away to deeper depths.
+> Pradarias de lírios-do-mar plumosos e rosa-pálido movem-se lentamente para lá e para cá na corrente suave. A vista é idílica até a borda da fossa, que se desfaz em profundezas ainda maiores.
 
-Xoese-Addae assures the characters that the shipwreck should be below. He agrees to wait for the characters at the top of the trench for a few hours but is eager to get back to the safety of Janya as soon as possible.
-
-
-### Trench of Lost Love Features
-
-The following features are common throughout the trench and the surrounding areas:
+Xoese-Addae garante aos personagens que o naufrágio deve estar abaixo. Ele concorda em esperar pelos personagens no topo da fossa por algumas horas, mas está ansioso para voltar à segurança de Janya o mais rápido possível.
 
 
-### Trench of Love Lost Locations
+### Características da Fossa do Amor Perdido
 
-The following locations are keyed to map 12.2.
-
-![Map 12.2: Trench of Love Lost](/images/campaigns/journeys-through-the-radiant-citadel/120-map-122-trench-of-love-lost.webp)
+As seguintes características são comuns por toda a fossa e áreas ao redor:
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/121-map-122-trench-of-love-lost-player.webp)
+### Locais da Fossa do Amor Perdido
+
+Os seguintes locais estão indicados no mapa 12.2.
+
+![Mapa 12.2: Fossa do Amor Perdido](/images/campaigns/journeys-through-the-radiant-citadel/120-map-122-trench-of-love-lost.webp)
 
 
-### T1: Trench
-
-The trench is 200 feet deep. At the bottom is the wreck of the *Girscamen*. Read the following description as the characters come within sight of the wreck:
-> Midnight-colored coral covers the trench's sheer walls. As the bottom of the trench comes into view, you see the wreckage of an ancient, familiar-looking longship gripped by the spreading coral. Silt and debris cover the deck, but the name *Girscamen* is still visible on the hull.
-Characters within 10 feet of the *Girscamen* feel a harmless supernatural chill—an effect of the unquiet spirits haunting the ship. If characters succeed on a CD 14 Intelligence (Arcana or Religion) check, they can tell restless spirits dwell nearby.
-
-### T2: Wreck
-
-> The *Girscamen* evidently broke in two when it sank. Half the ship is embedded in the trench wall and the coral around it; the rest was lost to the tides. A sizable hole pierces the deck and the hull below.
-The first time a creature that isn't a Construct or Undead comes within 5 feet of the ship's wreckage, the creature must make a CD 16 Wisdom saving throw. On a failed save, the creature takes 21 ([[6d6]]) psychic damage and telepathically hears dozens of drowning cries.
-Characters who inspect the hole in the ship determine it continues through the bottom of the vessel, and beyond that a hole punched through the bottom of the trench leads into area T3 20 feet below.
-Any other search of the ship reveals nothing except for ancient, rusted chain mail and scraps of decaying armor not of Djaynaian design.
-
-### T3: Broken Entry
-
-The hole below the ship extends through the ceiling of an ancient, hidden structure. Characters who have the Stonecunning trait can tell falling rocks punched through into the structure. The chambers below are made of interlocking, dark gray stones carved into puzzle-piece-like shapes.
-
-### T4: Obsidian Throne
-
-> The walls of this chamber are inscribed with images of sea creatures and geometric patterns. At its center, a short platform bears a high-backed, obsidian throne sculpted with stylized images similar to those on the walls. Behind and to the sides of the platform are four deep, rounded alcoves.
-> A spectral, armored figure with blazing emerald eyes appears from behind the throne and advances. "More fools of Djaynai? I'm the captain of the *Girscamen*, and you will meet the same fate as all who set foot upon my vessel!"
-This hostile wraith wears armor similar to that of the wraiths the characters battled previously. It fights to the death.
-
-### Ancient Art
-
-A character who succeeds on a CD 14 Intelligence (History) check can tell the carved walls and throne are ancient and were perhaps made by the very first Janyans as a way to preserve sacred knowledge in a secure place. A detect magic spell reveals an aura of abjuration magic around the throne.
-
-### Lurking Aboleth
-
-In the shadows of the southwest alcove lurks the aboleth Ylch. It doesn't interfere with the wraith's attack and won't initially threaten the characters. Once it is revealed, it telepathically invites the characters to talk. Use the following information to guide the conversation.
-* Ylch recently discovered this ruin, created by ancient Janyan stewards of knowledge.
-* Ylch was attracted here by the aura of the Undead still suffering from the legacy of the Passage of Vultures.
-* In investigating the site, Ylch disrupted the unquiet spirits of the *Girscamen*. It has been using its magic to control the wraiths that arose from that terrible ship.
-* It wants to know what brought the characters here so it can better understand the value of the site and the magical relics it has discovered.
-If the characters reveal what they seek, Ylch realizes the value of the tomes in area T5. After this, or if the characters are hostile toward it, Ylch telepathically calls upon the lingering crew of the *Girscamen* to aid it and then attacks.
-
-### Sunken Souls
-
-At the aboleth's call, three flameskulls—the remains of the hateful crew of the Girscamen—come to the aboleth's defense via the passage to **Área area T2**. As the flameskulls enter the area, a familiar haint, Violette, appears in her incorporeal form and intercepts one of the flameskulls. Violette, now free from the crew of the Girscamen, is friendly toward the characters and keeps the flameskull she intercepted at bay. After 2 rounds she defeats that flameskull, then aids the characters against any remaining foes.
-Once the aboleth is defeated, the remaining flameskulls flee to **Área area T1** and then out of the trench. Violette offers a sincere nod to the characters, then joins Derek in area T5.
-
-### T5: Forgotten Library
-
-> The ceiling is covered with a mosaic of wide-eyed figures swimming through a sea teeming with life. Below, the walls are lined with strange, rusted weapons and the stone shelves of a library.
-Soon after the characters enter the room, the friendly haint Derek appears—he's joined by Violette if the battle in area T4 occurred. Derek and Violette have been protecting the books hidden in this chamber. Upon recognizing the characters, Derek thanks them for coming to recover the tomes he and Violette have been guarding for so long. Derek then directs the characters' attention to a shadowy shelf where rest two elegant tomes made from iron-bound pages of carved slate. These books bear the symbols the characters saw after the haunting at Anadoua's Rest House and are the *Book of the Blackthrone's Aegis* and the *Book of the Blackmist*.
-
-### Treasure
-
-The weapons along the walls are rusted and made for creatures with non-Humanoid anatomies. However, two magic items inscribed with Djaynaian symbols are usable and remain intact: a sun blade and a staff of frost.
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/121-map-122-trench-of-love-lost-player.webp)
 
 
-### Legacy of the Lost
+### T1: Fossa
 
-Once the aboleth is defeated and the writings in area T5 are recovered, the spirits of Derek and Violette appear before the characters in their lifelike forms. They thank the group for defeating the aboleth and ask the characters to return the tomes to their rightful owners, the people of Djaynai. They don't elaborate on what group that might mean and know nothing of Janya. If the characters agree to return the tomes, the two haints invite the characters to bow deeply to the throne in area T4 to honor the ancestors who once sat upon it. If the characters do so, the lingering spirits reward the party (see "Gifts of the Deep" below). Should one or more of the characters refuse, Derek and Violette quietly fade away.
+A fossa tem 60 metros de profundidade. No fundo está o naufrágio do *Girscamen*. Leia a seguinte descrição quando os personagens chegarem ao alcance de visão do naufrágio:
+> Coral cor de meia-noite cobre as paredes íngremes da fossa. Conforme o fundo da fossa surge à vista, você vê os destroços de um antigo e familiar navio longo agarrado pelo coral em expansão. Lodo e detritos cobrem o convés, mas o nome *Girscamen* ainda é visível no casco.
+Personagens a até 3 metros do *Girscamen* sentem um arrepio sobrenatural inofensivo — um efeito dos espíritos inquietos que assombram o navio. Se os personagens forem bem-sucedidos em um teste de CD 14 de Inteligência (Arcanismo ou Religião), podem perceber que espíritos inquietos habitam as proximidades.
 
-### Gift of the Deeps
+### T2: Naufrágio
 
-After the characters agree to return the tomes, the throne in area T5 starts shedding dim light. Each character who bows before the obsidian throne for the first time gains the charm below (a type of Charms detailed in the Dungeon Master's Guide). Once all the characters bow before the throne or 10 minutes pass, the light fades and the throne loses its magical properties.
+> O *Girscamen* evidentemente partiu-se em dois quando afundou. Metade do navio está incrustada na parede da fossa e no coral ao redor; o resto foi perdido para as marés. Um buraco considerável perfura o convés e o casco abaixo.
+Na primeira vez que uma criatura que não seja um Constructo ou Morto-vivo se aproximar a até 1,5 metro dos destroços do navio, a criatura deve realizar um teste de Resistência de Sabedoria CD 16. Em caso de falha no teste de resistência, a criatura sofre 21 ([[6d6]]) de dano psíquico e ouve telepaticamente dezenas de gritos de afogamento.
+Personagens que inspecionarem o buraco no navio determinam que ele continua pelo fundo da embarcação e, além disso, um buraco perfurado no fundo da fossa leva à área T3, 6 metros abaixo.
+Qualquer outra busca no navio não revela nada, exceto cotas de malha antigas e enferrujadas e fragmentos de armaduras em decomposição que não são de design djayanaiano.
 
-### Seasoul Touched
+### T3: Entrada Destruída
 
-Inspired by teachings in the Blackmist Way and Blackthrone Arts that ease the distinction between body and soul, this charm allows you to cast the gaseous form spell as an action, with no spell components required. Once used three times, the charm goes away.
+O buraco abaixo do navio se estende pelo teto de uma antiga estrutura oculta. Personagens que tenham o traço Astúcia das Rochas podem perceber que pedras em queda perfuraram a estrutura. As câmaras abaixo são feitas de pedras cinza-escuras entrelaçadas, esculpidas em formas que lembram peças de quebra-cabeça.
+
+### T4: Trono de Obsidiana
+
+> As paredes desta câmara estão inscritas com imagens de criaturas marinhas e padrões geométricos. Em seu centro, uma plataforma baixa sustenta um trono de obsidiana com encosto alto, esculpido com imagens estilizadas semelhantes às das paredes. Atrás e aos lados da plataforma há quatro alcovas profundas e arredondadas.
+> Uma figura espectral e blindada com olhos esmeralda flamejantes surge de trás do trono e avança. "Mais tolos de Djaynai? Eu sou o capitão do *Girscamen*, e vocês encontrarão o mesmo destino de todos que pisam em minha embarcação!"
+Este wraith hostil usa uma armadura semelhante à dos wraiths que os personagens enfrentaram anteriormente. Ele luta até a morte.
+
+### Arte Antiga
+
+Um personagem que for bem-sucedido em um teste de CD 14 de Inteligência (História) pode perceber que as paredes esculpidas e o trono são antigos e talvez tenham sido feitos pelos primeiros janyanos como forma de preservar conhecimento sagrado em um local seguro. Uma magia detectar magia revela uma aura de magia de abjuração ao redor do trono.
+
+### Aboleth à Espreita
+
+Nas sombras da alcova sudoeste espreita o aboleth Ylch. Ele não interfere no ataque do wraith e não ameaçará os personagens inicialmente. Quando for revelado, ele convida telepaticamente os personagens para conversar. Use as seguintes informações para guiar a conversa.
+* Ylch descobriu recentemente estas ruínas, criadas por antigos guardiões do conhecimento de Janya.
+* Ylch foi atraído para cá pela aura dos Mortos-vivos que ainda sofrem com o legado da Passagem dos Abutres.
+* Ao investigar o local, Ylch perturbou os espíritos inquietos do *Girscamen*. Ele tem usado sua magia para controlar os wraiths que surgiram daquele terrível navio.
+* Ele quer saber o que trouxe os personagens até aqui para entender melhor o valor do local e das relíquias mágicas que descobriu.
+Se os personagens revelarem o que procuram, Ylch percebe o valor dos tomos na área T5. Após isso, ou se os personagens forem hostis a ele, Ylch chama telepaticamente a tripulação remanescente do *Girscamen* para ajudá-lo e então ataca.
+
+### Almas Afundadas
+
+Ao chamado do aboleth, três flameskulls — os restos da odiosa tripulação do Girscamen — vêm em defesa do aboleth através da passagem para a área T2. Quando os flameskulls entram na área, uma haint familiar, Violette, aparece em sua forma incorpórea e intercepta um dos flameskulls. Violette, agora livre da tripulação do Girscamen, é amigável em relação aos personagens e mantém o flameskull que interceptou à distância. Após 2 rodadas, ela derrota aquele flameskull e então ajuda os personagens contra quaisquer inimigos restantes.
+Quando o aboleth for derrotado, os flameskulls restantes fogem para a área T1 e então para fora da fossa. Violette oferece um aceno sincero aos personagens e depois se junta a Derek na área T5.
+
+### T5: Biblioteca Esquecida
+
+> O teto é coberto por um mosaico de figuras de olhos arregalados nadando através de um mar repleto de vida. Abaixo, as paredes estão alinhadas com armas estranhas e enferrujadas e as prateleiras de pedra de uma biblioteca.
+Logo após os personagens entrarem na sala, o amigável haint Derek aparece — ele se junta a Violette se a batalha na área T4 ocorreu. Derek e Violette estiveram protegendo os livros escondidos nesta câmara. Ao reconhecer os personagens, Derek agradece a eles por virem recuperar os tomos que ele e Violette guardam há tanto tempo. Derek então dirige a atenção dos personagens para uma prateleira sombria onde descansam dois tomos elegantes feitos de páginas de ardósia esculpida, encadernadas em ferro. Esses livros carregam os símbolos que os personagens viram após a assombração na Casa de Repouso de Anadoua e são o *Livro da Égide do Trono Negro* e o *Livro da Névoa Negra*.
+
+### Tesouro
+
+As armas ao longo das paredes estão enferrujadas e foram feitas para criaturas com anatomias não humanoides. No entanto, dois itens mágicos inscritos com símbolos djayanaianos são utilizáveis e permanecem intactos: uma sun blade e um cajado de gelo.
 
 
+### Legado dos Perdidos
+
+Quando o aboleth for derrotado e os escritos na área T5 forem recuperados, os espíritos de Derek e Violette aparecem diante dos personagens em suas formas vívidas. Eles agradecem ao grupo por derrotar o aboleth e pedem aos personagens que devolvam os tomos aos seus legítimos donos, o povo de Djaynai. Eles não entram em detalhes sobre que grupo isso pode significar e não sabem nada de Janya. Se os personagens concordarem em devolver os tomos, os dois haints convidam os personagens a fazer uma profunda reverência ao trono na área T4 para honrar os ancestrais que outrora se sentaram nele. Se os personagens o fizerem, os espíritos remanescentes recompensam o grupo (veja "Presentes das Profundezas" abaixo). Caso um ou mais personagens se recusem, Derek e Violette desaparecem silenciosamente.
+
+### Presente das Profundezas
+
+Depois que os personagens concordam em devolver os tomos, o trono na área T5 começa a emitir luz fraca. Cada personagem que se curvar diante do trono de obsidiana pela primeira vez ganha o amuleto abaixo (um tipo de Amuletos detalhado no Dungeon Master's Guide). Assim que todos os personagens se curvarem diante do trono ou 10 minutos se passarem, a luz se apaga e o trono perde suas propriedades mágicas.
+
+### Tocada pela Alma do Mar
+
+Inspirada pelos ensinamentos do Caminho da Névoa Negra e das Artes do Trono Negro, que suavizam a distinção entre corpo e alma, este amuleto permite que você conjure a magia forma gasosa como uma ação, sem necessidade de componentes de magia. Depois de usá-lo três vezes, o amuleto desaparece.

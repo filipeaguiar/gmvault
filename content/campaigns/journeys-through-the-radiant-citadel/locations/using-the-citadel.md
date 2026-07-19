@@ -1,19 +1,24 @@
 ---
-title: "Using the Citadel"
+title: Using the Citadel
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Usando a Cidadela
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Using the Citadel** importada automaticamente.
+Localidade **Usando a Cidadela** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Using the Citadel](../../adventures/the-radiant-citadel/11-using-the-citadel/)
+- [Usando a Cidadela](../../adventures/the-radiant-citadel/11-using-the-citadel/)

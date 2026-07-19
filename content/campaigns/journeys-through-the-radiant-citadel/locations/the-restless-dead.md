@@ -1,19 +1,24 @@
 ---
-title: "The Restless Dead"
+title: The Restless Dead
 params:
-  kind: "location"
+  kind: location
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+titulo_pt_br: Os Mortos Inquietos
+visibility: gm
+status: draft
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **The Restless Dead** importada automaticamente.
+Localidade **Os Mortos Inquietos** importada automaticamente.
 
-### Cenas e Sub-áreas
-- [The Restless Dead](../../adventures/the-nightseas-succor/04-the-restless-dead/)
+### Cenas e Subáreas
+- [Os Mortos Inquietos](../../adventures/the-nightseas-succor/04-the-restless-dead/)

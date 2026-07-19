@@ -1,84 +1,83 @@
 ---
-title: "Cena 4 - Across the Llanos"
+title: Cena 4 - Across the Llanos
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 4 - Através dos Llanos
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/nene/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/yarana/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/across-the-llanos/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/across-the-llanos/
 compendium_refs:
-  - "/compendium/monsters/thri-kreen/"
-  - "/compendium/monsters/griffon/"
-  - "/compendium/monsters/hawk/"
-  - "/compendium/monsters/giant-badger/"
-  - "/compendium/monsters/rooster/"
+- /compendium/monsters/thri-kreen/
+- /compendium/monsters/griffon/
+- /compendium/monsters/hawk/
+- /compendium/monsters/giant-badger/
+- /compendium/monsters/rooster/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/nene-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/yarana-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/thri-kreen-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/griffon-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/hawk-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/giant-badger-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Long ago, Nene traveled across the grasslands of Atagua, known as the Llanos, with Yarana. He knows the location of the secret gateway that leads from Atagua to the Ghost Orchid Tepui, but much has changed in the years since the fey-touched bird explored the region. His directions are general and often as simple as "this way" or "that way." Regardless, Nene's directions are accurate and eventually lead to the Feywild portal.
+Há muito tempo, Nene viajou pelas pradarias de Atagua, conhecidas como os Llanos, com Yarana. Ele conhece a localização do portal secreto que leva de Atagua ao Tepui da Orquídea Fantasma, mas muita coisa mudou nos anos desde que o pássaro tocado pelas fadas explorou a região. Suas direções são gerais e frequentemente tão simples quanto "por aqui" ou "por ali". Independentemente disso, as direções de Nene são precisas e eventualmente levam ao portal do Reino das Fadas.
 
-Provided the characters follow Nene's directions, the journey from the sugar mill to the Ghost Orchid Tepui portal passes through El Caparazón, over the Grassroads, and along Zula's Trail before venturing into the grasslands. The entire trek is about 48 miles long and takes 2 days to complete at a normal pace.
+Contanto que os personagens sigam as direções de Nene, a jornada do engenho de açúcar até o portal do Tepui da Orquídea Fantasma passa por El Caparazón, pelas Estradas de Grama e ao longo da Trilha de Zula antes de se aventurar pelas pradarias. A caminhada inteira tem cerca de 77 quilômetros de extensão e leva 2 dias para ser concluída em um ritmo normal.
 
-Alternatively, characters who have access to the plane shift spell can forgo the journey and travel directly to the Ghost Orchid Tepui. If they use this spell to do so, proceed with the "**Área Ghost Orchid Tepui**" section.
+Alternativamente, personagens que tenham acesso à magia *plane shift* podem dispensar a jornada e viajar diretamente para o Tepui da Orquídea Fantasma. Se usarem essa magia para isso, prossiga com a seção "**Área Tepui da Orquídea Fantasma**".
 
+### Visitando El Caparazón
 
-### Visiting El Caparazón
+O maior assentamento da região, El Caparazón é parcialmente sombreado por uma gigantesca estrutura de treliça em meia cúpula criada no passado distante. Este abrigo refresca as casas da cidade e seus vastos mercados, que são em grande parte frequentados por Humanoides e comerciantes thri-kreen visitantes. Os personagens podem encontrar amplos lugares para descansar e reabastecer aqui. Eles também podem comprar um mapa da região, similar ao que aparece como mapa 14.4 no final desta aventura, por 1 po. El Caparazón é detalhado posteriormente na seção "**Área Guia Geográfico de Atagua**" no final desta aventura.
 
-The largest settlement in the region, El Caparazón is partially shaded by a gigantic, half-dome lattice structure created in the distant past. This shelter cools the city's homes and its vast markets, which are largely peopled by Humanoids and visiting thri-kreen traders. The characters can find ample places to rest and resupply here. They can also purchase a map of the region, similar to the one that appears as map 14.4 at the end of this adventure, for 1 gp. El Caparazón is further detailed in the "**Área Atagua Gazetteer**" section at the end of this adventure.
+### As Estradas de Grama
 
+As Estradas de Grama são uma rede de pontes engenhosamente construídas de madeira e junco, erguendo-se de 4,5 a 12 metros acima do solo. Aproximadamente a cada 8 quilômetros ao longo das passarelas, conjuntos de abrigos inclinados de 3 metros de largura oferecem aos viajantes proteção contra o sol implacável e um local confortável para armar redes. Viajantes caridosos deixam itens que podem compartilhar nos abrigos. Cada vez que os personagens param em um desses pontos de parada com abrigo, role ou escolha na Tabela de Itens do Abrigo para ver o que encontram.
 
-### The Grassroads
-
-The Grassroads is a network of cleverly constructed wood-and-reed bridges standing 15 to 40 feet above the ground. Approximately every 5 miles along the walkways, collections of 10-foot-wide lean-tos offer travelers protection from the unrelenting sun and a comfortable spot to hitch hammocks. Charitable travelers leave items they can afford to share in the lean-tos. Each time the characters stop at such a lean-to waypoint, roll on or choose from the Lean-To Items table to see what they find.
-
-**Tabela: Lean-To Items**
+**Tabela: Itens do Abrigo**
 
 |  |  |
 | --- | --- |
-| 1–4 | Nothing |
-| 5 | [[1d4]] cones of panela |
-| 6 | A guitar with one broken string |
-| 7 | A pouch of coffee or cacao beans |
-| 8 | A fine straw hat and a lightly used pair of sandals |
-| 9 | A thri-kreen weapon called a chatkcha (detailed in the "Thri-kreen" section of the Monster Manual) |
-| 10 | A sleeping rooster (use the statistics for a hawk, but with no flying speed) |
+| 1–4 | Nada |
+| 5 | [[1d4]] cones de panela |
+| 6 | Uma guitarra com uma corda quebrada |
+| 7 | Uma bolsa de grãos de café ou cacau |
+| 8 | Um chapéu de palha fino e um par de sandálias levemente usadas |
+| 9 | Uma arma thri-kreen chamada chatkcha (detalhada na seção "Thri-kreen" do Monster Manual) |
+| 10 | Um galo adormecido (use as estatísticas de um falcão, mas sem deslocamento de voo) |
 
+### Thri-kreen Embaçado
 
-### Ambushed Thri-kreen
+Depois que os personagens tiverem viajado pelas Estradas de Grama por cerca de um dia, o seguinte encontro ocorre:
+> As Estradas de Grama parecem infinitas e desaparecem na névoa. À frente, um viajante insetiforme caminha pesadamente em sua direção. De repente, há um guincho no alto, e um grifo com cabeça de abutre mergulha em direção ao viajante.
+O thri-kreen está a 30 metros à frente dos personagens e tem pouca defesa contra o grifo. Rolem iniciativa. Os personagens podem afugentar o grifo causando dano a ele ou sendo bem-sucedidos em um teste de Carisma (Intimidação) CD 18. Se não o afugentarem, o grifo agarra o thri-kreen e carrega sua presa em pânico 6 metros para o alto. O grifo tenta voar para longe, movendo-se com metade do deslocamento enquanto carrega o thri-kreen de volta para seu covil.
+Se resgatado, o thri-kreen se apresenta como Phik-Pik, um comerciante a caminho de El Caparazón com uma seleção fina de carnes salgadas—provavelmente o que atraiu a atenção do grifo. Além de oferecer aos personagens um ótimo negócio em carne seca de capivara (apenas 1 po por libra), ele os presenteia com sua gythka (detalhada na seção "Thri-kreen" do Monster Manual) e uma bolsa de feijões com três grãos restantes.
 
-After the characters have traveled the Grassroads for about a day, the following encounter occurs:
-> The Grassroads appear infinite and disappear into the haze. Ahead, an insectile traveler trudges toward you. Suddenly, there's a shriek overhead, and a vulture-headed griffon dives toward the traveler.
-The thri-kreen is 100 feet ahead of the characters and has little defense against the griffon. Roll initiative. The characters can drive off the griffon by dealing damage to it or by succeeding on a CD 18 Charisma (Intimidation) check. If they don't drive it off, the griffon grapples the thri-kreen and carries its panicking prey 20 feet into the air. The griffon tries to fly away, moving at half speed as it carries the thri-kreen back to its lair.
-If rescued, the thri-kreen introduces himself as Phik-Pik, a trader headed to El Caparazón with a fine selection of salted meats—likely what attracted the griffon's attention. Aside from offering the characters a great deal on capybara jerky (only 1 gp per pound), he gifts them his gythka (detailed in the "Thri-kreen" section of the Monster Manual) and a bag of beans with three beans remaining.
+### Montes de Cupins
 
+Nene guia os personagens pela extensão leste dos Llanos, ficando mais animado conforme reconhece terreno familiar. Leia a descrição a seguir quando os personagens chegarem às planícies perto da curva do rio Holroro:
+> Um amplo trecho de montes de cupins do tamanho de lápides é dominado por um monte alto com um topo excepcionalmente plano. Tamanduás-bandeira gigantes vagueiam pelos montes, mas prestam pouca atenção a qualquer coisa, exceto sua busca por uma refeição.
+Os montes de cupins aqui são naturais e não são perigosos; os tamanduás-bandeira gigantes (use o bloco de estatísticas de texugo gigante) ignoram os personagens a menos que sejam incomodados.
+Personagens que podem se comunicar com os tamanduás os acham criaturas preguiçosas e bem alimentadas. Se perguntados sobre o monte de cupins alto, os tamanduás explicam que vivem naquele monte, mas a comida é melhor entre os montes menores. Os tamanduás não explicam mais e podem cochilar se os personagens fizerem perguntas chatas e não relacionadas a comida persistentemente.
 
-### Termite Mounds
+![O misterioso Tepui da Orquídea Fantasma é uma visão familiar nos sonhos do povo de Atagua](/images/campaigns/journeys-through-the-radiant-citadel/136-14-003ghost-orchid-tepui.webp)
 
-Nene guides the characters across the eastern extent of the Llanos, growing more excited as he recognizes familiar terrain. Read the following description when the characters reach the plains near the bend of the Holroro river:
-> A wide stretch of tombstone-sized termite mounds is dominated by a tall mound with an unusually flat top. Giant anteaters mill around the mounds but pay little attention to anything except their search for a meal.
-The termite mounds here are natural and aren't dangerous; the giant anteaters (use the giant badger stat block) ignore the characters unless disturbed.
-Characters who can communicate with the anteaters find them to be lazy, well-fed beasts. If asked about the tall termite mound, the anteaters explain that they live in that mound but the eating's better among the smaller mounds. The anteaters don't explain further and might doze off if characters persistently ask boring, non-food-related questions.
+### O Monte Gigante
 
-![The mysterious Ghost Orchid Tepui is a familiar sight in the dreams of Atagua's people](/images/campaigns/journeys-through-the-radiant-citadel/136-14-003ghost-orchid-tepui.webp)
-
-
-### The Giant Mound
-
-Nene's excited squawking confirms that the giant mound is where the portal to the Ghost Orchid Tepui stands, and the macaw flies straight for it. Characters who investigate the 18-foot-tall mound find it crawling with termites but also discover a sizable crack in one side. This supernaturally dark gap is wide enough for a Large creature to squeeze into. A character who casts detect magic finds the gap radiates an aura of conjuration magic. A creature who passes through the gap enters a planar portal that transports them to the Ghost Orchid Tepui.
-
-
+O grasnido animado de Nene confirma que o monte gigante é onde o portal para o Tepui da Orquídea Fantasma se encontra, e a arara voa direto para ele. Personagens que investigam o monte de 5,5 metros de altura o encontram fervilhando de cupins, mas também descobrem uma rachadura considerável em um dos lados. Esta fenda sobrenaturalmente escura é larga o suficiente para uma criatura Grande se espremer. Um personagem que conjurar *detectar magia* descobre que a fenda irradia uma aura de magia de conjuração. Uma criatura que passar pela fenda entra em um portal planar que a transporta para o Tepui da Orquídea Fantasma.

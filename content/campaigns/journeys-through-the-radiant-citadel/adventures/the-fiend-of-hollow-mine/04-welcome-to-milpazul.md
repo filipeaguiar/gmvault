@@ -1,122 +1,125 @@
 ---
-title: "Cena 4 - Welcome to Milpazul"
+title: Cena 4 - Welcome to Milpazul
 weight: 40
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 4 - Bem-vindo a Milpazul
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/serapio/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/paloma/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/assassin/"
-  - "/compendium/monsters/commoner/"
-  - "/compendium/monsters/veteran/"
-  - "/compendium/monsters/tlacatecolo/"
+- /compendium/monsters/assassin/
+- /compendium/monsters/commoner/
+- /compendium/monsters/veteran/
+- /compendium/monsters/tlacatecolo/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/serapio-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/paloma-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/tlacatecolo-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/assassin-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Once the characters deal with the bounty hunters, a handful of locals thank the characters for their assistance and welcome them to Milpazul. Not everyone is enthused, though. Some villagers regard adventurers with distrust, fearing they'll bring more trouble.
+Assim que os personagens lidam com os caçadores de recompensa, um punhado de moradores agradece aos personagens pela ajuda e lhes dá as boas-vindas a Milpazul. Nem todos ficam entusiasmados, no entanto. Alguns aldeões encaram os aventureiros com desconfiança, temendo que eles tragam mais problemas.
 
 
-### Entering the Village
+### Entrando no Vilarejo
 
-As the characters progress into the village, read the following:
-> In the distance, a slender figure tends to the wounded villagers, who respond with heartfelt gratitude. As the individual approaches, you realize they are more than simply thin—the figure is a skeleton clothed in a yellow-and-magenta dress, with many colorful bead necklaces hanging from the exposed vertebrae of their neck.
-> "You must be parched after that fight," they say. "How about some drinks, friends? On the house!"
-The name of the friendly skeleton is Rufina, and they own the village tavern. As thanks for dealing with the bounty hunters, Rufina invites the characters to the tavern for refreshments and rest, and happily helps acquaint the characters with the area.
+Conforme os personagens avançam para o vilarejo, leia o seguinte:
+> À distância, uma figura esguia cuida dos aldeões feridos, que respondem com sincera gratidão. Quando a figura se aproxima, vocês percebem que ela é mais do que simplesmente magra — é um esqueleto vestido com um vestido amarelo e magenta, com muitos colares de contas coloridas pendurados nas vértebras expostas de seu pescoço.
+> "Vocês devem estar sedentos depois dessa luta", diz a figura. "Que tal umas bebidas, amigos? Por conta da casa!"
+O nome do esqueleto amigável é Rufina, dono da taverna do vilarejo. Como agradecimento por lidarem com os caçadores de recompensa, Rufina convida os personagens para a taverna para se refrescarem e descansarem, e os ajuda com prazer a se familiarizarem com a área.
 
 ### Rufina
 
-Formerly a human, Rufina is now an olvidado—a deceased person who remained behind after the Night of the Remembered. Rufina doesn't know how or why they don't pass on to the afterlife. Although beings like Rufina are uncommon in the region, they're not unheard of, and the skeleton is a well-liked member of the community. Rufina is neutral good and uses the commoner stat block, but is Undead and doesn't require air, food, drink, or sleep.
-Rufina has been sheltering Paloma in the cellar of the tavern; after witnessing the characters' prowess, the olvidado wonders if the adventurers might be able to help her.
+Outrora uma humana, Rufina é agora uma olvidada — uma pessoa falecida que permaneceu para trás após a Noite dos Lembrados. Rufina não sabe como ou por que não seguiu para a vida após a morte. Embora seres como Rufina sejam incomuns na região, não são inéditos, e a esqueleto é um membro bem-quisto da comunidade. Rufina é neutra e boa e usa o bloco de estatísticas de plebeu, mas é Morto-vivo e não precisa de ar, comida, bebida ou sono.
+Rufina tem abrigado Paloma no porão da taverna; após testemunhar a perícia dos personagens, a olvidada se pergunta se os aventureiros podem ajudá-la.
 
-### Learning about Paloma
+### Aprendendo sobre Paloma
 
-While no one is willing to discuss Paloma's whereabouts, a character who succeeds on a CD 14 Charisma (Persuasion) check can gather the following information about the so-called outlaw from Rufina or the other villagers:
-* Paloma is seen as a hero by the poor. Her band raids the estates and caravans of corrupt landowners and shares the captured wealth with folk who need it.
-* She initially ran afoul of the law years ago when she was falsely accused of a crime.
-* Paloma and her band were recently attacked by someone or something on the road. Most of the band were killed, but Paloma's body wasn't found.
+Embora ninguém esteja disposto a discutir o paradeiro de Paloma, um personagem que for bem-sucedido em um teste de Carisma (Persuasão) CD 14 pode reunir as seguintes informações sobre a suposta foragida com Rufina ou outros aldeões:
+* Paloma é vista como heroína pelos pobres. Seu bando invade propriedades e caravanas de latifundiários corruptos e divide as riquezas capturadas com aqueles que precisam.
+* Ela inicialmente teve problemas com a lei anos atrás, quando foi falsamente acusada de um crime.
+* Paloma e seu bando foram recentemente atacados por alguém ou algo na estrada. A maior parte do bando foi morta, mas o corpo de Paloma não foi encontrado.
 
 
-### Cursed Villagers
+### Aldeões Amaldiçoados
 
-As they walk through the village, the characters notice many locals huddled in corners, bundled in blanket-like sarapes and trembling with cold despite it being a warm but cloudy day. If asked about them, Rufina replies that these unfortunates have caught sereno, an ailment seemingly spread by bitterly cold winds. Folk who have fallen ill speak of those winds blowing mostly at night, and Rufina warns the characters against staying out after dark. Although no one in Milpazul knows it, the sickness stems from the youth Serapio, who has transformed into a tlacatecolo (detailed at the **Área end of this adventure**) and hunts at night.
-A character who examines a villager with sereno and succeeds on a CD 14 Intelligence (Arcana) or Wisdom (Medicine) check determines that sereno is not a disease but a curse.
+Enquanto caminham pelo vilarejo, os personagens notam muitos moradores encolhidos em cantos, enrolados em sarapes como cobertores e tremendo de frio, apesar de ser um dia quente, porém nublado. Se perguntarem sobre eles, Rufina responde que esses infelizes pegaram sereno, uma doença aparentemente transmitida por ventos amargamente frios. As pessoas que adoeceram falam desses ventos soprando principalmente à noite, e Rufina avisa os personagens para não ficarem fora de casa após o anoitecer. Embora ninguém em Milpazul saiba, a doença se origina do jovem Serapio, que se transformou em um tlacatecolo (detalhado no **Área final desta aventura**) e caça à noite.
+Um personagem que examinar um aldeão com sereno e for bem-sucedido em um teste de Inteligência (Arcanismo) ou Sabedoria (Medicina) CD 14 determina que sereno não é uma doença, mas uma maldição.
 
 ### Sereno
 
-Sereno is a deadly magical affliction that inflicts a supernatural chill on its victims and eventually kills them. A creature cursed with sereno is poisoned, can't regain hit points, and must make a CD 13 Constitution saving throw at the end of every hour, gaining 1 level of exhaustion on a failed save. The creature automatically succeeds on this saving throw if it is in sunlight. Sereno can be undone by magic that ends poison or disease, like lesser restoration, but only while the victim is in direct sunlight.
-Sereno is inflicted by an insidious, shapeshifting fiend known as a tlacatecolo. If a tlacatecolo that afflicted one or more creatures with the curse dies, the curse ends for its victims. See the "**Área Tlacatecolo**" section at the end of this adventure for more details.
+Sereno é uma aflição mágica mortal que causa um calafrio sobrenatural em suas vítimas e eventualmente as mata. Uma criatura amaldiçoada com sereno fica envenenada, não pode recuperar pontos de vida e deve realizar um teste de resistência de Constituição CD 13 ao final de cada hora, ganhando 1 nível de exaustão em caso de falha no teste. A criatura é bem-sucedida automaticamente nesse teste de resistência se estiver sob a luz do sol. Sereno pode ser desfeito por magia que encerra veneno ou doença, como restauração menor, mas apenas enquanto a vítima estiver sob luz solar direta.
+Sereno é infligido por um corruptor insidioso e transmorfo conhecido como tlacatecolo. Se um tlacatecolo que afligiu uma ou mais criaturas com a maldição morrer, a maldição termina para suas vítimas. Veja a seção "**Área Tlacatecolo**" no final desta aventura para mais detalhes.
 
 
 ### Pulquería
 
-The front wall of Rufina's tavern—called a *pulquería*, as it specializes in a local beverage called pulque—is plastered with portraits of missing persons and requests for help.
-When the characters enter the tavern, read the following:
-> The pulquería's walls are painted with murals that depict a series of armed conflicts, with locals celebrating victory at the end. A candlelit altar behind the bar includes a painted portrait of an elderly woman, which is surrounded by yellow marigolds and offerings of drinks and cactus fruits.
-> Two dwarves seated at one of the three tables in the pulquería glance at you curiously.
-The dwarves are revolutionaries (veterans) who hang out in the tavern to protect Paloma. They won't engage the characters unless Paloma or Rufina is threatened.
-Rufina offers the characters pulque, an alcoholic beverage made from fermented agave sap and the only drink Rufina remembers how to make. The olvidado also offers cactus, beans, and tortillas to any characters who are hungry and has a spare room if anyone needs to rest.
-Characters who chat with Rufina learn the following:
-* The mural was painted by Rufina and is an abstraction of San Citlán's history (detailed in the "**Área San Citlán**" section at the end of this adventure).
-* The altar behind the counter is an *ofrenda*, a memorial made to commune with the dead during the Night of the Remembered festivities, which begins in the coming days and will continue for several nights. This ofrenda is dedicated to Rufina's late daughter, Carmen.
+A parede frontal da taverna de Rufina — chamada de *pulquería*, pois é especializada em uma bebida local chamada pulque — está coberta por retratos de pessoas desaparecidas e pedidos de ajuda.
+Quando os personagens entram na taverna, leia o seguinte:
+> As paredes da pulquería são pintadas com murais que retratam uma série de conflitos armados, com os moradores celebrando a vitória ao final. Um altar com velas atrás do bar inclui um retrato pintado de uma mulher idosa, cercado por cempassúchis amarelos e oferendas de bebidas e frutos de cacto.
+> Dois anões sentados em uma das três mesas da pulquería olham para vocês com curiosidade.
+Os anões são revolucionários (veteranos) que ficam na taverna para proteger Paloma. Eles não confrontarão os personagens, a menos que Paloma ou Rufina sejam ameaçadas.
+Rufina oferece aos personagens pulque, uma bebida alcoólica feita de seiva fermentada de agave e a única bebida que Rufina lembra como fazer. A olvidada também oferece cactos, feijão e tortilhas para qualquer personagem faminto e tem um quarto vago se alguém precisar descansar.
+Personagens que conversarem com Rufina aprendem o seguinte:
+* O mural foi pintado por Rufina e é uma abstração da história de San Citlán (detalhada na seção "**Área San Citlán**" no final desta aventura).
+* O altar atrás do balcão é uma *ofrenda*, um memorial feito para comungar com os mortos durante as festividades da Noite dos Lembrados, que começam nos próximos dias e continuarão por várias noites. Esta ofrenda é dedicada à falecida filha de Rufina, Carmen.
 
 
-### Meeting Paloma
+### Conhecendo Paloma
 
-As conversation dies down, Paloma emerges from a door leading to the cellar and approaches the characters. She is wrapped in a rebozo and suffers from sereno with 3 levels of exhaustion. If the characters threaten to take her for the bounty, the dwarf veterans rush to protect her, and Rufina warns the characters that not just the villagers, but the folk of the entire region, will turn against them if they proceed.
+Quando a conversa diminui, Paloma emerge de uma porta que leva ao porão e se aproxima dos personagens. Ela está envolta em um rebozo e sofre de sereno com 3 níveis de exaustão. Se os personagens ameaçarem levá-la pela recompensa, os anões veteranos correm para protegê-la, e Rufina avisa aos personagens que não apenas os aldeões, mas o povo de toda a região, se voltará contra eles se prosseguirem.
 
 ![Paloma](/images/campaigns/journeys-through-the-radiant-citadel/030-04-002paloma.webp)
 
 
 ### Paloma
 
-Paloma (chaotic good, gnome assassin) leads a band of revolutionaries in the borderlands around San Citlán. She was falsely accused of rustling, defended herself from the unjust arrest, and was charged with attempted murder as a result. She fled to the Indigo Desert and joined an outlaw band, quickly climbing the ranks to become the leader. While traveling across the region, Paloma saw many injustices. She has recently allied with local revolutionaries opposing exploitation and corruption in the region, and she is already considered one of the revolutionaries' leaders.
+Paloma (caótica e boa, gnomo assassina) lidera um bando de revolucionários nas fronteiras ao redor de San Citlán. Ela foi falsamente acusada de roubo de gado, defendeu-se da prisão injusta e foi acusada de tentativa de homicídio como resultado. Ela fugiu para o Deserto Índigo e juntou-se a um bando de foras da lei, rapidamente subindo na hierarquia para se tornar a líder. Enquanto viajava pela região, Paloma viu muitas injustiças. Ela recentemente se aliou aos revolucionários locais que se opõem à exploração e corrupção na região, e já é considerada uma das líderes dos revolucionários.
 
-### Personality Trait
+### Traço de Personalidade
 
-"I've seen much and have a story for every occasion."
+"Já vi muito e tenho uma história para cada ocasião."
 
 ### Ideal
 
-"I lost most of my life to others' corruption. I'll risk what I have left to bring an end to it."
+"Perdi a maior parte da minha vida para a corrupção alheia. Arriscarei o que me resta para acabar com ela."
 
-### Bond
+### Vínculo
 
-"San Citlán is my home, and no one will ever drive me out of my own home."
+"San Citlán é meu lar, e ninguém jamais me expulsará da minha própria casa."
 
-### Flaw
+### Defeito
 
-"I don't care who I endanger to further our cause."
+"Não me importo com quem coloco em perigo para promover nossa causa."
 
-### Paloma's Request
+### O Pedido de Paloma
 
-Paloma explains to the characters that she needs the help of trustworthy adventurers to find the source of sereno and put an end to it. She goes on to share the following information:
-* The sereno outbreak has killed many since it began a few months ago.
-* One night while Paloma and three allies were traveling, trying to determine the source of the outbreak, a strange owl revealed itself to be a terrible fiend. They wounded the fiend, but it escaped.
-* Two of her companions died in the battle. The third—a druid named Lope—died of sereno soon after. Lope had been researching the curse and believed the fiend they saw was behind its spread.
-* Lope's research suggested killing the fiend will end the curse for all those suffering from sereno.
-* Scouts have seen owls and strange figures going in and out of a mine near the supposedly abandoned mining town of Hollow.
+Paloma explica aos personagens que precisa da ajuda de aventureiros confiáveis para encontrar a fonte do sereno e acabar com ela. Ela continua compartilhando as seguintes informações:
+* O surto de sereno matou muitos desde que começou, há alguns meses.
+* Uma noite, enquanto Paloma e três aliados viajavam, tentando determinar a fonte do surto, uma coruja estranha se revelou um terrível corruptor. Eles feriram o corruptor, mas ele escapou.
+* Dois de seus companheiros morreram na batalha. O terceiro — um druida chamado Lope — morreu de sereno logo em seguida. Lope estava pesquisando a maldição e acreditava que o corruptor que viram estava por trás de sua propagação.
+* A pesquisa de Lope sugeria que matar o corruptor acabaria com a maldição para todos aqueles que sofrem de sereno.
+* Batedores têm visto corujas e figuras estranhas entrando e saindo de uma mina perto da cidade mineira supostamente abandonada de Hollow.
 
-### The Hunt Begins
+### A Caçada Começa
 
-Paloma offers 100 gp per character for the party's assistance, and she gives them her ring of jumping if they agree to investigate the mine and slay the fiend if they find it. She gives them directions to Hollow, an abandoned settlement about 14 miles away and 4 miles north of San Citlán. She warns against going at night, lest the characters suffer her fate.
+Paloma oferece 100 po por personagem pela assistência do grupo e lhes dá seu anel de salto se eles concordarem em investigar a mina e matar o corruptor se o encontrarem. Ela lhes dá direções para Hollow, um assentamento abandonado a cerca de 14 milhas de distância e 4 milhas ao norte de San Citlán. Ela avisa contra ir à noite, para que os personagens não sofram seu destino.
 
-### Rumors of Hollow
+### Rumores de Hollow
 
-If the characters ask around Milpazul about Hollow, they learn the information at the start of the "**Área A Town Called Hollow**" section. Additionally, a local overhears their inquiries and shares a chilling story:
-> "I was riding by Hollow after dark, trying to get home, when I saw movement up by the old mine entrance. Two gaunt figures were dragging some poor soul into the mine—had it wrapped up tight. They looked like twin death, they did. I'll never forget their hissing and their slithering, horrid tongues. As a mercy, the body they were dragging looked like it was already dead. I rode on, I tell you. I didn't look back."
-
-
+Se os personagens perguntarem sobre Hollow em Milpazul, eles aprendem as informações no início da seção "**Área Uma Cidade Chamada Hollow**". Adicionalmente, um morador ouve suas perguntas e compartilha uma história aterrorizante:
+> "Eu estava cavalgando perto de Hollow depois do anoitecer, tentando chegar em casa, quando vi movimento perto da entrada da antiga mina. Duas figuras descarnadas estavam arrastando algum pobre coitado para dentro da mina — estava bem amarrado. Pareciam a própria morte em dobro. Nunca esquecerei os silvos e as línguas horrendas e serpeantes deles. Por misericórdia, o corpo que arrastavam parecia já estar morto. Continuei cavalgando, vou te contar. Não olhei para trás."

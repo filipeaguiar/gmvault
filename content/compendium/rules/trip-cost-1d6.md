@@ -1,15 +1,22 @@
 ---
-title: "Trip (Cost: 1d6)"
+title: 'Trip (Cost: 1d6)'
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Trip (Cost: 1d6)."
+summary: 'Característica de classe: Derrubar (Custo: 1d6).'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: 'Derrubar (Custo: 1d6)'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the XPHB condition.
+Se o alvo for Grande ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza ou sofrerá a condição XPHB.

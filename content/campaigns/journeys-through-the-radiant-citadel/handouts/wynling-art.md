@@ -1,15 +1,15 @@
 ---
-title: "Arte: Wynling"
+title: 'Arte: Wynling'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Wynling'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Wynling](/images/campaigns/journeys-through-the-radiant-citadel/wynling.webp)

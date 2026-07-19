@@ -1,35 +1,36 @@
 ---
-title: "Cena 6 - The Night Revelers"
+title: Cena 6 - The Night Revelers
 weight: 60
 params:
-  kind: "scene"
+  kind: scene
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+titulo_pt_br: Cena 6 - Os Foliões Noturnos
+visibility: gm
+status: draft
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/the-night-revelers/"
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/the-night-revelers/
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/djeneba-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atiba-pa-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+Os personagens estão livres para perambular por Djaynai enquanto se preparam para sua missão. Em um momento de sua escolha, estejam os personagens explorando as ruas ou descansando na estalagem, uma agente dos Foliões da Noite os visita:
 
-The characters are free to wander Djaynai while they prepare for their mission. At a point of your choosing, whether the characters are exploring the streets or resting at the inn, an agent of the Night Revelers visits them:
+> Uma figura vestindo túnicas azul-claras se aproxima, o rosto oculto por um véu azul diáfano. "Os Mordomos do Povo se perderam", ela sussurra. "Muitos falam de suas experiências místicas da noite passada, do que elas podem significar e das causas defendidas por aqueles que aparentemente estão no centro delas."
 
-> A figure wearing pale-blue robes approaches, her face obscured by a diaphanous blue veil. "The People's Stewards have lost their way," she whispers. "Many speak of your mystic experiences last night, of what they might mean, and of what causes are championed by those seemingly at the center of them."
+A figura sussurrante se identifica apenas como "a Azul" e transmite a mensagem de que Djeneba, dos Foliões da Noite, convidou os personagens para uma reunião na Casa de Dança dos Ancestrais naquela noite, a qualquer hora que fosse conveniente para eles.
 
-The whispering figure identifies herself only as "the Blue," and conveys the message that Djeneba of the Night Revelers has invited the characters to the Ancestors' Danse House for a meeting that night, at any time of the characters' convenience.
+Se os personagens perguntarem o que Djeneba quer com eles, a Azul diz que a reunião é para discutir a escolha entre "a loucura de Atiba-Pa e a folia gloriosa de Djeneba". A Azul então se retira.
 
-If the characters ask what Djeneba wants with them, the Blue says the meeting is to discuss the choice between "Atiba-Pa's folly and Djeneba's glorious revelry." The Blue then takes her leave.
-
-If the characters ignore the summons, skip ahead to the "**Área To the Nightsea**" section.
-
-
+Se os personagens ignorarem o chamado, avance para a seção "**Área To the Nightsea**".

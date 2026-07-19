@@ -1,25 +1,30 @@
 ---
-title: "Pedestal of Judgment"
+title: Pedestal of Judgment
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Pedestal do Julgamento
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
+- localidade
+- importado
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-108-map-113-pedestal-of-judgment-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-108-map-113-pedestal-of-judgment-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Pedestal of Judgment** importada automaticamente.
+Localidade **Pedestal do Julgamento** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Pedestal of Judgment](../../adventures/shadow-of-the-sun/09-pedestal-of-judgment/)
+- [Pedestal do Julgamento](../../adventures/shadow-of-the-sun/09-pedestal-of-judgment/)
 
 ### Mapas
 
-#### 108 113 Pedestal Of Judgment Player
-![108 113 Pedestal Of Judgment Player](/images/campaigns/journeys-through-the-radiant-citadel/108-map-113-pedestal-of-judgment-player.webp)
-
+#### 108 113 Pedestal do Julgamento - Jogador
+![108 113 Pedestal do Julgamento - Jogador](/images/campaigns/journeys-through-the-radiant-citadel/108-map-113-pedestal-of-judgment-player.webp)

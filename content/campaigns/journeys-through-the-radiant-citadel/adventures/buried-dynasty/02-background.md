@@ -1,40 +1,43 @@
 ---
-title: "Background"
+title: Background
 weight: 20
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Antecedentes
+visibility: gm
+status: published
+summary: Introdução e contextualização da aventura.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Grand Secretary Wei Feng Ying governs at the emperor's command. For years, she has known that imperial alchemists sustain the emperor's life using potions of longevity enhanced with an ingredient that makes them more potent. But now the source of that ingredient has been depleted. The secretary fears that this additive—powdered shards from the eggshell of the legendary Dragon of Heavenly Blessings—might be irreplaceable.
+A Grande Secretária Wei Feng Ying governa sob as ordens do imperador. Por anos, ela soube que os alquimistas imperiais sustentam a vida do imperador usando poções de longevidade aprimoradas com um ingrediente que as torna mais potentes. Mas agora a fonte desse ingrediente se esgotou. A secretária teme que esse aditivo — fragmentos em pó da casca do ovo do lendário Dragão das Bênçãos Celestiais — possa ser insubstituível.
 
-Secretary Wei has sent agents to scour the land for imperial troves containing *potions of longevity*, hoping to find more of the lost ingredient. Recently, this search unearthed ancient court documents mentioning a secret cache belonging to the Mountain Cloud Empress, a mysterious figure of the long-fallen Yun dynasty. Secretary Wei gave orders to begin excavating the Old City buried beneath Yongjing, the capital of Great Xing, and she now seeks adventurers to investigate the ruins under the guise of historical scholarship—not sharing with them that they are actually hunting for a specific secret.
+A Secretária Wei enviou agentes para vasculhar a terra em busca de tesouros imperiais contendo *poções de longevidade*, na esperança de encontrar mais do ingrediente perdido. Recentemente, essa busca revelou antigos documentos da corte que mencionam um esconderijo secreto pertencente à Imperatriz Nuvem da Montanha, uma figura misteriosa da há muito extinta dinastia Yun. A Secretária Wei deu ordens para começar a escavar a Cidade Antiga soterrada sob Yongjing, a capital do Grande Xing, e agora busca aventureiros para investigar as ruínas sob o disfarce de erudição histórica — sem compartilhar com eles que estão, na verdade, caçando um segredo específico.
 
+### Pronúncias
 
-### Pronunciations
+A tabela Pronúncias de Yongjing mostra como pronunciar os nomes que aparecem nesta aventura.
 
-The Yongjing Pronunciations table shows how to pronounce names that appear in this adventure.
-
-**Tabela: Yongjing Pronunciations**
+**Tabela: Pronúncias de Yongjing**
 
 |  |  |
 | --- | --- |
@@ -46,37 +49,31 @@ The Yongjing Pronunciations table shows how to pronounce names that appear in th
 | Xing | shing |
 | Yongjing | yong-jing |
 
+### Ambientando a Aventura
 
-### Setting the Adventure
+Use as seguintes sugestões para ajudar a localizar Yongjing em um mundo mais amplo:
 
-Use the following suggestions to help locate Yongjing in a wider world:
+### Ganchos de Personagem
 
+Considere as seguintes maneiras de envolver os personagens nesta aventura:
 
-### Character Hooks
+### Segredos da Imortalidade
 
-Consider the following ways to involve characters in this adventure:
+![Qualquer um que deseje falar com o Imperador de Jade Branco deve solicitar uma audiência no Salão da Sabedoria Divina](/images/campaigns/journeys-through-the-radiant-citadel/123-13-002hall-divine-wisdom.webp)
 
+Esta aventura envolve os personagens em uma conspiração que alcança os mais altos níveis do governo de Yongjing. Antes de conduzir a aventura, familiarize-se com a seção "**Guia Geográfico de Yongjing**". Mantenha os seguintes detalhes da conspiração em segredo, revelando-os apenas quando o texto da aventura instruí-lo a fazê-lo.
 
-### Secrets of Immortality
+### Bênção do Dragão
 
+Quando os governantes de Yongjing atingem uma idade avançada, eles usam poções de longevidade para aumentar seu tempo de vida. Essas poções são suplementadas com um reagente raro chamado Bênção do Dragão. O ingrediente primário desse reagente é a casca de ovo em pó de um ser lendário conhecido como Dragão das Bênçãos Celestiais.
+Normalmente, uma criatura pode se beneficiar de apenas um número limitado de *poções de longevidade* antes que o consumo contínuo provavelmente envelheça o bebedor em vez de reduzir sua idade. Quando uma pitada de Bênção do Dragão é adicionada a uma *poção de longevidade*, no entanto, a poção não tem chance de envelhecer seu bebedor, não importa quantas *poções de longevidade* aquele indivíduo tenha consumido. Com o suficiente desse reagente e suficientes *poções de longevidade*, os governantes de Yongjing poderiam, concebivelmente, viver para sempre. Mas essa imortalidade não é proteção contra uma morte violenta: assassinato, revolução ou algum outro destino terrível encerrou o governo de cada imperador passado.
 
-![Any who would speak with the White Jade Emperor must petition for an audience at the Hall of Divine Wisdom](/images/campaigns/journeys-through-the-radiant-citadel/123-13-002hall-divine-wisdom.webp)
+### Fim de um Imperador
 
-This adventure embroils characters in a conspiracy involving the highest levels of Yongjing's government. Before running the adventure, familiarize yourself with the "**Área Yongjing Gazetteer**" section. Keep the following details of the conspiracy secret, revealing them only when the adventure text instructs you to do so.
+O imperador do Grande Xing está morrendo — ele só não sabe disso ainda. Em alguns meses, quando ele usar novamente uma poção de longevidade para prolongar sua vida, ele descobrirá que o suprimento imperial de Bênção do Dragão se esgotou — e essa poção pode envelhecê-lo em vez de adicionar anos à sua vida.
+Atualmente, apenas os alquimistas imperiais e sua supervisora, a Grande Secretária Wei, estão cientes desse fato. Os alquimistas não tornaram essa informação conhecida, sob as ordens da grande secretária.
 
-### Dragon's Blessing
+### Fim de uma Era
 
-When the rulers of Yongjing reach an advanced age, they use potions of longevity to increase their life span. These potions are supplemented with a rare reagent called Dragon's Blessing. The primary ingredient of this reagent is powdered eggshell from a legendary being known as the Dragon of Heavenly Blessings.
-Normally, a creature can benefit from only a limited number of *potions of longevity* before continued consumption is likely to age the drinker rather than reduce their age. When a pinch of Dragon's Blessing is added to a *potion of longevity*, however, the draught has no chance of aging its drinker no matter how many *potions of longevity* that individual has consumed. With enough of this reagent and enough *potions of longevity*, Yongjing's rulers could conceivably live forever. But this immortality is not protection against a violent death: murder, revolution, or some other dire fate has ended each past emperor's rule.
-
-### End of an Emperor
-
-The emperor of Great Xing is dying—he just doesn't know it yet. In a few months, when he next uses a potion of longevity to extend his life, he'll learn that the imperial supply of Dragon's Blessing has been depleted—and this potion might age him rather than adding years to his life.
-Currently, only the imperial alchemists and their overseer, Grand Secretary Wei, are aware of this fact. The alchemists have not made this information known, at the grand secretary's command.
-
-### End of an Era
-
-Grand Secretary Wei, the leader of the emperor's government, knows that the secret of the emperor's long life has been depleted. A lifelong servant of the empire, Wei fears the upheaval that historically occurs after the death of a ruler, as several claimants to the throne vie for power in the political vacuum. In response, Wei has set her considerable network of agents to covertly work toward two goals:
-The Grand Secretary hides the truth of the emperor's condition from her liege and all but her most trusted agents, believing herself the only person fit to steer the empire through the challenges to come. Maintaining this secret is of the utmost importance, because general knowledge of the emperor's looming demise would precipitate a host of political schemes throughout Yongjing's vast bureaucracy.
-
-
+A Grande Secretária Wei, a líder do governo do imperador, sabe que o segredo da longa vida do imperador se esgotou. Uma servidora vitalícia do império, Wei teme a convulsão que historicamente ocorre após a morte de um governante, enquanto vários pretendentes ao trono disputam o poder no vácuo político. Em resposta, Wei colocou sua considerável rede de agentes para trabalhar secretamente em direção a dois objetivos:
+A Grande Secretária esconde a verdade sobre a condição do imperador de seu soberano e de todos, exceto seus agentes mais confiáveis, acreditando ser a única pessoa apta a guiar o império pelos desafios vindouros. Manter esse segredo é da mais alta importância, porque o conhecimento geral do falecimento iminente do imperador precipitaria uma série de esquemas políticos por toda a vasta burocracia de Yongjing.

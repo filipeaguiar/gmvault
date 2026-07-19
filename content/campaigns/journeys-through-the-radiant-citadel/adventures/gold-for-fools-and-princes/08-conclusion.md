@@ -1,31 +1,33 @@
 ---
-title: "Cena 8 - Conclusion"
+title: Cena 8 - Conclusion
 weight: 80
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 8 - Conclusão
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/"
-locations:
-
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/
+locations: null
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-kirina-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/prince-simbon-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-After Kirina's formal arrest, Uzoma demands an immediate investigation of High Priest Kedjou's lodgings to confirm the characters' claims. Bolstered by Prince Simbon's influence, she drives immediate action. The characters might join her, Simbon, and a group of guards in a surprise visit to Kedjou's chambers, where the high priest is caught off guard. His research notes—matching the runes in the Goldwarren—are discovered. The high priest is quickly taken into custody.
+Após a prisão formal de Kirina, Uzoma exige uma investigação imediata nos aposentos do Sumo Sacerdote Kedjou para confirmar as alegações dos personagens. Impulsionada pela influência do Príncipe Simbon, ela consegue uma ação imediata. Os personagens podem se juntar a ela, a Simbon e a um grupo de guardas em uma visita surpresa aos aposentos de Kedjou, onde o sumo sacerdote é pego de surpresa. Suas anotações de pesquisa — que correspondem às runas da Toca Dourada — são descobertas. O sumo sacerdote é rapidamente colocado sob custódia.
 
-In the aftermath of Kirina's and Kedjou's arrests, Prince Simbon thanks the characters for supporting him and revealing Prince Kirina's plot. He rewards them with two of his family's treasures, an adamantine chain shirt and a ring of warmth emblazoned with the sunburst symbol of Anisa—Simbon says the ring carries with it the warmth of his homeland's sun and his family's friendship. It's also clear that Simbon is impressed with Uzoma. Together the pair might become a force to be reckoned with in Anisa and beyond.
+Após as prisões de Kirina e Kedjou, o Príncipe Simbon agradece aos personagens por apoiá-lo e por revelar o plano do Príncipe Kirina. Ele os recompensa com dois dos tesouros de sua família: uma camisa de cota de adamantina e um anel de calor adornado com o símbolo do sol de Anisa — Simbon diz que o anel carrega consigo o calor do sol de sua terra natal e a amizade de sua família. Também fica claro que Simbon está impressionado com Uzoma. Juntos, os dois podem se tornar uma força formidável em Anisa e além.
 
-If Kirina and Kedjou's plot isn't revealed, Kirina's rise in influence continues. Knowing the depths of his rival's treachery, Prince Simbon might request the characters' aid in exposing the rival prince's future plots.
-
-
+Se o plano de Kirina e Kedjou não for revelado, a ascensão da influência de Kirina continua. Conhecendo as profundezas da traição de seu rival, o Príncipe Simbon pode solicitar a ajuda dos personagens para expor os futuros planos do príncipe rival.

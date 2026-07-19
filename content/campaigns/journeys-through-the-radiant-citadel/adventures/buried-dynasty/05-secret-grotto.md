@@ -1,122 +1,137 @@
 ---
-title: "Cena 5 - Secret Grotto"
+title: Cena 5 - Secret Grotto
 weight: 50
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
+  kind: scene
+draft: false
+titulo_pt_br: Cena 5 – Gruta Secreta
+visibility: gm
+status: published
+summary: 'Parece que você quer que eu desenvolva uma **cena operacional** para sua sessão de RPG, mas preciso de mais informações para criar algo sob medida.
 
+
+  Para eu ajudar, poderia me dizer:
+
+
+  1.  **Sistema/Cenário:** É fantasia medieval (D&D, Tormenta), ficção científica (Cyberpunk, Starfinder), horror (Call of Cthulhu), espionagem, ou outro?
+
+  2.  **Contexto da missão:** Qual o objetivo? (Infiltração, resgate, assassinato, sabotagem, roubo de dados, escolta?)
+
+  3.  **Personagens/Equipe:** Quem são? (Soldados, aventureiros, mercenários, agentes secretos, hackers?)
+
+  4.  **Tom desejado:** Deve ser furtivo (Metal Gear Solid), tático (Rainbow Six/SWAT), cinematográfico e explosivo (Velozes e Furiosos/Missão Impossível), ou realista e tenso?
+
+  5.  **Cenário Físico:** Onde ocorre? (Base militar, arranha-céu corporativo, armazém portuário, mansão fortificada, nave espacial?)
+
+
+  Assim que você me der esses detalhes, posso estruturar os desafios, o mapa de pontos de interesse e os momentos-chave da ação.'
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/secret-grotto/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/secret-grotto/
 compendium_refs:
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/adult-gold-dragon/"
-  - "/compendium/monsters/stone-golem/"
+- /compendium/monsters/mage/
+- /compendium/monsters/adult-gold-dragon/
+- /compendium/monsters/stone-golem/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/stone-golem-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-129-map-132-secret-grotto-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/stone-golem-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-129-map-132-secret-grotto-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Characters who step through the portal are transported to another portion of the Old City in the northeast section of Yongjing.
+Personagens que atravessam o portal são transportados para outra porção da Cidade Antiga, na seção nordeste de Yongjing.
 
+### Características Gerais
 
-### General Features
+As áreas deste gruta subterrânea têm as seguintes características:
 
-The areas in this underground grotto have the following features:
+### Localidades da Gruta Secreta
 
+Os locais a seguir correspondem à chave do mapa 13.2.
 
-### Secret Grotto Locations
+![Mapa 13.2: Gruta Secreta](/images/campaigns/journeys-through-the-radiant-citadel/128-map-132-secret-grotto.webp)
 
-The following locations are keyed to map 13.2.
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/129-map-132-secret-grotto-player.webp)
 
-![Map 13.2: Secret Grotto](/images/campaigns/journeys-through-the-radiant-citadel/128-map-132-secret-grotto.webp)
+### S1: Tumba do Golem de Jade
 
+Personagens que atravessam o portal aparecem no centro desta área. Quando todos os personagens tiverem chegado, leia o seguinte:
+> As paredes desta câmara de pedra hexagonal são entremeadas por veios brancos e pálidos de jade que brilham fracamente. Uma porta dupla de bronze com o desenho de dois ki-rins ocupa uma das paredes. Dezenas de nichos com estátuas de soldados de jade preenchem o restante do perímetro da câmara. Corpos estão espalhados pela sala — alguns vestidos com roupas finas, outros em farrapos, todos em estado de decomposição.
+A Secretária Wei usa esta armadilha antiga para eliminar aqueles que considera uma ameaça ao império. Agora, ela considera os personagens como tais ameaças, independentemente do pouco que saibam sobre seus planos ou sobre a Bênção do Dragão.
+Qualquer investigação dos corpos na sala revela que são humanos e anões, alguns falecidos há apenas alguns meses. Um personagem bem-sucedido em um teste de Sabedoria (Medicina) CD 12 determina que a maioria das vítimas foi morta por lâminas gigantes.
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/129-map-132-secret-grotto-player.webp)
+### Uma Cortesia Final
 
-
-### S1: Jade Golem Tomb
-
-Characters who pass through the portal appear in the center of this area. When all the characters have arrived, read the following:
-> The walls of this hexagonal stone chamber are shot through with pale white veins of faintly glowing jade. A bronze double door bearing a design of two ki-rins stands in one wall. Dozens of alcoves holding jade statues of soldiers line the rest of the chamber's perimeter. Bodies are scattered around the room—some clothed in finery, some in rags, all in states of decay.
-Secretary Wei uses this ancient trap to dispose of those she considers a threat to the empire. She now considers the characters such threats, no matter how little they know about her plans or Dragon's Blessing.
-Any investigation of the bodies in the room reveals them to be humans and dwarves, some only a few months deceased. A character who succeeds on a CD 12 Wisdom (Medicine) check determines that most of the victims were killed by giant blades.
-
-### A Final Courtesy
-
-As the characters get their bearings, read or paraphrase the following:
-> A shimmering, illusory image of Secretary Wei appears in the center of the chamber. "Your service is much appreciated, adventurers," the image says grimly. "But you've learned just enough to be dangerous. I won't allow our great nation to succumb to the same chaos as the Yun dynasty. If you have last wishes, please write them down. We will retrieve them and do our best to honor them after your demise."
-> The Grand Secretary then hesitates, and the image wavers. "Zhong Yin, I will not be retrieving you as planned," she says. "I am sorry."
-> The image flickers, then vanishes.
-Any attempt to respond to Secretary Wei fails, as she ignores the characters.
+Enquanto os personagens se orientam, leia ou parafraseie o seguinte:
+> Uma imagem ilusória e cintilante da Secretária Wei aparece no centro da câmara. "Seu serviço é muito apreciado, aventureiros", diz a imagem sombriamente. "Mas vocês aprenderam o suficiente para serem perigosos. Não permitirei que nossa grande nação sucumba ao mesmo caos da dinastia Yun. Se tiverem últimos desejos, por favor, escrevam-nos. Nós os recuperaremos e faremos o possível para honrá-los após seu falecimento."
+> A Grã-Secretária então hesita, e a imagem vacila. "Zhong Yin, não vou resgatá-lo como planejado", ela diz. "Sinto muito."
+> A imagem cintila e depois desaparece.
+Qualquer tentativa de responder à Secretária Wei falha, pois ela ignora os personagens.
 
 ### Zhong Yin
 
-Zhong Yin is shocked at Secretary Wei's betrayal. From this point on, the spy is willing to aid the characters and will share any information in the "**Área What's Left Unsaid**" section earlier in the adventure.
+Zhong Yin fica chocado com a traição da Secretária Wei. A partir deste momento, o espião está disposto a ajudar os personagens e compartilhará qualquer informação da seção "**Área O Que Ficou Por Dizer**" apresentada anteriormente na aventura.
 
-### Stone Defenders
+### Defensores de Pedra
 
-After the image of Secretary Wei fades, a sculpted soldier detaches from its alcove, then steps forward to attack. The soldier uses the stone golem stat block, except that its Slam action deals slashing damage because it wields a giant glaive.
-At the start of the soldier's next turn, a second stone soldier animates and attacks. This soldier is identical, except that the designs on its armor are slightly different. Each time one of the stone soldiers is destroyed, another activates in its alcove and attacks at the start of the next turn. No more than two soldiers are ever active at once.
-The soldiers continue to animate and attack until the bronze gate is opened (see below). Characters who have a passive Wisdom (Perception) score of 14 or higher notice that different animal designs decorate each of the statues.
+Após a imagem da Secretária Wei desaparecer, um soldado esculpido se desprende de seu nicho e avança para atacar. O soldado usa o bloco de estatísticas do golem de pedra, exceto que sua ação de Golpear causa dano cortante porque empunha uma glaive gigante.
+No início do próximo turno do soldado, um segundo soldado de pedra se anima e ataca. Este soldado é idêntico, exceto que os desenhos em sua armadura são ligeiramente diferentes. Cada vez que um dos soldados de pedra é destruído, outro é ativado em seu nicho e ataca no início do próximo turno. Nunca mais do que dois soldados estão ativos ao mesmo tempo.
+Os soldados continuam se animando e atacando até que o portão de bronze seja aberto (veja abaixo). Personagens que tenham uma pontuação passiva de Sabedoria (Percepção) de 14 ou mais notam que diferentes desenhos de animais decoram cada uma das estátuas.
 
-### Bronze Gate
+### Portão de Bronze
 
-Magic seals this bronze double door. It opens only if the ki-rin symbol on one of the statues in the room—the only statue that doesn't animate—is pressed. A character who succeeds on a CD 14 Wisdom (Perception) notices that all the jade statues have distinct designs suggestive of different animals on their armor and that these designs are rendered in a style similar to the ki-rin symbol on the doors. A character who takes an action to further scrutinize these designs or looks for a ki-rin symbol on the statues can make a CD 18 Wisdom (Perception) check. On a failed check, the character investigates a few statues and doesn't see anything remarkable. On a successful check, the character notices that the decorations on the statue ten alcoves south of the door matches the ki-rin symbol on the gate. If a creature touches the symbol on that statue, the gate opens, and all currently animate statues return to their alcoves and deactivate.
+Magia sela esta porta dupla de bronze. Ela se abre apenas se o símbolo do ki-rin em uma das estátuas na sala — a única estátua que não se anima — for pressionado. Um personagem que for bem-sucedido em um teste de Sabedoria (Percepção) CD 14 nota que todas as estátuas de jade têm desenhos distintos que sugerem diferentes animais em suas armaduras e que esses desenhos são feitos em um estilo similar ao do símbolo do ki-rin nas portas. Um personagem que usar uma ação para examinar mais detalhadamente esses desenhos ou procurar um símbolo de ki-rin nas estátuas pode fazer um teste de Sabedoria (Percepção) CD 18. Em um teste falho, o personagem investiga algumas estátuas e não vê nada de notável. Em um teste bem-sucedido, o personagem nota que as decorações na estátua dez nichos ao sul da porta correspondem ao símbolo do ki-rin no portão. Se uma criatura tocar o símbolo nessa estátua, o portão se abre, e todas as estátuas atualmente animadas retornam aos seus nichos e se desativam.
 
-![Ancient jade statues animate to defend the secret ruins beneath Yongjing](/images/campaigns/journeys-through-the-radiant-citadel/130-13-004ancient-jade-statues.webp)
+![Antigas estátuas de jade se animam para defender as ruínas secretas sob Yongjing](/images/campaigns/journeys-through-the-radiant-citadel/130-13-004ancient-jade-statues.webp)
 
+### S2: Nichos do Corredor
 
-### S2: Hallway Alcoves
+> Um longo corredor foi toscamente escavado na rocha circundante. Lanternas embutidas nas paredes lançam luz sobre vários nichos de formato irregular.
+A Secretária Wei usa esta área como depósito de objetos de valor que possam ser úteis no futuro. Um personagem que passar 5 minutos vasculhando os nichos encontra numerosos arquivos detalhando processos judiciais de anos atrás e um dos seguintes objetos aleatoriamente:
+* Um estojo de transporte vazio com uma dúzia de compartimentos. Uma etiqueta diz "Poção da Longevidade × 12".
+* Um leque de vento pintado com uma imagem de navios de fundo chato. Uma etiqueta o identifica como um presente para um dos filhos do imperador.
+* Três vasos de porcelana frágeis, cada um no valor de 800 pp. Um recibo os identifica como presentes para o imperador.
 
-> A long hallway is roughly carved out of the surrounding rock. Lanterns embedded in the walls cast light into a number of irregularly shaped alcoves.
-Secretary Wei uses this area as a storage place for valuables that might be useful in the future. A character who spends 5 minutes searching the alcoves finds numerous files detailing years-old court proceedings and one of the following objects at random:
-* An empty carrying case with a dozen compartments. A tag reads "Potion of Longevity × 12."
-* A wind fan painted with an image of flat-bottomed ships. A tag identifies it as a gift for one of the emperor's children.
-* Three fragile porcelain vases worth 800 gp each. A receipt identifies them as gifts for the emperor.
+### S3: Nicho de Documentos
 
-### S3: Documents Alcove
+Este nicho tem prateleiras cortadas no arenito, cada uma abarrotada de pergaminhos. Personagens que vasculharem as prateleiras e forem bem-sucedidos em um teste de Inteligência (Investigação) CD 12 encontram uma série de pergaminhos com ordens da Secretária Wei e relatórios de seus agentes. Esses documentos capturam a seguinte informação:
+* A Secretária Wei acredita que o imperador está morrendo.
+* Ela tem enviado agentes secretamente para antigos sítios imperiais por toda a terra para procurar algo chamado Bênção do Dragão (o documento não registra o que é isso).
+* Encontrar a Bênção do Dragão salvará o imperador.
+* Manter o sigilo é da máxima importância, para que a corte imperial não seja lançada no caos.
+Qualquer residente de Yongjing ou um personagem bem-sucedido em um teste de Inteligência (História) CD 12 sabe que os governantes da nação usam magia para prolongar suas vidas e garantir a estabilidade da terra. Se a linhagem imperial perdeu a capacidade de fazer isso, a comoção certamente virá.
 
-This alcove has shelves cut out of the sandstone, each one stacked high with scrolls. Characters who search the shelves and succeed on a CD 12 Intelligence (Investigation) check find a series of scrolls with orders from Secretary Wei and reports back from her agents. These documents capture the following information:
-* Secretary Wei believes the emperor is dying.
-* She has secretly been sending agents to ancient imperial sites across the land to search for something called Dragon's Blessing (the document doesn't note what this is).
-* Finding Dragon's Blessing will save the emperor.
-* Maintaining secrecy is of the utmost importance, lest the imperial court be thrown into chaos.
-Any resident of Yongjing or a character who succeeds on a CD 12 Intelligence (History) check knows that the nation's rulers use magic to give themselves long life and ensure the stability of the land. If the imperial line has lost the ability to do this, upheaval is sure to follow.
+### S4: Gruta do Dragão
 
-### S4: Dragon Grotto
+Conforme os personagens se aproximam desta área, ouvem a respiração irregular de uma criatura grande.
+> Um enorme dragão dourado jaz enrolado junto à parede mais próxima desta câmara sombria, suas quatro pernas acorrentadas ao chão. Marcas de garras sulcam as paredes e o chão.
+> Várias estações de trabalho estão escavadas na parede leste, cada uma coberta por dispositivos alquímicos. Figuras murmuradoras agrupam-se em torno dessas estações. Quatro catres simples ficam próximos.
+Alquimistas imperiais trabalham em segredo aqui, tentando recriar os segredos perdidos da Bênção do Dragão. Passagens levam para oeste e nordeste.
 
-As the characters approach this area, they hear the ragged breathing of a large creature.
-> An enormous gold dragon lies coiled against the near wall of this gloomy chamber, its four legs shackled to the ground. Claw marks score the walls and floor.
-> Several workstations are carved into the eastern wall, each covered in alchemical devices. Muttering figures cluster around these stations. Four simple cots stand nearby.
-Imperial alchemists work in secret here, trying to recreate the lost secrets of Dragon's Blessing. Passages lead to the west and northeast.
+### Dragão Dourado
 
-### Gold Dragon
+Um dragão dourado adulto chamado Tulao está cativo de uma cabala secreta de alquimistas imperiais há mais de um ano. Ele tem 5 níveis de exaustão e 20 pontos de vida restantes. Grilhões mágicos em suas pernas o impedem de usar qualquer uma de suas ações. O dragão é hostil com seus captores, mas amigável com qualquer um que remova seus grilhões. Os grilhões podem ser removidos usando uma das chaves dos magos ou arrombando a fechadura com um teste de Destreza CD 18 bem-sucedido usando ferramentas de ladrão. Libertar Tulao reduz sua exaustão em 1 nível. Se libertado, Tulao agradece aos personagens e compartilha a informação na seção "Segredos da Longevidade" abaixo antes de se transformar em um canário e voar para fora da câmara através da área S5.
 
-An adult gold dragon named Tulao has been a captive of a secret cabal of imperial alchemists for over a year. He has 5 levels of exhaustion and 20 hit points remaining. Magic shackles on his legs prevent him from using any of his actions. The dragon is hostile to his captors but friendly toward anyone who removes his shackles. The shackles can be removed either by using one of the mages' keys or by picking the lock with a successful CD 18 Dexterity check using thieves' tools. Freeing Tulao reduces his exhaustion by 1 level. If freed, Tulao thanks the characters and shares the information in the "Secrets of Longevity" section below before transforming into a canary and flying out of the chamber through area S5.
+### Magos
 
-### Mages
+Três magos trabalham aqui. Eles são leais e maus e servem à Secretária Wei como tratadores do dragão. Eles são hostis a qualquer criatura que não seja outro agente da Secretária Wei. Cada um deles carrega uma chave de jade que abre os grilhões do dragão e farão qualquer coisa para impedir que o dragão seja libertado.
 
-Three mages work here. They are lawful evil and serve Secretary Wei as the dragon's handlers. They're hostile toward any creature that's not another agent of Secretary Wei. Each of them carries a jade key that opens the dragon's shackles and will do anything to prevent the dragon from being released.
+### Segredo da Longevidade
 
-### Secret of Longevity
+Se Tulao for libertado ou se algum dos magos for capturado e coagido, eles explicam o que está acontecendo aqui, destacando os seguintes pontos:
+* Eles podem compartilhar todas as informações nas seções "**Área Bênção do Dragão**" e "**Área O Fim do Imperador**" no início da aventura.
+* A Secretária Wei fez os magos imperiais capturarem e vincularem magicamente o dragão dourado, esperando que seus alquimistas pudessem usá-lo para criar a Bênção do Dragão. Seus esforços não obtiveram sucesso.
 
-If Tulao is freed or if any of the mages are captured and coerced, they explain what's happening here, highlighting the following points:
-* They can share all of the information in the "**Área Dragon's Blessing**" and "**Área End of the Emperor**" sections at the start of the adventure.
-* Secretary Wei had the imperial mages magically capture and bind the gold dragon, hoping that her alchemists could use it to create Dragon's Blessing. Their efforts have met with no success.
+### Tesouro
 
-### Treasure
+As estações de trabalho aqui contêm duas poções de cura (suprema), um elixir da saúde, várias escamas de dragão dourado e três conjuntos de suprimentos de alquimista.
 
-The workstations here hold two potions of healing (supreme), an elixir of health, several gold dragon scales, and three sets of alchemist's supplies.
+### S5: Túnel de Saída
 
-### S5: Exit Tunnel
-
-A cobweb-filled passageway leads out and up from the grotto, quickly becoming a steep slope with metal rungs bolted to the sandstone walls. The passageway ends in an iron grate that requires a successful CD 12 Strength check to push open. If Tulao escaped using this route, he has already slipped through the grate and out of the crawlspace beyond by the time the characters arrive.
-
-
+Uma passagem cheia de teias de aranha conduz para fora e para cima a partir da gruta, rapidamente se tornando uma ladeira íngreme com degraus de metal parafusados nas paredes de arenito. A passagem termina em uma grade de ferro que requer um teste bem-sucedido de Força CD 12 para ser empurrada e aberta. Se Tulao escapou usando esta rota, ele já passou pela grade e pelo espaço de rastejar além dela quando os personagens chegarem.

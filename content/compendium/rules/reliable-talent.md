@@ -1,15 +1,22 @@
 ---
-title: "Reliable Talent"
+title: Reliable Talent
 params:
-  kind: "rule"
+  kind: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Reliable Talent."
+summary: 'Característica de classe: Talento Confiável'
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: draft
+titulo_pt_br: Talento Confiável
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a <span class="dice+" data-roll-notation="d20">d20</span> roll of 9 or lower as a 10.
+Sempre que você fizer um teste de atributo que use uma de suas proficiências em perícias ou ferramentas, você pode tratar uma jogada de <span class="dice+" data-roll-notation="d20">d20</span> de 9 ou menos como um 10.

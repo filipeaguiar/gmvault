@@ -1,27 +1,25 @@
 ---
-title: "Cena 8 - Conclusion"
+title: Cena 8 - Conclusion
 weight: 80
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
-compendium_refs:
-
-handouts:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 8 - Conclusão
+visibility: gm
+status: published
+summary: Operational scene to run in the session.
+npcs: null
+locations: null
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Descrição e Elementos Importantes
+A aventura termina quando a trama de Kasem — e potencialmente os wynlings — são revelados a Lamai ou Kusa. Se os personagens ainda não confrontaram Kasem, Lamai ou Kusa o encontra e o acusa publicamente de sabotar sua barraca. Se os vendedores forem apoiados pelos personagens, alegações de testemunhas e evidências, Kasem confessa rapidamente. Guardas do mercado escoltam Kasem para fora do mercado e o proíbem de retornar, a menos que os personagens intercedam em seu favor. Se os personagens advogarem por Kasem, outro vendedor oferece adotá-lo em sua família se ele prometer não praticar mais enganos.
 
-The adventure ends when Kasem's plot—and potentially the wynlings—are revealed to Lamai or Kusa. If the characters haven't already confronted Kasem, Lamai or Kusa finds him and publicly accuses him of sabotaging her stall. If the vendors are backed up by the characters, witness claims, and evidence, Kasem quickly confesses. Market guards usher Kasem from the market and forbid him from returning unless the characters intercede on his behalf. If the characters advocate for Kasem, another vendor offers to adopt him into their family if he promises no more deceit.
-
-In the aftermath, Kusa and Lamai are quick to apologize to one another and reconcile their differences. They thank the party and award the characters 100 gp and a lifetime of meals from their stalls.
-
-
+Posteriormente, Kusa e Lamai rapidamente se desculpam uma com a outra e reconciliam suas diferenças. Elas agradecem ao grupo e recompensam os personagens com 100 po e refeições vitalícias de suas barracas.

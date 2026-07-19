@@ -1,19 +1,24 @@
 ---
-title: "Life in the Citadel"
+title: Life in the Citadel
 params:
-  kind: "location"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
+  kind: location
+draft: false
+titulo_pt_br: Vida na Cidadela
+visibility: gm
+status: published
 tags:
-  - localidade
-  - importado
-handouts:
-
+- localidade
+- importado
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Localidade **Life in the Citadel** importada automaticamente.
+Localidade **Vida na Cidadela** importada automaticamente.
 
 ### Cenas e Sub-áreas
-- [Life in the Citadel](../../adventures/the-radiant-citadel/05-life-in-the-citadel/)
+- [Vida na Cidadela](../../adventures/the-radiant-citadel/05-life-in-the-citadel/)

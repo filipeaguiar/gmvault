@@ -1,15 +1,15 @@
 ---
-title: "Arte: Laleh Ghorbani"
+title: 'Arte: Laleh Ghorbani'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: Laleh Ghorbani'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: Laleh Ghorbani](/images/campaigns/journeys-through-the-radiant-citadel/103-11-003laleh-ghorbani.webp)

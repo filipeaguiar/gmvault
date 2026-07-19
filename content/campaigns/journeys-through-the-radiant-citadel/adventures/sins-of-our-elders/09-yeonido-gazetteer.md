@@ -1,119 +1,121 @@
 ---
-title: "Cena 9 - Yeonido Gazetteer"
+title: Cena 9 - Yeonido Gazetteer
 weight: 90
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
-npcs:
-
-locations:
-
+  kind: scene
+draft: false
+titulo_pt_br: Cena 9 - Yeonido Guia Geográfico
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
+npcs: null
+locations: null
 compendium_refs:
-  - "/compendium/monsters/young-red-dragon/"
-  - "/compendium/monsters/spy/"
-  - "/compendium/monsters/specter/"
-  - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/doppelganger/"
+- /compendium/monsters/young-red-dragon/
+- /compendium/monsters/spy/
+- /compendium/monsters/specter/
+- /compendium/monsters/ghost/
+- /compendium/monsters/doppelganger/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-The people of Yeonido, the City of Judgment, pride themselves on upholding tradition. Thousands of years ago, the great dragon Mireu entrusted the founders of the city-state with a mandate to forge and lead a great civilization. Yeonido's people took the dragon's words to heart, establishing a reverence for fealty and order that has remained steadfast through the centuries. Two main beliefs form the foundation of Yeonido society: that structure is key to all things, and that adherence to familial duty trumps all but one's devotion to the royal family.
+O povo de Yeonido, a Cidade do Julgamento, orgulha-se de manter a tradição. Milhares de anos atrás, o grande dragão Mireu confiou aos fundadores da cidade-estado o mandato de forjar e liderar uma grande civilização. O povo de Yeonido levou a sério as palavras do dragão, estabelecendo uma reverência pela lealdade e ordem que permaneceu inabalável através dos séculos. Duas crenças principais formam a base da sociedade de Yeonido: que a estrutura é a chave para todas as coisas, e que a adesão ao dever familiar supera tudo, exceto a devoção à família real.
 
-But those noble traditions have a troubling side: the disquieting ancestral spirits called gwishin that refuse to leave the world behind. When a citizen of Yeonido dies feeling wronged or knowing that they've harmed others, they return as one of these spirits. It's up to the spirit's family to resolve the injustice and bring peace to the gwishin, allowing it to move onward. If a gwishin is allowed to endure, it grows ever more dangerous.
+Mas essas nobres tradições têm um lado preocupante: os espíritos ancestrais inquietantes chamados *gwishin* que se recusam a deixar o mundo para trás. Quando um cidadão de Yeonido morre sentindo-se injustiçado ou sabendo que prejudicou outros, ele retorna como um desses espíritos. Cabe à família do espírito resolver a injustiça e trazer paz ao *gwishin*, permitindo-lhe seguir em frente. Se um *gwishin* puder perdurar, ele se torna cada vez mais perigoso.
 
-In recent years, some in Yeonido have begun to challenge the cultural reverence for ancient traditions, creating unease and discord. It may be no coincidence that gwishin are appearing more frequently than ever before, but it's unclear if more citizens are dying with unfinished business or if something more sinister is at work. Some even believe that the royal family has lost the trust of the great dragon Mireu. Everyone has an opinion, but no one knows how to restore harmony in Yeonido.
-
-
-### Yeonido Features
-
-Those familiar with Yeonido typically know the following details:
+Nos últimos anos, alguns em Yeonido começaram a desafiar a reverência cultural pelas tradições antigas, criando inquietação e discórdia. Pode não ser coincidência que os *gwishin* estejam aparecendo com mais frequência do que nunca, mas não está claro se mais cidadãos estão morrendo com assuntos inacabados ou se algo mais sinistro está em ação. Alguns até acreditam que a família real perdeu a confiança do grande dragão Mireu. Todos têm uma opinião, mas ninguém sabe como restaurar a harmonia em Yeonido.
 
 
-### Noteworthy Sites
+### Características de Yeonido
 
-The city-state of Yeonido is nestled among fertile hills and deep forests. Though many dangerous beasts dwell in those lands, farming villages surround the walled city of Yeonido itself, supporting the city and benefiting from its protection.
-
-### The Seat of Dragons
-
-In the center of Yeonido stands the Seat of Dragons, the palace that houses the royal family and government. The outer palace walls are a brilliant red, and the drawbridge over the moat is always open to allow citizens to enter. Important ceremonies take place in the castle courtyard, where Queen Jin-Mi can often be seen greeting her people.
-Though the Seat of Dragons has no magical wards protecting it, gwishin never enter the palace grounds. Some speculate that this is because the Pearl of Mireu—a legendary gift the draconic founder of Yeonido granted to its people—is hidden somewhere in the palace.
-
-### Yu-Ik River
-
-The Yu-Ik River flows just outside Yeonido's walls and is an essential part of the city. The riverbank holds a bright community of market stalls, colorful art, traders, peddlers, tinkers, and vendors of food and drink. On official holidays, people gather along the riverbank to tie ribbons on tree branches, play games along the shore, and celebrate with good food. However, these gatherings sometimes turn ugly, with fights breaking out due to muggings and territorial disputes arising among merchants. Cautious vendors often hire guards to protect them from trouble.
-
-### Dokkaebi Temple
-
-Not far from the city, this cursed temple sits on a cliff above a majestic waterfall. Foolhardy children dare each other to spend the night within the forbidding temple—a challenge that has sometimes proven fatal. The temple is brilliantly painted with a thousand colors and marked with hundreds of spiritual seals. Although the site is rumored to be filled with treasures, only the most reckless thieves consider breaking in, for countless gwishin rage there each night, their screams echoing for miles.
+Aqueles familiarizados com Yeonido geralmente conhecem os seguintes detalhes:
 
 
-### Life in Yeonido
+### Locais Notáveis
 
-The people of Yeonido are proud of their traditions and welcoming to those who respect their ways.
+A cidade-estado de Yeonido está aninhada entre colinas férteis e florestas profundas. Embora muitas bestas perigosas habitem essas terras, vilarejos agrícolas cercam a própria cidade murada de Yeonido, apoiando a cidade e se beneficiando de sua proteção.
 
-### Structured Society
+### O Trono dos Dragões
 
-Yeonido's residents believe in sacrifice for the good of the community. One must work selflessly, listen to one's elders, and act according to one's status for Yeonido to prosper. Structure is the central pillar of society. Class structure and family structure are key components of life within the city. Change is possible, but usually only when it's driven by members of the royal family or the noble clans. Queen Jin-Mi sits at the apex of the social order, followed by the noble elite, the various ranks of government magistrates, and the heads of each familial clan.
+No centro de Yeonido ergue-se o Trono dos Dragões, o palácio que abriga a família real e o governo. As paredes externas do palácio são de um vermelho brilhante, e a ponte levadiça sobre o fosso está sempre aberta para permitir a entrada dos cidadãos. Cerimônias importantes ocorrem no pátio do castelo, onde a Rainha Jin-Mi pode frequentemente ser vista cumprimentando seu povo.
+Embora o Trono dos Dragões não possua proteções mágicas, os *gwishin* nunca entram nos terrenos do palácio. Alguns especulam que isso ocorre porque a Pérola de Mireu — um presente lendário que o fundador dracônico de Yeonido concedeu ao seu povo — está escondida em algum lugar do palácio.
 
-### Clans and Identity
+### Rio Yu-Ik
 
-Clans live in compounds that often hold every member of the family, organized with its own hierarchy and led by a designated elder. But clans extend beyond families, often adopting outsiders who take up permanent residence in the city-state. When people meet, they exchange clan information before personal details, and the few folk in the city who have no clan—whether they were ejected from a clan or never adopted into one—are viewed with sympathy.
-When people marry—whether for love or for social or political reasons, both of which are considered equally valid—they must choose which partner's clan they will belong to after the union. In rare cases, a new couple decides to establish their own clan, though they often face judgment from their birth clans.
+O Rio Yu-Ik flui logo fora das muralhas de Yeonido e é uma parte essencial da cidade. A margem do rio abriga uma comunidade vibrante de barracas de mercado, arte colorida, comerciantes, vendedores ambulantes, funileiros e vendedores de comida e bebida. Nos feriados oficiais, as pessoas se reúnem ao longo da margem do rio para amarrar fitas nos galhos das árvores, jogar jogos ao longo da costa e celebrar com boa comida. No entanto, essas reuniões às vezes se tornam feias, com brigas irrompendo devido a assaltos e disputas territoriais surgindo entre os mercadores. Vendedores cautelosos frequentemente contratam guardas para protegê-los de problemas.
 
-### Rule by Magistrates
+### Templo Dokkaebi
 
-The city-state of Yeonido is ruled by the beloved Queen Jin-Mi, a dragonborn said to be descended from the city's founder and first ruler, the dragon Mireu. The bureaucracy surrounding her consists of officials known as magistrates, who govern the city-state and enforce its laws. Those who aspire to become magistrates must undergo the exams—known collectively as the Test of Ascension—that take place each spring. These tests are notoriously difficult, and typically only those wealthy enough to afford time to study and special tutoring pass. Still, many less affluent but dedicated students have used this path to change their social status. Even non-citizens are allowed to take the test if they show proper respect for the process.
-
-![Queen Jin-Mi](/images/campaigns/journeys-through-the-radiant-citadel/058-06-005queen-jin-mi.webp)
+Não muito longe da cidade, este templo amaldiçoado situa-se em um penhasco acima de uma cachoeira majestosa. Crianças imprudentes desafiam umas às outras a passar a noite dentro do templo proibido — um desafio que às vezes se provou fatal. O templo é brilhantemente pintado com mil cores e marcado com centenas de selos espirituais. Embora se rumoreje que o local está cheio de tesouros, apenas os ladrões mais imprudentes consideram invadi-lo, pois incontáveis *gwishin* enfurecem-se lá a cada noite, seus gritos ecoando por quilômetros.
 
 
-### Spirit Arbiter
+### Vida em Yeonido
 
-Magistrates called spirit arbiters specialize in bringing an end—peaceful or otherwise—to rogue gwishin. They investigate the appearance of these spirits, soothe them, and then attempt to right the wrongs that hold them in the world. If left with no recourse, spirit arbiters destroy gwishin, but they seek to avoid doing so. These somber magistrates are known for the traditional, broad-brimmed black hat, called a gat, that they each wear as part of their uniform.
+O povo de Yeonido orgulha-se de suas tradições e é acolhedor para aqueles que respeitam seus costumes.
 
-### Names
+### Sociedade Estruturada
 
-Family comes first in Yeonido, and thus an individual's clan name is spoken before their given name. The royal family is an exception—they have no clan name, since it is expected that everyone should know them at first glance.
-Given names in Yeonido typically have two syllables. Within each clan, siblings and cousins of the same generation often share one syllable of their name. For example, a couple might have a son named Ji-Min and a daughter named Ji-Yun. The head of the clan chooses each new child's name. The following are examples of common Yeonido names:
+Os residentes de Yeonido acreditam no sacrifício pelo bem da comunidade. Deve-se trabalhar altruisticamente, ouvir os mais velhos e agir de acordo com seu status para que Yeonido prospere. A estrutura é o pilar central da sociedade. A estrutura de classes e a estrutura familiar são componentes-chave da vida dentro da cidade. A mudança é possível, mas geralmente apenas quando é impulsionada por membros da família real ou dos clãs nobres. A Rainha Jin-Mi está no ápice da ordem social, seguida pela elite nobre, pelos vários escalões de magistrados do governo e pelos chefes de cada clã familiar.
+
+### Clãs e Identidade
+
+Os clãs vivem em complexos que geralmente abrigam todos os membros da família, organizados com sua própria hierarquia e liderados por um ancião designado. Mas os clãs se estendem além das famílias, frequentemente adotando forasteiros que assumem residência permanente na cidade-estado. Quando as pessoas se encontram, elas trocam informações do clã antes de detalhes pessoais, e os poucos indivíduos na cidade que não têm clã — seja por terem sido expulsos de um clã ou nunca adotados em um — são vistos com simpatia.
+Quando as pessoas se casam — seja por amor ou por razões sociais ou políticas, ambas consideradas igualmente válidas — elas devem escolher a qual clã do parceiro pertencerão após a união. Em casos raros, um novo casal decide estabelecer seu próprio clã, embora frequentemente enfrente julgamento de seus clãs de nascimento.
+
+### Governo por Magistrados
+
+A cidade-estado de Yeonido é governada pela amada Rainha Jin-Mi, uma dragonborn que se diz ser descendente do fundador e primeiro governante da cidade, o dragão Mireu. A burocracia ao seu redor consiste em oficiais conhecidos como magistrados, que governam a cidade-estado e fazem cumprir suas leis. Aqueles que aspiram a se tornar magistrados devem passar pelos exames — conhecidos coletivamente como o Teste de Ascensão — que ocorrem a cada primavera. Esses testes são notoriamente difíceis, e tipicamente apenas aqueles ricos o suficiente para ter tempo para estudar e tutoria especial passam. Ainda assim, muitos estudantes menos abastados, mas dedicados, usaram esse caminho para mudar seu status social. Até mesmo não-cidadãos podem fazer o teste se demonstrarem respeito adequado pelo processo.
+
+![Rainha Jin-Mi](/images/campaigns/journeys-through-the-radiant-citadel/058-06-005queen-jin-mi.webp)
 
 
-### Legends of Yeonido
+### Árbitro Espiritual
 
-According to the oldest tales, the Dokkaebi Mountains rose above a world shrouded in mist. All lands were bleak and terrifying in those days, cloaked in endless darkness. Those who had hope in their hearts set their sights on the Dokkaebi Mountains and traveled to the foothills, praying that something would save them.
-Three great dragon siblings saw the penumbral world and descended from the heavens. The dragon Mireu gave the mortals at the Dokkaebi Mountains a divine gift—a pearl infused with the dragon's own heavenly power, which drove back the mist. Mireu's people formed the city of Yeonido, while the other two dragons established the lands of Xing and Umizu. Tales say that the Seat of Dragons in Yeonido is still home to Mireu's pearl, proof of the city's divine origins. However, if the pearl exists, its location is a secret fiercely guarded by the royal family.
-The story of Yeonido's origins is often accompanied by the cautionary tale of the first gwishin. Her name has since been stricken from all records, but she was the sister of a king. Jealousy grew in her heart, and she raised her hand against her sibling. For this crime, she was struck down by Mireu, and a sickly monster appeared in her place.
+Magistrados chamados árbitros espirituais especializam-se em dar um fim — pacífico ou não — aos *gwishin* rebeldes. Eles investigam o aparecimento desses espíritos, os acalmam e então tentam corrigir os erros que os prendem ao mundo. Se ficarem sem recurso, os árbitros espirituais destroem os *gwishin*, mas procuram evitar fazê-lo. Esses magistrados sombrios são conhecidos pelo chapéu preto tradicional de abas largas, chamado *gat*, que cada um usa como parte de seu uniforme.
+
+### Nomes
+
+A família vem em primeiro lugar em Yeonido e, portanto, o nome do clã de um indivíduo é falado antes do seu nome próprio. A família real é uma exceção — eles não têm nome de clã, já que se espera que todos os conheçam à primeira vista.
+Nomes próprios em Yeonido geralmente têm duas sílabas. Dentro de cada clã, irmãos e primos da mesma geração frequentemente compartilham uma sílaba de seu nome. Por exemplo, um casal pode ter um filho chamado Ji-Min e uma filha chamada Ji-Yun. O chefe do clã escolhe o nome de cada nova criança. Os seguintes são exemplos de nomes comuns de Yeonido:
 
 
-### Adventures in Yeonido
+### Lendas de Yeonido
 
-Consider the plots on the Yeonido Adventures table when planning adventures in Yeonido.
+De acordo com os contos mais antigos, as Montanhas Dokkaebi ergueram-se acima de um mundo envolto em névoa. Todas as terras eram sombrias e aterrorizantes naqueles dias, envoltas em escuridão sem fim. Aqueles que tinham esperança em seus corações voltaram seus olhos para as Montanhas Dokkaebi e viajaram para o sopé, orando para que algo os salvasse.
+Três grandes irmãos dragões viram o mundo penumbral e desceram dos céus. O dragão Mireu deu aos mortais nas Montanhas Dokkaebi um presente divino — uma pérola infundida com o próprio poder celestial do dragão, que afastou a névoa. O povo de Mireu formou a cidade de Yeonido, enquanto os outros dois dragões estabeleceram as terras de Xing e Umizu. Contos dizem que o Trono dos Dragões em Yeonido ainda abriga a pérola de Mireu, prova das origens divinas da cidade. No entanto, se a pérola existe, sua localização é um segredo ferozmente guardado pela família real.
+A história das origens de Yeonido é frequentemente acompanhada pelo conto de advertência do primeiro *gwishin*. Seu nome foi desde então riscado de todos os registros, mas ela era irmã de um rei. A inveja cresceu em seu coração, e ela levantou a mão contra seu irmão. Por este crime, ela foi abatida por Mireu, e um monstro doentio apareceu em seu lugar.
 
-**Tabela: Yeonido Adventures**
+
+### Aventuras em Yeonido
+
+Considere as tramas na tabela de Aventuras em Yeonido ao planejar aventuras em Yeonido.
+
+**Tabela: Aventuras em Yeonido**
 
 |  |  |
 | --- | --- |
-| 1 | A magistrate in Yeonido has information the characters need, but she will share it only with characters who have passed the Test of Ascension. |
-| 2 | Mercenaries capture a group of spirit arbiters trying to deal with a murderous gwishin (ghost). These mercenaries were hired by enemies of Yeonido seeking to undo the city from within. |
-| 3 | Cunning spies are breaking into the homes of magistrates across the city, looking for proof that the Pearl of Mireu is hidden under the royal palace. |
-| 4 | A young red dragon appears, claims to be the dragon Mireu, and demands offerings for its ages of protection. The characters are hired to verify or debunk the dragon's claims. |
-| 5 | All except one member of a local clan are replaced by doppelgangers. Those who live near the clan have noticed them acting differently, but no one wishes to speak ill of them. |
-| 6 | The characters are hired by a family to protect the gwishin haunting its members, whom they've come to a peaceable arrangement with, from spirit arbiters insistent on exorcising it. |
-| 7 | The answer key for the upcoming Test of Ascension has been stolen. Unless someone quietly retrieves the key and determines who was responsible, the exams will be canceled and the city thrown into an uproar. |
-| 8 | A tragic fire claims the lives of fifteen members of a Yeonido clan. The lone survivor begs the characters for help dealing with the fifteen gwishin (specters) that arise in the aftermath. |
+| 1 | Um magistrado em Yeonido tem informações que os personagens precisam, mas ele as compartilhará apenas com personagens que tenham passado no Teste de Ascensão. |
+| 2 | Mercenários capturam um grupo de árbitros espirituais tentando lidar com um *gwishin* (fantasma) assassino. Esses mercenários foram contratados por inimigos de Yeonido que buscam desfazer a cidade por dentro. |
+| 3 | Espiões astutos estão invadindo as casas de magistrados por toda a cidade, procurando provas de que a Pérola de Mireu está escondida sob o palácio real. |
+| 4 | Um jovem dragão vermelho aparece, afirma ser o dragão Mireu e exige oferendas por suas eras de proteção. Os personagens são contratados para verificar ou desmascarar as alegações do dragão. |
+| 5 | Todos, exceto um membro de um clã local, são substituídos por doppelgangers. Aqueles que vivem perto do clã notaram que eles estão agindo de forma diferente, mas ninguém deseja falar mal deles. |
+| 6 | Os personagens são contratados por uma família para proteger o *gwishin* que assombra seus membros, com quem eles chegaram a um acordo pacífico, dos árbitros espirituais que insistem em exorcizá-lo. |
+| 7 | O gabarito para o próximo Teste de Ascensão foi roubado. A menos que alguém recupere discretamente o gabarito e determine quem foi o responsável, os exames serão cancelados e a cidade será lançada em alvoroço. |
+| 8 | Um incêndio trágico ceifa a vida de quinze membros de um clã de Yeonido. O único sobrevivente implora aos personagens por ajuda para lidar com os quinze *gwishin* (espectros) que surgem no rescaldo. |
 
 
-### Characters from Yeonido
+### Personagens de Yeonido
 
-If players create characters from Yeonido, ask them the following questions:
-**What is your social class and clan?** Is your family part of the nobility or the working class? Do you want to change your status? Are you an active member of your clan or have you left it behind?
-**Do you have a special role in the city's hierarchies?** Are you a member of the royalty? Did you or do you hope to pass the Test of Ascension and become a magistrate? Are you an arbiter who deals with spirits?
-**How have gwishin affected you?** Did a member of your family return as a gwishin? Did your family deal with their own gwishin, call aid in dealing with it, or let it linger? Did a gwishin of another clan teach, harm, or otherwise interact with you?
-
-
+Se os jogadores criarem personagens de Yeonido, faça-lhes as seguintes perguntas:
+**Qual é a sua classe social e clã?** Sua família faz parte da nobreza ou da classe trabalhadora? Você deseja mudar seu status? Você é um membro ativo do seu clã ou o deixou para trás?
+**Você tem um papel especial nas hierarquias da cidade?** Você é um membro da realeza? Você passou ou espera passar no Teste de Ascensão e se tornar um magistrado? Você é um árbitro que lida com espíritos?
+**Como os *gwishin* o afetaram?** Um membro da sua família retornou como um *gwishin*? Sua família lidou com seu próprio *gwishin*, pediu ajuda para lidar com ele ou o deixou perdurar? Um *gwishin* de outro clã o ensinou, prejudicou ou interagiu de outra forma com você?

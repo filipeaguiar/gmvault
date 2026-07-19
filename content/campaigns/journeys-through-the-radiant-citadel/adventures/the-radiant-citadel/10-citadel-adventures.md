@@ -1,35 +1,38 @@
 ---
-title: "Cena 10 - Citadel Adventures"
+title: Cena 10 - Citadel Adventures
 weight: 100
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 10 - Citadel Adventures
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/atash/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/citadel-adventures/"
-compendium_refs:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/citadel-adventures/
+compendium_refs: null
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/atash-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-Consider the plots on the Radiant Citadel Adventures table when planning adventures in the Radiant Citadel.
+Considere as tramas na tabela Aventuras da Cidadela Radiante ao planejar aventuras na Cidadela Radiante.
 
 
-**Tabela: Radiant Citadel Adventures**
+**Tabela: Aventuras da Cidadela Radiante**
 
 |  |  |
 | --- | --- |
-| 1 | A revolutionary from San Citlán tries to hire the party in the Court of Whispers to uncover the plot of a corrupt council member in their homeland (see the adventure "4"). |
-| 2 | The committee that oversees the Trade Discal asks the party to negotiate with Atash, the angelic ruler of Akharin Sangar, for increased trade with the Radiant Citadel (see the adventure "11"). |
-| 3 | The Dawn Incarnate of Atagua declares it is willing to reveal the location of one of the missing civilizations if the characters prevent an alien evil from encroaching on Atagua (see the adventure "14"). |
-| 4 | The Keening Gloom edges toward the Radiant Citadel. The Speakers for the Ancestors hire the characters to find out what is causing the cyclone's approach and reverse it. |
-
-
+| 1 | Um revolucionário de San Citlán tenta contratar o grupo na Corte dos Sussurros para descobrir a trama de um membro corrupto do conselho em sua terra natal (veja a aventura "4"). |
+| 2 | O comitê que supervisiona o Discal de Comércio pede ao grupo que negocie com Atash, o governante angelical de Akharin Sangar, um aumento do comércio com a Cidadela Radiante (veja a aventura "11"). |
+| 3 | A Encarnação do Amanhecer de Atagua declara que está disposta a revelar a localização de uma das civilizações perdidas se os personagens impedirem um mal alienígena de invadir Atagua (veja a aventura "14"). |
+| 4 | O Keening Gloom se aproxima da Cidadela Radiante. Os Porta-vozes dos Ancestrais contratam os personagens para descobrir o que está causando a aproximação do ciclone e revertê-la. |

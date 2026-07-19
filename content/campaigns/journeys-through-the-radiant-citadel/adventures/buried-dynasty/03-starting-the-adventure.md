@@ -1,126 +1,130 @@
 ---
-title: "Starting the Adventure"
+title: Starting the Adventure
 weight: 30
 params:
-  kind: "scene"
-  content_role: "introduction"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
+  kind: scene
+  content_role: introduction
+draft: false
+titulo_pt_br: Iniciando a Aventura
+visibility: gm
+status: published
+summary: Introdução e contextualização da aventura.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/"
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/"
+- /campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/
+- /campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
+- /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/
 compendium_refs:
-  - "/compendium/monsters/spy/"
-  - "/compendium/monsters/archmage/"
+- /compendium/monsters/spy/
+- /compendium/monsters/archmage/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/lu-zhong-yin-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/wei-feng-ying-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/spy-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/archmage-art/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-When the characters are ready to attend their audience with Secretary Wei, they must meet her at the Hall of Divine Wisdom in Yongjing (see the "**Área Yongjing Gazetteer**" section). Read or paraphrase the following description when they arrive at the hall:
+Quando os personagens estiverem prontos para a audiência com a Secretária Wei, eles devem encontrá-la no Salão da Sabedoria Divina em Yongjing (veja a seção "**Guia Geográfico de Yongjing**"). Leia ou parafraseie a seguinte descrição quando eles chegarem ao salão:
 
-> Sunlight glints on the plaza in front of the grand palace known as the Hall of Divine Wisdom. Hundreds of petitioners mill about—dwarves and humans dressed in farm clothes, merchant's robes, or scholar's coats—all hoping to speak to the emperor. Ministers circulate among them, easily distinguished by their winged black caps. A minister speaks briefly with each petitioner. Most of these exchanges end with the minister dismissively directing the petitioner to turn around and leave through the main gates. Soon enough, a minister approaches you.
+> A luz do sol cintila na praça em frente ao grandioso palácio conhecido como Salão da Sabedoria Divina. Centenas de peticionários circulam — anões e humanos vestidos com roupas de fazendeiro, túnicas de mercador ou casacos de erudito — todos esperando para falar com o imperador. Ministros circulam entre eles, facilmente distinguíveis por seus chapéus pretos alados. Um ministro fala brevemente com cada peticionário. A maioria dessas trocas termina com o ministro, de forma desdenhosa, orientando o peticionário a se virar e sair pelos portões principais. Em pouco tempo, um ministro se aproxima de vocês.
 
-The minister who meets the characters greets them and indifferently asks what their business is at the hall. If a character politely explains they're expected by Secretary Wei, the minister ushers them forward with a bow. If the characters aren't civil or they waste the magistrate's time, a character must succeed on a CD 12 Charisma (Persuasion) check or they are made to wait for an hour while the indignant magistrate takes his time confirming the party's story.
+O ministro que encontra os personagens os cumprimenta e pergunta indiferentemente qual é o seu assunto no salão. Se um personagem explicar educadamente que são esperados pela Secretária Wei, o ministro os conduz para frente com uma reverência. Se os personagens não forem civis ou desperdiçarem o tempo do magistrado, um personagem deve ser bem-sucedido em um teste de Carisma (Persuasão) CD 12 ou eles serão obrigados a esperar por uma hora enquanto o indignado magistrado leva seu tempo para confirmar a história do grupo.
 
-Once it's clear the characters are here to see Secretary Wei, the minister directs the crowd to part, opening a path through the onlookers.
+Assim que fica claro que os personagens estão aqui para ver a Secretária Wei, o ministro ordena que a multidão se abra, criando um caminho entre os espectadores.
 
 
-### Meeting the Secretary
+### Encontrando a Secretária
 
-Two guards meet the characters at the entrance to the Hall of Divine Wisdom and escort them to an elegant meeting room:
-> The walls of this room are paneled with delicate latticework, and beautifully carved rosewood chairs surround a matching table. One wall bears a sumptuous silk hanging that depicts a gold dragon soaring through the clouds.
+Dois guardas encontram os personagens na entrada do Salão da Sabedoria Divina e os escoltam até uma elegante sala de reuniões:
+> As paredes desta sala são revestidas com delicados treliçados, e cadeiras de jacarandá belamente esculpidas rodeiam uma mesa combinando. Uma parede ostenta uma suntuosa tapeçaria de seda que retrata um dragão dourado planando através das nuvens.
 
-![Grand Secretary Wei Feng Ying](/images/campaigns/journeys-through-the-radiant-citadel/124-13-001grand-secretary-wei-feng-ying.webp)
+![Grande Secretária Wei Feng Ying](/images/campaigns/journeys-through-the-radiant-citadel/124-13-001grand-secretary-wei-feng-ying.webp)
 
-After a short wait, a middle-aged human woman enters, wearing fine red robes embroidered with stylized ki-rins. She introduces herself with amiable professionalism as Grand Secretary Wei. The characters already know that Wei holds a lofty political position and has influence exceeded only by Yongjing's emperor.
+Após uma breve espera, uma mulher humana de meia-idade entra, vestindo finas túnicas vermelhas bordadas com ki-rins estilizados. Ela se apresenta com profissionalismo afável como a Grande Secretária Wei. Os personagens já sabem que Wei ocupa uma elevada posição política e tem influência excedida apenas pelo imperador de Yongjing.
 
-### Grand Secretary Wei
+### Grande Secretária Wei
 
-Wei Feng Ying (lawful neutral, human archmage) commands respect from all as Grand Secretary, the leader of the government of Yongjing. Since the nation's rulers' source of extreme longevity has vanished, Secretary Wei is determined to hold the country together (as detailed in the "**Área End of an Era**" section). The secretary has an array of spell scrolls and other magic items at her disposal, and she often makes use of her crystal ball of telepathy and spells like project image when dealing with her agents.
+Wei Feng Ying (leal e neutra, arquimaga humana) impõe respeito de todos como Grande Secretária, a líder do governo de Yongjing. Desde que a fonte de longevidade extrema dos governantes da nação desapareceu, a Secretária Wei está determinada a manter o país unido (como detalhado na seção "**Fim de uma Era**"). A secretária tem uma variedade de pergaminhos de magia e outros itens mágicos à sua disposição, e frequentemente usa sua bola de cristal da telepatia e magias como projetar imagem ao lidar com seus agentes.
 
-### Personality Trait
+### Traço de Personalidade
 
-"Others need to know only what's necessary to accomplish my goals."
+"Os outros precisam saber apenas o que é necessário para realizar meus objetivos."
 
 ### Ideal
 
-"Peace, efficiency, and the smooth running of the imperial machine must be upheld whatever the cost."
+"Paz, eficiência e o bom funcionamento da máquina imperial devem ser mantidos a qualquer custo."
 
-### Bond
+### Vínculo
 
-"My life and my service to the empire are one."
+"Minha vida e meu serviço ao império são um só."
 
-### Flaw
+### Defeito
 
-"I know what's best for the empire."
+"Eu sei o que é melhor para o império."
 
-### Archaeological Assignment
+### Tarefa Arqueológica
 
-Secretary Wei thanks the characters for answering her call and for their interest in investigating the historic ruins of old Yongjing. As attendants enter to serve tea, she ask the characters about their training, their education, and what skills they bring to an underground expedition into a potentially dangerous area. She's eager to hear about their most spectacular deeds and is quick to flatter those who indulge her with such tales.
-After hearing about the characters' exploits, Secretary Wei explains the assignment, highlighting the following points:
-* This archaeological expedition seeks to collect accounts and relics from past rulers for the benefit of future ones.
-* Historians believe that the palace of the last ruler of the Yun dynasty—known as the Mountain Cloud Empress—lies in the Old City beneath present-day Yongjing.
-* Wei wishes the characters to guard her handpicked scholar as they delve into the Old City.
-* Of particular interest to Wei are the diaries of the Mountain Cloud Empress, which would have been kept along with her greatest treasures.
-As the conversation concludes, a friendly young human arrives and bows to Secretary Wei. The secretary introduces this newcomer as Lu Zhong Yin, the expedition's lead historian.
-Secretary Wei also presents a scroll bearing a contract for the characters to sign. The contract calls for an initial payment of 1,000 gp per character, plus an additional 1,000 gp per character when Lu Zhong Yin is brought safely back from the Old City and the scholar deems the investigation complete.
-Finally, the secretary provides the characters with a spell scroll of sending, which they can use to contact her if the need arises. Wei intends for the expedition to set out as soon as possible after the characters collect their initial payment, but they can take a few hours to rest and prepare if necessary.
+A Secretária Wei agradece aos personagens por atenderem ao seu chamado e por seu interesse em investigar as ruínas históricas da antiga Yongjing. Enquanto atendentes entram para servir chá, ela pergunta aos personagens sobre seu treinamento, sua educação e quais habilidades eles trazem para uma expedição subterrânea em uma área potencialmente perigosa. Ela está ansiosa para ouvir sobre seus feitos mais espetaculares e é rápida em lisonjear aqueles que a satisfazem com tais histórias.
+Após ouvir sobre as façanhas dos personagens, a Secretária Wei explica a tarefa, destacando os seguintes pontos:
+* Esta expedição arqueológica busca coletar relatos e relíquias de governantes passados para o benefício dos futuros.
+* Historiadores acreditam que o palácio do último governante da dinastia Yun — conhecida como a Imperatriz Nuvem da Montanha — fica na Cidade Antiga abaixo da atual Yongjing.
+* Wei deseja que os personagens protejam seu estudioso escolhido a dedo enquanto eles exploram a Cidade Antiga.
+* De particular interesse para Wei estão os diários da Imperatriz Nuvem da Montanha, que teriam sido guardados junto com seus maiores tesouros.
+Conforme a conversa termina, um jovem humano amigável chega e se curva para a Secretária Wei. A secretária apresenta o recém-chegado como Lu Zhong Yin, o historiador chefe da expedição.
+A Secretária Wei também apresenta um pergaminho contendo um contrato para os personagens assinarem. O contrato prevê um pagamento inicial de 1.000 po por personagem, mais um adicional de 1.000 po por personagem quando Lu Zhong Yin for trazido de volta em segurança da Cidade Antiga e o estudioso considerar a investigação concluída.
+Finalmente, a secretária fornece aos personagens um pergaminho de magia de enviar mensagem, que eles podem usar para contatá-la se necessário. Wei pretende que a expedição parta o mais rápido possível após os personagens receberem seu pagamento inicial, mas eles podem levar algumas horas para descansar e se preparar, se necessário.
 
-### What's Left Unsaid
+### O Que Não Foi Dito
 
-Secretary Wei's true goal is to search the buried Yun dynasty ruins for any sign of Dragon's Blessing—a magical reagent of particular importance to the emperor. She has no interest in the Mountain Cloud Empress's diaries, but she suspects that such secret writings would be held alongside other state secrets, like any stashed trove of Dragon's Blessing. Wei does not reveal her true agenda to the characters, but she has briefed Lu Zhong Yin on her goals, the need for secrecy, and the necessity of recovering this reagent (though not why it's important).
-Secretary Wei also plans to monitor the group's investigation by using her crystal ball of telepathy to regularly cast scrying on Zhong Yin. During the investigation, Zhong Yin purposely fails the saving throws to resist the spell.
+O verdadeiro objetivo da Secretária Wei é vasculhar as ruínas enterradas da dinastia Yun em busca de qualquer sinal da Bênção do Dragão — um reagente mágico de particular importância para o imperador. Ela não tem interesse nos diários da Imperatriz Nuvem da Montanha, mas suspeita que tais escritos secretos estariam guardados junto com outros segredos de estado, como qualquer reserva escondida de Bênção do Dragão. Wei não revela sua verdadeira intenção aos personagens, mas ela instruiu Lu Zhong Yin sobre seus objetivos, a necessidade de sigilo e a necessidade de recuperar este reagente (embora não o porquê de sua importância).
+A Secretária Wei também planeja monitorar a investigação do grupo usando sua bola de cristal da telepatia para conjurar regularmente vidência em Zhong Yin. Durante a investigação, Zhong Yin falha propositalmente nos testes de resistência para resistir à magia.
 
 
-### The Shy Scholar
+### O Estudioso Tímido
 
-Once the contract is signed, Secretary Wei directs the characters to take the scroll to the Ministry of Finance to collect their first payment. With the shy excitement of someone who can't believe they're in the presence of heroes, Zhong Yin escorts the characters to the ministry offices in the domain of the Octadic Council (see the "**Área Yongjing Gazetteer**" section for more information).
+Uma vez que o contrato é assinado, a Secretária Wei orienta os personagens a levarem o pergaminho ao Ministério das Finanças para receber seu primeiro pagamento. Com a excitação tímida de alguém que não consegue acreditar que está na presença de heróis, Zhong Yin escolta os personagens até os escritórios do ministério no domínio do Conselho Octádico (veja a seção "**Guia Geográfico de Yongjing**" para mais informações).
 
-![Lu Zhong Yin in Their Imperial Ghost Uniform](/images/campaigns/journeys-through-the-radiant-citadel/125-13-003lu-zhong-yin.webp)
+![Lu Zhong Yin em Seu Uniforme de Fantasma Imperial](/images/campaigns/journeys-through-the-radiant-citadel/125-13-003lu-zhong-yin.webp)
 
 
 ### Lu Zhong Yin
 
-Lu Zhong Yin (lawful neutral, human spy) is an unremarkable human, about twenty years old and exuding an eager-to-please air. To the characters, Zhong Yin claims to be a scholar of ancient Xing history. In truth, the scholar is an Imperial Ghost, a spy of the court. Zhong Yin serves Secretary Wei and is currently helping with the search for Dragon's Blessing.
+Lu Zhong Yin (leal e neutro, espião humano) é um humano comum, com cerca de vinte anos e emanando um ar de quem quer agradar. Para os personagens, Zhong Yin afirma ser um estudioso da história antiga de Xing. Na verdade, o estudioso é um Fantasma Imperial, um espião da corte. Zhong Yin serve à Secretária Wei e atualmente está ajudando na busca pela Bênção do Dragão.
 
-### Personality Trait
+### Traço de Personalidade
 
-"There's nothing interesting about me. Tell me about yourself instead."
+"Não há nada interessante sobre mim. Conte-me sobre você em vez disso."
 
 ### Ideal
 
-"My work might go unseen, but it contributes to a greater whole."
+"Meu trabalho pode passar despercebido, mas contribui para um todo maior."
 
-### Bond
+### Vínculo
 
-"Secretary Wei saw the hidden potential in me, and I am forever grateful."
+"A Secretária Wei viu o potencial oculto em mim, e sou eternamente grato."
 
-### Flaw
+### Defeito
 
-"I'll follow any order from my commanders if it serves the greater good."
+"Seguirei qualquer ordem dos meus comandantes se servir ao bem maior."
 
-### The Old City Expedition
+### A Expedição à Cidade Antiga
 
-Zhong Yin is bright and eager to hear about the characters' past adventures. During conversation with the characters, the following topics might come up:
-* The city of Yongjing has existed on this site for thousands of years, enduring numerous dynasties and countless disasters. Ruins known as the Old City lie beneath the modern city.
-* Expeditions into these scattered, unconnected ruins can be dangerous. Beyond collapsing architecture, ancient traps and monsters sometimes lurk within.
-* Traces of ancient magical protections linger within the ruins. The most common bar the use of magical methods of travel, such as teleportation.
-* The part of the Old City the group is meant to explore has only recently been discovered beneath the Hall of Merit. This first foray will pave the way for further investigation into the Yun dynasty ruins.
-* The Mountain Cloud Empress is a controversial figure in Yongjing history, both romanticized and reviled. The Yun dynasty ended when the starving common folk stormed the palace and removed the empress from power.
+Zhong Yin é brilhante e ansioso para ouvir sobre as aventuras passadas dos personagens. Durante a conversa com os personagens, os seguintes tópicos podem surgir:
+* A cidade de Yongjing existe neste local há milhares de anos, suportando inúmeras dinastias e incontáveis desastres. Ruínas conhecidas como a Cidade Antiga ficam abaixo da cidade moderna.
+* Expedições a essas ruínas dispersas e desconectadas podem ser perigosas. Além da arquitetura em colapso, armadilhas antigas e monstros às vezes espreitam no interior.
+* Vestígios de antigas proteções mágicas perduram dentro das ruínas. As mais comuns proíbem o uso de métodos mágicos de viagem, como teletransporte.
+* A parte da Cidade Antiga que o grupo deve explorar só foi descoberta recentemente abaixo do Salão do Mérito. Esta primeira incursão abrirá caminho para uma investigação mais aprofundada nas ruínas da dinastia Yun.
+* A Imperatriz Nuvem da Montanha é uma figura controversa na história de Yongjing, tanto idealizada quanto desprezada. A dinastia Yun terminou quando o povo comum faminto invadiu o palácio e removeu a imperatriz do poder.
 
-### The Ministry of Finance
+### O Ministério das Finanças
 
-When the party arrives at the ministry offices, Zhong Yin departs to make other preparations. The scholar will meet the characters at the Hall of Merit at the center of the city when the characters are ready to depart.
-The Minister of Finance, Deng Bo Huan, is straightforward but friendly. He verifies the characters' contract and pays them each their initial 1,000 gp. Deng Bo Huan is also an opportunistic schemer, and he offers the characters an additional 100 gp each if they share with him details of why the Grand Secretary hired them and what they expect to find in the Old City. If the characters refuse his proposal, the minister smiles, tells them he understands, and wishes them good luck.
-
-
+Quando o grupo chega aos escritórios do ministério, Zhong Yin parte para fazer outros preparativos. O estudioso encontrará os personagens no Salão do Mérito, no centro da cidade, quando os personagens estiverem prontos para partir.
+O Ministro das Finanças, Deng Bo Huan, é direto, mas amigável. Ele verifica o contrato dos personagens e paga a cada um deles suas iniciais 1.000 po. Deng Bo Huan também é um intrigante oportunista, e oferece aos personagens um adicional de 100 po cada se eles compartilharem com ele detalhes sobre o motivo pelo qual a Grande Secretária os contratou e o que esperam encontrar na Cidade Antiga. Se os personagens recusarem sua proposta, o ministro sorri, diz que compreende e lhes deseja boa sorte.

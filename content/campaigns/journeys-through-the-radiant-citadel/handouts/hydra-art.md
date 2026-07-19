@@ -1,15 +1,15 @@
 ---
-title: "Arte: hydra"
+title: 'Arte: hydra'
 params:
-  kind: "handout"
-draft: true
-titulo_pt_br: ""
-visibility: "players"
-status: "draft"
+  kind: handout
+draft: false
+titulo_pt_br: 'Arte: hydra'
+visibility: players
+status: published
 tags:
-  - handout
-  - arte
-  - importado
+- handout
+- arte
+- importado
 ---
 
 ![Arte: hydra](/images/campaigns/journeys-through-the-radiant-citadel/hydra.webp)

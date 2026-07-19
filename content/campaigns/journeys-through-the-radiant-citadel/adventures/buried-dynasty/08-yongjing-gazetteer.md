@@ -1,129 +1,132 @@
 ---
-title: "Cena 8 - Yongjing Gazetteer"
+title: Cena 8 - Yongjing Gazetteer
 weight: 80
 params:
-  kind: "scene"
-draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Cena operacional para conduzir na sessão."
+  kind: scene
+draft: false
+titulo_pt_br: Cena 8 - Guia Geográfico de Yongjing
+visibility: gm
+status: published
+summary: Cena operacional para conduzir na sessão.
 npcs:
-  - "/campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/"
-locations:
-
+- /campaigns/journeys-through-the-radiant-citadel/npcs/white-jade-emperor/
+locations: null
 compendium_refs:
-  - "/compendium/monsters/ghost/"
-  - "/compendium/monsters/reef-shark/"
-  - "/compendium/monsters/mage/"
-  - "/compendium/monsters/kenku/"
+- /compendium/monsters/ghost/
+- /compendium/monsters/reef-shark/
+- /compendium/monsters/mage/
+- /compendium/monsters/kenku/
 handouts:
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/kenku-art/"
-  - "/campaigns/journeys-through-the-radiant-citadel/handouts/map-133-map-133-yongjing-player/"
+- /campaigns/journeys-through-the-radiant-citadel/handouts/white-jade-emperor-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/ghost-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/kenku-art/
+- /campaigns/journeys-through-the-radiant-citadel/handouts/map-133-map-133-yongjing-player/
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
-For centuries, the nation of Great Xing has been synonymous with power and prestige, with no finer example than the country's glorious capital: Yongjing. The city teems with scholars, bureaucrats, artisans, and performers. But Yongjing was not always so vibrant. Beneath the fine floor tiles and immaculate garden paths lie the remains of prior dynasties and their long-dead citizens—concealing a turbulent past marked by war, subjugation, and famine.
+Por séculos, a nação de Grande Xing tem sido sinônimo de poder e prestígio, sem exemplo mais refinado do que a gloriosa capital do país: Yongjing. A cidade está repleta de estudiosos, burocratas, artesãos e artistas. Mas Yongjing nem sempre foi tão vibrante. Sob os finos ladrilhos e os imaculados caminhos dos jardins repousam os restos de dinastias anteriores e de seus cidadãos há muito falecidos — escondendo um passado turbulento marcado por guerra, subjugação e fome.
 
-The rule of the Xing dynasty has brought wealth, stability, and peace to Great Xing. But now the imperial secret of longevity has been exhausted, which means the White Jade Emperor's long reign will end soon. The Grand Secretary who governs Great Xing according to the emperor's command knows that it's only a matter of time before word of the emperor's impending death gets out and the stability of the empire is put to the test.
-
-
-### Yongjing Features
-
-Those familiar with Yongjing know the following details:
+O domínio da dinastia Xing trouxe riqueza, estabilidade e paz à Grande Xing. Mas agora o segredo imperial da longevidade se esgotou, o que significa que o longo reinado do Imperador de Jade Branco terminará em breve. O Grão-Secretário que governa a Grande Xing de acordo com os comandos do imperador sabe que é apenas uma questão de tempo até que a notícia da morte iminente do imperador se espalhe e a estabilidade do império seja posta à prova.
 
 
-### Noteworthy Sites
+### Características de Yongjing
 
-The city of Yongjing is a bustling network of tightly packed buildings and narrow alleys. A wide central avenue bisects the city and connects the grand palaces of the emperor's court through a series of plazas.
-
-![Map 13.3: Yongjing](/images/campaigns/journeys-through-the-radiant-citadel/132-map-133-yongjing.webp)
+Aqueles familiarizados com Yongjing conhecem os seguintes detalhes:
 
 
-![Player Version](/images/campaigns/journeys-through-the-radiant-citadel/133-map-133-yongjing-player.webp)
+### Locais Notáveis
+
+A cidade de Yongjing é uma agitada rede de prédios compactos e becos estreitos. Uma ampla avenida central corta a cidade ao meio e conecta os grandes palácios da corte do imperador através de uma série de praças.
+
+![Mapa 13.3: Yongjing](/images/campaigns/journeys-through-the-radiant-citadel/132-map-133-yongjing.webp)
 
 
-### Hall of Divine Wisdom
-
-Each morning, the Gate of Ascendance is thrown open, and petitioners seeking the ear of the emperor crowd onto the plaza in front of the palace known as the Hall of Divine Wisdom. Ministers interview each petitioner—and swiftly reject requests too trivial to warrant the emperor's involvement. The plaza is also a prime location for pickpockets and spies. Most days, wealthy petitioners are turned away and must seek other means to solve their problems.
-
-### Inner Butterfly Court
-
-The north side of the city is taken up by the palaces of the royal court, which make up their own district—the Inner Butterfly Court. Only the emperor's family and their attendants are permitted in this area, and most residents rarely leave the district except for opera performances and holiday festivals.
-Spousal palaces line the east and west sides of the Inner Butterfly Court, each building the residence of a royal spouse and their children. Two larger central palaces are occupied by the emperor, who resides in the Palace of Heavenly Command and reserves the Palace of Favored Unity for visits with his expansive family.
-
-### Kiln District
-
-The southwest part of Yongjing houses hundreds of earthen kilns, where the famed white-and-blue porcelain of Great Xing is painted and fired. Potters work in assembly lines to meet a quota of hundreds of pieces a day, with twenty percent of those pieces going to the emperor. Xing porcelain fetches exorbitant prices in foreign markets, so armed guards accompany every shipment that leaves the city. At the Office of Authenticity, imperial artificers apply intricate identifying marks to each piece. Despite this, counterfeiting is a constant problem.
-
-### The Old City
-
-Over the centuries, the rulers of Yongjing have expanded and updated the city, building on top of existing architecture. As a result, many structures conceal forgotten chambers, hidden passages, dusty traps, and ancient artifacts beneath their floors. Expeditions into the subterranean Old City are common, whether staged officially on behalf of the emperor or undertaken in secret by criminals and treasure hunters.
+![Versão do Jogador](/images/campaigns/journeys-through-the-radiant-citadel/133-map-133-yongjing-player.webp)
 
 
-### Life in Yongjing
+### Salão da Sabedoria Divina
 
-Residents of Yongjing take great pride in their city and frequently boast about everything from its venerable age and historic architecture to its lack of unsavory elements—such as the rats and diseases that are so common in other, lesser cities.
+A cada manhã, o Portão da Ascensão é aberto, e peticionários buscando a atenção do imperador lotam a praça em frente ao palácio conhecido como Salão da Sabedoria Divina. Ministros entrevistam cada peticionário — e rapidamente rejeitam pedidos triviais demais para justificar o envolvimento do imperador. A praça também é um local privilegiado para batedores de carteira e espiões. Na maioria dos dias, peticionários abastados são dispensados e precisam buscar outros meios para resolver seus problemas.
 
-### Chasing Longevity
+### Corte Interna da Borboleta
 
-The importance of a long life is drilled into children from an early age. The folk of the empire and Yongjing proudly consider their society a meritocracy, where anyone can work hard and rise above their current station—provided they live long enough. Therefore, citizens maintain healthy lifestyles, drink medicinal teas, and carry symbols of longevity such as long-lived animals or plants.
+O lado norte da cidade é ocupado pelos palácios da corte real, que formam seu próprio distrito — a Corte Interna da Borboleta. Apenas a família do imperador e seus serviçais têm permissão para entrar nesta área, e a maioria dos residentes raramente deixa o distrito, exceto para apresentações de ópera e festivais.
+Palácios conjugais ladeiam os lados leste e oeste da Corte Interna da Borboleta, cada prédio sendo a residência de um cônjuge real e seus filhos. Dois palácios centrais maiores são ocupados pelo imperador, que reside no Palácio do Comando Celestial e reserva o Palácio da Unidade Favorecida para visitas à sua extensa família.
 
-### Court Intrigue and Succession
+### Distrito dos Fornos
 
-In the imperial court, tradition dictates that the social standing of each member of the emperor's family is determined by the preferences of the emperor. If the emperor publicly favors one spouse over another, the pecking order is reset accordingly, and everyone must quickly adjust their behavior to recognize this new hierarchy.
-At no time is an emperor's favor in greater question than when they die. Rarely do Yongjing's long-lived rulers have to consider the prospect of death, and they put even less consideration into designating a particular heir from among their shorter-lived family members. When an emperor dies unexpectedly, a period of squabbling follows, as imperial family members, secret offspring, and pretenders produce evidence of being the past emperor's favorite. These squabbles ultimately devolve into secret wars, as the Inner Butterfly Court becomes beset by intrigue, assassinations, and disappearances until a single heir claims and holds the throne for a year's time. Only then is that individual universally accepted as the new emperor.
+A parte sudoeste de Yongjing abriga centenas de fornos de barro, onde a famosa porcelana branca e azul da Grande Xing é pintada e cozida. Oleiros trabalham em linhas de montagem para cumprir uma cota de centenas de peças por dia, com vinte por cento dessas peças destinadas ao imperador. A porcelana Xing alcança preços exorbitantes em mercados estrangeiros, então guardas armados acompanham cada carregamento que deixa a cidade. No Escritório de Autenticidade, artífices imperiais aplicam marcas de identificação intricadas em cada peça. Apesar disso, a falsificação é um problema constante.
 
-### Delicious Bounty
+### A Cidade Velha
 
-A typical meal in Yongjing might include sweet or savory buns, salty pork, and stir-fried dandelion leaves. Wintertime stews are flavored with bone marrow and laden with sliced lotus root, mushrooms, and bamboo shoots. In summer, Yongjing's courtyard gardens are filled to bursting with oranges, lychees, plums, and peaches.
-
-### Fashion and Society
-
-Clothing in Yongjing favors loose and flowing styles—and the wealthier the wearer, the more elaborate the embroidery. Ministers are identifiable by their black winged caps, while members of the royal family wear elaborate headdresses.
-The households of city residents are built around the clan, made up of several generations of family members and multiple spouses of any gender, typically joined through arranged marriages. A clear hierarchy within each of these complex familial structures helps to facilitate social harmony. Members of a clan keep close eyes on one another, because the deeds of an individual affect the social standing of the clan as a whole.
-
-### Grand Dynasty
-
-Yongjing is the governmental center of the flourishing Xing dynasty. At the top sits the White Jade Emperor, the third since the rise of the Xing dynasty. Like nearly all the previous monarchs, the emperor is a dwarf, with a life span long enough to have experienced the cyclical nature of history firsthand—a trait considered necessary to rule.
-
-### Imperial Service
-
-Most of Yongjing's bureaucrats are humans. A Grand Secretary appointed by the emperor leads the Octadic Council, a group made up of the leaders of the city's eight Ministries: Agriculture, Arcana, Bureaucracy, Culture, Diplomacy, Finance, Imperial Lineage, and Public Works. A position in one of the bustling ministry offices is the most prestigious employment in Great Xing, promising lifelong access to luxury and elevated status for an entire family. Children from all backgrounds study for the annual Imperial Exams, hoping to score high enough to be selected to fill a vacancy. Those who show aptitude for more clandestine work might be selected to join the ranks of the Imperial Ghosts, versatile soldiers who serve as spies for the empire.
-
-### Names
-
-Names in Great Xing are ungendered and place an individual's family name before their personal name. Personal names are formed of two words; the first is usually determined by birth order, social status, or rank, and the second is an aspirational or lucky name representing the parents' hopes for their child. The following names are common in Xing:
+Ao longo dos séculos, os governantes de Yongjing expandiram e modernizaram a cidade, construindo sobre a arquitetura existente. Como resultado, muitas estruturas ocultam câmaras esquecidas, passagens secretas, armadilhas empoeiradas e artefatos antigos sob seus pisos. Expedições à Cidade Velha subterrânea são comuns, sejam organizadas oficialmente em nome do imperador ou empreendidas em segredo por criminosos e caçadores de tesouros.
 
 
-### Legends of Yongjing
+### Vida em Yongjing
 
-Countless stories recount the country's illustrious beginnings, when a great dragon, one of three majestic siblings, descended from the heavens to establish the culture that would become Great Xing. The area in which the city of Yongjing would one day rise was originally populated by nomadic dwarf shepherds. As humans immigrated to the region, conflict between the races broke out. Legends say that the violence persisted for a century, until the Dragon of Heavenly Blessings who had founded Great Xing returned. Descending from the clouds, the great dragon bowed before a young dwarf leader, bestowing on him the ability to inspire and unify folk of both human and dwarven ancestries. This dwarf became the Yellow Dragon Emperor, founder of the nation's first ruling dynasty.
-Numerous dwarven dynasties have ruled Great Xing, with the human population generally content to be so governed. One fable, however, tells of the Winter Crane Empress, who was dethroned by a human. As the story goes, three of her advisors came forward with three different plans for war, but the exiled dwarf empress instead called for a sumptuous bed to be made for her. She then took a nap until the usurper died of old age, reclaiming her throne without violence and swiftly undoing the little he could accomplish in his brief human life span.
+Os residentes de Yongjing têm grande orgulho de sua cidade e frequentemente se gabam de tudo, desde sua venerável idade e arquitetura histórica até sua falta de elementos desagradáveis — como os ratos e doenças que são tão comuns em outras cidades menores.
+
+### Em Busca da Longevidade
+
+A importância de uma vida longa é incutida nas crianças desde cedo. O povo do império e de Yongjing orgulhosamente considera sua sociedade uma meritocracia, onde qualquer um pode trabalhar duro e ascender acima de sua posição atual — desde que viva o suficiente. Portanto, os cidadãos mantêm estilos de vida saudáveis, bebem chás medicinais e carregam símbolos de longevidade, como animais ou plantas de vida longa.
+
+### Intriga da Corte e Sucessão
+
+Na corte imperial, a tradição dita que a posição social de cada membro da família do imperador é determinada pelas preferências do imperador. Se o imperador favorece publicamente um cônjuge em detrimento de outro, a hierarquia é redefinida de acordo, e todos devem ajustar rapidamente seu comportamento para reconhecer esta nova hierarquia.
+Em nenhum outro momento o favor de um imperador é mais questionado do que quando ele morre. Raramente os longevos governantes de Yongjing precisam considerar a perspectiva da morte, e eles dedicam ainda menos consideração à designação de um herdeiro específico entre os membros de sua família de vida mais curta. Quando um imperador morre inesperadamente, segue-se um período de disputas, à medida que membros da família imperial, descendentes secretos e pretendentes produzem evidências de serem os favoritos do imperador falecido. Essas disputas acabam por degenerar em guerras secretas, enquanto a Corte Interna da Borboleta é tomada por intrigas, assassinatos e desaparecimentos até que um único herdeiro reivindique e mantenha o trono por um ano. Somente então esse indivíduo é universalmente aceito como o novo imperador.
+
+### Abundância Deliciosa
+
+Uma refeição típica em Yongjing pode incluir pãezinhos doces ou salgados, carne de porco salgada e folhas de dente-de-leão salteadas. Ensopados de inverno são temperados com tutano e repletos de raiz de lótus fatiada, cogumelos e brotos de bambu. No verão, os jardins dos pátios de Yongjing ficam repletos de laranjas, lichias, ameixas e pêssegos.
+
+### Moda e Sociedade
+
+As roupas em Yongjing favorecem estilos soltos e fluidos — e quanto mais rico o usuário, mais elaborado é o bordado. Os ministros são identificáveis por seus chapéus pretos com abas, enquanto os membros da família real usam adornos de cabeça elaborados.
+As unidades familiares dos residentes da cidade são construídas em torno do clã, composto por várias gerações de membros da família e múltiplos cônjuges de qualquer gênero, tipicamente unidos por casamentos arranjados. Uma hierarquia clara dentro de cada uma dessas complexas estruturas familiares ajuda a facilitar a harmonia social. Os membros de um clã vigiam uns aos outros de perto, porque os atos de um indivíduo afetam a posição social do clã como um todo.
+
+### Grande Dinastia
+
+Yongjing é o centro governamental da próspera dinastia Xing. No topo está o Imperador de Jade Branco, o terceiro desde a ascensão da dinastia Xing. Como quase todos os monarcas anteriores, o imperador é um anão, com um tempo de vida suficientemente longo para ter experimentado a natureza cíclica da história em primeira mão — um traço considerado necessário para governar.
+
+### Serviço Imperial
+
+A maioria dos burocratas de Yongjing são humanos. Um Grão-Secretário nomeado pelo imperador lidera o Conselho Octádico, um grupo composto pelos líderes dos oito Ministérios da cidade: Agricultura, Arcano, Cultura, Diplomacia, Finanças, Linhagem Imperial, Obras Públicas e Burocracia. Uma posição em um dos movimentados escritórios ministeriais é o emprego de maior prestígio na Grande Xing, prometendo acesso vitalício ao luxo e status elevado para toda uma família. Crianças de todas as origens estudam para os Exames Imperiais anuais, esperando obter uma pontuação alta o suficiente para serem selecionadas para preencher uma vaga. Aqueles que mostram aptidão para trabalhos mais clandestinos podem ser selecionados para se juntar às fileiras dos Fantasmas Imperiais, soldados versáteis que servem como espiões para o império.
+
+### Nomes
+
+Os nomes na Grande Xing não têm gênero e colocam o nome de família de um indivíduo antes de seu nome pessoal. Os nomes pessoais são formados por duas palavras; a primeira geralmente é determinada pela ordem de nascimento, status social ou posição, e a segunda é um nome aspiracional ou de sorte representando as esperanças dos pais para seu filho. Os seguintes nomes são comuns em Xing:
 
 
-### Adventures in Yongjing
+### Lendas de Yongjing
 
-Consider the plots on the Yongjing Adventures table when planning adventures in Yongjing.
+Incontáveis histórias recontam os primórdios ilustres do país, quando um grande dragão, um dos três majestosos irmãos, desceu dos céus para estabelecer a cultura que se tornaria a Grande Xing. A área onde a cidade de Yongjing um dia se ergueria era originalmente povoada por pastores anões nômades. À medida que os humanos imigravam para a região, conflitos entre as raças eclodiram. As lendas dizem que a violência persistiu por um século, até que o Dragão das Bênçãos Celestiais que fundara a Grande Xing retornou. Descendo das nuvens, o grande dragão curvou-se diante de um jovem líder anão, concedendo-lhe a habilidade de inspirar e unificar povos de ascendência humana e anã. Este anão tornou-se o Imperador Dragão Amarelo, fundador da primeira dinastia governante da nação.
+Inúmeras dinastias anãs governaram a Grande Xing, com a população humana geralmente satisfeita em ser assim governada. Uma fábula, no entanto, conta sobre a Imperatriz Garça de Inverno, que foi destronada por um humano. Segundo a história, três de seus conselheiros apresentaram três planos de guerra diferentes, mas a imperatriz anã exilada, em vez disso, pediu que uma cama suntuosa fosse preparada para ela. Ela então tirou uma soneca até que o usurpador morreu de velhice, recuperando seu trono sem violência e rapidamente desfazendo o pouco que ele conseguira realizar em sua breve expectativa de vida humana.
 
-**Tabela: Yongjing Adventures**
+
+### Aventuras em Yongjing
+
+Considere os ganchos na tabela Aventuras em Yongjing ao planejar aventuras em Yongjing.
+
+**Tabela: Aventuras em Yongjing**
 
 |  |  |
 | --- | --- |
-| 1 | The characters are hired to investigate strange behavior by a notoriously aloof minister who has shut himself in his offices and communicates only through his door. No one yet knows the minister has been replaced by an opportunistic kenku. |
-| 2 | After saving the emperor from a reef shark placed in his bath, the emperor's primary spouse, Lord Meng Shan, hires the characters to disprove accusations that he planted the creature himself. |
-| 3 | Agents in the Ministry of Arcana hire the characters to kill four treasonous mages, not realizing two of the traitors are the emperor's own children. |
-| 4 | The ghost of Wang Ji Miao, a potter executed for blowing up kilns, begs the characters to clear her family's name by finding out who framed her. |
+| 1 | Os personagens são contratados para investigar o comportamento estranho de um ministro notoriamente distante que se trancou em seus escritórios e se comunica apenas através da porta. Ninguém sabe ainda que o ministro foi substituído por um kenku oportunista. |
+| 2 | Após salvar o imperador de um tubarão de recife colocado em seu banho, o cônjuge principal do imperador, Lorde Meng Shan, contrata os personagens para refutar as acusações de que ele mesmo plantou a criatura. |
+| 3 | Agentes do Ministério do Arcano contratam os personagens para matar quatro magos traidores, sem perceber que dois dos traidores são os próprios filhos do imperador. |
+| 4 | O fantasma de Wang Ji Miao, uma oleira executada por explodir fornos, implora aos personagens que limpem o nome de sua família descobrindo quem a incriminou. |
 
 
-### Characters from Yongjing
+### Personagens de Yongjing
 
-If players want to create characters from Yongjing, consider asking them the following questions during character creation:
-**Do you have family connections to the emperor?** Do you use those connections to make your life easier, or do you conceal them to reduce the threat of assassinations or intrigue?
-**What personal symbol of longevity do you carry?** Is it an elephant, a turtle, or another long-lived animal, or perhaps ever-growing bamboo or some other ageless plant? If you don't carry a symbol, why is that?
-**Do you serve the empire in some official means?** Do you serve as a bureaucrat, having passed the Imperial Exams? Are you one of the emperor's defenders? Or have you left such service behind?
-
-
+Se os jogadores quiserem criar personagens de Yongjing, considere fazer as seguintes perguntas durante a criação de personagem:
+**Você tem conexões familiares com o imperador?** Você usa essas conexões para tornar sua vida mais fácil ou as oculta para reduzir a ameaça de assassinatos ou intrigas?
+**Que símbolo pessoal de longevidade você carrega?** É um elefante, uma tartaruga ou outro animal de vida longa, ou talvez um bambu sempre crescente ou alguma outra planta sem idade? Se você não carrega um símbolo, por que isso?
+**Você serve ao império de alguma forma oficial?** Você serve como um burocrata, tendo passado nos Exames Imperiais? Você é um dos defensores do imperador? Ou você deixou tal serviço para trás?

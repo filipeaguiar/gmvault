@@ -1,36 +1,37 @@
 ---
-title: "Starting the Adventure"
+title: Starting the Adventure
 weight: 30
 params:
-  kind: "scene"
-  content_role: "introduction"
+  kind: scene
+  content_role: introduction
 draft: true
-titulo_pt_br: ""
-visibility: "gm"
-status: "draft"
-summary: "Introdução e contextualização da aventura."
-npcs:
-
+titulo_pt_br: Começando a Aventura
+visibility: gm
+status: draft
+summary: Introdução e contextualização da aventura.
+npcs: null
 locations:
-  - "/campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/"
-compendium_refs:
-
-handouts:
-
+- /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/
+compendium_refs: null
+handouts: null
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 ### Descrição e Elementos Importantes
 
 
-![Castle Djaynai monitors the arrival of travelers to the fog-shrouded port of Djaynai](/images/campaigns/journeys-through-the-radiant-citadel/112-12-001castle-djaynai.webp)
+![O Castelo Djaynai monitora a chegada de viajantes ao porto envolto em névoa de Djaynai](/images/campaigns/journeys-through-the-radiant-citadel/112-12-001castle-djaynai.webp)
 
 
-The adventure begins with the characters arriving in the city of Djaynai. Whoever arranged for the adventurers to come to the city has paid for their ship's passage, as well as for rooms at a fine inn on arrival. Read or paraphrase the following text:
+A aventura começa com os personagens chegando na cidade de Djaynai. Quem quer que tenha organizado a vinda dos aventureiros à cidade pagou por sua passagem de navio, bem como por quartos em uma boa estalagem na chegada. Leia ou parafraseie o seguinte texto:
 
-> The ship passes through swirling fog that parts to reveal distant cliffs. A port emerges from the mist, nestled among mangroves. Elaborate mud-brick buildings in chalky pastel colors line the shore. A grand mud-brick castle bristling with wooden supports and adorned with pilasters dominates the skyline.
+> O navio atravessa uma névoa turbilhonante que se abre para revelar penhascos distantes. Um porto emerge da névoa, aninhado entre manguezais. Construções elaboradas de adobe em cores pastéis calcárias alinham-se na costa. Um grande castelo de adobe, repleto de suportes de madeira e adornado com pilastras, domina a linha do horizonte.
 
-A porter cowled in flowing damask-and-linen fabric greets the characters and offers to escort them to their inn: Anadoua's Rest House, a well-appointed, two-story, mud-brick building painted pale blue. The characters have a full day to rest and explore Djaynai before they meet with the official who arranged their journey at Castle Djaynai. **Área Map 12.1** depicts the central portion of the city of Djaynai, near where the characters are staying.
+Um carregador encapuzado com tecido fluido de damasco e linho cumprimenta os personagens e se oferece para escoltá-los até sua estalagem: a Casa de Descanso da Anadoua, uma construção de adobe de dois andares, bem equipada e pintada de azul claro. Os personagens têm um dia inteiro para descansar e explorar Djaynai antes de se encontrarem com a autoridade que organizou sua viagem no Castelo Djaynai. O **Mapa da Área 12.1** mostra a porção central da cidade de Djaynai, perto de onde os personagens estão hospedados.
 
-Anadoua, a friendly, well-dressed human woman, owns the inn and attends to the characters. Each is given a private room, and delicious meals are prepared and served in the common room. Anadoua is happy to share details from the "**Área Djaynai and Janya Gazetteer**" section or direct the characters toward the market for any mundane items they require.
-
-
+Anadoua, uma humana amigável e bem vestida, é a dona da estalagem e atende os personagens. Cada um recebe um quarto privativo, e refeições deliciosas são preparadas e servidas no salão comum. Anadoua fica feliz em compartilhar detalhes da seção "**Guia Geográfico de Djaynai e Janya**" ou indicar aos personagens o caminho para o mercado para quaisquer itens mundanos que precisarem.
