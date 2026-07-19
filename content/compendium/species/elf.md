@@ -1,7 +1,6 @@
 ---
 title: Elf
-params:
-  kind: species
+type: species
 draft: false
 weight: 10
 summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.

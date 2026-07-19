@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 077 Map 82 Tletepec Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

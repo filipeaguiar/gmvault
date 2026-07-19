@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 146 Map 144 Atagua Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

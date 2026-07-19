@@ -1,8 +1,7 @@
 ---
 title: The Radiant Citadel
 weight: 20
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: A Cidadela Radiante
 visibility: gm

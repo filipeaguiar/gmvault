@@ -1,7 +1,6 @@
 ---
 title: "Arte: Lizardfolk"
-params:
-  kind: "handout"
+type: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"

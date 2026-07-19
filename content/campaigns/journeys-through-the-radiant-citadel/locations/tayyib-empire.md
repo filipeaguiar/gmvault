@@ -1,7 +1,6 @@
 ---
 title: Tayyib Empire
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Tayyib Empire
 visibility: gm

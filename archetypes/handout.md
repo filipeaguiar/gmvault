@@ -10,8 +10,7 @@ status: "ready"
 npcs: []
 locations: []
 compendium_refs: []
-params:
-  kind: "handout"
+type: "handout"
 ---
 
 Insira o conteúdo do handout aqui (pode conter transcrições de cartas, imagens de mapas ou notas).

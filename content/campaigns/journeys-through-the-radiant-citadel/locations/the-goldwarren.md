@@ -1,7 +1,6 @@
 ---
 title: The Goldwarren
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: A Toca Dourada
 visibility: gm

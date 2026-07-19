@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 016 Map 22 Market Challenges Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

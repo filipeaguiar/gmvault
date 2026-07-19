@@ -1,7 +1,6 @@
 ---
 title: Spirit of the Past
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Espírito do Passado
 visibility: gm

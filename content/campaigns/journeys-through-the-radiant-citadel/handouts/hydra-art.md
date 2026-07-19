@@ -1,7 +1,6 @@
 ---
 title: 'Arte: hydra'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: hydra'
 visibility: players

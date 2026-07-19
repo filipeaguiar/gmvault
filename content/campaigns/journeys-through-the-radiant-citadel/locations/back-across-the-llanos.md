@@ -1,7 +1,6 @@
 ---
 title: Back across the Llanos
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: De volta pelas Llanos
 visibility: gm

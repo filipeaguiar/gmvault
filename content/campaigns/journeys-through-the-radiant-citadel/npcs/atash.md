@@ -7,8 +7,7 @@ status: published
 tags:
 - npc
 - importado
-params:
-  kind: npc
+type: npc
 stats_meta: Medium monstrosity, leal e neutro
 stats:
   ac: '10'

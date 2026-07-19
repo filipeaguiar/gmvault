@@ -1,7 +1,6 @@
 ---
 title: Subclass Feature
-params:
-  kind: rule
+type: rule
 draft: false
 weight: 10
 summary: 'Característica de classe: Característica de Subclasse.'

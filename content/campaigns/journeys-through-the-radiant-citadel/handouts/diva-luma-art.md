@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Diva Luma'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Diva Luma'
 visibility: players

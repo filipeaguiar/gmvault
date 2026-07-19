@@ -153,8 +153,7 @@ def ensure_compendium_class_overview(class_name, class_data, subclass_name=None)
         os.makedirs(os.path.dirname(feature_path), exist_ok=True)
         markdown = f'''---
 title: "{name}"
-params:
-  kind: "rule"
+type: "rule"
 draft: false
 weight: 10
 summary: "Característica de classe: {name}."
@@ -196,8 +195,7 @@ status: "draft"
 
     markdown = f"""---
 title: "{title}"
-params:
-  kind: "class"
+type: "class"
 draft: false
 weight: 10
 summary: "{summary}"
@@ -294,8 +292,7 @@ def create_rule_stub(name, entries, *, source=None):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     markdown = f'''---
 title: "{name}"
-params:
-  kind: "rule"
+type: "rule"
 draft: false
 weight: 10
 summary: "Característica de classe: {name}."
@@ -1471,8 +1468,7 @@ def fetch_from_5etools(kind, english_name):
 
         markdown = f"""---
 title: "{english_name}"
-params:
-  kind: "spell"
+type: "spell"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -1615,8 +1611,7 @@ spell_info:{spell_info_yaml}
 
         markdown = f"""---
 title: "{english_name}"
-params:
-  kind: "{kind}"
+type: "{kind}"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -1648,8 +1643,7 @@ item_info:{item_info_yaml}
 
         markdown = f"""---
 title: "{english_name}"
-params:
-  kind: "feat"
+type: "feat"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -1684,8 +1678,7 @@ feat_info:
 
         markdown = f"""---
 title: "{english_name}"
-params:
-  kind: "species"
+type: "species"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -1710,8 +1703,7 @@ species_info:
 
         markdown = f"""---
 title: "{english_name}"
-params:
-  kind: "class"
+type: "class"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -1732,8 +1724,7 @@ class_info:
     elif kind == "subclass":
         markdown = f"""---
 title: "{english_name}"
-params:
-  kind: "class"
+type: "class"
 draft: false
 weight: 10
 summary: "Draft imported from 5e.tools. Requires translation."
@@ -1753,8 +1744,7 @@ class_info:
     elif kind == "item_mastery":
         markdown = f"""---
 title: "Maestria de Arma: {english_name}"
-params:
-  kind: "rule"
+type: "rule"
 draft: false
 weight: 10
 summary: "Propriedade de Maestria de Arma do D&D 2024 (XPHB). Requires translation."

@@ -1,8 +1,7 @@
 ---
 title: Cena 9 - Pedestal of Judgment
 weight: 90
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 9 - Pedestal do Julgamento
 visibility: gm

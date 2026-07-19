@@ -1,7 +1,6 @@
 ---
 title: 'Arte: aurumvorax den leader'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: aurumvorax den leader'
 visibility: players

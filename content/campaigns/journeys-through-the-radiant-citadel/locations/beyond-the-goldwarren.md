@@ -1,7 +1,6 @@
 ---
 title: Beyond the Goldwarren
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Além do Goldwarren
 visibility: gm

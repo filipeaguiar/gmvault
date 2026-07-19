@@ -1,7 +1,6 @@
 ---
 title: Planetar
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.

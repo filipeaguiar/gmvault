@@ -1,7 +1,6 @@
 ---
 title: Ancestors' Danse House
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Casa da Dança dos Ancestrais
 visibility: gm

@@ -1,8 +1,7 @@
 ---
 title: Shadow of the Sun
 weight: 120
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: A Sombra do Sol
 visibility: gm

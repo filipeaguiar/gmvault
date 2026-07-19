@@ -1,7 +1,6 @@
 ---
 title: Night of the Remembered
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Noite dos Lembrados
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: riverine'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: riverine'
 visibility: players

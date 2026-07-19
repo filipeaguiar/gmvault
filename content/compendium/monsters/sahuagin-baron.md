@@ -1,7 +1,6 @@
 ---
 title: Sahuagin Baron
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: 'Parece que você está me pedindo para traduzir um rascunho importado do 5e.tools, mas não encontrei nenhum texto anexado na sua mensagem.

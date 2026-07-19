@@ -1,7 +1,6 @@
 ---
 title: Tlexolotl
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Tlexolotl
 visibility: gm

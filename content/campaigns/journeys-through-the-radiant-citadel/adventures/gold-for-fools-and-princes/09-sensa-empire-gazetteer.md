@@ -1,8 +1,7 @@
 ---
 title: Cena 9 - Sensa Empire Gazetteer
 weight: 90
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 9 - Guia Geográfico de Sensa Empire
 visibility: gm

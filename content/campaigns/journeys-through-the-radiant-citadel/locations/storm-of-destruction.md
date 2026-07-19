@@ -1,7 +1,6 @@
 ---
 title: Storm of Destruction
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Tempestade de Destruição
 visibility: gm

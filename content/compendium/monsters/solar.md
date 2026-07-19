@@ -1,7 +1,6 @@
 ---
 title: Solar
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: 'Lich

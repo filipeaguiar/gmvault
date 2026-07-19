@@ -1,7 +1,6 @@
 ---
 title: A Town Called Hollow
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Uma Cidade Pequena Chamada Hollow
 visibility: gm

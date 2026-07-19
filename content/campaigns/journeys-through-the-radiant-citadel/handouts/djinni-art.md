@@ -1,7 +1,6 @@
 ---
 title: 'Arte: djinni'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: djinni'
 visibility: players

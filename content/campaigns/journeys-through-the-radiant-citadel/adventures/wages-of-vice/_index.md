@@ -1,8 +1,7 @@
 ---
 title: Wages of Vice
 weight: 60
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: A Paga do Vício
 visibility: gm

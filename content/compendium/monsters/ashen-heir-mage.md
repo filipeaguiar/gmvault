@@ -1,7 +1,6 @@
 ---
 title: Ashen Heir Mage
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Parece que o conteúdo do rascunho importado do 5e.tools (JTTRC) não foi incluído na mensagem. Por favor, cole o texto que precisa ser traduzido e revisado editorialmente para que eu possa realizar o trabalho.

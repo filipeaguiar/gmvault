@@ -1,8 +1,7 @@
 ---
 title: Cena 13 - Haint
 weight: 130
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 13 - Haint
 visibility: gm

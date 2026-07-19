@@ -1,7 +1,6 @@
 ---
 title: Exploring Yeonido
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Explorando Yeonido
 visibility: gm

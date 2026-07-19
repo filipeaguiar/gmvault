@@ -1,7 +1,6 @@
 ---
 title: 'Arte: gibbering mouther'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: gibbering mouther'
 visibility: players

@@ -1,8 +1,7 @@
 ---
 title: Cena 9 - Silver Tapir Monastery
 weight: 90
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 9 - Mosteiro da Anta de Prata
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Wei Feng Ying'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Wei Feng Ying'
 visibility: players

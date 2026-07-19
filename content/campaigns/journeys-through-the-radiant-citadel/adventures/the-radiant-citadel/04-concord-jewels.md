@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - Concord Jewels
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Joias da Concórdia
 visibility: gm

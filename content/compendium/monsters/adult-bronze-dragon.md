@@ -1,7 +1,6 @@
 ---
 title: Adult Bronze Dragon
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```json\n{\n\t\"name\": \"Garra Rastejante\",\n\t\"isNpc\": false,\n\t\"isNamedCreature\": false,\n\t\"source\": \"MM\",\n\t\"page\": 71,\n\t\"basicRules\": true,\n\t\"otherSources\": [\n\t\t{\n\t\t\t\"source\": \"PaBTSO\"\n\t\t},\n\t\t{\n\t\t\t\"source\": \"SatO\"\n\t\t},\n\t\t{\n\t\t\t\"source\": \"ToFW\"\n\t\t}\n\t],\n\t\"subtitle\": \"Pequeno Constructo, Neutro e Maligno\",\n\t\"size\": [\n\t\t\"P\"\n\t],\n\t\"type\": {\n\t\t\"type\": \"constructo\",\n\t\t\"tags\": [\n\t\t\t\"Garra Rastejante\"\n\t\t]\n\t},\n\t\"alignment\": [\n\t\t\"N\",\n\t\t\"M\"\n\t],\n\t\"ac\": [\n\t\t{\n\t\t\t\"ac\": 12,\n\t\t\t\"from\": [\n\t\t\t\t\"armadura natural\"\n\t\t\t]\n\t\t}\n\t],\n\t\"hp\": {\n\t\t\"formula\": \"2d4 - 2\",\n\t\t\"average\": 2\n\t},\n\t\"speed\": {\n\t\t\"walk\": 20,\n\t\t\"climb\": 20\n\t},\n\t\"str\": 13,\n\t\"dex\": 14,\n\t\"con\": 9,\n\t\"int\": 5,\n\t\"wis\": 10,\n\t\"cha\": 4,\n\t\"conditionImmune\": [\n\t\t\"enfeitiçado\",\n\t\t\"exaustão\",\n\t\t\"envenenado\"\n\t],\n\

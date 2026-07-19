@@ -1,8 +1,7 @@
 ---
 title: Cena 6 - Surprise Audience
 weight: 60
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 6 - Audiência Surpresa
 visibility: gm

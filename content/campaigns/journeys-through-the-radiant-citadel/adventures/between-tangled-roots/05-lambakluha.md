@@ -1,8 +1,7 @@
 ---
 title: Cena 5 - Lambakluha
 weight: 50
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 5 - Lambakluha
 visibility: gm

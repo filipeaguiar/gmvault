@@ -1,7 +1,6 @@
 ---
 title: Roper
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "Se a asa de uma borboleta sofre um rasgo, o animal jamais voará novamente. De forma conveniente, para os sprites (Sprite), um pouco de gosma de lesma aplicada na área danificada repara a asa afetada quase imediatamente.\n\nDiminutos Protetores da Floresta. Os sprites são minúsculos seres feéricos que atuam como batedores, espiões e guardiões nas matas. Consideram-se os defensores da floresta, mas são vistos por observadores mais sábios como uma espécie de sistema imunológico — agentes biológicos projetados para proteger as fronteiras de regiões silvestres intactas dos estragos causados por civilizações em expansão ou pela propagação de criaturas malignas.\n\nObservadores da Natureza. Os sprites constroem pequenas moradias nas copas do sub-bosque. Pode ser o oco de uma árvore, um aglomerado de cogumelos, ou uma estrutura improvisada com galhos. Alguns domam animais silvestres e os utilizam como montaria, e todos criam inúmeros esconderijos e clareiras particulares entre a vegetação,\

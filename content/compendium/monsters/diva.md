@@ -1,7 +1,6 @@
 ---
 title: Diva
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Não há conteúdo textual para tradução na mensagem recebida. O enunciado indica apenas a origem do rascunho ("5e.tools") e a necessidade de tradução e revisão editorial, sem fornecer o texto-fonte. Para prosseguir, é necessário que o rascunho seja enviado.

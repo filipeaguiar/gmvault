@@ -1,8 +1,7 @@
 ---
 title: Cena 8 - Night of the Remembered
 weight: 80
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 8 - Noite dos Lembrados
 visibility: gm

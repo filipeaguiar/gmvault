@@ -1,7 +1,6 @@
 ---
 title: Chaos at the Bazaar
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Caos no Bazar
 visibility: gm

@@ -31,8 +31,7 @@ spell_info:
   #       thresholds:
   #         "1": "2d6"
   #         "2": "3d6"
-params:
-  kind: "spell"
+type: "spell"
 ---
 
 Insira os efeitos da magia aqui.

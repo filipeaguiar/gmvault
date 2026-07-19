@@ -1,7 +1,6 @@
 ---
 title: Fallen Farmhouse
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Casa de Fazenda em Ruínas
 visibility: gm

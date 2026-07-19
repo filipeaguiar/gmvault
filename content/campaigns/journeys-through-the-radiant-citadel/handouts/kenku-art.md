@@ -1,7 +1,6 @@
 ---
 title: 'Arte: kenku'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: kenku'
 visibility: players

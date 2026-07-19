@@ -1,7 +1,6 @@
 ---
 title: 'Arte: hawk'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: hawk'
 visibility: players

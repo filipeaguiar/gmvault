@@ -1,7 +1,6 @@
 ---
 title: Bakunawa
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```json\n{\n  \"monster\": [\n    {\n      \"name\": \"Marionetista Mecânico\",\n      \"isNpc\": false,\n      \"isNamedEntity\": false,\n      \"isUnique\": false,\n      \"source\": \"JTTRC\",\n      \"page\": 224,\n      \"otherSources\": [\n        {\n          \"source\": \"MCV4EC\"\n        }\n      ],\n      \"size\": [\n        \"M\"\n      ],\n      \"type\": {\n        \"type\": \"constructo\"\n      },\n      \"alignment\": [\n        \"L\",\n        \"M\"\n      ],\n      \"ac\": [\n        {\n          \"ac\": 19,\n          \"from\": [\n            \"armadura natural\"\n          ]\n        }\n      ],\n      \"hp\": {\n        \"average\": 161,\n        \"formula\": \"17d8 + 85\",\n        \"special\": \"reparos\"\n      },\n      \"speed\": {\n        \"walk\": 30,\n        \"climb\": 30\n      },\n      \"str\": 20,\n      \"dex\": 12,\n      \"con\": 20,\n      \"int\": 18,\n      \"wis\": 16,\n      \"cha\": 15,\n      \"save\": {\n        \"dex\": \"+6\",\n\

@@ -1,8 +1,7 @@
 ---
 title: Between Tangled Roots
 weight: 110
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Entre Raízes Emaranhadas
 visibility: gm

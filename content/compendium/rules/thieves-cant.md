@@ -1,7 +1,6 @@
 ---
 title: Thieves' Cant
-params:
-  kind: rule
+type: rule
 draft: false
 weight: 10
 summary: 'Característica de classe: Gíria dos Ladrões.'

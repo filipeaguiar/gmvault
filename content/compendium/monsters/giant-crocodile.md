@@ -1,7 +1,6 @@
 ---
 title: Giant Crocodile
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "> ## Yeti Abominável\n> *Monstruosidade Grande (yeti), tipicamente caótico e maligno*\n> \n> **Classe de Armadura** 15 (armadura natural)\n> **Pontos de Vida** 137 (11d10 + 77)\n> **Deslocamento** 12 m, escalada 12 m\n> \n> |FOR|DES|CON|INT|SAB|CAR|\n> |---|---|---|---|---|---|\n> |22 (+6)|12 (+1)|24 (+7)|9 (-1)|12 (+1)|7 (-2)|\n> \n> **Perícias** Percepção +5, Furtividade +5\n> **Imunidades a Dano** frio\n> **Sentidos** visão no escuro 18 m, Percepção passiva 15\n> **Idiomas** Yeti\n> **Desafio** 9 (5.000 XP) **Bônus de Proficiência** +4\n> \n> ***Imprudente.*** No início do seu turno, o yeti pode ganhar vantagem em todas as jogadas de ataque corpo a corpo com arma durante esse turno, mas as jogadas de ataque contra ele têm vantagem até o início do seu próximo turno.\n> \n> ***Medo de Fogo.*** Se o yeti sofrer dano de fogo, ele tem desvantagem em jogadas de ataque e testes de habilidade até o final do seu próximo turno.\n> \n> ### Ações\n> ***Ataques Múltiplos.*** O yeti faz um\

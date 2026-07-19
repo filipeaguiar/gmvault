@@ -1,7 +1,6 @@
 ---
 title: 'Arte: tlexolotl'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: tlexolotl'
 visibility: players

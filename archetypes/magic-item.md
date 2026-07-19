@@ -14,8 +14,7 @@ item_info:
   attunement: "Requer sintonização"
   weight: "0.5 kg"
   cost: "100 po"
-params:
-  kind: "magic_item"
+type: "magic_item"
 ---
 
 Insira a descrição e efeitos mágicos do item aqui.

@@ -1,7 +1,6 @@
 ---
 title: Veteran
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Estou à disposição para realizar a tradução e a revisão editorial. Por favor, envie o texto a ser traduzido.

@@ -1,7 +1,6 @@
 ---
 title: Journeys through the Radiant Citadel
-params:
-  kind: campaign
+type: campaign
 draft: false
 titulo_pt_br: Jornadas pela Cidadela Radiante
 visibility: gm

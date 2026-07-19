@@ -1,8 +1,8 @@
 ---
 title: Starting the Adventure
 weight: 30
+type: scene
 params:
-  kind: scene
   content_role: introduction
 draft: true
 titulo_pt_br: Começando a Aventura

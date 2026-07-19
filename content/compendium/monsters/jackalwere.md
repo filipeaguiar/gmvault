@@ -1,7 +1,6 @@
 ---
 title: Jackalwere
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```yaml\nname: Choldrith\nsize: Médio\ntype: monstrosidade\nsubtype: null\nalignment: normalmente caótico e mal\nac:\n- ac: 15\n  from:\n    armadura natural: true\nhp:\n  average: 66\n  formula: 12d8 + 12\nspeed:\n  walk: 9 m\n  climb: 9 m\nstats:\n- 12\n- 16\n- 12\n- 10\n- 12\n- 8\nsaves:\n- ability: destreza\n  bonus: 5\n- ability: constituição\n  bonus: 3\n- ability: sabedoria\n  bonus: 3\nsenses:\n- visão no escuro 18 m\n- Percepção passiva 13\nlanguages:\n- Subterrâneo Comum\ncr: '3'\ntrait:\n- name: Colhedor de Presas\n  entries:\n  - type: entries\n    name: Colhedor de Presas\n    entries:\n    - O choldrith pode ter até quatro presas seguradas em suas mãos ou presas em seu\n      corpo, em vez de armas de uma mão. Ele usa estatísticas como as de uma adaga\n      e pode ejetar a presa para fazer um ataque à distância.\n- name: Marcha de Aranha\n  entries:\n  - type: entries\n    name: Marcha de Aranha\n    entries:\n    - O choldrith pode escalar superfícies difíceis,\

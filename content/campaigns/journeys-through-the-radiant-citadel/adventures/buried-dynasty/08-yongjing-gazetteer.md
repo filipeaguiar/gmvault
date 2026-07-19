@@ -1,8 +1,7 @@
 ---
 title: Cena 8 - Yongjing Gazetteer
 weight: 80
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 8 - Guia Geográfico de Yongjing
 visibility: gm

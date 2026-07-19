@@ -1,7 +1,6 @@
 ---
 title: Wynling
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: 'ZXQ: ZXQ_IN_IMPORTADOS_DO_5E_TOOLS_JTTRC_REQUER_QUE_TRADUÇÃO_E_EDIÇÃO.'

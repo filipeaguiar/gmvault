@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Amanisha Manivarshi'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Amanisha Manivarshi'
 visibility: players

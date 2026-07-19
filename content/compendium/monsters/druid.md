@@ -1,7 +1,6 @@
 ---
 title: Druid
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Parece que você ainda não forneceu o texto que precisa ser traduzido e revisado. Por favor, cole o conteúdo do draft importado do 5e.tools (MM) para que eu possa realizar a tradução editorial para o português do Brasil, seguindo todas as regras estabelecidas.

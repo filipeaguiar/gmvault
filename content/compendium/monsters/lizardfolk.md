@@ -1,7 +1,6 @@
 ---
 title: Lizardfolk
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Entendido. Aguardando o rascunho importado do 5e.tools (Monster Manual) para dar início à tradução e revisão editorial.

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Aunt Dellie'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Aunt Dellie'
 visibility: players

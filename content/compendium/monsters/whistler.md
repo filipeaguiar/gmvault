@@ -1,7 +1,6 @@
 ---
 title: Whistler
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Não há conteúdo para traduzir.

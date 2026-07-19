@@ -1,7 +1,6 @@
 ---
 title: Steady Aim
-params:
-  kind: rule
+type: rule
 draft: false
 weight: 10
 summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
@@ -9,7 +8,7 @@ tags:
 - compendio
 - regra
 - classe
-visibility: public
+visibility: "public"
 status: ready
 source:
   provider: 5e.tools

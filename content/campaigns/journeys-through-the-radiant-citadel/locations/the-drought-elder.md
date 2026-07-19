@@ -1,7 +1,6 @@
 ---
 title: The Drought Elder
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Ancião da Seca
 visibility: gm

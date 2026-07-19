@@ -1,7 +1,6 @@
 ---
 title: Will-o'-Wisp
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: 'Draft imported from 5e.tools (MM). Requires translation and editorial review.

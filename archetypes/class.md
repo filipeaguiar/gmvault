@@ -11,8 +11,7 @@ status: "ready"
 class_info:
   hit_dice: "d8"
   primary_ability: "Destreza"
-params:
-  kind: "class"
+type: "class"
 ---
 
 ### Habilidades de Classe

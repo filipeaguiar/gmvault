@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Wynling'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Wynling'
 visibility: players

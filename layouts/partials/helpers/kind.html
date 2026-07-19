@@ -1,2 +1,2 @@
-{{- $kind := or .Params.params.kind .Params.kind -}}
+{{- $kind := or .Params.params.kind .Params.kind .Type -}}
 {{- return $kind -}}

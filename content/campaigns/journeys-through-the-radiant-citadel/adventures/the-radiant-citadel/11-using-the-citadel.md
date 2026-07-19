@@ -1,8 +1,7 @@
 ---
 title: Cena 11 - Using the Citadel
 weight: 110
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 11 - Usando a Cidadela
 visibility: gm

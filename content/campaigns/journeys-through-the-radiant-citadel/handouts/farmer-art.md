@@ -1,7 +1,6 @@
 ---
 title: 'Arte: farmer'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: farmer'
 visibility: players

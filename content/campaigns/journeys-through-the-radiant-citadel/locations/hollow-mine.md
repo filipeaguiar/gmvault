@@ -1,7 +1,6 @@
 ---
 title: Hollow Mine
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Mina Oca
 visibility: gm

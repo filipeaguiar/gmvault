@@ -1,7 +1,6 @@
 ---
 title: Haint
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Assombração
 visibility: gm

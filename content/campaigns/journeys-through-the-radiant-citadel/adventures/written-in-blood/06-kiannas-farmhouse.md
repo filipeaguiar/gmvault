@@ -1,8 +1,7 @@
 ---
 title: Cena 6 - Kianna's Farmhouse
 weight: 60
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 6 - Casa de Fazenda de Kianna
 visibility: gm

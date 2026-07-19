@@ -1,8 +1,7 @@
 ---
 title: Cena 6 - A Town Called Hollow
 weight: 60
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 6 - Uma Cidade Pequena Chamada Hollow
 visibility: gm

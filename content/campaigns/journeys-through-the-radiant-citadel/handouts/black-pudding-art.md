@@ -1,7 +1,6 @@
 ---
 title: 'Arte: black pudding'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: black pudding'
 visibility: players

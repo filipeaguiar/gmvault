@@ -1,7 +1,6 @@
 ---
 title: Cloud Giant
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Por favor, forneça o texto que você deseja traduzir.

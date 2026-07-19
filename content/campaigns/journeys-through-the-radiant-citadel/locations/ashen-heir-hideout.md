@@ -1,7 +1,6 @@
 ---
 title: Ashen Heir Hideout
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Esconderijo do Herdeiro Cinzento
 visibility: gm

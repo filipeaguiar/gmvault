@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 012 Map 21 Dyn Singh Night Market Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

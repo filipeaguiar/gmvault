@@ -1,7 +1,6 @@
 ---
 title: Dire Wolf
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o texto que você gostaria que eu traduzisse, seguindo todas as regras estabelecidas.

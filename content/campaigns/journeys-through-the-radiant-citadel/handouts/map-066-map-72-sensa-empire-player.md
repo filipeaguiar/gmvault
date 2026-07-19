@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 066 Map 72 Sensa Empire Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

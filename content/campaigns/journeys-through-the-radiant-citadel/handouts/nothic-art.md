@@ -1,7 +1,6 @@
 ---
 title: 'Arte: nothic'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: nothic'
 visibility: players

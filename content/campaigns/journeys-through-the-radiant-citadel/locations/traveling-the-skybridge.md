@@ -1,7 +1,6 @@
 ---
 title: Traveling the Skybridge
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Viajando pela Ponte Celeste
 visibility: gm

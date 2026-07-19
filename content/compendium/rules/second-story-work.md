@@ -1,7 +1,6 @@
 ---
 title: Second-Story Work
-params:
-  kind: rule
+type: rule
 draft: false
 weight: 10
 summary: 'Característica de classe: Trabalho de Segundo Andar.'
@@ -9,7 +8,7 @@ tags:
 - compendio
 - regra
 - classe
-visibility: public
+visibility: "public"
 status: ready
 titulo_pt_br: Trabalho nos Telhados
 translation:

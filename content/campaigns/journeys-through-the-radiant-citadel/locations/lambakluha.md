@@ -1,7 +1,6 @@
 ---
 title: Lambakluha
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Lambakluha
 visibility: gm

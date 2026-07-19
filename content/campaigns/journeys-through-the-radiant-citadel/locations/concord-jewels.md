@@ -1,7 +1,6 @@
 ---
 title: Concord Jewels
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Joias da Concórdia
 visibility: gm

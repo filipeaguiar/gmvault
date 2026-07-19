@@ -12,8 +12,7 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
-params:
-  kind: "location"
+type: "location"
 ---
 
 Insira a descrição geográfica, história e pontos de interesse desta localidade aqui.

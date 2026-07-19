@@ -1,7 +1,6 @@
 ---
 title: Locations
-params:
-  kind: locations_index
+type: locations_index
 draft: false
 titulo_pt_br: Locais
 visibility: gm

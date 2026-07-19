@@ -7,8 +7,7 @@ summary: "Entrada do diário de campanha."
 tags: []
 visibility: "players"
 status: "ready"
-params:
-  kind: "journal_entry"
+type: "journal_entry"
 ---
 
 Insira o texto final da história ou acontecimentos da sessão aqui.

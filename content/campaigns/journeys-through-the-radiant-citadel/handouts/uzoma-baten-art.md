@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Uzoma Baten'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Uzoma Baten'
 visibility: players

@@ -1,7 +1,6 @@
 ---
 title: The Old City
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: A Cidade Antiga
 visibility: gm

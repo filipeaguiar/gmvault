@@ -1,8 +1,7 @@
 ---
 title: The Nightsea's Succor
 weight: 130
-params:
-  kind: adventure
+type: adventure
 draft: true
 titulo_pt_br: O Auxílio do Mar Noturno
 visibility: gm

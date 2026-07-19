@@ -1,7 +1,6 @@
 ---
 title: Whistler
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Assobiador
 visibility: gm

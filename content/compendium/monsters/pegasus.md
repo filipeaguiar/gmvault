@@ -1,7 +1,6 @@
 ---
 title: Pegasus
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Desculpe, mas percebo que você mencionou um rascunho importado do 5e.tools (MM) que precisa de tradução e revisão editorial, mas o texto em si não foi incluído na sua mensagem. Você poderia colar o conteúdo do rascunho para que eu possa realizar a tradução?

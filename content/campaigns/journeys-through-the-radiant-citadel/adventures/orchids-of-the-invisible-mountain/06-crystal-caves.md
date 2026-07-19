@@ -1,8 +1,7 @@
 ---
 title: Cena 6 - Crystal Caves
 weight: 60
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 6 - Cavernas de Cristal
 visibility: gm

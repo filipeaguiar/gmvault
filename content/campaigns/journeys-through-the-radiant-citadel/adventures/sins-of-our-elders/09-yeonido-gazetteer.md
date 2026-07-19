@@ -1,8 +1,7 @@
 ---
 title: Cena 9 - Yeonido Gazetteer
 weight: 90
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 9 - Yeonido Guia Geográfico
 visibility: gm

@@ -1,8 +1,7 @@
 ---
 title: Cena 13 - Whistler
 weight: 130
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 13 - Whistler
 visibility: gm

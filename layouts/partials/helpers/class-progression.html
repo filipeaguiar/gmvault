@@ -1,0 +1,22 @@
+{{- $page := .page -}}
+{{- $characterLevel := int .level -}}
+{{- $raw := $page.RawContent -}}
+{{- $levelHeadings := findRE `(?m)^#{2,3}\s+Nível\s+\d+\s*$` $raw -}}
+
+{{- if not $levelHeadings -}}
+  {{- $page.Content -}}
+{{- else -}}
+  {{- $visible := slice -}}
+  {{- $include := true -}}
+  {{- range split $raw "\n" -}}
+    {{- $heading := findRE `^#{2,3}\s+Nível\s+\d+\s*$` . -}}
+    {{- if $heading -}}
+      {{- $featureLevel := int (replaceRE `^#{2,3}\s+Nível\s+(\d+)\s*$` "$1" .) -}}
+      {{- $include = le $featureLevel $characterLevel -}}
+    {{- end -}}
+    {{- if $include -}}
+      {{- $visible = $visible | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $page.RenderString (delimit $visible "\n") -}}
+{{- end -}}

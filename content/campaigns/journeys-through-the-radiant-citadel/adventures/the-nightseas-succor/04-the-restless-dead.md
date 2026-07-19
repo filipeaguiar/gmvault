@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - The Restless Dead
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 4 - Os Mortos Inquietos
 visibility: gm

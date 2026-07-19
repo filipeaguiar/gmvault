@@ -233,8 +233,7 @@ date: 2026-07-09 19:00:00+00:00
 draft: false
 factions: []
 locations: []
-params:
-  kind: character
+type: character
 spells_usage: []
 status: ready
 summary: Goblin Ladino 1 criado manualmente guiado por dados.

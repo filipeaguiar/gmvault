@@ -1,7 +1,6 @@
 ---
 title: The Fiend's Identity
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: A Identidade do Corruptor
 visibility: gm

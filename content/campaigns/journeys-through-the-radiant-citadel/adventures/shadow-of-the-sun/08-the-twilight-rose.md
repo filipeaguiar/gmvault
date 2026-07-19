@@ -1,8 +1,7 @@
 ---
 title: Cena 8 - The Twilight Rose
 weight: 80
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 8 - A Rosa do Crepúsculo
 visibility: gm

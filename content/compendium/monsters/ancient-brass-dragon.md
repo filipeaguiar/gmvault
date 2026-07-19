@@ -1,7 +1,6 @@
 ---
 title: Ancient Brass Dragon
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```markdown\n# Quaggoth\n\n## Estatísticas do bloco\n\n**Quaggoth**\n\n_Humanoide médio (quaggoth), caótico e neutro_\n\n**Classe de Armadura** 13 (armadura natural)  \n**Pontos de Vida** 45 (7d8 + 14)  \n**Deslocamento** 9 m, escalada 9 m\n\n| FOR | DES | CON | INT | SAB | CAR |\n|-----|-----|-----|-----|-----|-----|\n| 15 (+2) | 12 (+1) | 14 (+2) | 6 (-2) | 10 (+0) | 5 (-3) |\n\n**Salvaguardas** FOR +4, DES +3  \n**Perícias** Atletismo +4, Furtividade +5  \n**Resistências a dano** nenhuma  \n**Vulnerabilidades a dano** nenhuma  \n**Imunidades a dano** nenhuma  \n**Imunidades a condições** envenenado  \n**Sentidos** visão no escuro 36 m, Percepção passiva 10  \n**Idiomas** Subterrâneo Comum  \n**Desafio** 2 (450 XP) **Bônus de Proficiência** +2\n\n## Traits\n\n**_Fúria Ferida (1/dia)._** Enquanto estiver com 20 pontos de vida ou menos, o quaggoth tem vantagem em jogadas de ataque. Além disso, ele causa 5 (1d8) de dano adicional em qualquer alvo que atingir com um ataque corpo\

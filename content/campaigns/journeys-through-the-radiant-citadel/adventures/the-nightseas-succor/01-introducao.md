@@ -1,8 +1,7 @@
 ---
 title: Cena 1 - Introdução
 weight: 10
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 1 - Introdução
 visibility: gm

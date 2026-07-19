@@ -1,7 +1,6 @@
 ---
 title: 'Arte: cult fanatic'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: cult fanatic'
 visibility: players

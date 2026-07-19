@@ -1,7 +1,6 @@
 ---
 title: Using the Citadel
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Usando a Cidadela
 visibility: gm

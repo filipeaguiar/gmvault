@@ -1,8 +1,7 @@
 ---
 title: Sins of Our Elders
 weight: 70
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Pecados de Nossos Anciões
 visibility: gm

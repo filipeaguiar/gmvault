@@ -1,8 +1,7 @@
 ---
 title: Cena 9 - Arrival in Janya
 weight: 90
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 9 - Chegada em Janya
 visibility: gm

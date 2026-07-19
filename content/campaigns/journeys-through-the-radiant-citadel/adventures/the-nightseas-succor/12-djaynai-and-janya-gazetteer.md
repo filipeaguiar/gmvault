@@ -1,8 +1,7 @@
 ---
 title: "Cena 12 - Djaynai and Janya Gazetteer"
 weight: 120
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: "Cena 12 - Gazeta de Djaynai e Janya"
 visibility: gm

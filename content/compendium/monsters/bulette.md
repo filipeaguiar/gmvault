@@ -1,7 +1,6 @@
 ---
 title: Bulette
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o conteúdo do rascunho importado do 5e.tools para que eu possa realizar a tradução e revisão editorial.

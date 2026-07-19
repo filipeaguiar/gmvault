@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: Spirit of the Past (Player Version)'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

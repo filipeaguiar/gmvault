@@ -1,7 +1,6 @@
 ---
 title: Ghost Orchid Tepui
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Orquídea-Fantasma Tepui
 visibility: gm

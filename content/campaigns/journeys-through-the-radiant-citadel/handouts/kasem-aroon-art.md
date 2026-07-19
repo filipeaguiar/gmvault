@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Kasem Aroon'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Kasem Aroon'
 visibility: players

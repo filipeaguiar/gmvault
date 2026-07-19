@@ -12,8 +12,7 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
-params:
-  kind: "npc"
+type: "npc"
 ---
 
 Insira a descrição, objetivos, segredos e estatísticas do NPC aqui.

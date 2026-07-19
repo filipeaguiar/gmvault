@@ -1,8 +1,8 @@
 ---
 title: Background
 weight: 20
+type: scene
 params:
-  kind: scene
   content_role: introduction
 draft: true
 titulo_pt_br: Antecedentes

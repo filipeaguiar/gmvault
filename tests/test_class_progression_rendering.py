@@ -1,3 +1,4 @@
+import re
 import shutil
 import subprocess
 import tempfile
@@ -72,3 +73,36 @@ def test_class_progression_renders_structured_sections_and_subclass_links():
         assert "subclasses-section" in html
         assert "Test Subclass" in html
         assert "A test subclass summary." in html
+
+
+def test_character_class_tab_hides_future_level_progression():
+    with tempfile.TemporaryDirectory() as temp_dir:
+        project = Path(temp_dir) / "project"
+        project.mkdir()
+        for name in ("content", "layouts", "assets", "static"):
+            shutil.copytree(ROOT / name, project / name)
+        shutil.copy2(ROOT / "hugo.yaml", project / "hugo.yaml")
+
+        destination = Path(temp_dir) / "public"
+        subprocess.run(
+            [
+                "hugo",
+                "--source",
+                str(project),
+                "--destination",
+                str(destination),
+                "-D",
+                "--gc",
+                "--minify",
+                "--quiet",
+            ],
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        )
+
+        html = (destination / "campaigns/journeys-through-the-radiant-citadel/characters/nyx-clair/index.html").read_text(encoding="utf-8")
+        class_tab = re.search(r"<div id=tab-class.*?(?=<div id=tab-features)", html, re.DOTALL).group(0)
+        assert "Nível 1" in class_tab
+        assert "Nível 2" not in class_tab

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: noble'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: noble'
 visibility: players

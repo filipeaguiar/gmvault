@@ -1,7 +1,6 @@
 ---
 title: 'Arte: giant badger'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: giant badger'
 visibility: players

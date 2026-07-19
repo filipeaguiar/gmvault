@@ -1,7 +1,6 @@
 ---
 title: Deva
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```yaml\nname: Enviado Mercenário\nisNpc: true\nhasToken: true\nisNamedCreature: false\nsource: MM\npage: 218\nsize:\n  - M\n  - S\ntype:\n  - humanoide\n  - elfo\n  - qualquer espécie\nalignment:\n  - L\n  - N\n  - E\nac:\n  - from:\n      - armadura de couro batido\n    ac: 15\nhp:\n  average: 44\n  formula: 8d8 + 8\nspeed:\n  walk: 30\nstr: 11\ndex: 14\ncon: 12\nint: 14\nwis: 12\ncha: 16\nskill:\n  deception: +7\n  investigation: +4\n  perception: +4\n  persuasion: +7\nsenses:\n  darkvision: 60\nlanguages:\n  - Comum\n  - Dracônico\n  - Élfico\n  - qualquer outro idioma\ncr: \"4\"\ntrait:\n  - name: Metamagia\n    entries:\n      - O enviado possui três opções de Metamagia da classe de Feiticeiro, que pode usar com um bônus de +3 em testes de Carisma para usá-las. O enviado tem 3 Pontos de Feitiçaria para usar com Metamagia. O máximo de Pontos de Feitiçaria que pode gastar em uma opção é 3. Ele recupera os Pontos de Feitiçaria gastos quando termina um Descanso Longo.\n  - name:\

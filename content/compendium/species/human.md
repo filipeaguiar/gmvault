@@ -1,7 +1,6 @@
 ---
 title: Human
-params:
-  kind: species
+type: species
 draft: false
 weight: 10
 summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
@@ -41,4 +40,4 @@ You gain proficiency in one skill of your choice.
 
 ### Versatile
 
-You gain an category=o of your choice.
+You gain an Origin feat of your choice.

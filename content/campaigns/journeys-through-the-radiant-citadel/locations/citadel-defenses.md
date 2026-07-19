@@ -1,7 +1,6 @@
 ---
 title: Citadel Defenses
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Defesas da Cidadela
 visibility: gm

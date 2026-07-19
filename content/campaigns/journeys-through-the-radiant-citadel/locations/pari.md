@@ -1,7 +1,6 @@
 ---
 title: Pari
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Pari
 visibility: gm

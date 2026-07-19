@@ -1,8 +1,7 @@
 ---
 title: Cena 8 - To the Nightsea
 weight: 80
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 8 - Para o Mar Noturno
 visibility: gm

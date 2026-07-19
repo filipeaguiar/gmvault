@@ -1,7 +1,6 @@
 ---
 title: The Tepui's Fate
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: O Destino do Tepui
 visibility: gm

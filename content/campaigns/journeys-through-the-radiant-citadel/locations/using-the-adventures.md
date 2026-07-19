@@ -1,7 +1,6 @@
 ---
 title: Using the Adventures
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Usando as Aventuras
 visibility: gm

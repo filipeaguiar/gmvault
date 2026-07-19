@@ -1,7 +1,6 @@
 ---
 title: The Lions' Plea
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: O Apelo dos Leões
 visibility: gm

@@ -1,8 +1,7 @@
 ---
 title: Cena 7 - Forest of Hands
 weight: 70
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 7 - Floresta das Mãos
 visibility: gm

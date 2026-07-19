@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 039 Map 43 San Citlan And Borderlands Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

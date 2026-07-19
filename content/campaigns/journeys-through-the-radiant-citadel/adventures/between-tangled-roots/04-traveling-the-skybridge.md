@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - Traveling the Skybridge
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - Atravessando a Ponte Celeste
 visibility: gm

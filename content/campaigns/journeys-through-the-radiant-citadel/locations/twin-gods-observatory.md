@@ -1,7 +1,6 @@
 ---
 title: Twin Gods Observatory
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Observatório dos Deuses Gêmeos
 visibility: gm

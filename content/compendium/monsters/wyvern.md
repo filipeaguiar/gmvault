@@ -1,7 +1,6 @@
 ---
 title: Wyvern
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Entendido. Por favor, forneça o rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução e a revisão editorial conforme as instruções. Aguardo o texto.

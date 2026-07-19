@@ -1,7 +1,6 @@
 ---
 title: 'Arte: assassin'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: assassin'
 visibility: players

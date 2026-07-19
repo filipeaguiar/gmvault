@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 133 Map 133 Yongjing Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

@@ -1,7 +1,6 @@
 ---
 title: Kianna's Farmhouse
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Fazenda de Kianna
 visibility: gm

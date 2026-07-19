@@ -1,8 +1,7 @@
 ---
 title: Salted Legacy
 weight: 30
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Legado Salgado
 visibility: gm

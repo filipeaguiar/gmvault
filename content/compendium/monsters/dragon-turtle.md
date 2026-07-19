@@ -1,7 +1,6 @@
 ---
 title: Dragon Turtle
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Parece que você forneceu as instruções e a tabela de mapeamento de termos, mas o texto do rascunho do 5e.tools (MM) a ser traduzido não foi incluído na mensagem. Por favor, cole o conteúdo que precisa de tradução e revisão editorial, e aplicarei todas as regras e terminologias obrigatórias conforme solicitado.

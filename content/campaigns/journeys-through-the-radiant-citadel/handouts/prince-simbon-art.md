@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Prince Simbon'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Prince Simbon'
 visibility: players

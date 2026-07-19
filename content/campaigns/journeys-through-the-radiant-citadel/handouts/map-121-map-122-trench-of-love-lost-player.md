@@ -1,7 +1,6 @@
 ---
 title: "Mapa: Trench of Love Lost (Player Version)"
-params:
-  kind: "handout"
+type: "handout"
 draft: true
 visibility: "players"
 status: "draft"

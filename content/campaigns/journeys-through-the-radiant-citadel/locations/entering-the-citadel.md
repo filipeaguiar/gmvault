@@ -1,7 +1,6 @@
 ---
 title: Entering the Citadel
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Adentrando a Cidadela
 visibility: gm

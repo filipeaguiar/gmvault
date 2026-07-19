@@ -1,7 +1,6 @@
 ---
 title: The River of Gold
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: O Rio de Ouro
 visibility: gm

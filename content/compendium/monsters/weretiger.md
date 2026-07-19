@@ -1,7 +1,6 @@
 ---
 title: Weretiger
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```yaml\nname: \"Sahuagin Bruxo de Dagon\"\nsize: \"Médio\"\ntype: \"Humanoide\"\nsubtype: \"sahuagin, bruxo\"\nalignment: \"qualquer alinhamento\"\narmor_class: \"15 (armadura de escamas)\"\nhit_points: \"52 (8d8 + 16)\"\nspeed: \"andar 9 m, nadar 12 m\"\ndamage_resistances: \"\"\ncondition_immunities: \"\"\nsenses: \"visão no escuro 36 m\"\nlanguages: \"Comum, Sahuagin\"\nchallenge: \"3 (700 XP)\"\nproficiency_bonus: \"+2\"\nactions:\n  - name: \"Ataque Múltiplo\"\n    text: \"O sahuagin faz dois ataques: um com sua lança e um com sua mordida.\"\n  - name: \"Lança\"\n    text: \"Ataque Corpo a Corpo ou à Distância com Arma: +5 para atingir, alcance 1,5 m ou alcance 6/18 m, um alvo. Acerto: 6 (1d6 + 3) de dano perfurante, ou 7 (1d8 + 3) de dano perfurante se usada com as duas mãos para um ataque corpo a corpo.\"\n  - name: \"Mordida\"\n    text: \"Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. Acerto: 5 (1d4 + 3) de dano perfurante.\"\n  - name: \"Toque\

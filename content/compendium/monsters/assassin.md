@@ -1,7 +1,6 @@
 ---
 title: Assassin
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: 'Percebi que você enviou apenas a nota técnica sobre o rascunho importado do 5e.tools (MM), mas não incluiu o texto que precisa ser traduzido e revisado editorialmente.

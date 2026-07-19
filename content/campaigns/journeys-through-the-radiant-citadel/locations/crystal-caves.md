@@ -1,7 +1,6 @@
 ---
 title: Crystal Caves
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Cavernas de Cristal
 visibility: gm

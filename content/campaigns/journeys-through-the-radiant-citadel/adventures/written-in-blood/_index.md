@@ -1,8 +1,7 @@
 ---
 title: Written in Blood
 weight: 40
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Escrito em Sangue
 visibility: gm

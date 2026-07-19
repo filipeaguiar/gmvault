@@ -7,8 +7,7 @@ status: draft
 tags:
 - npc
 - importado
-params:
-  kind: npc
+type: npc
 stats_meta: Medium monstrosity, caótico e neutro
 stats:
   ac: '10'

@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - Chaos at the Bazaar
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - Caos no Bazar
 visibility: gm

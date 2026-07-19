@@ -1,7 +1,6 @@
 ---
 title: Organizações e Facções
-params:
-  kind: factions_index
+type: factions_index
 draft: false
 titulo_pt_br: Organizações e Facções
 visibility: gm

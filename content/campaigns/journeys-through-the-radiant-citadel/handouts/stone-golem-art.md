@@ -1,7 +1,6 @@
 ---
 title: 'Arte: stone golem'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: stone golem'
 visibility: players

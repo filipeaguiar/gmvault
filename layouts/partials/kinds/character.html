@@ -618,7 +618,7 @@
             {{ if $classPage.Summary }}<p class="class-summary">{{ $classPage.Summary }}</p>{{ end }}
             <details class="class-progression-details" open>
               <summary><i class="ra ra-book" aria-hidden="true"></i> Progressão da classe</summary>
-              <div class="class-progression-content">{{ $classPage.Content }}</div>
+              <div class="class-progression-content">{{ partial "helpers/class-progression.html" (dict "page" $classPage "level" .level) }}</div>
             </details>
           {{ else }}
             {{ partial "helpers/compendium-content.html" (dict "ref" (printf "/compendium/classes/%s/" $classSlug) "name" .name) }}
@@ -630,7 +630,7 @@
             <details class="class-progression-details subclass-details" open>
               <summary><i class="ra ra-scroll-unfurled" aria-hidden="true"></i> Progressão de {{ .subclass }}</summary>
               {{ if $subPage }}
-                <div class="class-progression-content">{{ $subPage.Content }}</div>
+                <div class="class-progression-content">{{ partial "helpers/class-progression.html" (dict "page" $subPage "level" .level) }}</div>
               {{ else }}
                 {{ partial "helpers/compendium-content.html" (dict "ref" (printf "/compendium/classes/%s/" $subSlug) "name" .subclass) }}
               {{ end }}

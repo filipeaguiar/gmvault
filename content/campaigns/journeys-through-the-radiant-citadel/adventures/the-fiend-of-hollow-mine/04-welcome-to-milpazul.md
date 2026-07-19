@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - Welcome to Milpazul
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - Bem-vindo a Milpazul
 visibility: gm

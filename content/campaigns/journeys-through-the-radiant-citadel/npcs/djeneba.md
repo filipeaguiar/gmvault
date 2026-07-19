@@ -7,8 +7,7 @@ status: draft
 tags:
 - npc
 - importado
-params:
-  kind: npc
+type: npc
 stats_meta: Medium humanoid, caótico e neutro
 stats:
   ac: '10'

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Kala Mabarin'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Kala Mabarin'
 visibility: players

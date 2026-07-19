@@ -1,8 +1,7 @@
 ---
 title: Buried Dynasty
 weight: 140
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Dinastia Enterrada
 visibility: gm

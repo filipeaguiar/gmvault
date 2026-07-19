@@ -1,8 +1,7 @@
 ---
 title: Cena 3 - Welcome to the Market
 weight: 30
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 3 - Boas-vindas ao Mercado
 visibility: gm

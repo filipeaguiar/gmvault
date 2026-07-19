@@ -1,7 +1,6 @@
 ---
 title: Tlacatecolo
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Tlacatecolo
 visibility: gm

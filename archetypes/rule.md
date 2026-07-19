@@ -7,8 +7,7 @@ summary: "Regra geral ou mecânica do sistema."
 tags: []
 visibility: "public"
 status: "ready"
-params:
-  kind: "rule"
+type: "rule"
 ---
 
 ### Mecânica e Regras

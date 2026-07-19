@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Paolo Maykapal'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Paolo Maykapal'
 visibility: players

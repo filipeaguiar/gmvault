@@ -12,8 +12,7 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
-params:
-  kind: "session"
+type: "session"
 ---
 
 ### Objetivo da Sessão

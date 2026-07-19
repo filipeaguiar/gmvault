@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Vi Aroon'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Vi Aroon'
 visibility: players

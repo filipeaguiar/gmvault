@@ -1397,8 +1397,7 @@ def main():
     markdown = f"""---
 title: "{char_name}"
 date: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}
-params:
-  kind: "character"
+type: "character"
 draft: false
 weight: 10
 summary: "{summary_str}"

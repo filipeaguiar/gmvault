@@ -1,7 +1,6 @@
 ---
 title: Forest of Hands
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Floresta das Mãos
 visibility: gm

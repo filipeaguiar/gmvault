@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Kusa Xungoon'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Kusa Xungoon'
 visibility: players

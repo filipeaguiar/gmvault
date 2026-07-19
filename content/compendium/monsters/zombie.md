@@ -1,7 +1,6 @@
 ---
 title: Zombie
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Parece que você mencionou a importação de um rascunho do 5e.tools (MM), mas não recebi o texto para tradução. Por favor, cole o conteúdo que precisa ser traduzido e revisado editorialmente para o português do Brasil, e aplicarei as regras obrigatórias e protegerei os termos conforme solicitado.

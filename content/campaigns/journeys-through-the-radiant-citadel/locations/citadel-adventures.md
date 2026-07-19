@@ -1,7 +1,6 @@
 ---
 title: Citadel Adventures
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Aventuras da Cidadela
 visibility: gm

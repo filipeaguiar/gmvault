@@ -1,8 +1,7 @@
 ---
 title: Cena 2 - Cena
 weight: 20
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 2 - Cena
 visibility: gm

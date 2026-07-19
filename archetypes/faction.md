@@ -12,8 +12,7 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
-params:
-  kind: "faction"
+type: "faction"
 ---
 
 Insira a história, objetivos, recursos e membros conhecidos da facção aqui.

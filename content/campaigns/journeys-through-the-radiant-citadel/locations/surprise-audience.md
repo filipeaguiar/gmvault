@@ -1,7 +1,6 @@
 ---
 title: Surprise Audience
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Audiência Surpresa
 visibility: gm

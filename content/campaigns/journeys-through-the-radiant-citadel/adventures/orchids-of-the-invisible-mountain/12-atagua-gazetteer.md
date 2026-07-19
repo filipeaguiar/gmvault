@@ -1,8 +1,7 @@
 ---
 title: Cena 12 - Atagua Gazetteer
 weight: 120
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 12 - Guia Geográfico de Atagua
 visibility: gm

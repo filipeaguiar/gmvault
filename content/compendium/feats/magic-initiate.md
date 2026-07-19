@@ -1,7 +1,6 @@
 ---
 title: Magic Initiate
-params:
-  kind: feat
+type: feat
 draft: false
 weight: 10
 summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.

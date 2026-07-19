@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - Death in the Mines
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - Morte nas Minas
 visibility: gm

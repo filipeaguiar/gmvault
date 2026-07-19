@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Sholeh'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Sholeh'
 visibility: players

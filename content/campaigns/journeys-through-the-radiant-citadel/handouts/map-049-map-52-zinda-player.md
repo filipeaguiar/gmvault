@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 049 Map 52 Zinda Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

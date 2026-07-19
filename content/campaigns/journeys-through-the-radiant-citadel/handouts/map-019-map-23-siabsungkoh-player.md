@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 019 Map 23 Siabsungkoh Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

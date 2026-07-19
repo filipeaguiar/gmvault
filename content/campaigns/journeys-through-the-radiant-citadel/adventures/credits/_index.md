@@ -1,8 +1,7 @@
 ---
 title: Credits
 weight: 170
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Créditos
 visibility: gm

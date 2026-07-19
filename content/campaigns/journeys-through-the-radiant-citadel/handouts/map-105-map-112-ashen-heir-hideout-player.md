@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: Ashen Heir Hideout (Player Version)'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

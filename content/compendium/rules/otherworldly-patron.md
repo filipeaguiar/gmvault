@@ -1,7 +1,6 @@
 ---
 title: "Otherworldly Patron"
-params:
-  kind: "rule"
+type: "rule"
 draft: false
 weight: 10
 summary: "Característica de classe: Otherworldly Patron."

@@ -1,7 +1,6 @@
 ---
 title: Black Pudding
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: 'Parece que você mencionou um rascunho importado do 5e.tools (MM), mas não forneceu o texto de origem para que eu possa realizar a tradução e a revisão editorial.

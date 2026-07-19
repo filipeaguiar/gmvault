@@ -1,8 +1,7 @@
 ---
 title: The Fiend of Hollow Mine
 weight: 50
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: O Corruptor da Mina Oca
 visibility: gm

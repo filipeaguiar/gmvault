@@ -1,7 +1,6 @@
 ---
 title: Life in the Citadel
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Vida na Cidadela
 visibility: gm

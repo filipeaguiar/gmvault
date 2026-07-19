@@ -1,8 +1,8 @@
 ---
 title: Welcome to the Radiant Citadel
 weight: 10
+type: adventure
 params:
-  kind: adventure
   content_role: introduction
 draft: false
 titulo_pt_br: Bem-vindo à Cidadela Radiante

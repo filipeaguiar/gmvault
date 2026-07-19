@@ -1,7 +1,6 @@
 ---
 title: 'Arte: adult blue dracolich'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: adult blue dracolich'
 visibility: players

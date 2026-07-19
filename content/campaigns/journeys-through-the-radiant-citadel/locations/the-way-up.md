@@ -1,7 +1,6 @@
 ---
 title: The Way Up
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: A Subida
 visibility: gm

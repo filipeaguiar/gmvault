@@ -1,7 +1,6 @@
 ---
 title: To the Nightsea
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Para o Mar Noturno
 visibility: gm

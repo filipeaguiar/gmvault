@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - Storm of Destruction
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - Tempestade de Destruição
 visibility: gm

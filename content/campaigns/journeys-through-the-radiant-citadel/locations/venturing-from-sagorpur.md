@@ -1,7 +1,6 @@
 ---
 title: Venturing from Sagorpur
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Partindo de Sagorpur
 visibility: gm

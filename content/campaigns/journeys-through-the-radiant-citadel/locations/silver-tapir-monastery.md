@@ -1,7 +1,6 @@
 ---
 title: Silver Tapir Monastery
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Mosteiro da Anta Prateada
 visibility: gm

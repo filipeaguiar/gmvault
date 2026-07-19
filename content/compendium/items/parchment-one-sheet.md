@@ -1,7 +1,6 @@
 ---
 title: Parchment (one sheet)
-params:
-  kind: item
+type: item
 draft: false
 weight: 10
 summary: Draft imported from 5e.tools (PHB). Requires translation and editorial review.

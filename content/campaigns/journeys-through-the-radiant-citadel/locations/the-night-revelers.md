@@ -1,7 +1,6 @@
 ---
 title: The Night Revelers
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Os Notívagos
 visibility: gm

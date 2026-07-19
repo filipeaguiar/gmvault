@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Azra Nir'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Azra Nir'
 visibility: players

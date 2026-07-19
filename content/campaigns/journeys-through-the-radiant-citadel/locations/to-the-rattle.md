@@ -1,7 +1,6 @@
 ---
 title: To the Rattle
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Ao Rattle
 visibility: gm

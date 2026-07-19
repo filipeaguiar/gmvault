@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Kedjou Kamal'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Kedjou Kamal'
 visibility: players

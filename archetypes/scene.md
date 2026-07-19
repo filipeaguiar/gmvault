@@ -12,8 +12,7 @@ locations: []
 factions: []
 handouts: []
 compendium_refs: []
-params:
-  kind: "scene"
+type: "scene"
 ---
 
 ### Uso na Sessão

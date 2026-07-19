@@ -1,8 +1,7 @@
 ---
 title: In the Mists of Manivarsha
 weight: 100
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Nas Brumas de Manivarsha
 visibility: gm

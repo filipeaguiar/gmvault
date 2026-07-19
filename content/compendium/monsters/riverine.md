@@ -1,7 +1,6 @@
 ---
 title: Riverine
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Rascunho importado do 5e.tools (JTTRC). Requer tradução e revisão editorial.

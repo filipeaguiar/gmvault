@@ -1,7 +1,6 @@
 ---
 title: Gate of Illumination
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Portal da Iluminação
 visibility: gm

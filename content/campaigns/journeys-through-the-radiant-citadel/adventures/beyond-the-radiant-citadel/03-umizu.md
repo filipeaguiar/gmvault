@@ -1,8 +1,7 @@
 ---
 title: Cena 3 - Umizu
 weight: 30
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 3 - Umizu
 visibility: gm

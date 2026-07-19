@@ -25,8 +25,7 @@ stats:
   senses: "Percepção passiva 10"
   languages: "Comum"
   cr: "0 (10 XP)"
-params:
-  kind: "monster"
+type: "monster"
 ---
 
 ### Ações

@@ -1,7 +1,6 @@
 ---
 title: Cycle of Dread
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Ciclo do Pavor
 visibility: gm

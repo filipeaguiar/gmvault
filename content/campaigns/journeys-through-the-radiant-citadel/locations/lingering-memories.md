@@ -1,7 +1,6 @@
 ---
 title: Lingering Memories
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Memórias Remanescentes
 visibility: gm

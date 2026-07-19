@@ -568,8 +568,7 @@ def write_handout_art_stub(campaign_slug, entity_slug, entity_name, img_filename
     with open(handout_file, "w") as f:
         f.write(f"""---
 title: "Arte: {entity_name}"
-params:
-  kind: "handout"
+type: "handout"
 draft: true
 titulo_pt_br: ""
 visibility: "players"
@@ -751,8 +750,7 @@ def write_magic_item_stub(campaign_slug, item_slug, item_name):
     with open(item_file, "w") as f:
         f.write(f"""---
 title: "{item_name}"
-params:
-  kind: "magic_item"
+type: "magic_item"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -773,8 +771,7 @@ def write_location_stub(campaign_slug, loc_slug, loc_name):
     with open(loc_file, "w") as f:
         f.write(f"""---
 title: "{loc_name}"
-params:
-  kind: "location"
+type: "location"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -797,8 +794,7 @@ def write_map_handout(campaign_slug, map_slug, map_title, local_img_path, visibi
     with open(handout_file, "w") as f:
         f.write(f"""---
 title: "Mapa: {map_title}"
-params:
-  kind: "handout"
+type: "handout"
 draft: true
 visibility: "{visibility}"
 status: "draft"
@@ -839,8 +835,7 @@ def write_enriched_locations(campaign_slug, locations_registry):
         with open(loc_file, "w") as f:
             f.write(f"""---
 title: "{data['name']}"
-params:
-  kind: "location"
+type: "location"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -980,8 +975,7 @@ def create_directory_structure(campaign_slug):
             with open(idx, "w") as f:
                 f.write(f"""---
 title: "{title}"
-params:
-  kind: "{dir_name}_index"
+type: "{dir_name}_index"
 draft: false
 titulo_pt_br: ""
 visibility: "gm"
@@ -997,8 +991,7 @@ def write_campaign_index(campaign_slug, campaign_title):
     with open(idx, "w") as f:
         f.write(f"""---
 title: "{campaign_title}"
-params:
-  kind: "campaign"
+type: "campaign"
 draft: false
 titulo_pt_br: ""
 visibility: "gm"
@@ -1031,8 +1024,7 @@ def create_adventure_structure(campaign_slug, adv_slug, adv_title, *, weight=Non
         with open(adv_idx, "w") as f:
             f.write(f"""---
 title: "{adv_title}"
-{weight_line}params:
-  kind: "adventure"{role_lines}
+{weight_line}kind: "adventure"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1064,8 +1056,7 @@ def create_session_structure(adv_dir, session_slug, session_title, *, weight=Non
         with open(sess_idx, "w") as f:
             f.write(f"""---
 title: "{session_title}"
-{weight_line}params:
-  kind: "session"{role_lines}
+{weight_line}kind: "session"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1392,8 +1383,7 @@ def main():
                     f.write(f"""---
 title: "{display_title}"
 weight: {(s_idx + 1) * 10}
-params:
-  kind: "scene"{role_lines}
+type: "scene"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1424,8 +1414,7 @@ handouts:
             f.write(f"""---
 title: "{campaign_title}"
 weight: 10
-params:
-  kind: "adventure"
+type: "adventure"
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1591,8 +1580,7 @@ handouts:
                     f.write(f"""---
 title: "{display_title}"
 weight: {(s_idx + 1) * 10}
-params:
-  kind: "scene"{role_lines}
+type: "scene"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"
@@ -1626,8 +1614,7 @@ handouts:
                 f.write(f"""---
 title: "{chap_title}"
 weight: {anthology_adventure_weight(slug, chap_title, chap_idx)}
-params:
-  kind: "adventure"{role_lines}
+type: "adventure"{role_lines}
 draft: true
 titulo_pt_br: ""
 visibility: "gm"

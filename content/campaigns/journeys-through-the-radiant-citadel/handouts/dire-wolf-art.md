@@ -1,7 +1,6 @@
 ---
 title: 'Arte: dire wolf'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: dire wolf'
 visibility: players

@@ -1,8 +1,8 @@
 ---
 title: Using the Adventures
 weight: 20
+type: scene
 params:
-  kind: scene
   content_role: introduction
 draft: false
 titulo_pt_br: Usando as Aventuras

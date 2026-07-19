@@ -1,7 +1,6 @@
 ---
 title: Bakunawa
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Bakunawa
 visibility: gm

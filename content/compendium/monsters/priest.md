@@ -1,7 +1,6 @@
 ---
 title: Priest
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```markdown\n# Urso-Coruja\n\n[Urso-Coruja](https://5e.tools/bestiary.html#owlbear_mm) *(Owlbear)*\n\n*Monstruosidade Grande, tipicamente Neutra*\n\n**Classe de Armadura** 14 (Armadura Natural)\n\n**Pontos de Vida** 60 (8d10 + 16)\n\n**Deslocamento** 40 pés\n\n| FOR | DES | CON | INT | SAB | CAR |\n|-----|-----|-----|-----|-----|-----|\n| 20 (+5) | 12 (+1) | 15 (+2) | 3 (-4) | 12 (+1) | 7 (-2) |\n\n**Perícias** Percepção +3\n\n**Sentidos** Visão no Escuro 60 pés, Percepção Passiva 13\n\n**Idiomas** — \n\n**Nível de Desafio** 3 (700 XP)\n\n**Bônus de Proficiência** +2\n\n## Ações\n\n***Bicada.*** *Ataque Corpo a Corpo com Arma:* +7 para atingir, alcance 5 pés, um alvo. *Dano:* 10 (1d10 + 5) de Dano Perfurante.\n\n***Garras.*** *Ataque Corpo a Corpo com Arma:* +7 para atingir, alcance 5 pés, um alvo. *Dano:* 13 (2d8 + 5) de Dano Cortante.\n\n---\n\n## Urso-Coruja Primordial\n\n[Urso-Coruja Primordial](https://5e.tools/bestiary.html#primeval%20owlbear_mm) *(Primeval Owlbear)*\n\n\

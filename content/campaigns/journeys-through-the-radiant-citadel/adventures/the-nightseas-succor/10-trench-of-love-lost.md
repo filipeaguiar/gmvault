@@ -1,8 +1,7 @@
 ---
 title: Cena 10 - Trench of Love Lost
 weight: 100
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 10 - Trench of Love Lost
 visibility: gm

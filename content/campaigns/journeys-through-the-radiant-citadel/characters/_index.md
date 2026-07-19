@@ -1,7 +1,6 @@
 ---
 title: Personagens dos Jogadores
-params:
-  kind: characters_index
+type: characters_index
 draft: false
 titulo_pt_br: Personagens dos Jogadores
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: Noble
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "---\ntitle: \"ZXQHAGANNISMODULEANMTPMDV\"\ntags: [ZXQPROTECTED]\n---\n\n# Annis Hag\n\n*Criatura Grande, Caótica e Maligna*\n\n**Classe de Armadura** 17 (armadura natural)  \n**Pontos de Vida** 90 (12d10 + 24) (ZXQHPFORMULAANMTPMDV)  \n**Deslocamento** 9 m, escalada 6 m\n\n**CA** 17 | **PV** 90 | **Desloc.** 9 m, escalada 6 m \n---|---|---\n**FOR**  | **DES**  | **CON**  \n19 (+4) | 15 (+2) | 14 (+2)  \n**INT**  | **SAB**  | **CAR**  \n12 (+1) | 14 (+2) | 14 (+2)\n\n**Testes de Resistência** Con +5, Sab +5  \n**Perícias** Atletismo +7, Furtividade +5  \n**Resistências a Dano** Contundente, Perfurante e Cortante de Ataques Não Mágicos  \n**Sentidos** visão no escuro 18 m, Percepção passiva 12  \n**Idiomas** Comum, Dialeto Abissal, Dialeto Infernal, Gigante, Silvestre  \n**Nível de Desafio** 5 (1.800 XP) PB +3\n\n## Traits\n\n***Ferrões de Ferro (3/Dia).*** Quando a bruxa Annis atinge com um ataque corpo a corpo, ela pode fazer com que espinhos de ferro brotem de seu corpo no mesmo\

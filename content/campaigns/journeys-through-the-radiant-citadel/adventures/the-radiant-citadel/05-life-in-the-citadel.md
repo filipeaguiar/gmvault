@@ -1,8 +1,7 @@
 ---
 title: Cena 5 - Life in the Citadel
 weight: 50
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 5 - Vida na Cidadela
 visibility: gm

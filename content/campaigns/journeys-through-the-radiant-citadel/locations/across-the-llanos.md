@@ -1,7 +1,6 @@
 ---
 title: Across the Llanos
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Através dos Llanos
 visibility: gm

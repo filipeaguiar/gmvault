@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Afsoun Ghorbani'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Afsoun Ghorbani'
 visibility: players

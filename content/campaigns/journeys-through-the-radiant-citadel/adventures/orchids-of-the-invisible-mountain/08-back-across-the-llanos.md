@@ -1,8 +1,7 @@
 ---
 title: Cena 8 - Back across the Llanos
 weight: 80
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 8 - De volta pelos Llanos
 visibility: gm

@@ -4,8 +4,7 @@ summary: Os aventureiros desvendam uma misteriosa sabotagem no Mercado de Dyn Si
 draft: false
 status: ready
 visibility: players
-params:
-  kind: journal_entry
+type: journal_entry
 titulo_pt_br: 'Capítulo I: O Mercado de Dyn Singh'
 translation:
   source_language: en

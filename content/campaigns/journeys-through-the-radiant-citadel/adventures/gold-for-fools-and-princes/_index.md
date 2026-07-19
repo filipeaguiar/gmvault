@@ -1,8 +1,7 @@
 ---
 title: Gold for Fools and Princes
 weight: 80
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Ouro para Tolos e Príncipes
 visibility: gm

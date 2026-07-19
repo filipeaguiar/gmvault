@@ -1,7 +1,6 @@
 ---
 title: Handouts e Materiais
-params:
-  kind: handouts_index
+type: handouts_index
 draft: false
 titulo_pt_br: Apostilas e Materiais
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: Starting the Adventure
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm

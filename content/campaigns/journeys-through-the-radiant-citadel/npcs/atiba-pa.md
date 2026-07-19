@@ -7,8 +7,7 @@ status: draft
 tags:
 - npc
 - importado
-params:
-  kind: npc
+type: npc
 stats_meta: Medium humanoid, leal e bom
 stats:
   ac: '10'

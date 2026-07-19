@@ -7,8 +7,7 @@ summary: "Condição de status ou efeito mecânico do compêndio."
 tags: []
 visibility: "public"
 status: "ready"
-params:
-  kind: "condition"
+type: "condition"
 ---
 
 ### Efeitos da Condição

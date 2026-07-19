@@ -8,8 +8,7 @@ tags: []
 visibility: "gm"
 status: "active"
 system: "D&D 5e"
-params:
-  kind: "campaign"
+type: "campaign"
 ---
 
 Insira a descrição geral, pitch, tom e temas da campanha aqui.

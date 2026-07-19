@@ -1,8 +1,7 @@
 ---
 title: Beyond the Radiant Citadel
 weight: 160
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Além da Cidadela Radiante
 visibility: gm

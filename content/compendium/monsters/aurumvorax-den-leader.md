@@ -1,7 +1,6 @@
 ---
 title: Aurumvorax Den Leader
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Estou pronto para receber o rascunho importado do 5e.tools (JTTRC) e realizar a tradução com revisão editorial. Por favor, envie o texto a ser trabalhado.

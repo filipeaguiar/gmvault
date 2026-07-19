@@ -1,7 +1,6 @@
 ---
 title: Spy
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "---\nnome: \"ZXQGLOSSARY[Flumph (pt-BR)]\"\nsize: \"Pequeno\"\ntype: \"Aberração\"\ntendência: \"ZXQGLOSSARY[Bondoso]\"\nac: \"12\"\nhp: \"7\"\niniciativa: \"2\"\nvelocidade: \"5 ft., voo 30 ft.\"\nstats: [6, 15, 10, 14, 14, 11]\nhabilidades:\n  - \"ZXQGLOSSARY[Acrobacia] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\n  - \"ZXQGLOSSARY[Furtividade] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\n  - \"ZXQGLOSSARY[Religião] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\nvulnerabilities: \"ZXQGLOSSARY[psíquico]\"\nsentidos: \"ZXQGLOSSARY[visão no escuro] 60 ft., ZXQGLOSSARY[Percepção passiva] 12\"\nidiomas: \"compreende ZXQGLOSSARY[Subterrâneo Comum] e ZXQGLOSSARY[Comum] mas não pode falar, telepatia 60 ft.\"\ndesafio: \"ZXQGLOSSARY[ND] 1/8\"\nvvo: \"ZXQGLOSSARY[Arcano] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4, ZXQGLOSSARY[História] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\nresistances: \"\"\nimmune: \"\"\nconditionImmune: \"\"\ndetalhes:\n  - \"ZXQGLOSSARY[Tendência]\"\n\

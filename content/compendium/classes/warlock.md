@@ -1,7 +1,6 @@
 ---
 title: Warlock
-params:
-  kind: class
+type: class
 draft: false
 weight: 10
 summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.

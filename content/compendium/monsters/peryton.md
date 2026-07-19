@@ -1,7 +1,6 @@
 ---
 title: Peryton
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: '>## Cavaleiro Imortal

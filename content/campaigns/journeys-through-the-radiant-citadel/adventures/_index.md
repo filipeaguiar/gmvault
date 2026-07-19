@@ -1,7 +1,6 @@
 ---
 title: Adventures
-params:
-  kind: adventures_index
+type: adventures_index
 draft: false
 titulo_pt_br: Aventuras
 visibility: gm

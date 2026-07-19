@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Lu Zhong Yin'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Lu Zhong Yin'
 visibility: players

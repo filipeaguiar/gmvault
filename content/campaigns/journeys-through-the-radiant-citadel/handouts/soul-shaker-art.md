@@ -1,7 +1,6 @@
 ---
 title: 'Arte: soul shaker'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: soul shaker'
 visibility: players

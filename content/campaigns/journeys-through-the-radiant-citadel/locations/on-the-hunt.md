@@ -1,7 +1,6 @@
 ---
 title: On the Hunt
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: À Caça
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: Exploring Etizalan
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Explorando Etizalan
 visibility: gm

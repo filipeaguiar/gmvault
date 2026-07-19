@@ -1,7 +1,6 @@
 ---
 title: Pedestal of Judgment
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Pedestal do Julgamento
 visibility: gm

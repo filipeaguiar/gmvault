@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Kun Ahn-Jun'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Kun Ahn-Jun'
 visibility: players

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: cultist'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: cultist'
 visibility: players

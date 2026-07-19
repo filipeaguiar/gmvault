@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - The River of Gold
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - O Rio de Ouro
 visibility: gm

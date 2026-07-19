@@ -1,8 +1,7 @@
 ---
 title: Cena 12 - Pari
 weight: 120
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 12 - Pari
 visibility: gm

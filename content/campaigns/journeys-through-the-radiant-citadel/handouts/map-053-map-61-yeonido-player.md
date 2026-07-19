@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: Exploring Yeonido (Player Version)'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: scout'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: scout'
 visibility: players

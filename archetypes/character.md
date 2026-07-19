@@ -1,8 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-params:
-  kind: "character"
+type: "character"
 draft: false
 weight: 10
 summary: "Ficha/Perfil de personagem do jogador."

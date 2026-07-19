@@ -1,7 +1,6 @@
 ---
 title: The Swamp Forest
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: A Floresta Pantanosa
 visibility: gm

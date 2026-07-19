@@ -1,7 +1,6 @@
 ---
 title: Features
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Características
 visibility: gm

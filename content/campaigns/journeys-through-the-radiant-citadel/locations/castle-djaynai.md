@@ -1,7 +1,6 @@
 ---
 title: Castle Djaynai
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Castelo Djaynai
 visibility: gm

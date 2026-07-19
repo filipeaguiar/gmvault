@@ -12,8 +12,7 @@ race_info:
   ability_score: "+2 em um atributo"
   speed: "9m"
   languages: "Comum"
-params:
-  kind: "race"
+type: "race"
 ---
 
 ### Traços Raciais

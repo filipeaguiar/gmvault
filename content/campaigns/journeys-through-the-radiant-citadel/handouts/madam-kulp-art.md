@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Madam Kulp'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Madam Kulp'
 visibility: players

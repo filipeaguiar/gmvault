@@ -1,8 +1,7 @@
 ---
 title: Orchids of the Invisible Mountain
 weight: 150
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Orquídeas da Montanha Invisível
 visibility: gm

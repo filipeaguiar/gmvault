@@ -1,7 +1,6 @@
 ---
 title: Purple Worm
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: Por favor, forneça o texto do rascunho do 5e.tools (MM) que precisa ser traduzido e revisado editorialmente.

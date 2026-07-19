@@ -1,7 +1,6 @@
 ---
 title: Legends and Lore
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Lendas e Conhecimento
 visibility: gm

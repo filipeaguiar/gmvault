@@ -1,8 +1,7 @@
 ---
 title: Cena 5 - Castle Djaynai
 weight: 50
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 5 - Castelo Djaynai
 visibility: gm

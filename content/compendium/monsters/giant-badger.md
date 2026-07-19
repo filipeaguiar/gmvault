@@ -1,7 +1,6 @@
 ---
 title: Giant Badger
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "---\nname: \"Shambling Mound\"\nsize: \"Enorme\"\ntype: \"planta\"\nsubtype: \"\"\nalignment: \"neutro e mau\"\nac: \"15 (armadura natural)\"\nhp: \"136 (13d12 + 52)\"\nspeed: \"6 m, natação 6 m\"\nstats:\n  - 18\n  - 8\n  - 18\n  - 5\n  - 10\n  - 5\ndamage_vulnerabilities: \"\"\ndamage_resistances: \"frio, fogo\"\ndamage_immunities: \"relâmpago\"\ncondition_immunities: \"cego, ensurdecido, exausto\"\nsenses: \"visão às cegas 18 m (cego além deste raio), Percepção passiva 10\"\nlanguages: \"—\"\ncr: \"5\"\ntraits:\n  - name: \"Absorção de Relâmpago\"\n    desc: \"Sempre que o amontoado sofrer dano de relâmpago, ele não sofre dano e em vez disso recupera uma quantidade de pontos de vida igual ao dano de relâmpago causado.\"\n  - name: \"Agarrão Devorador\"\n    desc: \"Enquanto o amontoado estiver agarrando uma criatura (através de seu ataque Engolfar), ele pode usar uma ação bônus para comprimi-la. A criatura agarrada sofre 3d6 de dano de concussão, e o amontoado recupera uma quantidade\

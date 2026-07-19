@@ -1,7 +1,6 @@
 ---
 title: Aboleth
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "```markdown\n---\nname: Manes\nsize: Tiny\ntype: fiend\nsubtype: demon\ntags:\n  - demon\nalignment: chaotic evil\nac: 9\nhp: 9\nhit_dice: 2d6 + 2\nspeed: 20 ft.\nstats:\n  - 10\n  - 11\n  - 12\n  - 5\n  - 8\n  - 3\ndamage_resistances: cold, fire, lightning\ndamage_immunities: poison\ncondition_immunities: charmed, frightened, poisoned\nsenses: darkvision 60 ft., passive Perception 9\nlanguages: understands Abyssal but can't speak\ncr: 0.125\nreaction:\n  - name: '**Acidic Ichor.**'\n    desc: When the manes is slain, its dissolving body sprays acid in a 5-foot line in a direction of its choosing. Each creature in that area must succeed on a DC 10 Dexterity saving throw or take 2 (1d4) acid damage.\n\"trait\":\n  - name: '**Death Throes.**'\n    desc: When the manes dies, it leaves behind a cloud of vapor that dissipates at the end of the turn, and a crawling mass of maggots that rapidly dissipates.\nattacks:\n  - name: '**Claw.**'\n    desc: \"_Melee Weapon Attack:_ +2 to hit,\

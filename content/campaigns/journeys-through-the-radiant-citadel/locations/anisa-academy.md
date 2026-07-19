@@ -1,7 +1,6 @@
 ---
 title: Anisa Academy
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Anisa Academy
 visibility: gm

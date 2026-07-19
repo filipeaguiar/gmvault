@@ -1,7 +1,6 @@
 ---
 title: Trench of Love Lost
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Trincheira do Amor Perdido
 visibility: gm

@@ -1,8 +1,7 @@
 ---
 title: Cena 6 - The Night Revelers
 weight: 60
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 6 - Os Foliões Noturnos
 visibility: gm

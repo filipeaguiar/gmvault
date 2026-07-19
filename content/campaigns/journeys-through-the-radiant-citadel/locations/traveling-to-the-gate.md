@@ -1,7 +1,6 @@
 ---
 title: Traveling to the Gate
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Viajando para o Portal
 visibility: gm

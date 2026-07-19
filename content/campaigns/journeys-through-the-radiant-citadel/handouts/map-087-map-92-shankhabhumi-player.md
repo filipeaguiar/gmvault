@@ -1,7 +1,6 @@
 ---
 title: 'Mapa: 087 Map 92 Shankhabhumi Player'
-params:
-  kind: handout
+type: handout
 draft: false
 visibility: players
 status: published

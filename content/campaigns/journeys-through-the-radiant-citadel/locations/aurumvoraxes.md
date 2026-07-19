@@ -1,7 +1,6 @@
 ---
 title: Aurumvoraxes
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Aurumvoraxes
 visibility: gm

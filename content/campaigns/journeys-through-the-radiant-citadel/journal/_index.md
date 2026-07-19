@@ -1,7 +1,6 @@
 ---
 title: Journal
-params:
-  kind: journal_index
+type: journal_index
 draft: false
 titulo_pt_br: Diário
 visibility: gm

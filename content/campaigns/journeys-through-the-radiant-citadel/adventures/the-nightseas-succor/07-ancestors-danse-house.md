@@ -1,8 +1,7 @@
 ---
 title: Cena 7 - Ancestors' Danse House
 weight: 70
-params:
-  kind: scene
+type: scene
 draft: true
 titulo_pt_br: Cena 7 - Casa de Dança dos Ancestrais
 visibility: gm

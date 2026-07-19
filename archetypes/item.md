@@ -13,8 +13,7 @@ item_info:
   cost: "1 po"
   weight: "1 kg"
   properties: ""
-params:
-  kind: "item"
+type: "item"
 ---
 
 Insira as regras especiais de uso do item aqui.

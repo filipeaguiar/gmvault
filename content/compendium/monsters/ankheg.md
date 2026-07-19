@@ -1,7 +1,6 @@
 ---
 title: Ankheg
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "---\nMorkoth\nCriaturas estranhas e cefalópodes que se deleitam com a cobiça e a corrupção, os morkoths comandam ilhas de outro mundo. Um morkoth sobreviveu às eras que alteram a mente, habitando focos de poder distorcido e litorais alienígenas nas profundezas de reinos como o Plano Astral, o Plano Etéreo ou o Subterrâneo. Seu poder sobrenatural emana de um nexo central de magia onde o morkoth faz seu covil. O covil de um morkoth permite que ele exerça controle sobre o ambiente e a realidade local. Por meio de vastas extensões de tempo, um morkoth pode remodelar seu domínio usando esse controle, transformando-o em um nexo de realidades convergentes ou um estranho reino mágico.\nOs morkoths raramente constroem ou criam por si mesmos, mas sim saqueiam, roubam e corromem de outros. Eles são piratas de reinos além, tomando o que desejam e usando os tesouros de conquistadores, imperadores e deuses mortos para enfeitar seus covis. O covil de um morkoth é um testemunho de sua cobiça,\

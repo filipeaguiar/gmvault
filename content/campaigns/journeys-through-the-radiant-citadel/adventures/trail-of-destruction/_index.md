@@ -1,8 +1,7 @@
 ---
 title: Trail of Destruction
 weight: 90
-params:
-  kind: adventure
+type: adventure
 draft: false
 titulo_pt_br: Rastro de Destruição
 visibility: gm

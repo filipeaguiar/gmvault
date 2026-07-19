@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Xocopol'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Xocopol'
 visibility: players

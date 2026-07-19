@@ -1,8 +1,7 @@
 ---
 title: Cena 8 - Entering the Citadel
 weight: 80
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 8 - Entrando na Cidadela
 visibility: gm

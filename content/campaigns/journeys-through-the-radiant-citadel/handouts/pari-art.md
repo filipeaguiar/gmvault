@@ -1,7 +1,6 @@
 ---
 title: 'Arte: pari'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: pari'
 visibility: players

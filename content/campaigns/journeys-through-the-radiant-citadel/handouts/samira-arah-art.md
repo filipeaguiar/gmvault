@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Samira Arah'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Samira Arah'
 visibility: players

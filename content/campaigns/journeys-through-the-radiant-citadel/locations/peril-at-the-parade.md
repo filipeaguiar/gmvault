@@ -1,7 +1,6 @@
 ---
 title: Peril at the Parade
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Perigo no Desfile
 visibility: gm

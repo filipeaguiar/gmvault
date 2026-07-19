@@ -1,8 +1,7 @@
 ---
 title: Cena 4 - The Old City
 weight: 40
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 4 - A Cidade Velha
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: displacer beast'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: displacer beast'
 visibility: players

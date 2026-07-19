@@ -1,7 +1,6 @@
 ---
 title: 'Arte: dragon turtle'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: dragon turtle'
 visibility: players

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Kianna'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Kianna'
 visibility: players

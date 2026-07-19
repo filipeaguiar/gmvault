@@ -10,8 +10,7 @@ status: "ready"
 
 feat_info:
   prerequisite: "Força 13 ou mais"
-params:
-  kind: "feat"
+type: "feat"
 ---
 
 Insira os benefícios do talento aqui.

@@ -1,8 +1,7 @@
 ---
 title: Cena 7 - Hollow Mine
 weight: 70
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 7 - Mina Oca
 visibility: gm

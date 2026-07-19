@@ -1,7 +1,6 @@
 ---
 title: 'Arte: otyugh'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: otyugh'
 visibility: players

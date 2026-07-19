@@ -611,7 +611,7 @@ def build_document(entry: dict[str, Any], record: CatalogRecord, catalog: FiveET
     visibility = "gm" if kind in {"monster", "magic_item"} and "campaign" in entry.get("direct_origins", []) else "public"
     metadata: dict[str, Any] = {
         "title": record.name,
-        "params": {"kind": kind},
+        "type": kind,
         "draft": True,
         "weight": 10,
         "summary": f"Draft imported from 5e.tools ({record.source}). Requires translation and editorial review.",

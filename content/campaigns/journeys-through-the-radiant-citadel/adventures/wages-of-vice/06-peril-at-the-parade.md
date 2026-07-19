@@ -1,8 +1,7 @@
 ---
 title: Cena 6 - Peril at the Parade
 weight: 60
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 6 - Perigo no Desfile
 visibility: gm

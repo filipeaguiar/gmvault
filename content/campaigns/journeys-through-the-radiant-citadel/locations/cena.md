@@ -1,7 +1,6 @@
 ---
 title: Cena
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Cena
 visibility: gm

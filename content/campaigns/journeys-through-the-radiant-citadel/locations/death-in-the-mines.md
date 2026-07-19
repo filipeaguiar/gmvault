@@ -1,7 +1,6 @@
 ---
 title: Death in the Mines
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Morte nas Minas
 visibility: gm

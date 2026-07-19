@@ -7,8 +7,7 @@ summary: "Antecedente (Background) de personagem do compêndio."
 tags: []
 visibility: "public"
 status: "ready"
-params:
-  kind: "background"
+type: "background"
 ---
 
 **Proficiências em Perícias:** [Ex: Sobrevivência, Atletismo]  

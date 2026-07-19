@@ -1,7 +1,6 @@
 ---
 title: Groups of the Citadel
-params:
-  kind: location
+type: location
 draft: false
 titulo_pt_br: Grupos da Cidadela
 visibility: gm

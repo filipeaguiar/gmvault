@@ -5,8 +5,8 @@ O front matter pode declarar `params.content_role` para indicar que uma página 
 Valor implementado:
 
 ```yaml
+type: scene
 params:
-  kind: scene
   content_role: introduction
 ```
 

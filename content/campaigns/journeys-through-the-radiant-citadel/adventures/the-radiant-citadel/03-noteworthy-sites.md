@@ -1,8 +1,7 @@
 ---
 title: Cena 3 - Noteworthy Sites
 weight: 30
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Área 3 - Locais Notáveis
 visibility: gm

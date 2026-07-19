@@ -1,7 +1,6 @@
 ---
 title: Banshee
-params:
-  kind: monster
+type: monster
 draft: false
 weight: 10
 summary: "{\n  \"name\": \"Chuul\",\n  \"source\": \"MM\",\n  \"page\": 0,\n  \"otherSources\": [],\n  \"size\": \"L\",\n  \"type\": \"aberração\",\n  \"tag\": \"nenhum\",\n  \"alignment\": [\n    \"C\",\n    \"M\"\n  ],\n  \"ac\": [\n    {\n      \"ac\": 16,\n      \"from\": [\n        \"armadura natural\"\n      ]\n    }\n  ],\n  \"hp\": {\n    \"average\": 93,\n    \"formula\": \"11d10 + 33\"\n  },\n  \"speed\": {\n    \"walk\": 30,\n    \"swim\": 30\n  },\n  \"str\": 19,\n  \"dex\": 10,\n  \"con\": 16,\n  \"int\": 5,\n  \"wis\": 11,\n  \"cha\": 5,\n  \"skill\": {\n    \"perception\": \"+4\"\n  },\n  \"senses\": [\n    \"visão no escuro 60 pés\"\n  ],\n  \"passive\": 14,\n  \"immune\": [\n    \"veneno\"\n  ],\n  \"conditionImmune\": [\n    \"envenenado\"\n  ],\n  \"languages\": [\n    \"entende o idioma das profundezas, mas não fala\"\n  ],\n  \"cr\": \"4\",\n  \"trait\": [\n    {\n      \"name\": \"Anfíbio\",\n      \"entries\": [\n        \"O chuul pode respirar ar e água.\"\n     \

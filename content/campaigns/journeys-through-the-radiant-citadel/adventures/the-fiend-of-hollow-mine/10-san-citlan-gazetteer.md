@@ -1,8 +1,7 @@
 ---
 title: Cena 10 - San Citlán Gazetteer
 weight: 100
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 10 - San Citlán Guia Geográfico
 visibility: gm

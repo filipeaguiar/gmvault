@@ -1,8 +1,7 @@
 ---
 title: Cena 3 - Cycle of Dread
 weight: 30
-params:
-  kind: scene
+type: scene
 draft: false
 titulo_pt_br: Cena 3 - Ciclo do Pavor
 visibility: gm

@@ -1,7 +1,6 @@
 ---
 title: 'Arte: beholder'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: beholder'
 visibility: players

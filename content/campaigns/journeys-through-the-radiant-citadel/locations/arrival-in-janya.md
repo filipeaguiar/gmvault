@@ -1,7 +1,6 @@
 ---
 title: Arrival in Janya
-params:
-  kind: location
+type: location
 draft: true
 titulo_pt_br: Chegada em Janya
 visibility: gm

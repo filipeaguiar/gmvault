@@ -1,7 +1,6 @@
 ---
 title: 'Arte: Young-Gi'
-params:
-  kind: handout
+type: handout
 draft: false
 titulo_pt_br: 'Arte: Young-Gi'
 visibility: players
