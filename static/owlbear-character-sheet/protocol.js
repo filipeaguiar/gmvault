@@ -45,6 +45,9 @@ export const DicePlusChannel = Object.freeze({
 /** Default timeout (ms) waiting for Dice+ readiness response. */
 export const READY_TIMEOUT_MS = 3000;
 
+/** Delay before retrying readiness while the character iframe remains open. */
+export const READY_RETRY_MS = 1000;
+
 /** Default timeout (ms) waiting for a roll result after request. */
 export const ROLL_TIMEOUT_MS = 10000;
 

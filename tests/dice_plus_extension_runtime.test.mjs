@@ -86,6 +86,8 @@ const {
   SOURCE,
   MessageType,
   DicePlusChannel,
+  READY_TIMEOUT_MS,
+  READY_RETRY_MS,
   createEnvelope,
 } = protocol;
 const {
@@ -142,6 +144,35 @@ test("readiness uses Owlbear event.data and ignores the request echo", async () 
   assert.equal(obr.listenerCount(DicePlusChannel.IS_READY), 0);
   const readyMessage = iframe.messages.find((entry) => entry.data.type === MessageType.DICE_READY);
   assert.equal(readyMessage.data.payload.ready, true);
+  destroyBridge();
+});
+
+test("readiness retries when Dice+ starts after the initial probe", async () => {
+  const obr = createOBRMock();
+  const iframe = createIframe();
+  initBridge(obr, { id: "player-late", name: "Tardio" });
+  bindIframe(iframe);
+
+  assert.equal(
+    obr.sent.filter((entry) => entry.channel === DicePlusChannel.IS_READY).length,
+    1,
+  );
+
+  await new Promise((resolve) => {
+    setTimeout(resolve, READY_TIMEOUT_MS + READY_RETRY_MS + 50);
+  });
+
+  const readinessRequests = obr.sent.filter(
+    (entry) => entry.channel === DicePlusChannel.IS_READY,
+  );
+  assert.equal(readinessRequests.length, 2);
+
+  obr.deliver(DicePlusChannel.IS_READY, {
+    requestId: readinessRequests[1].data.requestId,
+    ready: true,
+  });
+
+  assert.equal(isDiceReady(), true);
   destroyBridge();
 });
 

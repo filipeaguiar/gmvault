@@ -17,6 +17,7 @@ import {
   MessageType,
   DicePlusChannel,
   READY_TIMEOUT_MS,
+  READY_RETRY_MS,
   ROLL_TIMEOUT_MS,
   createEnvelope,
   validateEnvelope,
@@ -200,29 +201,35 @@ function _checkDiceReady() {
     DicePlusChannel.IS_READY,
     requestPayload,
     { destination: "ALL" }
-  ).catch(() => {
-    if (_diceReadyUnsub) {
-      _diceReadyUnsub();
-      _diceReadyUnsub = null;
-    }
-    if (_readyCheckTimer) {
-      clearTimeout(_readyCheckTimer);
-      _readyCheckTimer = null;
-    }
-    _pendingReadyId = null;
-    _setDiceReady(false);
-  });
+  ).catch(() => _retryDiceReadyCheck(requestPayload.requestId));
 
-  // Timeout: Dice+ not available.
+  // Dice+ can finish loading after this extension, particularly on mobile
+  // Chromium. Keep probing while this iframe is active instead of treating a
+  // single early timeout as a permanent absence.
+  _readyCheckTimer = setTimeout(() => {
+    _retryDiceReadyCheck(requestPayload.requestId);
+  }, READY_TIMEOUT_MS);
+}
+
+function _retryDiceReadyCheck(requestId) {
+  // A later request may already be active, or the iframe may have changed.
+  if (!_iframeWindow || _pendingReadyId !== requestId) return;
+
+  if (_diceReadyUnsub) {
+    _diceReadyUnsub();
+    _diceReadyUnsub = null;
+  }
+  if (_readyCheckTimer) {
+    clearTimeout(_readyCheckTimer);
+    _readyCheckTimer = null;
+  }
+  _pendingReadyId = null;
+  _setDiceReady(false);
+
   _readyCheckTimer = setTimeout(() => {
     _readyCheckTimer = null;
-    _pendingReadyId = null;
-    if (_diceReadyUnsub) {
-      _diceReadyUnsub();
-      _diceReadyUnsub = null;
-    }
-    _setDiceReady(false);
-  }, READY_TIMEOUT_MS);
+    if (_iframeWindow && !_diceReady) _checkDiceReady();
+  }, READY_RETRY_MS);
 }
 
 function _setDiceReady(ready) {

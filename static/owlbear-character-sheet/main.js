@@ -6,7 +6,7 @@
  * Vanilla JavaScript, no frameworks, no bundler.
  */
 
-import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady, normalizePlayerIdentity } from "./bridge.js?v=1.0.4";
+import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady, normalizePlayerIdentity } from "./bridge.js?v=1.0.5";
 
 // ---------------------------------------------------------------------------
 // SDK Import
