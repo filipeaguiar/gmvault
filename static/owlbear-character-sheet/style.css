@@ -13,6 +13,7 @@
   --accent-hover: #dbbf88;
   --border: #44445a;
   --error: #e06060;
+  --success: #63c174;
   --focus-ring: #6ea8c9;
   --font-family: "Alegreya", Georgia, "Times New Roman", serif;
 }
@@ -62,13 +63,24 @@ body {
   display: none;
 }
 
-#status-bar.status-error {
+#status-bar.status-error,
+#status-bar.status-disconnected {
   color: var(--error);
   font-weight: 700;
 }
 
 #status-bar.status-ok {
-  color: var(--accent);
+  color: var(--success);
+  font-weight: 700;
+}
+
+#status-bar.status-error::before,
+#status-bar.status-disconnected::before {
+  content: "✕ ";
+}
+
+#status-bar.status-ok::before {
+  content: "✓ ";
 }
 
 /* --- Character selector --- */

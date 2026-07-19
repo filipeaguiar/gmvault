@@ -6,7 +6,7 @@
  * Vanilla JavaScript, no frameworks, no bundler.
  */
 
-import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady, normalizePlayerIdentity } from "./bridge.js?v=1.0.5";
+import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady, normalizePlayerIdentity } from "./bridge.js?v=1.0.6";
 
 // ---------------------------------------------------------------------------
 // SDK Import
@@ -50,6 +50,7 @@ function setStatus(text, type) {
   statusBar.className = "";
   if (type === "error") statusBar.classList.add("status-error");
   else if (type === "ok") statusBar.classList.add("status-ok");
+  else if (type === "disconnected") statusBar.classList.add("status-disconnected");
 }
 
 function saveSelection(url) {
@@ -280,12 +281,14 @@ async function initOBR() {
         await fetchCatalog();
         return;
       }
-      setStatus(`Conectado: ${playerInfo.name}`, "ok");
+      setStatus(`Conectado: ${playerInfo.name} — Dice+ desconectado`, "disconnected");
 
       // Initialize Dice+ bridge only after a valid identity is available.
       initBridge(OBR, playerInfo, (ready) => {
         if (ready) {
           setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ ativo`, "ok");
+        } else {
+          setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ desconectado`, "disconnected");
         }
       });
       bridgeInitialized = true;
