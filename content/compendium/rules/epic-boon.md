@@ -4,19 +4,20 @@ params:
   kind: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Dádiva Épica'
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - compendio
 - classe
-visibility: "public"
+visibility: public
 status: draft
-titulo_pt_br: Dádiva Épica
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Epic Boon
+  remote_file: class/class-barbarian.json
+  remote_key: classFeature
+  remote_id: 1e0349f8bd14b2f7
 ---
 
-Você ganha um category=EB ou outro feats.html de sua escolha para o qual você se qualifique. XPHB é recomendado.
+You gain an category=EB or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.

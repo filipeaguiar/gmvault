@@ -26,4 +26,4 @@ item_info:
   rarity: None
 ---
 
-Using XPHB, an Ink Pen is used to write or draw.
+Using Ink, an Ink Pen is used to write or draw.

@@ -4,21 +4,22 @@ params:
   kind: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Veneno (Custo: 1d6)'
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - compendio
 - classe
-visibility: "public"
+visibility: public
 status: draft
-titulo_pt_br: 'Veneno (Custo: 1d6)'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: 'Poison (Cost: 1d6)'
+  remote_file: class/class-rogue.json
+  remote_key: classFeature
+  remote_id: a65591d762674d1c
 ---
 
-Você adiciona uma toxina ao seu golpe, forçando o alvo a fazer um teste de resistência de Constituição. Em caso de falha no teste de resistência, o alvo fica sob a condição XPHB por 1 minuto. No final de cada um de seus turnos, o alvo XPHB repete o teste de resistência, encerrando o efeito sobre si mesmo em caso de sucesso.
+You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success.
 
-Para usar este efeito, você deve ter um XPHB consigo.
+To use this effect, you must have a Poisoner's Kit on your person.

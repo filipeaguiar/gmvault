@@ -540,39 +540,9 @@ def prompt_choices_for_feature(feature_name, level):
     return choices
 
 
-def create_rule_stub(name, entries):
-    slug = slugify(name)
-    ref = f"/compendium/rules/{slug}/"
-    path = f"content/compendium/rules/{slug}.md"
-    if os.path.exists(path):
-        return ref
-
-    description = parse_entries(entries)
-    if not description:
-        description = f"Descrição da característica {name}."
-
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    markdown = f"""---
-title: "{name}"
-params:
-  kind: "rule"
-draft: false
-weight: 10
-summary: "Característica de classe: {name}."
-tags:
-  - compendio
-  - regra
-  - classe
-visibility: "public"
-status: "ready"
----
-
-{description}
-"""
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(markdown)
-    print(f"  [Compêndio] Criado stub de característica: {path}")
-    return ref
+def create_rule_stub(name, entries, *, source=None):
+    """Compatibility wrapper for the shared provenance-aware rule serializer."""
+    return dnd_utils.create_rule_stub(name, entries, source=source)
 
 
 def print_header(title):
@@ -1206,7 +1176,7 @@ def main():
         choices = feature_choices.get(name, [])
         if choices:
             for choice in choices:
-                ref = create_rule_stub(choice["name"], [choice["description"]])
+                ref = create_rule_stub(choice["name"], [choice["description"]], source=f.get("source"))
                 feature_actions.append({
                     "name": choice["name"],
                     "ref": ref,
@@ -1216,7 +1186,7 @@ def main():
                 })
         else:
             try:
-                ref = create_rule_stub(name, entries)
+                ref = create_rule_stub(name, entries, source=f.get("source"))
                 roll_formula = extract_roll_formula(name, desc, level, mods)
 
                 action_item = {

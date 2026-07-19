@@ -530,7 +530,9 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
         if not name:
             continue
         print(f"  → {name}")
-        ref = dnd_utils.create_rule_stub(name, feat.get("entries", []))
+        ref = dnd_utils.create_rule_stub(
+            name, feat.get("entries", []), source=feat.get("source")
+        )
         if ref:
             feature_actions.append({
                 "name": name,

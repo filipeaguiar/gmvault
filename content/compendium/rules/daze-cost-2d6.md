@@ -4,19 +4,20 @@ params:
   kind: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Atordoar (Custo: 2d6).'
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - compendio
 - classe
-visibility: "public"
+visibility: public
 status: draft
-titulo_pt_br: 'Ofuscar (Custo: 2d6)'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: 'Daze (Cost: 2d6)'
+  remote_file: class/class-rogue.json
+  remote_key: classFeature
+  remote_id: 8414f42991912f12
 ---
 
-O alvo deve ser bem-sucedido em um teste de resistência de Constituição ou, em seu próximo turno, poderá fazer apenas uma das seguintes opções: mover-se, realizar uma ação ou uma XPHB.
+The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.

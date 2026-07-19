@@ -218,29 +218,32 @@ status: "ready"
 
 
 def clean_5etools_tags(text):
-    # If the tag is 'damage' or 'dice', wrap it in <span class="dice+" data-roll-notation="notation">label</span>
+    """Remove 5e.tools inline tags while preserving their visible label.
+
+    The tag syntax is ``{@type name|source|display text}``. The optional source
+    is metadata, not text for display; a display label is only present after it.
+    """
     def repl(match):
         tag_type = match.group(1).lower()
-        val = match.group(2)
-        label = match.group(3)
-
-        final_label = val
-        if label:
-            if '|' in label:
-                final_label = label.split('|')[-1]
-            else:
-                final_label = label
+        parts = match.group(2).split("|")
+        value = parts[0]
+        # A single suffix is the source (for example, ``|XPHB``). Only a third
+        # field or later supplies an explicit visible label. Filter tags are an
+        # exception: their remaining fields are query parameters, never labels.
+        final_label = value if tag_type == "filter" else (parts[-1] if len(parts) >= 3 else value)
 
         if tag_type in ["damage", "dice", "scaledamage", "scaledice"]:
-            notation = normalize_dice_notation(val.split('|')[0])
+            notation = normalize_dice_notation(value)
+            # Dice tags use their suffix as a display label, unlike reference
+            # tags, whose second field is the source.
+            final_label = parts[-1] if len(parts) >= 2 else value
             if tag_type in ["scaledamage", "scaledice"]:
                 final_label = notation
             return f'<span class="dice+" data-roll-notation="{notation}">{final_label}</span>'
 
         return final_label
 
-    cleaned = re.sub(r'\{@(\w+) ([^\|\}]+)(?:\|([^\}]+))?\}', repl, text)
-    return cleaned
+    return re.sub(r'\{@(\w+)\s+([^}]+)\}', repl, text)
 
 def parse_entries(entries):
     lines = []
@@ -259,6 +262,57 @@ def parse_entries(entries):
                 for item in entry.get("items", []):
                     lines.append(f"* {item}")
     return clean_5etools_tags("\n\n".join(lines))
+
+
+def create_rule_stub(name, entries, *, source=None):
+    """Create a class-feature rule through the provenance-aware serializer.
+
+    Existing rule pages are retained for compatibility. New pages are resolved
+    from 5e.tools so their front matter records the remote entity required for
+    later repairs and synchronizations.
+    """
+    slug = slugify(name)
+    ref = f"/compendium/rules/{slug}/"
+    path = os.path.join("content", "compendium", "rules", f"{slug}.md")
+    if os.path.exists(path):
+        return ref
+
+    try:
+        from compendium_rebuild import sync_compendium_entity
+
+        synced = sync_compendium_entity(
+            "rule", name, slug=slug, source=str(source or "").upper() or None,
+            origin="character",
+        )
+        if synced:
+            return synced
+    except Exception as exc:
+        print(f"  [Compêndio] Não foi possível sincronizar regra {name!r}: {exc}")
+
+    # Compatibility fallback for a rule that cannot be resolved remotely.
+    description = parse_entries(entries) or f"Descrição da característica {name}."
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    markdown = f'''---
+title: "{name}"
+params:
+  kind: "rule"
+draft: false
+weight: 10
+summary: "Característica de classe: {name}."
+tags:
+  - compendio
+  - regra
+  - classe
+visibility: "public"
+status: "ready"
+---
+
+{description}
+'''
+    with open(path, "w", encoding="utf-8") as handle:
+        handle.write(markdown)
+    print(f"  [Compêndio] Criado stub sem proveniência: {path}")
+    return ref
 
 def fetch_class_json(class_name):
     url_index = DATA_BASE_URL + "class/index.json"

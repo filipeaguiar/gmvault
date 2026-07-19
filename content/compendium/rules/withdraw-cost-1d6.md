@@ -4,19 +4,20 @@ params:
   kind: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Retirada (Custo: 1d6)'
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - compendio
 - classe
-visibility: "public"
+visibility: public
 status: draft
-titulo_pt_br: 'Retirada (Custo: 1d6)'
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: 'Withdraw (Cost: 1d6)'
+  remote_file: class/class-rogue.json
+  remote_key: classFeature
+  remote_id: c0c56c7028c00d89
 ---
 
-Imediatamente após o ataque, você se move até metade do seu XPHB sem provocar Ataques de Oportunidade.
+Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.

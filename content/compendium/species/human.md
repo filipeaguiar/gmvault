@@ -4,7 +4,7 @@ params:
   kind: species
 draft: false
 weight: 10
-summary: Não recebi o texto a ser traduzido. Por favor, forneça o conteúdo do rascunho importado do 5e.tools (XPHB) para que eu possa realizar a tradução e a revisão editorial conforme as diretrizes estabelecidas. Estou preparado para aplicar toda a terminologia obrigatória e preservar os elementos protegidos assim que o material for disponibilizado.
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
@@ -27,25 +27,18 @@ species_info: &id001
   - S
   - M
 race_info: *id001
-titulo_pt_br: O duplo psíquico do vidente duergar pode se mover 20 pés adicionais durante a ação fundida, mas ele compartilha as outras velocidades do vidente.
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
 ---
 
-### Engenhoso
+### Resourceful
 
-*Você ganha XPHB sempre que termina um XPHB.*
-
-
-### Habilidoso
-
-*Você ganha proficiência em uma perícia à sua escolha.*
+You gain Heroic Inspiration whenever you finish a Long Rest.
 
 
-### Versátil
+### Skillful
 
-*Você ganha um category=o à sua escolha.*
+You gain proficiency in one skill of your choice.
+
+
+### Versatile
+
+You gain an category=o of your choice.

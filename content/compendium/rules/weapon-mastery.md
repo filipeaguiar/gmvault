@@ -4,22 +4,23 @@ params:
   kind: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Maestria de Arma.'
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - compendio
 - regra
 - classe
-visibility: "public"
+visibility: public
 status: ready
-titulo_pt_br: Maestria de Arma
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Weapon Mastery
+  remote_file: class/class-barbarian.json
+  remote_key: classFeature
+  remote_id: 0c245502cef3280a
 ---
 
-Seu treinamento com armas permite usar as propriedades de maestria de dois tipos de arma simples ou marcial, à sua escolha, com os quais tenha proficiência, como Adagas e Arcos Curtos.
+Your training with weapons allows you to use the mastery properties of two kinds of type=simple weapon;melee weapon=sand or type=martial weapon;melee weapon=sand of your choice, such as Greataxes and Handaxes. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.
 
-Sempre que terminar um XPHB, você pode alterar os tipos de armas escolhidos. Por exemplo, você poderia mudar para usar as propriedades de maestria de Cimitarras e Espadas Curtas.
+When you reach certain Barbarian levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian Features table.

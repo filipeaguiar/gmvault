@@ -33,7 +33,7 @@ You learn two cantrips of your choice from the class=Cleric, class=Druid, or cla
 
 ### Level 1 Spell
 
-Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a XPHB. You can also cast the spell using any spell slots you have.
+Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
 
 
 ### Spell Change

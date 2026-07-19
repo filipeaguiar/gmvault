@@ -140,6 +140,23 @@ def test_scaled_inline_markup_remains_dice_friendly():
     assert ">8d6</span>" in rendered
 
 
+def test_reference_tags_ignore_source_and_keep_explicit_display_label():
+    rendered = clean_5etools_tags(
+        "Roll {@variantrule Initiative|XPHB}; gain {@variantrule "
+        "Proficiency|XPHB|Proficiency Bonus}; avoid {@condition Incapacitated|XPHB}."
+    )
+
+    assert rendered == "Roll Initiative; gain Proficiency Bonus; avoid Incapacitated."
+
+
+def test_filter_tags_do_not_expose_source_query_parameters():
+    rendered = clean_5etools_tags(
+        "See {@filter Eldritch Invocation Options|optionalfeatures|feature type=EI|source=XPHB}."
+    )
+
+    assert rendered == "See Eldritch Invocation Options."
+
+
 def test_spell_sync_preserves_translation_and_markdown_body():
     fireball = spell(
         name="Fireball",

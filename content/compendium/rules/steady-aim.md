@@ -4,20 +4,21 @@ params:
   kind: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Mira Firme'
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - compendio
 - regra
 - classe
-visibility: "public"
+visibility: public
 status: ready
-titulo_pt_br: Mira Firme
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Steady Aim
+  remote_file: class/class-rogue.json
+  remote_key: classFeature
+  remote_id: 58c0f3746e69b9fd
 ---
 
-Como uma XPHB, você concede a si mesmo XPHB em sua próxima jogada de ataque no turno atual. Você pode usar esta característica apenas se não tiver se movido durante este turno, e depois de usá-la, seu XPHB é 0 até o final do turno atual.
+As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.

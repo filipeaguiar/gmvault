@@ -45,7 +45,7 @@ spell_info:
         '17': 4d8
 ---
 
-A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes <span class="dice+" data-roll-notation="1d8">1d8</span> Cold damage, and its XPHB is reduced by 10 feet until the start of your next turn.
+A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes <span class="dice+" data-roll-notation="1d8">1d8</span> Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.
 
 ## At Higher Levels
 
