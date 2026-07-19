@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 7 - Revelando a Trama
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations: null
 compendium_refs:

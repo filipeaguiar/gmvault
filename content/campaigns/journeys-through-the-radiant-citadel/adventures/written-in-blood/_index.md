@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Escrito em Sangue
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Written in Blood.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/

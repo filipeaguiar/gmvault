@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Antecedentes
 visibility: gm
 status: published
-summary: Introduction and contextualization of the adventure.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kun-ahn-jun/

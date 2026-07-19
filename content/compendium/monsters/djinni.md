@@ -3,16 +3,12 @@ title: Djinni
 type: monster
 draft: false
 weight: 10
-summary: 'Parece que você mencionou um rascunho importado do 5e.tools (MM) para tradução e revisão editorial, mas não incluiu o texto a ser traduzido.
-
-
-  Por favor, cole o conteúdo que precisa ser traduzido para que eu possa ajudá-lo.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

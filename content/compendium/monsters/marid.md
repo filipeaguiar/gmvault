@@ -3,19 +3,12 @@ title: Marid
 type: monster
 draft: false
 weight: 10
-summary: 'Entendido! Estou pronto para atuar como tradutor editorial de D&D 5e para português do Brasil.
-
-
-  Por favor, envie o texto bruto importado do 5e.tools que você deseja que eu traduza e revise editorialmente. Assim que eu receber o conteúdo, aplicarei todas as regras de tradução obrigatória, preservarei rigorosamente a formatação, e seguirei as diretrizes de terminologia e nomes protegidos conforme especificado.
-
-
-  Pode colar o texto aqui que eu faço a tradução e revisão editorial completa.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

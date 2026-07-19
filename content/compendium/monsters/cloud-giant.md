@@ -3,13 +3,12 @@ title: Cloud Giant
 type: monster
 draft: false
 weight: 10
-summary: Por favor, forneça o texto que você deseja traduzir.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

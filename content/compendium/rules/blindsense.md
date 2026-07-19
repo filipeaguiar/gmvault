@@ -3,7 +3,6 @@ title: Blindsense
 type: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Sentido Cego.'
 tags:
 - compendio
 - classe

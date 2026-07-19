@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 4 - To the Rattle
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kianna/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/

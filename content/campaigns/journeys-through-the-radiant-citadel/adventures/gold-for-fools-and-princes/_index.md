@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Ouro para Tolos e Príncipes
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Gold for Fools and Princes.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/awa/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/

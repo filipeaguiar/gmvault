@@ -3,7 +3,6 @@ title: "Eldritch Versatility"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: Eldritch Versatility."
 tags:
   - compendio
   - classe

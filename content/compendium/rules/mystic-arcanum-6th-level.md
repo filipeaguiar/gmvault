@@ -3,7 +3,6 @@ title: "Mystic Arcanum (6th level)"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: Mystic Arcanum (6th level)."
 tags:
   - compendio
   - classe

@@ -3,13 +3,12 @@ title: Koi Prawn
 type: monster
 draft: false
 weight: 10
-summary: Por favor, forneça o rascunho para tradução.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: JTTRC

@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm
 status: published
-summary: Introdução e contextualização da aventura.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/lu-zhong-yin/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/wei-feng-ying/

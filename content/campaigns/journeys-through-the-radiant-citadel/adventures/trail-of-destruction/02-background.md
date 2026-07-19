@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Antecedentes
 visibility: gm
 status: published
-summary: Introdução e contextualização da aventura.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/ollin/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/

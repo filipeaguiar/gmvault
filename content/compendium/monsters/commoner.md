@@ -3,16 +3,12 @@ title: Commoner
 type: monster
 draft: false
 weight: 10
-summary: 'Parece que você enviou apenas a instrução de contexto, sem o texto do rascunho importado do 5e.tools (MM) para eu traduzir e revisar editorialmente.
-
-
-  Por favor, cole o conteúdo do rascunho (o texto em inglês do Manual dos Monstros ou outro material) que precisa ser traduzido, e aplicarei todas as regras: terminologia obrigatória, preservação de Markdown/HTML/YAML/URLs, nomes próprios protegidos, e os termos proibidos conforme especificado.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

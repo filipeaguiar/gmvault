@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 7 - Floresta das Mãos
 visibility: gm
 status: published
-summary: Operational scene to run during the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/jijibisha-manivarshi/

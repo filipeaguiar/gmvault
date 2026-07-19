@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 2 - Tayyib Empire
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/tayyib-empire/

@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Orquídeas da Montanha Invisível
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Orchids of the Invisible Mountain.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/nene/

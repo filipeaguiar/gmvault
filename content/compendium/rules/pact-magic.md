@@ -1,45 +1,26 @@
 ---
-title: "Pact Magic"
-type: "rule"
+title: Pact Magic
+type: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Pact Magic."
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Pact Magic
+  remote_file: class/class-warlock.json
+  remote_key: classFeature
+  remote_id: db10fb2ba7fcec16
 ---
 
-Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See 10 for the general rules of spellcasting and 11 for the class=warlock.
+Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers. The entity is a voice in the shadows—its identity unclear—but its boon to you is concrete: the ability to cast spells. See 7 for the rules on spellcasting. The information below details how you use those rules with Warlock spells, which appear in the Warlock spell list later in the class's description.
 
+The number of spells on your list increases as you gain Warlock levels, as shown in the Prepared Spells column of the Warlock Features table. Whenever that number increases, choose additional Warlock spells until the number of spells on your list matches the number in the table. The chosen spells must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach level 6, for example, you learn a new Warlock spell, which can be of levels 1–3.
 
-### Cantrips
-
-You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.
-
-
-### Spell Slots
-
-The Warlock table shows how many spell slots you have to cast your class=warlock of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.
-
-For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.
-
-
-### Spells Known of 1st Level and Higher
-
-At 1st level, you know two 1st-level spells of your choice from the warlock spell list.
-
-The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
-
-Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.
-
-
-### Spellcasting Ability
-
-Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.
-
-
-### Spellcasting Focus
-
-You can use an phb as a spellcasting focus for your warlock spells.
+If another Warlock feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Warlock spells for you.

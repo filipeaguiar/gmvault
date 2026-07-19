@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 5 - Jogos do Mercado
 visibility: gm
 status: published
-summary: Cena de ação para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kasem-aroon/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/vi-aroon/

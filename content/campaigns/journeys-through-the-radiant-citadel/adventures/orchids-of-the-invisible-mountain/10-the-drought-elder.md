@@ -6,19 +6,6 @@ draft: false
 titulo_pt_br: Cena 10 - O Ancião da Seca
 visibility: gm
 status: published
-summary: '**Cena Operacional – Briefing Tático**
-
-
-  A sala é fria, iluminada apenas pelo azul pálido de um holomapa que flutua sobre a mesa de reuniões. O cheiro de ozônio e café requentado impregna o ar. O Comandante Almeida, com olheiras profundas e a voz controlada, fixa o olhar em cada um de vocês.
-
-
-  "Agentes, a situação em Meridiana escalou. A facção Quimera sequestrou o Dr. Ezra Voss. Ele é a chave para o Projeto Eco, uma arma sônica capaz de paralisar uma metrópole inteira. Inteligência sugere que a troca será feita em 12 horas. Temos duas opções: a rota subterrânea pelos túneis de manutenção, rápida mas infestada de drones sentinela, ou a infiltração aérea pela cobertura, mais lenta, porém menos vigiada."
-
-
-  Ele desativa o holomapa, deixando a sala na penumbra. "Voss está mantido no Arsenal 7, uma fortaleza brutalista no distrito industrial. A Resistência local ofereceu um guia, mas a confiança é um luxo que não podemos pagar. A decisão de como proceder é de vocês. A extração será em 8 horas. Sem margem para erros."
-
-
-  "A missão é clara: localizar o Dr. Voss, neutralizar a ameaça Quimera e garantir que o Projeto Eco não caia nas mãos erradas. Que comecem os preparativos."'
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/the-drought-elder/

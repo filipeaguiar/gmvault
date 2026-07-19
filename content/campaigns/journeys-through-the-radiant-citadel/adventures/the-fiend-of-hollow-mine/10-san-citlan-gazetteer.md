@@ -6,49 +6,6 @@ draft: false
 titulo_pt_br: Cena 10 - San Citlán Guia Geográfico
 visibility: gm
 status: published
-summary: '**CENA: A Cidade-Fantasma de Crepúsculo**
-
-
-  **Gancho:** Vocês foram contratados para resgatar um mensageiro da guilda que desapareceu a caminho de Forte Fronteira. A última pista leva a Crepúsculo, uma cidade mineira abandonada há décadas, aninhada em um desfiladeiro.
-
-
-  **Percepção Inicial (Visão e Som):**
-
-  A garganta se abre revelando a cidade fantasma. Uma neblina cor de chumbo abraça as ruínas de madeira apodrecida e os andaimes da mina, que rangem com o vento. O único som é o gotejar da água e o eco distante de um sino de vento de ferro. No centro da praça, uma fonte seca ostenta uma estátua de um anão segurando uma lamparina, sua boca congelada em um grito silencioso.
-
-
-  **O Perigo: Ecos de Cinzas**
-
-  O solo está coberto por uma fina camada de cinza vulcânica, que esconde uma ameaça: *Ecos de Cinzas*. Estas estranhas formações de fuligem imitam os últimos momentos de desespero dos antigos moradores, repetindo ações em um ciclo eterno.
-
-
-  - **Risco:** Perturbar a cinza faz com que uma nuvem se aglutine em uma figura humanoide espectral (use as estatísticas de **Espectro** com a adição da habilidade *Forma de Cinzas*: pode se mover como uma nuvem, imune a dano de armas não mágicas).
-
-  - **Pista:** Um Eco de um menino anão repete o ato de enfiar uma pequena chave enferrujada em um buraco de um barril, uma e outra vez.
-
-  - **Interação:** Um Eco de um minerador cambaleia em direção à entrada da mina, apontando freneticamente para dentro antes de se desfazer.
-
-
-  **O Local: O Poço do Lamento**
-
-  A entrada da mina principal, o Poço do Lamento, exala um ar rarefeito. O elevador da mina está destruído. As cordas apodrecidas balançam sobre um abismo de 60 metros de profundidade.
-
-
-  - **Desafio (Atletismo CD 14):** Descer pelas vigas de suporte e cordas podres. Falha resulta em uma queda de 6 metros antes de conseguir se segurar novamente.
-
-  - **Alternativa (Investigação CD 13):** Um túnel de ventilação lateral, estreito e tomado por teias de aranha, desce em espiral pela rocha.
-
-
-  **O Clímax: A Fornalha Silenciosa**
-
-  No fundo do poço, uma vasta caverna abriga uma fundição abandonada onde o mensageiro está preso. Ele está ileso, porém mudo de terror, acorrentado à grande fornalha de pedra. Ele se comunica apenas escrevendo na fuligem.
-
-
-  - **A Ameaça:** Um **Elemental da Cinza** (use **Elemental do Ar**, mas o dano é de fogo, e ele tem a habilidade *Silêncio*, que cria uma zona de silêncio mágico num raio de 3 metros, uma vez por turno) está incorporado na fornalha.
-
-  - **A Verdade:** O mensageiro não foi atacado. A entidade, nascida do desespero dos mineradores presos, está desesperadamente solitária. Ela o mantém prisioneiro porque anseia por silêncio e companhia. Ela não ataca primeiro, apenas cria zonas de silêncio para impedir que o mensageiro grite.
-
-  - **A Escolha:** Os jogadores podem combater a criatura (CD de Carisma 15 para acalmá-la se perceberem sua motivação), ou podem acionar o mecanismo da fornalha. Para libertar o refém e dar paz à entidade, devem simbolicamente "alimentá-la". Jogar suas próprias rações, um objeto de valor sentimental ou acender a fornalha com magia de fogo dissipa o Elemental em um redemoinho de fagulhas silenciosas, libertando o mensageiro.'
 npcs: null
 locations: null
 compendium_refs:

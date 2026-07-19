@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 5 - Anisa Academy
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/awa/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kedjou-kamal/

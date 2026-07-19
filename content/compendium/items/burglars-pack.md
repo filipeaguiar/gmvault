@@ -3,13 +3,12 @@ title: Burglar's Pack
 type: item
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -23,6 +22,12 @@ item_info:
   cost: 16 gp
   weight: 47.5 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A Burglar's Pack contains the following items: Backpack, Ball Bearings, Bell, 10 Candles, Crowbar, Hooded Lantern, 7 flasks of Oil, 5 days of Rations, Rope, Tinderbox, and Waterskin.
+Um Pacote do Ladrão contém os seguintes itens: Mochila, Rolamentos de Metal, Sino, 10 Velas, Pé de Cabra, Lanterna Coberta, 7 Frascos de Óleo, 5 Dias de Rações, Corda, Isqueiro e Cantil.

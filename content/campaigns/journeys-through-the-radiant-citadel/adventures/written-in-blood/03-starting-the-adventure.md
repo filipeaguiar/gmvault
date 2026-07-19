@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm
 status: published
-summary: Nas fronteiras ermas do reino, onde as montanhas tocam o céu e o vento sussurra segredos ancestrais, uma sombra despertou de seu sono milenar. Os aldeões de Monteprata, aninhados no sopé da Cordilheira Enevoada, falam em vozes trêmulas sobre desaparecimentos misteriosos e luzes dançantes nas profundezas da floresta. O velho sábio da taverna murmura sobre uma antiga profecia, enquanto mercadores desviam suas rotas, temerosos do que se esconde além das colinas. Neste cenário de mistério e perigo iminente, um grupo de heróis improváveis se encontra na encruzilhada do destino, prestes a embarcar em uma jornada que os levará das pacatas estradas rurais aos salões esquecidos das profundezas, onde o mal ancestral aguarda sua chance de renascer.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/

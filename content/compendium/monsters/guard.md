@@ -3,13 +3,12 @@ title: Guard
 type: monster
 draft: false
 weight: 10
-summary: I can see you've shared the translation rules and guidelines, but I don't see the actual draft text that needs to be translated from 5e.tools. Could you please paste the content you'd like me to translate? Once you provide the text, I'll apply all the mandatory terminology, protected terms, and formatting rules as specified.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

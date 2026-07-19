@@ -19,6 +19,20 @@ def dump_yaml_indented(data, indent=2):
 # Active community 5etools mirror URL for raw data
 DATA_BASE_URL = "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/"
 
+# Revisões de regras de personagem são preferidas às versões anteriores.
+SOURCE_PRIORITY = ("XPHB", "PHB", "TCE", "XGE", "MPMM", "VGM", "ERLW", "GGR", "DMG")
+
+
+def source_priority(entry_or_source):
+    """Return a stable priority key, preferring the 2024 XPHB revision."""
+    source = entry_or_source.get("source", "") if isinstance(entry_or_source, dict) else entry_or_source
+    source = str(source or "").replace("-", "").upper()
+    try:
+        return (SOURCE_PRIORITY.index(source), source)
+    except ValueError:
+        return (len(SOURCE_PRIORITY), source)
+
+
 _json_cache = {}
 
 def get_json_data(url):
@@ -156,7 +170,6 @@ title: "{name}"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: {name}."
 tags:
   - compendio
   - classe
@@ -198,7 +211,6 @@ title: "{title}"
 type: "class"
 draft: false
 weight: 10
-summary: "{summary}"
 tags:
   - compendio
   - classe
@@ -295,7 +307,6 @@ title: "{name}"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: {name}."
 tags:
   - compendio
   - regra
@@ -409,7 +420,7 @@ def search_item_by_name(query, item_data=None):
 def load_spell_data():
     """Carrega as magias do PHB, Xanathar e Tasha do 5e.tools e as combina."""
     combined = {"spell": []}
-    files = ["spells/spells-phb.json", "spells/spells-xge.json", "spells/spells-tce.json"]
+    files = ["spells/spells-xphb.json", "spells/spells-phb.json", "spells/spells-tce.json", "spells/spells-xge.json"]
     for file in files:
         url = DATA_BASE_URL + file
         data = get_json_data(url)
@@ -1175,7 +1186,7 @@ def fetch_from_5etools(kind, english_name):
             print(f"  [5e.tools] Gerador compartilhado indisponível; usando compatibilidade: {exc}")
 
     file_map = {
-        "spell": ["spells/spells-phb.json", "spells/spells-xge.json", "spells/spells-tce.json"],
+        "spell": ["spells/spells-xphb.json", "spells/spells-phb.json", "spells/spells-tce.json", "spells/spells-xge.json"],
         "item": ["items.json", "items-base.json"],
         "magic_item": ["items.json", "items-base.json"],
         "feat": ["feats.json"],
@@ -1471,7 +1482,6 @@ title: "{english_name}"
 type: "spell"
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
@@ -1614,7 +1624,6 @@ title: "{english_name}"
 type: "{kind}"
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
@@ -1646,7 +1655,6 @@ title: "{english_name}"
 type: "feat"
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
@@ -1681,7 +1689,6 @@ title: "{english_name}"
 type: "species"
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
@@ -1706,7 +1713,6 @@ title: "{english_name}"
 type: "class"
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
@@ -1727,7 +1733,6 @@ title: "{english_name}"
 type: "class"
 draft: false
 weight: 10
-summary: "Draft imported from 5e.tools. Requires translation."
 tags:
   - draft
   - importado
@@ -1747,7 +1752,6 @@ title: "Maestria de Arma: {english_name}"
 type: "rule"
 draft: false
 weight: 10
-summary: "Propriedade de Maestria de Arma do D&D 2024 (XPHB). Requires translation."
 tags:
   - draft
   - importado

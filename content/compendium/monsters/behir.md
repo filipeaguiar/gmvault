@@ -3,13 +3,12 @@ title: Behir
 type: monster
 draft: false
 weight: 10
-summary: Parece que você enviou um rascunho vazio para tradução. Por favor, cole o texto que deseja que eu traduza e revise editorialmente para que eu possa aplicar as regras de terminologia obrigatória e preservar os elementos protegidos conforme solicitado.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

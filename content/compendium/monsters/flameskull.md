@@ -3,13 +3,12 @@ title: Flameskull
 type: monster
 draft: false
 weight: 10
-summary: Parece que o conteúdo do rascunho importado do 5e.tools (MM) não foi enviado junto com a mensagem. Por favor, cole aqui o texto que precisa ser traduzido e revisado editorialmente para que eu possa trabalhar nele.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

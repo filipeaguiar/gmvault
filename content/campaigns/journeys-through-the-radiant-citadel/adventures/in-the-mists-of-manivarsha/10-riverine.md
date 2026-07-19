@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 10 - Riverine
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/riverine/

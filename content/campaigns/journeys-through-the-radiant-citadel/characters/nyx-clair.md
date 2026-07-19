@@ -4,7 +4,6 @@ date: 2026-07-17 01:26:08+00:00
 type: character
 draft: false
 weight: 10
-summary: Elfo (Alto) Bruxo 1 criado manualmente guiado por dados.
 tags:
 - jogador
 - elf

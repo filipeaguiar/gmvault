@@ -3,13 +3,12 @@ title: Haint
 type: monster
 draft: false
 weight: 10
-summary: Entendido. Aguardo o texto original extraído do 5e.tools (JTTRC) para realizar a tradução e a revisão editorial conforme as regras estabelecidas.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: JTTRC

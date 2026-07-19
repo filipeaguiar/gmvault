@@ -3,13 +3,12 @@ title: Mage
 type: monster
 draft: false
 weight: 10
-summary: Parece que você esqueceu de colar o texto do rascunho (draft) que precisa ser traduzido. Por favor, envie o conteúdo do arquivo importado do 5e.tools (MM) para que eu possa realizar a tradução e a revisão editorial conforme solicitado.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

@@ -6,40 +6,6 @@ draft: false
 titulo_pt_br: Cena 4 - Investigações no Mercado
 visibility: gm
 status: published
-summary: 'Entendi, uma "cena operacional" geralmente envolve uma missão tática, infiltração ou um plano que o grupo precisa executar com precisão. Aqui estão três sugestões para diferentes tons de aventura:
-
-
-  **Opção 1: A Infiltração (Furtividade e Precisão)**
-
-  *   **Cenário:** Um posto avançado inimigo ou uma instalação vigiada.
-
-  *   **Gatilho:** Um NPC aliado foi capturado e está detido no subsolo. Um ataque frontal resultaria na execução do refém.
-
-  *   **Objetivo:** Entrar sem ser detectado, neutralizar os guardas silenciosamente e extrair o alvo.
-
-  *   **Complicação:** O plano de emergência do inimigo inclui um selo mágico ou uma trava complexa que exige dois agentes operando simultaneamente em salas separadas.
-
-
-  **Opção 2: O Mecanismo de Defesa (Combate com Controle de Multidão)**
-
-  *   **Cenário:** Uma sala de tesouro ou câmara de portal antigo.
-
-  *   **Gatilho:** Ao tocar no artefato central, portas de pedra selam todas as saídas e o chão começa a se mover em espiral, como um moedor.
-
-  *   **Objetivo:** Enquanto enfrentam criaturas elementais que brotam das paredes, um operador deve desativar três runas em um console giratório no centro.
-
-  *   **Complicação:** Cada runa desativada altera a gravidade da sala ou libera uma rajada de energia que causa dano ao operador, exigindo que o grupo faça um rodízio ou cure à distância.
-
-
-  **Opção 3: A Negociação Explosiva (Interpretação e Pressão Temporal)**
-
-  *   **Cenário:** O barão local está secretamente vendendo armas mágicas para uma guilda criminosa.
-
-  *   **Gatilho:** O grupo se passa por compradores rivais em um armazém fechado. Um membro do grupo está infiltrado como segurança do barão.
-
-  *   **Objetivo:** Gravar a confissão do barão e abrir o portão para a guarda da cidade, mantendo o disfarce.
-
-  *   **Complicação:** O barão tem um detector de magia ativo que dispara se magias de charme forem usadas, mas um dos capangas está começando a reconhecer o rosto do personagem infiltrado de um cartaz de procurado.'
 npcs: null
 locations: null
 compendium_refs: null

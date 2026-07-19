@@ -3,16 +3,12 @@ title: Sahuagin Baron
 type: monster
 draft: false
 weight: 10
-summary: 'Parece que você está me pedindo para traduzir um rascunho importado do 5e.tools, mas não encontrei nenhum texto anexado na sua mensagem.
-
-
-  Por favor, cole o conteúdo que você gostaria que eu traduzisse e revisasse editorialmente. Fico à disposição para ajudar assim que receber o texto!'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

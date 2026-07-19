@@ -3,7 +3,6 @@ title: Roguish Archetype
 type: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Arquétipo de Ladino'
 tags:
 - compendio
 - regra

@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: Cena 8 - Para o Mar Noturno
 visibility: gm
 status: draft
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 locations:

@@ -3,13 +3,12 @@ title: Young Red Dragon
 type: monster
 draft: false
 weight: 10
-summary: Entendido. Por favor, forneça o texto a ser traduzido. Estou pronto para aplicar as regras de tradução e terminologia especificadas.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

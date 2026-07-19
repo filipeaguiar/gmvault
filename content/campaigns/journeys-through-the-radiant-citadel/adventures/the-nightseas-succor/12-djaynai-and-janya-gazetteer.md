@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: "Cena 12 - Gazeta de Djaynai e Janya"
 visibility: gm
 status: draft
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 locations: null

@@ -3,13 +3,12 @@ title: Purple Worm
 type: monster
 draft: false
 weight: 10
-summary: Por favor, forneça o texto do rascunho do 5e.tools (MM) que precisa ser traduzido e revisado editorialmente.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

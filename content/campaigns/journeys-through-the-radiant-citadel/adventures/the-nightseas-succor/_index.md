@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: O Auxílio do Mar Noturno
 visibility: gm
 status: draft
-summary: Aventura independente importada do capítulo The Nightsea's Succor.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/brother-broumane/

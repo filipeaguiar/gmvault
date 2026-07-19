@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: A Paga do Vício
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Wages of Vice.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/diva-luma/

@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: Cena 7 - Casa de Dança dos Ancestrais
 visibility: gm
 status: draft
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/

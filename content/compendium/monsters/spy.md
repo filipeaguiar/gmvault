@@ -3,15 +3,12 @@ title: Spy
 type: monster
 draft: false
 weight: 10
-summary: "---\nnome: \"ZXQGLOSSARY[Flumph (pt-BR)]\"\nsize: \"Pequeno\"\ntype: \"Aberração\"\ntendência: \"ZXQGLOSSARY[Bondoso]\"\nac: \"12\"\nhp: \"7\"\niniciativa: \"2\"\nvelocidade: \"5 ft., voo 30 ft.\"\nstats: [6, 15, 10, 14, 14, 11]\nhabilidades:\n  - \"ZXQGLOSSARY[Acrobacia] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\n  - \"ZXQGLOSSARY[Furtividade] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\n  - \"ZXQGLOSSARY[Religião] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\nvulnerabilities: \"ZXQGLOSSARY[psíquico]\"\nsentidos: \"ZXQGLOSSARY[visão no escuro] 60 ft., ZXQGLOSSARY[Percepção passiva] 12\"\nidiomas: \"compreende ZXQGLOSSARY[Subterrâneo Comum] e ZXQGLOSSARY[Comum] mas não pode falar, telepatia 60 ft.\"\ndesafio: \"ZXQGLOSSARY[ND] 1/8\"\nvvo: \"ZXQGLOSSARY[Arcano] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4, ZXQGLOSSARY[História] ZXQGLOSSARY[Sav. Nome]salvaguardas.json+2+4\"\nresistances: \"\"\nimmune: \"\"\nconditionImmune: \"\"\ndetalhes:\n  - \"ZXQGLOSSARY[Tendência]\"\n\
-  \  - \"ZXQGLOSSARY[Tendências]\"\n  - \"ZXQGLOSSARY[Telepatia Avançada]\"\n  - \"ZXQGLOSSARY[Falha de Prone]\"\nhabilidades_de_ações:\n  - \"ZXQGLOSSARY[Tentáculos]\"\n  - \"ZXQGLOSSARY[Esporos Fedorentos]\"\n\n---\n\n**ZXQGLOSSARY[Telepatia Avançada]**. O flumph pode perceber o conteúdo de qualquer comunicação telepática dentro de 60 pés de si e não pode ser surpreendido por criaturas com qualquer forma de telepatia.\n\n**ZXQGLOSSARY[Falha de Prone]**. Se o flumph for derrubado, role um dado. Em um resultado ímpar, o flumph aterrissa de cabeça para baixo e fica indefeso. Ao final de cada um de seus turnos, o flumph pode fazer um teste de resistência de Destreza CD 10, caindo com o lado certo para cima e deixando de estar indefeso em um sucesso.\n\n**ZXQGLOSSARY[Telepatia] 60 ft.** O flumph pode se comunicar telepaticamente com qualquer criatura dentro de 60 pés de si.\n\n## Ações\n\n**ZXQGLOSSARY[Tentáculos].** *Ataque Corpo a Corpo com Arma:* +4 para atingir, alcance 5 ft., uma criatura.\
-  \ *Dano:* 4 (1d4 + 2) de dano perfurante mais 2 (1d4) de dano de ácido.\n\n**ZXQGLOSSARY[Esporos Fedorentos] (1/Dia).** Uma nuvem de 2,5 metros de esporos fedorentos é exalada pelo flumph, enchendo um cubo de 3 metros adjacente ao flumph. Criaturas dentro dessa área devem ser bem-sucedidas em um teste de resistência de Destreza CD 10 ou levarão 1d4 de dano de ácido e ficarão infectadas com esporos por 1 minuto. Criaturas infectadas também ficam envenenadas enquanto estiverem infectadas e podem repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito em um sucesso. Se uma criatura ficar envenenada dessa forma por 1 minuto, ela morre e, 1d6 horas depois, seu corpo gera 1d4 novos flumphs."
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

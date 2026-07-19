@@ -3,16 +3,12 @@ title: Black Pudding
 type: monster
 draft: false
 weight: 10
-summary: 'Parece que você mencionou um rascunho importado do 5e.tools (MM), mas não forneceu o texto de origem para que eu possa realizar a tradução e a revisão editorial.
-
-
-  Por favor, cole o conteúdo do rascunho que precisa ser traduzido.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

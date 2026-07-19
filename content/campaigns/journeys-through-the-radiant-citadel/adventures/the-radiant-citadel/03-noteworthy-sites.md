@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Área 3 - Locais Notáveis
 visibility: gm
 status: published
-summary: Operational scene to run in the session.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/noteworthy-sites/

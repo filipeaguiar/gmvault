@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 9 - Conclusão
 visibility: gm
 status: published
-summary: Operational scene to run in the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/

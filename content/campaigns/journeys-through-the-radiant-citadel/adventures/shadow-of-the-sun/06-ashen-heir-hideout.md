@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - Esconderijo do Ashen Heir
 visibility: gm
 status: published
-summary: Operational scene to run in the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/laleh-ghorbani/

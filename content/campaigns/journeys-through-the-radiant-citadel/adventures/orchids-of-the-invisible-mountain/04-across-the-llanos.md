@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 4 - Através dos Llanos
 visibility: gm
 status: published
-summary: Operational scene to run in the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/

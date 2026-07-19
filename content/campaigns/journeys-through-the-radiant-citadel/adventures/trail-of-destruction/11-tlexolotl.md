@@ -6,11 +6,6 @@ draft: false
 titulo_pt_br: Cena 11 - Tlexolotl
 visibility: gm
 status: published
-summary: '**Cena Operacional: Ruínas Submersas de Ventoforte**
-
-
-  **Indicações:** Uma expedição de resgate e/ou sabotagem nas ruínas submersas de Ventoforte, onde um artefato elemental foi perturbado, causando inundações e atividade elemental descontrolada. Os jogadores devem navegar por corredores alagados, enfrentar criaturas elementais e desativar o artefato antes que toda a estrutura desabe ou que ele caia nas mãos de um culto rival. O local está instável, exigindo testes de Atletismo ou Acrobacia para se mover em áreas alagadas e testes de Percepção para detectar a integridade estrutural enfraquecida. Encontros podem incluir mefíts da água e elementais menores da água, além de armadilhas naturais como desmoronamentos. O clímax envolve um confronto com um elemental maior ou um feiticeiro do culto, tendo que interagir com o artefato enquanto lutam, com um limite de rodadas antes que as ruínas desmoronem por completo, exigindo testes de Atletismo para escapar. Embora esta sugestão foque na ação, ela estabelece um ambiente e desafios que podem revelar
-  segredos antigos, complicações morais em relação aos cultistas ou vislumbres de uma ameaça maior nas profundezas.'
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/tlexolotl/

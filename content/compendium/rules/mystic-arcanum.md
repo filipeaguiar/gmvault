@@ -3,10 +3,10 @@ title: Mystic Arcanum
 type: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Mystic Arcanum.'
 tags:
-- compendio
-- classe
+- draft
+- importado
+- 5etools
 visibility: public
 status: draft
 source:

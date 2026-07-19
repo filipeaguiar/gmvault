@@ -14,9 +14,11 @@ from translate_drafts import (
     filter_image_only_handouts,
     get_lmstudio_translation,
     get_openai_compatible_translation,
+    has_translatable_body,
     load_glossary_config,
     parse_args,
     process_document,
+    translation_route,
     publish_completed_adventures,
     run_document_batch,
     select_glossary_config,
@@ -71,6 +73,28 @@ class LmStudioTranslationTests(unittest.TestCase):
 
             self.assertEqual(selected, [index, narrative])
             self.assertEqual(skipped, [image_only])
+
+    def test_structural_or_media_only_bodies_do_not_require_translation(self):
+        self.assertFalse(has_translatable_body(""))
+        self.assertFalse(has_translatable_body("![Map](/images/map.webp)"))
+        self.assertFalse(has_translatable_body("<!-- navigation note -->\n\n---\n\nhttps://example.test/path"))
+        self.assertFalse(has_translatable_body("```json\n{\"key\": \"value\"}\n```"))
+        self.assertTrue(has_translatable_body("## Introduction\n\nCampaign overview."))
+        self.assertEqual(translation_route(MarkdownDocument(Path("item.md"), "", {"title": "Dagger"}, "")), "title_only")
+        self.assertEqual(translation_route(MarkdownDocument(Path("rule.md"), "", {"summary": "A useful rule."}, "")), "front_matter")
+
+        document = MarkdownDocument(Path("_index.md"), "draft: false\nstatus: draft", {"draft": False, "status": "draft"}, "")
+        result = process_document(
+            document,
+            lambda text: self.fail(f"Unexpected translation request: {text}"),
+            {},
+            apply=True,
+            include_non_draft=False,
+            translate_frontmatter=False,
+            source="en",
+            target="pt",
+        )
+        self.assertEqual(result.skipped_reason, "sem conteúdo textual para tradução")
 
     def test_image_only_handouts_can_be_explicitly_included(self):
         with tempfile.TemporaryDirectory() as temp_dir:

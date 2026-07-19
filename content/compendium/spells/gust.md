@@ -3,7 +3,6 @@ title: Gust
 type: spell
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XGE). Requires translation and editorial review.
 tags:
 - draft
 - importado

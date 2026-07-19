@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Pecados de Nossos Anciões
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Pecados de Nossos Anciões
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kun-ahn-jun/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/

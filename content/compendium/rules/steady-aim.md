@@ -3,13 +3,12 @@ title: Steady Aim
 type: rule
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
-- compendio
-- regra
-- classe
-visibility: "public"
-status: ready
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
 source:
   provider: 5e.tools
   book: XPHB

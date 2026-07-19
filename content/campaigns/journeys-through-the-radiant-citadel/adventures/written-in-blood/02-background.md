@@ -8,13 +8,6 @@ draft: false
 titulo_pt_br: Antecedentes
 visibility: gm
 status: published
-summary: 'A mesa range sob o peso da tensão, enquanto um grupo de aventureiros se reúne, unido por um chamado que ecoa de um recanto esquecido do mundo. O ar está carregado com o cheiro de chuva iminente e a promessa de perigos ocultos. Esta é uma história sobre escolhas que moldam destinos, sobre a tênue linha entre a luz bruxuleante da esperança e a escuridão que a ameaça consumir. Aqui, heróis não nascem prontos; eles são forjados nas decisões que tomam quando confrontados pelo desconhecido.
-
-
-  À sombra de ruínas ancestrais, na taverna empoeirada de Vilarejo-Poeira, os boatos se misturam ao sabor amargo da cerveja aguada. Fala-se de desaparecimentos misteriosos nas florestas de Espinha do Lobo, de símbolos profanos marcados nas portas ao cair da noite e de uma figura encapuzada que oferece recompensas por artefatos que não deveriam ser perturbados. O gancho da aventura está lançado como uma linha de pesca em águas turvas, à espera de que os aventureiros mordam a isca, seja por ouro, glória ou a mera incapacidade de ignorar um pedido de socorro.
-
-
-  O Mestre do Jogo, o tecelão deste fio narrativo, estabelece o cenário com um prefácio sombrio. Ele é o olho no céu tempestuoso, a voz do ancião trêmulo, o rosnado da fera oculta. Suas palavras pintam o mundo além das fichas de personagem, dando vida ao vilarejo que se apega à sobrevivência, à floresta que sussurra segredos antigos e às ruínas que guardam um mal adormecido, mas jamais esquecido. O desafio está apresentado, e cabe ao grupo decidir como enfrentá-lo. A aventura começa onde termina a segurança do comum.'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kianna/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/aunt-dellie/

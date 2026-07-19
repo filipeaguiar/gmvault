@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - Grupos da Cidadela
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/sholeh/

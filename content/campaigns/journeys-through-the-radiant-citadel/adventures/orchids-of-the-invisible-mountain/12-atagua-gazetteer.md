@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 12 - Guia Geográfico de Atagua
 visibility: gm
 status: published
-summary: Operational scene to run in the session
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/
 locations: null

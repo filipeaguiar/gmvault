@@ -1,14 +1,22 @@
 ---
-title: "Eldritch Master"
-type: "rule"
+title: Eldritch Master
+type: rule
 draft: false
 weight: 10
-summary: "Característica de classe: Eldritch Master."
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Eldritch Master
+  remote_file: class/class-warlock.json
+  remote_key: classFeature
+  remote_id: 305ae8b8c417c49b
 ---
 
-At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.
+When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.

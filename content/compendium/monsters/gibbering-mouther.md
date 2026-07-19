@@ -3,13 +3,12 @@ title: Gibbering Mouther
 type: monster
 draft: false
 weight: 10
-summary: Por favor, forneça o texto que você gostaria que eu traduzisse. Estou pronto para realizar a tradução e revisão editorial do conteúdo importado do 5e.tools (MM) assim que o receber.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

@@ -329,6 +329,38 @@ def discover_markdown_files(root: Path) -> list[Path]:
     return sorted(path for path in root.rglob("*.md") if path.is_file())
 
 
+def is_import_placeholder(value: str) -> bool:
+    """Ignore generated import notices; they are not reader-facing prose."""
+    normalized = value.strip().casefold()
+    return normalized.startswith("draft imported from 5e.tools") or normalized.startswith("rascunho importado do 5e.tools")
+
+
+def translation_route(document: MarkdownDocument) -> str:
+    """Classify a pending page before allocating a translation engine."""
+    if has_translatable_body(document.body):
+        return "prose"
+    if any(
+        isinstance(document.front_matter.get(key), str)
+        and document.front_matter[key].strip()
+        and not is_import_placeholder(document.front_matter[key])
+        for key in TEXTUAL_FRONT_MATTER_KEYS
+    ):
+        return "front_matter"
+    if isinstance(document.front_matter.get("title"), str) and document.front_matter["title"].strip() and not document.front_matter.get("titulo_pt_br"):
+        return "title_only"
+    return "skip"
+
+
+def has_translatable_body(body: str) -> bool:
+    """Return whether a Markdown body contains prose worth an LLM request."""
+    candidate = re.sub(r"<!--.*?-->", "", body, flags=re.DOTALL)
+    candidate = re.sub(r"```.*?```", "", candidate, flags=re.DOTALL)
+    candidate = re.sub(r"!\[[^\]]*\]\([^\)]*\)", "", candidate)
+    candidate = re.sub(r"https?://\S+", "", candidate)
+    candidate = re.sub(r"(?m)^\s*[-*_]{3,}\s*$", "", candidate)
+    return bool(re.search(r"[A-Za-zÀ-ÿ]", candidate))
+
+
 def filter_image_only_handouts(files: list[Path], include: bool = False) -> tuple[list[Path], list[Path]]:
     """Exclude image-only handout pages that would waste a translation request."""
     if include:
@@ -795,6 +827,7 @@ def process_document(
     forbidden_outputs: list[str] | None = None,
     translate_fm: Callable[[str], str] | None = None,
     progress: Callable[[int, int, float], None] | None = None,
+    title_translate: Callable[[str], str] | None = None,
 ) -> ProcessResult:
     translation_pending = (
         document.front_matter.get("draft") is True
@@ -802,12 +835,30 @@ def process_document(
     )
     if not translation_pending and not include_non_draft:
         return ProcessResult(document.path, changed=False, skipped_reason="not translation pending")
+    route = translation_route(document)
+    if route == "skip":
+        return ProcessResult(document.path, changed=False, skipped_reason="sem conteúdo textual para tradução")
     translation_meta = document.front_matter.get("translation") or {}
     if not force_retranslate and isinstance(translation_meta, dict) and translation_meta.get("target_language") == "pt-BR":
         return ProcessResult(document.path, changed=False, skipped_reason="already translated to pt-BR")
 
+    if route == "title_only":
+        if title_translate is None:
+            return ProcessResult(document.path, changed=True)
+        front_matter = add_translation_metadata(document.front_matter, source, target, engine="argos")
+        front_matter["titulo_pt_br"] = title_translate(str(front_matter["title"]))
+        front_matter["draft"] = False
+        front_matter["status"] = "ready"
+        rendered = render_markdown(front_matter, document.body)
+        changed = rendered != document.path.read_text(encoding="utf-8")
+        if apply and changed:
+            document.path.write_text(rendered, encoding="utf-8")
+        return ProcessResult(document.path, changed=changed)
+
     if translate is None:
         return ProcessResult(document.path, changed=True)
+    if route == "front_matter":
+        translate_frontmatter = True
 
     # Limite de segurança: fallback para split_blocks se o texto for excessivamente longo
     active_strategy = strategy
@@ -844,6 +895,9 @@ def process_document(
     if translate_frontmatter and translate_fm is not None:
         front_matter = translate_front_matter(front_matter, translate_fm, glossary)
     front_matter = add_translation_metadata(front_matter, source, target, engine=engine, model=model)
+    # Traduções automáticas são publicáveis; correções posteriores são pontuais.
+    front_matter["draft"] = False
+    front_matter["status"] = "ready"
 
     rendered = render_markdown(front_matter, translated_body)
     original = document.path.read_text(encoding="utf-8")
@@ -1092,9 +1146,11 @@ def main() -> int:
             document = parse_markdown(path)
             if document is None:
                 return ProcessResult(path, changed=False, skipped_reason="sem front matter YAML válido")
+            route = translation_route(document)
+            title_translate = get_argos_translation(args.source, args.target) if args.apply and route == "title_only" else None
             return process_document(
                 document,
-                translate_for_document(document, for_frontmatter=False),
+                translate_for_document(document, for_frontmatter=False) if route != "title_only" else None,
                 glossary,
                 apply=args.apply,
                 include_non_draft=args.include_non_draft,
@@ -1110,6 +1166,7 @@ def main() -> int:
                 progress=lambda current, total, elapsed: print(
                     f"[block] {path} {current}/{total} ({elapsed:.1f}s)", flush=True
                 ),
+                title_translate=title_translate,
             )
 
         processed = 0

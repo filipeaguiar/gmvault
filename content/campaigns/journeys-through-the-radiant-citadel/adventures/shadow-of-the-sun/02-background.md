@@ -8,16 +8,6 @@ draft: false
 titulo_pt_br: Antecedentes
 visibility: gm
 status: published
-summary: '# Introdução
-
-
-  *Bem-vindo(a) à Faéria, uma terra de maravilhas e encantamentos, lar dos arquifadas e de suas cortes feéricas. Viaje por esta estranha e fantástica região de The Wild Beyond the Witchlight, uma aventura de Dungeons & Dragons situada na Faéria, que começa nas cercanias do Witchlight Carnival e termina com o terrível confronto contra membros da Corte dos Pesadelos.*
-
-
-  *Esta seção prepara o cenário para a aventura, apresentando a história de fundo que desencadeou os eventos e a profecia do Orrery of Tragedies, um resumo dos capítulos da aventura e sugestões para dar o pontapé inicial na história.*
-
-
-  (O texto desta seção foi extraído da primeira parte de *The Wild Beyond the Witchlight*)'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atash/

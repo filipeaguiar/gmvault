@@ -3,7 +3,6 @@ title: "Pact Boon"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: Pact Boon."
 tags:
   - compendio
   - classe

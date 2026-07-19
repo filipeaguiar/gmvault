@@ -731,14 +731,8 @@ def main():
                 )))
                 selected_species_name = ask_choice("Selecione a Espécie Base:", base_species)
 
-                SOURCE_PRIORITY = ["PHB", "XPHB", "MPMM", "VGM", "ERLW", "GGR", "DMG"]
                 matching_races = [r for r in sp_data.get("race", []) if r.get("name") == selected_species_name]
-                def get_source_priority(entry):
-                    src = entry.get("source", "")
-                    if src in SOURCE_PRIORITY:
-                        return SOURCE_PRIORITY.index(src)
-                    return 999
-                matching_races.sort(key=get_source_priority)
+                matching_races.sort(key=dnd_utils.source_priority)
                 base_race_entry = matching_races[0] if matching_races else None
 
                 subspecies_options = []
@@ -794,13 +788,8 @@ def main():
                 subclass = ""
                 subclass_short = ""
 
-                # Source priority function for subclass sorting
-                SOURCE_PRIORITY = ["PHB", "XPHB", "MPMM", "VGM", "ERLW", "GGR", "DMG"]
-                def get_source_priority(entry):
-                    src = entry.get("source", "")
-                    if src in SOURCE_PRIORITY:
-                        return SOURCE_PRIORITY.index(src)
-                    return 999
+                # Use the shared 2024-first source policy for classes and subclasses.
+                get_source_priority = dnd_utils.source_priority
 
                 if "subclass" in class_data:
                     subclass_options = ["Nenhuma"] + sorted(list(set(sc.get("name") for sc in class_data["subclass"] if sc.get("name"))))
@@ -1400,7 +1389,6 @@ date: {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}
 type: "character"
 draft: false
 weight: 10
-summary: "{summary_str}"
 tags:
   - jogador
   - {slugify(selected_species_name)}

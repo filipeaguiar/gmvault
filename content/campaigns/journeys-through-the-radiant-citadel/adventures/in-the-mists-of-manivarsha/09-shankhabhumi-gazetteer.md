@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 9 - Shankhabhumi Guia Geográfico
 visibility: gm
 status: published
-summary: Mission scene to run during the session.
 npcs: null
 locations: null
 compendium_refs:

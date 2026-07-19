@@ -3,14 +3,12 @@ title: Green Hag
 type: monster
 draft: false
 weight: 10
-summary: "---\ndraft_imported_from: 5e.tools (MM)\nrequires_translation_and_editorial_review: true\nZXQPROTECTED: 5e.tools\nZXQGLOSSARY:\n  regeneration: regeneração\n  bite: mordida\n  claw: garra\n  piercing damage: dano perfurante\n  Hit Points: Pontos de Vida\n  Armor Class: Classe de Armadura\n  Challenge: Nível de Desafio\n  Perception: Percepção\n  Senses: Sentidos\n  Languages: Idiomas\n  CA: CA\n  PV: PV\n  ND: ND\n  XP: XP\n---\n\n>## Troll\n>*Grande gigante, caótico e mau*\n>---\n>**Classe de Armadura** 15 (armadura natural)\n>**Pontos de Vida** 84 (8d10 + 40)\n>**Velocidade** 9 m\n>---\n>|FOR|DES|CON|INT|SAB|CAR|\n>|:---:|:---:|:---:|:---:|:---:|:---:|\n>|18 (+4)|13 (+1)|20 (+5)|7 (-2)|9 (-1)|7 (-2)|\n>---\n>**Perícias** Percepção +2\n>**Sentidos** visão no escuro 18 m, Percepção passiva 12\n>**Idiomas** Gigante\n>**Nível de Desafio** 5 (1.800 XP) **Bônus de Proficiência** +3\n>---\n>***Faro Aguçado.*** O troll tem vantagem em testes de Sabedoria (Percepção) que dependam do olfato.\n\
-  >\n>***Regeneração.*** O troll recupera 10 Pontos de Vida no início de seu turno. Se o troll sofrer dano de ácido ou fogo, esta característica não funciona no início do próximo turno do troll. O troll morre apenas se começar seu turno com 0 Pontos de Vida e não se regenerar.\n>\n>### Ações\n>***Ataques Múltiplos.*** O troll realiza três ataques: um com sua mordida e dois com suas garras.\n>\n>***Mordida.*** *Ataque Corpo a Corpo com Arma:* +7 para atingir, alcance 1,5 m, um alvo. *Dano:* 7 (1d6 + 4) de dano perfurante.\n>\n>***Garra.*** *Ataque Corpo a Corpo com Arma:* +7 para atingir, alcance 1,5 m, um alvo. *Dano:* 11 (2d6 + 4) de dano cortante."
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

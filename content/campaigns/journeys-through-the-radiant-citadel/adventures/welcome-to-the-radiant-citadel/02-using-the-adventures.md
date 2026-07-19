@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Usando as Aventuras
 visibility: gm
 status: published
-summary: O sol poente lançava longas sombras sobre o vale, pintando o céu com tons de laranja e púrpura enquanto os primeiros rumores de uma ameaça esquecida ecoavam pelas tavernas e encruzilhadas. É neste crepúsculo de incertezas que nossa história começa, convocando heróis de todos os cantos para desvendar os segredos que se ocultam nas ruínas ancestrais. A aventura que se desenrola a seguir é um convite à exploração de perigos e maravilhas, onde cada escolha tece o destino não apenas dos aventureiros, mas de toda a região.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/

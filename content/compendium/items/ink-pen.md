@@ -3,13 +3,12 @@ title: Ink Pen
 type: item
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -23,6 +22,12 @@ item_info:
   cost: 0.02 gp
   weight: —
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Using Ink, an Ink Pen is used to write or draw.
+Usando tinta, uma caneta tinteiro é usada para escrever ou desenhar.

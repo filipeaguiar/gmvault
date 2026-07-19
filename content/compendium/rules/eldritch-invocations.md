@@ -3,10 +3,10 @@ title: Eldritch Invocations
 type: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Eldritch Invocations.'
 tags:
-- compendio
-- classe
+- draft
+- importado
+- 5etools
 visibility: public
 status: draft
 source:

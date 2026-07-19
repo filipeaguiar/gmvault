@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 7 - Guia Geográfico de Dayawlongon
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations: null
 compendium_refs:

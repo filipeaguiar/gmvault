@@ -3,13 +3,12 @@ title: Bulette
 type: monster
 draft: false
 weight: 10
-summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o conteúdo do rascunho importado do 5e.tools para que eu possa realizar a tradução e revisão editorial.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

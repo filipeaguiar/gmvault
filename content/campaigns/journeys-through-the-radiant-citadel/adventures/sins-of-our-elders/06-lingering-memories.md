@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - Memórias Persistentes
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kun-ahn-jun/

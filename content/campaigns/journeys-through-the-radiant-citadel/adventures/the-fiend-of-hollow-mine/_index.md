@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: O Corruptor da Mina Oca
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo O Corruptor da Mina Hollow.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/

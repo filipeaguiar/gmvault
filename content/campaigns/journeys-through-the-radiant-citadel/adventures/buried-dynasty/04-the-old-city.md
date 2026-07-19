@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 4 - A Cidade Velha
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/the-old-city/

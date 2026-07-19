@@ -3,10 +3,10 @@ title: Contact Patron
 type: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Contact Patron.'
 tags:
-- compendio
-- classe
+- draft
+- importado
+- 5etools
 visibility: public
 status: draft
 source:

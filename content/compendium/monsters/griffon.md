@@ -3,13 +3,12 @@ title: Griffon
 type: monster
 draft: false
 weight: 10
-summary: Claro! Como não foi fornecido o texto a ser traduzido na sua mensagem, por favor cole o conteúdo do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução e revisão editorial para o português brasileiro.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

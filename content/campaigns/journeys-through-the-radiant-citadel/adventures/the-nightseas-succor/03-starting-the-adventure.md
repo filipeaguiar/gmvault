@@ -8,7 +8,6 @@ draft: true
 titulo_pt_br: Começando a Aventura
 visibility: gm
 status: draft
-summary: Introdução e contextualização da aventura.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/starting-the-adventure/

@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - Uma Cidade Pequena Chamada Hollow
 visibility: gm
 status: published
-summary: "\", então não posso incluir essas coisas. Devo apenas retornar o texto. \n\nA resposta mais segura é retornar o texto recebido como está, já que está em português e é a tradução. Mas se o texto fonte fosse em inglês, eu teria que traduzir. Não tenho o texto fonte em inglês. O usuário me enviou \"Cena operacional para conduzir na sessão.\" que já é o texto em português. Portanto, a tradução final é exatamente isso. \n\nVou retornar: \"Cena operacional para conduzir na sessão.\" sem nenhum texto adicional.Cena operacional para conduzir na sessão."
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/

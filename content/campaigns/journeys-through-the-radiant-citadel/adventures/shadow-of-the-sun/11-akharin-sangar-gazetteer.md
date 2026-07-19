@@ -6,41 +6,6 @@ draft: false
 titulo_pt_br: Cena 11 - Akharin Sangar Guia Geográfico
 visibility: gm
 status: published
-summary: '**Cena: "A Emboscada na Estrada do Comércio"**
-
-
-  **Ambiente:** Uma estrada de terra batida serpenteia por uma floresta densa. O dossel bloqueia a luz do sol, criando bolsões de sombra profunda. À beira do caminho, os restos carbonizados de duas carroças de madeira ainda soltam finas espirais de fumaça.
-
-
-  **Situação:** Um comboio mercante foi atacado. O silêncio agora é absoluto, quebrado apenas pelo estalar ocasional da madeira queimada.
-
-
-  **Elementos da Cena:**
-
-  - **Carroça 1:** Tombada de lado. Baús foram arrombados, mas ainda restam panos coloridos e grãos espalhados pelo chão. Um cavalo de tração está morto, ainda preso aos arreios.
-
-  - **Carroça 2:** Carbonizada. O odor de carne queimada paira no ar. Perto dos escombros, uma roda continua girando lentamente com o vento.
-
-  - **A Área:** O chão está revolvido com múltiplas pegadas. Flechas com penas negras estão cravadas nas carroças e no chão. Manchas de sangue seco levam para dentro da mata, saindo da estrada.
-
-
-  **Encontro:**
-
-  - **2 Bandidos Líderes (usar estatísticas de Bandido, MM p. 343):** Estão agachados perto da carroça tombada, vasculhando baús e resmungando sobre o "minguado butim". Não percebem aproximação furtiva (Percepção passiva 10).
-
-  - **2 Lobos Domesticados (usar estatísticas de Lobo, MM p. 341):** Farejam as manchas de sangue, presos por cordas a uma árvore próxima. Rosnam baixo, inquietos com o cheiro de morte.
-
-
-  **Objetivo e Gancho:**
-
-  Os bandidos discutem abertamente:
-
-  - "O capitão vai nos esfolar. O gordo do mercador disse que o verdadeiro carregamento de platina seguia pela trilha do rio. Isto aqui foi só um engodo."
-
-  - Mencionam um "acampamento principal" na floresta e um mapa tatuado nas costas de um prisioneiro que capturaram.
-
-
-  **Complicação:** Após 1 minuto de cena, ou se fizerem muito barulho, 1 Batedor Goblin (usar estatísticas de Goblin, MM p. 166) retorna de uma patrulha na mata para relatar aos líderes, criando um novo flanco para o combate.'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
 locations: null

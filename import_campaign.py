@@ -569,7 +569,7 @@ def write_handout_art_stub(campaign_slug, entity_slug, entity_name, img_filename
         f.write(f"""---
 title: "Arte: {entity_name}"
 type: "handout"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "players"
 status: "draft"
@@ -598,7 +598,7 @@ def write_npc_stub(campaign_slug, npc_slug, npc_name, bestiary_entry=None, targe
     front_matter_lines = [
         "---",
         f'title: "{npc_name}"',
-        'draft: true',
+        'draft: false',
         'titulo_pt_br: ""',
         'visibility: "gm"',
         'status: "draft"',
@@ -677,7 +677,7 @@ def write_monster_stub(campaign_slug, monster_slug, monster_name, bestiary_entry
     front_matter_lines = [
         "---",
         f'title: "{monster_name}"',
-        'draft: true',
+        'draft: false',
         'titulo_pt_br: ""',
         'visibility: "gm"',
         'status: "draft"',
@@ -751,7 +751,7 @@ def write_magic_item_stub(campaign_slug, item_slug, item_name):
         f.write(f"""---
 title: "{item_name}"
 type: "magic_item"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
@@ -772,7 +772,7 @@ def write_location_stub(campaign_slug, loc_slug, loc_name):
         f.write(f"""---
 title: "{loc_name}"
 type: "location"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
@@ -795,7 +795,7 @@ def write_map_handout(campaign_slug, map_slug, map_title, local_img_path, visibi
         f.write(f"""---
 title: "Mapa: {map_title}"
 type: "handout"
-draft: true
+draft: false
 visibility: "{visibility}"
 status: "draft"
 tags:
@@ -836,7 +836,7 @@ def write_enriched_locations(campaign_slug, locations_registry):
             f.write(f"""---
 title: "{data['name']}"
 type: "location"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
@@ -1025,11 +1025,10 @@ def create_adventure_structure(campaign_slug, adv_slug, adv_title, *, weight=Non
             f.write(f"""---
 title: "{adv_title}"
 {weight_line}kind: "adventure"{role_lines}
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "Aventura independente importada do capítulo {adv_title}."
 ---
 """)
     return adv_dir, adv_dir
@@ -1057,11 +1056,10 @@ def create_session_structure(adv_dir, session_slug, session_title, *, weight=Non
             f.write(f"""---
 title: "{session_title}"
 {weight_line}kind: "session"{role_lines}
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "Planejamento para a sessão."
 ---
 """)
     return sess_dir, sess_dir
@@ -1384,11 +1382,10 @@ def main():
 title: "{display_title}"
 weight: {(s_idx + 1) * 10}
 type: "scene"{role_lines}
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "{display_summary}"
 npcs:
 {npcs_yaml}
 locations:
@@ -1415,11 +1412,10 @@ handouts:
 title: "{campaign_title}"
 weight: 10
 type: "adventure"
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "Aventura principal da campanha {campaign_title}."
 npcs:
 {npcs_yaml}
 locations:
@@ -1581,11 +1577,10 @@ handouts:
 title: "{display_title}"
 weight: {(s_idx + 1) * 10}
 type: "scene"{role_lines}
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "{display_summary}"
 npcs:
 {npcs_yaml}
 locations:
@@ -1615,11 +1610,10 @@ handouts:
 title: "{chap_title}"
 weight: {anthology_adventure_weight(slug, chap_title, chap_idx)}
 type: "adventure"{role_lines}
-draft: true
+draft: false
 titulo_pt_br: ""
 visibility: "gm"
 status: "draft"
-summary: "Aventura independente importada do capítulo {chap_title}."
 npcs:
 {npcs_yaml}
 locations:

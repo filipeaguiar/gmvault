@@ -3,13 +3,12 @@ title: Giant Shark
 type: monster
 draft: false
 weight: 10
-summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o texto do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução editorial para o português do Brasil conforme suas instruções.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

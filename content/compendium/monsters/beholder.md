@@ -3,25 +3,12 @@ title: Beholder
 type: monster
 draft: false
 weight: 10
-summary: '```pcre
-
-  (?# Regex pattern)
-
-  (?:^|\s|\()
-
-  (?:a\s|algum\s|aquel[ae]s?\s|as\s|o\s|os\s|um\s|alguns\s|tod[oa]s?\sos\s|cada\s)
-
-  ?(?:salvaguardas?)
-
-  (?:$|\s|\)|,|\.)
-
-  ```'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

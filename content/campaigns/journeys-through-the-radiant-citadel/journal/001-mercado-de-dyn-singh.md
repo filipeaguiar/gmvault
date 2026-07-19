@@ -1,6 +1,5 @@
 ---
 title: 'Capítulo I: O Mercado de Dyn Singh'
-summary: Os aventureiros desvendam uma misteriosa sabotagem no Mercado de Dyn Singh, ajudando as famílias rivais Lamai e Shung, antes de partirem para a Cidadela Radiante.
 draft: false
 status: ready
 visibility: players

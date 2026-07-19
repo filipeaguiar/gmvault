@@ -6,13 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - Casa de Fazenda de Kianna
 visibility: gm
 status: published
-summary: 'As velas tremeluzem na sala secreta de comando, projetando sombras dançantes sobre o mapa do castelo. O capitão aponta para a torre oeste. "A guarnição inimiga troca de turno ao terceiro dobrar dos sinos. Esse é o nosso momento." Seus olhos percorrem cada rosto na penumbra, pesando a coragem e o medo. Lá fora, o vento uiva como um presságio.
-
-
-  Os passos ritmados dos guardas ecoam nas muralhas. O cheiro de chuva iminente mistura-se ao metal oleado das armas. Cada um sabe seu papel: o escudeiro silencia os cães de guarda com carne enfeitiçada; a arqueira escala o muro leste; o ladrão desarma a fechadura da poterna. O plano é uma corrente frágil — um elo quebrado e tudo se desfaz em sangue.
-
-
-  "Vocês são a ponta da lança", sussurra o capitão, passando um frasco de vidro escuro. "Fogo de alquimista para a casa da pólvora. Um disparo no céu vermelho significa recuo. Dois, vitória." Ele hesita, e por um instante não é o comandante, apenas um soldado cansado. "Confio mais em vocês do que nos deuses. Vão."'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kianna/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/farmer/

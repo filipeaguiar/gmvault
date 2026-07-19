@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: A Sombra do Sol
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Shadow of the Sun.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/afsoun-ghorbani/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atash/

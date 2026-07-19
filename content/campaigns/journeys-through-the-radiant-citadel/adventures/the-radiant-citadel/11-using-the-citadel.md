@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 11 - Usando a Cidadela
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/using-the-citadel/

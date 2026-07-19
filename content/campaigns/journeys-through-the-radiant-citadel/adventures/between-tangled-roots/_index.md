@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Entre Raízes Emaranhadas
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Between Tangled Roots.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/lungtian/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/nimuel/

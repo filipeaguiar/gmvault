@@ -3,7 +3,6 @@ title: Goblin
 type: species
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (MPMM). Requires translation and editorial review.
 tags:
 - draft
 - importado

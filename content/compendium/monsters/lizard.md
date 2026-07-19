@@ -3,19 +3,12 @@ title: Lizard
 type: monster
 draft: false
 weight: 10
-summary: 'Personagens ficam presos em marcas de explosão, etc, nas paredes. Em muitos lugares, o piso está rachado ou desabado, e crateras se formaram.
-
-
-  A área é fortemente obscurecida por fumaça e neblina até uma altura de 4,5 metros. Criaturas sem a habilidade de enxergar através de áreas fortemente obscurecidas tratam a área como <b>terreno difícil</b>, e criaturas com essa habilidade podem tratar a área como normal.
-
-
-  Qualquer criatura que sofra dano trovejante enquanto estiver nesta área deve ser bem-sucedida em um teste de Força CD 12 {@status Grappled|condition|TeLe} ou será {@condition empurrada} 3 metros na direção da borda mais próxima da área. Em um sucesso, a criatura não é {@condition empurrada}. O som estrondoso pode ser ouvido a um alcance de 300 metros e atrai criaturas na área.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

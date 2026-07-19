@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 7 - Viajando para o Gate
 visibility: gm
 status: published
-summary: Operational scene to run during the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/xocopol/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/

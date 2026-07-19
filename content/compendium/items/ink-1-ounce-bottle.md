@@ -3,13 +3,12 @@ title: Ink (1-ounce bottle)
 type: item
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (PHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: PHB
@@ -23,6 +22,12 @@ item_info:
   cost: 10 gp
   weight: —
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
+titulo_pt_br: Tinta, uma garrafa de 1 onça.
 ---
 
 

@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Antecedentes
 visibility: gm
 status: published
-summary: Introdução e contexto da aventura.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/kala-mabarin/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/myx-nargis-ruba/

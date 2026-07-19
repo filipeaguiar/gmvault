@@ -3,56 +3,12 @@ title: Mud Mephit
 type: monster
 draft: false
 weight: 10
-summary: '```markdown
-
-  ## Rastejador da Carcaça
-
-  *Criatura monstruosidade, não alinhado*
-
-
-  **Classe de Armadura** 13 (armadura natural)
-
-  **Pontos de Vida** 13 (3d6 + 3)
-
-  **Deslocamento** 9 m, escalada 9 m
-
-
-  |   FOR   |   DES   |   CON   |   INT   |   SAB   |   CAR   |
-
-  |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-
-  | 6 (-2)  | 13 (+1) | 13 (+1) | 4 (-3)  | 10 (+0) | 6 (-2)  |
-
-
-  **Sentidos** percepção às cegas 9 m (cego além deste raio), Percepção passiva 10
-
-  **Idiomas** —
-
-  **Nível de Desafio** 1/8 (25 XP)
-
-
-  ***Percepção às Cegas***. O rastejador não pode usar sua visão às cegas enquanto estiver surdo e incapaz de farejar.
-
-
-  ***Sensível à Luz***. Enquanto estiver sob luz solar intensa, o rastejador tem desvantagem em jogadas de ataque.
-
-
-  ### Ações
-
-  ***Mordida***. *Ataque Corpo a Corpo com Arma:* +3 para atingir, alcance 1,5 m, um alvo. *Dano:* 3 (1d4 + 1) de dano perfurante.
-
-
-  ### Reações
-
-  ***Agarrão Ofegante***. *Gatilho:* O rastejador é alvo de um efeito que o forçaria a fazer uma salvaguarda de Destreza. *Resposta:* O rastejador se agarra a uma superfície, passando automaticamente na salvaguarda.
-
-  ```'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

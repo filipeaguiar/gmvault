@@ -3,17 +3,12 @@ title: Archmage
 type: monster
 draft: false
 weight: 10
-summary: '---
-
-  draft: "O texto fornecido não contém conteúdo a ser traduzido. Por favor, insira um texto válido."
-
-  ---'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

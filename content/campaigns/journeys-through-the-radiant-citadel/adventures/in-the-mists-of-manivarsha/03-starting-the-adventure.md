@@ -8,10 +8,6 @@ draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm
 status: published
-summary: 'O reino amanhece sob um véu de incertezas. Rumores de terras distantes, sombras que se agitam nas fronteiras e o apelo silencioso de antigos mistérios pairam no ar. Em meio a tavernas repletas de segredos e vielas onde a sorte é moeda corrente, surgem aqueles cujos nomes ainda serão gravados nas lendas. Heróis improváveis, movidos por ambição, dever ou um mero sopro do destino, encontram-se no limiar de uma jornada que poderá redefinir o equilíbrio entre a luz e as trevas.
-
-
-  É aqui, sob o brilho opaco de candelabros oscilantes e em meio ao burburinho abafado da Taverna do Cão Esfarrapado, que suas histórias realmente começam. O ar está impregnado com o aroma de sopa rala e hidromel aguado, um refúgio para as almas anônimas do povoado de Vau das Brumas. Entre tosses secas e o tilintar de canecas de estanho, uma figura encapuzada observa do canto mais escuro do salão, e um quadro de missões empoeirado exibe pergaminhos amarelados que sussurram promessas de glória e perigo. O mundo aguarda, contendo a respiração, pelo primeiro passo daqueles que ousarão desafiar o desconhecido.'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/
 locations:

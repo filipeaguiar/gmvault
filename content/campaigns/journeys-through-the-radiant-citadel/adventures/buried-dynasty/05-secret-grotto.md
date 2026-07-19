@@ -6,24 +6,6 @@ draft: false
 titulo_pt_br: Cena 5 – Gruta Secreta
 visibility: gm
 status: published
-summary: 'Parece que você quer que eu desenvolva uma **cena operacional** para sua sessão de RPG, mas preciso de mais informações para criar algo sob medida.
-
-
-  Para eu ajudar, poderia me dizer:
-
-
-  1.  **Sistema/Cenário:** É fantasia medieval (D&D, Tormenta), ficção científica (Cyberpunk, Starfinder), horror (Call of Cthulhu), espionagem, ou outro?
-
-  2.  **Contexto da missão:** Qual o objetivo? (Infiltração, resgate, assassinato, sabotagem, roubo de dados, escolta?)
-
-  3.  **Personagens/Equipe:** Quem são? (Soldados, aventureiros, mercenários, agentes secretos, hackers?)
-
-  4.  **Tom desejado:** Deve ser furtivo (Metal Gear Solid), tático (Rainbow Six/SWAT), cinematográfico e explosivo (Velozes e Furiosos/Missão Impossível), ou realista e tenso?
-
-  5.  **Cenário Físico:** Onde ocorre? (Base militar, arranha-céu corporativo, armazém portuário, mansão fortificada, nave espacial?)
-
-
-  Assim que você me der esses detalhes, posso estruturar os desafios, o mapa de pontos de interesse e os momentos-chave da ação.'
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/secret-grotto/

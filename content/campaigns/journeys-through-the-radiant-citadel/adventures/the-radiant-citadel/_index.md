@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: A Cidadela Radiante
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Cidadela Radiante.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atash/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/sholeh/

@@ -3,13 +3,12 @@ title: Veteran
 type: monster
 draft: false
 weight: 10
-summary: Estou à disposição para realizar a tradução e a revisão editorial. Por favor, envie o texto a ser traduzido.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

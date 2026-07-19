@@ -3,13 +3,12 @@ title: Magic Initiate
 type: feat
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -20,26 +19,28 @@ source:
   remote_id: c9e3154ab7cdaca5
 feat_info:
   prerequisite: []
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain the following benefits.
+Você recebe os seguintes benefícios.
 
+### Dois Truques
 
-### Two Cantrips
+Você aprende dois truques, à sua escolha, da lista de magias de Clérigo, Druida ou Mago. Inteligência, Sabedoria ou Carisma é o seu atributo de conjuração para as magias deste talento (escolha quando selecionar este talento).
 
-You learn two cantrips of your choice from the class=Cleric, class=Druid, or class=Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
+### Magia de 1º Círculo
 
+Escolha uma magia de 1º círculo da mesma lista que você selecionou para os truques deste talento. Você sempre tem essa magia preparada. Você pode conjurá-la uma vez sem gastar um espaço de magia, e recupera a capacidade de conjurá-la dessa forma quando termina um Descanso Longo. Você também pode conjurar a magia usando quaisquer espaços de magia que possua.
 
-### Level 1 Spell
+### Mudança de Magia
 
-Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
+Sempre que ganha um novo nível, você pode substituir uma das magias que escolheu para este talento por uma magia diferente do mesmo círculo da lista de magias escolhida.
 
+### Repetível
 
-### Spell Change
-
-Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
-
-
-### Repeatable
-
-You can take this feat more than once, but you must choose a different spell list each time.
+Você pode escolher este talento mais de uma vez, mas deve escolher uma lista de magias diferente a cada vez.

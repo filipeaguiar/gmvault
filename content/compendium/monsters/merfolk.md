@@ -3,13 +3,12 @@ title: Merfolk
 type: monster
 draft: false
 weight: 10
-summary: Estou pronto para ajudar com a tradução e revisão editorial do rascunho importado do 5e.tools (Monster Manual). Por favor, cole o texto que precisa ser traduzido.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

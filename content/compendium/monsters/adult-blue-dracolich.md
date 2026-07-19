@@ -3,82 +3,12 @@ title: Adult Blue Dracolich
 type: monster
 draft: false
 weight: 10
-summary: 'Ilustração de David Auden Nash
-
-
-  Os magos abjuradores se especializam em criar círculos de proteção e outras magias de proteção. Eles são encontrados onde quer que o conhecimento seja guardado ou onde forças malignas encontram resistência.
-
-
-  ---
-
-
-  ## Mago Abjurador
-
-
-  *Humanoide Médio (Mago), Qualquer Alinhamento*
-
-
-  **Classe de Armadura** 12 (15 com *armadura arcana*)
-
-  **Pontos de Vida** 104 (16d8 + 32)
-
-  **Deslocamento** 9 m
-
-
-  | FOR     | DES     | CON     | INT     | SAB     | CAR     |
-
-  |---------|---------|---------|---------|---------|---------|
-
-  | 9 (-1)  | 14 (+2) | 14 (+2) | 18 (+4) | 12 (+1) | 11 (+0) |
-
-
-  **Salvaguardas** Int +8, Sab +5
-
-  **Perícias** Arcanismo +8, História +8
-
-  **Resistências a Dano** a dano de concussão, perfurante e cortante de ataques não mágicos (de *pele de pedra*)
-
-  **Sentidos** Percepção passiva 11
-
-  **Idiomas** Comum, mais outros três idiomas
-
-  **Nível de Desafio** 9 (5.000 PX; Bônus de Proficiência +4)
-
-
-  ### Ações
-
-
-  ***Ataque Múltiplo.*** O mago realiza três ataques com seu Golpe Arcano.
-
-
-  ***Golpe Arcano.*** *Ataque Corpo a Corpo ou à Distância com Magia:* +8 para atingir, alcance 1,5 m ou alcance de 36 m. *Dano:* 20 (3d10 + 4) de dano de energia.
-
-
-  ### Ações Bônus
-
-
-  ***Armadura Arcana (3/dia).*** O mago lança *armadura arcana* em si mesmo ou em outra criatura que possa ver a até 9 m, sem necessidade de componente material. A magia termina mais cedo se o mago usar esta ação bônus novamente, se o mago morrer ou se ele usar Reação para dissipá-la.
-
-
-  ### Reações
-
-
-  ***Dissipar (1/dia).*** O mago lança *dissipar magia*, usando um espaço de magia de nível 4. O mago usa esta reação em resposta a sofrer dano de uma magia. Se a *dissipar magia* for bem-sucedida, o dano sofrido é reduzido à metade.
-
-
-  ---
-
-
-  O elfo abjurador Kelek é um vilão e usa *concha de gelo* e outros itens perigosos. Ele se aliou a Warduke.
-
-
-  Supervisionar um ritual em que todas as criaturas participantes devem colocar uma gota de seu sangue em um frasco de cristal. Um personagem que examine o frasco e seja bem-sucedido em um teste de Sabedoria (Medicina) CD 12 pode estimar o número de gotas.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

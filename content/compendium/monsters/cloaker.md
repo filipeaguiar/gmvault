@@ -3,13 +3,12 @@ title: Cloaker
 type: monster
 draft: false
 weight: 10
-summary: Por favor, forneça o texto do rascunho importado do 5e.tools (Monster Manual) que você deseja que eu traduza e revise editorialmente. Estou pronto para processar o conteúdo assim que você compartilhá-lo.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

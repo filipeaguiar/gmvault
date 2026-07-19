@@ -6,10 +6,6 @@ draft: true
 titulo_pt_br: Cena 13 - Haint
 visibility: gm
 status: draft
-summary: 'Parece que você está se referindo a um resumo ou briefing para uma missão em um jogo de RPG. Aqui está uma definição:
-
-
-  **Cena Operacional**: Também conhecida como "briefing", é o momento da sessão onde o Mestre apresenta o contexto da missão, os objetivos, as informações de inteligência disponíveis e os recursos fornecidos aos agentes. É a cena que estabelece o contrato social para a aventura que está por vir.'
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/haint/

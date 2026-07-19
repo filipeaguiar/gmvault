@@ -3,28 +3,12 @@ title: Assassin
 type: monster
 draft: false
 weight: 10
-summary: 'Percebi que você enviou apenas a nota técnica sobre o rascunho importado do 5e.tools (MM), mas não incluiu o texto que precisa ser traduzido e revisado editorialmente.
-
-
-  Por favor, cole o conteúdo do rascunho para que eu possa realizar a tradução e a revisão editorial conforme solicitado. Assim que receber o texto, aplicarei:
-
-
-  - As traduções obrigatórias da terminologia D&D 5e
-
-  - A preservação rigorosa de Markdown, HTML, YAML, URLs, shortcodes, tabelas, números, dados e tokens ZXQ
-
-  - A manutenção dos nomes próprios protegidos (como 5e.tools)
-
-  - A eliminação de quaisquer saídas proibidas
-
-
-  Aguardo o envio do material.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

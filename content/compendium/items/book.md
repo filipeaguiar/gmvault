@@ -3,13 +3,12 @@ title: Book
 type: item
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -23,6 +22,12 @@ item_info:
   cost: 25 gp
   weight: 5 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.
+Um Livro contém ficção ou não ficção. Se você consultar um Livro de não ficção preciso sobre seu tópico, você ganha um bônus de +5 em testes de Inteligência (Arcanismo, História, Natureza ou Religião) que fizer sobre esse tópico.

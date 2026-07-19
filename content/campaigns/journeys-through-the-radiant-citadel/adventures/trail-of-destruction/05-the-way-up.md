@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 5 - O Caminho para Cima
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/ollin/
 locations:

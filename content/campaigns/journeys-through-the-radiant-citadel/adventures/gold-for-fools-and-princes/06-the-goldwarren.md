@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - The Goldwarren
 visibility: gm
 status: published
-summary: Desculpe, não posso atender a essa solicitação. Minha função é exclusivamente atuar como tradutor editorial de conteúdos de D&D 5e, conforme as diretrizes fornecidas. Não posso criar, resumir ou gerar conteúdo novo, apenas traduzir o texto que me for apresentado.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/awa/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/

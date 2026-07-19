@@ -3,15 +3,12 @@ title: Roper
 type: monster
 draft: false
 weight: 10
-summary: "Se a asa de uma borboleta sofre um rasgo, o animal jamais voará novamente. De forma conveniente, para os sprites (Sprite), um pouco de gosma de lesma aplicada na área danificada repara a asa afetada quase imediatamente.\n\nDiminutos Protetores da Floresta. Os sprites são minúsculos seres feéricos que atuam como batedores, espiões e guardiões nas matas. Consideram-se os defensores da floresta, mas são vistos por observadores mais sábios como uma espécie de sistema imunológico — agentes biológicos projetados para proteger as fronteiras de regiões silvestres intactas dos estragos causados por civilizações em expansão ou pela propagação de criaturas malignas.\n\nObservadores da Natureza. Os sprites constroem pequenas moradias nas copas do sub-bosque. Pode ser o oco de uma árvore, um aglomerado de cogumelos, ou uma estrutura improvisada com galhos. Alguns domam animais silvestres e os utilizam como montaria, e todos criam inúmeros esconderijos e clareiras particulares entre a vegetação,\
-  \ onde guardam alimentos e tesouros.\n\nAlheios à Mortalidade. Embora sua expectativa de vida natural possa se estender por séculos, os sprites sabem que também podem morrer de velhice. Preferem não pensar nessa possibilidade e, diante de qualquer desconforto relacionado ao tema, simplesmente fogem do assunto.\n\n> ### Sprite Batedor\n> \n> *Miúdo, feérico, qualquer tendência*\n> \n> ---\n> \n> **Classe de Armadura** 15 (armadura de couro)\n> **Pontos de Vida** 10 (4d4)\n> **Deslocamento** 9 m, voo 12 m\n> \n> ---\n> \n> | FOR | DES | CON | INT | SAB | CAR |\n> |:---:|:---:|:---:|:---:|:---:|:---:|\n> | 4 (-3) | 18 (+4) | 10 (+0) | 14 (+2) | 13 (+1) | 11 (+0) |\n> \n> ---\n> \n> **Perícias** Furtividade +8, Investigação +6, Percepção +5\n> **Sentidos** visão no escuro 18 m, Percepção passiva 15\n> **Idiomas** Comum, élfico, silvestre\n> **Nível de Desafio** 1/4 (XP 50)\n> **Bônus de Proficiência** +2\n> \n> ---\n> \n> ***Visão do Coração (Heart Sight).*** O sprite toca uma criatura e descobre\
-  \ magicamente o estado emocional atual dela. Se o alvo falhar em um teste de resistência de Carisma CD 10, o sprite também saberá a tendência da criatura. Celtas, feéricos e criaturas imunes a efeitos de enfeitiçamento são automaticamente bem-sucedidos no teste de resistência.\n> \n> ### Ações\n> \n> ***Espada Curta.*** *Ataque Corpo a Corpo com Arma:* +6 para atingir, alcance 1,5 m, um alvo. *Dano:* 7 (1d6 + 4) de dano Perfurante mais 2 (1d4) de dano Venenoso.\n> \n> ***Arco Curto.*** *Ataque à Distância com Arma:* +6 para atingir, alcance 24/96 m, um alvo. *Dano:* 7 (1d6 + 4) de dano Perfurante, e o alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 10 ou sofrerá a condição Envenenado por 1 minuto. Se o teste de resistência falhar por 5 ou mais, o alvo também cairá Inconsciente. O alvo repete o teste de resistência ao final de cada um de seus turnos, terminando o efeito sobre si mesmo em caso de sucesso."
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

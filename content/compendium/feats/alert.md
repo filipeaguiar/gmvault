@@ -3,13 +3,12 @@ title: Alert
 type: feat
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -20,16 +19,22 @@ source:
   remote_id: a787bdd88fb3d84b
 feat_info:
   prerequisite: []
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain the following benefits.
+Você recebe os seguintes benefícios.
 
 
-### Initiative Proficiency
+### Proficiência em Iniciativa
 
-When you roll Initiative, you can add your Proficiency Bonus to the roll.
+Quando você rola Iniciativa, pode adicionar seu Bônus de Proficiência à jogada.
 
 
-### Initiative Swap
+### Troca de Iniciativa
 
-Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.
+Imediatamente após rolar Iniciativa, você pode trocar sua Iniciativa com a Iniciativa de um aliado voluntário no mesmo combate. Você não pode fazer essa troca se você ou o aliado estiver com a condição Incapacitado.

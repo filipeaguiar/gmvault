@@ -3,13 +3,12 @@ title: Displacer Beast
 type: monster
 draft: false
 weight: 10
-summary: Estou pronto para traduzir o rascunho importado do 5e.tools (MM). Por favor, forneça o texto a ser traduzido.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

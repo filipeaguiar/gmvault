@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Rastro de Destruição
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Trilha da Destruição.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/ameyali/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/ollin/

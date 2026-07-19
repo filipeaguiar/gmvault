@@ -3,13 +3,12 @@ title: Whistler
 type: monster
 draft: false
 weight: 10
-summary: Não há conteúdo para traduzir.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: JTTRC

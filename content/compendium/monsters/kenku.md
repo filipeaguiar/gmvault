@@ -3,13 +3,12 @@ title: Kenku
 type: monster
 draft: false
 weight: 10
-summary: "Invocar Espírito Dracônico  \n5º nível, conjuração"
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

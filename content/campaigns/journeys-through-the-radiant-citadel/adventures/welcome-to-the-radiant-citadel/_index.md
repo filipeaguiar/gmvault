@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Bem-vindo à Cidadela Radiante
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Bem-vindos à Cidadela Radiante.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/using-the-adventures/

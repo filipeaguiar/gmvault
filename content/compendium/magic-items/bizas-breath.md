@@ -3,32 +3,12 @@ title: Biza's Breath
 type: magic_item
 draft: false
 weight: 10
-summary: 'Tradição do Corpo Sagrado
-
-
-  Os monges do Caminho do Corpo Sagrado treinam seus corpos para se tornarem armas e armaduras dignas de devoção. Essa tradição monástica, originária de uma pequena vila remota, ganhou destaque entre aqueles que buscam harmonia entre perfeição física e iluminação espiritual. Os praticantes aperfeiçoam técnicas que transformam membros em aço e pele em escudo, demonstrando que o corpo mortal pode se igualar à forja divina.
-
-
-  **Força desarmada**
-
-  *Técnica do Corpo Sagrado de 3º nível*
-
-
-  Você pode rolar um d6 no lugar do dano normal de seu ataque desarmado. Se já puder rolar um dado maior, use-o em vez disso. Além disso, quando usa seu ataque desarmado, você pode usar Destreza ou Força para as jogadas de ataque e dano. Você escolhe qual atributo usar ao ganhar este arquétipo e não pode alterar essa escolha posteriormente.
-
-
-  **Clínica sagrada**
-
-  *Técnica do Corpo Sagrado de 3º nível*
-
-
-  Quando você atinge uma criatura com um ataque desarmado, pode gastar 1 ponto de chi para tentar uma manobra de agarrar. O alvo deve ser bem-sucedido em uma salvaguarda de Força; se falhar, é agarrado. Em um sucesso na salvaguarda, a criatura não é derrubada nem empurrada.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: JTTRC

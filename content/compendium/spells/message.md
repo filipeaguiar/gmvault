@@ -3,7 +3,6 @@ title: Message
 type: spell
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado

@@ -3,13 +3,12 @@ title: Bandit
 type: monster
 draft: false
 weight: 10
-summary: "- **Armadura** Cota de Malha\n- **Pontos de Vida** 32 (\n  **5d8 + 10**\n  )\n\n---\n\n - **Amizade Animal**\n - **Conjurar Animais**\n - **Falar com Animais**\n\n---\n\n- [Gnomo da Floresta (em Floresta)]"
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

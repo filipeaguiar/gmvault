@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Além da Cidadela Radiante
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo Além da Cidadela Radiante.
 npcs: null
 locations:
 - /campaigns/journeys-through-the-radiant-citadel/locations/tayyib-empire/

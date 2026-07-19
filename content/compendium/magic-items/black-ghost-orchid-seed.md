@@ -3,13 +3,12 @@ title: Black Ghost Orchid Seed
 type: magic_item
 draft: false
 weight: 10
-summary: Parece que o conteúdo do rascunho importado do 5e.tools (JTTRC) não foi incluído na sua mensagem. Por favor, cole o texto que precisa ser traduzido e revisado editorialmente para que eu possa realizar o trabalho conforme solicitado.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: JTTRC

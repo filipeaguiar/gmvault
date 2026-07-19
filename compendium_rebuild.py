@@ -61,7 +61,7 @@ TYPE_KEYS = {
     "magic_item": ("item", "baseitem"),
     "feat": ("feat",),
     "species": ("race",),
-    "class": ("class",),
+    "class": ("class", "subclass"),
     "rule": ("action", "classFeature", "subclassFeature", "optionalfeature"),
 }
 TYPE_FILES = {
@@ -612,9 +612,8 @@ def build_document(entry: dict[str, Any], record: CatalogRecord, catalog: FiveET
     metadata: dict[str, Any] = {
         "title": record.name,
         "type": kind,
-        "draft": True,
+        "draft": False,
         "weight": 10,
-        "summary": f"Draft imported from 5e.tools ({record.source}). Requires translation and editorial review.",
         "tags": ["draft", "importado", "5etools"],
         "visibility": visibility,
         "status": "draft",
@@ -702,7 +701,7 @@ def sync_compendium_entity(
         if preserve_editorial:
             generated_body = previous_body
             generated_metadata["translation"] = translation
-            for key in ("titulo_pt_br", "summary"):
+            for key in ("titulo_pt_br",):
                 if previous_metadata.get(key):
                     generated_metadata[key] = previous_metadata[key]
         if preserve_editorial:

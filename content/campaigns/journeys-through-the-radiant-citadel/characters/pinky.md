@@ -236,7 +236,6 @@ locations: []
 type: character
 spells_usage: []
 status: ready
-summary: Goblin Ladino 1 criado manualmente guiado por dados.
 tags:
 - jogador
 - goblin

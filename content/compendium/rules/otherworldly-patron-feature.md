@@ -3,7 +3,6 @@ title: "Otherworldly Patron feature"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: Otherworldly Patron feature."
 tags:
   - compendio
   - classe

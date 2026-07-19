@@ -6,34 +6,6 @@ draft: false
 titulo_pt_br: Cena 11 - Conclusão
 visibility: gm
 status: published
-summary: 'Esta frase está muito vaga. Para eu poder ajudar, preciso de mais contexto. Você poderia especificar o que significa "Cena operacional"?
-
-
-  Aqui estão algumas possibilidades do que você pode estar procurando:
-
-
-  **1. Para uma sessão de RPG de mesa (ex: D&D, cyberpunk, terror):**
-
-  - Você quer ideias para uma cena de **planejamento tático/invasão**?
-
-  - Quer um roteiro para uma **cena de infiltração furtiva**?
-
-  - Precisa de uma descrição narrativa para uma **perseguição ou combate tático**?
-
-
-  **2. Para um treinamento de teatro ou improviso:**
-
-  - Você precisa de uma premissa para um **exercício de improvisação** em um ambiente de trabalho (hospital, exército, cozinha)?
-
-  - Quer uma cena para treinar **protocolos de segurança ou atendimento ao cliente**?
-
-
-  **3. Para um treinamento corporativo/militar (simulação):**
-
-  - Você quer um **briefing ou script para uma simulação de operação policial ou de resgate**?
-
-
-  Por favor, **dê mais detalhes** (gênero, sistema de jogo, objetivo do treinamento, personagens envolvidos) para que eu possa gerar o conteúdo exato que você precisa.'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/
 locations: null

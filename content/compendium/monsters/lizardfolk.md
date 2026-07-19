@@ -3,13 +3,12 @@ title: Lizardfolk
 type: monster
 draft: false
 weight: 10
-summary: Entendido. Aguardando o rascunho importado do 5e.tools (Monster Manual) para dar início à tradução e revisão editorial.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

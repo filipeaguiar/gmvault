@@ -3,7 +3,6 @@ title: "Thief's Reflexes"
 type: "rule"
 draft: false
 weight: 10
-summary: "Característica de classe: Thief's Reflexes."
 tags:
   - compendio
   - classe

@@ -8,46 +8,6 @@ draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm
 status: published
-summary: 'Aqui está uma proposta de contextualização e introdução para a sua aventura. Adaptei o texto para ser um guia direto para o Mestre, estabelecendo o cenário, o conflito central e os ganchos iniciais.
-
-
-  ---
-
-
-  ### Resumo da Aventura
-
-
-  A aventura "O Coração Pétreo de Thornwall" é uma jornada de exploração e horror para personagens de 1º a 3º nível. Ambientada em uma região rural e outrora pacífica, ela mergulha os aventureiros em um mistério que envolve uma vila isolada pelo medo, uma antiga ordem druídica e uma maldição ancestral que despertou nas profundezas da floresta. O enredo central gira em torno do desaparecimento de pessoas importantes da vila de Thornwall e da subsequente "doença da pedra" que está lentamente transformando a flora, a fauna e os próprios aldeões em estátuas de calcário vítreo.
-
-
-  Os heróis devem desvendar a origem da maldição, que reside em um complexo de ruínas élficas conhecido como o Círculo de Musgo Pálido, corrompido por um espírito de mágoa e esquecimento. A aventura mescla investigação em um ambiente de tensão crescente, exploração de uma masmorra clássica e dilemas morais que questionam o que a natureza é capaz de fazer quando vingança e proteção se confundem. O clímax envolve confrontar não apenas a criatura responsável pela maldição, mas também as memórias e espíritos de um povo que se recusou a ser esquecido.
-
-
-  ### Contextualização para o Mestre
-
-
-  Por eras, o Vale de Briarwood foi um santuário. Antes da chegada dos colonos humanos que fundaram Thornwall, os elfos silvestres do Clã Folha Sussurrante ergueram o Círculo de Musgo Pálido, um local para veneração de antigos espíritos da terra, entidades que nutriam o ciclo de vida, morte e renascimento da floresta. Os elfos se foram há séculos, deixando para trás apenas ruínas cobertas de musgo e um guardião adormecido: um espírito primordial chamado Ornn, o Zelador Lítico, manifestado como um colossal urso de raízes e pedra.
-
-
-  A vila de Thornwall cresceu à sombra desse legado, ignorante de seu verdadeiro poder. A paz foi quebrada quando Barnabé Rochus, um ambicioso barão mercante e mecenas das artes, financiou uma expedição secreta ao Círculo após descobrir um mineral vítreo exclusivo da região: a Ceraunita, ou "Âmbar de Tempestade". Ele acreditava que o local era uma mina e, ao violar a câmara sagrada com pólvora e picaretas, a ambição humana fragmentou o selo espiritual. O guardião Ornn, deturpado em sua dor e raiva, interpretou o ato não como mineração, mas como uma segunda tentativa de genocídio espiritual — a mesma violência que dizimou os elfos que o adoravam. Ele despertou, e sua mágoa enlouquecida deu início à maldição: o "Sopro de Ornn", que transforma seres vivos lentamente em pedra, começando pelas extremidades.
-
-
-  Para os aldeões, o fenômeno é um castigo divino ou uma peste desconhecida. Viúvas choram maridos transformados em estátuas em suas poltronas, caçadores desaparecem na floresta e o pavor tomou conta das ruas. Aventureiros são a última esperança de um povo que não tem para onde fugir.
-
-
-  ### Ganchos de Aventura
-
-
-  Abaixo estão três ganchos de aventura que podem ser usados individualmente ou em conjunto para envolver os personagens na trama:
-
-
-  - **Gancho 1: Contrato do Barão Aflito.** O Barão Rochus, agora envelhecido e amargurado, está consumido pela culpa. Ele não busca heróis por altruísmo, mas para encobrir seu erro antes que a capital envie inquisidores. Um de seus agentes em uma cidade próxima contrata o grupo com uma oferta irrecusável de ouro, alegando que uma "doença rara" precisa ser "contida". Ele fornece um mapa e exige discrição absoluta.
-
-
-  - **Gancho 2: Carta de um Velho Amigo.** Um dos personagens dos jogadores tem uma ligação pessoal com Thornwall: um parente distante, um antigo mentor ou um amigo de infância envia uma carta em desespero. O remetente — digamos, Elara, a boticária da vila — descreve os horrores que testemunhou e implora por ajuda, temendo ser a próxima vítima da paralisia que avança lentamente por seu braço. Esse gancho é ideal para personagens bondosos ou com laços no campo.
-
-
-  - **Gancho 3: Lendas do Círculo de Musgo Pálido.** Um estudioso da natureza ou da história, como um velho druida ou um acadêmico de uma metrópole, está obcecado com o Círculo de Musgo Pálido. Ele descobriu que o local está emitindo uma poderosa aura de magia de transmutação e necromancia. Ele precisa de guarda-costas e exploradores capazes para uma expedição às ruínas, prometendo conhecimento, artefatos élficos ou acesso à magia primordial como recompensa.'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/
 locations:

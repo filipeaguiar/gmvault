@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 1 - Introdução
 visibility: gm
 status: published
-summary: Operational scene to conduct in the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
 locations: null

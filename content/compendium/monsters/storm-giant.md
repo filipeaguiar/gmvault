@@ -3,13 +3,12 @@ title: Storm Giant
 type: monster
 draft: false
 weight: 10
-summary: Por favor, me envie o texto que você gostaria que eu traduzisse.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

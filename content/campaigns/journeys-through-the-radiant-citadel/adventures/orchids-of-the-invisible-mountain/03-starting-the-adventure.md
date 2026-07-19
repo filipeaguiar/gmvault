@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm
 status: published
-summary: Introduction and background of the adventure.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/yarana/

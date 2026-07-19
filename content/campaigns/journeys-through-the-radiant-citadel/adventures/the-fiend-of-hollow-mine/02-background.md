@@ -8,10 +8,6 @@ draft: false
 titulo_pt_br: Antecedentes
 visibility: gm
 status: published
-summary: 'A aventura começa na cidade de Parnast, um assentamento poeirento e sem lei na fronteira selvagem, onde o aroma de pinho se mistura com o cheiro de madeira queimada. Os personagens se reúnem na taverna *O Grifo Empoleirado*, seja por um rumor sobre ruínas élficas nos Ermos de Parnast ou por uma convocação urgente de um velho conhecido. Antes que possam se instalar, sinos de alarme soam: uma criatura monstruosa emerge da floresta, e o pânico toma as ruas. Sua chegada não é coincidência—ela marca o início de uma trama muito mais sombria do que aparenta.
-
-
-  **Como Mestre, sua função é estabelecer o tom:** uma mistura de investigação, exploração e horror crescente, onde decisões apressadas podem ser tão mortais quanto as criaturas que espreitam na escuridão. Os aventureiros precisarão desvendar segredos antigos, ganhar a confiança de aliados improváveis e enfrentar uma ameaça que corrompe tanto a terra quanto a mente, antes que ela se alastre para além das fronteiras.'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/serapio/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/paloma/

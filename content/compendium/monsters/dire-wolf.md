@@ -3,13 +3,12 @@ title: Dire Wolf
 type: monster
 draft: false
 weight: 10
-summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o texto que você gostaria que eu traduzisse, seguindo todas as regras estabelecidas.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

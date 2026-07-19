@@ -3,13 +3,12 @@ title: Shortbow
 type: item
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,6 +29,12 @@ item_info:
   range: 80/320
   damage: 1d6
   damage_type: piercing
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
+titulo_pt_br: Curto
 ---
 
 

@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Nas Brumas de Manivarsha
 visibility: gm
 status: published
-summary: Aventura independente importada do capítulo In the Mists of Manivarsha.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/amanisha-manivarshi/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/dukha-bhatiyali/

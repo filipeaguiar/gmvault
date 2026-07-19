@@ -3,13 +3,12 @@ title: Ultroloth
 type: monster
 draft: false
 weight: 10
-summary: Parece que o texto do documento não foi carregado. Por favor, cole o conteúdo do arquivo (ou o próprio arquivo em formato de texto) para que eu possa prosseguir com a tradução.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

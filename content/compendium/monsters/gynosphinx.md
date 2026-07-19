@@ -3,13 +3,12 @@ title: Gynosphinx
 type: monster
 draft: false
 weight: 10
-summary: Encaminhe o rascunho do MM importado do 5e.tools que precisa ser traduzido e revisado.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

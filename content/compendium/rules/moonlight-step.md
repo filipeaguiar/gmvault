@@ -1,0 +1,24 @@
+---
+title: Moonlight Step
+type: rule
+draft: false
+weight: 10
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Moonlight Step
+  remote_file: class/class-druid.json
+  remote_key: subclassFeature
+  remote_id: b62a48c63f3df312
+---
+
+You magically transport yourself, reappearing amid a burst of moonlight. As a Bonus Action, you teleport up to 30 feet to an unoccupied space you can see, and you have Advantage on the next attack roll you make before the end of this turn.
+
+You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest. You can also regain uses by expending a level 2+ spell slot for each use you want to restore (no action required).

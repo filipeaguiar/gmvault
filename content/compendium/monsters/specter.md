@@ -3,13 +3,12 @@ title: Specter
 type: monster
 draft: false
 weight: 10
-summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

@@ -6,34 +6,6 @@ draft: false
 titulo_pt_br: Cena 5 - Tepui da Orquídea Fantasma
 visibility: gm
 status: published
-summary: '```xml
-
-  <Cena operacional para conduzir na sessão>
-
-  ```
-
-
-  Localização: Câmara de Vigília Abissal - Borda do mundo do Abismo.
-
-  Objetivo: Recuperar a Centelha Astral da Eternidade para completar o ritual de selamento planar.
-
-
-  Inimigos:
-
-  - Thal''korr, o Vínculo do Caos (utilizar bloco de Lorde Demônio, ajustar pontos de vida para 350)
-
-  - 3x Devoradores de Mundos (utilizar bloco Devorador de Mundos)
-
-  - 2x Cultistas do Fim Sombrio (utilizar bloco Arquimago)
-
-
-  A câmara pulsa com energia profana quando vocês entram. Cinco altares formam um pentagrama protegido por uma cúpula translúcida de força aprimorada (CD 22 para dissipar, 100 PV, imunidade a dano não mágico), no centro a Centelha Astral flutua sobre poço de trevas líquidas que anulam magicamente (ZXQ: campos antimagia). Thal''korr finaliza ritual flutuando entre os Devoradores enquanto os Cultistas mantêm a barreira protetora. O chão vibra com o despertar do Devorador de Mundos Supremo.
-
-
-  "Vocês ousam interromper a consumação de todos os mundos! Esmagá-los-ei com a força do próprio vazio!" - Thal''korr conjura seu machado de caos puro e ordena que seus lacaios matem todos. O tempo é crítico: em 1d4+1 rodadas o ritual completa e TUDO será destruído.
-
-
-  A Batalha Épica Final começa diante de vocês, heróis! O destino de todos os planos está em suas mãos. Rolem iniciativa e preparem-se para a última luta contra a aniquilação absoluta!'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/nene/
 locations:

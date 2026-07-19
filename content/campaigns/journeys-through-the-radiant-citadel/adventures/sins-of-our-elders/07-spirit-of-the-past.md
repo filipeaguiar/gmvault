@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 7 - Espírito do Passado
 visibility: gm
 status: published
-summary: Cena de operação para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/young-gi/
 locations:

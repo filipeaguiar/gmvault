@@ -3,61 +3,12 @@ title: Scout
 type: monster
 draft: false
 weight: 10
-summary: 'Gárgula
-
-
-  [Gargoyle]
-
-
-  Monstruosidade Média, Caótico Maligno
-
-
-  **Classe de Armadura** 15 (armadura natural)
-
-  **Pontos de Vida** 52 (7d8 + 21)
-
-  **Deslocamento** 9 m, voo 18 m
-
-
-  |   FOR   |   DES   |   CON   |   INT   |   SAB   |   CAR   |
-
-  |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-
-  | 15 (+2) | 11 (+0) | 16 (+3) |  6 (-2) | 11 (+0) |  7 (-2) |
-
-
-  **Resistências a Dano** perfuração, cortante e contundente de ataques não mágicos que não sejam de adamantina
-
-  **Imunidades a Dano** veneno
-
-  **Imunidades a Condição** exaustão, petrificado, envenenado
-
-  **Sentidos** visão no escuro 18 m, Percepção passiva 10
-
-  **Idiomas** entende os idiomas que conhecia em vida, mas não fala
-
-  **Nível de Desafio** 2 (450 PB) **Bônus de Proficiência** +2
-
-
-  ***Aparência Falsa.*** Enquanto o gárgula permanece imóvel, é indistinguível de uma estátua inanimada.
-
-
-  Ações
-
-
-  ***Ataques Múltiplos.*** O gárgula realiza dois ataques: um com sua mordida e um com suas garras.
-
-
-  ***Mordida.*** *Ataque Corpo a Corpo com Arma:* +4 para atingir, alcance 1,5 m, um alvo. *Dano:* 5 (1d6 + 2) de dano perfurante.
-
-
-  ***Garras.*** *Ataque Corpo a Corpo com Arma:* +4 para atingir, alcance 1,5 m, um alvo. *Dano:* 5 (1d6 + 2) de dano cortante.'
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

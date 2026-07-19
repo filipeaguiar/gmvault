@@ -3,13 +3,12 @@ title: Warlock
 type: class
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
 - draft
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -21,74 +20,80 @@ source:
 class_info:
   hit_dice: 1d8
   primary_ability: '{''cha'': True}'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Level 1
+## Nível 1
 
-- Eldritch Invocation Options
-- Eldritch Invocations
-- Pact Magic
+- Opções de Invocações Místicas
+- Invocações Místicas
+- Magia de Pacto
 
-## Level 2
+## Nível 2
 
-- Magical Cunning
+- Astúcia Mágica
 
-## Level 3
+## Nível 3
 
-- Warlock Subclass
+- Subclasse de Bruxo
 
-## Level 4
+## Nível 4
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 6
+## Nível 6
 
-- Subclass Feature
+- Característica de Subclasse
 
-## Level 8
+## Nível 8
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 9
+## Nível 9
 
-- Contact Patron
+- Contactar Patrono
 
-## Level 10
+## Nível 10
 
-- Subclass Feature
+- Característica de Subclasse
 
-## Level 11
+## Nível 11
 
-- Mystic Arcanum
+- Arcano Místico
 
-## Level 12
+## Nível 12
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 13
+## Nível 13
 
-- Mystic Arcanum
+- Arcano Místico
 
-## Level 14
+## Nível 14
 
-- Subclass Feature
+- Característica de Subclasse
 
-## Level 15
+## Nível 15
 
-- Mystic Arcanum
+- Arcano Místico
 
-## Level 16
+## Nível 16
 
-- Ability Score Improvement
+- Aumento de Valor de Atributo
 
-## Level 17
+## Nível 17
 
-- Mystic Arcanum
+- Arcano Místico
 
-## Level 19
+## Nível 19
 
-- Epic Boon
+- Dádiva Épica
 
-## Level 20
+## Nível 20
 
-- Eldritch Master
+- Mestre Místico

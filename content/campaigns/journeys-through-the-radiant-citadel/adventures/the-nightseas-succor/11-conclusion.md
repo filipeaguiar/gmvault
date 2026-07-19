@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: Cena 11 - Conclusão
 visibility: gm
 status: draft
-summary: Operational scene to run during the session.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/djeneba/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/brother-broumane/

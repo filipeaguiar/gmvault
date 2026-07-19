@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 6 - Perigo no Desfile
 visibility: gm
 status: published
-summary: Cena operacional para conduzir na sessão.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/samira-arah/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/

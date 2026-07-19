@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: Cena 5 - Castelo Djaynai
 visibility: gm
 status: draft
-summary: '[ERRO DE PROCESSAMENTO: TEXTO DE ENTRADA JÁ ESTÁ EM PORTUGUÊS. NENHUMA TRADUÇÃO NECESSÁRIA OU POSSÍVEL.]'
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/atiba-pa/
 locations:

@@ -3,10 +3,10 @@ title: Magical Cunning
 type: rule
 draft: false
 weight: 10
-summary: 'Característica de classe: Magical Cunning.'
 tags:
-- compendio
-- classe
+- draft
+- importado
+- 5etools
 visibility: public
 status: draft
 source:

@@ -3,13 +3,12 @@ title: Treant
 type: monster
 draft: false
 weight: 10
-summary: Nenhum conteúdo para tradução foi fornecido. Por favor, inclua o texto do rascunho importado do 5e.tools (MM).
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

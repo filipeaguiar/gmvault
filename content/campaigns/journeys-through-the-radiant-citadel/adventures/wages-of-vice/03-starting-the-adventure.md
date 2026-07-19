@@ -8,7 +8,6 @@ draft: false
 titulo_pt_br: Iniciando a Aventura
 visibility: gm
 status: published
-summary: Sentimos muito, mas não podemos gerar uma resposta adequada para esta solicitação.
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/azra-nir/
 locations:

@@ -3,13 +3,12 @@ title: Adult Gold Dragon
 type: monster
 draft: false
 weight: 10
-summary: Entendido! Estou pronto para traduzir e revisar editorialmente o rascunho importado do 5e.tools (Monster Manual). Por favor, cole o texto a ser trabalhado.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

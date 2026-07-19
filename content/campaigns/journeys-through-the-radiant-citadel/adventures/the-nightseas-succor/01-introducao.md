@@ -6,7 +6,6 @@ draft: true
 titulo_pt_br: Cena 1 - Introdução
 visibility: gm
 status: draft
-summary: Operational scene to run in the session.
 npcs: null
 locations: null
 compendium_refs: null

@@ -3,11 +3,11 @@ title: 'Knock Out (Cost: 6d6)'
 type: rule
 draft: false
 weight: 10
-summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
 tags:
-- compendio
-- classe
-visibility: "public"
+- draft
+- importado
+- 5etools
+visibility: public
 status: draft
 source:
   provider: 5e.tools

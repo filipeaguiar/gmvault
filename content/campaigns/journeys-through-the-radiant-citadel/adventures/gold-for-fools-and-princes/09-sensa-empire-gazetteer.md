@@ -6,7 +6,6 @@ draft: false
 titulo_pt_br: Cena 9 - Guia Geográfico de Sensa Empire
 visibility: gm
 status: published
-summary: Cena Operacional
 npcs:
 - /campaigns/journeys-through-the-radiant-citadel/npcs/prince-kirina/
 - /campaigns/journeys-through-the-radiant-citadel/npcs/prince-simbon/

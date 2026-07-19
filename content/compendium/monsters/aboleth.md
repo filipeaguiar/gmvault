@@ -3,14 +3,12 @@ title: Aboleth
 type: monster
 draft: false
 weight: 10
-summary: "```markdown\n---\nname: Manes\nsize: Tiny\ntype: fiend\nsubtype: demon\ntags:\n  - demon\nalignment: chaotic evil\nac: 9\nhp: 9\nhit_dice: 2d6 + 2\nspeed: 20 ft.\nstats:\n  - 10\n  - 11\n  - 12\n  - 5\n  - 8\n  - 3\ndamage_resistances: cold, fire, lightning\ndamage_immunities: poison\ncondition_immunities: charmed, frightened, poisoned\nsenses: darkvision 60 ft., passive Perception 9\nlanguages: understands Abyssal but can't speak\ncr: 0.125\nreaction:\n  - name: '**Acidic Ichor.**'\n    desc: When the manes is slain, its dissolving body sprays acid in a 5-foot line in a direction of its choosing. Each creature in that area must succeed on a DC 10 Dexterity saving throw or take 2 (1d4) acid damage.\n\"trait\":\n  - name: '**Death Throes.**'\n    desc: When the manes dies, it leaves behind a cloud of vapor that dissipates at the end of the turn, and a crawling mass of maggots that rapidly dissipates.\nattacks:\n  - name: '**Claw.**'\n    desc: \"_Melee Weapon Attack:_ +2 to hit,\
-  \ reach 5 ft., one target. _Hit:_ 5 (2d4) slashing damage.\"\n\"spellcasting\":\n  - name: '**Spellcasting.**'\n    desc: \"The manes's innate spellcasting ability is Charisma (spell save DC 8). It can innately cast the following spells, requiring no material components:\\n\\nAt will: _[dancing lights](/spells/dancing-lights/)_\\n1/day each: _[darkness](/spells/darkness/)_ (centered on self only), _[faerie fire](/spells/faerie-fire/)_\"\n```\n\n**Manes**são as almas de humanos, elfos, anões e outros mortais que foram enviados para o Abismo após a morte. Eles são as formas de vida demoníacas mais baixas, atormentados e caóticos, mas não totalmente sem propósito. Os senhores demônios constantemente os transformam em formas mais poderosas de demônios, enquanto os próprios manes buscam constantemente infligir sofrimento e morte a outros para escapar de sua miséria."
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: MM

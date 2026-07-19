@@ -3,13 +3,12 @@ title: Ashen Heir Assassin
 type: monster
 draft: false
 weight: 10
-summary: Rascunho importado de 5e.tools (JTTRC). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
 - 5etools
 visibility: gm
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: JTTRC
