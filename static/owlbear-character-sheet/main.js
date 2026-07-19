@@ -6,7 +6,14 @@
  * Vanilla JavaScript, no frameworks, no bundler.
  */
 
-import { initBridge, bindIframe, unbindIframe, destroyBridge, isDiceReady, normalizePlayerIdentity } from "./bridge.js?v=1.0.6";
+const {
+  initBridge,
+  bindIframe,
+  unbindIframe,
+  destroyBridge,
+  isDiceReady,
+  normalizePlayerIdentity,
+} = await import(`./bridge.js?cache=${Date.now()}`);
 
 // ---------------------------------------------------------------------------
 // SDK Import
@@ -29,6 +36,7 @@ const characterList = document.getElementById("character-list");
 const sheetContainer = document.getElementById("sheet-container");
 const changeBtn = document.getElementById("change-character-btn");
 const characterIframe = document.getElementById("character-iframe");
+const debugLog = document.getElementById("debug-log");
 
 // ---------------------------------------------------------------------------
 // State
@@ -50,7 +58,18 @@ function setStatus(text, type) {
   statusBar.className = "";
   if (type === "error") statusBar.classList.add("status-error");
   else if (type === "ok") statusBar.classList.add("status-ok");
+  else if (type === "connected") statusBar.classList.add("status-connected");
   else if (type === "disconnected") statusBar.classList.add("status-disconnected");
+}
+
+function addDebugLog(message) {
+  if (!debugLog) return;
+  const time = new Date().toLocaleTimeString("pt-BR");
+  const lines = `${debugLog.textContent}${debugLog.textContent ? "\n" : ""}[${time}] ${message}`
+    .split("\n")
+    .slice(-40);
+  debugLog.textContent = lines.join("\n");
+  debugLog.scrollTop = debugLog.scrollHeight;
 }
 
 function saveSelection(url) {
@@ -254,6 +273,7 @@ async function initOBR() {
       "https://esm.sh/@owlbear-rodeo/sdk@3.1.0"
     );
     OBR = module.default || module;
+    addDebugLog(`SDK Owlbear carregado; disponível: ${Boolean(OBR.isAvailable)}`);
 
     if (!OBR.isAvailable) {
       setStatus("Modo local (sem Owlbear)", "");
@@ -275,22 +295,25 @@ async function initOBR() {
 
       // Player identity is required by the Dice+ roll-request contract. Wait
       // for it before exposing the bridge to a character iframe.
+      addDebugLog("OBR.onReady recebido.");
       const playerLoaded = await loadPlayerInfo();
       if (!playerLoaded) {
+        addDebugLog("Falha ao obter nome ou ID do jogador.");
         setStatus("Conectado ao Owlbear — jogador não identificado", "error");
         await fetchCatalog();
         return;
       }
+      addDebugLog(`Jogador identificado: ${playerInfo.name}.`);
       setStatus(`Conectado: ${playerInfo.name} — Dice+ desconectado`, "disconnected");
 
       // Initialize Dice+ bridge only after a valid identity is available.
       initBridge(OBR, playerInfo, (ready) => {
         if (ready) {
-          setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ ativo`, "ok");
+          setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ ativo`, "connected");
         } else {
           setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ desconectado`, "disconnected");
         }
-      });
+      }, addDebugLog);
       bridgeInitialized = true;
 
       // The degraded fallback may already have loaded a saved character before

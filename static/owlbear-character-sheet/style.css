@@ -70,6 +70,10 @@ body {
 }
 
 #status-bar.status-ok {
+  color: var(--accent);
+}
+
+#status-bar.status-connected {
   color: var(--success);
   font-weight: 700;
 }
@@ -79,7 +83,7 @@ body {
   content: "✕ ";
 }
 
-#status-bar.status-ok::before {
+#status-bar.status-connected::before {
   content: "✓ ";
 }
 
@@ -103,6 +107,34 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+/* --- Connection diagnostics --- */
+#debug-panel {
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+#debug-panel summary {
+  padding: 6px 8px;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+#debug-log {
+  max-height: 160px;
+  overflow: auto;
+  padding: 8px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 /* --- Character card --- */

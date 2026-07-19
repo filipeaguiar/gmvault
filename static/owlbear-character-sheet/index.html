@@ -7,7 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.0.3">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link id="extension-style" rel="stylesheet">
 </head>
 <body>
   <div id="status-bar" role="status" aria-live="polite">Carregando...</div>
@@ -15,6 +18,10 @@
   <div id="character-selector">
     <h2>Selecionar Personagem</h2>
     <div id="character-list"></div>
+    <details id="debug-panel">
+      <summary>Diagnóstico da conexão</summary>
+      <pre id="debug-log" aria-live="polite"></pre>
+    </details>
   </div>
 
   <div id="sheet-container" hidden>
@@ -22,6 +29,13 @@
     <iframe id="character-iframe" title="Ficha de Personagem"></iframe>
   </div>
 
-  <script type="module" src="./main.js?v=1.0.6"></script>
+  <script>
+    // The extension is small and changes must reach mobile browsers promptly.
+    // A unique URL on each opening bypasses stale GitHub Pages/browser assets.
+    document.getElementById("extension-style").href = `style.css?cache=${Date.now()}`;
+  </script>
+  <script type="module">
+    import(`./main.js?cache=${Date.now()}`);
+  </script>
 </body>
 </html>

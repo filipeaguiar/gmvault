@@ -40,6 +40,7 @@ let _messageHandler = null;
 let _diceResultUnsub = null;
 let _diceErrorUnsub = null;
 let _onDiceReadyChange = null; // external callback
+let _onDiagnostic = null; // external diagnostic callback
 
 // ── Public API ──────────────────────────────────────────────────────
 
@@ -64,11 +65,14 @@ export function normalizePlayerIdentity(id, name) {
  * @param {object} player - { id, name } from OBR.player.
  * @param {function} [onDiceReadyChange] - Called with (boolean) when
  *   Dice+ readiness changes.
+ * @param {function} [onDiagnostic] - Called with a safe diagnostic message.
  */
-export function initBridge(obr, player, onDiceReadyChange) {
+export function initBridge(obr, player, onDiceReadyChange, onDiagnostic) {
   _obr = obr;
   _player = player;
   _onDiceReadyChange = onDiceReadyChange || null;
+  _onDiagnostic = onDiagnostic || null;
+  _diagnose("Ponte Dice+ inicializada.");
 
   // Subscribe to Dice+ result and error channels (once, for all rolls).
   _diceResultUnsub = _obr.broadcast.onMessage(
@@ -92,6 +96,7 @@ export function bindIframe(iframe) {
 
   _iframeWindow = iframe.contentWindow;
   _expectedOrigin = new URL(iframe.src).origin;
+  _diagnose(`Ficha vinculada; origem: ${_expectedOrigin}.`);
 
   // Listen for messages from the iframe.
   _messageHandler = (event) => _handleIframeMessage(event);
@@ -151,6 +156,7 @@ export function destroyBridge() {
   _obr = null;
   _player = null;
   _onDiceReadyChange = null;
+  _onDiagnostic = null;
 }
 
 /**
@@ -184,6 +190,7 @@ function _checkDiceReady() {
       // ready:true field and must not be interpreted as a Dice+ response.
       if (message.ready !== true) return;
 
+      _diagnose("Dice+ respondeu que está disponível.");
       _pendingReadyId = null;
       _setDiceReady(true);
       if (_diceReadyUnsub) {
@@ -197,11 +204,15 @@ function _checkDiceReady() {
     }
   );
 
+  _diagnose("Verificando disponibilidade do Dice+.");
   _obr.broadcast.sendMessage(
     DicePlusChannel.IS_READY,
     requestPayload,
     { destination: "ALL" }
-  ).catch(() => _retryDiceReadyCheck(requestPayload.requestId));
+  ).catch(() => {
+    _diagnose("Não foi possível enviar a verificação ao Dice+; tentando novamente.");
+    _retryDiceReadyCheck(requestPayload.requestId);
+  });
 
   // Dice+ can finish loading after this extension, particularly on mobile
   // Chromium. Keep probing while this iframe is active instead of treating a
@@ -224,6 +235,7 @@ function _retryDiceReadyCheck(requestId) {
     _readyCheckTimer = null;
   }
   _pendingReadyId = null;
+  _diagnose("Dice+ não respondeu; nova tentativa em breve.");
   _setDiceReady(false);
 
   _readyCheckTimer = setTimeout(() => {
@@ -234,6 +246,7 @@ function _retryDiceReadyCheck(requestId) {
 
 function _setDiceReady(ready) {
   _diceReady = ready;
+  _diagnose(ready ? "Estado Dice+: conectado." : "Estado Dice+: desconectado.");
 
   // Notify the iframe.
   if (_iframeWindow && _expectedOrigin) {
@@ -247,6 +260,10 @@ function _setDiceReady(ready) {
   if (_onDiceReadyChange) {
     _onDiceReadyChange(ready);
   }
+}
+
+function _diagnose(message) {
+  if (_onDiagnostic) _onDiagnostic(message);
 }
 
 // ── Iframe message handling ─────────────────────────────────────────

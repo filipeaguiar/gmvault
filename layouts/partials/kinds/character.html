@@ -853,4 +853,4 @@ function openCharTab(evt, tabName) {
   window.addEventListener("scroll", handleScroll);
 })();
 </script>
-<script src="{{ "owlbear-character-sheet/sheet-client.js?v=1.0.2" | relURL }}" defer></script>
+<script src="{{ printf "owlbear-character-sheet/sheet-client.js?v=%d" now.UnixNano | relURL }}" defer></script>
