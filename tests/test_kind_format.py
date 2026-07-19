@@ -13,25 +13,26 @@ def _frontmatter(path):
     return yaml.safe_load(text.split("---", 2)[1]) or {}
 
 
-def test_authored_content_uses_nested_kind_only():
+def test_authored_content_uses_hugo_type(): 
     pages = list((ROOT / "content").rglob("*.md"))
     assert pages
 
     for path in pages:
         metadata = _frontmatter(path)
-        assert "kind" not in metadata, f"legacy top-level kind in {path}"
-        assert metadata.get("params", {}).get("kind"), f"missing params.kind in {path}"
+        assert "kind" not in metadata, f"deprecated top-level kind in {path}"
+        assert metadata.get("type"), f"missing type in {path}"
 
 
-def test_archetypes_generate_nested_kind():
+def test_archetypes_generate_type(): 
     for path in (ROOT / "archetypes").glob("*.md"):
+        if path.name == "default.md":
+            continue
         text = path.read_text(encoding="utf-8")
         frontmatter = text.split("---", 2)[1]
-        assert not re.search(r"^kind\s*:", frontmatter, re.MULTILINE), path
-        if re.search(r"^\s+kind:\s*", frontmatter, re.MULTILINE):
-            assert re.search(r"^params:\s*$", frontmatter, re.MULTILINE), path
+        assert re.search(r"^type\s*:", frontmatter, re.MULTILINE), path
+        assert not re.search(r"^\s+kind:\s*", frontmatter, re.MULTILINE), path
 
 
-def test_kind_helper_prioritizes_params_kind_and_keeps_legacy_fallback():
+def test_kind_helper_uses_type_with_legacy_fallback():
     helper = (ROOT / "layouts/partials/helpers/kind.html").read_text(encoding="utf-8")
-    assert "or .Params.params.kind .Params.kind" in helper
+    assert ".Type" in helper

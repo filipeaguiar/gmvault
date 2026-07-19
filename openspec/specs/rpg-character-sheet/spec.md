@@ -200,3 +200,11 @@ The Equipment tab UI SHALL resolve the detailed properties of each item (weapon 
 - **WHEN** an item in `char_info.equipment` lacks a `ref` or is unresolved
 - **THEN** the layout SHALL render its inline name and base fields as fallback without causing build-time errors.
 
+
+
+### Requirement: Character sheet renders level-up features from canonical references
+The character sheet SHALL render features added by level-up through their canonical compendium references and SHALL not require duplicated feature descriptions in the character front matter.
+
+#### Scenario: Level-up adds a class feature
+- **WHEN** a confirmed level-up adds a canonical class or subclass feature reference
+- **THEN** the Class tab SHALL render the feature title and resolved descriptive content at or below the character's current class level

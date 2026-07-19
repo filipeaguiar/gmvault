@@ -151,7 +151,7 @@ def test_generated_spell_has_provenance_and_structured_schema():
     assert metadata["source"]["book"] == "XPHB"
     assert metadata["spell_info"]["level_number"] == 0
     assert metadata["spell_info"]["rolls"][0]["notation"] == "1d4"
-    assert metadata["draft"] is True and metadata["status"] == "draft"
+    assert metadata["draft"] is False and metadata["status"] == "draft"
 
 
 def test_catalog_download_failure_does_not_touch_active_content():

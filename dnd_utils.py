@@ -562,22 +562,41 @@ def calculate_spell_slots(class_name, level):
     return {}
 
 
+def build_level_up_plan(char_info, class_data):
+    """Build a non-mutating XPHB-first plan for the next level of one class."""
+    if not isinstance(char_info, dict):
+        return {"valid": False, "error": "char_info inválido"}
+    class_name = str(char_info.get("class") or "").strip()
+    current_level = int(char_info.get("class_level") or char_info.get("level") or 0)
+    if not class_name or current_level < 1 or current_level >= 20:
+        return {"valid": False, "error": "classe ou nível inválido"}
+    subclass = str(char_info.get("subclass") or "").strip()
+    subclass_short = subclass
+    if subclass:
+        match = next((item for item in class_data.get("subclass", []) if item.get("name", "").casefold() == subclass.casefold()), None)
+        if match:
+            subclass_short = match.get("shortName") or subclass
+    target_level = current_level + 1
+    features = get_class_features_at_level(class_data, class_name, subclass_short, target_level)
+    pending = [feature.get("name") for feature in features if any(token in feature.get("name", "").casefold() for token in ("improvement", "invocation", "option", "choice"))]
+    return {"valid": True, "class": class_name, "subclass_short": subclass_short, "current_level": current_level, "target_level": target_level, "features": features, "pending_choices": pending}
+
+
 def get_class_features_at_level(class_data, class_name, subclass_short, level):
     """Retorna lista de características novas da classe e subclasse para um nível específico."""
     features = []
 
-    # Class features
-    for f in class_data.get("classFeature", []):
-        if f.get("className", "").lower() == class_name.lower() and f.get("level", 1) == level:
-            features.append(f)
-
-    # Subclass features
-    if subclass_short:
-        for f in class_data.get("subclassFeature", []):
-            if (f.get("subclassShortName", "").lower() == subclass_short.lower()
-                    and f.get("level", 1) == level):
-                features.append(f)
-
+    # XPHB is preferred when a class/subclass feature was reprinted.
+    for key, owner_key, owner in (("classFeature", "className", class_name), ("subclassFeature", "subclassShortName", subclass_short)):
+        if not owner:
+            continue
+        matches = [f for f in class_data.get(key, []) if f.get(owner_key, "").lower() == owner.lower() and f.get("level", 1) == level]
+        grouped = {}
+        for feature in matches:
+            name = feature.get("name", "").casefold()
+            if name not in grouped or source_priority(feature) < source_priority(grouped[name]):
+                grouped[name] = feature
+        features.extend(grouped.values())
     return features
 
 

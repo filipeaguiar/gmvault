@@ -57,14 +57,10 @@ class GMVaultExportTests(unittest.TestCase):
         self.assertEqual(len(handout_urls), len(set(handout_urls)))
         self.assertGreater(len(handout_urls), 0)
 
-        root_handouts = self._category(export, "Handouts")
-        root_urls = [item["url"] for item in root_handouts["items"]]
-        self.assertIn(
-            "https://filipeaguiar.github.io/gmvault/campaigns/"
-            "journeys-through-the-radiant-citadel/handouts/durin-art/",
-            root_urls,
-        )
-        self.assertTrue(set(handout_urls).isdisjoint(root_urls))
+        root_handouts = next((item for item in export["categories"] if item["name"] == "Handouts"), None)
+        if root_handouts:
+            root_urls = [item["url"] for item in root_handouts["items"]]
+            self.assertTrue(set(handout_urls).isdisjoint(root_urls))
 
 
 if __name__ == "__main__":

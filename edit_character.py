@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import copy
 import glob
 import re
 from pathlib import Path
@@ -441,10 +442,12 @@ def edit_selected_character(path: Path) -> str:
 
 def level_up_character(post: frontmatter.Post, path: Path) -> bool:
     """Orquestra o fluxo de subida de nível do personagem."""
-    char_info = post.get("char_info")
-    if not isinstance(char_info, dict):
+    original_char_info = post.get("char_info")
+    if not isinstance(original_char_info, dict):
         print("Erro: ficha não possui char_info válido.")
         return False
+    # Mantém a ficha intacta até a confirmação explícita do plano.
+    char_info = copy.deepcopy(original_char_info)
 
     current_level = int(char_info.get("level") or char_info.get("class_level") or 1)
     new_level = current_level + 1
@@ -461,6 +464,12 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
     char_info["class_level"] = new_level
     prof_bonus = (new_level - 1) // 4 + 2
     char_info["proficiency_bonus"] = prof_bonus
+    progressions = char_info.get("classes_progression")
+    if isinstance(progressions, list):
+        for progression in progressions:
+            if isinstance(progression, dict) and str(progression.get("name", "")).casefold() == class_name.casefold():
+                progression["level"] = new_level
+                break
     print(f"\n✓ Nível: {new_level}")
     print(f"✓ Bônus de proficiência: +{prof_bonus}")
 
@@ -502,28 +511,27 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
     # Step 3: New class features
     print(f"\n--- Novas Características ---")
     try:
-        class_index = dnd_utils.fetch_class_json(class_name)
-        if class_index:
-            class_filename = class_index.get("class", {}).get(class_name.lower(), "")
-            if class_filename:
-                class_data = dnd_utils.load_class_data(class_filename) if class_filename else {}
-            else:
-                class_data = {}
-        else:
-            class_data = {}
+        class_data = dnd_utils.fetch_class_json(class_name) or {}
     except Exception:
         class_data = {}
 
-    new_features = dnd_utils.get_class_features_at_level(class_data, class_name, subclass_short, new_level)
+    plan_info = copy.deepcopy(char_info)
+    plan_info["level"] = current_level
+    plan_info["class_level"] = current_level
+    plan = dnd_utils.build_level_up_plan(plan_info, class_data)
+    if not plan.get("valid"):
+        print(f"Erro ao montar plano de subida: {plan.get('error')}")
+        return False
+    subclass_short = plan["subclass_short"]
+    new_features = plan["features"]
+    if plan["pending_choices"]:
+        print("  Escolhas a revisar: " + ", ".join(plan["pending_choices"]))
 
     feature_actions = char_info.get("feature_actions") or char_info.get("actions") or []
     if not isinstance(feature_actions, list):
         feature_actions = []
 
-    references = post.get("compendium_refs")
-    if not isinstance(references, list):
-        references = []
-        post["compendium_refs"] = references
+    references = list(post.get("compendium_refs") or [])
 
     for feat in new_features:
         name = feat.get("name")
@@ -534,13 +542,8 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
             name, feat.get("entries", []), source=feat.get("source")
         )
         if ref:
-            feature_actions.append({
-                "name": name,
-                "ref": ref,
-                "max_uses": 0,
-                "reset": "",
-                "source": "class"
-            })
+            if not any(isinstance(entry, dict) and (entry.get("ref") == ref or entry.get("name") == name) for entry in feature_actions):
+                feature_actions.append({"name": name, "ref": ref, "max_uses": 0, "reset": "", "source": "class"})
             if ref not in references:
                 references.append(ref)
 
@@ -611,9 +614,14 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
     )
 
     print(f"\n{'═' * 50}")
-    print(f"  ✓ Nível {new_level} concluído!")
+    print(f"  Prévia: nível {new_level}, +{hp_gain} HP, {len(new_features)} característica(s) nova(s).")
     print(f"{'═' * 50}")
-
+    if ask_choice("Confirmar subida de nível?", ["Confirmar", "Cancelar"]) != "Confirmar":
+        print("Subida de nível cancelada; ficha não foi alterada.")
+        return False
+    post["char_info"] = char_info
+    post["compendium_refs"] = references
+    print(f"  ✓ Nível {new_level} concluído!")
     return True
 
 

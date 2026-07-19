@@ -1,7 +1,7 @@
 ---
 char_info:
   ac: '15'
-  actions:
+  actions: &id001
   - max_uses: 0
     name: Ataque
     ref: /compendium/rules/action-attack/
@@ -30,12 +30,17 @@ char_info:
     name: Usar Objeto
     ref: /compendium/rules/action-use-object/
     reset: ''
+  - max_uses: 0
+    name: Cunning Action
+    ref: /compendium/rules/cunning-action/
+    reset: ''
+    source: class
   alignment: True Neutral
   avatar: ''
   class: Rogue
-  class_level: 1
+  class_level: 2
   classes_progression:
-  - level: 1
+  - level: 2
     name: Rogue
     subclass: ''
   currencies:
@@ -69,11 +74,12 @@ char_info:
   feat: ''
   feats:
   - Alert
-  hp: '9'
-  hp_current: '9'
-  hp_max: '9'
+  feature_actions: *id001
+  hp: '15'
+  hp_current: '15'
+  hp_max: '15'
   languages: Common
-  level: 1
+  level: 2
   mods:
     cha: -1
     con: 1
@@ -204,6 +210,26 @@ char_info:
     walk: 30
   spell_attack_bonus: 0
   spell_dc: 0
+  spellcasting:
+    ability: ''
+    can_mark_known: false
+    can_prepare: false
+    cantrips_known: 0
+    class_count: 0
+    kind: none
+    known_count: 0
+    known_label: Magias Conhecidas
+    pact_slot_count: 0
+    pact_slot_level: 0
+    prepared_count: 0
+    prepared_label: Magias Preparadas
+    prepared_limit: 0
+    slot_label: Espaços de Magia
+    slot_levels: []
+    slot_summary: Sem espaços
+    slot_total: 0
+    total_spells: 0
+    uses_pact_slots: false
   spells: []
   stats:
     cha: 9
@@ -229,11 +255,11 @@ compendium_refs:
 - /compendium/items/shortsword/
 - /compendium/items/dagger/
 - /compendium/items/leather-armor/
+- /compendium/rules/cunning-action/
 date: 2026-07-09 19:00:00+00:00
 draft: false
 factions: []
 locations: []
-type: character
 spells_usage: []
 status: ready
 tags:
@@ -241,15 +267,16 @@ tags:
 - goblin
 - rogue
 title: Pinky
-visibility: players
-weight: 10
 titulo_pt_br: Pinky
 translation:
-  source_language: en
-  target_language: pt-BR
   engine: openai-compatible
-  status: machine_translated
   model: deepseek-v4-pro
+  source_language: en
+  status: machine_translated
+  target_language: pt-BR
+type: character
+visibility: players
+weight: 10
 ---
 
 ### Biografia

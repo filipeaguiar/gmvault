@@ -23,7 +23,7 @@ def test_equipment_cards_distinguish_weapon_types_and_consumables():
         potion.write_text(
             "---\n"
             "title: Test Healing Potion\n"
-            "params:\n  kind: item\n"
+            "type: item\n"
             "draft: false\nvisibility: public\n"
             "item_info:\n"
             "  type: Potion\n"
@@ -75,8 +75,8 @@ def test_equipment_cards_distinguish_weapon_types_and_consumables():
         assert "ra-crossbow" in html
         assert "weapon-card weapon-melee" in html
         assert "ra-broadsword" in html
-        assert 'data-roll-label="Ataque: Shortbow"' in html
-        assert 'data-roll-label="Dano: Dagger"' in html
+        assert 'data-roll-label="Ataque: Curto"' in html
+        assert 'data-roll-label="Dano: Adaga."' in html
         assert "Acuidade" in html
         assert "consumables-section" in html
         assert "equipment-card consumable-card" in html

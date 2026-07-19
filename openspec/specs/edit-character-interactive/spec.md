@@ -27,3 +27,32 @@ The system SHALL parse the Markdown file, modify ONLY the `equipment` and `compe
 - **THEN** the system updates the character's `.md` file
 - **THEN** previously defined skills, hp, abilities and the Markdown body are preserved exactly as before
 
+
+
+### Requirement: Complete local character compendium synchronization
+The editor SHALL synchronize all supported shared entities represented by the selected local character, including classes, species, subclasses, feats, standard actions, class and subclass features, spells, items, and magic items, after an operation introduces them and through an explicit full synchronization operation.
+
+#### Scenario: Editor adds supported content
+- **WHEN** an editing operation adds a supported item, magic item, feat, spell, action, or feature
+- **THEN** the editor SHALL materialize its canonical local compendium page before associating its URL with the character
+
+#### Scenario: User synchronizes an existing character
+- **WHEN** the user selects the full compendium synchronization operation
+- **THEN** the editor SHALL resolve all supported entities represented in the selected character
+- **THEN** it SHALL retain unresolved legacy data and report entities it could not resolve
+
+#### Scenario: Existing reference is already local
+- **WHEN** a selected character already references an existing canonical compendium page
+- **THEN** the editor SHALL reuse that page and SHALL NOT create a duplicate reference
+
+
+### Requirement: Editor exposes local level-up operation
+The interactive character editor SHALL offer a level-up operation for a selected local character whose class progression can be resolved.
+
+#### Scenario: Eligible character is selected
+- **WHEN** the editor loads a character with a valid class and current level
+- **THEN** the editor SHALL offer the level-up operation alongside existing editing operations
+
+#### Scenario: Editor presents plan before writing
+- **WHEN** the user selects level-up
+- **THEN** the editor SHALL display the target level, automatic changes, new features, and required choices before modifying the file
