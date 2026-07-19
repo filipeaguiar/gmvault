@@ -43,6 +43,8 @@ const debugLog = document.getElementById("debug-log");
 // ---------------------------------------------------------------------------
 
 let catalog = [];
+let obrConnectionPromise = null;
+let obrProbeTimer = null;
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -70,6 +72,21 @@ function addDebugLog(message) {
     .slice(-40);
   debugLog.textContent = lines.join("\n");
   debugLog.scrollTop = debugLog.scrollHeight;
+}
+
+function replayEarlyObrReadyMessages() {
+  const messages = Array.isArray(window.__gmvaultEarlyObrReady)
+    ? window.__gmvaultEarlyObrReady.splice(0)
+    : [];
+  if (messages.length === 0) return;
+
+  addDebugLog(`Recuperando ${messages.length} mensagem(ns) OBR_READY recebida(s) antes do SDK.`);
+  for (const message of messages) {
+    window.dispatchEvent(new MessageEvent("message", {
+      data: message.data,
+      origin: message.origin,
+    }));
+  }
 }
 
 function saveSelection(url) {
@@ -267,13 +284,55 @@ async function fetchCatalog() {
 // OBR SDK Initialization
 // ---------------------------------------------------------------------------
 
+async function connectOwlbear(trigger) {
+  if (bridgeInitialized) return true;
+  if (obrConnectionPromise) return obrConnectionPromise;
+
+  obrConnectionPromise = (async () => {
+    addDebugLog(`Tentando conexão Owlbear (${trigger}).`);
+    const playerLoaded = await loadPlayerInfo();
+    if (!playerLoaded) {
+      addDebugLog("Nome ou ID do jogador ainda não está disponível.");
+      return false;
+    }
+
+    addDebugLog(`Jogador identificado: ${playerInfo.name}.`);
+    setStatus(`Conectado: ${playerInfo.name} — Dice+ desconectado`, "disconnected");
+    initBridge(OBR, playerInfo, (ready) => {
+      if (ready) {
+        setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ ativo`, "connected");
+      } else {
+        setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ desconectado`, "disconnected");
+      }
+    }, addDebugLog);
+    bridgeInitialized = true;
+
+    if (obrProbeTimer) {
+      clearInterval(obrProbeTimer);
+      obrProbeTimer = null;
+    }
+    if (!sheetContainer.hidden && characterIframe.getAttribute("src")) {
+      bindIframe(characterIframe);
+    }
+    await fetchCatalog();
+    return true;
+  })();
+
+  try {
+    return await obrConnectionPromise;
+  } finally {
+    obrConnectionPromise = null;
+  }
+}
+
 async function initOBR() {
   try {
     const module = await import(
       "https://esm.sh/@owlbear-rodeo/sdk@3.1.0"
     );
     OBR = module.default || module;
-    addDebugLog(`SDK Owlbear carregado; disponível: ${Boolean(OBR.isAvailable)}`);
+    replayEarlyObrReadyMessages();
+    addDebugLog(`SDK Owlbear carregado; disponível: ${Boolean(OBR.isAvailable)}; pronto: ${Boolean(OBR.isReady)}`);
 
     if (!OBR.isAvailable) {
       setStatus("Modo local (sem Owlbear)", "");
@@ -281,54 +340,32 @@ async function initOBR() {
       return;
     }
 
-    let readyHandled = false;
-    const readyFallback = setTimeout(() => {
-      if (!readyHandled) {
-        console.warn("[Character Sheet] OBR.onReady não respondeu a tempo; carregando catálogo em modo degradado.");
-        void fetchCatalog();
-      }
-    }, 1500);
-
-    OBR.onReady(async () => {
-      readyHandled = true;
-      clearTimeout(readyFallback);
-
-      // Player identity is required by the Dice+ roll-request contract. Wait
-      // for it before exposing the bridge to a character iframe.
+    addDebugLog("Aguardando OBR.onReady.");
+    OBR.onReady(() => {
       addDebugLog("OBR.onReady recebido.");
-      const playerLoaded = await loadPlayerInfo();
-      if (!playerLoaded) {
-        addDebugLog("Falha ao obter nome ou ID do jogador.");
-        setStatus("Conectado ao Owlbear — jogador não identificado", "error");
-        await fetchCatalog();
-        return;
-      }
-      addDebugLog(`Jogador identificado: ${playerInfo.name}.`);
-      setStatus(`Conectado: ${playerInfo.name} — Dice+ desconectado`, "disconnected");
-
-      // Initialize Dice+ bridge only after a valid identity is available.
-      initBridge(OBR, playerInfo, (ready) => {
-        if (ready) {
-          setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ ativo`, "connected");
-        } else {
-          setStatus(`Conectado: ${playerInfo.name || "Owlbear"} — Dice+ desconectado`, "disconnected");
-        }
-      }, addDebugLog);
-      bridgeInitialized = true;
-
-      // The degraded fallback may already have loaded a saved character before
-      // OBR became ready. Bind it now if its load event fired before the bridge
-      // existed; otherwise the onload handler below performs the same binding.
-      if (!sheetContainer.hidden && characterIframe.getAttribute("src")) {
-        bindIframe(characterIframe);
-      }
-
-      // The bridge is ready before a saved character can bind its iframe.
-      await fetchCatalog();
+      void connectOwlbear("OBR.onReady");
     });
+
+    // Chrome Android can report isAvailable before dispatching onReady. Keep
+    // the catalog usable and probe the player API for up to 15 seconds.
+    setTimeout(() => {
+      if (bridgeInitialized) return;
+      addDebugLog("OBR.onReady não respondeu em 1,5 s; iniciando diagnóstico alternativo.");
+      void fetchCatalog();
+      let attempts = 0;
+      obrProbeTimer = setInterval(() => {
+        attempts += 1;
+        void connectOwlbear(`tentativa alternativa ${attempts}/15`);
+        if (attempts >= 15 && obrProbeTimer) {
+          clearInterval(obrProbeTimer);
+          obrProbeTimer = null;
+          addDebugLog("Owlbear não disponibilizou a identidade após 15 tentativas.");
+        }
+      }, 1000);
+    }, 1500);
   } catch (error) {
-    // Running outside Owlbear or SDK unavailable — degrade gracefully.
     console.error("[Character Sheet] Falha ao inicializar SDK Owlbear", error);
+    addDebugLog("Falha ao carregar o SDK Owlbear.");
     setStatus("Modo local (sem Owlbear)", "");
     await fetchCatalog();
   }
@@ -342,6 +379,7 @@ changeBtn.addEventListener("click", changeCharacter);
 
 // Clean up bridge on extension unload (task 3.7).
 window.addEventListener("beforeunload", () => {
+  if (obrProbeTimer) clearInterval(obrProbeTimer);
   destroyBridge();
 });
 

@@ -234,7 +234,7 @@ test("roll request matches the documented Dice+ payload and result shape", async
   destroyBridge();
 });
 
-test("main waits for validated player identity and safely binds an early iframe", async () => {
+test("main waits for validated player identity, retries Owlbear readiness, and safely binds an early iframe", async () => {
   const mainSource = await readFile(
     new URL("../static/owlbear-character-sheet/main.js", import.meta.url),
     "utf8",
@@ -244,19 +244,22 @@ test("main waits for validated player identity and safely binds an early iframe"
   assert.match(mainSource, /Object\.assign\(playerInfo, identity\)/);
   assert.doesNotMatch(mainSource, /playerInfo = \{ id, name \}/);
 
-  const readyHandlerAt = mainSource.indexOf("OBR.onReady(async () =>");
-  const readyHandler = mainSource.slice(readyHandlerAt);
-  const awaitIdentityAt = readyHandler.indexOf("await loadPlayerInfo()");
-  const initBridgeAt = readyHandler.indexOf("initBridge(OBR, playerInfo");
-  const bridgeReadyAt = readyHandler.indexOf("bridgeInitialized = true");
-  const earlyIframeBindAt = readyHandler.indexOf("bindIframe(characterIframe)");
-  const catalogAt = readyHandler.indexOf("await fetchCatalog()", bridgeReadyAt);
+  const connectAt = mainSource.indexOf("async function connectOwlbear");
+  const connectFunction = mainSource.slice(connectAt, mainSource.indexOf("async function initOBR", connectAt));
+  const awaitIdentityAt = connectFunction.indexOf("await loadPlayerInfo()");
+  const initBridgeAt = connectFunction.indexOf("initBridge(OBR, playerInfo");
+  const bridgeReadyAt = connectFunction.indexOf("bridgeInitialized = true");
+  const earlyIframeBindAt = connectFunction.indexOf("bindIframe(characterIframe)");
+  const catalogAt = connectFunction.indexOf("await fetchCatalog()", bridgeReadyAt);
 
+  assert.ok(connectAt >= 0, "connection helper exists");
   assert.ok(awaitIdentityAt >= 0, "player identity must be awaited");
   assert.ok(awaitIdentityAt < initBridgeAt, "identity must load before bridge initialization");
   assert.ok(initBridgeAt < bridgeReadyAt, "bridge readiness flag must follow initialization");
   assert.ok(bridgeReadyAt < earlyIframeBindAt, "an early iframe can bind only after bridge initialization");
   assert.ok(earlyIframeBindAt < catalogAt, "early iframe recovery must precede the ready-path catalog fetch");
+  assert.match(mainSource, /OBR\.onReady\(\(\) =>/);
+  assert.match(mainSource, /tentativa alternativa \$\{attempts\}\/15/);
   assert.match(mainSource, /characterIframe\.onload = \(\) => \{\s+if \(bridgeInitialized\)/);
 });
 
