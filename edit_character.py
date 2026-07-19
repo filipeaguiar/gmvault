@@ -440,6 +440,32 @@ def edit_selected_character(path: Path) -> str:
             print("Nenhuma alteração realizada.")
 
 
+def choose_expertise_skills(skills: dict) -> list[str] | None:
+    """Coleta duas perícias proficientes elegíveis para Expertise."""
+    eligible = sorted(
+        name for name, data in skills.items()
+        if isinstance(data, dict)
+        and data.get("proficient", False)
+        and not data.get("expertise", False)
+    )
+    if len(eligible) < 2:
+        print("Expertise pendente: são necessárias duas perícias proficientes sem Expertise.")
+        return None
+
+    selected: list[str] = []
+    for position in range(1, 3):
+        options = [name for name in eligible if name not in selected]
+        choice = ask_choice(
+            f"Escolha a {position}ª perícia para Expertise:",
+            options + ["Cancelar"],
+        )
+        if choice == "Cancelar" or choice not in options:
+            print("Expertise pendente: seleção cancelada ou inválida.")
+            return None
+        selected.append(choice)
+    return selected
+
+
 def level_up_character(post: frontmatter.Post, path: Path) -> bool:
     """Orquestra o fluxo de subida de nível do personagem."""
     original_char_info = post.get("char_info")
@@ -548,6 +574,24 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
                 references.append(ref)
 
     char_info["feature_actions"] = feature_actions
+
+    has_expertise = any(
+        re.sub(r"\s+", " ", str(feature.get("name") or "").strip()).casefold() == "expertise"
+        for feature in new_features
+        if isinstance(feature, dict)
+    )
+    if has_expertise:
+        print("\n--- Expertise ---")
+        skills = char_info.get("skills")
+        if not isinstance(skills, dict):
+            print("Expertise pendente: ficha não possui perícias válidas.")
+            return False
+        selected_expertise = choose_expertise_skills(skills)
+        if selected_expertise is None:
+            return False
+        for skill_name in selected_expertise:
+            skills[skill_name]["expertise"] = True
+        print("  Expertise: " + ", ".join(selected_expertise))
 
     # Step 4: Feats/ASI at appropriate levels
     asi_levels = dnd_utils.get_asi_levels(class_name)

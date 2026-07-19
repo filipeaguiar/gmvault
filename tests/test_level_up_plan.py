@@ -36,3 +36,71 @@ def test_cancelled_level_up_does_not_mutate_character():
     with patch("edit_character.dnd_utils.fetch_class_json", return_value={"classFeature": [], "subclassFeature": []}), patch("edit_character.ask_choice", side_effect=["Média: +6 HP", "Cancelar"]):
         assert not level_up_character(post, None)
     assert repr(post) == original
+
+
+def _rogue_with_skills():
+    return {
+        "title": "Expert Hero",
+        "char_info": {
+            "class": "Rogue",
+            "level": 1,
+            "class_level": 1,
+            "hp": "8",
+            "hp_max": "8",
+            "hp_current": "8",
+            "stats": {"con": 10, "dex": 14},
+            "skills": {
+                "acrobatics": {"stat": "dex", "proficient": True, "expertise": False, "bonus": 4},
+                "stealth": {"stat": "dex", "proficient": True, "expertise": False, "bonus": 4},
+                "perception": {"stat": "wis", "proficient": True, "expertise": False, "bonus": 2},
+                "history": {"stat": "int", "proficient": False, "expertise": False, "bonus": 0},
+            },
+            "actions": [],
+        },
+    }
+
+
+def _expertise_class_data():
+    return {
+        "classFeature": [
+            {"name": "Expertise", "className": "Rogue", "level": 2, "source": "XPHB"},
+        ],
+        "subclassFeature": [],
+    }
+
+
+def test_level_up_applies_expertise_and_doubles_skill_bonus():
+    post = _rogue_with_skills()
+    with patch("edit_character.dnd_utils.fetch_class_json", return_value=_expertise_class_data()), patch("edit_character.dnd_utils.create_rule_stub", return_value=None), patch("edit_character.ask_choice", side_effect=["Média: +5 HP", "acrobatics", "stealth", "Confirmar"]):
+        assert level_up_character(post, None)
+
+    skills = post["char_info"]["skills"]
+    assert skills["acrobatics"]["expertise"]
+    assert skills["stealth"]["expertise"]
+    assert skills["acrobatics"]["bonus"] == 6
+    assert skills["stealth"]["bonus"] == 6
+    assert not skills["perception"]["expertise"]
+
+
+def test_expertise_rejects_duplicate_or_cancelled_selection_without_mutating_character():
+    post = _rogue_with_skills()
+    original = repr(post)
+    with patch("edit_character.dnd_utils.fetch_class_json", return_value=_expertise_class_data()), patch("edit_character.dnd_utils.create_rule_stub", return_value=None), patch("edit_character.ask_choice", side_effect=["Média: +5 HP", "acrobatics", "acrobatics"]):
+        assert not level_up_character(post, None)
+    assert repr(post) == original
+
+    post = _rogue_with_skills()
+    original = repr(post)
+    with patch("edit_character.dnd_utils.fetch_class_json", return_value=_expertise_class_data()), patch("edit_character.dnd_utils.create_rule_stub", return_value=None), patch("edit_character.ask_choice", side_effect=["Média: +5 HP", "Cancelar"]):
+        assert not level_up_character(post, None)
+    assert repr(post) == original
+
+
+def test_expertise_requires_two_eligible_proficient_skills():
+    post = _rogue_with_skills()
+    post["char_info"]["skills"]["stealth"]["expertise"] = True
+    post["char_info"]["skills"]["perception"]["expertise"] = True
+    original = repr(post)
+    with patch("edit_character.dnd_utils.fetch_class_json", return_value=_expertise_class_data()), patch("edit_character.dnd_utils.create_rule_stub", return_value=None), patch("edit_character.ask_choice", return_value="Média: +5 HP"):
+        assert not level_up_character(post, None)
+    assert repr(post) == original

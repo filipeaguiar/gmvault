@@ -1,318 +1,324 @@
 ---
-title: "Detios Canto Baixo"
-date: 2026-07-19T21:47:43Z
-type: "character"
-draft: false
-weight: 10
-tags:
-  - jogador
-  - halfling
-  - bard
-visibility: "players"
-status: "ready"
-
-# Estatísticas Estruturadas
 char_info:
-  class: "Bard"
-  class_level: 1
-  subclass: ""
-  level: 1
-  species: "Halfling"
-  species_variant: "Ghostwise"
-  ac: "13"
-  hp: "9"
-  hp_max: "9"
-  hp_current: "9"
-  feat: ""
-  feats:
-  - Lucky
-  size: "Small"
-  alignment: "True Neutral"
-  dndbeyond_id: ""
-  proficiency_bonus: 2
-  spell_dc: 0
-  spell_attack_bonus: 0
-  avatar: ""
-  spellcasting:
-    mode: known
-    ability: ''
-    prepared_spell_refs: []
-    known_spell_refs: []
-    always_prepared_spell_refs: []
-    class_spell_refs: []
-    bonus_spell_refs:
-    - /compendium/spells/minor-illusion/
-    - /compendium/spells/vicious-mockery/
-    - /compendium/spells/charm-person/
-    - /compendium/spells/detect-magic/
-    - /compendium/spells/dissonant-whispers/
-    - /compendium/spells/healing-word/
-    slot_progression:
-      1: 2
-    pact_slots: {}
-    ritual_casting: false
-    sources: []
-  speed:
-    walk: 30
-    fly: 0
-    swim: 0
-    climb: 0
-    burrow: 0
-  senses: "Passive Perception 9"
-  passive_senses:
-    perception: 9
-    investigation: 10
-    insight: 9
-  languages: "Common"
-  saves:
-    str: -1
-    dex: 5
-    con: 1
-    int: 0
-    wis: -1
-    cha: 6
-  saves_proficient:
-    str: false
-    dex: true
-    con: false
-    int: false
-    wis: false
-    cha: true
-  saves_summary: "Dex +5, Cha +6"
-  mods:
-    str: -1
-    dex: 3
-    con: 1
-    int: 0
-    wis: -1
-    cha: 4
-  stats:
-    str: 8
-    dex: 16
-    con: 12
-    int: 10
-    wis: 9
-    cha: 18
+  ac: '13'
+  actions: &id001
+  - max_uses: 0
+    name: Ataque
+    ref: /compendium/rules/action-attack/
+    reset: ''
+  - max_uses: 0
+    name: Esconder
+    ref: /compendium/rules/action-hide/
+    reset: ''
+  - max_uses: 0
+    name: Desengajar
+    ref: /compendium/rules/action-disengage/
+    reset: ''
+  - max_uses: 0
+    name: Disparar
+    ref: /compendium/rules/action-dash/
+    reset: ''
+  - max_uses: 0
+    name: Ajudar
+    ref: /compendium/rules/action-help/
+    reset: ''
+  - max_uses: 0
+    name: Esquivar
+    ref: /compendium/rules/action-dodge/
+    reset: ''
+  - max_uses: 0
+    name: Usar Objeto
+    ref: /compendium/rules/action-use-object/
+    reset: ''
+  - max_uses: 0
+    name: Bardic Inspiration
+    ref: /compendium/rules/bardic-inspiration/
+    reset: ''
+    roll: 1d6
+    source: class
+  - max_uses: 0
+    name: Spellcasting
+    ref: /compendium/rules/spellcasting/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Jack of All Trades
+    ref: /compendium/rules/jack-of-all-trades/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Magical Inspiration
+    ref: /compendium/rules/magical-inspiration/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Song of Rest (d6)
+    ref: /compendium/rules/song-of-rest-d6/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Expertise
+    ref: /compendium/rules/expertise/
+    reset: ''
+    source: class
+  alignment: True Neutral
+  avatar: ''
+  class: Bard
+  class_level: 2
+  class_spells: []
+  classes_progression:
+  - level: 2
+    name: Bard
+    subclass: ''
   currencies:
     cp: 0
-    sp: 0
-    gp: 0
     ep: 0
+    gp: 0
     pp: 0
+    sp: 0
+  dndbeyond_id: ''
+  equipment:
+  - equipped: false
+    name: Backpack
+    quantity: 1
+    ref: /compendium/items/backpack/
+  - equipped: false
+    name: Bedroll
+    quantity: 1
+    ref: /compendium/items/bedroll/
+  - equipped: false
+    name: Costume Clothes
+    quantity: 1
+    ref: /compendium/items/costume-clothes/
+  - equipped: false
+    name: Candle
+    quantity: 1
+    ref: /compendium/items/candle/
+  - equipped: false
+    name: Rations (1 Day)
+    quantity: 1
+    ref: /compendium/items/rations-1-day/
+  - equipped: false
+    name: Waterskin
+    quantity: 1
+    ref: /compendium/items/waterskin/
+  - equipped: false
+    name: Disguise Kit
+    quantity: 1
+    ref: /compendium/items/disguise-kit/
+  - equipped: false
+    name: Leather Armor
+    quantity: 1
+    ref: /compendium/items/leather-armor/
+  - equipped: false
+    name: Dagger
+    quantity: 2
+    ref: /compendium/items/dagger/
+  - equipped: false
+    name: Entertainer's Pack
+    quantity: 1
+    ref: /compendium/items/entertainers-pack/
+  feat: ''
+  feats:
+  - Lucky
+  feature_actions: *id001
+  hp: '15'
+  hp_current: '15'
+  hp_max: '15'
+  languages: Common
+  level: 2
+  mods:
+    cha: 4
+    con: 1
+    dex: 3
+    int: 0
+    str: -1
+    wis: -1
+  passive_senses:
+    insight: 9
+    investigation: 10
+    perception: 9
+  proficiency_bonus: 2
+  saves:
+    cha: 6
+    con: 1
+    dex: 5
+    int: 0
+    str: -1
+    wis: -1
+  saves_proficient:
+    cha: true
+    con: false
+    dex: true
+    int: false
+    str: false
+    wis: false
+  saves_summary: Dex +5, Cha +6
+  senses: Passive Perception 9
+  size: Small
   skills:
     acrobatics:
       bonus: 3
-      proficient: false
       expertise: false
+      proficient: false
       stat: dex
     animal-handling:
       bonus: 1
-      proficient: true
       expertise: false
+      proficient: true
       stat: wis
     arcana:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     athletics:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: str
     deception:
       bonus: 4
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     history:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     insight:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     intimidation:
       bonus: 4
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     investigation:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     medicine:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     nature:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     perception:
       bonus: -1
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     performance:
       bonus: 6
-      proficient: true
       expertise: false
+      proficient: true
       stat: cha
     persuasion:
       bonus: 6
+      expertise: true
       proficient: true
-      expertise: false
       stat: cha
     religion:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     sleight-of-hand:
       bonus: 5
-      proficient: true
       expertise: false
+      proficient: true
       stat: dex
     stealth:
       bonus: 3
-      proficient: false
       expertise: false
+      proficient: false
       stat: dex
     survival:
       bonus: 1
+      expertise: true
       proficient: true
-      expertise: false
       stat: wis
-  actions:
-    - name: Ataque
-      ref: /compendium/rules/action-attack/
-      max_uses: 0
-      reset: ''
-    - name: Esconder
-      ref: /compendium/rules/action-hide/
-      max_uses: 0
-      reset: ''
-    - name: Desengajar
-      ref: /compendium/rules/action-disengage/
-      max_uses: 0
-      reset: ''
-    - name: Disparar
-      ref: /compendium/rules/action-dash/
-      max_uses: 0
-      reset: ''
-    - name: Ajudar
-      ref: /compendium/rules/action-help/
-      max_uses: 0
-      reset: ''
-    - name: Esquivar
-      ref: /compendium/rules/action-dodge/
-      max_uses: 0
-      reset: ''
-    - name: Usar Objeto
-      ref: /compendium/rules/action-use-object/
-      max_uses: 0
-      reset: ''
-    - name: Bardic Inspiration
-      ref: /compendium/rules/bardic-inspiration/
-      max_uses: 0
-      reset: ''
-      source: class
-      roll: 1d6
-    - name: Spellcasting
-      ref: /compendium/rules/spellcasting/
-      max_uses: 0
-      reset: ''
-      source: class
-  equipment:
-    - name: Backpack
-      ref: /compendium/items/backpack/
-      quantity: 1
-      equipped: false
-    - name: Bedroll
-      ref: /compendium/items/bedroll/
-      quantity: 1
-      equipped: false
-    - name: Costume Clothes
-      ref: /compendium/items/costume-clothes/
-      quantity: 1
-      equipped: false
-    - name: Candle
-      ref: /compendium/items/candle/
-      quantity: 1
-      equipped: false
-    - name: Rations (1 Day)
-      ref: /compendium/items/rations-1-day/
-      quantity: 1
-      equipped: false
-    - name: Waterskin
-      ref: /compendium/items/waterskin/
-      quantity: 1
-      equipped: false
-    - name: Disguise Kit
-      ref: /compendium/items/disguise-kit/
-      quantity: 1
-      equipped: false
-    - name: Leather Armor
-      ref: /compendium/items/leather-armor/
-      quantity: 1
-      equipped: false
-    - name: Dagger
-      ref: /compendium/items/dagger/
-      quantity: 2
-      equipped: false
-    - name: Entertainer's Pack
-      ref: /compendium/items/entertainers-pack/
-      quantity: 1
-      equipped: false
-  spells:
-    - ref: /compendium/spells/minor-illusion/
-      availability: known
-      source: class
-      usage: 1 action
-      can_prepare: false
-    - ref: /compendium/spells/vicious-mockery/
-      availability: known
-      source: class
-      usage: 1 action
-      can_prepare: false
-    - ref: /compendium/spells/charm-person/
-      availability: known
-      source: class
-      usage: 1 action
-      can_prepare: false
-    - ref: /compendium/spells/detect-magic/
-      availability: known
-      source: class
-      usage: 1 action
-      can_prepare: false
-    - ref: /compendium/spells/dissonant-whispers/
-      availability: known
-      source: class
-      usage: 1 action
-      can_prepare: false
-    - ref: /compendium/spells/healing-word/
-      availability: known
-      source: class
-      usage: 1 action
-      can_prepare: false
+  species: Halfling
+  species_variant: Ghostwise
+  speed:
+    burrow: 0
+    climb: 0
+    fly: 0
+    swim: 0
+    walk: 30
+  spell_attack_bonus: 0
+  spell_dc: 0
   spell_slots:
-    1: 2
-  class_spells: []
-  classes_progression:
-    - name: Bard
-      level: 1
-      subclass: ''
-
-# Relacionamentos
-locations: []
-factions: []
+    1: 3
+  spellcasting:
+    ability: ''
+    can_mark_known: true
+    can_prepare: false
+    cantrips_known: 0
+    class_count: 0
+    kind: known
+    known_count: 6
+    known_label: Magias Conhecidas
+    pact_slot_count: 0
+    pact_slot_level: 0
+    prepared_count: 0
+    prepared_label: Magias Conhecidas
+    prepared_limit: 0
+    slot_label: Espaços de Magia
+    slot_levels:
+    - 1
+    slot_summary: 3 espaços
+    slot_total: 3
+    total_spells: 6
+    uses_pact_slots: false
+  spells:
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/minor-illusion/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/vicious-mockery/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/charm-person/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/detect-magic/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/dissonant-whispers/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/healing-word/
+    source: class
+    usage: 1 action
+  stats:
+    cha: 18
+    con: 12
+    dex: 16
+    int: 10
+    str: 8
+    wis: 9
+  subclass: ''
 compendium_refs:
 - /compendium/classes/bard/
 - /compendium/feats/lucky/
@@ -342,7 +348,24 @@ compendium_refs:
 - /compendium/spells/healing-word/
 - /compendium/spells/minor-illusion/
 - /compendium/spells/vicious-mockery/
+- /compendium/rules/jack-of-all-trades/
+- /compendium/rules/magical-inspiration/
+- /compendium/rules/song-of-rest-d6/
+- /compendium/rules/expertise/
+date: 2026-07-19 21:47:43+00:00
+draft: false
+factions: []
+locations: []
 spells_usage: []
+status: ready
+tags:
+- jogador
+- halfling
+- bard
+title: Detios Canto Baixo
+type: character
+visibility: players
+weight: 10
 ---
 
 ### Biografia
