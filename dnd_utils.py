@@ -1738,3 +1738,61 @@ status: "draft"
             return f"/compendium/{kind}s/{slug}/"
 
     return None
+
+
+# Local character flows share this resolver instead of relying on an API importer.
+def _local_compendium_page(ref):
+    if not isinstance(ref, str) or not ref.startswith("/compendium/"):
+        return False
+    path = os.path.join("content", ref.strip("/"))
+    return os.path.isfile(path + ".md") or os.path.isfile(os.path.join(path, "_index.md"))
+
+
+def sync_character_compendium(char_info, references=None):
+    """Resolve supported local character entities, preserving legacy data."""
+    refs = [ref for ref in (references or []) if isinstance(ref, str)]
+    unresolved = []
+    if not isinstance(char_info, dict):
+        return refs, ["char_info inválido"]
+
+    def resolve(kind, name, entry=None):
+        existing = entry.get("ref") if isinstance(entry, dict) else None
+        if _local_compendium_page(existing):
+            if existing not in refs:
+                refs.append(existing)
+            return existing
+        if not isinstance(name, str) or not name.strip():
+            return None
+        ref = fetch_from_5etools(kind, name.strip())
+        if not ref:
+            unresolved.append(name.strip())
+            return None
+        if ref not in refs:
+            refs.append(ref)
+        if isinstance(entry, dict):
+            entry["ref"] = ref
+        return ref
+
+    classes = char_info.get("classes_progression") or [{
+        "name": char_info.get("class"), "subclass": char_info.get("subclass")
+    }]
+    for entry in classes:
+        if isinstance(entry, dict) and resolve("class", entry.get("name")):
+            ensure_compendium_class_overview(
+                entry.get("name"), fetch_class_json(entry.get("name")), entry.get("subclass") or None
+            )
+    resolve("species", char_info.get("species") or char_info.get("race"))
+    for feat in char_info.get("feats") or []:
+        resolve("feat", feat.get("name") if isinstance(feat, dict) else feat)
+    for key in ("actions", "feature_actions"):
+        for entry in char_info.get(key) or []:
+            if isinstance(entry, dict):
+                resolve("rule", entry.get("name"), entry)
+    for entry in char_info.get("equipment") or []:
+        if isinstance(entry, dict):
+            kind = "magic_item" if "/magic-items/" in str(entry.get("ref", "")) else "item"
+            resolve(kind, entry.get("name"), entry)
+    for entry in char_info.get("spells") or []:
+        if isinstance(entry, dict):
+            resolve("spell", entry.get("name"), entry)
+    return list(dict.fromkeys(refs)), list(dict.fromkeys(unresolved))

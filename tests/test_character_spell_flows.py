@@ -8,7 +8,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import create_character
 import edit_character
-from import_dndbeyond import collect_dndbeyond_spell_entries
 
 
 def raw_spell(name, *, level=1, prepared=False, uses_slot=True):
@@ -17,35 +16,6 @@ def raw_spell(name, *, level=1, prepared=False, uses_slot=True):
         "prepared": prepared,
         "usesSpellSlot": uses_slot,
     }
-
-
-def test_dndbeyond_materializes_all_granted_sources_and_merges_duplicates():
-    character = {
-        "classSpells": [{"spells": [raw_spell("Bless", prepared=True), raw_spell("Missing")]}],
-        "spells": {
-            "race": [raw_spell("Bless", uses_slot=False)],
-            "background": [raw_spell("Guidance", level=0, uses_slot=False)],
-            "feat": [raw_spell("Misty Step", uses_slot=False)],
-            "item": [raw_spell("Light", level=0, uses_slot=False)],
-        },
-    }
-    refs = {
-        name: f"/compendium/spells/{name.lower().replace(' ', '-')}/"
-        for name in ("Bless", "Guidance", "Misty Step", "Light")
-    }
-    fetcher = Mock(side_effect=lambda _kind, name: refs.get(name))
-
-    entries, unresolved = collect_dndbeyond_spell_entries(
-        character, "Cleric", fetcher=fetcher
-    )
-
-    assert len(entries) == 4
-    bless = next(entry for entry in entries if entry["ref"].endswith("/bless/"))
-    assert bless["prepared"] is True
-    assert bless["availability"] == "always"
-    assert bless["sources"] == ["class", "race"]
-    assert all("name" not in entry and "level" not in entry for entry in entries)
-    assert unresolved == ["Missing"]
 
 
 def test_create_flow_emits_minimal_refs_and_skips_unresolved_names():

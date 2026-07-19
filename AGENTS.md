@@ -666,54 +666,18 @@ Cuidados:
 * relações geradas usam URLs internas no front matter. Layouts devem continuar resolvendo essas URLs com `site.GetPage` e fallback seguro;
 * qualquer mudança em `visibility` deve considerar que páginas player-facing não devem criar navegação para páginas GM.
 
-### `import_dndbeyond.py`
+### Sincronização local de personagens e compêndio
 
-Importador de personagem a partir da API pública de personagem do D&D Beyond.
+A API do D&D Beyond não é uma integração suportada. Novas fichas devem ser criadas por `create_character.py` e fichas existentes devem ser mantidas por `edit_character.py`.
 
-Entrada esperada:
-
-```bash
-python3 import_dndbeyond.py <character-id> --campaign <campaign-slug>
-```
-
-Se `--campaign` não for informado, o padrão atual é `cidadela-radiante`.
-
-Fluxo conceitual:
-
-```text
-D&D Beyond character API
-        ↓
-cálculo local de atributos, CA, HP, classe, raça, talentos, magias
-        ↓
-verificação/criação de referências no compêndio via 5e.tools
-        ↓
-content/campaigns/<campaign-slug>/characters/<personagem>.md
-        ↓
-content/compendium/{classes,races,feats,spells,items,magic-items,rules}/
-```
-
-Comportamentos importantes:
-
-* busca `https://character-service.dndbeyond.com/character/v5/character/<id>`;
-* exige que a ficha esteja acessível pela API; fichas privadas ou respostas inválidas encerram com erro;
-* calcula atributos finais a partir de `stats` e modificadores;
-* calcula CA considerando armadura, escudo, defesa sem armadura de monge/bárbaro e bônus mágicos;
-* calcula HP a partir de HP base, modificador de Constituição por nível e bônus adicionais;
-* coleta classe, raça, talentos, equipamentos equipados e magias conhecidas;
-* monta `compendium_refs` para classe, raça, talentos, itens, itens mágicos e magias;
-* se uma referência do compêndio não existir localmente, tenta criá-la via dados do 5e.tools;
-* cria regras de compêndio para habilidades de classe, opções de classe, pactos, invocações e recursos similares;
-* grava personagem em `content/campaigns/<campaign-slug>/characters/<slug>.md` com `visibility: "players"` e `status: "ready"`;
-* usa `params.kind: "character"`; layouts devem manter fallback para `params.kind`.
+Os dois fluxos usam o resolvedor compartilhado do 5e.tools para materializar referências de classe, espécie, subclasse, talentos, ações, características, magias, itens e itens mágicos. O editor oferece a ação **Sincronizar compêndio da ficha** para completar referências ausentes em fichas legadas sem remover dados operacionais ou conteúdo editorial existente.
 
 Cuidados:
 
-* o script pode atualizar/criar muitos arquivos no compêndio como `draft: true`;
-* parte do texto de regras vem de snippets/descrições externas e pode exigir revisão, tradução e adequação editorial;
-* as referências de compêndio em páginas de personagem só devem renderizar links seguros para jogadores; destinos GM devem ser omitidos em contexto player-facing;
-* o cálculo de ficha é pragmático, não substitui validação manual completa da ficha no D&D Beyond;
-* equipamentos não equipados geralmente não entram na lista de referências;
-* subclasses, opções e features são filtradas por blacklist simples, sujeita a falsos positivos ou lacunas.
+* a sincronização depende da rede e dos mirrors comunitários do 5e.tools;
+* entidades não resolvidas são informadas e não geram URLs inventadas;
+* parte do texto de regras externo exige revisão, tradução e adequação editorial;
+* referências em fichas player-facing só devem apontar para destinos seguros para jogadores.
 
 ### `translate_drafts.py`
 
@@ -780,7 +744,7 @@ Cuidados:
 * Se normalizar front matter para `kind` no topo, atualizar os importadores e validar conteúdo legado com fallback.
 * Após mudanças em importadores, testar pelo menos:
   * geração de campanha com `import_campaign.py` usando um slug pequeno ou fixture;
-  * geração de personagem com `import_dndbeyond.py` quando houver ID acessível;
+  * criação e sincronização de personagem pelos fluxos locais;
   * `hugo server -D`;
   * `hugo -D --gc --minify`;
   * `hugo --gc --minify`.

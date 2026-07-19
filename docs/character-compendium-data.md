@@ -44,6 +44,6 @@ Referências existentes que precisam de revisão durante a migração:
 
 ## Processadores
 
-`import_dndbeyond.py` deve gerar o formato acima para fichas novas e refletir os dados da fonte externa sem exceções de personagem. `scripts/sync_character.py` pode completar refs, mas só remove uma descrição quando a página existe e possui conteúdo. `translate_drafts.py` deve proteger URLs e metadados referenciais e traduzir o conteúdo da nota do compêndio, não expandir a ficha.
+`create_character.py` deve gerar o formato acima para fichas novas. `edit_character.py` e `scripts/sync_character.py` podem completar referências do compêndio sem remover dados operacionais legados; a API do D&D Beyond não é uma fonte suportada. `translate_drafts.py` deve proteger URLs e metadados referenciais e traduzir o conteúdo da nota do compêndio, não expandir a ficha.
 
 Correções editoriais específicas, como raça e nível de Pinky, são aplicadas depois da importação, diretamente na ficha ou por uma ferramenta de correção explícita. Elas não devem ser incorporadas ao algoritmo geral de importação.

@@ -374,6 +374,22 @@ def save_character(path: Path, post: frontmatter.Post, body: bytes) -> None:
     path.write_bytes(header + body)
 
 
+def synchronize_character_compendium(post: frontmatter.Post) -> bool:
+    """Completa referências do compêndio sem descartar dados legados."""
+    char_info = post.get("char_info")
+    if not isinstance(char_info, dict):
+        print("Ficha sem char_info válido para sincronizar.")
+        return False
+    before = repr(post.metadata)
+    refs, unresolved = dnd_utils.sync_character_compendium(
+        char_info, post.get("compendium_refs")
+    )
+    post["compendium_refs"] = refs
+    if unresolved:
+        print("Não resolvido no 5e.tools: " + ", ".join(unresolved))
+    return repr(post.metadata) != before
+
+
 def edit_selected_character(path: Path) -> str:
     """Mantém o usuário no menu do personagem até uma navegação explícita."""
     original_body = read_body_bytes(path)
@@ -388,6 +404,7 @@ def edit_selected_character(path: Path) -> str:
                 "Subir de nível",
                 "Adicionar equipamentos",
                 "Adicionar magias",
+                "Sincronizar compêndio da ficha",
                 "Escolher outro personagem",
                 "Voltar ao menu principal",
             ],
@@ -409,8 +426,13 @@ def edit_selected_character(path: Path) -> str:
             selected_spells = choose_spells()
             added = add_spells(post, selected_spells)
             changed = added > 0
+        elif action == "Sincronizar compêndio da ficha":
+            changed = synchronize_character_compendium(post)
 
         if changed:
+            # Toda alteração local também tenta completar referências históricas
+            # sem remover campos que a ficha já possuía.
+            synchronize_character_compendium(post)
             save_character(path, post, original_body)
             print(f"Ficha atualizada: {path}")
         else:

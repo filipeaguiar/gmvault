@@ -8,7 +8,7 @@ summary: 'Característica de classe: Arquétipo do Ladino'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Característica de Arquétipo Ladino
 translation:

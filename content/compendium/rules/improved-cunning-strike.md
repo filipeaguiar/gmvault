@@ -8,7 +8,7 @@ summary: 'Característica de classe: Golpe Ardiloso Aprimorado.'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Golpe Astuto Aprimorado
 translation:

@@ -8,7 +8,7 @@ summary: 'Característica de classe: Obscure (Custo: 3d6)'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: 'Obscurecer (Custo: 3d6)'
 translation:

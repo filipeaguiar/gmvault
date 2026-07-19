@@ -9,7 +9,7 @@ tags:
 - compendio
 - regra
 - classe
-visibility: public
+visibility: "public"
 status: ready
 titulo_pt_br: Maestria de Arma
 translation:

@@ -8,7 +8,7 @@ summary: 'Característica de classe: Aumento de Valor de Atributo'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Aumento no Valor de Atributo
 translation:

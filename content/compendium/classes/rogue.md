@@ -22,13 +22,13 @@ source:
 class_info:
   hit_dice: 1d8
   primary_ability: '{''dex'': True}'
-titulo_pt_br: Ladino
 translation:
   source_language: en
   target_language: pt-BR
   engine: openai-compatible
   status: machine_translated
   model: deepseek-v4-pro
+titulo_pt_br: Ladino
 ---
 
 ## Nível 1

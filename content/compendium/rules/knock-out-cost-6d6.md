@@ -8,7 +8,7 @@ summary: 'Característica de classe: Nocaute (Custo: 6d6)'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: 'Nocaute (Custo: 6d6)'
 translation:

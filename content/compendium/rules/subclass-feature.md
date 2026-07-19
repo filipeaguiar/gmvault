@@ -8,7 +8,7 @@ summary: 'Característica de classe: Característica de Subclasse.'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Característica de Subclasse
 translation:

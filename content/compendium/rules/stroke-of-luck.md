@@ -8,7 +8,7 @@ summary: 'Característica de classe: Golpe de Sorte.'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Golpe de Sorte
 translation:

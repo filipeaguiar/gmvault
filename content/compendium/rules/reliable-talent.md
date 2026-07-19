@@ -8,7 +8,7 @@ summary: 'Característica de classe: Talento Confiável'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Talento Confiável
 translation:

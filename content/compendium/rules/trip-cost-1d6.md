@@ -8,7 +8,7 @@ summary: 'Característica de classe: Derrubar (Custo: 1d6).'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: 'Derrubar (Custo: 1d6)'
 translation:

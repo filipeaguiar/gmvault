@@ -8,7 +8,7 @@ summary: 'Característica de classe: Sentido Cego.'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Sentido Cego
 translation:

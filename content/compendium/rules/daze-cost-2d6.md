@@ -8,7 +8,7 @@ summary: 'Característica de classe: Atordoar (Custo: 2d6).'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: 'Ofuscar (Custo: 2d6)'
 translation:

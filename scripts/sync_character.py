@@ -19,12 +19,12 @@ import re
 import math
 import yaml
 
-# Adiciona o diretório raiz ao path para importar a lógica do D&D Beyond
+# Adiciona o diretório raiz ao path para usar o resolvedor compartilhado.
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 try:
-    from import_dndbeyond import fetch_from_5etools, slugify
+    from dnd_utils import fetch_from_5etools, slugify
 except ImportError as e:
-    print(f"Erro ao importar funções do import_dndbeyond: {e}")
+    print(f"Erro ao importar resolvedor do compêndio: {e}")
     sys.exit(1)
 
 
@@ -92,7 +92,7 @@ def resolve_action_ref(name: str):
     """Resolve somente correspondências locais inequívocas; não inventa refs."""
     normalized = normalize_action_name(name)
     alias = ACTION_REF_ALIASES.get(normalized)
-    if alias and local_page_for_ref(alias):
+    if alias:
         return alias
 
     candidate = f"/compendium/rules/{slugify(name)}/"

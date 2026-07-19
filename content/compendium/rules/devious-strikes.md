@@ -8,7 +8,7 @@ summary: 'Característica de classe: Golpes Ardilosos'
 tags:
 - compendio
 - classe
-visibility: public
+visibility: "public"
 status: draft
 titulo_pt_br: Golpes Ardilosos
 translation:

@@ -1389,6 +1389,24 @@ def main():
         spells=spells_field_data,
         class_spells=class_spells_field_data,
     )
+    # Última passagem comum: cobre referências que os passos interativos não
+    # conhecem isoladamente e nunca inventa URLs para conteúdo não resolvido.
+    sync_char_info = {
+        "class": selected_class_name,
+        "level": level,
+        "subclass": subclass,
+        "species": selected_species_name,
+        "feats": selected_feats,
+        "actions": actions_data,
+        "equipment": equipment_data,
+        "spells": persisted_spells,
+        "classes_progression": classes_data,
+    }
+    compendium_refs, unresolved_compendium = dnd_utils.sync_character_compendium(
+        sync_char_info, compendium_refs
+    )
+    if unresolved_compendium:
+        print("[Compêndio] Entradas não resolvidas: " + ", ".join(unresolved_compendium))
     spell_state = {
         "mode": spellcasting_profile.get("kind", "known"),
         "ability": spellcasting_profile.get("ability", ""),
