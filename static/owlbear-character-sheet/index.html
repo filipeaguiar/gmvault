@@ -3,6 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Register before external resources or body parsing. Owlbear can send
+    // OBR_READY very early on Chromium Android.
+    window.__gmvaultEarlyObrReady = [];
+    window.addEventListener("message", (event) => {
+      if (event.data?.id === "OBR_READY") {
+        window.__gmvaultEarlyObrReady.push({ data: event.data, origin: event.origin });
+        window.__gmvaultEarlyObrReady = window.__gmvaultEarlyObrReady.slice(-2);
+      }
+    }, true);
+  </script>
   <title>Fichas de Personagem</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,16 +41,6 @@
   </div>
 
   <script>
-    // Preserve OBR_READY if Owlbear sends it before the asynchronous SDK module
-    // has installed its own listener (a race observed in Chromium on Android).
-    window.__gmvaultEarlyObrReady = [];
-    window.addEventListener("message", (event) => {
-      if (event.data?.id === "OBR_READY") {
-        window.__gmvaultEarlyObrReady.push({ data: event.data, origin: event.origin });
-        window.__gmvaultEarlyObrReady = window.__gmvaultEarlyObrReady.slice(-2);
-      }
-    }, true);
-
     // The extension is small and changes must reach mobile browsers promptly.
     // A unique URL on each opening bypasses stale GitHub Pages/browser assets.
     document.getElementById("extension-style").href = `style.css?cache=${Date.now()}`;
