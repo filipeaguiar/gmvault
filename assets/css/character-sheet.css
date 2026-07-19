@@ -431,6 +431,101 @@ html.vtt-iframe .char-tab-content {
   background: color-mix(in srgb, var(--card-bg) 94%, var(--primary-color) 6%);
 }
 
+.spell-slots-tracker {
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--primary-color) 35%, var(--border-color));
+  border-radius: 9px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--card-bg) 92%, var(--primary-color) 8%), var(--card-bg));
+}
+
+.spell-slots-tracker h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 11px;
+  color: var(--text-color);
+  font-size: 0.98rem;
+}
+
+.spell-slots-tracker h4 i {
+  color: var(--primary-color);
+}
+
+.spell-slot-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.spell-slots-tracker .slot-level-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 6px 9px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--card-bg);
+}
+
+.spell-slots-tracker .slot-level-group > strong {
+  margin-right: 2px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.spell-slot-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--card-bg) 75%, var(--primary-color) 25%);
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px var(--card-bg);
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.spell-slot-checkbox:hover {
+  transform: scale(1.12);
+  box-shadow: inset 0 0 0 2px var(--card-bg), 0 0 0 3px color-mix(in srgb, var(--primary-color) 20%, transparent);
+}
+
+.spell-slot-checkbox:checked {
+  border-color: var(--text-muted);
+  background: var(--text-muted);
+  box-shadow: inset 0 0 0 4px var(--card-bg);
+}
+
+.spell-slot-checkbox:focus-visible {
+  outline: 2px solid var(--focus-color, var(--primary-color));
+  outline-offset: 2px;
+}
+
+.pact-slots-tracker {
+  border-color: color-mix(in srgb, #8b5cf6 48%, var(--border-color));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--card-bg) 88%, #8b5cf6 12%), var(--card-bg));
+}
+
+.pact-slots-tracker h4 i,
+.pact-slots-tracker .spell-slot-checkbox {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+
+.pact-slots-tracker .spell-slot-checkbox {
+  background: color-mix(in srgb, var(--card-bg) 75%, #8b5cf6 25%);
+}
+
+.pact-slots-tracker .spell-slot-checkbox:checked {
+  border-color: var(--text-muted);
+  background: var(--text-muted);
+}
+
 .spell-search-block {
   flex: 1 1 240px;
 }
