@@ -19,7 +19,7 @@
   {{- $level := -1 -}}
   {{- if isset $raw "level" }}{{ $level = index $raw "level" }}{{ end -}}
   {{- if $canonical -}}
-    {{- $name = $spellPage.Title -}}
+    {{- $name = or $spellPage.Params.titulo_pt_br $spellPage.Title $name -}}
     {{- if isset $spellPage.Params.spell_info "level_number" }}{{ $level = $spellPage.Params.spell_info.level_number }}{{ end -}}
   {{- end -}}
   {{- $key := $ref | default (printf "legacy:%s" ($name | urlize)) -}}
@@ -57,7 +57,8 @@
       {{- if $accessible -}}
         {{- $scratch.SetInMap "seen" $ref true -}}
         {{- $canPrepare := and (eq $mode "prepared") $profileCanPrepare -}}
-        {{- $entry := dict "key" $ref "ref" $ref "page" $spellPage "canonical" true "name" $spellPage.Title "level" ($level | int) "prepared" false "always_prepared" false "known" true "availability" "catalog" "source" "class" "origin" "class" "usage" "" "can_prepare" $canPrepare "ready" false "legacy" dict -}}
+        {{- $spellName := or $spellPage.Params.titulo_pt_br $spellPage.Title -}}
+        {{- $entry := dict "key" $ref "ref" $ref "page" $spellPage "canonical" true "name" $spellName "level" ($level | int) "prepared" false "always_prepared" false "known" true "availability" "catalog" "source" "class" "origin" "class" "usage" "" "can_prepare" $canPrepare "ready" false "legacy" dict -}}
         {{- $scratch.Add "management" $entry -}}
         {{- $scratch.Add "levels" ($level | int) -}}
       {{- end -}}

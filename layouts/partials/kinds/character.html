@@ -363,9 +363,11 @@
       {{ range . }}
         {{ $resolvedType := "Other" }}
         {{ $itemInfo := dict }}
+        {{ $itemName := .name }}
         {{ if .ref }}
           {{ $itemPage := site.GetPage .ref }}
           {{ if $itemPage }}
+            {{ $itemName = or $itemPage.Params.titulo_pt_br $itemPage.Title $itemName }}
             {{ $itemInfo = $itemPage.Params.item_info }}
             {{ if $itemInfo }}
               {{ if eq $itemInfo.type "Weapon" }}
@@ -379,7 +381,7 @@
           {{ end }}
         {{ end }}
         
-        {{ $itemData := dict "name" .name "quantity" .quantity "equipped" .equipped "ref" .ref "info" $itemInfo }}
+        {{ $itemData := dict "name" $itemName "quantity" .quantity "equipped" .equipped "ref" .ref "info" $itemInfo }}
         
         {{ if eq $resolvedType "Weapon" }}
           {{ $scratch.Add "weapons" $itemData }}
