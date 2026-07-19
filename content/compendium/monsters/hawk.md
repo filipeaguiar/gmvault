@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -37,18 +37,23 @@ stats:
   languages: ''
   cr: '0'
 stats_meta: Tiny beast U
+titulo_pt_br: Falcão
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+Características
 
+### Visão Aguçada
 
-### Keen Sight
+O falcão tem vantagem em testes de Sabedoria (Percepção) que dependem da visão.
 
-The hawk has advantage on Wisdom (Perception) checks that rely on sight.
+Ações
 
-## Actions
+### Garras
 
-
-### Talons
-
-mw 5 to hit, reach 5 ft., one target. {@h}1 slashing damage.
+Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 5 ft., um alvo. {@h}1 de dano cortante.

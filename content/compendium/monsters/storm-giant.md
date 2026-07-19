@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Por favor, me envie o texto que você gostaria que eu traduzisse.
 tags:
 - draft
 - importado
@@ -44,33 +44,35 @@ stats:
   languages: Common, Giant
   cr: '13'
 stats_meta: Huge giant C/G
+titulo_pt_br: Gigante da Tempestade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Anfíbio
 
-### Amphibious
+O gigante pode respirar ar e água.
 
-The giant can breathe air and water.
+## Ações
 
-## Actions
+### Ataques Múltiplos
 
+O gigante faz dois ataques com montante.
 
-### Multiattack
+### Montante
 
-The giant makes two greatsword attacks.
+Ataque Corpo a Corpo com Arma: +14 para atingir, alcance 3 m, um alvo. {@h}30 (<span class="dice+" data-roll-notation="6d6+9">6d6 + 9</span>) de dano cortante.
 
+### Pedra
 
-### Greatsword
+Ataque à Distância com Arma: +14 para atingir, alcance 18/72 m, um alvo. {@h}35 (<span class="dice+" data-roll-notation="4d12+9">4d12 + 9</span>) de dano de concussão.
 
-mw 14 to hit, reach 10 ft., one target. {@h}30 (<span class="dice+" data-roll-notation="6d6+9">6d6 + 9</span>) slashing damage.
+### Golpe Relâmpago (Recarga 5–6)
 
-
-### Rock
-
-rw 14 to hit, range 60/240 ft., one target. {@h}35 (<span class="dice+" data-roll-notation="4d12+9">4d12 + 9</span>) bludgeoning damage.
-
-
-### Lightning Strike 5
-
-The giant hurls a magical lightning bolt at a point it can see within 500 feet of it. Each creature within 10 feet of that point must make a 17 Dexterity saving throw, taking 54 (<span class="dice+" data-roll-notation="12d8">12d8</span>) lightning damage on a failed save, or half as much damage on a successful one.
+O gigante arremessa um raio mágico em um ponto que possa ver a até 150 metros de distância. Cada criatura em um raio de 3 metros desse ponto deve fazer um teste de resistência de Destreza CD 17, sofrendo 54 (<span class="dice+" data-roll-notation="12d8">12d8</span>) de dano elétrico em caso de falha, ou metade desse dano em caso de sucesso.

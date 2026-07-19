@@ -4,7 +4,13 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: 'Entendido! Estou pronto para atuar como tradutor editorial de D&D 5e para português do Brasil.
+
+
+  Por favor, envie o texto bruto importado do 5e.tools que você deseja que eu traduza e revise editorialmente. Assim que eu receber o conteúdo, aplicarei todas as regras de tradução obrigatória, preservarei rigorosamente a formatação, e seguirei as diretrizes de terminologia e nomes protegidos conforme especificado.
+
+
+  Pode colar o texto aqui que eu faço a tradução e revisão editorial completa.'
 tags:
 - draft
 - importado
@@ -39,33 +45,40 @@ stats:
   languages: Aquan
   cr: '11'
 stats_meta: Large elemental C/N
+titulo_pt_br: Marid
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Amphibious
+### Anfíbio
 
-The marid can breathe air and water.
-
-
-### Elemental Demise
-
-If the marid dies, its body disintegrates into a burst of water and foam, leaving behind only equipment the marid was wearing or carrying.
-
-## Actions
+O marid pode respirar ar e água.
 
 
-### Multiattack
+### Morte Elemental
 
-The marid makes two trident attacks.
+Se o marid morrer, seu corpo se desintegra em uma explosão de água e espuma, deixando para trás apenas o equipamento que ele estava vestindo ou carregando.
 
-
-### Trident
-
-mw,rw 10 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) piercing damage, or 15 (<span class="dice+" data-roll-notation="2d8+6">2d8 + 6</span>) piercing damage if used with two hands to make a melee attack.
+## Ações
 
 
-### Water Jet
+### Ataques Múltiplos
 
-The marid magically shoots water in a 60-foot line that is 5 feet wide. Each creature in that line must make a 16 Dexterity saving throw. On a failure, a target takes 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) bludgeoning damage and, if it is Huge or smaller, is pushed up to 20 feet away from the marid and knocked prone. On a success, a target takes half the bludgeoning damage, but is neither pushed nor knocked prone.
+O marid realiza dois ataques de tridente.
+
+
+### Tridente
+
+Corpo a Corpo ou Magia de Combate: +10 para acertar, alcance 1,5 m ou distância 6/18 m, um alvo. *Acerto:* 13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) de dano perfurante, ou 15 (<span class="dice+" data-roll-notation="2d8+6">2d8 + 6</span>) de dano perfurante se usado com as duas mãos para fazer um ataque corpo a corpo.
+
+
+### Jato d'Água
+
+O marid dispara magicamente água em uma linha de 18 metros de comprimento e 1,5 metro de largura. Cada criatura nessa linha deve fazer um teste de resistência de Destreza CD 16. Em caso de falha, o alvo sofre 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) de dano de concussão e, se for Enorme ou menor, é empurrado até 6 metros para longe do marid e fica caído. Em caso de sucesso, o alvo sofre metade do dano de concussão, mas não é empurrado nem fica caído.

@@ -6,6 +6,7 @@ Usa dados estruturados do 5e.tools para guiar na escolha da espécie,
 variante/subespécie, classe, atributos e calcula valores derivados como HP e AC.
 """
 import os
+import re
 import sys
 import json
 import argparse
@@ -115,78 +116,153 @@ def load_class_data(filename):
 # ──────────────────────────────────────────────
 # Prompts Interativos
 # ──────────────────────────────────────────────
-def ask(prompt, default=None):
-    suffix = f" [{default}]" if default is not None else ""
-    value = input(f"{prompt}{suffix} (00: voltar): ").strip()
-    if value == "00":
+class NavigationCancelled(Exception):
+    """Indica que 00 foi informado sem existir uma pergunta anterior."""
+
+
+class QuestionNavigator:
+    """Mantém respostas e permite editar exatamente a pergunta anterior."""
+
+    def __init__(self):
+        self.answers = []
+        self.cursor = 0
+        self._occurrences = {}
+        self._edit_index = None
+
+    def begin_pass(self):
+        self.cursor = 0
+        self._occurrences = {}
+
+    def _key(self, kind, prompt):
+        base = f"{kind}:{prompt}"
+        occurrence = self._occurrences.get(base, 0)
+        self._occurrences[base] = occurrence + 1
+        return f"{base}#{occurrence}"
+
+    def request_back(self):
+        if self.cursor == 0:
+            raise NavigationCancelled()
+        self._edit_index = self.cursor - 1
         raise GoBackException()
-    return value if value else (str(default) if default is not None else "")
+
+    def answer(self, kind, prompt, reader, validator=None):
+        key = self._key(kind, prompt)
+        validator = validator or (lambda _value: True)
+
+        if self.cursor < len(self.answers) and self._edit_index != self.cursor:
+            saved = self.answers[self.cursor]
+            if saved["key"] == key and validator(saved["value"]):
+                self.cursor += 1
+                return saved["value"]
+            del self.answers[self.cursor:]
+
+        value = reader()
+        record = {"key": key, "value": value}
+        if self.cursor < len(self.answers):
+            self.answers[self.cursor] = record
+        else:
+            self.answers.append(record)
+        self.cursor += 1
+        if self._edit_index is not None and self.cursor > self._edit_index:
+            self._edit_index = None
+        return value
+
+
+_active_navigator = None
+
+
+def _go_back():
+    if _active_navigator is not None:
+        _active_navigator.request_back()
+    raise GoBackException()
+
+
+def _answer(kind, prompt, reader, validator=None):
+    if _active_navigator is None:
+        return reader()
+    return _active_navigator.answer(kind, prompt, reader, validator)
+
+
+def ask(prompt, default=None):
+    def read_value():
+        suffix = f" [{default}]" if default is not None else ""
+        value = input(f"{prompt}{suffix} (00: voltar): ").strip()
+        if value == "00":
+            _go_back()
+        return value if value else (str(default) if default is not None else "")
+
+    return _answer("text", prompt, read_value)
+
 
 def ask_int(prompt, default=0):
-    while True:
-        raw = ask(prompt, default)
-        try:
-            return int(raw)
-        except ValueError:
-            print("  ⚠ Digite um número inteiro válido.")
+    def read_value():
+        while True:
+            suffix = f" [{default}]" if default is not None else ""
+            raw = input(f"{prompt}{suffix} (00: voltar): ").strip()
+            if raw == "00":
+                _go_back()
+            if not raw and default is not None:
+                raw = str(default)
+            try:
+                return int(raw)
+            except ValueError:
+                print("  ⚠ Digite um número inteiro válido.")
+
+    return _answer("int", prompt, read_value, lambda value: isinstance(value, int))
+
 
 def ask_choice(prompt, options):
-    try:
-        from rich.console import Console
-        from rich.table import Table
-        import math
-
-        console = Console()
-        console.print(f"\n[bold]{prompt}[/]")
-
-        num_cols = 4 if len(options) >= 8 else 1
-
-        if num_cols > 1:
-            table = Table(show_header=False, box=None, padding=(0, 2))
-            for _ in range(num_cols):
-                table.add_column()
-
-            num_rows = math.ceil(len(options) / num_cols)
-            for r in range(num_rows):
-                row_cells = []
-                for c in range(num_cols):
-                    idx = r + c * num_rows
-                    if idx < len(options):
-                        opt_val = options[idx]
-                        if isinstance(opt_val, tuple):
-                            opt_label = str(opt_val[0])
-                        else:
-                            opt_label = str(opt_val)
-                        row_cells.append(f"[bold cyan]{idx+1:2d}.[/] {opt_label}")
-                    else:
-                        row_cells.append("")
-                table.add_row(*row_cells)
-            console.print(table)
-        else:
-            for i, opt in enumerate(options, 1):
-                opt_label = opt[0] if isinstance(opt, tuple) else opt
-                console.print(f"  [bold cyan]{i}[/]  {opt_label}")
-        console.print("  [bold cyan]00[/]  Voltar")
-    except ImportError:
-        print(f"\n{prompt}")
-        for i, opt in enumerate(options, 1):
-            opt_label = opt[0] if isinstance(opt, tuple) else opt
-            print(f"  {i}. {opt_label}")
-        print("  00. Voltar")
-
-    while True:
+    def read_value():
         try:
-            raw = input("Escolha (00: voltar): ").strip()
-            if raw == "00":
-                raise GoBackException()
-            if not raw:
-                raw = "1"
-            idx = int(raw)
-            if 1 <= idx <= len(options):
-                return options[idx - 1]
-        except ValueError:
-            pass
-        print(f"  ⚠ Escolha inválida. Escolha entre 1 e {len(options)} (ou 00 para voltar).")
+            from rich.console import Console
+            from rich.table import Table
+            import math
+
+            console = Console()
+            console.print(f"\n[bold]{prompt}[/]")
+            num_cols = 4 if len(options) >= 8 else 1
+            if num_cols > 1:
+                table = Table(show_header=False, box=None, padding=(0, 2))
+                for _ in range(num_cols):
+                    table.add_column()
+                num_rows = math.ceil(len(options) / num_cols)
+                for row in range(num_rows):
+                    cells = []
+                    for col in range(num_cols):
+                        index = row + col * num_rows
+                        if index < len(options):
+                            option = options[index]
+                            label = option[0] if isinstance(option, tuple) else option
+                            cells.append(f"[bold cyan]{index + 1:2d}.[/] {label}")
+                        else:
+                            cells.append("")
+                    table.add_row(*cells)
+                console.print(table)
+            else:
+                for index, option in enumerate(options, 1):
+                    label = option[0] if isinstance(option, tuple) else option
+                    console.print(f"  [bold cyan]{index}[/]  {label}")
+            console.print("  [bold cyan]00[/]  Voltar")
+        except ImportError:
+            print(f"\n{prompt}")
+            for index, option in enumerate(options, 1):
+                label = option[0] if isinstance(option, tuple) else option
+                print(f"  {index}. {label}")
+            print("  00. Voltar")
+
+        while True:
+            try:
+                raw = input("Escolha (00: voltar): ").strip()
+                if raw == "00":
+                    _go_back()
+                index = int(raw or "1")
+                if 1 <= index <= len(options):
+                    return options[index - 1]
+            except ValueError:
+                pass
+            print(f"  ⚠ Escolha inválida. Escolha entre 1 e {len(options)} (ou 00 para voltar).")
+
+    return _answer("choice", prompt, read_value, lambda value: value in options)
 
 def filter_feats(feats_data, categories, source="XPHB"):
     """Retorna talentos das categorias indicadas, filtrando opcionalmente pela fonte."""
@@ -220,61 +296,105 @@ def get_general_feats(feats_data, source="XPHB"):
 
 def ask_multiple_feat_choices(prompt, options):
     """Exibe talentos numerados e aceita índices separados por vírgula."""
-    try:
-        from rich.console import Console
-        from rich.table import Table
-        import math
+    available_names = {feat["name"] for feat in options}
 
-        console = Console()
-        console.print(f"\n[bold]{prompt}[/]")
-        num_cols = 4 if len(options) >= 8 else 1
-        if num_cols > 1:
-            table = Table(show_header=False, box=None, padding=(0, 2))
-            for _ in range(num_cols):
-                table.add_column()
-            num_rows = math.ceil(len(options) / num_cols)
-            for row in range(num_rows):
-                cells = []
-                for col in range(num_cols):
-                    index = row + col * num_rows
-                    if index < len(options):
-                        feat = options[index]
-                        cells.append(
-                            f"[bold cyan]{index + 1:2d}.[/] "
-                            f"{feat['name']} ({feat.get('source', 'sem fonte')})"
-                        )
-                    else:
-                        cells.append("")
-                table.add_row(*cells)
-            console.print(table)
-        else:
+    def read_value():
+        try:
+            from rich.console import Console
+            from rich.table import Table
+            import math
+
+            console = Console()
+            console.print(f"\n[bold]{prompt}[/]")
+            num_cols = 4 if len(options) >= 8 else 1
+            if num_cols > 1:
+                table = Table(show_header=False, box=None, padding=(0, 2))
+                for _ in range(num_cols):
+                    table.add_column()
+                num_rows = math.ceil(len(options) / num_cols)
+                for row in range(num_rows):
+                    cells = []
+                    for col in range(num_cols):
+                        index = row + col * num_rows
+                        if index < len(options):
+                            feat = options[index]
+                            cells.append(
+                                f"[bold cyan]{index + 1:2d}.[/] "
+                                f"{feat['name']} ({feat.get('source', 'sem fonte')})"
+                            )
+                        else:
+                            cells.append("")
+                    table.add_row(*cells)
+                console.print(table)
+            else:
+                for index, feat in enumerate(options, 1):
+                    console.print(
+                        f"  [bold cyan]{index}[/]  "
+                        f"{feat['name']} ({feat.get('source', 'sem fonte')})"
+                    )
+            console.print("  [bold cyan]00[/]  Voltar")
+        except ImportError:
+            print(f"\n{prompt}")
             for index, feat in enumerate(options, 1):
                 print(f"  {index}. {feat['name']} ({feat.get('source', 'sem fonte')})")
-    except ImportError:
-        print(f"\n{prompt}")
-        for index, feat in enumerate(options, 1):
-            print(f"  {index}. {feat['name']} ({feat.get('source', 'sem fonte')})")
+            print("  00. Voltar")
 
-    while True:
-        raw = ask("Escolhas (separe números por vírgula)")
-        if not raw:
-            return []
-        try:
-            indices = [int(value.strip()) for value in raw.split(",") if value.strip()]
-        except ValueError:
-            print("  ⚠ Entrada inválida. Digite números separados por vírgula ou deixe vazio.")
+        while True:
+            raw = input("Escolhas (separe números por vírgula) (00: voltar): ").strip()
+            if raw == "00":
+                _go_back()
+            if not raw:
+                return []
+            try:
+                indices = [int(value.strip()) for value in raw.split(",") if value.strip()]
+            except ValueError:
+                print("  ⚠ Entrada inválida. Digite números separados por vírgula ou deixe vazio.")
+                continue
+            if any(index < 1 or index > len(options) for index in indices):
+                print(f"  ⚠ Escolha inválida. Use números entre 1 e {len(options)}.")
+                continue
+
+            selected = []
+            for index in indices:
+                feat_name = options[index - 1]["name"]
+                if feat_name not in selected:
+                    selected.append(feat_name)
+            return selected
+
+    return _answer(
+        "multiple-choice",
+        prompt,
+        read_value,
+        lambda values: isinstance(values, list) and set(values) <= available_names,
+    )
+
+
+def normalize_spell_entry(name, ref, level=0, source="class", prepared=False, always_prepared=False, known=True, can_prepare=False, usage="", origin=None):
+    return {
+        "name": name,
+        "ref": ref,
+        "level": int(level or 0),
+        "source": source,
+        "prepared": bool(prepared),
+        "always_prepared": bool(always_prepared),
+        "known": bool(known),
+        "can_prepare": bool(can_prepare),
+        "usage": usage or "",
+        "origin": origin or source,
+    }
+
+
+def merge_spell_entries(entries):
+    merged = []
+    seen = set()
+    for entry in entries:
+        ref = entry.get("ref")
+        key = ref or entry.get("name")
+        if not key or key in seen:
             continue
-
-        if any(index < 1 or index > len(options) for index in indices):
-            print(f"  ⚠ Escolha inválida. Use números entre 1 e {len(options)}.")
-            continue
-
-        selected = []
-        for index in indices:
-            feat_name = options[index - 1]["name"]
-            if feat_name not in selected:
-                selected.append(feat_name)
-        return selected
+        seen.add(key)
+        merged.append(entry)
+    return merged
 
 
 def ask_manual_feats(prompt):
@@ -535,6 +655,8 @@ def build_selected_spell_entries(selected_spells, class_name, fetcher=None):
 # Fluxo Principal de Criação
 # ──────────────────────────────────────────────
 def main():
+    global _active_navigator
+
     parser = argparse.ArgumentParser(description="Criação de personagem guiada por dados para o GM Vault.")
     parser.add_argument("--campaign", type=str, default=None, help="Slug da campanha de destino.")
     parser.add_argument("--interactive", "--menu", action="store_true", help="Abre o menu interativo Rich.")
@@ -550,6 +672,8 @@ def main():
             args.campaign = values.get("campaign", args.campaign)
         except ImportError:
             print("  [AVISO] interactive_cli não disponível, usando modo texto.")
+
+    campaign_argument = args.campaign
 
     # Inicializar variáveis para evitar UnboundLocalError ao navegar
     char_name = ""
@@ -588,13 +712,19 @@ def main():
     spell_slots_val = {}
     hd_faces = 8
     feature_actions = []
+    feature_choices = {}
+    is_prepared_caster = False
+
+    navigator = QuestionNavigator()
+    _active_navigator = navigator
+    navigator.begin_pass()
 
     step = 1
     while step <= 10:
         try:
             if step == 1:
                 # 1. Selecionar campanha
-                if not args.campaign:
+                if not campaign_argument:
                     campaigns_dir = "content/campaigns"
                     if os.path.isdir(campaigns_dir):
                         campaigns = sorted([d for d in os.listdir(campaigns_dir) if os.path.isdir(os.path.join(campaigns_dir, d))])
@@ -954,10 +1084,6 @@ def main():
                 is_prepared_caster = selected_class_name.lower() in prepared_caster_classes
 
                 class_spells_field_data = []
-                if is_prepared_caster:
-                    print(f"  [Classe Conjuradora Preparada] Baixando automaticamente todas as magias de {selected_class_name}...")
-                    class_spell_refs = dnd_utils.import_all_class_spells(selected_class_name)
-                    class_spells_field_data = class_spell_refs
 
                 while True:
                     query = ask("Deseja adicionar uma magia conhecida/preparada? (Deixe em branco para pular/finalizar)")
@@ -984,23 +1110,60 @@ def main():
                             spell_lvl = s.get("level", 0)
                             break
 
-                    extra_spells.append({"name": selected_spell, "level": spell_lvl})
+                    extra_spells.append(normalize_spell_entry(
+                        selected_spell,
+                        f"/compendium/spells/{slugify(selected_spell)}/",
+                        spell_lvl,
+                        source="manual",
+                        prepared=False,
+                        always_prepared=False,
+                        known=True,
+                        can_prepare=is_prepared_caster,
+                        usage="",
+                        origin="manual",
+                    ))
                     print(f"  {selected_spell} adicionada.")
                 step = 10
 
             elif step == 10:
-                # Break to final computations
+                # Coletar escolhas de características antes de qualquer gravação.
+                class_features = [
+                    feature for feature in class_data.get("classFeature", [])
+                    if feature.get("className", "").lower() == selected_class_name.lower()
+                    and feature.get("level", 1) <= level
+                ]
+                subclass_features = [
+                    feature for feature in class_data.get("subclassFeature", [])
+                    if subclass_short
+                    and feature.get("subclassShortName", "").lower() == subclass_short.lower()
+                    and feature.get("level", 1) <= level
+                ]
+                all_features = deduplicate_features(
+                    class_features + subclass_features, get_source_priority
+                )
+                feature_choices = {}
+                for feature in all_features:
+                    name = feature.get("name")
+                    if name:
+                        choices = prompt_choices_for_feature(name, level)
+                        if choices:
+                            feature_choices[name] = choices
                 break
 
+        except NavigationCancelled:
+            _active_navigator = None
+            print("\n⚠ Operação cancelada.")
+            return
         except GoBackException:
-            if step > 1:
-                step -= 1
-                if step == 7:
-                    step = 6
-                print(f"\n↩ Voltando para o Passo {step}...")
-            else:
-                print("\n⚠ Operação cancelada.")
-                return
+            step = 1
+            navigator.begin_pass()
+            print("\n↩ Voltando para a pergunta anterior...")
+
+    # Efeitos externos começam somente após todas as perguntas serem concluídas.
+    _active_navigator = None
+    if is_prepared_caster:
+        print(f"  [Classe Conjuradora Preparada] Baixando automaticamente todas as magias de {selected_class_name}...")
+        class_spells_field_data = dnd_utils.import_all_class_spells(selected_class_name)
 
     # Non-interactive Calculations & File Saving
     skills_data = calculate_skills_data(proficient_skills, mods, prof_bonus)
@@ -1040,7 +1203,7 @@ def main():
         entries = f.get("entries", [])
         desc = parse_entries(entries)
 
-        choices = prompt_choices_for_feature(name, level)
+        choices = feature_choices.get(name, [])
         if choices:
             for choice in choices:
                 ref = create_rule_stub(choice["name"], [choice["description"]])
@@ -1169,6 +1332,22 @@ def main():
     if class_spells_field_data:
         compendium_refs.extend(class_spells_field_data)
 
+    persisted_spells = merge_spell_entries(spells_field_data)
+    for ref in class_spells_field_data:
+        persisted_spells.append(normalize_spell_entry(
+            name=ref.rstrip("/").split("/")[-1].replace("-", " ").title(),
+            ref=ref,
+            level=0,
+            source="class",
+            prepared=False,
+            always_prepared=True if is_prepared_caster else False,
+            known=True,
+            can_prepare=is_prepared_caster,
+            usage="",
+            origin="class",
+        ))
+    persisted_spells = merge_spell_entries(persisted_spells)
+
     spell_slots_val = dnd_utils.calculate_spell_slots(selected_class_name, level)
     spellcasting_profile = dnd_utils.infer_spellcasting_profile(
         selected_class_name,
@@ -1202,6 +1381,27 @@ def main():
         "level": level,
         "subclass": subclass
     }]
+
+    spellcasting_profile = dnd_utils.infer_spellcasting_profile(
+        selected_class_name,
+        level,
+        spell_slots=spell_slots_val,
+        spells=spells_field_data,
+        class_spells=class_spells_field_data,
+    )
+    spell_state = {
+        "mode": spellcasting_profile.get("kind", "known"),
+        "ability": spellcasting_profile.get("ability", ""),
+        "prepared_spell_refs": [entry["ref"] for entry in spells_field_data if entry.get("prepared")],
+        "known_spell_refs": [entry["ref"] for entry in spells_field_data if entry.get("known")],
+        "always_prepared_spell_refs": [entry["ref"] for entry in spells_field_data if entry.get("always_prepared")],
+        "class_spell_refs": class_spells_field_data,
+        "bonus_spell_refs": [entry["ref"] for entry in spells_field_data if entry.get("origin") != "class"],
+        "slot_progression": spell_slots_val,
+        "pact_slots": spellcasting_profile.get("pact_slots", {}),
+        "ritual_casting": bool(spellcasting_profile.get("ritual_casting")),
+        "sources": spellcasting_profile.get("sources", []),
+    }
 
     summary_str = f"{full_species_name} {selected_class_name} {level} criado manualmente guiado por dados."
     feats_field = f"feats:{dump_yaml_indented(selected_feats, 2)}" if selected_feats else "feats: []"
@@ -1242,7 +1442,7 @@ char_info:
   spell_dc: 0
   spell_attack_bonus: 0
   avatar: ""
-  spellcasting:{dump_yaml_indented(spellcasting_profile, 4)}
+  spellcasting:{dump_yaml_indented(spell_state, 4)}
   speed:
     walk: {walk_speed}
     fly: 0
@@ -1293,7 +1493,7 @@ char_info:
   skills:{dump_yaml_indented(skills_data, 4)}
   actions:{dump_yaml_indented(actions_data, 4)}
   equipment:{dump_yaml_indented(equipment_data, 4)}
-  spells:{dump_yaml_indented(spells_field_data, 4)}
+  spells:{dump_yaml_indented(persisted_spells, 4)}
   spell_slots:{dump_yaml_indented(spell_slots_val, 4)}
   class_spells:{dump_yaml_indented(class_spells_field_data, 4)}
   classes_progression:{dump_yaml_indented(classes_data, 4)}
@@ -1318,6 +1518,7 @@ Ficha básica de V1. Use os comandos estendidos nas próximas fases para adicion
         f.write(markdown)
 
     print(f"\n✅ Ficha de personagem V1 criada com sucesso em: {file_path}")
+    _active_navigator = None
 
 
 if __name__ == "__main__":

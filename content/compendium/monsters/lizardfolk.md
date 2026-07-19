@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Entendido. Aguardando o rascunho importado do 5e.tools (Monster Manual) para dar início à tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -39,38 +39,39 @@ stats:
   languages: Draconic
   cr: 1/2
 stats_meta: Medium humanoid N
+titulo_pt_br: Povo Lagarto
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Prender a Respiração
 
-### Hold Breath
+O homem-lagarto pode prender a respiração por 15 minutos.
 
-The lizardfolk can hold its breath for 15 minutes.
+## Ações
 
-## Actions
+### Ataques Múltiplos
 
+O homem-lagarto realiza dois ataques corpo a corpo, cada um com uma arma diferente.
 
-### Multiattack
+### Mordida
 
-The lizardfolk makes two melee attacks, each one with a different weapon.
+*Corpo a Corpo com Arma:* +4 para atingir, alcance 1,5 m, um alvo. *Acerto:* 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
 
+### Clava Pesada
 
-### Bite
+*Corpo a Corpo com Arma:* +4 para atingir, alcance 1,5 m, um alvo. *Acerto:* 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano de concussão.
 
-mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+### Dardo
 
+*Corpo a Corpo ou à Distância com Arma:* +4 para atingir, alcance 1,5 m ou alcance 9/36 m, um alvo. *Acerto:* 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
 
-### Heavy Club
+### Escudo com Espinhos
 
-mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) bludgeoning damage.
-
-
-### Javelin
-
-mw,rw 4 to hit, reach 5 ft. or range 30/120 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
-
-
-### Spiked Shield
-
-mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+*Corpo a Corpo com Arma:* +4 para atingir, alcance 1,5 m, um alvo. *Acerto:* 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o conteúdo do rascunho importado do 5e.tools para que eu possa realizar a tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -37,23 +37,30 @@ stats:
   languages: ''
   cr: '5'
 stats_meta: Large monstrosity U
+titulo_pt_br: Bulette
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Standing Leap
+### Salto Parado
 
-The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
+O salto em distância do bulette é de até 9 metros e o salto em altura é de até 4,5 metros, com ou sem impulso.
 
-## Actions
-
-
-### Bite
-
-mw 7 to hit, reach 5 ft., one target. {@h}30 (<span class="dice+" data-roll-notation="4d12+4">4d12 + 4</span>) piercing damage.
+## Ações
 
 
-### Deadly Leap
+### Mordida
 
-If the bulette jumps at least 15 feet as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (<span class="dice+" data-roll-notation="3d6+4">3d6 + 4</span>) bludgeoning damage plus 14 (<span class="dice+" data-roll-notation="3d6+4">3d6 + 4</span>) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 metro, um alvo. {@h}30 (<span class="dice+" data-roll-notation="4d12+4">4d12 + 4</span>) de dano perfurante.
+
+
+### Salto Mortal
+
+Se o bulette saltar pelo menos 4,5 metros como parte do seu movimento, ele pode usar esta ação para aterrissar em um espaço que contenha uma ou mais outras criaturas. Cada uma dessas criaturas deve ser bem-sucedida em um teste de resistência de Força ou Destreza CD 16 (escolha do alvo) ou ficará caída e sofrerá 14 (<span class="dice+" data-roll-notation="3d6+4">3d6 + 4</span>) de dano de concussão mais 14 (<span class="dice+" data-roll-notation="3d6+4">3d6 + 4</span>) de dano cortante. Em caso de sucesso no teste de resistência, a criatura sofre apenas metade do dano, não fica caída e é empurrada 1,5 metro para fora do espaço do bulette, para um espaço desocupado da escolha da criatura. Se não houver espaço desocupado ao alcance, a criatura cai no espaço do bulette.

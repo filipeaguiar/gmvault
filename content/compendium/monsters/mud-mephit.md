@@ -4,7 +4,50 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: '```markdown
+
+  ## Rastejador da Carcaça
+
+  *Criatura monstruosidade, não alinhado*
+
+
+  **Classe de Armadura** 13 (armadura natural)
+
+  **Pontos de Vida** 13 (3d6 + 3)
+
+  **Deslocamento** 9 m, escalada 9 m
+
+
+  |   FOR   |   DES   |   CON   |   INT   |   SAB   |   CAR   |
+
+  |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+
+  | 6 (-2)  | 13 (+1) | 13 (+1) | 4 (-3)  | 10 (+0) | 6 (-2)  |
+
+
+  **Sentidos** percepção às cegas 9 m (cego além deste raio), Percepção passiva 10
+
+  **Idiomas** —
+
+  **Nível de Desafio** 1/8 (25 XP)
+
+
+  ***Percepção às Cegas***. O rastejador não pode usar sua visão às cegas enquanto estiver surdo e incapaz de farejar.
+
+
+  ***Sensível à Luz***. Enquanto estiver sob luz solar intensa, o rastejador tem desvantagem em jogadas de ataque.
+
+
+  ### Ações
+
+  ***Mordida***. *Ataque Corpo a Corpo com Arma:* +3 para atingir, alcance 1,5 m, um alvo. *Dano:* 3 (1d4 + 1) de dano perfurante.
+
+
+  ### Reações
+
+  ***Agarrão Ofegante***. *Gatilho:* O rastejador é alvo de um efeito que o forçaria a fazer uma salvaguarda de Destreza. *Resposta:* O rastejador se agarra a uma superfície, passando automaticamente na salvaguarda.
+
+  ```'
 tags:
 - draft
 - importado
@@ -37,28 +80,35 @@ stats:
   languages: Aquan, Terran
   cr: 1/4
 stats_meta: Small elemental N/E
+titulo_pt_br: Mefítico de Lama
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Death Burst
+### Explosão Mortal
 
-When the mephit dies, it explodes in a burst of sticky mud. Each Medium or smaller creature within 5 feet of it must succeed on a 11 Dexterity saving throw or be restrained until the end of the creature's next turn.
-
-
-### False Appearance
-
-While the mephit remains motionless, it is indistinguishable from an ordinary mound of mud.
-
-## Actions
+Quando o mephit morre, ele explode em uma erupção de lama pegajosa. Cada criatura de tamanho Médio ou menor a até 1,5 metro dele deve ser bem-sucedida em um teste de resistência de Destreza CD 11 ou ficará contida até o final do próximo turno da criatura.
 
 
-### Fists
+### Falsa Aparência
 
-mw 3 to hit, reach 5 ft., one creature. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) bludgeoning damage.
+Enquanto o mephit permanece imóvel, ele é indistinguível de um monte de lama comum.
+
+## Ações
 
 
-### Mud Breath {@recharge}
+### Punhos
 
-The mephit belches viscid mud onto one creature within 5 feet of it. If the target is Medium or smaller, it must succeed on a 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+corpo a corpo +3 para acertar, alcance 1,5 m, uma criatura. <i>Dano:</i> 4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano de concussão.
+
+
+### Sopro de Lama {@recharge}
+
+O mephit arrota lama viscosa em uma criatura a até 1,5 metro dele. Se o alvo for de tamanho Médio ou menor, ele deve ser bem-sucedido em um teste de resistência de Destreza CD 11 ou ficará contido por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesma em caso de sucesso.

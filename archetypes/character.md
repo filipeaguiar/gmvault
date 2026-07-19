@@ -62,8 +62,20 @@ char_info:
   actions: []
   # Exemplo: {name: "Arco curto", ref: "/compendium/items/shortbow/", quantity: 1, equipped: true, filter_type: Weapon}
   equipment: []
-  # Exemplo: {name: "Luz", level: 0, prepared: true, ref: "/compendium/spells/light/", usage: "Truque"}
+  # Exemplo: {name: "Luz", ref: "/compendium/spells/light/", level: 0, source: "class", prepared: true, always_prepared: false, known: true, can_prepare: true, usage: "Truque", origin: "class"}
   spells: []
+  spellcasting:
+    mode: "prepared"
+    ability: "wis"
+    prepared_spell_refs: []
+    known_spell_refs: []
+    always_prepared_spell_refs: []
+    class_spell_refs: []
+    bonus_spell_refs: []
+    slot_progression: {}
+    pact_slots: {}
+    ritual_casting: false
+    sources: []
   classes_progression: []
 
 factions: []

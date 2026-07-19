@@ -1,37 +1,56 @@
 {{- $spell := .spell -}}
 {{- $character := .character -}}
-<article class="spell-card char-feature-card {{ if $spell.ready }}ready-spell-item{{ else }}management-spell-item{{ end }}"
-  data-spell-ref="{{ $spell.ref }}"
+{{- $name := $spell.name | default "Magia sem nome" -}}
+{{- $level := $spell.level | default 0 -}}
+{{- $ref := $spell.ref | default "" -}}
+{{- $prepared := $spell.prepared | default false -}}
+{{- $alwaysPrepared := $spell.always_prepared | default false -}}
+{{- $known := $spell.known | default true -}}
+{{- $canPrepare := $spell.can_prepare | default false -}}
+{{- $ready := $spell.ready | default false -}}
+{{- $origin := $spell.origin | default $spell.source | default "class" -}}
+
+<article class="spell-card char-feature-card{{ if $ready }} ready-spell-item{{ else }} management-spell-item{{ end }}{{ if $prepared }} is-prepared{{ end }}{{ if $alwaysPrepared }} is-always-prepared{{ end }}{{ if $known }} is-known{{ end }}{{ if not $canPrepare }} is-readonly{{ end }}"
+  data-spell-ref="{{ $ref }}"
   data-spell-key="{{ $spell.key }}"
-  data-spell-name="{{ $spell.name }}"
-  data-spell-level="{{ $spell.level }}"
-  data-spell-can-prepare="{{ $spell.can_prepare }}"
-  data-spell-initial-ready="{{ $spell.ready }}">
-  <div class="spell-card-title-row">
+  data-spell-name="{{ $name }}"
+  data-spell-level="{{ $level }}"
+  data-spell-can-prepare="{{ $canPrepare }}"
+  data-spell-initial-ready="{{ $ready }}">
+  <header class="spell-card-header spell-card-title-row">
     <div class="spell-name-roll-row">
-      <strong class="spell-card-name">{{ $spell.name | default "Magia sem nome" }}</strong>
+      <strong class="spell-card-title spell-card-name">{{ $name }}</strong>
       {{- if $spell.canonical -}}
         {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
-      {{- end }}
+      {{- end -}}
     </div>
-    {{- if $spell.can_prepare }}
-      <label class="prepare-spell-label">
-        <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $spell.ref }}" {{ if $spell.ready }}checked{{ end }}>
-        <span class="prepare-spell-text">{{ if $spell.ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
-      </label>
-    {{- else if not $spell.ready }}
-      <span class="spell-readonly-state">{{ if in (slice "known" "pact") $spell.availability }}Conhecida{{ else if in (slice "always" "granted") $spell.availability }}Concedida{{ else }}Somente leitura{{ end }}</span>
-    {{- end }}
+    {{ partial "helpers/spell-state-badges.html" $spell }}
+  </header>
+
+  <div class="spell-card-meta">
+    {{ with $spell.usage }}<span class="spell-meta-item"><strong>Uso:</strong> {{ . }}</span>{{ end }}
+    {{ with $spell.source }}<span class="spell-meta-item"><strong>Fonte:</strong> {{ . }}</span>{{ end }}
+    {{ with $ref }}<a class="spell-meta-item spell-ref-link" href="{{ . }}">Compêndio</a>{{ end }}
   </div>
-  {{- with $spell.usage }}<div class="spell-operational-meta"><strong>Uso:</strong> {{ . }}</div>{{ end }}
-  {{- with $spell.source }}<div class="spell-operational-meta"><strong>Fonte:</strong> {{ . }}</div>{{ end }}
+
+  <div class="spell-card-actions">
+    {{ if $canPrepare }}
+      <label class="spell-toggle-label prepare-spell-label">
+        <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $ref }}" {{ if $ready }}checked{{ end }}>
+        <span class="prepare-spell-text">{{ if $ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
+      </label>
+    {{ else }}
+      <span class="spell-readonly-note">{{ if $alwaysPrepared }}Sempre pronta{{ else if $known }}Leitura apenas{{ else }}Sem preparo{{ end }}</span>
+    {{ end }}
+  </div>
+
   <details class="spell-details-accordion">
     <summary>Ver detalhes</summary>
     <div class="spell-details-content">
       {{- if $spell.canonical -}}
-        {{ partial "helpers/compendium-content.html" (dict "ref" $spell.ref "name" $spell.name) }}
+        {{ partial "helpers/compendium-content.html" (dict "ref" $ref "name" $name) }}
       {{- else -}}
-        {{ partial "helpers/compendium-content.html" (dict "ref" $spell.ref "name" $spell.name "legacy" (index $spell.legacy "description")) }}
+        {{ partial "helpers/compendium-content.html" (dict "ref" $ref "name" $name "legacy" (index $spell.legacy "description")) }}
       {{- end -}}
     </div>
   </details>

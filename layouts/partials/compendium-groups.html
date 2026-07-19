@@ -1,7 +1,5 @@
 {{- $page := .page -}}
 {{- $groupMode := .group_mode | default "directory" -}}
-{{- $currentVisibility := printf "%s" (partial "helpers/visibility.html" $page) -}}
-{{- $isPlayerPage := or (eq $currentVisibility "players") (eq $currentVisibility "public") -}}
 {{- $groups := dict -}}
 {{- $orderedPages := sort $page.Pages.ByTitle "Weight" "asc" -}}
 
@@ -22,28 +20,28 @@
 {{- $groupOrder := slice "monsters" "items" "magic-items" "classes" "species" "races" "feats" "spells" "backgrounds" "conditions" "rules" "other" -}}
 
 {{- range $orderedPages -}}
-  {{- $childVisibility := printf "%s" (partial "helpers/visibility.html" .) -}}
-  {{- $childIsPlayerSafe := or (eq $childVisibility "players") (eq $childVisibility "public") -}}
-  {{- if or (not $isPlayerPage) $childIsPlayerSafe -}}
-    {{- $groupKey := "other" -}}
-    {{- if eq $groupMode "directory" -}}
-      {{- $directory := strings.TrimSuffix "/" .File.Dir -}}
-      {{- if $directory -}}
-        {{- $groupKey = path.Base $directory -}}
-      {{- end -}}
-    {{- else -}}
-      {{- $resolvedKind := partial "helpers/kind.html" . -}}
-      {{- if $resolvedKind -}}
-        {{- $groupKey = $resolvedKind -}}
-      {{- end -}}
-    {{- end -}}
-    {{- if not (in $groupOrder $groupKey) -}}
-      {{- $groupKey = "other" -}}
-    {{- end -}}
-    {{- $groupPages := default (slice) (index $groups $groupKey) -}}
-    {{- $groupPages = $groupPages | append . -}}
-    {{- $groups = merge $groups (dict $groupKey $groupPages) -}}
+  {{- $visibility := printf "%s" (partial "helpers/visibility.html" .) -}}
+  {{- if or (eq $visibility "gm") (eq $visibility "archived") -}}
+    {{- continue -}}
   {{- end -}}
+  {{- $groupKey := "other" -}}
+  {{- if eq $groupMode "directory" -}}
+    {{- $directory := strings.TrimSuffix "/" .File.Dir -}}
+    {{- if $directory -}}
+      {{- $groupKey = path.Base $directory -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $resolvedKind := partial "helpers/kind.html" . -}}
+    {{- if $resolvedKind -}}
+      {{- $groupKey = $resolvedKind -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not (in $groupOrder $groupKey) -}}
+    {{- $groupKey = "other" -}}
+  {{- end -}}
+  {{- $groupPages := default (slice) (index $groups $groupKey) -}}
+  {{- $groupPages = $groupPages | append . -}}
+  {{- $groups = merge $groups (dict $groupKey $groupPages) -}}
 {{- end -}}
 
 {{- range $groupOrder -}}

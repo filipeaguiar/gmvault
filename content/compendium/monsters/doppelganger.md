@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Entendido! Envie o texto do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução e a revisão editorial para português do Brasil, aplicando a terminologia padrão de D&D 5e.
 tags:
 - draft
 - importado
@@ -38,38 +38,39 @@ stats:
   languages: Common
   cr: '3'
 stats_meta: Medium monstrosity N
+titulo_pt_br: Doppelganger
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Metamorfo
 
-### Shapechanger
+O doppelganger pode usar sua ação para se transformar em um humanoide Pequeno ou Médio que tenha visto, ou voltar à sua forma verdadeira. Suas estatísticas, exceto seu tamanho, são as mesmas em cada forma. Qualquer equipamento que esteja vestindo ou carregando não é transformado. Ele reverte à sua forma verdadeira se morrer.
 
-The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.
+### Emboscador
 
+No primeiro round de combate, o doppelganger tem vantagem nas jogadas de ataque contra qualquer criatura que tenha surpreendido.
 
-### Ambusher
+### Ataque Surpresa
 
-In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it surprised.
+Se o doppelganger surpreende uma criatura e a atinge com um ataque durante o primeiro round de combate, o alvo sofre 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano extra do ataque.
 
+## Ações
 
-### Surprise Attack
+### Ataques Múltiplos
 
-If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) damage from the attack.
+O doppelganger realiza dois ataques corpo a corpo.
 
-## Actions
+### Pancada
 
+mw 6 to hit, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) de dano de concussão.
 
-### Multiattack
+### Ler Pensamentos
 
-The doppelganger makes two melee attacks.
-
-
-### Slam
-
-mw 6 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) bludgeoning damage.
-
-
-### Read Thoughts
-
-The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.
+O doppelganger lê magicamente os pensamentos superficiais de uma criatura a até 18 metros dele. O efeito pode penetrar barreiras, mas 90 cm de madeira ou terra, 60 cm de pedra, 5 cm de metal ou uma fina lâmina de chumbo o bloqueiam. Enquanto o alvo estiver no alcance, o doppelganger pode continuar lendo seus pensamentos, contanto que a concentração do doppelganger não seja quebrada (como se estivesse se concentrando em uma magia). Enquanto lê a mente do alvo, o doppelganger tem vantagem em testes de Sabedoria (Intuição) e Carisma (Enganação, Intimidação e Persuasão) contra o alvo.

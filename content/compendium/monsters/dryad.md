@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -38,37 +38,44 @@ stats:
   languages: Elvish, Sylvan
   cr: '1'
 stats_meta: Medium fey N
+titulo_pt_br: Dríade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Magic Resistance
+### Resistência à Magia
 
-The dryad has advantage on saving throws against spells and other magical effects.
-
-
-### Speak with Beasts and Plants
-
-The dryad can communicate with beasts and plants as if they shared a language.
+A dríade tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
 
-### Tree Stride
+### Falar com Bestas e Plantas
 
-Once on her turn, the dryad can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be large or bigger.
-
-## Actions
+A dríade pode comunicar-se com bestas e plantas como se compartilhassem um idioma.
 
 
-### Club
+### Passos da Árvore
 
-mw 2 to hit (6 to hit with shillelagh), reach 5 ft., one target. {@h}2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) bludgeoning damage, or 8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) bludgeoning damage with shillelagh.
+Uma vez por turno, a dríade pode usar 10 pés de seu deslocamento para entrar magicamente em uma árvore viva ao seu alcance e emergir de uma segunda árvore viva a até 60 pés da primeira, aparecendo em um espaço desocupado a até 5 pés da segunda árvore. Ambas as árvores devem ser Grandes ou maiores.
+
+## Ações
 
 
-### Fey Charm
+### Clava
 
-The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.
+Ataque Corpo a Corpo com Arma: +2 para atingir (+6 para atingir com shillelagh), alcance 5 pés, um alvo. {@h}2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) de dano de concussão, ou 8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano de concussão com shillelagh.
 
-Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.
 
-The dryad can have no more than one humanoid and up to three beasts charmed at a time.
+### Encanto Feérico
+
+A dríade escolhe um humanoide ou besta que ela possa ver a até 30 pés dela. Se o alvo puder ver a dríade, ele deve ser bem-sucedido em um teste de resistência de Sabedoria CD 14 ou ficará enfeitiçado magicamente. A criatura enfeitiçada considera a dríade uma amiga confiável a ser ouvida e protegida. Embora o alvo não esteja sob o controle da dríade, ele interpreta os pedidos e ações da dríade da maneira mais favorável possível.
+
+Cada vez que a dríade ou seus aliados fizerem algo prejudicial ao alvo, este pode repetir o teste de resistência, encerrando o efeito sobre si mesmo em caso de sucesso. Caso contrário, o efeito dura 24 horas ou até que a dríade morra, esteja em um plano de existência diferente do alvo, ou encerre o efeito como uma ação bônus. Se o teste de resistência do alvo for bem-sucedido, o alvo fica imune ao Encanto Feérico da dríade pelas próximas 24 horas.
+
+A dríade pode ter no máximo um humanoide e até três bestas enfeitiçadas ao mesmo tempo.

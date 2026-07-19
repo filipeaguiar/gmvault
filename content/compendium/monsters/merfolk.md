@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Estou pronto para ajudar com a tradução e revisão editorial do rascunho importado do 5e.tools (Monster Manual). Por favor, cole o texto que precisa ser traduzido.
 tags:
 - draft
 - importado
@@ -37,18 +37,21 @@ stats:
   languages: Aquan, Common
   cr: 1/8
 stats_meta: Medium humanoid N
+titulo_pt_br: Povo do Mar
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Anfíbio
+O tritão pode respirar ar e água.
 
-### Amphibious
+## Ações
 
-The merfolk can breathe air and water.
-
-## Actions
-
-
-### Spear
-
-mw,rw 2 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) piercing damage, or 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) piercing damage if used with two hands to make a melee attack.
+### Lança
+Ataque Corpo a Corpo ou à Distância com Arma: +2 para atingir, alcance 1,5 m ou alcance 6/18 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano perfurante, ou 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) de dano perfurante se usada com as duas mãos para fazer um ataque corpo a corpo.

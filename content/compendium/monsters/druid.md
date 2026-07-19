@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Parece que você ainda não forneceu o texto que precisa ser traduzido e revisado. Por favor, cole o conteúdo do draft importado do 5e.tools (MM) para que eu possa realizar a tradução editorial para o português do Brasil, seguindo todas as regras estabelecidas.
 tags:
 - draft
 - importado
@@ -39,11 +39,13 @@ stats:
   languages: Druidic plus any two languages
   cr: '2'
 stats_meta: Medium humanoid A
+titulo_pt_br: Druida
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
-
-
-### Quarterstaff
-
-mw 2 to hit (4 to hit with shillelagh), reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) bludgeoning damage, 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) bludgeoning damage if wielded with two hands, or 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) bludgeoning damage with shillelagh.
+Ataque Corpo a Corpo com Arma: +2 para atingir (+4 para atingir com shillelagh), alcance 5 ft., um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) dano de concussão, 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) dano de concussão se empunhado com duas mãos, ou 6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) dano de concussão com shillelagh.

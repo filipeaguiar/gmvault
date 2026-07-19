@@ -7,7 +7,8 @@ O front matter de uma ficha separa dados próprios do personagem de conteúdo co
 - `char_info`: atributos, modificadores, CA, HP, deslocamentos, sentidos, idiomas, perícias, moedas e estado operacional.
 - `char_info.actions[].ref`: URL interna da regra da ação ou característica. A entrada mantém `name`, `source`, `max_uses` e `reset`.
 - `char_info.equipment[].ref`: URL interna do item ou item mágico. A entrada mantém quantidade, equipado e fórmulas calculadas.
-- `char_info.spells[].ref`: URL interna da magia. A entrada mantém nível, preparo e uso.
+- `char_info.spells[].ref`: URL interna da magia. A entrada mantém nome, nível, origem, preparo, preparo permanente, conhecimento, capacidade de preparo e uso.
+- `char_info.spellcasting`: perfil operacional da conjuração da ficha, incluindo modo, habilidade, listas de refs e progressão de slots.
 - `char_info.classes_progression`: identidade e nível da classe; detalhes compartilhados são resolvidos pela referência da classe ou das regras.
 - `compendium_refs`: conjunto de URLs internas das entidades relacionadas que não possuem uma entrada individual com `ref`.
 

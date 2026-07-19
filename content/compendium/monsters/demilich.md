@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -40,55 +40,62 @@ stats:
   languages: ''
   cr: '18'
 stats_meta: Tiny undead N/E
+titulo_pt_br: Semilich
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Avoidance
+### Evasão
 
-If the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
-
-
-### Legendary Resistance (3/Day)
-
-If the demilich fails a saving throw, it can choose to succeed instead.
+Se o demilich for submetido a um efeito que permita que ele faça um teste de resistência para sofrer apenas metade do dano, ele, em caso de sucesso no teste de resistência, não sofre dano, e em caso de falha, sofre apenas metade do dano.
 
 
-### Turn Immunity
+### Resistência Lendária (3/Dia)
 
-The demilich is immune to effects that turn undead.
-
-## Actions
+Se o demilich falhar em um teste de resistência, ele pode escolher ser bem-sucedido.
 
 
-### Howl 5
+### Imunidade a Expulsão
 
-The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its next turn.
+O demilich é imune a efeitos que expulsam mortos-vivos.
 
-
-### Life Drain
-
-The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a 19 Constitution saving throw or take 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets.
-
-## Legendary Actions
+## Ações
 
 
-### Flight
+### Uivo
 
-The demilich flies up to half its flying speed.
-
-
-### Cloud of Dust
-
-The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a 15 Constitution saving throw or be blinded until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn.
+O demilich emite um uivo horripilante. Cada criatura em um raio de 30 pés do demilich que possa ouvir o uivo deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou cair para 0 pontos de vida. Em caso de sucesso no teste de resistência, a criatura fica amedrontada até o final do próximo turno dela.
 
 
-### Energy Drain (Costs 2 Actions)
+### Drenar Vida
 
-Each creature within 30 feet of the demilich must make a 15 Constitution saving throw. On a failed save, the creature's hit point maximum is magically reduced by 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>). If a creature's hit point maximum is reduced to 0 by this effect, the creature dies. A creature's hit point maximum can be restored with the greater restoration spell or similar magic.
+O demilich escolhe até três criaturas que possa ver em um raio de 10 pés. Cada alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 19 ou sofrer 21 (<span class="dice+" data-roll-notation="6d6">6d6</span>) de dano necrótico, e o demilich recupera pontos de vida iguais ao dano total causado a todos os alvos.
+
+## Ações Lendárias
 
 
-### Vile Curse (Costs 3 Actions)
+### Voo
 
-The demilich targets one creature it can see within 30 feet of it. The target must succeed on a 15 Wisdom saving throw or be magically cursed. Until the curse ends, the target has disadvantage on attack rolls and saving throws. The target can repeat the saving throw at the end of each of its turns, ending the curse on a success.
+O demilich voa até metade do seu deslocamento de voo.
+
+
+### Nuvem de Poeira
+
+O demilich revolve magicamente seus restos empoeirados. Cada criatura em um raio de 10 pés do demilich, incluindo aquelas atrás de cobertura, deve ser bem-sucedida em um teste de resistência de Constituição CD 15 ou ficar cega até o final do próximo turno do demilich. Uma criatura que seja bem-sucedida no teste de resistência fica imune a este efeito até o final do próximo turno do demilich.
+
+
+### Drenar Energia (Custa 2 Ações)
+
+Cada criatura em um raio de 30 pés do demilich deve fazer um teste de resistência de Constituição CD 15. Em caso de falha no teste de resistência, o máximo de pontos de vida da criatura é magicamente reduzido em 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>). Se o máximo de pontos de vida de uma criatura for reduzido a 0 por este efeito, a criatura morre. O máximo de pontos de vida de uma criatura pode ser restaurado com a magia restauração maior ou magia similar.
+
+
+### Maldição Vil (Custa 3 Ações)
+
+O demilich escolhe uma criatura que possa ver em um raio de 30 pés. O alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 15 ou ser amaldiçoado magicamente. Até a maldição terminar, o alvo tem desvantagem em jogadas de ataque e testes de resistência. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando a maldição em caso de sucesso.

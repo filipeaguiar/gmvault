@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: I can see you've shared the translation rules and guidelines, but I don't see the actual draft text that needs to be translated from 5e.tools. Could you please paste the content you'd like me to translate? Once you provide the text, I'll apply all the mandatory terminology, protected terms, and formatting rules as specified.
 tags:
 - draft
 - importado
@@ -37,11 +37,17 @@ stats:
   languages: any one language (usually Common)
   cr: 1/8
 stats_meta: Medium humanoid A
+titulo_pt_br: Guard
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
+### Lança
 
-### Spear
-
-mw,rw 3 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) piercing damage, or 5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) piercing damage if used with two hands to make a melee attack.
+Ataque Corpo a Corpo ou à Distância com Arma: +3 para atingir, alcance 1,5 m ou alcance 6/18 m, um alvo. *Acerto:* 4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano perfurante, ou 5 (<span class="dice+" data-roll-notation="1d8+1">1d8 + 1</span>) de dano perfurante se usada com as duas mãos para fazer um ataque corpo a corpo.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Desculpe, mas percebo que você mencionou um rascunho importado do 5e.tools (MM) que precisa de tradução e revisão editorial, mas o texto em si não foi incluído na sua mensagem. Você poderia colar o conteúdo do rascunho para que eu possa realizar a tradução?
 tags:
 - draft
 - importado
@@ -40,11 +40,17 @@ stats:
   languages: understands Celestial, Common, Elvish, and Sylvan but can't speak
   cr: '2'
 stats_meta: Large celestial C/G
+titulo_pt_br: Pégaso
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
+### Cascos
 
-### Hooves
-
-mw 6 to hit, reach 5 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) bludgeoning damage.
+Ataque Corpo a Corpo com Arma: +6 para acertar, alcance 5 ft., um alvo. Dano: 11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano de concussão.

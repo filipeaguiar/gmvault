@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Não foi fornecido texto para tradução. Por favor, envie o conteúdo do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,33 +36,40 @@ stats:
   languages: Ignan
   cr: '5'
 stats_meta: Large elemental N/E
+titulo_pt_br: Salamandra
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Heated Body
+### Corpo Aquecido
 
-A creature that touches the salamander or hits it with a melee attack while within 5 feet of it takes 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) fire damage.
-
-
-### Heated Weapons
-
-Any metal melee weapon the salamander wields deals an extra 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage on a hit (included in the attack).
-
-## Actions
+Uma criatura que toque a salamandra ou a atinja com um ataque corpo a corpo enquanto estiver a até 1,5 metro dela sofre 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano de fogo.
 
 
-### Multiattack
+### Armas Aquecidas
 
-The salamander makes two attacks: one with its spear and one with its tail.
+Qualquer arma corpo a corpo de metal empunhada pela salamandra causa 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo extra em um acerto (já incluído no ataque).
 
-
-### Spear
-
-mw,rw 7 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) piercing damage, or 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) piercing damage if used with two hands to make a melee attack, plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+## Ações
 
 
-### Tail
+### Ataques Múltiplos
 
-mw 7 to hit, reach 10 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) bludgeoning damage plus 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) fire damage, and the target is grappled (escape 14). Until this grapple ends, the target is restrained, the salamander can automatically hit the target with its tail, and the salamander can't make tail attacks against other targets.
+A salamandra realiza dois ataques: um com sua lança e outro com sua cauda.
+
+
+### Lança
+
+Corpo a Corpo, À Distância: +7 para atingir, alcance 1,5 m ou alcance 6/18 m, um alvo. **Acerto:** 11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano perfurante, ou 13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano perfurante se usada com as duas mãos para realizar um ataque corpo a corpo, mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
+
+
+### Cauda
+
+Corpo a Corpo: +7 para atingir, alcance 3 m, um alvo. **Acerto:** 11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano de concussão mais 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano de fogo, e o alvo fica agarrado (escapar CD 14). Até este agarrão terminar, o alvo está contido, a salamandra atinge automaticamente o alvo com sua cauda e a salamandra não pode realizar ataques de cauda contra outros alvos.

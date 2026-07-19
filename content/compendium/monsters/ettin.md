@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: O conteúdo do rascunho não foi fornecido. Por favor, insira o texto do rascunho do 5e.tools (MM) que precisa ser traduzido e revisado editorialmente para que eu possa realizar a tradução conforme as diretrizes especificadas.
 tags:
 - draft
 - importado
@@ -37,33 +37,35 @@ stats:
   languages: Giant, Orc
   cr: '4'
 stats_meta: Large giant C/E
+titulo_pt_br: Ettin
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Duas Cabeças
 
-### Two Heads
+O ettin tem vantagem em testes de Sabedoria (Percepção) e em testes de resistência contra ficar cego, enfeitiçado, surdo, amedrontado, atordoado e ser derrubado inconsciente.
 
-The ettin has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.
+### Vigilante
 
+Quando uma das cabeças do ettin está dormindo, a outra está acordada.
 
-### Wakeful
+## Ações
 
-When one of the ettin's heads is asleep, its other head is awake.
+### Ataques Múltiplos
 
-## Actions
+O ettin realiza dois ataques: um com seu machado de batalha e outro com sua estrela da manhã.
 
+### Machado de Batalha
 
-### Multiattack
+Ataque Corpo a Corpo com Arma: +7 para acertar, alcance 1,5 m, um alvo. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano cortante.
 
-The ettin makes two attacks: one with its battleaxe and one with its morningstar.
+### Estrela da Manhã
 
-
-### Battleaxe
-
-mw 7 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) slashing damage.
-
-
-### Morningstar
-
-mw 7 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) piercing damage.
+Ataque Corpo a Corpo com Arma: +7 para acertar, alcance 1,5 m, um alvo. {@h}14 (<span class="dice+" data-roll-notation="2d8+5">2d8 + 5</span>) de dano perfurante.

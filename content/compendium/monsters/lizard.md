@@ -4,7 +4,13 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: 'Personagens ficam presos em marcas de explosão, etc, nas paredes. Em muitos lugares, o piso está rachado ou desabado, e crateras se formaram.
+
+
+  A área é fortemente obscurecida por fumaça e neblina até uma altura de 4,5 metros. Criaturas sem a habilidade de enxergar através de áreas fortemente obscurecidas tratam a área como <b>terreno difícil</b>, e criaturas com essa habilidade podem tratar a área como normal.
+
+
+  Qualquer criatura que sofra dano trovejante enquanto estiver nesta área deve ser bem-sucedida em um teste de Força CD 12 {@status Grappled|condition|TeLe} ou será {@condition empurrada} 3 metros na direção da borda mais próxima da área. Em um sucesso, a criatura não é {@condition empurrada}. O som estrondoso pode ser ouvido a um alcance de 300 metros e atrai criaturas na área.'
 tags:
 - draft
 - importado
@@ -36,11 +42,15 @@ stats:
   languages: ''
   cr: '0'
 stats_meta: Tiny beast U
+titulo_pt_br: Lagarto
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+### Mordida
 
-
-### Bite
-
-mw 0 to hit, reach 5 ft., one target. {@h}1 piercing damage.
+mw 0 para atingir, alcance 5 pés, um alvo. {@h}1 de dano perfurante.

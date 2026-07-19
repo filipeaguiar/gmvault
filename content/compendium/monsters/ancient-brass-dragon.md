@@ -4,7 +4,10 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: "```markdown\n# Quaggoth\n\n## Estatísticas do bloco\n\n**Quaggoth**\n\n_Humanoide médio (quaggoth), caótico e neutro_\n\n**Classe de Armadura** 13 (armadura natural)  \n**Pontos de Vida** 45 (7d8 + 14)  \n**Deslocamento** 9 m, escalada 9 m\n\n| FOR | DES | CON | INT | SAB | CAR |\n|-----|-----|-----|-----|-----|-----|\n| 15 (+2) | 12 (+1) | 14 (+2) | 6 (-2) | 10 (+0) | 5 (-3) |\n\n**Salvaguardas** FOR +4, DES +3  \n**Perícias** Atletismo +4, Furtividade +5  \n**Resistências a dano** nenhuma  \n**Vulnerabilidades a dano** nenhuma  \n**Imunidades a dano** nenhuma  \n**Imunidades a condições** envenenado  \n**Sentidos** visão no escuro 36 m, Percepção passiva 10  \n**Idiomas** Subterrâneo Comum  \n**Desafio** 2 (450 XP) **Bônus de Proficiência** +2\n\n## Traits\n\n**_Fúria Ferida (1/dia)._** Enquanto estiver com 20 pontos de vida ou menos, o quaggoth tem vantagem em jogadas de ataque. Além disso, ele causa 5 (1d8) de dano adicional em qualquer alvo que atingir com um ataque corpo\
+  \ a corpo.\n\n## Ações\n\n**_Ataque Múltiplo._** O quaggoth faz dois ataques com garra.\n\n**_Garra._** _Ataque Corpo a Corpo com Arma:_ +4 para atingir, alcance 1,5 m, um alvo. _Acerto:_ 6 (1d8 + 2) de dano cortante mais 2 (1d4) de dano de veneno. O alvo deve ser bem-sucedido em uma salvaguarda de Constituição CD 12 ou ficará envenenado por 1 minuto. A criatura envenenada pode repetir a salvaguarda no final de cada um de seus turnos, encerrando o efeito em caso de sucesso.\n\n**_Rapina._** _Ataque Corpo a Corpo com Arma:_ +4 para atingir, alcance 1,5 m, um alvo. _Acerto:_ 6 (1d8 + 2) de dano de concussão.\n\n## Reação\n\n**_Contra-ataque Enfurecido (1/dia)._** Em resposta a sofrer dano, o quaggoth pode fazer um ataque com garra contra uma criatura ao seu alcance.\n\n## Descrição\n\nQuaggoths são humanoides selvagens, semelhantes a ursos, que habitam as profundezas do Subterrâneo. Predadores subterrâneos, eles caçam em bandos, perseguindo suas presas nas cavernas escuras. Suas garras são\
+  \ afiadas e fortes, e eles geralmente as revestem com secreções venenosas de musgos ou fungos subterrâneos que mascam.\n\nQuaggoths são agressivos e territoriais, atacando outras criaturas sem provocação. Eles também são surpreendentemente furtivos para o seu tamanho, capazes de se mover silenciosamente pelas cavernas e emboscar suas presas.\n\nA sociedade quaggoth é tribal e brutal. Eles são liderados pelo mais forte entre eles, e as lutas pelo poder são comuns. Eles frequentemente escravizam humanoides mais fracos que capturam durante seus ataques, usando-os como trabalhadores ou como alimento. Apesar de sua natureza selvagem, alguns quaggoths servem como mercenários ou lacaios para habitantes mais poderosos do Subterrâneo, como drows ou devoradores de mentes.\n\n**_Servos Venenosos._** Alguns quaggoths esfregam excrementos de ursos-coruja ou outras substâncias nocivas em suas garras para torná-las ainda mais letais.\n\n**_Companheiros Fúngicos._** Em cavernas raramente visitadas, quaggoths\
+  \ às vezes formam relações simbióticas com fungos sencientes ou micônides.\n\n**_Caçadores do Subterrâneo._** Nas profundezas da terra, os uivos de uma matilha de caça quaggoth sinalizam uma morte rápida e violenta para os despreparados.\n```"
 tags:
 - draft
 - importado
@@ -44,71 +47,78 @@ stats:
   languages: Common, Draconic
   cr: '20'
 stats_meta: Gargantuan dragon C/G
+titulo_pt_br: Dragão de Bronze Ancião
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Legendary Resistance (3/Day)
+### Resistência Lendária (3/Dia)
 
-If the dragon fails a saving throw, it can choose to succeed instead.
+Se o dragão falhar em um teste de resistência, ele pode escolher ser bem-sucedido em seu lugar.
 
-## Actions
-
-
-### Multiattack
-
-The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
+## Ações
 
 
-### Bite
+### Ataques Múltiplos
 
-mw 14 to hit, reach 15 ft., one target. {@h}19 (<span class="dice+" data-roll-notation="2d10+8">2d10 + 8</span>) piercing damage.
-
-
-### Claw
-
-mw 14 to hit, reach 10 ft., one target. {@h}15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) slashing damage.
+O dragão pode usar sua Presença Amedrontadora. Em seguida, ele realiza três ataques: um com sua mordida e dois com suas garras.
 
 
-### Tail
+### Mordida
 
-mw 14 to hit, reach 20 ft., one target. {@h}17 (<span class="dice+" data-roll-notation="2d8+8">2d8 + 8</span>) bludgeoning damage.
-
-
-### Frightful Presence
-
-Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.
+Corpo a Corpo com Arma +14 para atingir, alcance 4,5 m, um alvo. *Acerto:* 19 (<span class="dice+" data-roll-notation="2d10+8">2d10 + 8</span>) de dano perfurante.
 
 
-### Breath Weapons 5
+### Garra
 
-The dragon uses one of the following breath weapons:
-
-* {'type': 'item', 'name': 'Fire Breath', 'entry': 'The dragon exhales fire in a 90-foot line that is 10 feet wide. Each creature in that line must make a 21 Dexterity saving throw, taking 56 (<span class="dice+" data-roll-notation="16d6">16d6</span>) fire damage on a failed save, or half as much damage on a successful one.'}
-
-* {'type': 'item', 'name': 'Sleep Breath', 'entry': 'The dragon exhales sleep gas in a 90-foot cone. Each creature in that area must succeed on a 21 Constitution saving throw or fall unconscious for 10 minutes. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.'}
+Corpo a Corpo com Arma +14 para atingir, alcance 3 m, um alvo. *Acerto:* 15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) de dano cortante.
 
 
-### Change Shape
+### Cauda
 
-The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).
-
-In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.
-
-## Legendary Actions
+Corpo a Corpo com Arma +14 para atingir, alcance 6 m, um alvo. *Acerto:* 17 (<span class="dice+" data-roll-notation="2d8+8">2d8 + 8</span>) de dano de concussão.
 
 
-### Detect
+### Presença Amedrontadora
 
-The dragon makes a Wisdom (Perception) check.
-
-
-### Tail Attack
-
-The dragon makes a tail attack.
+Cada criatura à escolha do dragão que esteja a até 36 metros do dragão e consciente dele deve ser bem-sucedida em um teste de resistência de Sabedoria CD 18 ou ficará amedrontada por 1 minuto. Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, encerrando o efeito sobre si mesma em caso de sucesso. Se o teste de resistência de uma criatura for bem-sucedido ou o efeito terminar para ela, a criatura fica imune à Presença Amedrontadora do dragão pelas próximas 24 horas.
 
 
-### Wing Attack (Costs 2 Actions)
+### Armas de Sopro (Recarga 5–6)
 
-The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a 22 Dexterity saving throw or take 15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.
+O dragão usa uma das seguintes armas de sopro:
+
+* {'type': 'item', 'name': 'Sopro de Fogo', 'entry': 'O dragão exala fogo em uma linha de 27 metros de comprimento e 3 metros de largura. Cada criatura nessa linha deve fazer um teste de resistência de Destreza CD 21, sofrendo 56 (<span class="dice+" data-roll-notation="16d6">16d6</span>) de dano de fogo em caso de falha no teste, ou metade desse dano em caso de sucesso.'}
+
+* {'type': 'item', 'name': 'Sopro de Sono', 'entry': 'O dragão exala gás sonífero em um cone de 27 metros. Cada criatura nessa área deve ser bem-sucedida em um teste de resistência de Constituição CD 21 ou cairá inconsciente por 10 minutos. Este efeito termina para uma criatura se ela sofrer dano ou se alguém usar uma ação para acordá-la.'}
+
+
+### Mudar Forma
+
+O dragão se transforma magicamente em um humanoide ou besta que tenha um nível de desafio não superior ao seu, ou de volta à sua forma verdadeira. Ele reverte à sua forma verdadeira se morrer. Qualquer equipamento que esteja vestindo ou carregando é absorvido ou usado pela nova forma (à escolha do dragão).
+
+Em uma nova forma, o dragão mantém sua tendência, pontos de vida, Dados de Vida, capacidade de falar, proficiências, Resistência Lendária, ações de covil e valores de Inteligência, Sabedoria e Carisma, bem como esta ação. Suas estatísticas e capacidades são, de resto, substituídas pelas da nova forma, exceto quaisquer características de classe ou ações lendárias dessa forma.
+
+## Ações Lendárias
+
+
+### Detectar
+
+O dragão faz um teste de Sabedoria (Percepção).
+
+
+### Ataque de Cauda
+
+O dragão faz um ataque de cauda.
+
+
+### Ataque de Asa (Custa 2 Ações)
+
+O dragão bate suas asas. Cada criatura a até 4,5 metros do dragão deve ser bem-sucedida em um teste de resistência de Destreza CD 22 ou sofre 15 (<span class="dice+" data-roll-notation="2d6+8">2d6 + 8</span>) de dano de concussão e é derrubada caída. O dragão pode então voar até metade de seu deslocamento de voo.

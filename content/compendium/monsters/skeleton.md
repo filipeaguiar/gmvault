@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Entendido! Estou pronto para traduzir e revisar editorialmente o rascunho importado do 5e.tools. Por favor, envie o texto que precisa ser trabalhado, e aplicarei as regras de terminologia, estilo e proteção de nomes próprios conforme solicitado.
 tags:
 - draft
 - importado
@@ -36,16 +36,21 @@ stats:
   languages: understands all languages it spoke in life but can't speak
   cr: 1/4
 stats_meta: Medium undead L/E
+titulo_pt_br: Esqueleto
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
+### Espada Curta
 
-### Shortsword
+Ataque Corpo a Corpo com Arma +4 para atingir, alcance 1,5 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.
 
-mw 4 to hit, reach 5 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+### Arco Curto
 
-
-### Shortbow
-
-rw 4 to hit, range 80/320 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) piercing damage.
+Ataque à Distância com Arma +4 para atingir, alcance 24/96 m, um alvo. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) de dano perfurante.

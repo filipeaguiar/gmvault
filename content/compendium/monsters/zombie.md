@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Parece que você mencionou a importação de um rascunho do 5e.tools (MM), mas não recebi o texto para tradução. Por favor, cole o conteúdo que precisa ser traduzido e revisado editorialmente para o português do Brasil, e aplicarei as regras obrigatórias e protegerei os termos conforme solicitado.
 tags:
 - draft
 - importado
@@ -37,18 +37,25 @@ stats:
   languages: understands all languages it spoke in life but can't speak
   cr: 1/4
 stats_meta: Medium undead N/E
+titulo_pt_br: Zumbi
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+### Características
 
 
-### Undead Fortitude
+### Fortitude dos Mortos-vivos
 
-If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead.
+Se o dano reduzir o zumbi a 0 pontos de vida, ele deve realizar um teste de resistência de Constituição com CD 5 + o dano sofrido, a menos que o dano seja radiante ou de um acerto crítico. Em um sucesso, o zumbi cai para 1 ponto de vida.
 
-## Actions
+## Ações
 
 
-### Slam
+### Pancada
 
-mw 3 to hit, reach 5 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) bludgeoning damage.
+mw 3 para atingir, alcance 1,5 m, um alvo. {@h}4 (<span class="dice+" data-roll-notation="1d6+1">1d6 + 1</span>) de dano de concussão.

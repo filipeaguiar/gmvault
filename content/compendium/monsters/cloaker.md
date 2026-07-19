@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Por favor, forneça o texto do rascunho importado do 5e.tools (Monster Manual) que você deseja que eu traduza e revise editorialmente. Estou pronto para processar o conteúdo assim que você compartilhá-lo.
 tags:
 - draft
 - importado
@@ -37,52 +37,43 @@ stats:
   languages: Deep Speech, Undercommon
   cr: '8'
 stats_meta: Large aberration C/N
+titulo_pt_br: Manto Anímico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Transferência de Dano
+Enquanto estiver agarrado a uma criatura, o cloaker sofre apenas metade do dano causado a ele (arredondado para baixo) e essa criatura sofre a outra metade.
 
-### Damage Transfer
+### Aparência Falsa
+Enquanto o cloaker permanecer imóvel sem expor a parte inferior, ele é indistinguível de uma capa de couro escura.
 
-While attached to a creature, the cloaker takes only half the damage dealt to it (rounded down), and that creature takes the other half.
+### Sensibilidade à Luz
+Enquanto estiver sob luz intensa, o cloaker tem desvantagem em jogadas de ataque e testes de Sabedoria (Percepção) que dependam da visão.
 
+## Ações
 
-### False Appearance
+### Ataques Múltiplos
+O cloaker realiza dois ataques: um com sua mordida e um com sua cauda.
 
-While the cloaker remains motionless without its underside exposed, it is indistinguishable from a dark leather cloak.
+### Mordida
+*Ataque Corpo a Corpo com Arma*: +6 para atingir, alcance 1,5 m, uma criatura. *Acerto*: 10 (2d6+3) de dano perfurante e, se o alvo for Grande ou menor, o cloaker se agarra a ele. Se o cloaker tiver vantagem contra o alvo, ele se agarra à cabeça do alvo, e o alvo fica cego e incapaz de respirar enquanto o cloaker estiver agarrado. Enquanto estiver agarrado, o cloaker pode realizar este ataque apenas contra o alvo e tem vantagem na jogada de ataque. O cloaker pode se soltar gastando 1,5 metro de seu deslocamento. Uma criatura, incluindo o alvo, pode usar sua ação para soltar o cloaker sendo bem-sucedida em um teste de Força CD 16.
 
+### Cauda
+*Ataque Corpo a Corpo com Arma*: +6 para atingir, alcance 3 m, uma criatura. *Acerto*: 7 (1d8+3) de dano cortante.
 
-### Light Sensitivity
+### Lamento
+Cada criatura a até 18 metros do cloaker que possa ouvir seu lamento e que não seja uma aberração deve ser bem-sucedida em um teste de resistência de Sabedoria CD 13 ou ficará amedrontada até o final do próximo turno do cloaker. Se o teste de resistência de uma criatura for bem-sucedido, a criatura fica imune ao lamento do cloaker pelas próximas 24 horas.
 
-While in bright light, the cloaker has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight.
+### Fantasmas (Recarga após um Descanso Curto ou Longo)
+O cloaker cria magicamente três duplicatas ilusórias de si mesmo se não estiver sob luz intensa. As duplicatas se movem com ele e imitam suas ações, mudando de posição para tornar impossível rastrear qual cloaker é o verdadeiro. Se o cloaker estiver em uma área de luz intensa, as duplicatas desaparecem.
 
-## Actions
+Sempre que qualquer criatura escolher o cloaker como alvo de um ataque ou magia prejudicial enquanto uma duplicata permanecer, essa criatura rola aleatoriamente para determinar se escolhe como alvo o cloaker ou uma das duplicatas. Uma criatura não é afetada por esse efeito mágico se não puder ver ou se depender de sentidos que não a visão.
 
-
-### Multiattack
-
-The cloaker makes two attacks: one with its bite and one with its tail.
-
-
-### Bite
-
-mw 6 to hit, reach 5 ft., one creature. {@h}10 (<span class="dice+" data-roll-notation="2d6+3">2d6 + 3</span>) piercing damage, and if the target is Large or smaller, the cloaker attaches to it. If the cloaker has advantage against the target, the cloaker attaches to the target's head, and the target is blinded and unable to breathe while the cloaker is attached. While attached, the cloaker can make this attack only against the target and has advantage on the attack roll. The cloaker can detach itself by spending 5 feet of its movement. A creature, including the target, can take its action to detach the cloaker by succeeding on a 16 Strength check.
-
-
-### Tail
-
-mw 6 to hit, reach 10 ft., one creature. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) slashing damage.
-
-
-### Moan
-
-Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a 13 Wisdom saving throw or become frightened until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours.
-
-
-### Phantasms (Recharges after a Short or Long Rest)
-
-The cloaker magically creates three illusory duplicates of itself if it isn't in bright light. The duplicates move with it and mimic its actions, shifting position so as to make it impossible to track which cloaker is the real one. If the cloaker is ever in an area of bright light, the duplicates disappear.
-
-Whenever any creature targets the cloaker with an attack or a harmful spell while a duplicate remains, that creature rolls randomly to determine whether it targets the cloaker or one of the duplicates. A creature is unaffected by this magical effect if it can't see or if it relies on senses other than sight.
-
-A duplicate has the cloaker's AC and uses its saving throws. If an attack hits a duplicate, or if a duplicate fails a saving throw against an effect that deals damage, the duplicate disappears.
+Uma duplicata tem a mesma Classe de Armadura do cloaker e usa os testes de resistência dele. Se um ataque atingir uma duplicata, ou se uma duplicata falhar em um teste de resistência contra um efeito que cause dano, a duplicata desaparece.

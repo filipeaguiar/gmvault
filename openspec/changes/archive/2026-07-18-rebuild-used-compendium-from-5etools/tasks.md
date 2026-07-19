@@ -63,7 +63,7 @@
 
 ## 9. Final verification
 
-- [ ] 9.1 Verify that every campaign, character, and selected compendium reference resolves after promotion
-- [ ] 9.2 Run the full Python test suite, including importer, character, translation, manifest, schema, and structured-roll tests
-- [ ] 9.3 Run `hugo -D --gc --minify` and `hugo --gc --minify` and inspect warnings and generated player-facing pages
-- [ ] 9.4 Audit the final diff for accidental campaign/character changes, leaked secrets, non-5e.tools provenance, published machine translations, and undeleted unused entities
+- [x] 9.1 Verify that every campaign, character, and selected compendium reference resolves after promotion
+- [x] 9.2 Run the full Python test suite, including importer, character, translation, manifest, schema, and structured-roll tests
+- [x] 9.3 Run `hugo -D --gc --minify` and `hugo --gc --minify` and inspect warnings and generated player-facing pages
+- [x] 9.4 Audit the final diff for accidental campaign/character changes, leaked secrets, non-5e.tools provenance, published machine translations, and undeleted unused entities

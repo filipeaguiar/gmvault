@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -40,38 +40,45 @@ stats:
   languages: all, telepathy 120 ft.
   cr: '16'
 stats_meta: Large celestial L/G
+titulo_pt_br: Planetário
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Angelic Weapons
+### Armas Angelicais
 
-The planetar's weapon attacks are magical. When the planetar hits with any weapon, the weapon deals an extra <span class="dice+" data-roll-notation="5d8">5d8</span> radiant damage (included in the attack).
-
-
-### Divine Awareness
-
-The planetar knows if it hears a lie.
+Os ataques com armas do planetar são mágicos. Quando o planetar atinge com qualquer arma, a arma causa um dano radiante adicional de <span class="dice+" data-roll-notation="5d8">5d8</span> (incluído no ataque).
 
 
-### Magic Resistance
+### Percepção Divina
 
-The planetar has advantage on saving throws against spells and other magical effects.
-
-## Actions
+O planetar sabe se ouve uma mentira.
 
 
-### Multiattack
+### Resistência à Magia
 
-The planetar makes two melee attacks.
+O planetar tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-
-### Greatsword
-
-mw 12 to hit, reach 5 ft., one target. {@h}21 (<span class="dice+" data-roll-notation="4d6+7">4d6 + 7</span>) slashing damage plus 22 (<span class="dice+" data-roll-notation="5d8">5d8</span>) radiant damage.
+## Ações
 
 
-### Healing Touch (4/Day)
+### Ataques Múltiplos
 
-The planetar touches another creature. The target magically regains 30 (<span class="dice+" data-roll-notation="6d8+3">6d8 + 3</span>) hit points and is freed from any curse, disease, poison, blindness, or deafness.
+O planetar realiza dois ataques corpo a corpo.
+
+
+### Espadão
+
+Ataque Corpo a Corpo com Arma: +12 para atingir, alcance 1,5 m, um alvo. <em>Acerto:</em> 21 (<span class="dice+" data-roll-notation="4d6+7">4d6 + 7</span>) de dano cortante, mais 22 (<span class="dice+" data-roll-notation="5d8">5d8</span>) de dano radiante.
+
+
+### Toque Curativo (4/Dia)
+
+O planetar toca outra criatura. O alvo recupera magicamente 30 (<span class="dice+" data-roll-notation="6d8+3">6d8 + 3</span>) pontos de vida e se livra de qualquer maldição, doença, veneno, cegueira ou surdez.

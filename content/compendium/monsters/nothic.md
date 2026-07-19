@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -40,33 +40,35 @@ stats:
   languages: Undercommon
   cr: '2'
 stats_meta: Medium aberration N/E
+titulo_pt_br: Nothic
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Visão Aguçada
 
-### Keen Sight
+O nothic tem vantagem em testes de Sabedoria (Percepção) que dependem da visão.
 
-The nothic has advantage on Wisdom (Perception) checks that rely on sight.
+## Ações
 
-## Actions
+### Ataques Múltiplos
 
+O nothic faz dois ataques de garra.
 
-### Multiattack
+### Garra
 
-The nothic makes two claw attacks.
+Ataque Corpo a Corpo com Arma: +4 para atingir, alcance 1,5 m, um alvo. **Dano:** 6 (1d6 + 3) de dano cortante.
 
+### Olhar Putrefante
 
-### Claw
+O nothic escolhe uma criatura que possa ver dentro de 9 m dele. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 12 contra esta magia ou sofre 10 (3d6) de dano necrótico.
 
-mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) slashing damage.
+### Intuição Estranha
 
-
-### Rotting Gaze
-
-The nothic targets one creature it can see within 30 feet of it. The target must succeed on a 12 Constitution saving throw against this magic or take 10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) necrotic damage.
-
-
-### Weird Insight
-
-The nothic targets one creature it can see within 30 feet of it. The target must contest its Charisma (Deception) check against the nothic's Wisdom (Insight) check. If the nothic wins, it magically learns one fact or secret about the target. The target automatically wins if it is immune to being charmed.
+O nothic escolhe uma criatura que possa ver dentro de 9 m dele. O alvo deve disputar seu teste de Carisma (Enganação) contra o teste de Sabedoria (Intuição) do nothic. Se o nothic vencer, aprende magicamente um fato ou segredo sobre o alvo. O alvo vence automaticamente se for imune a ser enfeitiçado.

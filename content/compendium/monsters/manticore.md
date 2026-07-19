@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,33 +36,35 @@ stats:
   languages: Common
   cr: '3'
 stats_meta: Large monstrosity L/E
+titulo_pt_br: Mantícora
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Recrescimento dos Espinhos da Cauda
 
-### Tail Spike Regrowth
+A mantícora tem vinte e quatro espinhos na cauda. Os espinhos usados crescem novamente quando a mantícora termina um descanso longo.
 
-The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest.
+## Ações
 
-## Actions
+### Ataques Múltiplos
 
+A mantícora realiza três ataques: um com sua mordida e dois com suas garras, ou três com seus espinhos da cauda.
 
-### Multiattack
+### Mordida
 
-The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.
+mw 5 para atingir, alcance 1,5 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano perfurante.
 
+### Garra
 
-### Bite
+mw 5 para atingir, alcance 1,5 m, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano cortante.
 
-mw 5 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage.
+### Espinho da Cauda
 
-
-### Claw
-
-mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) slashing damage.
-
-
-### Tail Spike
-
-rw 5 to hit, range 100/200 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) piercing damage.
+rw 5 para atingir, alcance 30/60 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano perfurante.

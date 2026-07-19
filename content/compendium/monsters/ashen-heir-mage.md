@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
+summary: Parece que o conteúdo do rascunho importado do 5e.tools (JTTRC) não foi incluído na mensagem. Por favor, cole o texto que precisa ser traduzido e revisado editorialmente para que eu possa realizar o trabalho.
 tags:
 - draft
 - importado
@@ -30,6 +30,13 @@ stats:
   languages: ''
   cr: ''
 stats_meta: ''
+titulo_pt_br: Mago Herdeiro Cinzento
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 

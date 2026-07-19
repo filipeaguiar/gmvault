@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Entendido. Por favor, forneça o texto a ser traduzido. Estou pronto para aplicar as regras de tradução e terminologia especificadas.
 tags:
 - draft
 - importado
@@ -42,26 +42,29 @@ stats:
   languages: Common, Draconic
   cr: '10'
 stats_meta: Large dragon C/E
+titulo_pt_br: Dragão Vermelho Jovem
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
+### Ataques Múltiplos
 
-### Multiattack
+O dragão realiza três ataques: um com sua mordida e dois com suas garras.
 
-The dragon makes three attacks: one with its bite and two with its claws.
+### Mordida
 
+mw 10 para atingir, alcance 10 pés, um alvo. {@h}17 (<span class="dice+" data-roll-notation="2d10+6">2d10 + 6</span>) de dano perfurante mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
 
-### Bite
+### Garra
 
-mw 10 to hit, reach 10 ft., one target. {@h}17 (<span class="dice+" data-roll-notation="2d10+6">2d10 + 6</span>) piercing damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+mw 10 para atingir, alcance 5 pés, um alvo. {@h}13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) de dano cortante.
 
+### Sopro de Fogo 5
 
-### Claw
-
-mw 10 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) slashing damage.
-
-
-### Fire Breath 5
-
-The dragon exhales fire in a 30-foot cone. Each creature in that area must make a 17 Dexterity saving throw, taking 56 (<span class="dice+" data-roll-notation="16d6">16d6</span>) fire damage on a failed save, or half as much damage on a successful one.
+O dragão exala fogo em um cone de 30 pés. Cada criatura nessa área deve realizar um teste de resistência de Destreza CD 17, sofrendo 56 (<span class="dice+" data-roll-notation="16d6">16d6</span>) de dano de fogo em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: "Invocar Espírito Dracônico  \n5º nível, conjuração"
 tags:
 - draft
 - importado
@@ -39,28 +39,35 @@ stats:
   languages: understands Auran and Common but speaks only through the use of its Mimicry trait
   cr: 1/4
 stats_meta: Medium humanoid C/N
+titulo_pt_br: Kenku
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Ambusher
+### Emboscador
 
-In the first round of a combat, the kenku has advantage on attack rolls against any creature it surprised.
-
-
-### Mimicry
-
-The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful 14 Wisdom (Insight) check.
-
-## Actions
+Na primeira rodada de um combate, o kenku tem vantagem nas jogadas de ataque contra qualquer criatura que ele tenha surpreendido.
 
 
-### Shortsword
+### Mimetismo
 
-mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage.
+O kenku pode imitar qualquer som que tenha ouvido, incluindo vozes. Uma criatura que ouve os sons pode perceber que são imitações com um teste de Sabedoria (Intuição) bem-sucedido CD 14.
+
+## Ações
 
 
-### Shortbow
+### Espada Curta
 
-rw 5 to hit, range 80/320 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage.
+Ataque corpo a corpo com arma: +5 para atingir, alcance 5 pés, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante.
+
+
+### Arco Curto
+
+Ataque à distância com arma: +5 para atingir, alcance 80/320 pés, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante.

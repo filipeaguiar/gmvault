@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Magos são conjuradores arcanos poderosos, estudiosos que dominam os segredos da magia através de estudo e prática. Embora compartilhem muitas características com os magos, os Magos representam uma categoria mais ampla de praticantes arcanos que podem incluir feiticeiros, bruxos e outros conjuradores.
 tags:
 - draft
 - importado
@@ -36,18 +36,23 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Medium beast U
+titulo_pt_br: Enxame de Cobras Venenosas
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Enxame
 
-### Swarm
-
-The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain hit points or gain temporary hit points.
+O enxame pode ocupar o espaço de outra criatura e vice-versa, e o enxame pode se mover através de qualquer abertura grande o suficiente para uma cobra Miúda. O enxame não pode recuperar Pontos de Vida ou ganhar Pontos de Vida Temporários.
 
 ## Actions
 
+### Mordidas
 
-### Bites
-
-mw 6 to hit, reach 0 ft., one creature in the swarm's space. {@h}7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) piercing damage, or 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) piercing damage if the swarm has half of its hit points or fewer. The target must make a 10 Constitution saving throw, taking 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) poison damage on a failed save, or half as much damage on a successful one.
+mw 6 para atingir, alcance 0 ft., uma criatura no espaço do enxame. {@h}7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de Dano Perfurante, ou 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de Dano Perfurante se o enxame tiver metade de seus Pontos de Vida ou menos. O alvo deve realizar um teste de resistência de Constituição CD 10, sofrendo 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de Dano de Veneno em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso.

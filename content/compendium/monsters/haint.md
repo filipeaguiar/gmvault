@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
+summary: Entendido. Aguardo o texto original extraído do 5e.tools (JTTRC) para realizar a tradução e a revisão editorial conforme as regras estabelecidas.
 tags:
 - draft
 - importado
@@ -38,42 +38,49 @@ stats:
   languages: any languages it knew in life
   cr: '7'
 stats_meta: Medium undead N
+titulo_pt_br: Haint
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Incorporeal Movement
+### Movimento Incorpóreo
 
-The haint can move through other creatures and objects as if they were difficult terrain. It takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if it ends its turn inside an object.
-
-
-### Unusual Nature
-
-The haint doesn't require air, food, drink, or sleep.
-
-## Actions
+O haint pode se mover através de outras criaturas e objetos como se fossem terreno difícil. Ele sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar seu turno dentro de um objeto.
 
 
-### Multiattack
+### Natureza Incomum
 
-The haint makes two Sorrowful Touch attacks.
+O haint não precisa de ar, comida, bebida ou sono.
 
-
-### Sorrowful Touch
-
-ms 6 to hit, reach 5 ft., one creature. {@h}21 (<span class="dice+" data-roll-notation="4d8+3">4d8 + 3</span>) psychic damage.
+## Ações
 
 
-### Change Shape
+### Ataques Múltiplos
 
-The haint magically assumes the appearance of the Humanoid it was in life, while retaining its game statistics. The assumed appearance ends if the haint is reduced to 0 hit points or uses an action to end it.
-
-## Bonus Actions
+O haint realiza dois ataques de Toque Doloroso.
 
 
-### Shared Sorrow
+### Toque Doloroso
 
-The haint targets one creature it can see within 60 feet of itself that is missing any hit points, sharing its own torment with this pained soul. The target must succeed on a 14 Wisdom saving throw or be incapacitated.
+Ataque Corpo a Corpo com Magia: +6 para atingir, alcance 1,5 metro, uma criatura. Acerto: 21 (<span class="dice+" data-roll-notation="4d8+3">4d8 + 3</span>) de dano psíquico.
 
-A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the haint's Shared Sorrow for the next 24 hours.
+
+### Mudar Forma
+
+O haint assume magicamente a aparência do Humanoide que era em vida, embora mantenha suas estatísticas de jogo. A aparência assumida termina se o haint for reduzido a 0 pontos de vida ou usar uma ação para encerrá-la.
+
+## Ações Bônus
+
+
+### Sofrimento Compartilhado
+
+O haint escolhe uma criatura que possa ver, a até 18 metros de si, que esteja sem ao menos um ponto de vida, compartilhando seu próprio tormento com essa alma sofrida. O alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 14 ou ficará incapacitado.
+
+Uma criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito em si mesma com um sucesso. Se o teste de resistência da criatura for bem-sucedido ou o efeito terminar para ela, a criatura fica imune ao Sofrimento Compartilhado do haint pelas próximas 24 horas.

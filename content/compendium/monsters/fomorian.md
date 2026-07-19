@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -38,28 +38,34 @@ stats:
   languages: Giant, Undercommon
   cr: '8'
 stats_meta: Huge giant C/E
+titulo_pt_br: Fomoriano
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
+
+### Ataques Múltiplos
+
+O fomori ataca duas vezes com sua clava grande ou realiza um ataque com a clava grande e usa Olho Maligno uma vez.
 
 
-### Multiattack
+### Clava Grande
 
-The fomorian attacks twice with its greatclub or makes one greatclub attack and uses Evil Eye once.
-
-
-### Greatclub
-
-mw 9 to hit, reach 15 ft., one target. {@h}19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) bludgeoning damage.
+Ataque Corpo a Corpo com Arma: +9 para atingir, Alcance 4,5 m, um alvo. *Acerto:* 19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) de Dano de Concussão.
 
 
-### Evil Eye
+### Olho Maligno
 
-The fomorian magically forces a creature it can see within 60 feet of it to make a 14 Charisma saving throw. The creature takes 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) psychic damage on a failed save, or half as much damage on a successful one.
+O fomori força magicamente uma criatura que possa ver, a até 18 metros de distância, a realizar um Teste de Resistência de Carisma CD 14. Em caso de falha no teste de resistência, a criatura sofre 27 (<span class="dice+" data-roll-notation="6d8">6d8</span>) de Dano Psíquico, ou metade desse dano em caso de sucesso.
 
 
-### Curse of the Evil Eye (Recharges after a Short or Long Rest)
+### Malogro do Olho Maligno (Recarga após um Descanso Curto ou Longo)
 
-With a stare, the fomorian uses Evil Eye, but on a failed save, the creature is also cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity.
+Com um olhar, o fomori usa Olho Maligno, mas, em caso de falha no teste de resistência, a criatura também é amaldiçoada com deformidades mágicas. Enquanto deformada, a criatura tem seu deslocamento reduzido à metade e tem Desvantagem em Testes de Atributo, Testes de Resistência e ataques baseados em Força ou Destreza.
 
-The transformed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success.
+A criatura transformada pode retomar o teste de resistência sempre que terminar um Descanso Longo, terminando o efeito em caso de sucesso.

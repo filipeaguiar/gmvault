@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Por favor, forneça o texto que você deseja traduzir.
 tags:
 - draft
 - importado
@@ -41,28 +41,31 @@ stats:
   languages: Common, Giant
   cr: '9'
 stats_meta: 'Huge giant {''alignment'': [''N'', ''G''], ''chance'': 50}/{''alignment'': [''N'', ''E''], ''chance'': 50}'
+titulo_pt_br: Gigante da Nuvem
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Faro Afiado
 
-### Keen Smell
+O gigante tem vantagem em testes de Sabedoria (Percepção) que dependem do olfato.
 
-The giant has advantage on Wisdom (Perception) checks that rely on smell.
+## Ações
 
-## Actions
+### Ataques Múltiplos
 
+O gigante faz dois ataques com estrela da manhã.
 
-### Multiattack
+### Estrela da Manhã
 
-The giant makes two morningstar attacks.
+Ataque Corpo a Corpo com Arma: +12 para atingir, alcance 10 pés, um alvo. {@h}21 (3d8 + 8) dano perfurante.
 
+### Pedra
 
-### Morningstar
-
-mw 12 to hit, reach 10 ft., one target. {@h}21 (<span class="dice+" data-roll-notation="3d8+8">3d8 + 8</span>) piercing damage.
-
-
-### Rock
-
-rw 12 to hit, range 60/240 ft., one target. {@h}30 (<span class="dice+" data-roll-notation="4d10+8">4d10 + 8</span>) bludgeoning damage.
+Ataque à Distância com Arma: +12 para atingir, alcance 60/240 pés, um alvo. {@h}30 (4d10 + 8) dano de concussão.

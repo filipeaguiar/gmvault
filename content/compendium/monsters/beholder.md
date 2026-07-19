@@ -4,7 +4,19 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: '```pcre
+
+  (?# Regex pattern)
+
+  (?:^|\s|\()
+
+  (?:a\s|algum\s|aquel[ae]s?\s|as\s|o\s|os\s|um\s|alguns\s|tod[oa]s?\sos\s|cada\s)
+
+  ?(?:salvaguardas?)
+
+  (?:$|\s|\)|,|\.)
+
+  ```'
 tags:
 - draft
 - importado
@@ -40,50 +52,53 @@ stats:
   languages: Deep Speech, Undercommon
   cr: '13'
 stats_meta: Large aberration L/E
+titulo_pt_br: Observador
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Cone Antimagia
 
-### Antimagic Cone
+O olho central do beholder cria uma área de antimagia, como na magia campo antimagia, em um cone de 150 pés. No início de cada um de seus turnos, o beholder decide para qual direção o cone está voltado e se o cone está ativo. A área afeta os próprios raios oculares do beholder.
 
-The beholder's central eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays.
+## Ações
 
-## Actions
+### Mordida
 
+mw 5 para acertar, alcance 5 pés, um alvo. {@h}14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano perfurante.
 
-### Bite
+### Raios Oculares
 
-mw 5 to hit, reach 5 ft., one target. {@h}14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) piercing damage.
+O beholder dispara três dos seguintes raios oculares mágicos aleatoriamente (rejogue resultados repetidos), escolhendo de um a três alvos que possa ver num raio de 120 pés dele:
 
+* {'type': 'itemSub', 'name': '1. Raio do Encanto', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 16 ou ficará enfeitiçada pelo beholder por 1 hora, ou até que o beholder cause dano à criatura.'}
 
-### Eye Rays
+* {'type': 'itemSub', 'name': '2. Raio Paralisante', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Constituição CD 16 ou ficará paralisada por 1 minuto. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.'}
 
-The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:
+* {'type': 'itemSub', 'name': '3. Raio do Medo', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 16 ou ficará amedrontada por 1 minuto. O alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.'}
 
-* {'type': 'itemSub', 'name': '1. Charm Ray', 'entry': 'The targeted creature must succeed on a 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.'}
+* {'type': 'itemSub', 'name': '4. Raio da Lentidão', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Destreza CD 16. Em caso de falha, o deslocamento do alvo é reduzido à metade por 1 minuto. Além disso, a criatura não pode realizar reações e pode realizar ou uma ação ou uma ação bônus em seu turno, não ambas. A criatura pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.'}
 
-* {'type': 'itemSub', 'name': '2. Paralyzing Ray', 'entry': 'The targeted creature must succeed on a 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.'}
+* {'type': 'itemSub', 'name': '5. Raio Enervante', 'entry': 'A criatura alvo deve realizar um teste de resistência de Constituição CD 16, sofrendo 36 (<span class="dice+" data-roll-notation="8d8">8d8</span>) de dano necrótico em caso de falha, ou metade desse dano em caso de sucesso.'}
 
-* {'type': 'itemSub', 'name': '3. Fear Ray', 'entry': 'The targeted creature must succeed on a 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.'}
+* {'type': 'itemSub', 'name': '6. Raio Telecinético', 'entries': ['Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 16 ou o beholder a move até 30 pés em qualquer direção. Ela fica contida pelo agarrão telecinético do raio até o início do próximo turno do beholder ou até que o beholder fique incapacitado.', 'Se o alvo for um objeto que pese 300 libras ou menos e que não esteja sendo vestido ou carregado, ele é movido até 30 pés em qualquer direção. O beholder também pode exercer controle refinado sobre objetos com este raio, como manipular uma ferramenta simples ou abrir uma porta ou recipiente.']}
 
-* {'type': 'itemSub', 'name': '4. Slowing Ray', 'entry': "The targeted creature must succeed on a 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."}
+* {'type': 'itemSub', 'name': '7. Raio do Sono', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 16 ou cairá adormecida e permanecerá inconsciente por 1 minuto. O alvo desperta se sofrer dano ou outra criatura usar uma ação para acordá-lo. Este raio não afeta constructos e mortos-vivos.'}
 
-* {'type': 'itemSub', 'name': '5. Enervation Ray', 'entry': 'The targeted creature must make a 16 Constitution saving throw, taking 36 (<span class="dice+" data-roll-notation="8d8">8d8</span>) necrotic damage on a failed save, or half as much damage on a successful one.'}
+* {'type': 'itemSub', 'name': '8. Raio de Petrificação', 'entry': 'A criatura alvo deve realizar um teste de resistência de Destreza CD 16. Em caso de falha, a criatura começa a se transformar em pedra e fica contida. Ela deve repetir o teste de resistência no final do seu próximo turno. Em caso de sucesso, o efeito termina. Em caso de falha, a criatura fica petrificada até ser libertada pela magia restauração maior ou outra magia.'}
 
-* {'type': 'itemSub', 'name': '6. Telekinetic Ray', 'entries': ["If the target is a creature, it must succeed on a 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated.", "If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."]}
+* {'type': 'itemSub', 'name': '9. Raio de Desintegração', 'entries': ['Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Destreza CD 16 ou sofrerá 45 (<span class="dice+" data-roll-notation="10d8">10d8</span>) de dano de energia. Se este dano reduzir a criatura a 0 pontos de vida, seu corpo se torna uma pilha de pó fino e cinzento.', 'Se o alvo for um objeto não mágico Grande ou menor ou uma criação de energia mágica, ele é desintegrado sem um teste de resistência. Se o alvo for um objeto Enorme ou maior ou uma criação de energia mágica, este raio desintegra um cubo de 10 pés dele.']}
 
-* {'type': 'itemSub', 'name': '7. Sleep Ray', 'entry': 'The targeted creature must succeed on a 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.'}
+* {'type': 'itemSub', 'name': '10. Raio da Morte', 'entry': 'A criatura alvo deve ser bem-sucedida em um teste de resistência de Destreza CD 16 ou sofrerá 55 (<span class="dice+" data-roll-notation="10d10">10d10</span>) de dano necrótico. O alvo morre se o raio reduzi-lo a 0 pontos de vida.'}
 
-* {'type': 'itemSub', 'name': '8. Petrification Ray', 'entry': 'The targeted creature must make a 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.'}
+## Ações Lendárias
 
-* {'type': 'itemSub', 'name': '9. Disintegration Ray', 'entries': ['If the target is a creature, it must succeed on a 16 Dexterity saving throw or take 45 (<span class="dice+" data-roll-notation="10d8">10d8</span>) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.', 'If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.']}
+### Raio Ocular
 
-* {'type': 'itemSub', 'name': '10. Death Ray', 'entry': 'The targeted creature must succeed on a 16 Dexterity saving throw or take 55 (<span class="dice+" data-roll-notation="10d10">10d10</span>) necrotic damage. The target dies if the ray reduces it to 0 hit points.'}
-
-## Legendary Actions
-
-
-### Eye Ray
-
-The beholder uses one random eye ray.
+O beholder usa um raio ocular aleatório.

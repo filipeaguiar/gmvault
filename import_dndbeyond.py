@@ -831,6 +831,22 @@ def main():
         structured_spells, unresolved_spells = collect_dndbeyond_spell_entries(
             char, primary_class_name
         )
+        structured_spells = [
+            {
+                "name": spell.get("name"),
+                "ref": spell.get("ref"),
+                "level": int(spell.get("level", 0) or 0),
+                "source": spell.get("source", "class"),
+                "prepared": bool(spell.get("prepared")),
+                "always_prepared": bool(spell.get("always_prepared")),
+                "known": bool(spell.get("known", True)),
+                "can_prepare": bool(spell.get("can_prepare")),
+                "usage": spell.get("usage", ""),
+                "origin": spell.get("origin", spell.get("source", "class")),
+            }
+            for spell in structured_spells
+            if spell.get("name") and spell.get("ref")
+        ]
         compendium_refs.extend(
             entry["ref"] for entry in structured_spells if entry.get("ref")
         )

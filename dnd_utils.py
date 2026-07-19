@@ -40,6 +40,11 @@ def get_json_data(url):
 def get_modifier(score):
     return (score - 10) // 2
 
+
+SPELLCASTING_PREPARED_CLASSES = {"cleric", "druid", "paladin", "artificer", "clerigo", "druida", "paladino", "artifice"}
+SPELLCASTING_PACT_CLASSES = {"warlock", "bruxo"}
+SPELLCASTING_KNOWN_CLASSES = {"bard", "sorcerer", "wizard", "ranger", "bardo", "feiticeiro", "mago", "patrulheiro"}
+
 def slugify(text):
     text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
     text = text.lower()

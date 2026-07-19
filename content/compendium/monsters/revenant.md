@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -40,43 +40,50 @@ stats:
   languages: the languages it knew in life
   cr: '5'
 stats_meta: Medium undead N
+titulo_pt_br: Renascido
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Regeneration
+### Regeneração
 
-The revenant regains 10 hit points at the start of its turn. If the revenant takes fire or radiant damage, this trait doesn't function at the start of the revenant's next turn. The revenant's body is destroyed only if it starts its turn with 0 hit points and doesn't regenerate.
-
-
-### Rejuvenation
-
-When the revenant's body is destroyed, its soul lingers. After 24 hours, the soul inhabits and animates another humanoid corpse on the same plane of existence and regains all its hit points. While the soul is bodiless, a wish spell can be used to force the soul to go to the afterlife and not return.
+O revenante recupera 10 pontos de vida no início de seu turno. Se o revenante sofrer dano de fogo ou radiante, esta característica não funcionará no início do próximo turno do revenante. O corpo do revenante é destruído apenas se ele iniciar seu turno com 0 pontos de vida e não regenerar.
 
 
-### Turn Immunity
+### Rejuvenescimento
 
-The revenant is immune to effects that turn undead.
-
-
-### Vengeful Tracker
-
-The revenant knows the distance to and direction of any creature against which it seeks revenge, even if the creature and the revenant are on different planes of existence. If the creature being tracked by the revenant dies, the revenant knows.
-
-## Actions
+Quando o corpo do revenante é destruído, sua alma permanece. Após 24 horas, a alma habita e anima outro cadáver humanoide no mesmo plano de existência e recupera todos os seus pontos de vida. Enquanto a alma estiver sem corpo, uma magia desejo pode ser usada para forçar a alma a ir para o pós-vida e não retornar.
 
 
-### Multiattack
+### Imunidade a Repelente a Mortos-Vivos
 
-The revenant makes two fist attacks.
-
-
-### Fist
-
-mw 7 to hit, reach 5 ft., one target. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) bludgeoning damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape 14) provided the target is Large or smaller.
+O revenante é imune a efeitos que afastam mortos-vivos.
 
 
-### Vengeful Glare
+### Rastreador Vingativo
 
-The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success.
+O revenante sabe a distância e a direção de qualquer criatura contra a qual busca vingança, mesmo que a criatura e o revenante estejam em planos de existência diferentes. Se a criatura rastreada pelo revenante morrer, o revenante saberá.
+
+## Ações
+
+
+### Ataques Múltiplos
+
+O revenante realiza dois ataques de punho.
+
+
+### Punho
+
+mw 7 para atingir, alcance 1,5 m, um alvo. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano de concussão. Se o alvo for uma criatura contra a qual o revenante jurou vingança, o alvo sofre 14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano de concussão adicionais. Em vez de causar dano, o revenante pode agarrar o alvo (CD para escapar 14), desde que o alvo seja Grande ou menor.
+
+
+### Olhar Vingativo
+
+O revenante escolhe uma criatura que possa ver a até 9 metros de si e contra a qual tenha jurado vingança. O alvo deve realizar um teste de resistência de Sabedoria CD 15. Em caso de falha, o alvo fica paralisado até o revenante causar dano a ele, ou até o final do próximo turno do revenante. Quando a paralisia termina, o alvo fica amedrontado pelo revenante por 1 minuto. O alvo amedrontado pode repetir o teste de resistência no final de cada um de seus turnos, com desvantagem se puder ver o revenante, terminando a condição de amedrontado sobre si em caso de sucesso.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Estou pronto para traduzir o rascunho importado do 5e.tools (MM). Por favor, forneça o texto a ser traduzido.
 tags:
 - draft
 - importado
@@ -36,28 +36,27 @@ stats:
   languages: ''
   cr: '3'
 stats_meta: Large monstrosity L/E
+titulo_pt_br: Besta Deslocadora
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Evitação
+Se a fera deslocadora for submetida a um efeito que permita a ela fazer um teste de resistência para sofrer apenas metade do dano, em vez disso, ela não sofre dano se for bem-sucedida no teste de resistência, e sofre apenas metade do dano se falhar.
 
-### Avoidance
+### Deslocamento
+A fera deslocadora projeta uma ilusão mágica que a faz parecer estar próxima à sua localização real, fazendo com que as jogadas de ataque contra ela tenham desvantagem. Se for atingida por um ataque, esta característica é anulada até o final do seu próximo turno. Esta característica também é anulada enquanto a fera deslocadora estiver incapacitada ou tiver deslocamento 0.
 
-If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+## Ações
 
+### Ataques Múltiplos
+A fera deslocadora realiza dois ataques com seus tentáculos.
 
-### Displacement
-
-The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0.
-
-## Actions
-
-
-### Multiattack
-
-The displacer beast makes two attacks with its tentacles.
-
-
-### Tentacle
-
-mw 6 to hit, reach 10 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) bludgeoning damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) piercing damage.
+### Tentáculo
+Ataque Corpo a Corpo com Arma: +6 para atingir, alcance 3 m, um alvo. {@h}7 (<span class="dice+" data-roll-notation="1d6+4">1d6 + 4</span>) de dano de concussão mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano perfurante.

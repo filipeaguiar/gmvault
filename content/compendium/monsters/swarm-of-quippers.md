@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,28 +36,31 @@ stats:
   languages: ''
   cr: '1'
 stats_meta: Medium beast U
+titulo_pt_br: Enxame de Quippers
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Frenesi Sangrento
 
-### Blood Frenzy
+O enxame tem vantagem em jogadas de ataque corpo a corpo contra qualquer criatura que não tenha todos os seus pontos de vida.
 
-The swarm has advantage on melee attack rolls against any creature that doesn't have all its hit points.
+### Enxame
 
+O enxame pode ocupar o espaço de outra criatura e vice-versa, e o enxame pode se mover por qualquer abertura grande o suficiente para um quipper Miúdo. O enxame não pode recuperar pontos de vida ou ganhar pontos de vida temporários.
 
-### Swarm
+### Respiração Aquática
 
-The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny quipper. The swarm can't regain hit points or gain temporary hit points.
+O enxame só pode respirar debaixo d'água.
 
+## Ações
 
-### Water Breathing
+### Mordidas
 
-The swarm can breathe only underwater.
-
-## Actions
-
-
-### Bites
-
-mw 5 to hit, reach 0 ft., one creature in the swarm's space. {@h}14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) piercing damage, or 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) piercing damage if the swarm has half of its hit points or fewer.
+mw 5 para atingir, alcance 0 ft., uma criatura no espaço do enxame. {@h}14 (<span class="dice+" data-roll-notation="4d6">4d6</span>) de dano perfurante, ou 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano perfurante se o enxame tiver metade dos seus pontos de vida ou menos.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -43,38 +43,45 @@ stats:
   languages: Common, Giant
   cr: '7'
 stats_meta: Large giant L/E
+titulo_pt_br: Oni
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Magic Weapons
+### Armas Mágicas
 
-The oni's weapon attacks are magical.
-
-
-### Regeneration
-
-The oni regains 10 hit points at the start of its turn if it has at least 1 hit point.
-
-## Actions
+Os ataques com arma do oni são mágicos.
 
 
-### Multiattack
+### Regeneração
 
-The oni makes two attacks, either with its claws or its glaive.
+O oni recupera 10 pontos de vida no início de seu turno se tiver pelo menos 1 ponto de vida.
+
+## Ações
 
 
-### Claw (Oni Form Only)
+### Ataques Múltiplos
 
-mw 7 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) slashing damage.
+O oni realiza dois ataques, seja com suas garras ou com sua glaive.
+
+
+### Garra (Apenas na Forma de Oni)
+
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 1,5 m, um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) de dano cortante.
 
 
 ### Glaive
 
-mw 7 to hit, reach 10 ft., one target. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) slashing damage, or 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) slashing damage in Small or Medium form.
+Ataque Corpo a Corpo com Arma: +7 para atingir, alcance 3 m, um alvo. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) de dano cortante, ou 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) de dano cortante na forma Pequena ou Média.
 
 
-### Change Shape
+### Mudar de Forma
 
-The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size.
+O oni se polimorfa magicamente em um humanoide Pequeno ou Médio, em um gigante Grande, ou de volta à sua forma verdadeira. Com exceção de seu tamanho, suas estatísticas são as mesmas em cada forma. O único equipamento que é transformado é sua glaive, que encolhe para que possa ser empunhada na forma humanoide. Se o oni morrer, ele reverte à sua forma verdadeira, e sua glaive reverte ao seu tamanho normal.

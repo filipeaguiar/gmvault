@@ -4,7 +4,10 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: 'Parece que você enviou apenas a instrução de contexto, sem o texto do rascunho importado do 5e.tools (MM) para eu traduzir e revisar editorialmente.
+
+
+  Por favor, cole o conteúdo do rascunho (o texto em inglês do Manual dos Monstros ou outro material) que precisa ser traduzido, e aplicarei todas as regras: terminologia obrigatória, preservação de Markdown/HTML/YAML/URLs, nomes próprios protegidos, e os termos proibidos conforme especificado.'
 tags:
 - draft
 - importado
@@ -36,11 +39,16 @@ stats:
   languages: any one language (usually Common)
   cr: '0'
 stats_meta: Medium humanoid A
+titulo_pt_br: Plebeu
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
-
-### Club
-
-mw 2 to hit, reach 5 ft., one target. {@h}2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) bludgeoning damage.
+### Clava
+Ataque Corpo a Corpo com Arma: +2 para atingir, alcance 1,5 m, um alvo. {@h}2 (<span class="dice+" data-roll-notation="1d4">1d4</span>) dano de concussão.

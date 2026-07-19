@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,40 +36,47 @@ stats:
   languages: any languages it knew in life
   cr: '4'
 stats_meta: Medium undead A
+titulo_pt_br: Espectro
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Ethereal Sight
+### Visão Etérea
 
-The ghost can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.
-
-
-### Incorporeal Movement
-
-The ghost can move through other creatures and objects as if they were 3. It takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if it ends its turn inside an object.
-
-## Actions
+O fantasma pode ver 18 metros no Plano Etéreo quando está no Plano Material, e vice-versa.
 
 
-### Withering Touch
+### Movimento Incorpóreo
 
-mw 5 to hit, reach 5 ft., one target. {@h}17 (<span class="dice+" data-roll-notation="4d6+3">4d6 + 3</span>) necrotic damage.
+O fantasma pode se mover através de outras criaturas e objetos como se fossem 3. Ele sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar seu turno dentro de um objeto.
 
-
-### Etherealness
-
-The ghost enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.
+## Ações
 
 
-### Horrifying Visage
+### Toque Murchador
 
-Each non-undead creature within 60 feet of the ghost that can see it must succeed on a 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages <span class="dice+" data-roll-notation="1d4×10">1d4 × 10</span> years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.
+Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. {@h}17 (<span class="dice+" data-roll-notation="4d6+3">4d6 + 3</span>) de dano necrótico.
 
 
-### Possession {@recharge}
+### Eterealidade
 
-One humanoid that the ghost can see within 5 feet of it must succeed on a 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies.
+O fantasma entra no Plano Etéreo a partir do Plano Material, ou vice-versa. Ele fica visível no Plano Material enquanto estiver na Fronteira Etérea, e vice-versa, mas não pode afetar nem ser afetado por nada no outro plano.
 
-The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 feet of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends.
+
+### Aparição Horripilante
+
+Cada criatura que não seja morto-vivo a até 18 metros do fantasma que possa vê-lo deve ser bem-sucedida em um teste de resistência de Sabedoria CD 13 ou fica amedrontada por 1 minuto. Se o teste falhar por 5 ou mais, o alvo também envelhece <span class="dice+" data-roll-notation="1d4×10">1d4 × 10</span> anos. Um alvo amedrontado pode repetir o teste de resistência no final de cada um de seus turnos, terminando a condição de amedrontado sobre si mesmo em caso de sucesso. Se o teste de resistência do alvo for bem-sucedido ou o efeito terminar para ele, o alvo fica imune a esta Aparição Horripilante do fantasma pelas próximas 24 horas. O efeito de envelhecimento pode ser revertido com uma magia *restauração maior*, mas apenas dentro de 24 horas após ter ocorrido.
+
+
+### Possessão {@recharge}
+
+Um humanoide que o fantasma possa ver a até 1,5 metro de si deve ser bem-sucedido em um teste de resistência de Carisma CD 13 ou ser possuído pelo fantasma; o fantasma então desaparece, e o alvo fica incapacitado e perde o controle de seu corpo. O fantasma agora controla o corpo, mas não priva o alvo de sua consciência. O fantasma não pode ser alvo de nenhum ataque, magia ou outro efeito, exceto aqueles que viram mortos-vivos, e mantém sua tendência, Inteligência, Sabedoria, Carisma e imunidade a ser enfeitiçado e amedrontado. Ele, de outra forma, usa as estatísticas do alvo possuído, mas não ganha acesso ao conhecimento, características de classe ou proficiências do alvo.
+
+A possessão dura até o corpo cair a 0 pontos de vida, o fantasma terminá-la como uma ação bônus, ou o fantasma ser virado ou forçado a sair por um efeito como a magia *dissipar o mal e o bem*. Quando a possessão termina, o fantasma reaparece em um espaço desocupado a até 1,5 metro do corpo. O alvo fica imune a esta Possessão do fantasma por 24 horas após ser bem-sucedido no teste de resistência ou após o fim da possessão.

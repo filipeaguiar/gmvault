@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: "Vejo que você enviou um rascunho importado do 5e.tools (Manual dos Monstros) e precisa de tradução e revisão editorial.\n\nNo entanto, a mensagem contém apenas a linha de metadados — o conteúdo real do monstro ou da entrada não foi incluído. \n\nPor favor, cole o texto completo que precisa ser traduzido para que eu possa realizar o trabalho."
 tags:
 - draft
 - importado
@@ -38,28 +38,31 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Large beast U
+titulo_pt_br: Tigre-dentes-de-sabre
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Faro Apurado
 
-### Keen Smell
+O tigre tem vantagem em testes de Sabedoria (Percepção) que dependem do olfato.
 
-The tiger has advantage on Wisdom (Perception) checks that rely on smell.
+### Bote
 
+Se o tigre se mover pelo menos 20 pés em linha reta em direção a uma criatura e então atingi-la com um ataque de garra no mesmo turno, o alvo deve ser bem-sucedido em um teste de resistência de Força CD 14 ou fica caído. Se o alvo estiver caído, o tigre pode realizar um ataque de mordida contra ele como uma ação bônus.
 
-### Pounce
+## Ações
 
-If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.
+### Mordida
 
-## Actions
+mw 6 para atingir, alcance 5 pés, um alvo. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) dano perfurante.
 
+### Garra
 
-### Bite
-
-mw 6 to hit, reach 5 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="1d10+5">1d10 + 5</span>) piercing damage.
-
-
-### Claw
-
-mw 6 to hit, reach 5 ft., one target. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) slashing damage.
+mw 6 para atingir, alcance 5 pés, um alvo. {@h}12 (<span class="dice+" data-roll-notation="2d6+5">2d6 + 5</span>) dano cortante.

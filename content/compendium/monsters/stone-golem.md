@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,38 +36,45 @@ stats:
   languages: understands the languages of its creator but can't speak
   cr: '10'
 stats_meta: Large construct U
+titulo_pt_br: Golem de Pedra
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Immutable Form
+### Forma Imutável
 
-The golem is immune to any spell or effect that would alter its form.
-
-
-### Magic Resistance
-
-The golem has advantage on saving throws against spells and other magical effects.
+O golem é imune a qualquer magia ou efeito que alteraria sua forma.
 
 
-### Magic Weapons
+### Resistência à Magia
 
-The golem's weapon attacks are magical.
-
-## Actions
+O golem tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
 
-### Multiattack
+### Armas Mágicas
 
-The golem makes two slam attacks.
+Os ataques com arma do golem são mágicos.
 
-
-### Slam
-
-mw 10 to hit, reach 5 ft., one target. {@h}19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) bludgeoning damage.
+## Ações
 
 
-### Slow 5
+### Ataques Múltiplos
 
-The golem targets one or more creatures it can see within 10 feet of it. Each target must make a 17 Wisdom saving throw against this magic. On a failed save, a target can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the target can take either an action or a bonus action on its turn, not both. These effects last for 1 minute. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+O golem realiza dois ataques de pancada.
+
+
+### Pancada
+
+Ataque Corpo a Corpo com Arma: +10 para acertar, alcance 1,5 m, um alvo. Acerto: 19 (<span class="dice+" data-roll-notation="3d8+6">3d8 + 6</span>) de dano de concussão.
+
+
+### Lentidão (Recarga 5–6)
+
+O golem escolhe uma ou mais criaturas que possa ver a até 3 m dele. Cada alvo deve realizar um teste de resistência de Sabedoria CD 17 contra esta magia. Em caso de falha no teste de resistência, o alvo não pode usar reações, seu deslocamento é reduzido à metade e ele não pode realizar mais de um ataque em seu turno. Além disso, o alvo pode realizar uma ação ou uma ação bônus em seu turno, não ambas. Estes efeitos duram por 1 minuto. Um alvo pode repetir o teste de resistência no final de cada um de seus turnos, terminando o efeito em si mesmo em caso de sucesso.

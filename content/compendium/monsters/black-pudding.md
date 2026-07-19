@@ -4,7 +4,10 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: 'Parece que você mencionou um rascunho importado do 5e.tools (MM), mas não forneceu o texto de origem para que eu possa realizar a tradução e a revisão editorial.
+
+
+  Por favor, cole o conteúdo do rascunho que precisa ser traduzido.'
 tags:
 - draft
 - importado
@@ -36,35 +39,42 @@ stats:
   languages: ''
   cr: '4'
 stats_meta: Large ooze U
+titulo_pt_br: Pudim Negro
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Amorphous
+### Amorfa
 
-The pudding can move through a space as narrow as 1 inch wide without squeezing.
-
-
-### Corrosive Form
-
-A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round.
+A lama pode se mover por um espaço de até 2,5 centímetros de largura sem se espremer.
 
 
-### Spider Climb
+### Forma Corrosiva
 
-The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-
-## Actions
+Uma criatura que tocar a lama ou acertá-la com um ataque corpo a corpo a até 1,5 metro de distância sofre 4 (<span class="dice+" data-roll-notation="1d8">1d8</span>) de dano de ácido. Qualquer arma não mágica feita de metal ou madeira que acertar a lama sofre corrosão. Após causar dano, a arma recebe uma penalidade permanente e cumulativa de −1 nas jogadas de dano. Se a penalidade chegar a −5, a arma é destruída. Munição não mágica feita de metal ou madeira que acertar a lama é destruída após causar dano. A lama pode corroer madeira ou metal não mágico de 5 centímetros de espessura em 1 rodada.
 
 
-### Pseudopod
+### Escalar como Aranha
 
-mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) bludgeoning damage plus 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.
+A lama pode escalar superfícies difíceis, incluindo tetos de cabeça para baixo, sem precisar fazer um teste de atributo.
 
-## Reactions
+## Ações
 
 
-### Split
+### Pseudópode
 
-When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding.
+Ataque Corpo a Corpo com Arma: +5 para acertar, alcance 1,5 metro, um alvo. Acerto: 6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano de concussão mais 18 (<span class="dice+" data-roll-notation="4d8">4d8</span>) de dano de ácido. Além disso, a armadura não mágica vestida pelo alvo é parcialmente dissolvida e recebe uma penalidade permanente e cumulativa de −1 na CA que oferece. A armadura é destruída se a penalidade reduzir sua CA para 10.
+
+## Reações
+
+
+### Divisão
+
+Quando uma lama de tamanho Médio ou maior sofre dano elétrico ou cortante, ela se divide em duas novas lamas se tiver pelo menos 10 pontos de vida. Cada nova lama tem pontos de vida iguais à metade dos pontos de vida da lama original, arredondados para baixo. As novas lamas são um tamanho menores que a lama original.

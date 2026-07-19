@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Parece que você forneceu as instruções e a tabela de mapeamento de termos, mas o texto do rascunho do 5e.tools (MM) a ser traduzido não foi incluído na mensagem. Por favor, cole o conteúdo que precisa de tradução e revisão editorial, e aplicarei todas as regras e terminologias obrigatórias conforme solicitado.
 tags:
 - draft
 - importado
@@ -39,38 +39,45 @@ stats:
   languages: Aquan, Draconic
   cr: '17'
 stats_meta: Gargantuan dragon N
+titulo_pt_br: Tartaruga Dragão
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Amphibious
+### Anfíbio
 
-The dragon turtle can breathe air and water.
+A tartaruga-dragão pode respirar ar e água.
 
-## Actions
-
-
-### Multiattack
-
-The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.
+## Ações
 
 
-### Bite
+### Ataques Múltiplos
 
-mw 13 to hit, reach 15 ft., one target. {@h}26 (<span class="dice+" data-roll-notation="3d12+7">3d12 + 7</span>) piercing damage.
-
-
-### Claw
-
-mw 13 to hit, reach 10 ft., one target. {@h}16 (<span class="dice+" data-roll-notation="2d8+7">2d8 + 7</span>) slashing damage.
+A tartaruga-dragão realiza três ataques: um com sua mordida e dois com suas garras. Ela pode realizar um ataque de cauda no lugar de seus dois ataques de garra.
 
 
-### Tail
+### Mordida
 
-mw 13 to hit, reach 15 ft., one target. {@h}26 (<span class="dice+" data-roll-notation="3d12+7">3d12 + 7</span>) bludgeoning damage. If the target is a creature, it must succeed on a 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.
+Ataque Corpo a Corpo com Arma: +13 para atingir, alcance 4,5 m, um alvo. {@h}26 (<span class="dice+" data-roll-notation="3d12+7">3d12 + 7</span>) de dano perfurante.
 
 
-### Steam Breath 5
+### Garra
 
-The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a 18 Constitution saving throw, taking 52 (<span class="dice+" data-roll-notation="15d6">15d6</span>) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.
+Ataque Corpo a Corpo com Arma: +13 para atingir, alcance 3 m, um alvo. {@h}16 (<span class="dice+" data-roll-notation="2d8+7">2d8 + 7</span>) de dano cortante.
+
+
+### Cauda
+
+Ataque Corpo a Corpo com Arma: +13 para atingir, alcance 4,5 m, um alvo. {@h}26 (<span class="dice+" data-roll-notation="3d12+7">3d12 + 7</span>) de dano de concussão. Se o alvo for uma criatura, ela deve ser bem-sucedida em um teste de resistência de Força CD 20 ou será empurrada até 3 m para longe da tartaruga-dragão e ficará caída.
+
+
+### Sopro de Vapor (Recarga 5–6)
+
+A tartaruga-dragão exala vapor escaldante em um cone de 18 m. Cada criatura nessa área deve realizar um teste de resistência de Constituição CD 18, sofrendo 52 (<span class="dice+" data-roll-notation="15d6">15d6</span>) de dano de fogo em caso de falha no teste, ou metade desse dano em caso de sucesso. Estar submerso não concede resistência contra este dano.

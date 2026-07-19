@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
+summary: Por favor, forneça o rascunho para tradução.
 tags:
 - draft
 - importado
@@ -30,6 +30,13 @@ stats:
   languages: ''
   cr: ''
 stats_meta: ''
+titulo_pt_br: Camarão Koi
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 

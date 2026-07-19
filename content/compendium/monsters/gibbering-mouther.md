@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Por favor, forneça o texto que você gostaria que eu traduzisse. Estou pronto para realizar a tradução e revisão editorial do conteúdo importado do 5e.tools (MM) assim que o receber.
 tags:
 - draft
 - importado
@@ -36,33 +36,35 @@ stats:
   languages: ''
   cr: '2'
 stats_meta: Medium aberration N
+titulo_pt_br: Balbuciador
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Solo Aberrante
 
-### Aberrant Ground
+O solo em um raio de 3 metros ao redor do resmungador é pastoso. Cada criatura que começa seu turno nessa área deve ser bem-sucedida em um teste de resistência de Força CD 10 ou ter seu deslocamento reduzido a 0 até o início de seu próximo turno.
 
-The ground in a 10-foot radius around the mouther is doughlike 3. Each creature that starts its turn in that area must succeed on a 10 Strength saving throw or have its speed reduced to 0 until the start of its next turn.
+### Balbucio
 
+O resmungador balbucia incoerentemente enquanto pode ver qualquer criatura e não está incapacitado. Cada criatura que começa seu turno a até 6 metros do resmungador e pode ouvir o balbucio deve ser bem-sucedida em um teste de resistência de Sabedoria CD 10. Em caso de falha, a criatura não pode realizar reações até o início de seu próximo turno e rola um d8 para determinar o que faz durante seu turno. Com um resultado de 1 a 4, a criatura não faz nada. Com um resultado 5 ou 6, a criatura não realiza nenhuma ação ou ação bônus e usa todo o seu movimento para se mover em uma direção determinada aleatoriamente. Com um resultado 7 ou 8, a criatura realiza um ataque corpo a corpo contra uma criatura determinada aleatoriamente dentro de seu alcance ou não faz nada se não puder realizar tal ataque.
 
-### Gibbering
+## Ações
 
-The mouther babbles incoherently while it can see any creature and isn't incapacitated. Each creature that starts its turn within 20 feet of the mouther and can hear the gibbering must succeed on a 10 Wisdom saving throw. On a failure, the creature can't take reactions until the start of its next turn and rolls a <span class="dice+" data-roll-notation="d8">d8</span> to determine what it does during its turn. On a 1 to 4, the creature does nothing. On a 5 or 6, the creature takes no action or bonus action and uses all its movement to move in a randomly determined direction. On a 7 or 8, the creature makes a melee attack against a randomly determined creature within its reach or does nothing if it can't make such an attack.
+### Ataques Múltiplos
 
-## Actions
+O resmungador balbuciante realiza um ataque de mordida e, se puder, usa seu Cuspe Cegante.
 
+### Mordida
 
-### Multiattack
+Ataque Corpo a Corpo com Arma: +2 para atingir, alcance 1,5 m, uma criatura. Acerto: 17 (5d6) de dano perfurante. Se o alvo for Médio ou menor, deve ser bem-sucedido em um teste de resistência de Força CD 10 ou ser derrubado caído. Se o alvo for morto por este dano, é absorvido pelo resmungador.
 
-The gibbering mouther makes one bite attack and, if it can, uses its Blinding Spittle.
+### Cuspe Cegante 5
 
-
-### Bites
-
-mw 2 to hit, reach 5 ft., one creature. {@h}17 (<span class="dice+" data-roll-notation="5d6">5d6</span>) piercing damage. If the target is Medium or smaller, it must succeed on a 10 Strength saving throw or be knocked prone. If the target is killed by this damage, it is absorbed into the mouther.
-
-
-### Blinding Spittle 5
-
-The mouther spits a chemical glob at a point it can see within 15 feet of it. The glob explodes in a blinding flash of light on impact. Each creature within 5 feet of the flash must succeed on a 13 Dexterity saving throw or be blinded until the end of the mouther's next turn.
+O resmungador cospe um glóbulo químico em um ponto que possa ver a até 4,5 metros de distância. O glóbulo explode em um clarão de luz cegante com o impacto. Cada criatura a até 1,5 metro do clarão deve ser bem-sucedida em um teste de resistência de Destreza CD 13 ou ficar cega até o final do próximo turno do resmungador.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -38,18 +38,23 @@ stats:
   languages: ''
   cr: '0'
 stats_meta: Tiny beast U
+titulo_pt_br: Gato
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Faro Aguçado
 
-### Keen Smell
+O gato tem vantagem em testes de Sabedoria (Percepção) que dependem do olfato.
 
-The cat has advantage on Wisdom (Perception) checks that rely on smell.
+## Ações
 
-## Actions
+### Garras
 
-
-### Claws
-
-mw 0 to hit, reach 5 ft., one target. {@h}1 slashing damage.
+mw 0 para atingir, alcance 5 pés, um alvo. {@h}1 de dano cortante.

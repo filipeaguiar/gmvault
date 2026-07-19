@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Parece que o conteúdo do rascunho importado do 5e.tools (MM) não foi enviado junto com a mensagem. Por favor, cole aqui o texto que precisa ser traduzido e revisado editorialmente para que eu possa trabalhar nele.
 tags:
 - draft
 - importado
@@ -38,33 +38,40 @@ stats:
   languages: Common
   cr: '4'
 stats_meta: Tiny undead N/E
+titulo_pt_br: Crânio Flamejante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Illumination
+### Iluminação
 
-The flameskull sheds either dim light in a 15-foot radius, or bright light in a 15-foot radius and dim light for an additional 15 feet. It can switch between the options as an action.
-
-
-### Magic Resistance
-
-The flameskull has advantage on saving throws against spells and other magical effects.
+A caveira flamejante emite luz fraca em um raio de 15 pés, ou luz brilhante em um raio de 15 pés e luz fraca por mais 15 pés. Ela pode alternar entre as opções como uma ação.
 
 
-### Rejuvenation
+### Resistência à Magia
 
-If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a dispel magic or remove curse spell is cast on them.
-
-## Actions
+A caveira flamejante tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
 
-### Multiattack
+### Rejuvenescimento
 
-The flameskull uses Fire Ray twice.
+Se a caveira flamejante for destruída, ela recupera todos os seus pontos de vida em 1 hora, a menos que água benta seja aspergida em seus restos ou uma magia dissipar magia ou remover maldição seja conjurada sobre eles.
+
+## Ações
 
 
-### Fire Ray
+### Ataques Múltiplos
 
-rs 5 to hit, range 30 ft., one target. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) fire damage.
+A caveira flamejante usa Raio de Fogo duas vezes.
+
+
+### Raio de Fogo
+
+rs 5 para atingir, alcance 30 pés, um alvo. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano de fogo.

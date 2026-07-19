@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -39,28 +39,31 @@ stats:
   languages: Ignan
   cr: '11'
 stats_meta: Large elemental L/E
+titulo_pt_br: Efreeti
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Morte Elemental
 
-### Elemental Demise
+Se o efreeti morrer, seu corpo se desintegra em um lampejo de fogo e uma nuvem de fumaça, deixando para trás apenas o equipamento que o efreeti estava vestindo ou carregando.
 
-If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the efreeti was wearing or carrying.
+## Ações
 
-## Actions
+### Ataques Múltiplos
 
+O efreeti realiza dois ataques com cimitarra ou usa seu Arremessar Chamas duas vezes.
 
-### Multiattack
+### Cimitarra
 
-The efreeti makes two scimitar attacks or uses its Hurl Flame twice.
+Ataque Corpo a Corpo com Arma: +10 para atingir, alcance 1,5 m, um alvo. Acerto: 13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) de dano cortante mais 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) de dano de fogo.
 
+### Arremessar Chamas
 
-### Scimitar
-
-mw 10 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d6+6">2d6 + 6</span>) slashing damage plus 7 (<span class="dice+" data-roll-notation="2d6">2d6</span>) fire damage.
-
-
-### Hurl Flame
-
-rs 7 to hit, range 120 ft., one target. {@h}17 (<span class="dice+" data-roll-notation="5d6">5d6</span>) fire damage.
+Ataque à Distância com Magia: +7 para atingir, alcance 36 m, um alvo. Acerto: 17 (<span class="dice+" data-roll-notation="5d6">5d6</span>) de dano de fogo.

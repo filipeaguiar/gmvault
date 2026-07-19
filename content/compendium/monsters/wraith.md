@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Claro. Por favor, forneça o texto do rascunho importado de 5e.tools (MM) para que eu possa realizar a tradução e a revisão editorial conforme as regras especificadas.
 tags:
 - draft
 - importado
@@ -36,28 +36,35 @@ stats:
   languages: the languages it knew in life
   cr: '5'
 stats_meta: Medium undead N/E
+titulo_pt_br: Wraith
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Incorporeal Movement
+### Movimento Incorpóreo
 
-The wraith can move through other creatures and objects as if they were 3. It takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if it ends its turn inside an object.
-
-
-### Sunlight Sensitivity
-
-While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
-
-## Actions
+A aparição pode se mover através de outras criaturas e objetos como se fossem 3. Ela sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar seu turno dentro de um objeto.
 
 
-### Life Drain
+### Sensibilidade à Luz Solar
 
-mw 6 to hit, reach 5 ft., one creature. {@h}21 (<span class="dice+" data-roll-notation="4d8+3">4d8 + 3</span>) necrotic damage. The target must succeed on a 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+Enquanto estiver sob luz solar, a aparição tem desvantagem em jogadas de ataque, bem como em testes de Sabedoria (Percepção) que dependem da visão.
+
+## Ações
 
 
-### Create Specter
+### Drenar Vida
 
-The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time.
+Ataque Corpo a Corpo com Arma: 6 para acertar, alcance 1,5 m, uma criatura. {@h}21 (<span class="dice+" data-roll-notation="4d8+3">4d8 + 3</span>) de dano necrótico. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou seu máximo de pontos de vida é reduzido em uma quantidade igual ao dano sofrido. Esta redução dura até o alvo terminar um descanso longo. O alvo morre se este efeito reduzir seu máximo de pontos de vida a 0.
+
+
+### Criar Espectro
+
+A aparição escolhe um humanoide a até 3 metros dela que esteja morto por não mais de 1 minuto e tenha morrido de forma violenta. O espírito do alvo se ergue como um espectro no espaço de seu cadáver ou no espaço desocupado mais próximo. O espectro está sob o controle da aparição. A aparição não pode ter mais de sete espectros sob seu controle ao mesmo tempo.

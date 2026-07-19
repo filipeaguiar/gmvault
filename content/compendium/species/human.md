@@ -1,0 +1,44 @@
+---
+title: Human
+params:
+  kind: species
+draft: true
+weight: 10
+summary: Draft imported from 5e.tools (XPHB). Requires translation and editorial review.
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: species
+  entity_name: Human
+  remote_file: races.json
+  remote_key: race
+  remote_id: 5c19de815b253f8e
+species_info: &id001
+  ability_score: []
+  speed: 30
+  languages: []
+  size:
+  - S
+  - M
+race_info: *id001
+---
+
+### Resourceful
+
+You gain XPHB whenever you finish a XPHB.
+
+
+### Skillful
+
+You gain proficiency in one skill of your choice.
+
+
+### Versatile
+
+You gain an category=o of your choice.

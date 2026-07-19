@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -37,28 +37,35 @@ stats:
   languages: any one language (usually Common)
   cr: 1/2
 stats_meta: Medium humanoid L/NX/C/NY/E
+titulo_pt_br: Bandido
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Pack Tactics
+### Táticas de Matilha
 
-The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated.
+O bandido tem Vantagem em uma Jogada de Ataque contra uma criatura se pelo menos um de seus aliados estiver a 1,5 metro da criatura e o aliado não estiver Incapacitado.
 
-## Actions
-
-
-### Multiattack
-
-The thug makes two melee attacks.
+## Ações
 
 
-### Mace
+### Ataques Múltiplos
 
-mw 4 to hit, reach 5 ft., one creature. {@h}5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) bludgeoning damage.
+O bandido faz dois ataques corpo a corpo.
 
 
-### Heavy Crossbow
+### Maça
 
-rw 2 to hit, range 100/400 ft., one target. {@h}5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) piercing damage.
+Corpo a Corpo com Arma 4 para atingir, Alcance 1,5 m, uma criatura. **Dano** 5 (<span class="dice+" data-roll-notation="1d6+2">1d6 + 2</span>) Dano de Concussão.
+
+
+### Besta Pesada
+
+À Distância com Arma 2 para atingir, Alcance 30/120 m, um alvo. **Dano** 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) Dano Perfurante.

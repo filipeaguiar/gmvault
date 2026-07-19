@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,28 +36,35 @@ stats:
   languages: understands Ignan but can't speak
   cr: '1'
 stats_meta: Medium elemental N/E
+titulo_pt_br: Serpente de Fogo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Heated Body
+### Corpo Aquecido
 
-A creature that touches the snake or hits it with a melee attack while within 5 feet of it takes 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+Uma criatura que tocar a cobra ou atingi-la com um ataque corpo a corpo enquanto estiver a até 1,5 metro dela sofre 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
 
-## Actions
-
-
-### Multiattack
-
-The snake makes two attacks: one with its bite and one with its tail.
+## Ações
 
 
-### Bite
+### Ataques Múltiplos
 
-mw 3 to hit, reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) piercing damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+A cobra realiza dois ataques: um com sua mordida e outro com sua cauda.
 
 
-### Tail
+### Mordida
 
-mw 3 to hit, reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) bludgeoning damage plus 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) fire damage.
+mw 3 para atingir, alcance 1,5 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) de dano perfurante mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.
+
+
+### Cauda
+
+mw 3 para atingir, alcance 1,5 m, um alvo. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) de dano de concussão mais 3 (<span class="dice+" data-roll-notation="1d6">1d6</span>) de dano de fogo.

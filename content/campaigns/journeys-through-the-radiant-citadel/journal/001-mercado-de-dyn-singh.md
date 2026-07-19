@@ -12,7 +12,7 @@ params:
 
 O crepúsculo caía sobre o plano de Siabsungkoh, tingindo o céu de tons violeta e dourado. À medida que o sol se despedia, o Mercado de Dyn Singh começava a ganhar vida. Centenas de tendas temporárias, com suas lonas coloridas, e pequenos carrinhos de madeira eram montados nas ruelas e praças, espalhando aromas exóticos de temperos, caldos ferventes e fumaça perfumada. Era um lugar onde as tradições passavam de geração em geração, de pais para filhos, com negócios centenários enraizados no coração do vale.
 
-Após acumularem algumas moedas de ouro em seus últimos trabalhos, os aventureiros decidiram que era o momento perfeito para desfrutar de um descanso merecido. Durin, o anão monge de postura serena; Einvor, o imponente golias bárbaro; Detios CantoBaixo, o carismático bardo halfling; Pinky, o ladino goblin de olhos astutos; Nyx'Clair, a misteriosa bruxa fada; e Violeta, a jovem druida humana, caminhavam juntos pela feira. A intenção do grupo era simples: relaxar, experimentar as delícias locais e, quem sabe, testar a sorte em alguma das famosas gincanas noturnas do mercado.
+Após acumularem algumas moedas de ouro em seus últimos trabalhos, os aventureiros decidiram que era o momento perfeito para desfrutar de um descanso merecido. Durin, o anão monge de postura serena; Einvor, o imponente golias bárbaro; Detios CantoBaixo, o carismático bardo halfling; Pinky, o ladino goblin de olhos astutos; Nyx'Clair, a misteriosa bruxa elfa; e Violeta, a jovem feiticeira humana, caminhavam juntos pela feira. A intenção do grupo era simples: relaxar, experimentar as delícias locais e, quem sabe, testar a sorte em alguma das famosas gincanas noturnas do mercado.
 
 Contudo, o burburinho da feira escondia tensões profundas. No coração da praça rebaixada, cercada por três grandes tendas douradas, duas comerciantes tradicionais mantinham uma rivalidade histórica. Lamai Tiemo, uma gnomo obstinada e dona da prestigiada barraca de macarrão *Tiemo Noodles*, e Kusa Shung, uma orgulhosa kobold que comandava a *Shung Seafood* com seus pratos de lagostas e sopas de polvo, tentavam manter as aparências. No entanto, uma série de pequenas e misteriosas sabotagens recentes acirrou a velha picuinha familiar, ameaçando arruinar os negócios que sustentavam suas famílias por décadas.
 
@@ -88,7 +88,7 @@ Einvor, com a boca visivelmente inchada e lágrimas escorrendo pelo rosto, resmu
 
 Em seguida, o goblin Pinky decidiu testar sua sorte. Ele comeu as duas primeiras pimentas com facilidade, sob o olhar atento do público. Contudo, ao mastigar a terceira — a temida pimenta vermelha —, sentiu como se sua língua estivesse prestes a virar cinzas. O goblin falhou na tolerância, correndo desesperado na direção de Violeta com a boca escancarada. A jovem druida rapidamente conjurou um sopro de vento congelante, aliviando o fogo que consumia a boca de Pinky.
 
-— Você chegou mais longe do que muita gente pequenina. Deveria se sentir orgulhoso! — consolou Vi Aroon, dando tapinhas nas costas do goblin.
+— Você chegou mais longe do que muita gente, pequenino. Deveria se sentir orgulhoso! — consolou Vi Aroon, dando tapinhas nas costas do goblin.
 
 Detios CantoBaixo, confiante em seu carisma, sentou-se na cadeira de testes e mastigou a pimenta vermelha. Quase instantaneamente, ele espremeu o copo de iogurte na boca, soltando um grito esganiçado:
 
@@ -140,7 +140,7 @@ Durante o tumulto, Einvor caminhou até os fundos da tenda queimada de Kusa. Enq
 
 Nyx'Clair fez uma careta de nojo, assim como os outros.
 
-— Isso é cocô! Que m****... Nojento, por que está brilhando azul? — queixou-se a bruxa fada.
+— Isso é cocô! Que m****... Nojento, por que está brilhando azul? — queixou-se a bruxa elfa.
 
 O grupo reuniu-se para debater as evidências. Nyx'Clair sugeriu que o culpado não era nenhuma das comerciantes, mas sim algum animal travesso solto no mercado — talvez um macaco silvestre de pelagem azulada que estivesse comendo caquis, roendo as cordas das tendas e provocando pequenos incêndios acidentais. Durin, por outro lado, suspeitava de uma interferência externa: ele imaginou que a noiva de Vi Aroon, ou algum concorrente secreto, poderia ter contratado alguém para arruinar os negócios locais.
 

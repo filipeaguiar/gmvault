@@ -1,0 +1,8 @@
+{{- $spell := . -}}
+<div class="spell-card-badges">
+  <span class="spell-badge spell-level-badge">{{ if eq ($spell.level | int) 0 }}Truque{{ else }}Nv {{ $spell.level }}{{ end }}</span>
+  {{ if $spell.prepared }}<span class="spell-badge spell-state-badge is-prepared">Preparada</span>{{ end }}
+  {{ if $spell.always_prepared }}<span class="spell-badge spell-state-badge is-always-prepared">Sempre pronta</span>{{ end }}
+  {{ if and (not $spell.prepared) $spell.known }}<span class="spell-badge spell-state-badge is-known">Conhecida</span>{{ end }}
+  <span class="spell-badge spell-origin-badge">{{ $spell.origin | default $spell.source | title }}</span>
+</div>

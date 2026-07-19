@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Encaminhe o rascunho do MM importado do 5e.tools que precisa ser traduzido e revisado.
 tags:
 - draft
 - importado
@@ -40,45 +40,52 @@ stats:
   languages: Common, Sphinx
   cr: '11'
 stats_meta: Large monstrosity L/N
+titulo_pt_br: Esfinge Fêmea
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Inscrutable
+### Insondável
 
-The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.
-
-
-### Magic Weapons
-
-The sphinx's weapon attacks are magical.
-
-## Actions
+A esfinge é imune a qualquer efeito que perceba suas emoções ou leia seus pensamentos, bem como a qualquer magia de adivinhação que ela recuse. Testes de Sabedoria (Intuição) feitos para determinar as intenções ou sinceridade da esfinge têm desvantagem.
 
 
-### Multiattack
+### Armas Mágicas
 
-The sphinx makes two claw attacks.
+Os ataques com arma da esfinge são mágicos.
 
-
-### Claw
-
-mw 8 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) slashing damage.
-
-## Legendary Actions
+## Ações
 
 
-### Claw Attack
+### Ataques Múltiplos
 
-The sphinx makes one claw attack.
-
-
-### Teleport (Costs 2 Actions)
-
-The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.
+A esfinge faz dois ataques com garra.
 
 
-### Cast a Spell (Costs 3 Actions)
+### Garra
 
-The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.
+mw +8 para atingir, alcance 1,5 m, um alvo. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano cortante.
+
+## Ações Lendárias
+
+
+### Ataque com Garra
+
+A esfinge faz um ataque com garra.
+
+
+### Teletransporte (Custa 2 Ações)
+
+A esfinge se teletransporta magicamente, junto com qualquer equipamento que estiver vestindo ou carregando, até 36 metros para um espaço desocupado que ela possa ver.
+
+
+### Conjurar uma Magia (Custa 3 Ações)
+
+A esfinge conjura uma magia de sua lista de magias preparadas, usando um espaço de magia normalmente.

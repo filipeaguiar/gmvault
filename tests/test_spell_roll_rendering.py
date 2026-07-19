@@ -29,6 +29,7 @@ def test_character_spell_headers_render_only_usable_rolls():
         shutil.copy2(ROOT / "hugo.yaml", project / "hugo.yaml")
 
         spells_dir = project / "content/compendium/spells"
+        spells_dir.mkdir(parents=True, exist_ok=True)
         write_spell(
             spells_dir / "fire-bolt.md",
             "Fire Bolt",

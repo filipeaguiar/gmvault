@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
+summary: Não há conteúdo para traduzir.
 tags:
 - draft
 - importado
@@ -39,40 +39,47 @@ stats:
   languages: Deep Speech, telepathy 120 ft.
   cr: '9'
 stats_meta: Large aberration N/E
+titulo_pt_br: Whistler
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Blurred Form
+### Forma Borrada
 
-Attack rolls against the whistler are made with disadvantage unless the whistler is incapacitated.
-
-
-### Unusual Nature
-
-The whistler doesn't require air, food, drink, or sleep.
-
-## Actions
+As jogadas de ataque contra o assoviador são feitas com desvantagem, a menos que o assoviador esteja incapacitado.
 
 
-### Multiattack
+### Natureza Incomum
 
-The whistler makes three Psychic Swipe attacks.
+O assoviador não precisa de ar, comida, bebida ou sono.
 
-
-### Psychic Swipe
-
-ms 8 to hit, reach 10 ft., one creature. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) psychic damage.
+## Ações
 
 
-### Otherworldly Melody 5
+### Ataques Múltiplos
 
-The whistler telepathically whistles an otherworldly melody into the minds of up to two creatures it can see within range of its telepathy. Each target must succeed on a 16 Wisdom saving throw or take 33 (<span class="dice+" data-roll-notation="6d10">6d10</span>) psychic damage and become frightened of the whistler for 1 minute. A frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.
-
-## Bonus Actions
+O assoviador realiza três ataques de Golpe Psíquico.
 
 
-### Surreal Step
+### Golpe Psíquico
 
-The whistler teleports up to 20 feet to an unoccupied space it can see.
++8 para atingir, alcance 3 m, uma criatura. {@h}15 (<span class="dice+" data-roll-notation="2d10+4">2d10 + 4</span>) de dano psíquico.
+
+
+### Melodia Sobrenatural 5
+
+O assoviador assovia telepaticamente uma melodia sobrenatural nas mentes de até duas criaturas que possa ver dentro do alcance de sua telepatia. Cada alvo deve ser bem-sucedido em um teste de resistência de Sabedoria CD 16 ou sofre 33 (<span class="dice+" data-roll-notation="6d10">6d10</span>) de dano psíquico e fica amedrontado pelo assoviador por 1 minuto. Uma criatura amedrontada pode repetir este teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesma em caso de sucesso.
+
+## Ações Bônus
+
+
+### Passo Surreal
+
+O assoviador se teletransporta até 6 metros para um espaço desocupado que possa ver.

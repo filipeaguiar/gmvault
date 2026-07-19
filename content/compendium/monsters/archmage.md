@@ -4,7 +4,11 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: '---
+
+  draft: "O texto fornecido não contém conteúdo a ser traduzido. Por favor, insira um texto válido."
+
+  ---'
 tags:
 - draft
 - importado
@@ -40,18 +44,23 @@ stats:
   languages: any six languages
   cr: '12'
 stats_meta: Medium humanoid A
+titulo_pt_br: Arquimago
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Resistência à Magia
 
-### Magic Resistance
+O arquimago tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-The archmage has advantage on saving throws against spells and other magical effects.
+## Ações
 
-## Actions
+### Adaga
 
-
-### Dagger
-
-mw,rw 6 to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) piercing damage.
+Ataque Corpo a Corpo ou à Distância com Arma: +6 para atingir, alcance 5 pés ou alcance 20/60 pés, um alvo. {@h}4 (<span class="dice+" data-roll-notation="1d4+2">1d4 + 2</span>) de dano perfurante.

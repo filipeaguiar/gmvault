@@ -4,7 +4,7 @@ params:
   kind: magic_item
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (JTTRC). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (JTTRC). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -24,8 +24,15 @@ item_info:
   cost: —
   weight: —
   rarity: Legendary
+titulo_pt_br: Rede dos Mundos Menor
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-The Hammock of Worlds is a colorful hammock woven with traditional Ataguan designs.
+A Rede dos Mundos é uma rede colorida tecida com padrões tradicionais Ataguan.
 
-You can use an action to unfold and place the lesser version of the Hammock of Worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the DM decides where it leads or the user can cause it to always reliably connect to the Ghost Orchid Tepui. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once the lesser version of the Hammock of Worlds has opened a portal, it can't do so again for <span class="dice+" data-roll-notation="1d8">1d8</span> hours.
+Você pode usar uma ação para desdobrar e colocar a versão inferior da Rede dos Mundos sobre uma superfície sólida, criando um portal de duas vias para outro mundo ou plano de existência. Cada vez que o item abre um portal, o Mestre decide para onde ele leva ou o usuário pode fazer com que ele sempre se conecte de forma confiável ao Ghost Orchid Tepui. Você pode usar uma ação para fechar um portal aberto segurando as bordas do tecido e dobrando-o. Uma vez que a versão inferior da Rede dos Mundos tenha aberto um portal, ela não pode fazê-lo novamente por <span class="dice+" data-roll-notation="1d8">1d8</span> horas.

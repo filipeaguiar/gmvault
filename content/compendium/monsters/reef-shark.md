@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Parece que você descreveu o que precisa ser feito (um draft importado do 5e.tools), mas não incluiu o texto a ser traduzido. Por favor, cole o conteúdo que você gostaria que eu traduzisse e revisasse editorialmente.
 tags:
 - draft
 - importado
@@ -37,23 +37,27 @@ stats:
   languages: ''
   cr: 1/2
 stats_meta: Medium beast U
+titulo_pt_br: Tubarão de Recife
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Táticas de Matilha
 
-### Pack Tactics
+O tubarão tem vantagem em uma jogada de ataque contra uma criatura se pelo menos um dos aliados do tubarão estiver a até 5 pés da criatura e o aliado não estiver incapacitado.
 
-The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally isn't incapacitated.
+### Respiração Aquática
 
+O tubarão pode respirar apenas debaixo d'água.
 
-### Water Breathing
+## Ações
 
-The shark can breathe only underwater.
+### Mordida
 
-## Actions
-
-
-### Bite
-
-mw 4 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) piercing damage.
+mw 4 para atingir, alcance 5 pés, um alvo. {@h}6 (<span class="dice+" data-roll-notation="1d8+2">1d8 + 2</span>) dano perfurante.

@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Entendido. Por favor, forneça o rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução e a revisão editorial conforme as instruções. Aguardo o texto.
 tags:
 - draft
 - importado
@@ -37,26 +37,29 @@ stats:
   languages: ''
   cr: '6'
 stats_meta: Large dragon U
+titulo_pt_br: Wyvern
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
+### Ataques Múltiplos
 
-### Multiattack
+O wyvern realiza dois ataques: um com sua mordida e outro com seu ferrão. Enquanto estiver voando, ele pode usar suas garras no lugar de um outro ataque.
 
-The wyvern makes two attacks: one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack.
+### Mordida
 
+mw 7 para atingir, alcance 3 m, uma criatura. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano perfurante.
 
-### Bite
+### Garras
 
-mw 7 to hit, reach 10 ft., one creature. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) piercing damage.
+mw 7 para atingir, alcance 1,5 m, um alvo. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) de dano cortante.
 
+### Ferrão
 
-### Claws
-
-mw 7 to hit, reach 5 ft., one target. {@h}13 (<span class="dice+" data-roll-notation="2d8+4">2d8 + 4</span>) slashing damage.
-
-
-### Stinger
-
-mw 7 to hit, reach 10 ft., one creature. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) piercing damage. The target must make a 15 Constitution saving throw, taking 24 (<span class="dice+" data-roll-notation="7d6">7d6</span>) poison damage on a failed save, or half as much damage on a successful one.
+mw 7 para atingir, alcance 3 m, uma criatura. {@h}11 (<span class="dice+" data-roll-notation="2d6+4">2d6 + 4</span>) de dano perfurante. O alvo deve realizar um teste de resistência de Constituição CD 15, sofrendo 24 (<span class="dice+" data-roll-notation="7d6">7d6</span>) de dano de veneno em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso.

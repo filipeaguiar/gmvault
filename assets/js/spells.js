@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const spellManager = document.querySelector(".spell-manager");
-    if (!spellManager) {
-        return;
-    }
+    if (!spellManager) return;
 
     const searchInput = document.getElementById("spell-search");
     const readySpellsList = document.getElementById("ready-spells-list");
@@ -11,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const slotGroups = Array.from(spellManager.querySelectorAll(".spell-slots-tracker .slot-level-group"));
     const readyCounter = spellManager.querySelector('[data-spell-counter-value="ready"]');
     const storageKey = `gmvault.spell-manager:${window.location.pathname}`;
-
     let activeLevel = "all";
     let searchQuery = "";
 
@@ -31,33 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getReadyRefs() {
-        if (!readySpellsList) {
-            return [];
-        }
+        if (!readySpellsList) return [];
         return Array.from(readySpellsList.querySelectorAll(".spell-card"))
             .map((card) => card.getAttribute("data-spell-ref"))
             .filter(Boolean);
     }
 
     function updateReadyCounter() {
-        if (readyCounter) {
-            readyCounter.textContent = String(getReadyRefs().length);
-        }
+        if (readyCounter) readyCounter.textContent = String(getReadyRefs().length);
     }
 
     function updateCollectionState(collection) {
-        if (!collection) {
-            return;
-        }
-
+        if (!collection) return;
         collection.querySelectorAll(".spell-level-group").forEach((group) => {
             const cards = Array.from(group.querySelectorAll(".spell-card"));
             group.classList.toggle("is-empty", cards.length === 0);
-            group.hidden = cards.length === 0 || cards.every((card) => card.style.display === "none");
+            group.hidden = cards.length === 0 || cards.every((card) => card.hidden);
         });
-
         const section = collection.closest(".spell-collection");
-        const emptyMessage = section ? section.querySelector(".spell-empty-message") : null;
+        const emptyMessage = section && section.querySelector(".spell-empty-message");
         if (emptyMessage) {
             emptyMessage.classList.toggle("is-hidden", collection.querySelectorAll(".spell-card").length > 0);
         }
@@ -70,22 +59,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const matchesSearch = !searchQuery || name.includes(searchQuery);
             const matchesLevel = activeLevel === "all" || level === activeLevel;
             card.style.display = matchesSearch && matchesLevel ? "" : "none";
+            card.hidden = !(matchesSearch && matchesLevel);
         });
         updateCollectionState(readySpellsList);
         updateCollectionState(managementSpellsList);
     }
 
-    function setActiveButton(targetButton) {
-        levelButtons.forEach((button) => {
-            button.classList.toggle("is-active", button === targetButton);
-        });
-    }
-
     function destinationFor(card, ready) {
         const collection = ready ? readySpellsList : managementSpellsList;
-        if (!collection) {
-            return null;
-        }
+        if (!collection) return null;
         const level = card.getAttribute("data-spell-level") || "";
         return Array.from(collection.querySelectorAll("[data-spell-level-list]"))
             .find((list) => list.getAttribute("data-spell-level-list") === level) || null;
@@ -93,23 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function moveSpellCard(card, ready) {
         const destination = destinationFor(card, ready);
-        if (!destination) {
-            return;
-        }
-
-        // Move the existing node: Dice+ classes and every data-roll-* attribute stay intact.
+        if (!destination) return;
         destination.appendChild(card);
         card.classList.toggle("ready-spell-item", ready);
         card.classList.toggle("management-spell-item", !ready);
-
+        card.classList.toggle("is-prepared", ready);
         const checkbox = card.querySelector(".prepare-spell-checkbox");
-        if (checkbox) {
-            checkbox.checked = ready;
-        }
+        if (checkbox) checkbox.checked = ready;
         const text = card.querySelector(".prepare-spell-text");
-        if (text) {
-            text.textContent = ready ? "Remover preparo" : "Preparar";
-        }
+        if (text) text.textContent = ready ? "Remover preparo" : "Preparar";
     }
 
     function snapshotSlotState() {
@@ -123,14 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function applySlotState(slotState) {
-        if (!slotState) {
-            return;
-        }
+        if (!slotState) return;
         slotGroups.forEach((group) => {
             const savedState = slotState[group.getAttribute("data-slot-level") || ""];
-            if (!Array.isArray(savedState)) {
-                return;
-            }
+            if (!Array.isArray(savedState)) return;
             Array.from(group.querySelectorAll(".spell-slot-checkbox")).forEach((checkbox, index) => {
                 checkbox.checked = Boolean(savedState[index]);
             });
@@ -138,17 +108,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function readState() {
-        if (!hasStorage) {
-            return null;
-        }
+        if (!hasStorage) return null;
         try {
             const parsed = JSON.parse(window.localStorage.getItem(storageKey) || "null");
-            if (!parsed || typeof parsed !== "object") {
-                return null;
-            }
+            if (!parsed || typeof parsed !== "object") return null;
             return {
                 readyRefs: Array.isArray(parsed.readyRefs) ? parsed.readyRefs.filter(Boolean) : null,
                 slotState: parsed.slotState && typeof parsed.slotState === "object" ? parsed.slotState : null,
+                activeLevel: typeof parsed.activeLevel === "string" ? parsed.activeLevel : "all",
+                searchQuery: typeof parsed.searchQuery === "string" ? parsed.searchQuery : "",
             };
         } catch (error) {
             return null;
@@ -156,25 +124,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function saveState() {
-        if (!hasStorage) {
-            return;
-        }
+        if (!hasStorage) return;
         try {
             window.localStorage.setItem(storageKey, JSON.stringify({
                 readyRefs: getReadyRefs(),
                 slotState: snapshotSlotState(),
+                activeLevel,
+                searchQuery,
             }));
         } catch (error) {
-            // Ignore storage failures (private mode, quota, etc.).
+            // Storage is optional operational state.
         }
     }
 
     function syncReadyState(readyRefs) {
         const readySet = new Set((readyRefs || []).filter(Boolean));
         getSpellCards().forEach((card) => {
-            if (card.getAttribute("data-spell-can-prepare") !== "true") {
-                return;
-            }
+            if (card.getAttribute("data-spell-can-prepare") !== "true") return;
             const ref = card.getAttribute("data-spell-ref");
             moveSpellCard(card, Boolean(ref && readySet.has(ref)));
         });
@@ -186,42 +152,38 @@ document.addEventListener("DOMContentLoaded", () => {
     if (searchInput) {
         searchInput.addEventListener("input", (event) => {
             searchQuery = event.target.value.trim().toLowerCase();
+            saveState();
             applyFilters();
         });
     }
-
-    levelButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            activeLevel = button.getAttribute("data-level-filter") || "all";
-            setActiveButton(button);
-            applyFilters();
-        });
-    });
-
+    levelButtons.forEach((button) => button.addEventListener("click", () => {
+        activeLevel = button.getAttribute("data-level-filter") || "all";
+        levelButtons.forEach((other) => other.classList.toggle("is-active", other === button));
+        saveState();
+        applyFilters();
+    }));
     spellManager.addEventListener("change", (event) => {
         const checkbox = event.target.closest(".prepare-spell-checkbox");
-        if (!checkbox) {
-            return;
-        }
+        if (!checkbox) return;
         const card = checkbox.closest(".spell-card");
-        if (!card) {
-            return;
-        }
+        if (!card) return;
         moveSpellCard(card, checkbox.checked);
         updateReadyCounter();
         applyFilters();
         saveState();
     });
-
     slotGroups.forEach((group) => group.addEventListener("change", saveState));
 
     const savedState = readState();
-    if (savedState && Array.isArray(savedState.readyRefs)) {
-        syncReadyState(savedState.readyRefs);
-    } else {
+    activeLevel = (savedState && savedState.activeLevel) || "all";
+    searchQuery = (savedState && savedState.searchQuery) || "";
+    if (searchInput) searchInput.value = searchQuery;
+    levelButtons.forEach((button) => button.classList.toggle("is-active", (button.getAttribute("data-level-filter") || "all") === activeLevel));
+    if (savedState && Array.isArray(savedState.readyRefs)) syncReadyState(savedState.readyRefs);
+    else {
         updateReadyCounter();
         applyFilters();
         saveState();
     }
-    applySlotState(savedState ? savedState.slotState : null);
+    applySlotState(savedState && savedState.slotState);
 });

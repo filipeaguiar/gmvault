@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -37,28 +37,27 @@ stats:
   languages: understands the languages of its creator but can't speak
   cr: '4'
 stats_meta: Medium construct U
+titulo_pt_br: Horror de Elmo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Resistência à Magia
+O horror de elmo tem vantagem em testes de resistência contra magias e outros efeitos mágicos.
 
-### Magic Resistance
+### Imunidade a Magia
+O horror de elmo é imune a três magias escolhidas por seu criador. Imunidades típicas incluem bola de fogo, esquentar metal e relâmpago.
 
-The helmed horror has advantage on saving throws against spells and other magical effects.
+## Ações
 
+### Ataques Múltiplos
+O horror de elmo faz dois ataques de espada longa.
 
-### Spell Immunity
-
-The helmed horror is immune to three spells chosen by its creator. Typical immunities include fireball, heat metal, and lightning bolt.
-
-## Actions
-
-
-### Multiattack
-
-The helmed horror makes two longsword attacks.
-
-
-### Longsword
-
-mw 6 to hit, reach 5 ft., one target. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) slashing damage, or 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) slashing damage if used with two hands.
+### Espada Longa
+*mw 6 para acertar*, alcance 5 ft., um alvo. {@h}8 (<span class="dice+" data-roll-notation="1d8+4">1d8 + 4</span>) dano cortante, ou 9 (<span class="dice+" data-roll-notation="1d10+4">1d10 + 4</span>) dano cortante se usada com duas mãos.

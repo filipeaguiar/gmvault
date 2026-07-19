@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Estou à disposição para realizar a tradução e a revisão editorial. Por favor, envie o texto a ser traduzido.
 tags:
 - draft
 - importado
@@ -38,26 +38,29 @@ stats:
   languages: any one language (usually Common)
   cr: '3'
 stats_meta: Medium humanoid A
+titulo_pt_br: Veterano
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Actions
+## Ações
 
+### Ataques Múltiplos
 
-### Multiattack
+O veterano realiza dois ataques com espada longa. Se estiver com uma espada curta em punho, também pode realizar um ataque com espada curta.
 
-The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack.
+### Espada Longa
 
+Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. <em>Acerto:</em> 7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) de dano cortante, ou 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) de dano cortante se usada com as duas mãos.
 
-### Longsword
+### Espada Curta
 
-mw 5 to hit, reach 5 ft., one target. {@h}7 (<span class="dice+" data-roll-notation="1d8+3">1d8 + 3</span>) slashing damage, or 8 (<span class="dice+" data-roll-notation="1d10+3">1d10 + 3</span>) slashing damage if used with two hands.
+Ataque Corpo a Corpo com Arma: +5 para atingir, alcance 1,5 m, um alvo. <em>Acerto:</em> 6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) de dano perfurante.
 
+### Besta Pesada
 
-### Shortsword
-
-mw 5 to hit, reach 5 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d6+3">1d6 + 3</span>) piercing damage.
-
-
-### Heavy Crossbow
-
-rw 3 to hit, range 100/400 ft., one target. {@h}6 (<span class="dice+" data-roll-notation="1d10+1">1d10 + 1</span>) piercing damage.
+Ataque à Distância com Arma: +3 para atingir, alcance 30/120 m, um alvo. <em>Acerto:</em> 6 (<span class="dice+" data-roll-notation="1d10+1">1d10 + 1</span>) de dano perfurante.

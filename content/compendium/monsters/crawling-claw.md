@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado do 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,18 +36,21 @@ stats:
   languages: understands Common but can't speak
   cr: '0'
 stats_meta: Tiny undead N/E
+titulo_pt_br: Garra Rastejante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Imunidade a Expulsão de Mortos-Vivos
+A garra é imune a efeitos que expulsam mortos-vivos.
 
-### Turn Immunity
+## Ações
 
-The claw is immune to effects that turn undead.
-
-## Actions
-
-
-### Claw
-
-mw 3 to hit, reach 5 ft., one target. {@h}3 (<span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span>) bludgeoning or slashing damage (claw's choice).
+### Garra
+Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. *Acerto:* 3 (1d4 + 1) de dano de concussão ou cortante (escolha da garra).

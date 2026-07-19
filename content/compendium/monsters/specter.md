@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:
 - draft
 - importado
@@ -36,23 +36,30 @@ stats:
   languages: understands all languages it knew in life but can't speak
   cr: '1'
 stats_meta: Medium undead C/E
+titulo_pt_br: Espectro
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
 
-### Incorporeal Movement
+### Movimento Incorpóreo
 
-The specter can move through other creatures and objects as if they were 3. It takes 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) force damage if it ends its turn inside an object.
-
-
-### Sunlight Sensitivity
-
-While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.
-
-## Actions
+O espectro pode mover-se através de outras criaturas e objetos como se fossem 3. Sofre 5 (<span class="dice+" data-roll-notation="1d10">1d10</span>) de dano de energia se terminar seu turno dentro de um objeto.
 
 
-### Life Drain
+### Sensibilidade à Luz Solar
 
-ms 4 to hit, reach 5 ft., one creature. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) necrotic damage. The target must succeed on a 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+Enquanto estiver sob a luz do sol, o espectro tem desvantagem em jogadas de ataque, bem como em testes de Sabedoria (Percepção) que dependam da visão.
+
+## Ações
+
+
+### Sugar a Vida
+
+Ataque Corpo a Corpo com Magia: +4 para atingir, alcance 1,5 m, uma criatura. {@h}10 (<span class="dice+" data-roll-notation="3d6">3d6</span>) de dano necrótico. O alvo deve ser bem-sucedido em um teste de resistência de Constituição CD 10 ou o máximo de pontos de vida dele é reduzido em um valor igual ao dano sofrido. Esta redução dura até que a criatura termine um descanso longo. O alvo morre se este efeito reduzir o máximo de pontos de vida dele a 0.

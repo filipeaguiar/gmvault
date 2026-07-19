@@ -4,7 +4,7 @@ params:
   kind: monster
 draft: true
 weight: 10
-summary: Draft imported from 5e.tools (MM). Requires translation and editorial review.
+summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o texto do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução editorial para o português do Brasil conforme suas instruções.
 tags:
 - draft
 - importado
@@ -37,23 +37,27 @@ stats:
   languages: ''
   cr: '5'
 stats_meta: Huge beast U
+titulo_pt_br: Tubarão Gigante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-## Traits
+## Características
 
+### Frenesi de Sangue
 
-### Blood Frenzy
+O tubarão tem Vantagem nas jogadas de ataque corpo a corpo contra qualquer criatura que não tenha todos os seus pontos de vida.
 
-The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points.
+### Respiração Aquática
 
+O tubarão pode respirar apenas debaixo d'água.
 
-### Water Breathing
+## Ações
 
-The shark can breathe only underwater.
+### Mordida
 
-## Actions
-
-
-### Bite
-
-mw 9 to hit, reach 5 ft., one target. {@h}22 (<span class="dice+" data-roll-notation="3d10+6">3d10 + 6</span>) piercing damage.
+mw 9 para atingir, alcance 1,5 m, um alvo. {@h}22 (<span class="dice+" data-roll-notation="3d10+6">3d10 + 6</span>) de dano perfurante.

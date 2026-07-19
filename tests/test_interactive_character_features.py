@@ -80,7 +80,7 @@ class TestCreateCharacterFeatures(unittest.TestCase):
         def mock_ask_side_effect(prompt, default=None):
             mock_ask_calls.append(prompt)
             prompt_lower = prompt.lower()
-            if "nome" in prompt_lower:
+            if "nome do personagem" in prompt_lower:
                 return "Test Class Features Character"
             elif "alinhamento" in prompt_lower:
                 return "True Neutral"
@@ -123,7 +123,7 @@ class TestCreateCharacterFeatures(unittest.TestCase):
         self.assertIn("name: Second-Story Work", content)
         
         # Check Sneak Attack formula extraction (2d6 for level 3)
-        self.assertIn("roll_formula: 2d6", content)
+        self.assertIn("roll: 2d6", content)
         
         # Check compendium references
         self.assertIn("/compendium/rules/sneak-attack/", content)
