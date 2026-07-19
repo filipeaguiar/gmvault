@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Mente Intrigante](/compendium/rules/mastermind/)
-- [Mestre da Intriga](/compendium/rules/master-of-intrigue/)
-- [Mestre de Táticas](/compendium/rules/master-of-tactics/)
+- [Mastermind](/compendium/rules/mastermind/)
+- [Master of Intrigue](/compendium/rules/master-of-intrigue/)
+- [Master of Tactics](/compendium/rules/master-of-tactics/)
 
 ## Nível 9
 
-- [Manipulador Perspicaz](/compendium/rules/insightful-manipulator/)
+- [Insightful Manipulator](/compendium/rules/insightful-manipulator/)
 
 ## Nível 13
 
-- [Despiste](/compendium/rules/misdirection/)
+- [Misdirection](/compendium/rules/misdirection/)
 
 ## Nível 17
 
-- [Alma da Enganação](/compendium/rules/soul-of-deceit/)
+- [Soul of Deceit](/compendium/rules/soul-of-deceit/)

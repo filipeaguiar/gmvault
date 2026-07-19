@@ -31,20 +31,20 @@ translation:
 
 ## Nível 3
 
-- [Patrono Grande Antigo](/compendium/rules/great-old-one-patron/)
-- [Mente Desperta](/compendium/rules/awakened-mind/)
-- [Magias do Grande Antigo](/compendium/rules/great-old-one-spells/)
-- [Magias Psíquicas](/compendium/rules/psychic-spells/)
+- [Great Old One Patron](/compendium/rules/great-old-one-patron/)
+- [Awakened Mind](/compendium/rules/awakened-mind/)
+- [Great Old One Spells](/compendium/rules/great-old-one-spells/)
+- [Psychic Spells](/compendium/rules/psychic-spells/)
 
 ## Nível 6
 
-- [Combatente Clarividente](/compendium/rules/clairvoyant-combatant/)
+- [Clairvoyant Combatant](/compendium/rules/clairvoyant-combatant/)
 
 ## Nível 10
 
-- [Maldição Mística](/compendium/rules/eldritch-hex/)
-- [Escudo Mental](/compendium/rules/thought-shield/)
+- [Eldritch Hex](/compendium/rules/eldritch-hex/)
+- [Thought Shield](/compendium/rules/thought-shield/)
 
 ## Nível 14
 
-- [Criar Servo](/compendium/rules/create-thrall/)
+- [Create Thrall](/compendium/rules/create-thrall/)

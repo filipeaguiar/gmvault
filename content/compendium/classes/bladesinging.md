@@ -31,23 +31,23 @@ translation:
 
 ## Nível 2
 
-- [Canto da Lâmina](/compendium/rules/bladesinging/)
-- [Estilos do Canto da Lâmina](/compendium/rules/bladesinger-styles/)
-- [Canção da Lâmina](/compendium/rules/bladesong/)
-- [Treinamento em Guerra e Canção (Canto da Lâmina)](/compendium/rules/training-in-war-and-song-bladesinging/)
+- [Bladesinging](/compendium/rules/bladesinging/)
+- [Bladesinger Styles](/compendium/rules/bladesinger-styles/)
+- [Bladesong](/compendium/rules/bladesong/)
+- [Training in War and Song (Bladesinging)](/compendium/rules/training-in-war-and-song-bladesinging/)
 
 ## Nível 3
 
-- [Canto da Lâmina](/compendium/rules/bladesinging/)
+- [Bladesinging](/compendium/rules/bladesinging/)
 
 ## Nível 6
 
-- [Ataque Extra](/compendium/rules/extra-attack/)
+- [Extra Attack](/compendium/rules/extra-attack/)
 
 ## Nível 10
 
-- [Canção de Defesa](/compendium/rules/song-of-defense/)
+- [Song of Defense](/compendium/rules/song-of-defense/)
 
 ## Nível 14
 
-- [Canção de Vitória](/compendium/rules/song-of-victory/)
+- [Song of Victory](/compendium/rules/song-of-victory/)

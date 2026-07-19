@@ -31,14 +31,14 @@ translation:
 
 ## Nível 3
 
-- [Colégio do Valor](/compendium/rules/college-of-valor/)
-- [Inspiração de Combate](/compendium/rules/combat-inspiration/)
-- [Treinamento Marcial](/compendium/rules/martial-training/)
+- [College of Valor](/compendium/rules/college-of-valor/)
+- [Combat Inspiration](/compendium/rules/combat-inspiration/)
+- [Martial Training](/compendium/rules/martial-training/)
 
 ## Nível 6
 
-- [Ataque Extra](/compendium/rules/extra-attack/)
+- [Extra Attack](/compendium/rules/extra-attack/)
 
 ## Nível 14
 
-- [Magia de Batalha](/compendium/rules/battle-magic/)
+- [Battle Magic](/compendium/rules/battle-magic/)

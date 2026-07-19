@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Círculo da Terra](/compendium/rules/circle-of-the-land/)
-- [Magias do Círculo da Terra](/compendium/rules/circle-of-the-land-spells/)
-- [Auxílio da Terra](/compendium/rules/land-s-aid/)
+- [Circle of the Land](/compendium/rules/circle-of-the-land/)
+- [Circle of the Land Spells](/compendium/rules/circle-of-the-land-spells/)
+- [Land's Aid](/compendium/rules/land-s-aid/)
 
 ## Nível 6
 
-- [Recuperação Natural](/compendium/rules/natural-recovery/)
+- [Natural Recovery](/compendium/rules/natural-recovery/)
 
 ## Nível 10
 
-- [Proteção da Natureza](/compendium/rules/nature-s-ward/)
+- [Nature's Ward](/compendium/rules/nature-s-ward/)
 
 ## Nível 14
 
-- [Santuário da Natureza](/compendium/rules/nature-s-sanctuary/)
+- [Nature's Sanctuary](/compendium/rules/nature-s-sanctuary/)

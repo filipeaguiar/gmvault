@@ -30,87 +30,87 @@ translation:
 
 ## Nível 1
 
-- Estilo de Luta
-- Segundo Fôlego
-- Maestria de Arma
+- [Fighting Style](/compendium/rules/fighting-style/)
+- [Second Wind](/compendium/rules/second-wind/)
+- [Weapon Mastery](/compendium/rules/weapon-mastery/)
 
 ## Nível 2
 
-- Ímpeto de Ação
-- Mente Tática
+- [Action Surge](/compendium/rules/action-surge/)
+- [Tactical Mind](/compendium/rules/tactical-mind/)
 
 ## Nível 3
 
-- Subclasse de Guerreiro
+- [Fighter Subclass](/compendium/rules/fighter-subclass/)
 
 ## Nível 4
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Ataque Extra
-- Movimento Tático
+- [Extra Attack](/compendium/rules/extra-attack/)
+- [Tactical Shift](/compendium/rules/tactical-shift/)
 
 ## Nível 6
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 7
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 8
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Indomável
-- Mestre Tático
+- [Indomitable](/compendium/rules/indomitable/)
+- [Tactical Master](/compendium/rules/tactical-master/)
 
 ## Nível 10
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 11
 
-- Dois Ataques Extras
+- [Two Extra Attacks](/compendium/rules/two-extra-attacks/)
 
 ## Nível 12
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 13
 
-- Indomável
-- Ataques Estudados
+- [Indomitable](/compendium/rules/indomitable/)
+- [Studied Attacks](/compendium/rules/studied-attacks/)
 
 ## Nível 14
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 15
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 16
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Ímpeto de Ação
-- Indomável
+- [Action Surge](/compendium/rules/action-surge/)
+- [Indomitable](/compendium/rules/indomitable/)
 
 ## Nível 18
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Três Ataques Extras
+- [Three Extra Attacks](/compendium/rules/three-extra-attacks/)

@@ -31,22 +31,22 @@ translation:
 
 ## Nível 1
 
-- [Alma Divina](/compendium/rules/divine-soul/)
-- [Magia Divina](/compendium/rules/divine-magic/)
-- [Favorecido pelos Deuses](/compendium/rules/favored-by-the-gods/)
+- [Divine Soul](/compendium/rules/divine-soul/)
+- [Divine Magic](/compendium/rules/divine-magic/)
+- [Favored by the Gods](/compendium/rules/favored-by-the-gods/)
 
 ## Nível 3
 
-- [Alma Divina](/compendium/rules/divine-soul/)
+- [Divine Soul](/compendium/rules/divine-soul/)
 
 ## Nível 6
 
-- [Cura Potencializada](/compendium/rules/empowered-healing/)
+- [Empowered Healing](/compendium/rules/empowered-healing/)
 
 ## Nível 14
 
-- [Asas Sobrenaturais](/compendium/rules/otherworldly-wings/)
+- [Otherworldly Wings](/compendium/rules/otherworldly-wings/)
 
 ## Nível 18
 
-- [Recuperação Sobrenatural](/compendium/rules/unearthly-recovery/)
+- [Unearthly Recovery](/compendium/rules/unearthly-recovery/)

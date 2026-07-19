@@ -31,22 +31,22 @@ translation:
 
 ## Nível 2
 
-- [Magia de Guerra](/compendium/rules/war-magic/)
-- [Deflexão Arcana](/compendium/rules/arcane-deflection/)
-- [Argúcia Tática](/compendium/rules/tactical-wit/)
+- [War Magic](/compendium/rules/war-magic/)
+- [Arcane Deflection](/compendium/rules/arcane-deflection/)
+- [Tactical Wit](/compendium/rules/tactical-wit/)
 
 ## Nível 3
 
-- [Magia de Guerra](/compendium/rules/war-magic/)
+- [War Magic](/compendium/rules/war-magic/)
 
 ## Nível 6
 
-- [Onda de Poder](/compendium/rules/power-surge/)
+- [Power Surge](/compendium/rules/power-surge/)
 
 ## Nível 10
 
-- [Magia Duradoura](/compendium/rules/durable-magic/)
+- [Durable Magic](/compendium/rules/durable-magic/)
 
 ## Nível 14
 
-- [Manto Defletor](/compendium/rules/deflecting-shroud/)
+- [Deflecting Shroud](/compendium/rules/deflecting-shroud/)

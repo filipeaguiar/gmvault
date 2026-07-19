@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Caminho do Zelote](/compendium/rules/path-of-the-zealot/)
-- [Fúria Divina](/compendium/rules/divine-fury/)
-- [Guerreiro dos Deuses](/compendium/rules/warrior-of-the-gods/)
+- [Path of the Zealot](/compendium/rules/path-of-the-zealot/)
+- [Divine Fury](/compendium/rules/divine-fury/)
+- [Warrior of the Gods](/compendium/rules/warrior-of-the-gods/)
 
 ## Nível 6
 
-- [Foco Fanático](/compendium/rules/fanatical-focus/)
+- [Fanatical Focus](/compendium/rules/fanatical-focus/)
 
 ## Nível 10
 
-- [Presença Zelosa](/compendium/rules/zealous-presence/)
+- [Zealous Presence](/compendium/rules/zealous-presence/)
 
 ## Nível 14
 
-- [Fúria dos Deuses](/compendium/rules/rage-of-the-gods/)
+- [Rage of the Gods](/compendium/rules/rage-of-the-gods/)

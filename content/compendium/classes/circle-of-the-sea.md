@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Círculo do Mar](/compendium/rules/circle-of-the-sea/)
-- [Magias do Círculo do Mar](/compendium/rules/circle-of-the-sea-spells/)
-- [Fúria do Mar](/compendium/rules/wrath-of-the-sea/)
+- [Circle of the Sea](/compendium/rules/circle-of-the-sea/)
+- [Circle of the Sea Spells](/compendium/rules/circle-of-the-sea-spells/)
+- [Wrath of the Sea](/compendium/rules/wrath-of-the-sea/)
 
 ## Nível 6
 
-- [Afinidade Aquática](/compendium/rules/aquatic-affinity/)
+- [Aquatic Affinity](/compendium/rules/aquatic-affinity/)
 
 ## Nível 10
 
-- [Nascido da Tempestade](/compendium/rules/stormborn/)
+- [Stormborn](/compendium/rules/stormborn/)
 
 ## Nível 14
 
-- [Dádiva Oceânica](/compendium/rules/oceanic-gift/)
+- [Oceanic Gift](/compendium/rules/oceanic-gift/)

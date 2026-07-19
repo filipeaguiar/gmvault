@@ -30,66 +30,66 @@ translation:
 
 ## Nível 1
 
-- Inspiração de Bardo
-- Conjuração
+- [Bardic Inspiration](/compendium/rules/bardic-inspiration/)
+- [Spellcasting](/compendium/rules/spellcasting/)
 
 ## Nível 2
 
-- Especialização
-- Pau para Toda Obra
+- [Especialização](/compendium/rules/expertise/)
+- [Jack of All Trades](/compendium/rules/jack-of-all-trades/)
 
 ## Nível 3
 
-- Subclasse de Bardo
+- [Bard Subclass](/compendium/rules/bard-subclass/)
 
 ## Nível 4
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Fonte de Inspiração
+- [Font of Inspiration](/compendium/rules/font-of-inspiration/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 7
 
-- Contraencanto
+- [Countercharm](/compendium/rules/countercharm/)
 
 ## Nível 8
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Especialização
+- [Especialização](/compendium/rules/expertise/)
 
 ## Nível 10
 
-- Segredos Mágicos
+- [Magical Secrets](/compendium/rules/magical-secrets/)
 
 ## Nível 12
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 14
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 16
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 18
 
-- Inspiração Superior
+- [Superior Inspiration](/compendium/rules/superior-inspiration/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Palavras de Criação
+- [Words of Creation](/compendium/rules/words-of-creation/)

@@ -31,22 +31,22 @@ translation:
 
 ## Nível 2
 
-- [Ordem dos Escribas](/compendium/rules/order-of-scribes/)
-- [Livro de Magias Desperto](/compendium/rules/awakened-spellbook/)
-- [Pena Arcana](/compendium/rules/wizardly-quill/)
+- [Order of Scribes](/compendium/rules/order-of-scribes/)
+- [Awakened Spellbook](/compendium/rules/awakened-spellbook/)
+- [Wizardly Quill](/compendium/rules/wizardly-quill/)
 
 ## Nível 3
 
-- [Ordem dos Escribas](/compendium/rules/order-of-scribes/)
+- [Order of Scribes](/compendium/rules/order-of-scribes/)
 
 ## Nível 6
 
-- [Mente Manifesta](/compendium/rules/manifest-mind/)
+- [Manifest Mind](/compendium/rules/manifest-mind/)
 
 ## Nível 10
 
-- [Mestre Escriba](/compendium/rules/master-scrivener/)
+- [Master Scrivener](/compendium/rules/master-scrivener/)
 
 ## Nível 14
 
-- [Uno com a Palavra](/compendium/rules/one-with-the-word/)
+- [One with the Word](/compendium/rules/one-with-the-word/)

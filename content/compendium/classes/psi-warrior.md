@@ -31,26 +31,26 @@ translation:
 
 ## Nível 3
 
-- [Guerreiro Psíquico](/compendium/rules/psi-warrior/)
-- [Poder Psíquico](/compendium/rules/psionic-power/)
-- [Campo Protetor](/compendium/rules/protective-field/)
-- [Golpe Psíquico](/compendium/rules/psionic-strike/)
-- [Movimento Telecinético](/compendium/rules/telekinetic-movement/)
+- [Psi Warrior](/compendium/rules/psi-warrior/)
+- [Psionic Power](/compendium/rules/psionic-power/)
+- [Protective Field](/compendium/rules/protective-field/)
+- [Psionic Strike](/compendium/rules/psionic-strike/)
+- [Telekinetic Movement](/compendium/rules/telekinetic-movement/)
 
 ## Nível 7
 
-- [Salto Psíquico](/compendium/rules/psi-powered-leap/)
-- [Adepto Telecinético](/compendium/rules/telekinetic-adept/)
-- [Impulso Telecinético](/compendium/rules/telekinetic-thrust/)
+- [Psi-Powered Leap](/compendium/rules/psi-powered-leap/)
+- [Telekinetic Adept](/compendium/rules/telekinetic-adept/)
+- [Telekinetic Thrust](/compendium/rules/telekinetic-thrust/)
 
 ## Nível 10
 
-- [Mente Protegida](/compendium/rules/guarded-mind/)
+- [Guarded Mind](/compendium/rules/guarded-mind/)
 
 ## Nível 15
 
-- [Baluarte de Força](/compendium/rules/bulwark-of-force/)
+- [Bulwark of Force](/compendium/rules/bulwark-of-force/)
 
 ## Nível 18
 
-- [Mestre Telecinético](/compendium/rules/telekinetic-master/)
+- [Telekinetic Master](/compendium/rules/telekinetic-master/)

@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Batedor](/compendium/rules/scout/)
-- [Escaramuçador](/compendium/rules/skirmisher/)
-- [Sobrevivencialista](/compendium/rules/survivalist/)
+- [Scout](/compendium/rules/scout/)
+- [Skirmisher](/compendium/rules/skirmisher/)
+- [Survivalist](/compendium/rules/survivalist/)
 
 ## Nível 9
 
-- [Mobilidade Superior](/compendium/rules/superior-mobility/)
+- [Superior Mobility](/compendium/rules/superior-mobility/)
 
 ## Nível 13
 
-- [Mestre de Emboscadas](/compendium/rules/ambush-master/)
+- [Ambush Master](/compendium/rules/ambush-master/)
 
 ## Nível 17
 
-- [Ataque Súbito](/compendium/rules/sudden-strike/)
+- [Sudden Strike](/compendium/rules/sudden-strike/)

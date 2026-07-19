@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Andarilho Feérico](/compendium/rules/fey-wanderer/)
-- [Golpes Aterrorizantes](/compendium/rules/dreadful-strikes/)
-- [Magias do Andarilho Feérico](/compendium/rules/fey-wanderer-spells/)
-- [Glamour Sobrenatural](/compendium/rules/otherworldly-glamour/)
+- [Fey Wanderer](/compendium/rules/fey-wanderer/)
+- [Dreadful Strikes](/compendium/rules/dreadful-strikes/)
+- [Fey Wanderer Spells](/compendium/rules/fey-wanderer-spells/)
+- [Otherworldly Glamour](/compendium/rules/otherworldly-glamour/)
 
 ## Nível 7
 
-- [Torção Sedutora](/compendium/rules/beguiling-twist/)
+- [Beguiling Twist](/compendium/rules/beguiling-twist/)
 
 ## Nível 11
 
-- [Reforços Feéricos](/compendium/rules/fey-reinforcements/)
+- [Fey Reinforcements](/compendium/rules/fey-reinforcements/)
 
 ## Nível 15
 
-- [Andarilho Nebuloso](/compendium/rules/misty-wanderer/)
+- [Misty Wanderer](/compendium/rules/misty-wanderer/)

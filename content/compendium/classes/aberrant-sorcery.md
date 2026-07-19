@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Feitiçaria Aberrante](/compendium/rules/aberrant-sorcery/)
-- [Magias Psíquicas](/compendium/rules/psionic-spells/)
-- [Fala Telepática](/compendium/rules/telepathic-speech/)
+- [Aberrant Sorcery](/compendium/rules/aberrant-sorcery/)
+- [Psionic Spells](/compendium/rules/psionic-spells/)
+- [Telepathic Speech](/compendium/rules/telepathic-speech/)
 
 ## Nível 6
 
-- [Feitiçaria Psíquica](/compendium/rules/psionic-sorcery/)
-- [Defesas Psíquicas](/compendium/rules/psychic-defenses/)
+- [Psionic Sorcery](/compendium/rules/psionic-sorcery/)
+- [Psychic Defenses](/compendium/rules/psychic-defenses/)
 
 ## Nível 14
 
-- [Revelação na Carne](/compendium/rules/revelation-in-flesh/)
+- [Revelation in Flesh](/compendium/rules/revelation-in-flesh/)
 
 ## Nível 18
 
-- [Implosão Deformadora](/compendium/rules/warping-implosion/)
+- [Warping Implosion](/compendium/rules/warping-implosion/)

@@ -31,14 +31,14 @@ translation:
 
 ## Nível 3
 
-- [Colégio do Glamour](/compendium/rules/college-of-glamour/)
-- [Magia Sedutora](/compendium/rules/beguiling-magic/)
-- [Manto da Inspiração](/compendium/rules/mantle-of-inspiration/)
+- [College of Glamour](/compendium/rules/college-of-glamour/)
+- [Beguiling Magic](/compendium/rules/beguiling-magic/)
+- [Mantle of Inspiration](/compendium/rules/mantle-of-inspiration/)
 
 ## Nível 6
 
-- [Manto da Majestade](/compendium/rules/mantle-of-majesty/)
+- [Mantle of Majesty](/compendium/rules/mantle-of-majesty/)
 
 ## Nível 14
 
-- [Majestade Inquebrável](/compendium/rules/unbreakable-majesty/)
+- [Unbreakable Majesty](/compendium/rules/unbreakable-majesty/)

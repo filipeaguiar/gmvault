@@ -31,26 +31,26 @@ translation:
 
 ## Nível 3
 
-- [Deserto](/compendium/rules/desert/)
-- [Caminho do Arauto da Tempestade](/compendium/rules/path-of-the-storm-herald/)
-- [Mar](/compendium/rules/sea/)
+- [Desert](/compendium/rules/desert/)
+- [Path of the Storm Herald](/compendium/rules/path-of-the-storm-herald/)
+- [Sea](/compendium/rules/sea/)
 - [Tundra](/compendium/rules/tundra/)
-- [Aura de Tempestade](/compendium/rules/storm-aura/)
+- [Storm Aura](/compendium/rules/storm-aura/)
 
 ## Nível 6
 
-- [Deserto](/compendium/rules/desert/)
-- [Mar](/compendium/rules/sea/)
+- [Desert](/compendium/rules/desert/)
+- [Sea](/compendium/rules/sea/)
 - [Tundra](/compendium/rules/tundra/)
-- [Alma da Tempestade](/compendium/rules/storm-soul/)
+- [Storm Soul](/compendium/rules/storm-soul/)
 
 ## Nível 10
 
-- [Tempestade Protetora](/compendium/rules/shielding-storm/)
+- [Shielding Storm](/compendium/rules/shielding-storm/)
 
 ## Nível 14
 
-- [Deserto](/compendium/rules/desert/)
-- [Mar](/compendium/rules/sea/)
+- [Desert](/compendium/rules/desert/)
+- [Sea](/compendium/rules/sea/)
 - [Tundra](/compendium/rules/tundra/)
-- [Tempestade Furiosa](/compendium/rules/raging-storm/)
+- [Raging Storm](/compendium/rules/raging-storm/)

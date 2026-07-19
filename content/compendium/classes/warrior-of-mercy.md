@@ -31,10 +31,10 @@ translation:
 
 ## Nível 3
 
+- [Warrior of Mercy](/compendium/rules/warrior-of-mercy/)
 - [Hand of Harm](/compendium/rules/hand-of-harm/)
 - [Hand of Healing](/compendium/rules/hand-of-healing/)
 - [Implements of Mercy](/compendium/rules/implements-of-mercy/)
-- [Warrior of Mercy](/compendium/rules/warrior-of-mercy/)
 
 ## Nível 6
 

@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Adivinho](/compendium/rules/diviner/)
-- [Estudioso de Adivinhação](/compendium/rules/divination-savant/)
-- [Portento](/compendium/rules/portent/)
+- [Diviner](/compendium/rules/diviner/)
+- [Divination Savant](/compendium/rules/divination-savant/)
+- [Portent](/compendium/rules/portent/)
 
 ## Nível 6
 
-- [Perito em Adivinhação](/compendium/rules/expert-divination/)
+- [Expert Divination](/compendium/rules/expert-divination/)
 
 ## Nível 10
 
-- [O Terceiro Olho](/compendium/rules/the-third-eye/)
+- [The Third Eye](/compendium/rules/the-third-eye/)
 
 ## Nível 14
 
-- [Portento Maior](/compendium/rules/greater-portent/)
+- [Greater Portent](/compendium/rules/greater-portent/)

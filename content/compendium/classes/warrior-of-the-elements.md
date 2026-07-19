@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Sintonia Elemental](/compendium/rules/elemental-attunement/)
-- [Manipular Elementos](/compendium/rules/manipulate-elements/)
-- [Guerreiro dos Elementos](/compendium/rules/warrior-of-the-elements/)
+- [Elemental Attunement](/compendium/rules/elemental-attunement/)
+- [Manipulate Elements](/compendium/rules/manipulate-elements/)
+- [Warrior of the Elements](/compendium/rules/warrior-of-the-elements/)
 
 ## Nível 6
 
-- [Explosão Elemental](/compendium/rules/elemental-burst/)
+- [Elemental Burst](/compendium/rules/elemental-burst/)
 
 ## Nível 11
 
-- [Passo dos Elementos](/compendium/rules/stride-of-the-elements/)
+- [Stride of the Elements](/compendium/rules/stride-of-the-elements/)
 
 ## Nível 17
 
-- [Epítome Elemental](/compendium/rules/elemental-epitome/)
+- [Elemental Epitome](/compendium/rules/elemental-epitome/)

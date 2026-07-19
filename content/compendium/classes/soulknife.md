@@ -31,22 +31,22 @@ translation:
 
 ## Nível 3
 
-- [Lâmina Psíquica](/compendium/rules/soulknife/)
-- [Poder Psíquico](/compendium/rules/psionic-power/)
-- [Lâminas Psíquicas](/compendium/rules/psychic-blades/)
-- [Talento Reforçado por Psi](/compendium/rules/psi-bolstered-knack/)
-- [Sussurros Psíquicos](/compendium/rules/psychic-whispers/)
+- [Soulknife](/compendium/rules/soulknife/)
+- [Psionic Power](/compendium/rules/psionic-power/)
+- [Psychic Blades](/compendium/rules/psychic-blades/)
+- [Psi-Bolstered Knack](/compendium/rules/psi-bolstered-knack/)
+- [Psychic Whispers](/compendium/rules/psychic-whispers/)
 
 ## Nível 9
 
-- [Golpes Teleguiados](/compendium/rules/homing-strikes/)
-- [Teleporte Psíquico](/compendium/rules/psychic-teleportation/)
-- [Lâminas de Alma](/compendium/rules/soul-blades/)
+- [Homing Strikes](/compendium/rules/homing-strikes/)
+- [Psychic Teleportation](/compendium/rules/psychic-teleportation/)
+- [Soul Blades](/compendium/rules/soul-blades/)
 
 ## Nível 13
 
-- [Véu Psíquico](/compendium/rules/psychic-veil/)
+- [Psychic Veil](/compendium/rules/psychic-veil/)
 
 ## Nível 17
 
-- [Rasgar Mente](/compendium/rules/rend-mind/)
+- [Rend Mind](/compendium/rules/rend-mind/)

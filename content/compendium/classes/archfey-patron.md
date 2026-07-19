@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Patrono Arquifada](/compendium/rules/archfey-patron/)
-- [Magias do Arquifada](/compendium/rules/archfey-spells/)
-- [Passos da Fada](/compendium/rules/steps-of-the-fey/)
+- [Archfey Patron](/compendium/rules/archfey-patron/)
+- [Archfey Spells](/compendium/rules/archfey-spells/)
+- [Steps of the Fey](/compendium/rules/steps-of-the-fey/)
 
 ## Nível 6
 
-- [Fuga Brumosa](/compendium/rules/misty-escape/)
+- [Misty Escape](/compendium/rules/misty-escape/)
 
 ## Nível 10
 
-- [Defesas Sedutoras](/compendium/rules/beguiling-defenses/)
+- [Beguiling Defenses](/compendium/rules/beguiling-defenses/)
 
 ## Nível 14
 
-- [Magia Enfeitiçante](/compendium/rules/bewitching-magic/)
+- [Bewitching Magic](/compendium/rules/bewitching-magic/)

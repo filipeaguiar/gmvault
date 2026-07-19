@@ -31,4 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Caminho da Misericórdia](/compendium/rules/way-of-mercy/)
+- [Way of Mercy](/compendium/rules/way-of-mercy/)
+- [Hand of Harm](/compendium/rules/hand-of-harm/)
+- [Hand of Healing](/compendium/rules/hand-of-healing/)
+- [Implements of Mercy](/compendium/rules/implements-of-mercy/)
+
+## Nível 6
+
+- [Physician's Touch](/compendium/rules/physician-s-touch/)
+
+## Nível 11
+
+- [Flurry of Healing and Harm](/compendium/rules/flurry-of-healing-and-harm/)
+
+## Nível 17
+
+- [Hand of Ultimate Mercy](/compendium/rules/hand-of-ultimate-mercy/)

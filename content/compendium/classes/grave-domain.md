@@ -31,27 +31,27 @@ translation:
 
 ## Nível 1
 
-- [Domínio da Sepultura](/compendium/rules/grave-domain/)
-- [Círculo da Mortalidade](/compendium/rules/circle-of-mortality/)
-- [Olhos da Sepultura](/compendium/rules/eyes-of-the-grave/)
+- [Grave Domain](/compendium/rules/grave-domain/)
+- [Circle of Mortality](/compendium/rules/circle-of-mortality/)
+- [Eyes of the Grave](/compendium/rules/eyes-of-the-grave/)
 
 ## Nível 2
 
-- [Canalizar Divindade: Caminho para a Sepultura](/compendium/rules/channel-divinity-path-to-the-grave/)
+- [Channel Divinity: Path to the Grave](/compendium/rules/channel-divinity-path-to-the-grave/)
 
 ## Nível 3
 
-- [Canalizar Divindade: Caminho para a Sepultura](/compendium/rules/channel-divinity-path-to-the-grave/)
-- [Domínio da Sepultura](/compendium/rules/grave-domain/)
+- [Channel Divinity: Path to the Grave](/compendium/rules/channel-divinity-path-to-the-grave/)
+- [Grave Domain](/compendium/rules/grave-domain/)
 
 ## Nível 6
 
-- [Sentinela à Porta da Morte](/compendium/rules/sentinel-at-death-s-door/)
+- [Sentinel at Death's Door](/compendium/rules/sentinel-at-death-s-door/)
 
 ## Nível 8
 
-- [Conjuração Potente](/compendium/rules/potent-spellcasting/)
+- [Potent Spellcasting](/compendium/rules/potent-spellcasting/)
 
 ## Nível 17
 
-- [Guardião das Almas](/compendium/rules/keeper-of-souls/)
+- [Keeper of Souls](/compendium/rules/keeper-of-souls/)

@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Emboscador Aterrorizante](/compendium/rules/dread-ambusher/)
-- [Patrulheiro da Penumbra](/compendium/rules/gloom-stalker/)
-- [Magias do Patrulheiro da Penumbra](/compendium/rules/gloom-stalker-spells/)
-- [Visão Umbral](/compendium/rules/umbral-sight/)
+- [Dread Ambusher](/compendium/rules/dread-ambusher/)
+- [Gloom Stalker](/compendium/rules/gloom-stalker/)
+- [Gloom Stalker Spells](/compendium/rules/gloom-stalker-spells/)
+- [Umbral Sight](/compendium/rules/umbral-sight/)
 
 ## Nível 7
 
-- [Mente de Ferro](/compendium/rules/iron-mind/)
+- [Iron Mind](/compendium/rules/iron-mind/)
 
 ## Nível 11
 
-- [Lufada do Patrulheiro](/compendium/rules/stalker-s-flurry/)
+- [Stalker's Flurry](/compendium/rules/stalker-s-flurry/)
 
 ## Nível 15
 
-- [Esquiva Sombria](/compendium/rules/shadowy-dodge/)
+- [Shadowy Dodge](/compendium/rules/shadowy-dodge/)

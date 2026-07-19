@@ -31,17 +31,17 @@ translation:
 
 ## Nível 3
 
-- [Mestre das Feras](/compendium/rules/beast-master/)
-- [Companheiro Primitivo](/compendium/rules/primal-companion/)
+- [Beast Master](/compendium/rules/beast-master/)
+- [Primal Companion](/compendium/rules/primal-companion/)
 
 ## Nível 7
 
-- [Treinamento Excepcional](/compendium/rules/exceptional-training/)
+- [Exceptional Training](/compendium/rules/exceptional-training/)
 
 ## Nível 11
 
-- [Fúria Bestial](/compendium/rules/bestial-fury/)
+- [Bestial Fury](/compendium/rules/bestial-fury/)
 
 ## Nível 15
 
-- [Compartilhar Magias](/compendium/rules/share-spells/)
+- [Share Spells](/compendium/rules/share-spells/)

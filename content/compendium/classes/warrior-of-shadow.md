@@ -31,20 +31,20 @@ translation:
 
 ## Nível 3
 
-- [Artes das Sombras](/compendium/rules/shadow-arts/)
-- [Guerreiro das Sombras](/compendium/rules/warrior-of-shadow/)
-- [Escuridão](/compendium/rules/darkness/)
-- [Visão no Escuro](/compendium/rules/darkvision/)
-- [Figmentos Sombrios](/compendium/rules/shadowy-figments/)
+- [Shadow Arts](/compendium/rules/shadow-arts/)
+- [Warrior of Shadow](/compendium/rules/warrior-of-shadow/)
+- [Darkness](/compendium/rules/darkness/)
+- [Darkvision](/compendium/rules/darkvision/)
+- [Shadowy Figments](/compendium/rules/shadowy-figments/)
 
 ## Nível 6
 
-- [Passo das Sombras](/compendium/rules/shadow-step/)
+- [Shadow Step](/compendium/rules/shadow-step/)
 
 ## Nível 11
 
-- [Passo das Sombras Aprimorado](/compendium/rules/improved-shadow-step/)
+- [Improved Shadow Step](/compendium/rules/improved-shadow-step/)
 
 ## Nível 17
 
-- [Manto das Sombras](/compendium/rules/cloak-of-shadows/)
+- [Cloak of Shadows](/compendium/rules/cloak-of-shadows/)

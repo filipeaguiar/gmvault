@@ -31,23 +31,23 @@ translation:
 
 ## Nível 1
 
-- [Feitiçaria da Tempestade](/compendium/rules/storm-sorcery/)
-- [Magia Tempestuosa](/compendium/rules/tempestuous-magic/)
-- [Porta-voz do Vento](/compendium/rules/wind-speaker/)
+- [Storm Sorcery](/compendium/rules/storm-sorcery/)
+- [Tempestuous Magic](/compendium/rules/tempestuous-magic/)
+- [Wind Speaker](/compendium/rules/wind-speaker/)
 
 ## Nível 3
 
-- [Feitiçaria da Tempestade](/compendium/rules/storm-sorcery/)
+- [Storm Sorcery](/compendium/rules/storm-sorcery/)
 
 ## Nível 6
 
-- [Coração da Tempestade](/compendium/rules/heart-of-the-storm/)
-- [Guia da Tempestade](/compendium/rules/storm-guide/)
+- [Heart of the Storm](/compendium/rules/heart-of-the-storm/)
+- [Storm Guide](/compendium/rules/storm-guide/)
 
 ## Nível 14
 
-- [Fúria da Tempestade](/compendium/rules/storm-s-fury/)
+- [Storm's Fury](/compendium/rules/storm-s-fury/)
 
 ## Nível 18
 
-- [Alma do Vento](/compendium/rules/wind-soul/)
+- [Wind Soul](/compendium/rules/wind-soul/)

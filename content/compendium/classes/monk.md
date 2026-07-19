@@ -30,94 +30,94 @@ translation:
 
 ## Nível 1
 
-- Ataque Desarmado Adicional
-- Ataques Destros
-- Artes Marciais
-- Dado de Artes Marciais
-- Defesa sem Armadura
+- [Bonus Unarmed Strike](/compendium/rules/bonus-unarmed-strike/)
+- [Dexterous Attacks](/compendium/rules/dexterous-attacks/)
+- [Martial Arts](/compendium/rules/martial-arts/)
+- [Martial Arts Die](/compendium/rules/martial-arts-die/)
+- [Unarmored Defense](/compendium/rules/unarmored-defense/)
 
 ## Nível 2
 
-- Rajada de Golpes
-- Foco do Monge
-- Defesa Paciente
-- Passo do Vento
-- Movimento sem Armadura
-- Metabolismo Sobrenatural
+- [Flurry of Blows](/compendium/rules/flurry-of-blows/)
+- [Monk's Focus](/compendium/rules/monk-s-focus/)
+- [Patient Defense](/compendium/rules/patient-defense/)
+- [Step of the Wind](/compendium/rules/step-of-the-wind/)
+- [Unarmored Movement](/compendium/rules/unarmored-movement/)
+- [Uncanny Metabolism](/compendium/rules/uncanny-metabolism/)
 
 ## Nível 3
 
-- Desviar Ataques
-- Subclasse de Monge
+- [Deflect Attacks](/compendium/rules/deflect-attacks/)
+- [Monk Subclass](/compendium/rules/monk-subclass/)
 
 ## Nível 4
 
-- Incremento no Valor de Atributo
-- Queda Lenta
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
+- [Slow Fall](/compendium/rules/slow-fall/)
 
 ## Nível 5
 
-- Ataque Extra
-- Golpe Atordoante
+- [Extra Attack](/compendium/rules/extra-attack/)
+- [Stunning Strike](/compendium/rules/stunning-strike/)
 
 ## Nível 6
 
-- Golpes Potencializados
-- Característica de Subclasse
+- [Empowered Strikes](/compendium/rules/empowered-strikes/)
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 7
 
-- Evasão
+- [Evasão](/compendium/rules/evasion/)
 
 ## Nível 8
 
-- Incremento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Movimento Acrobático
+- [Acrobatic Movement](/compendium/rules/acrobatic-movement/)
 
 ## Nível 10
 
-- Foco Elevado
-- Autorrestauração
+- [Heightened Focus](/compendium/rules/heightened-focus/)
+- [Self-Restoration](/compendium/rules/self-restoration/)
 
 ## Nível 11
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 12
 
-- Incremento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 13
 
-- Desviar Energia
+- [Deflect Energy](/compendium/rules/deflect-energy/)
 
 ## Nível 14
 
-- Sobrevivente Disciplinado
+- [Disciplined Survivor](/compendium/rules/disciplined-survivor/)
 
 ## Nível 15
 
-- Foco Perfeito
+- [Perfect Focus](/compendium/rules/perfect-focus/)
 
 ## Nível 16
 
-- Incremento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 18
 
-- Defesa Superior
+- [Superior Defense](/compendium/rules/superior-defense/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Corpo e Mente
+- [Body and Mind](/compendium/rules/body-and-mind/)

@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Andarilho do Horizonte](/compendium/rules/horizon-walker/)
-- [Detectar Portal](/compendium/rules/detect-portal/)
-- [Magia do Andarilho do Horizonte](/compendium/rules/horizon-walker-magic/)
-- [Guerreiro Planar](/compendium/rules/planar-warrior/)
+- [Horizon Walker](/compendium/rules/horizon-walker/)
+- [Detect Portal](/compendium/rules/detect-portal/)
+- [Horizon Walker Magic](/compendium/rules/horizon-walker-magic/)
+- [Planar Warrior](/compendium/rules/planar-warrior/)
 
 ## Nível 7
 
-- [Passo Etéreo](/compendium/rules/ethereal-step/)
+- [Ethereal Step](/compendium/rules/ethereal-step/)
 
 ## Nível 11
 
-- [Golpe Distante](/compendium/rules/distant-strike/)
+- [Distant Strike](/compendium/rules/distant-strike/)
 
 ## Nível 15
 
-- [Defesa Espectral](/compendium/rules/spectral-defense/)
+- [Spectral Defense](/compendium/rules/spectral-defense/)

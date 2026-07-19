@@ -31,9 +31,9 @@ translation:
 
 ## Nível 3
 
-- [Fast Hands](/compendium/rules/fast-hands/)
-- [Second-Story Work](/compendium/rules/second-story-work/)
-- [Thief](/compendium/rules/thief/)
+- [Mãos Ligeiras](/compendium/rules/fast-hands/)
+- [Trabalho nos Telhados](/compendium/rules/second-story-work/)
+- [Ladino](/compendium/rules/thief/)
 
 ## Nível 9
 

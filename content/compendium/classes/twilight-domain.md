@@ -31,29 +31,29 @@ translation:
 
 ## Nível 1
 
-- [Domínio do Crepúsculo](/compendium/rules/twilight-domain/)
-- [Proficiências Adicionais](/compendium/rules/bonus-proficiencies/)
-- [Olhos da Noite](/compendium/rules/eyes-of-night/)
-- [Bênção Vigilante](/compendium/rules/vigilant-blessing/)
+- [Twilight Domain](/compendium/rules/twilight-domain/)
+- [Bonus Proficiencies](/compendium/rules/bonus-proficiencies/)
+- [Eyes of Night](/compendium/rules/eyes-of-night/)
+- [Vigilant Blessing](/compendium/rules/vigilant-blessing/)
 
 ## Nível 2
 
-- [Canalizar Divindade: Santuário do Crepúsculo](/compendium/rules/channel-divinity-twilight-sanctuary/)
+- [Channel Divinity: Twilight Sanctuary](/compendium/rules/channel-divinity-twilight-sanctuary/)
 
 ## Nível 3
 
-- [Canalizar Divindade: Santuário do Crepúsculo](/compendium/rules/channel-divinity-twilight-sanctuary/)
-- [Domínio do Crepúsculo](/compendium/rules/twilight-domain/)
+- [Channel Divinity: Twilight Sanctuary](/compendium/rules/channel-divinity-twilight-sanctuary/)
+- [Twilight Domain](/compendium/rules/twilight-domain/)
 
 ## Nível 6
 
-- [Passos da Noite](/compendium/rules/steps-of-night/)
+- [Steps of Night](/compendium/rules/steps-of-night/)
 
 ## Nível 8
 
-- [Golpes Abençoados](/compendium/rules/blessed-strikes/)
-- [Golpe Divino](/compendium/rules/divine-strike/)
+- [Blessed Strikes](/compendium/rules/blessed-strikes/)
+- [Divine Strike](/compendium/rules/divine-strike/)
 
 ## Nível 17
 
-- [Manto do Crepúsculo](/compendium/rules/twilight-shroud/)
+- [Twilight Shroud](/compendium/rules/twilight-shroud/)

@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Caminho do Eu Astral](/compendium/rules/way-of-the-astral-self/)
-- [Braços do Eu Astral](/compendium/rules/arms-of-the-astral-self/)
-- [Formas do Seu Eu Astral](/compendium/rules/forms-of-your-astral-self/)
+- [Way of the Astral Self](/compendium/rules/way-of-the-astral-self/)
+- [Arms of the Astral Self](/compendium/rules/arms-of-the-astral-self/)
+- [Forms of Your Astral Self](/compendium/rules/forms-of-your-astral-self/)
 
 ## Nível 6
 
-- [Semblante do Eu Astral](/compendium/rules/visage-of-the-astral-self/)
+- [Visage of the Astral Self](/compendium/rules/visage-of-the-astral-self/)
 
 ## Nível 11
 
-- [Corpo do Eu Astral](/compendium/rules/body-of-the-astral-self/)
+- [Body of the Astral Self](/compendium/rules/body-of-the-astral-self/)
 
 ## Nível 17
 
-- [Eu Astral Desperto](/compendium/rules/awakened-astral-self/)
+- [Awakened Astral Self](/compendium/rules/awakened-astral-self/)

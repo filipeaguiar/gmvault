@@ -31,23 +31,23 @@ translation:
 
 ## Nível 3
 
-- [Cavaleiro](/compendium/rules/cavalier/)
-- [Proficiência Adicional](/compendium/rules/bonus-proficiency/)
-- [Nascido na Sela](/compendium/rules/born-to-the-saddle/)
-- [Marca Inabalável](/compendium/rules/unwavering-mark/)
+- [Cavalier](/compendium/rules/cavalier/)
+- [Bonus Proficiency](/compendium/rules/bonus-proficiency/)
+- [Born to the Saddle](/compendium/rules/born-to-the-saddle/)
+- [Unwavering Mark](/compendium/rules/unwavering-mark/)
 
 ## Nível 7
 
-- [Manobra Protetora](/compendium/rules/warding-maneuver/)
+- [Warding Maneuver](/compendium/rules/warding-maneuver/)
 
 ## Nível 10
 
-- [Manter a Linha](/compendium/rules/hold-the-line/)
+- [Hold the Line](/compendium/rules/hold-the-line/)
 
 ## Nível 15
 
-- [Investida Feroz](/compendium/rules/ferocious-charger/)
+- [Ferocious Charger](/compendium/rules/ferocious-charger/)
 
 ## Nível 18
 
-- [Defensor Vigilante](/compendium/rules/vigilant-defender/)
+- [Vigilant Defender](/compendium/rules/vigilant-defender/)

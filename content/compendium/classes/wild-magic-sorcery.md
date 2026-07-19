@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Feitiçaria de Magia Selvagem](/compendium/rules/wild-magic-sorcery/)
-- [Marés do Caos](/compendium/rules/tides-of-chaos/)
-- [Surto de Magia Selvagem](/compendium/rules/wild-magic-surge/)
+- [Wild Magic Sorcery](/compendium/rules/wild-magic-sorcery/)
+- [Tides of Chaos](/compendium/rules/tides-of-chaos/)
+- [Wild Magic Surge](/compendium/rules/wild-magic-surge/)
 
 ## Nível 6
 
-- [Dobrar a Sorte](/compendium/rules/bend-luck/)
+- [Bend Luck](/compendium/rules/bend-luck/)
 
 ## Nível 14
 
-- [Caos Controlado](/compendium/rules/controlled-chaos/)
+- [Controlled Chaos](/compendium/rules/controlled-chaos/)
 
 ## Nível 18
 
-- [Surto Domado](/compendium/rules/tamed-surge/)
+- [Tamed Surge](/compendium/rules/tamed-surge/)

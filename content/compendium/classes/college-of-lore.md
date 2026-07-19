@@ -31,14 +31,14 @@ translation:
 
 ## Nível 3
 
-- [Colégio do Conhecimento](/compendium/rules/college-of-lore/)
-- [Proficiências Adicionais](/compendium/rules/bonus-proficiencies/)
-- [Palavras Cortantes](/compendium/rules/cutting-words/)
+- [College of Lore](/compendium/rules/college-of-lore/)
+- [Bonus Proficiencies](/compendium/rules/bonus-proficiencies/)
+- [Cutting Words](/compendium/rules/cutting-words/)
 
 ## Nível 6
 
-- [Descobertas Mágicas](/compendium/rules/magical-discoveries/)
+- [Magical Discoveries](/compendium/rules/magical-discoveries/)
 
 ## Nível 14
 
-- [Perícia Inigualável](/compendium/rules/peerless-skill/)
+- [Peerless Skill](/compendium/rules/peerless-skill/)

@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Trapaceiro Arcano](/compendium/rules/arcane-trickster/)
-- [Prestidigitação com Mão Mágica](/compendium/rules/mage-hand-legerdemain/)
-- [Conjuração](/compendium/rules/spellcasting/)
+- [Arcane Trickster](/compendium/rules/arcane-trickster/)
+- [Mage Hand Legerdemain](/compendium/rules/mage-hand-legerdemain/)
+- [Spellcasting](/compendium/rules/spellcasting/)
 
 ## Nível 9
 
-- [Emboscada Mágica](/compendium/rules/magical-ambush/)
+- [Magical Ambush](/compendium/rules/magical-ambush/)
 
 ## Nível 13
 
-- [Trapaceiro Versátil](/compendium/rules/versatile-trickster/)
+- [Versatile Trickster](/compendium/rules/versatile-trickster/)
 
 ## Nível 17
 
-- [Ladrão de Magias](/compendium/rules/spell-thief/)
+- [Spell Thief](/compendium/rules/spell-thief/)

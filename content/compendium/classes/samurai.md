@@ -32,21 +32,21 @@ translation:
 ## Nível 3
 
 - [Samurai](/compendium/rules/samurai/)
-- [Bônus de Proficiência](/compendium/rules/bonus-proficiency/)
-- [Espírito de Luta](/compendium/rules/fighting-spirit/)
+- [Bonus Proficiency](/compendium/rules/bonus-proficiency/)
+- [Fighting Spirit](/compendium/rules/fighting-spirit/)
 
 ## Nível 7
 
-- [Cortesão Elegante](/compendium/rules/elegant-courtier/)
+- [Elegant Courtier](/compendium/rules/elegant-courtier/)
 
 ## Nível 10
 
-- [Espírito Incansável](/compendium/rules/tireless-spirit/)
+- [Tireless Spirit](/compendium/rules/tireless-spirit/)
 
 ## Nível 15
 
-- [Golpe Rápido](/compendium/rules/rapid-strike/)
+- [Rapid Strike](/compendium/rules/rapid-strike/)
 
 ## Nível 18
 
-- [Força Antes da Morte](/compendium/rules/strength-before-death/)
+- [Strength before Death](/compendium/rules/strength-before-death/)

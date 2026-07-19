@@ -31,22 +31,22 @@ translation:
 
 ## Nível 1
 
-- [Alma Mecânica](/compendium/rules/clockwork-soul/)
-- [Magia Mecânica](/compendium/rules/clockwork-magic/)
-- [Restaurar o Equilíbrio](/compendium/rules/restore-balance/)
+- [Clockwork Soul](/compendium/rules/clockwork-soul/)
+- [Clockwork Magic](/compendium/rules/clockwork-magic/)
+- [Restore Balance](/compendium/rules/restore-balance/)
 
 ## Nível 3
 
-- [Alma Mecânica](/compendium/rules/clockwork-soul/)
+- [Clockwork Soul](/compendium/rules/clockwork-soul/)
 
 ## Nível 6
 
-- [Bastião da Lei](/compendium/rules/bastion-of-law/)
+- [Bastion of Law](/compendium/rules/bastion-of-law/)
 
 ## Nível 14
 
-- [Transe da Ordem](/compendium/rules/trance-of-order/)
+- [Trance of Order](/compendium/rules/trance-of-order/)
 
 ## Nível 18
 
-- [Cavalgada Mecânica](/compendium/rules/clockwork-cavalcade/)
+- [Clockwork Cavalcade](/compendium/rules/clockwork-cavalcade/)

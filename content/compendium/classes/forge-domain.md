@@ -31,27 +31,27 @@ translation:
 
 ## Nível 1
 
-- [Domínio da Forja](/compendium/rules/forge-domain/)
-- [Bênção da Forja](/compendium/rules/blessing-of-the-forge/)
-- [Proficiência Adicional](/compendium/rules/bonus-proficiency/)
+- [Forge Domain](/compendium/rules/forge-domain/)
+- [Blessing of the Forge](/compendium/rules/blessing-of-the-forge/)
+- [Bonus Proficiency](/compendium/rules/bonus-proficiency/)
 
 ## Nível 2
 
-- [Canalizar Divindade: Bênção do Artesão](/compendium/rules/channel-divinity-artisan-s-blessing/)
+- [Channel Divinity: Artisan's Blessing](/compendium/rules/channel-divinity-artisan-s-blessing/)
 
 ## Nível 3
 
-- [Canalizar Divindade: Bênção do Artesão](/compendium/rules/channel-divinity-artisan-s-blessing/)
-- [Domínio da Forja](/compendium/rules/forge-domain/)
+- [Channel Divinity: Artisan's Blessing](/compendium/rules/channel-divinity-artisan-s-blessing/)
+- [Forge Domain](/compendium/rules/forge-domain/)
 
 ## Nível 6
 
-- [Alma da Forja](/compendium/rules/soul-of-the-forge/)
+- [Soul of the Forge](/compendium/rules/soul-of-the-forge/)
 
 ## Nível 8
 
-- [Golpe Divino](/compendium/rules/divine-strike/)
+- [Divine Strike](/compendium/rules/divine-strike/)
 
 ## Nível 17
 
-- [Santo da Forja e do Fogo](/compendium/rules/saint-of-forge-and-fire/)
+- [Saint of Forge and Fire](/compendium/rules/saint-of-forge-and-fire/)

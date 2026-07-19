@@ -31,23 +31,23 @@ translation:
 
 ## Nível 1
 
-- [Descanso Engarrafado](/compendium/rules/bottled-respite/)
-- [Ira do Gênio](/compendium/rules/genie-s-wrath/)
-- [O Gênio](/compendium/rules/the-genie/)
-- [Vaso do Gênio](/compendium/rules/genie-s-vessel/)
+- [Bottled Respite](/compendium/rules/bottled-respite/)
+- [Genie's Wrath](/compendium/rules/genie-s-wrath/)
+- [The Genie](/compendium/rules/the-genie/)
+- [Genie's Vessel](/compendium/rules/genie-s-vessel/)
 
 ## Nível 3
 
-- [O Gênio](/compendium/rules/the-genie/)
+- [The Genie](/compendium/rules/the-genie/)
 
 ## Nível 6
 
-- [Dádiva Elemental](/compendium/rules/elemental-gift/)
+- [Elemental Gift](/compendium/rules/elemental-gift/)
 
 ## Nível 10
 
-- [Vaso Santuário](/compendium/rules/sanctuary-vessel/)
+- [Sanctuary Vessel](/compendium/rules/sanctuary-vessel/)
 
 ## Nível 14
 
-- [Desejo Limitado](/compendium/rules/limited-wish/)
+- [Limited Wish](/compendium/rules/limited-wish/)

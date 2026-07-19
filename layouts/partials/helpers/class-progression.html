@@ -1,22 +1,39 @@
 {{- $page := .page -}}
 {{- $characterLevel := int .level -}}
 {{- $raw := $page.RawContent -}}
-{{- $levelHeadings := findRE `(?m)^#{2,3}\s+Nível\s+\d+\s*$` $raw -}}
+{{- $hasLevelHeadings := or (in $raw "## Nível ") (in $raw "### Nível ") (in $raw "## Level ") (in $raw "### Level ") -}}
 
-{{- if not $levelHeadings -}}
+{{- if not $hasLevelHeadings -}}
   {{- $page.Content -}}
 {{- else -}}
-  {{- $visible := slice -}}
-  {{- $include := true -}}
-  {{- range split $raw "\n" -}}
-    {{- $heading := findRE `^#{2,3}\s+Nível\s+\d+\s*$` . -}}
+  {{- $state := newScratch -}}
+  {{- $state.Set "include" true -}}
+  {{- $state.Set "visible" "" -}}
+  {{- range (split $raw "\n") -}}
+    {{- $line := strings.TrimSpace . -}}
+    {{- $heading := or (in $line "## Nível ") (in $line "### Nível ") (in $line "## Level ") (in $line "### Level ") -}}
     {{- if $heading -}}
-      {{- $featureLevel := int (replaceRE `^#{2,3}\s+Nível\s+(\d+)\s*$` "$1" .) -}}
-      {{- $include = le $featureLevel $characterLevel -}}
+      {{- $featureLevel := int (index (findRE `[0-9]+` $line) 0) -}}
+      {{- $state.Set "include" (le $featureLevel $characterLevel) -}}
     {{- end -}}
-    {{- if $include -}}
-      {{- $visible = $visible | append . -}}
+    {{- if eq ($state.Get "include") true -}}
+      {{- $featureName := replaceRE `^- +` "" $line -}}
+      {{- $isFeature := findRE `^- +` $line -}}
+      {{- if and $isFeature $featureName -}}
+        {{- $featureRef := replaceRE `^\[[^\]]+\]\(([^)]+)\)$` "$1" $featureName -}}
+        {{- $featureName = replaceRE `^\[([^\]]+)\]\([^)]+\)$` "$1" $featureName -}}
+        {{- if eq $featureRef $featureName }}{{ $featureRef = printf "/compendium/rules/%s/" ($featureName | urlize) }}{{ end -}}
+        {{- $featurePage := site.GetPage $featureRef -}}
+        {{- if and $featurePage $featurePage.RawContent -}}
+          {{- $featureTitle := or $featurePage.Params.titulo_pt_br $featurePage.Title $featureName -}}
+          {{- $state.Set "visible" (printf "%s\n\n### %s\n\n%s" ($state.Get "visible") $featureTitle $featurePage.RawContent) -}}
+        {{- else -}}
+          {{- $state.Set "visible" (printf "%s\n%s" ($state.Get "visible") .) -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $state.Set "visible" (printf "%s\n%s" ($state.Get "visible") .) -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
-  {{- $page.RenderString (delimit $visible "\n") -}}
+  {{- $page.RenderString ($state.Get "visible") -}}
 {{- end -}}

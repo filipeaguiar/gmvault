@@ -31,20 +31,20 @@ translation:
 
 ## Nível 3
 
-- [Caminho do Mestre Bêbado](/compendium/rules/way-of-the-drunken-master/)
-- [Proficiências de Bônus](/compendium/rules/bonus-proficiencies/)
-- [Técnica do Bêbado](/compendium/rules/drunken-technique/)
+- [Way of the Drunken Master](/compendium/rules/way-of-the-drunken-master/)
+- [Bonus Proficiencies](/compendium/rules/bonus-proficiencies/)
+- [Drunken Technique](/compendium/rules/drunken-technique/)
 
 ## Nível 6
 
-- [Levantar-se de um Salto](/compendium/rules/leap-to-your-feet/)
-- [Redirecionar Ataque](/compendium/rules/redirect-attack/)
-- [Oscilação Ébria](/compendium/rules/tipsy-sway/)
+- [Leap to Your Feet](/compendium/rules/leap-to-your-feet/)
+- [Redirect Attack](/compendium/rules/redirect-attack/)
+- [Tipsy Sway](/compendium/rules/tipsy-sway/)
 
 ## Nível 11
 
-- [Sorte do Bêbado](/compendium/rules/drunkard-s-luck/)
+- [Drunkard's Luck](/compendium/rules/drunkard-s-luck/)
 
 ## Nível 17
 
-- [Frenesi Intoxicado](/compendium/rules/intoxicated-frenzy/)
+- [Intoxicated Frenzy](/compendium/rules/intoxicated-frenzy/)

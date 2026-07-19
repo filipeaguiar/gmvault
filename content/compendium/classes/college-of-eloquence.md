@@ -31,15 +31,15 @@ translation:
 
 ## Nível 3
 
-- [Colégio da Eloquência](/compendium/rules/college-of-eloquence/)
-- [Língua de Prata](/compendium/rules/silver-tongue/)
-- [Palavras Inquietantes](/compendium/rules/unsettling-words/)
+- [College of Eloquence](/compendium/rules/college-of-eloquence/)
+- [Silver Tongue](/compendium/rules/silver-tongue/)
+- [Unsettling Words](/compendium/rules/unsettling-words/)
 
 ## Nível 6
 
-- [Inspiração Infalível](/compendium/rules/unfailing-inspiration/)
-- [Fala Universal](/compendium/rules/universal-speech/)
+- [Unfailing Inspiration](/compendium/rules/unfailing-inspiration/)
+- [Universal Speech](/compendium/rules/universal-speech/)
 
 ## Nível 14
 
-- [Inspiração Contagiosa](/compendium/rules/infectious-inspiration/)
+- [Infectious Inspiration](/compendium/rules/infectious-inspiration/)

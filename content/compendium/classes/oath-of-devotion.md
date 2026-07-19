@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Juramento de Devoção](/compendium/rules/oath-of-devotion/)
-- [Magias do Juramento de Devoção](/compendium/rules/oath-of-devotion-spells/)
-- [Arma Sagrada](/compendium/rules/sacred-weapon/)
+- [Oath of Devotion](/compendium/rules/oath-of-devotion/)
+- [Oath of Devotion Spells](/compendium/rules/oath-of-devotion-spells/)
+- [Sacred Weapon](/compendium/rules/sacred-weapon/)
 
 ## Nível 7
 
-- [Aura de Devoção](/compendium/rules/aura-of-devotion/)
+- [Aura of Devotion](/compendium/rules/aura-of-devotion/)
 
 ## Nível 15
 
-- [Golpe de Proteção](/compendium/rules/smite-of-protection/)
+- [Smite of Protection](/compendium/rules/smite-of-protection/)
 
 ## Nível 20
 
-- [Nimbo Sagrado](/compendium/rules/holy-nimbus/)
+- [Holy Nimbus](/compendium/rules/holy-nimbus/)

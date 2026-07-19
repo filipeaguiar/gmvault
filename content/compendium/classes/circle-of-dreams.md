@@ -31,21 +31,21 @@ translation:
 
 ## Nível 2
 
-- [Círculo dos Sonhos](/compendium/rules/circle-of-dreams/)
-- [Bálsamo da Corte Estival](/compendium/rules/balm-of-the-summer-court/)
+- [Circle of Dreams](/compendium/rules/circle-of-dreams/)
+- [Balm of the Summer Court](/compendium/rules/balm-of-the-summer-court/)
 
 ## Nível 3
 
-- [Círculo dos Sonhos](/compendium/rules/circle-of-dreams/)
+- [Circle of Dreams](/compendium/rules/circle-of-dreams/)
 
 ## Nível 6
 
-- [Lareira do Luar e Sombra](/compendium/rules/hearth-of-moonlight-and-shadow/)
+- [Hearth of Moonlight and Shadow](/compendium/rules/hearth-of-moonlight-and-shadow/)
 
 ## Nível 10
 
-- [Caminhos Ocultos](/compendium/rules/hidden-paths/)
+- [Hidden Paths](/compendium/rules/hidden-paths/)
 
 ## Nível 14
 
-- [Andarilho dos Sonhos](/compendium/rules/walker-in-dreams/)
+- [Walker in Dreams](/compendium/rules/walker-in-dreams/)

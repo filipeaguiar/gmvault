@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Colégio das Espadas](/compendium/rules/college-of-swords/)
-- [Floreio Defensivo](/compendium/rules/defensive-flourish/)
-- [Floreio Móvel](/compendium/rules/mobile-flourish/)
-- [Floreio Cortante](/compendium/rules/slashing-flourish/)
-- [Floreio de Lâmina](/compendium/rules/blade-flourish/)
-- [Proficiências Adicionais](/compendium/rules/bonus-proficiencies/)
-- [Estilo de Luta](/compendium/rules/fighting-style/)
+- [College of Swords](/compendium/rules/college-of-swords/)
+- [Defensive Flourish](/compendium/rules/defensive-flourish/)
+- [Mobile Flourish](/compendium/rules/mobile-flourish/)
+- [Slashing Flourish](/compendium/rules/slashing-flourish/)
+- [Blade Flourish](/compendium/rules/blade-flourish/)
+- [Bonus Proficiencies](/compendium/rules/bonus-proficiencies/)
+- [Fighting Style](/compendium/rules/fighting-style/)
 
 ## Nível 6
 
-- [Ataque Extra](/compendium/rules/extra-attack/)
+- [Extra Attack](/compendium/rules/extra-attack/)
 
 ## Nível 14
 
-- [Floreio do Mestre](/compendium/rules/master-s-flourish/)
+- [Master's Flourish](/compendium/rules/master-s-flourish/)

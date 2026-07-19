@@ -31,22 +31,22 @@ translation:
 
 ## Nível 1
 
-- [Magia das Sombras](/compendium/rules/shadow-magic/)
-- [Olhos da Escuridão](/compendium/rules/eyes-of-the-dark/)
-- [Força do Túmulo](/compendium/rules/strength-of-the-grave/)
+- [Shadow Magic](/compendium/rules/shadow-magic/)
+- [Eyes of the Dark](/compendium/rules/eyes-of-the-dark/)
+- [Strength of the Grave](/compendium/rules/strength-of-the-grave/)
 
 ## Nível 3
 
-- [Magia das Sombras](/compendium/rules/shadow-magic/)
+- [Shadow Magic](/compendium/rules/shadow-magic/)
 
 ## Nível 6
 
-- [Sabujo do Mau Agouro](/compendium/rules/hound-of-ill-omen/)
+- [Hound of Ill Omen](/compendium/rules/hound-of-ill-omen/)
 
 ## Nível 14
 
-- [Passo das Sombras](/compendium/rules/shadow-walk/)
+- [Shadow Walk](/compendium/rules/shadow-walk/)
 
 ## Nível 18
 
-- [Forma Umbral](/compendium/rules/umbral-form/)
+- [Umbral Form](/compendium/rules/umbral-form/)

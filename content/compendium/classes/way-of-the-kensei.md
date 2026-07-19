@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Aparar Ágil](/compendium/rules/agile-parry/)
-- [Disparo do Kensei](/compendium/rules/kensei-s-shot/)
-- [Caminho do Kensei](/compendium/rules/way-of-the-kensei/)
-- [Trilha do Kensei](/compendium/rules/path-of-the-kensei/)
+- [Agile Parry](/compendium/rules/agile-parry/)
+- [Kensei's Shot](/compendium/rules/kensei-s-shot/)
+- [Way of the Kensei](/compendium/rules/way-of-the-kensei/)
+- [Path of the Kensei](/compendium/rules/path-of-the-kensei/)
 
 ## Nível 6
 
-- [Um com a Lâmina](/compendium/rules/one-with-the-blade/)
+- [One with the Blade](/compendium/rules/one-with-the-blade/)
 
 ## Nível 11
 
-- [Afiar a Lâmina](/compendium/rules/sharpen-the-blade/)
+- [Sharpen the Blade](/compendium/rules/sharpen-the-blade/)
 
 ## Nível 17
 
-- [Precisão Infalível](/compendium/rules/unerring-accuracy/)
+- [Unerring Accuracy](/compendium/rules/unerring-accuracy/)

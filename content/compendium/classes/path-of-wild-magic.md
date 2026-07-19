@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Caminho da Magia Selvagem](/compendium/rules/path-of-wild-magic/)
-- [Percepção Mágica](/compendium/rules/magic-awareness/)
-- [Surto Selvagem](/compendium/rules/wild-surge/)
+- [Path of Wild Magic](/compendium/rules/path-of-wild-magic/)
+- [Magic Awareness](/compendium/rules/magic-awareness/)
+- [Wild Surge](/compendium/rules/wild-surge/)
 
 ## Nível 6
 
-- [Magia Reforçadora](/compendium/rules/bolstering-magic/)
+- [Bolstering Magic](/compendium/rules/bolstering-magic/)
 
 ## Nível 10
 
-- [Reação Instável](/compendium/rules/unstable-backlash/)
+- [Unstable Backlash](/compendium/rules/unstable-backlash/)
 
 ## Nível 14
 
-- [Surto Controlado](/compendium/rules/controlled-surge/)
+- [Controlled Surge](/compendium/rules/controlled-surge/)

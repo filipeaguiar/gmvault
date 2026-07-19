@@ -31,14 +31,14 @@ translation:
 
 ## Nível 3
 
-- [Colégio dos Sussurros](/compendium/rules/college-of-whispers/)
-- [Lâminas Psíquicas](/compendium/rules/psychic-blades/)
-- [Palavras de Terror](/compendium/rules/words-of-terror/)
+- [College of Whispers](/compendium/rules/college-of-whispers/)
+- [Psychic Blades](/compendium/rules/psychic-blades/)
+- [Words of Terror](/compendium/rules/words-of-terror/)
 
 ## Nível 6
 
-- [Manto dos Sussurros](/compendium/rules/mantle-of-whispers/)
+- [Mantle of Whispers](/compendium/rules/mantle-of-whispers/)
 
 ## Nível 14
 
-- [Sabedoria das Sombras](/compendium/rules/shadow-lore/)
+- [Shadow Lore](/compendium/rules/shadow-lore/)

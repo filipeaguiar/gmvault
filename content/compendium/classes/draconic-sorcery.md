@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Feitiçaria Dracônica](/compendium/rules/draconic-sorcery/)
-- [Magias Dracônicas](/compendium/rules/draconic-spells/)
-- [Resiliência Dracônica](/compendium/rules/draconic-resilience/)
+- [Draconic Sorcery](/compendium/rules/draconic-sorcery/)
+- [Draconic Spells](/compendium/rules/draconic-spells/)
+- [Draconic Resilience](/compendium/rules/draconic-resilience/)
 
 ## Nível 6
 
-- [Afinidade Elemental](/compendium/rules/elemental-affinity/)
+- [Elemental Affinity](/compendium/rules/elemental-affinity/)
 
 ## Nível 14
 
-- [Asas de Dragão](/compendium/rules/dragon-wings/)
+- [Dragon Wings](/compendium/rules/dragon-wings/)
 
 ## Nível 18
 
-- [Companheiro Dragão](/compendium/rules/dragon-companion/)
+- [Dragon Companion](/compendium/rules/dragon-companion/)

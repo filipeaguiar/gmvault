@@ -32,17 +32,17 @@ translation:
 ## Nível 3
 
 - [Assassin](/compendium/rules/assassin/)
-- [Ferramentas de Assassin](/compendium/rules/assassin-s-tools/)
-- [Assassinar](/compendium/rules/assassinate/)
+- [Assassin's Tools](/compendium/rules/assassin-s-tools/)
+- [Assassinate](/compendium/rules/assassinate/)
 
 ## Nível 9
 
-- [Especialização em Infiltração](/compendium/rules/infiltration-expertise/)
+- [Infiltration Expertise](/compendium/rules/infiltration-expertise/)
 
 ## Nível 13
 
-- [Armas Envenenadas](/compendium/rules/envenom-weapons/)
+- [Envenom Weapons](/compendium/rules/envenom-weapons/)
 
 ## Nível 17
 
-- [Golpe Mortal](/compendium/rules/death-strike/)
+- [Death Strike](/compendium/rules/death-strike/)

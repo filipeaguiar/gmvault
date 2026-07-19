@@ -31,23 +31,23 @@ translation:
 
 ## Nível 3
 
-- [Mestre de Batalha](/compendium/rules/battle-master/)
-- [Superioridade em Combate](/compendium/rules/combat-superiority/)
-- [Opções de Manobra](/compendium/rules/maneuver-options/)
-- [Estudante da Guerra](/compendium/rules/student-of-war/)
+- [Battle Master](/compendium/rules/battle-master/)
+- [Combat Superiority](/compendium/rules/combat-superiority/)
+- [Maneuver Options](/compendium/rules/maneuver-options/)
+- [Student of War](/compendium/rules/student-of-war/)
 
 ## Nível 7
 
-- [Conheça Seu Inimigo](/compendium/rules/know-your-enemy/)
+- [Know Your Enemy](/compendium/rules/know-your-enemy/)
 
 ## Nível 10
 
-- [Superioridade em Combate Aprimorada](/compendium/rules/improved-combat-superiority/)
+- [Improved Combat Superiority](/compendium/rules/improved-combat-superiority/)
 
 ## Nível 15
 
-- [Implacável](/compendium/rules/relentless/)
+- [Relentless](/compendium/rules/relentless/)
 
 ## Nível 18
 
-- [Superioridade em Combate Suprema](/compendium/rules/ultimate-combat-superiority/)
+- [Ultimate Combat Superiority](/compendium/rules/ultimate-combat-superiority/)

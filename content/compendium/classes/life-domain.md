@@ -31,15 +31,15 @@ translation:
 
 ## Nível 3
 
-- [Domínio da Vida](/compendium/rules/life-domain/)
-- [Discípulo da Vida](/compendium/rules/disciple-of-life/)
-- [Magias do Domínio da Vida](/compendium/rules/life-domain-spells/)
-- [Preservar a Vida](/compendium/rules/preserve-life/)
+- [Life Domain](/compendium/rules/life-domain/)
+- [Disciple of Life](/compendium/rules/disciple-of-life/)
+- [Life Domain Spells](/compendium/rules/life-domain-spells/)
+- [Preserve Life](/compendium/rules/preserve-life/)
 
 ## Nível 6
 
-- [Curandeiro Abençoado](/compendium/rules/blessed-healer/)
+- [Blessed Healer](/compendium/rules/blessed-healer/)
 
 ## Nível 17
 
-- [Cura Suprema](/compendium/rules/supreme-healing/)
+- [Supreme Healing](/compendium/rules/supreme-healing/)

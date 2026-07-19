@@ -31,22 +31,22 @@ translation:
 
 ## Nível 3
 
-- [Campeão](/compendium/rules/champion/)
-- [Crítico Aprimorado](/compendium/rules/improved-critical/)
-- [Atleta Notável](/compendium/rules/remarkable-athlete/)
+- [Champion](/compendium/rules/champion/)
+- [Improved Critical](/compendium/rules/improved-critical/)
+- [Remarkable Athlete](/compendium/rules/remarkable-athlete/)
 
 ## Nível 7
 
-- [Estilo de Luta Adicional](/compendium/rules/additional-fighting-style/)
+- [Additional Fighting Style](/compendium/rules/additional-fighting-style/)
 
 ## Nível 10
 
-- [Guerreiro Heroico](/compendium/rules/heroic-warrior/)
+- [Heroic Warrior](/compendium/rules/heroic-warrior/)
 
 ## Nível 15
 
-- [Crítico Superior](/compendium/rules/superior-critical/)
+- [Superior Critical](/compendium/rules/superior-critical/)
 
 ## Nível 18
 
-- [Sobrevivente](/compendium/rules/survivor/)
+- [Survivor](/compendium/rules/survivor/)

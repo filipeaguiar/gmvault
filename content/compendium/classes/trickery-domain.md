@@ -31,15 +31,15 @@ translation:
 
 ## Nível 3
 
-- [Domínio da Trapaça](/compendium/rules/trickery-domain/)
-- [Bênção do Trapaceiro](/compendium/rules/blessing-of-the-trickster/)
-- [Invocar Duplicidade](/compendium/rules/invoke-duplicity/)
-- [Magias do Domínio da Trapaça](/compendium/rules/trickery-domain-spells/)
+- [Trickery Domain](/compendium/rules/trickery-domain/)
+- [Blessing of the Trickster](/compendium/rules/blessing-of-the-trickster/)
+- [Invoke Duplicity](/compendium/rules/invoke-duplicity/)
+- [Trickery Domain Spells](/compendium/rules/trickery-domain-spells/)
 
 ## Nível 6
 
-- [Transposição do Trapaceiro](/compendium/rules/trickster-s-transposition/)
+- [Trickster's Transposition](/compendium/rules/trickster-s-transposition/)
 
 ## Nível 17
 
-- [Duplicidade Aprimorada](/compendium/rules/improved-duplicity/)
+- [Improved Duplicity](/compendium/rules/improved-duplicity/)

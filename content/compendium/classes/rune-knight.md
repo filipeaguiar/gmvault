@@ -32,25 +32,25 @@ translation:
 ## Nível 3
 
 - [Rune Knight](/compendium/rules/rune-knight/)
-- [Proficiências Adicionais](/compendium/rules/bonus-proficiencies/)
-- [Poder do Gigante](/compendium/rules/giant-s-might/)
-- [Escultor de Runas](/compendium/rules/rune-carver/)
+- [Bonus Proficiencies](/compendium/rules/bonus-proficiencies/)
+- [Giant's Might](/compendium/rules/giant-s-might/)
+- [Rune Carver](/compendium/rules/rune-carver/)
 
 ## Nível 7
 
-- [Runa Adicional Conhecida](/compendium/rules/additional-rune-known/)
-- [Escudo Rúnico](/compendium/rules/runic-shield/)
+- [Additional Rune Known](/compendium/rules/additional-rune-known/)
+- [Runic Shield](/compendium/rules/runic-shield/)
 
 ## Nível 10
 
-- [Runa Adicional Conhecida](/compendium/rules/additional-rune-known/)
-- [Grande Estatura](/compendium/rules/great-stature/)
+- [Additional Rune Known](/compendium/rules/additional-rune-known/)
+- [Great Stature](/compendium/rules/great-stature/)
 
 ## Nível 15
 
-- [Runa Adicional Conhecida](/compendium/rules/additional-rune-known/)
-- [Mestre das Runas](/compendium/rules/master-of-runes/)
+- [Additional Rune Known](/compendium/rules/additional-rune-known/)
+- [Master of Runes](/compendium/rules/master-of-runes/)
 
 ## Nível 18
 
-- [Juggernaut Rúnico](/compendium/rules/runic-juggernaut/)
+- [Runic Juggernaut](/compendium/rules/runic-juggernaut/)

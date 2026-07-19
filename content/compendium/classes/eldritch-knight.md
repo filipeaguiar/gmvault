@@ -31,22 +31,22 @@ translation:
 
 ## Nível 3
 
-- [Cavaleiro Místico](/compendium/rules/eldritch-knight/)
-- [Conjuração](/compendium/rules/spellcasting/)
-- [Vínculo de Guerra](/compendium/rules/war-bond/)
+- [Eldritch Knight](/compendium/rules/eldritch-knight/)
+- [Spellcasting](/compendium/rules/spellcasting/)
+- [War Bond](/compendium/rules/war-bond/)
 
 ## Nível 7
 
-- [Magia de Guerra](/compendium/rules/war-magic/)
+- [War Magic](/compendium/rules/war-magic/)
 
 ## Nível 10
 
-- [Golpe Místico](/compendium/rules/eldritch-strike/)
+- [Eldritch Strike](/compendium/rules/eldritch-strike/)
 
 ## Nível 15
 
-- [Investida Arcana](/compendium/rules/arcane-charge/)
+- [Arcane Charge](/compendium/rules/arcane-charge/)
 
 ## Nível 18
 
-- [Magia de Guerra Aprimorada](/compendium/rules/improved-war-magic/)
+- [Improved War Magic](/compendium/rules/improved-war-magic/)

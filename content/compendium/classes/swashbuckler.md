@@ -31,9 +31,9 @@ translation:
 
 ## Nível 3
 
-- [Espadachim](/compendium/rules/swashbuckler/)
-- [Jogo de Pés Elegante](/compendium/rules/fancy-footwork/)
-- [Audácia Galante](/compendium/rules/rakish-audacity/)
+- [Swashbuckler](/compendium/rules/swashbuckler/)
+- [Fancy Footwork](/compendium/rules/fancy-footwork/)
+- [Rakish Audacity](/compendium/rules/rakish-audacity/)
 
 ## Nível 9
 
@@ -41,8 +41,8 @@ translation:
 
 ## Nível 13
 
-- [Manobra Elegante](/compendium/rules/elegant-maneuver/)
+- [Elegant Maneuver](/compendium/rules/elegant-maneuver/)
 
 ## Nível 17
 
-- [Mestre Duelista](/compendium/rules/master-duelist/)
+- [Master Duelist](/compendium/rules/master-duelist/)

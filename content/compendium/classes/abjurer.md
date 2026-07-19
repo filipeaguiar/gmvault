@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Abjurador](/compendium/rules/abjurer/)
-- [Erudito em Abjuração](/compendium/rules/abjuration-savant/)
-- [Proteção Arcana](/compendium/rules/arcane-ward/)
+- [Abjurer](/compendium/rules/abjurer/)
+- [Abjuration Savant](/compendium/rules/abjuration-savant/)
+- [Arcane Ward](/compendium/rules/arcane-ward/)
 
 ## Nível 6
 
-- [Proteção Projetada](/compendium/rules/projected-ward/)
+- [Projected Ward](/compendium/rules/projected-ward/)
 
 ## Nível 10
 
-- [Quebra-magia](/compendium/rules/spell-breaker/)
+- [Spell Breaker](/compendium/rules/spell-breaker/)
 
 ## Nível 14
 
-- [Resistência a Magia](/compendium/rules/spell-resistance/)
+- [Spell Resistance](/compendium/rules/spell-resistance/)

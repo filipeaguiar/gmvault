@@ -31,21 +31,21 @@ translation:
 
 ## Nível 3
 
-- [Juramento da Conquista](/compendium/rules/oath-of-conquest/)
-- [Canalizar Divindade](/compendium/rules/channel-divinity/)
-- [Presença Conquistadora](/compendium/rules/conquering-presence/)
-- [Golpe Guiado](/compendium/rules/guided-strike/)
-- [Magias do Juramento](/compendium/rules/oath-spells/)
-- [Princípios da Conquista](/compendium/rules/tenets-of-conquest/)
+- [Oath of Conquest](/compendium/rules/oath-of-conquest/)
+- [Channel Divinity](/compendium/rules/channel-divinity/)
+- [Conquering Presence](/compendium/rules/conquering-presence/)
+- [Guided Strike](/compendium/rules/guided-strike/)
+- [Oath Spells](/compendium/rules/oath-spells/)
+- [Tenets of Conquest](/compendium/rules/tenets-of-conquest/)
 
 ## Nível 7
 
-- [Aura da Conquista](/compendium/rules/aura-of-conquest/)
+- [Aura of Conquest](/compendium/rules/aura-of-conquest/)
 
 ## Nível 15
 
-- [Repreensão Escarnecedora](/compendium/rules/scornful-rebuke/)
+- [Scornful Rebuke](/compendium/rules/scornful-rebuke/)
 
 ## Nível 20
 
-- [Conquistador Invencível](/compendium/rules/invincible-conqueror/)
+- [Invincible Conqueror](/compendium/rules/invincible-conqueror/)

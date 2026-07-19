@@ -31,23 +31,23 @@ translation:
 
 ## Nível 2
 
-- [Círculo dos Esporos](/compendium/rules/circle-of-spores/)
-- [Magias do Círculo](/compendium/rules/circle-spells/)
-- [Auréola de Esporos](/compendium/rules/halo-of-spores/)
-- [Entidade Simbiótica](/compendium/rules/symbiotic-entity/)
+- [Circle of Spores](/compendium/rules/circle-of-spores/)
+- [Circle Spells](/compendium/rules/circle-spells/)
+- [Halo of Spores](/compendium/rules/halo-of-spores/)
+- [Symbiotic Entity](/compendium/rules/symbiotic-entity/)
 
 ## Nível 3
 
-- [Círculo dos Esporos](/compendium/rules/circle-of-spores/)
+- [Circle of Spores](/compendium/rules/circle-of-spores/)
 
 ## Nível 6
 
-- [Infestação Fúngica](/compendium/rules/fungal-infestation/)
+- [Fungal Infestation](/compendium/rules/fungal-infestation/)
 
 ## Nível 10
 
-- [Esporos Disseminadores](/compendium/rules/spreading-spores/)
+- [Spreading Spores](/compendium/rules/spreading-spores/)
 
 ## Nível 14
 
-- [Corpo Fúngico](/compendium/rules/fungal-body/)
+- [Fungal Body](/compendium/rules/fungal-body/)

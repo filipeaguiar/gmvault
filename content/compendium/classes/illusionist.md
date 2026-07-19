@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Ilusionista](/compendium/rules/illusionist/)
-- [Acadêmico em Ilusão](/compendium/rules/illusion-savant/)
-- [Ilusões Aprimoradas](/compendium/rules/improved-illusions/)
+- [Illusionist](/compendium/rules/illusionist/)
+- [Illusion Savant](/compendium/rules/illusion-savant/)
+- [Improved Illusions](/compendium/rules/improved-illusions/)
 
 ## Nível 6
 
-- [Criaturas Fantasmagóricas](/compendium/rules/phantasmal-creatures/)
+- [Phantasmal Creatures](/compendium/rules/phantasmal-creatures/)
 
 ## Nível 10
 
-- [Eu Ilusório](/compendium/rules/illusory-self/)
+- [Illusory Self](/compendium/rules/illusory-self/)
 
 ## Nível 14
 
-- [Realidade Ilusória](/compendium/rules/illusory-reality/)
+- [Illusory Reality](/compendium/rules/illusory-reality/)

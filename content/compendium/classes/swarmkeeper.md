@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Guardião do Enxame](/compendium/rules/swarmkeeper/)
-- [Enxame Reunido](/compendium/rules/gathered-swarm/)
-- [Magia do Guardião do Enxame](/compendium/rules/swarmkeeper-magic/)
+- [Swarmkeeper](/compendium/rules/swarmkeeper/)
+- [Gathered Swarm](/compendium/rules/gathered-swarm/)
+- [Swarmkeeper Magic](/compendium/rules/swarmkeeper-magic/)
 
 ## Nível 7
 
-- [Maré Contorcida](/compendium/rules/writhing-tide/)
+- [Writhing Tide](/compendium/rules/writhing-tide/)
 
 ## Nível 11
 
-- [Enxame Poderoso](/compendium/rules/mighty-swarm/)
+- [Mighty Swarm](/compendium/rules/mighty-swarm/)
 
 ## Nível 15
 
-- [Dispersão em Enxame](/compendium/rules/swarming-dispersal/)
+- [Swarming Dispersal](/compendium/rules/swarming-dispersal/)

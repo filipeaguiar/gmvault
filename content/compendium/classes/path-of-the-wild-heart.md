@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Caminho do Coração Selvagem](/compendium/rules/path-of-the-wild-heart/)
-- [Falante Animal](/compendium/rules/animal-speaker/)
-- [Fúria das Regiões Selvagens](/compendium/rules/rage-of-the-wilds/)
+- [Path of the Wild Heart](/compendium/rules/path-of-the-wild-heart/)
+- [Animal Speaker](/compendium/rules/animal-speaker/)
+- [Rage of the Wilds](/compendium/rules/rage-of-the-wilds/)
 
 ## Nível 6
 
-- [Aspecto das Regiões Selvagens](/compendium/rules/aspect-of-the-wilds/)
+- [Aspect of the Wilds](/compendium/rules/aspect-of-the-wilds/)
 
 ## Nível 10
 
-- [Falante da Natureza](/compendium/rules/nature-speaker/)
+- [Nature Speaker](/compendium/rules/nature-speaker/)
 
 ## Nível 14
 
-- [Poder das Regiões Selvagens](/compendium/rules/power-of-the-wilds/)
+- [Power of the Wilds](/compendium/rules/power-of-the-wilds/)

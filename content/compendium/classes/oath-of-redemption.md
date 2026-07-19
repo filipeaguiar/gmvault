@@ -31,21 +31,21 @@ translation:
 
 ## Nível 3
 
-- [Juramento da Redenção](/compendium/rules/oath-of-redemption/)
-- [Canalizar Divindade](/compendium/rules/channel-divinity/)
-- [Emissário da Paz](/compendium/rules/emissary-of-peace/)
-- [Magias do Juramento](/compendium/rules/oath-spells/)
-- [Repreender os Violentos](/compendium/rules/rebuke-the-violent/)
-- [Princípios da Redenção](/compendium/rules/tenets-of-redemption/)
+- [Oath of Redemption](/compendium/rules/oath-of-redemption/)
+- [Channel Divinity](/compendium/rules/channel-divinity/)
+- [Emissary of Peace](/compendium/rules/emissary-of-peace/)
+- [Oath Spells](/compendium/rules/oath-spells/)
+- [Rebuke the Violent](/compendium/rules/rebuke-the-violent/)
+- [Tenets of Redemption](/compendium/rules/tenets-of-redemption/)
 
 ## Nível 7
 
-- [Aura do Guardião](/compendium/rules/aura-of-the-guardian/)
+- [Aura of the Guardian](/compendium/rules/aura-of-the-guardian/)
 
 ## Nível 15
 
-- [Espírito Protetor](/compendium/rules/protective-spirit/)
+- [Protective Spirit](/compendium/rules/protective-spirit/)
 
 ## Nível 20
 
-- [Emissário da Redenção](/compendium/rules/emissary-of-redemption/)
+- [Emissary of Redemption](/compendium/rules/emissary-of-redemption/)

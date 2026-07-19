@@ -31,26 +31,26 @@ translation:
 
 ## Nível 3
 
-- [Arqueiro Arcano](/compendium/rules/arcane-archer/)
-- [Conhecimento do Arqueiro Arcano](/compendium/rules/arcane-archer-lore/)
-- [Disparo Arcano](/compendium/rules/arcane-shot/)
-- [Opções de Disparo Arcano](/compendium/rules/arcane-shot-options/)
+- [Arcane Archer](/compendium/rules/arcane-archer/)
+- [Arcane Archer Lore](/compendium/rules/arcane-archer-lore/)
+- [Arcane Shot](/compendium/rules/arcane-shot/)
+- [Arcane Shot Options](/compendium/rules/arcane-shot-options/)
 
 ## Nível 7
 
-- [Opção Adicional de Disparo Arcano](/compendium/rules/additional-arcane-shot-option/)
-- [Disparo Curvo](/compendium/rules/curving-shot/)
-- [Flecha Mágica](/compendium/rules/magic-arrow/)
+- [Additional Arcane Shot Option](/compendium/rules/additional-arcane-shot-option/)
+- [Curving Shot](/compendium/rules/curving-shot/)
+- [Magic Arrow](/compendium/rules/magic-arrow/)
 
 ## Nível 10
 
-- [Opção Adicional de Disparo Arcano](/compendium/rules/additional-arcane-shot-option/)
+- [Additional Arcane Shot Option](/compendium/rules/additional-arcane-shot-option/)
 
 ## Nível 15
 
-- [Opção Adicional de Disparo Arcano](/compendium/rules/additional-arcane-shot-option/)
-- [Disparo Sempre Pronto](/compendium/rules/ever-ready-shot/)
+- [Additional Arcane Shot Option](/compendium/rules/additional-arcane-shot-option/)
+- [Ever-Ready Shot](/compendium/rules/ever-ready-shot/)
 
 ## Nível 18
 
-- [Opção Adicional de Disparo Arcano](/compendium/rules/additional-arcane-shot-option/)
+- [Additional Arcane Shot Option](/compendium/rules/additional-arcane-shot-option/)

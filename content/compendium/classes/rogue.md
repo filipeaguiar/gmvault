@@ -31,92 +31,92 @@ titulo_pt_br: Ladino
 
 ## Nível 1
 
-- Especialização
-- Ataque Furtivo
-- Gíria de Ladrões
-- Maestria de Arma
+- [Especialização](/compendium/rules/expertise/)
+- [Ataque Furtivo](/compendium/rules/sneak-attack/)
+- [Gíria dos Ladrões](/compendium/rules/thieves-cant/)
+- [Weapon Mastery](/compendium/rules/weapon-mastery/)
 
 ## Nível 2
 
-- Ação Ardilosa
+- [Ação Astuta](/compendium/rules/cunning-action/)
 
 ## Nível 3
 
-- Subclasse de Ladino
-- Mira Firme
+- [Subclasse de Ladino](/compendium/rules/rogue-subclass/)
+- [Steady Aim](/compendium/rules/steady-aim/)
 
 ## Nível 4
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Golpe Ardiloso
-- Veneno (Custo: 1d6)
-- Derrubar (Custo: 1d6)
-- Esquiva Sobrenatural
-- Retirada (Custo: 1d6)
+- [Golpe Astuto](/compendium/rules/cunning-strike/)
+- [Poison (Cost: 1d6)](/compendium/rules/poison-cost-1d6/)
+- [Trip (Cost: 1d6)](/compendium/rules/trip-cost-1d6/)
+- [Esquiva Sobrenatural](/compendium/rules/uncanny-dodge/)
+- [Withdraw (Cost: 1d6)](/compendium/rules/withdraw-cost-1d6/)
 
 ## Nível 6
 
-- Especialização
+- [Especialização](/compendium/rules/expertise/)
 
 ## Nível 7
 
-- Evasão
-- Talento Confiável
+- [Evasão](/compendium/rules/evasion/)
+- [Talento Confiável](/compendium/rules/reliable-talent/)
 
 ## Nível 8
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 10
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 11
 
-- Golpe Ardiloso Aprimorado
+- [Golpe Astuto Aprimorado](/compendium/rules/improved-cunning-strike/)
 
 ## Nível 12
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 13
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 14
 
-- Pasmar (Custo: 2d6)
-- Golpes Traiçoeiros
-- Nocautear (Custo: 6d6)
-- Obscurecer (Custo: 3d6)
+- [Daze (Cost: 2d6)](/compendium/rules/daze-cost-2d6/)
+- [Golpes Ardilosos](/compendium/rules/devious-strikes/)
+- [Knock Out (Cost: 6d6)](/compendium/rules/knock-out-cost-6d6/)
+- [Obscure (Cost: 3d6)](/compendium/rules/obscure-cost-3d6/)
 
 ## Nível 15
 
-- Mente Escorregadia
+- [Mente Escorregadia](/compendium/rules/slippery-mind/)
 
 ## Nível 16
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 18
 
-- Elusivo
+- [Elusivo](/compendium/rules/elusive/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Golpe de Sorte
+- [Golpe de Sorte](/compendium/rules/stroke-of-luck/)

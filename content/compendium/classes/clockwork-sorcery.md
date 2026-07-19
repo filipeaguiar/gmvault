@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Feitiçaria Mecânica](/compendium/rules/clockwork-sorcery/)
-- [Magias Mecânicas](/compendium/rules/clockwork-spells/)
-- [Restaurar Equilíbrio](/compendium/rules/restore-balance/)
+- [Clockwork Sorcery](/compendium/rules/clockwork-sorcery/)
+- [Clockwork Spells](/compendium/rules/clockwork-spells/)
+- [Restore Balance](/compendium/rules/restore-balance/)
 
 ## Nível 6
 
-- [Bastião da Lei](/compendium/rules/bastion-of-law/)
+- [Bastion of Law](/compendium/rules/bastion-of-law/)
 
 ## Nível 14
 
-- [Transe da Ordem](/compendium/rules/trance-of-order/)
+- [Trance of Order](/compendium/rules/trance-of-order/)
 
 ## Nível 18
 
-- [Cavalgada Mecânica](/compendium/rules/clockwork-cavalcade/)
+- [Clockwork Cavalcade](/compendium/rules/clockwork-cavalcade/)

@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Matador de Monstros](/compendium/rules/monster-slayer/)
-- [Sentido do Caçador](/compendium/rules/hunter-s-sense/)
-- [Magia do Matador de Monstros](/compendium/rules/monster-slayer-magic/)
-- [Presa do Matador](/compendium/rules/slayer-s-prey/)
+- [Monster Slayer](/compendium/rules/monster-slayer/)
+- [Hunter's Sense](/compendium/rules/hunter-s-sense/)
+- [Monster Slayer Magic](/compendium/rules/monster-slayer-magic/)
+- [Slayer's Prey](/compendium/rules/slayer-s-prey/)
 
 ## Nível 7
 
-- [Defesa Sobrenatural](/compendium/rules/supernatural-defense/)
+- [Supernatural Defense](/compendium/rules/supernatural-defense/)
 
 ## Nível 11
 
-- [Nêmesis de Usuários de Magia](/compendium/rules/magic-user-s-nemesis/)
+- [Magic-User's Nemesis](/compendium/rules/magic-user-s-nemesis/)
 
 ## Nível 15
 
-- [Contra-ataque do Matador](/compendium/rules/slayer-s-counter/)
+- [Slayer's Counter](/compendium/rules/slayer-s-counter/)

@@ -30,67 +30,67 @@ translation:
 
 ## Nível 1
 
-- Feitiçaria Inata
-- Conjuração
+- [Innate Sorcery](/compendium/rules/innate-sorcery/)
+- [Spellcasting](/compendium/rules/spellcasting/)
 
 ## Nível 2
 
-- Fonte de Magia
-- Metamagia
-- Opções de Metamagia
+- [Font of Magic](/compendium/rules/font-of-magic/)
+- [Metamagic](/compendium/rules/metamagic/)
+- [Metamagic Options](/compendium/rules/metamagic-options/)
 
 ## Nível 3
 
-- Subclasse de Feiticeiro
+- [Sorcerer Subclass](/compendium/rules/sorcerer-subclass/)
 
 ## Nível 4
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Restauração Feiticeira
+- [Sorcerous Restoration](/compendium/rules/sorcerous-restoration/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 7
 
-- Feitiçaria Encarnada
+- [Sorcery Incarnate](/compendium/rules/sorcery-incarnate/)
 
 ## Nível 8
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 10
 
-- Metamagia
+- [Metamagic](/compendium/rules/metamagic/)
 
 ## Nível 12
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 14
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 16
 
-- Melhoria de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Metamagia
+- [Metamagic](/compendium/rules/metamagic/)
 
 ## Nível 18
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Apoteose Arcana
+- [Arcane Apotheosis](/compendium/rules/arcane-apotheosis/)

@@ -30,78 +30,78 @@ translation:
 
 ## Nível 1
 
-- Imposição de Mãos
-- Conjuração
-- Maestria de Arma
+- [Lay on Hands](/compendium/rules/lay-on-hands/)
+- [Spellcasting](/compendium/rules/spellcasting/)
+- [Weapon Mastery](/compendium/rules/weapon-mastery/)
 
 ## Nível 2
 
-- Estilo de Combate
-- Golpe do Paladino
+- [Fighting Style](/compendium/rules/fighting-style/)
+- [Paladin's Smite](/compendium/rules/paladin-s-smite/)
 
 ## Nível 3
 
-- Canalizar Divindade
-- Sentido Divino
-- Subclasse de Paladino
+- [Channel Divinity](/compendium/rules/channel-divinity/)
+- [Divine Sense](/compendium/rules/divine-sense/)
+- [Paladin Subclass](/compendium/rules/paladin-subclass/)
 
 ## Nível 4
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Ataque Extra
-- Corcel Fiel
+- [Extra Attack](/compendium/rules/extra-attack/)
+- [Faithful Steed](/compendium/rules/faithful-steed/)
 
 ## Nível 6
 
-- Aura de Proteção
+- [Aura of Protection](/compendium/rules/aura-of-protection/)
 
 ## Nível 7
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 8
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Abjurar Inimigos
+- [Abjure Foes](/compendium/rules/abjure-foes/)
 
 ## Nível 10
 
-- Aura de Coragem
+- [Aura of Courage](/compendium/rules/aura-of-courage/)
 
 ## Nível 11
 
-- Golpes Radiantes
+- [Radiant Strikes](/compendium/rules/radiant-strikes/)
 
 ## Nível 12
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 14
 
-- Toque Restaurador
+- [Restoring Touch](/compendium/rules/restoring-touch/)
 
 ## Nível 15
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 16
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 18
 
-- Expansão da Aura
+- [Aura Expansion](/compendium/rules/aura-expansion/)
 
 ## Nível 19
 
-- Dom Épico
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)

@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Patrono Corruptor](/compendium/rules/fiend-patron/)
-- [Bênção do Obscuro](/compendium/rules/dark-one-s-blessing/)
-- [Magias do Corruptor](/compendium/rules/fiend-spells/)
+- [Fiend Patron](/compendium/rules/fiend-patron/)
+- [Dark One's Blessing](/compendium/rules/dark-one-s-blessing/)
+- [Fiend Spells](/compendium/rules/fiend-spells/)
 
 ## Nível 6
 
-- [Sorte do Obscuro](/compendium/rules/dark-one-s-own-luck/)
+- [Dark One's Own Luck](/compendium/rules/dark-one-s-own-luck/)
 
 ## Nível 10
 
-- [Resiliência Corruptora](/compendium/rules/fiendish-resilience/)
+- [Fiendish Resilience](/compendium/rules/fiendish-resilience/)
 
 ## Nível 14
 
-- [Arremessar Através do Inferno](/compendium/rules/hurl-through-hell/)
+- [Hurl Through Hell](/compendium/rules/hurl-through-hell/)

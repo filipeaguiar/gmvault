@@ -30,58 +30,58 @@ translation:
 
 ## Nível 1
 
-- Recuperação Arcana
-- Adepto de Rituais
-- Conjuração
+- [Arcane Recovery](/compendium/rules/arcane-recovery/)
+- [Ritual Adept](/compendium/rules/ritual-adept/)
+- [Spellcasting](/compendium/rules/spellcasting/)
 
 ## Nível 2
 
-- Erudito
+- [Scholar](/compendium/rules/scholar/)
 
 ## Nível 3
 
-- Subclasse de Mago
+- [Wizard Subclass](/compendium/rules/wizard-subclass/)
 
 ## Nível 4
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Memorizar Magia
+- [Memorize Spell](/compendium/rules/memorize-spell/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 8
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 10
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 12
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 14
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 16
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 18
 
-- Maestria em Magia
+- [Spell Mastery](/compendium/rules/spell-mastery/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Magias de Assinatura
+- [Signature Spells](/compendium/rules/signature-spells/)

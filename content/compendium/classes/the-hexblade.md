@@ -31,22 +31,22 @@ translation:
 
 ## Nível 1
 
-- [A Hexblade](/compendium/rules/the-hexblade/)
-- [Guerreiro do Hexblade](/compendium/rules/hex-warrior/)
-- [Maldição do Hexblade](/compendium/rules/hexblade-s-curse/)
+- [The Hexblade](/compendium/rules/the-hexblade/)
+- [Hex Warrior](/compendium/rules/hex-warrior/)
+- [Hexblade's Curse](/compendium/rules/hexblade-s-curse/)
 
 ## Nível 3
 
-- [A Hexblade](/compendium/rules/the-hexblade/)
+- [The Hexblade](/compendium/rules/the-hexblade/)
 
 ## Nível 6
 
-- [Espectro Amaldiçoado](/compendium/rules/accursed-specter/)
+- [Accursed Specter](/compendium/rules/accursed-specter/)
 
 ## Nível 10
 
-- [Armadura das Maldições](/compendium/rules/armor-of-hexes/)
+- [Armor of Hexes](/compendium/rules/armor-of-hexes/)
 
 ## Nível 14
 
-- [Mestre das Maldições](/compendium/rules/master-of-hexes/)
+- [Master of Hexes](/compendium/rules/master-of-hexes/)

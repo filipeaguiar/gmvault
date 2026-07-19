@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Colégio da Dança](/compendium/rules/college-of-dance/)
-- [Golpes Ágeis](/compendium/rules/agile-strikes/)
-- [Dano Bárdico](/compendium/rules/bardic-damage/)
-- [Virtuoso da Dança](/compendium/rules/dance-virtuoso/)
-- [Passos Deslumbrantes](/compendium/rules/dazzling-footwork/)
-- [Defesa sem Armadura](/compendium/rules/unarmored-defense/)
+- [College of Dance](/compendium/rules/college-of-dance/)
+- [Agile Strikes](/compendium/rules/agile-strikes/)
+- [Bardic Damage](/compendium/rules/bardic-damage/)
+- [Dance Virtuoso](/compendium/rules/dance-virtuoso/)
+- [Dazzling Footwork](/compendium/rules/dazzling-footwork/)
+- [Unarmored Defense](/compendium/rules/unarmored-defense/)
 
 ## Nível 6
 
-- [Movimento Inspirador](/compendium/rules/inspiring-movement/)
-- [Passos em Tandem](/compendium/rules/tandem-footwork/)
+- [Inspiring Movement](/compendium/rules/inspiring-movement/)
+- [Tandem Footwork](/compendium/rules/tandem-footwork/)
 
 ## Nível 14
 
-- [Evasão Líder](/compendium/rules/leading-evasion/)
+- [Leading Evasion](/compendium/rules/leading-evasion/)

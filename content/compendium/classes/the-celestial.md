@@ -31,10 +31,22 @@ translation:
 
 ## Nível 1
 
-- [O Celestial](/compendium/rules/the-celestial/)
-- [Truques Adicionais](/compendium/rules/bonus-cantrips/)
-- [Luz Curativa](/compendium/rules/healing-light/)
+- [The Celestial](/compendium/rules/the-celestial/)
+- [Bonus Cantrips](/compendium/rules/bonus-cantrips/)
+- [Healing Light](/compendium/rules/healing-light/)
 
 ## Nível 3
 
-- [O Celestial](/compendium/rules/the-celestial/)
+- [The Celestial](/compendium/rules/the-celestial/)
+
+## Nível 6
+
+- [Radiant Soul](/compendium/rules/radiant-soul/)
+
+## Nível 10
+
+- [Celestial Resilience](/compendium/rules/celestial-resilience/)
+
+## Nível 14
+
+- [Searing Vengeance](/compendium/rules/searing-vengeance/)

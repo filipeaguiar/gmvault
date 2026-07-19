@@ -600,7 +600,9 @@ def render_class_body(record: CatalogRecord, catalog: FiveEToolsCatalog, selecte
             target_slug = aliases.get(feature_slug, feature_slug)
             url = f"/compendium/rules/{target_slug}/"
             name = feature.get("name", "Feature")
-            lines.append(f"- [{name}]({url})" if url in selected_urls else f"- {name}")
+            # Feature pages are materialized by the character/import workflows;
+            # retain the canonical link so layouts can render their description.
+            lines.append(f"- [{name}]({url})")
         lines.append("")
     return "\n".join(lines).strip()
 

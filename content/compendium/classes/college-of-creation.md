@@ -31,14 +31,14 @@ translation:
 
 ## Nível 3
 
-- [Colégio da Criação](/compendium/rules/college-of-creation/)
-- [Partícula de Potencial](/compendium/rules/mote-of-potential/)
-- [Performance da Criação](/compendium/rules/performance-of-creation/)
+- [College of Creation](/compendium/rules/college-of-creation/)
+- [Mote of Potential](/compendium/rules/mote-of-potential/)
+- [Performance of Creation](/compendium/rules/performance-of-creation/)
 
 ## Nível 6
 
-- [Performance Animadora](/compendium/rules/animating-performance/)
+- [Animating Performance](/compendium/rules/animating-performance/)
 
 ## Nível 14
 
-- [Crescendo Criativo](/compendium/rules/creative-crescendo/)
+- [Creative Crescendo](/compendium/rules/creative-crescendo/)

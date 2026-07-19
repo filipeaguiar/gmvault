@@ -30,71 +30,71 @@ translation:
 
 ## Nível 1
 
-- Druídico
-- Mágico
-- Ordem Primordial
-- Conjuração
-- Sentinela
+- [Druidic](/compendium/rules/druidic/)
+- [Magician](/compendium/rules/magician/)
+- [Primal Order](/compendium/rules/primal-order/)
+- [Spellcasting](/compendium/rules/spellcasting/)
+- [Warden](/compendium/rules/warden/)
 
 ## Nível 2
 
-- Companheiro Selvagem
-- Forma Selvagem
+- [Wild Companion](/compendium/rules/wild-companion/)
+- [Wild Shape](/compendium/rules/wild-shape/)
 
 ## Nível 3
 
-- Subclasse de Druida
+- [Druid Subclass](/compendium/rules/druid-subclass/)
 
 ## Nível 4
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Ressurgimento Selvagem
+- [Wild Resurgence](/compendium/rules/wild-resurgence/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 7
 
-- Fúria Elemental
-- Conjuração Potente
-- Golpe Primordial
+- [Elemental Fury](/compendium/rules/elemental-fury/)
+- [Potent Spellcasting](/compendium/rules/potent-spellcasting/)
+- [Primal Strike](/compendium/rules/primal-strike/)
 
 ## Nível 8
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 10
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 12
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 14
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 15
 
-- Fúria Elemental Aprimorada
+- [Improved Elemental Fury](/compendium/rules/improved-elemental-fury/)
 
 ## Nível 16
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 18
 
-- Magias da Besta
+- [Beast Spells](/compendium/rules/beast-spells/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Arquidruida
+- [Archdruid](/compendium/rules/archdruid/)

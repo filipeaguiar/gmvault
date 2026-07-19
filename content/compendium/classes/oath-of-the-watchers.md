@@ -31,21 +31,21 @@ translation:
 
 ## Nível 3
 
-- [Juramento dos Sentinelas](/compendium/rules/oath-of-the-watchers/)
-- [Canalizar Divindade](/compendium/rules/channel-divinity/)
-- [Magias do Juramento](/compendium/rules/oath-spells/)
-- [Princípios dos Sentinelas](/compendium/rules/tenets-of-the-watchers/)
-- [Abjurar o Extraplanar](/compendium/rules/abjure-the-extraplanar/)
-- [Vontade do Sentinela](/compendium/rules/watcher-s-will/)
+- [Oath of the Watchers](/compendium/rules/oath-of-the-watchers/)
+- [Channel Divinity](/compendium/rules/channel-divinity/)
+- [Oath Spells](/compendium/rules/oath-spells/)
+- [Tenets of the Watchers](/compendium/rules/tenets-of-the-watchers/)
+- [Abjure the Extraplanar](/compendium/rules/abjure-the-extraplanar/)
+- [Watcher's Will](/compendium/rules/watcher-s-will/)
 
 ## Nível 7
 
-- [Aura do Sentinela](/compendium/rules/aura-of-the-sentinel/)
+- [Aura of the Sentinel](/compendium/rules/aura-of-the-sentinel/)
 
 ## Nível 15
 
-- [Repreensão Vigilante](/compendium/rules/vigilant-rebuke/)
+- [Vigilant Rebuke](/compendium/rules/vigilant-rebuke/)
 
 ## Nível 20
 
-- [Baluarte Mortal](/compendium/rules/mortal-bulwark/)
+- [Mortal Bulwark](/compendium/rules/mortal-bulwark/)

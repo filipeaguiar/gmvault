@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Golpe Inspirador](/compendium/rules/inspiring-smite/)
-- [Juramento da Glória](/compendium/rules/oath-of-glory/)
-- [Magias do Juramento da Glória](/compendium/rules/oath-of-glory-spells/)
-- [Atleta Inigualável](/compendium/rules/peerless-athlete/)
+- [Inspiring Smite](/compendium/rules/inspiring-smite/)
+- [Oath of Glory](/compendium/rules/oath-of-glory/)
+- [Oath of Glory Spells](/compendium/rules/oath-of-glory-spells/)
+- [Peerless Athlete](/compendium/rules/peerless-athlete/)
 
 ## Nível 7
 
-- [Aura de Agilidade](/compendium/rules/aura-of-alacrity/)
+- [Aura of Alacrity](/compendium/rules/aura-of-alacrity/)
 
 ## Nível 15
 
-- [Defesa Gloriosa](/compendium/rules/glorious-defense/)
+- [Glorious Defense](/compendium/rules/glorious-defense/)
 
 ## Nível 20
 
-- [Lenda Viva](/compendium/rules/living-legend/)
+- [Living Legend](/compendium/rules/living-legend/)

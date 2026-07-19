@@ -30,86 +30,86 @@ translation:
 
 ## Nível 1
 
-- Fúria
-- Defesa sem Armadura
-- Maestria de Arma
+- [Rage](/compendium/rules/rage/)
+- [Unarmored Defense](/compendium/rules/unarmored-defense/)
+- [Weapon Mastery](/compendium/rules/weapon-mastery/)
 
 ## Nível 2
 
-- Sentido de Perigo
-- Ataque Imprudente
+- [Danger Sense](/compendium/rules/danger-sense/)
+- [Reckless Attack](/compendium/rules/reckless-attack/)
 
 ## Nível 3
 
-- Subclasse de Bárbaro
-- Conhecimento Primitivo
+- [Barbarian Subclass](/compendium/rules/barbarian-subclass/)
+- [Primal Knowledge](/compendium/rules/primal-knowledge/)
 
 ## Nível 4
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Ataque Extra
-- Movimento Rápido
+- [Extra Attack](/compendium/rules/extra-attack/)
+- [Fast Movement](/compendium/rules/fast-movement/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 7
 
-- Instinto Selvagem
-- Salto Instintivo
+- [Feral Instinct](/compendium/rules/feral-instinct/)
+- [Instinctive Pounce](/compendium/rules/instinctive-pounce/)
 
 ## Nível 8
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Golpe Brutal
+- [Brutal Strike](/compendium/rules/brutal-strike/)
 
 ## Nível 10
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 11
 
-- Fúria Implacável
+- [Relentless Rage](/compendium/rules/relentless-rage/)
 
 ## Nível 12
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 13
 
-- Golpe Brutal Aprimorado
+- [Improved Brutal Strike](/compendium/rules/improved-brutal-strike/)
 
 ## Nível 14
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 15
 
-- Fúria Persistente
+- [Persistent Rage](/compendium/rules/persistent-rage/)
 
 ## Nível 16
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Golpe Brutal Aprimorado
+- [Improved Brutal Strike](/compendium/rules/improved-brutal-strike/)
 
 ## Nível 18
 
-- Poder Indomável
+- [Indomitable Might](/compendium/rules/indomitable-might/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Campeão Primitivo
+- [Primal Champion](/compendium/rules/primal-champion/)

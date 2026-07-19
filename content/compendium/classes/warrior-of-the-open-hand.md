@@ -31,17 +31,17 @@ translation:
 
 ## Nível 3
 
-- [Técnica da Mão Aberta](/compendium/rules/open-hand-technique/)
-- [Guerreiro da Mão Aberta](/compendium/rules/warrior-of-the-open-hand/)
+- [Open Hand Technique](/compendium/rules/open-hand-technique/)
+- [Warrior of the Open Hand](/compendium/rules/warrior-of-the-open-hand/)
 
 ## Nível 6
 
-- [Plenitude Corporal](/compendium/rules/wholeness-of-body/)
+- [Wholeness of Body](/compendium/rules/wholeness-of-body/)
 
 ## Nível 11
 
-- [Passo Ligeiro](/compendium/rules/fleet-step/)
+- [Fleet Step](/compendium/rules/fleet-step/)
 
 ## Nível 17
 
-- [Palma Trêmula](/compendium/rules/quivering-palm/)
+- [Quivering Palm](/compendium/rules/quivering-palm/)

@@ -31,17 +31,17 @@ translation:
 
 ## Nível 3
 
-- [Caminho da Árvore do Mundo](/compendium/rules/path-of-the-world-tree/)
-- [Vitalidade da Árvore](/compendium/rules/vitality-of-the-tree/)
+- [Path of the World Tree](/compendium/rules/path-of-the-world-tree/)
+- [Vitality of the Tree](/compendium/rules/vitality-of-the-tree/)
 
 ## Nível 6
 
-- [Ramos da Árvore](/compendium/rules/branches-of-the-tree/)
+- [Branches of the Tree](/compendium/rules/branches-of-the-tree/)
 
 ## Nível 10
 
-- [Raízes Golpeadoras](/compendium/rules/battering-roots/)
+- [Battering Roots](/compendium/rules/battering-roots/)
 
 ## Nível 14
 
-- [Viagem pela Árvore](/compendium/rules/travel-along-the-tree/)
+- [Travel Along the Tree](/compendium/rules/travel-along-the-tree/)

@@ -31,28 +31,28 @@ translation:
 
 ## Nível 1
 
-- [Domínio da Ordem](/compendium/rules/order-domain/)
-- [Proficiências Adicionais](/compendium/rules/bonus-proficiencies/)
-- [Voz da Autoridade](/compendium/rules/voice-of-authority/)
+- [Order Domain](/compendium/rules/order-domain/)
+- [Bonus Proficiencies](/compendium/rules/bonus-proficiencies/)
+- [Voice of Authority](/compendium/rules/voice-of-authority/)
 
 ## Nível 2
 
-- [Canalizar Divindade: Exigência da Ordem](/compendium/rules/channel-divinity-order-s-demand/)
+- [Channel Divinity: Order's Demand](/compendium/rules/channel-divinity-order-s-demand/)
 
 ## Nível 3
 
-- [Canalizar Divindade: Exigência da Ordem](/compendium/rules/channel-divinity-order-s-demand/)
-- [Domínio da Ordem](/compendium/rules/order-domain/)
+- [Channel Divinity: Order's Demand](/compendium/rules/channel-divinity-order-s-demand/)
+- [Order Domain](/compendium/rules/order-domain/)
 
 ## Nível 6
 
-- [Personificação da Lei](/compendium/rules/embodiment-of-the-law/)
+- [Embodiment of the Law](/compendium/rules/embodiment-of-the-law/)
 
 ## Nível 8
 
-- [Golpes Abençoados](/compendium/rules/blessed-strikes/)
-- [Golpe Divino](/compendium/rules/divine-strike/)
+- [Blessed Strikes](/compendium/rules/blessed-strikes/)
+- [Divine Strike](/compendium/rules/divine-strike/)
 
 ## Nível 17
 
-- [Ira da Ordem](/compendium/rules/order-s-wrath/)
+- [Order's Wrath](/compendium/rules/order-s-wrath/)

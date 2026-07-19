@@ -31,19 +31,19 @@ translation:
 
 ## Nível 3
 
-- [Investigador](/compendium/rules/inquisitive/)
-- [Ouvido para a Mentira](/compendium/rules/ear-for-deceit/)
-- [Olho para Detalhes](/compendium/rules/eye-for-detail/)
-- [Combate Sagaz](/compendium/rules/insightful-fighting/)
+- [Inquisitive](/compendium/rules/inquisitive/)
+- [Ear for Deceit](/compendium/rules/ear-for-deceit/)
+- [Eye for Detail](/compendium/rules/eye-for-detail/)
+- [Insightful Fighting](/compendium/rules/insightful-fighting/)
 
 ## Nível 9
 
-- [Olho Firme](/compendium/rules/steady-eye/)
+- [Steady Eye](/compendium/rules/steady-eye/)
 
 ## Nível 13
 
-- [Olho Infalível](/compendium/rules/unerring-eye/)
+- [Unerring Eye](/compendium/rules/unerring-eye/)
 
 ## Nível 17
 
-- [Olho para Fraquezas](/compendium/rules/eye-for-weakness/)
+- [Eye for Weakness](/compendium/rules/eye-for-weakness/)

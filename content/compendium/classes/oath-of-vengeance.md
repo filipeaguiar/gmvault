@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Juramento de Vingança](/compendium/rules/oath-of-vengeance/)
-- [Magias do Juramento de Vingança](/compendium/rules/oath-of-vengeance-spells/)
-- [Voto de Inimizade](/compendium/rules/vow-of-enmity/)
+- [Oath of Vengeance](/compendium/rules/oath-of-vengeance/)
+- [Oath of Vengeance Spells](/compendium/rules/oath-of-vengeance-spells/)
+- [Vow of Enmity](/compendium/rules/vow-of-enmity/)
 
 ## Nível 7
 
-- [Vingador Implacável](/compendium/rules/relentless-avenger/)
+- [Relentless Avenger](/compendium/rules/relentless-avenger/)
 
 ## Nível 15
 
-- [Alma de Vingança](/compendium/rules/soul-of-vengeance/)
+- [Soul of Vengeance](/compendium/rules/soul-of-vengeance/)
 
 ## Nível 20
 
-- [Anjo Vingador](/compendium/rules/avenging-angel/)
+- [Avenging Angel](/compendium/rules/avenging-angel/)

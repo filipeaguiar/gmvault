@@ -30,67 +30,67 @@ translation:
 
 ## Nível 1
 
-- Ordem Divina
-- Protetor
-- Conjuração
-- Taumaturgo
+- [Divine Order](/compendium/rules/divine-order/)
+- [Protector](/compendium/rules/protector/)
+- [Spellcasting](/compendium/rules/spellcasting/)
+- [Thaumaturge](/compendium/rules/thaumaturge/)
 
 ## Nível 2
 
-- Canalizar Divindade
-- Centelha Divina
-- Afastar Mortos-Vivos
+- [Channel Divinity](/compendium/rules/channel-divinity/)
+- [Divine Spark](/compendium/rules/divine-spark/)
+- [Turn Undead](/compendium/rules/turn-undead/)
 
 ## Nível 3
 
-- Subclasse do Clérigo
+- [Cleric Subclass](/compendium/rules/cleric-subclass/)
 
 ## Nível 4
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Cauterizar Mortos-Vivos
+- [Sear Undead](/compendium/rules/sear-undead/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 7
 
-- Golpes Abençoados
-- Golpe Divino
-- Conjuração Potente
+- [Blessed Strikes](/compendium/rules/blessed-strikes/)
+- [Divine Strike](/compendium/rules/divine-strike/)
+- [Potent Spellcasting](/compendium/rules/potent-spellcasting/)
 
 ## Nível 8
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 10
 
-- Intervenção Divina
+- [Divine Intervention](/compendium/rules/divine-intervention/)
 
 ## Nível 12
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 14
 
-- Golpes Abençoados Aprimorados
+- [Improved Blessed Strikes](/compendium/rules/improved-blessed-strikes/)
 
 ## Nível 16
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Intervenção Divina Maior
+- [Greater Divine Intervention](/compendium/rules/greater-divine-intervention/)

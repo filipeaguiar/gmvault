@@ -30,70 +30,70 @@ translation:
 
 ## Nível 1
 
-- Opções de Invocações Místicas
-- Invocações Místicas
-- Magia de Pacto
+- [Eldritch Invocation Options](/compendium/rules/eldritch-invocation-options/)
+- [Eldritch Invocations](/compendium/rules/eldritch-invocations/)
+- [Pact Magic](/compendium/rules/pact-magic/)
 
 ## Nível 2
 
-- Astúcia Mágica
+- [Magical Cunning](/compendium/rules/magical-cunning/)
 
 ## Nível 3
 
-- Subclasse de Bruxo
+- [Warlock Subclass](/compendium/rules/warlock-subclass/)
 
 ## Nível 4
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 6
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 8
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Contactar Patrono
+- [Contact Patron](/compendium/rules/contact-patron/)
 
 ## Nível 10
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 11
 
-- Arcano Místico
+- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
 
 ## Nível 12
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 13
 
-- Arcano Místico
+- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
 
 ## Nível 14
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 15
 
-- Arcano Místico
+- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
 
 ## Nível 16
 
-- Aumento de Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Arcano Místico
+- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Mestre Místico
+- [Eldritch Master](/compendium/rules/eldritch-master/)

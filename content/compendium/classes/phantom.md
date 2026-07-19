@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Fantasma](/compendium/rules/phantom/)
-- [Lamentos do Túmulo](/compendium/rules/wails-from-the-grave/)
-- [Sussurros dos Mortos](/compendium/rules/whispers-of-the-dead/)
+- [Phantom](/compendium/rules/phantom/)
+- [Wails from the Grave](/compendium/rules/wails-from-the-grave/)
+- [Whispers of the Dead](/compendium/rules/whispers-of-the-dead/)
 
 ## Nível 9
 
-- [Lembranças dos Falecidos](/compendium/rules/tokens-of-the-departed/)
+- [Tokens of the Departed](/compendium/rules/tokens-of-the-departed/)
 
 ## Nível 13
 
-- [Passo Fantasmagórico](/compendium/rules/ghost-walk/)
+- [Ghost Walk](/compendium/rules/ghost-walk/)
 
 ## Nível 17
 
-- [Amigo da Morte](/compendium/rules/death-s-friend/)
+- [Death's Friend](/compendium/rules/death-s-friend/)

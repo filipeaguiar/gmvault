@@ -31,17 +31,17 @@ translation:
 
 ## Nível 3
 
-- [Caminho do Furioso](/compendium/rules/path-of-the-berserker/)
-- [Frenesi](/compendium/rules/frenzy/)
+- [Path of the Berserker](/compendium/rules/path-of-the-berserker/)
+- [Frenzy](/compendium/rules/frenzy/)
 
 ## Nível 6
 
-- [Fúria Inconsequente](/compendium/rules/mindless-rage/)
+- [Mindless Rage](/compendium/rules/mindless-rage/)
 
 ## Nível 10
 
-- [Retaliação](/compendium/rules/retaliation/)
+- [Retaliation](/compendium/rules/retaliation/)
 
 ## Nível 14
 
-- [Presença Aterrorizante](/compendium/rules/intimidating-presence/)
+- [Intimidating Presence](/compendium/rules/intimidating-presence/)

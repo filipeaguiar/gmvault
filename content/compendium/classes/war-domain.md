@@ -31,15 +31,15 @@ translation:
 
 ## Nível 3
 
-- [Domínio da Guerra](/compendium/rules/war-domain/)
-- [Ataque Guiado](/compendium/rules/guided-strike/)
-- [Magias do Domínio da Guerra](/compendium/rules/war-domain-spells/)
-- [Sacerdote de Guerra](/compendium/rules/war-priest/)
+- [War Domain](/compendium/rules/war-domain/)
+- [Guided Strike](/compendium/rules/guided-strike/)
+- [War Domain Spells](/compendium/rules/war-domain-spells/)
+- [War Priest](/compendium/rules/war-priest/)
 
 ## Nível 6
 
-- [Bênção do Deus da Guerra](/compendium/rules/war-god-s-blessing/)
+- [War God's Blessing](/compendium/rules/war-god-s-blessing/)
 
 ## Nível 17
 
-- [Avatar da Batalha](/compendium/rules/avatar-of-battle/)
+- [Avatar of Battle](/compendium/rules/avatar-of-battle/)

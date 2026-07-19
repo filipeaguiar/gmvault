@@ -31,13 +31,25 @@ translation:
 
 ## Nível 2
 
-- [Círculo das Estrelas](/compendium/rules/circle-of-stars/)
-- [Mapa Estelar](/compendium/rules/star-map/)
-- [Forma Estrelada](/compendium/rules/starry-form/)
-- [Arqueiro](/compendium/rules/archer/)
-- [Cálice](/compendium/rules/chalice/)
-- [Dragão](/compendium/rules/dragon/)
+- [Circle of Stars](/compendium/rules/circle-of-stars/)
+- [Star Map](/compendium/rules/star-map/)
+- [Starry Form](/compendium/rules/starry-form/)
+- [Archer](/compendium/rules/archer/)
+- [Chalice](/compendium/rules/chalice/)
+- [Dragon](/compendium/rules/dragon/)
 
 ## Nível 3
 
-- [Círculo das Estrelas](/compendium/rules/circle-of-stars/)
+- [Circle of Stars](/compendium/rules/circle-of-stars/)
+
+## Nível 6
+
+- [Cosmic Omen](/compendium/rules/cosmic-omen/)
+
+## Nível 10
+
+- [Twinkling Constellations](/compendium/rules/twinkling-constellations/)
+
+## Nível 14
+
+- [Full of Stars](/compendium/rules/full-of-stars/)

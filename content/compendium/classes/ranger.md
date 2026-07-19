@@ -30,83 +30,83 @@ translation:
 
 ## Nível 1
 
-- Inimigo Predileto
-- Conjuração
-- Maestria de Arma
+- [Favored Enemy](/compendium/rules/favored-enemy/)
+- [Spellcasting](/compendium/rules/spellcasting/)
+- [Weapon Mastery](/compendium/rules/weapon-mastery/)
 
 ## Nível 2
 
-- Explorador Habilidoso
-- Estilo de Luta
+- [Deft Explorer](/compendium/rules/deft-explorer/)
+- [Fighting Style](/compendium/rules/fighting-style/)
 
 ## Nível 3
 
-- Subclasse de Ranger
+- [Ranger Subclass](/compendium/rules/ranger-subclass/)
 
 ## Nível 4
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 5
 
-- Ataque Extra
+- [Extra Attack](/compendium/rules/extra-attack/)
 
 ## Nível 6
 
-- Vagante
+- [Roving](/compendium/rules/roving/)
 
 ## Nível 7
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 8
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 9
 
-- Especialização
+- [Especialização](/compendium/rules/expertise/)
 
 ## Nível 10
 
-- Incansável
+- [Tireless](/compendium/rules/tireless/)
 
 ## Nível 11
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 12
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 13
 
-- Caçador Implacável
+- [Relentless Hunter](/compendium/rules/relentless-hunter/)
 
 ## Nível 14
 
-- Véu da Natureza
+- [Nature's Veil](/compendium/rules/nature-s-veil/)
 
 ## Nível 15
 
-- Característica de Subclasse
+- [Característica de Subclasse](/compendium/rules/subclass-feature/)
 
 ## Nível 16
 
-- Aumento no Valor de Atributo
+- [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/)
 
 ## Nível 17
 
-- Caçador Preciso
+- [Precise Hunter](/compendium/rules/precise-hunter/)
 
 ## Nível 18
 
-- Sentidos Selvagens
+- [Feral Senses](/compendium/rules/feral-senses/)
 
 ## Nível 19
 
-- Dádiva Épica
+- [Epic Boon](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- Matador de Inimigos
+- [Foe Slayer](/compendium/rules/foe-slayer/)

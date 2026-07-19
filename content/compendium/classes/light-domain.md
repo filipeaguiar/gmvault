@@ -31,15 +31,15 @@ translation:
 
 ## Nível 3
 
-- [Domínio da Luz](/compendium/rules/light-domain/)
-- [Magias do Domínio da Luz](/compendium/rules/light-domain-spells/)
-- [Radiância do Amanhecer](/compendium/rules/radiance-of-the-dawn/)
-- [Lampejo Protetor](/compendium/rules/warding-flare/)
+- [Light Domain](/compendium/rules/light-domain/)
+- [Light Domain Spells](/compendium/rules/light-domain-spells/)
+- [Radiance of the Dawn](/compendium/rules/radiance-of-the-dawn/)
+- [Warding Flare](/compendium/rules/warding-flare/)
 
 ## Nível 6
 
-- [Lampejo Protetor Aprimorado](/compendium/rules/improved-warding-flare/)
+- [Improved Warding Flare](/compendium/rules/improved-warding-flare/)
 
 ## Nível 17
 
-- [Coroa de Luz](/compendium/rules/corona-of-light/)
+- [Corona of Light](/compendium/rules/corona-of-light/)

@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Formas do Círculo](/compendium/rules/circle-forms/)
-- [Círculo da Lua](/compendium/rules/circle-of-the-moon/)
-- [Magias do Círculo da Lua](/compendium/rules/circle-of-the-moon-spells/)
+- [Circle Forms](/compendium/rules/circle-forms/)
+- [Circle of the Moon](/compendium/rules/circle-of-the-moon/)
+- [Circle of the Moon Spells](/compendium/rules/circle-of-the-moon-spells/)
 
 ## Nível 6
 
-- [Formas do Círculo Aprimoradas](/compendium/rules/improved-circle-forms/)
+- [Improved Circle Forms](/compendium/rules/improved-circle-forms/)
 
 ## Nível 10
 
-- [Passo do Luar](/compendium/rules/moonlight-step/)
+- [Moonlight Step](/compendium/rules/moonlight-step/)
 
 ## Nível 14
 
-- [Forma Lunar](/compendium/rules/lunar-form/)
+- [Lunar Form](/compendium/rules/lunar-form/)

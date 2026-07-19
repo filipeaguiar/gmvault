@@ -32,16 +32,16 @@ translation:
 ## Nível 3
 
 - [Path of the Beast](/compendium/rules/path-of-the-beast/)
-- [Forma da Besta](/compendium/rules/form-of-the-beast/)
+- [Form of the Beast](/compendium/rules/form-of-the-beast/)
 
 ## Nível 6
 
-- [Alma Bestial](/compendium/rules/bestial-soul/)
+- [Bestial Soul](/compendium/rules/bestial-soul/)
 
 ## Nível 10
 
-- [Fúria Infecciosa](/compendium/rules/infectious-fury/)
+- [Infectious Fury](/compendium/rules/infectious-fury/)
 
 ## Nível 14
 
-- [Convocar a Caçada](/compendium/rules/call-the-hunt/)
+- [Call the Hunt](/compendium/rules/call-the-hunt/)

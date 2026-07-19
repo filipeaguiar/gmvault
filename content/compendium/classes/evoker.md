@@ -31,18 +31,18 @@ translation:
 
 ## Nível 3
 
-- [Evocador](/compendium/rules/evoker/)
-- [Estudioso de Evocação](/compendium/rules/evocation-savant/)
-- [Truque Potente](/compendium/rules/potent-cantrip/)
+- [Evoker](/compendium/rules/evoker/)
+- [Evocation Savant](/compendium/rules/evocation-savant/)
+- [Potent Cantrip](/compendium/rules/potent-cantrip/)
 
 ## Nível 6
 
-- [Esvaziar Magias](/compendium/rules/sculpt-spells/)
+- [Sculpt Spells](/compendium/rules/sculpt-spells/)
 
 ## Nível 10
 
-- [Evocação Potencializada](/compendium/rules/empowered-evocation/)
+- [Empowered Evocation](/compendium/rules/empowered-evocation/)
 
 ## Nível 14
 
-- [Sobrecarregar](/compendium/rules/overchannel/)
+- [Overchannel](/compendium/rules/overchannel/)

@@ -31,22 +31,22 @@ translation:
 
 ## Nível 2
 
-- [/compendium/rules/circle-of-the-shepherd/](/compendium/rules/circle-of-the-shepherd/)
-- [Fala das Matas](/compendium/rules/speech-of-the-woods/)
-- [Totem Espiritual](/compendium/rules/spirit-totem/)
+- [Circle of the Shepherd](/compendium/rules/circle-of-the-shepherd/)
+- [Speech of the Woods](/compendium/rules/speech-of-the-woods/)
+- [Spirit Totem](/compendium/rules/spirit-totem/)
 
 ## Nível 3
 
-- [/compendium/rules/circle-of-the-shepherd/](/compendium/rules/circle-of-the-shepherd/)
+- [Circle of the Shepherd](/compendium/rules/circle-of-the-shepherd/)
 
 ## Nível 6
 
-- [Invocador Poderoso](/compendium/rules/mighty-summoner/)
+- [Mighty Summoner](/compendium/rules/mighty-summoner/)
 
 ## Nível 10
 
-- [Espírito Guardião](/compendium/rules/guardian-spirit/)
+- [Guardian Spirit](/compendium/rules/guardian-spirit/)
 
 ## Nível 14
 
-- [Invocações Fiéis](/compendium/rules/faithful-summons/)
+- [Faithful Summons](/compendium/rules/faithful-summons/)
