@@ -375,6 +375,191 @@ html.vtt-iframe .char-tab-content {
   align-items: center;
 }
 
+/* Grimoire hierarchy */
+.grimoire-intro {
+  margin-bottom: 18px !important;
+  padding: 16px 18px;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--card-bg), color-mix(in srgb, var(--card-bg) 88%, var(--primary-color) 12%));
+}
+
+.grimoire-intro h3 {
+  margin: 3px 0 0;
+  font-size: 1.45rem;
+}
+
+.spell-manager {
+  gap: 20px;
+}
+
+.spell-manager-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 15px 17px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+.spell-manager-title-block h3 {
+  margin: 2px 0 3px;
+  font-size: 1.18rem;
+}
+
+.spell-manager-summary {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.spell-manager-counters {
+  justify-content: flex-end;
+}
+
+.spell-counter {
+  background: color-mix(in srgb, var(--bg-card) 82%, var(--primary-color) 18%);
+}
+
+.spell-manager-toolbar {
+  padding: 13px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--card-bg) 94%, var(--primary-color) 6%);
+}
+
+.spell-search-block {
+  flex: 1 1 240px;
+}
+
+.spell-search-label,
+.spell-filter-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.spell-search-input {
+  width: 100%;
+}
+
+.spell-collection {
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 9px;
+  background: var(--card-bg);
+}
+
+.spell-ready-section {
+  border-left: 4px solid #4c9f70;
+}
+
+.spell-management-section {
+  border-left: 4px solid var(--primary-color);
+}
+
+.spell-collection-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.spell-collection-heading h4 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.spell-collection-heading p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  text-align: right;
+}
+
+.spell-level-group {
+  margin-top: 15px;
+}
+
+.spell-level-group:first-child {
+  margin-top: 0;
+}
+
+.spell-level-group > h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 9px;
+  color: var(--primary-color);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.spell-level-group > h5::after {
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+  content: "";
+}
+
+.spell-cards {
+  gap: 10px;
+}
+
+.spell-manager .spell-card {
+  min-width: 0;
+  padding: 12px;
+  border-left: 3px solid transparent;
+  box-shadow: none;
+}
+
+.spell-manager .ready-spell-item {
+  border-left-color: #4c9f70;
+}
+
+.spell-manager .management-spell-item {
+  border-left-color: var(--primary-color);
+}
+
+.spell-card-title-row {
+  margin-bottom: 8px;
+}
+
+.spell-card-name {
+  color: var(--text-color);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 640px) {
+  .spell-manager-header {
+    grid-template-columns: 1fr;
+  }
+
+  .spell-manager-counters {
+    justify-content: flex-start;
+  }
+
+  .spell-collection-heading {
+    display: block;
+  }
+
+  .spell-collection-heading p {
+    margin-top: 4px;
+    text-align: left;
+  }
+}
+
 .spell-search-input {
   flex: 1 1 260px;
   min-width: 220px;
