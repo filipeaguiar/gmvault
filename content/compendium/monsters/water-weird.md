@@ -2,7 +2,7 @@
 title: Water Weird
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o conteúdo que devo traduzir.
 tags:

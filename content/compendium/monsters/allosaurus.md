@@ -2,7 +2,7 @@
 title: Allosaurus
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: 'Aqui está a tradução revisada do draft importado do 5e.tools:
 

@@ -2,7 +2,7 @@
 title: Kenku
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: "Invocar Espírito Dracônico  \n5º nível, conjuração"
 tags:

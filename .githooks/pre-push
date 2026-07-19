@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Publica drafts do compêndio antes de validar o push.
+# Alterações feitas por um hook não pertencem ao commit que já está sendo enviado;
+# por isso o push é interrompido quando houver arquivos atualizados.
+
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+echo "Pré-push: publicando documentos do compêndio..."
+python3 scripts/publish_compendium.py --apply
+
+if ! git diff --quiet -- content/compendium; then
+  echo
+  echo "Documentos do compêndio foram marcados com draft: false."
+  echo "Inclua as alterações no commit e execute o push novamente:"
+  echo "  git add content/compendium && git commit --amend --no-edit"
+  exit 1
+fi
+
+echo "Pré-push: verificando build de produção..."
+hugo --gc --minify --quiet

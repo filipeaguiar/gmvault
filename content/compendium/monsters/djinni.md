@@ -2,7 +2,7 @@
 title: Djinni
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: 'Parece que você mencionou um rascunho importado do 5e.tools (MM) para tradução e revisão editorial, mas não incluiu o texto a ser traduzido.
 

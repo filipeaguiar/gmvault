@@ -2,7 +2,7 @@
 title: Beholder
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: '```pcre
 

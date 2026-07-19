@@ -2,7 +2,7 @@
 title: Shambling Mound
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: '```markdown
 

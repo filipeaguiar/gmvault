@@ -2,7 +2,7 @@
 title: Behir
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Parece que você enviou um rascunho vazio para tradução. Por favor, cole o texto que deseja que eu traduza e revise editorialmente para que eu possa aplicar as regras de terminologia obrigatória e preservar os elementos protegidos conforme solicitado.
 tags:

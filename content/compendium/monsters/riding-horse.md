@@ -2,7 +2,7 @@
 title: Riding Horse
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Estou preparado para traduzir e revisar editorialmente o rascunho importado do 5e.tools (MM) conforme solicitado. Por favor, forneça o texto a ser processado.
 tags:

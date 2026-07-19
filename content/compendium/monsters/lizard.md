@@ -2,7 +2,7 @@
 title: Lizard
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: 'Personagens ficam presos em marcas de explosão, etc, nas paredes. Em muitos lugares, o piso está rachado ou desabado, e crateras se formaram.
 

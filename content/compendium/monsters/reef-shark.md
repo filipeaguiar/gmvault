@@ -2,7 +2,7 @@
 title: Reef Shark
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Parece que você descreveu o que precisa ser feito (um draft importado do 5e.tools), mas não incluiu o texto a ser traduzido. Por favor, cole o conteúdo que você gostaria que eu traduzisse e revisasse editorialmente.
 tags:

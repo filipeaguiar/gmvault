@@ -2,7 +2,7 @@
 title: Giant Lizard
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: "```yaml\nname: Povo Miúdo Astuto\nsize: Pequeno\ntype: humanoide\nsubtype: anão\nalignment: qualquer\nac: []\nhp:\n  formula: 7\n  average: 7\nspeed:\n  walk: 25\nstats: [8, 14, 10, 14, 14, 12]\nsaves:\n  - dex: +4\n  - wis: +4\nskillsaves:\n  - perception: +4\n  - stealth: +6\n  - investigation: +4\n  - insight: +4\ndamage_vulnerabilities: []\ndamage_resistances: []\ndamage_immunities: []\ncondition_immunities: []\nsenses:\n  darkvision: 60\n  passivePerception: 14\nlanguages: Comum, Anão\ncr: 2\nspellcasting:\n  spellcastingType: arcane\n  level: 4\n  ability: int\n  spells:\n    - \"Truque: [[spell|Prestidigitação]], [[spell|Luz]]\"\n    - \"1º (3 espaços): [[spell|Mísseis Mágicos]], [[spell|Enfeitiçar Pessoa]], [[spell|Sono]]\"\n    - \"2º (2 espaços): [[spell|Acalmar Emoções]], [[spell|Invisibilidade]], [[spell|Detectar Pensamentos]]\"\ntraits:\n  - name: Astúcia\n    desc: \"Ação Bônus: O povo miúdo pode usar Desengajar ou Esconder.\"\nactions:\n  - name: Adaga\n    desc:\
   \ \"Ataque Corpo a Corpo ou à Distância: +4 para atingir, alcance 1,5 m ou distância 6/18 m, um alvo. Dano: 4 (1d4 + 2) de dano perfurante.\"\nattachedSpells:\n  - detectar pensamentos\n  - acalmar emoções\n  - invisibilidade\n  - enfeitiçar pessoa\n  - mísseis mágicos\n  - sono\nenvironment: []\nsoundClip: null\nimag"

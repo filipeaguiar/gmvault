@@ -2,7 +2,7 @@
 title: Storm Giant
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Por favor, me envie o texto que você gostaria que eu traduzisse.
 tags:

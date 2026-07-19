@@ -2,7 +2,7 @@
 title: Marid
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: 'Entendido! Estou pronto para atuar como tradutor editorial de D&D 5e para português do Brasil.
 

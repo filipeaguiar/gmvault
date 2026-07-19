@@ -2,7 +2,7 @@
 title: Merfolk
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Estou pronto para ajudar com a tradução e revisão editorial do rascunho importado do 5e.tools (Monster Manual). Por favor, cole o texto que precisa ser traduzido.
 tags:

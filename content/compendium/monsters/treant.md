@@ -2,7 +2,7 @@
 title: Treant
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Nenhum conteúdo para tradução foi fornecido. Por favor, inclua o texto do rascunho importado do 5e.tools (MM).
 tags:

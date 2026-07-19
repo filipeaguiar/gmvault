@@ -2,7 +2,7 @@
 title: Ettin
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: O conteúdo do rascunho não foi fornecido. Por favor, insira o texto do rascunho do 5e.tools (MM) que precisa ser traduzido e revisado editorialmente para que eu possa realizar a tradução conforme as diretrizes especificadas.
 tags:

@@ -2,7 +2,7 @@
 title: Fomorian
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Rascunho importado de 5e.tools (MM). Requer tradução e revisão editorial.
 tags:

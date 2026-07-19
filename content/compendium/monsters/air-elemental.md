@@ -2,7 +2,7 @@
 title: Air Elemental
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Não recebi nenhum texto para traduzir. Por favor, envie o conteúdo do rascunho que você precisa que seja traduzido e revisado editorialmente. Assim que você me enviar o texto, poderei aplicar as traduções obrigatórias, proteger nomes próprios como "5e.tools", e evitar os termos proibidos.
 tags:

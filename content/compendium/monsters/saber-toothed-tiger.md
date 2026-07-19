@@ -2,7 +2,7 @@
 title: Saber-Toothed Tiger
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: "Vejo que você enviou um rascunho importado do 5e.tools (Manual dos Monstros) e precisa de tradução e revisão editorial.\n\nNo entanto, a mensagem contém apenas a linha de metadados — o conteúdo real do monstro ou da entrada não foi incluído. \n\nPor favor, cole o texto completo que precisa ser traduzido para que eu possa realizar o trabalho."
 tags:

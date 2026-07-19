@@ -2,7 +2,7 @@
 title: Koi Prawn
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Por favor, forneça o rascunho para tradução.
 tags:

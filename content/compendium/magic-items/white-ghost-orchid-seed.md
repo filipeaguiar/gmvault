@@ -2,7 +2,7 @@
 title: White Ghost Orchid Seed
 params:
   kind: magic_item
-draft: true
+draft: false
 weight: 10
 summary: 'Mesa de Jogo Abundante
 

@@ -2,7 +2,7 @@
 title: Haint
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Entendido. Aguardo o texto original extraído do 5e.tools (JTTRC) para realizar a tradução e a revisão editorial conforme as regras estabelecidas.
 tags:

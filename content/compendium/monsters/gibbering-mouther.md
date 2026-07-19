@@ -2,7 +2,7 @@
 title: Gibbering Mouther
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Por favor, forneça o texto que você gostaria que eu traduzisse. Estou pronto para realizar a tradução e revisão editorial do conteúdo importado do 5e.tools (MM) assim que o receber.
 tags:

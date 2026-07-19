@@ -2,7 +2,7 @@
 title: Swarm of Poisonous Snakes
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Magos são conjuradores arcanos poderosos, estudiosos que dominam os segredos da magia através de estudo e prática. Embora compartilhem muitas características com os magos, os Magos representam uma categoria mais ampla de praticantes arcanos que podem incluir feiticeiros, bruxos e outros conjuradores.
 tags:

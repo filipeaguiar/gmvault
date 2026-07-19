@@ -2,7 +2,7 @@
 title: Ghoul
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Entendido. Por favor, envie o texto importado de 5e.tools para que eu possa realizar a tradução e a revisão editorial conforme solicitado.
 tags:

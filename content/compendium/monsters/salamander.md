@@ -2,7 +2,7 @@
 title: Salamander
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Não foi fornecido texto para tradução. Por favor, envie o conteúdo do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução e revisão editorial.
 tags:

@@ -2,7 +2,7 @@
 title: Skeleton
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Entendido! Estou pronto para traduzir e revisar editorialmente o rascunho importado do 5e.tools. Por favor, envie o texto que precisa ser trabalhado, e aplicarei as regras de terminologia, estilo e proteção de nomes próprios conforme solicitado.
 tags:

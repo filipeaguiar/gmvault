@@ -2,7 +2,7 @@
 title: Wraith
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Claro. Por favor, forneça o texto do rascunho importado de 5e.tools (MM) para que eu possa realizar a tradução e a revisão editorial conforme as regras especificadas.
 tags:

@@ -2,7 +2,7 @@
 title: Whistler
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Não há conteúdo para traduzir.
 tags:

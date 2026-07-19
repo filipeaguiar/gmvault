@@ -2,7 +2,7 @@
 title: Young Red Dragon
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Entendido. Por favor, forneça o texto a ser traduzido. Estou pronto para aplicar as regras de tradução e terminologia especificadas.
 tags:

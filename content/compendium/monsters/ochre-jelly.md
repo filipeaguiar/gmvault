@@ -2,7 +2,7 @@
 title: Ochre Jelly
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Por favor, forneça o texto que você deseja que eu traduza e revise editorialmente. Estou pronto para aplicar as regras de tradução obrigatória, preservar toda a formatação e terminologia protegida, e evitar as saídas proibidas. Aguardo o conteúdo do rascunho importado do 5e.tools.
 tags:

@@ -2,7 +2,7 @@
 title: Giant Shark
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Desculpe, não recebi nenhum texto para traduzir. Por favor, forneça o texto do rascunho importado do 5e.tools (MM) para que eu possa realizar a tradução editorial para o português do Brasil conforme suas instruções.
 tags:

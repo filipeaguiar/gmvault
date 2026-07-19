@@ -2,7 +2,7 @@
 title: Rogue
 params:
   kind: class
-draft: true
+draft: false
 weight: 10
 summary: Rascunho importado do 5e.tools (XPHB). Requer tradução e revisão editorial.
 tags:

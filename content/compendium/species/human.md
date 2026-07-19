@@ -2,7 +2,7 @@
 title: Human
 params:
   kind: species
-draft: true
+draft: false
 weight: 10
 summary: Não recebi o texto a ser traduzido. Por favor, forneça o conteúdo do rascunho importado do 5e.tools (XPHB) para que eu possa realizar a tradução e a revisão editorial conforme as diretrizes estabelecidas. Estou preparado para aplicar toda a terminologia obrigatória e preservar os elementos protegidos assim que o material for disponibilizado.
 tags:

@@ -2,7 +2,7 @@
 title: Adult Gold Dragon
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Entendido! Estou pronto para traduzir e revisar editorialmente o rascunho importado do 5e.tools (Monster Manual). Por favor, cole o texto a ser trabalhado.
 tags:

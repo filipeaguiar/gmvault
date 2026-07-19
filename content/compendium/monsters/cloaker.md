@@ -2,7 +2,7 @@
 title: Cloaker
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Por favor, forneça o texto do rascunho importado do 5e.tools (Monster Manual) que você deseja que eu traduza e revise editorialmente. Estou pronto para processar o conteúdo assim que você compartilhá-lo.
 tags:

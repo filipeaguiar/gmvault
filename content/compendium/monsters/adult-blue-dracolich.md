@@ -2,7 +2,7 @@
 title: Adult Blue Dracolich
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: 'Ilustração de David Auden Nash
 

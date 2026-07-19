@@ -2,7 +2,7 @@
 title: Commoner
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: 'Parece que você enviou apenas a instrução de contexto, sem o texto do rascunho importado do 5e.tools (MM) para eu traduzir e revisar editorialmente.
 

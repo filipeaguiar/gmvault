@@ -2,7 +2,7 @@
 title: Biza's Breath
 params:
   kind: magic_item
-draft: true
+draft: false
 weight: 10
 summary: 'Tradição do Corpo Sagrado
 

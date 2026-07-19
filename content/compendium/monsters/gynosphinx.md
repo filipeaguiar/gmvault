@@ -2,7 +2,7 @@
 title: Gynosphinx
 params:
   kind: monster
-draft: true
+draft: false
 weight: 10
 summary: Encaminhe o rascunho do MM importado do 5e.tools que precisa ser traduzido e revisado.
 tags:

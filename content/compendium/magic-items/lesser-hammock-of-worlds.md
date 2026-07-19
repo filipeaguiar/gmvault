@@ -2,7 +2,7 @@
 title: Lesser Hammock of Worlds
 params:
   kind: magic_item
-draft: true
+draft: false
 weight: 10
 summary: Rascunho importado do 5e.tools (JTTRC). Requer tradução e revisão editorial.
 tags:
