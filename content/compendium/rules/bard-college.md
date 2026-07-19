@@ -1,0 +1,13 @@
+---
+title: "Bard College"
+type: "rule"
+draft: false
+weight: 10
+tags:
+  - compendio
+  - classe
+visibility: "public"
+status: "draft"
+---
+
+At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level.
