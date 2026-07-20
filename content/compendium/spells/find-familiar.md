@@ -23,6 +23,7 @@ spell_info:
   cast_time: 1 hour
   range: 10 feet
   components: V, S, M (burning incense worth 10+ GP, which the spell consumes)
+  ritual: true
   duration: Instantaneous
   level_number: 1
   attack_type: null

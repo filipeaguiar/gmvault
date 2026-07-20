@@ -23,6 +23,7 @@ spell_info:
   cast_time: 1 action
   range: 60 feet
   components: V, S, M (a bit of string and of wood)
+  ritual: true
   duration: 1 hour
   level_number: 1
   attack_type: null

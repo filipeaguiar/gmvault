@@ -23,6 +23,7 @@ spell_info:
   cast_time: 1 action
   range: Self
   components: V, S
+  ritual: true
   duration: 10 minute
   level_number: 1
   attack_type: null

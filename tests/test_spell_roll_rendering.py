@@ -37,6 +37,7 @@ def test_character_spell_headers_render_only_usable_rolls():
                 "level": "Cantrip",
                 "level_number": 0,
                 "attack_type": "ranged",
+                "components": "V, S",
                 "rolls": [
                     {
                         "kind": "damage",
@@ -103,7 +104,13 @@ def test_character_spell_headers_render_only_usable_rolls():
         write_spell(
             spells_dir / "mage-armor.md",
             "Mage Armor",
-            {"level": "1st level", "level_number": 1, "rolls": []},
+            {
+                "level": "1st level",
+                "level_number": 1,
+                "components": "V, S, M (a bit of fleece)",
+                "ritual": True,
+                "rolls": [],
+            },
         )
 
         character_path = (
@@ -208,6 +215,10 @@ def test_character_spell_headers_render_only_usable_rolls():
     assert re.search(r'data-roll-notation="?1d4\+1"?', html)
     assert "3d4+3" not in html
     assert "Mage Armor —" not in html
+    assert "Componentes:</strong> V, S" in html
+    assert "Componentes:</strong> V, S, M (a bit of fleece)" in html
+    assert "<strong>Ritual</strong>" in html
+    assert ">Compêndio</a>" not in html
 
 
 def test_spell_manager_moves_existing_cards_without_rebuilding_roll_controls():

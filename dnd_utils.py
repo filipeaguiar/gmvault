@@ -1574,6 +1574,7 @@ def fetch_from_5etools(kind, english_name):
             "cast_time": cast_time,
             "range": range_str,
             "components": components_str,
+            "ritual": bool((found_data.get("meta") or {}).get("ritual")),
             "duration": duration_str,
             **extract_spell_mechanics(found_data),
         }

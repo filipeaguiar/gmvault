@@ -9,6 +9,10 @@
 {{- $canPrepare := $spell.can_prepare | default false -}}
 {{- $ready := $spell.ready | default false -}}
 {{- $origin := $spell.origin | default $spell.source | default "class" -}}
+{{- $spellInfo := dict -}}
+{{- if $spell.canonical -}}
+  {{- $spellInfo = $spell.page.Params.spell_info | default dict -}}
+{{- end -}}
 
 <article class="spell-card char-feature-card{{ if $ready }} ready-spell-item{{ else }} management-spell-item{{ end }}{{ if $prepared }} is-prepared{{ end }}{{ if $alwaysPrepared }} is-always-prepared{{ end }}{{ if $known }} is-known{{ end }}{{ if not $canPrepare }} is-readonly{{ end }}"
   data-spell-ref="{{ $ref }}"
@@ -29,8 +33,9 @@
 
   <div class="spell-card-meta">
     {{ with $spell.usage }}<span class="spell-meta-item"><strong>Uso:</strong> {{ . }}</span>{{ end }}
+    {{ with $spellInfo.components }}<span class="spell-meta-item"><strong>Componentes:</strong> {{ . }}</span>{{ end }}
+    {{ if $spellInfo.ritual }}<span class="spell-meta-item"><strong>Ritual</strong></span>{{ end }}
     {{ with $spell.source }}<span class="spell-meta-item"><strong>Fonte:</strong> {{ . }}</span>{{ end }}
-    {{ with $ref }}<a class="spell-meta-item spell-ref-link" href="{{ . }}">Compêndio</a>{{ end }}
   </div>
 
   <div class="spell-card-actions">

@@ -629,7 +629,9 @@ def build_document(entry: dict[str, Any], record: CatalogRecord, catalog: FiveET
             "level": "Cantrip" if level == 0 else f"{level}{'st' if level == 1 else 'nd' if level == 2 else 'rd' if level == 3 else 'th'} level",
             "school": schools.get(entity.get("school"), entity.get("school", "")),
             "cast_time": format_time(entity), "range": format_range(entity),
-            "components": format_components(entity), "duration": format_duration(entity),
+            "components": format_components(entity),
+            "ritual": bool((entity.get("meta") or {}).get("ritual")),
+            "duration": format_duration(entity),
             **extract_spell_mechanics(entity),
         }
     elif kind == "monster":

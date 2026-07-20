@@ -15,6 +15,7 @@ spell_info:
   cast_time: "1 ação"
   range: "Pessoal"
   components: "V, S"
+  ritual: false
   duration: "1 minuto"
   attack_type: null
   damage_types: []
