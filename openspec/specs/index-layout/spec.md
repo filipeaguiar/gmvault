@@ -63,6 +63,13 @@ Index pages rendered from player/public contexts SHALL omit generated links to p
 - **WHEN** an index page has GM visibility
 - **THEN** generated index navigation MAY include GM child pages
 
+### Requirement: Class and subclass layouts resolve related feature pages
+Class and subclass layouts SHALL resolve feature URLs from their rendered progression content through `site.GetPage` and use a shared inline-description presentation.
+
+#### Scenario: Layout renders a class progression
+- **WHEN** the class layout encounters an internal compendium feature URL in the progression
+- **THEN** it SHALL delegate presentation to the shared inline-description partial
+
 ### Requirement: Adventure indexes list simplified sessions
 Adventure pages SHALL list direct child and nested session child scene pages.
 

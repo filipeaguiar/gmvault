@@ -12,6 +12,8 @@
 
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $classProgressionCss := resources.Get "css/class-progression-inline.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $classProgressionCss.RelPermalink }}" integrity="{{ $classProgressionCss.Data.Integrity }}">
   
   {{ if eq (partial "helpers/kind.html" .) "character" }}
   {{ $charCss := resources.Get "css/character-sheet.css" | minify | fingerprint }}

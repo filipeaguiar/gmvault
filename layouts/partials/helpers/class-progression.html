@@ -1,6 +1,7 @@
 {{- $page := .page -}}
 {{- $characterLevel := int .level -}}
 {{- $raw := $page.RawContent -}}
+{{- $pageVisibility := $page.Params.visibility | default "gm" -}}
 {{- $hasLevelHeadings := or (in $raw "## Nível ") (in $raw "### Nível ") (in $raw "## Level ") (in $raw "### Level ") -}}
 
 {{- if not $hasLevelHeadings -}}
@@ -25,8 +26,11 @@
         {{- if eq $featureRef $featureName }}{{ $featureRef = printf "/compendium/rules/%s/" ($featureName | urlize) }}{{ end -}}
         {{- $featurePage := site.GetPage $featureRef -}}
         {{- if and $featurePage $featurePage.RawContent -}}
-          {{- $featureTitle := or $featurePage.Params.titulo_pt_br $featurePage.Title $featureName -}}
-          {{- $state.Set "visible" (printf "%s\n\n### %s\n\n%s" ($state.Get "visible") $featureTitle $featurePage.RawContent) -}}
+          {{- $featureVisibility := $featurePage.Params.visibility | default "gm" -}}
+          {{- if or (not (in (slice "players" "public") $pageVisibility)) (ne $featureVisibility "gm") -}}
+            {{- $featureTitle := or $featurePage.Params.titulo_pt_br $featurePage.Title $featureName -}}
+            {{- $state.Set "visible" (printf "%s\n\n### [%s](%s)\n\n%s" ($state.Get "visible") $featureTitle $featureRef $featurePage.RawContent) -}}
+          {{- end -}}
         {{- else -}}
           {{- $state.Set "visible" (printf "%s\n%s" ($state.Get "visible") .) -}}
         {{- end -}}

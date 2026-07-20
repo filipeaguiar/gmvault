@@ -70,6 +70,8 @@ def test_class_progression_renders_structured_sections_and_subclass_links():
         assert "Nível 1" in html
         assert "Nível 2" in html
         assert "/gmvault/compendium/rules/rage/" in html
+        assert "Você pode imbuir-se" in html
+        assert "Maestria em Armas" in html
         assert "subclasses-section" in html
         assert "Test Subclass" in html
         assert "A test subclass summary." in html
@@ -105,4 +107,4 @@ def test_character_class_tab_hides_future_level_progression():
         html = (destination / "campaigns/journeys-through-the-radiant-citadel/characters/nyx-clair/index.html").read_text(encoding="utf-8")
         class_tab = re.search(r"<div id=tab-class.*?(?=<div id=tab-features)", html, re.DOTALL).group(0)
         assert "Nível 1" in class_tab
-        assert "Nível 2" not in class_tab
+        assert '<h2 id=nível-3>' not in class_tab

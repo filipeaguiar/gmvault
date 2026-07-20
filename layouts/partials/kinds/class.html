@@ -41,8 +41,8 @@
       <i class="ra ra-scroll-unfurled" aria-hidden="true"></i>
       <h2 id="class-progression-title">{{ or .Params.titulo_pt_br .Title }}</h2>
     </header>
-    <div class="class-body content-body class-progression-content">
-      {{ .Content }}
+    <div class="class-body content-body class-progression-content class-feature-descriptions">
+      {{ partial "helpers/class-progression.html" (dict "page" . "level" 99) }}
     </div>
   </section>
 

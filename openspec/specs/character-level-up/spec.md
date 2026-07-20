@@ -1,7 +1,7 @@
 # Character Level Up Specification
 
 ## Purpose
-Local XPHB character advancement.
+Define deterministic local character advancement for XPHB classes while preserving canonical compendium references and explicit player choices.
 
 ## Requirements
 ### Requirement: Local character level-up plan
