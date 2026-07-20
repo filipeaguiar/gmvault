@@ -629,6 +629,23 @@ html.vtt-iframe .char-tab-content {
   border-bottom: 1px solid var(--border-color);
 }
 
+.ready-spell-item .spell-card-header {
+  background: color-mix(in srgb, var(--card-bg) 88%, #4c9f70 12%);
+}
+
+.management-spell-item .spell-card-header {
+  background: color-mix(in srgb, var(--card-bg) 88%, var(--primary-color) 12%);
+}
+
+.ready-spell-item .spell-card-icon {
+  background: color-mix(in srgb, var(--card-bg) 78%, #4c9f70 22%);
+  color: #28714a;
+}
+
+.management-spell-item .spell-card-icon {
+  background: color-mix(in srgb, var(--card-bg) 78%, var(--primary-color) 22%);
+}
+
 .spell-card-icon {
   display: inline-grid;
   width: 32px;
