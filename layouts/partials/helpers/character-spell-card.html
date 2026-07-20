@@ -14,7 +14,7 @@
 {{- end -}}
 {{- $castTime := $spellInfo.cast_time | default $spell.usage -}}
 
-<article class="spell-card char-feature-card{{ if $ready }} ready-spell-item{{ else }} management-spell-item{{ end }}{{ if $prepared }} is-prepared{{ end }}{{ if $alwaysPrepared }} is-always-prepared{{ end }}{{ if $known }} is-known{{ end }}{{ if not $canPrepare }} is-readonly{{ end }}"
+<article class="spell-card char-feature-card{{ if $ready }} ready-spell-item{{ else }} management-spell-item{{ end }}{{ if gt ($level | int) 0 }} is-level-spell{{ end }}{{ if $prepared }} is-prepared{{ end }}{{ if $alwaysPrepared }} is-always-prepared{{ end }}{{ if $known }} is-known{{ end }}{{ if not $canPrepare }} is-readonly{{ end }}"
   data-spell-ref="{{ $ref }}"
   data-spell-key="{{ $spell.key }}"
   data-spell-name="{{ $name }}"

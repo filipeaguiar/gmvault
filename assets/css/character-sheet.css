@@ -594,6 +594,17 @@ html.vtt-iframe .char-tab-content {
   margin-top: 0;
 }
 
+.spell-level-card {
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, #3273a8 55%, var(--border-color));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--card-bg) 94%, #3273a8 6%);
+}
+
+.spell-level-card > h5 {
+  color: #3273a8;
+}
+
 .spell-level-group > h5 {
   display: flex;
   align-items: center;
@@ -622,6 +633,10 @@ html.vtt-iframe .char-tab-content {
   overflow: hidden;
   border-left: 1px solid var(--border-color);
   box-shadow: none;
+}
+
+.spell-manager .spell-card.is-level-spell {
+  border-color: #3273a8;
 }
 
 .spell-card-header {

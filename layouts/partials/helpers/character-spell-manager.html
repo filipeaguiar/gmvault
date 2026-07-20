@@ -87,7 +87,7 @@
     <div id="ready-spells-list" class="spell-level-groups">
       {{ range $level := $levels }}
         {{ $atLevel := where $ready "level" ($level | int) }}
-        <section class="spell-level-group{{ if not $atLevel }} is-empty{{ end }}" data-spell-level-group="{{ $level }}">
+        <section class="spell-level-group{{ if eq ($level | int) 0 }} spell-cantrip-group{{ else }} spell-level-card{{ end }}{{ if not $atLevel }} is-empty{{ end }}" data-spell-level-group="{{ $level }}">
           <h5>{{ index $levelNames (string $level) | default (printf "Nível %v" $level) }}</h5>
           <div class="spell-cards" data-spell-level-list="{{ $level }}">
             {{ range $atLevel }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
@@ -106,7 +106,7 @@
     <div id="management-spells-list" class="spell-level-groups">
       {{ range $level := $levels }}
         {{ $atLevel := where $management "level" ($level | int) }}
-        <section class="spell-level-group{{ if not $atLevel }} is-empty{{ end }}" data-spell-level-group="{{ $level }}">
+        <section class="spell-level-group{{ if eq ($level | int) 0 }} spell-cantrip-group{{ else }} spell-level-card{{ end }}{{ if not $atLevel }} is-empty{{ end }}" data-spell-level-group="{{ $level }}">
           <h5>{{ index $levelNames (string $level) | default (printf "Nível %v" $level) }}</h5>
           <div class="spell-cards" data-spell-level-list="{{ $level }}">
             {{ range $atLevel }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
