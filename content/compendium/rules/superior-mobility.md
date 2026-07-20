@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: dde1788e9df8b4c4
+titulo_pt_br: Mobilidade Superior
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 9th level, your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.
+No 9º nível, seu deslocamento aumenta em 3 metros. Se você tiver um deslocamento de escalada ou natação, esse aumento também se aplica a esse deslocamento.

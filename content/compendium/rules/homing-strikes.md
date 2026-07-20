@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: edf67a9d1d3e521f
+titulo_pt_br: Golpes Teleguiados
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-If you make an attack roll with your Psychic Blade and miss the target, you can roll one Psionic Energy Die and add the number rolled to the attack roll. If this causes the attack to hit, the die is expended.
+Se você fizer uma jogada de ataque com sua Lâmina Psíquica e errar o alvo, você pode rolar um Dado de Energia Psiônica e somar o número rolado à jogada de ataque. Se isso fizer com que o ataque acerte, o dado é gasto.

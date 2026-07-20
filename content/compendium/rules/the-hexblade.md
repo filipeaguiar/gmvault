@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,13 +17,20 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 1ed63f99eab4edf9
+titulo_pt_br: A Hexblade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You have made your pact with a mysterious entity from the Shadowfell—a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many Hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.
+Você fez seu pacto com uma entidade misteriosa do Shadowfell — uma força que se manifesta em armas mágicas sencientes esculpidas da matéria das sombras. A poderosa espada Blackrazor é a mais notável dessas armas, que foram espalhadas pelo multiverso ao longo das eras. A força sombria por trás dessas armas pode oferecer poder a bruxos que formam pactos com ela. Muitos bruxos Hexblade criam armas que emulam aquelas formadas no Shadowfell. Outros renunciam a tais armas, contentando-se em tecer a magia sombria desse plano em sua conjuração.
 
-Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with Hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.
+Porque a Rainha Corvo é conhecida por ter forjado a primeira dessas armas, muitos sábios especulam que ela e a força são a mesma, e que as armas, juntamente com os bruxos Hexblade, são ferramentas que ela usa para manipular eventos no Plano Material para seus fins inescrutáveis.
 
 
-### Expanded Spell List
+### Lista Ampliada de Magias
 
-The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.
+O Hexblade permite que você escolha de uma lista ampliada de magias quando aprende uma magia de bruxo. As magias a seguir são adicionadas à lista de magias do bruxo para você.

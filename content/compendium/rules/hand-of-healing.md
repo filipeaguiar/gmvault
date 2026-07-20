@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 85560fa23765371b
+titulo_pt_br: Mão Curativa
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-As a Magic action, you can expend 1 Focus Point to touch a creature and restore a number of Hit Points equal to a roll of your Martial Arts die plus your Wisdom modifier. When you use your Flurry of Blows, you can replace one of the Unarmed Strikes with a use of this feature without expending a Focus Point for the healing.
+Como uma Ação Mágica, você pode gastar 1 Ponto de Foco para tocar uma criatura e recuperar um número de Pontos de Vida igual a uma jogada do seu Dado de Artes Marciais mais seu modificador de Sabedoria. Quando você usa sua Rajada de Golpes, você pode substituir um dos Ataques Desarmados por um uso desta característica sem gastar um Ponto de Foco para a cura.

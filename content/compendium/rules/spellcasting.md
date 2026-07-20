@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: 19d3beaa0c756110
+titulo_pt_br: Conjuração
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You have learned to cast spells through your bardic arts. See 7 for the rules on spellcasting. The information below details how you use those rules with Bard spells, which appear in the Bard spell list later in the class's description.
+Você aprendeu a conjurar magias através de suas artes de bardo. Consulte o capítulo 7 para as regras de conjuração. As informações abaixo detalham como você usa essas regras com as magias de Bardo, que aparecem na lista de magias de Bardo adiante, na descrição da classe.

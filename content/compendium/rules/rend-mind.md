@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 6e8bd44f372bce89
+titulo_pt_br: Dilacerar Mente
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can sweep your Psychic Blades through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (8 plus your Dexterity modifier and Proficiency Bonus). If the save fails, the target has the Stunned condition for 1 minute. The Stunned target repeats the save at the end of each of its turns, ending the effect on itself on a success.
+Você pode varrer suas Lâminas Psíquicas pela mente de uma criatura. Quando você usa suas Lâminas Psíquicas para causar dano de Ataque Furtivo a uma criatura, você pode forçar o alvo a realizar um teste de resistência de Sabedoria (CD 8 + seu modificador de Destreza + seu Bônus de Proficiência). Se falhar no teste de resistência, o alvo fica com a condição Atordoado por 1 minuto. O alvo Atordoado repete o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si mesmo em caso de sucesso.
 
-Once you use this feature, you can't do so again until you finish a Long Rest unless you expend three Psionic Energy Dice (no action required) to restore your use of it.
+Uma vez que você usa esta característica, não pode usá-la novamente até terminar um Descanso Longo, a menos que você gaste três Dados de Energia Psíquica (sem necessidade de ação) para restaurar seu uso.

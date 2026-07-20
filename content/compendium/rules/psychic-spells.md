@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 8f125190cea4dc56
+titulo_pt_br: Magias Psíquicas
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.
+Quando você conjura uma magia de Bruxo que causa dano, você pode mudar o tipo de dano dela para Dano Psíquico. Além disso, quando você conjura uma magia de Bruxo que seja de Encantamento ou Ilusão, você pode fazê-lo sem Componentes Verbais ou Somáticos.

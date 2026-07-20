@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 301447f009ffc91b
+titulo_pt_br: Explosão Elemental
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-As a Magic action, you can expend 2 Focus Points to cause elemental energy to burst in a 20-foot-radius Sphere centered on a point within 120 feet of yourself. Choose a damage type: Acid, Cold, Fire, Lightning, or Thunder.
+Como uma Ação Mágica, você pode gastar 2 Pontos de Foco para fazer com que energia elemental irrompa em uma esfera de raio de 20 pés centralizada em um ponto a até 120 pés de você. Escolha um tipo de dano: ácido, frio, fogo, elétrico ou trovejante.
 
-Each creature in the Sphere must make a Dexterity saving throw. On a failed save, a creature takes damage of the chosen type equal to three rolls of your Martial Arts die. On a successful save, a creature takes half as much damage.
+Cada criatura na esfera deve fazer um teste de resistência de Destreza. Em caso de falha no teste de resistência, a criatura sofre dano do tipo escolhido igual a três jogadas do seu Dado de Artes Marciais. Em caso de sucesso no teste de resistência, a criatura sofre metade do dano.

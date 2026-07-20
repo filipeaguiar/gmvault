@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 8a1513165d810c67
+titulo_pt_br: Redirecionar Ataque
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you.
+Quando uma criatura erra você com uma jogada de ataque corpo a corpo, você pode gastar 1 ponto de ki como uma reação para fazer com que esse ataque atinja uma criatura à sua escolha, que não seja o atacante, que você possa ver e que esteja a até 5 pés de você.

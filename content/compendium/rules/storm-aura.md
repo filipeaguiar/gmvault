@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 812b57ced968ec78
+titulo_pt_br: Aura de Tempestade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.
+A partir do 3º nível, você emana uma aura tempestuosa e mágica enquanto está em fúria. A aura se estende por 10 pés a partir de você em todas as direções, mas não através de cobertura total.
 
-Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura's effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.
+Sua aura tem um efeito que é ativado quando você entra em fúria, e você pode ativar o efeito novamente em cada um de seus turnos como uma ação bônus. Escolha deserto, mar ou tundra. O efeito de sua aura depende do ambiente escolhido, conforme detalhado abaixo. Você pode mudar sua escolha de ambiente sempre que ganhar um nível nesta classe.
 
-If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.
+Se os efeitos de sua aura exigirem um teste de resistência, a CD é igual a 8 + seu bônus de proficiência + seu modificador de Constituição.

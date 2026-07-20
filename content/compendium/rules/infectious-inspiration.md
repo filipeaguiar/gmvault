@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 979c3a6d81ad1676
+titulo_pt_br: Inspiração Contagiante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-14th-level College of Eloquence feature
+Característica de 14º nível do Colégio da Eloquência
 
-When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.
+Quando você inspira alguém com sucesso, o poder de sua eloquência pode agora se espalhar para outra pessoa. Quando uma criatura a até 60 pés de você adiciona um de seus dados de Inspiração de Bardo a um teste de atributo, jogada de ataque ou teste de resistência dela e a jogada obtém sucesso, você pode usar sua reação para encorajar uma criatura diferente (que não seja você) que possa ouvi-lo dentro de 60 pés de você, concedendo a ela um dado de Inspiração de Bardo sem gastar nenhum de seus usos de Inspiração de Bardo.
 
-You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.
+Você pode usar esta reação um número de vezes igual ao seu modificador de Carisma (mínimo de uma vez) e recupera todos os usos gastos quando termina um descanso longo.

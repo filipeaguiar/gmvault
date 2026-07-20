@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: e58d13125408515a
+titulo_pt_br: Dádiva Elemental
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-6th-level Genie feature
+Característica de Gênio de 6º nível
 
-You begin to take on characteristics of your patron's kind. You now have resistance to a damage type determined by your patron's kind: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).
+Você começa a assumir características do tipo de seu patrono. Agora você tem resistência a um tipo de dano determinado pelo tipo de seu patrono: concussão (dao), trovejante (djinni), fogo (efreeti) ou frio (marid).
 
-In addition, as a bonus action, you can give yourself a flying speed of 30 feet that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+Além disso, como uma ação bônus, você pode conceder a si mesmo um deslocamento de voo de 30 pés que dura 10 minutos, durante os quais você pode pairar. Você pode usar esta ação bônus um número de vezes igual ao seu bônus de proficiência e recupera todos os usos gastos ao terminar um descanso longo.

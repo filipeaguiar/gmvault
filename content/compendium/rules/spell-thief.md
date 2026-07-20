@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: efc605e937c663ea
+titulo_pt_br: Ladrão de Magia
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.
+Você ganha a capacidade de roubar magicamente de outro conjurador o conhecimento de como conjurar uma magia.
 
-Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a Reaction to force the creature to make an Intelligence saving throw. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least level 1 and of a level you can cast (it doesn't need to be a Wizard spell). For the next 8 hours, you have the spell prepared. The creature can't cast it until the 8 hours have passed.
+Imediatamente após uma criatura conjurar uma magia que tenha você como alvo ou inclua você em sua área de efeito, você pode usar uma Reação para forçar a criatura a fazer um Teste de Resistência de Inteligência. A CD é igual à sua CD para Evitar Magia. Em caso de falha no teste de resistência, você anula o efeito da magia contra você e rouba o conhecimento da magia se ela for de pelo menos 1º círculo e de um círculo que você possa conjurar (não precisa ser uma magia de Mago). Pelas próximas 8 horas, você tem a magia preparada. A criatura não pode conjurá-la até que as 8 horas tenham passado.
 
-Once you steal a spell with this feature, you can't use this feature again until you finish a Long Rest.
+Depois de roubar uma magia com esta característica, você não pode usá-la novamente até terminar um Descanso Longo.

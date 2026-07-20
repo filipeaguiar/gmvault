@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: fbeae708cdcda046
+titulo_pt_br: 'Obscurecer (Custo: 3d6)'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.
+O alvo deve ser bem-sucedido em um Teste de Resistência de Destreza, ou terá a condição Cego até o final do próximo turno dela.

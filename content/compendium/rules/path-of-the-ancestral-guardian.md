@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: b6ab630f624e9426
+titulo_pt_br: Caminho do Guardião Ancestral
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger in the world as mighty spirits, who can guide and protect the living. When a barbarian who follows this path rages, the barbarian contacts the spirit world and calls on these guardian spirits for aid.
+Alguns bárbaros vêm de culturas que reverenciam seus ancestrais. Essas tribos ensinam que os guerreiros do passado permanecem no mundo como espíritos poderosos, que podem guiar e proteger os vivos. Quando um bárbaro que segue este caminho entra em Fúria, ele entra em contato com o mundo espiritual e invoca esses espíritos guardiões em seu auxílio.
 
-Barbarians who draw on their ancestral guardians can better fight to protect their tribes and their allies. In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell sagas of victories against terrible monsters and other fearsome rivals.
+Bárbaros que recorrem aos seus guardiões ancestrais podem lutar melhor para proteger suas tribos e seus aliados. Para consolidar os laços com seus guardiões ancestrais, os bárbaros que seguem este caminho cobrem-se com tatuagens elaboradas que celebram os feitos de seus ancestrais. Essas tatuagens contam sagas de vitórias contra monstros terríveis e outros rivais temíveis.

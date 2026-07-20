@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 01703d01c77ff5ed
+titulo_pt_br: Guerreiro dos Elementos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Wield Strikes and Bursts of Elemental Power
+Manipule Golpes e Explosões de Poder Elemental
 
-Warriors of the Elements tap into the power of the Elemental Planes. Harnessing their supernatural focus, these Monks momentarily tame the energy of the Elemental Chaos to empower themselves in and out of battle.
+Guerreiros dos Elementos acessam o poder dos Planos Elementais. Explorando seu foco sobrenatural, esses Monges domam momentaneamente a energia do Caos Elemental para fortalecer a si mesmos dentro e fora de batalha.

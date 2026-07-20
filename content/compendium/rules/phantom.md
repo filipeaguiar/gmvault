@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 7d17df5100fa1b5a
+titulo_pt_br: Fantasma
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Many rogues walk a fine line between life and death, risking their own lives and taking the lives of others. While adventuring on that line, some rogues discover a mystical connection to death itself. These rogues take knowledge from the dead and become immersed in negative energy, eventually becoming like ghosts. Thieves' guilds value them as highly effective information gatherers and spies.
+Muitos ladinos caminham na linha tênue entre a vida e a morte, arriscando suas próprias vidas e tirando as vidas de outros. Enquanto se aventuram nessa linha, alguns ladinos descobrem uma conexão mística com a própria morte. Esses ladinos extraem conhecimento dos mortos e mergulham em energia negativa, eventualmente se tornando como fantasmas. As guildas de ladrões os valorizam como coletores de informações e espiões altamente eficazes.
 
-Many shadar-kai of the Shadowfell are masters of these macabre techniques, and some are willing to teach this path. In places like Thay in the Forgotten Realms and Karrnath in Eberron, where many necromancers practice their craft, a Phantom can become a wizard's confidant and right hand. In temples of gods of death, the Phantom might work as an agent to track down those who try to cheat death and to recover knowledge that might otherwise be lost to the grave.
+Muitos shadar-kai da Shadowfell são mestres dessas técnicas macabras, e alguns estão dispostos a ensinar este caminho. Em lugares como Thay, nos Forgotten Realms, e Karrnath, em Eberron, onde muitos necromantes praticam seu ofício, um Fantasma pode se tornar o confidente e braço direito de um mago. Em templos de deuses da morte, o Fantasma pode trabalhar como um agente para rastrear aqueles que tentam enganar a morte e recuperar conhecimentos que de outra forma seriam perdidos para o túmulo.
 
-How did you discover this grim power? Did you sleep in a graveyard and awaken to your new abilities? Or did you cultivate them in a temple or thieves' guild dedicated to a deity of death?
+Como você descobriu esse poder sombrio? Você dormiu em um cemitério e despertou com suas novas habilidades? Ou as cultivou em um templo ou guilda de ladrões dedicada a uma divindade da morte?

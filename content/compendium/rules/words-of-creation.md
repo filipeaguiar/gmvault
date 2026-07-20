@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: 8c3c6935ba30682b
+titulo_pt_br: Palavras da Criação
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You have mastered two of the Words of Creation: the words of life and death. You therefore always have the Power Word Heal and Power Word Kill spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target.
+Você dominou duas das Palavras da Criação: as palavras da vida e da morte. Você, portanto, sempre tem as magias Palavra de Poder: Curar e Palavra de Poder: Matar preparadas. Quando você conjura qualquer uma dessas magias, você pode designar uma segunda criatura como alvo se ela estiver a até 3 metros do primeiro alvo.

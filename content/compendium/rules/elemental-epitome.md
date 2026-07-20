@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,21 +17,25 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 80053c954004c4ad
+titulo_pt_br: Epítome Elemental
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-While your Elemental Attunement is active, you also gain the following benefits.
+Enquanto sua Sintonia Elemental estiver ativa, você também recebe os seguintes benefícios.
 
+### Resistência a Dano
 
-### Damage Resistance
+Você ganha Resistência a um dos seguintes tipos de dano, à sua escolha: Ácido, Frio, Fogo, Elétrico ou Trovejante. No início de cada um dos seus turnos, você pode mudar essa escolha.
 
-You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, or Thunder. At the start of each of your turns, you can change this choice.
+### Passo Destrutivo
 
+Quando você usa seu Passo do Vento, seu Deslocamento aumenta em 20 pés até o final do turno. Durante essa duração, qualquer criatura à sua escolha sofre dano igual a uma rolagem do seu Dado de Artes Marciais quando você entra em um espaço a até 5 pés dela. O tipo do dano é sua escolha de Ácido, Frio, Fogo, Elétrico ou Trovejante. Uma criatura pode sofrer esse dano apenas uma vez por turno.
 
-### Destructive Stride
+### Golpes Potencializados
 
-When you use your Step of the Wind, your Speed increases by 20 feet until the end of the turn. For that duration, any creature of your choice takes damage equal to one roll of your Martial Arts die when you enter a space within 5 feet of it. The damage type is your choice of Acid, Cold, Fire, Lightning, or Thunder. A creature can take this damage only once per turn.
-
-
-### Empowered Strikes
-
-Once on each of your turns, you can deal extra damage to a target equal to one roll of your Martial Arts die when you hit it with an Unarmed Strike. The extra damage is the same type dealt by that strike.
+Uma vez por turno, você pode causar dano extra a um alvo igual a uma rolagem do seu Dado de Artes Marciais quando você o acerta com um Ataque Desarmado. O dano extra é do mesmo tipo causado por esse ataque.

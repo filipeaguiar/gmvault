@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 6a9f38705a42a025
+titulo_pt_br: Colégio do Valor
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Sing the Deeds of Ancient Heroes
+Cantem os Feitos dos Heróis Antigos
 
-Bards of the College of Valor are daring storytellers whose tales preserve the memory of the great heroes of the past. These Bards sing the deeds of the mighty in vaulted halls or to crowds gathered around great bonfires. They travel to witness great events firsthand and to ensure that the memory of these events doesn't pass away. With their songs, they inspire new generations to reach the same heights of accomplishment as the heroes of old.
+Bardos do Colégio do Valor são contadores de histórias audazes, cujos contos preservam a memória dos grandes heróis do passado. Esses bardos cantam os feitos dos poderosos em salões abobadados ou para multidões reunidas ao redor de grandes fogueiras. Eles viajam para testemunhar grandes eventos em primeira mão e garantir que a memória desses eventos não se apague. Com suas canções, eles inspiram novas gerações a alcançar os mesmos patamares de realização dos heróis de outrora.

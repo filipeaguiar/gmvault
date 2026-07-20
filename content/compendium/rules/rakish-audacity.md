@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: faeb57b53eaab01c
+titulo_pt_br: Audácia Atrevida
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 3rd level, your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.
+A partir do 3º nível, sua confiança o impulsiona para a batalha. Você pode conceder a si mesmo um bônus em suas jogadas de iniciativa igual ao seu modificador de Carisma.
 
-You also gain an additional way to use your Sneak Attack; you don't need advantage on your attack roll to use Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you.
+Você também ganha uma forma adicional de usar seu Ataque Furtivo; você não precisa de vantagem na jogada de ataque para usar o Ataque Furtivo contra uma criatura se estiver a até 1,5 metro dela, nenhuma outra criatura estiver a até 1,5 metro de você, e você não tiver desvantagem na jogada de ataque. Todas as outras regras para o Ataque Furtivo ainda se aplicam a você.

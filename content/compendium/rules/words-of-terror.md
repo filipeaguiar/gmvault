@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 275e660bf48ae00a
+titulo_pt_br: Palavras de Terror
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.
+A partir do 3º nível, você aprende a infundir palavras de aparência inocente com uma magia insidiosa que pode inspirar terror.
 
-If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.
+Se você falar com um humanoide a sós por pelo menos 1 minuto, pode tentar semear paranoia na mente dele. Ao final da conversa, o alvo deve ser bem-sucedido em um teste de resistência de Sabedoria contra a CD para evitar suas magias ou ficará amedrontado de você ou de outra criatura de sua escolha. O alvo fica amedrontado dessa forma por 1 hora, até ser atacado ou sofrer dano, ou até testemunhar seus aliados sendo atacados ou sofrendo dano.
 
-If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.
+Se o alvo for bem-sucedido no teste de resistência, ele não tem nenhum indício de que você tentou amedrontá-lo.
 
-Once you use this feature, you can't use it again until you finish a short or long rest.
+Depois de usar esta característica, você não pode usá-la novamente até terminar um descanso curto ou longo.

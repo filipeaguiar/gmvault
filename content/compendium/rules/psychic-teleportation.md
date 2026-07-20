@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: da24cc8f2175123f
+titulo_pt_br: Teleporte Psíquico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-As a Bonus Action, you manifest a Psychic Blade, expend one Psionic Energy Die and roll it, and throw the blade at an unoccupied space you can see up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.
+Como uma Ação Bônus, você manifesta uma Lâmina Psíquica, gasta um Dado de Energia Psíquica e o rola, e arremessa a lâmina em um espaço desocupado que você possa ver até um número de pés de distância igual a 10 vezes o número rolado. Você então se teleporta para esse espaço, e a lâmina desaparece.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: fb4cc9bc255e0a24
+titulo_pt_br: Olho Infalível
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.
+A partir do 13º nível, seus sentidos são quase impossíveis de enganar. Como uma ação, você sente a presença de ilusões, metamorfos que não estão em sua forma original e outras magias destinadas a enganar os sentidos em um raio de 9 metros de você, desde que você não esteja cego ou surdo. Você sente que um efeito está tentando enganá-lo, mas não obtém nenhuma percepção sobre o que está oculto ou sobre sua verdadeira natureza.
 
-You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.
+Você pode usar esta característica um número de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez), e recupera todos os usos gastos quando termina um Descanso Longo.

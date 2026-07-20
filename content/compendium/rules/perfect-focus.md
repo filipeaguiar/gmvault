@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 7f76f2cbdcd92fe1
+titulo_pt_br: Foco Perfeito
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you roll Initiative and don't use Uncanny Metabolism, you regain expended Focus Points until you have 4 if you have 3 or fewer.
+Quando você fizer a jogada de Iniciativa e não usar Metabolismo Sobrenatural, você recupera Pontos de Foco gastos até ter 4, se tiver 3 ou menos.

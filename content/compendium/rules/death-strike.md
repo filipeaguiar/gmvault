@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 0ecb4b9fe5de6a44
+titulo_pt_br: Golpe da Morte
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.
+Quando você acerta com seu Ataque Furtivo na primeira rodada de um combate, o alvo deve ser bem-sucedido em um teste de resistência de Constituição (8 + seu modificador de Destreza + seu Bônus de Proficiência) ou o dano do ataque é dobrado contra o alvo.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 0d98cac0fc1a9a7e
+titulo_pt_br: Caminho do Arauto da Tempestade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian of this path taps into the forces of nature to create powerful magical effects.
+Todos os bárbaros abrigam uma fúria interior. Sua fúria lhes concede força, durabilidade e velocidade superiores. Bárbaros que seguem o Caminho do Arauto da Tempestade aprendem a transformar essa fúria em um manto de magia primordial, que gira ao seu redor. Quando em fúria, um bárbaro deste caminho acessa as forças da natureza para criar efeitos mágicos poderosos.
 
-Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.
+Os arautos da tempestade são tipicamente campeões de elite que treinam ao lado de druidas, patrulheiros e outros jurados a proteger a natureza. Outros arautos da tempestade aperfeiçoam seu ofício em alojamentos em regiões assoladas por tempestades, nos confins gelados no fim do mundo ou no interior dos desertos mais quentes.

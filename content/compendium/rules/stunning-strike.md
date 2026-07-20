@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 0cb249695a25c2ce
+titulo_pt_br: Golpe Atordoante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.
+Uma vez por turno, quando você acerta uma criatura com uma arma de Monge ou um Ataque Desarmado, você pode gastar 1 Ponto de Foco para tentar um golpe atordoante. O alvo deve fazer um teste de resistência de Constituição. Em caso de falha no teste de resistência, o alvo fica com a condição Atordoado até o início do seu próximo turno. Em caso de sucesso no teste de resistência, o Deslocamento do alvo é reduzido à metade até o início do seu próximo turno, e a próxima jogada de ataque feita contra o alvo antes disso tem Vantagem.

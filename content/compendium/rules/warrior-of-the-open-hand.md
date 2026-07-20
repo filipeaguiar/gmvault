@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: ab9d23ade955a216
+titulo_pt_br: Guerreiro da Mão Aberta
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Master Unarmed Combat Techniques
+Técnicas de Combate Desarmado Magistrais
 
-Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm.
+Guerreiros do Punho Aberto são mestres do combate desarmado. Eles aprendem técnicas para empurrar e derrubar seus oponentes e manipular sua própria energia para se protegerem de danos.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 2518c4daf3c4315d
+titulo_pt_br: Técnica do Bêbado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 3rd level, you learn how to twist and turn quickly as part of your Flurry of Blows. Whenever you use Flurry of Blows, you gain the benefit of the Disengage action, and your walking speed increases by 10 feet until the end of the current turn.
+No 3º nível, você aprende a se contorcer e girar rapidamente como parte de sua Rajada de Golpes. Sempre que usar a Rajada de Golpes, você ganha o benefício da ação Desengajar e seu deslocamento de caminhada aumenta em 10 pés até o final do turno atual.

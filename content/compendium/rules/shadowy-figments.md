@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 10b5f927edc3ff08
+titulo_pt_br: Figmentos Sombrios
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You know the Minor Illusion spell. Wisdom is your spellcasting ability for it.
+Você conhece a magia Ilusão Menor. Sabedoria é seu atributo de conjuração para ela.

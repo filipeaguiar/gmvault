@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 33e05a6735addd28
+titulo_pt_br: Recipiente do Santuário
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-10th-level Genie feature
+Característica de Gênio de 10º nível
 
-When you enter your Genie's Vessel via the Bottled Respite feature, you can now choose up to five willing creatures that you can see within 30 feet of you, and the chosen creatures are drawn into the vessel with you.
+Quando você entra no Vaso do Gênio através da característica Repouso Engarrafado, você pode agora escolher até cinco criaturas voluntárias que possa ver a até 30 pés de você, e as criaturas escolhidas são atraídas para o vaso com você.
 
-As a bonus action, you can eject any number of creatures from the vessel, and everyone is ejected if you leave or die or if the vessel is destroyed.
+Como uma ação bônus, você pode expulsar qualquer número de criaturas do vaso, e todos são expulsos se você sair, morrer ou se o vaso for destruído.
 
-In addition, anyone (including you) who remains within the vessel for at least 10 minutes gains the benefit of finishing a short rest, and anyone can add your proficiency bonus to the number of hit points they regain if they spend any Hit Dice as part of a short rest there.
+Além disso, qualquer um (incluindo você) que permanecer dentro do vaso por pelo menos 10 minutos ganha o benefício de concluir um descanso curto, e qualquer um pode adicionar seu bônus de proficiência ao número de pontos de vida que recupera se gastar quaisquer Dados de Vida como parte de um descanso curto lá.

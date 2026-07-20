@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 90bf744b586c636f
+titulo_pt_br: Fúria Incontrolável
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You have Immunity to the Charmed and Frightened conditions while your Rage is active. If you're Charmed or Frightened when you enter your Rage, the condition ends on you.
+Você tem Imunidade às condições Enfeitiçado e Amedrontado enquanto sua Fúria estiver ativa. Se você estiver Enfeitiçado ou Amedrontado quando entrar em sua Fúria, a condição termina em você.

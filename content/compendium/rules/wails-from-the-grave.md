@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 62e07b91511bf89d
+titulo_pt_br: Lamentos do Túmulo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level Phantom feature
+Característica de Phantom de 3º nível
 
-As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.
+À medida que você aproxima alguém da morte, você pode canalizar o poder da morte para ferir outra pessoa também. Imediatamente após causar seu dano de Ataque Furtivo a uma criatura no seu turno, você pode escolher uma segunda criatura que possa ver, a até 30 pés da primeira. Role metade do número de dados de Ataque Furtivo do seu nível (arredondado para cima), e a segunda criatura sofre dano necrótico igual ao total da jogada, enquanto lamentos dos mortos ecoam ao redor dela por um momento.
 
-You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+Você pode usar esta característica um número de vezes igual ao seu bônus de proficiência, e recupera todos os usos gastos ao finalizar um descanso longo.

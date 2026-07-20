@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,16 +17,23 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 468e71110b3d0ddb
+titulo_pt_br: Conhecimento Sombrio
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 14th level, you gain the ability to weave dark magic into your words and tap into a creature's deepest fears.
+No 14º nível, você ganha a capacidade de entrelaçar magia negra em suas palavras e acessar os medos mais profundos de uma criatura.
 
-As an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.
+Como uma ação, você sussurra magicamente uma frase que apenas uma criatura, à sua escolha, dentro de 30 pés de você, pode ouvir. O alvo deve realizar um teste de resistência de Sabedoria contra sua CD para Evitar Magia. Ele é automaticamente bem-sucedido se não compartilhar um idioma com você ou se não puder ouvi-lo. Em caso de sucesso no teste de resistência, seu sussurro soa como um murmúrio ininteligível e não tem efeito.
 
-On a failed saving throw, the target is charmed by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.
+Em caso de falha no teste de resistência, o alvo fica enfeitiçado por você pelas próximas 8 horas ou até que você ou seus aliados o ataquem, causem dano a ele, ou o forcem a fazer um teste de resistência. Ele interpreta os sussurros como uma descrição de seu segredo mais humilhante. Você não obtém conhecimento desse segredo, mas o alvo está convencido de que você o conhece.
 
-The charmed creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.
+A criatura enfeitiçada obedece a seus comandos por medo de que você revele seu segredo. Ela não arriscará sua vida por você nem lutará por você, a menos que já estivesse inclinada a fazê-lo. Ela concede a você favores e presentes que ofereceria a um amigo próximo.
 
-When the effect ends, the creature has no understanding of why it held you in such fear.
+Quando o efeito termina, a criatura não entende por que o tinha em tanto medo.
 
-Once you use this feature, you can't use it again until you finish a long rest.
+Uma vez que você usa essa característica, não pode usá-la novamente até terminar um descanso longo.

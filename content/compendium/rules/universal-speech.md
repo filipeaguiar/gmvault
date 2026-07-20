@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 28522d1631b8cef3
+titulo_pt_br: Fala Universal
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-6th-level College of Eloquence feature
+Característica de 6º nível do Colégio da Eloquência
 
-You have gained the ability to make your speech intelligible to any creature. As an action, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour.
+Você ganhou a habilidade de tornar sua fala compreensível para qualquer criatura. Como uma ação, escolha uma ou mais criaturas dentro de 60 pés de você, até um número igual ao seu modificador de Carisma (mínimo de uma criatura). As criaturas escolhidas podem entendê-lo magicamente, independentemente do idioma que você fala, por 1 hora.
 
-Once you use this feature, you can't use it again until you finish a long rest, unless you expend a spell slot to use it again.
+Depois de usar esta característica, você não pode usá-la novamente até terminar um descanso longo, a não ser que gaste um espaço de magia para usá-la novamente.

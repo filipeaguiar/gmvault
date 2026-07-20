@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 2f3e619f8f55f9eb
+titulo_pt_br: Espadachim
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You focus your training on the art of the blade, relying on speed, elegance, and charm in equal parts. While some warriors are brutes clad in heavy armor, your method of fighting looks almost like a performance. Duelists and pirates typically belong to this archetype.
+Você concentra seu treinamento na arte da lâmina, confiando igualmente em velocidade, elegância e charme. Enquanto alguns guerreiros são brutamontes vestidos em armaduras pesadas, seu método de luta quase parece uma atuação. Duelistas e piratas tipicamente pertencem a este arquétipo.
 
-A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.
+Um Espadachim se destaca no combate individual e pode lutar com duas armas enquanto se afasta rapidamente de um oponente com segurança.

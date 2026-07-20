@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: d156ad6ceffbcf03
+titulo_pt_br: Caminho da Alma Solar
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Monks of the Way of the Sun Soul learn to channel their life energy into searing bolts of light. They teach that meditation can unlock the ability to unleash the indomitable light shed by the soul of every living creature.
+Monges do Caminho da Alma Solar aprendem a canalizar sua energia vital em rajadas abrasadoras de luz. Eles ensinam que a meditação pode desbloquear a habilidade de liberar a luz indomável emanada pela alma de cada criatura viva.

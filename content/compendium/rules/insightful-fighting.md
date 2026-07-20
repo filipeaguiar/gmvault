@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 0e976a928b758b75
+titulo_pt_br: Combate Perspicaz
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn't incapacitated, contested by the target's Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.
+No 3º nível, você ganha a habilidade de decifrar as táticas de um oponente e desenvolver um contra-ataque para elas. Como uma ação bônus, você pode fazer um teste de Sabedoria (Intuição) contra uma criatura que você possa ver e que não esteja incapacitada, oposto pelo teste de Carisma (Enganação) do alvo. Se você for bem-sucedido, você pode usar seu Ataque Furtivo contra aquele alvo mesmo que não tenha vantagem na jogada de ataque, mas não se tiver desvantagem nela.
 
-This benefit lasts for 1 minute or until you successfully use this feature against a different target.
+Este benefício dura por 1 minuto ou até você usar com sucesso esta característica contra um alvo diferente.

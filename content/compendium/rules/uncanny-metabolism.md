@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 7985eec4b9fddac0
+titulo_pt_br: Metabolismo Sobrenatural
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you roll Initiative, you can regain all expended Focus Points. When you do so, roll your Martial Arts die, and regain a number of Hit Points equal to your Monk level plus the number rolled.
+Quando você rola Iniciativa, você pode recuperar todos os Pontos de Foco gastos. Quando fizer isso, role seu dado de Artes Marciais e recupere uma quantidade de Pontos de Vida igual ao seu nível de Monge mais o número rolado.
 
-Once you use this feature, you can't use it again until you finish a Long Rest.
+Depois que usar esta característica, você não pode usá-la novamente até terminar um Descanso Longo.

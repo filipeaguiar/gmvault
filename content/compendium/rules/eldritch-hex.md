@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 44a7e19c5bc0812a
+titulo_pt_br: Hex Místico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your alien patron grants you a powerful curse. You always have the Hex spell prepared. When you cast Hex and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.
+Seu patrono alienígena concede a você uma maldição poderosa. Você sempre tem a magia Hex preparada. Quando você conjura Hex e escolhe um atributo, o alvo também tem Desvantagem em testes de resistência do atributo escolhido pela duração da magia.

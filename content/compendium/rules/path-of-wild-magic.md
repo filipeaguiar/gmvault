@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: e77c8fea45e64e00
+titulo_pt_br: Caminho da Magia Selvagem
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Many places in the multiverse abound with beauty, intense emotion, and rampant magic; the Feywild, the Upper Planes, and other realms of supernatural power radiate with such forces and can profoundly influence people. As folk of deep feeling, barbarians are especially susceptible to these wild influences, with some barbarians being transformed by the magic. These magic-suffused barbarians walk the Path of Wild Magic. Elf, tiefling, aasimar, and genasi barbarians often seek this path, eager to manifest the otherworldly magic of their ancestors.
+Muitos lugares no multiverso abundam em beleza, emoção intensa e magia desenfreada; as Terras Feéricas, os Planos Superiores e outros reinos de poder sobrenatural irradiam tais forças e podem influenciar profundamente as pessoas. Como pessoas de sentimentos profundos, os bárbaros são especialmente suscetíveis a essas influências selvagens, com alguns bárbaros sendo transformados pela magia. Esses bárbaros imbuídos de magia trilham o Caminho da Magia Selvagem. Bárbaros elfos, tieflings, aasimares e genasi frequentemente buscam este caminho, ansiosos por manifestar a magia sobrenatural de seus ancestrais.

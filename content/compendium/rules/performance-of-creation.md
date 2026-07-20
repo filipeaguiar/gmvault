@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: c0ef01af8c2adeb8
+titulo_pt_br: Atuação de Criação
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level College of Creation feature
+Característica de 3º nível do Colégio da Criação
 
-As an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your proficiency bonus. For examples of items you can create, see the equipment chapter of the 5.
+Como uma ação, você pode canalizar a magia da Canção da Criação para criar um item não mágico à sua escolha em um espaço desocupado a até 3 metros de você. O item deve surgir sobre uma superfície ou em um líquido que possa sustentá-lo. O valor em po do item não pode ser maior que 20 vezes o seu nível de bardo, e o item deve ser de tamanho Médio ou menor. O item reluz suavemente, e uma criatura pode ouvir música fracamente ao tocá-lo. O item criado desaparece após um número de horas igual ao seu bônus de proficiência. Para exemplos de itens que você pode criar, veja o capítulo de equipamento do Livro do Jogador.
 
-Once you create an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.
+Depois de criar um item com esta característica, você não pode fazê-lo novamente até terminar um descanso longo, a menos que gaste um espaço de magia de 2º círculo ou superior para usar esta característica novamente. Você pode ter apenas um item criado por esta característica por vez; se você usar esta ação e já tiver um item desta característica, o primeiro desaparece imediatamente.
 
-The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge).
+O tamanho do item que você pode criar com esta característica aumenta em uma categoria de tamanho quando você alcança o 6º nível (Grande) e o 14º nível (Enorme).

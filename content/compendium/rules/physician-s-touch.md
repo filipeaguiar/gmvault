@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: d6220dd14f5a7a52
+titulo_pt_br: Physician's Touch
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your Hand of Harm and Hand of Healing improve, as detailed below.
+Sua Mão do Mal e sua Mão de Cura melhoram, conforme detalhado a seguir.

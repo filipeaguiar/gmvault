@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: d801889c558075f4
+titulo_pt_br: Mão do Mal
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Once per turn when you hit a creature with an Unarmed Strike and deal damage, you can expend 1 Focus Point to deal extra Necrotic damage equal to one roll of your Martial Arts die plus your Wisdom modifier.
+Uma vez por turno, quando você atingir uma criatura com um Ataque Desarmado e causar dano, você pode gastar 1 Ponto de Foco para causar Dano Necrótico extra igual a uma rolagem do seu dado de Artes Marciais mais seu modificador de Sabedoria.

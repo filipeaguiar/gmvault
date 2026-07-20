@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 7edfaf320ed77b21
+titulo_pt_br: Escudo Espiritual
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by <span class="dice+" data-roll-notation="2d6">2d6</span>.
+A partir do 6º nível, os espíritos guardiões que o auxiliam podem conceder proteção sobrenatural àqueles que você defende. Se você estiver em fúria e outra criatura que você possa ver a até 30 pés de você sofrer dano, você pode usar sua reação para reduzir esse dano em <span class="dice+" data-roll-notation="2d6">2d6</span>.
 
-When you reach certain levels in this class, you can reduce the damage by more: by <span class="dice+" data-roll-notation="3d6">3d6</span> at 10th level and by <span class="dice+" data-roll-notation="4d6">4d6</span> at 14th level.
+Quando você atinge certos níveis nesta classe, você pode reduzir o dano em uma quantidade maior: em <span class="dice+" data-roll-notation="3d6">3d6</span> no 10º nível e em <span class="dice+" data-roll-notation="4d6">4d6</span> no 14º nível.

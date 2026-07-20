@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 7bac2a5b5d84801f
+titulo_pt_br: Mestre das Táticas
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you.
+A partir do 3º nível, você pode usar a ação Ajudar como uma ação bônus. Além disso, quando você usa a ação Ajudar para auxiliar um aliado a atacar uma criatura, o alvo desse ataque pode estar a até 30 pés de você, em vez de a até 5 pés, se o alvo puder ver ou ouvir você.

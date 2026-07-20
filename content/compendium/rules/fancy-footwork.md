@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 651bb0d22c0ff1ef
+titulo_pt_br: Pés Ágeis
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.
+Ao escolher este arquétipo no 3º nível, você aprende a desferir um golpe e então escapar sem sofrer represálias. Durante o seu turno, se você fizer um ataque corpo a corpo contra uma criatura, essa criatura não poderá realizar ataques de oportunidade contra você pelo restante do seu turno.

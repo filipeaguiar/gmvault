@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 8f936ad33128d00f
+titulo_pt_br: Criar Servo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you cast Summon Aberration, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the Aberration has a number of Temporary Hit Points equal to your Warlock level plus your Charisma modifier.
+Quando você conjura Conjurar Aberração, você pode modificá-la para que ela não exija Concentração. Se fizer isso, a duração da magia se torna 1 minuto para essa conjuração, e quando conjurada, a Aberração tem um número de Pontos de Vida Temporários igual ao seu nível de Bruxo mais seu modificador de Carisma.
 
-In addition, the first time each turn the Aberration hits a creature under the effect of your Hex, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.
+Além disso, a primeira vez a cada turno que a Aberração atinge uma criatura sob o efeito de sua Maldição, a Aberração causa dano Psíquico extra ao alvo igual ao dano bônus daquela magia.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 6c1469aad4d37c31
+titulo_pt_br: Falante da Natureza
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can cast the Commune with Nature spell but only as a Ritual. Wisdom is your spellcasting ability for it.
+Você pode conjurar a magia Comunhão com a Natureza, mas apenas como um Ritual. Sabedoria é seu atributo de conjuração para ela.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 0756a38e2a821fe6
+titulo_pt_br: Ataque Súbito
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 17th level, you can strike with deadly speed. If you take the Attack action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can't use your Sneak Attack against the same target more than once in a turn.
+A partir do 17º nível, você pode atacar com velocidade mortal. Se você usar a ação de Ataque no seu turno, você pode realizar um ataque adicional como uma ação bônus. Este ataque pode se beneficiar do seu Ataque Furtivo mesmo se você já o tiver usado neste turno, mas você não pode usar seu Ataque Furtivo contra o mesmo alvo mais de uma vez por turno.

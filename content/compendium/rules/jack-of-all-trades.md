@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,15 +17,21 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: fe5a6e1f1bca74b0
+titulo_pt_br: Pau para Toda Obra
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can add half your Proficiency Bonus (round down) to any ability check you make that uses a skill proficiency you lack and that doesn't otherwise use your Proficiency Bonus.
+Você pode adicionar metade do seu Bônus de Proficiência (arredondado para baixo) a qualquer teste de atributo que você fizer que use uma proficiência em perícia que você não possua e que, de outra forma, não usaria o seu Bônus de Proficiência.
 
-For example, if you make a Strength (Athletics) check and lack Athletics proficiency, you can add half your Proficiency Bonus to the check.
+Por exemplo, se você fizer um teste de Força (Atletismo) e não tiver proficiência em Atletismo, você pode adicionar metade do seu Bônus de Proficiência ao teste.
 
+### Repertório de um Bardo
 
-### A Bard's Repertoire
+O seu Bardo bate um tambor enquanto entoa os feitos de heróis antigos? Dedilha um alaúde enquanto murmura melodias românticas? Interpreta árias de poder arrebatador? Recita monólogos dramáticos de tragédias clássicas? Usa o ritmo de uma dança folclórica para coordenar o movimento de aliados em combate? Compõe limeriques picantes?
 
-Does your Bard beat a drum while chanting the deeds of ancient heroes? Strum a lute while crooning romantic tunes? Perform arias of stirring power? Recite dramatic monologues from classic tragedies? Use the rhythm of a folk dance to coordinate the movement of allies in battle? Compose naughty limericks?
-
-When you play a Bard, consider the style of artistic performance you favor, the moods you might invoke, and the themes that inspire your own creations. Are your poems inspired by moments of natural beauty, or are they brooding reflections on loss? Do you prefer lofty hymns or rowdy tavern songs? Are you drawn to laments for the fallen or celebrations of joy? Do you dance merry jigs or perform elaborate interpretive choreography? Do you focus on one style of performance or strive to master them all?
+Quando você joga com um Bardo, considere o estilo de performance artística que você prefere, os estados de espírito que você pode invocar e os temas que inspiram suas próprias criações. Seus poemas são inspirados por momentos de beleza natural, ou são reflexões sombrias sobre a perda? Você prefere hinos sublimes ou canções turbulentas de taverna? Você se sente atraído por lamentos pelos caídos ou celebrações de alegria? Você dança jigas alegres ou realiza coreografias interpretativas elaboradas? Você se concentra em um estilo de performance ou se esforça para dominar todos eles?

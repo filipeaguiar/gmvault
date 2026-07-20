@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 28d49e9eb3762d9c
+titulo_pt_br: Vitalidade da Árvore
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your Rage taps into the life force of the World Tree. You gain the following benefits.
+Sua Fúria se conecta à força vital da Árvore do Mundo. Você recebe os seguintes benefícios.

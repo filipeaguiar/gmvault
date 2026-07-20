@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 9259ee162b7a5ef7
+titulo_pt_br: Caminho do Mestre Bêbado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-The Way of the Drunken Master teaches its students to move with the jerky, unpredictable movements of a drunkard. A drunken master sways, tottering on unsteady feet, to present what seems like an incompetent combatant who proves frustrating to engage. The drunken master's erratic stumbles conceal a carefully executed dance of blocks, parries, advances, attacks, and retreats.
+O Caminho do Mestre Bêbado ensina seus alunos a se moverem com os gestos bruscos e imprevisíveis de um bêbado. Um mestre bêbado cambaleia, vacilante sobre pernas bambas, aparentando ser um combatente incompetente e frustrante de se enfrentar. Seus tropeços erráticos ocultam uma dança cuidadosamente executada de bloqueios, aparos, avanços, ataques e recuos.
 
-A drunken master often enjoys playing the fool to bring gladness to the despondent or to demonstrate humility to the arrogant, but when battle is joined, the drunken master can be a maddening, masterful foe.
+Um mestre bêbado frequentemente se diverte bancando o tolo para trazer alegria aos desesperançados ou demonstrar humildade aos arrogantes, mas quando o combate começa, ele pode se tornar um inimigo enlouquecedor e magistral.

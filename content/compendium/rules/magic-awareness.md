@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: f25a01019cde66b8
+titulo_pt_br: Consciência Mágica
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level Path of Wild Magic feature
+Característica de 3º nível do Caminho da Magia Selvagem
 
-As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.
+Como uma ação, você pode abrir sua percepção à presença de magia concentrada. Até o final do seu próximo turno, você sabe a localização de qualquer magia ou item mágico a até 30 metros de você que não esteja atrás de cobertura total. Quando você sente uma magia, descobre a qual escola de magia ela pertence.
 
-You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+Você pode usar esta característica um número de vezes igual ao seu bônus de proficiência, e recupera todos os usos gastos ao terminar um descanso longo.

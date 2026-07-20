@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,7 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 50d6ea8afcb66cc5
-titulo_pt_br: Fúria Persistente
+titulo_pt_br: Fúria Implacável
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Quando fizer uma jogada de Iniciativa, você poderá recuperar todos os usos gastos de Fúria. Depois de recuperar usos de Fúria dessa forma, não poderá fazê-lo novamente até terminar um Descanso Longo.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: df66cea5e8b4e27f
+titulo_pt_br: Alma Radiante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage. Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell's damage against one of the spell's targets.
+Seu vínculo com seu patrono permite que você sirva como um conduto de energia radiante. Você tem Resistência a Dano Radiante. Uma vez por turno, quando uma magia que você conjura causar Dano Radiante ou de Fogo, você pode adicionar seu modificador de Carisma ao dano da magia contra um dos alvos da magia.

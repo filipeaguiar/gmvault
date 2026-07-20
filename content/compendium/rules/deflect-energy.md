@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: e146fb64ca872678
+titulo_pt_br: Desviar Energia
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can now use your Deflect Attacks feature against attacks that deal any damage type, not just Bludgeoning, Piercing, or Slashing.
+Agora você pode usar sua característica Desviar Ataques contra ataques que causam qualquer tipo de dano, não apenas de Concussão, Perfurante ou Cortante.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: ab4c9a202c14a85c
+titulo_pt_br: Sobrevivente Disciplinado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your physical and mental discipline grant you proficiency in all saving throws.
+Sua disciplina física e mental lhe concede proficiência em todos os testes de resistência.
 
-Additionally, whenever you make a saving throw and fail, you can expend 1 Focus Point to reroll it, and you must use the new roll.
+Além disso, sempre que você fizer um teste de resistência e falhar, pode gastar 1 Ponto de Foco para refazê-lo, e deve usar a nova jogada.

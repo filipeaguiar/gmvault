@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 5a343ad3a59a70b3
+titulo_pt_br: Língua Prateada
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level College of Eloquence feature
+Característica de 3º nível do Colégio da Eloquência
 
-You are a master at saying the right thing at the right time. When you make a Charisma (Persuasion) or Charisma (Deception) check, you can treat a <span class="dice+" data-roll-notation="d20">d20</span> roll of 9 or lower as a 10.
+Você é um mestre em dizer a coisa certa na hora certa. Quando você faz um teste de Carisma (Persuasão) ou Carisma (Enganação), você pode considerar uma rolagem de <span class="dice+" data-roll-notation="d20">d20</span> 9 ou menos como um 10.

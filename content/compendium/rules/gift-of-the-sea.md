@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 1bb3f4ee92fd6c28
+titulo_pt_br: Dádiva do Mar
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-1st-level Fathomless feature
+Característica de Abissal de 1º nível
 
-You gain a swimming speed of 40 feet, and you can breathe underwater.
+Você ganha deslocamento de natação de 12 metros e pode respirar debaixo d'água.

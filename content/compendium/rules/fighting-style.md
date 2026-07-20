@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 9b1634ce37e8983a
+titulo_pt_br: Estilo de Combate
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again.
+No 3º nível, você adota um estilo de luta como sua especialidade. Escolha uma das opções a seguir. Você não pode escolher uma opção de Estilo de Luta mais de uma vez, mesmo que algo no jogo permita que você escolha novamente.

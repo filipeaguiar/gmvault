@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 121cec99eea1c111
+titulo_pt_br: Caminho da Besta
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Barbarians who walk the Path of the Beast draw their rage from a bestial spark burning within their souls. That beast bursts forth in the throes of rage, physically transforming the barbarian.
+Bárbaros que seguem o Caminho da Besta extraem sua fúria de uma centelha bestial queimando dentro de suas almas. Essa besta irrompe nos espasmos da fúria, transformando fisicamente o bárbaro.
 
-Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.
+Tal bárbaro pode ser habitado por um espírito primitivo ou descender de metamorfos. Você pode escolher a origem do seu poder selvagem ou determiná-la rolando na tabela Origem da Besta.

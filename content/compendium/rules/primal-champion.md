@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,7 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 741ece0b8f2a1996
-titulo_pt_br: Campeão Primal
+titulo_pt_br: Campeão Primitivo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Você incorpora o poder primal. Seus valores de Força e Constituição aumentam em 4, até o máximo de 25.

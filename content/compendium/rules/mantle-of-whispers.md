@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,14 +17,21 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: d5e36c44b72d1ab1
+titulo_pt_br: Manto dos Sussurros
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 6th level, you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.
+No 6º nível, você ganha a capacidade de adotar a persona de um humanoide. Quando um humanoide morre a até 30 pés de você, você pode capturar magicamente a sombra dele usando sua reação. Você retém essa sombra até usá-la ou até terminar um descanso longo.
 
-You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.
+Você pode usar a sombra como uma ação. Ao fazer isso, ela desaparece, transformando-se magicamente em um disfarce que surge sobre você. Você agora se parece com a pessoa morta, porém saudável e viva. Esse disfarce dura 1 hora ou até você encerrá-lo como uma ação bônus.
 
-While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.
+Enquanto você estiver no disfarce, você ganha acesso a todas as informações que o humanoide compartilharia livremente com um conhecido casual. Essas informações incluem detalhes gerais sobre seus antecedentes e vida pessoal, mas não incluem segredos. As informações são suficientes para que você possa se passar pela pessoa recorrendo às memórias dela.
 
-Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.
+Outra criatura pode ver através deste disfarce sendo bem-sucedida em um teste de Sabedoria (Intuição) resistido por seu teste de Carisma (Enganação). Você recebe um bônus de +5 no seu teste.
 
-Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest.
+Depois de capturar uma sombra com esta característica, você não pode capturar outra com ela até terminar um descanso curto ou longo.

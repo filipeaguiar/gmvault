@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: af0aba916b99d28b
+titulo_pt_br: Passo do Vento
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn.
+Você pode realizar a ação Disparada como uma Ação Bônus. Alternativamente, você pode gastar 1 Ponto de Foco para realizar ambas as ações Desengajar e Disparada como uma Ação Bônus, e sua distância de salto é dobrada pelo turno.

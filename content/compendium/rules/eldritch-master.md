@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,6 +18,12 @@ source:
   remote_key: classFeature
   remote_id: 305ae8b8c417c49b
 titulo_pt_br: Mestre Místico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Quando você usa sua característica Astúcia Mágica, recupera todos os espaços de magia de Magia de Pacto gastos.

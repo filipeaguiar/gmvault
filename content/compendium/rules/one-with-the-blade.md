@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,16 +17,21 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 667501538527ba0a
+titulo_pt_br: Um com a Lâmina
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 6th level, you extend your ki into your kensei weapons, granting you the following benefits.
+No 6º nível, você estende seu ki para suas armas kensei, concedendo a você os seguintes benefícios.
 
+### Armas Kensei Mágicas
 
-### Magic Kensei Weapons
+Seus ataques com suas armas kensei contam como mágicos para o propósito de superar resistência e imunidade a ataques e dano não mágicos.
 
-Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+### Golpe Destro
 
-
-### Deft Strike
-
-When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.
+Quando você acerta um alvo com uma arma kensei, você pode gastar 1 ponto de ki para fazer com que a arma cause dano extra ao alvo igual ao seu dado de Artes Marciais. Você pode usar esta característica apenas uma vez em cada um de seus turnos.

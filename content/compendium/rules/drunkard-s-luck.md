@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 95102f707a76ddc6
+titulo_pt_br: Sorte do Bêbado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 11th level, you always seem to get a lucky bounce at the right moment. When you make an ability check, an attack roll, or a saving throw and have disadvantage on the roll, you can spend 2 ki points to cancel the disadvantage for that roll.
+A partir do 11º nível, você sempre parece ter um golpe de sorte no momento certo. Quando você faz um Teste de Atributo, uma Jogada de Ataque ou um Teste de Resistência e tem desvantagem na jogada, você pode gastar 2 pontos de ki para cancelar a desvantagem para essa jogada.

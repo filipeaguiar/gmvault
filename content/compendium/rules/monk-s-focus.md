@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 1a3f9276b0521cfc
+titulo_pt_br: Foco do Monge
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.
+Seu foco e treinamento marcial permitem que você acesse um poço de energia extraordinária dentro de si mesmo. Esta energia é representada pelos Pontos de Foco. Seu nível de Monge determina o número de pontos que você possui, conforme mostrado na coluna Pontos de Foco da tabela de Características do Monge.
 
-You can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.
+Você pode gastar estes pontos para aprimorar ou alimentar certas características do Monge. Você começa conhecendo três dessas características: Rajada de Golpes, Defesa Paciente e Passo do Vento, cada uma detalhada abaixo.
 
-When you expend a Focus Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.
+Quando você gasta um Ponto de Foco, ele fica indisponível até você terminar um Descanso Curto ou Longo, ao final do qual você recupera todos os seus pontos gastos.
 
-Some features that use Focus Points require your target to make a saving throw. The save DC equals 8 plus your Wisdom modifier and Proficiency Bonus.
+Algumas características que usam Pontos de Foco exigem que o alvo realize um teste de resistência. A CD do teste é igual a 8 + seu modificador de Sabedoria + seu Bônus de Proficiência.

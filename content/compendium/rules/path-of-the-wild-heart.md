@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 8b7e9fae8daafe23
+titulo_pt_br: Caminho do Coração Selvagem
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Walk in Community with the Animal World
+Caminhe em Comunidade com o Mundo Animal
 
-Barbarians who follow the Path of the Wild Heart view themselves as kin to animals. These Barbarians learn magical means to communicate with animals, and their Rage heightens their connection to animals as it fills them with supernatural might.
+Bárbaros que seguem o Caminho do Coração Selvagem se veem como parentes dos animais. Esses Bárbaros aprendem meios mágicos para se comunicar com animais, e sua Fúria intensifica sua conexão com os animais ao preenchê-los com poder sobrenatural.

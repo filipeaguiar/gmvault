@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 4c2b9d0b0fb8980d
+titulo_pt_br: Alma do Engano
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by succeeding on a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.
+A partir do 17º nível, seus pensamentos não podem ser lidos por telepatia ou outros meios, a menos que você permita. Você pode apresentar pensamentos falsos sendo bem-sucedido em um teste de Carisma (Enganação) disputado pelo teste de Sabedoria (Intuição) do leitor de mentes.
 
-Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic.
+Além disso, independentemente do que você diga, magia que determinaria se você está dizendo a verdade indica que você está sendo verdadeiro se você assim escolher, e você não pode ser compelido a dizer a verdade por magia.

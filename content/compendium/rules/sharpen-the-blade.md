@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 64474739dc31391a
+titulo_pt_br: Afiar a Lâmina
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 11th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can expend up to 3 ki points to grant one kensei weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of ki points you spent. This bonus lasts for 1 minute or until you use this feature again. This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls.
+No 11º nível, você ganha a habilidade de aprimorar ainda mais suas armas com seu ki. Como uma ação bônus, você pode gastar até 3 pontos de ki para conceder a uma arma kensei que você esteja tocando um bônus nas jogadas de ataque e dano quando atacar com ela. O bônus é igual ao número de pontos de ki que você gastou. Esse bônus dura 1 minuto ou até você usar esta característica novamente. Esta característica não tem efeito em uma arma mágica que já possua um bônus nas jogadas de ataque e dano.

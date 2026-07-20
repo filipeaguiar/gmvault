@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 5cd3509d36149ada
+titulo_pt_br: Raio Solar Radiante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.
+A partir do momento em que escolhe esta tradição no 3º nível, você pode arremessar dardos abrasadores de radiância mágica.
 
-You gain a new attack option that you can use with the Attack action. The special attack is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a <span class="dice+" data-roll-notation="d4">d4</span>. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.
+Você ganha uma nova opção de ataque que pode usar com a ação de Ataque. O ataque especial é um ataque à distância com magia, com alcance de 30 pés. Você tem proficiência com ele e adiciona seu modificador de Destreza às jogadas de ataque e dano dele. Seu dano é radiante, e seu dado de dano é um <span class="dice+" data-roll-notation="d4">d4</span>. Este dado muda conforme você ganha níveis de monge, como mostrado na coluna de Artes Marciais da tabela do Monge.
 
-When you take the Attack action on your turn and use this special attack as part of it, you can spend 1 ki point to make the special attack twice as a bonus action. When you gain the Extra Attack feature, this special attack can be used for any of the attacks you make as part of the Attack action.
+Quando você usa a ação de Ataque no seu turno e usa este ataque especial como parte dela, você pode gastar 1 ponto de ki para fazer o ataque especial duas vezes como uma ação bônus. Quando você ganha a característica Ataque Extra, este ataque especial pode ser usado para qualquer um dos ataques que você faz como parte da ação de Ataque.

@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: 3a099d9daaa27224
+titulo_pt_br: Segredos Mágicos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the Bard, Cleric, Druid, and Wizard spell lists, and the chosen spells count as Bard spells for you (see a class's section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists.
+Você aprendeu segredos de várias tradições mágicas. Sempre que alcançar um nível de Bardo (incluindo este nível) e o número de Magias Preparadas na tabela de Características de Bardo aumentar, você pode escolher quaisquer de suas novas magias preparadas das listas de magias de Bardo, Clérigo, Druida e Mago, e as magias escolhidas contam como magias de Bardo para você (veja a seção de uma classe para sua lista de magias). Além disso, sempre que substituir uma magia preparada para esta classe, você pode substituí-la por uma magia dessas listas.

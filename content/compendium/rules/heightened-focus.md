@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 06b0fe4161377a6e
+titulo_pt_br: Foco Elevado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your Flurry of Blows, Patient Defense, and Step of the Wind gain the following benefits.
+Sua Rajada de Golpes, Defesa Paciente e Passo do Vento recebem os seguintes benefícios.

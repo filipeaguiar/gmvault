@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,16 +17,23 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 76b5745525fa594d
+titulo_pt_br: Forma da Besta
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level Path of the Beast feature
+Característica de 3º nível do Caminho da Besta
 
-When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.
+Ao entrar em fúria, você pode se transformar, revelando o poder bestial dentro de você. Até o fim da fúria, você manifesta uma arma natural. Ela conta como uma arma corpo a corpo simples para você, e você adiciona seu Modificador de Força às jogadas de ataque e dano quando ataca com ela, como de costume.
 
-You choose the weapon's form each time you rage:
+Você escolhe a forma da arma cada vez que entra em fúria:
 
-* {'type': 'item', 'name': 'Bite', 'entry': 'Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals <span class="dice+" data-roll-notation="1d8">1d8</span> piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.'}
+* {'type': 'item', 'name': 'Mordida', 'entry': 'Sua boca se transforma em um focinho bestial ou grandes mandíbulas (à sua escolha). Ela causa <span class="dice+" data-roll-notation="1d8">1d8</span> de Dano Perfurante ao acertar. Uma vez em cada um dos seus turnos, ao causar dano a uma criatura com esta mordida, você recupera um número de Pontos de Vida igual ao seu Bônus de Proficiência, desde que você possua menos da metade dos seus Pontos de Vida ao acertar.'}
 
-* {'type': 'item', 'name': 'Claws', 'entry': "Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals <span class="dice+" data-roll-notation="1d6">1d6</span> slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action."}
+* {'type': 'item', 'name': 'Garras', 'entry': 'Cada uma de suas mãos se transforma em uma garra, que você pode usar como arma se estiver vazia. Ela causa <span class="dice+" data-roll-notation="1d6">1d6</span> de Dano Cortante ao acertar. Uma vez em cada um dos seus turnos, ao atacar com uma garra usando a ação Atacar, você pode realizar um ataque adicional com garra como parte da mesma ação.'}
 
-* {'type': 'item', 'name': 'Tail', 'entry': 'You grow a lashing, spiny tail, which deals <span class="dice+" data-roll-notation="1d8">1d8</span> piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a <span class="dice+" data-roll-notation="d8">d8</span>, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.'}
+* {'type': 'item', 'name': 'Cauda', 'entry': 'Você desenvolve uma cauda espinhosa e chicoteante, que causa <span class="dice+" data-roll-notation="1d8">1d8</span> de Dano Perfurante ao acertar e tem a propriedade alcance. Se uma criatura que você possa ver, a até 3 metros de você, acertar você com uma Jogada de Ataque, você pode usar sua Reação para golpear com sua cauda e rolar um <span class="dice+" data-roll-notation="d8">d8</span>, aplicando um bônus à sua CA igual ao número rolado, podendo fazer com que o ataque erre você.'}

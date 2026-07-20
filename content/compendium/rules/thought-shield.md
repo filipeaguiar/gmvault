@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 085d21a601aec53f
+titulo_pt_br: Escudo de Pensamento
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your thoughts can't be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you take.
+Seus pensamentos não podem ser lidos por telepatia ou outros meios, a menos que você permita. Você também tem resistência a dano psíquico, e, sempre que uma criatura causar dano psíquico a você, essa criatura sofre a mesma quantidade de dano que você sofre.

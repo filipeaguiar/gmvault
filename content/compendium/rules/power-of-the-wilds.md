@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,21 +17,28 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 6cfd68f985e99a00
+titulo_pt_br: Poder das Selvas
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Whenever you activate your Rage, you gain one of the following options of your choice.
+Sempre que você ativar sua Fúria, você ganha uma das seguintes opções à sua escolha.
 
 
-### Falcon
+### Falcão
 
-While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.
-
-
-### Lion
-
-While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.
+Enquanto sua Fúria estiver ativa, você tem um Deslocamento de Voo igual ao seu Deslocamento se não estiver usando nenhuma armadura.
 
 
-### Ram
+### Leão
 
-While your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.
+Enquanto sua Fúria estiver ativa, qualquer um dos seus inimigos a até 1,5 metro de você tem Desvantagem nas jogadas de ataque contra alvos que não sejam você ou outro Bárbaro que tenha esta opção ativa.
+
+
+### Carneiro
+
+Enquanto sua Fúria estiver ativa, você pode fazer com que uma criatura Grande ou menor tenha a condição Caído quando você a atingir com um ataque corpo a corpo.

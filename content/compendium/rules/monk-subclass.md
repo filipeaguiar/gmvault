@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 47a6a50b298965df
+titulo_pt_br: Subclasse de Monge
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain a Monk subclass of your choice. A subclass is a specialization that grants you features at certain Monk levels. For the rest of your career, you gain each of your subclass's features that are of your Monk level or lower.
+Você ganha uma subclasse de Monge à sua escolha. Uma subclasse é uma especialização que concede a você características em certos níveis de Monge. Pelo restante de sua carreira, você ganha cada uma das características de sua subclasse que sejam do seu nível de Monge ou inferior.

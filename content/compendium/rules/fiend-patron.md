@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: eee5846ed81be3ab
+titulo_pt_br: Corruptor Patrono
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Make a Deal with the Lower Planes
+Fazer um Pacto com os Planos Inferiores
 
-Your pact draws on the Lower Planes, the realms of perdition. You might forge a bargain with a demon lord such as Demogorgon or Orcus; an archdevil such as Asmodeus; or a pit fiend, balor, yugoloth, or night hag that is especially mighty. That patron's aims are evil—the corruption or destruction of all things, ultimately including you—and your path is defined by the extent to which you strive against those aims.
+Seu pacto se fundamenta nos Planos Inferiores, os reinos da perdição. Você pode firmar um acordo com um senhor demoníaco como Demogorgon ou Orcus; um arquidiabo como Asmodeus; ou um diabo do abismo, balor, yugoloth, ou bruxa noturna que seja especialmente poderosa. Os objetivos desse patrono são malignos — a corrupção ou destruição de todas as coisas, incluindo você no final — e seu caminho é definido pelo quanto você resiste a esses objetivos.

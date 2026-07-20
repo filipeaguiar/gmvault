@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 7fa74e72522670aa
+titulo_pt_br: Escaramuçador
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks.
+A partir do 3º nível, você é difícil de ser encurralado durante um combate. Você pode se mover até metade do seu deslocamento como uma reação quando um inimigo termina o turno dele a até 1,5 metro de você. Este movimento não provoca ataques de oportunidade.

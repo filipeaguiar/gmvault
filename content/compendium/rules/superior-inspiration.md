@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: 0437fd7a81bb001e
+titulo_pt_br: Inspiração Superior
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that.
+Quando você rolar Iniciativa, você recupera usos gastos de Inspiração de Bardo até ter dois, se tiver menos que isso.

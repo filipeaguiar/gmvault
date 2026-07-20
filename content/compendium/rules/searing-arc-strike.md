@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 8af1422c012077a9
+titulo_pt_br: Golpe do Arco Abrasador
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 6th level, you gain the ability to channel your ki into searing waves of energy. Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the burning hands spell as a bonus action.
+No 6º nível, você ganha a habilidade de canalizar seu ki em ondas abrasadoras de energia. Imediatamente após realizar a ação de Ataque no seu turno, você pode gastar 2 pontos de ki para conjurar a magia mãos flamejantes como uma ação bônus.
 
-You can spend additional ki points to cast burning hands as a higher-level spell. Each additional ki point you spend increases the spell's level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals half your monk level.
+Você pode gastar pontos de ki adicionais para conjurar mãos flamejantes como uma magia de círculo superior. Cada ponto de ki adicional que você gasta aumenta o círculo da magia em 1. O número máximo de pontos de ki (2 mais quaisquer pontos adicionais) que você pode gastar na magia é igual à metade do seu nível de monge.

@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,6 +18,12 @@ source:
   remote_key: classFeature
   remote_id: db10fb2ba7fcec16
 titulo_pt_br: Magia de Pacto
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Por meio de uma cerimônia oculta, você firmou um pacto com uma entidade misteriosa para obter poderes mágicos. A entidade é uma voz nas sombras — sua identidade é incerta —, mas a dádiva que ela lhe concede é concreta: a capacidade de conjurar magias. Consulte a seção 7 para as regras de conjuração. As informações abaixo detalham como você usa essas regras com as magias de Bruxo, que aparecem na lista de magias de Bruxo mais adiante na descrição da classe.

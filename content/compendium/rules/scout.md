@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 9e684eb972cef1a7
+titulo_pt_br: Batedor
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You are skilled in stealth and surviving far from the streets of a city, allowing you to scout ahead of your companions during expeditions. Rogues who embrace this archetype are at home in the wilderness and among barbarians and rangers, and many Scouts serve as the eyes and ears of war bands. Ambusher, spy, bounty hunter—these are just a few of the roles that Scouts assume as they range the world.
+Você é habilidoso em Furtividade e em sobreviver longe das ruas de uma cidade, permitindo que você explore à frente de seus companheiros durante expedições. Ladinos que adotam esse arquétipo sentem-se em casa na natureza selvagem e entre bárbaros e patrulheiros, e muitos Escoteiros servem como os olhos e ouvidos de bandos de guerra. Emboscador, espião, caçador de recompensas — esses são apenas alguns dos papéis que os Escoteiros assumem enquanto percorrem o mundo.

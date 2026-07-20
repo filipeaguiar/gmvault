@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 6e6a97c0cefd8297
+titulo_pt_br: Caminho do Fanático
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Rage in Ecstatic Union with a God
+Fúria em União Extática com um Deus
 
-Barbarians who walk the Path of the Zealot receive boons from a god or pantheon. These Barbarians experience their Rage as an ecstatic episode of divine union that infuses them with power. They are often allies to the priests and other followers of their god or pantheon.
+Bárbaros que seguem o Caminho do Zelote recebem bênçãos de um deus ou panteão. Esses Bárbaros vivenciam sua Fúria como um episódio extático de união divina que os infunde com poder. Frequentemente são aliados dos sacerdotes e outros seguidores de seu deus ou panteão.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: b0965d4200ececf3
+titulo_pt_br: Amigo da Morte
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-17th-level Phantom feature
+Característica de Fantasma de 17º nível
 
-Your association with death has become so close that you gain the following benefits:
+Você se tornou tão ligado à morte que recebe os seguintes benefícios:
 
-* When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.
+* Quando você usa seus Lamentos do Túmulo, você pode causar o dano necrótico tanto na primeira quanto na segunda criatura.
 
-* At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you.
+* No final de um descanso longo, um amuleto de alma aparece em sua mão se você não tiver nenhum amuleto de alma, pois os espíritos dos mortos são atraídos por você.

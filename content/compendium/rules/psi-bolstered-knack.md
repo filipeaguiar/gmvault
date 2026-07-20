@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: d314d32ca9cd7ff0
+titulo_pt_br: Talento Reforçado Psiônico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-If you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy Die and add the number rolled to the check, potentially turning failure into success. The die is expended only if the roll then succeeds.
+Se você falhar em um Teste de Atributo usando uma perícia ou ferramenta na qual tenha proficiência, você pode rolar um Dado de Energia Psíquica e somar o número rolado ao teste, potencialmente transformando a falha em sucesso. O dado é gasto apenas se a rolagem for bem-sucedida.

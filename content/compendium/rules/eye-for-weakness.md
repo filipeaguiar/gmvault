@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: c0fc08a01be1142c
+titulo_pt_br: Olho para Fraqueza
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by <span class="dice+" data-roll-notation="3d6">3d6</span>.
+No 17° nível, você aprende a explorar as fraquezas de uma criatura estudando cuidadosamente suas táticas e movimentos. Enquanto sua característica Luta Perspicaz se aplicar a uma criatura, o dano do seu Ataque Furtivo contra essa criatura aumenta em <span class="dice+" data-roll-notation="3d6">3d6</span>.

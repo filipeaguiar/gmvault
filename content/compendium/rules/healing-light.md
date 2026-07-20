@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 5a0f86616b75e5b1
+titulo_pt_br: Luz Curativa
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain the ability to channel celestial energy to heal wounds. You have a pool of d6s to fuel this healing. The number of dice in the pool equals 1 plus your Warlock level.
+Você adquire a capacidade de canalizar energia celestial para curar ferimentos. Você possui uma reserva de d6 para alimentar esta cura. O número de dados na reserva é igual a 1 mais seu nível de Bruxo.
 
-As a Bonus Action, you can heal yourself or one creature you can see within 60 feet of yourself, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend, and restore a number of Hit Points equal to the roll's total. Your pool regains all expended dice when you finish a Long Rest.
+Como uma Ação Bônus, você pode curar a si mesmo ou uma criatura que você possa ver, dentro de 18 metros de você, gastando dados da reserva. O número máximo de dados que você pode gastar de uma vez é igual ao seu modificador de Carisma (mínimo de um dado). Role os dados gastos e recupere um número de Pontos de Vida igual ao total da rolagem. Sua reserva recupera todos os dados gastos quando você termina um Descanso Longo.

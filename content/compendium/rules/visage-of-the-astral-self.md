@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,27 +17,31 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 8ea20e13335dac89
+titulo_pt_br: Rosto do Eu Astral
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-6th-level Way of the Astral Self feature
+Característica de 6º nível de Way of the Astral Self
 
-You can summon the visage of your astral self. As a bonus action, or as part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage for 10 minutes. It vanishes early if you are incapacitated or die.
+Você pode invocar o semblante do seu eu astral. Como uma ação bônus, ou como parte da ação bônus que você realiza para ativar Arms of the Astral Self, você pode gastar 1 ponto de ki para invocar esse semblante por 10 minutos. Ele desaparece antes disso se você ficar incapacitado ou morrer.
 
-The spectral visage covers your face like a helmet or mask. You determine its appearance.
+O semblante espectral cobre seu rosto como um elmo ou máscara. Você determina sua aparência.
 
-While the spectral visage is present, you gain the following benefits.
+Enquanto o semblante espectral estiver presente, você recebe os benefícios a seguir.
 
+### Visão Astral
 
-### Astral Sight
+Você pode enxergar normalmente na escuridão, tanto mágica quanto não mágica, a uma distância de 120 pés.
 
-You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+### Sabedoria do Espírito
 
+Você tem vantagem em testes de Sabedoria (Intuição) e Carisma (Intimidação).
 
-### Wisdom of the Spirit
+### Palavra do Espírito
 
-You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
-
-
-### Word of the Spirit
-
-When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you.
+Quando você fala, pode direcionar suas palavras a uma criatura de sua escolha que você possa ver a até 60 pés de você, fazendo com que apenas essa criatura possa ouvi-lo. Alternativamente, você pode amplificar sua voz para que todas as criaturas a até 600 pés possam ouvi-lo.

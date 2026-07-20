@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 5352980d0b50588b
+titulo_pt_br: Sobrevivencialista
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+Quando você escolhe este arquétipo no 3º nível, você ganha proficiência nas perícias Natureza e Sobrevivência, se já não as tiver. Seu bônus de proficiência é dobrado para qualquer teste de atributo que você fizer que use qualquer uma dessas proficiências.

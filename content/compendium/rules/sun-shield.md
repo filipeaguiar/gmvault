@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: e77c4ef3baf7f2cf
+titulo_pt_br: Escudo Solar
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 17th level, you become wreathed in a luminous, magical aura. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action.
+No 17º nível, você fica envolto em uma aura luminosa e mágica. Você emite luz intensa em um raio de 30 pés e penumbra por 30 pés adicionais. Você pode apagar ou restaurar a luz como uma ação bônus.
 
-If a creature hits you with a melee attack while this light shines, you can use your reaction to deal radiant damage to the creature. The radiant damage equals 5 + your Wisdom modifier.
+Se uma criatura atingir você com um ataque corpo a corpo enquanto esta luz brilha, você pode usar sua reação para causar dano radiante à criatura. O dano radiante é igual a 5 + seu modificador de Sabedoria.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 3816826fdb5dbbf0
+titulo_pt_br: Mestre da Intriga
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.
+Quando você escolhe este arquétipo no 3º nível, você adquire proficiência com o kit de disfarce, o kit de falsificação e um conjunto de jogo de sua escolha. Você também aprende dois idiomas de sua escolha.
 
-Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language.
+Além disso, você pode imitar de forma infalível os padrões de fala e o sotaque de uma criatura que você ouvir falar por pelo menos 1 minuto, permitindo que você se passe por um falante nativo de uma determinada terra, desde que você conheça o idioma.

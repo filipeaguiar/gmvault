@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: cf26129fa3c2723a
+titulo_pt_br: Mestre das Maldições
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 14th level, you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren't incapacitated. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature.
+Começando no 14º nível, você pode espalhar sua Maldição do Hexblade de uma criatura morta para outra criatura. Quando a criatura amaldiçoada pela sua Maldição do Hexblade morre, você pode aplicar a maldição em uma criatura diferente que você possa ver a até 30 pés de você, contanto que você não esteja incapacitado. Quando você aplica a maldição dessa forma, você não recupera pontos de vida da morte da criatura anteriormente amaldiçoada.

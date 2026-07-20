@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: b8949b2dfd672afe
+titulo_pt_br: Artes Marciais
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your practice of martial arts gives you mastery of combat styles that use your Unarmed Strike and Monk weapons, which are the following:
+Sua prática de artes marciais lhe concede maestria de estilos de combate que utilizam seu Ataque Desarmado e armas de monge, que são as seguintes:
 
-* Simple Melee Weapons
+* Armas Simples Corpo a Corpo
 
-* Martial Melee Weapons that have the Light property
+* Armas Marciais Corpo a Corpo que possuem a propriedade Leve
 
-You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.
+Você recebe os seguintes benefícios enquanto estiver desarmado ou empunhando apenas armas de monge e não estiver usando armadura ou empunhando um Escudo.

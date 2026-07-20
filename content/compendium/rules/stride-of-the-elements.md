@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: a7f709d3d8bf5880
+titulo_pt_br: Passo dos Elementos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-While your Elemental Attunement is active, you also have a Fly Speed and a Swim Speed equal to your Speed.
+Enquanto sua Sintonia Elemental estiver ativa, você também tem um deslocamento de voo e um deslocamento de natação iguais ao seu Deslocamento.

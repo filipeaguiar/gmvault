@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 4391ba431fb5e0c0
+titulo_pt_br: Patrono Grande Ancião
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Unearth Forbidden Lore of Ineffable Beings
+Desenterre o Conhecimento Proibido de Seres Inefáveis
 
-When you choose this subclass, you might bind yourself to an unspeakable being from the Far Realm or an elder god—a being such as Tharizdun, the Chained God; Zargon, the Returner; Hadar, the Dark Hunger; or Great Cthulhu. Or you might invoke several entities without yoking yourself to one. The motives of these beings are incomprehensible, and the Great Old One might be indifferent to your existence. But the secrets you've learned nevertheless allow you to draw strange magic from it.
+Quando você escolhe esta subclasse, você pode se vincular a um ser indescritível do Reino Distante ou a um deus ancião — um ser como Tharizdun, o Deus Acorrentado; Zargon, o Retornador; Hadar, a Fome Sombria; ou o Grande Cthulhu. Ou você pode invocar várias entidades sem se subjugar a apenas uma. As motivações desses seres são incompreensíveis, e o Grande Ancião pode ser indiferente à sua existência. Mas os segredos que você aprendeu, ainda assim, permitem que você extraia magia estranha dele.

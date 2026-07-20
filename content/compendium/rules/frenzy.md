@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 0baf9713af52b857
+titulo_pt_br: Frenesi
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack. To determine the extra damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. The damage has the same type as the weapon or Unarmed Strike used for the attack.
+Se você usar Ataque Imprudente enquanto sua Fúria estiver ativa, você causa dano extra ao primeiro alvo que atingir no seu turno com um ataque baseado em Força. Para determinar o dano extra, role um número de d6 igual ao seu bônus de Dano de Fúria e some os resultados. O dano é do mesmo tipo que a arma ou o Ataque Desarmado usados no ataque.

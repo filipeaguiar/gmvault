@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: fe190eafad8a5115
+titulo_pt_br: Olho para Detalhes
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Starting at 3rd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues.
+A partir do 3º nível, você pode usar uma ação bônus para fazer um teste de Sabedoria (Percepção) para localizar uma criatura ou objeto escondido, ou para fazer um teste de Inteligência (Investigação) para descobrir ou decifrar pistas.

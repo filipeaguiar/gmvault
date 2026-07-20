@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 5293ce51ed62882b
+titulo_pt_br: Golpes Potencializados
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Whenever you deal damage with your Unarmed Strike, it can deal your choice of Force damage or its normal damage type.
+Sempre que você causar dano com seu Ataque Desarmado, você pode escolher que o dano seja de Energia ou do tipo normal do ataque.

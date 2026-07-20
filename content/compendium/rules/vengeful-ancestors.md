@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 233579914fe631f7
+titulo_pt_br: Ancestrais Vingativos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.
+No 14º nível, seus espíritos ancestrais se tornam poderosos o bastante para revidar. Quando você usa seu Escudo Espiritual para reduzir o dano de um ataque, o atacante sofre uma quantidade de dano de energia igual ao dano que seu Escudo Espiritual previne.

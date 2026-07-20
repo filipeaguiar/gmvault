@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: e6ade84172b0fd7c
+titulo_pt_br: 'Nocaute (Custo: 6d6)'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.
+O alvo deve ser bem-sucedido em um teste de Resistência de Constituição, ou fica com a condição Inconsciente por 1 minuto ou até sofrer qualquer dano. O alvo Inconsciente repete o teste de resistência no final de cada um de seus turnos, terminando o efeito sobre si em caso de sucesso.

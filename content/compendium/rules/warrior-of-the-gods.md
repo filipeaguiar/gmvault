@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 32cd65f064b503a1
+titulo_pt_br: Guerreiro dos Deuses
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A divine entity helps ensure you can continue the fight. You have a pool of four d12s that you can spend to heal yourself. As a Bonus Action, you can expend dice from the pool, roll them, and regain a number of Hit Points equal to the roll's total.
+Uma entidade divina ajuda a garantir que você possa continuar lutando. Você tem uma reserva de quatro d12 que pode gastar para curar a si mesmo. Como uma Ação Bônus, você pode gastar dados da reserva, rolá-los e recuperar um número de Pontos de Vida igual ao total da rolagem.
 
-Your pool regains all expended dice when you finish a Long Rest.
+Sua reserva recupera todos os dados gastos quando você termina um Descanso Longo.
 
-The pool's maximum number of dice increases by one when you reach Barbarian levels 6 (5 dice), 12 (6 dice), and 17 (7 dice).
+O número máximo de dados da reserva aumenta em um quando você atinge os níveis de Bárbaro 6 (5 dados), 12 (6 dados) e 17 (7 dados).

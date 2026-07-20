@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: c5a2f36fa9a2b81a
+titulo_pt_br: Frenesi Embriagado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your Flurry of Blows, you can make up to three additional attacks with it (up to a total of five Flurry of Blows attacks), provided that each Flurry of Blows attack targets a different creature this turn.
+No 17º nível, você ganha a capacidade de realizar um número avassalador de ataques contra um grupo de inimigos. Quando você usa sua Rajada de Golpes, pode fazer até três ataques adicionais com ela (totalizando até cinco ataques de Rajada de Golpes), contanto que cada ataque da Rajada de Golpes tenha como alvo uma criatura diferente neste turno.

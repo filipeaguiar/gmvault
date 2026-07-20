@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,7 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 706aa68b6d743a35
-titulo_pt_br: Poder Indomável
+titulo_pt_br: Força Indomável
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Se o total de um teste de Força ou teste de resistência de Força for menor que seu valor de Força, você poderá usar esse valor no lugar do total.

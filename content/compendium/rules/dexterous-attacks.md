@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 80d54f3ff5395bfd
+titulo_pt_br: Ataques Destros
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.
+Você pode usar seu modificador de Destreza em vez do modificador de Força para as jogadas de ataque e dano dos seus Ataques Desarmados e armas de Monge. Além disso, quando você usa a opção Agarrar ou Empurrar do seu Ataque Desarmado, você pode usar seu modificador de Destreza em vez do modificador de Força para determinar a CD do teste de resistência.

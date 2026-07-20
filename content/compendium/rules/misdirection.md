@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 2f922054bb1b0d0a
+titulo_pt_br: Despistar
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you.
+A partir do 13º nível, você pode, às vezes, fazer com que outra criatura sofra um ataque destinado a você. Quando você é alvo de um ataque enquanto uma criatura a até 1,5 metro de você está lhe fornecendo cobertura contra esse ataque, você pode usar sua reação para fazer com que o ataque tenha como alvo essa criatura, em vez de você.

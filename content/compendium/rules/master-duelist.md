@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: c2d18580ea9c6e04
+titulo_pt_br: Mestre Duelista
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest.
+A partir do 17º nível, sua maestria com a lâmina permite que você transforme falhas em sucessos no combate. Se você errar uma jogada de ataque, pode rolá-la novamente com vantagem. Após fazer isso, você não pode usar esta característica novamente até terminar um descanso curto ou longo.

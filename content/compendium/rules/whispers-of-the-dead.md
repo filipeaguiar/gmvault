@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 980a6dc031c9924c
+titulo_pt_br: Sussurros dos Mortos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level Phantom feature
+Característica de Phantom de 3º nível
 
-Echoes of those who have died cling to you. Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack.
+Ecos daqueles que morreram se agarram a você. Sempre que você termina um descanso curto ou longo, você pode escolher uma proficiência em perícia ou ferramenta que não possua e ganhá-la, conforme uma presença fantasmagórica compartilha seu conhecimento com você. Você perde essa proficiência quando usa essa característica para escolher uma proficiência diferente que não possua.

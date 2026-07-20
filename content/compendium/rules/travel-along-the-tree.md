@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: d6d401b822d7dbf4
+titulo_pt_br: Viagem ao Longo da Árvore
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you activate your Rage and as a Bonus Action while your Rage is active, you can teleport up to 60 feet to an unoccupied space you can see.
+Quando você ativa sua Fúria e como uma Ação Bônus enquanto sua Fúria estiver ativa, você pode se teleportar até 60 pés para um espaço desocupado que você possa ver.
 
-In addition, once per Rage, you can increase the range of that teleport to 150 feet. When you do so, you can also bring up to six willing creatures who are within 10 feet of you. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space.
+Além disso, uma vez por Fúria, você pode aumentar o alcance desse teleporte para 150 pés. Quando fizer isso, você também pode trazer até seis criaturas voluntárias que estejam a até 10 pés de você. Cada criatura se teleporta para um espaço desocupado de sua escolha a até 10 pés do seu espaço de destino.

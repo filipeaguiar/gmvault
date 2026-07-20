@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: fb41b129c692b1c0
+titulo_pt_br: Passo Fantasma
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-13th-level Phantom feature
+Característica de Espectral de 13º nível
 
-You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were 3, but you take <span class="dice+" data-roll-notation="1d10">1d10</span> force damage if you end your turn inside a creature or an object.
+Você pode entrar parcialmente no reino dos mortos, tornando-se como um fantasma. Como uma ação bônus, você assume uma forma espectral. Enquanto estiver nessa forma, você tem um deslocamento de voo de 3 metros, pode pairar e as jogadas de ataque têm desvantagem contra você. Você também pode se mover através de criaturas e objetos como se fossem 3, mas você sofre <span class="dice+" data-roll-notation="1d10">1d10</span> de dano de energia se terminar seu turno dentro de uma criatura ou objeto.
 
-You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk.
+Você permanece nessa forma por 10 minutos ou até encerrá-la como uma ação bônus. Para usar esta característica novamente, você deve terminar um descanso longo ou destruir um de seus adornos de alma como parte da ação bônus que usar para ativar Passo Fantasma.

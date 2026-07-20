@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 1cd40e9e2f299767
+titulo_pt_br: Pôr-se de Pé com um Salto
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you're prone, you can stand up by spending 5 feet of movement, rather than half your speed.
+Quando estiver caído, você pode se levantar gastando 1,5 metro de movimento, em vez de metade do seu deslocamento.

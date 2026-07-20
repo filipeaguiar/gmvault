@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 98ebfd970705a186
+titulo_pt_br: Caminho da Misericórdia
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Monks of the Way of Mercy learn to manipulate the life force of others to bring aid to those in need. They are wandering physicians to the poor and hurt. However, to those beyond their help, they bring a swift end as an act of mercy.
+Monges do Caminho da Misericórdia aprendem a manipular a força vital de outros para levar auxílio aos necessitados. Eles são médicos errantes para os pobres e feridos. No entanto, para aqueles que estão além de sua ajuda, eles trazem um fim rápido como um ato de misericórdia.
 
-Those who follow the Way of Mercy might be members of a religious order, administering to the needy and making grim choices rooted in reality rather than idealism. Some might be gentle-voiced healers, beloved by their communities, while others might be masked bringers of macabre mercies.
+Aqueles que seguem o Caminho da Misericórdia podem ser membros de uma ordem religiosa, cuidando dos necessitados e fazendo escolhas sombrias enraizadas na realidade em vez do idealismo. Alguns podem ser curandeiros de voz suave, amados por suas comunidades, enquanto outros podem ser portadores mascarados de misericórdias macabras.
 
-The walkers of this way usually don robes with deep cowls, and they often conceal their faces with masks, presenting themselves as the faceless bringers of life and death.
+Os caminhantes deste caminho geralmente vestem túnicas com capuz profundos, e muitas vezes ocultam seus rostos com máscaras, apresentando-se como os portadores sem rosto da vida e da morte.

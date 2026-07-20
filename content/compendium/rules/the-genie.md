@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,15 +17,22 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: b7ceda5f399bb56e
+titulo_pt_br: O Gênio
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You have made a pact with one of the rarest kinds of genie, a noble genie. Such entities rule vast fiefs on the Elemental Planes and have great influence over lesser genies and elemental creatures. Noble genies are varied in their motivations, but most are arrogant and wield power that rivals that of lesser deities. They delight in turning the table on mortals, who often bind genies into servitude, and readily enter into pacts that expand their reach.
+Você fez um pacto com um dos tipos mais raros de gênio, um gênio nobre. Tais entidades governam vastos feudos nos Planos Elementais e possuem grande influência sobre gênios menores e criaturas elementais. Gênios nobres possuem motivações variadas, mas a maioria é arrogante e empunha um poder que rivaliza com o de divindades menores. Eles têm prazer em virar o jogo contra os mortais, que frequentemente submetem gênios à servidão, e prontamente fazem pactos que expandem seu alcance.
 
-You choose your patron's kind or determine it randomly, using the Genie Kind table.
+Você escolhe o tipo do seu patrono ou determina aleatoriamente, usando a tabela Tipos de Gênio.
 
 
-### Expanded Spell List
+### Lista de Magias Expandida
 
-1st-level Genie feature
+Característica de Gênio de 1º nível
 
-The Genie lets you choose from an expanded list of spells when you learn a warlock spell. The Genie Expanded Spells table shows the genie spells that are added to the warlock spell list for you, along with the spells associated in the table with your patron's kind: dao, djinni, efreeti, or marid.
+O Gênio permite que você escolha de uma lista expandida de magias quando você aprende uma magia de bruxo. A tabela Magias Expandidas do Gênio mostra as magias de gênio que são adicionadas à lista de magias de bruxo para você, juntamente com as magias associadas na tabela ao tipo do seu patrono: dao, djinn, efreet ou marid.

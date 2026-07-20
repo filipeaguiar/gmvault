@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 4b70ee16afb9a1e2
+titulo_pt_br: Tentáculos Agarradores
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-10th-level Fathomless feature
+Característica de 10º nível do Abissal
 
-You learn the spell Evard's black tentacles. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.
+Você aprende a magia Tentáculos Negros de Evard. Ela conta como uma magia de bruxo para você, mas não conta no número de magias que você conhece. Você também pode conjurá-la uma vez sem gastar um espaço de magia, e recupera a capacidade de fazê-lo quando termina um descanso longo.
 
-Whenever you cast this spell, your patron's magic bolsters you, granting you a number of temporary hit points equal to your warlock level. Moreover, damage can't break your concentration on this spell.
+Sempre que você conjura esta magia, a magia de seu patrono fortalece você, concedendo-lhe uma quantidade de pontos de vida temporários igual ao seu nível de bruxo. Além disso, o dano não pode interromper sua concentração nesta magia.

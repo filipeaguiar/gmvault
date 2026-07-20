@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 806d7238075a5779
+titulo_pt_br: Palma Trêmula
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an Unarmed Strike, you can expend 4 Focus Points to start these imperceptible vibrations, which last for a number of days equal to your Monk level. The vibrations are harmless unless you take an action to end them. Alternatively, when you take the Attack action on your turn, you can forgo one of the attacks to end the vibrations. To end them, you and the target must be on the same plane of existence. When you end them, the target must make a Constitution saving throw, taking <span class="dice+" data-roll-notation="10d12">10d12</span> Force damage on a failed save or half as much damage on a successful one.
+Você ganha a habilidade de iniciar vibrações letais no corpo de alguém. Quando você atinge uma criatura com um Ataque Desarmado, você pode gastar 4 Pontos de Foco para iniciar essas vibrações imperceptíveis, que duram um número de dias igual ao seu nível de Monge. As vibrações são inofensivas a menos que você use uma ação para encerrá-las. Alternativamente, quando você usa a ação de Ataque no seu turno, você pode renunciar a um dos ataques para encerrar as vibrações. Para encerrá-las, você e o alvo devem estar no mesmo plano de existência. Quando você as encerra, o alvo deve fazer um teste de resistência de Constituição, sofrendo <span class="dice+" data-roll-notation="10d12">10d12</span> de dano de Energia em caso de falha no teste de resistência, ou metade desse dano em caso de sucesso no teste de resistência.
 
-You can have only one creature under the effect of this feature at a time. You can end the vibrations harmlessly (no action required).
+Você pode ter apenas uma criatura sob o efeito desta característica por vez. Você pode encerrar as vibrações de forma inofensiva (sem necessidade de ação).

@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,6 +18,12 @@ source:
   remote_key: classFeature
   remote_id: 24308c98b99b53ec
 titulo_pt_br: Opções de Invocação Mística
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 As opções de Invocação Mística aparecem em ordem alfabética.

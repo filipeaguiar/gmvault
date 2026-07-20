@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 16f2d050176fda23
+titulo_pt_br: Panache
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.
+No 9º nível, seu charme se torna extremamente sedutor. Como uma ação, você pode fazer um teste de Carisma (Persuasão) disputado por um teste de Sabedoria (Intuição) de uma criatura. A criatura deve ser capaz de ouvir você, e vocês dois devem compartilhar um idioma.
 
-If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.
+Em caso de sucesso no teste e a criatura for hostil a você, ela tem desvantagem nas jogadas de ataque contra alvos que não você e não pode fazer ataques de oportunidade contra alvos que não você. Este efeito dura 1 minuto, até que um de seus companheiros ataque o alvo ou o afete com uma magia, ou até que você e o alvo estejam a mais de 18 metros de distância um do outro.
 
-If you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.
+Em caso de sucesso no teste e a criatura não for hostil a você, ela fica enfeitiçada por você por 1 minuto. Enquanto enfeitiçada, ela o considera um conhecido amigável. Este efeito termina imediatamente se você ou seus companheiros fizerem qualquer coisa prejudicial a ela.

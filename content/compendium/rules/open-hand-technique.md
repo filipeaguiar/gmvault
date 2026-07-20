@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,21 +17,22 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 87652779068b9990
+titulo_pt_br: Técnica da Mão Aberta
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target.
-
+Sempre que você atingir uma criatura com um ataque concedido por sua Rajada de Golpes, você pode impor um dos seguintes efeitos sobre o alvo.
 
 ### Addle
-
-The target can't make Opportunity Attacks until the start of its next turn.
-
+O alvo não pode realizar Ataques de Oportunidade até o início do próximo turno dela.
 
 ### Push
-
-The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you.
-
+O alvo deve ser bem-sucedido em um teste de resistência de Força ou será empurrado até 4,5 metros para longe de você.
 
 ### Topple
-
-The target must succeed on a Dexterity saving throw or have the Prone condition.
+O alvo deve ser bem-sucedido em um teste de resistência de Destreza ou ficará com a condição Caído.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: ebf03bd6f5fd1eba
+titulo_pt_br: Rajada de Golpes
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.
+Você pode gastar 1 Ponto de Foco para realizar dois Ataques Desarmados como uma Ação Bônus.

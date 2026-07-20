@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 479c78f9aacc5b7f
+titulo_pt_br: Reflexos do Ladrão
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You are adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10.
+Você é hábil em preparar emboscadas e escapar rapidamente do perigo. Você pode realizar dois turnos durante a primeira rodada de qualquer combate. Você realiza seu primeiro turno em sua Iniciativa normal e seu segundo turno com sua Iniciativa menos 10.

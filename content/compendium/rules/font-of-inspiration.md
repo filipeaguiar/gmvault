@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: 4fc71c6d9921c73f
+titulo_pt_br: Fonte de Inspiração
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.
+Agora você recupera todos os seus usos gastos de Inspiração de Bardo quando termina um Descanso Curto ou Longo.
 
-In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.
+Além disso, você pode gastar um Espaço de Magia (nenhuma ação necessária) para recuperar um uso gasto de Inspiração de Bardo.

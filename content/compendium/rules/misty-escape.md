@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 715d11613396a7c2
+titulo_pt_br: Fuga Envolta em Névoa
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can cast Misty Step as a Reaction in response to taking damage.
+Você pode conjurar Passo Nebuloso como uma Reação em resposta a sofrer dano.
 
-In addition, the following effects are now among your Steps of the Fey options.
+Além disso, os efeitos a seguir agora estão entre suas opções de Passos das Fadas.

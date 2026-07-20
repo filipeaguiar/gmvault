@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,17 +17,24 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 77104770cd55ea90
+titulo_pt_br: O Insondável
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You have plunged into a pact with the deeps. An entity of the ocean, the Elemental Plane of Water, or another otherworldly sea now allows you to draw on its thalassic power. Is it merely using you to learn about terrestrial realms, or does it want you to open cosmic floodgates and drown the world?
+Você mergulhou em um pacto com as profundezas. Uma entidade do oceano, do Plano Elemental da Água, ou de outro mar sobrenatural agora lhe permite recorrer ao seu poder talássico. Ela está apenas usando você para aprender sobre os reinos terrestres ou deseja que você abra as comportas cósmicas e afogue o mundo?
 
-Perhaps you were born into a generational cult that venerates the Fathomless and its spawn. Or you might have been shipwrecked and on the brink of drowning when your patron's grasp offered you a chance at life. Whatever the reason for your pact, the sea and its unknown depths call to you.
+Talvez você tenha nascido em um culto geracional que venera o Abissal e sua prole. Ou você pode ter naufragado e, à beira do afogamento, quando o seu patrono lhe agarrou e ofereceu uma chance de vida. Qualquer que seja a razão para seu pacto, o mar e suas profundezas insondáveis clamam por você.
 
-Entities of the deep that might empower a warlock include krakens, ancient water elementals, godlike hallucinations dreamed into being by kuo-toa, merfolk demigods, and sea hag covens.
+Entidades das profundezas que podem conceder poder a um bruxo incluem krakens, elementais da água ancestrais, alucinações divinas sonhadas à existência pelos kuo-toa, semideuses merfolk e covens de bruxas do mar.
 
 
-### Expanded Spell List
+### Lista Expandida de Magias
 
-1st-level Fathomless feature
+Característica de 1º nível do Abissal
 
-The Fathomless lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.
+O Abissal permite que você escolha de uma lista expandida de magias quando aprende uma magia de bruxo. As magias a seguir são adicionadas à lista de magias do bruxo para você.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: f2b3a92dea6ea69d
+titulo_pt_br: Floreio Cortante
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die.
+Você pode gastar um uso de sua Inspiração de Bardo para fazer a arma causar dano extra ao alvo que você atingiu e a qualquer outra criatura à sua escolha que você possa ver a até 1,5 metro de você. O dano é igual ao número que você rolar no dado de Inspiração de Bardo.

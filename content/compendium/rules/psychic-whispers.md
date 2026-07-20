@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 57e3b052eb035353
+titulo_pt_br: Sussurros Psíquicos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can establish telepathic communication between yourself and others. As a Magic action, choose one or more creatures you can see, up to a number of creatures equal to your Proficiency Bonus, and then roll one Psionic Energy Die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can end the telepathic connection at any time (no action required).
+Você pode estabelecer comunicação telepática entre você e outros. Como uma Ação Mágica, escolha uma ou mais criaturas que você possa ver, até um número de criaturas igual ao seu Bônus de Proficiência, e então role um Dado de Energia Psiônica. Por um número de horas igual ao número rolado, as criaturas escolhidas podem falar telepaticamente com você, e você pode falar telepaticamente com elas. Para enviar ou receber uma mensagem (nenhuma ação necessária), você e a outra criatura devem estar a até 1 milha um do outro. Uma criatura pode encerrar a conexão telepática a qualquer momento (nenhuma ação necessária).

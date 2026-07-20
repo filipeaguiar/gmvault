@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 59caa5b14e079c0b
+titulo_pt_br: Caminho do Furioso
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Channel Rage into Violent Fury
+Canalizar a Fúria em Fúria Violenta
 
-Barbarians who walk the Path of the Berserker direct their Rage primarily toward violence. Their path is one of untrammeled fury, and they thrill in the chaos of battle as they allow their Rage to seize and empower them.
+Bárbaros que trilham o Caminho do Furioso direcionam sua Fúria principalmente para a violência. Seu caminho é de fúria desenfreada, e eles se deleitam no caos da batalha ao permitir que sua Fúria os tome e fortaleça.

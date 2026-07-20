@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 4b57c1555ff00517
+titulo_pt_br: Rajada de Cura e Ferimento
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you use Flurry of Blows, you can replace each of the Unarmed Strikes with a use of Hand of Healing without expending Focus Points for the healing.
+Quando você usa Enxurrada de Golpes, você pode substituir cada um dos Ataques Desarmados por um uso de Mão da Cura sem gastar Pontos de Foco pela cura.
 
-In addition, when you make an Unarmed Strike with Flurry of Blows and deal damage, you can use Hand of Harm with that strike without expending a Focus Point for Hand of Harm. You can still use Hand of Harm only once per turn.
+Além disso, quando você faz um Ataque Desarmado com Enxurrada de Golpes e causa dano, você pode usar Mão do Dano com esse ataque sem gastar um Ponto de Foco para Mão do Dano. Você ainda pode usar Mão do Dano apenas uma vez por turno.
 
-You can use these benefits a total number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.
+Você pode usar esses benefícios um número total de vezes igual ao seu modificador de Sabedoria (mínimo de uma vez). Você recupera todos os usos gastos quando termina um Descanso Longo.

@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,21 +17,28 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 0e509419db2a4446
+titulo_pt_br: Usar Item Mágico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You've learned how to maximize use of magic items, granting you the following benefits.
+Você aprendeu a maximizar o uso de itens mágicos, concedendo-lhe os seguintes benefícios.
 
 
-### Attunement
+### Sintonia
 
-You can attune to up to four magic items at once.
-
-
-### Charges
-
-Whenever you use a magic item property that expends charges, roll <span class="dice+" data-roll-notation="1d6">1d6</span>. On a roll of 6, you use the property without expending the charges.
+Você pode se sintonizar com até quatro itens mágicos por vez.
 
 
-### Scrolls
+### Cargas
 
-You can use any Spell Scroll, using Intelligence as your spellcasting ability for the spell. If the spell is a cantrip or a level 1 spell, you can cast it reliably. If the scroll contains a higher-level spell, you must first succeed on an Intelligence (Arcana) check (10 plus the spell's level). On a successful check, you cast the spell from the scroll. On a failed check, the scroll disintegrates.
+Sempre que você usar uma propriedade de um item mágico que gaste cargas, jogue <span class="dice+" data-roll-notation="1d6">1d6</span>. Com um resultado 6, você usa a propriedade sem gastar as cargas.
+
+
+### Pergaminhos
+
+Você pode usar qualquer Pergaminho de Magia, usando Inteligência como seu atributo de conjuração para a magia. Se a magia for um truque ou uma magia de 1º nível, você pode conjurá-la de forma confiável. Se o pergaminho contiver uma magia de nível mais alto, você deve primeiro ser bem-sucedido em um teste de Inteligência (Arcanismo) (CD 10 + o nível da magia). Em caso de sucesso no teste, você conjura a magia do pergaminho. Em caso de falha no teste, o pergaminho se desintegra.

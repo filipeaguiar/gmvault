@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 019fd790d23b8d4e
+titulo_pt_br: Tempestade Furiosa
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.
+No 14º nível, o poder da tempestade que você canaliza se torna mais poderoso, fustigando seus inimigos. O efeito é baseado no ambiente que você escolheu para sua Aura de Tempestade.

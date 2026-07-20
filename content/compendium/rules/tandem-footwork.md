@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: b4751309bf541f1a
+titulo_pt_br: Passo Sincronizado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you roll Initiative, you can expend one use of your Bardic Inspiration if you don't have the Incapacitated condition. When you do so, roll your Bardic Inspiration die; you and each ally within 30 feet of you who can see or hear you gains a bonus to Initiative equal to the number rolled.
+Quando você rola Iniciativa, pode gastar um uso de sua Inspiração de Bardo se não tiver a condição Incapacitado. Ao fazer isso, role o dado de Inspiração de Bardo; você e cada aliado a até 30 pés de você que possa ver ou ouvir você recebe um bônus na Iniciativa igual ao número rolado.

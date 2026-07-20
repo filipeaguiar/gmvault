@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,14 +17,21 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: f80d2b3dd793315c
+titulo_pt_br: Fúria Infecciosa
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-10th-level Path of the Beast feature
+Característica de 10º nível do Caminho da Besta
 
-When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):
+Quando você atinge uma criatura com suas armas naturais enquanto está em Fúria, a besta interior pode amaldiçoar seu alvo com fúria raivosa. O alvo deve ser bem-sucedido em um teste de resistência de Sabedoria (CD igual a 8 + seu modificador de Constituição + seu bônus de proficiência) ou sofrer um dos seguintes efeitos (à sua escolha):
 
-* The target must use its reaction to make a melee attack against another creature of your choice that you can see.
+* O alvo deve usar sua reação para realizar um ataque corpo a corpo contra outra criatura à sua escolha que você possa ver.
 
-* The target takes <span class="dice+" data-roll-notation="2d12">2d12</span> psychic damage.
+* O alvo sofre <span class="dice+" data-roll-notation="2d12">2d12</span> de dano psíquico.
 
-You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+Você pode usar esta característica um número de vezes igual ao seu bônus de proficiência, e recupera todos os usos gastos quando termina um descanso longo.

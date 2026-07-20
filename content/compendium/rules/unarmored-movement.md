@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: a25582ec638e1ab6
+titulo_pt_br: Movimento Desarmado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your speed increases by 10 feet while you aren't wearing armor or wielding a Shield. This bonus increases when you reach certain Monk levels, as shown on the Monk Features table.
+Seu deslocamento aumenta em 10 pés enquanto você não estiver vestindo armadura ou empunhando um Escudo. Esse bônus aumenta quando você atinge certos níveis de Monge, conforme mostrado na tabela Características do Monge.

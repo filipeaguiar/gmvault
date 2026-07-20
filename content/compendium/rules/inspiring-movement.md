@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,13 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 70ae4eaa89ea7c65
+titulo_pt_br: Movimento Inspirador
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When an enemy you can see ends its turn within 5 feet of you, you can take a Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then one ally of your choice within 30 feet of you can also move up to half their Speed using their Reaction.
-
-None of this feature's movement provokes Opportunity Attacks.
+Quando um inimigo que você possa ver termina seu turno a 5 pés de você, você pode realizar uma Reação e gastar um uso de sua Inspiração de Bardo para se mover até metade do seu Deslocamento. Em seguida, um aliado de sua escolha a até 30 pés de você também pode se mover até metade do Deslocamento dele usando sua Reação. Nenhum deslocamento dessa característica provoca Ataques de Oportunidade.

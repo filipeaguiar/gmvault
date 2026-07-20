@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: a0efa33c72fcadaf
+titulo_pt_br: Guerreiro Maligno
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At 1st level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons.
+No 1º nível, você adquire o treinamento necessário para se armar efetivamente para a batalha. Você ganha proficiência com armadura média, escudos e armas marciais.
 
-The influence of your patron also allows you to mystically channel your will through a particular weapon. Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon's type.
+A influência de seu patrono também permite que você canalize misticamente sua vontade através de uma arma específica. Sempre que você terminar um descanso longo, pode tocar uma arma com a qual tenha proficiência e que não tenha a propriedade de duas mãos. Quando você atacar com essa arma, pode usar seu modificador de Carisma, em vez de Força ou Destreza, para as jogadas de ataque e dano. Este benefício dura até você terminar um descanso longo. Se mais tarde você ganhar a característica Pacto da Lâmina, este benefício se estende a cada arma de pacto que você conjurar com essa característica, independentemente do tipo da arma.

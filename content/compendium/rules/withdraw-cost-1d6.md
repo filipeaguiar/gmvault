@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: classFeature
   remote_id: c0c56c7028c00d89
+titulo_pt_br: 'Retirada (Custo: 1d6)'
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.
+Imediatamente após o ataque, você se move até metade do seu Deslocamento sem provocar Ataques de Oportunidade.

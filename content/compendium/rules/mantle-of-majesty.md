@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,12 +17,19 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: af8c7e5a3653e685
+titulo_pt_br: Manto da Majestade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You always have the Command spell prepared.
+Você sempre tem a magia Comando preparada.
 
-As a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot.
+Como uma Ação Bônus, você pode conjurar Comando sem gastar um espaço de magia, e você assume uma aparência sobrenatural por 1 minuto ou até que sua Concentração termine. Durante este período, você pode conjurar Comando como uma Ação Bônus sem gastar um espaço de magia.
 
-Any creature Charmed by you automatically fails its saving throw against the Command you cast with this feature.
+Qualquer criatura Enfeitiçada por você falha automaticamente em seu teste de resistência contra a magia Comando que você conjurar com esta característica.
 
-Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).
+Uma vez que usar esta característica, você não pode usá-la novamente até terminar um Descanso Longo. Você também pode restaurar o uso dela gastando um espaço de magia de 3º círculo ou superior (sem ação necessária).

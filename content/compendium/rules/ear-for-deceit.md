@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 2d2f6459ccacc6ee
+titulo_pt_br: Ouvido para Engano
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you choose this archetype at 3rd level, you develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the <span class="dice+" data-roll-notation="d20">d20</span> as an 8.
+Quando você escolhe este arquétipo no 3º nível, você desenvolve um talento para detectar mentiras. Sempre que você fizer um teste de Sabedoria (Intuição) para determinar se uma criatura está mentindo, trate uma rolagem de 7 ou menos no <span class="dice+" data-roll-notation="d20">d20</span> como um 8.

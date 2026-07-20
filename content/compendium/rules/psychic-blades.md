@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,10 +17,17 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 9c4e4ab0e4198927
+titulo_pt_br: Lâminas Psíquicas
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can manifest shimmering blades of psychic energy. Whenever you take the Attack action or make an Opportunity Attack, you can manifest a Psychic Blade in your free hand and make the attack with that blade. The magic blade has the following traits:
+Você pode manifestar lâminas cintilantes de energia psíquica. Sempre que realizar a ação de Ataque ou fizer um Ataque de Oportunidade, você pode manifestar uma Lâmina Psíquica em sua mão livre e realizar o ataque com essa lâmina. A lâmina mágica tem as seguintes características:
 
-The blade vanishes immediately after it hits or misses its target, and it leaves no mark if it deals damage.
+A lâmina desaparece imediatamente após atingir ou errar o alvo, e não deixa marcas se causar dano.
 
-After you attack with the blade on your turn, you can make a melee or ranged attack with a second psychic blade as a Bonus Action on the same turn if your other hand is free to create it. The damage die of this bonus attack is <span class="dice+" data-roll-notation="1d4">1d4</span> instead of <span class="dice+" data-roll-notation="1d6">1d6</span>.
+Após atacar com a lâmina no seu turno, você pode realizar um ataque corpo a corpo ou à distância com uma segunda lâmina psíquica como uma Ação Bônus no mesmo turno, se sua outra mão estiver livre para criá-la. O dado de dano deste ataque bônus é <span class="dice+" data-roll-notation="1d4">1d4</span> em vez de <span class="dice+" data-roll-notation="1d6">1d6</span>.

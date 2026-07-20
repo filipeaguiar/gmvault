@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 5d88d5862fd42ad1
+titulo_pt_br: Passo Veloz
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind immediately after that Bonus Action.
+Quando você usa uma Ação Bônus diferente de Rajada de Vento, você também pode usar Rajada de Vento imediatamente após essa Ação Bônus.

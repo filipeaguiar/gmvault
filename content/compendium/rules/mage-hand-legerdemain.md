@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: ee577e9b4837d39c
+titulo_pt_br: Prestidigitação do Truque de Mão
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.
+Quando você conjura Mãos Mágicas, você pode conjurá-la como uma Ação Bônus, e você pode tornar a mão espectral Invisível. Você pode controlar a mão como uma Ação Bônus, e, através dela, você pode fazer testes de Destreza (Prestidigitação).

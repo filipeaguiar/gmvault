@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 28d1d79bd41560fc
+titulo_pt_br: Defesa Superior
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At the start of your turn, you can expend 3 Focus Points to bolster yourself against harm for 1 minute or until you have the Incapacitated condition. During that time, you have Resistance to all damage except Force damage.
+No início do seu turno, você pode gastar 3 Pontos de Foco para se fortalecer contra dano por 1 minuto ou até que tenha a condição Incapacitado. Durante esse período, você tem Resistência a todo dano, exceto Dano de Energia.

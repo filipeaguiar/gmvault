@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 96639991d7de3247
+titulo_pt_br: Treino em Combate
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain proficiency with Martial weapons and training with Medium armor and Shields.
+Você ganha proficiência com armas marciais e treinamento com armaduras médias e escudos.
 
-In addition, you can use a Simple or Martial weapon as a Spellcasting Focus to cast spells from your Bard spell list.
+Além disso, você pode usar uma arma simples ou marcial como um foco de conjuração para conjurar magias da sua lista de magias de bardo.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 1065f3e400d5b2f4
+titulo_pt_br: Majestade Inquebrável
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the Incapacitated condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your spell save DC, or the attack misses instead, as the creature recoils from your majesty.
+Como uma Ação Bônus, você pode assumir uma presença magicamente majestosa por 1 minuto ou até que tenha a condição Incapacitado. Pela duração, sempre que qualquer criatura acertar você com uma jogada de ataque pela primeira vez em um turno, o atacante deve ser bem-sucedido em um Teste de Resistência de Carisma contra sua CD para Evitar Magia, ou, em vez disso, o ataque erra, pois a criatura recua diante de sua majestade.
 
-Once you assume this majestic presence, you can't do so again until you finish a Short or Long Rest.
+Uma vez que você assume esta presença majestosa, não pode fazê-lo novamente até terminar um Descanso Curto ou Longo.

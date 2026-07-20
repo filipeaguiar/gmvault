@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-monk.json
   remote_key: classFeature
   remote_id: 6530826f6939dd9c
+titulo_pt_br: Desviar Ataques
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack's total damage against you. The reduction equals <span class="dice+" data-roll-notation="1d10">1d10</span> plus your Dexterity modifier and Monk level.
+Quando uma jogada de ataque atinge você e seu dano inclui dano de Concussão, Perfurante ou Cortante, você pode usar uma Reação para reduzir o dano total do ataque contra você. A redução é igual a <span class="dice+" data-roll-notation="1d10">1d10</span> mais seu modificador de Destreza e nível de Monge.
 
-If you reduce the damage to 0, you can expend 1 Focus Point to redirect some of the attack's force. If you do so, choose a creature you can see within 5 feet of yourself if the attack was a melee attack or a creature you can see within 60 feet of yourself that isn't behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type dealt by the attack.
+Se você reduzir o dano a 0, você pode gastar 1 Ponto de Foco para redirecionar parte da força do ataque. Se fizer isso, escolha uma criatura que você possa ver dentro de 1,5 metro de você se o ataque foi um ataque corpo a corpo, ou uma criatura que você possa ver dentro de 18 metros de você que não esteja atrás de Cobertura Total se o ataque foi um ataque à distância. Essa criatura deve ser bem-sucedida em um teste de resistência de Destreza ou sofrer dano igual a duas rolagens do seu dado de Artes Marciais mais seu modificador de Destreza. O dano é do mesmo tipo causado pelo ataque.

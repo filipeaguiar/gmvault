@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-rogue.json
   remote_key: subclassFeature
   remote_id: 0585de608898e93c
+titulo_pt_br: Mente Mestra
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.
+Seu foco está nas pessoas, na influência que exercem e nos segredos que guardam. Muitos espiões, cortesãos e conspiradores seguem este arquétipo, levando vidas de intriga. Palavras são suas armas tão frequentemente quanto facas ou veneno, e segredos e favores estão entre seus tesouros mais preciosos.

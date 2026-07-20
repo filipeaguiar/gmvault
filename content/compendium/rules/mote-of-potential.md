@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,16 +17,23 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 0cfefa9bc3a00edf
+titulo_pt_br: Partícula de Potencial
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-3rd-level College of Creation feature
+Característica de 3º nível do Colégio da Criação
 
-Whenever you give a creature a Bardic Inspiration die, you can utter a note from the Song of Creation to create a Tiny mote of potential, which orbits within 5 feet of that creature. The mote is intangible and invulnerable, and it lasts until the Bardic Inspiration die is lost. The mote looks like a musical note, a star, a flower, or another symbol of art or life that you choose.
+Sempre que você conceder um dado de Inspiração de Bardo a uma criatura, você pode entoar uma nota da Canção da Criação para criar um pequeno fragmento de potencial Miúdo, que orbita a 1,5 metro da criatura. O fragmento é intangível e invulnerável, e dura até que o dado de Inspiração de Bardo seja perdido. O fragmento se parece com uma nota musical, uma estrela, uma flor ou outro símbolo de arte ou vida que você escolher.
 
-When the creature uses the Bardic Inspiration die, the mote provides an additional effect based on whether the die benefits an ability check, an attack roll, or a saving throw, as detailed below:
+Quando a criatura usa o dado de Inspiração de Bardo, o fragmento fornece um efeito adicional baseado em se o dado beneficia um teste de atributo, uma jogada de ataque ou um teste de resistência, conforme detalhado abaixo:
 
-* {'type': 'item', 'name': 'Ability Check', 'entry': 'When the creature rolls the Bardic Inspiration die to add it to an ability check, the creature can roll the Bardic Inspiration die again and choose which roll to use, as the mote pops and emits colorful, harmless sparks for a moment.'}
+- **Teste de Atributo.** Quando a criatura rola o dado de Inspiração de Bardo para adicioná-lo a um teste de atributo, ela pode rolar o dado de Inspiração de Bardo novamente e escolher qual rolagem usar, enquanto o fragmento estoura e emite faíscas coloridas e inofensivas por um momento.
 
-* {'type': 'item', 'name': 'Attack Roll', 'entry': 'Immediately after the creature rolls the Bardic Inspiration die to add it to an attack roll against a target, the mote thunderously shatters. The target and each creature of your choice that you can see within 5 feet of it must succeed on a Constitution saving throw against your spell save DC or take thunder damage equal to the number rolled on the Bardic Inspiration die.'}
+- **Jogada de Ataque.** Imediatamente após a criatura rolar o dado de Inspiração de Bardo para adicioná-lo a uma jogada de ataque contra um alvo, o fragmento se estilhaça trovejantemente. O alvo e cada criatura, à sua escolha, que você possa ver a 1,5 metro dele devem ser bem-sucedidos em um teste de resistência de Constituição contra a CD para evitar suas magias ou sofrem dano trovejante igual ao número rolado no dado de Inspiração de Bardo.
 
-* {'type': 'item', 'name': 'Saving Throw', 'entry': 'Immediately after the creature rolls the Bardic Inspiration die and adds it to a saving throw, the mote vanishes with the sound of soft music, causing the creature to gain temporary hit points equal to the number rolled on the Bardic Inspiration die plus your Charisma modifier (minimum of 1 temporary hit point).'}
+- **Teste de Resistência.** Imediatamente após a criatura rolar o dado de Inspiração de Bardo e adicioná-lo a um teste de resistência, o fragmento desaparece com o som de uma música suave, fazendo com que a criatura ganhe pontos de vida temporários iguais ao número rolado no dado de Inspiração de Bardo mais o seu modificador de Carisma (mínimo de 1 ponto de vida temporário).

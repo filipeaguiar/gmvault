@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 4d158c38f54ca6e2
+titulo_pt_br: Caminho do Eu Astral
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A monk who follows the Way of the Astral Self believes their body is an illusion. They see their ki as a representation of their true form, an astral self. This astral self has the capacity to be a force of order or disorder, with some monasteries training students to use their power to protect the weak and other instructing aspirants in how to manifest their true selves in service to the mighty.
+Um monge que segue o Caminho do Eu Astral acredita que seu corpo é uma ilusão. Eles veem seu ki como uma representação de sua verdadeira forma, um eu astral. Este eu astral tem a capacidade de ser uma força de ordem ou desordem, com alguns mosteiros treinando estudantes para usar seu poder para proteger os fracos e outros instruindo aspirantes em como manifestar seus verdadeiros eus a serviço dos poderosos.

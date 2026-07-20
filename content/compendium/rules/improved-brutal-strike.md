@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,6 +18,12 @@ source:
   remote_key: classFeature
   remote_id: e49523ea5818e6fc
 titulo_pt_br: Golpe Brutal Aprimorado
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Você aperfeiçoou novas formas de atacar com fúria. Os efeitos a seguir agora fazem parte de suas opções de Golpe Brutal.

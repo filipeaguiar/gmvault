@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 7bccfaf6f3ce80be
+titulo_pt_br: Sintonia Elemental
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-At the start of your turn, you can expend 1 Focus Point to imbue yourself with elemental energy. The energy lasts for 10 minutes or until you have the Incapacitated condition. You gain the following benefits while this feature is active.
+No início do seu turno, você pode gastar 1 Ponto de Foco para imbuir-se com energia elemental. A energia dura por 10 minutos ou até que você sofra a condição Incapacitado. Enquanto esta característica estiver ativa, você recebe os seguintes benefícios.
