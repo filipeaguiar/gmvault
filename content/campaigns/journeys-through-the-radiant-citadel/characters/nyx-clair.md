@@ -231,7 +231,7 @@ char_info:
   spell_slots:
     1: 2
   spellcasting:
-    ability: ''
+    ability: cha
     can_mark_known: true
     can_prepare: false
     cantrips_known: 6
