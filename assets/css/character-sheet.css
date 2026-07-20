@@ -560,6 +560,10 @@ html.vtt-iframe .char-tab-content {
   border-left: 4px solid var(--primary-color);
 }
 
+.spell-empty-message.is-hidden {
+  display: none;
+}
+
 .spell-collection-heading {
   display: flex;
   align-items: baseline;
