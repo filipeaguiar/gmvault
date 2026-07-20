@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import create_character
 import edit_character
+import dnd_utils
 
 
 def raw_spell(name, *, level=1, prepared=False, uses_slot=True):
@@ -38,6 +39,23 @@ def test_create_flow_emits_minimal_refs_and_skips_unresolved_names():
         "can_prepare": True,
     }]
     assert unresolved == ["Unknown"]
+
+
+def test_editor_refreshes_single_class_ability_without_guessing_multiclass():
+    character = {"class": "Warlock", "spellcasting": {"ability": ""}}
+    with patch("dnd_utils.fetch_class_json", return_value={
+        "class": [{"name": "Warlock", "spellcastingAbility": "cha"}]
+    }):
+        assert dnd_utils.refresh_character_spellcasting_ability(character) == "cha"
+    assert character["spellcasting"]["ability"] == "cha"
+
+    multiclass = {
+        "class": "Warlock",
+        "classes_progression": [{"name": "Warlock"}, {"name": "Cleric"}],
+        "spellcasting": {"ability": "cha"},
+    }
+    assert dnd_utils.refresh_character_spellcasting_ability(multiclass) is None
+    assert multiclass["spellcasting"]["ability"] == "cha"
 
 
 def test_edit_flow_normalizes_legacy_preserves_unresolved_and_recomputes_profile():

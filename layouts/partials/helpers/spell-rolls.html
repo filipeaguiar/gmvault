@@ -23,15 +23,33 @@
 {{- end -}}
 
 {{- if and $hasCharacter $spellUsable $spellInfo.attack_type -}}
-  {{- $attackBonus := $charInfo.spell_attack_bonus | default 0 | int -}}
-  {{- $attackNotation := printf "1d20%+d" $attackBonus -}}
-  {{- $controls = $controls | append (dict
-    "kind" "attack"
-    "notation" $attackNotation
-    "label" "Ataque mágico"
-    "display" (printf "%+d" $attackBonus)
-    "attack_type" $spellInfo.attack_type
-  ) -}}
+  {{- $attackBonus := false -}}
+  {{- if isset $charInfo "spell_attack_bonus" -}}
+    {{- $explicitBonus := $charInfo.spell_attack_bonus | int -}}
+    {{- if ne $explicitBonus 0 -}}{{- $attackBonus = $explicitBonus -}}{{- end -}}
+  {{- end -}}
+  {{- if eq $attackBonus false -}}
+    {{- $singleClass := true -}}
+    {{- with $charInfo.classes_progression -}}
+      {{- if ne (len .) 1 -}}{{- $singleClass = false -}}{{- end -}}
+    {{- end -}}
+    {{- $profile := $charInfo.spellcasting | default dict -}}
+    {{- $ability := index $profile "ability" | default "" | lower -}}
+    {{- $mods := $charInfo.mods | default dict -}}
+    {{- if and $singleClass (in (slice "str" "dex" "con" "int" "wis" "cha") $ability) (isset $charInfo "proficiency_bonus") (isset $mods $ability) -}}
+      {{- $attackBonus = add ($charInfo.proficiency_bonus | int) (index $mods $ability | int) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if ne $attackBonus false -}}
+    {{- $attackNotation := printf "1d20%+d" $attackBonus -}}
+    {{- $controls = $controls | append (dict
+      "kind" "attack"
+      "notation" $attackNotation
+      "label" "Ataque mágico"
+      "display" (printf "%+d" $attackBonus)
+      "attack_type" $spellInfo.attack_type
+    ) -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $kindLabels := dict "damage" "Dano" "healing" "Cura" "dice" "Dados" -}}

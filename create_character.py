@@ -1308,12 +1308,16 @@ def main():
     persisted_spells = merge_spell_entries(persisted_spells)
 
     spell_slots_val = dnd_utils.calculate_spell_slots(selected_class_name, level)
+    spellcasting_ability = dnd_utils.spellcasting_ability_from_class_data(
+        class_data, selected_class_name
+    )
     spellcasting_profile = dnd_utils.infer_spellcasting_profile(
         selected_class_name,
         level,
         spell_slots=spell_slots_val,
         spells=spells_field_data,
         class_spells=class_spells_field_data,
+        casting_ability=spellcasting_ability,
     )
 
     passive_senses = {
@@ -1347,6 +1351,7 @@ def main():
         spell_slots=spell_slots_val,
         spells=spells_field_data,
         class_spells=class_spells_field_data,
+        casting_ability=spellcasting_ability,
     )
     # Última passagem comum: cobre referências que os passos interativos não
     # conhecem isoladamente e nunca inventa URLs para conteúdo não resolvido.
@@ -1415,7 +1420,6 @@ char_info:
   dndbeyond_id: ""
   proficiency_bonus: {prof_bonus}
   spell_dc: 0
-  spell_attack_bonus: 0
   avatar: ""
   spellcasting:{dump_yaml_indented(spell_state, 4)}
   speed:

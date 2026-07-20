@@ -208,12 +208,15 @@ def add_spells(
         ))
     else:
         char_info["class_spells"] = []
+    existing_profile = char_info.get("spellcasting")
+    casting_ability = existing_profile.get("ability") if isinstance(existing_profile, dict) else None
     char_info["spellcasting"] = dnd_utils.infer_spellcasting_profile(
         class_name,
         level,
         spell_slots=char_info.get("spell_slots") or {},
         spells=char_info["spells"],
         class_spells=char_info["class_spells"],
+        casting_ability=casting_ability,
     )
     post["compendium_refs"] = list(dict.fromkeys(references))
     return added
@@ -650,11 +653,14 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
     # Update spellcasting
     spells = char_info.get("spells", [])
     class_spells = char_info.get("class_spells", [])
+    existing_profile = char_info.get("spellcasting")
+    casting_ability = existing_profile.get("ability") if isinstance(existing_profile, dict) else None
     char_info["spellcasting"] = dnd_utils.infer_spellcasting_profile(
         class_name, new_level,
         spell_slots=spell_slots,
         spells=spells,
         class_spells=class_spells,
+        casting_ability=casting_ability,
     )
 
     print(f"\n{'═' * 50}")

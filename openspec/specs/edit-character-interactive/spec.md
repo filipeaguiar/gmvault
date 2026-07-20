@@ -27,8 +27,6 @@ The system SHALL parse the Markdown file, modify ONLY the `equipment` and `compe
 - **THEN** the system updates the character's `.md` file
 - **THEN** previously defined skills, hp, abilities and the Markdown body are preserved exactly as before
 
-
-
 ### Requirement: Complete local character compendium synchronization
 The editor SHALL synchronize all supported shared entities represented by the selected local character, including classes, species, subclasses, feats, standard actions, class and subclass features, spells, items, and magic items, after an operation introduces them and through an explicit full synchronization operation.
 
@@ -45,7 +43,6 @@ The editor SHALL synchronize all supported shared entities represented by the se
 - **WHEN** a selected character already references an existing canonical compendium page
 - **THEN** the editor SHALL reuse that page and SHALL NOT create a duplicate reference
 
-
 ### Requirement: Editor exposes local level-up operation
 The interactive character editor SHALL offer a level-up operation for a selected local character whose class progression can be resolved, collect every required deterministic player choice including Expertise skill selections, and present the completed plan before modifying the file.
 
@@ -60,3 +57,22 @@ The interactive character editor SHALL offer a level-up operation for a selected
 #### Scenario: Expertise requires skill selections
 - **WHEN** the target-level features include `Expertise`
 - **THEN** the editor SHALL prompt the user to select two distinct eligible skills before presenting the confirmation prompt
+
+### Requirement: Character editor maintains resolved casting ability
+The interactive character editor SHALL preserve a supported existing `char_info.spellcasting.ability` and SHALL refresh it from resolved single-class data when an edit or synchronization recalculates the spellcasting profile. It SHALL not assign an ambiguous ability to a multiclass character.
+
+#### Scenario: Synchronizing a single-class spellcaster
+- **WHEN** the user synchronizes a single-class spellcaster whose resolved class data identifies a spellcasting ability
+- **THEN** the editor SHALL write the corresponding normalized ability key to `char_info.spellcasting.ability`
+
+#### Scenario: Editing a multiclass character without per-spell metadata
+- **WHEN** the selected character has multiple spellcasting classes and no unambiguous single profile ability
+- **THEN** the editor SHALL preserve existing data without inventing a global casting ability
+
+### Requirement: Character editor preserves explicit spell attack overrides
+The interactive character editor SHALL preserve a configured `char_info.spell_attack_bonus` while updating spellcasting profile data, unless the user explicitly changes that override through a supported operation.
+
+#### Scenario: Editing a character with an exceptional bonus
+- **WHEN** the selected character has an explicit spell attack bonus that differs from proficiency plus casting modifier
+- **THEN** an unrelated spellcasting edit or synchronization SHALL retain the explicit bonus
+

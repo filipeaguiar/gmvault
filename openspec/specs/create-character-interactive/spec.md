@@ -11,11 +11,19 @@ The script SHALL prompt the user to input character details such as name, race, 
 - **THEN** it asks for basic information (name, campaign) and step-by-step asks for race, class, level, background, starting packs, ability scores, proficiencies, etc.
 
 ### Requirement: Compendium Population
-The script SHALL query the `5etools` mirrors for any classes, subclasses, races, feats, spells, and items that the character has and download them into the compendium if they don't exist.
+The script SHALL query the `5etools` mirrors for every supported shared entity represented by the locally created character, including classes, subclasses, species, feats, standard actions, class and subclass features, spells, items, and magic items, and SHALL materialize missing canonical compendium pages before writing their references into the character note.
 
-#### Scenario: Character has a new race
-- **WHEN** the user inputs a race that isn't in the compendium
-- **THEN** the script downloads the race from 5e.tools and saves it to `content/compendium/races/`.
+#### Scenario: Character has a new species
+- **WHEN** the user selects a species that is not in the compendium
+- **THEN** the script SHALL download and save its canonical page from 5e.tools before writing the character
+
+#### Scenario: Character has supported missing shared content
+- **WHEN** the completed creation data includes a supported missing feat, spell, item, magic item, action, or class feature
+- **THEN** the script SHALL synchronize the canonical compendium page and record its returned internal URL without duplicate references
+
+#### Scenario: Content cannot be resolved
+- **WHEN** a supported selected entity cannot be resolved unambiguously from 5e.tools
+- **THEN** the script SHALL report it and SHALL NOT write a fabricated canonical reference
 
 ### Requirement: Stat Calculation
 The script SHALL automatically calculate modifiers, AC, max HP, and proficiency bonus based on level, stats, and class/race info.
@@ -74,8 +82,6 @@ O assistente SHALL preservar respostas confirmadas anteriores à pergunta reaber
 - **THEN** o assistente repete a pergunta atual
 - **THEN** nenhuma posição adicional é criada no histórico de navegação
 
-
-
 ### Requirement: Compendium Population
 The script SHALL query the `5etools` mirrors for every supported shared entity represented by the locally created character, including classes, subclasses, species, feats, standard actions, class and subclass features, spells, items, and magic items, and SHALL materialize missing canonical compendium pages before writing their references into the character note.
 
@@ -90,3 +96,23 @@ The script SHALL query the `5etools` mirrors for every supported shared entity r
 #### Scenario: Content cannot be resolved
 - **WHEN** a supported selected entity cannot be resolved unambiguously from 5e.tools
 - **THEN** the script SHALL report it and SHALL NOT write a fabricated canonical reference
+
+### Requirement: New spellcaster profiles persist a normalized casting ability
+The interactive character creation flow SHALL determine and persist `char_info.spellcasting.ability` as a normalized ability key for a selected single-class spellcaster when the class data resolves that ability. It SHALL leave the field empty rather than guessing when the ability cannot be resolved.
+
+#### Scenario: Creating a Warlock
+- **WHEN** the user creates a single-class Warlock and the resolved class data identifies Charisma as its spellcasting ability
+- **THEN** the generated character front matter SHALL contain `char_info.spellcasting.ability: cha`
+
+#### Scenario: Class ability cannot be resolved
+- **WHEN** the selected class data does not provide an unambiguous spellcasting ability
+- **THEN** the generated profile SHALL leave `spellcasting.ability` empty
+- **THEN** the creation flow SHALL NOT assign an ability based only on class-name heuristics
+
+### Requirement: New character creation distinguishes absent spell attack overrides
+The interactive character creation flow SHALL not write `spell_attack_bonus: 0` merely as a placeholder for a character whose spell attack bonus is intended to be derived.
+
+#### Scenario: Creating a spellcaster with a resolved ability
+- **WHEN** the user creates a single-class spellcaster with a resolvable casting ability and no exceptional attack bonus
+- **THEN** the generated front matter SHALL leave the explicit spell attack override absent or mark it as absent distinctly from zero
+

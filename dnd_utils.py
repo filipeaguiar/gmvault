@@ -55,6 +55,94 @@ def get_modifier(score):
     return (score - 10) // 2
 
 
+SPELLCASTING_ABILITY_KEYS = frozenset({"str", "dex", "con", "int", "wis", "cha"})
+
+
+def normalize_spellcasting_ability(value):
+    """Return a supported ability key or ``None`` without guessing."""
+    if not isinstance(value, str):
+        return None
+    normalized = value.strip().lower()
+    return normalized if normalized in SPELLCASTING_ABILITY_KEYS else None
+
+
+def spellcasting_ability_from_class_data(class_data, class_name=None):
+    """Resolve one class' declared 5e.tools ``spellcastingAbility`` field."""
+    if not isinstance(class_data, dict):
+        return None
+    entries = class_data.get("class")
+    if not isinstance(entries, list):
+        return None
+    if class_name:
+        expected = str(class_name).casefold()
+        entries = [
+            entry for entry in entries
+            if isinstance(entry, dict) and str(entry.get("name", "")).casefold() == expected
+        ]
+    abilities = {
+        normalize_spellcasting_ability(entry.get("spellcastingAbility"))
+        for entry in entries if isinstance(entry, dict)
+    }
+    abilities.discard(None)
+    return abilities.pop() if len(abilities) == 1 else None
+
+
+def _single_class_name(char_info):
+    """Return the only class name represented by a character, if unambiguous."""
+    if not isinstance(char_info, dict):
+        return None
+    progression = char_info.get("classes_progression")
+    if isinstance(progression, list) and progression:
+        names = [
+            entry.get("name") for entry in progression
+            if isinstance(entry, dict) and isinstance(entry.get("name"), str) and entry["name"].strip()
+        ]
+        if len(names) != 1:
+            return None
+        return names[0]
+    class_name = char_info.get("class")
+    return class_name if isinstance(class_name, str) and class_name.strip() else None
+
+
+def refresh_character_spellcasting_ability(char_info):
+    """Refresh a single-class profile ability from class data without guessing."""
+    class_name = _single_class_name(char_info)
+    if not class_name:
+        return None
+    ability = spellcasting_ability_from_class_data(fetch_class_json(class_name), class_name)
+    if ability:
+        profile = char_info.get("spellcasting")
+        if not isinstance(profile, dict):
+            profile = {}
+            char_info["spellcasting"] = profile
+        profile["ability"] = ability
+    return ability
+
+
+def resolve_spell_attack_bonus(char_info):
+    """Resolve explicit or single-class derived spell attack bonus, if known."""
+    if not isinstance(char_info, dict):
+        return None
+    explicit = char_info.get("spell_attack_bonus")
+    try:
+        explicit = int(explicit)
+    except (TypeError, ValueError):
+        explicit = None
+    if explicit not in (None, 0):
+        return explicit
+    if _single_class_name(char_info) is None:
+        return None
+    profile = char_info.get("spellcasting")
+    ability = normalize_spellcasting_ability(profile.get("ability")) if isinstance(profile, dict) else None
+    mods = char_info.get("mods")
+    if not ability or not isinstance(mods, dict):
+        return None
+    try:
+        return int(char_info["proficiency_bonus"]) + int(mods[ability])
+    except (KeyError, TypeError, ValueError):
+        return None
+
+
 SPELLCASTING_PREPARED_CLASSES = {"cleric", "druid", "paladin", "artificer", "clerigo", "druida", "paladino", "artifice"}
 SPELLCASTING_PACT_CLASSES = {"warlock", "bruxo"}
 SPELLCASTING_KNOWN_CLASSES = {"bard", "sorcerer", "wizard", "ranger", "bardo", "feiticeiro", "mago", "patrulheiro"}
@@ -800,9 +888,14 @@ def infer_spellcasting_profile(
     class_spells=None,
     casting_ability=None,
     explicit_kind=None,
+    class_data=None,
 ):
     """Infere um perfil mínimo de conjuração para a UI da ficha."""
     c_name = (class_name or "").strip().lower()
+    casting_ability = (
+        normalize_spellcasting_ability(casting_ability)
+        or spellcasting_ability_from_class_data(class_data, class_name)
+    )
     spell_slots = spell_slots or {}
     spells = spells or []
     class_spells = class_spells or []
@@ -1848,6 +1941,7 @@ def sync_character_compendium(char_info, references=None):
             ensure_compendium_class_overview(
                 entry.get("name"), fetch_class_json(entry.get("name")), entry.get("subclass") or None
             )
+    refresh_character_spellcasting_ability(char_info)
     resolve("species", char_info.get("species") or char_info.get("race"))
     for feat in char_info.get("feats") or []:
         resolve("feat", feat.get("name") if isinstance(feat, dict) else feat)

@@ -46,7 +46,7 @@ def test_create_character_persists_spell_entries_with_refs(tmp_path: Path, monke
 
     race_data = {"race": [{"name": "Human", "source": "PHB", "size": ["M"], "speed": 30}], "subrace": []}
     class_data = {
-        "class": [{"name": "Cleric", "source": "PHB", "hd": {"faces": 8}, "startingProficiencies": {"skills": [{"choose": {"count": 2, "from": ["insight", "religion"]}}]}}],
+        "class": [{"name": "Cleric", "source": "PHB", "spellcastingAbility": "wis", "hd": {"faces": 8}, "startingProficiencies": {"skills": [{"choose": {"count": 2, "from": ["insight", "religion"]}}]}}],
         "classFeature": [],
     }
 
@@ -92,6 +92,8 @@ def test_create_character_persists_spell_entries_with_refs(tmp_path: Path, monke
     assert post["char_info"]["spells"]
     assert post["char_info"]["spells"][0]["ref"].startswith("/compendium/spells/")
     assert "spellcasting" in post["char_info"]
+    assert post["char_info"]["spellcasting"]["ability"] == "wis"
+    assert "spell_attack_bonus" not in post["char_info"]
 
 
 def test_non_spellcaster_hides_grimoire_tab(tmp_path: Path):

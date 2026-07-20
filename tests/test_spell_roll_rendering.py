@@ -112,7 +112,11 @@ def test_character_spell_headers_render_only_usable_rolls():
         )
         character = frontmatter.load(character_path)
         character["char_info"]["level"] = 7
-        character["char_info"]["spell_attack_bonus"] = 6
+        character["char_info"].pop("spell_attack_bonus", None)
+        character["char_info"]["proficiency_bonus"] = 2
+        character["char_info"]["mods"]["cha"] = 4
+        character["char_info"]["spellcasting"] = {"ability": "cha"}
+        character["char_info"]["classes_progression"] = [{"name": "Warlock", "level": 7}]
         character["char_info"]["spell_slots"] = {1: 4, 3: 2, 4: 1}
         refs = [
             ("Fire Bolt", "/compendium/spells/fire-bolt/", 0),
@@ -127,6 +131,29 @@ def test_character_spell_headers_render_only_usable_rolls():
         ]
         character["char_info"]["class_spells"] = [ref for _, ref, _ in refs]
         frontmatter.dump(character, character_path)
+
+        explicit_path = (
+            project
+            / "content/campaigns/journeys-through-the-radiant-citadel/characters/nyx-clair.md"
+        )
+        explicit = frontmatter.load(explicit_path)
+        explicit["char_info"]["spell_attack_bonus"] = 7
+        explicit["char_info"]["spells"] = [
+            {"name": "Eldritch Blast", "ref": "/compendium/spells/eldritch-blast/", "level": 0}
+        ]
+        frontmatter.dump(explicit, explicit_path)
+
+        incomplete_path = (
+            project
+            / "content/campaigns/journeys-through-the-radiant-citadel/characters/detios-canto-baixo.md"
+        )
+        incomplete = frontmatter.load(incomplete_path)
+        incomplete["char_info"]["spell_attack_bonus"] = 0
+        incomplete["char_info"]["spellcasting"] = {"ability": ""}
+        incomplete["char_info"]["spells"] = [
+            {"name": "Eldritch Blast", "ref": "/compendium/spells/eldritch-blast/", "level": 0}
+        ]
+        frontmatter.dump(incomplete, incomplete_path)
 
         destination = Path(temp_dir) / "public"
         subprocess.run(
@@ -150,6 +177,14 @@ def test_character_spell_headers_render_only_usable_rolls():
             destination
             / "campaigns/journeys-through-the-radiant-citadel/characters/pinky/index.html"
         ).read_text(encoding="utf-8")
+        explicit_html = (
+            destination
+            / "campaigns/journeys-through-the-radiant-citadel/characters/nyx-clair/index.html"
+        ).read_text(encoding="utf-8")
+        incomplete_html = (
+            destination
+            / "campaigns/journeys-through-the-radiant-citadel/characters/detios-canto-baixo/index.html"
+        ).read_text(encoding="utf-8")
 
     assert html.count("Fire Bolt — Dano") == 1
     assert re.search(r'data-roll-notation="?2d10"?', html)
@@ -166,6 +201,9 @@ def test_character_spell_headers_render_only_usable_rolls():
     assert re.search(r'data-roll-notation="?1d20\+6"?', html)
     assert re.search(r'data-roll-kind="?attack"?', html)
     assert re.search(r'data-roll-attack-type="?ranged"?', html)
+    assert re.search(r'data-roll-notation="?1d20\+7"?', explicit_html)
+    assert "Eldritch Blast — Ataque mágico" not in incomplete_html
+    assert re.search(r'data-roll-notation="?1d10"?', incomplete_html)
     assert "Magic Missile — Dano por dardo" in html
     assert re.search(r'data-roll-notation="?1d4\+1"?', html)
     assert "3d4+3" not in html
