@@ -215,9 +215,9 @@ def test_character_spell_headers_render_only_usable_rolls():
     assert re.search(r'data-roll-notation="?1d4\+1"?', html)
     assert "3d4+3" not in html
     assert "Mage Armor —" not in html
-    assert "Componentes:</strong> V, S" in html
-    assert "Componentes:</strong> V, S, M (a bit of fleece)" in html
-    assert "<strong>Ritual</strong>" in html
+    assert "ra-speech-bubble" in html
+    assert "V, S, M (a bit of fleece)" in html
+    assert "ra-rune-stone" in html
     assert ">Compêndio</a>" not in html
 
 

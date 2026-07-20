@@ -614,7 +614,8 @@ html.vtt-iframe .char-tab-content {
 
 .spell-manager .spell-card {
   min-width: 0;
-  padding: 12px;
+  padding: 0;
+  overflow: hidden;
   border-left: 3px solid transparent;
   box-shadow: none;
 }
@@ -627,13 +628,193 @@ html.vtt-iframe .char-tab-content {
   border-left-color: var(--primary-color);
 }
 
-.spell-card-title-row {
-  margin-bottom: 8px;
+.spell-card-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 12px 10px;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.spell-card-name {
+.spell-card-icon {
+  display: inline-grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--primary-color) 16%, var(--card-bg));
+  color: var(--primary-color);
+  font-size: 1.05rem;
+}
+
+.spell-card-heading {
+  min-width: 0;
+}
+
+.spell-card-title {
+  margin: 0;
   color: var(--text-color);
   font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.spell-card-school {
+  margin: 3px 0 0;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
+.spell-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.spell-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.spell-level-badge {
+  border-color: color-mix(in srgb, var(--primary-color) 38%, var(--border-color));
+  color: var(--primary-color);
+}
+
+.spell-state-badge.is-prepared,
+.spell-state-badge.is-always-prepared {
+  border-color: color-mix(in srgb, #4c9f70 52%, var(--border-color));
+  color: #28714a;
+}
+
+.spell-card-rolls {
+  min-height: 0;
+  padding: 9px 12px 0;
+}
+
+.spell-card-rolls:empty {
+  display: none;
+}
+
+.spell-card-rolls .spell-inline-rolls {
+  gap: 6px;
+}
+
+.spell-card-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 11px 12px;
+  gap: 8px;
+}
+
+.spell-card-facts > div {
+  min-width: 0;
+}
+
+.spell-card-facts dt {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 3px;
+  color: var(--text-muted);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.spell-card-facts dt i {
+  color: var(--primary-color);
+  font-size: 0.88rem;
+}
+
+.spell-card-facts dd {
+  overflow-wrap: anywhere;
+  margin: 0;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  line-height: 1.25;
+}
+
+.spell-card-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  padding: 8px 12px;
+  border-top: 1px solid var(--border-color);
+  background: color-mix(in srgb, var(--card-bg) 94%, var(--primary-color) 6%);
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
+.spell-card-traits span {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.spell-card-traits i {
+  margin-top: 1px;
+  color: var(--primary-color);
+}
+
+.spell-card-traits .spell-ritual {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.spell-card-actions {
+  padding: 8px 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.spell-readonly-note {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+}
+
+.spell-details-accordion {
+  border-top: 1px solid var(--border-color);
+}
+
+.spell-details-accordion summary {
+  padding: 9px 12px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.spell-details-content {
+  padding: 0 12px 12px;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 460px) {
+  .spell-card-header {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .spell-card-badges {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+
+  .spell-card-facts {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
 }
 
 @media (max-width: 640px) {

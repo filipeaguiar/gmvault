@@ -8,11 +8,11 @@
 {{- $known := $spell.known | default true -}}
 {{- $canPrepare := $spell.can_prepare | default false -}}
 {{- $ready := $spell.ready | default false -}}
-{{- $origin := $spell.origin | default $spell.source | default "class" -}}
 {{- $spellInfo := dict -}}
 {{- if $spell.canonical -}}
   {{- $spellInfo = $spell.page.Params.spell_info | default dict -}}
 {{- end -}}
+{{- $castTime := $spellInfo.cast_time | default $spell.usage -}}
 
 <article class="spell-card char-feature-card{{ if $ready }} ready-spell-item{{ else }} management-spell-item{{ end }}{{ if $prepared }} is-prepared{{ end }}{{ if $alwaysPrepared }} is-always-prepared{{ end }}{{ if $known }} is-known{{ end }}{{ if not $canPrepare }} is-readonly{{ end }}"
   data-spell-ref="{{ $ref }}"
@@ -21,22 +21,33 @@
   data-spell-level="{{ $level }}"
   data-spell-can-prepare="{{ $canPrepare }}"
   data-spell-initial-ready="{{ $ready }}">
-  <header class="spell-card-header spell-card-title-row">
-    <div class="spell-name-roll-row">
-      <strong class="spell-card-title spell-card-name">{{ $name }}</strong>
-      {{- if $spell.canonical -}}
-        {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
-      {{- end -}}
+  <header class="spell-card-header">
+    <span class="spell-card-icon" aria-hidden="true"><i class="ra ra-crystal-wand"></i></span>
+    <div class="spell-card-heading">
+      <h6 class="spell-card-title">{{ $name }}</h6>
+      {{ with $spellInfo.school }}<p class="spell-card-school">{{ . }}</p>{{ end }}
     </div>
     {{ partial "helpers/spell-state-badges.html" $spell }}
   </header>
 
-  <div class="spell-card-meta">
-    {{ with $spell.usage }}<span class="spell-meta-item"><strong>Uso:</strong> {{ . }}</span>{{ end }}
-    {{ with $spellInfo.components }}<span class="spell-meta-item"><strong>Componentes:</strong> {{ . }}</span>{{ end }}
-    {{ if $spellInfo.ritual }}<span class="spell-meta-item"><strong>Ritual</strong></span>{{ end }}
-    {{ with $spell.source }}<span class="spell-meta-item"><strong>Fonte:</strong> {{ . }}</span>{{ end }}
+  {{- if $spell.canonical -}}
+  <div class="spell-card-rolls">
+    {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
   </div>
+  {{- end -}}
+
+  <dl class="spell-card-facts">
+    {{ with $castTime }}<div><dt><i class="ra ra-hourglass" aria-hidden="true"></i> Conjuração</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with $spellInfo.range }}<div><dt><i class="ra ra-target-arrows" aria-hidden="true"></i> Alcance</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with $spellInfo.duration }}<div><dt><i class="ra ra-clockwork" aria-hidden="true"></i> Duração</dt><dd>{{ . }}</dd></div>{{ end }}
+  </dl>
+
+  {{- if or $spellInfo.components $spellInfo.ritual -}}
+  <div class="spell-card-traits">
+    {{ with $spellInfo.components }}<span><i class="ra ra-speech-bubble" aria-hidden="true"></i> {{ . }}</span>{{ end }}
+    {{ if $spellInfo.ritual }}<span class="spell-ritual"><i class="ra ra-rune-stone" aria-hidden="true"></i> Ritual</span>{{ end }}
+  </div>
+  {{- end -}}
 
   <div class="spell-card-actions">
     {{ if $canPrepare }}
