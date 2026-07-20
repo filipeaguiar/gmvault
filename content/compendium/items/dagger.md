@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,6 +30,12 @@ item_info:
   range: 20/60
   damage: 1d4
   damage_type: piercing
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
+titulo_pt_br: Adaga.
 ---
 
 

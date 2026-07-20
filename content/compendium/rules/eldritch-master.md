@@ -17,6 +17,7 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 305ae8b8c417c49b
+titulo_pt_br: Mestre Místico
 ---
 
-When you use your Magical Cunning feature, you regain all your expended Pact Magic spell slots.
+Quando você usa sua característica Astúcia Mágica, recupera todos os espaços de magia de Magia de Pacto gastos.

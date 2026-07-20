@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 706aa68b6d743a35
+titulo_pt_br: Poder Indomável
 ---
 
-If your total for a Strength check or Strength saving throw is less than your Strength score, you can use that score in place of the total.
+Se o total de um teste de Força ou teste de resistência de Força for menor que seu valor de Força, você poderá usar esse valor no lugar do total.

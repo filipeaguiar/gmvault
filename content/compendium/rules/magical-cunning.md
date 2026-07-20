@@ -17,6 +17,7 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 5cd1b215859c46ea
+titulo_pt_br: Astúcia Mágica
 ---
 
-You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can't do so again until you finish a Long Rest.
+Você pode realizar um rito esotérico por 1 minuto. Ao final dele, você recupera espaços de magia de Magia de Pacto gastos, até um número igual à metade do seu máximo, arredondado para cima. Depois de usar esta característica, você não poderá usá-la novamente até terminar um Descanso Longo.

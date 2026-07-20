@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,6 +22,12 @@ item_info:
   cost: 0.2 gp
   weight: 5 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration.
+Um Odre de Água comporta até 4 pintas. Se você não beber água suficiente, corre o risco de desidratação.

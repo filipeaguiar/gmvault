@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-bard.json
   remote_key: classFeature
   remote_id: ce2987164c2dcfb3
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.
+Você pode usar notas musicais ou palavras de poder para interromper efeitos que influenciam a mente. Se você ou uma criatura a até 30 pés de você falhar em um teste de resistência contra um efeito que aplica a condição Enfeitiçado ou Amedrontado, você pode usar uma Reação para fazer com que o teste seja refeito, e a nova rolagem tem Vantagem.

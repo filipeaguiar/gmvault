@@ -1,0 +1,24 @@
+---
+title: Death's Friend
+type: rule
+draft: false
+weight: 10
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: TCE
+  entity_type: rule
+  entity_name: Death's Friend
+  remote_file: class/class-rogue.json
+  remote_key: subclassFeature
+  remote_id: b0965d4200ececf3
+---
+
+Característica de Fantasma de 17º nível
+
+Sua associação com a morte tornou-se tão próxima que você ganha os seguintes benefícios:

@@ -1,0 +1,22 @@
+---
+title: Circle of Mortality
+type: rule
+draft: false
+weight: 10
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XGE
+  entity_type: rule
+  entity_name: Circle of Mortality
+  remote_file: class/class-cleric.json
+  remote_key: subclassFeature
+  remote_id: 369b1c456d4fd508
+---
+
+No 1º nível, você ganha a habilidade de manipular a Linha entre a vida e a morte. Quando você normalmente faria uma rolagem de um ou mais dados para restaurar Pontos de Vida com uma Magia a uma criatura com 0 Pontos de Vida, você, em vez disso, usa o número mais alto possível para cada dado.

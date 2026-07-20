@@ -1,13 +1,19 @@
 ---
-title: "Bard College feature"
-type: "rule"
+title: Bard College feature
+type: rule
 draft: false
 weight: 10
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: ready
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-At 6th level, you gain a feature from your Bard College.
+No 6º nível, você ganha uma característica da sua Faculdade de Bardo.

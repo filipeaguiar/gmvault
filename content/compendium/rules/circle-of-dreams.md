@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: b87dc163ca499e38
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids' guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.
+Druidas que são membros do Círculo dos Sonhos vêm de regiões que possuem fortes laços com o Feywild e seus reinos oníricos. A guarda dos druidas sobre o mundo natural cria uma aliança natural entre eles e fadas de alinhamento bom. Esses druidas buscam preencher o mundo com maravilhas oníricas. Sua magia cura feridas e traz alegria a corações desanimados, e os reinos que eles protegem são lugares brilhantes e frutíferos, onde sonho e realidade se confundem e onde os exaustos podem encontrar descanso.

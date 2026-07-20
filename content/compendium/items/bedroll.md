@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,6 +22,12 @@ item_info:
   cost: 1 gp
   weight: 7 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide).
+Um Saco de Dormir acomoda uma criatura Pequena ou Média. Enquanto estiver em um Saco de Dormir, você tem sucesso automático em Testes de Resistência contra frio extremo (veja o Guia do Mestre).

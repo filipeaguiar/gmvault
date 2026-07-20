@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: subclassFeature
   remote_id: 77d1036e95b81fe4
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You gain a modicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number.
+Você ganha um pouco de controle sobre os surtos da sua magia selvagem. Sempre que você fizer uma rolagem na tabela de Surto de Magia Selvagem, você pode rolar duas vezes e usar qualquer um dos números.

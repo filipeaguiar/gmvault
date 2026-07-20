@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-paladin.json
   remote_key: subclassFeature
   remote_id: 961cfdf3bf704eda
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-When you take this oath at 3rd level, you gain the following two Channel Divinity options.
+Quando você faz este juramento no 3º nível, você ganha as duas seguintes opções de Canal Divino.

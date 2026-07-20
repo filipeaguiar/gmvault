@@ -20,27 +20,27 @@ source:
 class_info:
   hit_dice: 1d8
   primary_ability: '{''cha'': True}'
+titulo_pt_br: Bruxo
 translation:
   source_language: en
   target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+  engine: manual
+  status: reviewed
 ---
 
 ## Nível 1
 
-- [Eldritch Invocation Options](/compendium/rules/eldritch-invocation-options/)
-- [Eldritch Invocations](/compendium/rules/eldritch-invocations/)
-- [Pact Magic](/compendium/rules/pact-magic/)
+- [Opções de Invocação Mística](/compendium/rules/eldritch-invocation-options/)
+- [Invocações Místicas](/compendium/rules/eldritch-invocations/)
+- [Magia de Pacto](/compendium/rules/pact-magic/)
 
 ## Nível 2
 
-- [Magical Cunning](/compendium/rules/magical-cunning/)
+- [Astúcia Mágica](/compendium/rules/magical-cunning/)
 
 ## Nível 3
 
-- [Warlock Subclass](/compendium/rules/warlock-subclass/)
+- [Subclasse de Bruxo](/compendium/rules/warlock-subclass/)
 
 ## Nível 4
 
@@ -56,7 +56,7 @@ translation:
 
 ## Nível 9
 
-- [Contact Patron](/compendium/rules/contact-patron/)
+- [Contatar Patrono](/compendium/rules/contact-patron/)
 
 ## Nível 10
 
@@ -64,7 +64,7 @@ translation:
 
 ## Nível 11
 
-- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
+- [Arcano Místico](/compendium/rules/mystic-arcanum/)
 
 ## Nível 12
 
@@ -72,7 +72,7 @@ translation:
 
 ## Nível 13
 
-- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
+- [Arcano Místico](/compendium/rules/mystic-arcanum/)
 
 ## Nível 14
 
@@ -80,7 +80,7 @@ translation:
 
 ## Nível 15
 
-- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
+- [Arcano Místico](/compendium/rules/mystic-arcanum/)
 
 ## Nível 16
 
@@ -88,12 +88,12 @@ translation:
 
 ## Nível 17
 
-- [Mystic Arcanum](/compendium/rules/mystic-arcanum/)
+- [Arcano Místico](/compendium/rules/mystic-arcanum/)
 
 ## Nível 19
 
-- [Epic Boon](/compendium/rules/epic-boon/)
+- [Benção Épica](/compendium/rules/epic-boon/)
 
 ## Nível 20
 
-- [Eldritch Master](/compendium/rules/eldritch-master/)
+- [Mestre Místico](/compendium/rules/eldritch-master/)

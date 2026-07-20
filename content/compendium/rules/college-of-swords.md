@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,10 +17,16 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 8a4503182bf9efea
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. Though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.
+Bardos do Colégio das Espardas são chamados de lâminas, e eles entretêm através de feitos ousados de perícia com armas. Lâminas realizam acrobacias como engolir espadas, arremesso de facas e malabarismo, e combates simulados. Embora usem suas armas para entreter, eles também são guerreiros altamente treinados e habilidosos por direito próprio.
 
-Their talent with weapons inspires many blades to lead double lives. One blade might use a circus troupe as cover for nefarious deeds such as assassination, robbery, and blackmail. Other blades strike at the wicked, bringing justice to bear against the cruel and powerful. Most troupes are happy to accept a blade's talent for the excitement it adds to a performance, but few entertainers fully trust a blade in their ranks.
+O talento deles com armas inspira muitas lâminas a levarem vidas duplas. Uma lâmina pode usar um grupo de circo como cobertura para atos nefastos, tais como assassinato, roubo e chantagem. Outras lâminas atacam os perversos, trazendo justiça contra os cruéis e poderosos. A maioria dos grupos fica feliz em aceitar o talento de uma lâmina pela emoção que ela adiciona a uma atuação, mas poucos artistas confiam totalmente em uma lâmina em suas fileiras.
 
-Blades who abandon their lives as entertainers have often run into trouble that makes maintaining their secret activities impossible. A blade caught stealing or engaging in vigilante justice is too great a liability for most troupes. With their weapon skills and magic, these blades either take up work as enforcers for thieves' guilds or strike out on their own as adventurers.
+Lâminas que abandonam suas vidas como artistas muitas vezes encontram problemas que tornam impossível manter suas atividades secretas. Uma lâmina pega roubando ou praticando justiça por conta própria é um risco muito grande para a maioria das trupes. Com suas habilidades com armas e magia, essas lâminas ou aceitam trabalho como capangas para guildas de ladrões ou partem por conta própria como aventureiros.

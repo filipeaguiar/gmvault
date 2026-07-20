@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,10 +22,16 @@ item_info:
   cost: 25 gp
   weight: 3 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-* {'name': 'Ability:', 'type': 'item', 'entries': ['Charisma']}
+* {'name': 'Habilidade:', 'type': 'item', 'entries': ['Carisma']}
 
-* {'name': 'Utilize:', 'type': 'item', 'entries': ['Apply makeup (10)']}
+* {'name': 'Utilizar:', 'type': 'item', 'entries': ['Aplicar maquiagem (10)']}
 
-* {'name': 'Craft:', 'type': 'item', 'entries': ['Costume']}
+* {'name': 'Fabricação:', 'type': 'item', 'entries': ['Traje']}

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 2180b59cf502eb45
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Adherents of the College of Eloquence master the art of oratory. Persuasion is regarded as a high art, and a well-reasoned, well-spoken argument often proves more persuasive than facts. These bards wield a blend of logic and theatrical wordplay, winning over skeptics and detractors with logical arguments and plucking at heartstrings to appeal to the emotions of audiences.
+Os adeptos do Colégio da Eloquência dominam a arte da oratória. A Persuasão é considerada uma alta arte, e um argumento bem fundamentado e bem articulado muitas vezes se mostra mais persuasivo do que fatos. Esses bardos utilizam uma mistura de lógica e jogos de palavras teatrais, conquistando céticos e detratores com argumentos lógicos e tocando as cordas do coração para apelar às emoções do público.

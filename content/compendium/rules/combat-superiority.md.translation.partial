@@ -1,0 +1,27 @@
+---
+title: Combat Superiority
+type: rule
+draft: false
+weight: 10
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Combat Superiority
+  remote_file: class/class-fighter.json
+  remote_key: subclassFeature
+  remote_id: 0c2a2b1041e570ac
+---
+
+Sua experiência no campo de batalha refinou suas técnicas de combate. Você aprende manobras que são alimentadas por dados especiais chamados Dados de Superioridade.
+
+
+### Manobras
+
+Você aprende três manobras de sua escolha da seção "Opções de Manobras" mais adiante na descrição desta subclasse. Muitas manobras aprimoram um ataque de alguma forma. Você pode usar apenas uma manobra por ataque.

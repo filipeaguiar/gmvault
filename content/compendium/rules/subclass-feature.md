@@ -26,4 +26,4 @@ translation:
 titulo_pt_br: Característica de Subclasse
 ---
 
-Você ganha uma característica da sua subclasse de Ladino.
+Você recebe uma característica de sua subclasse.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: PHB
@@ -22,6 +22,12 @@ item_info:
   cost: 0.5 gp
   weight: 2 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.
+Rações consistem em alimentos secos adequados para viagens prolongadas, incluindo carne seca, frutas secas, biscoito duro e nozes.

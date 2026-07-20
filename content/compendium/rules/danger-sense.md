@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 1afe632b56cec3bf
+titulo_pt_br: Sentido de Perigo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You gain an uncanny sense of when things aren't as they should be, giving you an edge when you dodge perils. You have Advantage on Dexterity saving throws unless you have the Incapacitated condition.
+Você desenvolve uma percepção incomum de quando as coisas não estão como deveriam, o que lhe dá Vantagem ao evitar perigos. Você tem Vantagem em testes de resistência de Destreza, a menos que esteja com a condição Incapacitado.

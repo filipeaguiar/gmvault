@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: f40517cefb54e566
+titulo_pt_br: Defesa sem Armadura
 ---
 
-While you aren't wearing any armor, your base Armor Class equals 10 plus your Dexterity and Constitution modifiers. You can use a Shield and still gain this benefit.
+Enquanto não estiver usando armadura, sua Classe de Armadura base será igual a 10 mais seus modificadores de Destreza e Constituição. Você pode usar um Escudo e ainda receber este benefício.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,21 +17,27 @@ source:
   remote_file: class/class-monk.json
   remote_key: subclassFeature
   remote_id: 7fb687b62ffdc034
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-As a Magic action while entirely within Dim Light or Darkness, you can expend 3 Focus Points to shroud yourself with shadows for 1 minute, until you have the Incapacitated condition, or until you end your turn in Bright Light. While shrouded by these shadows, you gain the following benefits.
+Como uma Ação Mágica enquanto estiver inteiramente em Luz Tênue ou Escuridão, você pode gastar 3 Pontos de Foco para envolver a si mesmo com sombras por 1 minuto, até que você tenha a condição Incapacitado, ou até que você encerre seu turno em Luz Brilhante. Enquanto estiver envolto por essas sombras, você ganha os seguintes benefícios.
 
 
-### Invisibility
+### Invisibilidade
 
-You have the Invisible condition.
-
-
-### Partially Incorporeal
-
-You can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.
+Você tem a condição Invisível.
 
 
-### Shadow Flurry
+### Parcialmente Incorpóreo
 
-You can use your Flurry of Blows without expending any Focus Points.
+Você pode se mover por espaços ocupados como se fossem Terreno Difícil. Se você encerrar seu turno em tal espaço, você é deslocado para o último espaço desocupado em que esteve.
+
+
+### Rajada das Sombras
+
+Você pode usar sua Rajada de Golpes sem gastar Pontos de Foco.

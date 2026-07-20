@@ -17,12 +17,12 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: d4d24ff322585c53
+titulo_pt_br: Orador dos Animais
 translation:
   source_language: en
   target_language: pt-BR
-  engine: openai-compatible
-  status: machine_translated
-  model: deepseek-v4-pro
+  engine: manual
+  status: reviewed
 ---
 
 Você pode conjurar as magias Sentido Bestial e Falar com Animais, mas apenas como Rituais. Sabedoria é seu atributo de conjuração para elas.

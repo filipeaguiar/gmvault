@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: b8348490bdd297f3
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.
+Você pode canalizar magia lunar quando assume uma forma de Forma Selvagem, concedendo-lhe os benefícios abaixo.

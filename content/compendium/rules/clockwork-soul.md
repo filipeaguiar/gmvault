@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: subclassFeature
   remote_id: 1ebdaf1004fb016d
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it-a plane of existence shaped entirely by clockwork efficiency. You, or someone from your lineage, might have become entangled in the machinations of the modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it is part of a vast and glorious system.
+A força cósmica da ordem imbuiu você com magia. Esse poder surge de Mechanus ou de um reino semelhante — um plano de existência moldado inteiramente pela eficiência mecânica. Você, ou alguém de sua linhagem, pode ter se envolvido nas maquinações dos modrons, os seres ordenados que habitam Mechanus. Talvez seu ancestral tenha até participado da Grande Marcha Modron. Independentemente de sua origem em você, o poder da ordem pode parecer estranho para os outros, mas para você, ele faz parte de um sistema vasto e glorioso.

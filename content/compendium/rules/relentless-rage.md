@@ -17,8 +17,9 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 858fcff08d56d9d2
+titulo_pt_br: Fúria Incansável
 ---
 
-Your Rage can keep you fighting despite grievous wounds. If you drop to 0 Hit Points while your Rage is active and don't die outright, you can make a 10 Constitution saving throw. If you succeed, your Hit Points instead change to a number equal to twice your Barbarian level.
+Sua Fúria pode mantê-lo lutando apesar de ferimentos graves. Se você cair a 0 Pontos de Vida enquanto sua Fúria estiver ativa e não morrer imediatamente, poderá fazer um teste de resistência de Constituição CD 10. Se obtiver sucesso, seus Pontos de Vida passarão a ser iguais ao dobro do seu nível de Bárbaro.
 
-Each time you use this feature after the first, the DC increases by 5. When you finish a Short or Long Rest, the DC resets to 10.
+A cada uso desta característica depois do primeiro, a CD aumenta em 5. Ao terminar um Descanso Curto ou Longo, a CD volta a 10.

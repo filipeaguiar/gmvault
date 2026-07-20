@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,16 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: b06753ab3ba059f8
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-14th-level College of Creation feature
+Característica de 14º nível do Colégio de Criação
 
-When you use your Performance of Creation feature, you can create more than one item at once. The number of items equals your Charisma modifier (minimum of two items). If you create an item that would exceed that number, you choose which of the previously created items disappears. Only one of these items can be of the maximum size you can create; the rest must be Small or Tiny.
+Quando você usa sua característica Atuação da Criação, você pode criar mais de um item de uma só vez. O número de itens é igual ao seu modificador de Carisma (mínimo de dois itens). Se você criar um item que excederia esse número, você escolhe qual dos itens criados anteriormente desaparece. Apenas um desses itens pode ser do tamanho máximo que você pode criar; o restante deve ser Pequeno ou Miúdo.
 
-You are no longer limited by gp value when creating items with Performance of Creation.
+Você não está mais limitado pelo valor em gp ao criar itens com Atuação de Criação.

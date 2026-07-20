@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: 53b1c6fd65393a8b
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Your symbiotic link to fungus and your ability to tap into the cycle of life and death grants you access to certain spells. At 2nd level, you learn the chill touch cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Spores Spells table.
+Seu vínculo simbiótico com fungos e sua habilidade de acessar o ciclo da vida e da morte concedem a você acesso a certas magias. No 2º nível, você aprende o truque toque gélido. Nos níveis 3, 5, 7 e 9, você ganha acesso às magias listadas para aquele nível na tabela de Magias do Círculo de Esporos.
 
-Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.
+Uma vez que você ganha acesso a uma dessas magias, você sempre a tem preparada, e ela não conta no número de magias que você pode preparar cada dia. Se você ganhar acesso a uma magia que não aparece na lista de magias do druida, a magia é, no entanto, uma magia de druida para você.

@@ -17,10 +17,11 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 22088f737d3ee61b
+titulo_pt_br: Invocações Místicas
 ---
 
-You have unearthed Eldritch Invocations, pieces of forbidden knowledge that imbue you with an abiding magical ability or other lessons. You gain one invocation of your choice, such as Pact of the Tome. Invocations are described in the "Eldritch Invocation Options" section later in this class's description.
+Você desvendou Invocações Místicas, fragmentos de conhecimento proibido que lhe concedem uma aptidão mágica duradoura ou outros ensinamentos. Você recebe uma invocação à sua escolha, como Pacto do Tomo. As invocações são descritas na seção "Opções de Invocação Mística", mais adiante na descrição desta classe.
 
-When you gain certain Warlock levels, you gain more invocations of your choice, as shown in the Invocations column of the Warlock Features table.
+Quando atinge determinados níveis de Bruxo, você recebe mais invocações à sua escolha, conforme mostrado na coluna Invocações da tabela Características de Bruxo.
 
-You can't pick the same invocation more than once unless its description says otherwise.
+Você não pode escolher a mesma invocação mais de uma vez, a menos que a descrição dela diga o contrário.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: d20e4a69ce363d83
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Druids within the Circle of Wildfire understand that destruction is sometimes the precursor of creation, such as when a forest fire promotes later growth. These druids bond with a primal spirit that harbors both destructive and creative power, allowing the druids to create controlled flames that burn away one thing but give life to another.
+Druidas no Círculo do Fogo Selvagem entendem que a destruição é, às vezes, o precursor da criação, como quando um incêndio florestal promove o crescimento posterior. Esses druidas estabelecem um Vínculo com um espírito primordial que abriga tanto poder destrutivo quanto criativo, permitindo que os druids criem chamas controladas que eliminam uma coisa, mas dão vida a outra.

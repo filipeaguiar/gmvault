@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: actions.json
   remote_key: action
   remote_id: 7ef320f25cb51bd8
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike.
+Quando você realiza a Ação de Ataque, você pode fazer uma Jogada de Ataque com uma arma ou um Ataque Desarmado.

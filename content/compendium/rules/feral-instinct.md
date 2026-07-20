@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 2d6ed875a1a28171
+titulo_pt_br: Instinto Feral
 ---
 
-Your instincts are so honed that you have Advantage on Initiative rolls.
+Seus instintos são tão aguçados que você tem Vantagem nas jogadas de Iniciativa.

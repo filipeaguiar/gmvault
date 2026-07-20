@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 035b79bd36a895ac
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Plumb the Depths of Magical Knowledge
+Sondar as Profundezas do Conhecimento Mágico
 
-Bards of the College of Lore collect spells and secrets from diverse sources, such as scholarly tomes, mystical rites, and peasant tales. The college's members gather in libraries and universities to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.
+Bardos do Colégio do Conhecimento coletam magias e segredos de fontes diversas, como tomos acadêmicos, ritos místicos e contos camponeses. Os membros do colégio reúnem-se em bibliotecas e universidades para compartilhar seu conhecimento uns com os outros. Eles também se encontram em festivais ou assuntos de estado, onde podem expor a corrupção, desvendar mentiras e zombar de figuras de autoridade autoimportantes.

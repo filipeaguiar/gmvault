@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: e5793a4f37b6027f
+titulo_pt_br: Ataque Imprudente
 ---
 
-You can throw aside all concern for defense to attack with increased ferocity. When you make your first attack roll on your turn, you can decide to attack recklessly. Doing so gives you Advantage on attack rolls using Strength until the start of your next turn, but attack rolls against you have Advantage during that time.
+Você pode abandonar toda preocupação com defesa para atacar com ferocidade redobrada. Ao fazer sua primeira jogada de ataque no turno, pode decidir atacar de forma imprudente. Isso concede Vantagem nas jogadas de ataque que usam Força até o início do seu próximo turno, mas as jogadas de ataque contra você têm Vantagem nesse período.

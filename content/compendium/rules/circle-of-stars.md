@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: e3c651ad1ded93f0
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-The Circle of Stars allows druids to draw on the power of starlight. These druids have tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By revealing and understanding these secrets, the Circle of the Stars seeks to harness the powers of the cosmos.
+O Círculo das Estrelas permite que druidas utilizem o poder da luz das estrelas. Esses druidas acompanham padrões celestiais desde tempos imemoriais, descobrindo segredos escondidos entre as constelações. Ao revelar e compreender esses segredos, o Círculo das Estrelas busca canalizar os poderes do cosmos.
 
-Many druids of this circle keep records of the constellations and the stars' effects on the world. Some groups document these observations at megalithic sites, which serve as enigmatic libraries of lore. These repositories might take the form of stone circles, pyramids, petroglyphs, and underground temples-any construction durable enough to protect the circle's sacred knowledge even against a great cataclysm.
+Muitos druidas deste círculo mantêm registros das constelações e dos efeitos das estrelas no mundo. Alguns grupos documentam essas observações em locais megalíticos, que servem como bibliotecas enigmáticas de conhecimento. Esses repositórios podem assumir a forma de círculos de pedra, pirâmides, petróglifos e templos subterrâneos — qualquer construção durável o suficiente para proteger o conhecimento sagrado do círculo, mesmo contra um grande cataclismo.

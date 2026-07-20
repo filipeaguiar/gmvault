@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 1e0349f8bd14b2f7
+titulo_pt_br: Benção Épica
 ---
 
-You gain an Epic Boon feat or another feat of your choice for which you qualify. Boon of Irresistible Offense is recommended.
+Você recebe um talento de Benção Épica ou outro talento à sua escolha para o qual cumpra os pré-requisitos. Recomenda-se a Benção do Ataque Irresistível.

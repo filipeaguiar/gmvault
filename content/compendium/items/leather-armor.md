@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -23,6 +23,12 @@ item_info:
   weight: 10 lb
   rarity: None
   armor_class: 11
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
+titulo_pt_br: Armadura de couro
 ---
 
 

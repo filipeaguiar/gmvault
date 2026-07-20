@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-cleric.json
   remote_key: classFeature
   remote_id: 49c24526673a9a31
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You gain a Cleric subclass of your choice. A subclass is a specialization that grants you features at certain Cleric levels. For the rest of your career, you gain each of your subclass's features that are of your Cleric level or lower.
+Você ganha uma subclasse de Clérigo de sua escolha. Uma subclasse é uma especialização que lhe concede características em certos níveis de Clérigo. Pelo resto de sua carreira, você ganha cada uma das características de sua subclasse que forem de seu nível de Clérigo ou inferior.

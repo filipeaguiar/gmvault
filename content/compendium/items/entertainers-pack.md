@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,6 +22,12 @@ item_info:
   cost: 40 gp
   weight: 58.5 lb
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-An Entertainer's Pack contains the following items: Backpack, Bedroll, Bell, Bullseye Lantern, 3 Costumes, Mirror, 8 flasks of Oil, 9 days of Rations, Tinderbox, and Waterskin.
+Um Pacote de Entretenimento contém os seguintes itens: Mochila, Saco de Dormir, Sino, Lanterna Bullseye, 3 Trajes, Espelho, 8 frascos de Óleo, 9 dias de Rações, Caixa de Iscas e Odre de Água.

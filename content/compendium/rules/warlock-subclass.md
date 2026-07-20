@@ -17,6 +17,7 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 74da09407e427ff7
+titulo_pt_br: Subclasse de Bruxo
 ---
 
-You gain a Warlock subclass of your choice. A subclass is a specialization that grants you features at certain Warlock levels. For the rest of your career, you gain each of your subclass's features that are of your Warlock level or lower.
+Você recebe uma subclasse de Bruxo à sua escolha. Uma subclasse é uma especialização que concede características em determinados níveis de Bruxo. Pelo resto de sua carreira, você recebe cada característica de sua subclasse cujo nível seja igual ou inferior ao seu nível de Bruxo.

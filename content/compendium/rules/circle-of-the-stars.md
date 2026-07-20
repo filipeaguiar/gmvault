@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: 40acc2b1384384e1
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Harness Secrets Hidden in Constellations
+Domine Segredos Escondidos nas Constelações
 
-The Circle of the Stars has tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By understanding these secrets, the Druids of this circle seek to harness the powers of the cosmos.
+O Círculo das Estrelas tem acompanhado padrões celestiais desde tempos imemoriais, descobrindo segredos escondidos entre as constelações. Ao compreender esses segredos, os Druidas deste círculo buscam canalizar os poderes do cosmos.

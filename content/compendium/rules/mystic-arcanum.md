@@ -17,12 +17,13 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 580c619844c1a293
+titulo_pt_br: Arcano Místico
 ---
 
-Your patron grants you a magical secret called an arcanum. Choose one level 6 Warlock spell as this arcanum.
+Seu patrono lhe concede um segredo mágico chamado arcano. Escolha uma magia de Bruxo de 6º nível como esse arcano.
 
-You can cast your arcanum spell once without expending a spell slot, and you must finish a Long Rest before you can cast it in this way again.
+Você pode conjurar sua magia de arcano uma vez sem gastar um espaço de magia; antes de poder conjurá-la dessa forma novamente, deve terminar um Descanso Longo.
 
-As shown in the Warlock Features table, you gain another Warlock spell of your choice that can be cast in this way when you reach Warlock levels 13 (level 7 spell), 15 (level 8 spell), and 17 (level 9 spell). You regain all uses of your Mystic Arcanum when you finish a Long Rest.
+Como mostra a tabela Características de Bruxo, ao alcançar os níveis 13 (magia de 7º nível), 15 (magia de 8º nível) e 17 (magia de 9º nível) de Bruxo, você recebe outra magia de Bruxo à sua escolha que pode ser conjurada dessa forma. Você recupera todos os usos do seu Arcano Místico ao terminar um Descanso Longo.
 
-Whenever you gain a Warlock level, you can replace one of your arcanum spells with another Warlock spell of the same level.
+Sempre que ganhar um nível de Bruxo, você poderá substituir uma de suas magias de arcano por outra magia de Bruxo do mesmo nível.

@@ -1,13 +1,19 @@
 ---
-title: "Bard College"
-type: "rule"
+title: Bard College
+type: rule
 draft: false
 weight: 10
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: ready
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level.
+No 3º nível, você se aprofunda nas técnicas avançadas de um colégio de bardos de sua escolha da lista de colégios disponíveis. Sua escolha concede a você características no 3º nível e novamente nos níveis 6 e 14.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,6 +22,12 @@ item_info:
   cost: 0.01 gp
   weight: —
   rarity: None
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.
+Por 1 hora, uma Vela acesa emite Luz Brilhante em um raio de 5 pés e Luz Tênue por mais 5 pés.

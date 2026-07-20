@@ -17,6 +17,7 @@ source:
   remote_file: class/class-warlock.json
   remote_key: classFeature
   remote_id: 24308c98b99b53ec
+titulo_pt_br: Opções de Invocação Mística
 ---
 
-Eldritch Invocation options appear in alphabetical order.
+As opções de Invocação Mística aparecem em ordem alfabética.

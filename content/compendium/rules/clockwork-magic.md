@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,12 +17,18 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: subclassFeature
   remote_id: bd21695908fe76ea
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-1st-level Clockwork Soul feature
+Característica de Alma de Engrenagem de 1º nível
 
-You learn additional spells when you reach certain levels in this class, as shown on the Clockwork Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.
+Você aprende magias adicionais quando alcança certos níveis nesta classe, como mostrado na tabela de Magias de Engrenagem. Cada uma dessas magias conta como uma magia de conjurador para você, mas não conta no número de magias de conjurador que você conhece.
 
-Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an abjuration or a transmutation spell from the sorcerer, warlock, or wizard spell list.
+Sempre que você ganhar um nível de feiticeiro, você pode substituir uma Magia que ganhou desta característica por outra Magia do mesmo nível. A nova Magia deve ser uma magia de Abjuração ou Transmutação da Lista de Magias de feiticeiro, bruxo ou mago.
 
-In addition, consult the Manifestations of Order table and choose or randomly determine a way your connection to order manifests while you are casting any of your sorcerer spells.
+Além disso, consulte a tabela Manifestações de Ordem e escolha ou determine aleatoriamente uma forma como sua conexão com a ordem se manifesta enquanto você conjura qualquer uma de suas Magias de conjurador.

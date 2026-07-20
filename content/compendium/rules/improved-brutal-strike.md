@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: e49523ea5818e6fc
+titulo_pt_br: Golpe Brutal Aprimorado
 ---
 
-You have honed new ways to attack furiously. The following effects are now among your Brutal Strike options.
+Você aperfeiçoou novas formas de atacar com fúria. Os efeitos a seguir agora fazem parte de suas opções de Golpe Brutal.

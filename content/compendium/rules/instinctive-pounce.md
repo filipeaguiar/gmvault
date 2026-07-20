@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: bec7c02e4d0133aa
+titulo_pt_br: Salto Instintivo
 ---
 
-As part of the Bonus Action you take to enter your Rage, you can move up to half your Speed.
+Como parte da Ação Bônus que você realiza para entrar em Fúria, pode se mover até metade de seu deslocamento.

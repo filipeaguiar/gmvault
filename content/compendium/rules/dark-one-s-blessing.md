@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 764532b76fcf1a5f
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.
+Quando você reduz um inimigo a 0 Pontos de Vida, você ganha Pontos de Vida Temporários iguais ao seu modificador de Carisma mais o seu nível de Bruxo (mínimo de 1 Ponto de Vida Temporário). Você também ganha este benefício se outra pessoa reduzir um inimigo a até 10 pés de você a 0 Pontos de Vida.

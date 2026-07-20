@@ -17,8 +17,9 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 50d6ea8afcb66cc5
+titulo_pt_br: Fúria Persistente
 ---
 
-When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest.
+Quando fizer uma jogada de Iniciativa, você poderá recuperar todos os usos gastos de Fúria. Depois de recuperar usos de Fúria dessa forma, não poderá fazê-lo novamente até terminar um Descanso Longo.
 
-In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.
+Além disso, sua Fúria é tão feroz que agora dura 10 minutos sem que você precise fazer nada para estendê-la de rodada a rodada. Sua Fúria termina antes do tempo se você ficar com a condição Inconsciente, e não apenas Incapacitado, ou vestir uma armadura Pesada.

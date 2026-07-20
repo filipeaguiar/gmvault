@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,14 +17,20 @@ source:
   remote_file: class/class-cleric.json
   remote_key: subclassFeature
   remote_id: bc05096ce5e69136
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-2nd-level Twilight Domain feature
+Característica de Domínio do Crepúsculo de 2º nível
 
-You can use your Channel Divinity to refresh your allies with soothing twilight.
+Você pode usar sua Canalizar Divindade para revigorar seus aliados com o crepúsculo reconfortante.
 
-As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:
+Como uma ação, você apresenta seu Símbolo Sagrado, e uma Esfera de crepúsculo emana de você. A Esfera está centrada em você, tem um raio de 30 pés, e é preenchida com luz fraca. A Esfera se move com você, e dura por 1 minuto ou até que você fique incapacitado ou morra. Sempre que uma criatura (incluindo você) encerrar seu turno na esfera, você pode conceder a essa criatura um destes benefícios:
 
-* You grant it temporary hit points equal to <span class="dice+" data-roll-notation="1d6">1d6</span> plus your cleric level.
+* Você concede a ele Pontos de Vida Temporários iguais a <span class="dice+" data-roll-notation="1d6">1d6</span> mais o seu nível de sacerdote.
 
-* You end one effect on it causing it to be charmed or frightened.
+* Você encerra um efeito sobre ele, fazendo com que fique enfeitiçado ou amedrontado.

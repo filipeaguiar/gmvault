@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 741ece0b8f2a1996
+titulo_pt_br: Campeão Primal
 ---
 
-You embody primal power. Your Strength and Constitution scores increase by 4, to a maximum of 25.
+Você incorpora o poder primal. Seus valores de Força e Constituição aumentam em 4, até o máximo de 25.

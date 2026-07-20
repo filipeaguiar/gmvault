@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: f95f349388302312
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Most folk are happy to welcome a bard into their midst. Bards of the College of Whispers use this to their advantage. They appear to be like other bards, sharing news, singing songs, and telling tales to the audiences they gather. In truth, the College of Whispers teaches its students that they are wolves among sheep. These bards use their knowledge and magic to uncover secrets and turn them against others through extortion and threats.
+A maioria das pessoas fica feliz em acolher um bardo em seu meio. Bardos do Colégio dos Sussurros usam isso para sua Vantagem. Eles parecem ser como outros bardos, compartilhando notícias, cantando canções e contando histórias para as audiências que reúnem. Na verdade, o Colégio dos Sussurros ensina a seus alunos que eles são lobos entre ovelhas. Esses bardos usam seu conhecimento e magia para descobrir segredos e usá-los contra outros por meio de extorsão e ameaças.
 
-Many other bards hate the College of Whispers, viewing it as a parasite that uses a bard's reputation to acquire wealth and power. For this reason, members of this college rarely reveal their true nature. They typically claim to follow some other college, or they keep their actual calling secret in order to infiltrate and exploit royal courts and other settings of power.
+Muitos outros bardos odeiam a Faculdade dos Sussurros, vendo-a como um parasita que usa a reputação de um bardo para adquirir riqueza e poder. Por esse motivo, membros desta faculdade raramente revelam sua verdadeira natureza. Eles geralmente afirmam seguir alguma outra faculdade, ou mantêm seu chamado real em segredo para se infiltrarem e explorarem cortes reais e outros ambientes de poder.

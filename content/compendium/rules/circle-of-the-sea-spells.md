@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: 6cae867c9313e863
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.
+Quando você atinge um nível de Druida especificado na tabela de Magias do Círculo do Mar, você a partir de então sempre tem as magias listadas preparadas.

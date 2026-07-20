@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 83d16f5638f0f048
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You have Advantage on any Charisma (Performance) check you make that involves you dancing.
+Você tem Vantagem em qualquer teste de Carisma (Atuação) que você fizer que envolva você dançando.

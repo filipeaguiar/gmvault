@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 92d1a4378ca9d575
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the augury or clairvoyance spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of clairvoyance invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.
+No nível 10, você ganha a habilidade de consultar seus espíritos ancestrais. Quando você o faz, você conjura a magia presságio ou clarividência, sem usar um espaço de magia ou componentes materiais. Em vez de criar um sensor esférico, este uso de clarividência invoca invisivelmente um de seus espíritos ancestrais para o local escolhido. Sabedoria é o seu atributo de conjuração para essas magias.
 
-After you cast either spell in this way, you can't use this feature again until you finish a short or long rest.
+Após conjurar qualquer uma das magias desta forma, você não pode usar este recurso novamente até terminar um descanso curto ou Descanso Longo.

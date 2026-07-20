@@ -17,8 +17,9 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 55edd51964338e48
+titulo_pt_br: Conhecimento Primal
 ---
 
-You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.
+Você recebe proficiência em outra perícia à sua escolha dentre a lista de perícias disponível para Bárbaros no 1º nível.
 
-In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.
+Além disso, enquanto sua Fúria estiver ativa, você pode canalizar poder primal ao tentar determinadas tarefas. Sempre que fizer um teste de atributo usando uma das seguintes perícias, poderá fazê-lo como um teste de Força, mesmo que ela normalmente use outro atributo: Acrobacia, Intimidação, Percepção, Furtividade ou Sobrevivência. Ao usar esta aptidão, sua Força representa o poder primal que flui por você, refinando sua agilidade, presença e sentidos.

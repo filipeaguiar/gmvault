@@ -17,6 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: a3dba4681c91bcff
+titulo_pt_br: Movimento Rápido
 ---
 
-Your speed increases by 10 feet while you aren't wearing Heavy armor.
+Seu deslocamento aumenta em 3 metros enquanto você não estiver usando armadura Pesada.

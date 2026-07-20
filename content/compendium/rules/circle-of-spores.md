@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,10 +17,16 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: d455b0d5f26c40ee
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life.
+Druidas do Círculo de Espores encontram beleza na decomposição. Eles veem no bolor e em outros fungos a habilidade de transformar material sem vida em uma vida abundante, embora um tanto estranha.
 
-These druids believe that life and death are parts of a grand cycle, with one leading to the other and then back again. Death isn't the end of life, but instead a change of state that sees life shift into a new form.
+Estes druidas acreditam que a vida e a morte são partes de um grande ciclo, com uma levando à outra e depois retornando ao início. A morte não é o fim da vida, mas sim uma mudança de estado em que a vida se transforma em uma nova forma.
 
-Druids of this circle have a complex relationship with the undead. Unlike most other druids, they see nothing inherently wrong with undeath, which they consider to be a companion to life and death. But these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or that try to avoid passing to a final rest, violate the cycle and must be thwarted.
+Druidas deste círculo têm uma relação complexa com os mortos-vivos. Ao contrário da maioria dos outros druidas, eles não veem nada inerentemente errado com a não-morte, que consideram um companheiro da vida e da morte. Mas esses druidas acreditam que o ciclo natural é mais saudável quando cada segmento dele é vibrante e mutável. Mortos-vivos que buscam substituir toda a vida pela não-morte, ou que tentam evitar passar para um descanso final, violam o ciclo e devem ser impedidos.

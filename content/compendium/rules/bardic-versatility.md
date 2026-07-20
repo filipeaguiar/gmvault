@@ -1,19 +1,25 @@
 ---
-title: "Bardic Versatility"
-type: "rule"
+title: Bardic Versatility
+type: rule
 draft: false
 weight: 10
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: ready
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-optional feature}
+característica opcional}
 
-Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic:
+Sempre que você alcançar um nível nesta classe que conceda a característica Melhoria de Valor de Atributo, você pode fazer uma das seguintes opções, representando uma mudança de foco ao usar suas habilidades e magia:
 
-* Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise.
+* Substitua uma das perícias que você escolheu para a característica Especialização por uma de suas outras proficiências em perícia que não esteja se beneficiando da Especialização.
 
-* Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.
+* Substitua um Truque que você aprendeu através da característica de Conjuração desta classe por outro Truque da Lista de Magias do bardo.

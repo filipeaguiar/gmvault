@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: TCE
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: subclassFeature
   remote_id: 842dee03f140351f
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-14th-level Path of Wild Magic feature
+Característica do Caminho da Magia Selvagem de nível 14
 
-Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.
+Sempre que você fizer uma rolagem na tabela de Magia Selvagem, você pode rolar o dado duas vezes e escolher qual dos dois efeitos liberar. Se você obtiver o mesmo número em ambos os dados, você pode ignorar o número e escolher qualquer efeito na tabela.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: 7606d31b2363fe4b
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Move in Harmony with the Cosmos
+Mova-se em Harmonia com o Cosmo
 
-Bards of the College of Dance know that the Words of Creation can't be contained within speech or song; the words are uttered by the movements of celestial bodies and flow through the motions of the smallest creatures. These Bards practice a way of being in harmony with the whirling cosmos that emphasizes agility, speed, and grace.
+Bardos do Colégio da Dança sabem que as Palavras da Criação não podem ser contidas em fala ou canção; as palavras são proferidas pelos movimentos de corpos Celestiais e fluem através dos movimentos das menores criaturas. Esses Bardos praticam uma forma de estar em harmonia com o cosmos giratório que enfatiza agilidade, deslocamento e graça.

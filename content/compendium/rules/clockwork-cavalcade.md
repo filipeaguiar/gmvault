@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,12 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: subclassFeature
   remote_id: 613a412bd9a64523
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You momentarily summon spirits of order to expunge disorder around you. As a Magic action, you summon the spirits in a 30-foot Cube originating from you. The spirits look like modrons or other Constructs of your choice. The spirits are intangible and invulnerable, and they create the effects below within the Cube before vanishing. Once you use this action, you can't use it again until you finish a Long Rest unless you spend 7 Sorcery Points (no action required) to restore your use of it.
+Você invoca momentaneamente espíritos de ordem para eliminar a desordem ao seu redor. Como uma Ação Mágica, você invoca os espíritos em um Cubo de 30 pés originando-se de você. Os espíritos se parecem com modrons ou outros Construtos de sua escolha. Os espíritos são intangíveis e invulneráveis, e eles criam os efeitos abaixo dentro do Cubo antes de desaparecerem. Uma vez que você usa esta ação, você não pode usá-la novamente até terminar um Descanso Longo, a menos que gaste 7 Pontos de Feitiçaria (nenhuma ação necessária) para restaurar seu uso dela.

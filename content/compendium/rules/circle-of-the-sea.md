@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-druid.json
   remote_key: subclassFeature
   remote_id: e1301b48f3ba6383
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-Become One with Tides and Storms
+Torne-se um com Marés e Tempestades
 
-Druids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds.
+Druidas do Círculo do Mar extraem as forças tempestuosas de oceanos e tempestades. Alguns se veem como encarnações da ira da Natureza, buscando retribuição contra aqueles que devastam a Natureza. Outros buscam união mística com a Natureza ao sintonizarem-se com o fluxo e refluxo das marés, seguindo o ímpeto das correntes e ondas e ouvindo os sussurros e rugidos inscrutíveis dos ventos.

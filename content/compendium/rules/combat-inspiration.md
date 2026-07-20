@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,16 +17,22 @@ source:
   remote_file: class/class-bard.json
   remote_key: subclassFeature
   remote_id: dfb6335f270174c9
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-You can use your wit to turn the tide of battle. A creature that has a Bardic Inspiration die from you can use it for one of the following effects.
+Você pode usar seu engenho para mudar o rumo da batalha. Uma criatura que possui um dado de Inspiração Bardica de você pode usá-lo para um dos seguintes efeitos.
 
 
-### Defense
+### Defesa
 
-When the creature is hit by an attack roll, that creature can use its Reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, potentially causing the attack to miss.
+Quando a criatura é atingida por uma Jogada de Ataque, essa criatura pode usar sua Reação para rolar o dado de Inspiração Bárdica e adicionar o número rolado à sua CA contra esse Ataque, potencialmente fazendo com que o Ataque erre.
 
 
-### Offense
+### Ataque
 
-Immediately after the creature hits a target with an attack roll, the creature can roll the Bardic Inspiration die and add the number rolled to the attack's damage against the target.
+Imediatamente após a criatura atingir um alvo com uma jogada de ataque, a criatura pode rolar o dado de Inspiração Bárdica e adicionar o número rolado ao dano do ataque contra o alvo.

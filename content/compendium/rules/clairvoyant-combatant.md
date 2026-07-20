@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,14 @@ source:
   remote_file: class/class-warlock.json
   remote_key: subclassFeature
   remote_id: 32d4f5e6c326d35e
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: gemma4:12b
 ---
 
-When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.
+Quando você forma um vínculo telepático com uma criatura usando sua Awakened Mind, você pode forçar essa criatura a realizar um Teste de Resistência de Sabedoria contra a sua CD para Evitar Magia. Em um teste de resistência falho, a criatura tem Desvantagem em Jogadas de Ataque contra você, e você tem Vantagem em Jogadas de Ataque contra essa criatura pela duração do vínculo.
 
-Once you use this feature, you can't use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.
+Uma vez que você use este recurso, você não pode usá-lo novamente até terminar um Descanso Curto ou Descanso Longo, a menos que gaste um espaço de magia de Magia do Pacto (não requer uma Ação) para restaurar o uso dele.

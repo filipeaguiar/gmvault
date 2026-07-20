@@ -1,0 +1,24 @@
+---
+title: Cosmic Omen
+type: rule
+draft: false
+weight: 10
+tags:
+- draft
+- importado
+- 5etools
+visibility: public
+status: draft
+source:
+  provider: 5e.tools
+  book: XPHB
+  entity_type: rule
+  entity_name: Cosmic Omen
+  remote_file: class/class-druid.json
+  remote_key: subclassFeature
+  remote_id: 8057750005b057a3
+---
+
+Sempre que você terminar um Descanso Longo, você pode consultar seu Mapa Estelar em busca de presságios e rolar um dado. Até que você termine seu próximo Descanso Longo, você ganha acesso a uma Reação especial baseada em se você obteve um número par ou ímpar na rolagem do dado:
+
+* {'type': 'item', 'name': 'Weal (par)', 'entries': ['Sempre que uma criatura que você possa ver a até 30 pés de você estiver prestes a fazer um Teste de d20, você pode usar uma Reação para rolar <span class="dice+" data-roll-notation="1d6">1d6</span> e adicionar o número rolado ao total.']}
