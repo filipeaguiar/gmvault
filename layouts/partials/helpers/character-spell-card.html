@@ -49,16 +49,14 @@
   </div>
   {{- end -}}
 
+  {{ if $canPrepare }}
   <div class="spell-card-actions">
-    {{ if $canPrepare }}
-      <label class="spell-toggle-label prepare-spell-label">
-        <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $ref }}" {{ if $ready }}checked{{ end }}>
-        <span class="prepare-spell-text">{{ if $ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
-      </label>
-    {{ else }}
-      <span class="spell-readonly-note">{{ if $alwaysPrepared }}Sempre pronta{{ else if $known }}Leitura apenas{{ else }}Sem preparo{{ end }}</span>
-    {{ end }}
+    <label class="spell-toggle-label prepare-spell-label">
+      <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $ref }}" {{ if $ready }}checked{{ end }}>
+      <span class="prepare-spell-text">{{ if $ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
+    </label>
   </div>
+  {{ end }}
 
   <details class="spell-details-accordion">
     <summary>Ver detalhes</summary>

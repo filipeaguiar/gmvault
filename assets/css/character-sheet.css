@@ -616,16 +616,8 @@ html.vtt-iframe .char-tab-content {
   min-width: 0;
   padding: 0;
   overflow: hidden;
-  border-left: 3px solid transparent;
+  border-left: 1px solid var(--border-color);
   box-shadow: none;
-}
-
-.spell-manager .ready-spell-item {
-  border-left-color: #4c9f70;
-}
-
-.spell-manager .management-spell-item {
-  border-left-color: var(--primary-color);
 }
 
 .spell-card-header {
