@@ -96,18 +96,58 @@ char_info:
     ref: /compendium/rules/uncanny-metabolism/
     reset: ''
     source: class
-  - max_uses: 2
+  - max_uses: 3
     name: Pontos de Foco
     ref: /compendium/rules/ki/
     reset: Descanso Curto ou Longo
     source: class
+  - max_uses: 0
+    name: Deflect Missiles
+    ref: /compendium/rules/deflect-missiles/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Ki-Fueled Attack
+    ref: /compendium/rules/ki-fueled-attack/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Monastic Tradition
+    ref: /compendium/rules/monastic-tradition/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Deflect Attacks
+    ref: /compendium/rules/deflect-attacks/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Monk Subclass
+    ref: /compendium/rules/monk-subclass/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Way of the Drunken Master
+    ref: /compendium/rules/way-of-the-drunken-master/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Bonus Proficiencies
+    ref: /compendium/rules/bonus-proficiencies/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Drunken Technique
+    ref: /compendium/rules/drunken-technique/
+    reset: ''
+    source: class
   alignment: True Neutral
   avatar: ''
   class: Monk
-  class_level: 2
+  class_level: 3
   class_spells: []
   classes_progression:
-  - level: 2
+  - level: 3
     name: Monk
     subclass: Way of the Drunken Master
   currencies:
@@ -162,11 +202,11 @@ char_info:
   feats:
   - Crafter
   feature_actions: *id001
-  hp: '17'
-  hp_current: '17'
-  hp_max: '17'
+  hp: '24'
+  hp_current: '24'
+  hp_max: '24'
   languages: Common
-  level: 2
+  level: 3
   mods:
     cha: 0
     con: 2
@@ -360,6 +400,14 @@ compendium_refs:
 - /compendium/rules/unarmored-movement/
 - /compendium/rules/monks-focus/
 - /compendium/rules/uncanny-metabolism/
+- /compendium/rules/deflect-missiles/
+- /compendium/rules/ki-fueled-attack/
+- /compendium/rules/monastic-tradition/
+- /compendium/rules/deflect-attacks/
+- /compendium/rules/monk-subclass/
+- /compendium/rules/way-of-the-drunken-master/
+- /compendium/rules/bonus-proficiencies/
+- /compendium/rules/drunken-technique/
 date: 2026-07-21 11:07:43+00:00
 draft: false
 factions: []

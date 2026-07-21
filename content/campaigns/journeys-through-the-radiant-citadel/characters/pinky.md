@@ -35,14 +35,44 @@ char_info:
     ref: /compendium/rules/cunning-action/
     reset: ''
     source: class
+  - max_uses: 0
+    name: Roguish Archetype
+    ref: /compendium/rules/roguish-archetype/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Steady Aim
+    ref: /compendium/rules/steady-aim/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Rogue Subclass
+    ref: /compendium/rules/rogue-subclass/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Swashbuckler
+    ref: /compendium/rules/swashbuckler/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Fancy Footwork
+    ref: /compendium/rules/fancy-footwork/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Rakish Audacity
+    ref: /compendium/rules/rakish-audacity/
+    reset: ''
+    source: class
   alignment: True Neutral
   avatar: ''
   class: Rogue
-  class_level: 2
+  class_level: 3
   classes_progression:
-  - level: 2
+  - level: 3
     name: Rogue
-    subclass: ''
+    subclass: Swashbuckler
   currencies:
     cp: 0
     ep: 0
@@ -75,11 +105,11 @@ char_info:
   feats:
   - Alert
   feature_actions: *id001
-  hp: '15'
-  hp_current: '15'
-  hp_max: '15'
+  hp: '21'
+  hp_current: '21'
+  hp_max: '21'
   languages: Common
-  level: 2
+  level: 3
   mods:
     cha: -1
     con: 1
@@ -238,7 +268,7 @@ char_info:
     int: 11
     str: 10
     wis: 13
-  subclass: ''
+  subclass: Swashbuckler
 compendium_refs:
 - /compendium/classes/rogue/
 - /compendium/feats/alert/
@@ -256,6 +286,12 @@ compendium_refs:
 - /compendium/items/dagger/
 - /compendium/items/leather-armor/
 - /compendium/rules/cunning-action/
+- /compendium/rules/roguish-archetype/
+- /compendium/rules/steady-aim/
+- /compendium/rules/rogue-subclass/
+- /compendium/rules/swashbuckler/
+- /compendium/rules/fancy-footwork/
+- /compendium/rules/rakish-audacity/
 date: 2026-07-09 19:00:00+00:00
 draft: false
 factions: []

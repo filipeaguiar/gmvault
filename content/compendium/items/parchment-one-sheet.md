@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: ready
+status: draft
 source:
   provider: 5e.tools
   book: PHB
@@ -22,12 +22,6 @@ item_info:
   cost: 0.1 gp
   weight: —
   rarity: None
-translation:
-  source_language: en
-  target_language: pt-BR
-  engine: argos
-  status: machine_translated
-titulo_pt_br: Pergaminho (uma folha)
 ---
 
 
