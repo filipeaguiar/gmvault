@@ -43,12 +43,12 @@ char_info:
   alignment: True Neutral
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-nyx-clair.png'
   class: Warlock
-  class_level: 2
+  class_level: 3
   class_spells: []
   classes_progression:
-  - level: 2
+  - level: 3
     name: Warlock
-    subclass: ''
+    subclass: Great Old One
   currencies:
     cp: 0
     ep: 0
@@ -97,7 +97,7 @@ char_info:
   hp_current: '17'
   hp_max: '17'
   languages: Common
-  level: 2
+  level: 3
   mods:
     cha: 2
     con: 2
@@ -229,7 +229,7 @@ char_info:
   spell_attack_bonus: 0
   spell_dc: 0
   spell_slots:
-    1: 2
+    2: 2
   spellcasting:
     ability: cha
     can_mark_known: true
@@ -237,19 +237,19 @@ char_info:
     cantrips_known: 6
     class_count: 0
     kind: pact
-    known_count: 10
+    known_count: 11
     known_label: Magias de Pacto
     pact_slot_count: 2
-    pact_slot_level: 1
+    pact_slot_level: 2
     prepared_count: 0
     prepared_label: Magias Conhecidas
     prepared_limit: 0
     slot_label: Espaços de Pacto
     slot_levels:
-    - 1
+    - 2
     slot_summary: 2 espaços · 6 truques
     slot_total: 2
-    total_spells: 10
+    total_spells: 11
     uses_pact_slots: true
   spells:
   - level: 0
@@ -292,6 +292,10 @@ char_info:
     name: Unseen Servant
     ref: /compendium/spells/unseen-servant/
     usage: 1 action
+  - level: 2
+    name: Misty Step
+    ref: /compendium/spells/misty-step/
+    usage: 1 bonus action
   stats:
     cha: 14
     con: 14
@@ -299,9 +303,10 @@ char_info:
     int: 16
     str: 8
     wis: 12
-  subclass: ''
+  subclass: Great Old One
 compendium_refs:
 - /compendium/classes/warlock/
+- /compendium/classes/great-old-one-patron/
 - /compendium/feats/magic-initiate/
 - /compendium/items/backpack/
 - /compendium/items/book/
@@ -326,11 +331,15 @@ compendium_refs:
 - /compendium/spells/gust/
 - /compendium/spells/mage-hand/
 - /compendium/spells/message/
+- /compendium/spells/misty-step/
 - /compendium/spells/ray-of-frost/
 - /compendium/spells/speak-with-animals/
 - /compendium/spells/unseen-servant/
 - /compendium/rules/eldritch-invocations/
 - /compendium/rules/magical-cunning/
+- /compendium/rules/warlock-subclass/
+- /compendium/rules/awakened-mind/
+- /compendium/rules/great-old-one-spells/
 date: 2026-07-17 01:26:08+00:00
 draft: false
 factions: []
