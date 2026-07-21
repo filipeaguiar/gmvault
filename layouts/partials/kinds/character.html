@@ -193,30 +193,6 @@
   <div id="tab-stats" class="char-tab-content active">
     {{ with .Params.char_info }}
 
-    {{/* Contadores de Recursos Consumíveis de Classe */}}
-    {{ with .consumables }}
-    <div class="class-consumables-tracker">
-      <div class="class-consumables-title"><i class="ra ra-gear-hammer"></i> Recursos de Classe</div>
-      <div class="consumable-groups">
-        {{ range . }}
-        {{ $current := .current | int }}
-        {{ $max := .max | int }}
-        <div class="consumable-block badge-{{ .type | default "generic" }}">
-          <div class="consumable-info">
-            <span class="consumable-name">{{ .name }}</span>
-            <span class="consumable-values"><strong>{{ $current }}</strong> / {{ $max }}</span>
-          </div>
-          <div class="consumable-slots">
-            {{ range seq $max }}
-              <input type="checkbox" class="consumable-slot-checkbox" aria-label="Slot de recurso consumido" {{ if le . $current }}checked{{ end }}>
-            {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    {{ end }}
-
     <!-- Attributes Grid (6 boxes) -->
     {{ $attrNames := dict "str" "Força" "dex" "Destreza" "con" "Constituição" "int" "Inteligência" "wis" "Sabedoria" "cha" "Carisma" }}
     {{ $shortNames := dict "str" "FOR" "dex" "DES" "con" "CON" "int" "INT" "wis" "SAB" "cha" "CAR" }}
@@ -330,6 +306,30 @@
   <!-- TAB 3: Ações -->
   <div id="tab-actions" class="char-tab-content">
     <h3>Ações e Recursos</h3>
+
+    {{/* Contadores de Recursos Consumíveis de Classe */}}
+    {{ with .Params.char_info.consumables }}
+    <div class="class-consumables-tracker">
+      <div class="class-consumables-title"><i class="ra ra-gear-hammer"></i> Recursos de Classe</div>
+      <div class="consumable-groups">
+        {{ range . }}
+        {{ $current := .current | int }}
+        {{ $max := .max | int }}
+        <div class="consumable-block badge-{{ .type | default "generic" }}">
+          <div class="consumable-info">
+            <span class="consumable-name">{{ .name }}</span>
+            <span class="consumable-values"><strong>{{ $current }}</strong> / {{ $max }}</span>
+          </div>
+          <div class="consumable-slots">
+            {{ range seq $max }}
+              <input type="checkbox" class="consumable-slot-checkbox" aria-label="Slot de recurso consumido" {{ if le . $current }}checked{{ end }}>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
     {{ with .Params.char_info.actions }}
       {{ $actionsMap := dict }}
       {{ range . }}

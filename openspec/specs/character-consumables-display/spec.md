@@ -11,11 +11,11 @@ A ficha de personagem jogador em Markdown MUST conter uma estrutura sob `char_in
 - **THEN** ele deve conter a estrutura sob `char_info.consumables` com `name: "Pontos de Foco"`, `current: 3`, `max: 3` e `type: "focus"`.
 
 ### Requirement: Consumables visual blocks in HTML rendering
-O layout do Hugo de renderização de fichas de personagens SHALL ler a lista de `consumables` e MUST desenhar blocos visuais de contadores contendo o valor atual, valor máximo e nome do recurso no topo da página do personagem.
+O layout do Hugo de renderização de fichas de personagens SHALL ler a lista de `consumables` e MUST desenhar blocos visuais de contadores contendo o valor atual, valor máximo e nome do recurso no topo da aba de Ações do personagem.
 
 #### Scenario: Visual blocks rendering on webpage
 - **WHEN** o site estático do Hugo for compilado e a página de Violeta for acessada no navegador
-- **THEN** a seção superior deve renderizar um bloco de contador indicando "Pontos de Feitiçaria: 3 / 3".
+- **THEN** a aba de Ações deve renderizar um bloco de contador indicando "Pontos de Feitiçaria: 3 / 3".
 
 ### Requirement: Dedicated CSS Styles for Class Consumables
 Regras de estilo CSS dedicadas SHALL ser declaradas para cada tipo de classe (`badge-rage`, `badge-focus`, `badge-sorcery`) no arquivo de estilo principal e MUST aplicar cores temáticas correspondentes.
