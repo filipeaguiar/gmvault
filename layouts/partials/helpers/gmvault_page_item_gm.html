@@ -1,0 +1,7 @@
+{{- $page := . -}}
+{{- return (dict 
+  "type" "page"
+  "name" (or $page.Params.titulo_pt_br $page.Title)
+  "id" (printf "page_%s" (substr ($page.Permalink | md5) 0 8))
+  "url" $page.Permalink
+) -}}
