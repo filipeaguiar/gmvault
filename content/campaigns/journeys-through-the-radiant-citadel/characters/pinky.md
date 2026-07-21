@@ -81,7 +81,7 @@ char_info:
     sp: 0
   dndbeyond_id: ''
   equipment:
-  - equipped: false
+  - equipped: true
     name: Burglar's Pack
     quantity: 1
     ref: /compendium/items/burglars-pack/
@@ -101,6 +101,10 @@ char_info:
     name: Leather Armor
     quantity: 1
     ref: /compendium/items/leather-armor/
+  - equipped: true
+    name: Rapier
+    quantity: 1
+    ref: /compendium/items/rapier/
   feat: ''
   feats:
   - Alert
@@ -292,10 +296,14 @@ compendium_refs:
 - /compendium/rules/swashbuckler/
 - /compendium/rules/fancy-footwork/
 - /compendium/rules/rakish-audacity/
+- /compendium/items/rapier/
 date: 2026-07-09 19:00:00+00:00
 draft: false
 factions: []
 locations: []
+outputs:
+- HTML
+- ForgeChar
 spells_usage: []
 status: ready
 tags:

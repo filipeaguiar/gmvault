@@ -20,3 +20,13 @@ source:
 ---
 
 When you reach a Sorcerer level specified in the Psionic Spells table, you thereafter always have the listed spells prepared.
+
+
+### Tabela: Psionic Spells
+| Sorcerer Level | Spells |
+| --- | --- |
+| 1st | [arms of Hadar](/compendium/spells/arms-of-hadar/), [dissonant whispers](/compendium/spells/dissonant-whispers/), [mind sliver](/compendium/spells/mind-sliver/) |
+| 3rd | [calm emotions](/compendium/spells/calm-emotions/), [detect thoughts](/compendium/spells/detect-thoughts/) |
+| 5th | [hunger of Hadar](/compendium/spells/hunger-of-hadar/), [sending](/compendium/spells/sending/) |
+| 7th | [Evard's black tentacles](/compendium/spells/evards-black-tentacles/), [summon aberration](/compendium/spells/summon-aberration/) |
+| 9th | [Rary's telepathic bond](/compendium/spells/rarys-telepathic-bond/), [telekinesis](/compendium/spells/telekinesis/) |

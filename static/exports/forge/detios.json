@@ -1,0 +1,318 @@
+{
+  "author": "GM - Filipe",
+  "favorite": true,
+  "id": "59e0600b-0ace-e1cd-ac42-a1dc754612b6",
+  "metadata": {
+    "com.battle-system.forge/Z001": 2,
+    "com.battle-system.forge/Z002": "Small",
+    "com.battle-system.forge/Z003": "True Neutral",
+    "com.battle-system.forge/Z004": "Halfling",
+    "com.battle-system.forge/Z005": 15,
+    "com.battle-system.forge/Z006": 15,
+    "com.battle-system.forge/Z007": 13,
+    "com.battle-system.forge/Z008": 30,
+    "com.battle-system.forge/Z009": 0,
+    "com.battle-system.forge/Z010": 0,
+    "com.battle-system.forge/Z011": 0,
+    "com.battle-system.forge/Z012": 0,
+    "com.battle-system.forge/Z013": "Passive Perception 9",
+    "com.battle-system.forge/Z014": [
+      {
+        "description": "Perícia importada: Acrobatics +3",
+        "id": "b05534ed-5e73-d4cd-d9f2-40adb9ba51fe",
+        "name": "Acrobatics +3"
+      },
+      {
+        "description": "Perícia importada: Animal-Handling +1",
+        "id": "c1021e22-b768-5589-c71c-fba9265ee98c",
+        "name": "Animal-Handling +1"
+      },
+      {
+        "description": "Perícia importada: Arcana +0",
+        "id": "24d8fb86-b5f1-d18d-4000-eb1e112fadf0",
+        "name": "Arcana +0"
+      },
+      {
+        "description": "Perícia importada: Athletics -1",
+        "id": "28dca7c2-883a-eaaa-ea42-044b31558bbf",
+        "name": "Athletics -1"
+      },
+      {
+        "description": "Perícia importada: Deception +4",
+        "id": "4e18ef5c-8d75-5acd-15cc-61028949d3e5",
+        "name": "Deception +4"
+      },
+      {
+        "description": "Perícia importada: History +0",
+        "id": "ac84c163-7204-7806-90f9-256088b80839",
+        "name": "History +0"
+      },
+      {
+        "description": "Perícia importada: Insight -1",
+        "id": "63db1ef7-96c4-18cd-1ffe-5a0c5cc08a1d",
+        "name": "Insight -1"
+      },
+      {
+        "description": "Perícia importada: Intimidation +4",
+        "id": "eb3260c5-957d-f30c-9b38-b1551456de0c",
+        "name": "Intimidation +4"
+      },
+      {
+        "description": "Perícia importada: Investigation +0",
+        "id": "7f590c8e-ce8f-d8cd-9aac-7657da0c7fc9",
+        "name": "Investigation +0"
+      },
+      {
+        "description": "Perícia importada: Medicine -1",
+        "id": "29be9cb2-f7d6-3fb7-33b5-7555f53cc0d7",
+        "name": "Medicine -1"
+      },
+      {
+        "description": "Perícia importada: Nature +0",
+        "id": "26a554ee-4931-306f-a087-fc79ec072cd0",
+        "name": "Nature +0"
+      },
+      {
+        "description": "Perícia importada: Perception -1",
+        "id": "e3869fd2-42fe-dc58-7ed8-6015690d6f58",
+        "name": "Perception -1"
+      },
+      {
+        "description": "Perícia importada: Performance +6",
+        "id": "c1a90049-ed72-5dc1-ee11-a84bac9c0917",
+        "name": "Performance +6"
+      },
+      {
+        "description": "Perícia importada: Persuasion +6",
+        "id": "37a55c35-8335-be96-4ab9-8f201d1b6aaa",
+        "name": "Persuasion +6"
+      },
+      {
+        "description": "Perícia importada: Religion +0",
+        "id": "a3bbc285-037d-d08a-5977-900e4a95ba32",
+        "name": "Religion +0"
+      },
+      {
+        "description": "Perícia importada: Sleight-of-Hand +5",
+        "id": "a05b3a45-eb3e-64e5-95e0-c467dfa099b0",
+        "name": "Sleight-of-Hand +5"
+      },
+      {
+        "description": "Perícia importada: Stealth +3",
+        "id": "430f2a71-ae39-642f-067f-e9d07bb4a2df",
+        "name": "Stealth +3"
+      },
+      {
+        "description": "Perícia importada: Survival +1",
+        "id": "c6f6457a-dc29-91df-4b8d-3e45d0aadb2b",
+        "name": "Survival +1"
+      }
+    ],
+    "com.battle-system.forge/Z015": "Common",
+    "com.battle-system.forge/Z016": "",
+    "com.battle-system.forge/Z017": 8,
+    "com.battle-system.forge/Z018": 16,
+    "com.battle-system.forge/Z019": 12,
+    "com.battle-system.forge/Z020": 10,
+    "com.battle-system.forge/Z021": 9,
+    "com.battle-system.forge/Z022": 18,
+    "com.battle-system.forge/Z023": -1,
+    "com.battle-system.forge/Z024": 5,
+    "com.battle-system.forge/Z025": 1,
+    "com.battle-system.forge/Z026": 0,
+    "com.battle-system.forge/Z027": -1,
+    "com.battle-system.forge/Z028": 6,
+    "com.battle-system.forge/Z029": "",
+    "com.battle-system.forge/Z030": "",
+    "com.battle-system.forge/Z031": "",
+    "com.battle-system.forge/Z032": "",
+    "com.battle-system.forge/Z033": "",
+    "com.battle-system.forge/Z034": [
+      {
+        "description": "\nVocê recebe os benefícios a seguir.\n\n\n### Pontos de Sorte\n\nVocê tem um número de Pontos de Sorte igual ao seu Bônus de Proficiência e pode gastar os pontos nos benefícios abaixo. Você recupera seus Pontos de Sorte gastos quando termina um Descanso Longo.\n\n\n### Vantagem\n\nQuando você rola um <span class=\"dice+\" data-roll-notation=\"d20\">d20</span> para um Teste de d20, você pode gastar 1 Ponto de Sorte para conceder a si mesmo Vantagem na rolagem.\n\n\n### Desvantagem\n\nQuando uma criatura rola um <span class=\"dice+\" data-roll-notation=\"d20\">d20</span> para uma jogada de ataque contra você, você pode gastar 1 Ponto de Sorte para impor Desvantagem nessa rolagem.\n",
+        "id": "5363b82e-30ff-8f98-073f-0faa92da2b9a",
+        "name": "Lucky"
+      },
+      {
+        "description": "\nQuando você realiza a Ação de Ataque, você pode fazer uma Jogada de Ataque com uma arma ou um Ataque Desarmado.\n",
+        "id": "ee1e51db-89c5-287d-a09b-a5904d85748b",
+        "name": "Attack"
+      },
+      {
+        "description": "\nVocê pode inspirar outros de forma sobrenatural através de palavras, música ou dança. Essa inspiração é representada pelo seu dado de Inspiração de Bardo, que é um <span class=\"dice+\" data-roll-notation=\"d6\">d6</span>.\n",
+        "id": "67afd74e-46e5-2ecd-99f0-7456d7fdd965",
+        "name": "Bardic Inspiration"
+      },
+      {
+        "description": "\nVocê aprendeu a conjurar magias através de suas artes de bardo. Consulte o capítulo 7 para as regras de conjuração. As informações abaixo detalham como você usa essas regras com as magias de Bardo, que aparecem na lista de magias de Bardo adiante, na descrição da classe.\n",
+        "id": "46320f1c-840e-575e-651e-53ccc862d788",
+        "name": "Conjuração"
+      },
+      {
+        "description": "\nVocê pode adicionar metade do seu Bônus de Proficiência (arredondado para baixo) a qualquer teste de atributo que você fizer que use uma proficiência em perícia que você não possua e que, de outra forma, não usaria o seu Bônus de Proficiência.\n\nPor exemplo, se você fizer um teste de Força (Atletismo) e não tiver proficiência em Atletismo, você pode adicionar metade do seu Bônus de Proficiência ao teste.\n\n### Repertório de um Bardo\n\nO seu Bardo bate um tambor enquanto entoa os feitos de heróis antigos? Dedilha um alaúde enquanto murmura melodias românticas? Interpreta árias de poder arrebatador? Recita monólogos dramáticos de tragédias clássicas? Usa o ritmo de uma dança folclórica para coordenar o movimento de aliados em combate? Compõe limeriques picantes?\n\nQuando você joga com um Bardo, considere o estilo de performance artística que você prefere, os estados de espírito que você pode invocar e os temas que inspiram suas próprias criações. Seus poemas são inspirados por momentos de beleza natural, ou são reflexões sombrias sobre a perda? Você prefere hinos sublimes ou canções turbulentas de taverna? Você se sente atraído por lamentos pelos caídos ou celebrações de alegria? Você dança jigas alegres ou realiza coreografias interpretativas elaboradas? Você se concentra em um estilo de performance ou se esforça para dominar todos eles?\n",
+        "id": "1dc31df1-5074-698e-ac36-2ed103c1dad8",
+        "name": "Pau para Toda Obra"
+      },
+      {
+        "description": "\noptional feature}\n\nIf a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, the creature can roll that die and choose a target affected by the spell. Add the number rolled as a bonus to the hit points regained or the damage dealt. The Bardic Inspiration die is then lost.\n",
+        "id": "3247ee3f-524a-3ab5-5327-c1f0de4d9244",
+        "name": "Magical Inspiration"
+      },
+      {
+        "description": "\nBeginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra <span class=\"dice+\" data-roll-notation=\"[1d6]\">[1d6]</span> hit points.\n\nThe extra hit points increase when you reach certain levels in this class: to <span class=\"dice+\" data-roll-notation=\"[1d8]\">[1d8]</span> at 9th level, to <span class=\"dice+\" data-roll-notation=\"[1d10]\">[1d10]</span> at 13th level, and to <span class=\"dice+\" data-roll-notation=\"[1d12]\">[1d12]</span> at 17th level.\n",
+        "id": "c5d5460d-070d-6e88-3c6a-1232d778e848",
+        "name": "Song of Rest (d6)"
+      },
+      {
+        "description": "\nNo 1º nível, escolha duas de suas proficiências em perícias, ou uma de suas proficiências em perícias e sua proficiência com phb. Seu bônus de proficiência é dobrado para qualquer teste de atributo que você fizer que usar qualquer uma das proficiências escolhidas.\n\nNo 6º nível, você pode escolher mais duas de suas proficiências (em perícias ou com phb) para receber este benefício.\n",
+        "id": "67b93e7b-636d-cddd-16ea-368961639776",
+        "name": "Especialização"
+      }
+    ],
+    "com.battle-system.forge/Z035": [
+      {
+        "description": "",
+        "id": null,
+        "name": "Ataque"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Esconder"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Desengajar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Disparar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Ajudar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Esquivar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Usar Objeto"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Bardic Inspiration"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Spellcasting"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Jack of All Trades"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Magical Inspiration"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Song of Rest (d6)"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Expertise"
+      },
+      {
+        "description": "Ataque com Arma: [1d20+5] para acertar. Dano: [1d4+3] de dano.",
+        "id": "c5eb9298-ce5e-923e-e683-fd05af70b5be-attack",
+        "name": "Dagger"
+      }
+    ],
+    "com.battle-system.forge/Z036": [],
+    "com.battle-system.forge/Z037": [],
+    "com.battle-system.forge/Z038": [],
+    "com.battle-system.forge/Z039": [],
+    "com.battle-system.forge/Z040": [
+      {
+        "description": "Adventuring Gear",
+        "id": "fcdea7af-4ca6-f5c3-d636-ddeb6ebb5eaa",
+        "name": "Backpack",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "acf513b4-db20-35b4-25bd-dd6d607e811c",
+        "name": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "4198d8a8-dde0-e1cf-e4f4-d4d22578fbff",
+        "name": "Candle",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "41e1897c-819e-83aa-bb8e-98854438df8a",
+        "name": "Roupas de fantasia",
+        "quantity": 1
+      },
+      {
+        "description": "Weapon; Propriedades: [finesse light thrown]",
+        "id": "c5eb9298-ce5e-923e-e683-fd05af70b5be",
+        "name": "Dagger",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "68884c86-3586-36a4-32d5-308042de2c8c",
+        "name": "Disguise Kit",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "232f2058-5d2a-28a5-9cae-40355c9a32f8",
+        "name": "Entertainer's Pack",
+        "quantity": 1
+      },
+      {
+        "description": "Armor",
+        "id": "1c232424-66c9-bf44-4fc3-bc2f106e844d",
+        "name": "Armadura de couro",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "3129adb2-ca0f-6a35-e243-303d9c9b373f",
+        "name": "Rations (1 day)",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "8864798f-ab99-3d30-1302-e5169c3da5c7",
+        "name": "Waterskin",
+        "quantity": 1
+      }
+    ],
+    "com.battle-system.forge/Z041": "Dex +5, Cha +6",
+    "com.battle-system.forge/Z042": "",
+    "com.battle-system.forge/fabd": true,
+    "com.battle-system.forge/in-party": true,
+    "com.battle-system.forge/name": "Detios Canto Baixo"
+  },
+  "name": "Detios Canto Baixo",
+  "updatedAt": 1784497663000.0
+}

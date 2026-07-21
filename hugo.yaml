@@ -33,6 +33,11 @@ outputFormats:
     path: exports/forge
     isPlainText: true
     notAlternative: true
+  ForgeChar:
+    mediaType: application/json
+    baseName: forge
+    isPlainText: true
+    notAlternative: false
   CharacterCatalog:
     mediaType: application/json
     baseName: character-catalog

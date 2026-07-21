@@ -24,3 +24,14 @@ You harbor a wellspring of psionic energy within yourself. It is represented by 
 Any features in this subclass that use a Psionic Energy Die use only the dice from this subclass. Some of your powers expend the Psionic Energy Die, as specified in a power's description, and you can't use a power if it requires you to use a die when all your Psionic Energy Dice are expended.
 
 You regain one of your expended Psionic Energy Dice when you finish a Short Rest, and you regain all of them when you finish a Long Rest.
+
+
+### Tabela: Soulknife Energy Dice
+| Rogue Level | Die Size | Number |
+| --- | --- | --- |
+| 3 | **D6** | 4 |
+| 5 | **D8** | 6 |
+| 9 | **D8** | 8 |
+| 11 | **D10** | 8 |
+| 13 | **D10** | 10 |
+| 17 | **D12** | 12 |

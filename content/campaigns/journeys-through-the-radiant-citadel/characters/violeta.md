@@ -117,27 +117,27 @@ char_info:
     sp: 0
   dndbeyond_id: ''
   equipment:
-  - equipped: false
+  - equipped: true
     name: Backpack
     quantity: 1
     ref: /compendium/items/backpack/
-  - equipped: false
+  - equipped: true
     name: Book
     quantity: 1
     ref: /compendium/items/book/
-  - equipped: false
+  - equipped: true
     name: Ink (1-Ounce Bottle)
     quantity: 1
     ref: /compendium/items/ink-1-ounce-bottle/
-  - equipped: false
+  - equipped: true
     name: Ink Pen
     quantity: 1
     ref: /compendium/items/ink-pen/
-  - equipped: false
+  - equipped: true
     name: Parchment (One Sheet)
     quantity: 1
     ref: /compendium/items/parchment-one-sheet/
-  - equipped: false
+  - equipped: true
     name: Staff
     quantity: 1
     ref: /compendium/items/staff/
@@ -384,6 +384,9 @@ date: 2026-07-21 15:07:44+00:00
 draft: false
 factions: []
 locations: []
+outputs:
+- HTML
+- ForgeChar
 spells_usage: []
 status: ready
 tags:

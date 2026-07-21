@@ -78,43 +78,43 @@ char_info:
     sp: 0
   dndbeyond_id: ''
   equipment:
-  - equipped: false
+  - equipped: true
     name: Backpack
     quantity: 1
     ref: /compendium/items/backpack/
-  - equipped: false
+  - equipped: true
     name: Bedroll
     quantity: 1
     ref: /compendium/items/bedroll/
-  - equipped: false
+  - equipped: true
     name: Costume Clothes
     quantity: 1
     ref: /compendium/items/costume-clothes/
-  - equipped: false
+  - equipped: true
     name: Candle
     quantity: 1
     ref: /compendium/items/candle/
-  - equipped: false
+  - equipped: true
     name: Rations (1 Day)
     quantity: 1
     ref: /compendium/items/rations-1-day/
-  - equipped: false
+  - equipped: true
     name: Waterskin
     quantity: 1
     ref: /compendium/items/waterskin/
-  - equipped: false
+  - equipped: true
     name: Disguise Kit
     quantity: 1
     ref: /compendium/items/disguise-kit/
-  - equipped: false
+  - equipped: true
     name: Leather Armor
     quantity: 1
     ref: /compendium/items/leather-armor/
-  - equipped: false
+  - equipped: true
     name: Dagger
     quantity: 2
     ref: /compendium/items/dagger/
-  - equipped: false
+  - equipped: true
     name: Entertainer's Pack
     quantity: 1
     ref: /compendium/items/entertainers-pack/
@@ -356,6 +356,9 @@ date: 2026-07-19 21:47:43+00:00
 draft: false
 factions: []
 locations: []
+outputs:
+- HTML
+- ForgeChar
 spells_usage: []
 status: ready
 tags:

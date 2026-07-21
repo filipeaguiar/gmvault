@@ -57,35 +57,35 @@ char_info:
     sp: 0
   dndbeyond_id: ''
   equipment:
-  - equipped: false
+  - equipped: true
     name: Backpack
     quantity: 1
     ref: /compendium/items/backpack/
-  - equipped: false
+  - equipped: true
     name: Book
     quantity: 1
     ref: /compendium/items/book/
-  - equipped: false
+  - equipped: true
     name: Ink (1-Ounce Bottle)
     quantity: 1
     ref: /compendium/items/ink-1-ounce-bottle/
-  - equipped: false
+  - equipped: true
     name: Ink Pen
     quantity: 1
     ref: /compendium/items/ink-pen/
-  - equipped: false
+  - equipped: true
     name: Parchment (One Sheet)
     quantity: 1
     ref: /compendium/items/parchment-one-sheet/
-  - equipped: false
+  - equipped: true
     name: Quarterstaff
     quantity: 1
     ref: /compendium/items/quarterstaff/
-  - equipped: false
+  - equipped: true
     name: Sickle
     quantity: 1
     ref: /compendium/items/sickle/
-  - equipped: false
+  - equipped: true
     name: Leather Armor
     quantity: 1
     ref: /compendium/items/leather-armor/
@@ -335,6 +335,9 @@ date: 2026-07-17 01:26:08+00:00
 draft: false
 factions: []
 locations: []
+outputs:
+- HTML
+- ForgeChar
 spells_usage: []
 status: ready
 tags:

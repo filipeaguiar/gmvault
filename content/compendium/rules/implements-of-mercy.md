@@ -27,3 +27,14 @@ translation:
 ---
 
 Você ganha proficiência nas perícias Intuição e Medicina e proficiência com o Kit de Herbalismo.
+
+
+### Tabela: Merciful Mask
+| d6 | Mask Appearance |
+| --- | --- |
+| 1 | Raven |
+| 2 | Blank and white |
+| 3 | Crying visage |
+| 4 | Laughing visage |
+| 5 | Skull |
+| 6 | Butterfly |

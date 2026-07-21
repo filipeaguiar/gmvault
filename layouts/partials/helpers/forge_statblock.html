@@ -589,14 +589,14 @@
 
 {{- $idHash := md5 $page.Permalink -}}
 {{- $id := printf "%s-%s-%s-%s-%s" (substr $idHash 0 8) (substr $idHash 8 4) (substr $idHash 12 4) (substr $idHash 16 4) (substr $idHash 20 12) -}}
-{{- $inParty := false -}}
+{{- $inParty := $isCharacter -}}
 {{- $timestamp := 0 -}}
-{{- if gt $page.Date.Unix 0 -}}
-  {{- $timestamp = int (mul $page.Date.Unix 1000) -}}
+{{- if gt $page.Lastmod.Unix 0 -}}
+  {{- $timestamp = int (mul $page.Lastmod.Unix 1000) -}}
 {{- end -}}
 
 {{- $metadata := dict
-  "com.battle-system.forge/in-party" false
+  "com.battle-system.forge/in-party" $inParty
   "com.battle-system.forge/name" $name
   "com.battle-system.forge/fabd" true
   "com.battle-system.forge/Z001" $level
@@ -647,7 +647,7 @@
   "name" $name
   "author" (or site.Params.forge.author "GM - Filipe")
   "metadata" $metadata
-  "favorite" false
+  "favorite" $inParty
   "updatedAt" $timestamp
 -}}
 {{- return $record -}}

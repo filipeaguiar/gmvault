@@ -102,47 +102,47 @@ char_info:
     sp: 0
   dndbeyond_id: ''
   equipment:
-  - equipped: false
+  - equipped: true
     name: Backpack
     quantity: 1
     ref: /compendium/items/backpack/
-  - equipped: false
+  - equipped: true
     name: Bedroll
     quantity: 1
     ref: /compendium/items/bedroll/
-  - equipped: false
+  - equipped: true
     name: Mess Kit
     quantity: 1
     ref: /compendium/items/mess-kit/
-  - equipped: false
+  - equipped: true
     name: Tinderbox
     quantity: 1
     ref: /compendium/items/tinderbox/
-  - equipped: false
+  - equipped: true
     name: Torch
     quantity: 1
     ref: /compendium/items/torch/
-  - equipped: false
+  - equipped: true
     name: Rations (1 Day)
     quantity: 1
     ref: /compendium/items/rations-1-day/
-  - equipped: false
+  - equipped: true
     name: Waterskin
     quantity: 1
     ref: /compendium/items/waterskin/
-  - equipped: false
+  - equipped: true
     name: Hempen Rope (50 Feet)
     quantity: 1
     ref: /compendium/items/hempen-rope-50-feet/
-  - equipped: false
+  - equipped: true
     name: Greataxe
     quantity: 1
     ref: /compendium/items/greataxe/
-  - equipped: false
+  - equipped: true
     name: Handaxe
     quantity: 2
     ref: /compendium/items/handaxe/
-  - equipped: false
+  - equipped: true
     name: Handaxe
     quantity: 1
     ref: /compendium/items/handaxe/
@@ -349,6 +349,9 @@ date: 2026-07-21 10:59:18+00:00
 draft: false
 factions: []
 locations: []
+outputs:
+- HTML
+- ForgeChar
 spells_usage: []
 status: ready
 tags:
