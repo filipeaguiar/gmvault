@@ -430,6 +430,170 @@ def fetch_class_json(class_name):
         print(f"  [5e.tools] Erro ao carregar dados de classe para {class_name}: {e}")
     return None
 
+
+def extract_class_resource_info(class_name, level, attributes=None):
+    """
+    Carrega o JSON de cache da classe do 5e.tools e extrai informações de usos
+    máximos de recursos (Ki/Foco, Fúria, Inspiração Bárdica) e seus resets para o nível indicado.
+    Retorna uma lista de dicionários no formato:
+    [{"name": str, "max_uses": int, "reset": str, "ref": str}]
+    """
+    resources = []
+    if not class_name or level < 1:
+        return resources
+
+    # Normalização básica de nomes de classes para busca
+    class_key = class_name.lower().strip()
+    
+    # Mapeamento interno de termos do português para inglês para resolver o JSON do 5e.tools
+    translate_map = {
+        "monge": "monk",
+        "bárbaro": "barbarian",
+        "barbaro": "barbarian",
+        "bardo": "bard",
+        "paladino": "paladin",
+        "clérigo": "cleric",
+        "clerigo": "cleric",
+        "guerreiro": "fighter",
+        "ladino": "rogue",
+        "mago": "wizard",
+        "bruxo": "warlock",
+        "feiticeiro": "sorcerer",
+        "druida": "druid",
+        "patrulheiro": "ranger",
+        "artífice": "artificer",
+        "artifice": "artificer"
+    }
+    
+    resolved_class_name = translate_map.get(class_key, class_key)
+    
+    class_data = fetch_class_json(resolved_class_name)
+    if not class_data:
+        return resources
+
+    cls_entry = None
+    for entry in class_data.get("class", []):
+        entry_name = entry.get("name", "").lower()
+        if entry_name == resolved_class_name:
+            if cls_entry is None or entry.get("source") == "XPHB":
+                cls_entry = entry
+                
+    if not cls_entry and class_data.get("class"):
+        for entry in class_data.get("class", []):
+            entry_name = entry.get("name", "").lower()
+            if resolved_class_name in entry_name or entry_name in resolved_class_name:
+                if cls_entry is None or entry.get("source") == "XPHB":
+                    cls_entry = entry
+
+    if not cls_entry:
+        return resources
+
+    # Mapeamento estático de recargas e referências
+    # Se encontrarmos a coluna correspondente no classTableGroups
+    table_groups = cls_entry.get("classTableGroups", [])
+    
+    # Vamos processar as colunas
+    for group in table_groups:
+        col_labels = group.get("colLabels", [])
+        rows = group.get("rows", [])
+        
+        # O nível do personagem corresponde ao índice level - 1 nas rows
+        row_idx = level - 1
+        if row_idx < 0 or row_idx >= len(rows):
+            continue
+            
+        row = rows[row_idx]
+        
+        for col_idx, col_label in enumerate(col_labels):
+            label_lower = col_label.lower()
+            val = row[col_idx] if col_idx < len(row) else 0
+            
+            # Garantir que o valor seja inteiro ou possa ser extraído
+            max_uses = 0
+            if isinstance(val, int):
+                max_uses = val
+            elif isinstance(val, dict):
+                # Se for um dicionário (ex: do 5e.tools), tenta pegar valor numérico
+                max_uses = val.get("value", 0)
+                
+            # 1. Monge: Foco (Ki Points / Focus Points)
+            if "focus points" in label_lower or "ki points" in label_lower:
+                if max_uses > 0:
+                    resources.append({
+                        "name": "Pontos de Foco",
+                        "max_uses": max_uses,
+                        "reset": "Descanso Curto ou Longo",
+                        "ref": "/compendium/rules/ki/"
+                    })
+            
+            # 2. Bárbaro: Fúria (Rages)
+            elif "rages" in label_lower:
+                if max_uses > 0:
+                    # Rages na tabela clássica pode ser uma string como "unlimited" (nível 20) ou dicionário
+                    if isinstance(val, str) and val.lower() == "unlimited":
+                        max_uses = 99  # representação de ilimitado
+                    resources.append({
+                        "name": "Fúria (Rage)",
+                        "max_uses": max_uses,
+                        "reset": "Descanso Longo",
+                        "ref": "/compendium/rules/rage/"
+                    })
+            
+            # 3. Bardo: Inspiração Bárdica (na tabela de 2024 / XPHB)
+            elif "bardic inspiration" in label_lower:
+                if max_uses > 0:
+                    reset_type = "Descanso Curto ou Longo" if level >= 5 else "Descanso Longo"
+                    resources.append({
+                        "name": "Inspiração Bárdica",
+                        "max_uses": max_uses,
+                        "reset": reset_type,
+                        "ref": "/compendium/rules/bardic-inspiration/"
+                    })
+
+    # Regras e fallbacks específicos se os recursos não forem encontrados via tabela,
+    # mas a classe for correspondente (ex: Bardo Clássico e regras baseadas em atributos)
+    
+    # 4. Caso seja Monge e não tenha adicionado recurso (nível >= 2)
+    # Por exemplo, se a tabela não tiver colunas mas for Monge, aplicamos a regra padrão de Ki = level
+    if resolved_class_name == "monk" and level >= 2 and not any(r["name"] == "Pontos de Foco" for r in resources):
+        resources.append({
+            "name": "Pontos de Foco",
+            "max_uses": level,
+            "reset": "Descanso Curto ou Longo",
+            "ref": "/compendium/rules/ki/"
+        })
+        
+    # 5. Caso seja Bardo (regras legadas da PHB 2014, onde não há coluna "Bardic Inspiration" mas o recurso existe)
+    if resolved_class_name == "bard" and not any(r["name"] == "Inspiração Bárdica" for r in resources):
+        # Usos = modificador de Carisma (mínimo de 1)
+        cha_score = 10
+        if attributes and isinstance(attributes, dict):
+            cha_score = int(attributes.get("cha", 10))
+        cha_mod = get_modifier(cha_score)
+        max_uses = max(1, cha_mod)
+        reset_type = "Descanso Curto ou Longo" if level >= 5 else "Descanso Longo"
+        resources.append({
+            "name": "Inspiração Bárdica",
+            "max_uses": max_uses,
+            "reset": reset_type,
+            "ref": "/compendium/rules/bardic-inspiration/"
+        })
+
+    # 6. Caso seja Bárbaro e não tenha adicionado Fúria na tabela
+    if resolved_class_name == "barbarian" and not any(r["name"] == "Fúria (Rage)" for r in resources):
+        # Progressão padrão de fúria por nível
+        standard_rages = {1: 2, 2: 2, 3: 3, 4: 3, 5: 3, 6: 4, 7: 4, 8: 4, 9: 4, 10: 4, 11: 4, 12: 5, 13: 5, 14: 5, 15: 5, 16: 5, 17: 6, 18: 6, 19: 6, 20: 99}
+        max_uses = standard_rages.get(level, 2)
+        resources.append({
+            "name": "Fúria (Rage)",
+            "max_uses": max_uses,
+            "reset": "Descanso Longo",
+            "ref": "/compendium/rules/rage/"
+        })
+
+    return resources
+
+
 def load_background_data():
     url = DATA_BASE_URL + "backgrounds.json"
     return get_json_data(url)

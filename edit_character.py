@@ -385,10 +385,57 @@ def synchronize_character_compendium(post: frontmatter.Post) -> bool:
         print("Ficha sem char_info válido para sincronizar.")
         return False
     before = repr(post.metadata)
+    
+    # 1. Resolver referências padrão do compêndio
     refs, unresolved = dnd_utils.sync_character_compendium(
         char_info, post.get("compendium_refs")
     )
     post["compendium_refs"] = refs
+
+    # 2. Sincronizar e criar retroativamente as ações de recursos de classe
+    class_name = char_info.get("class", "")
+    level = int(char_info.get("level") or char_info.get("class_level") or 1)
+    stats = char_info.get("stats", {})
+    
+    feature_actions = char_info.get("feature_actions") or char_info.get("actions") or []
+    if not isinstance(feature_actions, list):
+        feature_actions = []
+        
+    class_resources = dnd_utils.extract_class_resource_info(class_name, level, stats)
+    
+    actions_updated = False
+    for resource in class_resources:
+        found = False
+        for act in feature_actions:
+            if isinstance(act, dict) and act.get("name", "").lower() == resource["name"].lower():
+                if act.get("max_uses") != resource["max_uses"] or act.get("reset") != resource["reset"] or act.get("ref") != resource["ref"]:
+                    act["max_uses"] = resource["max_uses"]
+                    act["reset"] = resource["reset"]
+                    act["ref"] = resource["ref"]
+                    actions_updated = True
+                found = True
+                break
+        if not found:
+            feature_actions.append({
+                "name": resource["name"],
+                "ref": resource["ref"],
+                "max_uses": resource["max_uses"],
+                "reset": resource["reset"],
+                "source": "class"
+            })
+            actions_updated = True
+            
+        current_refs = list(post.get("compendium_refs") or [])
+        if resource["ref"] not in current_refs:
+            current_refs.append(resource["ref"])
+            post["compendium_refs"] = current_refs
+
+    if actions_updated or not char_info.get("feature_actions") or not char_info.get("actions"):
+        if "actions" in char_info:
+            char_info["actions"] = feature_actions
+        else:
+            char_info["feature_actions"] = feature_actions
+
     if unresolved:
         print("Não resolvido no 5e.tools: " + ", ".join(unresolved))
     return repr(post.metadata) != before
@@ -575,6 +622,29 @@ def level_up_character(post: frontmatter.Post, path: Path) -> bool:
                 feature_actions.append({"name": name, "ref": ref, "max_uses": 0, "reset": "", "source": "class"})
             if ref not in references:
                 references.append(ref)
+
+    # Extrair recursos da classe para o novo nível e aplicar nas ações
+    class_resources = dnd_utils.extract_class_resource_info(class_name, new_level, stats)
+    for resource in class_resources:
+        found = False
+        for act in feature_actions:
+            if isinstance(act, dict) and act.get("name", "").lower() == resource["name"].lower():
+                act["max_uses"] = resource["max_uses"]
+                act["reset"] = resource["reset"]
+                if not act.get("ref"):
+                    act["ref"] = resource["ref"]
+                found = True
+                break
+        if not found:
+            feature_actions.append({
+                "name": resource["name"],
+                "ref": resource["ref"],
+                "max_uses": resource["max_uses"],
+                "reset": resource["reset"],
+                "source": "class"
+            })
+        if resource["ref"] not in references:
+            references.append(resource["ref"])
 
     char_info["feature_actions"] = feature_actions
 

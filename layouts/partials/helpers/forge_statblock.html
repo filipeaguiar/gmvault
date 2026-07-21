@@ -94,9 +94,19 @@
   {{- $savesText = printf "%v" (default "" (index $source "saves_summary")) -}}
 {{- else -}}
   {{- $speedText := printf "%v" (default "" (index $source "speed")) -}}
-  {{- $walkMatches := findRE "^[0-9]+" $speedText -}}
+  {{- /* Tenta casar primeiro no formato "walk X" */ -}}
+  {{- $walkMatches := findRE "(?i)walk[ \\t]+[0-9]+" $speedText -}}
   {{- if gt (len $walkMatches) 0 -}}
-    {{- $walkSpeed = int (index $walkMatches 0) -}}
+    {{- $numberMatches := findRE "[0-9]+" (index $walkMatches 0) -}}
+    {{- if gt (len $numberMatches) 0 -}}
+      {{- $walkSpeed = int (index $numberMatches 0) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- /* Fallback para quando começa direto com o número (ex: "30 ft.") */ -}}
+    {{- $walkFallback := findRE "^[0-9]+" $speedText -}}
+    {{- if gt (len $walkFallback) 0 -}}
+      {{- $walkSpeed = int (index $walkFallback 0) -}}
+    {{- end -}}
   {{- end -}}
   {{- range $speed := (slice "swim" "burrow" "climb" "fly") -}}
     {{- $speedMatches := findRE (printf "(?i)%s[ \\t]+[0-9]+" $speed) $speedText -}}
@@ -111,30 +121,58 @@
     {{- end -}}
   {{- end -}}
 
-  {{- $savesText = printf "%v" (default "" (index $source "saves")) -}}
-  {{- range $save := (findRE "(?i)(Str|Dex|Con|Int|Wis|Cha)[ \\t]+[+-]?[0-9]+" $savesText) -}}
-    {{- $valueMatches := findRE "[+-]?[0-9]+$" $save -}}
-    {{- if gt (len $valueMatches) 0 -}}
-      {{- $value := int (index $valueMatches 0) -}}
-      {{- if hasPrefix $save "Str" -}}{{- $strSave = $value -}}{{- end -}}
-      {{- if hasPrefix $save "Dex" -}}{{- $dexSave = $value -}}{{- end -}}
-      {{- if hasPrefix $save "Con" -}}{{- $conSave = $value -}}{{- end -}}
-      {{- if hasPrefix $save "Int" -}}{{- $intSave = $value -}}{{- end -}}
-      {{- if hasPrefix $save "Wis" -}}{{- $wisSave = $value -}}{{- end -}}
-      {{- if hasPrefix $save "Cha" -}}{{- $chaSave = $value -}}{{- end -}}
+  {{- $savesRaw := index $source "saves" -}}
+  {{- if reflect.IsMap $savesRaw -}}
+    {{- range $attr, $val := $savesRaw -}}
+      {{- $value := int (replaceRE `[+-]` "" (printf "%v" $val)) -}}
+      {{- if eq (lower $attr) "str" -}}{{- $strSave = $value -}}{{- end -}}
+      {{- if eq (lower $attr) "dex" -}}{{- $dexSave = $value -}}{{- end -}}
+      {{- if eq (lower $attr) "con" -}}{{- $conSave = $value -}}{{- end -}}
+      {{- if eq (lower $attr) "int" -}}{{- $intSave = $value -}}{{- end -}}
+      {{- if eq (lower $attr) "wis" -}}{{- $wisSave = $value -}}{{- end -}}
+      {{- if eq (lower $attr) "cha" -}}{{- $chaSave = $value -}}{{- end -}}
+    {{- end -}}
+    {{- $parts := slice -}}
+    {{- range $attr, $val := $savesRaw -}}
+      {{- $parts = $parts | append (printf "%s %v" (title $attr) $val) -}}
+    {{- end -}}
+    {{- $savesText = delimit $parts ", " -}}
+  {{- else -}}
+    {{- $savesText = printf "%v" (default "" $savesRaw) -}}
+    {{- range $save := (findRE "(?i)(Str|Dex|Con|Int|Wis|Cha)[ \\t]+[+-]?[0-9]+" $savesText) -}}
+      {{- $valueMatches := findRE "[+-]?[0-9]+$" $save -}}
+      {{- if gt (len $valueMatches) 0 -}}
+        {{- $value := int (index $valueMatches 0) -}}
+        {{- if hasPrefix $save "Str" -}}{{- $strSave = $value -}}{{- end -}}
+        {{- if hasPrefix $save "Dex" -}}{{- $dexSave = $value -}}{{- end -}}
+        {{- if hasPrefix $save "Con" -}}{{- $conSave = $value -}}{{- end -}}
+        {{- if hasPrefix $save "Int" -}}{{- $intSave = $value -}}{{- end -}}
+        {{- if hasPrefix $save "Wis" -}}{{- $wisSave = $value -}}{{- end -}}
+        {{- if hasPrefix $save "Cha" -}}{{- $chaSave = $value -}}{{- end -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 
 {{- $skills := slice -}}
-{{- $skillsText := printf "%v" (default "" (index $source "skills")) -}}
-{{- if and (ne $skillsText "") (ne $skillsText "<nil>") -}}
-  {{- range (split $skillsText ",") -}}
-    {{- $skillName := trim . " \t" -}}
-    {{- if ne $skillName "" -}}
-      {{- $skillHash := md5 (printf "%s:%s" $page.Permalink $skillName) -}}
-      {{- $skillID := printf "%s-%s-%s-%s-%s" (substr $skillHash 0 8) (substr $skillHash 8 4) (substr $skillHash 12 4) (substr $skillHash 16 4) (substr $skillHash 20 12) -}}
-      {{- $skills = $skills | append (dict "id" $skillID "name" $skillName "description" (printf "Perícia importada: %s" $skillName)) -}}
+{{- $skillsRaw := index $source "skills" -}}
+{{- if reflect.IsMap $skillsRaw -}}
+  {{- range $name, $val := $skillsRaw -}}
+    {{- $skillName := printf "%s %v" (title $name) $val -}}
+    {{- $skillHash := md5 (printf "%s:%s" $page.Permalink $skillName) -}}
+    {{- $skillID := printf "%s-%s-%s-%s-%s" (substr $skillHash 0 8) (substr $skillHash 8 4) (substr $skillHash 12 4) (substr $skillHash 16 4) (substr $skillHash 20 12) -}}
+    {{- $skills = $skills | append (dict "id" $skillID "name" $skillName "description" (printf "Perícia importada: %s" $skillName)) -}}
+  {{- end -}}
+{{- else -}}
+  {{- $skillsText := printf "%v" (default "" $skillsRaw) -}}
+  {{- if and (ne $skillsText "") (ne $skillsText "<nil>") -}}
+    {{- range (split $skillsText ",") -}}
+      {{- $skillName := trim . " \t" -}}
+      {{- if ne $skillName "" -}}
+        {{- $skillHash := md5 (printf "%s:%s" $page.Permalink $skillName) -}}
+        {{- $skillID := printf "%s-%s-%s-%s-%s" (substr $skillHash 0 8) (substr $skillHash 8 4) (substr $skillHash 12 4) (substr $skillHash 16 4) (substr $skillHash 20 12) -}}
+        {{- $skills = $skills | append (dict "id" $skillID "name" $skillName "description" (printf "Perícia importada: %s" $skillName)) -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -159,44 +197,65 @@
 {{- if not $isCharacter -}}
   {{- /* Parse monster abilities/actions from body sections if they are empty */ -}}
   {{- if and (eq (len $abilities) 0) (eq (len $actions) 0) (eq (len $bonusActions) 0) (eq (len $reactions) 0) (eq (len $legendaryActions) 0) -}}
-    {{- $raw := $page.RawContent -}}
-    {{- $sections := split $raw "\n### " -}}
+    {{- $raw := printf "\n%s" $page.RawContent -}}
+    {{- $sections := split $raw "\n## " -}}
     {{- range $sections -}}
       {{- $section := . -}}
       {{- $lines := split $section "\n" -}}
-      {{- $heading := trim (index $lines 0) " \t\r" -}}
+      {{- $secHeading := trim (index $lines 0) " \t\r" -}}
       {{- $targetList := "" -}}
-      {{- if or (eq $heading "Características") (eq $heading "Traits") (eq $heading "Characteristics") -}}
+      {{- if or (eq $secHeading "Características") (eq $secHeading "Traits") (eq $secHeading "Characteristics") -}}
         {{- $targetList = "abilities" -}}
-      {{- else if or (eq $heading "Ações") (eq $heading "Actions") -}}
+      {{- else if or (eq $secHeading "Ações") (eq $secHeading "Actions") -}}
         {{- $targetList = "actions" -}}
-      {{- else if or (eq $heading "Ações Lendárias") (eq $heading "Legendary Actions") -}}
+      {{- else if or (eq $secHeading "Ações Lendárias") (eq $secHeading "Legendary Actions") -}}
         {{- $targetList = "legendaryActions" -}}
-      {{- else if or (eq $heading "Reações") (eq $heading "Reactions") -}}
+      {{- else if or (eq $secHeading "Reações") (eq $secHeading "Reactions") -}}
         {{- $targetList = "reactions" -}}
-      {{- else if or (eq $heading "Ações Bônus") (eq $heading "Bonus Actions") -}}
+      {{- else if or (eq $secHeading "Ações Bônus") (eq $secHeading "Bonus Actions") -}}
         {{- $targetList = "bonusActions" -}}
       {{- end -}}
 
       {{- if ne $targetList "" -}}
-        {{- range $line := (after 1 $lines) -}}
-          {{- $line = trim $line " \t\r" -}}
-          {{- if and (hasPrefix $line "**") (findRE `\*\*.*?\.\*\*` $line) -}}
-            {{- $parts := split $line ".**" -}}
-            {{- if gt (len $parts) 1 -}}
-              {{- $name := trim (replaceRE `^\*\*` "" (index $parts 0)) " \t\r" -}}
-              {{- $descRaw := trim (index $parts 1) " \t\r" -}}
+        {{- $secBody := delimit (after 1 $lines) "\n" -}}
+        {{- /* Se houver cabeçalhos nível 3 (###) na seção */ -}}
+        {{- if in $secBody "\n### " -}}
+          {{- $subsections := split $secBody "\n### " -}}
+          {{- range $subsections -}}
+            {{- $sublines := split . "\n" -}}
+            {{- $name := trim (index $sublines 0) " \t\r" -}}
+            {{- if ne $name "" -}}
+              {{- $descRaw := trim (delimit (after 1 $sublines) "\n") " \t\r" -}}
               {{- $desc := partial "helpers/forge_roll_parser.html" $descRaw -}}
-              
               {{- $hash := md5 (printf "%s:%s" $page.Permalink $name) -}}
               {{- $id := printf "%s-%s-%s-%s-%s" (substr $hash 0 8) (substr $hash 8 4) (substr $hash 12 4) (substr $hash 16 4) (substr $hash 20 12) -}}
-              
               {{- $item := dict "id" $id "name" $name "description" $desc -}}
               {{- if eq $targetList "abilities" -}}{{- $abilities = $abilities | append $item -}}{{- end -}}
               {{- if eq $targetList "actions" -}}{{- $actions = $actions | append $item -}}{{- end -}}
               {{- if eq $targetList "legendaryActions" -}}{{- $legendaryActions = $legendaryActions | append $item -}}{{- end -}}
               {{- if eq $targetList "reactions" -}}{{- $reactions = $reactions | append $item -}}{{- end -}}
               {{- if eq $targetList "bonusActions" -}}{{- $bonusActions = $bonusActions | append $item -}}{{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- else -}}
+          {{- /* Fallback para formato legado (linhas com **Nome.**) */ -}}
+          {{- range $line := $lines -}}
+            {{- $line = trim $line " \t\r" -}}
+            {{- if and (hasPrefix $line "**") (findRE `\*\*.*?\.\*\*` $line) -}}
+              {{- $parts := split $line ".**" -}}
+              {{- if gt (len $parts) 1 -}}
+                {{- $name := trim (replaceRE `^\*\*` "" (index $parts 0)) " \t\r" -}}
+                {{- $descRaw := trim (index $parts 1) " \t\r" -}}
+                {{- $desc := partial "helpers/forge_roll_parser.html" $descRaw -}}
+                {{- $hash := md5 (printf "%s:%s" $page.Permalink $name) -}}
+                {{- $id := printf "%s-%s-%s-%s-%s" (substr $hash 0 8) (substr $hash 8 4) (substr $hash 12 4) (substr $hash 16 4) (substr $hash 20 12) -}}
+                {{- $item := dict "id" $id "name" $name "description" $desc -}}
+                {{- if eq $targetList "abilities" -}}{{- $abilities = $abilities | append $item -}}{{- end -}}
+                {{- if eq $targetList "actions" -}}{{- $actions = $actions | append $item -}}{{- end -}}
+                {{- if eq $targetList "legendaryActions" -}}{{- $legendaryActions = $legendaryActions | append $item -}}{{- end -}}
+                {{- if eq $targetList "reactions" -}}{{- $reactions = $reactions | append $item -}}{{- end -}}
+                {{- if eq $targetList "bonusActions" -}}{{- $bonusActions = $bonusActions | append $item -}}{{- end -}}
+              {{- end -}}
             {{- end -}}
           {{- end -}}
         {{- end -}}

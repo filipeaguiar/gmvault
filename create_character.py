@@ -1339,6 +1339,29 @@ def main():
         })
     actions_data.extend(feature_actions)
 
+    # Extrair recursos da classe e atualizar/adicionar com usos limitados correspondentes ao nível
+    class_resources = dnd_utils.extract_class_resource_info(selected_class_name, level, final_stats)
+    for resource in class_resources:
+        found = False
+        for act in actions_data:
+            if act.get("name", "").lower() == resource["name"].lower():
+                act["max_uses"] = resource["max_uses"]
+                act["reset"] = resource["reset"]
+                if not act.get("ref"):
+                    act["ref"] = resource["ref"]
+                found = True
+                break
+        if not found:
+            actions_data.append({
+                "name": resource["name"],
+                "ref": resource["ref"],
+                "max_uses": resource["max_uses"],
+                "reset": resource["reset"],
+                "source": "class"
+            })
+        if resource["ref"] not in compendium_refs:
+            compendium_refs.append(resource["ref"])
+
     classes_data = [{
         "name": selected_class_name,
         "level": level,

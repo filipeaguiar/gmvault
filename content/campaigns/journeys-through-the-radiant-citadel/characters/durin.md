@@ -1,294 +1,331 @@
 ---
-title: "Durin"
-date: 2026-07-21T11:07:43Z
-type: "character"
-draft: false
-weight: 10
-tags:
-  - jogador
-  - dwarf
-  - monk
-visibility: "players"
-status: "ready"
-
-# Estatísticas Estruturadas
 char_info:
-  class: "Monk"
-  class_level: 1
-  subclass: "Way of the Drunken Master"
-  level: 1
-  species: "Dwarf"
-  species_variant: ""
-  ac: "13"
-  hp: "10"
-  hp_max: "10"
-  hp_current: "10"
-  feat: ""
-  feats:
-  - Crafter
-  size: "Medium"
-  alignment: "True Neutral"
-  dndbeyond_id: ""
-  proficiency_bonus: 2
-  spell_dc: 0
-  avatar: ""
-  spellcasting:
-    mode: none
-    ability: ''
-    prepared_spell_refs: []
-    known_spell_refs: []
-    always_prepared_spell_refs: []
-    class_spell_refs: []
-    bonus_spell_refs: []
-    slot_progression: {}
-    pact_slots: {}
-    ritual_casting: false
-    sources: []
-  speed:
-    walk: 30
-    fly: 0
-    swim: 0
-    climb: 0
-    burrow: 0
-  senses: "Passive Perception 12, Darkvision 120 ft."
-  passive_senses:
-    perception: 12
-    investigation: 11
-    insight: 12
-  languages: "Common"
-  saves:
-    str: 1
-    dex: 5
-    con: 2
-    int: 1
-    wis: 2
-    cha: 0
-  saves_proficient:
-    str: true
-    dex: true
-    con: false
-    int: false
-    wis: false
-    cha: false
-  saves_summary: "Str +1, Dex +5"
-  mods:
-    str: -1
-    dex: 3
-    con: 2
-    int: 1
-    wis: 2
-    cha: 0
-  stats:
-    str: 8
-    dex: 16
-    con: 14
-    int: 13
-    wis: 15
-    cha: 10
+  ac: '13'
+  actions: &id001
+  - max_uses: 0
+    name: Ataque
+    ref: /compendium/rules/action-attack/
+    reset: ''
+  - max_uses: 0
+    name: Esconder
+    ref: /compendium/rules/action-hide/
+    reset: ''
+  - max_uses: 0
+    name: Desengajar
+    ref: /compendium/rules/action-disengage/
+    reset: ''
+  - max_uses: 0
+    name: Disparar
+    ref: /compendium/rules/action-dash/
+    reset: ''
+  - max_uses: 0
+    name: Ajudar
+    ref: /compendium/rules/action-help/
+    reset: ''
+  - max_uses: 0
+    name: Esquivar
+    ref: /compendium/rules/action-dodge/
+    reset: ''
+  - max_uses: 0
+    name: Usar Objeto
+    ref: /compendium/rules/action-use-object/
+    reset: ''
+  - max_uses: 0
+    name: Martial Arts
+    ref: /compendium/rules/martial-arts/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Unarmored Defense
+    ref: /compendium/rules/unarmored-defense/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Bonus Unarmed Strike
+    ref: /compendium/rules/bonus-unarmed-strike/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Dexterous Attacks
+    ref: /compendium/rules/dexterous-attacks/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Martial Arts Die
+    ref: /compendium/rules/martial-arts-die/
+    reset: ''
+    roll: 1d6
+    source: class
+  - max_uses: 0
+    name: Dedicated Weapon
+    ref: /compendium/rules/dedicated-weapon/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Flurry of Blows
+    ref: /compendium/rules/flurry-of-blows/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Ki
+    ref: /compendium/rules/ki/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Patient Defense
+    ref: /compendium/rules/patient-defense/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Step of the Wind
+    ref: /compendium/rules/step-of-the-wind/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Unarmored Movement
+    ref: /compendium/rules/unarmored-movement/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Monk's Focus
+    ref: /compendium/rules/monks-focus/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Uncanny Metabolism
+    ref: /compendium/rules/uncanny-metabolism/
+    reset: ''
+    source: class
+  - max_uses: 2
+    name: Pontos de Foco
+    ref: /compendium/rules/ki/
+    reset: Descanso Curto ou Longo
+    source: class
+  alignment: True Neutral
+  avatar: ''
+  class: Monk
+  class_level: 2
+  class_spells: []
+  classes_progression:
+  - level: 2
+    name: Monk
+    subclass: Way of the Drunken Master
   currencies:
     cp: 0
-    sp: 0
-    gp: 0
     ep: 0
+    gp: 0
     pp: 0
+    sp: 0
+  dndbeyond_id: ''
+  equipment:
+  - equipped: false
+    name: Backpack
+    quantity: 1
+    ref: /compendium/items/backpack/
+  - equipped: false
+    name: Bedroll
+    quantity: 1
+    ref: /compendium/items/bedroll/
+  - equipped: false
+    name: Mess Kit
+    quantity: 1
+    ref: /compendium/items/mess-kit/
+  - equipped: false
+    name: Tinderbox
+    quantity: 1
+    ref: /compendium/items/tinderbox/
+  - equipped: false
+    name: Torch
+    quantity: 1
+    ref: /compendium/items/torch/
+  - equipped: false
+    name: Rations (1 Day)
+    quantity: 1
+    ref: /compendium/items/rations-1-day/
+  - equipped: false
+    name: Waterskin
+    quantity: 1
+    ref: /compendium/items/waterskin/
+  - equipped: false
+    name: Hempen Rope (50 Feet)
+    quantity: 1
+    ref: /compendium/items/hempen-rope-50-feet/
+  - equipped: false
+    name: Explorer's Pack
+    quantity: 1
+    ref: /compendium/items/explorers-pack/
+  - equipped: false
+    name: Dagger
+    quantity: 5
+    ref: /compendium/items/dagger/
+  feat: ''
+  feats:
+  - Crafter
+  feature_actions: *id001
+  hp: '17'
+  hp_current: '17'
+  hp_max: '17'
+  languages: Common
+  level: 2
+  mods:
+    cha: 0
+    con: 2
+    dex: 3
+    int: 1
+    str: -1
+    wis: 2
+  passive_senses:
+    insight: 12
+    investigation: 11
+    perception: 12
+  proficiency_bonus: 2
+  saves:
+    cha: 0
+    con: 2
+    dex: 5
+    int: 1
+    str: 1
+    wis: 2
+  saves_proficient:
+    cha: false
+    con: false
+    dex: true
+    int: false
+    str: true
+    wis: false
+  saves_summary: Str +1, Dex +5
+  senses: Passive Perception 12, Darkvision 120 ft.
+  size: Medium
   skills:
     acrobatics:
       bonus: 3
-      proficient: false
       expertise: false
+      proficient: false
       stat: dex
     animal-handling:
       bonus: 2
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     arcana:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     athletics:
       bonus: 1
-      proficient: true
       expertise: false
+      proficient: true
       stat: str
     deception:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     history:
       bonus: 3
-      proficient: true
       expertise: false
+      proficient: true
       stat: int
     insight:
       bonus: 2
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     intimidation:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     investigation:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     medicine:
       bonus: 2
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     nature:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     perception:
       bonus: 2
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
     performance:
       bonus: 0
-      proficient: false
       expertise: false
+      proficient: false
       stat: cha
     persuasion:
       bonus: 2
-      proficient: true
       expertise: false
+      proficient: true
       stat: cha
     religion:
       bonus: 1
-      proficient: false
       expertise: false
+      proficient: false
       stat: int
     sleight-of-hand:
       bonus: 3
-      proficient: false
       expertise: false
+      proficient: false
       stat: dex
     stealth:
       bonus: 5
-      proficient: true
       expertise: false
+      proficient: true
       stat: dex
     survival:
       bonus: 2
-      proficient: false
       expertise: false
+      proficient: false
       stat: wis
-  actions:
-    - name: Ataque
-      ref: /compendium/rules/action-attack/
-      max_uses: 0
-      reset: ''
-    - name: Esconder
-      ref: /compendium/rules/action-hide/
-      max_uses: 0
-      reset: ''
-    - name: Desengajar
-      ref: /compendium/rules/action-disengage/
-      max_uses: 0
-      reset: ''
-    - name: Disparar
-      ref: /compendium/rules/action-dash/
-      max_uses: 0
-      reset: ''
-    - name: Ajudar
-      ref: /compendium/rules/action-help/
-      max_uses: 0
-      reset: ''
-    - name: Esquivar
-      ref: /compendium/rules/action-dodge/
-      max_uses: 0
-      reset: ''
-    - name: Usar Objeto
-      ref: /compendium/rules/action-use-object/
-      max_uses: 0
-      reset: ''
-    - name: Martial Arts
-      ref: /compendium/rules/martial-arts/
-      max_uses: 0
-      reset: ''
-      source: class
-    - name: Unarmored Defense
-      ref: /compendium/rules/unarmored-defense/
-      max_uses: 0
-      reset: ''
-      source: class
-    - name: Bonus Unarmed Strike
-      ref: /compendium/rules/bonus-unarmed-strike/
-      max_uses: 0
-      reset: ''
-      source: class
-    - name: Dexterous Attacks
-      ref: /compendium/rules/dexterous-attacks/
-      max_uses: 0
-      reset: ''
-      source: class
-    - name: Martial Arts Die
-      ref: /compendium/rules/martial-arts-die/
-      max_uses: 0
-      reset: ''
-      source: class
-      roll: 1d6
-  equipment:
-    - name: Backpack
-      ref: /compendium/items/backpack/
-      quantity: 1
-      equipped: false
-    - name: Bedroll
-      ref: /compendium/items/bedroll/
-      quantity: 1
-      equipped: false
-    - name: Mess Kit
-      ref: /compendium/items/mess-kit/
-      quantity: 1
-      equipped: false
-    - name: Tinderbox
-      ref: /compendium/items/tinderbox/
-      quantity: 1
-      equipped: false
-    - name: Torch
-      ref: /compendium/items/torch/
-      quantity: 1
-      equipped: false
-    - name: Rations (1 Day)
-      ref: /compendium/items/rations-1-day/
-      quantity: 1
-      equipped: false
-    - name: Waterskin
-      ref: /compendium/items/waterskin/
-      quantity: 1
-      equipped: false
-    - name: Hempen Rope (50 Feet)
-      ref: /compendium/items/hempen-rope-50-feet/
-      quantity: 1
-      equipped: false
-    - name: Explorer's Pack
-      ref: /compendium/items/explorers-pack/
-      quantity: 1
-      equipped: false
-    - name: Dagger
-      ref: /compendium/items/dagger/
-      quantity: 5
-      equipped: false
-  spells: []
+  species: Dwarf
+  species_variant: ''
+  speed:
+    burrow: 0
+    climb: 0
+    fly: 0
+    swim: 0
+    walk: 30
+  spell_dc: 0
   spell_slots: {}
-  class_spells: []
-  classes_progression:
-    - name: Monk
-      level: 1
-      subclass: Way of the Drunken Master
-
-# Relacionamentos
-locations: []
-factions: []
+  spellcasting:
+    ability: ''
+    can_mark_known: false
+    can_prepare: false
+    cantrips_known: 0
+    class_count: 0
+    kind: none
+    known_count: 0
+    known_label: Magias Conhecidas
+    pact_slot_count: 0
+    pact_slot_level: 0
+    prepared_count: 0
+    prepared_label: Magias Preparadas
+    prepared_limit: 0
+    slot_label: Espaços de Magia
+    slot_levels: []
+    slot_summary: Sem espaços
+    slot_total: 0
+    total_spells: 0
+    uses_pact_slots: false
+  spells: []
+  stats:
+    cha: 10
+    con: 14
+    dex: 16
+    int: 13
+    str: 8
+    wis: 15
+  subclass: Way of the Drunken Master
 compendium_refs:
 - /compendium/classes/monk/
 - /compendium/feats/crafter/
@@ -315,7 +352,28 @@ compendium_refs:
 - /compendium/rules/martial-arts/
 - /compendium/rules/unarmored-defense/
 - /compendium/species/dwarf/
+- /compendium/rules/dedicated-weapon/
+- /compendium/rules/flurry-of-blows/
+- /compendium/rules/ki/
+- /compendium/rules/patient-defense/
+- /compendium/rules/step-of-the-wind/
+- /compendium/rules/unarmored-movement/
+- /compendium/rules/monks-focus/
+- /compendium/rules/uncanny-metabolism/
+date: 2026-07-21 11:07:43+00:00
+draft: false
+factions: []
+locations: []
 spells_usage: []
+status: ready
+tags:
+- jogador
+- dwarf
+- monk
+title: Durin
+type: character
+visibility: players
+weight: 10
 ---
 
 ### Biografia
