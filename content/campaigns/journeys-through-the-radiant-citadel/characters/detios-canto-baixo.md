@@ -30,10 +30,10 @@ char_info:
     name: Usar Objeto
     ref: /compendium/rules/action-use-object/
     reset: ''
-  - max_uses: 0
+  - max_uses: 4
     name: Bardic Inspiration
     ref: /compendium/rules/bardic-inspiration/
-    reset: ''
+    reset: 'Descanso Longo'
     roll: 1d6
     source: class
   - max_uses: 0

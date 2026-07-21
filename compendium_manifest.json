@@ -2,7 +2,7 @@
   "schema_version": 1,
   "provider": "5e.tools",
   "data_base_url": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/",
-  "input_fingerprint": "dc7176ca9fc0fe5eef47be69f46f58dbba77e956fdc5ef26001da7b9240715d9",
+  "input_fingerprint": "296fc45790f694981a4f8cb880760795341f42ab8a64839a4f9f2a17343f0c22",
   "counts": {
     "direct": 266,
     "transitive_dependencies": 67,
