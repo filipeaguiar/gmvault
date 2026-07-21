@@ -17,9 +17,9 @@ translation:
 
 Aqui você pode baixar os arquivos JSON individuais dos personagens jogadores, com todas as suas características, itens equipados e ações integradas. Utilize estes arquivos para importar os personagens diretamente na extensão Forge do Owlbear Rodeo:
 
-* **Detios Canto Baixo:** <a href="/campaigns/journeys-through-the-radiant-citadel/characters/detios-canto-baixo/forge.json" download="detios.json">detios.json</a>
-* **Durin:** <a href="/campaigns/journeys-through-the-radiant-citadel/characters/durin/forge.json" download="durin.json">durin.json</a>
-* **Einvor:** <a href="/campaigns/journeys-through-the-radiant-citadel/characters/einvor/forge.json" download="einvor.json">einvor.json</a>
-* **Nix Clair (Nyx):** <a href="/campaigns/journeys-through-the-radiant-citadel/characters/nyx-clair/forge.json" download="nyx.json">nyx.json</a>
-* **Pinky:** <a href="/campaigns/journeys-through-the-radiant-citadel/characters/pinky/forge.json" download="pinky.json">pinky.json</a>
-* **Violeta:** <a href="/campaigns/journeys-through-the-radiant-citadel/characters/violeta/forge.json" download="violeta.json">violeta.json</a>
+* **Detios Canto Baixo:** <a href="/exports/forge/detios-canto-baixo.json" download="detios-canto-baixo.json">detios-canto-baixo.json</a>
+* **Durin:** <a href="/exports/forge/durin.json" download="durin.json">durin.json</a>
+* **Einvor:** <a href="/exports/forge/einvor.json" download="einvor.json">einvor.json</a>
+* **Nix Clair (Nyx):** <a href="/exports/forge/nyx-clair.json" download="nyx-clair.json">nyx-clair.json</a>
+* **Pinky:** <a href="/exports/forge/pinky.json" download="pinky.json">pinky.json</a>
+* **Violeta:** <a href="/exports/forge/violeta.json" download="violeta.json">violeta.json</a>

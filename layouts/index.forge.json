@@ -1,3 +1,16 @@
+{{- /* Publica de forma dinâmica os arquivos JSON individuais dos personagens jogadores em /exports/forge/<slug>.json */ -}}
+{{- range site.Pages -}}
+  {{- $kind := partial "helpers/kind.html" . -}}
+  {{- if eq $kind "character" -}}
+    {{- $characterBlock := partial "helpers/forge_statblock.html" . -}}
+    {{- $jsonContent := $characterBlock | jsonify (dict "indent" "  ") -}}
+    {{- $characterSlug := or .Slug (and .File .File.TranslationBaseName) .Title | urlize -}}
+    {{- $resourcePath := printf "exports/forge/%s.json" $characterSlug -}}
+    {{- $characterResource := resources.FromString $resourcePath $jsonContent -}}
+    {{- $dummy := $characterResource.Publish -}}
+  {{- end -}}
+{{- end -}}
+
 {{- $monsters := slice -}}
 {{- range site.Pages -}}
   {{- $kind := partial "helpers/kind.html" . -}}

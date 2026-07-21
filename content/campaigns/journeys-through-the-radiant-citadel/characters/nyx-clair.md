@@ -335,9 +335,6 @@ date: 2026-07-17 01:26:08+00:00
 draft: false
 factions: []
 locations: []
-outputs:
-- HTML
-- ForgeChar
 spells_usage: []
 status: ready
 tags:
