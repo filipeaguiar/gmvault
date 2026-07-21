@@ -36,6 +36,9 @@ echo ""
 echo "▸ [4/4] Build do Hugo..."
 if hugo --gc --minify --quiet 2>&1; then
   echo "  ✓ Build OK"
+  python3 scripts/generate_zip.py
+  hugo --gc --minify --quiet
+  echo "  ✓ personagens.zip integrado ao build"
 else
   echo "  ❌ Build falhou"
   exit 1

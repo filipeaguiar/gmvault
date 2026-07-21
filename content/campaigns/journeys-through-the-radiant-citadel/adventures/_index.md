@@ -17,6 +17,7 @@ translation:
 
 Aqui você pode baixar os arquivos JSON individuais dos personagens jogadores, com todas as suas características, itens equipados e ações integradas. Utilize estes arquivos para importar os personagens diretamente na extensão Forge do Owlbear Rodeo:
 
+* **Pacote Completo (ZIP):** <a href="/exports/forge/personagens.zip" download="personagens.zip">**personagens.zip** (Todos os 6 personagens)</a>
 * **Detios Canto Baixo:** <a href="/exports/forge/detios-canto-baixo.json" download="detios-canto-baixo.json">detios-canto-baixo.json</a>
 * **Durin:** <a href="/exports/forge/durin.json" download="durin.json">durin.json</a>
 * **Einvor:** <a href="/exports/forge/einvor.json" download="einvor.json">einvor.json</a>
