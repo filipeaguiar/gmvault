@@ -14,7 +14,7 @@
     <nav class="nav-links" aria-label="Navegação principal">
       {{ if not $isPlayerPage }}
         {{ with site.GetPage "/campaigns" }}<a href="{{ .RelPermalink }}" class="nav-item">Campanhas</a>{{ end }}
-        <a href="{{ "/combat/" | relURL }}" class="nav-item">Combates</a>
+        {{ with site.GetPage "/combat" }}<a href="{{ .RelPermalink }}" class="nav-item">Combates</a>{{ end }}
       {{ end }}
       {{ with site.GetPage "/compendium" }}
         {{ $compVisibility := partial "helpers/visibility.html" . }}
