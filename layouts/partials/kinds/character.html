@@ -322,7 +322,7 @@
           </div>
           <div class="consumable-slots">
             {{ range seq $max }}
-              <input type="checkbox" class="consumable-slot-checkbox" aria-label="Slot de recurso consumido" {{ if le . $current }}checked{{ end }}>
+              <input type="checkbox" class="consumable-slot-checkbox" aria-label="Slot de recurso consumido" {{ if le . (sub $max $current) }}checked{{ end }}>
             {{ end }}
           </div>
         </div>
@@ -350,13 +350,14 @@
               {{ .name }}
             </strong>
             {{ if .max_uses }}
-              <div style="margin-bottom: 8px; background:var(--bg-color); display:inline-block; padding:4px 8px; border-radius:4px; border:1px solid var(--border-color);">
-                {{ $uses := .max_uses }}
-                <strong style="font-size:0.85em; margin-right:6px;">Usos:</strong>
-                {{ range seq $uses }}
-                  <input type="checkbox" style="margin-right:4px;" title="Uso consumido">
-                {{ end }}
-                <span style="font-size:0.85em; color:var(--text-muted); margin-left:8px; border-left:1px solid var(--border-color); padding-left:8px;">Recarrega: {{ .reset }}</span>
+              <div class="action-uses-wrapper">
+                <strong class="action-uses-label">Usos:</strong>
+                <div class="action-use-slots">
+                  {{ range seq .max_uses }}
+                    <input type="checkbox" class="action-use-checkbox" title="Uso consumido">
+                  {{ end }}
+                </div>
+                {{ if .reset }}<span class="action-uses-reset">Recarrega: {{ .reset }}</span>{{ end }}
               </div>
             {{ end }}
             {{ if .roll_formula }}
@@ -878,5 +879,30 @@ function openCharTab(evt, tabName) {
   }
   window.addEventListener("scroll", handleScroll);
 })();
+
+// Lógica de consumo de recursos da esquerda para a direita
+document.addEventListener('change', function(e) {
+  if (e.target && (
+      e.target.classList.contains('consumable-slot-checkbox') || 
+      e.target.classList.contains('spell-slot-checkbox') || 
+      e.target.classList.contains('action-use-checkbox')
+  )) {
+    var checkbox = e.target;
+    var container = checkbox.parentElement;
+    var checkboxes = Array.from(container.querySelectorAll('input[type="checkbox"]'));
+    var clickedIndex = checkboxes.indexOf(checkbox);
+    var isChecked = checkbox.checked;
+    
+    if (isChecked) {
+      for (var i = 0; i <= clickedIndex; i++) {
+        checkboxes[i].checked = true;
+      }
+    } else {
+      for (var i = clickedIndex; i < checkboxes.length; i++) {
+        checkboxes[i].checked = false;
+      }
+    }
+  }
+});
 </script>
 <script src="{{ printf "owlbear-character-sheet/sheet-client.js?v=%d" now.UnixNano | relURL }}" defer></script>
