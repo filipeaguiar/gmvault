@@ -62,7 +62,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: ''
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/detios-canto-baixo.png'
   class: Bard
   class_level: 2
   class_spells: []

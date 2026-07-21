@@ -66,7 +66,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: ''
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/pinky.png'
   class: Rogue
   class_level: 3
   classes_progression:

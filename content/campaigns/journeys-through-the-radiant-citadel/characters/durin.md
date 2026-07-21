@@ -142,7 +142,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: ''
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/durin.png'
   class: Monk
   class_level: 3
   class_spells: []
