@@ -41,7 +41,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-nyx-clair.png'
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-nyx.png'
   class: Warlock
   class_level: 3
   class_spells: []

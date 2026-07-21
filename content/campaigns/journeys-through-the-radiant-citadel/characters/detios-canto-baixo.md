@@ -64,12 +64,12 @@ char_info:
   alignment: True Neutral
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-detios-canto-baixo.png'
   class: Bard
-  class_level: 2
+  class_level: 3
   class_spells: []
   classes_progression:
-  - level: 2
+  - level: 3
     name: Bard
-    subclass: ''
+    subclass: College of Whispers
   currencies:
     cp: 0
     ep: 0
@@ -126,7 +126,7 @@ char_info:
   hp_current: '15'
   hp_max: '15'
   languages: Common
-  level: 2
+  level: 3
   mods:
     cha: 4
     con: 1
@@ -258,7 +258,8 @@ char_info:
   spell_attack_bonus: 0
   spell_dc: 0
   spell_slots:
-    1: 3
+    1: 4
+    2: 2
   spellcasting:
     ability: cha
     can_mark_known: true
@@ -266,7 +267,7 @@ char_info:
     cantrips_known: 0
     class_count: 0
     kind: known
-    known_count: 6
+    known_count: 7
     known_label: Magias Conhecidas
     pact_slot_count: 0
     pact_slot_level: 0
@@ -276,9 +277,10 @@ char_info:
     slot_label: Espaços de Magia
     slot_levels:
     - 1
-    slot_summary: 3 espaços
-    slot_total: 3
-    total_spells: 6
+    - 2
+    slot_summary: 4 espaços de 1º · 2 espaços de 2º
+    slot_total: 6
+    total_spells: 7
     uses_pact_slots: false
   spells:
   - availability: known
@@ -311,6 +313,11 @@ char_info:
     ref: /compendium/spells/healing-word/
     source: class
     usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/detect-thoughts/
+    source: class
+    usage: 1 action
   stats:
     cha: 18
     con: 12
@@ -318,9 +325,10 @@ char_info:
     int: 10
     str: 8
     wis: 9
-  subclass: ''
+  subclass: College of Whispers
 compendium_refs:
 - /compendium/classes/bard/
+- /compendium/classes/college-of-whispers/
 - /compendium/feats/lucky/
 - /compendium/items/backpack/
 - /compendium/items/bedroll/
@@ -340,10 +348,13 @@ compendium_refs:
 - /compendium/rules/action-hide/
 - /compendium/rules/action-use-object/
 - /compendium/rules/bardic-inspiration/
+- /compendium/rules/bard-subclass/
+- /compendium/rules/college-of-whispers/
 - /compendium/rules/spellcasting/
 - /compendium/species/halfling/
 - /compendium/spells/charm-person/
 - /compendium/spells/detect-magic/
+- /compendium/spells/detect-thoughts/
 - /compendium/spells/dissonant-whispers/
 - /compendium/spells/healing-word/
 - /compendium/spells/minor-illusion/
@@ -351,6 +362,7 @@ compendium_refs:
 - /compendium/rules/jack-of-all-trades/
 - /compendium/rules/magical-inspiration/
 - /compendium/rules/song-of-rest-d6/
+- /compendium/rules/words-of-terror/
 - /compendium/rules/expertise/
 date: 2026-07-19 21:47:43+00:00
 draft: false
