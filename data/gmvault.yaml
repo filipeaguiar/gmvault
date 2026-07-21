@@ -5,16 +5,41 @@ active_adventures:
   - "written-in-blood"
 
 # Lista de monstros a serem carregados automaticamente no Combat Tracker
+# Configurada com as criaturas referenciadas em written-in-blood.
 combat_monsters:
-  - name: "Farmer"
+  - name: "Cultist"
     ref: "/compendium/monsters/cultist/"
     qty: 1
-  - name: "Coiote"
+  - name: "Commoner"
+    ref: "/compendium/monsters/commoner/"
+    qty: 1
+  - name: "Acolyte"
+    ref: "/compendium/monsters/acolyte/"
+    qty: 1
+  - name: "Scout"
+    ref: "/compendium/monsters/scout/"
+    qty: 1
+  - name: "Dire Wolf"
     ref: "/compendium/monsters/dire-wolf/"
     qty: 1
-  - name: "Mão Rastejante"
+  - name: "Crawling Claw"
     ref: "/compendium/monsters/crawling-claw/"
     qty: 1
-  - name: "Abalador de Almas"
+  - name: "Bulette"
+    ref: "/compendium/monsters/bulette/"
+    qty: 1
+  - name: "Green Hag"
+    ref: "/compendium/monsters/green-hag/"
+    qty: 1
+  - name: "Ghost"
+    ref: "/compendium/monsters/ghost/"
+    qty: 1
+  - name: "Giant Crocodile"
+    ref: "/compendium/monsters/giant-crocodile/"
+    qty: 1
+  - name: "Shambling Mound"
+    ref: "/compendium/monsters/shambling-mound/"
+    qty: 1
+  - name: "Soul Shaker"
     ref: "/compendium/monsters/soul-shaker/"
     qty: 1
