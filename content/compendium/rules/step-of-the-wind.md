@@ -7,7 +7,7 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: public
+visibility: "public"
 status: ready
 source:
   provider: 5e.tools
