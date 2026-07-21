@@ -1,0 +1,287 @@
+[
+  {
+    "author": "GM - Filipe",
+    "favorite": false,
+    "id": "06cc137b-4948-07ef-f4e3-51d7d86b15f1",
+    "metadata": {
+      "com.battle-system.forge/Z001": "",
+      "com.battle-system.forge/Z002": "",
+      "com.battle-system.forge/Z003": "",
+      "com.battle-system.forge/Z004": "",
+      "com.battle-system.forge/Z005": 2,
+      "com.battle-system.forge/Z006": 2,
+      "com.battle-system.forge/Z007": 12,
+      "com.battle-system.forge/Z008": "",
+      "com.battle-system.forge/Z009": "",
+      "com.battle-system.forge/Z010": "",
+      "com.battle-system.forge/Z011": "",
+      "com.battle-system.forge/Z012": "",
+      "com.battle-system.forge/Z013": "",
+      "com.battle-system.forge/Z014": [],
+      "com.battle-system.forge/Z015": "",
+      "com.battle-system.forge/Z016": "",
+      "com.battle-system.forge/Z017": 13,
+      "com.battle-system.forge/Z018": 14,
+      "com.battle-system.forge/Z019": 11,
+      "com.battle-system.forge/Z020": 5,
+      "com.battle-system.forge/Z021": 10,
+      "com.battle-system.forge/Z022": 4,
+      "com.battle-system.forge/Z023": "",
+      "com.battle-system.forge/Z024": "",
+      "com.battle-system.forge/Z025": "",
+      "com.battle-system.forge/Z026": "",
+      "com.battle-system.forge/Z027": "",
+      "com.battle-system.forge/Z028": "",
+      "com.battle-system.forge/Z029": "",
+      "com.battle-system.forge/Z030": "",
+      "com.battle-system.forge/Z031": "",
+      "com.battle-system.forge/Z032": "",
+      "com.battle-system.forge/Z033": "",
+      "com.battle-system.forge/Z034": [
+        {
+          "description": "A garra é imune a efeitos que expulsam mortos-vivos.\n",
+          "id": "05d4bf5b-414f-24ea-690f-fa7b65713e20",
+          "name": "Imunidade a Expulsão de Mortos-Vivos"
+        }
+      ],
+      "com.battle-system.forge/Z035": [
+        {
+          "description": "Ataque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, um alvo. *Acerto:* 3 ([1d4+1]) de dano de concussão ou cortante (escolha da garra).\n",
+          "id": "98b01be7-77a7-9ac4-851f-69d55d03805d",
+          "name": "Garra"
+        }
+      ],
+      "com.battle-system.forge/Z036": [],
+      "com.battle-system.forge/Z037": [],
+      "com.battle-system.forge/Z038": [],
+      "com.battle-system.forge/Z039": [],
+      "com.battle-system.forge/Z040": [],
+      "com.battle-system.forge/Z041": "",
+      "com.battle-system.forge/Z042": "",
+      "com.battle-system.forge/fabd": true,
+      "com.battle-system.forge/in-party": false,
+      "com.battle-system.forge/name": "Garra Rastejante"
+    },
+    "name": "Garra Rastejante",
+    "updatedAt": 0
+  },
+  {
+    "author": "GM - Filipe",
+    "favorite": false,
+    "id": "7c7fe5c7-b6c8-fe69-08f8-34d746b1199d",
+    "metadata": {
+      "com.battle-system.forge/Z001": "",
+      "com.battle-system.forge/Z002": "",
+      "com.battle-system.forge/Z003": "",
+      "com.battle-system.forge/Z004": "",
+      "com.battle-system.forge/Z005": 9,
+      "com.battle-system.forge/Z006": 9,
+      "com.battle-system.forge/Z007": 12,
+      "com.battle-system.forge/Z008": "",
+      "com.battle-system.forge/Z009": "",
+      "com.battle-system.forge/Z010": "",
+      "com.battle-system.forge/Z011": "",
+      "com.battle-system.forge/Z012": "",
+      "com.battle-system.forge/Z013": "",
+      "com.battle-system.forge/Z014": [],
+      "com.battle-system.forge/Z015": "",
+      "com.battle-system.forge/Z016": "",
+      "com.battle-system.forge/Z017": 11,
+      "com.battle-system.forge/Z018": 12,
+      "com.battle-system.forge/Z019": 10,
+      "com.battle-system.forge/Z020": 10,
+      "com.battle-system.forge/Z021": 11,
+      "com.battle-system.forge/Z022": 10,
+      "com.battle-system.forge/Z023": "",
+      "com.battle-system.forge/Z024": "",
+      "com.battle-system.forge/Z025": "",
+      "com.battle-system.forge/Z026": "",
+      "com.battle-system.forge/Z027": "",
+      "com.battle-system.forge/Z028": "",
+      "com.battle-system.forge/Z029": "",
+      "com.battle-system.forge/Z030": "",
+      "com.battle-system.forge/Z031": "",
+      "com.battle-system.forge/Z032": "",
+      "com.battle-system.forge/Z033": "",
+      "com.battle-system.forge/Z034": [
+        {
+          "description": "\nO cultista tem vantagem em testes de resistência contra ser enfeitiçado ou amedrontado.\n",
+          "id": "dff1e582-ec6c-6061-83d0-1608efa4b34e",
+          "name": "Devoção Sombria"
+        }
+      ],
+      "com.battle-system.forge/Z035": [
+        {
+          "description": "\nAtaque Corpo a Corpo com Arma: +3 para atingir, alcance 1,5 m, uma criatura. {@h}4 (<span class=\"dice+\" data-roll-notation=\"[1d6+1]\">[1d6+1]</span>) dano cortante.\n",
+          "id": "c204d1a9-22d2-fa34-bde4-d7cb84659738",
+          "name": "Cimitarra"
+        }
+      ],
+      "com.battle-system.forge/Z036": [],
+      "com.battle-system.forge/Z037": [],
+      "com.battle-system.forge/Z038": [],
+      "com.battle-system.forge/Z039": [],
+      "com.battle-system.forge/Z040": [],
+      "com.battle-system.forge/Z041": "",
+      "com.battle-system.forge/Z042": "",
+      "com.battle-system.forge/fabd": true,
+      "com.battle-system.forge/in-party": false,
+      "com.battle-system.forge/name": "Cultista"
+    },
+    "name": "Cultista",
+    "updatedAt": 0
+  },
+  {
+    "author": "GM - Filipe",
+    "favorite": false,
+    "id": "67bdbdad-e9f7-9c37-8731-a856fd1f4ff4",
+    "metadata": {
+      "com.battle-system.forge/Z001": "",
+      "com.battle-system.forge/Z002": "",
+      "com.battle-system.forge/Z003": "",
+      "com.battle-system.forge/Z004": "",
+      "com.battle-system.forge/Z005": 37,
+      "com.battle-system.forge/Z006": 37,
+      "com.battle-system.forge/Z007": 14,
+      "com.battle-system.forge/Z008": "",
+      "com.battle-system.forge/Z009": "",
+      "com.battle-system.forge/Z010": "",
+      "com.battle-system.forge/Z011": "",
+      "com.battle-system.forge/Z012": "",
+      "com.battle-system.forge/Z013": "",
+      "com.battle-system.forge/Z014": [],
+      "com.battle-system.forge/Z015": "",
+      "com.battle-system.forge/Z016": "",
+      "com.battle-system.forge/Z017": 17,
+      "com.battle-system.forge/Z018": 15,
+      "com.battle-system.forge/Z019": 15,
+      "com.battle-system.forge/Z020": 3,
+      "com.battle-system.forge/Z021": 12,
+      "com.battle-system.forge/Z022": 7,
+      "com.battle-system.forge/Z023": "",
+      "com.battle-system.forge/Z024": "",
+      "com.battle-system.forge/Z025": "",
+      "com.battle-system.forge/Z026": "",
+      "com.battle-system.forge/Z027": "",
+      "com.battle-system.forge/Z028": "",
+      "com.battle-system.forge/Z029": "",
+      "com.battle-system.forge/Z030": "",
+      "com.battle-system.forge/Z031": "",
+      "com.battle-system.forge/Z032": "",
+      "com.battle-system.forge/Z033": "",
+      "com.battle-system.forge/Z034": [
+        {
+          "description": "\nO lobo tem vantagem em testes de Sabedoria (Percepção) que dependam de audição ou olfato.\n",
+          "id": "147530ee-bad0-7982-6cbf-81494f5dba65",
+          "name": "Audição e Olfato Aguçados"
+        },
+        {
+          "description": "\nO lobo tem vantagem em uma jogada de ataque contra uma criatura se ao menos um aliado do lobo estiver a 5 pés da criatura e o aliado não estiver incapacitado.\n",
+          "id": "aebdcef8-fba1-e744-4d1f-ea1b27349b4c",
+          "name": "Táticas de Matilha"
+        }
+      ],
+      "com.battle-system.forge/Z035": [
+        {
+          "description": "\nmw 5 para atingir, alcance 5 pés, um alvo. {@h}10 (<span class=\"dice+\" data-roll-notation=\"[2d6+3]\">[2d6+3]</span>) de dano perfurante. Se o alvo for uma criatura, deve ser bem-sucedido em um teste de resistência de Força CD 13 ou ficará caído.\n",
+          "id": "56e6b6e7-2e63-8e24-5181-b2fa87fa9463",
+          "name": "Mordida"
+        }
+      ],
+      "com.battle-system.forge/Z036": [],
+      "com.battle-system.forge/Z037": [],
+      "com.battle-system.forge/Z038": [],
+      "com.battle-system.forge/Z039": [],
+      "com.battle-system.forge/Z040": [],
+      "com.battle-system.forge/Z041": "",
+      "com.battle-system.forge/Z042": "",
+      "com.battle-system.forge/fabd": true,
+      "com.battle-system.forge/in-party": false,
+      "com.battle-system.forge/name": "Lobo Atroz"
+    },
+    "name": "Lobo Atroz",
+    "updatedAt": 0
+  },
+  {
+    "author": "GM - Filipe",
+    "favorite": false,
+    "id": "fd4fb301-e863-eeb4-e64a-508074e9b0b2",
+    "metadata": {
+      "com.battle-system.forge/Z001": "",
+      "com.battle-system.forge/Z002": "",
+      "com.battle-system.forge/Z003": "",
+      "com.battle-system.forge/Z004": "",
+      "com.battle-system.forge/Z005": 76,
+      "com.battle-system.forge/Z006": 76,
+      "com.battle-system.forge/Z007": 13,
+      "com.battle-system.forge/Z008": "",
+      "com.battle-system.forge/Z009": "",
+      "com.battle-system.forge/Z010": "",
+      "com.battle-system.forge/Z011": "",
+      "com.battle-system.forge/Z012": "",
+      "com.battle-system.forge/Z013": "",
+      "com.battle-system.forge/Z014": [],
+      "com.battle-system.forge/Z015": "",
+      "com.battle-system.forge/Z016": "",
+      "com.battle-system.forge/Z017": 20,
+      "com.battle-system.forge/Z018": 8,
+      "com.battle-system.forge/Z019": 18,
+      "com.battle-system.forge/Z020": 8,
+      "com.battle-system.forge/Z021": 11,
+      "com.battle-system.forge/Z022": 14,
+      "com.battle-system.forge/Z023": "",
+      "com.battle-system.forge/Z024": "",
+      "com.battle-system.forge/Z025": "",
+      "com.battle-system.forge/Z026": "",
+      "com.battle-system.forge/Z027": "",
+      "com.battle-system.forge/Z028": "",
+      "com.battle-system.forge/Z029": "",
+      "com.battle-system.forge/Z030": "",
+      "com.battle-system.forge/Z031": "",
+      "com.battle-system.forge/Z032": "",
+      "com.battle-system.forge/Z033": "",
+      "com.battle-system.forge/Z034": [
+        {
+          "description": "\nO soul shaker pode conjurar a magia *geas*, sem necessidade de componentes e usando Carisma como atributo de conjuração (CD para evitar magia 12).\n\n",
+          "id": "876321c3-9581-d546-a3db-b3be5d219a0a",
+          "name": "Isca Cativante (1/Dia)"
+        },
+        {
+          "description": "\nQuando o soul shaker é reduzido a 0 pontos de vida, ele explode em 7 (<span class=\"dice+\" data-roll-notation=\"[1d4+5]\">[1d4+5]</span>) garras rastejantes. Após 6 (<span class=\"dice+\" data-roll-notation=\"[1d12]\">[1d12]</span>) dias, se ao menos duas dessas garras rastejantes estiverem vivas, elas se teleportam para o local da morte do soul shaker e se fundem, então o soul shaker se reforma e recupera todos os seus pontos de vida.\n\n",
+          "id": "b9c2f7ba-e1f1-41bf-1fea-0ea11276c3c0",
+          "name": "Reconstrução"
+        },
+        {
+          "description": "\nO soul shaker não requer ar, comida, bebida ou sono.\n",
+          "id": "2ab32201-7a24-0e0a-03a0-6814d8162ea2",
+          "name": "Natureza Incomum"
+        }
+      ],
+      "com.battle-system.forge/Z035": [
+        {
+          "description": "\nCorpo a Corpo com Arma: 7 para atingir, alcance 1,5 m, um alvo. {@h}14 (<span class=\"dice+\" data-roll-notation=\"[2d8+5]\">[2d8+5]</span>) de dano de concussão. Se o alvo for uma criatura Média ou menor, ele fica agarrado (escapar 15). O soul shaker pode ter apenas uma criatura agarrada desta forma por vez.\n",
+          "id": "99895b2a-c343-7e10-fd80-fe1bc48bea93",
+          "name": "Agarrão Esmagador"
+        }
+      ],
+      "com.battle-system.forge/Z036": [
+        {
+          "description": "\nO soul shaker escolhe uma criatura que esteja agarrando. Se o alvo não for um Constructo ou Morto-vivo, ele deve ser bem-sucedido em um teste de resistência de Constituição CD 14 ou sofre 7 (<span class=\"dice+\" data-roll-notation=\"[2d6]\">[2d6]</span>) de dano necrótico. O máximo de pontos de vida do alvo é reduzido em uma quantidade igual ao dano necrótico sofrido, e o soul shaker recupera pontos de vida equivalentes. Essa redução dura até o alvo terminar um descanso longo. O alvo morre se seu máximo de pontos de vida for reduzido a 0.\n",
+          "id": "bbfb844d-d574-525c-016d-d58a2ea8afcb",
+          "name": "Consumir Vitalidade"
+        }
+      ],
+      "com.battle-system.forge/Z037": [],
+      "com.battle-system.forge/Z038": [],
+      "com.battle-system.forge/Z039": [],
+      "com.battle-system.forge/Z040": [],
+      "com.battle-system.forge/Z041": "",
+      "com.battle-system.forge/Z042": "",
+      "com.battle-system.forge/fabd": true,
+      "com.battle-system.forge/in-party": false,
+      "com.battle-system.forge/name": "Abalador de Almas"
+    },
+    "name": "Abalador de Almas",
+    "updatedAt": 0
+  }
+]
