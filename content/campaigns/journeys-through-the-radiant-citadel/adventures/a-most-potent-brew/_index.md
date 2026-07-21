@@ -5,7 +5,7 @@ type: adventure
 draft: false
 titulo_pt_br: "Uma Poção Muito Potente"
 visibility: gm
-status: ready
+status: published
 summary: "Aventura de nível 1. Glowkindle, gnomo dono da Wizard's Tower Brewing Co., contrata os aventureiros para exterminar ratos gigantes no porão da cervejaria — que esconde as ruínas de uma antiga Torre de Mago."
 tags:
   - nivel-1
@@ -58,7 +58,7 @@ A cervejaria foi construída sobre o terreno de uma antiga Torre de Mago. O bura
 
 ## Sessões
 
-- [Sessão 1 — O Porão da Cervejaria](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-porão-da-cervejaria/)
+- [Sessão 1 — O Porão da Cervejaria](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/)
 
 ## Estrutura da Dungeon
 

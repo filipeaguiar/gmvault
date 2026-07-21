@@ -6,7 +6,7 @@ titulo_pt_br: Jornadas pela Cidadela Radiante
 visibility: gm
 status: published
 system: D&D 5e
-current_adventure: written-in-blood
+current_adventure: a-most-potent-brew
 translation:
   source_language: en
   target_language: pt-BR

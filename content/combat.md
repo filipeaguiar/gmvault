@@ -1,5 +1,6 @@
 ---
 title: "Combat Tracker"
+type: "page"
 layout: "combat"
 draft: false
 visibility: "gm"

@@ -5,7 +5,7 @@ type: session
 draft: false
 titulo_pt_br: "Sessão 1 — O Porão da Cervejaria"
 visibility: gm
-status: ready
+status: published
 summary: "Os aventureiros chegam à Wizard's Tower Brewing Co., encontram Glowkindle, aceitam a missão e descem ao porão para enfrentar as criaturas que invadiram as ruínas da Torre de Mago."
 
 npcs:
@@ -33,13 +33,13 @@ A estrutura é linear com escolhas táticas em cada área. O clímax é a Aranha
 
 ## Cenas
 
-- [Cena 1 — Chegada e Encontro com Glowkindle](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-01-glowkindle/)
-- [Cena 2 — Área 1: Porão de Cerveja](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-02-porao-de-cerveja/)
-- [Cena 3 — Área 2: Corredor de Armadilhas](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-03-corredor-de-armadilhas/)
-- [Cena 4 — Área 3: Sala do Poço](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-04-sala-do-poco/)
-- [Cena 5 — Área 4: O Laboratório](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-05-laboratorio/)
-- [Cena 6 — Área 5: Depósito](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-06-deposito/)
-- [Cena 7 — Retorno a Glowkindle](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/cena-07-retorno/)
+- [Cena 1 — Chegada e Encontro com Glowkindle](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-01-glowkindle/)
+- [Cena 2 — Área 1: Porão de Cerveja](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-02-porao-de-cerveja/)
+- [Cena 3 — Área 2: Corredor de Armadilhas](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-03-corredor-de-armadilhas/)
+- [Cena 4 — Área 3: Sala do Poço](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-04-sala-do-poco/)
+- [Cena 5 — Área 4: O Laboratório](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-05-laboratorio/)
+- [Cena 6 — Área 5: Depósito](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-06-deposito/)
+- [Cena 7 — Retorno a Glowkindle](/campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/01-sessao/cena-07-retorno/)
 
 ## NPCs Importantes
 
