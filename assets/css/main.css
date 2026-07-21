@@ -1630,3 +1630,91 @@ main.container {
     padding: 1rem;
   }
 }
+
+/* Dice+ & Roll Engine Styles */
+[data-roll-notation].roll-ready {
+  color: var(--primary-color, #8c2d19);
+  cursor: pointer;
+  border-bottom: 1px dashed currentColor;
+  transition: background-color 0.15s ease;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+[data-roll-notation].roll-ready:hover {
+  background-color: rgba(140, 45, 25, 0.1);
+  border-bottom-style: solid;
+}
+
+[data-roll-notation].roll-pending {
+  cursor: wait;
+  opacity: 0.55;
+  border-bottom-style: dotted;
+}
+
+/* Roll Toast Notification Popups */
+.roll-toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10000;
+  max-width: 320px;
+  pointer-events: none;
+}
+
+.roll-toast {
+  background: #2b2b2b;
+  color: #fff;
+  border: 1px solid #444;
+  border-left: 4px solid var(--primary-color, #ff6b4a);
+  border-radius: 6px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: slideIn 0.2s ease-out forwards;
+  pointer-events: auto;
+}
+
+.roll-toast-header {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #aaa;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.roll-toast-formula {
+  font-family: monospace;
+  font-size: 0.95em;
+  color: #ffcc00;
+}
+
+.roll-toast-result {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.roll-toast-details {
+  font-size: 0.85em;
+  color: #ccc;
+  font-style: italic;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

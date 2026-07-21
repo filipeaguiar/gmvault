@@ -1,0 +1,471 @@
+{{ define "main" }}
+<div class="combat-tracker-container" style="display: flex; flex-direction: column; gap: 25px; margin-top: 20px;">
+  
+  <header class="page-header" style="border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 15px;">
+    <span class="section-kicker" style="font-size: 0.85em; text-transform: uppercase; color: var(--accent-color); font-weight: bold; letter-spacing: 0.1em;">Ferramentas de Mestre</span>
+    <h1 style="font-family: var(--font-heading); font-size: 2.2rem; margin: 5px 0 0 0;">Combat Tracker & Quick Roller</h1>
+    <p style="color: var(--text-muted); margin-top: 5px;">Digite a lista de monstros para carregar seus blocos de estatísticas em uma só tela com rolagens de dados integradas.</p>
+  </header>
+
+  <div class="combat-grid" style="display: grid; grid-template-columns: 300px 1fr; gap: 25px; align-items: start;">
+    
+    <!-- Painel de Controle -->
+    <aside class="combat-control-panel" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 20px;">
+      
+      <div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-top: 0; margin-bottom: 10px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;"><i class="ra ra-book"></i> Nota do Encontro</h3>
+        <p style="font-size: 0.85em; color: var(--text-muted); margin-bottom: 8px;">Cole a nota com a lista de monstros (um por linha):</p>
+        <textarea id="encounter-notes" rows="8" placeholder="Exemplo:&#10;2 Bandit&#10;1 Aboleth&#10;3 Acolyte" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color); font-family: monospace; font-size: 0.9em; resize: vertical;"></textarea>
+      </div>
+
+      <div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.1rem; margin-top: 0; margin-bottom: 10px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;"><i class="ra ra-search"></i> Adicionar Manual</h3>
+        <div style="display: flex; gap: 6px;">
+          <input type="text" id="monster-search" list="monsters-datalist" placeholder="Nome do monstro" style="flex: 1; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color); font-size: 0.9em;">
+          <datalist id="monsters-datalist"></datalist>
+          <button id="btn-add-manual" style="padding: 8px 12px; border-radius: 6px; border: none; background: var(--primary-color); color: #fff; cursor: pointer; font-weight: bold;"><i class="ra ra-plus"></i></button>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
+        <button id="btn-load-combat" style="width: 100%; padding: 12px; border-radius: 6px; border: none; background: var(--primary-color); color: #fff; cursor: pointer; font-family: var(--font-heading); font-weight: bold; font-size: 1rem; transition: background 0.2s;"><i class="ra ra-crossed-swords"></i> Iniciar Combate</button>
+        <button id="btn-clear-combat" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-color); cursor: pointer; font-weight: bold; font-size: 0.9rem; transition: background 0.2s;"><i class="ra ra-trash"></i> Limpar Painel</button>
+      </div>
+
+    </aside>
+
+    <!-- Painel de Exibição de Monstros -->
+    <section class="combat-display-panel" style="display: flex; flex-direction: column; gap: 20px;">
+      
+      <!-- Estado Vazio -->
+      <div id="combat-empty-state" style="background: var(--card-bg); border: 2px dashed var(--border-color); border-radius: 12px; padding: 60px 40px; text-align: center; color: var(--text-muted);">
+        <i class="ra ra-monster-skull" style="font-size: 4rem; color: var(--primary-color); opacity: 0.6; margin-bottom: 20px; display: block;"></i>
+        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-top: 0; color: var(--text-color);">Nenhum Combate Ativo</h3>
+        <p style="max-width: 450px; margin: 10px auto 0 auto; font-size: 0.95em;">Digite a lista de monstros participantes na nota lateral e clique em <strong>Iniciar Combate</strong> para começar a rolar dados e monitorar os HPs.</p>
+      </div>
+
+      <!-- Container Grid dos Monstros -->
+      <div id="combat-monsters-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px; hidden: true;">
+      </div>
+
+    </section>
+
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let statblocksDatabase = [];
+    let activeCombatants = [];
+    
+    const encounterNotes = document.getElementById("encounter-notes");
+    const monsterSearch = document.getElementById("monster-search");
+    const monstersDatalist = document.getElementById("monsters-datalist");
+    const btnAddManual = document.getElementById("btn-add-manual");
+    const btnLoadCombat = document.getElementById("btn-load-combat");
+    const btnClearCombat = document.getElementById("btn-clear-combat");
+    const emptyState = document.getElementById("combat-empty-state");
+    const monstersGrid = document.getElementById("combat-monsters-grid");
+
+    // Carrega o JSON de statblocks de forma assíncrona
+    fetch("/exports/forge/statblocks.json")
+      .then(res => res.json())
+      .then(data => {
+        statblocksDatabase = data;
+        populateDatalist();
+        
+        // Carrega estado anterior se houver
+        loadStateFromStorage();
+      })
+      .catch(err => {
+        console.error("Erro ao carregar banco de dados de monstros:", err);
+      });
+
+    function populateDatalist() {
+      monstersDatalist.innerHTML = "";
+      // Filtra chaves do Forge correspondentes a monstros
+      statblocksDatabase.forEach(item => {
+        const name = item.name || item["com.battle-system.forge/Z001"];
+        if (name) {
+          const option = document.createElement("option");
+          option.value = name;
+          monstersDatalist.appendChild(option);
+        }
+      });
+    }
+
+    // Ação do botão de Adicionar Manual
+    btnAddManual.addEventListener("click", () => {
+      const name = monsterSearch.value.trim();
+      if (!name) return;
+      
+      const mon = findMonsterByName(name);
+      if (mon) {
+        addCombatant(mon);
+        monsterSearch.value = "";
+        saveStateToStorage();
+        renderCombatants();
+      } else {
+        alert("Monstro não encontrado no compêndio.");
+      }
+    });
+
+    // Iniciar combate a partir das notas
+    btnLoadCombat.addEventListener("click", () => {
+      const text = encounterNotes.value.trim();
+      if (!text) {
+        alert("Digite alguns monstros na nota para carregar.");
+        return;
+      }
+
+      activeCombatants = [];
+      const lines = text.split("\n");
+      
+      lines.forEach(line => {
+        const cleaned = line.trim();
+        if (!cleaned) return;
+        
+        // Detecta quantidade (ex: "2 Goblin" ou "Goblin")
+        const match = cleaned.match(/^(\d+)\s+(.+)$/);
+        let qty = 1;
+        let name = cleaned;
+        
+        if (match) {
+          qty = parseInt(match[1], 10);
+          name = match[2].trim();
+        }
+        
+        const monsterData = findMonsterByName(name);
+        if (monsterData) {
+          for (let i = 0; i < qty; i++) {
+            addCombatant(monsterData);
+          }
+        } else {
+          console.warn("Monstro não encontrado:", name);
+        }
+      });
+
+      saveStateToStorage();
+      renderCombatants();
+    });
+
+    // Limpar painel
+    btnClearCombat.addEventListener("click", () => {
+      if (confirm("Deseja realmente limpar todos os combatentes da tela?")) {
+        activeCombatants = [];
+        encounterNotes.value = "";
+        saveStateToStorage();
+        renderCombatants();
+      }
+    });
+
+    function findMonsterByName(name) {
+      const lowerName = name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      return statblocksDatabase.find(item => {
+        const itemName = item.name || item["com.battle-system.forge/Z001"];
+        const cleanItemName = itemName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        return cleanItemName === lowerName;
+      });
+    }
+
+    function addCombatant(monsterData) {
+      const name = monsterData.name || monsterData["com.battle-system.forge/Z001"];
+      const hpMax = parseInt(monsterData["com.battle-system.forge/Z005"] || 10, 10);
+      const ac = parseInt(monsterData["com.battle-system.forge/Z006"] || 10, 10);
+      
+      // Gera sufixo numérico correspondente se já houver outros desse mesmo tipo
+      const count = activeCombatants.filter(c => c.originalName === name).length + 1;
+      
+      const combatant = {
+        id: name.toLowerCase().replace(/[^a-z0-9]/g, "-") + "-" + Date.now() + "-" + Math.random().toString(36).substring(2, 5),
+        originalName: name,
+        displayName: `${name} ${count}`,
+        hpMax: hpMax,
+        hpCurrent: hpMax,
+        ac: ac,
+        data: monsterData
+      };
+      
+      activeCombatants.push(combatant);
+    }
+
+    function renderCombatants() {
+      if (activeCombatants.length === 0) {
+        emptyState.style.display = "block";
+        monstersGrid.style.display = "none";
+        return;
+      }
+
+      emptyState.style.display = "none";
+      monstersGrid.style.display = "grid";
+      monstersGrid.innerHTML = "";
+
+      activeCombatants.forEach(c => {
+        const card = document.createElement("div");
+        card.className = "stat-block";
+        card.style.background = "var(--card-bg)";
+        card.style.border = "1px solid var(--border-color)";
+        card.style.borderRadius = "12px";
+        card.style.padding = "20px";
+        card.style.boxShadow = "var(--shadow-md)";
+        card.style.display = "flex";
+        card.style.flexDirection = "column";
+        card.style.gap = "12px";
+        card.style.position = "relative";
+        
+        // Cabeçalho da Ficha do Monstro
+        const header = document.createElement("div");
+        header.style.display = "flex";
+        header.style.justifyContent = "space-between";
+        header.style.alignItems = "flex-start";
+        header.style.borderBottom = "1px solid var(--border-color)";
+        header.style.paddingBottom = "8px";
+        
+        const nameBlock = document.createElement("div");
+        nameBlock.innerHTML = `
+          <h2 style="font-family: var(--font-heading); font-size: 1.3rem; margin: 0; color: var(--text-color);">${c.displayName}</h2>
+          <small style="color: var(--text-muted); font-style: italic;">${c.data["com.battle-system.forge/Z002"] || "Medium"} ${c.data["com.battle-system.forge/Z004"] || "monster"} | ND ${c.data["com.battle-system.forge/Z016"] || "0"}</small>
+        `;
+        
+        const deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "&times;";
+        deleteBtn.style.background = "transparent";
+        deleteBtn.style.border = "none";
+        deleteBtn.style.color = "var(--text-muted)";
+        deleteBtn.style.fontSize = "1.5rem";
+        deleteBtn.style.cursor = "pointer";
+        deleteBtn.style.lineHeight = "1";
+        deleteBtn.title = "Remover monstro";
+        deleteBtn.addEventListener("click", () => {
+          removeCombatant(c.id);
+        });
+
+        header.appendChild(nameBlock);
+        header.appendChild(deleteBtn);
+        card.appendChild(header);
+
+        // Grid de Controle de HP e CA
+        const statsRow = document.createElement("div");
+        statsRow.style.display = "flex";
+        statsRow.style.justifyContent = "space-between";
+        statsRow.style.alignItems = "center";
+        statsRow.style.background = "rgba(0,0,0,0.05)";
+        statsRow.style.padding = "8px 12px";
+        statsRow.style.borderRadius = "6px";
+        
+        const acBlock = document.createElement("div");
+        acBlock.innerHTML = `<span style="font-size:0.85em; text-transform:uppercase; color:var(--text-muted); display:block;">CA</span><strong style="font-size:1.15rem;"><i class="ra ra-shield"></i> ${c.ac}</strong>`;
+        
+        const hpController = document.createElement("div");
+        hpController.style.display = "flex";
+        hpController.style.alignItems = "center";
+        hpController.style.gap = "8px";
+        
+        const btnMinus = document.createElement("button");
+        btnMinus.textContent = "-";
+        btnMinus.style.width = "28px";
+        btnMinus.style.height = "28px";
+        btnMinus.style.border = "1px solid var(--border-color)";
+        btnMinus.style.background = "var(--bg-color)";
+        btnMinus.style.color = "var(--text-color)";
+        btnMinus.style.borderRadius = "4px";
+        btnMinus.style.cursor = "pointer";
+        btnMinus.style.fontWeight = "bold";
+        btnMinus.addEventListener("click", () => {
+          updateHP(c.id, c.hpCurrent - 1);
+        });
+
+        const hpInput = document.createElement("input");
+        hpInput.type = "number";
+        hpInput.value = c.hpCurrent;
+        hpInput.style.width = "50px";
+        hpInput.style.textAlign = "center";
+        hpInput.style.padding = "4px";
+        hpInput.style.border = "1px solid var(--border-color)";
+        hpInput.style.borderRadius = "4px";
+        hpInput.style.background = "var(--bg-color)";
+        hpInput.style.color = "var(--text-color)";
+        hpInput.style.fontWeight = "bold";
+        hpInput.addEventListener("change", (e) => {
+          updateHP(c.id, parseInt(e.target.value, 10) || 0);
+        });
+
+        const btnPlus = document.createElement("button");
+        btnPlus.textContent = "+";
+        btnPlus.style.width = "28px";
+        btnPlus.style.height = "28px";
+        btnPlus.style.border = "1px solid var(--border-color)";
+        btnPlus.style.background = "var(--bg-color)";
+        btnPlus.style.color = "var(--text-color)";
+        btnPlus.style.borderRadius = "4px";
+        btnPlus.style.cursor = "pointer";
+        btnPlus.style.fontWeight = "bold";
+        btnPlus.addEventListener("click", () => {
+          updateHP(c.id, c.hpCurrent + 1);
+        });
+
+        const hpLabel = document.createElement("span");
+        hpLabel.innerHTML = `<span style="font-size:0.85em; text-transform:uppercase; color:var(--text-muted); display:block;">Vida / Máximo</span>`;
+        
+        const hpInputsBlock = document.createElement("div");
+        hpInputsBlock.style.display = "flex";
+        hpInputsBlock.style.alignItems = "center";
+        hpInputsBlock.style.gap = "4px";
+        hpInputsBlock.appendChild(btnMinus);
+        hpInputsBlock.appendChild(hpInput);
+        hpInputsBlock.appendChild(btnPlus);
+        hpInputsBlock.appendChild(document.createTextNode(` / ${c.hpMax}`));
+
+        const hpWrapper = document.createElement("div");
+        hpWrapper.appendChild(hpLabel);
+        hpWrapper.appendChild(hpInputsBlock);
+
+        statsRow.appendChild(acBlock);
+        statsRow.appendChild(hpWrapper);
+        card.appendChild(statsRow);
+
+        // Grade de Atributos
+        const attrs = c.data["com.battle-system.forge/Z009"] || {};
+        const attrKeys = ["str", "dex", "con", "int", "wis", "cha"];
+        const attrGrid = document.createElement("div");
+        attrGrid.style.display = "grid";
+        attrGrid.style.gridTemplateColumns = "repeat(6, 1fr)";
+        attrGrid.style.gap = "6px";
+        attrGrid.style.textAlign = "center";
+        attrGrid.style.marginTop = "5px";
+        
+        attrKeys.forEach(k => {
+          const val = attrs[k] || 10;
+          const mod = Math.floor((val - 10) / 2);
+          const modStr = mod >= 0 ? `+${mod}` : `${mod}`;
+          
+          const col = document.createElement("div");
+          col.style.background = "rgba(0,0,0,0.02)";
+          col.style.border = "1px solid var(--border-color)";
+          col.style.borderRadius = "4px";
+          col.style.padding = "4px 2px";
+          
+          col.innerHTML = `
+            <span style="font-size: 0.75em; font-weight: bold; color: var(--text-muted); display:block;">${k.toUpperCase()}</span>
+            <span class="roll-ready" data-roll-notation="1d20${modStr}" data-roll-label="Teste de ${k.toUpperCase()} (${c.displayName})" style="font-size: 0.9em; font-weight:600;">${val} (${modStr})</span>
+          `;
+          attrGrid.appendChild(col);
+        });
+        card.appendChild(attrGrid);
+
+        // Resistências, Perícias e Sentidos
+        const details = document.createElement("div");
+        details.className = "stat-details";
+        details.style.fontSize = "0.85em";
+        details.style.lineHeight = "1.4";
+        details.style.display = "flex";
+        details.style.flexDirection = "column";
+        details.style.gap = "3px";
+        details.style.marginTop = "5px";
+
+        const savesText = c.data["com.battle-system.forge/Z018"];
+        const skillsText = c.data["com.battle-system.forge/Z019"];
+        const sensesText = c.data["com.battle-system.forge/Z021"];
+        const speedText = c.data["com.battle-system.forge/Z007"];
+
+        if (speedText) details.innerHTML += `<div><strong>Deslocamento:</strong> ${speedText}</div>`;
+        if (savesText) details.innerHTML += `<div><strong>Resistências:</strong> ${savesText}</div>`;
+        if (skillsText) details.innerHTML += `<div><strong>Perícias:</strong> ${skillsText}</div>`;
+        if (sensesText) details.innerHTML += `<div><strong>Sentidos:</strong> ${sensesText}</div>`;
+        
+        card.appendChild(details);
+
+        // Ações e Habilidades do Monstro
+        const actionsDiv = document.createElement("div");
+        actionsDiv.className = "content-body";
+        actionsDiv.style.fontSize = "0.9em";
+        actionsDiv.style.marginTop = "8px";
+        actionsDiv.style.borderTop = "1px solid var(--border-color)";
+        actionsDiv.style.paddingTop = "10px";
+        actionsDiv.style.maxHeight = "200px";
+        actionsDiv.style.overflowY = "auto";
+
+        // Habilidades passivas
+        const traits = c.data["com.battle-system.forge/Z034"] || [];
+        if (traits.length > 0) {
+          const section = document.createElement("div");
+          section.innerHTML = `<strong style="color:var(--primary-color); display:block; margin-bottom:4px; font-family:var(--font-heading);">Características</strong>`;
+          traits.forEach(t => {
+            section.innerHTML += `<div style="margin-bottom:8px;"><strong>${t.name}.</strong> ${t.description}</div>`;
+          });
+          actionsDiv.appendChild(section);
+        }
+
+        // Ações Principais
+        const actions = c.data["com.battle-system.forge/Z035"] || [];
+        if (actions.length > 0) {
+          const section = document.createElement("div");
+          section.style.marginTop = "10px";
+          section.innerHTML = `<strong style="color:var(--primary-color); display:block; margin-bottom:4px; font-family:var(--font-heading);">Ações</strong>`;
+          actions.forEach(a => {
+            section.innerHTML += `<div style="margin-bottom:8px;"><strong>${a.name}.</strong> ${a.description}</div>`;
+          });
+          actionsDiv.appendChild(section);
+        }
+
+        // Ações Lendárias
+        const legendary = c.data["com.battle-system.forge/Z038"] || [];
+        if (legendary.length > 0) {
+          const section = document.createElement("div");
+          section.style.marginTop = "10px";
+          section.innerHTML = `<strong style="color:var(--primary-color); display:block; margin-bottom:4px; font-family:var(--font-heading);">Ações Lendárias</strong>`;
+          legendary.forEach(l => {
+            section.innerHTML += `<div style="margin-bottom:8px;"><strong>${l.name}.</strong> ${l.description}</div>`;
+          });
+          actionsDiv.appendChild(section);
+        }
+
+        card.appendChild(actionsDiv);
+        monstersGrid.appendChild(card);
+      });
+
+      // Dispara o parser do auto-rolador no conteúdo dinâmico recém-criado
+      if (window.dispatchEvent) {
+        window.dispatchEvent(new Event("DOMContentLoaded"));
+      }
+    }
+
+    function removeCombatant(id) {
+      activeCombatants = activeCombatants.filter(c => c.id !== id);
+      saveStateToStorage();
+      renderCombatants();
+    }
+
+    function updateHP(id, newHp) {
+      const c = activeCombatants.find(c => c.id === id);
+      if (c) {
+        c.hpCurrent = Math.max(0, newHp);
+        saveStateToStorage();
+        renderCombatants();
+      }
+    }
+
+    // Persistência local no LocalStorage
+    function saveStateToStorage() {
+      try {
+        localStorage.setItem("gmvault.combat-tracker", JSON.stringify(activeCombatants));
+      } catch (e) {
+        // Opcional
+      }
+    }
+
+    function loadStateFromStorage() {
+      try {
+        const saved = localStorage.getItem("gmvault.combat-tracker");
+        if (saved) {
+          activeCombatants = JSON.parse(saved);
+          renderCombatants();
+        }
+      } catch (e) {
+        // Opcional
+      }
+    }
+
+  });
+</script>
+{{ end }}

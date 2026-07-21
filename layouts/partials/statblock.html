@@ -37,7 +37,7 @@
       {{ end }}
       <div class="stat-attr-col">
         <span class="stat-attr-name">{{ $name | upper }}</span>
-        <span class="stat-attr-val">{{ $val }} ({{ $modStr }})</span>
+        <span class="stat-attr-val"><span class="roll-ready" data-roll-notation="1d20{{ $modStr }}" data-roll-label="Teste de {{ $name | upper }} ({{ or $.Params.titulo_pt_br $.Title }})">{{ $val }} ({{ $modStr }})</span></span>
       </div>
     {{ end }}
   </div>
