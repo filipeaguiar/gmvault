@@ -1,0 +1,477 @@
+{
+  "author": "GM - Filipe",
+  "favorite": true,
+  "id": "83087547-3d99-c61e-1063-f5878ac26021",
+  "metadata": {
+    "com.battle-system.forge/Z001": 3,
+    "com.battle-system.forge/Z002": "Medium",
+    "com.battle-system.forge/Z003": "True Neutral",
+    "com.battle-system.forge/Z004": "Dwarf",
+    "com.battle-system.forge/Z005": 24,
+    "com.battle-system.forge/Z006": 24,
+    "com.battle-system.forge/Z007": 13,
+    "com.battle-system.forge/Z008": 30,
+    "com.battle-system.forge/Z009": 0,
+    "com.battle-system.forge/Z010": 0,
+    "com.battle-system.forge/Z011": 0,
+    "com.battle-system.forge/Z012": 0,
+    "com.battle-system.forge/Z013": "Passive Perception 12, Darkvision 120 ft.",
+    "com.battle-system.forge/Z014": [
+      {
+        "description": "Perícia importada: Acrobatics +3",
+        "id": "7ad5fb9b-9964-cb27-6fd6-28fc929670c2",
+        "name": "Acrobatics +3"
+      },
+      {
+        "description": "Perícia importada: Animal-Handling +2",
+        "id": "9d6edb11-54dc-9464-0f54-98dd7298c422",
+        "name": "Animal-Handling +2"
+      },
+      {
+        "description": "Perícia importada: Arcana +1",
+        "id": "f9dd59ee-e160-9fac-65af-53736d60dc5c",
+        "name": "Arcana +1"
+      },
+      {
+        "description": "Perícia importada: Athletics +1",
+        "id": "e83db31f-a694-42d7-efb4-37ed9138c940",
+        "name": "Athletics +1"
+      },
+      {
+        "description": "Perícia importada: Deception +0",
+        "id": "9474485b-c47f-563f-7c46-3a170d029f5b",
+        "name": "Deception +0"
+      },
+      {
+        "description": "Perícia importada: History +3",
+        "id": "2a3cfa5c-9b47-0ab5-0691-09fbc57bc506",
+        "name": "History +3"
+      },
+      {
+        "description": "Perícia importada: Insight +2",
+        "id": "d6e92a1d-6b49-96e4-c95b-e1ac86e44e8d",
+        "name": "Insight +2"
+      },
+      {
+        "description": "Perícia importada: Intimidation +0",
+        "id": "6965df54-5efe-741c-23c9-f49d7bcb2da8",
+        "name": "Intimidation +0"
+      },
+      {
+        "description": "Perícia importada: Investigation +1",
+        "id": "848564cc-9feb-b9e6-eeb3-045ad4540e24",
+        "name": "Investigation +1"
+      },
+      {
+        "description": "Perícia importada: Medicine +2",
+        "id": "6a49f311-5e7e-b640-8562-02b2e419f379",
+        "name": "Medicine +2"
+      },
+      {
+        "description": "Perícia importada: Nature +1",
+        "id": "38452361-446e-3a2e-dac4-3c3379c3053f",
+        "name": "Nature +1"
+      },
+      {
+        "description": "Perícia importada: Perception +2",
+        "id": "9c487c57-856c-aa7d-ce60-c53e72a92aff",
+        "name": "Perception +2"
+      },
+      {
+        "description": "Perícia importada: Performance +0",
+        "id": "7f9e9bf4-546e-61ef-249e-213520c8daa3",
+        "name": "Performance +0"
+      },
+      {
+        "description": "Perícia importada: Persuasion +2",
+        "id": "becee95a-2159-45dd-6ff0-f78ec8724e6f",
+        "name": "Persuasion +2"
+      },
+      {
+        "description": "Perícia importada: Religion +1",
+        "id": "fbb51470-27ec-936a-d536-8941628b61f0",
+        "name": "Religion +1"
+      },
+      {
+        "description": "Perícia importada: Sleight-of-Hand +3",
+        "id": "d0be1749-848b-c2b8-29bb-5606d8f54679",
+        "name": "Sleight-of-Hand +3"
+      },
+      {
+        "description": "Perícia importada: Stealth +5",
+        "id": "be0c7eea-5800-3159-4bc8-9179d833f1ae",
+        "name": "Stealth +5"
+      },
+      {
+        "description": "Perícia importada: Survival +2",
+        "id": "ae383cdc-a2c7-b56c-ba80-a9b2de60bc69",
+        "name": "Survival +2"
+      }
+    ],
+    "com.battle-system.forge/Z015": "Common",
+    "com.battle-system.forge/Z016": "",
+    "com.battle-system.forge/Z017": 8,
+    "com.battle-system.forge/Z018": 16,
+    "com.battle-system.forge/Z019": 14,
+    "com.battle-system.forge/Z020": 13,
+    "com.battle-system.forge/Z021": 15,
+    "com.battle-system.forge/Z022": 10,
+    "com.battle-system.forge/Z023": 1,
+    "com.battle-system.forge/Z024": 5,
+    "com.battle-system.forge/Z025": 2,
+    "com.battle-system.forge/Z026": 1,
+    "com.battle-system.forge/Z027": 2,
+    "com.battle-system.forge/Z028": 0,
+    "com.battle-system.forge/Z029": "",
+    "com.battle-system.forge/Z030": "",
+    "com.battle-system.forge/Z031": "",
+    "com.battle-system.forge/Z032": "",
+    "com.battle-system.forge/Z033": "",
+    "com.battle-system.forge/Z034": [
+      {
+        "description": "\nVocê recebe os seguintes benefícios.\n\n\n### Proficiência com Ferramentas\n\nVocê ganha proficiência com três Ferramentas de Artesão diferentes, à sua escolha, da tabela de Fabricação Rápida.\n\n\n### Desconto\n\nSempre que você comprar um item não mágico, recebe um desconto de 20 por cento sobre ele.\n\n\n### Fabricação Rápida\n\nAo terminar um Descanso Longo, você pode fabricar um item da tabela de Fabricação Rápida, desde que possua as Ferramentas de Artesão associadas a esse item e tenha proficiência com tais ferramentas. O item dura até você terminar outro Descanso Longo, momento em que ele se desfaz.\n",
+        "id": "13e9b1ba-d5f4-476f-2d38-888ac17ede96",
+        "name": "Crafter"
+      },
+      {
+        "description": "\nQuando você realiza a Ação de Ataque, você pode fazer uma Jogada de Ataque com uma arma ou um Ataque Desarmado.\n",
+        "id": "ee1e51db-89c5-287d-a09b-a5904d85748b",
+        "name": "Attack"
+      },
+      {
+        "description": "\nVocê pode fazer um Ataque Desarmado como uma Ação Bônus.\n",
+        "id": "058d056f-e476-5575-c686-16bcbd4ddb3d",
+        "name": "Bonus Unarmed Strike"
+      },
+      {
+        "description": "\nVocê pode usar seu modificador de Destreza em vez do modificador de Força para as jogadas de ataque e dano dos seus Ataques Desarmados e armas de Monge. Além disso, quando você usa a opção Agarrar ou Empurrar do seu Ataque Desarmado, você pode usar seu modificador de Destreza em vez do modificador de Força para determinar a CD do teste de resistência.\n",
+        "id": "c2876789-48e9-4829-d004-a12c948a5358",
+        "name": "Ataques Destros"
+      },
+      {
+        "description": "\nVocê pode rolar <span class=\"dice+\" data-roll-notation=\"[1d6]\">[1d6]</span> no lugar do dano normal do seu Ataque Desarmado ou de armas de Monge. Este dado muda conforme você ganha níveis de Monge, conforme mostrado na coluna Artes Marciais da tabela Características do Monge.\n",
+        "id": "a0dd299f-2d2b-4cf8-f527-308beabd5cea",
+        "name": "Dado de Artes Marciais"
+      },
+      {
+        "description": "\nSua prática de artes marciais lhe concede maestria de estilos de combate que utilizam seu Ataque Desarmado e armas de monge, que são as seguintes:\n\n* Armas Simples Corpo a Corpo\n\n* Armas Marciais Corpo a Corpo que possuem a propriedade Leve\n\nVocê recebe os seguintes benefícios enquanto estiver desarmado ou empunhando apenas armas de monge e não estiver usando armadura ou empunhando um Escudo.\n",
+        "id": "7304699e-99e2-4140-e62d-28e4604f8351",
+        "name": "Artes Marciais"
+      },
+      {
+        "description": "\nEnquanto você não estiver usando armadura, sua Classe de Armadura base é igual a 10 mais seus modificadores de Destreza e Constituição. Você pode usar um Escudo e ainda receber este benefício.\n",
+        "id": "160dc5df-f21a-f71c-893e-c374dc311b28",
+        "name": "Defesa Desarmado"
+      },
+      {
+        "description": "\noptional feature}\n\nYou train yourself to use a variety of weapons as monk weapons, not just simple melee weapons and shortswords. Whenever you finish a short or long rest, you can touch one weapon, focus your ki on it, and then count that weapon as a monk weapon until you use this feature again.\n\nThe chosen weapon must meet these criteria:\n\n* The weapon must be a simple or martial weapon.\n\n* You must be proficient with it.\n\n* It must lack the heavy and special properties.\n",
+        "id": "86cb1bc0-bb06-cf34-5dbf-0d82e93f4854",
+        "name": "Dedicated Weapon"
+      },
+      {
+        "description": "\nVocê pode gastar 1 Ponto de Foco para realizar dois Ataques Desarmados como uma Ação Bônus.\n",
+        "id": "3ffc4d47-bf60-d15c-8a31-225109cae43b",
+        "name": "Rajada de Golpes"
+      },
+      {
+        "description": "\nStarting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.\n\nYou can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.\n\nWhen you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.\n\nSome of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:\n",
+        "id": "10fc36f4-a06f-ad3a-365e-ab50c9456d89",
+        "name": "Ki"
+      },
+      {
+        "description": "\nVocê pode realizar a ação Desengajar como uma Ação Bônus. Alternativamente, você pode gastar 1 Ponto de Foco para realizar ambas as ações Desengajar e Esquivar como uma Ação Bônus.\n",
+        "id": "2c2e6fd9-0c88-42c7-addc-08be5ba4ab64",
+        "name": "Defesa Paciente"
+      },
+      {
+        "description": "\nVocê pode realizar a ação Disparada como uma Ação Bônus. Alternativamente, você pode gastar 1 Ponto de Foco para realizar ambas as ações Desengajar e Disparada como uma Ação Bônus, e sua distância de salto é dobrada pelo turno.\n",
+        "id": "b939ab3d-9104-7fb6-affa-357654248295",
+        "name": "Passo do Vento"
+      },
+      {
+        "description": "\nSeu deslocamento aumenta em 10 pés enquanto você não estiver vestindo armadura ou empunhando um Escudo. Esse bônus aumenta quando você atinge certos níveis de Monge, conforme mostrado na tabela Características do Monge.\n",
+        "id": "0393d60c-0a70-d1c6-a51b-3607269cd2d7",
+        "name": "Movimento Desarmado"
+      },
+      {
+        "description": "\nYour focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Focus Points. Your Monk level determines the number of points you have, as shown in the Focus Points column of the Monk Features table.\n\nYou can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.\n\nWhen you expend a Focus Point, it is unavailable until you finish a Short or Long Rest, at the end of which you regain all your expended points.\n\nSome features that use Focus Points require your target to make a saving throw. The save DC equals 8 plus your Wisdom modifier and Proficiency Bonus.\n",
+        "id": "702f2437-72a0-a725-7bd8-3b9c7ec9f5d0",
+        "name": "Monk's Focus"
+      },
+      {
+        "description": "\nQuando você rola Iniciativa, você pode recuperar todos os Pontos de Foco gastos. Quando fizer isso, role seu dado de Artes Marciais e recupere uma quantidade de Pontos de Vida igual ao seu nível de Monge mais o número rolado.\n\nDepois que usar esta característica, você não pode usá-la novamente até terminar um Descanso Longo.\n",
+        "id": "a35d00c7-a252-1dce-cbd2-367e1bc8a865",
+        "name": "Metabolismo Sobrenatural"
+      },
+      {
+        "description": "\nStarting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by <span class=\"dice+\" data-roll-notation=\"[1d10]\">[1d10]</span> + your Dexterity modifier + your monk level.\n\nIf you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack (range 20/60 feet) with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.\n",
+        "id": "527bea2a-ac08-5f8f-a8a4-24a72f8fdb2c",
+        "name": "Deflect Missiles"
+      },
+      {
+        "description": "\noptional feature}\n\nIf you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn.\n",
+        "id": "98d4afc9-7e5f-0f30-10d4-fa8110aa0d3f",
+        "name": "Ki-Fueled Attack"
+      },
+      {
+        "description": "\nWhen you reach 3rd level, you commit yourself to a monastic tradition, chosen from the list of available traditions. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.\n",
+        "id": "1250c25d-78a9-7785-6c68-d7f9958ac8aa",
+        "name": "Monastic Tradition"
+      },
+      {
+        "description": "\nQuando uma jogada de ataque atinge você e seu dano inclui dano de Concussão, Perfurante ou Cortante, você pode usar uma Reação para reduzir o dano total do ataque contra você. A redução é igual a <span class=\"dice+\" data-roll-notation=\"[1d10]\">[1d10]</span> mais seu modificador de Destreza e nível de Monge.\n\nSe você reduzir o dano a 0, você pode gastar 1 Ponto de Foco para redirecionar parte da força do ataque. Se fizer isso, escolha uma criatura que você possa ver dentro de 1,5 metro de você se o ataque foi um ataque corpo a corpo, ou uma criatura que você possa ver dentro de 18 metros de você que não esteja atrás de Cobertura Total se o ataque foi um ataque à distância. Essa criatura deve ser bem-sucedida em um teste de resistência de Destreza ou sofrer dano igual a duas rolagens do seu dado de Artes Marciais mais seu modificador de Destreza. O dano é do mesmo tipo causado pelo ataque.\n",
+        "id": "e664f347-d6a4-760b-b26d-b0c1cd2ac0e3",
+        "name": "Desviar Ataques"
+      },
+      {
+        "description": "\nVocê ganha uma subclasse de Monge à sua escolha. Uma subclasse é uma especialização que concede a você características em certos níveis de Monge. Pelo restante de sua carreira, você ganha cada uma das características de sua subclasse que sejam do seu nível de Monge ou inferior.\n",
+        "id": "ec6da932-bcb6-d0be-13c6-7ed979e8fc3c",
+        "name": "Subclasse de Monge"
+      },
+      {
+        "description": "\nO Caminho do Mestre Bêbado ensina seus alunos a se moverem com os gestos bruscos e imprevisíveis de um bêbado. Um mestre bêbado cambaleia, vacilante sobre pernas bambas, aparentando ser um combatente incompetente e frustrante de se enfrentar. Seus tropeços erráticos ocultam uma dança cuidadosamente executada de bloqueios, aparos, avanços, ataques e recuos.\n\nUm mestre bêbado frequentemente se diverte bancando o tolo para trazer alegria aos desesperançados ou demonstrar humildade aos arrogantes, mas quando o combate começa, ele pode se tornar um inimigo enlouquecedor e magistral.\n",
+        "id": "e1b638cc-31a4-8440-d74b-ccde498f3ffa",
+        "name": "Caminho do Mestre Bêbado"
+      },
+      {
+        "description": "\nAo ingressar no Colégio das Espadas no 3º nível, você ganha proficiência com armadura média e com a cimitarra.\n\nSe você tiver proficiência com uma arma simples ou marcial corpo a corpo, poderá usá-la como foco de conjuração para suas magias de bardo.\n",
+        "id": "39f82097-2845-ace0-623a-848f0e66fecd",
+        "name": "Bonus Proficiencies"
+      },
+      {
+        "description": "\nNo 3º nível, você aprende a se contorcer e girar rapidamente como parte de sua Rajada de Golpes. Sempre que usar a Rajada de Golpes, você ganha o benefício da ação Desengajar e seu deslocamento de caminhada aumenta em 10 pés até o final do turno atual.\n",
+        "id": "58047fdf-e4e7-4254-2291-8cf763fa31e9",
+        "name": "Técnica do Bêbado"
+      }
+    ],
+    "com.battle-system.forge/Z035": [
+      {
+        "description": "",
+        "id": null,
+        "name": "Ataque"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Esconder"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Desengajar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Disparar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Ajudar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Esquivar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Usar Objeto"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Martial Arts"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Unarmored Defense"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Bonus Unarmed Strike"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Dexterous Attacks"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Martial Arts Die"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Dedicated Weapon"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Flurry of Blows"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Ki"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Patient Defense"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Step of the Wind"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Unarmored Movement"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Monk's Focus"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Uncanny Metabolism"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Pontos de Foco"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Deflect Missiles"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Ki-Fueled Attack"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Monastic Tradition"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Deflect Attacks"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Monk Subclass"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Way of the Drunken Master"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Bonus Proficiencies"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Drunken Technique"
+      },
+      {
+        "description": "Ataque com Arma: [1d20+5] para acertar. Dano: [1d4+3] de dano.",
+        "id": "c5eb9298-ce5e-923e-e683-fd05af70b5be-attack",
+        "name": "Dagger"
+      }
+    ],
+    "com.battle-system.forge/Z036": [],
+    "com.battle-system.forge/Z037": [],
+    "com.battle-system.forge/Z038": [],
+    "com.battle-system.forge/Z039": [],
+    "com.battle-system.forge/Z040": [
+      {
+        "description": "Adventuring Gear",
+        "id": "fcdea7af-4ca6-f5c3-d636-ddeb6ebb5eaa",
+        "name": "Backpack",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "acf513b4-db20-35b4-25bd-dd6d607e811c",
+        "name": "Bedroll",
+        "quantity": 1
+      },
+      {
+        "description": "Weapon; Propriedades: [finesse light thrown]",
+        "id": "c5eb9298-ce5e-923e-e683-fd05af70b5be",
+        "name": "Dagger",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "43970cb0-58ba-ef51-6e83-4693562b5826",
+        "name": "Explorer's Pack",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "652c329c-2fa8-fcb9-a015-1aab41d42fd0",
+        "name": "Hempen Rope (50 feet)",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "4b1dae26-d7a7-b727-ba82-c9e4e5cbb043",
+        "name": "Mess Kit",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "3129adb2-ca0f-6a35-e243-303d9c9b373f",
+        "name": "Rations (1 day)",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "067b3ac3-e228-6895-d1bb-61ae694773f5",
+        "name": "Tinderbox",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "f0dde7c3-0819-9f39-8c2c-2d6d4c4b2713",
+        "name": "Torch",
+        "quantity": 1
+      },
+      {
+        "description": "Adventuring Gear",
+        "id": "8864798f-ab99-3d30-1302-e5169c3da5c7",
+        "name": "Waterskin",
+        "quantity": 1
+      }
+    ],
+    "com.battle-system.forge/Z041": "Str +1, Dex +5",
+    "com.battle-system.forge/Z042": "",
+    "com.battle-system.forge/fabd": true,
+    "com.battle-system.forge/in-party": true,
+    "com.battle-system.forge/name": "Durin",
+    "com.battle-system.forge/avatar": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-durin.png",
+    "com.battle-system.forge/token": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-durin.png"
+  },
+  "name": "Durin",
+  "updatedAt": 1784632063000,
+  "avatar": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-durin.png",
+  "token": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-durin.png"
+}

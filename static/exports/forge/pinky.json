@@ -1,0 +1,312 @@
+{
+  "author": "GM - Filipe",
+  "favorite": true,
+  "id": "8624ea03-5e5e-e63b-cec2-75c2bb187d24",
+  "metadata": {
+    "com.battle-system.forge/Z001": 3,
+    "com.battle-system.forge/Z002": "Small",
+    "com.battle-system.forge/Z003": "True Neutral",
+    "com.battle-system.forge/Z004": "Goblin",
+    "com.battle-system.forge/Z005": 21,
+    "com.battle-system.forge/Z006": 21,
+    "com.battle-system.forge/Z007": 15,
+    "com.battle-system.forge/Z008": 30,
+    "com.battle-system.forge/Z009": 0,
+    "com.battle-system.forge/Z010": 0,
+    "com.battle-system.forge/Z011": 0,
+    "com.battle-system.forge/Z012": 0,
+    "com.battle-system.forge/Z013": "Passive Perception 13, Darkvision 60 ft.",
+    "com.battle-system.forge/Z014": [
+      {
+        "description": "Perícia importada: Acrobatics +7",
+        "id": "3b108f39-5071-5052-af0a-1d3a4acae1a6",
+        "name": "Acrobatics +7"
+      },
+      {
+        "description": "Perícia importada: Animal-Handling +1",
+        "id": "7a710c19-c34a-0e59-b2be-77ab734c7acb",
+        "name": "Animal-Handling +1"
+      },
+      {
+        "description": "Perícia importada: Arcana +0",
+        "id": "d14bbd94-a597-9287-a5b4-59a0fbf48188",
+        "name": "Arcana +0"
+      },
+      {
+        "description": "Perícia importada: Athletics +0",
+        "id": "e4967b2f-6f9e-1806-be91-4a9bca2c719b",
+        "name": "Athletics +0"
+      },
+      {
+        "description": "Perícia importada: Deception +1",
+        "id": "fea952aa-9901-8c64-e8b9-d2f8a5ad2a1f",
+        "name": "Deception +1"
+      },
+      {
+        "description": "Perícia importada: History +0",
+        "id": "cd5c9b5c-0196-9a4f-fa32-330ff9586aae",
+        "name": "History +0"
+      },
+      {
+        "description": "Perícia importada: Insight +1",
+        "id": "b14b0f5b-facf-f943-1e98-bdac7179bd96",
+        "name": "Insight +1"
+      },
+      {
+        "description": "Perícia importada: Intimidation -1",
+        "id": "d654dcfb-f1e2-a472-bdde-21c6d1cfb5b0",
+        "name": "Intimidation -1"
+      },
+      {
+        "description": "Perícia importada: Investigation +2",
+        "id": "273d30e9-b395-1ba5-890c-b53d27be05d4",
+        "name": "Investigation +2"
+      },
+      {
+        "description": "Perícia importada: Medicine +1",
+        "id": "ccff4526-9ece-d2d3-9771-0b125abec33e",
+        "name": "Medicine +1"
+      },
+      {
+        "description": "Perícia importada: Nature +0",
+        "id": "28ee9f47-4fef-86bd-7716-bd0e35d38afc",
+        "name": "Nature +0"
+      },
+      {
+        "description": "Perícia importada: Perception +3",
+        "id": "1936da2e-f92e-439e-c8f9-4ea3738ede43",
+        "name": "Perception +3"
+      },
+      {
+        "description": "Perícia importada: Performance -1",
+        "id": "1a7e561c-d600-1a84-b9a9-b1e0cb5d0f40",
+        "name": "Performance -1"
+      },
+      {
+        "description": "Perícia importada: Persuasion -1",
+        "id": "3856a63a-3ce6-1956-cb53-0b6711883a28",
+        "name": "Persuasion -1"
+      },
+      {
+        "description": "Perícia importada: Religion +0",
+        "id": "f365d580-eb51-532d-565e-5b8c529b45bd",
+        "name": "Religion +0"
+      },
+      {
+        "description": "Perícia importada: Sleight-of-Hand +9",
+        "id": "69526e67-d8e6-72da-bef0-3718b9b74412",
+        "name": "Sleight-of-Hand +9"
+      },
+      {
+        "description": "Perícia importada: Stealth +9",
+        "id": "c7c92e3d-61ab-98ad-2a78-caf8cf212f81",
+        "name": "Stealth +9"
+      },
+      {
+        "description": "Perícia importada: Survival +1",
+        "id": "1bdc4b46-2532-6086-052e-7e2b0d82eba4",
+        "name": "Survival +1"
+      }
+    ],
+    "com.battle-system.forge/Z015": "Common",
+    "com.battle-system.forge/Z016": "",
+    "com.battle-system.forge/Z017": 10,
+    "com.battle-system.forge/Z018": 20,
+    "com.battle-system.forge/Z019": 12,
+    "com.battle-system.forge/Z020": 11,
+    "com.battle-system.forge/Z021": 13,
+    "com.battle-system.forge/Z022": 9,
+    "com.battle-system.forge/Z023": 0,
+    "com.battle-system.forge/Z024": 7,
+    "com.battle-system.forge/Z025": 1,
+    "com.battle-system.forge/Z026": 2,
+    "com.battle-system.forge/Z027": 1,
+    "com.battle-system.forge/Z028": -1,
+    "com.battle-system.forge/Z029": "",
+    "com.battle-system.forge/Z030": "",
+    "com.battle-system.forge/Z031": "",
+    "com.battle-system.forge/Z032": "",
+    "com.battle-system.forge/Z033": "",
+    "com.battle-system.forge/Z034": [
+      {
+        "description": "\nVocê recebe os seguintes benefícios.\n\n\n### Proficiência em Iniciativa\n\nQuando você rola Iniciativa, pode adicionar seu Bônus de Proficiência à jogada.\n\n\n### Troca de Iniciativa\n\nImediatamente após rolar Iniciativa, você pode trocar sua Iniciativa com a Iniciativa de um aliado voluntário no mesmo combate. Você não pode fazer essa troca se você ou o aliado estiver com a condição Incapacitado.\n",
+        "id": "afe445aa-e686-97fc-5892-cd66acfda3df",
+        "name": "Alert"
+      },
+      {
+        "description": "\nQuando você realiza a Ação de Ataque, você pode fazer uma Jogada de Ataque com uma arma ou um Ataque Desarmado.\n",
+        "id": "ee1e51db-89c5-287d-a09b-a5904d85748b",
+        "name": "Attack"
+      },
+      {
+        "description": "\nA partir do 2º nível, seu raciocínio rápido e agilidade permitem que você se mova e aja rapidamente. Você pode realizar uma Ação Bônus em cada um de seus turnos de combate. Esta ação só pode ser usada para realizar a ação Disparada, Desengajar ou Esconder-se.\n",
+        "id": "63c0dae6-4c8b-869f-2de8-7dd1dc0e41d9",
+        "name": "Ação Astuta"
+      },
+      {
+        "description": "\nNo 3º nível, você escolhe um arquétipo que você emula no exercício das suas habilidades de ladino de uma lista de arquétipos disponíveis. Sua escolha de arquétipo concede a você características no 3º nível e novamente no 9º, 13º e 17º nível.\n",
+        "id": "994bdd01-ff1a-f1f7-c5ac-275ea83c0e39",
+        "name": "Arquétipo de Ladino"
+      },
+      {
+        "description": "\nComo uma Ação Bônus, você ganha Vantagem na sua próxima jogada de ataque no turno atual. Você pode usar esta habilidade apenas se não tiver se movido durante este turno, e após usá-la, seu Deslocamento é 0 até o final do turno atual.\n",
+        "id": "f4c7a42d-e69d-2834-fad9-f07ae6c2af05",
+        "name": "Mira Firme"
+      },
+      {
+        "description": "\nVocê ganha uma subclasse de Ladino à sua escolha. Uma subclasse é uma especialização que concede características em determinados níveis de Ladino. Pelo restante de sua carreira, você ganha cada uma das características da sua subclasse que sejam do seu nível de Ladino ou inferior.\n",
+        "id": "c4d2c7c9-9def-dcb9-14a9-027ba03fc5e6",
+        "name": "Subclasse de Ladino"
+      },
+      {
+        "description": "\nVocê concentra seu treinamento na arte da lâmina, confiando igualmente em velocidade, elegância e charme. Enquanto alguns guerreiros são brutamontes vestidos em armaduras pesadas, seu método de luta quase parece uma atuação. Duelistas e piratas tipicamente pertencem a este arquétipo.\n\nUm Espadachim se destaca no combate individual e pode lutar com duas armas enquanto se afasta rapidamente de um oponente com segurança.\n",
+        "id": "af8e7fcd-3b42-dd7f-9703-72eac49cf368",
+        "name": "Espadachim"
+      },
+      {
+        "description": "\nAo escolher este arquétipo no 3º nível, você aprende a desferir um golpe e então escapar sem sofrer represálias. Durante o seu turno, se você fizer um ataque corpo a corpo contra uma criatura, essa criatura não poderá realizar ataques de oportunidade contra você pelo restante do seu turno.\n",
+        "id": "96203063-2346-98da-9dea-c5534522fcda",
+        "name": "Pés Ágeis"
+      },
+      {
+        "description": "\nA partir do 3º nível, sua confiança o impulsiona para a batalha. Você pode conceder a si mesmo um bônus em suas jogadas de iniciativa igual ao seu modificador de Carisma.\n\nVocê também ganha uma forma adicional de usar seu Ataque Furtivo; você não precisa de vantagem na jogada de ataque para usar o Ataque Furtivo contra uma criatura se estiver a até 1,5 metro dela, nenhuma outra criatura estiver a até 1,5 metro de você, e você não tiver desvantagem na jogada de ataque. Todas as outras regras para o Ataque Furtivo ainda se aplicam a você.\n",
+        "id": "5a52b335-0049-61b9-174f-8080613c5d0c",
+        "name": "Audácia Atrevida"
+      }
+    ],
+    "com.battle-system.forge/Z035": [
+      {
+        "description": "",
+        "id": null,
+        "name": "Ataque"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Esconder"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Desengajar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Disparar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Ajudar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Esquivar"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Usar Objeto"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Cunning Action"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Roguish Archetype"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Steady Aim"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Rogue Subclass"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Swashbuckler"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Fancy Footwork"
+      },
+      {
+        "description": "",
+        "id": null,
+        "name": "Rakish Audacity"
+      },
+      {
+        "description": "Ataque com Arma: [1d20+2] para acertar. Dano: [1d6] de dano.",
+        "id": "ee1dea9a-c9e5-d362-3c10-d7407abaaa76-attack",
+        "name": "Curto"
+      },
+      {
+        "description": "Ataque com Arma: [1d20+7] para acertar. Dano: [1d6+5] de dano.",
+        "id": "7622a9f5-4b87-000c-4119-6e321c39194b-attack",
+        "name": "Espada curta."
+      },
+      {
+        "description": "Ataque com Arma: [1d20+7] para acertar. Dano: [1d4+5] de dano.",
+        "id": "c5eb9298-ce5e-923e-e683-fd05af70b5be-attack",
+        "name": "Dagger"
+      }
+    ],
+    "com.battle-system.forge/Z036": [],
+    "com.battle-system.forge/Z037": [],
+    "com.battle-system.forge/Z038": [],
+    "com.battle-system.forge/Z039": [],
+    "com.battle-system.forge/Z040": [
+      {
+        "description": "Adventuring Gear",
+        "id": "d7a93ccf-5a70-56d4-b10e-e959d9e19d34",
+        "name": "Burglar's Pack",
+        "quantity": 1
+      },
+      {
+        "description": "Weapon; Propriedades: [ammunition two-handed]",
+        "id": "ee1dea9a-c9e5-d362-3c10-d7407abaaa76",
+        "name": "Curto",
+        "quantity": 1
+      },
+      {
+        "description": "Weapon; Propriedades: [finesse light]",
+        "id": "7622a9f5-4b87-000c-4119-6e321c39194b",
+        "name": "Espada curta.",
+        "quantity": 1
+      },
+      {
+        "description": "Weapon; Propriedades: [finesse light thrown]",
+        "id": "c5eb9298-ce5e-923e-e683-fd05af70b5be",
+        "name": "Dagger",
+        "quantity": 1
+      },
+      {
+        "description": "Armor",
+        "id": "1c232424-66c9-bf44-4fc3-bc2f106e844d",
+        "name": "Armadura de couro",
+        "quantity": 1
+      }
+    ],
+    "com.battle-system.forge/Z041": "Dex +7, Int +2",
+    "com.battle-system.forge/Z042": "",
+    "com.battle-system.forge/fabd": true,
+    "com.battle-system.forge/in-party": true,
+    "com.battle-system.forge/name": "Pinky",
+    "com.battle-system.forge/avatar": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-pinky.png",
+    "com.battle-system.forge/token": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-pinky.png"
+  },
+  "name": "Pinky",
+  "updatedAt": 1783623600000,
+  "avatar": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-pinky.png",
+  "token": "https://filipeaguiar.github.io/gmvault/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-pinky.png"
+}

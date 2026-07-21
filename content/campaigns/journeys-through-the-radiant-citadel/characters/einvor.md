@@ -86,7 +86,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/einvor.png'
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-einvor.png'
   class: Barbarian
   class_level: 3
   class_spells: []

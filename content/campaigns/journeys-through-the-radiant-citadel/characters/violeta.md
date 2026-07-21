@@ -101,7 +101,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/violeta.png'
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-violeta.png'
   class: Sorcerer
   class_level: 3
   class_spells: []
