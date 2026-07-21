@@ -109,6 +109,11 @@ char_info:
   - level: 3
     name: Sorcerer
     subclass: Draconic Bloodline
+  consumables:
+  - current: 3
+    max: 3
+    name: Pontos de Feitiçaria
+    type: sorcery
   currencies:
     cp: 0
     ep: 0

@@ -94,6 +94,11 @@ char_info:
   - level: 3
     name: Barbarian
     subclass: Path of the Berserker
+  consumables:
+  - current: 3
+    max: 3
+    name: Fúria
+    type: rage
   currencies:
     cp: 0
     ep: 0

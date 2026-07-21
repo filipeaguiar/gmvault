@@ -150,6 +150,11 @@ char_info:
   - level: 3
     name: Monk
     subclass: Way of the Drunken Master
+  consumables:
+  - current: 3
+    max: 3
+    name: Pontos de Foco
+    type: focus
   currencies:
     cp: 0
     ep: 0

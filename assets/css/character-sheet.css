@@ -1638,3 +1638,124 @@ html.vtt-iframe .char-tab-content {
     font-size: 1.1em !important;
   }
 }
+
+/* Class Consumables Styling */
+.class-consumables-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--bg-card, #2b2b2b);
+  border: 1px solid var(--border-color, #444);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.class-consumables-title {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: var(--text-color-muted, #aaa);
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.consumable-groups {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.consumable-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 4px solid var(--border-color, #444);
+  border-radius: 6px;
+  padding: 10px 14px;
+  min-width: 180px;
+  flex: 1 1 auto;
+}
+
+.consumable-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.consumable-name {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: var(--text-color, #fff);
+}
+
+.consumable-values {
+  font-size: 0.9em;
+  color: var(--text-color-muted, #ccc);
+}
+
+.consumable-values strong {
+  font-size: 1.1em;
+  color: var(--text-color, #fff);
+}
+
+.consumable-slots {
+  display: flex;
+  gap: 5px;
+  flex-wrap: nowrap;
+}
+
+.consumable-slot-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-color-muted, #777);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.consumable-slot-checkbox:hover {
+  transform: scale(1.1);
+}
+
+/* Color overrides by class/type */
+.consumable-block.badge-rage {
+  border-left-color: #d9534f; /* Barbarian Red */
+}
+.consumable-block.badge-rage .consumable-slot-checkbox {
+  border-color: #d9534f;
+}
+.consumable-block.badge-rage .consumable-slot-checkbox:checked {
+  background-color: #d9534f;
+  box-shadow: 0 0 8px rgba(217, 83, 79, 0.6);
+}
+
+.consumable-block.badge-focus {
+  border-left-color: #3498db; /* Monk Blue */
+}
+.consumable-block.badge-focus .consumable-slot-checkbox {
+  border-color: #3498db;
+}
+.consumable-block.badge-focus .consumable-slot-checkbox:checked {
+  background-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+}
+
+.consumable-block.badge-sorcery {
+  border-left-color: #9b59b6; /* Sorcerer Purple */
+}
+.consumable-block.badge-sorcery .consumable-slot-checkbox {
+  border-color: #9b59b6;
+}
+.consumable-block.badge-sorcery .consumable-slot-checkbox:checked {
+  background-color: #9b59b6;
+  box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
+}
