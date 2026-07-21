@@ -308,11 +308,36 @@
     <h3>Ações e Recursos</h3>
 
     {{/* Contadores de Recursos Consumíveis de Classe */}}
+    {{ $consumablesScratch := newScratch }}
+    {{ $consumablesScratch.Set "items" (slice) }}
+    {{ $consumablesScratch.Set "names" (slice) }}
     {{ with .Params.char_info.consumables }}
+      {{ range . }}
+        {{ $current := .current | int }}
+        {{ $max := .max | int }}
+        {{ $name := .name }}
+        {{ $consumablesScratch.Add "items" (slice (dict "name" $name "current" $current "max" $max "type" (.type | default "generic") "reset" (.reset | default ""))) }}
+        {{ $consumablesScratch.Add "names" (slice (lower $name)) }}
+      {{ end }}
+    {{ end }}
+    {{ with .Params.char_info.actions }}
+      {{ range . }}
+        {{ $name := .name | default "" }}
+        {{ $normalizedName := lower $name }}
+        {{ $source := lower (.source | default "") }}
+        {{ $maxUses := .max_uses | int }}
+        {{ if and (gt $maxUses 0) (eq $source "class") (not (in ($consumablesScratch.Get "names") $normalizedName)) }}
+          {{ $consumablesScratch.Add "items" (slice (dict "name" $name "current" $maxUses "max" $maxUses "type" "class" "reset" (.reset | default ""))) }}
+          {{ $consumablesScratch.Add "names" (slice $normalizedName) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $consumableItems := $consumablesScratch.Get "items" }}
+    {{ if gt (len $consumableItems) 0 }}
     <div class="class-consumables-tracker">
       <div class="class-consumables-title"><i class="ra ra-gear-hammer"></i> Recursos de Classe</div>
       <div class="consumable-groups">
-        {{ range . }}
+        {{ range $consumableItems }}
         {{ $current := .current | int }}
         {{ $max := .max | int }}
         <div class="consumable-block badge-{{ .type | default "generic" }}">
@@ -325,6 +350,7 @@
               <input type="checkbox" class="consumable-slot-checkbox" aria-label="Slot de recurso consumido" {{ if le . (sub $max $current) }}checked{{ end }}>
             {{ end }}
           </div>
+          {{ if .reset }}<div class="action-uses-reset">Recarrega: {{ .reset }}</div>{{ end }}
         </div>
         {{ end }}
       </div>
