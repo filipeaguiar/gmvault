@@ -5,16 +5,21 @@
 {{- $adventureItems := slice -}}
 {{- $adventuresPath := printf "/%sadventures" $campaignDir -}}
 {{- $adventuresSection := site.GetPage $adventuresPath -}}
+{{- $activeAdventures := site.Data.gmvault.active_adventures | default slice -}}
 {{- if $adventuresSection -}}
   {{- range (sort $adventuresSection.Sections "Weight") -}}
-    {{- if eq (partial "helpers/kind.html" .) "adventure" -}}
+    {{- $slug := .File.TranslationBaseName -}}
+    {{- if and (eq (partial "helpers/kind.html" .) "adventure") (in $activeAdventures $slug) -}}
       {{- $adventureItems = $adventureItems | append (partial "helpers/gmvault_adventure_category.html" .) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- $adventuresCategory := dict 
+  "type" "category"
   "name" "Aventuras" 
   "items" $adventureItems 
+  "collapsed" true
+  "open" false
   "id" (printf "cat_%s" (substr ( (printf "%s-adventures-root" $campaignPage.Permalink) | md5) 0 8)) 
 -}}
 {{- $categories = $categories | append $adventuresCategory -}}
@@ -27,8 +32,11 @@
   {{- $campaignItems = $campaignItems | append (partial "helpers/gmvault_page_item.html" $journalPage) -}}
 {{- end -}}
 {{- $campaignCategory := dict 
+  "type" "category"
   "name" "Campanha" 
   "items" $campaignItems 
+  "collapsed" true
+  "open" false
   "id" (printf "cat_%s" (substr ( (printf "%s-campaign-root" $campaignPage.Permalink) | md5) 0 8)) 
 -}}
 {{- $categories = $categories | append $campaignCategory -}}
@@ -70,8 +78,11 @@
 {{- end -}}
 {{- if gt (len $handoutItems) 0 -}}
   {{- $handoutsCategory := dict 
+    "type" "category"
     "name" "Handouts" 
     "items" $handoutItems 
+    "collapsed" true
+    "open" false
     "id" (printf "cat_%s" (substr ( (printf "%s-handouts-root" $campaignPage.Permalink) | md5) 0 8)) 
   -}}
   {{- $categories = $categories | append $handoutsCategory -}}

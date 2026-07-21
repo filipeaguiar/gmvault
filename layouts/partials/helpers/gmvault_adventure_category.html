@@ -51,6 +51,8 @@
     "type" "category"
     "name" "Handouts"
     "items" $handoutItems
+    "collapsed" true
+    "open" false
     "id" (printf "cat_%s" (substr ( (printf "%s-handouts" $adventure.Permalink) | md5) 0 8))
   -}}
   {{- $adventureItems = $adventureItems | append $handoutsCategory -}}
@@ -70,6 +72,8 @@
     "type" "category"
     "name" (printf "NPCs de %s" $adventureTitle)
     "items" $adventureNpcItems
+    "collapsed" true
+    "open" false
     "id" (printf "cat_%s" (substr ( (printf "%s-npcs" $adventure.Permalink) | md5) 0 8))
   -}}
   {{- $adventureItems = $adventureItems | append $npcsCategory -}}
@@ -79,6 +83,8 @@
   "type" "category"
   "name" $adventureTitle
   "items" $adventureItems
+  "collapsed" true
+  "open" false
   "id" (printf "cat_%s" (substr ($adventure.Permalink | md5) 0 8))
 -}}
 {{- return $adventureCategory -}}

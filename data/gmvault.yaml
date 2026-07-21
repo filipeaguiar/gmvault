@@ -1,0 +1,20 @@
+# Configurações do GM-Vault & Combat Tracker
+
+# Lista de slugs das aventuras ativas a serem exportadas para o GM-Vault
+active_adventures:
+  - "written-in-blood"
+
+# Lista de monstros a serem carregados automaticamente no Combat Tracker
+combat_monsters:
+  - name: "Farmer"
+    ref: "/compendium/monsters/cultist/"
+    qty: 1
+  - name: "Coiote"
+    ref: "/compendium/monsters/dire-wolf/"
+    qty: 1
+  - name: "Mão Rastejante"
+    ref: "/compendium/monsters/crawling-claw/"
+    qty: 1
+  - name: "Abalador de Almas"
+    ref: "/compendium/monsters/soul-shaker/"
+    qty: 1

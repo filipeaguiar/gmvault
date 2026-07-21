@@ -67,6 +67,13 @@
     const emptyState = document.getElementById("combat-empty-state");
     const monstersGrid = document.getElementById("combat-monsters-grid");
 
+    // Monstros solicitados via arquivo data/gmvault.yaml
+    const requestedMonsters = [
+      {{- range site.Data.gmvault.combat_monsters }}
+      { name: "{{ .name }}", ref: "{{ .ref }}", qty: {{ .qty | default 1 }} },
+      {{- end }}
+    ];
+
     // Carrega o JSON de statblocks de forma assíncrona
     fetch("/exports/forge/statblocks.json")
       .then(res => res.json())
@@ -74,12 +81,32 @@
         statblocksDatabase = data;
         populateDatalist();
         
-        // Carrega estado anterior se houver
-        loadStateFromStorage();
+        // Inicializa o combate a partir dos monstros do arquivo
+        loadCombatFromConfig();
       })
       .catch(err => {
         console.error("Erro ao carregar banco de dados de monstros:", err);
       });
+
+    function loadCombatFromConfig() {
+      activeCombatants = [];
+      let notesText = "";
+      
+      requestedMonsters.forEach(m => {
+        notesText += `${m.qty} ${m.name}\n`;
+        const monsterData = findMonsterByName(m.name);
+        if (monsterData) {
+          for (let i = 0; i < m.qty; i++) {
+            addCombatant(monsterData);
+          }
+        } else {
+          console.warn("Monstro de configuração não encontrado:", m.name);
+        }
+      });
+      
+      encounterNotes.value = notesText.trim();
+      renderCombatants();
+    }
 
     function populateDatalist() {
       monstersDatalist.innerHTML = "";
