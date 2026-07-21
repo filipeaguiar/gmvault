@@ -158,7 +158,18 @@
 {{- $skillsRaw := index $source "skills" -}}
 {{- if reflect.IsMap $skillsRaw -}}
   {{- range $name, $val := $skillsRaw -}}
-    {{- $skillName := printf "%s %v" (title $name) $val -}}
+    {{- $bonusVal := "" -}}
+    {{- if reflect.IsMap $val -}}
+      {{- $bonus := index $val "bonus" -}}
+      {{- if ge $bonus 0 -}}
+        {{- $bonusVal = printf "+%v" $bonus -}}
+      {{- else -}}
+        {{- $bonusVal = printf "%v" $bonus -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $bonusVal = printf "%v" $val -}}
+    {{- end -}}
+    {{- $skillName := printf "%s %s" (title $name) $bonusVal -}}
     {{- $skillHash := md5 (printf "%s:%s" $page.Permalink $skillName) -}}
     {{- $skillID := printf "%s-%s-%s-%s-%s" (substr $skillHash 0 8) (substr $skillHash 8 4) (substr $skillHash 12 4) (substr $skillHash 16 4) (substr $skillHash 20 12) -}}
     {{- $skills = $skills | append (dict "id" $skillID "name" $skillName "description" (printf "Perícia importada: %s" $skillName)) -}}
@@ -578,65 +589,65 @@
 
 {{- $idHash := md5 $page.Permalink -}}
 {{- $id := printf "%s-%s-%s-%s-%s" (substr $idHash 0 8) (substr $idHash 8 4) (substr $idHash 12 4) (substr $idHash 16 4) (substr $idHash 20 12) -}}
-{{- $inParty := $isCharacter -}}
+{{- $inParty := false -}}
 {{- $timestamp := 0 -}}
 {{- if gt $page.Date.Unix 0 -}}
   {{- $timestamp = int (mul $page.Date.Unix 1000) -}}
 {{- end -}}
 
 {{- $metadata := dict
-  "com.battle-system.forge/in-party" $inParty
+  "com.battle-system.forge/in-party" false
   "com.battle-system.forge/name" $name
   "com.battle-system.forge/fabd" true
-  "com.battle-system.forge/Z001" $level
-  "com.battle-system.forge/Z002" $size
-  "com.battle-system.forge/Z003" $alignment
-  "com.battle-system.forge/Z004" $species
+  "com.battle-system.forge/Z001" ""
+  "com.battle-system.forge/Z002" ""
+  "com.battle-system.forge/Z003" ""
+  "com.battle-system.forge/Z004" ""
   "com.battle-system.forge/Z005" $hp
   "com.battle-system.forge/Z006" $hp
   "com.battle-system.forge/Z007" $ac
-  "com.battle-system.forge/Z008" $walkSpeed
-  "com.battle-system.forge/Z009" $swimSpeed
-  "com.battle-system.forge/Z010" $burrowSpeed
-  "com.battle-system.forge/Z011" $climbSpeed
-  "com.battle-system.forge/Z012" $flySpeed
-  "com.battle-system.forge/Z013" $senses
-  "com.battle-system.forge/Z014" $skills
-  "com.battle-system.forge/Z015" $languages
-  "com.battle-system.forge/Z016" $challenge
+  "com.battle-system.forge/Z008" ""
+  "com.battle-system.forge/Z009" ""
+  "com.battle-system.forge/Z010" ""
+  "com.battle-system.forge/Z011" ""
+  "com.battle-system.forge/Z012" ""
+  "com.battle-system.forge/Z013" ""
+  "com.battle-system.forge/Z014" (slice)
+  "com.battle-system.forge/Z015" ""
+  "com.battle-system.forge/Z016" ""
   "com.battle-system.forge/Z017" (default "" (index $stats "str"))
   "com.battle-system.forge/Z018" (default "" (index $stats "dex"))
   "com.battle-system.forge/Z019" (default "" (index $stats "con"))
   "com.battle-system.forge/Z020" (default "" (index $stats "int"))
   "com.battle-system.forge/Z021" (default "" (index $stats "wis"))
   "com.battle-system.forge/Z022" (default "" (index $stats "cha"))
-  "com.battle-system.forge/Z023" $strSave
-  "com.battle-system.forge/Z024" $dexSave
-  "com.battle-system.forge/Z025" $conSave
-  "com.battle-system.forge/Z026" $intSave
-  "com.battle-system.forge/Z027" $wisSave
-  "com.battle-system.forge/Z028" $chaSave
-  "com.battle-system.forge/Z029" $proficiency
-  "com.battle-system.forge/Z030" $vulnerable
-  "com.battle-system.forge/Z031" $resistance
-  "com.battle-system.forge/Z032" $immunity
-  "com.battle-system.forge/Z033" $statusImmunity
+  "com.battle-system.forge/Z023" ""
+  "com.battle-system.forge/Z024" ""
+  "com.battle-system.forge/Z025" ""
+  "com.battle-system.forge/Z026" ""
+  "com.battle-system.forge/Z027" ""
+  "com.battle-system.forge/Z028" ""
+  "com.battle-system.forge/Z029" ""
+  "com.battle-system.forge/Z030" ""
+  "com.battle-system.forge/Z031" ""
+  "com.battle-system.forge/Z032" ""
+  "com.battle-system.forge/Z033" ""
   "com.battle-system.forge/Z034" $abilities
   "com.battle-system.forge/Z035" $actions
   "com.battle-system.forge/Z036" $bonusActions
   "com.battle-system.forge/Z037" $reactions
   "com.battle-system.forge/Z038" $legendaryActions
-  "com.battle-system.forge/Z039" $spellList
-  "com.battle-system.forge/Z040" $inventory
-  "com.battle-system.forge/Z041" $savesText
-  "com.battle-system.forge/Z042" $temporaryHP
+  "com.battle-system.forge/Z039" (slice)
+  "com.battle-system.forge/Z040" (slice)
+  "com.battle-system.forge/Z041" ""
+  "com.battle-system.forge/Z042" ""
 -}}
 {{- $record := dict
   "id" $id
   "name" $name
   "author" (or site.Params.forge.author "GM - Filipe")
   "metadata" $metadata
-  "favorite" $inParty
+  "favorite" false
   "updatedAt" $timestamp
 -}}
 {{- return $record -}}
