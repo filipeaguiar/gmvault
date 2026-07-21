@@ -9,7 +9,6 @@
 
   <div class="combat-grid" style="display: grid; grid-template-columns: 300px 1fr; gap: 25px; align-items: start;">
     
-    <!-- Painel de Controle -->
     <aside class="combat-control-panel" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 20px;">
       
       <div>
@@ -34,17 +33,14 @@
 
     </aside>
 
-    <!-- Painel de Exibição de Monstros -->
     <section class="combat-display-panel" style="display: flex; flex-direction: column; gap: 20px;">
       
-      <!-- Estado Vazio -->
       <div id="combat-empty-state" style="background: var(--card-bg); border: 2px dashed var(--border-color); border-radius: 12px; padding: 60px 40px; text-align: center; color: var(--text-muted);">
         <i class="ra ra-monster-skull" style="font-size: 4rem; color: var(--primary-color); opacity: 0.6; margin-bottom: 20px; display: block;"></i>
         <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-top: 0; color: var(--text-color);">Nenhum Combate Ativo</h3>
         <p style="max-width: 450px; margin: 10px auto 0 auto; font-size: 0.95em;">Digite a lista de monstros participantes na nota lateral e clique em <strong>Iniciar Combate</strong> para começar a rolar dados e monitorar os HPs.</p>
       </div>
 
-      <!-- Container Grid dos Monstros -->
       <div id="combat-monsters-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px; hidden: true;">
       </div>
 
@@ -67,21 +63,17 @@
     const emptyState = document.getElementById("combat-empty-state");
     const monstersGrid = document.getElementById("combat-monsters-grid");
 
-    // Monstros solicitados via arquivo data/gmvault.yaml
     const requestedMonsters = [
       {{- range site.Data.gmvault.combat_monsters }}
       { name: "{{ .name }}", ref: "{{ .ref }}", qty: {{ .qty | default 1 }} },
       {{- end }}
     ];
 
-    // Carrega o JSON de statblocks de forma assíncrona
     fetch("{{ "exports/forge/statblocks.json" | relURL }}")
       .then(res => res.json())
       .then(data => {
         statblocksDatabase = data;
         populateDatalist();
-        
-        // Inicializa o combate a partir dos monstros do arquivo
         loadCombatFromConfig();
       })
       .catch(err => {
@@ -110,7 +102,6 @@
 
     function populateDatalist() {
       monstersDatalist.innerHTML = "";
-      // Filtra chaves do Forge correspondentes a monstros
       statblocksDatabase.forEach(item => {
         const name = item.name || item["com.battle-system.forge/Z001"];
         if (name) {
@@ -121,7 +112,6 @@
       });
     }
 
-    // Ação do botão de Adicionar Manual
     btnAddManual.addEventListener("click", () => {
       const name = monsterSearch.value.trim();
       if (!name) return;
@@ -137,7 +127,6 @@
       }
     });
 
-    // Iniciar combate a partir das notas
     btnLoadCombat.addEventListener("click", () => {
       const text = encounterNotes.value.trim();
       if (!text) {
@@ -152,7 +141,6 @@
         const cleaned = line.trim();
         if (!cleaned) return;
         
-        // Detecta quantidade (ex: "2 Goblin" ou "Goblin")
         const match = cleaned.match(/^(\d+)\s+(.+)$/);
         let qty = 1;
         let name = cleaned;
@@ -176,7 +164,6 @@
       renderCombatants();
     });
 
-    // Limpar painel
     btnClearCombat.addEventListener("click", () => {
       if (confirm("Deseja realmente limpar todos os combatentes da tela?")) {
         activeCombatants = [];
@@ -199,8 +186,6 @@
       const name = monsterData.name || monsterData["com.battle-system.forge/Z001"];
       const hpMax = parseInt(monsterData["com.battle-system.forge/Z005"] || 10, 10);
       const ac = parseInt(monsterData["com.battle-system.forge/Z006"] || 10, 10);
-      
-      // Gera sufixo numérico correspondente se já houver outros desse mesmo tipo
       const count = activeCombatants.filter(c => c.originalName === name).length + 1;
       
       const combatant = {
@@ -240,7 +225,6 @@
         card.style.gap = "12px";
         card.style.position = "relative";
         
-        // Cabeçalho da Ficha do Monstro
         const header = document.createElement("div");
         header.style.display = "flex";
         header.style.justifyContent = "space-between";
@@ -271,7 +255,6 @@
         header.appendChild(deleteBtn);
         card.appendChild(header);
 
-        // Grid de Controle de HP e CA
         const statsRow = document.createElement("div");
         statsRow.style.display = "flex";
         statsRow.style.justifyContent = "space-between";
@@ -351,7 +334,6 @@
         statsRow.appendChild(hpWrapper);
         card.appendChild(statsRow);
 
-        // Grade de Atributos
         const attrs = c.data["com.battle-system.forge/Z009"] || {};
         const attrKeys = ["str", "dex", "con", "int", "wis", "cha"];
         const attrGrid = document.createElement("div");
@@ -380,7 +362,6 @@
         });
         card.appendChild(attrGrid);
 
-        // Resistências, Perícias e Sentidos
         const details = document.createElement("div");
         details.className = "stat-details";
         details.style.fontSize = "0.85em";
@@ -402,7 +383,6 @@
         
         card.appendChild(details);
 
-        // Ações e Habilidades do Monstro
         const actionsDiv = document.createElement("div");
         actionsDiv.className = "content-body";
         actionsDiv.style.fontSize = "0.9em";
@@ -412,7 +392,6 @@
         actionsDiv.style.maxHeight = "200px";
         actionsDiv.style.overflowY = "auto";
 
-        // Habilidades passivas
         const traits = c.data["com.battle-system.forge/Z034"] || [];
         if (traits.length > 0) {
           const section = document.createElement("div");
@@ -423,7 +402,6 @@
           actionsDiv.appendChild(section);
         }
 
-        // Ações Principais
         const actions = c.data["com.battle-system.forge/Z035"] || [];
         if (actions.length > 0) {
           const section = document.createElement("div");
@@ -435,7 +413,6 @@
           actionsDiv.appendChild(section);
         }
 
-        // Ações Lendárias
         const legendary = c.data["com.battle-system.forge/Z038"] || [];
         if (legendary.length > 0) {
           const section = document.createElement("div");
@@ -451,7 +428,6 @@
         monstersGrid.appendChild(card);
       });
 
-      // Dispara o parser do auto-rolador no conteúdo dinâmico recém-criado
       if (window.dispatchEvent) {
         window.dispatchEvent(new Event("DOMContentLoaded"));
       }
@@ -472,27 +448,12 @@
       }
     }
 
-    // Persistência local no LocalStorage
     function saveStateToStorage() {
       try {
         localStorage.setItem("gmvault.combat-tracker", JSON.stringify(activeCombatants));
       } catch (e) {
-        // Opcional
       }
     }
-
-    function loadStateFromStorage() {
-      try {
-        const saved = localStorage.getItem("gmvault.combat-tracker");
-        if (saved) {
-          activeCombatants = JSON.parse(saved);
-          renderCombatants();
-        }
-      } catch (e) {
-        // Opcional
-      }
-    }
-
   });
 </script>
 {{ end }}
