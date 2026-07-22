@@ -40,15 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateCollectionState(collection) {
         if (!collection) return;
-        collection.querySelectorAll(".spell-level-group").forEach((group) => {
-            const cards = Array.from(group.querySelectorAll(".spell-card"));
-            group.classList.toggle("is-empty", cards.length === 0);
-            group.hidden = cards.length === 0 || cards.every((card) => card.hidden);
-        });
         const section = collection.closest(".spell-collection");
         const emptyMessage = section && section.querySelector(".spell-empty-message");
+        const visibleCards = Array.from(collection.querySelectorAll(".spell-card")).filter((card) => !card.hidden);
+        collection.hidden = visibleCards.length === 0;
         if (emptyMessage) {
-            emptyMessage.classList.toggle("is-hidden", collection.querySelectorAll(".spell-card").length > 0);
+            emptyMessage.classList.toggle("is-hidden", visibleCards.length > 0);
         }
     }
 
@@ -66,11 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function destinationFor(card, ready) {
-        const collection = ready ? readySpellsList : managementSpellsList;
-        if (!collection) return null;
-        const level = card.getAttribute("data-spell-level") || "";
-        return Array.from(collection.querySelectorAll("[data-spell-level-list]"))
-            .find((list) => list.getAttribute("data-spell-level-list") === level) || null;
+        return ready ? readySpellsList : managementSpellsList;
     }
 
     function moveSpellCard(card, ready) {

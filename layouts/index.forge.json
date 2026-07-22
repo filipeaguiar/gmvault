@@ -11,16 +11,36 @@
   {{- end -}}
 {{- end -}}
 
+{{- $characters := slice -}}
 {{- $monsters := slice -}}
 {{- range site.Pages -}}
   {{- $kind := partial "helpers/kind.html" . -}}
-  {{- if eq $kind "monster" -}}
+  {{- if eq $kind "character" -}}
+    {{- $vis := .Params.visibility | default "gm" -}}
+    {{- if or (eq $vis "players") (eq $vis "public") -}}
+      {{- $characters = $characters | append . -}}
+    {{- end -}}
+  {{- else if eq $kind "monster" -}}
     {{- $monsters = $monsters | append . -}}
   {{- end -}}
 {{- end -}}
 
-{{- $monsters = sort (sort (sort $monsters "Permalink") "Title") "Weight" -}}
+{{- $characters = sort (sort (sort $characters "Permalink") "Title") "Weight" -}}
+{{- $pinky := false -}}
+{{- $otherParty := false -}}
+{{- range $characters -}}
+  {{- if and (not $pinky) (eq (or .Params.titulo_pt_br .Title) "Pinky") -}}
+    {{- $pinky = . -}}
+  {{- else if not $otherParty -}}
+    {{- $otherParty = . -}}
+  {{- end -}}
+{{- end -}}
+
 {{- $records := slice -}}
+{{- if $pinky -}}{{- $records = $records | append (partial "helpers/forge_statblock.html" $pinky) -}}{{- end -}}
+{{- if $otherParty -}}{{- $records = $records | append (partial "helpers/forge_statblock.html" $otherParty) -}}{{- end -}}
+
+{{- $monsters = sort (sort (sort $monsters "Permalink") "Title") "Weight" -}}
 {{- range $monsters -}}
   {{- $records = $records | append (partial "helpers/forge_statblock.html" .) -}}
 {{- end -}}

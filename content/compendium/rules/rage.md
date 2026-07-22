@@ -26,7 +26,7 @@ translation:
   model: deepseek-v4-pro
 ---
 
-You can imbue yourself with a primal power called Rage, a force that grants you extraordinary might and resilience. You can enter a Rage as a Bonus Action if you are not wearing Heavy armor.
+Você pode imbuir-se de um poder primal chamado Fúria, uma força que lhe concede vigor e resiliência extraordinários. Você pode entrar em Fúria como uma Ação Bônus se não estiver usando armadura pesada.
 
 You can enter a Rage a number of times indicated for your Barbarian level in the Rages column of the Barbarian Features table. You regain one expended use when you finish a Short Rest and you regain all expended uses when you finish a Long Rest.
 

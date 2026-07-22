@@ -35,7 +35,7 @@ let _diceReady = false;
 let _readyCheckTimer = null;
 let _diceReadyUnsub = null;
 let _pendingReadyId = null;
-let _pendingRolls = new Map(); // rollId → { timerId, iframeWindow }
+let _pendingRolls = new Map(); // rollId → { timerId, iframeWindow, targetOrigin }
 let _messageHandler = null;
 let _diceResultUnsub = null;
 let _diceErrorUnsub = null;
@@ -128,10 +128,11 @@ export function unbindIframe() {
   _pendingReadyId = null;
 
   // Clear all pending rolls.
-  for (const [rollId, entry] of _pendingRolls) {
+  for (const [, entry] of _pendingRolls) {
     clearTimeout(entry.timerId);
   }
   _pendingRolls.clear();
+  _diagnose("Pendências de rolagem descartadas durante unbind.");
 
   _iframeWindow = null;
   _expectedOrigin = null;
@@ -352,6 +353,7 @@ function _handleRollRequest(payload) {
     timerId,
     requestId: payload.requestId,
     iframeWindow: _iframeWindow,
+    targetOrigin: _expectedOrigin,
   });
 
   // 3.5: Send to Dice+.
@@ -382,13 +384,16 @@ function _handleDiceResult(event) {
   if (!rollId || !result) return;
 
   const pending = _pendingRolls.get(rollId);
-  if (!pending) return; // Unknown or already completed rollId.
+  if (!pending) {
+    _diagnose(`Resultado órfão ignorado: ${rollId}.`);
+    return; // Unknown or already completed rollId.
+  }
 
   clearTimeout(pending.timerId);
   _pendingRolls.delete(rollId);
 
   // 3.6: Send result only to the iframe that made the request.
-  if (pending.iframeWindow && _expectedOrigin) {
+  if (pending.iframeWindow && pending.targetOrigin) {
     const resultEnvelope = createEnvelope(MessageType.ROLL_RESULT, {
       requestId: pending.requestId,
       rollId,
@@ -396,7 +401,7 @@ function _handleDiceResult(event) {
       summary: result.rollSummary,
       groups: Array.isArray(result.groups) ? result.groups : [],
     });
-    pending.iframeWindow.postMessage(resultEnvelope, _expectedOrigin);
+    pending.iframeWindow.postMessage(resultEnvelope, pending.targetOrigin);
   }
 }
 
@@ -406,20 +411,23 @@ function _handleDiceError(event) {
   if (!rollId) return;
 
   const pending = _pendingRolls.get(rollId);
-  if (!pending) return; // Unknown or already completed rollId.
+  if (!pending) {
+    _diagnose(`Erro órfão ignorado: ${rollId}.`);
+    return; // Unknown or already completed rollId.
+  }
 
   clearTimeout(pending.timerId);
   _pendingRolls.delete(rollId);
 
   // 3.6: Send error to the originating iframe.
-  if (pending.iframeWindow && _expectedOrigin) {
+  if (pending.iframeWindow && pending.targetOrigin) {
     const errorEnvelope = createEnvelope(MessageType.ROLL_ERROR, {
       requestId: pending.requestId,
       rollId,
       error: message.error || "Unknown Dice+ error",
       retryable: true,
     });
-    pending.iframeWindow.postMessage(errorEnvelope, _expectedOrigin);
+    pending.iframeWindow.postMessage(errorEnvelope, pending.targetOrigin);
   }
 }
 

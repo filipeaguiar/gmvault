@@ -21,6 +21,7 @@ const iframe = document.getElementById("sheet");
 let passed = 0;
 let failed = 0;
 const requests = [];
+const pendingByRequest = new Map();
 
 function assert(condition, label) {
   if (condition) {
@@ -46,13 +47,18 @@ window.addEventListener("message", (event) => {
   requests.push(data.payload);
   const notation = data.payload.notation;
   const total = notation === "1d20+7" ? 19 : 8;
-  event.source.postMessage(envelope("roll-result", {
-    requestId: data.payload.requestId,
-    rollId: `roll-${requests.length}`,
-    total,
-    summary: `${notation} = ${total}`,
-    groups: [],
-  }), event.origin);
+  const delay = notation === "1d20+7" ? 40 : 0;
+  const delivery = setTimeout(() => {
+    pendingByRequest.delete(data.payload.requestId);
+    event.source.postMessage(envelope("roll-result", {
+      requestId: data.payload.requestId,
+      rollId: `roll-${requests.length}`,
+      total,
+      summary: `${notation} = ${total}`,
+      groups: [],
+    }), event.origin);
+  }, delay);
+  pendingByRequest.set(data.payload.requestId, delivery);
 });
 
 iframe.srcdoc = `<!DOCTYPE html><html><body>
@@ -83,10 +89,11 @@ assert(damage.getAttribute("role") === "button", "damage formula is enhanced");
 assert(!reference.hasAttribute("role"), "unmarked text remains non-interactive");
 
 skill.click();
+skill.click();
 damage.click();
 await wait(80);
 
-assert(requests.length === 2, "two independent roll requests are emitted");
+assert(requests.length === 2, "duplicate activation is suppressed while allowing a second control");
 assert(requests[0].notation === "1d20+7", "skill notation is preserved");
 assert(requests[1].notation === "2d6+1", "damage notation is preserved");
 assert(requests[0].requestId !== requests[1].requestId, "requests use distinct identifiers");
@@ -98,10 +105,24 @@ assert(skill.textContent.trim() === "+7", "sheet does not append the Dice+ resul
 assert(damage.textContent.trim() === "2d6+1", "formula remains unchanged after result");
 assert(!sheetDocument.querySelector(".roll-result-display"), "no result display is inserted in the sheet");
 
+iframe.contentWindow.postMessage(envelope("roll-result", {
+  requestId: "stale-request",
+  rollId: "old-roll",
+  total: 99,
+  summary: "ignored",
+  groups: [],
+}), location.origin);
+await wait();
+assert(skill.textContent.trim() === "+7", "stale completions after the active request are ignored");
+
 iframe.contentWindow.postMessage(envelope("dice-ready", { ready: false }), location.origin);
 await wait();
 assert(!skill.hasAttribute("role"), "enhancement is removed when Dice+ becomes unavailable");
 assert(!damage.hasAttribute("role"), "all enhanced values return to reference mode");
+
+iframe.contentWindow.postMessage(envelope("dice-ready", { ready: true }), location.origin);
+await wait();
+assert(skill.getAttribute("role") === "button", "enhancement can return after Dice+ becomes available again");
 
 const total = passed + failed;
 const resultClass = failed ? "fail" : "pass";

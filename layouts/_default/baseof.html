@@ -14,8 +14,10 @@
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
   {{ $classProgressionCss := resources.Get "css/class-progression-inline.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $classProgressionCss.RelPermalink }}" integrity="{{ $classProgressionCss.Data.Integrity }}">
+  {{ if ne (partial "helpers/kind.html" .) "character" }}
   {{ $rollEngineJs := resources.Get "js/roll-engine.js" | minify | fingerprint }}
   <script src="{{ $rollEngineJs.RelPermalink }}" integrity="{{ $rollEngineJs.Data.Integrity }}" defer></script>
+  {{ end }}
   
   {{ if eq (partial "helpers/kind.html" .) "character" }}
   {{ $charCss := resources.Get "css/character-sheet.css" | minify | fingerprint }}

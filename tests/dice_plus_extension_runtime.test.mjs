@@ -88,11 +88,13 @@ const {
   DicePlusChannel,
   READY_TIMEOUT_MS,
   READY_RETRY_MS,
+  ROLL_TIMEOUT_MS,
   createEnvelope,
 } = protocol;
 const {
   initBridge,
   bindIframe,
+  unbindIframe,
   destroyBridge,
   isDiceReady,
   normalizePlayerIdentity,
@@ -304,6 +306,113 @@ for (const [label, player] of [
     destroyBridge();
   });
 }
+
+test("late Dice+ results after unbind are ignored safely", async () => {
+  const obr = createOBRMock();
+  const iframe = createIframe();
+  initBridge(obr, { id: "player-4", name: "Lia" });
+  bindIframe(iframe);
+
+  const readyRequest = obr.sent.find((entry) => entry.channel === DicePlusChannel.IS_READY);
+  obr.deliver(DicePlusChannel.IS_READY, {
+    requestId: readyRequest.data.requestId,
+    ready: true,
+  });
+  iframe.messages.length = 0;
+
+  windowMock.dispatchMessage({
+    source: iframe.contentWindow,
+    origin: "https://filipeaguiar.github.io",
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "sheet-request-late",
+      notation: "1d20+5",
+      label: "Acrobacia",
+    }),
+  });
+  const rollRequest = obr.sent.find((entry) => entry.channel === DicePlusChannel.ROLL_REQUEST);
+  assert.ok(rollRequest);
+
+  unbindIframe();
+  obr.deliver(DicePlusChannel.ROLL_RESULT, {
+    rollId: rollRequest.data.rollId,
+    result: {
+      totalValue: 17,
+      rollSummary: "12 + 5 = 17",
+      groups: [],
+    },
+  });
+
+  assert.equal(iframe.messages.some((entry) => entry.data.type === MessageType.ROLL_RESULT), false);
+  destroyBridge();
+});
+
+test("a retried roll after timeout uses a fresh correlation and succeeds", async () => {
+  const obr = createOBRMock();
+  const iframe = createIframe();
+  initBridge(obr, { id: "player-5", name: "Nara" });
+  bindIframe(iframe);
+
+  const readyRequest = obr.sent.find((entry) => entry.channel === DicePlusChannel.IS_READY);
+  obr.deliver(DicePlusChannel.IS_READY, {
+    requestId: readyRequest.data.requestId,
+    ready: true,
+  });
+  iframe.messages.length = 0;
+
+  windowMock.dispatchMessage({
+    source: iframe.contentWindow,
+    origin: "https://filipeaguiar.github.io",
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "sheet-request-retry-1",
+      notation: "1d20+6",
+      label: "Ataque",
+    }),
+  });
+  const firstRoll = obr.sent.filter((entry) => entry.channel === DicePlusChannel.ROLL_REQUEST).at(-1);
+  assert.ok(firstRoll);
+
+  await new Promise((resolve) => setTimeout(resolve, ROLL_TIMEOUT_MS + 50));
+  const timeoutError = iframe.messages.find((entry) => entry.data.type === MessageType.ROLL_ERROR);
+  assert.ok(timeoutError);
+  assert.equal(timeoutError.data.payload.requestId, "sheet-request-retry-1");
+
+  obr.deliver(DicePlusChannel.ROLL_RESULT, {
+    rollId: firstRoll.data.rollId,
+    result: {
+      totalValue: 99,
+      rollSummary: "ignored",
+      groups: [],
+    },
+  });
+
+  windowMock.dispatchMessage({
+    source: iframe.contentWindow,
+    origin: "https://filipeaguiar.github.io",
+    data: createEnvelope(MessageType.ROLL_REQUEST, {
+      requestId: "sheet-request-retry-2",
+      notation: "1d20+6",
+      label: "Ataque",
+    }),
+  });
+  const rollRequests = obr.sent.filter((entry) => entry.channel === DicePlusChannel.ROLL_REQUEST);
+  const secondRoll = rollRequests.at(-1);
+  assert.ok(secondRoll);
+  assert.notEqual(secondRoll.data.rollId, firstRoll.data.rollId);
+
+  obr.deliver(DicePlusChannel.ROLL_RESULT, {
+    rollId: secondRoll.data.rollId,
+    result: {
+      totalValue: 18,
+      rollSummary: "12 + 6 = 18",
+      groups: [],
+    },
+  });
+
+  const successResult = iframe.messages.find((entry) => entry.data.type === MessageType.ROLL_RESULT && entry.data.payload.requestId === "sheet-request-retry-2");
+  assert.ok(successResult);
+  assert.equal(successResult.data.payload.total, 18);
+  destroyBridge();
+});
 
 test("Dice+ errors are correlated and cleanup removes listeners", async () => {
   const obr = createOBRMock();

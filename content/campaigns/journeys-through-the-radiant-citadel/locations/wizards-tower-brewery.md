@@ -8,7 +8,6 @@ tags:
   - location
   - a-most-potent-brew
 type: location
-kind: location
 
 related:
   - /campaigns/journeys-through-the-radiant-citadel/adventures/a-most-potent-brew/

@@ -9,6 +9,7 @@ tags:
 - 5etools
 visibility: public
 status: draft
+titulo_pt_br: Adaga.
 source:
   provider: 5e.tools
   book: XPHB

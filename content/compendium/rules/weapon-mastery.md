@@ -17,7 +17,7 @@ source:
   remote_file: class/class-barbarian.json
   remote_key: classFeature
   remote_id: 0c245502cef3280a
-titulo_pt_br: Maestria de Arma
+titulo_pt_br: Maestria em Armas
 translation:
   source_language: en
   target_language: pt-BR

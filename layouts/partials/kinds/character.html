@@ -653,6 +653,8 @@
       {{ range . }}
       {{ $classSlug := .name | urlize }}
       {{ $classPage := site.GetPage (printf "/compendium/classes/%s/" $classSlug) }}
+      {{ $progressionLevel := .level }}
+      {{ if gt (.level | int) 1 }}{{ $progressionLevel = sub (.level | int) 1 }}{{ end }}
       <section class="class-progression-card">
         <header class="class-progression-header">
           <div class="class-progression-title">
@@ -671,7 +673,7 @@
             {{ with $classPage.Params.summary }}<p class="class-summary">{{ . }}</p>{{ end }}
             <details class="class-progression-details" open>
               <summary><i class="ra ra-book" aria-hidden="true"></i> Progressão da classe</summary>
-              <div class="class-progression-content">{{ partial "helpers/class-progression.html" (dict "page" $classPage "level" .level) }}</div>
+              <div class="class-progression-content">{{ partial "helpers/class-progression.html" (dict "page" $classPage "level" $progressionLevel) }}</div>
             </details>
           {{ else }}
             {{ partial "helpers/compendium-content.html" (dict "ref" (printf "/compendium/classes/%s/" $classSlug) "name" .name) }}
@@ -683,7 +685,7 @@
             <details class="class-progression-details subclass-details" open>
               <summary><i class="ra ra-scroll-unfurled" aria-hidden="true"></i> Progressão de {{ .subclass }}</summary>
               {{ if $subPage }}
-                <div class="class-progression-content">{{ partial "helpers/class-progression.html" (dict "page" $subPage "level" .level) }}</div>
+                <div class="class-progression-content">{{ partial "helpers/class-progression.html" (dict "page" $subPage "level" $progressionLevel) }}</div>
               {{ else }}
                 {{ partial "helpers/compendium-content.html" (dict "ref" (printf "/compendium/classes/%s/" $subSlug) "name" .subclass) }}
               {{ end }}

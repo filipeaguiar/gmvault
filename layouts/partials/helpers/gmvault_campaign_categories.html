@@ -29,22 +29,10 @@
 {{- $currentAdventure := $scratch.Get "currentAdventure" -}}
 
 {{- $scenePages := slice -}}
-{{- $handoutRefs := slice -}}
 {{- if $currentAdventure -}}
-  {{- range $currentAdventure.Params.handouts -}}
-    {{- if not (in $handoutRefs .) -}}
-      {{- $handoutRefs = $handoutRefs | append . -}}
-    {{- end -}}
-  {{- end -}}
-
   {{- range site.Pages -}}
     {{- if and (eq (partial "helpers/kind.html" .) "scene") (hasPrefix .RelPermalink $currentAdventure.RelPermalink) -}}
       {{- $scenePages = $scenePages | append . -}}
-      {{- range .Params.handouts -}}
-        {{- if not (in $handoutRefs .) -}}
-          {{- $handoutRefs = $handoutRefs | append . -}}
-        {{- end -}}
-      {{- end -}}
     {{- end -}}
   {{- end -}}
   {{- $scenePages = sort (sort $scenePages "Title") "Weight" -}}
@@ -52,11 +40,38 @@
 
 {{- $handoutItems := slice -}}
 {{- $seenHandoutURLs := slice -}}
-{{- range $handoutRefs -}}
-  {{- $handoutPage := site.GetPage . -}}
-  {{- if and $handoutPage (eq (partial "helpers/kind.html" $handoutPage) "handout") (not (in $seenHandoutURLs $handoutPage.Permalink)) -}}
-    {{- $handoutItems = $handoutItems | append (partial "helpers/gmvault_page_item_gm.html" $handoutPage) -}}
-    {{- $seenHandoutURLs = $seenHandoutURLs | append $handoutPage.Permalink -}}
+{{- $adventureHandoutURLs := slice -}}
+{{- if $adventuresSection -}}
+  {{- range $adventuresSection.Pages -}}
+    {{- if eq (partial "helpers/kind.html" .) "adventure" -}}
+      {{- range .Params.handouts -}}
+        {{- with site.GetPage . -}}
+          {{- if not (in $adventureHandoutURLs .Permalink) -}}{{- $adventureHandoutURLs = $adventureHandoutURLs | append .Permalink -}}{{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- range site.Pages -}}
+  {{- if eq (partial "helpers/kind.html" .) "scene" -}}
+    {{- range .Params.handouts -}}
+      {{- with site.GetPage . -}}
+        {{- if not (in $adventureHandoutURLs .Permalink) -}}{{- $adventureHandoutURLs = $adventureHandoutURLs | append .Permalink -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $handoutsPath := printf "/%shandouts" $campaignDir -}}
+{{- $handoutsSection := site.GetPage $handoutsPath -}}
+{{- if $handoutsSection -}}
+  {{- range (sort (sort $handoutsSection.Pages "Title") "Weight") -}}
+    {{- if and (eq (partial "helpers/kind.html" .) "handout") (not (in $adventureHandoutURLs .Permalink)) -}}
+      {{- $handoutItem := partial "helpers/gmvault_page_item_gm.html" . -}}
+      {{- if not (in $seenHandoutURLs $handoutItem.url) -}}
+        {{- $handoutItems = $handoutItems | append $handoutItem -}}
+        {{- $seenHandoutURLs = $seenHandoutURLs | append $handoutItem.url -}}
+      {{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- if gt (len $handoutItems) 0 -}}
@@ -99,6 +114,25 @@
     "open" false
     "id" (printf "cat_%s" (substr ((printf "%s-combat" $campaignPage.Permalink) | md5) 0 8))
   ) -}}
+{{- end -}}
+
+{{- if $adventuresSection -}}
+  {{- $adventureItems := slice -}}
+  {{- range (sort (sort $adventuresSection.Pages "Title") "Weight") -}}
+    {{- if eq (partial "helpers/kind.html" .) "adventure" -}}
+      {{- $adventureItems = $adventureItems | append (partial "helpers/gmvault_adventure_category.html" .) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $adventureItems) 0 -}}
+    {{- $categories = $categories | append (dict
+      "type" "category"
+      "name" "Aventuras"
+      "items" $adventureItems
+      "collapsed" true
+      "open" false
+      "id" (printf "cat_%s" (substr ((printf "%s-adventures" $campaignPage.Permalink) | md5) 0 8))
+    ) -}}
+  {{- end -}}
 {{- end -}}
 
 {{- if $currentAdventure -}}

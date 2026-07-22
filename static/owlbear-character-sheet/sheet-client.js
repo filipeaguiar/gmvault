@@ -36,6 +36,7 @@
   let _parentOrigin = null;
   let _diceReady = false;
   let _pendingRequests = new Map(); // requestId → { element, timerId }
+  let _pendingByElement = new WeakMap(); // element → requestId
   let _enhancedElements = [];
 
   const REQUEST_TIMEOUT_MS = 12000; // Client-side timeout (slightly longer than shell's)
@@ -158,6 +159,7 @@
    * Remove enhancements from all previously enhanced elements.
    */
   function _removeEnhancements() {
+    _clearPendingRequests();
     _enhancedElements.forEach(({ element, clickHandler, keyHandler }) => {
       element.classList.remove(
         "roll-enhanced",
@@ -167,9 +169,11 @@
       element.removeAttribute("role");
       element.removeAttribute("tabindex");
       element.removeAttribute("aria-label");
+      element.removeAttribute("aria-busy");
       element.style.cursor = "";
       element.removeEventListener("click", clickHandler);
       element.removeEventListener("keydown", keyHandler);
+      _pendingByElement.delete(element);
 
     });
     _enhancedElements = [];
@@ -180,6 +184,7 @@
   function _requestRoll(element, notation, label) {
     // Prevent duplicate activation while pending.
     if (element.classList.contains("roll-pending")) return;
+    if (_pendingByElement.has(element)) return;
 
     const requestId = _generateId();
 
@@ -190,12 +195,18 @@
 
     // Client-side timeout.
     const timerId = setTimeout(() => {
+      const pending = _pendingRequests.get(requestId);
+      if (!pending) return;
       _pendingRequests.delete(requestId);
-      _finishRoll(element);
+      if (_pendingByElement.get(element) === requestId) {
+        _pendingByElement.delete(element);
+        _finishRoll(element);
+      }
       console.warn("[Character Sheet] Dice+ roll timed out", { requestId, notation });
     }, REQUEST_TIMEOUT_MS);
 
     _pendingRequests.set(requestId, { element, timerId });
+    _pendingByElement.set(element, requestId);
 
     // Send roll request to parent shell.
     _sendToParent(MessageType.ROLL_REQUEST, {
@@ -216,8 +227,10 @@
 
     clearTimeout(pending.timerId);
     _pendingRequests.delete(requestId);
-
-    _finishRoll(pending.element);
+    if (_pendingByElement.get(pending.element) === requestId) {
+      _pendingByElement.delete(pending.element);
+      _finishRoll(pending.element);
+    }
   }
 
   function _handleRollError(payload) {
@@ -229,8 +242,10 @@
 
     clearTimeout(pending.timerId);
     _pendingRequests.delete(requestId);
-
-    _finishRoll(pending.element);
+    if (_pendingByElement.get(pending.element) === requestId) {
+      _pendingByElement.delete(pending.element);
+      _finishRoll(pending.element);
+    }
     console.warn("[Character Sheet] Dice+ roll failed", {
       requestId,
       error: payload.error || "Unknown error",
@@ -241,8 +256,21 @@
 
   function _finishRoll(element) {
     element.classList.remove("roll-pending");
-    element.classList.add("roll-ready");
+    if (_diceReady) element.classList.add("roll-ready");
+    else element.classList.remove("roll-ready");
     element.removeAttribute("aria-busy");
+  }
+
+  function _clearPendingRequests() {
+    for (const [requestId, entry] of _pendingRequests) {
+      clearTimeout(entry.timerId);
+      if (_pendingByElement.get(entry.element) === requestId) {
+        _pendingByElement.delete(entry.element);
+      }
+      entry.element.classList.remove("roll-pending");
+      entry.element.removeAttribute("aria-busy");
+    }
+    _pendingRequests.clear();
   }
 
   // ── Communication helpers ─────────────────────────────────────────────
@@ -269,13 +297,6 @@
 
   function _destroy() {
     window.removeEventListener("message", _handleMessage);
-
-    // Clear all pending requests.
-    for (const [, entry] of _pendingRequests) {
-      clearTimeout(entry.timerId);
-    }
-    _pendingRequests.clear();
-
     _removeEnhancements();
   }
 
