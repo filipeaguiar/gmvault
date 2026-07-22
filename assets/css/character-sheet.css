@@ -587,6 +587,40 @@ html.vtt-iframe .char-tab-content {
   gap: 10px;
 }
 
+.spell-level-band {
+  margin-top: 18px;
+}
+
+.spell-level-band:first-child {
+  margin-top: 0;
+}
+
+.spell-level-band-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+  font-size: 0.86rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.spell-level-band-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.35;
+}
+
+.spell-level-band.is-cantrip .spell-level-band-title {
+  color: #28714a;
+}
+
+.spell-level-band.is-leveled .spell-level-band-title {
+  color: #3273a8;
+}
+
 .spell-cards-flat {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

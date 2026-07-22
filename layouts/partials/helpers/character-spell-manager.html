@@ -5,6 +5,14 @@
 {{- $levels := $collection.levels -}}
 {{- $profile := $collection.profile -}}
 {{- $mode := index $profile "kind" | default "none" -}}
+{{- $usesPreparation := and (eq $mode "prepared") (index $profile "can_prepare" | default false) -}}
+{{- $displayReady := $ready -}}
+{{- if not $usesPreparation -}}
+  {{- $mergedSpells := newScratch -}}
+  {{- $mergedSpells.Set "items" $ready -}}
+  {{- range $management }}{{- $mergedSpells.Add "items" (slice .) -}}{{- end -}}
+  {{- $displayReady = sort ($mergedSpells.Get "items") "level" -}}
+{{- end -}}
 
 <div class="spell-manager" data-spell-mode="{{ $mode }}">
   <header class="spell-manager-header">
@@ -69,6 +77,7 @@
     </div>
   </div>
 
+  {{- $levelNames := dict "0" "Truques" "1" "1º Círculo" "2" "2º Círculo" "3" "3º Círculo" "4" "4º Círculo" "5" "5º Círculo" "6" "6º Círculo" "7" "7º Círculo" "8" "8º Círculo" "9" "9º Círculo" -}}
   {{- $hasSpells := or (gt (len $ready) 0) (gt (len $management) 0) -}}
   {{- if not $hasSpells -}}
   <div class="spell-empty-state">
@@ -79,23 +88,45 @@
 
   <section id="ready-spells-container" class="spell-collection spell-ready-section" aria-labelledby="ready-spells-title" {{ if not $hasSpells }}hidden{{ end }}>
     <header class="spell-collection-heading">
-      <h4 id="ready-spells-title"><i class="ra ra-crystal-wand"></i> Prontas para uso</h4>
-      <p>Truques, magias preparadas, conhecidas ou concedidas disponíveis ao personagem.</p>
+      <h4 id="ready-spells-title"><i class="ra ra-crystal-wand"></i>{{ if $usesPreparation }} Prontas para uso{{ else }} Magias{{ end }}</h4>
+      <p>{{ if $usesPreparation }}Truques, magias preparadas, conhecidas ou concedidas disponíveis ao personagem.{{ else }}Lista de magias disponíveis na ficha do personagem.{{ end }}</p>
     </header>
-    <p class="spell-empty-message{{ if $ready }} is-hidden{{ end }}" data-empty-for="ready">Nenhuma magia pronta para uso.</p>
-    <div id="ready-spells-list" class="spell-cards spell-cards-flat" data-spell-list="ready">
-      {{ range $ready }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
+    <p class="spell-empty-message{{ if $displayReady }} is-hidden{{ end }}" data-empty-for="ready">{{ if $usesPreparation }}Nenhuma magia pronta para uso.{{ else }}Nenhuma magia registrada.{{ end }}</p>
+    <div id="ready-spells-list" data-spell-list="ready">
+      {{ range $level := $levels }}
+        {{ $atLevel := where $displayReady "level" ($level | int) }}
+        {{ if $atLevel }}
+        <section class="spell-level-band{{ if gt ($level | int) 0 }} is-leveled{{ else }} is-cantrip{{ end }}" data-spell-level-group="{{ $level }}">
+          <h5 class="spell-level-band-title">{{ index $levelNames (string $level) | default (printf "Nível %v" $level) }}</h5>
+          <div class="spell-cards spell-cards-flat" data-spell-level-list="{{ $level }}">
+            {{ range $atLevel }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
+          </div>
+        </section>
+        {{ end }}
+      {{ end }}
     </div>
   </section>
 
+  {{ if $usesPreparation }}
   <section id="management-spells-container" class="spell-collection spell-management-section" aria-labelledby="management-spells-title" {{ if not $hasSpells }}hidden{{ end }}>
     <header class="spell-collection-heading">
       <h4 id="management-spells-title"><i class="ra ra-book"></i> Gerenciamento</h4>
       <p>Outras magias referenciadas nos círculos acessíveis. Somente magias elegíveis oferecem preparo.</p>
     </header>
     <p class="spell-empty-message{{ if $management }} is-hidden{{ end }}" data-empty-for="management">Nenhuma magia adicional para gerenciar.</p>
-    <div id="management-spells-list" class="spell-cards spell-cards-flat" data-spell-list="management">
-      {{ range $management }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
+    <div id="management-spells-list" data-spell-list="management">
+      {{ range $level := $levels }}
+        {{ $atLevel := where $management "level" ($level | int) }}
+        {{ if $atLevel }}
+        <section class="spell-level-band{{ if gt ($level | int) 0 }} is-leveled{{ else }} is-cantrip{{ end }}" data-spell-level-group="{{ $level }}">
+          <h5 class="spell-level-band-title">{{ index $levelNames (string $level) | default (printf "Nível %v" $level) }}</h5>
+          <div class="spell-cards spell-cards-flat" data-spell-level-list="{{ $level }}">
+            {{ range $atLevel }}{{ partial "helpers/character-spell-card.html" (dict "spell" . "character" $character) }}{{ end }}
+          </div>
+        </section>
+        {{ end }}
+      {{ end }}
     </div>
   </section>
+  {{ end }}
 </div>
