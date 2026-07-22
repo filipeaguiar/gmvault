@@ -656,6 +656,10 @@ html.vtt-iframe .char-tab-content {
   background: color-mix(in srgb, var(--card-bg) 88%, var(--primary-color) 12%);
 }
 
+.spell-card.is-level-spell .spell-card-header {
+  background: color-mix(in srgb, var(--card-bg) 88%, #3273a8 12%);
+}
+
 .ready-spell-item .spell-card-icon {
   background: color-mix(in srgb, var(--card-bg) 78%, #4c9f70 22%);
   color: #28714a;
@@ -663,6 +667,11 @@ html.vtt-iframe .char-tab-content {
 
 .management-spell-item .spell-card-icon {
   background: color-mix(in srgb, var(--card-bg) 78%, var(--primary-color) 22%);
+}
+
+.spell-card.is-level-spell .spell-card-icon {
+  background: color-mix(in srgb, var(--card-bg) 78%, #3273a8 22%);
+  color: #24597f;
 }
 
 .spell-card-icon {
