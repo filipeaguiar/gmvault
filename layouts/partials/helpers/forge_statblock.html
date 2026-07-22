@@ -201,7 +201,7 @@
 {{- $bonusActions := default $emptyList (index $source "bonus_actions") -}}
 {{- $reactions := default $emptyList (index $source "reactions") -}}
 {{- $legendaryActions := default $emptyList (index $source "legendary_actions") -}}
-{{- $spellList := default $emptyList (or (index $source "spell_list") (index $page.Params "spells_usage")) -}}
+{{- $spellList := default $emptyList (or (index $source "spell_list") (index $source "spells") (index $page.Params "spells_usage")) -}}
 {{- $inventory := default $emptyList (or (index $source "inventory") (index $page.Params "inventory")) -}}
 {{- $temporaryHP := default "" (index $source "temporary_hp") -}}
 
@@ -515,31 +515,42 @@
 {{- if $isCharacter -}}
   {{- $enrichedSpells := slice -}}
   {{- range $spell := $spellList -}}
-    {{- $spellName := $spell.name -}}
-    {{- $spellUsage := $spell.usage -}}
-    {{- $spellSlug := urlize $spellName -}}
-    {{- $spellPage := site.GetPage (printf "/compendium/spells/%s/" $spellSlug) -}}
+    {{- $spellRef := index $spell "ref" | default "" -}}
+    {{- $spellName := index $spell "name" | default "" -}}
+    {{- $spellUsage := index $spell "usage" | default "" -}}
+    {{- $spellPage := false -}}
+    {{- with $spellRef }}{{- $spellPage = site.GetPage . -}}{{- end -}}
+    {{- if and (not $spellPage) $spellName -}}
+      {{- $spellSlug := urlize $spellName -}}
+      {{- $spellPage = site.GetPage (printf "/compendium/spells/%s/" $spellSlug) -}}
+    {{- end -}}
+    {{- if and $spellPage (eq $spellName "") -}}
+      {{- $spellName = or $spellPage.Params.titulo_pt_br $spellPage.Title -}}
+    {{- end -}}
+    {{- if eq $spellName "" -}}
+      {{- $spellName = "Magia sem nome" -}}
+    {{- end -}}
     {{- $desc := printf "Uso: %s" $spellUsage -}}
     {{- if $spellPage -}}
       {{- $info := default (dict) (index $spellPage.Params "spell_info") -}}
       {{- $details := slice -}}
-      {{- if $info.cast_time -}}{{- $details = $details | append (printf "Convocação: %v" $info.cast_time) -}}{{- end -}}
+      {{- if $info.cast_time -}}{{- $details = $details | append (printf "Conjuração: %v" $info.cast_time) -}}{{- end -}}
       {{- if $info.range -}}{{- $details = $details | append (printf "Alcance: %v" $info.range) -}}{{- end -}}
       {{- if $info.components -}}{{- $details = $details | append (printf "Componentes: %v" $info.components) -}}{{- end -}}
       {{- if $info.duration -}}{{- $details = $details | append (printf "Duração: %v" $info.duration) -}}{{- end -}}
-      
+
       {{- $header := "" -}}
       {{- if gt (len $details) 0 -}}
         {{- $header = printf "%s\n\n" (delimit $details " | ") -}}
       {{- end -}}
-      
+
       {{- $bodyParsed := partial "helpers/forge_roll_parser.html" $spellPage.RawContent -}}
       {{- $desc = printf "%sUso: %s\n\n%s" $header $spellUsage $bodyParsed -}}
     {{- end -}}
-    
+
     {{- $hash := md5 (printf "%s:%s" $page.Permalink $spellName) -}}
     {{- $id := printf "%s-%s-%s-%s-%s" (substr $hash 0 8) (substr $hash 8 4) (substr $hash 12 4) (substr $hash 16 4) (substr $hash 20 12) -}}
-    
+
     {{- $enrichedSpells = $enrichedSpells | append (dict "id" $id "name" $spellName "description" $desc) -}}
   {{- end -}}
   {{- $spellList = $enrichedSpells -}}
