@@ -59,8 +59,15 @@
   {{ end }}
 
   <details class="spell-details-accordion">
-    <summary>Ver detalhes</summary>
+    <summary class="spell-details-summary">Ver detalhes</summary>
     <div class="spell-details-content">
+      <div class="spell-mobile-facts">
+        {{ with $castTime }}<div><strong>Conjuração:</strong> {{ . }}</div>{{ end }}
+        {{ with $spellInfo.range }}<div><strong>Alcance:</strong> {{ . }}</div>{{ end }}
+        {{ with $spellInfo.duration }}<div><strong>Duração:</strong> {{ . }}</div>{{ end }}
+        {{ with $spellInfo.components }}<div><strong>Componentes:</strong> {{ . }}</div>{{ end }}
+        {{ if $spellInfo.ritual }}<div><strong>Ritual:</strong> Sim</div>{{ end }}
+      </div>
       {{- if $spell.canonical -}}
         {{ partial "helpers/compendium-content.html" (dict "ref" $ref "name" $name) }}
       {{- else -}}

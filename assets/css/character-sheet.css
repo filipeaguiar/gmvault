@@ -1995,3 +1995,188 @@ html.vtt-iframe .char-tab-content {
 #tab-actions > .equipment-section {
   margin-top: 0; 
 }
+
+/* Default state for mobile spell facts */
+.spell-mobile-facts {
+  display: none;
+}
+
+/* Mobile & Owlbear VTT Iframe Responsiveness Optimizations */
+@media (max-width: 600px), html.vtt-iframe {
+  /* Header adjustments */
+  .char-header {
+    padding: 10px 12px !important;
+    gap: 8px !important;
+  }
+
+  .char-header-main {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .char-portrait-img,
+  .char-header .char-portrait-placeholder {
+    width: 48px !important;
+    height: 48px !important;
+    flex: 0 0 48px !important;
+    border-radius: 50% !important;
+  }
+
+  .char-header-copy {
+    gap: 2px !important;
+    min-width: 0 !important;
+  }
+
+  .char-header h1 {
+    font-size: 1.25rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Hide secondary meta pills in compact mode */
+  .char-meta {
+    display: none !important;
+  }
+
+  /* Stat badges: icon-only with function colors */
+  .header-stat-label {
+    display: none !important;
+  }
+
+  .header-stat-badge {
+    padding: 4px 8px !important;
+    gap: 4px !important;
+    font-size: 0.85rem !important;
+    border-radius: 6px !important;
+  }
+
+  .header-stat-badge.stat-ac i { color: #c0c0c0 !important; }
+  .header-stat-badge.stat-hp i { color: #d9534f !important; }
+  .header-stat-badge.stat-speed i { color: #5cb85c !important; }
+  .header-stat-badge.stat-prof i { color: #f0ad4e !important; }
+  .header-stat-badge.stat-dc i { color: #5bc0de !important; }
+
+  /* Single-line tab bar fitting */
+  .char-tabs-nav {
+    margin: 8px 8px 4px 8px !important;
+    padding: 4px !important;
+    gap: 2px !important;
+    justify-content: space-between !important;
+    overflow-x: hidden !important;
+  }
+
+  .char-tab-btn {
+    padding: 6px 4px !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    font-size: 0.85em !important;
+  }
+
+  /* Hide image tab on mobile / VTT iframe */
+  .char-tab-btn.tab-btn-image {
+    display: none !important;
+  }
+
+  /* Class resources hierarchy simplification */
+  .class-consumables-tracker {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .class-consumables-title {
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    border-bottom: 1px solid var(--border-color, #ccc) !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .consumable-block {
+    padding: 6px 10px !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* Compact weapon cards */
+  .weapon-card {
+    padding: 8px 10px !important;
+    gap: 4px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .weapon-card .equipment-badges,
+  .weapon-card .equipment-properties,
+  .weapon-card .weapon-range-stat,
+  .weapon-card .weapon-damage-type {
+    display: none !important;
+  }
+
+  .weapon-card .equipment-stat-grid {
+    margin-top: 4px !important;
+    gap: 8px !important;
+  }
+
+  /* Compact spell cards */
+  .spell-card {
+    position: relative !important;
+    padding: 8px 36px 8px 10px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .spell-card-facts,
+  .spell-card-traits,
+  .spell-card-school {
+    display: none !important;
+  }
+
+  .spell-mobile-facts {
+    display: grid !important;
+    gap: 4px !important;
+    font-size: 0.82rem !important;
+    margin-bottom: 8px !important;
+    padding-bottom: 6px !important;
+    border-bottom: 1px dashed var(--border-color, #ccc) !important;
+    color: var(--text-muted, #777) !important;
+  }
+
+  .spell-details-accordion {
+    margin-top: 0 !important;
+  }
+
+  .spell-details-accordion summary {
+    position: absolute !important;
+    bottom: 8px !important;
+    right: 8px !important;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    background: var(--primary-color, #7b2cbf) !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    list-style: none !important;
+    user-select: none !important;
+    font-size: 0 !important;
+  }
+
+  .spell-details-accordion summary::-webkit-details-marker {
+    display: none !important;
+  }
+
+  .spell-details-accordion summary::after {
+    content: "+" !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+  }
+
+  .spell-details-accordion[open] summary::after {
+    content: "−" !important;
+  }
+}
+

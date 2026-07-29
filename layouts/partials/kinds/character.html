@@ -181,12 +181,12 @@
       </div>
       {{ with .Params.char_info }}
       <div class="char-header-stats">
-        <span class="header-stat-badge" title="Armadura (AC)"><i class="ra ra-shield"></i><span class="header-stat-label">CA</span><strong>{{ $calculatedAc }}</strong></span>
-        <span class="header-stat-badge" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i><span class="header-stat-label">HP</span><strong>{{ .hp_max }}</strong></span>
-        <span class="header-stat-badge" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i><span class="header-stat-label">Desloc.</span><strong>{{ .speed.walk }}m</strong></span>
-        <span class="header-stat-badge" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i><span class="header-stat-label">Prof.</span><strong>+{{ .proficiency_bonus }}</strong></span>
+        <span class="header-stat-badge stat-ac" title="Armadura (AC)"><i class="ra ra-shield"></i><span class="header-stat-label">CA</span><strong>{{ $calculatedAc }}</strong></span>
+        <span class="header-stat-badge stat-hp" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i><span class="header-stat-label">HP</span><strong>{{ .hp_max }}</strong></span>
+        <span class="header-stat-badge stat-speed" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i><span class="header-stat-label">Desloc.</span><strong>{{ .speed.walk }}m</strong></span>
+        <span class="header-stat-badge stat-prof" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i><span class="header-stat-label">Prof.</span><strong>+{{ .proficiency_bonus }}</strong></span>
         {{ if gt .spell_dc 0.0 }}
-        <span class="header-stat-badge" title="CD Magia"><i class="ra ra-crystal-wand"></i><span class="header-stat-label">CD</span><strong>{{ .spell_dc }}</strong></span>
+        <span class="header-stat-badge stat-dc" title="CD Magia"><i class="ra ra-crystal-wand"></i><span class="header-stat-label">CD</span><strong>{{ .spell_dc }}</strong></span>
         {{ end }}
       </div>
       {{ end }}
@@ -201,7 +201,7 @@
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-vest" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-class')" title="Classe"><i class="ra ra-player-lift" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-features')" title="Características"><i class="ra ra-crossed-pistols" style="font-size: 1.3em;"></i></button>
-      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-image')" title="Imagem"><i class="ra ra-eyeball" style="font-size: 1.3em;"></i></button>
+      <button class="char-tab-btn tab-btn-image" onclick="openCharTab(event, 'tab-image')" title="Imagem"><i class="ra ra-eyeball" style="font-size: 1.3em;"></i></button>
     </div>
   </div>
 
@@ -428,7 +428,9 @@
     </div>
     {{ end }}
 
-
+    <div class="char-spell-slots-wrapper" style="margin-top: 15px; margin-bottom: 15px;">
+      {{ partial "helpers/character-spell-slots.html" . }}
+    </div>
 
       {{ if $weapons }}
       <section class="equipment-section">
@@ -494,8 +496,8 @@
             {{ if $itemInfo.damage }}
             <div class="equipment-stat-grid">
               <div class="equipment-stat"><small>Ataque</small><strong class="roll-ready" data-roll-notation="{{ $atk_formula }}" data-roll-label="Ataque: {{ .name }}">{{ if ge $atk_bonus 0 }}+{{ end }}{{ $atk_bonus }}</strong></div>
-              <div class="equipment-stat"><small>Dano</small><strong class="roll-ready" data-roll-notation="{{ $dmg_formula }}" data-roll-label="Dano: {{ .name }}">{{ $dmg_formula }}</strong><span>{{ or (index $damageLabels $itemInfo.damage_type) $itemInfo.damage_type }}</span></div>
-              {{ with $itemInfo.range }}<div class="equipment-stat"><small>Alcance</small><strong>{{ . }}</strong></div>{{ end }}
+              <div class="equipment-stat"><small>Dano</small><strong class="roll-ready" data-roll-notation="{{ $dmg_formula }}" data-roll-label="Dano: {{ .name }}">{{ $dmg_formula }}</strong><span class="weapon-damage-type">{{ or (index $damageLabels $itemInfo.damage_type) $itemInfo.damage_type }}</span></div>
+              {{ with $itemInfo.range }}<div class="equipment-stat weapon-range-stat"><small>Alcance</small><strong>{{ . }}</strong></div>{{ end }}
             </div>
             {{ end }}
 
@@ -562,10 +564,6 @@
     {{ else }}
       <p>Nenhuma ação listada.</p>
     {{ end }}
-
-    <div style="margin-top: 20px;">
-      {{ partial "helpers/character-spell-slots.html" . }}
-    </div>
 
   </div>
 
