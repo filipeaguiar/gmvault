@@ -22,29 +22,16 @@
   data-spell-can-prepare="{{ $canPrepare }}"
   data-spell-initial-ready="{{ $ready }}">
 
-  <div class="card-item-title-row">
-    <span class="card-item-icon"><i class="ra ra-crystal-wand"></i></span>
-    <strong class="card-item-name">{{ $name }}</strong>
-    <span class="card-item-tag">{{ if eq ($level | int) 0 }}Truque{{ else }}Nv {{ $level }}{{ end }}</span>
-  </div>
-
-  {{- if $spell.canonical -}}
-  <div class="spell-card-rolls">
-    {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
-  </div>
-  {{- end -}}
-
-  {{ if $canPrepare }}
-  <div class="spell-card-actions">
-    <label class="spell-toggle-label prepare-spell-label">
-      <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $ref }}" {{ if $ready }}checked{{ end }}>
-      <span class="prepare-spell-text">{{ if $ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
-    </label>
-  </div>
-  {{ end }}
-
   <details class="spell-details-accordion">
-    <summary class="spell-details-summary" aria-label="Ver detalhes"></summary>
+    <summary class="spell-details-summary">
+      <div class="card-item-title-row">
+        <span class="card-item-icon"><i class="ra ra-crystal-wand"></i></span>
+        <strong class="card-item-name">{{ $name }}</strong>
+        <span class="card-item-tag">{{ if eq ($level | int) 0 }}Truque{{ else }}Nv {{ $level }}{{ end }}</span>
+        <span class="spell-toggle-plus" aria-hidden="true"></span>
+      </div>
+    </summary>
+
     <div class="spell-details-content">
       <div class="spell-mobile-facts">
         {{ with $castTime }}<div><strong>Conjuração:</strong> {{ . }}</div>{{ end }}
@@ -60,4 +47,19 @@
       {{- end -}}
     </div>
   </details>
+
+  {{- if $spell.canonical -}}
+  <div class="spell-card-rolls">
+    {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
+  </div>
+  {{- end -}}
+
+  {{ if $canPrepare }}
+  <div class="spell-card-actions">
+    <label class="spell-toggle-label prepare-spell-label">
+      <input type="checkbox" class="prepare-spell-checkbox" data-spell-ref="{{ $ref }}" {{ if $ready }}checked{{ end }}>
+      <span class="prepare-spell-text">{{ if $ready }}Remover preparo{{ else }}Preparar{{ end }}</span>
+    </label>
+  </div>
+  {{ end }}
 </article>

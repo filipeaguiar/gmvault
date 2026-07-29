@@ -2215,41 +2215,46 @@ html.vtt-iframe .char-tab-content {
   }
 
   .spell-details-accordion summary {
-    position: absolute !important;
-    bottom: 2px !important;
-    right: 8px !important;
-    width: auto !important;
-    height: auto !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    color: var(--primary-color, #7b2cbf) !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
     cursor: pointer !important;
     list-style: none !important;
+    outline: none !important;
     user-select: none !important;
-    font-size: 1.3rem !important;
-    font-weight: bold !important;
-    padding: 2px 4px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
   }
 
   .spell-details-accordion summary::-webkit-details-marker {
     display: none !important;
   }
 
-  .spell-details-accordion summary::after {
+  .spell-toggle-plus {
+    margin-left: auto !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    color: var(--primary-color, #7b2cbf) !important;
+    line-height: 1 !important;
+    padding: 0 4px !important;
+  }
+
+  .spell-details-accordion:not([open]) .spell-toggle-plus::after {
     content: "+" !important;
     font-size: 1.3rem !important;
     font-weight: bold !important;
-    line-height: 1 !important;
     color: var(--primary-color, #7b2cbf) !important;
   }
 
-  .spell-details-accordion[open] summary::after {
+  .spell-details-accordion[open] .spell-toggle-plus::after {
     content: "−" !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
     color: var(--primary-color, #7b2cbf) !important;
   }
+
 
 
 
