@@ -1977,3 +1977,21 @@ html.vtt-iframe .char-tab-content {
   border-left: 1px solid var(--border-color, #444);
   padding-left: 8px;
 }
+
+/* Spacing and layout for Unified Actions Tab */
+#tab-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#tab-actions > h3, 
+#tab-actions > h4 {
+  margin-bottom: 0;
+}
+
+#tab-actions > .class-consumables-tracker,
+#tab-actions > .spell-slots-tracker,
+#tab-actions > .equipment-section {
+  margin-top: 0; 
+}

@@ -30,36 +30,7 @@
     </div>
   </header>
 
-  {{- $usesPact := index $profile "uses_pact_slots" | default false -}}
-  {{- if $usesPact -}}
-    {{- $pactLevel := index $profile "pact_slot_level" | default 0 -}}
-    {{- $pactCount := index $profile "pact_slot_count" | default 0 -}}
-    {{- if and (gt ($pactLevel | int) 0) (gt ($pactCount | int) 0) }}
-    <div class="spell-slots-tracker pact-slots-tracker">
-      <h4><i class="ra ra-crystals"></i> Espaços de Pacto — nível {{ $pactLevel }}</h4>
-      <div class="slot-level-group" data-slot-level="pact-{{ $pactLevel }}">
-        {{ range seq ($pactCount | int) }}<input type="checkbox" class="spell-slot-checkbox" aria-label="Espaço de pacto {{ . }} consumido">{{ end }}
-      </div>
-    </div>
-    {{- end -}}
-  {{- else -}}
-    {{- $positiveSlots := slice -}}
-    {{- range $level, $count := $collection.slots }}{{ if gt ($count | int) 0 }}{{ $positiveSlots = $positiveSlots | append (dict "level" ($level | int) "count" ($count | int)) }}{{ end }}{{ end -}}
-    {{- if $positiveSlots }}
-    <div class="spell-slots-tracker">
-      <h4><i class="ra ra-crystals"></i> Espaços de Magia</h4>
-      <div class="spell-slot-groups">
-        {{ range sort $positiveSlots "level" }}
-        {{ $slotLevel := .level }}
-        <div class="slot-level-group" data-slot-level="{{ $slotLevel }}">
-          <strong>Nv {{ $slotLevel }}:</strong>
-          {{ range seq .count }}<input type="checkbox" class="spell-slot-checkbox" aria-label="Espaço de nível {{ $slotLevel }} consumido">{{ end }}
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    {{- end -}}
-  {{- end }}
+
 
   <div class="spell-manager-toolbar">
     <div class="spell-search-block">

@@ -199,9 +199,6 @@
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-skills')" title="Perícias"><i class="ra ra-aware" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-actions')" title="Ações"><i class="ra ra-axe-swing" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-equip')" title="Equipamentos"><i class="ra ra-vest" style="font-size: 1.3em;"></i></button>
-      {{ if $hasSpells }}
-      <button class="char-tab-btn" onclick="openCharTab(event, 'tab-grimoire')" title="Grimório"><i class="ra ra-book" style="font-size: 1.3em;"></i></button>
-      {{ end }}
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-class')" title="Classe"><i class="ra ra-player-lift" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-features')" title="Características"><i class="ra ra-crossed-pistols" style="font-size: 1.3em;"></i></button>
       <button class="char-tab-btn" onclick="openCharTab(event, 'tab-image')" title="Imagem"><i class="ra ra-eyeball" style="font-size: 1.3em;"></i></button>
@@ -322,6 +319,61 @@
     </div>
   </div>
 
+    {{ $weapons := slice }}
+  {{ $armors := slice }}
+  {{ $consumables := slice }}
+  {{ $other := slice }}
+  {{ with .Params.char_info.equipment }}
+      {{ $scratch := newScratch }}
+      {{ $scratch.Set "weapons" slice }}
+      {{ $scratch.Set "armors" slice }}
+      {{ $scratch.Set "consumables" slice }}
+      {{ $scratch.Set "other" slice }}
+
+      {{ range . }}
+        {{ $resolvedType := "Other" }}
+        {{ $itemInfo := dict }}
+        {{ $itemName := .name }}
+        {{ if .ref }}
+          {{ $itemPage := site.GetPage .ref }}
+          {{ if $itemPage }}
+            {{ $itemName = or $itemPage.Params.titulo_pt_br $itemPage.Title $itemName }}
+            {{ $itemInfo = $itemPage.Params.item_info }}
+            {{ if $itemInfo }}
+              {{ if eq $itemInfo.type "Weapon" }}
+                {{ $resolvedType = "Weapon" }}
+              {{ else if or (in (slice "Light Armor" "Medium Armor" "Heavy Armor" "Shield") $itemInfo.type) (and $itemInfo.armor_type (in (slice 1 2 3 4) ($itemInfo.armor_type | int))) }}
+                {{ $resolvedType = "Armor" }}
+              {{ else if or $itemInfo.consumable (in (slice "Potion" "Scroll") $itemInfo.type) }}
+                {{ $resolvedType = "Consumable" }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        
+        {{ $itemData := dict "name" $itemName "quantity" .quantity "equipped" .equipped "ref" .ref "info" $itemInfo }}
+        
+        {{ if eq $resolvedType "Weapon" }}
+          {{ $scratch.Add "weapons" $itemData }}
+        {{ else if eq $resolvedType "Armor" }}
+          {{ $scratch.Add "armors" $itemData }}
+        {{ else if eq $resolvedType "Consumable" }}
+          {{ $scratch.Add "consumables" $itemData }}
+        {{ else }}
+          {{ $scratch.Add "other" $itemData }}
+        {{ end }}
+      {{ end }}
+      
+      {{ $weapons = $scratch.Get "weapons" }}
+      {{ $armors = $scratch.Get "armors" }}
+      {{ $consumables = $scratch.Get "consumables" }}
+      {{ $other = $scratch.Get "other" }}
+  {{ end }}
+
+      {{ $propertyLabels := dict "finesse" "Acuidade" "light" "Leve" "thrown" "Arremesso" "versatile" "Versátil" "heavy" "Pesada" "two-handed" "Duas mãos" "reach" "Alcance" "ammunition" "Munição" "loading" "Recarga" "special" "Especial" }}
+      {{ $damageLabels := dict "piercing" "perfurante" "slashing" "cortante" "bludgeoning" "concussão" "fire" "fogo" "cold" "frio" "lightning" "elétrico" "acid" "ácido" "force" "energia" "radiant" "radiante" "necrotic" "necrótico" "poison" "veneno" "psychic" "psíquico" "thunder" "trovejante" }}
+
+
   <!-- TAB 3: Ações -->
   <div id="tab-actions" class="char-tab-content">
     <h3>Ações e Recursos</h3>
@@ -418,59 +470,8 @@
     {{ else }}
       <p>Nenhuma ação listada.</p>
     {{ end }}
-  </div>
 
-  <!-- TAB 4: Equipamentos -->
-  <div id="tab-equip" class="char-tab-content">
-    <h3>Equipamentos</h3>
-    {{ with .Params.char_info.equipment }}
-      {{ $scratch := newScratch }}
-      {{ $scratch.Set "weapons" slice }}
-      {{ $scratch.Set "armors" slice }}
-      {{ $scratch.Set "consumables" slice }}
-      {{ $scratch.Set "other" slice }}
-
-      {{ range . }}
-        {{ $resolvedType := "Other" }}
-        {{ $itemInfo := dict }}
-        {{ $itemName := .name }}
-        {{ if .ref }}
-          {{ $itemPage := site.GetPage .ref }}
-          {{ if $itemPage }}
-            {{ $itemName = or $itemPage.Params.titulo_pt_br $itemPage.Title $itemName }}
-            {{ $itemInfo = $itemPage.Params.item_info }}
-            {{ if $itemInfo }}
-              {{ if eq $itemInfo.type "Weapon" }}
-                {{ $resolvedType = "Weapon" }}
-              {{ else if or (in (slice "Light Armor" "Medium Armor" "Heavy Armor" "Shield") $itemInfo.type) (and $itemInfo.armor_type (in (slice 1 2 3 4) ($itemInfo.armor_type | int))) }}
-                {{ $resolvedType = "Armor" }}
-              {{ else if or $itemInfo.consumable (in (slice "Potion" "Scroll") $itemInfo.type) }}
-                {{ $resolvedType = "Consumable" }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-        
-        {{ $itemData := dict "name" $itemName "quantity" .quantity "equipped" .equipped "ref" .ref "info" $itemInfo }}
-        
-        {{ if eq $resolvedType "Weapon" }}
-          {{ $scratch.Add "weapons" $itemData }}
-        {{ else if eq $resolvedType "Armor" }}
-          {{ $scratch.Add "armors" $itemData }}
-        {{ else if eq $resolvedType "Consumable" }}
-          {{ $scratch.Add "consumables" $itemData }}
-        {{ else }}
-          {{ $scratch.Add "other" $itemData }}
-        {{ end }}
-      {{ end }}
-      
-      {{ $weapons := $scratch.Get "weapons" }}
-      {{ $armors := $scratch.Get "armors" }}
-      {{ $consumables := $scratch.Get "consumables" }}
-      {{ $other := $scratch.Get "other" }}
-
-      {{ $propertyLabels := dict "finesse" "Acuidade" "light" "Leve" "thrown" "Arremesso" "versatile" "Versátil" "heavy" "Pesada" "two-handed" "Duas mãos" "reach" "Alcance" "ammunition" "Munição" "loading" "Recarga" "special" "Especial" }}
-      {{ $damageLabels := dict "piercing" "perfurante" "slashing" "cortante" "bludgeoning" "concussão" "fire" "fogo" "cold" "frio" "lightning" "elétrico" "acid" "ácido" "force" "energia" "radiant" "radiante" "necrotic" "necrótico" "poison" "veneno" "psychic" "psíquico" "thunder" "trovejante" }}
+    {{ partial "helpers/character-spell-slots.html" . }}
 
       {{ if $weapons }}
       <section class="equipment-section">
@@ -553,6 +554,16 @@
       </section>
       {{ end }}
 
+
+    {{ if $hasSpells }}
+      <div style="margin-top: 30px;">{{ partial "helpers/character-spells.html" . }}</div>
+    {{ end }}
+
+  </div>
+
+  <!-- TAB 4: Equipamentos -->
+  <div id="tab-equip" class="char-tab-content">
+    <h3>Equipamentos</h3>
       {{ if $armors }}
       <section class="equipment-section">
         <h4 class="equipment-section-title"><i class="ra ra-shield"></i> Armaduras e escudos</h4>
@@ -644,22 +655,10 @@
       </section>
       {{ end }}
 
-    {{ else }}
+    {{ if not (or $armors $consumables $other) }}
       <p>Nenhum equipamento listado.</p>
     {{ end }}
   </div>
-
-  <!-- TAB 5: Grimório (only if has spells) -->
-  {{ if $hasSpells }}
-  <div id="tab-grimoire" class="char-tab-content">
-    <div class="grimoire-intro" style="margin-bottom: 25px;">
-      <span class="section-kicker">Magias & Espaços de Conjurador</span>
-      <h3>Grimório de Conjurador</h3>
-    </div>
-
-    {{ partial "helpers/character-spells.html" . }}
-  </div>
-  {{ end }}
 
   <!-- TAB 6: Classe -->
   <div id="tab-class" class="char-tab-content">
