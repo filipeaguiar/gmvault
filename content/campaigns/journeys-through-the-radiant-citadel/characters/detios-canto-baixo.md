@@ -255,8 +255,8 @@ char_info:
     fly: 0
     swim: 0
     walk: 30
-  spell_attack_bonus: 0
-  spell_dc: 0
+  spell_attack_bonus: 6
+  spell_dc: 14
   spell_slots:
     1: 4
     2: 2
