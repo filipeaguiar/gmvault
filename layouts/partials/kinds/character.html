@@ -405,13 +405,13 @@
     {{ end }}
     {{ $consumableItems := $consumablesScratch.Get "items" }}
     {{ if gt (len $consumableItems) 0 }}
-    <div class="class-consumables-section" style="margin-bottom: 20px;">
-      <h4 class="class-consumables-title" style="margin-top:0; color:var(--primary-color); border-bottom:1px solid var(--border-color); padding-bottom:5px;"><i class="ra ra-gear-hammer"></i> Recursos de Classe</h4>
-      <div class="consumable-cards-list" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+    <div class="class-consumables-section" style="margin-bottom: 10px;">
+      <h4 class="class-consumables-title" style="margin-top:0; color:var(--primary-color); border-bottom:1px solid var(--border-color); padding-bottom:4px; margin-bottom:6px;"><i class="ra ra-gear-hammer"></i> Recursos de Classe</h4>
+      <div class="consumable-cards-list" style="display: flex; flex-direction: column; gap: 6px; margin-top: 6px;">
         {{ range $consumableItems }}
         {{ $current := .current | int }}
         {{ $max := .max | int }}
-        <div class="consumable-card badge-{{ .type | default "generic" }}" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: rgba(127,127,127,0.08); border-left: 4px solid var(--primary-color); border-radius: 6px;">
+        <div class="consumable-card badge-{{ .type | default "generic" }}" style="display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: rgba(127,127,127,0.08); border-left: 4px solid var(--primary-color); border-radius: 6px;">
           <strong class="consumable-name" style="font-size: 1.05rem; font-weight: bold; color: var(--text-color);">{{ .name }}</strong>
           <div class="consumable-slots" style="display: flex; gap: 6px;">
             {{ range seq $max }}
@@ -424,13 +424,13 @@
     </div>
     {{ end }}
 
-    <div class="char-spell-slots-wrapper" style="margin-top: 15px; margin-bottom: 15px;">
+    <div class="char-spell-slots-wrapper" style="margin-top: 0; margin-bottom: 10px;">
       {{ partial "helpers/character-spell-slots.html" . }}
     </div>
 
       {{ if $weapons }}
       <section class="equipment-section">
-        <h4 class="equipment-section-title" style="margin-top:20px; color:var(--primary-color); border-bottom:1px solid var(--border-color); padding-bottom:5px;"><i class="ra ra-crossed-swords"></i> Armas</h4>
+        <h4 class="equipment-section-title" style="margin-top:12px; color:var(--primary-color); border-bottom:1px solid var(--border-color); padding-bottom:4px; margin-bottom:6px;"><i class="ra ra-crossed-swords"></i> Armas</h4>
         <div class="equipment-grid weapon-grid">
         {{ range $weapons }}
           {{ $itemInfo := .info }}
@@ -505,7 +505,7 @@
 
 
     {{ if $hasSpells }}
-      <div style="margin-top: 30px;">{{ partial "helpers/character-spells.html" . }}</div>
+      <div style="margin-top: 12px;">{{ partial "helpers/character-spells.html" . }}</div>
     {{ end }}
 
     {{ with .Params.char_info.actions }}
@@ -521,7 +521,8 @@
       {{ end }}
 
       {{ range $src, $list := $actionsMap }}
-        <h4 style="margin-top:20px; color:var(--primary-color); border-bottom:1px solid var(--border-color); padding-bottom:5px;"><i class="ra ra-gear"></i> {{ $src | title }}</h4>
+        <h4 style="margin-top:12px; color:var(--primary-color); border-bottom:1px solid var(--border-color); padding-bottom:4px; margin-bottom:6px;"><i class="ra ra-gear"></i> {{ $src | title }}</h4>
+
         <ul style="list-style:none; padding:0; margin-top:10px;">
           {{ range $list }}
           {{ $cssClass := "action" }}

@@ -755,7 +755,7 @@ html.vtt-iframe .char-tab-content {
   gap: 10px;
   align-items: start;
   padding: 12px 12px 10px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: none;
 }
 
 .ready-spell-item .spell-card-header {
@@ -1875,49 +1875,61 @@ html.vtt-iframe .char-tab-content {
 }
 
 /* Color overrides by class/type */
+.consumable-card.badge-rage,
 .consumable-block.badge-rage {
   border-left-color: #d9534f; /* Barbarian Red */
 }
+.consumable-card.badge-rage .consumable-slot-checkbox,
 .consumable-block.badge-rage .consumable-slot-checkbox {
   border-color: #d9534f;
 }
+.consumable-card.badge-rage .consumable-slot-checkbox:checked,
 .consumable-block.badge-rage .consumable-slot-checkbox:checked {
   background-color: #d9534f;
   box-shadow: 0 0 8px rgba(217, 83, 79, 0.6);
 }
 
+.consumable-card.badge-focus,
 .consumable-block.badge-focus {
   border-left-color: #3498db; /* Monk Blue */
 }
+.consumable-card.badge-focus .consumable-slot-checkbox,
 .consumable-block.badge-focus .consumable-slot-checkbox {
   border-color: #3498db;
 }
+.consumable-card.badge-focus .consumable-slot-checkbox:checked,
 .consumable-block.badge-focus .consumable-slot-checkbox:checked {
   background-color: #3498db;
   box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
 }
 
+.consumable-card.badge-sorcery,
 .consumable-block.badge-sorcery {
   border-left-color: #9b59b6; /* Sorcerer Purple */
 }
+.consumable-card.badge-sorcery .consumable-slot-checkbox,
 .consumable-block.badge-sorcery .consumable-slot-checkbox {
   border-color: #9b59b6;
 }
+.consumable-card.badge-sorcery .consumable-slot-checkbox:checked,
 .consumable-block.badge-sorcery .consumable-slot-checkbox:checked {
   background-color: #9b59b6;
   box-shadow: 0 0 8px rgba(155, 89, 182, 0.6);
 }
 
 /* Estilo padrão/genérico de consumíveis */
+.consumable-card,
 .consumable-block {
   border-left: 4px solid var(--primary-color, #c19c5b);
 }
+.consumable-card .consumable-slot-checkbox,
 .consumable-block .consumable-slot-checkbox {
   border-color: var(--primary-color, #c19c5b);
   background: color-mix(in srgb, var(--card-bg) 75%, var(--primary-color) 25%);
 }
+.consumable-card .consumable-slot-checkbox:checked,
 .consumable-block .consumable-slot-checkbox:checked {
-  border-color: var(--text-muted, #888);
+  border-color: var(--primary-color, #c19c5b);
   background-color: var(--primary-color, #c19c5b);
   box-shadow: 0 0 8px rgba(193, 156, 91, 0.6);
 }
@@ -2145,7 +2157,7 @@ html.vtt-iframe .char-tab-content {
     font-size: 0.82rem !important;
     margin-bottom: 8px !important;
     padding-bottom: 6px !important;
-    border-bottom: 1px dashed var(--border-color, #ccc) !important;
+    border-bottom: none !important;
     color: var(--text-muted, #777) !important;
   }
 
@@ -2157,18 +2169,20 @@ html.vtt-iframe .char-tab-content {
     position: absolute !important;
     bottom: 2px !important;
     right: 8px !important;
-    width: 22px !important;
-    height: 22px !important;
-    border-radius: 50% !important;
-    background: var(--primary-color, #7b2cbf) !important;
-    color: #ffffff !important;
-    display: flex !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: var(--primary-color, #7b2cbf) !important;
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     cursor: pointer !important;
     list-style: none !important;
     user-select: none !important;
-    font-size: 0 !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    padding: 2px 4px !important;
   }
 
   .spell-details-accordion summary::-webkit-details-marker {
@@ -2177,14 +2191,17 @@ html.vtt-iframe .char-tab-content {
 
   .spell-details-accordion summary::after {
     content: "+" !important;
-    font-size: 15px !important;
+    font-size: 1.3rem !important;
     font-weight: bold !important;
     line-height: 1 !important;
+    color: var(--primary-color, #7b2cbf) !important;
   }
 
   .spell-details-accordion[open] summary::after {
     content: "−" !important;
+    color: var(--primary-color, #7b2cbf) !important;
   }
+
 
 
   /* Bulletproof Card Titles & Header Layouts */
