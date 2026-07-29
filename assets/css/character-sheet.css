@@ -2126,6 +2126,13 @@ html.vtt-iframe .char-tab-content {
     margin-bottom: 8px !important;
   }
 
+  .spell-inline-roll {
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+
   .spell-card-facts,
   .spell-card-traits,
   .spell-card-school {
@@ -2148,10 +2155,10 @@ html.vtt-iframe .char-tab-content {
 
   .spell-details-accordion summary {
     position: absolute !important;
-    bottom: 8px !important;
+    bottom: 2px !important;
     right: 8px !important;
-    width: 24px !important;
-    height: 24px !important;
+    width: 22px !important;
+    height: 22px !important;
     border-radius: 50% !important;
     background: var(--primary-color, #7b2cbf) !important;
     color: #ffffff !important;
@@ -2170,7 +2177,7 @@ html.vtt-iframe .char-tab-content {
 
   .spell-details-accordion summary::after {
     content: "+" !important;
-    font-size: 16px !important;
+    font-size: 15px !important;
     font-weight: bold !important;
     line-height: 1 !important;
   }
@@ -2178,6 +2185,7 @@ html.vtt-iframe .char-tab-content {
   .spell-details-accordion[open] summary::after {
     content: "−" !important;
   }
+
 
   /* Bulletproof Card Titles & Header Layouts */
   .card-item-title-row {
