@@ -477,17 +477,11 @@
           {{ end }}
 
           <article class="equipment-card weapon-card weapon-{{ $weaponType }}{{ if not .equipped }} is-inactive{{ end }}">
-            <header class="equipment-card-header">
-              <span class="equipment-card-icon weapon-icon-{{ $weaponType }}"><i class="ra {{ $weaponIcon }}" aria-hidden="true"></i></span>
-              <div class="equipment-card-heading">
-                <strong class="equipment-card-name" style="display: block; font-size: 1.05rem; font-weight: bold; color: var(--text-color);">{{ .name }}</strong>
-                <div class="equipment-badges">
-                  <span class="equipment-badge weapon-kind">{{ $weaponLabel }}</span>
-                  {{ if gt (.quantity | int) 1 }}<span class="equipment-badge">x{{ .quantity }}</span>{{ end }}
-                  <span class="equipment-badge {{ if .equipped }}is-equipped{{ else }}is-unequipped{{ end }}">{{ if .equipped }}Equipada{{ else }}Não equipada{{ end }}</span>
-                </div>
-              </div>
-            </header>
+            <div class="card-item-title-row">
+              <span class="card-item-icon weapon-icon-{{ $weaponType }}"><i class="ra {{ $weaponIcon }}" aria-hidden="true"></i></span>
+              <strong class="card-item-name">{{ .name }}</strong>
+              {{ if .equipped }}<span class="card-item-tag tag-equipped">Equipada</span>{{ end }}
+            </div>
 
             {{ if $itemInfo.damage }}
             <div class="equipment-stat-grid">
@@ -533,7 +527,7 @@
           {{ $cssClass := "action" }}
            {{ if or (eq (lower $src) "race") (eq (lower $src) "species") }}{{ $cssClass = "species" }}{{ else if eq (lower $src) "class" }}{{ $cssClass = "class" }}{{ else if eq (lower $src) "feat" }}{{ $cssClass = "feat" }}{{ end }}
           <li class="char-list-item {{ $cssClass }}">
-            <strong style="display: block; font-size: 1.05rem; font-weight: bold; margin-bottom: 6px; color: var(--text-color);">
+            <strong class="card-item-name" style="display: block; font-size: 1.05rem; font-weight: bold; margin-bottom: 6px; color: var(--text-color);">
               {{ .name }}
             </strong>
             {{ if .max_uses }}
@@ -573,16 +567,11 @@
         {{ range $armors }}
           {{ $itemInfo := .info }}
           <article class="equipment-card armor-card{{ if not .equipped }} is-inactive{{ end }}">
-            <header class="equipment-card-header">
-              <span class="equipment-card-icon armor-icon"><i class="ra ra-shield" aria-hidden="true"></i></span>
-              <div class="equipment-card-heading">
-                <strong class="equipment-card-name">{{ .name }}</strong>
-                <div class="equipment-badges">
-                  {{ if gt (.quantity | int) 1 }}<span class="equipment-badge">x{{ .quantity }}</span>{{ end }}
-                  <span class="equipment-badge {{ if .equipped }}is-equipped{{ else }}is-unequipped{{ end }}">{{ if .equipped }}Equipada{{ else }}Não equipada{{ end }}</span>
-                </div>
-              </div>
-            </header>
+            <div class="card-item-title-row">
+              <span class="card-item-icon armor-icon"><i class="ra ra-shield" aria-hidden="true"></i></span>
+              <strong class="card-item-name">{{ .name }}</strong>
+              {{ if .equipped }}<span class="card-item-tag tag-equipped">Equipada</span>{{ end }}
+            </div>
             <div class="equipment-stat-grid">
               {{ if eq $itemInfo.type "Shield" }}
                 <div class="equipment-stat"><small>Bônus de CA</small><strong>+{{ or $itemInfo.armor_class 2 }}</strong></div>
@@ -607,13 +596,11 @@
           {{ $consumableIcon := "ra-potion" }}
           {{ if eq $itemInfo.type "Scroll" }}{{ $consumableIcon = "ra-scroll-unfurled" }}{{ end }}
           <article class="equipment-card consumable-card">
-            <header class="equipment-card-header">
-              <span class="equipment-card-icon consumable-icon"><i class="ra {{ $consumableIcon }}" aria-hidden="true"></i></span>
-              <div class="equipment-card-heading">
-                <strong class="equipment-card-name">{{ .name }}</strong>
-                <div class="equipment-badges"><span class="equipment-badge quantity-badge">Quantidade: {{ .quantity }}</span></div>
-              </div>
-            </header>
+            <div class="card-item-title-row">
+              <span class="card-item-icon consumable-icon"><i class="ra {{ $consumableIcon }}" aria-hidden="true"></i></span>
+              <strong class="card-item-name">{{ .name }}</strong>
+              <span class="card-item-tag">x{{ .quantity }}</span>
+            </div>
             <div class="equipment-meta-line">
               {{ with $itemInfo.type }}<span>{{ . }}</span>{{ end }}
               {{ with $itemInfo.weight }}<span>{{ . }}</span>{{ end }}
@@ -633,16 +620,11 @@
         {{ range $other }}
           {{ $itemInfo := .info }}
           <article class="equipment-card gear-card">
-            <header class="equipment-card-header">
-              <span class="equipment-card-icon gear-icon"><i class="ra ra-knapsack" aria-hidden="true"></i></span>
-              <div class="equipment-card-heading">
-                <strong class="equipment-card-name">{{ .name }}</strong>
-                <div class="equipment-badges">
-                  <span class="equipment-badge quantity-badge">Quantidade: {{ .quantity }}</span>
-                  {{ if .equipped }}<span class="equipment-badge is-equipped">Equipado</span>{{ end }}
-                </div>
-              </div>
-            </header>
+            <div class="card-item-title-row">
+              <span class="card-item-icon gear-icon"><i class="ra ra-knapsack" aria-hidden="true"></i></span>
+              <strong class="card-item-name">{{ .name }}</strong>
+              {{ if .equipped }}<span class="card-item-tag tag-equipped">Equipado</span>{{ else }}<span class="card-item-tag">x{{ .quantity }}</span>{{ end }}
+            </div>
             {{ if $itemInfo }}
             <div class="equipment-meta-line">
               {{ with $itemInfo.type }}<span>{{ . }}</span>{{ end }}

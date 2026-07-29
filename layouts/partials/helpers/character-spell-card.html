@@ -21,31 +21,16 @@
   data-spell-level="{{ $level }}"
   data-spell-can-prepare="{{ $canPrepare }}"
   data-spell-initial-ready="{{ $ready }}">
-  <header class="spell-card-header">
-    <span class="spell-card-icon" aria-hidden="true"><i class="ra ra-crystal-wand"></i></span>
-    <div class="spell-card-heading">
-      <h6 class="spell-card-title">{{ $name }}</h6>
-      {{ with $spellInfo.school }}<p class="spell-card-school">{{ . }}</p>{{ end }}
-    </div>
-    {{ partial "helpers/spell-state-badges.html" $spell }}
-  </header>
+
+  <div class="card-item-title-row">
+    <span class="card-item-icon"><i class="ra ra-crystal-wand"></i></span>
+    <strong class="card-item-name">{{ $name }}</strong>
+    <span class="card-item-tag">{{ if eq ($level | int) 0 }}Truque{{ else }}Nv {{ $level }}{{ end }}</span>
+  </div>
 
   {{- if $spell.canonical -}}
   <div class="spell-card-rolls">
     {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
-  </div>
-  {{- end -}}
-
-  <dl class="spell-card-facts">
-    {{ with $castTime }}<div><dt><i class="ra ra-hourglass" aria-hidden="true"></i> Conjuração</dt><dd>{{ . }}</dd></div>{{ end }}
-    {{ with $spellInfo.range }}<div><dt><i class="ra ra-target-arrows" aria-hidden="true"></i> Alcance</dt><dd>{{ . }}</dd></div>{{ end }}
-    {{ with $spellInfo.duration }}<div><dt><i class="ra ra-clockwork" aria-hidden="true"></i> Duração</dt><dd>{{ . }}</dd></div>{{ end }}
-  </dl>
-
-  {{- if or $spellInfo.components $spellInfo.ritual -}}
-  <div class="spell-card-traits">
-    {{ with $spellInfo.components }}<span><i class="ra ra-speech-bubble" aria-hidden="true"></i> {{ . }}</span>{{ end }}
-    {{ if $spellInfo.ritual }}<span class="spell-ritual"><i class="ra ra-rune-stone" aria-hidden="true"></i> Ritual</span>{{ end }}
   </div>
   {{- end -}}
 
