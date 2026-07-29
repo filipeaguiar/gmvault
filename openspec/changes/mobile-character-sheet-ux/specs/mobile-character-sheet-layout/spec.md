@@ -74,3 +74,11 @@ Na aba de Ações, o rastreador de "Slots de Magia" SHALL ser posicionado imedia
 #### Scenario: Spell slots layout ordering
 - **WHEN** a aba de Ações for renderizada para um personagem conjurador
 - **THEN** a seção de Slots de Magia SHALL ser posicionada logo abaixo dos Recursos de Classe e antes da lista de Armas e Ações gerais.
+
+### Requirement: Prominent Title Visibility in Small Viewports
+Os títulos e nomes de todas as entidades (itens, armas, armaduras, consumíveis, magias, recursos de classe e ações) SHALL ser mantidos completamente visíveis, legíveis e destacados em telas pequenas (largura <= 600px) e em iframes VTT.
+
+#### Scenario: Item and spell name rendering in constrained containers
+- **WHEN** cards de magias, armas, equipamentos ou recursos forem renderizados em telas pequenas ou iframe VTT
+- **THEN** o cabeçalho do card SHALL utilizar layout flexível sem restrições de coluna mínima que comprimam ou ocultem o título
+- **AND** o nome do item ou magia SHALL ser renderizado com destaque em negrito e visibilidade total, permitindo quebra automática de linha se necessário.

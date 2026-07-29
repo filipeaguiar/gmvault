@@ -16,6 +16,7 @@ Esta proposta define as alterações de layout CSS responsivo e marcação Hugo 
 - Reorganizar a aba de Ações posicionando os "Slots de Magia" logo abaixo dos "Recursos de Classe", antes das Armas.
 - Otimizar cards de armas em mobile (exibindo nome, ataque e dano abaixo do nome, sem rótulo de tipo de dano, sem propriedades/tags nem alcance).
 - Otimizar cards de magia em mobile (exibindo título e rolagens calculadas, movendo tempo, alcance, duração e componentes para a descrição expansível ativada por botão `+` no canto inferior direito).
+- Garantir visibilidade proeminente e incondicional de todos os títulos de itens, magias, armas, consumíveis e ações em telas pequenas.
 
 **Non-Goals:**
 - Modificar o visual desktop/computador convencional da ficha (onde todas as informações completas, pílulas de raça/classe e tags continuam visíveis).
@@ -52,6 +53,10 @@ Esta proposta define as alterações de layout CSS responsivo e marcação Hugo 
 ### 6. Simplificação de Cards de Armas e Magias
 - **Decisão (Armas):** Em mobile, `.weapon-card` oculta `.equipment-badges` secundários, `.equipment-properties` (tags) e o stat de alcance. Exibe o nome e abaixo uma linha flex com o Ataque (`+X`) e Dano (`XdY+Z`), omitindo o rótulo de tipo de dano.
 - **Decisão (Magias):** `.spell-card` garante exibição do título e `.spell-card-rolls`. Oculta `.spell-card-facts` (tempo, alcance, duração) e `.spell-card-traits` por padrão em telas compactas. O acionador `<details>` / `<summary>` é estilizado como um pequeno botão de `+` posicionado via `position: absolute; bottom: 8px; right: 8px;`.
+
+### 7. Layout Flexbox para Títulos de Cards em Viewports Pequenas
+- **Decisão:** Sobrescrever a regra de CSS Grid de `.spell-card-header` (`grid-template-columns: auto minmax(12rem, 1fr) auto`) em telas pequenas / `.vtt-iframe` para `display: flex; flex-wrap: wrap; align-items: center; gap: 8px;` e forçar visibilidade em bloco (`display: block; font-size: 1.0rem; font-weight: 700; color: var(--text-color);`) para `.spell-card-title`, `.equipment-card-name` e `.consumable-name`.
+- **Justificativa:** Elimina o esmagamento de colunas CSS Grid (`minmax(12rem, 1fr)`) que fazia os títulos de magias e itens desaparecerem quando a largura do container/iframe era inferior a 320px.
 
 ## Risks / Trade-offs
 

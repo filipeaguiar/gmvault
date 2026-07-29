@@ -23,3 +23,8 @@
 
 - [x] 5.1 Testar a renderização da ficha em mobile e desktop executando `hugo server -D`.
 - [x] 5.2 Validar o build de produção sem erros via `hugo --gc --minify`.
+
+## 6. Title Visibility & Flexbox Fixes for Small Viewports
+
+- [x] 6.1 Ajustar o layout dos cabeçalhos dos cards de magias (`.spell-card-header`) de CSS Grid para Flexbox responsivo em telas pequenas / `.vtt-iframe` e forçar exibição proeminente dos títulos de itens, magias, armas, consumíveis e ações (`.spell-card-title`, `.equipment-card-name`, `.consumable-name`).
+- [x] 6.2 Validar o build de produção sem erros via `hugo --gc --minify`.
