@@ -1979,7 +1979,7 @@ html.vtt-iframe .char-tab-content {
 }
 
 /* Spacing and layout for Unified Actions Tab */
-#tab-actions {
+#tab-actions.active {
   display: flex;
   flex-direction: column;
   gap: 25px;
