@@ -1821,7 +1821,7 @@ html.vtt-iframe .char-tab-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(127, 127, 127, 0.07);
   border-left: 4px solid var(--border-color, #444);
   border-radius: 6px;
   padding: 10px 14px;

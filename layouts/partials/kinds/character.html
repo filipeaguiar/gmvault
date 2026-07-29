@@ -428,7 +428,7 @@
     </div>
     {{ end }}
 
-    {{ partial "helpers/character-spell-slots.html" . }}
+
 
       {{ if $weapons }}
       <section class="equipment-section">
@@ -559,6 +559,10 @@
     {{ else }}
       <p>Nenhuma ação listada.</p>
     {{ end }}
+
+    <div style="margin-top: 20px;">
+      {{ partial "helpers/character-spell-slots.html" . }}
+    </div>
 
   </div>
 
