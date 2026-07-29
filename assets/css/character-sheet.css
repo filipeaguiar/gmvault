@@ -473,7 +473,7 @@ html.vtt-iframe .char-tab-content {
   padding: 6px 10px;
   border: 1px solid var(--border-color);
   border-radius: 999px;
-  background: var(--bg-card);
+  background: var(--card-bg);
   color: var(--text-color);
   font-size: 0.88em;
 }
@@ -531,7 +531,7 @@ html.vtt-iframe .char-tab-content {
 }
 
 .spell-counter {
-  background: color-mix(in srgb, var(--bg-card) 82%, var(--primary-color) 18%);
+  background: color-mix(in srgb, var(--card-bg) 82%, var(--primary-color) 18%);
 }
 
 .spell-manager-toolbar {
@@ -1002,7 +1002,7 @@ html.vtt-iframe .char-tab-content {
   padding: 8px 12px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: var(--card-bg);
   color: var(--text-color);
 }
 
@@ -1014,7 +1014,7 @@ html.vtt-iframe .char-tab-content {
 
 .spell-level-filter {
   border: 1px solid var(--border-color);
-  background: var(--bg-card);
+  background: var(--card-bg);
   color: var(--text-color);
   border-radius: 999px;
   padding: 6px 10px;
@@ -1685,7 +1685,7 @@ html.vtt-iframe .char-tab-content {
     display: inline !important;
     font-size: 0.9em !important;
     font-weight: bold !important;
-    color: var(--text-color-muted, #888) !important;
+    color: var(--text-muted) !important;
     opacity: 0.8;
   }
 
@@ -1792,8 +1792,8 @@ html.vtt-iframe .char-tab-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: var(--bg-card, #2b2b2b);
-  border: 1px solid var(--border-color, #444);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1803,7 +1803,7 @@ html.vtt-iframe .char-tab-content {
 .class-consumables-title {
   font-size: 0.85em;
   text-transform: uppercase;
-  color: var(--text-color-muted, #aaa);
+  color: var(--text-muted);
   letter-spacing: 0.05em;
   margin-bottom: 8px;
   display: flex;
@@ -1844,7 +1844,7 @@ html.vtt-iframe .char-tab-content {
 
 .consumable-values {
   font-size: 0.9em;
-  color: var(--text-color-muted, #ccc);
+  color: var(--text-muted);
 }
 
 .consumable-values strong {
@@ -1862,7 +1862,7 @@ html.vtt-iframe .char-tab-content {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--text-color-muted, #777);
+  border: 2px solid var(--text-muted);
   border-radius: 50%;
   cursor: pointer;
   outline: none;
