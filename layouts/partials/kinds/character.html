@@ -519,10 +519,13 @@
     {{ with .Params.char_info.actions }}
       {{ $actionsMap := dict }}
       {{ range . }}
+        {{ $name := lower (.name | default "") }}
         {{ $src := default "Geral" .source }}
-        {{ $list := default slice (index $actionsMap $src) }}
-        {{ $list = $list | append . }}
-        {{ $actionsMap = merge $actionsMap (dict $src $list) }}
+        {{ if not (and (eq (lower $src) "class") (gt (.max_uses | int) 0) (in ($consumablesScratch.Get "names") $name)) }}
+          {{ $list := default slice (index $actionsMap $src) }}
+          {{ $list = $list | append . }}
+          {{ $actionsMap = merge $actionsMap (dict $src $list) }}
+        {{ end }}
       {{ end }}
 
       {{ range $src, $list := $actionsMap }}
