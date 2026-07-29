@@ -2131,12 +2131,61 @@ html.vtt-iframe .char-tab-content {
     gap: 8px !important;
   }
 
-  /* Compact spell cards */
-  .spell-card {
-    position: relative !important;
-    padding: 8px 36px 8px 10px !important;
-    margin-bottom: 8px !important;
+  /* Aggressive vertical spacing reduction */
+  .char-tab-content {
+    padding: 6px 8px !important;
   }
+
+  .class-consumables-section,
+  .char-spell-slots-wrapper,
+  .spell-slots-section,
+  .equipment-section,
+  .spell-manager,
+  .spell-collection {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .spell-manager-header,
+  .spell-collection-heading {
+    margin-top: 2px !important;
+    margin-bottom: 4px !important;
+    padding-bottom: 2px !important;
+  }
+
+  .spell-collection-heading p {
+    display: none !important;
+  }
+
+  .spell-level-band {
+    margin-bottom: 4px !important;
+  }
+
+  .spell-level-band-title {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .spell-card,
+  .equipment-card,
+  .weapon-card,
+  .consumable-card,
+  .spell-slot-card,
+  .char-list-item {
+    margin-bottom: 4px !important;
+    padding: 6px 8px !important;
+  }
+
+  .card-item-title-row {
+    margin-bottom: 2px !important;
+  }
+
+  .spell-card-rolls {
+    padding: 2px 4px !important;
+    margin-bottom: 2px !important;
+  }
+
 
   .spell-inline-roll {
     padding: 0 !important;
