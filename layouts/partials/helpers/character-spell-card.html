@@ -49,9 +49,12 @@
   </details>
 
   {{- if $spell.canonical -}}
-  <div class="spell-card-rolls">
-    {{ partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) }}
-  </div>
+    {{- $rollsHtml := partial "helpers/spell-rolls.html" (dict "page" $spell.page "character" $character) | strings.TrimSpace -}}
+    {{- if $rollsHtml -}}
+      <div class="spell-card-rolls">
+        {{ $rollsHtml | safeHTML }}
+      </div>
+    {{- end -}}
   {{- end -}}
 
   {{ if $canPrepare }}

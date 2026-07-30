@@ -929,7 +929,7 @@ html.vtt-iframe .char-tab-content {
 
 .spell-card-actions {
   padding: 8px 12px;
-  border-top: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .spell-readonly-note {
@@ -938,7 +938,7 @@ html.vtt-iframe .char-tab-content {
 }
 
 .spell-details-accordion {
-  border-top: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .spell-details-accordion summary {
@@ -2184,7 +2184,21 @@ html.vtt-iframe .char-tab-content {
   .spell-card-rolls {
     padding: 2px 4px !important;
     margin-bottom: 2px !important;
+    border: none !important;
   }
+
+  .spell-card-rolls:empty {
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .spell-card .spell-card-actions,
+  .spell-card .spell-details-accordion {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
 
 
   .spell-inline-roll {
