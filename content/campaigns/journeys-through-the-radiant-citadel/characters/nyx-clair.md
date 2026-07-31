@@ -376,6 +376,12 @@ compendium_refs:
 - /compendium/rules/warlock-subclass/
 - /compendium/rules/awakened-mind/
 - /compendium/rules/great-old-one-spells/
+- /compendium/rules/pact-magic/
+- /compendium/rules/psychic-spells/
+- /compendium/spells/dissonant-whispers/
+- /compendium/spells/tashas-hideous-laughter/
+- /compendium/spells/detect-thoughts/
+- /compendium/spells/phantasmal-force/
 date: 2026-07-17 01:26:08+00:00
 draft: false
 factions: []
