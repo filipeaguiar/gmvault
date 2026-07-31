@@ -2180,6 +2180,8 @@ html.vtt-iframe .char-tab-content {
   .card-item-title-row {
     margin-bottom: 2px !important;
   }
+}
+/* Moved from bottom to close media query earlier */
 
   .spell-card-rolls {
     padding: 2px 4px !important;
@@ -2372,7 +2374,6 @@ html.vtt-iframe .char-tab-content {
     font-weight: 700 !important;
     color: var(--text-color) !important;
   }
-}
 
 
 
