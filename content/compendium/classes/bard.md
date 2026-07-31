@@ -29,7 +29,7 @@ translation:
 ---
 ## Progressão de Classe
 
-| Nível | Bônus de Proficiência | Características | Bardic Die | Cantrips|spells|level=0|class=bard | Prepared Spells|spells|level=!0|class=bard | 1st|spells|level=1|class=bard | 2nd|spells|level=2|class=bard | 3rd|spells|level=3|class=bard | 4th|spells|level=4|class=bard | 5th|spells|level=5|class=bard | 6th|spells|level=6|class=bard | 7th|spells|level=7|class=bard | 8th|spells|level=8|class=bard | 9th|spells|level=9|class=bard |
+| Nível | Bônus de Proficiência | Características | Bardic Die | Truques | Magias Preparadas | 1º | 2º | 3º | 4º | 5º | 6º | 7º | 8º | 9º |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1º | +2 | [Bardic Inspiration](/compendium/rules/bardic-inspiration/), [Spellcasting](/compendium/rules/spellcasting/) | 1d6 | 2 | 4 |  |  |  |  |  |  |  |  |  |
 | 2º | +2 | [Especialização](/compendium/rules/expertise/), [Jack of All Trades](/compendium/rules/jack-of-all-trades/) | 1d6 | 2 | 5 |  |  |  |  |  |  |  |  |  |

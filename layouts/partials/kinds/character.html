@@ -657,7 +657,6 @@
       {{ $classSlug := .name | urlize }}
       {{ $classPage := site.GetPage (printf "/compendium/classes/%s/" $classSlug) }}
       {{ $progressionLevel := .level }}
-      {{ if gt (.level | int) 1 }}{{ $progressionLevel = sub (.level | int) 1 }}{{ end }}
       <section class="class-progression-card">
         <header class="class-progression-header">
           <div class="class-progression-title">
