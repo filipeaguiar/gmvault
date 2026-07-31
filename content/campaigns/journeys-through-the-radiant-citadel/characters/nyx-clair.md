@@ -68,7 +68,7 @@ char_info:
   classes_progression:
   - level: 3
     name: Warlock
-    subclass: Great Old One
+    subclass: Great Old One Patron
   currencies:
     cp: 0
     ep: 0
@@ -257,7 +257,7 @@ char_info:
     cantrips_known: 6
     class_count: 0
     kind: pact
-    known_count: 11
+    known_count: 15
     known_label: Magias de Pacto
     pact_slot_count: 2
     pact_slot_level: 2
@@ -269,7 +269,7 @@ char_info:
     - 2
     slot_summary: 2 espaços · 6 truques
     slot_total: 2
-    total_spells: 11
+    total_spells: 15
     uses_pact_slots: true
   spells:
   - level: 0
@@ -316,6 +316,22 @@ char_info:
     name: Misty Step
     ref: /compendium/spells/misty-step/
     usage: 1 bonus action
+  - level: 1
+    name: Dissonant Whispers
+    ref: /compendium/spells/dissonant-whispers/
+    usage: 1 action
+  - level: 1
+    name: Tasha's Hideous Laughter
+    ref: /compendium/spells/tashas-hideous-laughter/
+    usage: 1 action
+  - level: 2
+    name: Detect Thoughts
+    ref: /compendium/spells/detect-thoughts/
+    usage: 1 action
+  - level: 2
+    name: Phantasmal Force
+    ref: /compendium/spells/phantasmal-force/
+    usage: 1 action
   stats:
     cha: 14
     con: 14
@@ -323,7 +339,7 @@ char_info:
     int: 16
     str: 8
     wis: 12
-  subclass: Great Old One
+  subclass: Great Old One Patron
 compendium_refs:
 - /compendium/classes/warlock/
 - /compendium/classes/great-old-one-patron/

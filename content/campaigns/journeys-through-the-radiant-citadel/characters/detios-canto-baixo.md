@@ -274,10 +274,10 @@ char_info:
     ability: cha
     can_mark_known: true
     can_prepare: false
-    cantrips_known: 0
+    cantrips_known: 2
     class_count: 0
     kind: known
-    known_count: 7
+    known_count: 5
     known_label: Magias Conhecidas
     pact_slot_count: 0
     pact_slot_level: 0

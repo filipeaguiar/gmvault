@@ -203,7 +203,7 @@
       {
         "description": "Ataque com Arma: [1d20+1] para acertar. Dano: [1d4-1] de dano.",
         "id": "3382f396-6ee7-48fc-ba9e-ae31c0b42c07-attack",
-        "name": "Falso"
+        "name": "Foice"
       }
     ],
     "com.battle-system.forge/Z036": [],
@@ -256,7 +256,7 @@
       {
         "description": "Weapon; Propriedades: [light]",
         "id": "3382f396-6ee7-48fc-ba9e-ae31c0b42c07",
-        "name": "Falso",
+        "name": "Foice",
         "quantity": 1
       }
     ],
