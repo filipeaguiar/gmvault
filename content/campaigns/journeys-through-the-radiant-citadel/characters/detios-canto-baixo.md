@@ -61,6 +61,16 @@ char_info:
     ref: /compendium/rules/expertise/
     reset: ''
     source: class
+  - max_uses: 0
+    name: Psychic Blades
+    ref: /compendium/rules/psychic-blades/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Words of Terror
+    ref: /compendium/rules/words-of-terror/
+    reset: ''
+    source: class
   alignment: True Neutral
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-detios-canto-baixo.png'
   class: Bard

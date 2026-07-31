@@ -40,6 +40,26 @@ char_info:
     ref: /compendium/rules/magical-cunning/
     reset: ''
     source: class
+  - max_uses: 0
+    name: Pact Magic
+    ref: /compendium/rules/pact-magic/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Awakened Mind
+    ref: /compendium/rules/awakened-mind/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Great Old One Spells
+    ref: /compendium/rules/great-old-one-spells/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Psychic Spells
+    ref: /compendium/rules/psychic-spells/
+    reset: ''
+    source: class
   alignment: True Neutral
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-nyx.png'
   class: Warlock
