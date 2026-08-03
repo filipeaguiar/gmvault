@@ -1,6 +1,6 @@
 ---
 char_info:
-  ac: '11'
+  ac: '12'
   actions: &id001
   - max_uses: 0
     name: Ataque
