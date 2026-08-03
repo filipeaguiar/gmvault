@@ -31,47 +31,47 @@ char_info:
     ref: /compendium/rules/action-use-object/
     reset: ''
   - max_uses: 4
-    name: Bardic Inspiration
+    name: Inspiração de Bardo
     ref: /compendium/rules/bardic-inspiration/
     reset: 'Descanso Longo'
     roll: 1d6
     source: class
   - max_uses: 0
-    name: Spellcasting
+    name: Conjuração
     ref: /compendium/rules/spellcasting/
     reset: ''
     source: class
   - max_uses: 0
-    name: Jack of All Trades
+    name: Faz-Tudo
     ref: /compendium/rules/jack-of-all-trades/
     reset: ''
     source: class
   - max_uses: 0
-    name: Magical Inspiration
+    name: Inspiração Mágica
     ref: /compendium/rules/magical-inspiration/
     reset: ''
     source: class
   - max_uses: 0
-    name: Song of Rest (d6)
+    name: Canção de Descanso (d6)
     ref: /compendium/rules/song-of-rest-d6/
     reset: ''
     source: class
   - max_uses: 0
-    name: Expertise
+    name: Especialização
     ref: /compendium/rules/expertise/
     reset: ''
     source: class
   - max_uses: 0
-    name: Psychic Blades
+    name: Lâminas Psíquicas
     ref: /compendium/rules/psychic-blades/
     reset: ''
     source: class
   - max_uses: 0
-    name: Words of Terror
+    name: Palavras de Terror
     ref: /compendium/rules/words-of-terror/
     reset: ''
     source: class
-  alignment: True Neutral
+  alignment: Neutro Verdadeiro
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-detios-canto-baixo.png'
   class: Bard
   class_level: 3
@@ -89,15 +89,15 @@ char_info:
   dndbeyond_id: ''
   equipment:
   - equipped: true
-    name: Backpack
+    name: Mochila
     quantity: 1
     ref: /compendium/items/backpack/
   - equipped: true
-    name: Bedroll
+    name: Saco de Dormir
     quantity: 1
     ref: /compendium/items/bedroll/
   - equipped: true
-    name: Costume Clothes
+    name: Roupas de Fantasia
     quantity: 1
     ref: /compendium/items/costume-clothes/
   - equipped: true
@@ -109,7 +109,7 @@ char_info:
     quantity: 1
     ref: /compendium/items/rations-1-day/
   - equipped: true
-    name: Waterskin
+    name: Cantil
     quantity: 1
     ref: /compendium/items/waterskin/
   - equipped: true
@@ -117,11 +117,11 @@ char_info:
     quantity: 1
     ref: /compendium/items/disguise-kit/
   - equipped: true
-    name: Leather Armor
+    name: Armadura de Couro
     quantity: 1
     ref: /compendium/items/leather-armor/
   - equipped: true
-    name: Dagger
+    name: Adaga
     quantity: 2
     ref: /compendium/items/dagger/
   - equipped: true

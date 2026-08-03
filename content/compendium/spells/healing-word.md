@@ -18,12 +18,12 @@ source:
   remote_key: spell
   remote_id: c0de0c232e4afb10
 spell_info:
-  level: 1st level
-  school: Abjuration
-  cast_time: 1 bonus action
-  range: 60 feet
-  components: V
-  duration: Instantaneous
+  level: "1º nível"
+  school: "Abjuração"
+  cast_time: "1 ação bônus"
+  range: "60 pés"
+  components: "V"
+  duration: "Instantâneo"
   level_number: 1
   attack_type: null
   damage_types: []

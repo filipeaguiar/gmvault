@@ -18,13 +18,13 @@ source:
   remote_key: spell
   remote_id: a3547c3b4e9b7ad9
 spell_info:
-  level: 1st level
-  school: Divination
-  cast_time: 1 action
-  range: 30 feet
-  components: V, S
+  level: "1º nível"
+  school: "Adivinhação"
+  cast_time: "1 ação"
+  range: "30 pés"
+  components: "V, S"
   ritual: true
-  duration: Concentration, up to 10 minute
+  duration: "Concentração, até 10 minutos"
   level_number: 1
   attack_type: null
   damage_types: []

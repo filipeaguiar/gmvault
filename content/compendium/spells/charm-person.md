@@ -18,12 +18,12 @@ source:
   remote_key: spell
   remote_id: 86f3b34219bf5ad1
 spell_info:
-  level: 1st level
-  school: Enchantment
-  cast_time: 1 action
-  range: 30 feet
-  components: V, S
-  duration: 1 hour
+  level: "1º nível"
+  school: "Encantamento"
+  cast_time: "1 ação"
+  range: "30 pés"
+  components: "V, S"
+  duration: "1 hora"
   level_number: 1
   attack_type: null
   damage_types: []

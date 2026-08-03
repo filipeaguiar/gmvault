@@ -18,12 +18,12 @@ source:
   remote_key: spell
   remote_id: aff97722448891d2
 spell_info:
-  level: Cantrip
-  school: Enchantment
-  cast_time: 1 action
-  range: 60 feet
-  components: V
-  duration: Instantaneous
+  level: "Truque"
+  school: "Encantamento"
+  cast_time: "1 ação"
+  range: "60 pés"
+  components: "V"
+  duration: "Instantâneo"
   level_number: 0
   attack_type: null
   damage_types:
