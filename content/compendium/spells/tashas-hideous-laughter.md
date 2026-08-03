@@ -9,12 +9,12 @@ tags:
 visibility: public
 status: draft
 spell_info:
-  level: 1st level
-  school: Enchantment
-  cast_time: 1 action
-  range: 30 feet
-  components: V, S, M
-  duration: Concentration, up to 1 minute
+  level: "1º nível"
+  school: "Encantamento"
+  cast_time: "1 ação"
+  range: "30 pés"
+  components: "V, S, M"
+  duration: "Concentração, até 1 minuto"
   level_number: 1
   attack_type: null
   damage_types: []

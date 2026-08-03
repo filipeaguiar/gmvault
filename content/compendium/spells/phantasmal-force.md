@@ -9,12 +9,12 @@ tags:
 visibility: public
 status: draft
 spell_info:
-  level: 2nd level
-  school: Illusion
-  cast_time: 1 action
-  range: 60 feet
-  components: V, S, M
-  duration: Concentration, up to 1 minute
+  level: "2º nível"
+  school: "Ilusão"
+  cast_time: "1 ação"
+  range: "60 pés"
+  components: "V, S, M"
+  duration: "Concentração, até 1 minuto"
   level_number: 2
   attack_type: null
   damage_types:
