@@ -2,13 +2,13 @@
   "schema_version": 1,
   "provider": "5e.tools",
   "data_base_url": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/master/data/",
-  "input_fingerprint": "296fc45790f694981a4f8cb880760795341f42ab8a64839a4f9f2a17343f0c22",
+  "input_fingerprint": "49dfd075cb2d8d2861d39573ee4243c5aaca7b80c928ed1fb47eebc9ee3c8203",
   "counts": {
-    "direct": 266,
-    "transitive_dependencies": 67,
-    "selected": 333,
-    "unused": 882,
-    "total_entities": 1198
+    "direct": 285,
+    "transitive_dependencies": 71,
+    "selected": 356,
+    "unused": 867,
+    "total_entities": 1211
   },
   "selected": [
     {
@@ -38,7 +38,9 @@
       "direct_origins": [
         "character"
       ],
-      "dependency_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/college-of-whispers/"
+      ],
       "selected_source": "XPHB",
       "remote_file": "class/class-bard.json",
       "remote_key": "class",
@@ -46,6 +48,41 @@
       "status": "resolved",
       "error": null,
       "remote_id": "ef360aaf98c4727f"
+    },
+    {
+      "url": "/compendium/classes/college-of-whispers/",
+      "category": "classes",
+      "kind": "class",
+      "slug": "college-of-whispers",
+      "canonical_name": "College of Whispers",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": null,
+      "remote_file": null,
+      "remote_key": null,
+      "selection_reason": null,
+      "status": "error",
+      "error": "Fontes ambíguas sem política para College of Whispers: XGE"
+    },
+    {
+      "url": "/compendium/classes/great-old-one-patron/",
+      "category": "classes",
+      "kind": "class",
+      "slug": "great-old-one-patron",
+      "canonical_name": "Great Old One Patron",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclass",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9a1ef68407a355d0"
     },
     {
       "url": "/compendium/classes/monk/",
@@ -110,7 +147,9 @@
       "direct_origins": [
         "character"
       ],
-      "dependency_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
       "selected_source": "XPHB",
       "remote_file": "class/class-warlock.json",
       "remote_key": "class",
@@ -532,6 +571,23 @@
       "status": "resolved",
       "error": null,
       "remote_id": "31faa786bddf7795"
+    },
+    {
+      "url": "/compendium/items/potion-of-healing/",
+      "category": "items",
+      "kind": "item",
+      "slug": "potion-of-healing",
+      "canonical_name": "Potion Of Healing",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": null,
+      "remote_file": null,
+      "remote_key": null,
+      "selection_reason": null,
+      "status": "error",
+      "error": "Fonte explícita PHB não encontrada para Potion Of Healing"
     },
     {
       "url": "/compendium/items/quarterstaff/",
@@ -1758,6 +1814,23 @@
       "remote_id": "d59d4b3f3127639d"
     },
     {
+      "url": "/compendium/monsters/giant-centipede/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-centipede",
+      "canonical_name": "Centopeia Gigante",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": null,
+      "remote_file": null,
+      "remote_key": null,
+      "selection_reason": null,
+      "status": "error",
+      "error": "Fontes ambíguas sem política para Centopeia Gigante: MM, XMM"
+    },
+    {
       "url": "/compendium/monsters/giant-crocodile/",
       "category": "monsters",
       "kind": "monster",
@@ -1776,6 +1849,23 @@
       "remote_id": "7ab41fe41d4bddbd"
     },
     {
+      "url": "/compendium/monsters/giant-inferno-spider/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-inferno-spider",
+      "canonical_name": "Aranha Infernal Gigante",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": null,
+      "remote_file": null,
+      "remote_key": null,
+      "selection_reason": null,
+      "status": "error",
+      "error": "Entidade não encontrada no 5e.tools: monster 'Aranha Infernal Gigante' (giant-inferno-spider)"
+    },
+    {
       "url": "/compendium/monsters/giant-lizard/",
       "category": "monsters",
       "kind": "monster",
@@ -1792,6 +1882,23 @@
       "status": "resolved",
       "error": null,
       "remote_id": "a91e6bc9e0aca594"
+    },
+    {
+      "url": "/compendium/monsters/giant-rat/",
+      "category": "monsters",
+      "kind": "monster",
+      "slug": "giant-rat",
+      "canonical_name": "Rato Gigante",
+      "direct_origins": [
+        "campaign"
+      ],
+      "dependency_origins": [],
+      "selected_source": null,
+      "remote_file": null,
+      "remote_key": null,
+      "selection_reason": null,
+      "status": "error",
+      "error": "Fontes ambíguas sem política para Rato Gigante: MM, XMM"
     },
     {
       "url": "/compendium/monsters/giant-scorpion/",
@@ -3347,6 +3454,26 @@
       "remote_id": "e0a2030b09c573e5"
     },
     {
+      "url": "/compendium/rules/awakened-mind/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "awakened-mind",
+      "canonical_name": "Awakened Mind",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9a80872b147a83ea"
+    },
+    {
       "url": "/compendium/rules/barbarian-subclass/",
       "category": "rules",
       "kind": "rule",
@@ -3372,7 +3499,9 @@
       "kind": "rule",
       "slug": "bard-subclass",
       "canonical_name": "Bard Subclass",
-      "direct_origins": [],
+      "direct_origins": [
+        "character"
+      ],
       "dependency_origins": [
         "/compendium/classes/bard/"
       ],
@@ -3479,6 +3608,44 @@
       "remote_id": "d2ad6b867c838bbf"
     },
     {
+      "url": "/compendium/rules/clairvoyant-combatant/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "clairvoyant-combatant",
+      "canonical_name": "Clairvoyant Combatant",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "32d4f5e6c326d35e"
+    },
+    {
+      "url": "/compendium/rules/college-of-whispers/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "college-of-whispers",
+      "canonical_name": "College of Whispers",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [
+        "/compendium/classes/college-of-whispers/"
+      ],
+      "selected_source": "XGE",
+      "remote_file": "class/class-bard.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "única fonte disponível: XGE",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f95f349388302312"
+    },
+    {
       "url": "/compendium/rules/contact-patron/",
       "category": "rules",
       "kind": "rule",
@@ -3513,6 +3680,24 @@
       "status": "resolved",
       "error": null,
       "remote_id": "ce2987164c2dcfb3"
+    },
+    {
+      "url": "/compendium/rules/create-thrall/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "create-thrall",
+      "canonical_name": "Create Thrall",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8f936ad33128d00f"
     },
     {
       "url": "/compendium/rules/cunning-action/",
@@ -3827,6 +4012,24 @@
       "status": "resolved",
       "error": null,
       "remote_id": "2518c4daf3c4315d"
+    },
+    {
+      "url": "/compendium/rules/eldritch-hex/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "eldritch-hex",
+      "canonical_name": "Eldritch Hex",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "44a7e19c5bc0812a"
     },
     {
       "url": "/compendium/rules/eldritch-invocation-options/",
@@ -4151,6 +4354,44 @@
       "remote_id": "0baf9713af52b857"
     },
     {
+      "url": "/compendium/rules/great-old-one-patron/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "great-old-one-patron",
+      "canonical_name": "Great Old One Patron",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4391ba431fb5e0c0"
+    },
+    {
+      "url": "/compendium/rules/great-old-one-spells/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "great-old-one-spells",
+      "canonical_name": "Great Old One Spells",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "c06ba3fdef5bd01a"
+    },
+    {
       "url": "/compendium/rules/heightened-focus/",
       "category": "rules",
       "kind": "rule",
@@ -4391,6 +4632,24 @@
       "remote_id": "3a099d9daaa27224"
     },
     {
+      "url": "/compendium/rules/mantle-of-whispers/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "mantle-of-whispers",
+      "canonical_name": "Mantle of Whispers",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/college-of-whispers/"
+      ],
+      "selected_source": "XGE",
+      "remote_file": "class/class-bard.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "única fonte disponível: XGE",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "d5e36c44b72d1ab1"
+    },
+    {
       "url": "/compendium/rules/martial-arts-die/",
       "category": "rules",
       "kind": "rule",
@@ -4586,7 +4845,9 @@
       "kind": "rule",
       "slug": "pact-magic",
       "canonical_name": "Pact Magic",
-      "direct_origins": [],
+      "direct_origins": [
+        "character"
+      ],
       "dependency_origins": [
         "/compendium/classes/warlock/"
       ],
@@ -4747,6 +5008,46 @@
       "remote_id": "edd42c64b59864d2"
     },
     {
+      "url": "/compendium/rules/psychic-blades/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "psychic-blades",
+      "canonical_name": "Psychic Blades",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [
+        "/compendium/classes/college-of-whispers/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-rogue.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "9c4e4ab0e4198927"
+    },
+    {
+      "url": "/compendium/rules/psychic-spells/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "psychic-spells",
+      "canonical_name": "Psychic Spells",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "8f125190cea4dc56"
+    },
+    {
       "url": "/compendium/rules/rage/",
       "category": "rules",
       "kind": "rule",
@@ -4895,6 +5196,24 @@
       "status": "resolved",
       "error": null,
       "remote_id": "5982d802f5b3fbf6"
+    },
+    {
+      "url": "/compendium/rules/shadow-lore/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "shadow-lore",
+      "canonical_name": "Shadow Lore",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/college-of-whispers/"
+      ],
+      "selected_source": "XGE",
+      "remote_file": "class/class-bard.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "única fonte disponível: XGE",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "468e71110b3d0ddb"
     },
     {
       "url": "/compendium/rules/slippery-mind/",
@@ -5253,6 +5572,24 @@
       "remote_id": "db2851ff5f982e88"
     },
     {
+      "url": "/compendium/rules/thought-shield/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "thought-shield",
+      "canonical_name": "Thought Shield",
+      "direct_origins": [],
+      "dependency_origins": [
+        "/compendium/classes/great-old-one-patron/"
+      ],
+      "selected_source": "XPHB",
+      "remote_file": "class/class-warlock.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "085d21a601aec53f"
+    },
+    {
       "url": "/compendium/rules/trip-cost-1d6/",
       "category": "rules",
       "kind": "rule",
@@ -5355,7 +5692,9 @@
       "kind": "rule",
       "slug": "warlock-subclass",
       "canonical_name": "Warlock Subclass",
-      "direct_origins": [],
+      "direct_origins": [
+        "character"
+      ],
       "dependency_origins": [
         "/compendium/classes/warlock/"
       ],
@@ -5441,6 +5780,26 @@
       "status": "resolved",
       "error": null,
       "remote_id": "8c3c6935ba30682b"
+    },
+    {
+      "url": "/compendium/rules/words-of-terror/",
+      "category": "rules",
+      "kind": "rule",
+      "slug": "words-of-terror",
+      "canonical_name": "Words of Terror",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [
+        "/compendium/classes/college-of-whispers/"
+      ],
+      "selected_source": "XGE",
+      "remote_file": "class/class-bard.json",
+      "remote_key": "subclassFeature",
+      "selection_reason": "única fonte disponível: XGE",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "275e660bf48ae00a"
     },
     {
       "url": "/compendium/species/dwarf/",
@@ -5675,6 +6034,24 @@
       "status": "resolved",
       "error": null,
       "remote_id": "a3547c3b4e9b7ad9"
+    },
+    {
+      "url": "/compendium/spells/detect-thoughts/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "detect-thoughts",
+      "canonical_name": "Detect Thoughts",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "69e3b43a06509a59"
     },
     {
       "url": "/compendium/spells/dissonant-whispers/",
@@ -5964,6 +6341,42 @@
       "remote_id": "df8b88bbaec13fc0"
     },
     {
+      "url": "/compendium/spells/misty-step/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "misty-step",
+      "canonical_name": "Misty Step",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "f5f147b561feb976"
+    },
+    {
+      "url": "/compendium/spells/phantasmal-force/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "phantasmal-force",
+      "canonical_name": "Phantasmal Force",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "4fd3319e412a2da6"
+    },
+    {
       "url": "/compendium/spells/ray-of-frost/",
       "category": "spells",
       "kind": "spell",
@@ -6054,6 +6467,24 @@
       "remote_id": "1f691f7827d2088a"
     },
     {
+      "url": "/compendium/spells/tashas-hideous-laughter/",
+      "category": "spells",
+      "kind": "spell",
+      "slug": "tashas-hideous-laughter",
+      "canonical_name": "Tasha's Hideous Laughter",
+      "direct_origins": [
+        "character"
+      ],
+      "dependency_origins": [],
+      "selected_source": "XPHB",
+      "remote_file": "spells/spells-xphb.json",
+      "remote_key": "spell",
+      "selection_reason": "prioridade de fonte: XPHB",
+      "status": "resolved",
+      "error": null,
+      "remote_id": "dca8f75e6b52e6a5"
+    },
+    {
       "url": "/compendium/spells/unseen-servant/",
       "category": "spells",
       "kind": "spell",
@@ -6123,7 +6554,6 @@
     "/compendium/classes/college-of-lore/",
     "/compendium/classes/college-of-swords/",
     "/compendium/classes/college-of-valor/",
-    "/compendium/classes/college-of-whispers/",
     "/compendium/classes/divine-soul/",
     "/compendium/classes/diviner/",
     "/compendium/classes/draconic-sorcery/",
@@ -6136,7 +6566,6 @@
     "/compendium/classes/forge-domain/",
     "/compendium/classes/gloom-stalker/",
     "/compendium/classes/grave-domain/",
-    "/compendium/classes/great-old-one-patron/",
     "/compendium/classes/horizon-walker/",
     "/compendium/classes/hunter/",
     "/compendium/classes/illusionist/",
@@ -6336,7 +6765,6 @@
     "/compendium/rules/avatar-of-battle/",
     "/compendium/rules/avenging-angel/",
     "/compendium/rules/awakened-astral-self/",
-    "/compendium/rules/awakened-mind/",
     "/compendium/rules/awakened-spellbook/",
     "/compendium/rules/balm-of-the-summer-court/",
     "/compendium/rules/bard-college-feature/",
@@ -6409,7 +6837,6 @@
     "/compendium/rules/circle-of-the-stars/",
     "/compendium/rules/circle-of-wildfire/",
     "/compendium/rules/circle-spells/",
-    "/compendium/rules/clairvoyant-combatant/",
     "/compendium/rules/cleric-subclass/",
     "/compendium/rules/cloak-of-shadows/",
     "/compendium/rules/clockwork-cavalcade/",
@@ -6424,7 +6851,6 @@
     "/compendium/rules/college-of-lore/",
     "/compendium/rules/college-of-swords/",
     "/compendium/rules/college-of-valor/",
-    "/compendium/rules/college-of-whispers/",
     "/compendium/rules/combat-inspiration/",
     "/compendium/rules/combat-superiority/",
     "/compendium/rules/conquering-presence/",
@@ -6433,7 +6859,6 @@
     "/compendium/rules/controlled-surge/",
     "/compendium/rules/corona-of-light/",
     "/compendium/rules/cosmic-omen/",
-    "/compendium/rules/create-thrall/",
     "/compendium/rules/creative-crescendo/",
     "/compendium/rules/curving-shot/",
     "/compendium/rules/cutting-words/",
@@ -6475,7 +6900,6 @@
     "/compendium/rules/durable-magic/",
     "/compendium/rules/ear-for-deceit/",
     "/compendium/rules/elder-champion/",
-    "/compendium/rules/eldritch-hex/",
     "/compendium/rules/eldritch-knight/",
     "/compendium/rules/eldritch-strike/",
     "/compendium/rules/eldritch-versatility/",
@@ -6549,8 +6973,6 @@
     "/compendium/rules/glorious-defense/",
     "/compendium/rules/grasping-tentacles/",
     "/compendium/rules/grave-domain/",
-    "/compendium/rules/great-old-one-patron/",
-    "/compendium/rules/great-old-one-spells/",
     "/compendium/rules/great-stature/",
     "/compendium/rules/greater-divine-intervention/",
     "/compendium/rules/greater-portent/",
@@ -6638,7 +7060,6 @@
     "/compendium/rules/manipulate-elements/",
     "/compendium/rules/mantle-of-inspiration/",
     "/compendium/rules/mantle-of-majesty/",
-    "/compendium/rules/mantle-of-whispers/",
     "/compendium/rules/martial-training/",
     "/compendium/rules/master-duelist/",
     "/compendium/rules/master-of-hexes/",
@@ -6741,9 +7162,7 @@
     "/compendium/rules/psionic-sorcery/",
     "/compendium/rules/psionic-spells/",
     "/compendium/rules/psionic-strike/",
-    "/compendium/rules/psychic-blades/",
     "/compendium/rules/psychic-defenses/",
-    "/compendium/rules/psychic-spells/",
     "/compendium/rules/psychic-teleportation/",
     "/compendium/rules/psychic-veil/",
     "/compendium/rules/psychic-whispers/",
@@ -6794,7 +7213,6 @@
     "/compendium/rules/second-wind/",
     "/compendium/rules/sentinel-at-death-s-door/",
     "/compendium/rules/shadow-arts/",
-    "/compendium/rules/shadow-lore/",
     "/compendium/rules/shadow-magic/",
     "/compendium/rules/shadow-step/",
     "/compendium/rules/shadow-walk/",
@@ -6890,7 +7308,6 @@
     "/compendium/rules/thief-s-reflexes/",
     "/compendium/rules/thief/",
     "/compendium/rules/thiefs-reflexes/",
-    "/compendium/rules/thought-shield/",
     "/compendium/rules/three-extra-attacks/",
     "/compendium/rules/tides-of-chaos/",
     "/compendium/rules/timeless-body/",
@@ -6969,19 +7386,13 @@
     "/compendium/rules/wind-speaker/",
     "/compendium/rules/wizard-subclass/",
     "/compendium/rules/wizardly-quill/",
-    "/compendium/rules/words-of-terror/",
     "/compendium/rules/wrath-of-the-sea/",
     "/compendium/rules/writhing-tide/",
     "/compendium/rules/zealous-presence/"
   ],
   "missing_local": [
+    "/compendium/items/potion-of-healing/",
     "/compendium/items/rapier/",
-    "/compendium/rules/action-dash/",
-    "/compendium/rules/action-disengage/",
-    "/compendium/rules/action-dodge/",
-    "/compendium/rules/action-help/",
-    "/compendium/rules/action-hide/",
-    "/compendium/rules/action-use-object/",
     "/compendium/spells/alter-self/",
     "/compendium/spells/arcane-eye/",
     "/compendium/spells/charm-monster/",
@@ -6994,7 +7405,7 @@
     "/compendium/spells/summon-dragon/"
   ],
   "resolution": {
-    "resolved": 332,
-    "error": 1
+    "resolved": 350,
+    "error": 6
   }
 }
