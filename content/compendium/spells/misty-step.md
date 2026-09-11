@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: ready
+status: draft
 source:
   provider: 5e.tools
   book: XPHB
@@ -16,19 +16,20 @@ source:
   entity_name: Misty Step
   remote_file: spells/spells-xphb.json
   remote_key: spell
+  remote_id: f5f147b561feb976
 spell_info:
-  level: "2º nível"
-  level_number: 2
-  school: "Conjuração"
-  cast_time: "1 ação bônus"
-  range: "Pessoal"
-  components: "V"
+  level: 2nd level
+  school: Conjuration
+  cast_time: 1 bonus action
+  range: Self
+  components: V
   ritual: false
-  duration: "Instantânea"
+  duration: Instantaneous
+  level_number: 2
   attack_type: null
   damage_types: []
   saving_throws: []
   rolls: []
 ---
 
-Brevemente envolto por uma névoa prateada, você se teletransporta para um espaço desocupado que possa ver a até 30 pés.
+Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space you can see.

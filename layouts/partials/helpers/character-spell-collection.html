@@ -1,7 +1,7 @@
 {{- $character := . -}}
 {{- $info := $character.Params.char_info | default dict -}}
 {{- $profile := $info.spellcasting | default dict -}}
-{{- $mode := index $profile "kind" | default "none" -}}
+{{- $mode := or (index $profile "kind") (index $profile "mode") "none" -}}
 {{- $profileCanPrepare := index $profile "can_prepare" | default false -}}
 {{- $slots := $info.spell_slots | default dict -}}
 {{- $scratch := newScratch -}}

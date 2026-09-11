@@ -29,10 +29,10 @@ translation:
 ---
 ## Progressão de Classe
 
-| Nível | Bônus de Proficiência | Características | Sorcery Points | Cantrips|spells|level=0|class=sorcerer | Prepared Spells|spells|level=!0|class=sorcerer | 1st|spells|level=1|class=sorcerer | 2nd|spells|level=2|class=sorcerer | 3rd|spells|level=3|class=sorcerer | 4th|spells|level=4|class=sorcerer | 5th|spells|level=5|class=sorcerer | 6th|spells|level=6|class=sorcerer | 7th|spells|level=7|class=sorcerer | 8th|spells|level=8|class=sorcerer | 9th|spells|level=9|class=sorcerer |
+| Nível | Bônus de Proficiência | Características | Pontos de Feitiçaria | Truques | Magias Preparadas | 1º | 2º | 3º | 4º | 5º | 6º | 7º | 8º | 9º |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1º | +2 | [Innate Sorcery](/compendium/rules/innate-sorcery/), [Spellcasting](/compendium/rules/spellcasting/) | 0 | 4 | 2 |  |  |  |  |  |  |  |  |  |
-| 2º | +2 | [Font of Magic](/compendium/rules/font-of-magic/), [Metamagic](/compendium/rules/metamagic/), [Metamagic Options](/compendium/rules/metamagic-options/) | 2 | 4 | 4 |  |  |  |  |  |  |  |  |  |
+| 1º | +2 | [Innate Sorcery](/compendium/rules/innate-sorcery/), [Conjuração](/compendium/rules/sorcerer-spellcasting/) | 0 | 4 | 2 |  |  |  |  |  |  |  |  |  |
+| 2º | +2 | [Font of Magic](/compendium/rules/sorcerer-font-of-magic/), [Metamagic](/compendium/rules/metamagic/), [Metamagic Options](/compendium/rules/metamagic-options/) | 2 | 4 | 4 |  |  |  |  |  |  |  |  |  |
 | 3º | +2 | [Sorcerer Subclass](/compendium/rules/sorcerer-subclass/) | 3 | 4 | 6 |  |  |  |  |  |  |  |  |  |
 | 4º | +2 | [Aumento no Valor de Atributo](/compendium/rules/ability-score-improvement/) | 4 | 5 | 7 |  |  |  |  |  |  |  |  |  |
 | 5º | +3 | [Sorcerous Restoration](/compendium/rules/sorcerous-restoration/) | 5 | 5 | 9 |  |  |  |  |  |  |  |  |  |
@@ -57,11 +57,11 @@ translation:
 ## Nível 1
 
 - [Innate Sorcery](/compendium/rules/innate-sorcery/)
-- [Spellcasting](/compendium/rules/spellcasting/)
+- [Conjuração](/compendium/rules/sorcerer-spellcasting/)
 
 ## Nível 2
 
-- [Font of Magic](/compendium/rules/font-of-magic/)
+- [Font of Magic](/compendium/rules/sorcerer-font-of-magic/)
 - [Metamagic](/compendium/rules/metamagic/)
 - [Metamagic Options](/compendium/rules/metamagic-options/)
 

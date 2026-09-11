@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: ready
+status: draft
 source:
   provider: 5e.tools
   book: XPHB

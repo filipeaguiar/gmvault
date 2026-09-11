@@ -33,7 +33,7 @@ translation:
 
 - [Wild Magic Sorcery](/compendium/rules/wild-magic-sorcery/)
 - [Tides of Chaos](/compendium/rules/tides-of-chaos/)
-- [Wild Magic Surge](/compendium/rules/wild-magic-surge/)
+- [Wild Magic Surge](/compendium/rules/wild-magic-surge-2024/)
 
 ## Nível 6
 

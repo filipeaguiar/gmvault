@@ -23,6 +23,7 @@ spell_info:
   cast_time: 1 action
   range: 30 feet
   components: V, S
+  ritual: false
   duration: 1 minute
   level_number: 0
   attack_type: null

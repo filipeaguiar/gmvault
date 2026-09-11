@@ -18,12 +18,13 @@ source:
   remote_key: spell
   remote_id: df8b88bbaec13fc0
 spell_info:
-  level: "Truque"
-  school: "Ilusão"
-  cast_time: "1 ação"
-  range: "30 pés"
-  components: "S, M (um pedaço de lã)"
-  duration: "1 minuto"
+  level: Cantrip
+  school: Illusion
+  cast_time: 1 action
+  range: 30 feet
+  components: S, M (a bit of fleece)
+  ritual: false
+  duration: 1 minute
   level_number: 0
   attack_type: null
   damage_types: []

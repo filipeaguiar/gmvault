@@ -185,7 +185,7 @@
         <span class="header-stat-badge stat-hp" title="Vida Máxima (HP Max)"><i class="ra ra-health"></i><span class="header-stat-label">HP</span><strong>{{ .hp_max }}</strong></span>
         <span class="header-stat-badge stat-speed" title="Deslocamento (Speed)"><i class="ra ra-boot-stomp"></i><span class="header-stat-label">Desloc.</span><strong>{{ .speed.walk }}m</strong></span>
         <span class="header-stat-badge stat-prof" title="Bônus de Proficiência"><i class="ra ra-lightning-bolt"></i><span class="header-stat-label">Prof.</span><strong>+{{ .proficiency_bonus }}</strong></span>
-        {{ if gt .spell_dc 0.0 }}
+        {{ if gt (.spell_dc | int) 0 }}
         <span class="header-stat-badge stat-dc" title="CD Magia"><i class="ra ra-crystal-wand"></i><span class="header-stat-label">CD</span><strong>{{ .spell_dc }}</strong></span>
         {{ end }}
       </div>
@@ -397,7 +397,7 @@
         {{ $normalizedName := lower $name }}
         {{ $source := lower (.source | default "") }}
         {{ $maxUses := .max_uses | int }}
-        {{ if and (gt $maxUses 0) (eq $source "class") (not (in ($consumablesScratch.Get "names") $normalizedName)) }}
+        {{ if and (gt $maxUses 0) (not (in ($consumablesScratch.Get "names") $normalizedName)) }}
           {{ $consumablesScratch.Add "items" (slice (dict "name" $name "current" $maxUses "max" $maxUses "type" "class" "reset" (.reset | default ""))) }}
           {{ $consumablesScratch.Add "names" (slice $normalizedName) }}
         {{ end }}
