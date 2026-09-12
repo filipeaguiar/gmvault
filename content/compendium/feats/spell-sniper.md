@@ -1,5 +1,5 @@
 ---
-title: Spell Sniper
+title: Atiradora de Magias
 type: feat
 draft: false
 weight: 10

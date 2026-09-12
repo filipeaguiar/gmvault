@@ -25,12 +25,13 @@ char_info:
   hp_current: "26"
   feat: ""
   feats:
-  - Ability Score Improvement
+  - name: "Atiradora de Magias"
+    ref: /compendium/feats/spell-sniper/
   size: "Medium"
   alignment: "Chaotic Good"
   dndbeyond_id: ""
   proficiency_bonus: 2
-  spell_dc: 14
+  spell_dc: 13
   avatar: "/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-saika.png"
   full_art: "/images/campaigns/journeys-through-the-radiant-citadel/characters/saika.png"
   spellcasting:
@@ -83,7 +84,7 @@ char_info:
     con: 4
     int: 1
     wis: 0
-    cha: 6
+    cha: 5
   saves_proficient:
     str: false
     dex: false
@@ -91,21 +92,21 @@ char_info:
     int: false
     wis: false
     cha: true
-  saves_summary: "Con +4, Cha +6"
+  saves_summary: "Con +4, Cha +5"
   mods:
     str: -1
     dex: 2
     con: 2
     int: 1
     wis: 0
-    cha: 4
+    cha: 3
   stats:
     str: 8
     dex: 14
     con: 14
     int: 12
     wis: 10
-    cha: 19
+    cha: 17
   currencies:
     cp: 0
     sp: 0
@@ -134,7 +135,7 @@ char_info:
       expertise: false
       stat: str
     deception:
-      bonus: 6
+      bonus: 5
       proficient: true
       expertise: false
       stat: cha
@@ -149,7 +150,7 @@ char_info:
       expertise: false
       stat: wis
     intimidation:
-      bonus: 4
+      bonus: 3
       proficient: false
       expertise: false
       stat: cha
@@ -174,12 +175,12 @@ char_info:
       expertise: false
       stat: wis
     performance:
-      bonus: 4
+      bonus: 3
       proficient: false
       expertise: false
       stat: cha
     persuasion:
-      bonus: 6
+      bonus: 5
       proficient: true
       expertise: false
       stat: cha
@@ -252,8 +253,8 @@ char_info:
       max_uses: 0
       reset: ''
       source: class
-    - name: 'Metamagic: Quickened Spell'
-      ref: /compendium/rules/metamagic-quickened-spell/
+    - name: 'Metamagic: Empowered Spell'
+      ref: /compendium/rules/metamagic-empowered-spell/
       max_uses: 0
       reset: ''
       source: class
@@ -401,7 +402,7 @@ locations: []
 factions: []
 compendium_refs:
 - /compendium/classes/sorcerer/
-- /compendium/feats/ability-score-improvement/
+- /compendium/feats/spell-sniper/
 - /compendium/items/backpack/
 - /compendium/items/book/
 - /compendium/items/crystal/
@@ -417,7 +418,7 @@ compendium_refs:
 - /compendium/rules/action-hide/
 - /compendium/rules/action-use-object/
 - /compendium/rules/innate-sorcery/
-- /compendium/rules/metamagic-quickened-spell/
+- /compendium/rules/metamagic-empowered-spell/
 - /compendium/rules/metamagic-subtle-spell/
 - /compendium/rules/sorcerer-subclass/
 - /compendium/rules/sorcerer-font-of-magic/
