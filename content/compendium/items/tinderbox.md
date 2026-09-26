@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,6 +22,13 @@ item_info:
   cost: 0.5 gp
   weight: 1 lb
   rarity: None
+titulo_pt_br: Caixa de fogo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.
+Um Acendedor é um pequeno recipiente que contém pederneira, fuzil e mecha (geralmente pano seco embebido em óleo leve) usado para acender fogo. Usá-lo para acender uma vela, lampião, lanterna ou tocha — ou qualquer outra coisa com combustível exposto — exige uma Ação Bônus. Acender qualquer outro fogo leva 1 minuto.

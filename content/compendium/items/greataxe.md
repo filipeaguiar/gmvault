@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -28,6 +28,12 @@ item_info:
   - two-handed
   damage: 1d12
   damage_type: slashing
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: argos
+  status: machine_translated
+titulo_pt_br: Grandeaxe.
 ---
 
 

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: PHB
@@ -22,6 +22,13 @@ item_info:
   cost: 0.2 gp
   weight: 1 lb
   rarity: None
+titulo_pt_br: Kit de Refeição
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-This tin box contains a cup and simple cutlery. The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.
+Esta caixa de lata contém um copo e talheres simples. A caixa se prende firmemente, e um lado pode ser usado como panela e o outro como prato ou tigela rasa.

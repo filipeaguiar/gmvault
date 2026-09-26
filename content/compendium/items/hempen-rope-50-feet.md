@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: PHB
@@ -22,6 +22,13 @@ item_info:
   cost: 1 gp
   weight: 10 lb
   rarity: None
+titulo_pt_br: Corda de Cânhamo (50 pés)
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Rope, whether made of hemp or silk, has 2 hit points and can be burst with a 17 Strength check.
+Corda, seja de cânhamo ou seda, tem 2 pontos de vida e pode ser rompida com um teste de Força CD 17.

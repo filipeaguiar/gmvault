@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -22,6 +22,13 @@ item_info:
   cost: 0.01 gp
   weight: 1 lb
   rarity: None
+titulo_pt_br: Tocha
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.
+Uma tocha queima por 1 hora, emitindo luz plena em um raio de 20 pés e penumbra por 20 pés adicionais. Quando você usa a ação de Ataque, você pode atacar com a tocha, usando-a como uma arma simples corpo a corpo. Em um acerto, o alvo sofre 1 de dano de fogo.

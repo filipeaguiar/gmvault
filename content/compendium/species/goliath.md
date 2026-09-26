@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -24,30 +24,37 @@ species_info: &id001
   size:
   - M
 race_info: *id001
+titulo_pt_br: Golias
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Giant Ancestry
+### Ancestralidade de Gigante
 
-You are descended from Giants. Choose one of the following benefits—a supernatural boon from your ancestry; you can use the chosen benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:
+Você é descendente de Gigantes. Escolha um dos benefícios a seguir — uma dádiva sobrenatural de sua ancestralidade; você pode usar o benefício escolhido um número de vezes igual ao seu Bônus de Proficiência, e recupera todos os usos gastos ao terminar um Descanso Longo:
 
-* {'type': 'item', 'name': "Cloud's Jaunt (Cloud Giant)", 'entries': ['As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see.']}
+* {'type': 'item', 'name': "Salto da Nuvem (Gigante da Nuvem)", 'entries': ['Como uma Ação Bônus, você se teleporta magicamente até 30 pés para um espaço desocupado que você possa ver.']}
 
-* {'type': 'item', 'name': "Fire's Burn (Fire Giant)", 'entries': ['When you hit a target with an attack roll and deal damage to it, you can also deal <span class="dice+" data-roll-notation="1d10">1d10</span> Fire damage to that target.']}
+* {'type': 'item', 'name': "Queimadura do Fogo (Gigante do Fogo)", 'entries': ['Quando você atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar <span class="dice+" data-roll-notation="1d10">1d10</span> de dano de Fogo ao alvo.']}
 
-* {'type': 'item', 'name': "Frost's Chill (Frost Giant)", 'entries': ['When you hit a target with an attack roll and deal damage to it, you can also deal <span class="dice+" data-roll-notation="1d6">1d6</span> Cold damage to that target and reduce its Speed by 10 feet until the start of your next turn.']}
+* {'type': 'item', 'name': "Frio do Gelo (Gigante do Gelo)", 'entries': ['Quando você atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar <span class="dice+" data-roll-notation="1d6">1d6</span> de dano de Frio ao alvo e reduzir o Deslocamento dele em 10 pés até o início do seu próximo turno.']}
 
-* {'type': 'item', 'name': "Hill's Tumble (Hill Giant)", 'entries': ['When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.']}
+* {'type': 'item', 'name': "Tombo da Colina (Gigante da Colina)", 'entries': ['Quando você atinge uma criatura Grande ou menor com uma jogada de ataque e causa dano a ela, você pode impor a condição Caído ao alvo.']}
 
-* {'type': 'item', 'name': "Stone's Endurance (Stone Giant)", 'entries': ['When you take damage, you can take a Reaction to roll <span class="dice+" data-roll-notation="1d12">1d12</span>. Add your Constitution modifier to the number rolled and reduce the damage by that total.']}
+* {'type': 'item', 'name': "Resistência da Pedra (Gigante da Pedra)", 'entries': ['Quando você sofre dano, você pode usar uma Reação para rolar <span class="dice+" data-roll-notation="1d12">1d12</span>. Some seu modificador de Constituição ao número rolado e reduza o dano nesse total.']}
 
-* {'type': 'item', 'name': "Storm's Thunder (Storm Giant)", 'entries': ['When you take damage from a creature within 60 feet of you, you can take a Reaction to deal <span class="dice+" data-roll-notation="1d8">1d8</span> Thunder damage to that creature.']}
-
-
-### Large Form
-
-Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.
+* {'type': 'item', 'name': "Trovão da Tempestade (Gigante da Tempestade)", 'entries': ['Quando você sofre dano de uma criatura a até 60 pés de você, você pode usar uma Reação para causar <span class="dice+" data-roll-notation="1d8">1d8</span> de dano Trovejante àquela criatura.']}
 
 
-### Powerful Build
+### Forma Grande
 
-You have Advantage on any ability check you make to end the Grappled condition. You also count as one size larger when determining your carrying capacity.
+A partir do nível de personagem 5, você pode mudar seu tamanho para Grande como uma Ação Bônus se estiver em um espaço grande o suficiente. Esta transformação dura 10 minutos ou até você encerrá-la (sem exigir ação). Durante essa duração, você tem Vantagem em testes de Força e seu Deslocamento aumenta em 10 pés. Depois de usar esta característica, você não pode usá-la novamente até terminar um Descanso Longo.
+
+
+### Compleição Poderosa
+
+Você tem Vantagem em qualquer teste de atributo que fizer para encerrar a condição Agarrado. Você também conta como um tamanho maior ao determinar sua capacidade de carga.
