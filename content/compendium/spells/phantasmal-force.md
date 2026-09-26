@@ -7,14 +7,14 @@ tags:
 - draft
 - importado
 visibility: public
-status: draft
+status: ready
 spell_info:
-  level: "2º nível"
-  school: "Ilusão"
-  cast_time: "1 ação"
-  range: "60 pés"
-  components: "V, S, M"
-  duration: "Concentração, até 1 minuto"
+  level: 2º nível
+  school: Ilusão
+  cast_time: 1 ação
+  range: 60 pés
+  components: V, S, M
+  duration: Concentração, até 1 minuto
   level_number: 2
   attack_type: null
   damage_types:
@@ -26,8 +26,15 @@ spell_info:
     notation: 1d6
     label: Dano
     damage_type: psychic
+titulo_pt_br: Força Fantasma
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
 Você cria uma ilusão que se enraíza na mente de uma criatura que você possa ver dentro do alcance. O alvo deve fazer um teste de resistência de Inteligência. Se falhar, você cria um objeto ilusório, criatura ou fenômeno perceptível apenas pelo alvo, confinado num cubo de 10 pés. A ilusão parece completamente real, e o alvo pode justificar qualquer efeito ilógico. Uma criatura afetada pode usar sua ação para investigar a ilusão (teste de Investigação/Inteligência contra a CD da magia).
 
-Se a ilusão representar uma ameaça ou criatura, ela pode causar 1d6 de dano psíquico ao alvo se ele estiver na área da ilusão no início do turno dele ou mover-se para ela.
+Se a ilusão representar uma ameaça ou criatura, ela pode causar 1d6 de dano psíquico ao alvo se ele estiver na área da ilusão no início do turno dele ou se mover para ela.

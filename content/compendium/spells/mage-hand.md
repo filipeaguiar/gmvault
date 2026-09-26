@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,12 +30,19 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Mãos Mágicas
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.
+Uma mão espectral flutuante aparece em um ponto que você escolher dentro do alcance. A mão dura pela duração. A mão desaparece se ficar a mais de 9 metros de você ou se você conjurar esta magia novamente.
 
-When you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial.
+Quando você conjura a magia, pode usar a mão para manipular um objeto, abrir uma porta ou recipiente destrancados, guardar ou recuperar um item de um recipiente aberto ou despejar o conteúdo de um frasco.
 
-As a Magic action on your later turns, you can control the hand thus again. As part of that action, you can move the hand up to 30 feet.
+Como uma Ação Mágica em seus turnos posteriores, você pode controlar a mão novamente dessa forma. Como parte dessa ação, você pode mover a mão até 9 metros.
 
-The hand can't attack, activate magic items, or carry more than 10 pounds.
+A mão não pode atacar, ativar itens mágicos ou carregar mais de 4,5 kg.

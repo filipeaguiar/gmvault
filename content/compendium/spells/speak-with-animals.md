@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,8 +30,15 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Falar com Animais
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.
+Pela duração, você pode compreender e se comunicar verbalmente com Bestas, e pode usar com elas qualquer uma das opções de perícia da ação Influenciar.
 
-Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.
+A maioria das Bestas tem pouco a dizer sobre assuntos que não se relacionam a sobrevivência ou companhia, mas, no mínimo, uma Besta pode fornecer informações sobre locais e monstros próximos, incluindo tudo o que tenha percebido no último dia.

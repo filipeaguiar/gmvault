@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XGE
@@ -30,12 +30,19 @@ spell_info:
   saving_throws:
   - strength
   rolls: []
+titulo_pt_br: Lufada
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You seize the air and compel it to create one of the following effects at a point you can see within range:
+Você agarra o ar e o compele a criar um dos seguintes efeitos em um ponto que você possa ver dentro do alcance:
 
-* One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.
+* Uma criatura Média ou menor que você escolher deve ser bem-sucedida em um teste de resistência de Força ou é empurrada até 5 pés para longe de você.
 
-* You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.
+* Você cria uma pequena rajada de ar capaz de mover um objeto que não esteja sendo empunhado nem carregado e que pese no máximo 5 libras. O objeto é empurrado até 10 pés para longe de você. Ele não é empurrado com força suficiente para causar dano.
 
-* You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters closed, or your clothing to ripple in a breeze.
+* Você cria um efeito sensorial inofensivo usando o ar, como fazer folhas farfalharem, o vento fechar venezianas com força ou suas roupas ondularem com uma brisa.

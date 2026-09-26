@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -24,32 +24,35 @@ species_info: &id001
   size:
   - M
 race_info: *id001
+titulo_pt_br: Elfo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Darkvision
+### Visão no Escuro
 
-You have Darkvision with a range of 60 feet.
+Você tem Visão no Escuro com alcance de 18 metros.
 
+### Linhagem Élfica
 
-### Elven Lineage
+Você faz parte de uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma linhagem da tabela Linhagens Élficas. Você recebe o benefício de 1º nível dessa linhagem.
 
-You are part of a lineage that grants you supernatural abilities. Choose a lineage from the Elven Lineages table. You gain the level 1 benefit of that lineage.
+Quando você alcança os níveis de personagem 3 e 5, aprende uma magia de nível mais alto, conforme mostrado na tabela. Você sempre tem essa magia preparada. Você pode conjurá-la uma vez sem gastar um Espaço de Magia e recupera a capacidade de conjurá-la dessa forma ao terminar um Descanso Longo. Você também pode conjurar a magia usando quaisquer Espaços de Magia que tiver do nível apropriado.
 
-When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level.
+Inteligência, Sabedoria ou Carisma é o seu atributo de conjuração para as magias que você conjura com esta característica (escolha o atributo ao selecionar a linhagem).
 
-Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage).
+### Ancestralidade Feérica
 
+Você tem Vantagem nos testes de resistência que você faz para evitar ou encerrar a condição Enfeitiçado.
 
-### Fey Ancestry
+### Sentidos Aguçados
 
-You have Advantage on saving throws you make to avoid or end the Charmed condition.
+Você tem proficiência em uma das perícias Intuição, Percepção ou Sobrevivência.
 
+### Transe
 
-### Keen Senses
-
-You have proficiency in the Insight, Perception, or Survival skill.
-
-
-### Trance
-
-You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.
+Você não precisa dormir, e magia não pode fazer você dormir. Você pode terminar um Descanso Longo em 4 horas se passar essas horas em uma meditação semelhante a um transe, durante a qual permanece consciente.

@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,28 +30,35 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Conjurar Familiar
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a miscellaneous=!swarm. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands.
+Você obtém os serviços de um familiar, um espírito que assume uma forma animal à sua escolha: Morcego, Gato, Sapo, Falcão, Lagarto, Polvo, Coruja, Rato, Corvo, Aranha, Doninha, ou outra Besta que tenha a característica miscellaneous=!swarm. Aparecendo em um espaço desocupado dentro do alcance, o familiar tem as estatísticas da forma escolhida, embora seja um Celestial, Fada ou Corruptor (sua escolha) em vez de uma Besta. Seu familiar age independentemente de você, mas obedece aos seus comandos.
 
 
-### Telepathic Connection
+### Conexão Telepática
 
-While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has.
+Enquanto seu familiar estiver a até 30 metros de você, você pode se comunicar telepaticamente com ele. Além disso, como uma Ação Bônus, você pode ver através dos olhos do familiar e ouvir o que ele ouve até o início do seu próximo turno, obtendo os benefícios de quaisquer sentidos especiais que ele tenha.
 
-Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell.
-
-
-### Combat
-
-The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.
+Finalmente, quando você conjura uma magia com alcance de toque, seu familiar pode aplicar o toque. Seu familiar deve estar a até 30 metros de você e deve usar uma Reação para aplicar o toque quando você conjura a magia.
 
 
-### Disappearance of the Familiar
+### Combate
 
-When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying.
+O familiar é um aliado seu e de seus aliados. Ele faz sua própria jogada de Iniciativa e age no seu próprio turno. Um familiar não pode atacar, mas pode realizar outras ações normalmente.
 
 
-### One Familiar Only
+### Desaparecimento do Familiar
 
-You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form.
+Quando o familiar cai para 0 Pontos de Vida, ele desaparece. Ele reaparece depois que você conjura esta magia novamente. Como uma Ação Mágica, você pode dispensar temporariamente o familiar para uma dimensão de bolso. Alternativamente, você pode dispensá-lo para sempre. Como uma Ação Mágica, enquanto ele estiver temporariamente dispensado, você pode fazer com que ele reapareça em um espaço desocupado a até 9 metros de você. Sempre que o familiar cai para 0 Pontos de Vida ou desaparece na dimensão de bolso, ele deixa para trás, no espaço dele, qualquer coisa que estivesse vestindo ou carregando.
+
+
+### Apenas Um Familiar
+
+Você não pode ter mais de um familiar por vez. Se você conjurar esta magia enquanto já tem um familiar, em vez disso, você faz com que ele adote uma nova forma elegível.

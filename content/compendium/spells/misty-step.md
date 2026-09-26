@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,6 +30,13 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Passo Nebuloso
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space you can see.
+Brevemente envolto por névoa prateada, você teleporta até 30 pés para um espaço desocupado que você possa ver.

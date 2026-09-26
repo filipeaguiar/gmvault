@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -42,13 +42,20 @@ spell_info:
         '5': 2d8
         '11': 3d8
         '17': 4d8
+titulo_pt_br: Raio de Gelo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes <span class="dice+" data-roll-notation="1d8">1d8</span> Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.
+Um raio gélido de luz branco-azulada dispara em direção a uma criatura dentro do alcance. Faça um ataque à distância com magia contra o alvo. Em um acerto, ela sofre <span class="dice+" data-roll-notation="1d8">1d8</span> de Dano de Frio e o Deslocamento dela é reduzido em 3 metros até o início do seu próximo turno.
 
-## At Higher Levels
+## Em Níveis Mais Altos
 
 
-### Cantrip Upgrade
+### Aprimoramento do Truque
 
-The damage increases by <span class="dice+" data-roll-notation="1d8">1d8</span> when you reach levels 5 (<span class="dice+" data-roll-notation="2d8">2d8</span>), 11 (<span class="dice+" data-roll-notation="3d8">3d8</span>), and 17 (<span class="dice+" data-roll-notation="4d8">4d8</span>).
+O dano aumenta em <span class="dice+" data-roll-notation="1d8">1d8</span> quando você alcança os níveis 5 (<span class="dice+" data-roll-notation="2d8">2d8</span>), 11 (<span class="dice+" data-roll-notation="3d8">3d8</span>) e 17 (<span class="dice+" data-roll-notation="4d8">4d8</span>).

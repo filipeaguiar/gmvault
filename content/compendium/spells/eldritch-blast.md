@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -34,13 +34,20 @@ spell_info:
     notation: 1d10
     label: Dano
     damage_type: force
+titulo_pt_br: Rajada Mística
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes <span class="dice+" data-roll-notation="1d10">1d10</span> Force damage.
+Você arremessa um raio de energia crepitante. Faça um ataque à distância com magia contra uma criatura ou objeto dentro do alcance. Com um acerto, o alvo sofre <span class="dice+" data-roll-notation="1d10">1d10</span> de dano de energia.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Cantrip Upgrade
+### Aprimoramento do Truque
 
-The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.
+O truque cria dois raios no nível 5, três raios no nível 11 e quatro raios no nível 17. Você pode direcionar os raios ao mesmo alvo ou a alvos diferentes. Faça uma jogada de ataque separada para cada raio.

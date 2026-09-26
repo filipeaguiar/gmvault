@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,10 +30,17 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Servo Invisível
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-This spell creates an Invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 Hit Point, and a Strength of 2, and it can't attack. If it drops to 0 Hit Points, the spell ends.
+Esta magia cria uma força invisível, irracional, disforme e de tamanho Médio que executa tarefas simples sob seu comando até a magia terminar. O servo surge em um espaço desocupado no chão, dentro do alcance. Ele tem CA 10, 1 Ponto de Vida e Força 2, e não pode atacar. Se ele cair para 0 Pontos de Vida, a magia termina.
 
-Once on each of your turns as a Bonus Action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring drinks. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.
+Uma vez em cada um de seus turnos, como uma Ação Bônus, você pode comandar mentalmente o servo a se mover até 4,5 metros e interagir com um objeto. O servo pode executar tarefas simples que um humano poderia fazer, como buscar coisas, limpar, consertar, dobrar roupas, acender fogueiras, servir comida e servir bebidas. Assim que você der o comando, o servo executa a tarefa da melhor forma possível até concluí-la e, então, aguarda seu próximo comando.
 
-If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.
+Se você ordenar ao servo que execute uma tarefa que o mova para mais de 18 metros de distância de você, a magia termina.

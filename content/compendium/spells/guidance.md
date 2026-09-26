@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -32,6 +32,13 @@ spell_info:
   - kind: dice
     notation: 1d4
     label: Dados
+titulo_pt_br: Orientação
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You touch a willing creature and choose a skill. Until the spell ends, the creature adds <span class="dice+" data-roll-notation="1d4">1d4</span> to any ability check using the chosen skill.
+Você toca uma criatura voluntária e escolhe uma perícia. Até a magia terminar, a criatura adiciona <span class="dice+" data-roll-notation="1d4">1d4</span> a qualquer teste de atributo que use a perícia escolhida.
