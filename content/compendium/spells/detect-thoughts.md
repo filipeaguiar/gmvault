@@ -30,6 +30,7 @@ spell_info:
   saving_throws:
   - wisdom
   rolls: []
+titulo_pt_br: "Detectar Pensamentos"
 ---
 
 Pela duração, você pode ler os pensamentos de certas criaturas. Quando conjura a magia e, em cada um de seus turnos até ela terminar, usando sua ação, você pode concentrar sua mente em uma criatura que possa ver a até 30 pés de você. Se a criatura escolhida tiver Inteligência 3 ou menos, ou não falar nenhum idioma, ela não é afetada.
