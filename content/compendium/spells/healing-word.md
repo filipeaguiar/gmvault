@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,12 +18,12 @@ source:
   remote_key: spell
   remote_id: c0de0c232e4afb10
 spell_info:
-  level: "1º nível"
-  school: "Abjuração"
-  cast_time: "1 ação bônus"
-  range: "60 pés"
-  components: "V"
-  duration: "Instantâneo"
+  level: 1º nível
+  school: Abjuração
+  cast_time: 1 ação bônus
+  range: 60 pés
+  components: V
+  duration: Instantâneo
   level_number: 1
   attack_type: null
   damage_types: []
@@ -44,13 +44,20 @@ spell_info:
         '7': 14d4
         '8': 16d4
         '9': 18d4
+titulo_pt_br: Palavra de Cura
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A creature of your choice that you can see within range regains Hit Points equal to <span class="dice+" data-roll-notation="2d4">2d4</span> plus your spellcasting ability modifier.
+Uma criatura à sua escolha que você possa ver dentro do alcance recupera Pontos de Vida iguais a <span class="dice+" data-roll-notation="2d4">2d4</span> mais seu modificador de atributo de conjuração.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Using a Higher-Level Spell Slot
+### Usando um Espaço de Magia de Nível Superior
 
-The healing increases by <span class="dice+" data-roll-notation="2d4">2d4</span> for each spell slot level above 1.
+A cura aumenta em <span class="dice+" data-roll-notation="2d4">2d4</span> para cada nível de espaço de magia acima do 1º.

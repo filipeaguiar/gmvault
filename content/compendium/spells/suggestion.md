@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -31,8 +31,15 @@ spell_info:
   saving_throws:
   - wisdom
   rolls: []
+titulo_pt_br: Sugestão
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to the target or its allies. For example, you could say, "Fetch the key to the cult's treasure vault, and give the key to me." Or you could say, "Stop fighting, leave this library peacefully, and don't return."
+Você sugere um curso de atividade — descrito em não mais que 25 palavras — a uma criatura que você possa ver, dentro do alcance, que possa ouvi-lo e entendê-lo. A sugestão deve parecer realizável e não pode envolver nada que obviamente cause dano ao alvo ou aos aliados dele. Por exemplo, você pode dizer: "Pegue a chave do cofre do tesouro do culto e entregue-a para mim." Ou pode dizer: "Pare de lutar, saia pacificamente desta biblioteca e não volte."
 
-The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration or until you or your allies deal damage to the target. The Charmed target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.
+O alvo deve ser bem-sucedido em um Teste de Resistência de Sabedoria ou terá a condição Enfeitiçado pela duração ou até que você ou seus aliados causem dano ao alvo. O alvo Enfeitiçado segue a sugestão da melhor forma que puder. A atividade sugerida pode continuar durante toda a duração, mas, se a atividade sugerida puder ser concluída em menos tempo, a magia termina para o alvo ao concluí-la.

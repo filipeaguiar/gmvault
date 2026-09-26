@@ -1,15 +1,22 @@
 ---
-title: "Song of Rest (d6)"
-type: "rule"
+title: Song of Rest (d6)
+type: rule
 draft: false
 weight: 10
 tags:
-  - compendio
-  - classe
-visibility: "public"
-status: "draft"
+- compendio
+- classe
+visibility: public
+status: ready
+titulo_pt_br: Canção do Descanso (d6)
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra <span class="dice+" data-roll-notation="1d6">1d6</span> hit points.
+A partir do 2º nível, você pode usar música suave ou oratória calmante para ajudar a revitalizar seus aliados feridos durante um descanso curto. Se você ou quaisquer criaturas amigáveis que possam ouvir sua atuação recuperarem pontos de vida gastando Dados de Vida no final do descanso curto, cada uma dessas criaturas recupera <span class="dice+" data-roll-notation="1d6">1d6</span> pontos de vida adicionais.
 
-The extra hit points increase when you reach certain levels in this class: to <span class="dice+" data-roll-notation="1d8">1d8</span> at 9th level, to <span class="dice+" data-roll-notation="1d10">1d10</span> at 13th level, and to <span class="dice+" data-roll-notation="1d12">1d12</span> at 17th level.
+Os pontos de vida adicionais aumentam quando você alcança certos níveis nesta classe: para <span class="dice+" data-roll-notation="1d8">1d8</span> no 9º nível, para <span class="dice+" data-roll-notation="1d10">1d10</span> no 13º nível e para <span class="dice+" data-roll-notation="1d12">1d12</span> no 17º nível.

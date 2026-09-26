@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,13 +30,19 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Invisibilidade
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A creature you touch has the Invisible condition until the spell ends. The spell ends early immediately after the target makes an attack roll, deals damage, or casts a spell.
+Uma criatura que você tocar fica com a condição Invisível até a magia terminar. A magia termina prematuramente imediatamente após o alvo fazer uma jogada de ataque, causar dano ou conjurar uma magia.
 
-## At Higher Levels
+## Em Níveis Superiores
 
+### Usando um Espaço de Magia de Nível Superior
 
-### Using a Higher-Level Spell Slot
-
-You can target one additional creature for each spell slot level above 2.
+Você pode escolher uma criatura adicional como alvo para cada nível de espaço de magia acima do 2º.

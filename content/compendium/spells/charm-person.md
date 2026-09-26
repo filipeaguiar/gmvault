@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,25 +18,32 @@ source:
   remote_key: spell
   remote_id: 86f3b34219bf5ad1
 spell_info:
-  level: "1º nível"
-  school: "Encantamento"
-  cast_time: "1 ação"
-  range: "30 pés"
-  components: "V, S"
-  duration: "1 hora"
+  level: 1º nível
+  school: Encantamento
+  cast_time: 1 ação
+  range: 30 pés
+  components: V, S
+  duration: 1 hora
   level_number: 1
   attack_type: null
   damage_types: []
   saving_throws:
   - wisdom
   rolls: []
+titulo_pt_br: Enfeitiçar Pessoa
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you.
+Um Humanoide que você possa ver dentro do alcance realiza um teste de resistência de Sabedoria. Ele o faz com Vantagem se você ou seus aliados estiverem lutando contra ele. Se falhar no teste, o alvo fica com a condição Enfeitiçado até a magia terminar ou até você ou seus aliados causarem dano a ele. A criatura Enfeitiçada é Amigável a você. Quando a magia termina, o alvo sabe que foi Enfeitiçado por você.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Using a Higher-Level Spell Slot
+### Usando um Espaço de Magia de Nível Superior
 
-You can target one additional creature for each spell slot level above 1.
+Você pode escolher uma criatura adicional como alvo para cada nível de espaço de magia acima do 1º.

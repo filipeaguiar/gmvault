@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,18 +30,23 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Ilusão Menor
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You create a sound or an image of an object within range that lasts for the duration. See the descriptions below for the effects of each. The illusion ends if you cast this spell again.
+Você cria um som ou a imagem de um objeto dentro do alcance que dura pela duração. Veja as descrições abaixo para os efeitos de cada um. A ilusão termina se você conjurar esta magia novamente.
 
-If a creature takes a Study action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.
+Se uma criatura realizar uma Ação Estudar para examinar o som ou a imagem, ela pode determinar que é uma ilusão com um teste bem-sucedido de Inteligência (Investigação) contra a sua CD para Evitar Magia. Se uma criatura discernir a ilusão pelo que ela é, a ilusão se torna tênue para a criatura.
 
+### Som
 
-### Sound
+Se você criar um som, seu volume pode variar de um sussurro a um grito. Pode ser a sua voz, a voz de outra pessoa, o rugido de um leão, o rufar de tambores ou qualquer outro som que você escolher. O som continua ininterrupto durante toda a duração, ou você pode produzir sons distintos em momentos diferentes antes do término da magia.
 
-If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.
+### Imagem
 
-
-### Image
-
-If you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot Cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, since things can pass through it.
+Se você criar a imagem de um objeto — como uma cadeira, pegadas enlameadas ou um baú pequeno —, ela não pode ser maior que um Cubo de 1,5 metro. A imagem não pode criar som, luz, cheiro ou qualquer outro efeito sensorial. A interação física com a imagem revela que ela é uma ilusão, já que as coisas podem atravessá-la.

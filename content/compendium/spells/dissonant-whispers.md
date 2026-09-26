@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,12 +18,12 @@ source:
   remote_key: spell
   remote_id: a34a372a40ca7c94
 spell_info:
-  level: "1º nível"
-  school: "Encantamento"
-  cast_time: "1 ação"
-  range: "60 pés"
-  components: "V"
-  duration: "Instantâneo"
+  level: 1º nível
+  school: Encantamento
+  cast_time: 1 ação
+  range: 60 pés
+  components: V
+  duration: Instantâneo
   level_number: 1
   attack_type: null
   damage_types:
@@ -47,13 +47,20 @@ spell_info:
         '7': 9d6
         '8': 10d6
         '9': 11d6
+titulo_pt_br: Sussurros Dissonantes
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes <span class="dice+" data-roll-notation="3d6">3d6</span> Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.
+Uma criatura à sua escolha que você possa ver, dentro do alcance, ouve uma melodia discordante em sua mente. O alvo realiza um teste de resistência de Sabedoria. Em caso de falha no teste de resistência, ele sofre <span class="dice+" data-roll-notation="3d6">3d6</span> de Dano Psíquico e deve imediatamente usar sua Reação, se disponível, para se afastar o máximo possível de você, usando a rota mais segura. Em caso de sucesso no teste de resistência, o alvo sofre apenas metade do dano.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Using a Higher-Level Spell Slot
+### Usando um Espaço de Magia de Nível Superior
 
-The damage increases by <span class="dice+" data-roll-notation="3d6">3d6</span> for each spell slot level above 1.
+O dano aumenta em <span class="dice+" data-roll-notation="3d6">3d6</span> para cada nível de espaço de magia acima do 1º.

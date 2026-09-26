@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -18,20 +18,27 @@ source:
   remote_key: spell
   remote_id: a3547c3b4e9b7ad9
 spell_info:
-  level: "1º nível"
-  school: "Adivinhação"
-  cast_time: "1 ação"
-  range: "30 pés"
-  components: "V, S"
+  level: 1º nível
+  school: Adivinhação
+  cast_time: 1 ação
+  range: 30 pés
+  components: V, S
   ritual: true
-  duration: "Concentração, até 10 minutos"
+  duration: Concentração, até 10 minutos
   level_number: 1
   attack_type: null
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Detectar Magia
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's Schools of Magic.
+Pela duração, você sente a presença de efeitos mágicos em um raio de 30 pés de você. Se sentir tais efeitos, você pode usar a Ação Mágica para ver uma aura tênue ao redor de qualquer criatura ou objeto visível na área que carregue a magia e, se um efeito tiver sido criado por uma magia, você aprende as escolas de magia dessa magia.
 
-The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.
+A magia é bloqueada por 1 pé de pedra, terra ou madeira; 1 polegada de metal; ou uma fina lâmina de chumbo.

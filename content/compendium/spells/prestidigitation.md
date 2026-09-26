@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,36 +30,43 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Prestidigitação
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time.
+Você cria um efeito mágico dentro do alcance. Escolha o efeito dentre as opções abaixo. Se você conjurar esta magia várias vezes, pode ter até três de seus efeitos não instantâneos ativos ao mesmo tempo.
 
 
-### Sensory Effect
+### Efeito Sensorial
 
-You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.
-
-
-### Fire Play
-
-You instantaneously light or snuff out a candle, a torch, or a small campfire.
+Você cria um efeito sensorial instantâneo e inofensivo, como uma chuva de faíscas, uma lufada de vento, notas musicais suaves ou um odor estranho.
 
 
-### Clean or Soil
+### Brincadeira com Fogo
 
-You instantaneously clean or soil an object no larger than 1 cubic foot.
-
-
-### Minor Sensation
-
-You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.
+Você instantaneamente acende ou apaga uma vela, uma tocha ou uma pequena fogueira.
 
 
-### Magic Mark
+### Limpar ou Sujar
 
-You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.
+Você instantaneamente limpa ou suja um objeto de até 1 metro cúbico.
 
 
-### Minor Creation
+### Sensação Menor
 
-You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth.
+Você resfria, aquece ou dá sabor a até 1 metro cúbico de material inanimado por 1 hora.
+
+
+### Marca Mágica
+
+Você faz uma cor, uma pequena marca ou um símbolo aparecer em um objeto ou superfície por 1 hora.
+
+
+### Criação Menor
+
+Você cria uma bugiganga não mágica ou uma imagem ilusória que caiba na sua mão. Ela dura até o final do seu próximo turno. Uma bugiganga não pode causar dano e não tem valor monetário.

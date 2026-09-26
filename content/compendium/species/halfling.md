@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -24,23 +24,27 @@ species_info: &id001
   size:
   - S
 race_info: *id001
+titulo_pt_br: Halfling
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Brave
+### Corajoso
 
-You have Advantage on saving throws you make to avoid or end the Frightened condition.
+Você tem Vantagem em testes de resistência que fizer para evitar ou encerrar a condição Amedrontado.
 
+### Agilidade Halfling
 
-### Halfling Nimbleness
+Você pode se mover através do espaço de qualquer criatura que seja um tamanho maior que você, mas não pode parar no mesmo espaço.
 
-You can move through the space of any creature that is a size larger than you, but you can't stop in the same space.
+### Sorte
 
+Quando você rolar um 1 no <span class="dice+" data-roll-notation="d20">d20</span> de um Teste de d20, você pode rolar o dado novamente e deve usar a nova rolagem.
 
-### Luck
+### Naturalmente Furtivo
 
-When you roll a 1 on the <span class="dice+" data-roll-notation="d20">d20</span> of a D20 Test, you can reroll the die, and you must use the new roll.
-
-
-### Naturally Stealthy
-
-You can take the Hide action even when you are obscured only by a creature that is at least one size larger than you.
+Você pode realizar a ação Esconder-se mesmo quando estiver obscurecido apenas por uma criatura que seja pelo menos um tamanho maior que você.
