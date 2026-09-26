@@ -17,15 +17,20 @@
 {{- $level := "" -}}
 {{- if $isCharacter -}}
   {{- $classText = printf "%v" (default "" (index $source "class")) -}}
-  {{- $levelMatches := findRE "[0-9]+" $classText -}}
-  {{- $totalLvl := 0 -}}
-  {{- range $levelMatches -}}
-    {{- $totalLvl = add $totalLvl (int .) -}}
-  {{- end -}}
-  {{- if gt $totalLvl 0 -}}
-    {{- $level = $totalLvl -}}
+  {{- $recordedLevel := int (default 0 (index $source "class_level")) -}}
+  {{- if gt $recordedLevel 0 -}}
+    {{- $level = $recordedLevel -}}
   {{- else -}}
-    {{- $level = 1 -}}
+    {{- $levelMatches := findRE "[0-9]+" $classText -}}
+    {{- $totalLvl := 0 -}}
+    {{- range $levelMatches -}}
+      {{- $totalLvl = add $totalLvl (int .) -}}
+    {{- end -}}
+    {{- if gt $totalLvl 0 -}}
+      {{- $level = $totalLvl -}}
+    {{- else -}}
+      {{- $level = 1 -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- $challenge := default "" (index $source "cr") -}}
@@ -55,21 +60,6 @@
 {{- $hpMatches := findRE "^[0-9]+" (printf "%v" (default "" (index $source "hp"))) -}}
 {{- if gt (len $hpMatches) 0 -}}
   {{- $hp = int (index $hpMatches 0) -}}
-{{- end -}}
-{{- if $isCharacter -}}
-  {{- $classPage := false -}}
-  {{- with $classText }}{{- $classPage = site.GetPage (printf "/compendium/classes/%s/" (. | urlize)) -}}{{- end -}}
-  {{- with $classPage -}}
-    {{- $hitDice := printf "%v" (default "" .Params.class_info.hit_dice) -}}
-    {{- $hitDieMatches := findRE "[0-9]+$" $hitDice -}}
-    {{- if gt (len $hitDieMatches) 0 -}}
-      {{- $hitDieFaces := int (index $hitDieMatches 0) -}}
-      {{- $conScore := int (default 10 (index $stats "con")) -}}
-      {{- $conMod := div (sub $conScore 10) 2 -}}
-      {{- if lt $conScore 10 -}}{{- $conMod = div (sub $conScore 11) 2 -}}{{- end -}}
-      {{- $hp = add $hitDieFaces $conMod -}}
-    {{- end -}}
-  {{- end -}}
 {{- end -}}
 {{- $ac := "" -}}
 {{- $acMatches := findRE "^[0-9]+" (printf "%v" (default "" (index $source "ac"))) -}}

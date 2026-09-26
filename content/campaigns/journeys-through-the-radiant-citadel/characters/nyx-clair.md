@@ -36,6 +36,16 @@ char_info:
     reset: ''
     source: class
   - max_uses: 0
+    name: Agonizing Blast
+    ref: /compendium/rules/agonizing-blast/
+    reset: ''
+    source: class
+  - max_uses: 0
+    name: Repelling Blast
+    ref: /compendium/rules/repelling-blast/
+    reset: ''
+    source: class
+  - max_uses: 0
     name: Magical Cunning
     ref: /compendium/rules/magical-cunning/
     reset: ''
@@ -63,10 +73,10 @@ char_info:
   alignment: True Neutral
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-nyx.png'
   class: Warlock
-  class_level: 3
+  class_level: 4
   class_spells: []
   classes_progression:
-  - level: 3
+  - level: 4
     name: Warlock
     subclass: Great Old One Patron
   currencies:
@@ -113,11 +123,11 @@ char_info:
   feats:
   - Magic Initiate
   feature_actions: *id001
-  hp: '17'
-  hp_current: '17'
-  hp_max: '17'
+  hp: '24'
+  hp_current: '24'
+  hp_max: '24'
   languages: Common
-  level: 3
+  level: 4
   mods:
     cha: 2
     con: 2
@@ -359,6 +369,8 @@ compendium_refs:
 - /compendium/rules/action-help/
 - /compendium/rules/action-hide/
 - /compendium/rules/action-use-object/
+- /compendium/rules/agonizing-blast/
+- /compendium/rules/repelling-blast/
 - /compendium/species/elf/
 - /compendium/spells/charm-person/
 - /compendium/spells/eldritch-blast/

@@ -74,10 +74,10 @@ char_info:
   alignment: Neutro Verdadeiro
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-detios-canto-baixo.png'
   class: Bard
-  class_level: 3
+  class_level: 4
   class_spells: []
   classes_progression:
-  - level: 3
+  - level: 4
     name: Bard
     subclass: College of Whispers
   currencies:
@@ -131,12 +131,13 @@ char_info:
   feat: ''
   feats:
   - Lucky
+  - Inspiring Leader
   feature_actions: *id001
-  hp: '15'
-  hp_current: '15'
-  hp_max: '15'
+  hp: '21'
+  hp_current: '21'
+  hp_max: '21'
   languages: Common
-  level: 3
+  level: 4
   mods:
     cha: 4
     con: 1
@@ -269,15 +270,15 @@ char_info:
   spell_dc: 14
   spell_slots:
     1: 4
-    2: 2
+    2: 3
   spellcasting:
     ability: cha
     can_mark_known: true
     can_prepare: false
-    cantrips_known: 2
+    cantrips_known: 3
     class_count: 0
     kind: known
-    known_count: 5
+    known_count: 7
     known_label: Magias Conhecidas
     pact_slot_count: 0
     pact_slot_level: 0
@@ -288,9 +289,9 @@ char_info:
     slot_levels:
     - 1
     - 2
-    slot_summary: 4 espaços de 1º · 2 espaços de 2º
-    slot_total: 6
-    total_spells: 7
+    slot_summary: 4 espaços de 1º · 3 espaços de 2º
+    slot_total: 7
+    total_spells: 10
     uses_pact_slots: false
   spells:
   - availability: known
@@ -301,6 +302,11 @@ char_info:
   - availability: known
     can_prepare: false
     ref: /compendium/spells/vicious-mockery/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/prestidigitation/
     source: class
     usage: 1 action
   - availability: known
@@ -328,6 +334,16 @@ char_info:
     ref: /compendium/spells/detect-thoughts/
     source: class
     usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/suggestion/
+    source: class
+    usage: 1 action
+  - availability: known
+    can_prepare: false
+    ref: /compendium/spells/invisibility/
+    source: class
+    usage: 1 action
   stats:
     cha: 18
     con: 12
@@ -339,6 +355,7 @@ char_info:
 compendium_refs:
 - /compendium/classes/bard/
 - /compendium/classes/college-of-whispers/
+- /compendium/feats/inspiring-leader/
 - /compendium/feats/lucky/
 - /compendium/items/backpack/
 - /compendium/items/bedroll/
@@ -367,7 +384,10 @@ compendium_refs:
 - /compendium/spells/detect-thoughts/
 - /compendium/spells/dissonant-whispers/
 - /compendium/spells/healing-word/
+- /compendium/spells/invisibility/
 - /compendium/spells/minor-illusion/
+- /compendium/spells/prestidigitation/
+- /compendium/spells/suggestion/
 - /compendium/spells/vicious-mockery/
 - /compendium/rules/jack-of-all-trades/
 - /compendium/rules/magical-inspiration/

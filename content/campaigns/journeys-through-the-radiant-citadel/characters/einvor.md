@@ -88,10 +88,10 @@ char_info:
   alignment: True Neutral
   avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-einvor.png'
   class: Barbarian
-  class_level: 3
+  class_level: 4
   class_spells: []
   classes_progression:
-  - level: 3
+  - level: 4
     name: Barbarian
     subclass: Path of the Berserker
   consumables:
@@ -154,12 +154,13 @@ char_info:
   feat: ''
   feats:
   - Tough
+  - Great Weapon Master
   feature_actions: *id001
-  hp: '28'
-  hp_current: '28'
-  hp_max: '28'
+  hp: '39'
+  hp_current: '39'
+  hp_max: '39'
   languages: Common
-  level: 3
+  level: 4
   mods:
     cha: 0
     con: 2
@@ -321,6 +322,7 @@ char_info:
   subclass: Path of the Berserker
 compendium_refs:
 - /compendium/classes/barbarian/
+- /compendium/feats/great-weapon-master/
 - /compendium/feats/tough/
 - /compendium/items/backpack/
 - /compendium/items/bedroll/
