@@ -86,7 +86,7 @@ char_info:
     reset: ''
     source: class
   alignment: True Neutral
-  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-einvor.png'
+  avatar: '/images/campaigns/journeys-through-the-radiant-citadel/characters/portrait-eivor.png'
   class: Barbarian
   class_level: 4
   class_spells: []
@@ -362,7 +362,7 @@ tags:
 - jogador
 - goliath
 - barbarian
-title: Einvor
+title: Eivor
 type: character
 visibility: players
 weight: 10

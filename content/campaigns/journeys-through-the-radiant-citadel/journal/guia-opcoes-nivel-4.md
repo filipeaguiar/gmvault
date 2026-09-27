@@ -9,7 +9,7 @@ titulo_pt_br: 'Guia de Opções de Evolução — Nível 4'
 
 # 🌟 Guia de Evolução para o Nível 4
 
-Este documento reúne todas as opções, regras e recomendações de evolução para os personagens **Detios Canto Baixo**, **Nyx'Clair** e **Einvor** subirem do **Nível 3 para o Nível 4** no sistema D&D 5e.
+Este documento reúne todas as opções, regras e recomendações de evolução para os personagens **Detios Canto Baixo**, **Nyx'Clair** e **Eivor** subirem do **Nível 3 para o Nível 4** no sistema D&D 5e.
 
 ---
 
@@ -125,7 +125,7 @@ No 4º nível, a Bruxa escolhe **Aumento no Valor de Atributo** ou **1 Talento (
 ---
 ---
 
-## 🪓 3. Einvor
+## 🪓 3. Eivor
 **Classe & Subclasse:** Bárbaro (*Path of the Berserker*)  
 **Raça:** Golias (*Goliath*)  
 **Nível Atual:** 3 ➔ **Nível 4**

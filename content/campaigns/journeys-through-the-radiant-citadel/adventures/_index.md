@@ -20,7 +20,7 @@ Aqui você pode baixar os arquivos JSON individuais dos personagens jogadores, c
 * **Pacote Completo (ZIP):** <a href="/exports/forge/personagens.zip" download="personagens.zip">**personagens.zip** (Todos os 6 personagens)</a>
 * **Detios Canto Baixo:** <a href="/exports/forge/detios-canto-baixo.json" download="detios-canto-baixo.json">detios-canto-baixo.json</a>
 * **Durin:** <a href="/exports/forge/durin.json" download="durin.json">durin.json</a>
-* **Einvor:** <a href="/exports/forge/einvor.json" download="einvor.json">einvor.json</a>
+* **Eivor:** <a href="/exports/forge/eivor.json" download="eivor.json">eivor.json</a>
 * **Nix Clair (Nyx):** <a href="/exports/forge/nyx-clair.json" download="nyx-clair.json">nyx-clair.json</a>
 * **Pinky:** <a href="/exports/forge/pinky.json" download="pinky.json">pinky.json</a>
 * **Violeta:** <a href="/exports/forge/violeta.json" download="violeta.json">violeta.json</a>

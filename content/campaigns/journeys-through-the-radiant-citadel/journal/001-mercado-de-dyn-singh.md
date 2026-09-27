@@ -17,7 +17,7 @@ translation:
 
 O crepúsculo caía sobre o plano de Siabsungkoh, tingindo o céu de tons violeta e dourado. À medida que o sol se despedia, o Mercado de Dyn Singh começava a ganhar vida. Centenas de tendas temporárias, com suas lonas coloridas, e pequenos carrinhos de madeira eram montados nas ruelas e praças, espalhando aromas exóticos de temperos, caldos ferventes e fumaça perfumada. Era um lugar onde as tradições passavam de geração em geração, de pais para filhos, com negócios centenários enraizados no coração do vale.
 
-Após acumularem algumas moedas de ouro em seus últimos trabalhos, os aventureiros decidiram que era o momento perfeito para desfrutar de um descanso merecido. Durin, o anão monge de postura serena; Einvor, o imponente golias bárbaro; Detios CantoBaixo, o carismático bardo halfling; Pinky, o ladino goblin de olhos astutos; Nyx'Clair, a misteriosa bruxa elfa; e Violeta, a jovem feiticeira humana, caminhavam juntos pela feira. A intenção do grupo era simples: relaxar, experimentar as delícias locais e, quem sabe, testar a sorte em alguma das famosas gincanas noturnas do mercado.
+Após acumularem algumas moedas de ouro em seus últimos trabalhos, os aventureiros decidiram que era o momento perfeito para desfrutar de um descanso merecido. Durin, o anão monge de postura serena; Eivor, o imponente golias bárbaro; Detios CantoBaixo, o carismático bardo halfling; Pinky, o ladino goblin de olhos astutos; Nyx'Clair, a misteriosa bruxa elfa; e Violeta, a jovem feiticeira humana, caminhavam juntos pela feira. A intenção do grupo era simples: relaxar, experimentar as delícias locais e, quem sabe, testar a sorte em alguma das famosas gincanas noturnas do mercado.
 
 Contudo, o burburinho da feira escondia tensões profundas. No coração da praça rebaixada, cercada por três grandes tendas douradas, duas comerciantes tradicionais mantinham uma rivalidade histórica. Lamai Tyenmo, uma gnomo obstinada e dona da prestigiada barraca de macarrão *Tyenmo Noodles*, e Kusa Xungoon, uma orgulhosa kobold que comandava a *Xungoon Seafood* com seus pratos de lagostas e sopas de polvo, tentavam manter as aparências. No entanto, uma série de pequenas e misteriosas sabotagens recentes acirrou a velha picuinha familiar, ameaçando arruinar os negócios que sustentavam suas famílias por décadas.
 
@@ -67,7 +67,7 @@ Kusa, apontando para os aventureiros, tomou uma decisão:
 
 Sentindo que a situação poderia render bons frutos, as duas comerciantes começaram a competir pelo preço dos serviços do grupo, oferecendo cada vez mais até que estabeleceram um acordo formal: a que estivesse certa pagaria cem moedas de ouro aos aventureiros, além de lhes garantir refeições gratuitas e vitalícias em sua respectiva barraca.
 
-Einvor, observando a discussão com testa franzida, inclinou-se na direção do monge anão e perguntou com sua voz profunda:
+Eivor, observando a discussão com testa franzida, inclinou-se na direção do monge anão e perguntou com sua voz profunda:
 
 — Amiguinho, o que deu? O que faremos?
 
@@ -81,13 +81,13 @@ Antes que o grupo pudesse esboçar uma resposta, um homem de vestes vermelhas vi
 
 Kasem conduziu o grupo até a animada barraca dos Irmãos Apimentados, onde seu irmão gêmeo, Vi Aroon, atendia os clientes com entusiasmo contagiante. Kasem explicou as regras da gincana: o desafiante deveria escolher pimentas de um cesto e comê-las. Aquele que suportasse a queimação de três pimentas consecutivas seria coroado campeão e receberia um cobiçado broche de pimenta, que garantia descontos e a simpatia de todos no mercado. Ao lado de cada competidor, um copo de iogurte gelado era colocado; se a dor fosse insuportável e o desafiante bebesse o iogurte, estaria desclassificado.
 
-Einvor foi o primeiro a se aproximar. Embora desconfiado, o robusto golias escolheu uma pimenta vermelha e volumosa. Na primeira mordida, o sabor parecia tolerável, mas logo a substância começou a queimar com uma fúria infernal. O mundo ao redor do bárbaro pareceu derreter; ele começou a ver caveiras e a própria morte diante de si. Desesperado, Einvor agarrou o copo de iogurte, entornou-o garganta adentro de uma só vez e começou a lacrimejar intensamente. Seus olhos ficaram vermelhos e ele desabou no chão, arfando.
+Eivor foi o primeiro a se aproximar. Embora desconfiado, o robusto golias escolheu uma pimenta vermelha e volumosa. Na primeira mordida, o sabor parecia tolerável, mas logo a substância começou a queimar com uma fúria infernal. O mundo ao redor do bárbaro pareceu derreter; ele começou a ver caveiras e a própria morte diante de si. Desesperado, Eivor agarrou o copo de iogurte, entornou-o garganta adentro de uma só vez e começou a lacrimejar intensamente. Seus olhos ficaram vermelhos e ele desabou no chão, arfando.
 
 Para ajudá-lo a se levantar, os outros três membros do grupo precisaram unir forças, devido ao tamanho colossal do bárbaro.
 
 — Os três é todo mundo! — exclamaram os companheiros enquanto puxavam o gigante.
 
-Einvor, com a boca visivelmente inchada e lágrimas escorrendo pelo rosto, resmungou:
+Eivor, com a boca visivelmente inchada e lágrimas escorrendo pelo rosto, resmungou:
 
 — Eu gosto de iogurte... mas não gosto de pimenta. Nem sei o que é pimenta!
 
@@ -139,9 +139,9 @@ Enquanto isso, Detios foi vistoriar a barraca de Lamai. Não encontrou nada de s
 
 Decidido a encontrar pistas na multidão, Detios CantoBaixo subiu em um caixote de madeira no centro da praça rebaixada. Ele começou a dedilhar seu alaúde com maestria de trovador, sua voz melodiosa ecoando pelo mercado. A performance excepcional atraiu rapidamente a atenção dos transeuntes: goblins, kobolds, draconatos e turistas estrangeiros aglomeraram-se para ouvir o espetáculo. O plano era simples: enquanto a multidão se concentrava na música, os outros aventureiros monitoravam as reações das pessoas ao redor.
 
-Durante o tumulto, Einvor caminhou até os fundos da tenda queimada de Kusa. Enquanto farejava a área, o golias sentiu seu pé pisar em algo pegajoso. Ele se agachou e recolheu com os dedos uma meleca azulada e cintilante, que mudava de cor conforme a luz da feira a atingia. Ao cheirar, percebeu que se tratava de fezes de algum animal exótico.
+Durante o tumulto, Eivor caminhou até os fundos da tenda queimada de Kusa. Enquanto farejava a área, o golias sentiu seu pé pisar em algo pegajoso. Ele se agachou e recolheu com os dedos uma meleca azulada e cintilante, que mudava de cor conforme a luz da feira a atingia. Ao cheirar, percebeu que se tratava de fezes de algum animal exótico.
 
-— Encontrei esse cocô brilhando azul! — anunciou Einvor, exibindo a descoberta cintilante nos dedos.
+— Encontrei esse cocô brilhando azul! — anunciou Eivor, exibindo a descoberta cintilante nos dedos.
 
 Nyx'Clair fez uma careta de nojo, assim como os outros.
 
@@ -149,7 +149,7 @@ Nyx'Clair fez uma careta de nojo, assim como os outros.
 
 O grupo reuniu-se para debater as evidências. Nyx'Clair sugeriu que o culpado não era nenhuma das comerciantes, mas sim algum animal travesso solto no mercado — talvez um macaco silvestre de pelagem azulada que estivesse comendo caquis, roendo as cordas das tendas e provocando pequenos incêndios acidentais. Durin, por outro lado, suspeitava de uma interferência externa: ele imaginou que a noiva de Vi Aroon, ou algum concorrente secreto, poderia ter contratado alguém para arruinar os negócios locais.
 
-Einvor ergueu a mão gigante e manifestou sua hipótese com toda a inocência:
+Eivor ergueu a mão gigante e manifestou sua hipótese com toda a inocência:
 
 — E se o macaco azul for a esposa do Pimenta? Porque eu vi de uma floresta que existia muitos seres que trocavam de forma. Vai que seja uma macaca azul.
 
@@ -209,7 +209,7 @@ Mantendo a promessa, Lamai e Kusa dividiram a recompensa e entregaram aos aventu
 
 ### A Joia da Concórdia e a Partida Interplanar
 
-Após descansarem durante a noite em hospedarias confortáveis do mercado, os aventureiros prepararam-se para partir na manhã seguinte. Uma carruagem simples de madeira os aguardava. Como Einvor era um golias maciço e pesado demais para o veículo, ele decidiu seguir a pé, caminhando com passos firmes ao lado do cavalo. O goblin Pinky, orgulhoso, sentou-se na tábua do cocheiro e assumiu as rédeas, guiando o cavalo pelas estradas de terra do vale. No interior da carruagem, Detios, Durin, Nyx'Clair e Violeta conversavam de forma descontraída, rindo das lembranças do desafio da pimenta e do plano mirabolante do macaco azul.
+Após descansarem durante a noite em hospedarias confortáveis do mercado, os aventureiros prepararam-se para partir na manhã seguinte. Uma carruagem simples de madeira os aguardava. Como Eivor era um golias maciço e pesado demais para o veículo, ele decidiu seguir a pé, caminhando com passos firmes ao lado do cavalo. O goblin Pinky, orgulhoso, sentou-se na tábua do cocheiro e assumiu as rédeas, guiando o cavalo pelas estradas de terra do vale. No interior da carruagem, Detios, Durin, Nyx'Clair e Violeta conversavam de forma descontraída, rindo das lembranças do desafio da pimenta e do plano mirabolante do macaco azul.
 
 O caminho os levou até uma grande clareira no topo de uma colina, onde ficava o ponto de embarque interplanar. No céu límpido do amanhecer, flutuava a Joia da Concórdia: uma colossal pedra preciosa de formato irregular e lapidação brilhante, do tamanho de uma mansão. A gema pulsava com uma energia mágica suave.
 
