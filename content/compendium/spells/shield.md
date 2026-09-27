@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,6 +30,13 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Escudo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile.
+Uma barreira imperceptível de força mágica protege você. Até o início do seu próximo turno, você tem um bônus de +5 na Classe de Armadura, incluindo contra o ataque desencadeador, e você não sofre dano de Mísseis Mágicos.

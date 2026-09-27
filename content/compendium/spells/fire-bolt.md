@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -42,13 +42,20 @@ spell_info:
         '5': 2d10
         '11': 3d10
         '17': 4d10
+titulo_pt_br: Dardo de Fogo
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes <span class="dice+" data-roll-notation="1d10">1d10</span> Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.
+Você arremessa uma partícula de fogo em uma criatura ou objeto dentro do alcance. Faça um ataque à distância com magia contra o alvo. Em um acerto, o alvo sofre <span class="dice+" data-roll-notation="1d10">1d10</span> de dano de fogo. Um objeto inflamável atingido por esta magia começa a queimar se não estiver sendo vestido ou carregado.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Cantrip Upgrade
+### Aprimoramento do Truque
 
-The damage increases by <span class="dice+" data-roll-notation="1d10">1d10</span> when you reach levels 5 (<span class="dice+" data-roll-notation="2d10">2d10</span>), 11 (<span class="dice+" data-roll-notation="3d10">3d10</span>), and 17 (<span class="dice+" data-roll-notation="4d10">4d10</span>).
+O dano aumenta em <span class="dice+" data-roll-notation="1d10">1d10</span> quando você alcança os níveis 5 (<span class="dice+" data-roll-notation="2d10">2d10</span>), 11 (<span class="dice+" data-roll-notation="3d10">3d10</span>) e 17 (<span class="dice+" data-roll-notation="4d10">4d10</span>).

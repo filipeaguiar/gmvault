@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -48,13 +48,19 @@ spell_info:
         '7': 8d10
         '8': 9d10
         '9': 10d10
+titulo_pt_br: Repreensão Infernal
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-The creature that damaged you is momentarily surrounded by green flames. It makes a Dexterity saving throw, taking <span class="dice+" data-roll-notation="2d10">2d10</span> Fire damage on a failed save or half as much damage on a successful one.
+A criatura que causou dano a você fica momentaneamente cercada por chamas verdes. Ela realiza um Teste de Resistência de Destreza, sofrendo <span class="dice+" data-roll-notation="2d10">2d10</span> de Dano de Fogo em caso de falha no teste de resistência ou metade do dano em caso de sucesso.
 
-## At Higher Levels
+## Em Níveis Superiores
 
+### Usando um Espaço de Magia de Nível Superior
 
-### Using a Higher-Level Spell Slot
-
-The damage increases by <span class="dice+" data-roll-notation="2d10">2d10</span> for each spell slot level above 1.
+O dano aumenta em <span class="dice+" data-roll-notation="2d10">2d10</span> para cada nível do espaço de magia acima do 1º.

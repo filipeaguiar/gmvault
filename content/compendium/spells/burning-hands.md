@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -48,15 +48,21 @@ spell_info:
         '7': 9d6
         '8': 10d6
         '9': 11d6
+titulo_pt_br: Mãos Flamejantes
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking <span class="dice+" data-roll-notation="3d6">3d6</span> Fire damage on a failed save or half as much damage on a successful one.
+Uma fina lâmina de chamas irrompe de você. Cada criatura em um Cone de 4,5 metros realiza um teste de resistência de Destreza, sofrendo <span class="dice+" data-roll-notation="3d6">3d6</span> de dano de fogo em caso de falha no teste de resistência, ou metade do dano em caso de sucesso.
 
-Flammable objects in the Cone that aren't being worn or carried start burning.
+Objetos inflamáveis no Cone que não estejam sendo vestidos ou carregados começam a queimar.
 
-## At Higher Levels
+## Em Níveis Superiores
 
+### Usando um Espaço de Magia de Nível Superior
 
-### Using a Higher-Level Spell Slot
-
-The damage increases by <span class="dice+" data-roll-notation="3d6">3d6</span> for each spell slot level above 1.
+O dano aumenta em <span class="dice+" data-roll-notation="3d6">3d6</span> para cada nível de espaço de magia acima do 1º.

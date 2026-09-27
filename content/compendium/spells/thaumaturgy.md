@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -30,36 +30,37 @@ spell_info:
   damage_types: []
   saving_throws: []
   rolls: []
+titulo_pt_br: Taumaturgia
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You manifest a minor wonder within range. You create one of the effects below within range. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time.
+Você manifesta um prodígio menor dentro do alcance. Você cria um dos efeitos abaixo dentro do alcance. Se você conjurar esta magia várias vezes, você pode ter até três de seus efeitos de 1 minuto ativos ao mesmo tempo.
 
+### Olhos Alterados
 
-### Altered Eyes
+Você altera a aparência dos seus olhos por 1 minuto.
 
-You alter the appearance of your eyes for 1 minute.
+### Voz Estrondosa
 
+Sua voz ressoa até três vezes mais alta que o normal por 1 minuto. Pela duração, você tem Vantagem em Testes de Carisma (Intimidação).
 
-### Booming Voice
+### Manipulação do Fogo
 
-Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Charisma (Intimidation) checks.
+Você faz com que as chamas tremulem, brilhem, diminuam ou mudem de cor por 1 minuto.
 
+### Mão Invisível
 
-### Fire Play
+Você instantaneamente faz com que uma porta ou janela destrancada se abra de supetão ou se feche com força.
 
-You cause flames to flicker, brighten, dim, or change color for 1 minute.
+### Som Fantasma
 
+Você cria um som instantâneo que se origina de um ponto de sua escolha dentro do alcance, como o estrondo de um trovão, o grasnar de um corvo ou sussurros agourentos.
 
-### Invisible Hand
+### Tremores
 
-You instantaneously cause an unlocked door or window to fly open or slam shut.
-
-
-### Phantom Sound
-
-You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.
-
-
-### Tremors
-
-You cause harmless tremors in the ground for 1 minute.
+Você causa tremores inofensivos no solo por 1 minuto.

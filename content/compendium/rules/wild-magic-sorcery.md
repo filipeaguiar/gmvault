@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: subclassFeature
   remote_id: 5d2ae2fa7cac67b5
+titulo_pt_br: Feitiçaria de Magia Selvagem
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-Unleash Chaotic Magic
+Liberar Magia Caótica
 
-Your innate magic stems from the forces of chaos that underlie the order of creation. You or an ancestor might have endured exposure to raw magic, perhaps through a planar portal leading to Limbo or the Elemental Planes. Perhaps you were blessed by a fey being or marked by a demon. Or your magic could be a fluke with no apparent cause. Whatever its source, this magic churns within you, waiting for any outlet.
+Sua magia inata origina-se das forças do caos que subjazem à ordem da criação. Você ou um ancestral pode ter suportado exposição à magia bruta, talvez através de um portal planar para o Limbo ou para os Planos Elementais. Talvez você tenha sido abençoado por um ser feérico ou marcado por um demônio. Ou sua magia pode ser um acaso, sem causa aparente. Seja qual for sua origem, essa magia agita-se dentro de você, aguardando qualquer escape.

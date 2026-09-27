@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,8 +17,15 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: subclassFeature
   remote_id: 83b269c64d548705
+titulo_pt_br: Marés do Caos
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You can manipulate chaos itself to give yourself Advantage on one D20 Test before you roll the <span class="dice+" data-roll-notation="d20">d20</span>. Once you do so, you must cast a Sorcerer spell with a spell slot or finish a Long Rest before you can use this feature again.
+Você pode manipular o próprio caos para ter Vantagem em um Teste de d20 antes de rolar o <span class="dice+" data-roll-notation="d20">d20</span>. Depois de fazer isso, você deve conjurar uma magia de Feiticeiro com um espaço de magia ou terminar um Descanso Longo antes de poder usar esta característica novamente.
 
-If you do cast a Sorcerer spell with a spell slot before you finish a Long Rest, you automatically roll on the Wild Magic Surge table.
+Se você conjurar uma magia de Feiticeiro com um espaço de magia antes de terminar um Descanso Longo, você rola automaticamente na tabela de Surto de Magia Selvagem.

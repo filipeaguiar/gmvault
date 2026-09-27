@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -35,13 +35,20 @@ spell_info:
     notation: 1d4+1
     label: Dano
     damage_type: force
+titulo_pt_br: Míssil Mágico
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within range. A dart deals <span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span> Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.
+Você cria três dardos brilhantes de força mágica. Cada dardo atinge uma criatura de sua escolha que você possa ver dentro do alcance. Um dardo causa <span class="dice+" data-roll-notation="1d4+1">1d4 + 1</span> de Dano de Energia ao alvo. Os dardos atingem todos simultaneamente, e você pode direcioná-los para atingir uma criatura ou várias.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Using a Higher-Level Spell Slot
+### Usando um Espaço de Magia de Nível Superior
 
-The spell creates one more dart for each spell slot level above 1.
+A magia cria um dardo adicional para cada nível de espaço de magia acima do 1º.

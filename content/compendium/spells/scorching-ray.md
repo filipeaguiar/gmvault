@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -35,13 +35,20 @@ spell_info:
     notation: 2d6
     label: Dano
     damage_type: fire
+titulo_pt_br: Raio Ardente
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You hurl three fiery rays. You can hurl them at one target within range or at several. Make a ranged spell attack for each ray. On a hit, the target takes <span class="dice+" data-roll-notation="2d6">2d6</span> Fire damage.
+Você arremessa três raios flamejantes. Você pode arremessá-los em um único alvo dentro do alcance ou em vários. Faça um Ataque à Distância com Magia para cada raio. Se acertar, o alvo sofre <span class="dice+" data-roll-notation="2d6">2d6</span> de Dano de Fogo.
 
-## At Higher Levels
+## Em Níveis Superiores
 
 
-### Using a Higher-Level Spell Slot
+### Usando um Espaço de Magia de Nível Superior
 
-You create one additional ray for each spell slot level above 2.
+Você cria um raio adicional para cada nível de espaço de magia acima do 2.

@@ -7,8 +7,8 @@ tags:
 - draft
 - importado
 - 5etools
-visibility: "public"
-status: draft
+visibility: public
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -17,6 +17,13 @@ source:
   remote_file: class/class-sorcerer.json
   remote_key: classFeature
   remote_id: 028ee837175a99fe
+titulo_pt_br: Subclasse de Feiticeiro
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-You gain a Sorcerer subclass of your choice. A subclass is a specialization that grants you features at certain Sorcerer levels. For the rest of your career, you gain each of your subclass's features that are of your Sorcerer level or lower.
+Você ganha uma subclasse de Feiticeiro à sua escolha. Uma subclasse é uma especialização que concede a você características em certos níveis de Feiticeiro. Pelo restante da sua carreira, você ganha cada uma das características da sua subclasse cujo nível de Feiticeiro seja igual ou inferior ao seu.

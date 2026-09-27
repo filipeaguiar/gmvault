@@ -8,7 +8,7 @@ tags:
 - importado
 - 5etools
 visibility: public
-status: draft
+status: ready
 source:
   provider: 5e.tools
   book: XPHB
@@ -25,20 +25,25 @@ species_info: &id001
   - S
   - M
 race_info: *id001
+titulo_pt_br: Tiefling
+translation:
+  source_language: en
+  target_language: pt-BR
+  engine: openai-compatible
+  status: machine_translated
+  model: deepseek-v4-pro
 ---
 
-### Darkvision
+### Visão no Escuro
 
-You have Darkvision with a range of 60 feet.
+Você tem Visão no Escuro com um alcance de 60 pés.
 
+### Legado Infernal
 
-### Fiendish Legacy
+Você é o portador de um legado que concede a você habilidades sobrenaturais. Escolha um legado da tabela de Legados Infernais. Você ganha o benefício de 1º nível do legado escolhido.
 
-You are the recipient of a legacy that grants you supernatural abilities. Choose a legacy from the Fiendish Legacies table. You gain the level 1 benefit of the chosen legacy.
+Quando você atinge os níveis de personagem 3 e 5, aprende uma magia de círculo mais alto, conforme mostrado na tabela. Você sempre tem essa magia preparada. Você pode conjurá-la uma vez sem gastar um espaço de magia e recupera a capacidade de conjurá-la dessa forma quando termina um Descanso Longo. Você também pode conjurar a magia usando quaisquer espaços de magia que possua do círculo apropriado. Inteligência, Sabedoria ou Carisma é o seu atributo de conjuração para as magias que você conjura com esta característica (escolha o atributo ao selecionar o legado).
 
-When you reach character levels 3 and 5, you learn a higher-level spell, as shown on the table. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have of the appropriate level. Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy).
+### Presença Sobrenatural
 
-
-### Otherworldly Presence
-
-You know the Thaumaturgy cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish Legacy Trait.
+Você conhece o truque Taumaturgia. Quando você o conjura com esta característica, a magia usa o mesmo atributo de conjuração que você usa para sua característica Legado Infernal.
